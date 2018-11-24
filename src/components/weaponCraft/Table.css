@@ -14,17 +14,17 @@ table.ui.celled.table tbody td img, table.ui.celled.table button.ui.button {
   margin: auto;
 } */
 
-table img.weapon-img {
+table img.weapon-img, table img.material-img {
   width: 60px;
 }
 
-table img.weapon-img, table button.ui.button{
+table img.weapon-img, table img.material-img, table button.ui.button{
   display: block;
   margin: auto;
 }
 
 div.unbind.set img {
-  height: 24px;
+  height: 30px;
   margin-left: 1em;
 }
 

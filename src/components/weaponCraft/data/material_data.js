@@ -1,5 +1,9 @@
 const materials = [
   {
+    "Id": "Icon_Resource_Rupies",
+    "Name": "Rupies"
+  },
+  {
     "Id": "104001001",
     "Name": "Rainbow Orb"
   },
@@ -287,10 +291,6 @@ const materials = [
     "Id": "202005081",
     "Name": "Staff Tablet"
   },
-  {
-    "Id": "Icon_Resource_Rupies",
-    "Name": "Rupies"
-  }
 ];
 
 export default materials;

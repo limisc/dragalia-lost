@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
-import weapons from './data/weapon_data';
 
 class CraftList extends Component {
   render() {
+    const { weaponRepository, clearRepository, removeWeapon, unbindIncrement, unbindDecrement } = this.props;
     return (
       <table className="ui celled table">
         <thead>
           <tr>
-            <th><button className="ui button" onClick={this.props.clearRepository}>Clear</button></th>
+            <th><button className="ui button" onClick={clearRepository}>Clear</button></th>
             <th>Name</th>
             <th>Unbind</th>
           </tr>
         </thead>
         <tbody>
-          {this.props.weaponRepository.map((item, i) => {
-            const weapon = weapons.find(weapon => weapon.Id === item.id);
+          {weaponRepository.map((weapon, index) => {
+            // console.log(typeof i)
             return (
-              <tr key={i}>
+              <tr key={index}>
                 <td>
-                  <img id={i} className={"weapon-img"} src={`/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
+                  <img className={"weapon-img"} src={`/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
                     alt={weapon.WeaponName}
                     style={{ width: "50px", height: "50px" }}
-                    onClick={this.props.removeWeapon}
+                    onClick={e => removeWeapon(index)}
                   />
                 </td>
                 <td style={{ textAlign: "left" }}>{weapon.WeaponName}</td>
                 <td>
                   <div className="unbind set">
-                    <img id={i} src={`/img/unbind/left-icon.png`} alt={"left-icon"} onClick={this.props.descUnbind}/>
-                    <img src={`/img/unbind/${item.unbind}_Unbind.png`} alt={"unbind_image"} />
-                    <img id={i} src={`/img/unbind/right-icon.png`} alt={"right-icon"} onClick={this.props.incUnbind} />
+                    <img src={`/img/unbind/left-icon.png`} alt={"left-icon"} onClick={e => unbindDecrement(index)} />
+                    <img src={`/img/unbind/${weapon.Unbind}_Unbind.png`} alt={"unbind_image"} />
+                    <img src={`/img/unbind/right-icon.png`} alt={"right-icon"} onClick={e => unbindIncrement(index)} />
                   </div>
                 </td>
               </tr>

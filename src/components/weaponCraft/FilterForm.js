@@ -14,15 +14,14 @@ class FilterForm extends Component {
   }
 
   render() {
-    const { filterValue, handleFilter } = this.props;
-
+    const { filters, handleFilter } = this.props;
     return (
       <div className="ui form">
         <div className="four fields">
           {Object.keys(this.state).map((field, i) => (
             <div className="field" key={i}>
               <label>{field.charAt(0).toUpperCase() + field.slice(1)}</label>
-              <select id={field} value={filterValue[field]} onChange={handleFilter}>
+              <select id={field} value={filters[field]} onChange={handleFilter}>
                 <option value="">All</option>
                 {this.state[field].map((op, j) => (<option key={j} value={op}>{op}</option>))}
               </select>

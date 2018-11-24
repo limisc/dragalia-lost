@@ -4,8 +4,10 @@ import WeaponList from './WeaponList';
 import CraftList from './CraftList';
 import MaterialList from './MaterialList'
 import weapons from './data/weapon_data';
+import materials from './data/material_data';
+import './Table.css';
 
-const initFilter = {
+const initFilters = {
   type: "",
   rarity: "",
   tier: "",
@@ -17,8 +19,9 @@ class WeaponCraft extends Component {
 
     this.state = {
       active: "Craft",
+      filters: initFilters,
       weaponRepository: [],
-      ...initFilter,
+      materialRepository: materials,
     };
 
     this.changeMode = this.changeMode.bind(this);
@@ -29,24 +32,28 @@ class WeaponCraft extends Component {
     this.removeWeaponFromRepository = this.removeWeaponFromRepository.bind(this);
     this.clearRepository = this.clearRepository.bind(this);
 
-    this.incUnbind = this.incUnbind.bind(this);
-    this.descUnbind = this.descUnbind.bind(this);
+    this.unbindIncrement = this.unbindIncrement.bind(this);
+    this.unbindDecrement = this.unbindDecrement.bind(this);
   }
 
-  componentWillMount() {
-    weapons.forEach(weapon => {
-      weapon.tier = Math.floor(weapon.CraftNodeId / 100).toString();
-      weapon.AssembleCoin = parseInt(weapon.AssembleCoin);
-      weapon.CraftMaterialQuantity1 = parseInt(weapon.CraftMaterialQuantity1);
-      weapon.CraftMaterialQuantity2 = parseInt(weapon.CraftMaterialQuantity2);
-      weapon.CraftMaterialQuantity3 = parseInt(weapon.CraftMaterialQuantity3);
-      weapon.CraftMaterialQuantity4 = parseInt(weapon.CraftMaterialQuantity4);
-      weapon.CraftMaterialQuantity5 = parseInt(weapon.CraftMaterialQuantity5);
-    })
-  }
+  // componentWillMount() {
+  //   // weapons.forEach(weapon => {
+  //   //   weapon.tier = Math.floor(weapon.CraftNodeId / 100).toString();
+  //   //   weapon.AssembleCoin = parseInt(weapon.AssembleCoin);
+  //   //   weapon.CraftMaterialQuantity1 = parseInt(weapon.CraftMaterialQuantity1);
+  //   //   weapon.CraftMaterialQuantity2 = parseInt(weapon.CraftMaterialQuantity2);
+  //   //   weapon.CraftMaterialQuantity3 = parseInt(weapon.CraftMaterialQuantity3);
+  //   //   weapon.CraftMaterialQuantity4 = parseInt(weapon.CraftMaterialQuantity4);
+  //   //   weapon.CraftMaterialQuantity5 = parseInt(weapon.CraftMaterialQuantity5);
+  //   // });
 
-  filterWeapon = (arg1, arg2) => {
-    return arg1.toLowerCase().includes(arg2.toLowerCase());
+  //   materials.forEach(material => {
+  //     material.Quantity = 0;
+  //   })
+  // }
+
+  filterWeapon = (weaponAttr, filterValue) => {
+    return weaponAttr.toLowerCase().includes(filterValue.toLowerCase());
   }
 
   changeMode = (e) => {
@@ -54,62 +61,137 @@ class WeaponCraft extends Component {
   }
 
   handleFilter = (e) => {
-    this.setState({ [e.target.id]: e.target.value })
+    this.setState({
+      filters: {
+        ...this.state.filters,
+        [e.target.id]: e.target.value,
+      }
+    });
   }
 
   clearFilter = () => {
-    this.setState(initFilter);
+    this.setState({ filters: initFilters });
   }
 
   ModeButton = (id) => {
     const btnColor = id === this.state.active ? "ui violet button" : "ui button";
-    return (<button id={id} className={btnColor} style={{ width: "50%" }} onClick={this.changeMode}>{id}</button>)
+    return (<button id={id} className={btnColor} style={{ width: "50%" }} onClick={this.changeMode}>{id}</button>);
   }
 
-  addWeaponToRepository = (e) => {
-    const weapon = weapons.find(weapon => weapon.Id === e.target.id);
-    console.log(weapon)
+  addWeaponToRepository(weapon) {
     this.setState({
       weaponRepository: [
         ...this.state.weaponRepository,
         {
-          id: e.target.id,
-          unbind: 0
+          ...weapon,
+          Unbind: 0,
         }
-      ]
+      ],
+      materialRepository: this.updateMaterialRepository(weapon, 1),
     });
   }
 
-  removeWeaponFromRepository = (e) => {
+  removeWeaponFromRepository(index) {
     const { weaponRepository } = this.state;
-    weaponRepository.splice(e.target.id, 1);
-    this.setState({ weaponRepository });
+    this.setState({
+      weaponRepository: [
+        ...weaponRepository.slice(0, index),
+        ...weaponRepository.slice(index + 1),
+      ],
+      materialRepository: this.updateMaterialRepository(weaponRepository[index], -1 * (weaponRepository[index].Unbind + 1)),
+    })
   }
 
-  clearRepository = () => {
-    this.setState({ weaponRepository: [] });
+  clearRepository() {
+    this.setState({
+      weaponRepository: [],
+      materialRepository: materials,
+    });
   }
 
-  incUnbind = (e) => {
+  unbindIncrement(index) {
     const { weaponRepository } = this.state;
-    if (weaponRepository[e.target.id].unbind <= 3) {
-      weaponRepository[e.target.id].unbind++;
-      this.setState({ weaponRepository });
+    if (weaponRepository[index].Unbind <= 3) {
+      this.setState({
+        weaponRepository: [
+          ...weaponRepository.slice(0, index),
+          {
+            ...weaponRepository[index],
+            Unbind: weaponRepository[index].Unbind + 1
+          },
+          ...weaponRepository.slice(index + 1)
+        ],
+        materialRepository: this.updateMaterialRepository(weaponRepository[index], 1),
+      });
     }
   }
 
-  descUnbind = (e) => {
+  unbindDecrement(index) {
     const { weaponRepository } = this.state;
-    if (weaponRepository[e.target.id].unbind >= 1) {
-      weaponRepository[e.target.id].unbind--;
-      this.setState({ weaponRepository });
+    if (weaponRepository[index].Unbind >= 1) {
+      this.setState({
+        weaponRepository: [
+          ...weaponRepository.slice(0, index),
+          {
+            ...weaponRepository[index],
+            Unbind: weaponRepository[index].Unbind - 1
+          },
+          ...weaponRepository.slice(index + 1)
+        ],
+        materialRepository: this.updateMaterialRepository(weaponRepository[index], -1),
+      });
     }
+  }
+
+  findParentWeapon(childWeapon) {
+    const parentWeapon = weapons
+      .filter(weapon => weapon.CraftGroupId === childWeapon.CraftGroupId)
+      .filter(weapon => weapon.CraftNodeId === childWeapon.ParentCraftNodeId);
+    if (parentWeapon !== null || parentWeapon.length > 0) {
+      return parentWeapon[0];
+    }
+  }
+
+  requiredMaterials(weapon, quantity) {
+    let craftList = [weapon];
+    const repository = {};
+
+    while (weapon.Tier >= 2) {
+      weapon = this.findParentWeapon(weapon);
+      craftList = [...craftList, weapon];
+    }
+
+    craftList.map(weapon => {
+      repository["Rupies"] = (repository["Rupies"] || 0) + parseInt(weapon["AssembleCoin"]) * quantity;
+      for (let j = 1; j <= 5; j++) {
+        const materialName = "CraftMaterial" + j;
+        const materialQuantity = "CraftMaterialQuantity" + j;
+        if (weapon[materialName] === "0") { break; }
+        repository[weapon[materialName]] = (repository[weapon[materialName]] || 0) + parseInt(weapon[materialQuantity]) * quantity;
+      }
+      quantity = quantity * 5;
+    });
+    // console.log(repository)
+    return repository;
+  }
+
+  updateMaterialRepository(weapon, quantity) {
+    const { materialRepository } = this.state;
+    const repository = this.requiredMaterials(weapon, quantity);
+
+    return materialRepository.map(material => {
+      if (material.Name in repository) {
+        return {
+          ...material,
+          Quantity: (material.Quantity || 0) + repository[material.Name],
+        };
+      }
+      return material;
+    });
   }
 
   render() {
-    const { weaponRepository, type, rarity, tier } = this.state;
-    const filterValue = { type, rarity, tier };
-
+    const { filters, weaponRepository, materialRepository } = this.state;
     return (
       <div className="ui doubling stackable two column grid" style={{ margin: "1em" }}>
         <div id="weapon-panel" className="column">
@@ -127,18 +209,13 @@ class WeaponCraft extends Component {
           <div className="ui divider"></div>
 
           <FilterForm
-            filterValue={filterValue}
+            filters={filters}
             handleFilter={this.handleFilter}
           />
 
           <div className="ui divider"></div>
           <WeaponList
-            filteredWeapons={
-              weapons
-                .filter(weapon => this.filterWeapon(weapon.Type, type))
-                .filter(weapon => this.filterWeapon(weapon.Rarity, rarity))
-                .filter(weapon => this.filterWeapon(weapon.tier, tier))
-            }
+            filters={filters}
             addWeapon={this.addWeaponToRepository}
           />
         </div>
@@ -148,15 +225,17 @@ class WeaponCraft extends Component {
             weaponRepository={weaponRepository}
             clearRepository={this.clearRepository}
             removeWeapon={this.removeWeaponFromRepository}
-            incUnbind={this.incUnbind}
-            descUnbind={this.descUnbind}
+            unbindIncrement={this.unbindIncrement}
+            unbindDecrement={this.unbindDecrement}
           />
 
-          {this.state.weaponRepository.length !== 0 &&
-            <MaterialList
-              weaponRepository={weaponRepository}
-            />
-          }
+          {/* {this.state.weaponRepository.length !== 0 && */}
+          <MaterialList
+            // weaponRepository={weaponRepository}
+            materialRepository={
+              materialRepository.filter(material => material.Quantity > 0)
+            }
+          />
         </div>
       </div >
     );
