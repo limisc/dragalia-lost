@@ -1,0 +1,22 @@
+
+
+/* div#left-panel {
+  height: 100%;
+  margin: 0px;
+  background-color: blanchedalmond
+} */
+
+img.avatar{
+  width: 90px;
+  display: block;
+  margin: auto;
+}
+
+div.unbind.set img {
+  height: 30px;
+  margin-left: 1em;
+}
+
+table.ui.celled.table th, table.ui.celled.table td {
+  text-align: center;
+}

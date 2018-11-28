@@ -18,7 +18,7 @@ class CraftList extends Component {
             return (
               <tr key={index}>
                 <td>
-                  <img className={"weapon-img"} src={`/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
+                  <img className={"weapon-img"} src={`${process.env.PUBLIC_URL}/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
                     alt={weapon.WeaponName}
                     style={{ width: "50px", height: "50px" }}
                     onClick={e => removeWeapon(index)}
@@ -27,9 +27,9 @@ class CraftList extends Component {
                 <td style={{ textAlign: "left" }}>{weapon.WeaponName}</td>
                 <td>
                   <div className="unbind set">
-                    <img src={`/img/unbind/left-icon.png`} alt={"left-icon"} onClick={e => unbindDecrement(index)} />
-                    <img src={`/img/unbind/${weapon.Unbind}_Unbind.png`} alt={"unbind_image"} />
-                    <img src={`/img/unbind/right-icon.png`} alt={"right-icon"} onClick={e => unbindIncrement(index)} />
+                    <img src={`${process.env.PUBLIC_URL}/img/unbind/left-icon.png`} alt={"left-icon"} onClick={e => unbindDecrement(index)} />
+                    <img src={`${process.env.PUBLIC_URL}/img/unbind/${weapon.Unbind}_Unbind.png`} alt={"unbind_image"} />
+                    <img src={`${process.env.PUBLIC_URL}/img/unbind/right-icon.png`} alt={"right-icon"} onClick={e => unbindIncrement(index)} />
                   </div>
                 </td>
               </tr>

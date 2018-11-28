@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
-import weapons from './data/weapon_data';
+import weapons from '../data/weapon_data';
 
 
 class WeaponList extends Component {
-
-  componentWillMount() {
-    weapons.map(weapon => weapon.Tier = Math.floor(weapon.CraftNodeId / 100).toString());
-  }
 
   shouldComponentUpdate(nextProps) {
     return nextProps.filters !== this.props.filters;
   }
 
-  filterWeapon = (weaponAttr, filterValue) => {
+  filterWeapon(weaponAttr, filterValue) {
     return weaponAttr.toLowerCase().includes(filterValue.toLowerCase());
   }
 
+  findChildWeapon(parentWeapon) {
+    const childWeapon = weapons
+      .filter(weapon => weapon.CraftGroupId === parentWeapon.CraftGroupId)
+      .filter(weapon => weapon.ParentCraftNodeId === childWeapon.CraftNodeId);
+    if (parentWeapon !== null || parentWeapon.length > 0) {
+      return parentWeapon[0];
+    }
+  }
+
+  findEnhanceList(weapon) {
+
+  }
+
   render() {
-    const { type, rarity, tier } = this.props.filters;
+    const {
+      active,
+      filters: { type, rarity, tier },
+      enhanceFrom,
+      addWeapon, handleEnhance
+    } = this.props;
+
+
     return (
       <table className="ui celled table">
         <thead>
@@ -40,7 +56,7 @@ class WeaponList extends Component {
             .map((weapon, i) => (
               <tr key={i}>
                 <td>
-                  <img className={"weapon-img"} src={`/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
+                  <img className={"weapon-img"} src={`${process.env.PUBLIC_URL}/img/weapons/${weapon.BaseId}_01_${weapon.FormId}.png`}
                     alt={weapon.WeaponName}
                   />
                 </td>
@@ -48,7 +64,7 @@ class WeaponList extends Component {
                 <td>{weapon.Type}</td>
                 <td>{weapon.Rarity}</td>
                 <td>{weapon.Tier}</td>
-                <td><button className="ui button" onClick={e => this.props.addWeapon(weapon)}>Add</button></td>
+                <td><button className="ui button" onClick={e => handleEnhance(weapon)}>Add</button></td>
               </tr>
             ))}
         </tbody>

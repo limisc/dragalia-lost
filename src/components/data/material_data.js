@@ -1,7 +1,40 @@
-const materials = [
+const materials = 
+[
   {
-    "Id": "Icon_Resource_Rupies",
-    "Name": "Rupies"
+    "Id": "101001001",
+    "Name": "Bronze Crystal"
+  },
+  {
+    "Id": "101001002",
+    "Name": "Silver Crystal"
+  },
+  {
+    "Id": "101001003",
+    "Name": "Gold Crystal"
+  },
+  {
+    "Id": "102001001",
+    "Name": "Dragonfruit"
+  },
+  {
+    "Id": "102001002",
+    "Name": "Ripe Dragonfruit"
+  },
+  {
+    "Id": "102001003",
+    "Name": "Succulent Dragonfruit"
+  },
+  {
+    "Id": "103001001",
+    "Name": "Bronze Whetstone"
+  },
+  {
+    "Id": "103001002",
+    "Name": "Silver Whetstone"
+  },
+  {
+    "Id": "103001003",
+    "Name": "Gold Whetstone"
   },
   {
     "Id": "104001001",
@@ -116,6 +149,42 @@ const materials = [
     "Name": "Champion's Testament"
   },
   {
+    "Id": "111001001",
+    "Name": "Moonlight Stone"
+  },
+  {
+    "Id": "111002001",
+    "Name": "Sunlight Stone"
+  },
+  {
+    "Id": "112001001",
+    "Name": "Steel Brick"
+  },
+  {
+    "Id": "112002001",
+    "Name": "Damascus Ingot"
+  },
+  {
+    "Id": "113001001",
+    "Name": "Holy Water"
+  },
+  {
+    "Id": "113001002",
+    "Name": "Blessed Water"
+  },
+  {
+    "Id": "113001003",
+    "Name": "Consecrated Water"
+  },
+  {
+    "Id": "114001001",
+    "Name": "Silver Key"
+  },
+  {
+    "Id": "114002001",
+    "Name": "Golden Key"
+  },
+  {
     "Id": "201002011",
     "Name": "Flamewyrm's Sphere"
   },
@@ -146,6 +215,10 @@ const materials = [
   {
     "Id": "201007001",
     "Name": "Damascus Crystal"
+  },
+  {
+    "Id": "201008001",
+    "Name": "Looking Glass"
   },
   {
     "Id": "201009001",
@@ -193,11 +266,11 @@ const materials = [
   },
   {
     "Id": "201010051",
-    "Name": "Purple Insignia"
+    "Name": "Violet Insignia"
   },
   {
     "Id": "201010052",
-    "Name": "Royal Purple Insignia"
+    "Name": "Royal Violet Insignia"
   },
   {
     "Id": "201011001",
@@ -291,6 +364,73 @@ const materials = [
     "Id": "202005081",
     "Name": "Staff Tablet"
   },
+  {
+    "Id": "203001001",
+    "Name": "Snack-o'-Lantern"
+  },
+  {
+    "Id": "203002001",
+    "Name": "Windwhistle Grass"
+  },
+  {
+    "Id": "203002001",
+    "Name": "Windwhistle Grass"
+  },
+  {
+    "Id": "2040101",
+    "Name": "Peregrine Blazon"
+  },
+  {
+    "Id": "2040102",
+    "Name": "Bronze Emblem"
+  },
+  {
+    "Id": "2040103",
+    "Name": "Silver Emblem"
+  },
+  {
+    "Id": "2040104",
+    "Name": "Gold Emblem"
+  },
+  {
+    "Id": "2040105",
+    "Name": "Otherworld Fragment"
+  },
+  {
+    "Id": "208001002",
+    "Name": "Jack Chocolates"
+  },
+  {
+    "Id": "2080101",
+    "Name": "Tricker Treats"
+  },
+  {
+    "Id": "2080103",
+    "Name": "Candy Basket"
+  },
+  {
+    "Id": "2080201",
+    "Name": "Divine Gales"
+  },
+  {
+    "Id": "2080201",
+    "Name": "Divine Gales"
+  },
+  {
+    "Id": "2080202",
+    "Name": "Friendship Bracelet"
+  },
+  {
+    "Id": "2080202",
+    "Name": "Friendship Bracelet"
+  },
+  {
+    "Id": "2080203",
+    "Name": "Wind Chime"
+  },
+  {
+    "Id": "2080203",
+    "Name": "Wind Chime"
+  }
 ];
-
 export default materials;

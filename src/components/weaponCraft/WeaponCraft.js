@@ -3,8 +3,8 @@ import FilterForm from './FilterForm';
 import WeaponList from './WeaponList';
 import CraftList from './CraftList';
 import MaterialList from './MaterialList'
-import weapons from './data/weapon_data';
-import materials from './data/material_data';
+import weapons from '../data/weapon_data';
+import materials from '../data/material_data';
 import './Table.css';
 
 const initFilters = {
@@ -20,6 +20,8 @@ class WeaponCraft extends Component {
     this.state = {
       active: "Craft",
       filters: initFilters,
+      enhanceFrom: null,
+      enhanceTo: null,
       weaponRepository: [],
       materialRepository: materials,
     };
@@ -27,6 +29,7 @@ class WeaponCraft extends Component {
     this.changeMode = this.changeMode.bind(this);
     this.handleFilter = this.handleFilter.bind(this);
     this.clearFilter = this.clearFilter.bind(this);
+    this.handleEnhance = this.handleEnhance.bind(this);
 
     this.addWeaponToRepository = this.addWeaponToRepository.bind(this);
     this.removeWeaponFromRepository = this.removeWeaponFromRepository.bind(this);
@@ -60,13 +63,37 @@ class WeaponCraft extends Component {
     this.setState({ active: e.target.id });
   }
 
-  handleFilter = (e) => {
+  handleFilter(e) {
     this.setState({
       filters: {
         ...this.state.filters,
         [e.target.id]: e.target.value,
       }
     });
+  }
+
+  handleEnhance(weapon) {
+    if (this.state.enhanceFrom === null) {
+      this.setState({
+        enhanceFrom: {
+          ...weapon,
+          Unbind: 0,
+        }
+      })
+    } else {
+      if (!((weapon.Tier === this.state.enhanceFrom.Tier) && (this.state.enhanceFrom.Unbind !== 4))) {
+        let unbind = 0;
+        if (weapon.Tier === this.state.enhanceFrom.Tier) {
+          unbind = this.state.enhanceFrom.Unbind + 1;
+        }
+        this.setState({
+          enhanceTo: {
+            ...weapon,
+            Unbind: unbind,
+          }
+        })
+      }
+    }
   }
 
   clearFilter = () => {
@@ -111,7 +138,7 @@ class WeaponCraft extends Component {
 
   unbindIncrement(index) {
     const { weaponRepository } = this.state;
-    if (weaponRepository[index].Unbind <= 3) {
+    if (weaponRepository[index].Unbind < 4) {
       this.setState({
         weaponRepository: [
           ...weaponRepository.slice(0, index),
@@ -128,7 +155,7 @@ class WeaponCraft extends Component {
 
   unbindDecrement(index) {
     const { weaponRepository } = this.state;
-    if (weaponRepository[index].Unbind >= 1) {
+    if (weaponRepository[index].Unbind > 0) {
       this.setState({
         weaponRepository: [
           ...weaponRepository.slice(0, index),
@@ -156,13 +183,13 @@ class WeaponCraft extends Component {
     let craftList = [weapon];
     const repository = {};
 
-    while (weapon.Tier >= 2) {
+    while (weapon.Tier > 1) {
       weapon = this.findParentWeapon(weapon);
       craftList = [...craftList, weapon];
     }
 
-    craftList.map(weapon => {
-      repository["Rupies"] = (repository["Rupies"] || 0) + parseInt(weapon["AssembleCoin"]) * quantity;
+    craftList.forEach(weapon => {
+      repository.Rupies = (repository.Rupies || 0) + parseInt(weapon.AssembleCoin) * quantity;
       for (let j = 1; j <= 5; j++) {
         const materialName = "CraftMaterial" + j;
         const materialQuantity = "CraftMaterialQuantity" + j;
@@ -191,7 +218,7 @@ class WeaponCraft extends Component {
   }
 
   render() {
-    const { filters, weaponRepository, materialRepository } = this.state;
+    const { active, filters, enhanceFrom, weaponRepository, materialRepository } = this.state;
     return (
       <div className="ui doubling stackable two column grid" style={{ margin: "1em" }}>
         <div id="weapon-panel" className="column">
@@ -215,8 +242,11 @@ class WeaponCraft extends Component {
 
           <div className="ui divider"></div>
           <WeaponList
+            mode={active}
             filters={filters}
+            enhanceFrom={enhanceFrom}
             addWeapon={this.addWeaponToRepository}
+            handleEnhance={this.handleEnhance}
           />
         </div>
 

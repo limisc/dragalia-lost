@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import weapons from './data/weapon_data';
-import materials from './data/material_data';
+import weapons from '../data/weapon_data';
+import materials from '../data/material_data';
 
 class MaterialList extends Component {
 
@@ -33,7 +33,7 @@ class MaterialList extends Component {
         <tbody>
           {materialRepository.map((material, i) => (
             <tr key={i}>
-              <td><img className={"material-img"} src={`/img/materials/${material.Id}.png`}></img></td>
+              <td><img className={"material-img"} src={`${process.env.PUBLIC_URL}/img/materials/${material.Id}.png`}></img></td>
               <td style={{ textAlign: "left" }}>{material.Name}</td>
               <td>{material.Quantity.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
             </tr>
