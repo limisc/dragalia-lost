@@ -33,24 +33,27 @@ def update_adventurers_data():
   param = 'Id,Name,WeaponType,Rarity,ElementalType,VariationId,' + \
           'MinHp3,MinHp4,MinHp5,MaxHp,PlusHp0,PlusHp1,PlusHp2,PlusHp3,PlusHp4,McFullBonusHp5,' + \
           'MinAtk3,MinAtk4,MinAtk5,PlusAtk0,PlusAtk1,PlusAtk2,PlusAtk3,PlusAtk4,McFullBonusAtk5'
-  url = API_ZH + "Adventurers" + "&fields=" + param
+  url = get_cargoquery_url(API_EN, "Adventurers", param)
 
-  raw_data = requests.get(url=url).json()['cargoquery']
-  for i in raw_data:
-    adventurer = i['title']
-    adventurer['img'] = adventurer['Id'] + " 0" + adventurer['VariationId'] + " r0" + adventurer['Rarity'] + ".png"
-    for k, v in adventurer.items():
-      try:
-        adventurer[k] = int(v)
-      except ValueError:
-        adventurer[k] = v
-      except Exception:
-        print(k, v)
-    adventurer['type'] = adventurer.pop('WeaponType', None)
-    adventurer['rarity'] = str(adventurer.pop('Rarity', None))
-    adventurer['element'] = adventurer.pop('ElementalType', None)
-    adventurers.append(adventurer)
+  try:
+    raw_data = requests.get(url=url).json()
+  except Exception as e:
+    print(repr(e))
 
+  for i in raw_data['cargoquery']:
+    if not any(a['Id'] == i['title']['Id'] and a['VariationId'] == i['title']['VariationId'] for a in adventurers):
+      adventurer = i['title']
+      for k, v in adventurer.items():
+        if k not in ["Id", "VariationId", "Rarity"]:
+          try:
+            adventurer[k] = int(v)
+          except Exception:
+            pass
+      adventurer['type'] = adventurer.pop('WeaponType', None)
+      adventurer['rarity'] = adventurer.pop('Rarity', None)
+      adventurer['element'] = adventurer.pop('ElementalType', None)
+      adventurer['img'] = adventurer['Id'] + " 0" + adventurer['VariationId'] + " r0" + adventurer['rarity'] + ".png"
+      adventurers.append(adventurer)
   save_file(adventurers, 'adventurers', 'adventurer_data.js')
 
 def update_weapons_data():
@@ -63,23 +66,22 @@ def update_weapons_data():
           'CraftMaterial3,CraftMaterialQuantity3,' + \
           'CraftMaterial4,CraftMaterialQuantity4,' + \
           'CraftMaterial5,CraftMaterialQuantity5'
-  url = API_ZH + "Weapons" + "&fields=" + param
-
+  url = get_cargoquery_url(API_EN, "Weapons", param)
   raw_data = requests.get(url=url).json()['cargoquery']
   for i in raw_data:
     if not (any(w['Id'] == i['title']['Id'] for w in weapons)) and int(i['title']['Rarity']) >= 3:
       weapon = i['title']
       weapon['img'] = weapon.pop('BaseId', None) + "_01_" + weapon.pop('FormId', None) + ".png"
       for k, v in weapon.items():
-        try:
-          weapon[k] = int(v)
-        except ValueError:
-          pass
-      weapon['Id'] = str(weapon['Id'])
+        if k not in ["Id", "Rarity"]:
+          try:
+            weapon[k] = int(v)
+          except ValueError:
+            pass
       weapon['Name'] = weapon.pop('WeaponName', None)
       weapon['type'] = weapon.pop('Type', None)
       weapon['element'] = weapon.pop('ElementalType', None)
-      weapon['rarity'] = str(weapon.pop('Rarity', None))
+      weapon['rarity'] = weapon.pop('Rarity', None)
       weapon['tier'] = str(math.floor(weapon['CraftNodeId'] / 100)) if weapon['CraftNodeId'] else "0"
       weapons.append(weapon)
 
@@ -103,10 +105,11 @@ def update_dragons_data():
 
   dragons = []
   param = 'BaseId,Id,Name,ElementalType,' + \
-          'Rarity,VariationId,' + \
+          'Rarity,' + \
           'MinHp,MaxHp,MinAtk,MaxAtk,' + \
           'Abilities11,Abilities12'
-  url = get_cargoquery_url(API_ZH, 'Dragons', param)
+          # ,VariationId
+  url = get_cargoquery_url(API_EN, 'Dragons', param)
   try:
     raw_data = requests.get(url=url).json()
   except Exception as e:
@@ -115,16 +118,16 @@ def update_dragons_data():
   for i in raw_data['cargoquery']:
     if not any(d['Id'] == i['title']['Id'] for d in dragons):
       dragon = i['title']
-      dragon['img'] = dragon['BaseId'] + " 01.png"
+      dragon['img'] = dragon.pop('BaseId', None) + " 01.png"
       dragon['Abilities11'] = abilities[dragon['Abilities11']]
       dragon['Abilities12'] = abilities[dragon['Abilities12']]
       for k, v in dragon.items():
-        try:
-          dragon[k] = int(v)
-        except Exception:
-          pass
-      dragon['Id'] = str(dragon['Id'])
-      dragon['rarity'] = str(dragon.pop('Rarity', None))
+        if k not in ["Id", "Rarity"]:
+          try:
+            dragon[k] = int(v)
+          except Exception:
+            pass
+      dragon['rarity'] = dragon.pop('Rarity', None)
       dragon['element'] = dragon.pop('ElementalType', None)
       dragons.append(dragon)
   save_file(dragons, 'dragons', 'dragon_data.js')
@@ -133,25 +136,25 @@ def update_wyrmprints_data():
   wyrmprints = []
   param = 'BaseId,Name,Rarity,' + \
           'MinHp,MaxHp,MinAtk,MaxAtk'
-  url = get_cargoquery_url(API_ZH, 'Wyrmprints', param)
+  url = get_cargoquery_url(API_EN, 'Wyrmprints', param)
   try:
     raw_data = requests.get(url=url).json()
   except Exception as e:
     print(repr(e))
 
   for i in raw_data['cargoquery']:
-    wyrmprint = i['title']
-    wyrmprint['img'] = wyrmprint['BaseId'] + " 01.png"
-    for k, v in wyrmprint.items():
-      try:
-        wyrmprint[k] = int(v)
-      except Exception:
-        pass
-
-    wyrmprint['rarity'] = str(wyrmprint.pop('Rarity', None))
-    wyrmprints.append(wyrmprint)
+    if not any(w['BaseId'] == i['title']['BaseId'] for w in wyrmprints):
+      wyrmprint = i['title']
+      wyrmprint['img'] = wyrmprint['BaseId'] + " 01.png"
+      for k, v in wyrmprint.items():
+        if k not in ["BaseId", "Rarity"]:
+          try:
+            wyrmprint[k] = int(v)
+          except Exception:
+            pass
+      wyrmprint['rarity'] = wyrmprint.pop('Rarity', None)
+      wyrmprints.append(wyrmprint)
   save_file(wyrmprints, 'wyrmprints', 'wyrmprint_data.js')
-
 
 def update_materials_data():
   materials = []
@@ -216,9 +219,9 @@ def download_dragon_img():
 
 if __name__ == "__main__":
   # update_adventurers_data()
-  update_weapons_data()
+  # update_weapons_data()
   # update_materials_data()
-  # update_wyrmprints_data()
+  update_wyrmprints_data()
   # update_dragons_data()
   # download_adventurer_img()
   # download_wyrmprint_img()

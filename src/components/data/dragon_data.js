@@ -1,10 +1,8 @@
 const dragons = 
 [
   {
-    "BaseId": 210001,
     "Id": "20040301",
     "Name": "Midgardsormr",
-    "VariationId": 1,
     "MinHp": 20,
     "MaxHp": 206,
     "MinAtk": 6,
@@ -22,10 +20,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210002,
     "Id": "20040101",
     "Name": "Brunhilda",
-    "VariationId": 1,
     "MinHp": 20,
     "MaxHp": 203,
     "MinAtk": 7,
@@ -43,10 +39,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210003,
     "Id": "20040201",
     "Name": "Mercury",
-    "VariationId": 1,
     "MinHp": 21,
     "MaxHp": 211,
     "MinAtk": 6,
@@ -64,10 +58,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210004,
     "Id": "20040401",
     "Name": "Jupiter",
-    "VariationId": 1,
     "MinHp": 20,
     "MaxHp": 207,
     "MinAtk": 6,
@@ -85,10 +77,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210005,
     "Id": "20040501",
     "Name": "Zodiark",
-    "VariationId": 1,
     "MinHp": 20,
     "MaxHp": 202,
     "MinAtk": 7,
@@ -106,10 +96,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210006,
     "Id": "20040102",
     "Name": "Phoenix",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 299,
     "MinAtk": 9,
@@ -127,10 +115,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210007,
     "Id": "20040103",
     "Name": "Ifrit",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 295,
     "MinAtk": 10,
@@ -148,10 +134,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210008,
     "Id": "20040202",
     "Name": "Poli\u02bbahu",
-    "VariationId": 1,
     "MinHp": 30,
     "MaxHp": 301,
     "MinAtk": 9,
@@ -169,10 +153,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210010,
     "Id": "20050303",
     "Name": "Sylvia",
-    "VariationId": 1,
     "MinHp": 22,
     "MaxHp": 225,
     "MinAtk": 7,
@@ -190,10 +172,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210011,
     "Id": "20040303",
     "Name": "Stribog",
-    "VariationId": 1,
     "MinHp": 30,
     "MaxHp": 306,
     "MinAtk": 9,
@@ -211,10 +191,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210012,
     "Id": "20040402",
     "Name": "Unicorn",
-    "VariationId": 1,
     "MinHp": 30,
     "MaxHp": 301,
     "MinAtk": 9,
@@ -232,10 +210,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210013,
     "Id": "20040403",
     "Name": "Lindworm",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 297,
     "MinAtk": 10,
@@ -253,10 +229,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210014,
     "Id": "20040502",
     "Name": "Juggernaut",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 294,
     "MinAtk": 10,
@@ -274,10 +248,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210015,
     "Id": "20040503",
     "Name": "Silke",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 299,
     "MinAtk": 9,
@@ -295,10 +267,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210016,
     "Id": "20050101",
     "Name": "Agni",
-    "VariationId": 1,
     "MinHp": 36,
     "MaxHp": 369,
     "MinAtk": 12,
@@ -316,10 +286,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210017,
     "Id": "20050203",
     "Name": "Leviathan",
-    "VariationId": 1,
     "MinHp": 37,
     "MaxHp": 370,
     "MinAtk": 12,
@@ -337,10 +305,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210018,
     "Id": "20050301",
     "Name": "Zephyr",
-    "VariationId": 1,
     "MinHp": 36,
     "MaxHp": 369,
     "MinAtk": 12,
@@ -358,10 +324,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210019,
     "Id": "20050501",
     "Name": "Nidhogg",
-    "VariationId": 1,
     "MinHp": 37,
     "MaxHp": 374,
     "MinAtk": 12,
@@ -379,10 +343,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210020,
     "Id": "20050401",
     "Name": "Jeanne d'Arc",
-    "VariationId": 1,
     "MinHp": 38,
     "MaxHp": 384,
     "MinAtk": 11,
@@ -400,10 +362,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210021,
     "Id": "20030101",
     "Name": "Homura",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 184,
     "MinAtk": 6,
@@ -421,10 +381,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210022,
     "Id": "20030102",
     "Name": "Cinder Drake",
-    "VariationId": 1,
     "MinHp": 19,
     "MaxHp": 190,
     "MinAtk": 5,
@@ -442,10 +400,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210023,
     "Id": "20030103",
     "Name": "Kindling Imp",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 187,
     "MinAtk": 6,
@@ -463,10 +419,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210024,
     "Id": "20050104",
     "Name": "Cerberus",
-    "VariationId": 1,
     "MinHp": 36,
     "MaxHp": 369,
     "MinAtk": 12,
@@ -484,10 +438,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210025,
     "Id": "20050201",
     "Name": "Poseidon",
-    "VariationId": 1,
     "MinHp": 37,
     "MaxHp": 376,
     "MinAtk": 11,
@@ -505,10 +457,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210036,
     "Id": "20050304",
     "Name": "Garuda",
-    "VariationId": 1,
     "MinHp": 38,
     "MaxHp": 383,
     "MinAtk": 11,
@@ -526,10 +476,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210038,
     "Id": "20050302",
     "Name": "High Midgardsormr",
-    "VariationId": 1,
     "MinHp": 35,
     "MaxHp": 356,
     "MinAtk": 11,
@@ -547,10 +495,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210050,
     "Id": "20040302",
     "Name": "Roc",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 296,
     "MinAtk": 10,
@@ -568,10 +514,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210057,
     "Id": "20050103",
     "Name": "Pele",
-    "VariationId": 1,
     "MinHp": 22,
     "MaxHp": 221,
     "MinAtk": 7,
@@ -589,10 +533,8 @@ const dragons =
     "element": "Flame"
   },
   {
-    "BaseId": 210058,
     "Id": "20040203",
     "Name": "Vodyanoy",
-    "VariationId": 1,
     "MinHp": 29,
     "MaxHp": 296,
     "MinAtk": 10,
@@ -610,10 +552,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210059,
     "Id": "20030201",
     "Name": "Fubuki",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 185,
     "MinAtk": 6,
@@ -631,10 +571,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210060,
     "Id": "20030301",
     "Name": "Tsumuji",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 184,
     "MinAtk": 6,
@@ -652,10 +590,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210061,
     "Id": "20030401",
     "Name": "Hinata",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 185,
     "MinAtk": 6,
@@ -673,10 +609,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210062,
     "Id": "20030501",
     "Name": "Hikage",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 183,
     "MinAtk": 6,
@@ -694,10 +628,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210063,
     "Id": "20030202",
     "Name": "Snow Drake",
-    "VariationId": 1,
     "MinHp": 19,
     "MaxHp": 191,
     "MinAtk": 5,
@@ -715,10 +647,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210064,
     "Id": "20030302",
     "Name": "Gust Drake",
-    "VariationId": 1,
     "MinHp": 19,
     "MaxHp": 191,
     "MinAtk": 5,
@@ -736,10 +666,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210065,
     "Id": "20030402",
     "Name": "Moon Drake",
-    "VariationId": 1,
     "MinHp": 19,
     "MaxHp": 192,
     "MinAtk": 5,
@@ -757,10 +685,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210066,
     "Id": "20030502",
     "Name": "Gloom Drake",
-    "VariationId": 1,
     "MinHp": 19,
     "MaxHp": 190,
     "MinAtk": 5,
@@ -778,10 +704,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210067,
     "Id": "20030203",
     "Name": "Wellspring Imp",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 187,
     "MinAtk": 6,
@@ -799,10 +723,8 @@ const dragons =
     "element": "Water"
   },
   {
-    "BaseId": 210068,
     "Id": "20030303",
     "Name": "Zephyr Imp",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 187,
     "MinAtk": 6,
@@ -820,10 +742,8 @@ const dragons =
     "element": "Wind"
   },
   {
-    "BaseId": 210069,
     "Id": "20030403",
     "Name": "Astral Imp",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 188,
     "MinAtk": 5,
@@ -841,10 +761,8 @@ const dragons =
     "element": "Light"
   },
   {
-    "BaseId": 210070,
     "Id": "20030503",
     "Name": "Pallid Imp",
-    "VariationId": 1,
     "MinHp": 18,
     "MaxHp": 186,
     "MinAtk": 6,
@@ -862,10 +780,8 @@ const dragons =
     "element": "Shadow"
   },
   {
-    "BaseId": 210075,
     "Id": "20040405",
     "Name": "Silke",
-    "VariationId": 1,
     "MinHp": 30,
     "MaxHp": 301,
     "MinAtk": 9,

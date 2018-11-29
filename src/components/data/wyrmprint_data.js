@@ -1,7 +1,7 @@
 const wyrmprints = 
 [
   {
-    "BaseId": 400001,
+    "BaseId": "400001",
     "Name": "Ring of Exaltation",
     "MinHp": 5,
     "MaxHp": 36,
@@ -11,7 +11,7 @@ const wyrmprints =
     "rarity": "2"
   },
   {
-    "BaseId": 400002,
+    "BaseId": "400002",
     "Name": "Seafood Soup",
     "MinHp": 5,
     "MaxHp": 36,
@@ -21,7 +21,7 @@ const wyrmprints =
     "rarity": "2"
   },
   {
-    "BaseId": 400003,
+    "BaseId": "400003",
     "Name": "Dragon Arcanum",
     "MinHp": 5,
     "MaxHp": 36,
@@ -31,7 +31,7 @@ const wyrmprints =
     "rarity": "2"
   },
   {
-    "BaseId": 400004,
+    "BaseId": "400004",
     "Name": "Mana Fount",
     "MinHp": 5,
     "MaxHp": 35,
@@ -41,7 +41,7 @@ const wyrmprints =
     "rarity": "2"
   },
   {
-    "BaseId": 400005,
+    "BaseId": "400005",
     "Name": "Old Harp",
     "MinHp": 5,
     "MaxHp": 36,
@@ -51,7 +51,7 @@ const wyrmprints =
     "rarity": "2"
   },
   {
-    "BaseId": 400006,
+    "BaseId": "400006",
     "Name": "Scorn the Destrier",
     "MinHp": 10,
     "MaxHp": 71,
@@ -61,17 +61,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400006,
-    "Name": "Scorn the Destrier",
-    "MinHp": 10,
-    "MaxHp": 71,
-    "MinAtk": 3,
-    "MaxAtk": 25,
-    "img": "400006 01.png",
-    "rarity": "3"
-  },
-  {
-    "BaseId": 400007,
+    "BaseId": "400007",
     "Name": "Halo",
     "MinHp": 10,
     "MaxHp": 73,
@@ -81,7 +71,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400008,
+    "BaseId": "400008",
     "Name": "Teatime",
     "MinHp": 10,
     "MaxHp": 71,
@@ -91,7 +81,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400009,
+    "BaseId": "400009",
     "Name": "Bellathorna",
     "MinHp": 10,
     "MaxHp": 71,
@@ -101,7 +91,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400010,
+    "BaseId": "400010",
     "Name": "Alberian Banner",
     "MinHp": 10,
     "MaxHp": 71,
@@ -111,7 +101,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400011,
+    "BaseId": "400011",
     "Name": "Cry of the Horn",
     "MinHp": 10,
     "MaxHp": 71,
@@ -121,17 +111,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400011,
-    "Name": "Cry of the Horn",
-    "MinHp": 10,
-    "MaxHp": 71,
-    "MinAtk": 3,
-    "MaxAtk": 25,
-    "img": "400011 01.png",
-    "rarity": "3"
-  },
-  {
-    "BaseId": 400012,
+    "BaseId": "400012",
     "Name": "Howling Predator",
     "MinHp": 10,
     "MaxHp": 71,
@@ -141,7 +121,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400013,
+    "BaseId": "400013",
     "Name": "Syndicate Mask",
     "MinHp": 11,
     "MaxHp": 76,
@@ -151,7 +131,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400014,
+    "BaseId": "400014",
     "Name": "Hallowed Mountains",
     "MinHp": 11,
     "MaxHp": 76,
@@ -161,7 +141,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400015,
+    "BaseId": "400015",
     "Name": "Lakeside Euphony",
     "MinHp": 11,
     "MaxHp": 76,
@@ -171,7 +151,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400016,
+    "BaseId": "400016",
     "Name": "Dragon's Nest",
     "MinHp": 10,
     "MaxHp": 71,
@@ -181,7 +161,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400017,
+    "BaseId": "400017",
     "Name": "Enchiridion",
     "MinHp": 10,
     "MaxHp": 71,
@@ -191,7 +171,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400018,
+    "BaseId": "400018",
     "Name": "Ironside Shield",
     "MinHp": 11,
     "MaxHp": 76,
@@ -201,7 +181,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400019,
+    "BaseId": "400019",
     "Name": "Winds of Saint Lotier",
     "MinHp": 10,
     "MaxHp": 73,
@@ -211,17 +191,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400019,
-    "Name": "Winds of Saint Lotier",
-    "MinHp": 10,
-    "MaxHp": 73,
-    "MinAtk": 3,
-    "MaxAtk": 23,
-    "img": "400019 01.png",
-    "rarity": "3"
-  },
-  {
-    "BaseId": 400020,
+    "BaseId": "400020",
     "Name": "Aromatherapy",
     "MinHp": 11,
     "MaxHp": 76,
@@ -231,7 +201,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400021,
+    "BaseId": "400021",
     "Name": "Eight-Leaf Clover",
     "MinHp": 10,
     "MaxHp": 71,
@@ -241,17 +211,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400021,
-    "Name": "Eight-Leaf Clover",
-    "MinHp": 10,
-    "MaxHp": 71,
-    "MinAtk": 3,
-    "MaxAtk": 25,
-    "img": "400021 01.png",
-    "rarity": "3"
-  },
-  {
-    "BaseId": 400022,
+    "BaseId": "400022",
     "Name": "Forbidden Relic",
     "MinHp": 10,
     "MaxHp": 71,
@@ -261,7 +221,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400023,
+    "BaseId": "400023",
     "Name": "Unfulfilled Visions",
     "MinHp": 10,
     "MaxHp": 71,
@@ -271,7 +231,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400024,
+    "BaseId": "400024",
     "Name": "Liber Grimortis",
     "MinHp": 10,
     "MaxHp": 71,
@@ -281,7 +241,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400025,
+    "BaseId": "400025",
     "Name": "Night Harbinger",
     "MinHp": 10,
     "MaxHp": 71,
@@ -291,7 +251,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400026,
+    "BaseId": "400026",
     "Name": "Tracks of Hope",
     "MinHp": 11,
     "MaxHp": 76,
@@ -301,7 +261,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400028,
+    "BaseId": "400028",
     "Name": "Potiongrass",
     "MinHp": 11,
     "MaxHp": 76,
@@ -311,7 +271,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400029,
+    "BaseId": "400029",
     "Name": "Crown of Yore",
     "MinHp": 10,
     "MaxHp": 71,
@@ -321,7 +281,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400031,
+    "BaseId": "400031",
     "Name": "Nevermelt Ice",
     "MinHp": 11,
     "MaxHp": 76,
@@ -331,7 +291,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400032,
+    "BaseId": "400032",
     "Name": "Pumpkin Pail",
     "MinHp": 11,
     "MaxHp": 76,
@@ -341,7 +301,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400033,
+    "BaseId": "400033",
     "Name": "Flower in the Fray",
     "MinHp": 21,
     "MaxHp": 140,
@@ -351,7 +311,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400034,
+    "BaseId": "400034",
     "Name": "Destiny's Hand",
     "MinHp": 21,
     "MaxHp": 145,
@@ -361,7 +321,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400035,
+    "BaseId": "400035",
     "Name": "Sniper's Allure",
     "MinHp": 21,
     "MaxHp": 141,
@@ -371,7 +331,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400036,
+    "BaseId": "400036",
     "Name": "Promises in the Rain",
     "MinHp": 23,
     "MaxHp": 156,
@@ -381,7 +341,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400037,
+    "BaseId": "400037",
     "Name": "Fireside Gathering",
     "MinHp": 23,
     "MaxHp": 156,
@@ -391,7 +351,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400038,
+    "BaseId": "400038",
     "Name": "Trove of Knowledge",
     "MinHp": 23,
     "MaxHp": 156,
@@ -401,7 +361,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400039,
+    "BaseId": "400039",
     "Name": "Castaway's Journal",
     "MinHp": 23,
     "MaxHp": 156,
@@ -411,7 +371,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400040,
+    "BaseId": "400040",
     "Name": "Lord of the Skies",
     "MinHp": 21,
     "MaxHp": 146,
@@ -421,7 +381,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400041,
+    "BaseId": "400041",
     "Name": "King's Countenance",
     "MinHp": 22,
     "MaxHp": 151,
@@ -431,7 +391,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400042,
+    "BaseId": "400042",
     "Name": "Braving the Unknown",
     "MinHp": 23,
     "MaxHp": 156,
@@ -441,7 +401,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400043,
+    "BaseId": "400043",
     "Name": "What a Handful!",
     "MinHp": 22,
     "MaxHp": 150,
@@ -451,7 +411,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400044,
+    "BaseId": "400044",
     "Name": "How to Flee Properly",
     "MinHp": 22,
     "MaxHp": 151,
@@ -461,7 +421,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400045,
+    "BaseId": "400045",
     "Name": "One with the Shadows",
     "MinHp": 21,
     "MaxHp": 141,
@@ -471,7 +431,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400046,
+    "BaseId": "400046",
     "Name": "Warlust",
     "MinHp": 21,
     "MaxHp": 140,
@@ -481,7 +441,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400047,
+    "BaseId": "400047",
     "Name": "Armorer's Aspirations",
     "MinHp": 23,
     "MaxHp": 156,
@@ -491,7 +451,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400048,
+    "BaseId": "400048",
     "Name": "Revolutionary Magic",
     "MinHp": 21,
     "MaxHp": 146,
@@ -501,7 +461,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400049,
+    "BaseId": "400049",
     "Name": "Sisters of the Anvil",
     "MinHp": 21,
     "MaxHp": 146,
@@ -511,7 +471,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400050,
+    "BaseId": "400050",
     "Name": "Dueling Dancers",
     "MinHp": 22,
     "MaxHp": 147,
@@ -521,7 +481,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400051,
+    "BaseId": "400051",
     "Name": "Together We Stand",
     "MinHp": 21,
     "MaxHp": 140,
@@ -531,7 +491,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400052,
+    "BaseId": "400052",
     "Name": "Give Me Your Wounded",
     "MinHp": 28,
     "MaxHp": 187,
@@ -541,7 +501,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400053,
+    "BaseId": "400053",
     "Name": "Paladyn Defender",
     "MinHp": 18,
     "MaxHp": 122,
@@ -551,7 +511,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400055,
+    "BaseId": "400055",
     "Name": "Greatwyrm Midgardsormr",
     "MinHp": 19,
     "MaxHp": 127,
@@ -561,7 +521,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400056,
+    "BaseId": "400056",
     "Name": "Greatwyrm Mercury",
     "MinHp": 19,
     "MaxHp": 127,
@@ -571,7 +531,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400057,
+    "BaseId": "400057",
     "Name": "Greatwyrm Brunhilda",
     "MinHp": 19,
     "MaxHp": 127,
@@ -581,7 +541,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400058,
+    "BaseId": "400058",
     "Name": "Greatwyrm Jupiter",
     "MinHp": 19,
     "MaxHp": 127,
@@ -591,7 +551,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400059,
+    "BaseId": "400059",
     "Name": "Greatwyrm Zodiark",
     "MinHp": 19,
     "MaxHp": 127,
@@ -601,7 +561,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400060,
+    "BaseId": "400060",
     "Name": "The Warrioresses",
     "MinHp": 21,
     "MaxHp": 140,
@@ -611,7 +571,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400061,
+    "BaseId": "400061",
     "Name": "Silke Lends a Hand",
     "MinHp": 22,
     "MaxHp": 150,
@@ -621,7 +581,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400062,
+    "BaseId": "400062",
     "Name": "Valiant Crown",
     "MinHp": 26,
     "MaxHp": 176,
@@ -631,7 +591,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400063,
+    "BaseId": "400063",
     "Name": "Flash of Genius",
     "MinHp": 27,
     "MaxHp": 183,
@@ -641,7 +601,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400064,
+    "BaseId": "400064",
     "Name": "Evening of Luxury",
     "MinHp": 26,
     "MaxHp": 176,
@@ -651,7 +611,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400065,
+    "BaseId": "400065",
     "Name": "Worthy Rivals",
     "MinHp": 26,
     "MaxHp": 177,
@@ -661,7 +621,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400066,
+    "BaseId": "400066",
     "Name": "Auspex's Prayer",
     "MinHp": 28,
     "MaxHp": 187,
@@ -671,7 +631,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400067,
+    "BaseId": "400067",
     "Name": "Dragon Brethren",
     "MinHp": 27,
     "MaxHp": 184,
@@ -681,7 +641,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400068,
+    "BaseId": "400068",
     "Name": "Luca's Prank",
     "MinHp": 27,
     "MaxHp": 183,
@@ -691,7 +651,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400069,
+    "BaseId": "400069",
     "Name": "Happier Times",
     "MinHp": 21,
     "MaxHp": 141,
@@ -701,7 +661,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400070,
+    "BaseId": "400070",
     "Name": "Levin's Champion",
     "MinHp": 26,
     "MaxHp": 176,
@@ -711,7 +671,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400071,
+    "BaseId": "400071",
     "Name": "Nightstalker",
     "MinHp": 27,
     "MaxHp": 183,
@@ -721,7 +681,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400072,
+    "BaseId": "400072",
     "Name": "Glorious Tempest",
     "MinHp": 24,
     "MaxHp": 165,
@@ -731,7 +691,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400074,
+    "BaseId": "400074",
     "Name": "Cleo's Ruse",
     "MinHp": 28,
     "MaxHp": 187,
@@ -741,8 +701,8 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400075,
-    "Name": "Tough Love\n\u9b54\u9b3c\u6559\u5b98\u7684\u58f0\u63f4",
+    "BaseId": "400075",
+    "Name": "Tough Love",
     "MinHp": 26,
     "MaxHp": 176,
     "MinAtk": 9,
@@ -751,7 +711,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400076,
+    "BaseId": "400076",
     "Name": "Crystalian Envoy",
     "MinHp": 27,
     "MaxHp": 183,
@@ -761,7 +721,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400077,
+    "BaseId": "400077",
     "Name": "Witch's Kitchen",
     "MinHp": 27,
     "MaxHp": 183,
@@ -771,7 +731,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400078,
+    "BaseId": "400078",
     "Name": "Of Tricks and Treats",
     "MinHp": 27,
     "MaxHp": 184,
@@ -781,7 +741,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400087,
+    "BaseId": "400087",
     "Name": "Plunder Pals",
     "MinHp": 22,
     "MaxHp": 151,
@@ -791,7 +751,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400099,
+    "BaseId": "400099",
     "Name": "Jewels of the Sun",
     "MinHp": 26,
     "MaxHp": 176,
@@ -801,17 +761,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400099,
-    "Name": "Jewels of the Sun",
-    "MinHp": 26,
-    "MaxHp": 176,
-    "MinAtk": 9,
-    "MaxAtk": 64,
-    "img": "400099 01.png",
-    "rarity": "5"
-  },
-  {
-    "BaseId": 400100,
+    "BaseId": "400100",
     "Name": "Samurai Siesta",
     "MinHp": 22,
     "MaxHp": 151,
@@ -821,7 +771,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400101,
+    "BaseId": "400101",
     "Name": "The Halidom's Picnic",
     "MinHp": 11,
     "MaxHp": 76,
@@ -831,7 +781,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400102,
+    "BaseId": "400102",
     "Name": "Better Together",
     "MinHp": 18,
     "MaxHp": 122,
@@ -841,7 +791,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400103,
+    "BaseId": "400103",
     "Name": "Gentle Winds",
     "MinHp": 26,
     "MaxHp": 176,
@@ -851,7 +801,7 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400104,
+    "BaseId": "400104",
     "Name": "Gale of Beauty",
     "MinHp": 26,
     "MaxHp": 177,
@@ -861,8 +811,8 @@ const wyrmprints =
     "rarity": "5"
   },
   {
-    "BaseId": 400105,
-    "Name": "Fresh Perspective\n}NameJP=\u898b\u6163\u308c\u306c\u76ee\u7dda",
+    "BaseId": "400105",
+    "Name": "Fresh Perspective",
     "MinHp": 21,
     "MaxHp": 140,
     "MinAtk": 7,
@@ -871,7 +821,7 @@ const wyrmprints =
     "rarity": "4"
   },
   {
-    "BaseId": 400106,
+    "BaseId": "400106",
     "Name": "Garuda's Feathers",
     "MinHp": 11,
     "MaxHp": 76,
@@ -881,7 +831,7 @@ const wyrmprints =
     "rarity": "3"
   },
   {
-    "BaseId": 400107,
+    "BaseId": "400107",
     "Name": "Louise's Hobbies",
     "MinHp": 23,
     "MaxHp": 155,
