@@ -31,3 +31,15 @@ img#unbind_set {
 table.ui.celled.table th, table.ui.celled.table td {
   text-align: center;
 }
+
+input[type="number"]{
+  width: 100px;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

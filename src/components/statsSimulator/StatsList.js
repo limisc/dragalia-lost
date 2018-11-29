@@ -9,7 +9,7 @@ class StatsList extends Component {
   }
 
   render() {
-    const { sections, stats, handleSection } = this.props;
+    const { sections, stats, handleSection, updateLevel, modifyUnbind } = this.props;
     return (
       <div className="ui vertically divided grid">
         {sections.map((section, i) => (
@@ -18,6 +18,8 @@ class StatsList extends Component {
             section={section}
             stats={stats[section]}
             handleSection={handleSection}
+            updateLevel={updateLevel}
+            modifyUnbind={modifyUnbind}
           />
         ))}
       </div>
@@ -29,6 +31,8 @@ StatsList.propTypes = {
   sections: PropTypes.array,
   stats: PropTypes.object,
   handleSection: PropTypes.func,
+  updateLevel: PropTypes.func,
+  modifyUnbind: PropTypes.func,
 };
 
 export default StatsList;

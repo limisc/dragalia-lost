@@ -1,9 +1,8 @@
-const adventurers = 
+const adventurer = 
 [
   {
-    "Id": "100001",
+    "Id": "100001 01 r04",
     "Name": "Euden",
-    "VariationId": "1",
     "MinHp3": 40,
     "MinHp4": 58,
     "MinHp5": 66,
@@ -29,9 +28,8 @@ const adventurers =
     "img": "100001 01 r04.png"
   },
   {
-    "Id": "100002",
+    "Id": "100002 01 r04",
     "Name": "Elisanne",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 61,
     "MinHp5": 69,
@@ -57,9 +55,8 @@ const adventurers =
     "img": "100002 01 r04.png"
   },
   {
-    "Id": "100002",
+    "Id": "100002 02 r05",
     "Name": "Elisanne",
-    "VariationId": "2",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 67,
@@ -85,9 +82,8 @@ const adventurers =
     "img": "100002 02 r05.png"
   },
   {
-    "Id": "100003",
+    "Id": "100003 01 r04",
     "Name": "Ranzal",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -113,9 +109,8 @@ const adventurers =
     "img": "100003 01 r04.png"
   },
   {
-    "Id": "100004",
+    "Id": "100004 01 r04",
     "Name": "Cleo",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -141,9 +136,8 @@ const adventurers =
     "img": "100004 01 r04.png"
   },
   {
-    "Id": "100006",
+    "Id": "100006 01 r04",
     "Name": "Luca",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -169,9 +163,8 @@ const adventurers =
     "img": "100006 01 r04.png"
   },
   {
-    "Id": "110001",
+    "Id": "110001 01 r03",
     "Name": "Alain",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -197,9 +190,8 @@ const adventurers =
     "img": "110001 01 r03.png"
   },
   {
-    "Id": "110002",
+    "Id": "110002 01 r03",
     "Name": "Aoi",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -225,9 +217,8 @@ const adventurers =
     "img": "110002 01 r03.png"
   },
   {
-    "Id": "110003",
+    "Id": "110003 01 r03",
     "Name": "Joe",
-    "VariationId": "1",
     "MinHp3": 40,
     "MinHp4": 50,
     "MinHp5": 58,
@@ -253,9 +244,8 @@ const adventurers =
     "img": "110003 01 r03.png"
   },
   {
-    "Id": "110004",
+    "Id": "110004 01 r03",
     "Name": "Xania",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -281,9 +271,8 @@ const adventurers =
     "img": "110004 01 r03.png"
   },
   {
-    "Id": "110005",
+    "Id": "110005 01 r03",
     "Name": "Renelle",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -309,9 +298,8 @@ const adventurers =
     "img": "110005 01 r03.png"
   },
   {
-    "Id": "110006",
+    "Id": "110006 01 r03",
     "Name": "Aurien",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -337,9 +325,8 @@ const adventurers =
     "img": "110006 01 r03.png"
   },
   {
-    "Id": "110007",
+    "Id": "110007 01 r04",
     "Name": "Vanessa",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -365,9 +352,8 @@ const adventurers =
     "img": "110007 01 r04.png"
   },
   {
-    "Id": "110008",
+    "Id": "110008 01 r04",
     "Name": "Karl",
-    "VariationId": "1",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 65,
@@ -393,9 +379,8 @@ const adventurers =
     "img": "110008 01 r04.png"
   },
   {
-    "Id": "110009",
+    "Id": "110009 01 r04",
     "Name": "Sinoa",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -421,9 +406,8 @@ const adventurers =
     "img": "110009 01 r04.png"
   },
   {
-    "Id": "110010",
+    "Id": "110010 01 r05",
     "Name": "Mikoto",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -449,9 +433,8 @@ const adventurers =
     "img": "110010 01 r05.png"
   },
   {
-    "Id": "110011",
+    "Id": "110011 01 r05",
     "Name": "Ezelith",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 67,
@@ -477,9 +460,8 @@ const adventurers =
     "img": "110011 01 r05.png"
   },
   {
-    "Id": "110012",
+    "Id": "110012 01 r03",
     "Name": "Rex",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -505,9 +487,8 @@ const adventurers =
     "img": "110012 01 r03.png"
   },
   {
-    "Id": "110013",
+    "Id": "110013 01 r03",
     "Name": "Waike",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -533,9 +514,8 @@ const adventurers =
     "img": "110013 01 r03.png"
   },
   {
-    "Id": "110014",
+    "Id": "110014 01 r03",
     "Name": "Cibella",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -561,9 +541,8 @@ const adventurers =
     "img": "110014 01 r03.png"
   },
   {
-    "Id": "110015",
+    "Id": "110015 01 r03",
     "Name": "Zardin",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -589,9 +568,8 @@ const adventurers =
     "img": "110015 01 r03.png"
   },
   {
-    "Id": "110016",
+    "Id": "110016 01 r03",
     "Name": "Jurota",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -617,9 +595,8 @@ const adventurers =
     "img": "110016 01 r03.png"
   },
   {
-    "Id": "110017",
+    "Id": "110017 01 r03",
     "Name": "Ricardt",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -645,9 +622,8 @@ const adventurers =
     "img": "110017 01 r03.png"
   },
   {
-    "Id": "110018",
+    "Id": "110018 01 r04",
     "Name": "Karina",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 67,
@@ -673,9 +649,8 @@ const adventurers =
     "img": "110018 01 r04.png"
   },
   {
-    "Id": "110019",
+    "Id": "110019 01 r04",
     "Name": "Thaniel",
-    "VariationId": "1",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -701,9 +676,8 @@ const adventurers =
     "img": "110019 01 r04.png"
   },
   {
-    "Id": "110020",
+    "Id": "110020 01 r04",
     "Name": "Luther",
-    "VariationId": "1",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 66,
@@ -729,9 +703,8 @@ const adventurers =
     "img": "110020 01 r04.png"
   },
   {
-    "Id": "110021",
+    "Id": "110021 01 r05",
     "Name": "Xainfried",
-    "VariationId": "1",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 67,
@@ -757,9 +730,8 @@ const adventurers =
     "img": "110021 01 r05.png"
   },
   {
-    "Id": "110022",
+    "Id": "110022 01 r05",
     "Name": "Xander",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -785,9 +757,8 @@ const adventurers =
     "img": "110022 01 r05.png"
   },
   {
-    "Id": "110023",
+    "Id": "110023 01 r03",
     "Name": "Johanna",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -813,9 +784,8 @@ const adventurers =
     "img": "110023 01 r03.png"
   },
   {
-    "Id": "110024",
+    "Id": "110024 01 r03",
     "Name": "Sophie",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -841,9 +811,8 @@ const adventurers =
     "img": "110024 01 r03.png"
   },
   {
-    "Id": "110025",
+    "Id": "110025 01 r03",
     "Name": "Nicolas",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -869,9 +838,8 @@ const adventurers =
     "img": "110025 01 r03.png"
   },
   {
-    "Id": "110026",
+    "Id": "110026 01 r03",
     "Name": "Francesca",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -897,9 +865,8 @@ const adventurers =
     "img": "110026 01 r03.png"
   },
   {
-    "Id": "110027",
+    "Id": "110027 01 r03",
     "Name": "Melody",
-    "VariationId": "1",
     "MinHp3": 41,
     "MinHp4": 51,
     "MinHp5": 59,
@@ -925,9 +892,8 @@ const adventurers =
     "img": "110027 01 r03.png"
   },
   {
-    "Id": "110028",
+    "Id": "110028 01 r03",
     "Name": "Philia",
-    "VariationId": "1",
     "MinHp3": 40,
     "MinHp4": 50,
     "MinHp5": 58,
@@ -953,9 +919,8 @@ const adventurers =
     "img": "110028 01 r03.png"
   },
   {
-    "Id": "110029",
+    "Id": "110029 01 r04",
     "Name": "Aeleen",
-    "VariationId": "1",
     "MinHp3": 45,
     "MinHp4": 55,
     "MinHp5": 65,
@@ -981,9 +946,8 @@ const adventurers =
     "img": "110029 01 r04.png"
   },
   {
-    "Id": "110030",
+    "Id": "110030 01 r04",
     "Name": "Musashi",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1009,9 +973,8 @@ const adventurers =
     "img": "110030 01 r04.png"
   },
   {
-    "Id": "110031",
+    "Id": "110031 01 r04",
     "Name": "Eleonora",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -1037,9 +1000,8 @@ const adventurers =
     "img": "110031 01 r04.png"
   },
   {
-    "Id": "110032",
+    "Id": "110032 01 r05",
     "Name": "Maribelle",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1065,9 +1027,8 @@ const adventurers =
     "img": "110032 01 r05.png"
   },
   {
-    "Id": "110033",
+    "Id": "110033 01 r03",
     "Name": "Linus",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1093,9 +1054,8 @@ const adventurers =
     "img": "110033 01 r03.png"
   },
   {
-    "Id": "110034",
+    "Id": "110034 01 r03",
     "Name": "Malka",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -1121,9 +1081,8 @@ const adventurers =
     "img": "110034 01 r03.png"
   },
   {
-    "Id": "110035",
+    "Id": "110035 01 r03",
     "Name": "Raemond",
-    "VariationId": "1",
     "MinHp3": 40,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -1149,9 +1108,8 @@ const adventurers =
     "img": "110035 01 r03.png"
   },
   {
-    "Id": "110036",
+    "Id": "110036 01 r03",
     "Name": "Malora",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -1177,9 +1135,8 @@ const adventurers =
     "img": "110036 01 r03.png"
   },
   {
-    "Id": "110037",
+    "Id": "110037 01 r03",
     "Name": "Irfan",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1205,9 +1162,8 @@ const adventurers =
     "img": "110037 01 r03.png"
   },
   {
-    "Id": "110038",
+    "Id": "110038 01 r03",
     "Name": "Hope",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -1233,9 +1189,8 @@ const adventurers =
     "img": "110038 01 r03.png"
   },
   {
-    "Id": "110039",
+    "Id": "110039 01 r04",
     "Name": "Ryozen",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -1261,9 +1216,8 @@ const adventurers =
     "img": "110039 01 r04.png"
   },
   {
-    "Id": "110040",
+    "Id": "110040 01 r04",
     "Name": "Rawn",
-    "VariationId": "1",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -1289,9 +1243,8 @@ const adventurers =
     "img": "110040 01 r04.png"
   },
   {
-    "Id": "110041",
+    "Id": "110041 01 r04",
     "Name": "Amane",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -1317,9 +1270,8 @@ const adventurers =
     "img": "110041 01 r04.png"
   },
   {
-    "Id": "110042",
+    "Id": "110042 01 r05",
     "Name": "Julietta",
-    "VariationId": "1",
     "MinHp3": 48,
     "MinHp4": 60,
     "MinHp5": 70,
@@ -1345,9 +1297,8 @@ const adventurers =
     "img": "110042 01 r05.png"
   },
   {
-    "Id": "110043",
+    "Id": "110043 01 r05",
     "Name": "Hildegarde",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 59,
     "MinHp5": 68,
@@ -1373,9 +1324,8 @@ const adventurers =
     "img": "110043 01 r05.png"
   },
   {
-    "Id": "110044",
+    "Id": "110044 01 r03",
     "Name": "Taro",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -1401,9 +1351,8 @@ const adventurers =
     "img": "110044 01 r03.png"
   },
   {
-    "Id": "110045",
+    "Id": "110045 01 r03",
     "Name": "Erik",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -1429,9 +1378,8 @@ const adventurers =
     "img": "110045 01 r03.png"
   },
   {
-    "Id": "110046",
+    "Id": "110046 01 r03",
     "Name": "Rodrigo",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -1457,9 +1405,8 @@ const adventurers =
     "img": "110046 01 r03.png"
   },
   {
-    "Id": "110047",
+    "Id": "110047 02 r04",
     "Name": "Althemia",
-    "VariationId": "2",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -1485,9 +1432,8 @@ const adventurers =
     "img": "110047 02 r04.png"
   },
   {
-    "Id": "110047",
+    "Id": "110047 01 r03",
     "Name": "Althemia",
-    "VariationId": "1",
     "MinHp3": 41,
     "MinHp4": 51,
     "MinHp5": 60,
@@ -1513,9 +1459,8 @@ const adventurers =
     "img": "110047 01 r03.png"
   },
   {
-    "Id": "110048",
+    "Id": "110048 01 r03",
     "Name": "Vice",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -1541,9 +1486,8 @@ const adventurers =
     "img": "110048 01 r03.png"
   },
   {
-    "Id": "110049",
+    "Id": "110049 02 r03",
     "Name": "Edward",
-    "VariationId": "2",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -1569,9 +1513,8 @@ const adventurers =
     "img": "110049 02 r03.png"
   },
   {
-    "Id": "110049",
+    "Id": "110049 01 r03",
     "Name": "Edward",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1597,9 +1540,8 @@ const adventurers =
     "img": "110049 01 r03.png"
   },
   {
-    "Id": "110050",
+    "Id": "110050 01 r04",
     "Name": "Berserker",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -1625,9 +1567,8 @@ const adventurers =
     "img": "110050 01 r04.png"
   },
   {
-    "Id": "110051",
+    "Id": "110051 01 r04",
     "Name": "Kleimann",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -1653,9 +1594,8 @@ const adventurers =
     "img": "110051 01 r04.png"
   },
   {
-    "Id": "110052",
+    "Id": "110052 01 r04",
     "Name": "Orion",
-    "VariationId": "1",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 65,
@@ -1681,9 +1621,8 @@ const adventurers =
     "img": "110052 01 r04.png"
   },
   {
-    "Id": "110053",
+    "Id": "110053 01 r05",
     "Name": "Nefaria",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -1709,9 +1648,8 @@ const adventurers =
     "img": "110053 01 r05.png"
   },
   {
-    "Id": "110063",
+    "Id": "110063 01 r03",
     "Name": "Estelle",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -1737,9 +1675,8 @@ const adventurers =
     "img": "110063 01 r03.png"
   },
   {
-    "Id": "110067",
+    "Id": "110067 01 r03",
     "Name": "Vida",
-    "VariationId": "1",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -1765,9 +1702,8 @@ const adventurers =
     "img": "110067 01 r03.png"
   },
   {
-    "Id": "110252",
+    "Id": "110252 01 r05",
     "Name": "Lily",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1793,9 +1729,8 @@ const adventurers =
     "img": "110252 01 r05.png"
   },
   {
-    "Id": "110253",
+    "Id": "110253 01 r04",
     "Name": "Orsem",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -1821,9 +1756,8 @@ const adventurers =
     "img": "110253 01 r04.png"
   },
   {
-    "Id": "110254",
+    "Id": "110254 01 r03",
     "Name": "Zace",
-    "VariationId": "1",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -1849,9 +1783,8 @@ const adventurers =
     "img": "110254 01 r03.png"
   },
   {
-    "Id": "110255",
+    "Id": "110255 01 r04",
     "Name": "Celliera",
-    "VariationId": "1",
     "MinHp3": 40,
     "MinHp4": 40,
     "MinHp5": 58,
@@ -1877,9 +1810,8 @@ const adventurers =
     "img": "110255 01 r04.png"
   },
   {
-    "Id": "110256",
+    "Id": "110256 01 r05",
     "Name": "Louise",
-    "VariationId": "1",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -1905,9 +1837,8 @@ const adventurers =
     "img": "110256 01 r05.png"
   },
   {
-    "Id": "110257",
+    "Id": "110257 01 r04",
     "Name": "Lowen",
-    "VariationId": "1",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -1933,9 +1864,8 @@ const adventurers =
     "img": "110257 01 r04.png"
   },
   {
-    "Id": "110258",
+    "Id": "110258 01 r03",
     "Name": "Pietro",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -1961,9 +1891,8 @@ const adventurers =
     "img": "110258 01 r03.png"
   },
   {
-    "Id": "110266",
+    "Id": "110266 01 r05",
     "Name": "Naveed",
-    "VariationId": "1",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -1989,9 +1918,8 @@ const adventurers =
     "img": "110266 01 r05.png"
   },
   {
-    "Id": "110267",
+    "Id": "110267 01 r05",
     "Name": "Hawk",
-    "VariationId": "1",
     "MinHp3": 45,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -2017,9 +1945,8 @@ const adventurers =
     "img": "110267 01 r05.png"
   },
   {
-    "Id": "110269",
+    "Id": "110269 01 r04",
     "Name": "Verica",
-    "VariationId": "1",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -2045,9 +1972,8 @@ const adventurers =
     "img": "110269 01 r04.png"
   },
   {
-    "Id": "110270",
+    "Id": "110270 01 r04",
     "Name": "Melsa",
-    "VariationId": "1",
     "MinHp3": 43,
     "MinHp4": 43,
     "MinHp5": 62,
@@ -2073,4 +1999,4 @@ const adventurers =
     "img": "110270 01 r04.png"
   }
 ];
-export default adventurers;
+export default adventurer;

@@ -266,7 +266,15 @@ const materials =
   },
   {
     "Id": "201010051",
+    "Name": "Purple Insignia"
+  },
+  {
+    "Id": "201010051",
     "Name": "Violet Insignia"
+  },
+  {
+    "Id": "201010052",
+    "Name": "Royal Purple Insignia"
   },
   {
     "Id": "201010052",

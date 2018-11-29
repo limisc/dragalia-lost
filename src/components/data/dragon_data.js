@@ -1,5 +1,24 @@
-const dragons = 
+const dragon = 
 [
+  {
+    "Id": "20050402",
+    "Name": "Cupid",
+    "MinHp": "",
+    "MaxHp": 377,
+    "MinAtk": "",
+    "MaxAtk": 119,
+    "Abilities11": {
+      "attr": "Strength",
+      "value": 40
+    },
+    "Abilities12": {
+      "attr": "Strength",
+      "value": 60
+    },
+    "img": " 01.png",
+    "rarity": "5",
+    "element": "Light"
+  },
   {
     "Id": "20040301",
     "Name": "Midgardsormr",
@@ -799,4 +818,4 @@ const dragons =
     "element": "Light"
   }
 ];
-export default dragons;
+export default dragon;

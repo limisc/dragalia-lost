@@ -38,6 +38,8 @@ class StatsSimulator extends Component {
     this.handleSection = this.handleSection.bind(this);
     this.handleFilter = this.handleFilter.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
+    this.updateLevel = this.updateLevel.bind(this);
+    this.modifyUnbind = this.modifyUnbind.bind(this);
   }
 
   resetFilter() {
@@ -47,11 +49,19 @@ class StatsSimulator extends Component {
   }
 
   handleSection(section) {
-    const { filters, stats } = this.state;
+    const { stats } = this.state;
     let new_filters = { ...RESET_FILTER };
-    if (stats[section] === null) {
-      new_filters.type = filters.type;
-      new_filters.element = filters.element;
+
+    if (stats["adventurer"]) {
+      if (section === "weapon") {
+        new_filters.type = stats["adventurer"].type;
+      } else if (section === "dragon") {
+        new_filters.element = stats["adventurer"].element;
+      }
+    }
+
+    if (stats["weapon"] && section === "adventurer") {
+      new_filters.type = stats["weapon"].type;
     }
 
     this.setState({
@@ -74,36 +84,71 @@ class StatsSimulator extends Component {
   }
 
   handleSelect(selection) {
-    let { selectedSection, filters, stats } = this.state;
-    stats = {
-      ...stats,
-      [selectedSection]: {
-        ...selection,
-        level: level_dict[selectedSection][selection.rarity].MAX_LEVEL,
+    const { selectedSection, filters } = this.state;
+    let stats = { ...this.state.stats, [selectedSection]: { ...selection } }
+
+    if (selectedSection === "adventurer") {
+      stats.adventurer.mana = level_dict.mana[selection.rarity];
+      stats.adventurer.MAX_LEVEL = 80;
+      stats.adventurer.level = stats.adventurer.MAX_LEVEL;
+      if (stats.weapon && stats.weapon.type !== selection.type) {
+        stats.weapon = null;
+      }
+    } else {
+      stats[selectedSection].unbind = 4;
+      stats[selectedSection].MAX_LEVEL = level_dict[selectedSection][selection.rarity][4];
+      stats[selectedSection].level = stats[selectedSection].MAX_LEVEL;
+      if (selectedSection === "weapon" && stats.adventurer && stats.adventurer.type !== selection.type) {
+        stats.adventurer = null;
       }
     }
-
-    switch (selectedSection) {
-      case "adventurer":
-        stats[selectedSection].mana = level_dict.mana[selection.rarity];
-        filters = { ...filters, type: selection.type, element: selection.element };
-        break;
-      case "weapon":
-        stats[selectedSection].unbind = 4;
-        filters = { ...filters, type: selection.type };
-        break;
-      default:
-        stats[selectedSection].unbind = 4;
-    }
-
     this.setState({
       stats,
       filters,
     })
   }
 
+  updateLevel(section, level) {
+    const { stats } = this.state;
+    this.setState({
+      stats: {
+        ...stats,
+        [section]: {
+          ...stats[section],
+          level,
+        }
+      }
+    });
+  }
+
+  modifyUnbind(section, modifier) {
+    const { stats } = this.state;
+    if (stats[section]) {
+      if ((modifier < 0 && stats[section].unbind > 0) || (modifier > 0 && stats[section].unbind < 4)) {
+        const unbind = stats[section].unbind + modifier;
+        const MAX_LEVEL = level_dict[section][stats[section].rarity][unbind];
+        this.setState({
+          stats: {
+            ...stats,
+            [section]: {
+              ...stats[section],
+              unbind,
+              MAX_LEVEL,
+              level: MAX_LEVEL,
+            }
+          }
+        });
+      }
+    }
+  }
+
+
   render() {
     const { selectedSection, sections, filters, filterFields, stats } = this.state;
+
+    if (stats[selectedSection]) {
+      console.log(stats[selectedSection].level)
+    }
     return (
       <div className="ui doubling stackable two column grid" style={{ margin: "1em" }}>
         <div id="left-panel" className="seven wide column">
@@ -111,6 +156,8 @@ class StatsSimulator extends Component {
             sections={sections}
             stats={stats}
             handleSection={this.handleSection}
+            updateLevel={this.updateLevel}
+            modifyUnbind={this.modifyUnbind}
           />
         </div>
         {selectedSection &&

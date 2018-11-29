@@ -1,4 +1,4 @@
-const weapons = 
+const weapon = 
 [
   {
     "Id": "30130102",
@@ -4509,4 +4509,4 @@ const weapons =
     "tier": "2"
   }
 ];
-export default weapons;
+export default weapon;
