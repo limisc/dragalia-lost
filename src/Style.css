@@ -18,9 +18,14 @@ img.selectList-img {
   margin: auto;
 }
 
-div.unbind.set img {
+div.unbind.set{
+  margin-left: 2em;
+  margin-bottom: 15px;
+}
+
+img#unbind_set {
   height: 30px;
-  margin-left: 1em;
+  margin-right: 10px;
 }
 
 table.ui.celled.table th, table.ui.celled.table td {
