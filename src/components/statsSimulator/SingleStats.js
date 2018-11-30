@@ -21,7 +21,7 @@ class SingleStats extends Component {
   static getDerivedStateFromProps(props, state) {
     const { stats } = props;
     if (stats) {
-      if (state.stats === {} || stats.MAX_LEVEL !== state.stats.MAX_LEVEL || stats.Id !== state.stats.Id) {
+      if (Object.getOwnPropertyNames(state.stats).length === 0 || stats.MAX_LEVEL !== state.stats.MAX_LEVEL || stats.Id !== state.stats.Id) {
         return {
           disabled: false,
           stats: { ...stats },
@@ -74,7 +74,8 @@ class SingleStats extends Component {
       disabled,
       stats: {
         level = "",
-        mana = "",
+        mana = "0",
+        rarity = "5",
         unbind = 4,
         img = "add.png",
         Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase()
@@ -97,7 +98,7 @@ class SingleStats extends Component {
 
         <div id="setting-section" className="six wide column">
           {section !== "adventurer" &&
-            <div className="unbind set" style={{ textAlign: "right" }} >
+            <div className="unbind set" style={{ textAlign: "center" }} >
               <img
                 id="unbind_set"
                 alt="left-icon"
@@ -117,32 +118,43 @@ class SingleStats extends Component {
             </div>
           }
           <div className="ui form">
-            <div className="inline field" style={{ textAlign: "right" }}>
-              <label>Level</label>
-              <input
-                type="number"
-                id={section}
-                disabled={disabled}
-                value={level}
-                onChange={this.inputUpdate} />
-            </div>
-          </div>
-
-          {section === "adventurer" &&
-            <div className="ui form">
-              <div className="inline field" style={{ textAlign: "right", marginTop: "20px" }}>
-                <label>Mana Circle</label>
-                <select disabled={disabled}>
-                  <option>50</option>
-                  <option>40</option>
-                  <option>30</option>
-                  <option>20</option>
-                  <option>10</option>
-                  <option>0</option>
-                </select>
+            <div className="fields">
+              <div className="field" style={{ width: "100%" }}>
+                <label>Level</label>
+                <input
+                  type="number"
+                  id={section}
+                  disabled={disabled}
+                  value={level}
+                  onChange={this.inputUpdate}
+                />
               </div>
             </div>
-          }
+
+            {section === "adventurer" &&
+              <div className="equal width fields">
+                <div className="field">
+                  <label>Rarity</label>
+                  <select disabled={disabled}>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div className="field">
+                  <label>Mana Circle</label>
+                  <select disabled={disabled}>
+                    <option value="50">50</option>
+                    <option value="40">40</option>
+                    <option value="30">30</option>
+                    <option value="20">20</option>
+                    <option value="10">10</option>
+                    <option value="0">0</option>
+                  </select>
+                </div>
+              </div>
+            }
+          </div>
         </div>
 
         <div id="stats-section" className="column">
