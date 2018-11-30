@@ -39,6 +39,7 @@ class StatsSimulator extends Component {
     this.handleFilter = this.handleFilter.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
     this.updateLevel = this.updateLevel.bind(this);
+    this.updateMana = this.updateMana.bind(this);
     this.modifyUnbind = this.modifyUnbind.bind(this);
   }
 
@@ -121,6 +122,20 @@ class StatsSimulator extends Component {
     });
   }
 
+  updateMana(mana) {
+    const { stats } = this.state;
+    this.setState({
+      stats: {
+        ...stats,
+        adventurer: {
+          ...stats.adventurer,
+          mana,
+        }
+      }
+    });
+  }
+
+
   modifyUnbind(section, modifier) {
     const { stats } = this.state;
     if (stats[section]) {
@@ -157,6 +172,7 @@ class StatsSimulator extends Component {
             stats={stats}
             handleSection={this.handleSection}
             updateLevel={this.updateLevel}
+            updateMana={this.updateMana}
             modifyUnbind={this.modifyUnbind}
           />
         </div>

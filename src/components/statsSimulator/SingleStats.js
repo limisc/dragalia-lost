@@ -12,6 +12,7 @@ class SingleStats extends Component {
       stats: {},
     }
     this.inputUpdate = this.inputUpdate.bind(this);
+    this.selectUpdate = this.selectUpdate.bind(this);
   }
 
   // shouldComponentUpdate(nextProps) {
@@ -65,7 +66,16 @@ class SingleStats extends Component {
     });
   }
 
-
+  selectUpdate(e) {
+    console.log(e.target.id, e.target.value)
+    const { stats } = this.state;
+    this.setState({
+      stats: {
+        ...stats,
+        [e.target.id]: e.target.value,
+      }
+    });
+  }
 
   render() {
     const base_dir = process.env.PUBLIC_URL;
@@ -135,7 +145,7 @@ class SingleStats extends Component {
               <div className="equal width fields">
                 <div className="field">
                   <label>Rarity</label>
-                  <select disabled={disabled}>
+                  <select value={rarity} disabled={disabled}>
                     <option value="5">5</option>
                     <option value="4">4</option>
                     <option value="3">3</option>
@@ -143,7 +153,7 @@ class SingleStats extends Component {
                 </div>
                 <div className="field">
                   <label>Mana Circle</label>
-                  <select disabled={disabled}>
+                  <select id="mana" value={mana} disabled={disabled} onChange={this.selectUpdate}>
                     <option value="50">50</option>
                     <option value="40">40</option>
                     <option value="30">30</option>
@@ -173,6 +183,7 @@ SingleStats.propTypes = {
   stats: PropTypes.object,
   handleSection: PropTypes.func,
   updateLevel: PropTypes.func,
+  updateMana: PropTypes.func,
   modifyUnbind: PropTypes.func,
 };
 
