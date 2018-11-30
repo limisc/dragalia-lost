@@ -1,15 +1,17 @@
-
-
 /* div#left-panel {
   height: 100%;
   margin: 0px;
   background-color: blanchedalmond
 } */
 
-img.avatar{
+img.avatar {
   width: 90px;
   display: block;
   margin: auto;
+}
+
+button#reset-btn {
+  margin-top: 7px;
 }
 
 img.selectList-img {
@@ -27,14 +29,11 @@ table.ui.celled.table th, table.ui.celled.table td {
   text-align: center;
 }
 
-input[type="number"]{
+input[type="number"] {
   width: 100px;
 }
 
-
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

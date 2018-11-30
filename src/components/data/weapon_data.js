@@ -21,7 +21,15 @@ const weapon =
     "type": "Sword",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30130201",
@@ -44,7 +52,15 @@ const weapon =
     "type": "Sword",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30130302",
@@ -67,7 +83,15 @@ const weapon =
     "type": "Sword",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30130401",
@@ -90,7 +114,15 @@ const weapon =
     "type": "Sword",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30130501",
@@ -113,7 +145,15 @@ const weapon =
     "type": "Sword",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30139901",
@@ -136,7 +176,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30139902",
@@ -159,7 +207,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30139903",
@@ -182,7 +238,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30140104",
@@ -205,7 +269,15 @@ const weapon =
     "type": "Sword",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30140201",
@@ -228,7 +300,15 @@ const weapon =
     "type": "Sword",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30140301",
@@ -251,7 +331,15 @@ const weapon =
     "type": "Sword",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30140401",
@@ -274,7 +362,15 @@ const weapon =
     "type": "Sword",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30140501",
@@ -297,7 +393,15 @@ const weapon =
     "type": "Sword",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30149901",
@@ -320,7 +424,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30149902",
@@ -343,7 +455,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30149903",
@@ -366,7 +486,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30150101",
@@ -389,7 +517,15 @@ const weapon =
     "type": "Sword",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30150202",
@@ -412,7 +548,15 @@ const weapon =
     "type": "Sword",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30150301",
@@ -435,7 +579,15 @@ const weapon =
     "type": "Sword",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30150401",
@@ -458,7 +610,15 @@ const weapon =
     "type": "Sword",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30150501",
@@ -481,7 +641,15 @@ const weapon =
     "type": "Sword",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30159901",
@@ -504,7 +672,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30159902",
@@ -527,7 +703,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30159903",
@@ -550,7 +734,15 @@ const weapon =
     "type": "Sword",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30230101",
@@ -573,7 +765,15 @@ const weapon =
     "type": "Blade",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30230201",
@@ -596,7 +796,15 @@ const weapon =
     "type": "Blade",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30230302",
@@ -619,7 +827,15 @@ const weapon =
     "type": "Blade",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30230401",
@@ -642,7 +858,15 @@ const weapon =
     "type": "Blade",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30230501",
@@ -665,7 +889,15 @@ const weapon =
     "type": "Blade",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30239901",
@@ -688,7 +920,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30239902",
@@ -711,7 +951,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30239903",
@@ -734,7 +982,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30240101",
@@ -757,7 +1013,15 @@ const weapon =
     "type": "Blade",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30240202",
@@ -780,7 +1044,15 @@ const weapon =
     "type": "Blade",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30240301",
@@ -803,7 +1075,15 @@ const weapon =
     "type": "Blade",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30240402",
@@ -826,7 +1106,15 @@ const weapon =
     "type": "Blade",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30240501",
@@ -849,7 +1137,15 @@ const weapon =
     "type": "Blade",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30249901",
@@ -872,7 +1168,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30249902",
@@ -895,7 +1199,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30249903",
@@ -918,7 +1230,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30250101",
@@ -941,7 +1261,15 @@ const weapon =
     "type": "Blade",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30250201",
@@ -964,7 +1292,15 @@ const weapon =
     "type": "Blade",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30250301",
@@ -987,7 +1323,15 @@ const weapon =
     "type": "Blade",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30250401",
@@ -1010,7 +1354,15 @@ const weapon =
     "type": "Blade",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30250501",
@@ -1033,7 +1385,15 @@ const weapon =
     "type": "Blade",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30259901",
@@ -1056,7 +1416,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30259902",
@@ -1079,7 +1447,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30259903",
@@ -1102,7 +1478,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30259904",
@@ -1125,7 +1509,15 @@ const weapon =
     "type": "Blade",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30330101",
@@ -1148,7 +1540,15 @@ const weapon =
     "type": "Dagger",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30330201",
@@ -1171,7 +1571,15 @@ const weapon =
     "type": "Dagger",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30330301",
@@ -1194,7 +1602,15 @@ const weapon =
     "type": "Dagger",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30330401",
@@ -1217,7 +1633,15 @@ const weapon =
     "type": "Dagger",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30330501",
@@ -1240,7 +1664,15 @@ const weapon =
     "type": "Dagger",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30339901",
@@ -1263,7 +1695,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30339902",
@@ -1286,7 +1726,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30339903",
@@ -1309,7 +1757,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30340101",
@@ -1332,7 +1788,15 @@ const weapon =
     "type": "Dagger",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30340201",
@@ -1355,7 +1819,15 @@ const weapon =
     "type": "Dagger",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30340301",
@@ -1378,7 +1850,15 @@ const weapon =
     "type": "Dagger",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30340401",
@@ -1401,7 +1881,15 @@ const weapon =
     "type": "Dagger",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30340502",
@@ -1424,7 +1912,15 @@ const weapon =
     "type": "Dagger",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30349901",
@@ -1447,7 +1943,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30349902",
@@ -1470,7 +1974,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30349903",
@@ -1493,7 +2005,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30350102",
@@ -1516,7 +2036,15 @@ const weapon =
     "type": "Dagger",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30350201",
@@ -1539,7 +2067,15 @@ const weapon =
     "type": "Dagger",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30350301",
@@ -1562,7 +2098,15 @@ const weapon =
     "type": "Dagger",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30350401",
@@ -1585,7 +2129,15 @@ const weapon =
     "type": "Dagger",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30350501",
@@ -1608,7 +2160,15 @@ const weapon =
     "type": "Dagger",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30359901",
@@ -1631,7 +2191,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30359902",
@@ -1654,7 +2222,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30359903",
@@ -1677,7 +2253,15 @@ const weapon =
     "type": "Dagger",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30430101",
@@ -1700,7 +2284,15 @@ const weapon =
     "type": "Axe",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30430201",
@@ -1723,7 +2315,15 @@ const weapon =
     "type": "Axe",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30430301",
@@ -1746,7 +2346,15 @@ const weapon =
     "type": "Axe",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30430401",
@@ -1769,7 +2377,15 @@ const weapon =
     "type": "Axe",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30430501",
@@ -1792,7 +2408,15 @@ const weapon =
     "type": "Axe",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30439901",
@@ -1815,7 +2439,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30439902",
@@ -1838,7 +2470,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30439903",
@@ -1861,7 +2501,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30440102",
@@ -1884,7 +2532,15 @@ const weapon =
     "type": "Axe",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30440201",
@@ -1907,7 +2563,15 @@ const weapon =
     "type": "Axe",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30440301",
@@ -1930,7 +2594,15 @@ const weapon =
     "type": "Axe",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30440401",
@@ -1953,7 +2625,15 @@ const weapon =
     "type": "Axe",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30440501",
@@ -1976,7 +2656,15 @@ const weapon =
     "type": "Axe",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30449901",
@@ -1999,7 +2687,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30449902",
@@ -2022,7 +2718,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30449903",
@@ -2045,7 +2749,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30450101",
@@ -2068,7 +2780,15 @@ const weapon =
     "type": "Axe",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30450201",
@@ -2091,7 +2811,15 @@ const weapon =
     "type": "Axe",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30450301",
@@ -2114,7 +2842,15 @@ const weapon =
     "type": "Axe",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30450401",
@@ -2137,7 +2873,15 @@ const weapon =
     "type": "Axe",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30450501",
@@ -2160,7 +2904,15 @@ const weapon =
     "type": "Axe",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30459901",
@@ -2183,7 +2935,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30459902",
@@ -2206,7 +2966,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30459903",
@@ -2229,7 +2997,15 @@ const weapon =
     "type": "Axe",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30530101",
@@ -2252,7 +3028,15 @@ const weapon =
     "type": "Lance",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30530201",
@@ -2275,7 +3059,15 @@ const weapon =
     "type": "Lance",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30530301",
@@ -2298,7 +3090,15 @@ const weapon =
     "type": "Lance",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30530401",
@@ -2321,7 +3121,15 @@ const weapon =
     "type": "Lance",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30530402",
@@ -2344,7 +3152,15 @@ const weapon =
     "type": "Lance",
     "element": "Light",
     "rarity": "3",
-    "tier": "0"
+    "tier": "0",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30530501",
@@ -2367,7 +3183,15 @@ const weapon =
     "type": "Lance",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30539901",
@@ -2390,7 +3214,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30539902",
@@ -2413,7 +3245,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30539903",
@@ -2436,7 +3276,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30540101",
@@ -2459,7 +3307,15 @@ const weapon =
     "type": "Lance",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30540201",
@@ -2482,7 +3338,15 @@ const weapon =
     "type": "Lance",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30540302",
@@ -2505,7 +3369,15 @@ const weapon =
     "type": "Lance",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30540402",
@@ -2528,7 +3400,15 @@ const weapon =
     "type": "Lance",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30540501",
@@ -2551,7 +3431,15 @@ const weapon =
     "type": "Lance",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30549901",
@@ -2574,7 +3462,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30549902",
@@ -2597,7 +3493,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30549903",
@@ -2620,7 +3524,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30550101",
@@ -2643,7 +3555,15 @@ const weapon =
     "type": "Lance",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30550201",
@@ -2666,7 +3586,15 @@ const weapon =
     "type": "Lance",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30550301",
@@ -2689,7 +3617,15 @@ const weapon =
     "type": "Lance",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30550402",
@@ -2712,7 +3648,15 @@ const weapon =
     "type": "Lance",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30550501",
@@ -2735,7 +3679,15 @@ const weapon =
     "type": "Lance",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30559901",
@@ -2758,7 +3710,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30559902",
@@ -2781,7 +3741,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30559903",
@@ -2804,7 +3772,15 @@ const weapon =
     "type": "Lance",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30630101",
@@ -2827,7 +3803,15 @@ const weapon =
     "type": "Bow",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30630201",
@@ -2850,7 +3834,15 @@ const weapon =
     "type": "Bow",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30630302",
@@ -2873,7 +3865,15 @@ const weapon =
     "type": "Bow",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30630401",
@@ -2896,7 +3896,15 @@ const weapon =
     "type": "Bow",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30630501",
@@ -2919,7 +3927,15 @@ const weapon =
     "type": "Bow",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30639901",
@@ -2942,7 +3958,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30639902",
@@ -2965,7 +3989,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30639903",
@@ -2988,7 +4020,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30640102",
@@ -3011,7 +4051,15 @@ const weapon =
     "type": "Bow",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30640201",
@@ -3034,7 +4082,15 @@ const weapon =
     "type": "Bow",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30640302",
@@ -3057,7 +4113,15 @@ const weapon =
     "type": "Bow",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30640403",
@@ -3080,7 +4144,15 @@ const weapon =
     "type": "Bow",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30640501",
@@ -3103,7 +4175,15 @@ const weapon =
     "type": "Bow",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30649901",
@@ -3126,7 +4206,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30649902",
@@ -3149,7 +4237,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30649903",
@@ -3172,7 +4268,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30650101",
@@ -3195,7 +4299,15 @@ const weapon =
     "type": "Bow",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30650201",
@@ -3218,7 +4330,15 @@ const weapon =
     "type": "Bow",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30650302",
@@ -3241,7 +4361,15 @@ const weapon =
     "type": "Bow",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30650402",
@@ -3264,7 +4392,15 @@ const weapon =
     "type": "Bow",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30650501",
@@ -3287,7 +4423,15 @@ const weapon =
     "type": "Bow",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30659901",
@@ -3310,7 +4454,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30659902",
@@ -3333,7 +4485,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30659903",
@@ -3356,7 +4516,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30659904",
@@ -3379,7 +4547,15 @@ const weapon =
     "type": "Bow",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30730101",
@@ -3402,7 +4578,15 @@ const weapon =
     "type": "Wand",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30730201",
@@ -3425,7 +4609,15 @@ const weapon =
     "type": "Wand",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30730301",
@@ -3448,7 +4640,15 @@ const weapon =
     "type": "Wand",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30730401",
@@ -3471,7 +4671,15 @@ const weapon =
     "type": "Wand",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30730501",
@@ -3494,7 +4702,15 @@ const weapon =
     "type": "Wand",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30739901",
@@ -3517,7 +4733,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30739902",
@@ -3540,7 +4764,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30739903",
@@ -3563,7 +4795,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30740101",
@@ -3586,7 +4826,15 @@ const weapon =
     "type": "Wand",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30740201",
@@ -3609,7 +4857,15 @@ const weapon =
     "type": "Wand",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30740301",
@@ -3632,7 +4888,15 @@ const weapon =
     "type": "Wand",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30740402",
@@ -3655,7 +4919,15 @@ const weapon =
     "type": "Wand",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30740501",
@@ -3678,7 +4950,15 @@ const weapon =
     "type": "Wand",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30749901",
@@ -3701,7 +4981,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30749902",
@@ -3724,7 +5012,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30749903",
@@ -3747,7 +5043,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30750101",
@@ -3770,7 +5074,15 @@ const weapon =
     "type": "Wand",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30750202",
@@ -3793,7 +5105,15 @@ const weapon =
     "type": "Wand",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30750301",
@@ -3816,7 +5136,15 @@ const weapon =
     "type": "Wand",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30750401",
@@ -3839,7 +5167,15 @@ const weapon =
     "type": "Wand",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30750501",
@@ -3862,7 +5198,15 @@ const weapon =
     "type": "Wand",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30759901",
@@ -3885,7 +5229,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30759902",
@@ -3908,7 +5260,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30759903",
@@ -3931,7 +5291,15 @@ const weapon =
     "type": "Wand",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30830101",
@@ -3954,7 +5322,15 @@ const weapon =
     "type": "Staff",
     "element": "Flame",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30830201",
@@ -3977,7 +5353,15 @@ const weapon =
     "type": "Staff",
     "element": "Water",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30830301",
@@ -4000,7 +5384,15 @@ const weapon =
     "type": "Staff",
     "element": "Wind",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30830401",
@@ -4023,7 +5415,15 @@ const weapon =
     "type": "Staff",
     "element": "Light",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30830402",
@@ -4046,7 +5446,15 @@ const weapon =
     "type": "Staff",
     "element": "Light",
     "rarity": "3",
-    "tier": "0"
+    "tier": "0",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30830501",
@@ -4069,7 +5477,15 @@ const weapon =
     "type": "Staff",
     "element": "Shadow",
     "rarity": "3",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30839901",
@@ -4092,7 +5508,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "3",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30839902",
@@ -4115,7 +5539,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30839903",
@@ -4138,7 +5570,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "3",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 25,
+      "2": 30,
+      "3": 35,
+      "4": 40
+    },
+    "MAX_LEVEL": 40
   },
   {
     "Id": "30840101",
@@ -4161,7 +5601,15 @@ const weapon =
     "type": "Staff",
     "element": "Flame",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30840201",
@@ -4184,7 +5632,15 @@ const weapon =
     "type": "Staff",
     "element": "Water",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30840301",
@@ -4207,7 +5663,15 @@ const weapon =
     "type": "Staff",
     "element": "Wind",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30840401",
@@ -4230,7 +5694,15 @@ const weapon =
     "type": "Staff",
     "element": "Light",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30840501",
@@ -4253,7 +5725,15 @@ const weapon =
     "type": "Staff",
     "element": "Shadow",
     "rarity": "4",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30849901",
@@ -4276,7 +5756,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "4",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30849902",
@@ -4299,7 +5787,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30849903",
@@ -4322,7 +5818,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "4",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 50,
+      "1": 55,
+      "2": 60,
+      "3": 65,
+      "4": 70
+    },
+    "MAX_LEVEL": 70
   },
   {
     "Id": "30850101",
@@ -4345,7 +5849,15 @@ const weapon =
     "type": "Staff",
     "element": "Flame",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30850201",
@@ -4368,7 +5880,15 @@ const weapon =
     "type": "Staff",
     "element": "Water",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30850301",
@@ -4391,7 +5911,15 @@ const weapon =
     "type": "Staff",
     "element": "Wind",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30850401",
@@ -4414,7 +5942,15 @@ const weapon =
     "type": "Staff",
     "element": "Light",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30850501",
@@ -4437,7 +5973,15 @@ const weapon =
     "type": "Staff",
     "element": "Shadow",
     "rarity": "5",
-    "tier": "3"
+    "tier": "3",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30859901",
@@ -4460,7 +6004,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "5",
-    "tier": "1"
+    "tier": "1",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30859902",
@@ -4483,7 +6035,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Id": "30859903",
@@ -4506,7 +6066,15 @@ const weapon =
     "type": "Staff",
     "element": "None",
     "rarity": "5",
-    "tier": "2"
+    "tier": "2",
+    "LEVEL_LIMIT": {
+      "0": 80,
+      "1": 85,
+      "2": 90,
+      "3": 95,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   }
 ];
 export default weapon;

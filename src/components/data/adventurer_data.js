@@ -25,7 +25,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "4",
     "element": "Flame",
-    "img": "100001 01 r04.png"
+    "img": "100001 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "100002 01 r04",
@@ -52,7 +58,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "4",
     "element": "Water",
-    "img": "100002 01 r04.png"
+    "img": "100002 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "100002 02 r05",
@@ -79,7 +91,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "5",
     "element": "Light",
-    "img": "100002 02 r05.png"
+    "img": "100002 02 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "100003 01 r04",
@@ -106,7 +124,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "4",
     "element": "Wind",
-    "img": "100003 01 r04.png"
+    "img": "100003 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "100004 01 r04",
@@ -133,7 +157,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "4",
     "element": "Shadow",
-    "img": "100004 01 r04.png"
+    "img": "100004 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "100006 01 r04",
@@ -160,7 +190,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "4",
     "element": "Light",
-    "img": "100006 01 r04.png"
+    "img": "100006 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110001 01 r03",
@@ -187,7 +223,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "3",
     "element": "Flame",
-    "img": "110001 01 r03.png"
+    "img": "110001 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110002 01 r03",
@@ -214,7 +256,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "3",
     "element": "Flame",
-    "img": "110002 01 r03.png"
+    "img": "110002 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110003 01 r03",
@@ -241,7 +289,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "3",
     "element": "Flame",
-    "img": "110003 01 r03.png"
+    "img": "110003 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110004 01 r03",
@@ -268,7 +322,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "3",
     "element": "Flame",
-    "img": "110004 01 r03.png"
+    "img": "110004 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110005 01 r03",
@@ -295,7 +355,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "3",
     "element": "Flame",
-    "img": "110005 01 r03.png"
+    "img": "110005 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110006 01 r03",
@@ -322,7 +388,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Flame",
-    "img": "110006 01 r03.png"
+    "img": "110006 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110007 01 r04",
@@ -349,7 +421,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "4",
     "element": "Flame",
-    "img": "110007 01 r04.png"
+    "img": "110007 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110008 01 r04",
@@ -376,7 +454,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "4",
     "element": "Flame",
-    "img": "110008 01 r04.png"
+    "img": "110008 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110009 01 r04",
@@ -403,7 +487,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "4",
     "element": "Flame",
-    "img": "110009 01 r04.png"
+    "img": "110009 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110010 01 r05",
@@ -430,7 +520,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "5",
     "element": "Flame",
-    "img": "110010 01 r05.png"
+    "img": "110010 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110011 01 r05",
@@ -457,7 +553,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "5",
     "element": "Flame",
-    "img": "110011 01 r05.png"
+    "img": "110011 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110012 01 r03",
@@ -484,7 +586,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "3",
     "element": "Water",
-    "img": "110012 01 r03.png"
+    "img": "110012 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110013 01 r03",
@@ -511,7 +619,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "3",
     "element": "Water",
-    "img": "110013 01 r03.png"
+    "img": "110013 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110014 01 r03",
@@ -538,7 +652,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "3",
     "element": "Water",
-    "img": "110014 01 r03.png"
+    "img": "110014 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110015 01 r03",
@@ -565,7 +685,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "3",
     "element": "Water",
-    "img": "110015 01 r03.png"
+    "img": "110015 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110016 01 r03",
@@ -592,7 +718,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "3",
     "element": "Water",
-    "img": "110016 01 r03.png"
+    "img": "110016 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110017 01 r03",
@@ -619,7 +751,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Water",
-    "img": "110017 01 r03.png"
+    "img": "110017 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110018 01 r04",
@@ -646,7 +784,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "4",
     "element": "Water",
-    "img": "110018 01 r04.png"
+    "img": "110018 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110019 01 r04",
@@ -673,7 +817,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "4",
     "element": "Water",
-    "img": "110019 01 r04.png"
+    "img": "110019 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110020 01 r04",
@@ -700,7 +850,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "4",
     "element": "Water",
-    "img": "110020 01 r04.png"
+    "img": "110020 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110021 01 r05",
@@ -727,7 +883,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "5",
     "element": "Water",
-    "img": "110021 01 r05.png"
+    "img": "110021 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110022 01 r05",
@@ -754,7 +916,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "5",
     "element": "Water",
-    "img": "110022 01 r05.png"
+    "img": "110022 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110023 01 r03",
@@ -781,7 +949,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "3",
     "element": "Wind",
-    "img": "110023 01 r03.png"
+    "img": "110023 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110024 01 r03",
@@ -808,7 +982,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Wind",
-    "img": "110024 01 r03.png"
+    "img": "110024 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110025 01 r03",
@@ -835,7 +1015,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "3",
     "element": "Wind",
-    "img": "110025 01 r03.png"
+    "img": "110025 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110026 01 r03",
@@ -862,7 +1048,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "3",
     "element": "Wind",
-    "img": "110026 01 r03.png"
+    "img": "110026 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110027 01 r03",
@@ -889,7 +1081,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "3",
     "element": "Wind",
-    "img": "110027 01 r03.png"
+    "img": "110027 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110028 01 r03",
@@ -916,7 +1114,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "3",
     "element": "Wind",
-    "img": "110028 01 r03.png"
+    "img": "110028 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110029 01 r04",
@@ -943,7 +1147,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "4",
     "element": "Wind",
-    "img": "110029 01 r04.png"
+    "img": "110029 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110030 01 r04",
@@ -970,7 +1180,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "4",
     "element": "Wind",
-    "img": "110030 01 r04.png"
+    "img": "110030 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110031 01 r04",
@@ -997,7 +1213,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "4",
     "element": "Wind",
-    "img": "110031 01 r04.png"
+    "img": "110031 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110032 01 r05",
@@ -1024,7 +1246,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "5",
     "element": "Wind",
-    "img": "110032 01 r05.png"
+    "img": "110032 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110033 01 r03",
@@ -1051,7 +1279,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "3",
     "element": "Light",
-    "img": "110033 01 r03.png"
+    "img": "110033 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110034 01 r03",
@@ -1078,7 +1312,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "3",
     "element": "Light",
-    "img": "110034 01 r03.png"
+    "img": "110034 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110035 01 r03",
@@ -1105,7 +1345,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "3",
     "element": "Light",
-    "img": "110035 01 r03.png"
+    "img": "110035 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110036 01 r03",
@@ -1132,7 +1378,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "3",
     "element": "Light",
-    "img": "110036 01 r03.png"
+    "img": "110036 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110037 01 r03",
@@ -1159,7 +1411,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "3",
     "element": "Light",
-    "img": "110037 01 r03.png"
+    "img": "110037 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110038 01 r03",
@@ -1186,7 +1444,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Light",
-    "img": "110038 01 r03.png"
+    "img": "110038 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110039 01 r04",
@@ -1213,7 +1477,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "4",
     "element": "Light",
-    "img": "110039 01 r04.png"
+    "img": "110039 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110040 01 r04",
@@ -1240,7 +1510,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "4",
     "element": "Light",
-    "img": "110040 01 r04.png"
+    "img": "110040 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110041 01 r04",
@@ -1267,7 +1543,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "4",
     "element": "Light",
-    "img": "110041 01 r04.png"
+    "img": "110041 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110042 01 r05",
@@ -1294,7 +1576,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "5",
     "element": "Light",
-    "img": "110042 01 r05.png"
+    "img": "110042 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110043 01 r05",
@@ -1321,7 +1609,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "5",
     "element": "Light",
-    "img": "110043 01 r05.png"
+    "img": "110043 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110044 01 r03",
@@ -1348,7 +1642,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110044 01 r03.png"
+    "img": "110044 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110045 01 r03",
@@ -1375,7 +1675,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110045 01 r03.png"
+    "img": "110045 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110046 01 r03",
@@ -1402,7 +1708,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110046 01 r03.png"
+    "img": "110046 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110047 02 r04",
@@ -1429,7 +1741,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "4",
     "element": "Light",
-    "img": "110047 02 r04.png"
+    "img": "110047 02 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110047 01 r03",
@@ -1456,7 +1774,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110047 01 r03.png"
+    "img": "110047 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110048 01 r03",
@@ -1483,7 +1807,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110048 01 r03.png"
+    "img": "110048 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110049 02 r03",
@@ -1510,7 +1840,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "3",
     "element": "Light",
-    "img": "110049 02 r03.png"
+    "img": "110049 02 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110049 01 r03",
@@ -1537,7 +1873,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110049 01 r03.png"
+    "img": "110049 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110050 01 r04",
@@ -1564,7 +1906,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "4",
     "element": "Shadow",
-    "img": "110050 01 r04.png"
+    "img": "110050 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110051 01 r04",
@@ -1591,7 +1939,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "4",
     "element": "Shadow",
-    "img": "110051 01 r04.png"
+    "img": "110051 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110052 01 r04",
@@ -1618,7 +1972,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "4",
     "element": "Shadow",
-    "img": "110052 01 r04.png"
+    "img": "110052 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110053 01 r05",
@@ -1645,7 +2005,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "5",
     "element": "Shadow",
-    "img": "110053 01 r05.png"
+    "img": "110053 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110063 01 r03",
@@ -1672,7 +2038,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "3",
     "element": "Light",
-    "img": "110063 01 r03.png"
+    "img": "110063 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110067 01 r03",
@@ -1699,7 +2071,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110067 01 r03.png"
+    "img": "110067 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110252 01 r05",
@@ -1726,7 +2104,13 @@ const adventurer =
     "type": "Wand",
     "rarity": "5",
     "element": "Water",
-    "img": "110252 01 r05.png"
+    "img": "110252 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110253 01 r04",
@@ -1753,7 +2137,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "4",
     "element": "Water",
-    "img": "110253 01 r04.png"
+    "img": "110253 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110254 01 r03",
@@ -1780,7 +2170,13 @@ const adventurer =
     "type": "Lance",
     "rarity": "3",
     "element": "Shadow",
-    "img": "110254 01 r03.png"
+    "img": "110254 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110255 01 r04",
@@ -1807,7 +2203,13 @@ const adventurer =
     "type": "Blade",
     "rarity": "4",
     "element": "Water",
-    "img": "110255 01 r04.png"
+    "img": "110255 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110256 01 r05",
@@ -1834,7 +2236,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "5",
     "element": "Wind",
-    "img": "110256 01 r05.png"
+    "img": "110256 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110257 01 r04",
@@ -1861,7 +2269,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "4",
     "element": "Wind",
-    "img": "110257 01 r04.png"
+    "img": "110257 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110258 01 r03",
@@ -1888,7 +2302,13 @@ const adventurer =
     "type": "Axe",
     "rarity": "3",
     "element": "Water",
-    "img": "110258 01 r03.png"
+    "img": "110258 01 r03.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110266 01 r05",
@@ -1915,7 +2335,13 @@ const adventurer =
     "type": "Sword",
     "rarity": "5",
     "element": "Flame",
-    "img": "110266 01 r05.png"
+    "img": "110266 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110267 01 r05",
@@ -1942,7 +2368,13 @@ const adventurer =
     "type": "Bow",
     "rarity": "5",
     "element": "Wind",
-    "img": "110267 01 r05.png"
+    "img": "110267 01 r05.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110269 01 r04",
@@ -1969,7 +2401,13 @@ const adventurer =
     "type": "Staff",
     "rarity": "4",
     "element": "Flame",
-    "img": "110269 01 r04.png"
+    "img": "110269 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Id": "110270 01 r04",
@@ -1996,7 +2434,13 @@ const adventurer =
     "type": "Dagger",
     "rarity": "4",
     "element": "Flame",
-    "img": "110270 01 r04.png"
+    "img": "110270 01 r04.png",
+    "LEVEL_LIMIT": {
+      "3": 60,
+      "4": 70,
+      "5": 80
+    },
+    "MAX_LEVEL": 80
   }
 ];
 export default adventurer;

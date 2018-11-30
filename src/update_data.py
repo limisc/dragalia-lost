@@ -35,6 +35,11 @@ def get_cargoquery_url(region, cargo_table, param):
 
 def update_adventurers_data():
     adventurers = []
+    level_dict = {
+        "3": 60,
+        "4": 70,
+        "5": 80,
+    }
     param = 'Id,Name,WeaponType,Rarity,ElementalType,VariationId,' + \
             'MinHp3,MinHp4,MinHp5,MaxHp,PlusHp0,PlusHp1,PlusHp2,PlusHp3,PlusHp4,McFullBonusHp5,' + \
             'MinAtk3,MinAtk4,MinAtk5,PlusAtk0,PlusAtk1,PlusAtk2,PlusAtk3,PlusAtk4,McFullBonusAtk5'
@@ -48,25 +53,50 @@ def update_adventurers_data():
     for i in raw_data['cargoquery']:
         adventurer = i['title']
         if adventurer['Id'] != "":
-          adventurer['Id'] = "%s 0%s r0%s" % (adventurer['Id'], adventurer.pop(
-            'VariationId', None), adventurer['Rarity'])
-          if not any(a['Id'] == adventurer['Id'] for a in adventurers):
-              for k, v in adventurer.items():
-                  if k != "Rarity":
-                      try:
-                          adventurer[k] = int(v)
-                      except Exception:
-                          pass
-              adventurer['type'] = adventurer.pop('WeaponType', None)
-              adventurer['rarity'] = adventurer.pop('Rarity', None)
-              adventurer['element'] = adventurer.pop('ElementalType', None)
-              adventurer['img'] = adventurer['Id'] + ".png"
-              adventurers.append(adventurer)
+            adventurer['Id'] = "%s 0%s r0%s" % (adventurer['Id'], adventurer.pop(
+                'VariationId', None), adventurer['Rarity'])
+            if not any(a['Id'] == adventurer['Id'] for a in adventurers):
+                for k, v in adventurer.items():
+                    if k != "Rarity":
+                        try:
+                            adventurer[k] = int(v)
+                        except Exception:
+                            pass
+                adventurer['type'] = adventurer.pop('WeaponType', None)
+                adventurer['rarity'] = adventurer.pop('Rarity', None)
+                adventurer['element'] = adventurer.pop('ElementalType', None)
+                adventurer['img'] = adventurer['Id'] + ".png"
+                adventurer['LEVEL_LIMIT'] = level_dict
+                adventurer['MAX_LEVEL'] = 80
+                adventurers.append(adventurer)
     save_file(adventurers, 'adventurer', 'adventurer_data.js')
 
 
 def update_weapons_data():
     weapons = []
+    level_dict = {
+        "3": {
+            0: 20,
+            1: 25,
+            2: 30,
+            3: 35,
+            4: 40,
+        },
+        "4": {
+            0: 50,
+            1: 55,
+            2: 60,
+            3: 65,
+            4: 70,
+        },
+        "5": {
+            0: 80,
+            1: 85,
+            2: 90,
+            3: 95,
+            4: 100,
+        }
+    }
     param = 'Id,BaseId,FormId,WeaponName,Type,Rarity,ElementalType,' + \
         'CraftNodeId,ParentCraftNodeId,CraftGroupId,' + \
         'AssembleCoin,' + \
@@ -80,7 +110,8 @@ def update_weapons_data():
     for i in raw_data:
         weapon = i['title']
         if weapon['Id'] != "" and (not any(w['Id'] == weapon['Id'] for w in weapons)) and int(i['title']['Rarity']) >= 3:
-            weapon['img'] = "%s_01_%s.png" % (weapon.pop('BaseId', None), weapon.pop('FormId', None))
+            weapon['img'] = "%s_01_%s.png" % (weapon.pop(
+                'BaseId', None), weapon.pop('FormId', None))
             for k, v in weapon.items():
                 if k not in ["Id", "Rarity"]:
                     try:
@@ -91,7 +122,10 @@ def update_weapons_data():
             weapon['type'] = weapon.pop('Type', None)
             weapon['element'] = weapon.pop('ElementalType', None)
             weapon['rarity'] = weapon.pop('Rarity', None)
-            weapon['tier'] = str(math.floor(weapon['CraftNodeId'] / 100)) if weapon['CraftNodeId'] else "0"
+            weapon['tier'] = str(math.floor(
+                weapon['CraftNodeId'] / 100)) if weapon['CraftNodeId'] else "0"
+            weapon["LEVEL_LIMIT"] = level_dict[weapon['rarity']]
+            weapon["MAX_LEVEL"] = level_dict[weapon['rarity']][4]
             weapons.append(weapon)
 
     save_file(weapons, 'weapon', 'weapon_data.js')
@@ -116,6 +150,29 @@ def update_dragons_data():
             abilities[i['title']['Id']] = ability
 
     dragons = []
+    level_dict = {
+        "3": {
+            0: 20,
+            1: 30,
+            2: 40,
+            3: 50,
+            4: 60,
+        },
+        "4": {
+            0: 30,
+            1: 40,
+            2: 50,
+            3: 65,
+            4: 80,
+        },
+        "5": {
+            0: 40,
+            1: 55,
+            2: 70,
+            3: 85,
+            4: 100,
+        }
+    }
     param = 'BaseId,Id,Name,ElementalType,' + \
         'Rarity,' + \
         'MinHp,MaxHp,MinAtk,MaxAtk,' + \
@@ -141,12 +198,44 @@ def update_dragons_data():
                         pass
             dragon['rarity'] = dragon.pop('Rarity', None)
             dragon['element'] = dragon.pop('ElementalType', None)
+            dragon["LEVEL_LIMIT"] = level_dict[dragon['rarity']]
+            dragon["MAX_LEVEL"] = level_dict[dragon['rarity']][4]
             dragons.append(dragon)
     save_file(dragons, 'dragon', 'dragon_data.js')
 
 
 def update_wyrmprints_data():
     wyrmprints = []
+    level_dict = {
+        "2": {
+            0: 10,
+            1: 15,
+            2: 20,
+            3: 25,
+            4: 30,
+        },
+        "3": {
+            0: 20,
+            1: 30,
+            2: 40,
+            3: 50,
+            4: 60,
+        },
+        "4": {
+            0: 30,
+            1: 40,
+            2: 50,
+            3: 65,
+            4: 80,
+        },
+        "5": {
+            0: 40,
+            1: 55,
+            2: 70,
+            3: 85,
+            4: 100,
+        }
+    }
     param = 'BaseId,Name,Rarity,' + \
         'MinHp,MaxHp,MinAtk,MaxAtk'
     url = get_cargoquery_url(API_EN, 'Wyrmprints', param)
@@ -167,6 +256,8 @@ def update_wyrmprints_data():
                     except Exception:
                         pass
             wyrmprint['rarity'] = wyrmprint.pop('Rarity', None)
+            wyrmprint["LEVEL_LIMIT"] = level_dict[wyrmprint['rarity']]
+            wyrmprint["MAX_LEVEL"] = level_dict[wyrmprint['rarity']][4]
             wyrmprints.append(wyrmprint)
     save_file(wyrmprints, 'wyrmprint', 'wyrmprint_data.js')
 
@@ -197,7 +288,7 @@ def download_adventurer_img():
         adventurer_imgs = {i['alt']: i['src']
                            for i in img_tags if re.match('\d{6} \d{2} r\d{2}.png', i['alt'])}
         for key, value in adventurer_imgs.items():
-            urllib.request.urlretrieve(value, img_path("adventurers", key))
+            urllib.request.urlretrieve(value, img_path("adventurer", key))
 
     except Exception as e:
         print(repr(e))
@@ -238,9 +329,9 @@ def download_dragon_img():
 if __name__ == "__main__":
     update_adventurers_data()
     update_weapons_data()
-    # update_materials_data()
     update_wyrmprints_data()
     update_dragons_data()
+    # update_materials_data()
     # download_adventurer_img()
     # download_wyrmprint_img()
     # download_dragon_img()

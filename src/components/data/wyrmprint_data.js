@@ -8,7 +8,15 @@ const wyrmprint =
     "MaxAtk": 12,
     "Id": "400001",
     "img": "400001 01.png",
-    "rarity": "2"
+    "rarity": "2",
+    "LEVEL_LIMIT": {
+      "0": 10,
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 30
+    },
+    "MAX_LEVEL": 30
   },
   {
     "Name": "Seafood Soup",
@@ -18,7 +26,15 @@ const wyrmprint =
     "MaxAtk": 12,
     "Id": "400002",
     "img": "400002 01.png",
-    "rarity": "2"
+    "rarity": "2",
+    "LEVEL_LIMIT": {
+      "0": 10,
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 30
+    },
+    "MAX_LEVEL": 30
   },
   {
     "Name": "Dragon Arcanum",
@@ -28,7 +44,15 @@ const wyrmprint =
     "MaxAtk": 12,
     "Id": "400003",
     "img": "400003 01.png",
-    "rarity": "2"
+    "rarity": "2",
+    "LEVEL_LIMIT": {
+      "0": 10,
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 30
+    },
+    "MAX_LEVEL": 30
   },
   {
     "Name": "Mana Fount",
@@ -38,7 +62,15 @@ const wyrmprint =
     "MaxAtk": 13,
     "Id": "400004",
     "img": "400004 01.png",
-    "rarity": "2"
+    "rarity": "2",
+    "LEVEL_LIMIT": {
+      "0": 10,
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 30
+    },
+    "MAX_LEVEL": 30
   },
   {
     "Name": "Old Harp",
@@ -48,7 +80,15 @@ const wyrmprint =
     "MaxAtk": 12,
     "Id": "400005",
     "img": "400005 01.png",
-    "rarity": "2"
+    "rarity": "2",
+    "LEVEL_LIMIT": {
+      "0": 10,
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 30
+    },
+    "MAX_LEVEL": 30
   },
   {
     "Name": "Scorn the Destrier",
@@ -58,7 +98,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400006",
     "img": "400006 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Halo",
@@ -68,7 +116,15 @@ const wyrmprint =
     "MaxAtk": 23,
     "Id": "400007",
     "img": "400007 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Teatime",
@@ -78,7 +134,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400008",
     "img": "400008 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Bellathorna",
@@ -88,7 +152,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400009",
     "img": "400009 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Alberian Banner",
@@ -98,7 +170,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400010",
     "img": "400010 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Cry of the Horn",
@@ -108,7 +188,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400011",
     "img": "400011 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Howling Predator",
@@ -118,7 +206,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400012",
     "img": "400012 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Syndicate Mask",
@@ -128,7 +224,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400013",
     "img": "400013 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Hallowed Mountains",
@@ -138,7 +242,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400014",
     "img": "400014 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Lakeside Euphony",
@@ -148,7 +260,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400015",
     "img": "400015 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Dragon's Nest",
@@ -158,7 +278,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400016",
     "img": "400016 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Enchiridion",
@@ -168,7 +296,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400017",
     "img": "400017 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Ironside Shield",
@@ -178,7 +314,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400018",
     "img": "400018 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Winds of Saint Lotier",
@@ -188,7 +332,15 @@ const wyrmprint =
     "MaxAtk": 23,
     "Id": "400019",
     "img": "400019 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Aromatherapy",
@@ -198,7 +350,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400020",
     "img": "400020 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Eight-Leaf Clover",
@@ -208,7 +368,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400021",
     "img": "400021 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Forbidden Relic",
@@ -218,7 +386,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400022",
     "img": "400022 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Unfulfilled Visions",
@@ -228,7 +404,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400023",
     "img": "400023 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Liber Grimortis",
@@ -238,7 +422,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400024",
     "img": "400024 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Night Harbinger",
@@ -248,7 +440,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400025",
     "img": "400025 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Tracks of Hope",
@@ -258,7 +458,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400026",
     "img": "400026 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Potiongrass",
@@ -268,7 +476,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400028",
     "img": "400028 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Crown of Yore",
@@ -278,7 +494,15 @@ const wyrmprint =
     "MaxAtk": 25,
     "Id": "400029",
     "img": "400029 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Nevermelt Ice",
@@ -288,7 +512,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400031",
     "img": "400031 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Pumpkin Pail",
@@ -298,7 +530,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400032",
     "img": "400032 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Flower in the Fray",
@@ -308,7 +548,15 @@ const wyrmprint =
     "MaxAtk": 52,
     "Id": "400033",
     "img": "400033 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Destiny's Hand",
@@ -318,7 +566,15 @@ const wyrmprint =
     "MaxAtk": 47,
     "Id": "400034",
     "img": "400034 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Sniper's Allure",
@@ -328,7 +584,15 @@ const wyrmprint =
     "MaxAtk": 51,
     "Id": "400035",
     "img": "400035 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Promises in the Rain",
@@ -338,7 +602,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400036",
     "img": "400036 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Fireside Gathering",
@@ -348,7 +620,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400037",
     "img": "400037 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Trove of Knowledge",
@@ -358,7 +638,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400038",
     "img": "400038 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Castaway's Journal",
@@ -368,7 +656,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400039",
     "img": "400039 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Lord of the Skies",
@@ -378,7 +674,15 @@ const wyrmprint =
     "MaxAtk": 46,
     "Id": "400040",
     "img": "400040 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "King's Countenance",
@@ -388,7 +692,15 @@ const wyrmprint =
     "MaxAtk": 41,
     "Id": "400041",
     "img": "400041 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Braving the Unknown",
@@ -398,7 +710,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400042",
     "img": "400042 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "What a Handful!",
@@ -408,7 +728,15 @@ const wyrmprint =
     "MaxAtk": 42,
     "Id": "400043",
     "img": "400043 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "How to Flee Properly",
@@ -418,7 +746,15 @@ const wyrmprint =
     "MaxAtk": 41,
     "Id": "400044",
     "img": "400044 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "One with the Shadows",
@@ -428,7 +764,15 @@ const wyrmprint =
     "MaxAtk": 51,
     "Id": "400045",
     "img": "400045 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Warlust",
@@ -438,7 +782,15 @@ const wyrmprint =
     "MaxAtk": 52,
     "Id": "400046",
     "img": "400046 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Armorer's Aspirations",
@@ -448,7 +800,15 @@ const wyrmprint =
     "MaxAtk": 37,
     "Id": "400047",
     "img": "400047 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Revolutionary Magic",
@@ -458,7 +818,15 @@ const wyrmprint =
     "MaxAtk": 46,
     "Id": "400048",
     "img": "400048 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Sisters of the Anvil",
@@ -468,7 +836,15 @@ const wyrmprint =
     "MaxAtk": 46,
     "Id": "400049",
     "img": "400049 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Dueling Dancers",
@@ -478,7 +854,15 @@ const wyrmprint =
     "MaxAtk": 45,
     "Id": "400050",
     "img": "400050 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Together We Stand",
@@ -488,7 +872,15 @@ const wyrmprint =
     "MaxAtk": 52,
     "Id": "400051",
     "img": "400051 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Give Me Your Wounded",
@@ -498,7 +890,15 @@ const wyrmprint =
     "MaxAtk": 53,
     "Id": "400052",
     "img": "400052 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Paladyn Defender",
@@ -508,7 +908,15 @@ const wyrmprint =
     "MaxAtk": 33,
     "Id": "400053",
     "img": "400053 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Greatwyrm Midgardsormr",
@@ -518,7 +926,15 @@ const wyrmprint =
     "MaxAtk": 30,
     "Id": "400055",
     "img": "400055 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Greatwyrm Mercury",
@@ -528,7 +944,15 @@ const wyrmprint =
     "MaxAtk": 30,
     "Id": "400056",
     "img": "400056 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Greatwyrm Brunhilda",
@@ -538,7 +962,15 @@ const wyrmprint =
     "MaxAtk": 30,
     "Id": "400057",
     "img": "400057 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Greatwyrm Jupiter",
@@ -548,7 +980,15 @@ const wyrmprint =
     "MaxAtk": 30,
     "Id": "400058",
     "img": "400058 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Greatwyrm Zodiark",
@@ -558,7 +998,15 @@ const wyrmprint =
     "MaxAtk": 30,
     "Id": "400059",
     "img": "400059 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "The Warrioresses",
@@ -568,7 +1016,15 @@ const wyrmprint =
     "MaxAtk": 52,
     "Id": "400060",
     "img": "400060 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Silke Lends a Hand",
@@ -578,7 +1034,15 @@ const wyrmprint =
     "MaxAtk": 42,
     "Id": "400061",
     "img": "400061 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Valiant Crown",
@@ -588,7 +1052,15 @@ const wyrmprint =
     "MaxAtk": 65,
     "Id": "400062",
     "img": "400062 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Flash of Genius",
@@ -598,7 +1070,15 @@ const wyrmprint =
     "MaxAtk": 57,
     "Id": "400063",
     "img": "400063 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Evening of Luxury",
@@ -608,7 +1088,15 @@ const wyrmprint =
     "MaxAtk": 65,
     "Id": "400064",
     "img": "400064 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Worthy Rivals",
@@ -618,7 +1106,15 @@ const wyrmprint =
     "MaxAtk": 64,
     "Id": "400065",
     "img": "400065 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Auspex's Prayer",
@@ -628,7 +1124,15 @@ const wyrmprint =
     "MaxAtk": 53,
     "Id": "400066",
     "img": "400066 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Dragon Brethren",
@@ -638,7 +1142,15 @@ const wyrmprint =
     "MaxAtk": 56,
     "Id": "400067",
     "img": "400067 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Luca's Prank",
@@ -648,7 +1160,15 @@ const wyrmprint =
     "MaxAtk": 57,
     "Id": "400068",
     "img": "400068 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Happier Times",
@@ -658,7 +1178,15 @@ const wyrmprint =
     "MaxAtk": 51,
     "Id": "400069",
     "img": "400069 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Levin's Champion",
@@ -668,7 +1196,15 @@ const wyrmprint =
     "MaxAtk": 64,
     "Id": "400070",
     "img": "400070 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Nightstalker",
@@ -678,7 +1214,15 @@ const wyrmprint =
     "MaxAtk": 57,
     "Id": "400071",
     "img": "400071 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Glorious Tempest",
@@ -688,7 +1232,15 @@ const wyrmprint =
     "MaxAtk": 39,
     "Id": "400072",
     "img": "400072 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Cleo's Ruse",
@@ -698,7 +1250,15 @@ const wyrmprint =
     "MaxAtk": 53,
     "Id": "400074",
     "img": "400074 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Tough Love",
@@ -708,7 +1268,15 @@ const wyrmprint =
     "MaxAtk": 65,
     "Id": "400075",
     "img": "400075 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Crystalian Envoy",
@@ -718,7 +1286,15 @@ const wyrmprint =
     "MaxAtk": 57,
     "Id": "400076",
     "img": "400076 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Witch's Kitchen",
@@ -728,7 +1304,15 @@ const wyrmprint =
     "MaxAtk": 57,
     "Id": "400077",
     "img": "400077 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Of Tricks and Treats",
@@ -738,7 +1322,15 @@ const wyrmprint =
     "MaxAtk": 56,
     "Id": "400078",
     "img": "400078 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Plunder Pals",
@@ -748,7 +1340,15 @@ const wyrmprint =
     "MaxAtk": 54,
     "Id": "400087",
     "img": "400087 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Jewels of the Sun",
@@ -758,7 +1358,15 @@ const wyrmprint =
     "MaxAtk": 64,
     "Id": "400099",
     "img": "400099 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Samurai Siesta",
@@ -768,7 +1376,15 @@ const wyrmprint =
     "MaxAtk": 41,
     "Id": "400100",
     "img": "400100 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "The Halidom's Picnic",
@@ -778,7 +1394,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400101",
     "img": "400101 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Better Together",
@@ -788,7 +1412,15 @@ const wyrmprint =
     "MaxAtk": 34,
     "Id": "400102",
     "img": "400102 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Gentle Winds",
@@ -798,7 +1430,15 @@ const wyrmprint =
     "MaxAtk": 64,
     "Id": "400103",
     "img": "400103 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Gale of Beauty",
@@ -808,7 +1448,15 @@ const wyrmprint =
     "MaxAtk": 64,
     "Id": "400104",
     "img": "400104 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   },
   {
     "Name": "Fresh Perspective",
@@ -818,7 +1466,15 @@ const wyrmprint =
     "MaxAtk": 52,
     "Id": "400105",
     "img": "400105 01.png",
-    "rarity": "4"
+    "rarity": "4",
+    "LEVEL_LIMIT": {
+      "0": 30,
+      "1": 40,
+      "2": 50,
+      "3": 65,
+      "4": 80
+    },
+    "MAX_LEVEL": 80
   },
   {
     "Name": "Garuda's Feathers",
@@ -828,7 +1484,15 @@ const wyrmprint =
     "MaxAtk": 20,
     "Id": "400106",
     "img": "400106 01.png",
-    "rarity": "3"
+    "rarity": "3",
+    "LEVEL_LIMIT": {
+      "0": 20,
+      "1": 30,
+      "2": 40,
+      "3": 50,
+      "4": 60
+    },
+    "MAX_LEVEL": 60
   },
   {
     "Name": "Louise's Hobbies",
@@ -838,7 +1502,15 @@ const wyrmprint =
     "MaxAtk": 49,
     "Id": "400107",
     "img": "400107 01.png",
-    "rarity": "5"
+    "rarity": "5",
+    "LEVEL_LIMIT": {
+      "0": 40,
+      "1": 55,
+      "2": 70,
+      "3": 85,
+      "4": 100
+    },
+    "MAX_LEVEL": 100
   }
 ];
 export default wyrmprint;

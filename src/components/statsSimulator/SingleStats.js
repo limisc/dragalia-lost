@@ -13,6 +13,7 @@ class SingleStats extends Component {
     }
     this.inputUpdate = this.inputUpdate.bind(this);
     this.selectUpdate = this.selectUpdate.bind(this);
+    this.calcStats = this.calcStats.bind(this);
   }
 
   // shouldComponentUpdate(nextProps) {
@@ -42,28 +43,16 @@ class SingleStats extends Component {
     const { stats } = this.state;
     const { MAX_LEVEL } = stats;
     let level = e.target.value < MAX_LEVEL ? e.target.value : MAX_LEVEL;
-    let timeId = 0;
-    clearTimeout(timeId)
 
+    let timeId = 0;
+    clearTimeout(timeId);
     this.setState({
       stats: {
         ...stats,
         level,
       }
-    }, () => {
-      if (level === "") {
-        level = 1;
-        timeId = setTimeout(() => {
-          this.setState({
-            stats: {
-              ...stats,
-              level,
-            }
-          })
-        }, 1000);
-      }
-      updateLevel(section, level)
-    });
+    })
+    timeId = setTimeout(updateLevel(section, level), 1000);
   }
 
   selectUpdate(e) {
@@ -77,6 +66,34 @@ class SingleStats extends Component {
     });
   }
 
+
+  calcStats() {
+    const { stats } = this.state;
+    if (Object.getOwnPropertyNames(stats).length !== 0) {
+      const {
+        level,
+        mana,
+        rarity,
+        MinHp3,
+        MinHp4,
+        MinHp5,
+        MaxHp,
+        PlusHp0,
+        PlusHp1,
+        PlusHp2,
+        PlusHp3,
+        PlusHp4,
+        McFullBonusHp5,
+      } = stats;
+
+      const min_Hp = `MinHp${rarity}`;
+      const step = (MaxHp - MinHp5) / (80 - 1);
+      const statsGain = (level - 1) * step;
+      const hp = Math.ceil(stats[min_Hp] + statsGain)
+
+      console.log(step, statsGain, hp)
+    }
+  }
   render() {
     const base_dir = process.env.PUBLIC_URL;
     const { section, handleSection, modifyUnbind } = this.props;
@@ -169,8 +186,13 @@ class SingleStats extends Component {
 
         <div id="stats-section" className="column">
           <div style={{ margin: "25px" }}>
-            <p>HP</p>
+            <p>HP:    {this.calcStats()}</p>
             <p>STR</p>
+
+
+            {section === "adventurer" &&
+              <button id="reset-btn" className="ui violet button">Reset</button>
+            }
           </div>
         </div>
       </div >
