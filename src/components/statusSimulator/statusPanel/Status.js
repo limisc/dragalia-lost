@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import StatusSelect from './StatusSelect';
+import LEVEL_LIMIT from '../../data/level_data'
 class Status extends Component {
   constructor(props) {
     super(props);
@@ -19,8 +20,6 @@ class Status extends Component {
       disable,
       status: {
         level = "",
-        mana = 0,
-        rarity = "5",
         unbind = 4,
         img = "add.png",
         Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase()
@@ -57,28 +56,11 @@ class Status extends Component {
             </div>
 
             {section === "adventurer" ?
-              <div className="equal width fields">
-                <div className="field">
-                  <label>Rarity</label>
-                  <select id="rarity" disabled={disable} value={rarity} onChange={this.updateValue}>
-                    <option value="5">5</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                  </select>
-                </div>
-
-                <div className="field">
-                  <label>Mana Circle</label>
-                  <select id="mana" disabled={disable} value={mana} onChange={this.updateValue}>
-                    <option value="50">50</option>
-                    <option value="40">40</option>
-                    <option value="30">30</option>
-                    <option value="20">20</option>
-                    <option value="10">10</option>
-                    <option value="0">0</option>
-                  </select>
-                </div>
-              </div>
+              <StatusSelect
+                disable={disable}
+                status={this.state.status}
+                updateValue={this.updateValue}
+              />
               :
               <div className="unbind-set">
                 <img
@@ -134,9 +116,46 @@ class Status extends Component {
   }
 
   updateValue(e) {
-    // const { id, value } = e.target;
     const { id, value = e.target.dataset.value } = e.target;
-    console.log(id, value)
+    const status = { ...this.state.status };
+    let { level, rarity, mana, unbind } = status;
+    const { section, updateStatus } = this.props;
+    //(neither unbindIncrement when unbind === 4) nor (unbindDecrement when unbind === 0)
+    if ((id !== "unbind") || (value === "1" && unbind < 4) || (value === "-1" && unbind > 0)) {
+      if (id === "level" && parseInt(value, 10) > this.getLevelLimit(section, rarity, unbind)) {
+        status[id] = this.getLevelLimit(section, rarity, unbind);
+      } else if (id === "unbind") {
+        unbind = unbind + parseInt(value, 10);
+        if (level > this.getLevelLimit(section, rarity, unbind)) {
+          status.level = this.getLevelLimit(section, rarity, unbind);
+        }
+        status[id] = unbind;
+      } else {
+        if (id === "rarity") {
+          //section === "adventurer", only adventurer could change rarity.
+          if (parseInt(level, 10) > this.getLevelLimit(section, value)) {
+            status.level = this.getLevelLimit(section, value)
+          }
+          if (parseInt(mana, 10) > this.getLevelLimit("mana", value)) {
+            status.mana = this.getLevelLimit("mana", value);
+          }
+        }
+        status[id] = value;
+      }
+
+      this.setState({ status });
+      updateStatus(section, status);
+    }
+  }
+
+  getLevelLimit(key, rarity, unbind = 4) {
+    switch (key) {
+      case "mana":
+      case "adventurer":
+        return LEVEL_LIMIT[key][rarity];
+      default:
+        return LEVEL_LIMIT[key][rarity][unbind];
+    }
   }
 }
 

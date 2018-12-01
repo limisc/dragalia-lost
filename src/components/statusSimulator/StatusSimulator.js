@@ -9,7 +9,13 @@ const RESET_FILTER = {
   tier: "",
 }
 
-const MANA_DICT = { "3": 30, "4": 40, "5": 50 };
+const MANA_DICT = { "3": "30", "4": "40", "5": "50" };
+
+const RARITY_FIELDS = {
+  3: ["5", "4", "3"],
+  4: ["5", "4"],
+  5: "5",
+}
 
 class StatusSimulator extends Component {
 
@@ -52,6 +58,7 @@ class StatusSimulator extends Component {
             sections={sections}
             sets={sets}
             handleSection={this.handleSection}
+            updateStatus={this.updateStatus}
           />
         </div>
         {selected &&
@@ -62,7 +69,6 @@ class StatusSimulator extends Component {
             filterField={filterField}
             handleFilter={this.handleFilter}
             handleSelection={this.handleSelection}
-            updateStatus={this.updateStatus}
           />
         }
       </div>
@@ -81,7 +87,7 @@ class StatusSimulator extends Component {
       }
     }
 
-    if (sets.weapon && section === "adventure") {
+    if (sets.weapon && section === "adventurer") {
       filters.type = sets.weapon.type;
     }
 
@@ -109,9 +115,9 @@ class StatusSimulator extends Component {
     sets = { ...sets, [selected]: { ...selection } };
 
     if (selected === "adventurer") {
-      sets[selected].level = selection.LEVEL_LIMIT[selection.rarity];
-      sets[selected].mana = MANA_DICT[selection.rarity];
-
+      sets.adventurer.level = selection.LEVEL_LIMIT[selection.rarity];
+      sets.adventurer.mana = MANA_DICT[selection.rarity];
+      sets.adventurer.rarityField = RARITY_FIELDS[selection.rarity];
       if (sets.weapon && sets.weapon.type !== selection.type) {
         sets.weapon = null;
       }
@@ -132,9 +138,9 @@ class StatusSimulator extends Component {
 
   updateStatus(section, status) {
     this.setState({
-      sets:{
+      sets: {
         ...this.state.sets,
-        [section]:{
+        [section]: {
           ...status,
         }
       }
