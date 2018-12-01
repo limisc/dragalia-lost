@@ -14,13 +14,17 @@ button#reset-btn {
   margin-top: 7px;
 }
 
-img.selectList-img {
+img.selection-img {
   width: 64px;
   display: block;
   margin: auto;
 }
 
-img#unbind_set {
+div.unbind-set {
+  text-align: center;
+}
+
+img.unbind-set {
   height: 30px;
   margin-right: 10px;
 }
@@ -29,11 +33,11 @@ table.ui.celled.table th, table.ui.celled.table td {
   text-align: center;
 }
 
-input[type="number"] {
-  width: 100px;
+table td#table-left-align {
+  text-align: left;
 }
-
+/*
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
+} */
