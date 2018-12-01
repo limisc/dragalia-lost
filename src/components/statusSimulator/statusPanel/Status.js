@@ -12,6 +12,7 @@ class Status extends Component {
     }
 
     this.updateValue = this.updateValue.bind(this);
+    this.calcStatus = this.calcStatus.bind(this);
   }
 
   render() {
@@ -55,13 +56,15 @@ class Status extends Component {
               </div>
             </div>
 
-            {section === "adventurer" ?
+            {section === "adventurer" &&
               <StatusSelect
                 disable={disable}
                 status={this.state.status}
                 updateValue={this.updateValue}
               />
-              :
+            }
+
+            {!disable && section !== "adventurer" &&
               <div className="unbind-set">
                 <img
                   id="unbind"
@@ -90,8 +93,8 @@ class Status extends Component {
         </div>
 
         <div className="column">
-          <p>HP</p>
-          <p>STR</p>
+          <p>HP:  {this.calcStatus(section, "Hp")}</p>
+          <p>STR: {this.calcStatus(section, "Atk")}</p>
         </div>
       </div>
     );
@@ -120,8 +123,8 @@ class Status extends Component {
     const status = { ...this.state.status };
     let { level, rarity, mana, unbind } = status;
     const { section, updateStatus } = this.props;
-    //(neither unbindIncrement when unbind === 4) nor (unbindDecrement when unbind === 0)
-    if ((id !== "unbind") || (value === "1" && unbind < 4) || (value === "-1" && unbind > 0)) {
+    //neither (unbindIncrement when unbind === 4) nor (unbindDecrement when unbind === 0)
+    if (!this.state.disable && ((id !== "unbind") || (value === "1" && unbind < 4) || (value === "-1" && unbind > 0))) {
       if (id === "level" && parseInt(value, 10) > this.getLevelLimit(section, rarity, unbind)) {
         status[id] = this.getLevelLimit(section, rarity, unbind);
       } else if (id === "unbind") {
@@ -156,6 +159,53 @@ class Status extends Component {
       default:
         return LEVEL_LIMIT[key][rarity][unbind];
     }
+  }
+
+  getManaBonus(status, key) {
+    const mana = status.mana.toString();
+    const index = ["50", "45", "40", "30", "20", "10", "0"].indexOf(mana);
+    if (index !== -1) {
+      const statArray = [
+        status["McFullBonus" + key + "5"],
+        status["Plus" + key + "4"],
+        status["Plus" + key + "3"],
+        status["Plus" + key + "2"],
+        status["Plus" + key + "1"],
+        status["Plus" + key + "0"],
+        0,
+      ]
+      return statArray.slice(index).reduce((acc, cur) => acc + cur);
+    }
+    return "";
+  }
+
+  calcStatus(section, key) {
+    const { disable, status } = this.state;
+    let stats = "";
+    if (!disable) {
+      let { level, rarity } = status;
+      let step, statGain;
+      level = (level === "" || parseInt(level, 10) === 0) ? 1 : parseInt(level, 10);
+      switch (section) {
+        case "adventurer":
+          step = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
+          statGain = (level - 1) * step;
+          stats = Math.ceil(status["Min" + key + rarity] + statGain) + this.getManaBonus(status, key);
+          break;
+        case "weapon":
+        case "dragon":
+        case "wyrmprint":
+          step = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
+          statGain = (level - 1) * step;
+          stats = Math.ceil(status["Min" + key] + statGain);
+          break;
+        case "ability":
+          break;
+        default:
+          break;
+      }
+    }
+    return stats;
   }
 }
 

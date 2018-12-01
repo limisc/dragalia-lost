@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StatusPanel from './statusPanel/StatusPanel';
 import SelectionPanel from './selectionPanel/SelectionPanel';
+import LEVEL_LIMIT from '../data/level_data';
 
 const RESET_FILTER = {
   type: "",
@@ -8,8 +9,6 @@ const RESET_FILTER = {
   element: "",
   tier: "",
 }
-
-const MANA_DICT = { "3": "30", "4": "40", "5": "50" };
 
 const RARITY_FIELDS = {
   3: ["5", "4", "3"],
@@ -115,9 +114,10 @@ class StatusSimulator extends Component {
     sets = { ...sets, [selected]: { ...selection } };
 
     if (selected === "adventurer") {
-      sets.adventurer.level = selection.LEVEL_LIMIT[selection.rarity];
-      sets.adventurer.mana = MANA_DICT[selection.rarity];
-      sets.adventurer.rarityField = RARITY_FIELDS[selection.rarity];
+      const { rarity } = selection;
+      sets.adventurer.level = LEVEL_LIMIT.adventurer[rarity];
+      sets.adventurer.mana = LEVEL_LIMIT.mana[rarity];
+      sets.adventurer.rarityField = RARITY_FIELDS[rarity];
       if (sets.weapon && sets.weapon.type !== selection.type) {
         sets.weapon = null;
       }
@@ -145,6 +145,53 @@ class StatusSimulator extends Component {
         }
       }
     });
+  }
+
+  calcStatus(section, status, key) {
+    let stats = "";
+    let { level, rarity, unbind } = status;
+    let step, statGain;
+    level = (level === "" || parseInt(level, 10) === 0) ? 1 : parseInt(level, 10);
+    switch (section) {
+      case "adventurer":
+        step = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
+        statGain = (level - 1) * step;
+        stats = Math.ceil(status["Min" + key + rarity] + statGain) + this.getManaBonus(status, key);
+        break;
+      case "weapon":
+      case "dragon":
+      case "wyrmprint":
+        step = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
+        statGain = (level - 1) * step;
+        stats = Math.ceil(status["Min" + key] + statGain);
+        break;
+      case "ability":
+        const abilityName = parseInt(unbind, 10) === 4 ? "Abilities12" : "Abilities11";
+        const abilityDetails = status.abilityName;
+
+        break;
+      default:
+        break;
+    }
+    return stats;
+  }
+
+  getManaBonus(status, key) {
+    const mana = status.mana.toString();
+    const index = ["50", "45", "40", "30", "20", "10", "0"].indexOf(mana);
+    if (index !== -1) {
+      const statArray = [
+        status["McFullBonus" + key + "5"],
+        status["Plus" + key + "4"],
+        status["Plus" + key + "3"],
+        status["Plus" + key + "2"],
+        status["Plus" + key + "1"],
+        status["Plus" + key + "0"],
+        0,
+      ]
+      return statArray.slice(index).reduce((acc, cur) => acc + cur);
+    }
+    return "";
   }
 }
 

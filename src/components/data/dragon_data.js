@@ -1,33 +1,6 @@
 const dragon = 
 [
   {
-    "Id": "20050402",
-    "Name": "Cupid",
-    "MinHp": "",
-    "MaxHp": 377,
-    "MinAtk": "",
-    "MaxAtk": 119,
-    "Abilities11": {
-      "attr": "Strength",
-      "value": 40
-    },
-    "Abilities12": {
-      "attr": "Strength",
-      "value": 60
-    },
-    "img": " 01.png",
-    "rarity": "5",
-    "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
-    "MAX_LEVEL": 100
-  },
-  {
     "Id": "20040301",
     "Name": "Midgardsormr",
     "MinHp": 20,
@@ -45,13 +18,6 @@ const dragon =
     "img": "210001 01.png",
     "rarity": "4",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -72,13 +38,6 @@ const dragon =
     "img": "210002 01.png",
     "rarity": "4",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -99,13 +58,6 @@ const dragon =
     "img": "210003 01.png",
     "rarity": "4",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -126,13 +78,6 @@ const dragon =
     "img": "210004 01.png",
     "rarity": "4",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -153,13 +98,6 @@ const dragon =
     "img": "210005 01.png",
     "rarity": "4",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -180,13 +118,6 @@ const dragon =
     "img": "210006 01.png",
     "rarity": "4",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -207,13 +138,6 @@ const dragon =
     "img": "210007 01.png",
     "rarity": "4",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -234,13 +158,6 @@ const dragon =
     "img": "210008 01.png",
     "rarity": "4",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -261,13 +178,6 @@ const dragon =
     "img": "210010 01.png",
     "rarity": "5",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -288,13 +198,6 @@ const dragon =
     "img": "210011 01.png",
     "rarity": "4",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -315,13 +218,6 @@ const dragon =
     "img": "210012 01.png",
     "rarity": "4",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -342,13 +238,6 @@ const dragon =
     "img": "210013 01.png",
     "rarity": "4",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -369,13 +258,6 @@ const dragon =
     "img": "210014 01.png",
     "rarity": "4",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -396,13 +278,6 @@ const dragon =
     "img": "210015 01.png",
     "rarity": "4",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -423,13 +298,6 @@ const dragon =
     "img": "210016 01.png",
     "rarity": "5",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -450,13 +318,6 @@ const dragon =
     "img": "210017 01.png",
     "rarity": "5",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -477,13 +338,6 @@ const dragon =
     "img": "210018 01.png",
     "rarity": "5",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -504,13 +358,6 @@ const dragon =
     "img": "210019 01.png",
     "rarity": "5",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -531,13 +378,6 @@ const dragon =
     "img": "210020 01.png",
     "rarity": "5",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -558,13 +398,6 @@ const dragon =
     "img": "210021 01.png",
     "rarity": "3",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -585,13 +418,6 @@ const dragon =
     "img": "210022 01.png",
     "rarity": "3",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -612,13 +438,6 @@ const dragon =
     "img": "210023 01.png",
     "rarity": "3",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -639,13 +458,6 @@ const dragon =
     "img": "210024 01.png",
     "rarity": "5",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -666,13 +478,6 @@ const dragon =
     "img": "210025 01.png",
     "rarity": "5",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -693,13 +498,6 @@ const dragon =
     "img": "210036 01.png",
     "rarity": "5",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -720,13 +518,26 @@ const dragon =
     "img": "210038 01.png",
     "rarity": "5",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
+    "MAX_LEVEL": 100
+  },
+  {
+    "Id": "20050405",
+    "Name": "Cupid",
+    "MinHp": 37,
+    "MaxHp": 377,
+    "MinAtk": 11,
+    "MaxAtk": 119,
+    "Abilities11": {
+      "attr": "Strength",
+      "value": 40
     },
+    "Abilities12": {
+      "attr": "Strength",
+      "value": 60
+    },
+    "img": "210049 01.png",
+    "rarity": "5",
+    "element": "Light",
     "MAX_LEVEL": 100
   },
   {
@@ -747,13 +558,6 @@ const dragon =
     "img": "210050 01.png",
     "rarity": "4",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -774,13 +578,6 @@ const dragon =
     "img": "210057 01.png",
     "rarity": "5",
     "element": "Flame",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -801,13 +598,6 @@ const dragon =
     "img": "210058 01.png",
     "rarity": "4",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -828,13 +618,6 @@ const dragon =
     "img": "210059 01.png",
     "rarity": "3",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -855,13 +638,6 @@ const dragon =
     "img": "210060 01.png",
     "rarity": "3",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -882,13 +658,6 @@ const dragon =
     "img": "210061 01.png",
     "rarity": "3",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -909,13 +678,6 @@ const dragon =
     "img": "210062 01.png",
     "rarity": "3",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -936,13 +698,6 @@ const dragon =
     "img": "210063 01.png",
     "rarity": "3",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -963,13 +718,6 @@ const dragon =
     "img": "210064 01.png",
     "rarity": "3",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -990,13 +738,6 @@ const dragon =
     "img": "210065 01.png",
     "rarity": "3",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1017,13 +758,6 @@ const dragon =
     "img": "210066 01.png",
     "rarity": "3",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1044,13 +778,6 @@ const dragon =
     "img": "210067 01.png",
     "rarity": "3",
     "element": "Water",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1071,13 +798,6 @@ const dragon =
     "img": "210068 01.png",
     "rarity": "3",
     "element": "Wind",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1098,13 +818,6 @@ const dragon =
     "img": "210069 01.png",
     "rarity": "3",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1125,14 +838,27 @@ const dragon =
     "img": "210070 01.png",
     "rarity": "3",
     "element": "Shadow",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
+  },
+  {
+    "Id": "20050505",
+    "Name": "Maritimus",
+    "MinHp": 22,
+    "MaxHp": 224,
+    "MinAtk": 7,
+    "MaxAtk": 73,
+    "Abilities11": {
+      "attr": "both",
+      "value": 10
+    },
+    "Abilities12": {
+      "attr": "both",
+      "value": 15
+    },
+    "img": "210072 01.png",
+    "rarity": "5",
+    "element": "Shadow",
+    "MAX_LEVEL": 100
   },
   {
     "Id": "20040405",
@@ -1152,13 +878,6 @@ const dragon =
     "img": "210075 01.png",
     "rarity": "4",
     "element": "Light",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   }
 ];

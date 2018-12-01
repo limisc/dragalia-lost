@@ -16,6 +16,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 38,
     "MinAtk5": 44,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -26,11 +27,6 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "100001 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -49,6 +45,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 37,
     "MinAtk5": 42,
+    "MaxAtk": 267,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -59,11 +56,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "100002 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -82,6 +74,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 35,
     "MinAtk5": 41,
+    "MaxAtk": 289,
     "PlusAtk0": 33,
     "PlusAtk1": 39,
     "PlusAtk2": 46,
@@ -92,11 +85,6 @@ const adventurer =
     "rarity": "5",
     "element": "Light",
     "img": "100002 02 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -115,6 +103,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 256,
     "PlusAtk0": 30,
     "PlusAtk1": 34,
     "PlusAtk2": 41,
@@ -125,11 +114,6 @@ const adventurer =
     "rarity": "4",
     "element": "Wind",
     "img": "100003 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -148,6 +132,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 258,
     "PlusAtk0": 30,
     "PlusAtk1": 35,
     "PlusAtk2": 41,
@@ -158,11 +143,6 @@ const adventurer =
     "rarity": "4",
     "element": "Shadow",
     "img": "100004 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -181,6 +161,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 257,
     "PlusAtk0": 30,
     "PlusAtk1": 35,
     "PlusAtk2": 41,
@@ -191,11 +172,6 @@ const adventurer =
     "rarity": "4",
     "element": "Light",
     "img": "100006 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -214,6 +190,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 248,
     "PlusAtk0": 29,
     "PlusAtk1": 33,
     "PlusAtk2": 39,
@@ -224,11 +201,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110001 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -247,6 +219,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 280,
     "PlusAtk0": 32,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -257,11 +230,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110002 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -280,6 +248,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 266,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -290,11 +259,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110003 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -313,6 +277,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 276,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -323,11 +288,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110004 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -346,6 +306,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 256,
     "PlusAtk0": 30,
     "PlusAtk1": 34,
     "PlusAtk2": 41,
@@ -356,11 +317,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110005 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -379,6 +335,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 252,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -389,11 +346,6 @@ const adventurer =
     "rarity": "3",
     "element": "Flame",
     "img": "110006 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -412,6 +364,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 42,
+    "MaxAtk": 300,
     "PlusAtk0": 35,
     "PlusAtk1": 40,
     "PlusAtk2": 48,
@@ -422,11 +375,6 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "110007 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -445,6 +393,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -455,11 +404,6 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "110008 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -478,6 +422,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 40,
+    "MaxAtk": 283,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -488,11 +433,6 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "110009 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -511,6 +451,7 @@ const adventurer =
     "MinAtk3": 30,
     "MinAtk4": 37,
     "MinAtk5": 44,
+    "MaxAtk": 311,
     "PlusAtk0": 36,
     "PlusAtk1": 42,
     "PlusAtk2": 50,
@@ -521,11 +462,6 @@ const adventurer =
     "rarity": "5",
     "element": "Flame",
     "img": "110010 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -544,6 +480,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 34,
     "MinAtk5": 40,
+    "MaxAtk": 285,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -554,11 +491,6 @@ const adventurer =
     "rarity": "5",
     "element": "Flame",
     "img": "110011 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -577,6 +509,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 277,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -587,11 +520,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110012 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -610,6 +538,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 252,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -620,11 +549,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110013 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -643,6 +567,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 248,
     "PlusAtk0": 29,
     "PlusAtk1": 33,
     "PlusAtk2": 39,
@@ -653,11 +578,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110014 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -676,6 +596,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 29,
     "MinAtk5": 34,
+    "MaxAtk": 245,
     "PlusAtk0": 28,
     "PlusAtk1": 33,
     "PlusAtk2": 39,
@@ -686,11 +607,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110015 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -709,6 +625,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -719,11 +636,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110016 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -742,6 +654,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -752,11 +665,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110017 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -775,6 +683,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 38,
+    "MaxAtk": 270,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -785,11 +694,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "110018 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -808,6 +712,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 38,
+    "MaxAtk": 270,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -818,11 +723,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "110019 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -841,6 +741,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 275,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -851,11 +752,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "110020 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -874,6 +770,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 35,
     "MinAtk5": 41,
+    "MaxAtk": 290,
     "PlusAtk0": 34,
     "PlusAtk1": 39,
     "PlusAtk2": 46,
@@ -884,11 +781,6 @@ const adventurer =
     "rarity": "5",
     "element": "Water",
     "img": "110021 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -907,6 +799,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 42,
+    "MaxAtk": 301,
     "PlusAtk0": 35,
     "PlusAtk1": 40,
     "PlusAtk2": 48,
@@ -917,11 +810,6 @@ const adventurer =
     "rarity": "5",
     "element": "Water",
     "img": "110022 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -940,6 +828,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -950,11 +839,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110023 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -973,6 +857,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -983,11 +868,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110024 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1006,6 +886,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 275,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -1016,11 +897,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110025 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1039,6 +915,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 256,
     "PlusAtk0": 30,
     "PlusAtk1": 34,
     "PlusAtk2": 41,
@@ -1049,11 +926,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110026 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1072,6 +944,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 266,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -1082,11 +955,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110027 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1105,6 +973,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 266,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -1115,11 +984,6 @@ const adventurer =
     "rarity": "3",
     "element": "Wind",
     "img": "110028 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1138,6 +1002,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 281,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -1148,11 +1013,6 @@ const adventurer =
     "rarity": "4",
     "element": "Wind",
     "img": "110029 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1171,6 +1031,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 42,
+    "MaxAtk": 301,
     "PlusAtk0": 35,
     "PlusAtk1": 40,
     "PlusAtk2": 48,
@@ -1181,11 +1042,6 @@ const adventurer =
     "rarity": "4",
     "element": "Wind",
     "img": "110030 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1204,6 +1060,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 34,
     "MinAtk5": 40,
+    "MaxAtk": 286,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -1214,11 +1071,6 @@ const adventurer =
     "rarity": "4",
     "element": "Wind",
     "img": "110031 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1237,6 +1089,7 @@ const adventurer =
     "MinAtk3": 30,
     "MinAtk4": 37,
     "MinAtk5": 43,
+    "MaxAtk": 306,
     "PlusAtk0": 35,
     "PlusAtk1": 41,
     "PlusAtk2": 49,
@@ -1247,11 +1100,6 @@ const adventurer =
     "rarity": "5",
     "element": "Wind",
     "img": "110032 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1270,6 +1118,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 250,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -1280,11 +1129,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110033 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1303,6 +1147,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 260,
     "PlusAtk0": 30,
     "PlusAtk1": 35,
     "PlusAtk2": 41,
@@ -1313,11 +1158,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110034 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1336,6 +1176,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 38,
+    "MaxAtk": 270,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -1346,11 +1187,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110035 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1369,6 +1205,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 252,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -1379,11 +1216,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110036 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1402,6 +1234,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 255,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -1412,11 +1245,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110037 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1435,6 +1263,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -1445,11 +1274,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110038 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1468,6 +1292,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 265,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -1478,11 +1303,6 @@ const adventurer =
     "rarity": "4",
     "element": "Light",
     "img": "110039 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1501,6 +1321,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 33,
     "MinAtk5": 38,
+    "MaxAtk": 271,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -1511,11 +1332,6 @@ const adventurer =
     "rarity": "4",
     "element": "Light",
     "img": "110040 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1534,6 +1350,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 41,
+    "MaxAtk": 295,
     "PlusAtk0": 34,
     "PlusAtk1": 40,
     "PlusAtk2": 47,
@@ -1544,11 +1361,6 @@ const adventurer =
     "rarity": "4",
     "element": "Light",
     "img": "110041 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1567,6 +1379,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -1577,11 +1390,6 @@ const adventurer =
     "rarity": "5",
     "element": "Light",
     "img": "110042 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1600,6 +1408,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -1610,11 +1419,6 @@ const adventurer =
     "rarity": "5",
     "element": "Light",
     "img": "110043 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1633,6 +1437,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 280,
     "PlusAtk0": 32,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -1643,11 +1448,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110044 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1666,6 +1466,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 279,
     "PlusAtk0": 32,
     "PlusAtk1": 38,
     "PlusAtk2": 44,
@@ -1676,11 +1477,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110045 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1699,6 +1495,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 33,
     "MinAtk5": 38,
+    "MaxAtk": 272,
     "PlusAtk0": 31,
     "PlusAtk1": 37,
     "PlusAtk2": 43,
@@ -1709,11 +1506,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110046 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1732,6 +1524,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 38,
+    "MaxAtk": 270,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -1742,11 +1535,6 @@ const adventurer =
     "rarity": "4",
     "element": "Light",
     "img": "110047 02 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1765,6 +1553,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 263,
     "PlusAtk0": 30,
     "PlusAtk1": 35,
     "PlusAtk2": 42,
@@ -1775,11 +1564,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110047 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1798,6 +1582,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 256,
     "PlusAtk0": 30,
     "PlusAtk1": 34,
     "PlusAtk2": 41,
@@ -1808,11 +1593,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110048 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1831,6 +1611,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 278,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -1841,11 +1622,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110049 02 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1864,6 +1640,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 252,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -1874,11 +1651,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110049 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1897,6 +1669,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 32,
     "MinAtk5": 37,
+    "MaxAtk": 265,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 42,
@@ -1907,11 +1680,6 @@ const adventurer =
     "rarity": "4",
     "element": "Shadow",
     "img": "110050 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1930,6 +1698,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 40,
+    "MaxAtk": 284,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -1940,11 +1709,6 @@ const adventurer =
     "rarity": "4",
     "element": "Shadow",
     "img": "110051 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1963,6 +1727,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 276,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -1973,11 +1738,6 @@ const adventurer =
     "rarity": "4",
     "element": "Shadow",
     "img": "110052 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1996,6 +1756,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 40,
+    "MaxAtk": 283,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -2006,11 +1767,6 @@ const adventurer =
     "rarity": "5",
     "element": "Shadow",
     "img": "110053 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2029,6 +1785,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -2039,11 +1796,6 @@ const adventurer =
     "rarity": "3",
     "element": "Light",
     "img": "110063 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2062,6 +1814,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 31,
     "MinAtk5": 36,
+    "MaxAtk": 256,
     "PlusAtk0": 30,
     "PlusAtk1": 34,
     "PlusAtk2": 41,
@@ -2072,11 +1825,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110067 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2095,6 +1843,7 @@ const adventurer =
     "MinAtk3": 30,
     "MinAtk4": 37,
     "MinAtk5": 43,
+    "MaxAtk": 306,
     "PlusAtk0": 35,
     "PlusAtk1": 41,
     "PlusAtk2": 49,
@@ -2105,11 +1854,6 @@ const adventurer =
     "rarity": "5",
     "element": "Water",
     "img": "110252 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2128,6 +1872,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 35,
     "MinAtk5": 40,
+    "MaxAtk": 288,
     "PlusAtk0": 33,
     "PlusAtk1": 39,
     "PlusAtk2": 46,
@@ -2138,11 +1883,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "110253 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2161,6 +1901,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 33,
     "MinAtk5": 39,
+    "MaxAtk": 275,
     "PlusAtk0": 32,
     "PlusAtk1": 37,
     "PlusAtk2": 44,
@@ -2171,11 +1912,6 @@ const adventurer =
     "rarity": "3",
     "element": "Shadow",
     "img": "110254 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2194,6 +1930,7 @@ const adventurer =
     "MinAtk3": 28,
     "MinAtk4": 28,
     "MinAtk5": 40,
+    "MaxAtk": 285,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -2204,11 +1941,6 @@ const adventurer =
     "rarity": "4",
     "element": "Water",
     "img": "110255 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2227,6 +1959,7 @@ const adventurer =
     "MinAtk3": 27,
     "MinAtk4": 34,
     "MinAtk5": 39,
+    "MaxAtk": 281,
     "PlusAtk0": 33,
     "PlusAtk1": 38,
     "PlusAtk2": 45,
@@ -2237,11 +1970,6 @@ const adventurer =
     "rarity": "5",
     "element": "Wind",
     "img": "110256 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2260,6 +1988,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 33,
     "MinAtk5": 38,
+    "MaxAtk": 271,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -2270,11 +1999,6 @@ const adventurer =
     "rarity": "4",
     "element": "Wind",
     "img": "110257 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2293,6 +2017,7 @@ const adventurer =
     "MinAtk3": 24,
     "MinAtk4": 30,
     "MinAtk5": 35,
+    "MaxAtk": 251,
     "PlusAtk0": 29,
     "PlusAtk1": 34,
     "PlusAtk2": 40,
@@ -2303,11 +2028,6 @@ const adventurer =
     "rarity": "3",
     "element": "Water",
     "img": "110258 01 r03.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2326,6 +2046,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 42,
+    "MaxAtk": 302,
     "PlusAtk0": 35,
     "PlusAtk1": 41,
     "PlusAtk2": 48,
@@ -2336,11 +2057,6 @@ const adventurer =
     "rarity": "5",
     "element": "Flame",
     "img": "110266 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2359,6 +2075,7 @@ const adventurer =
     "MinAtk3": 29,
     "MinAtk4": 36,
     "MinAtk5": 41,
+    "MaxAtk": 295,
     "PlusAtk0": 34,
     "PlusAtk1": 40,
     "PlusAtk2": 47,
@@ -2369,11 +2086,6 @@ const adventurer =
     "rarity": "5",
     "element": "Wind",
     "img": "110267 01 r05.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2392,6 +2104,7 @@ const adventurer =
     "MinAtk3": 26,
     "MinAtk4": 33,
     "MinAtk5": 38,
+    "MaxAtk": 271,
     "PlusAtk0": 31,
     "PlusAtk1": 36,
     "PlusAtk2": 43,
@@ -2402,11 +2115,6 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "110269 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -2425,6 +2133,7 @@ const adventurer =
     "MinAtk3": 25,
     "MinAtk4": 25,
     "MinAtk5": 37,
+    "MaxAtk": 262,
     "PlusAtk0": 30,
     "PlusAtk1": 35,
     "PlusAtk2": 42,
@@ -2435,11 +2144,122 @@ const adventurer =
     "rarity": "4",
     "element": "Flame",
     "img": "110270 01 r04.png",
-    "LEVEL_LIMIT": {
-      "3": 60,
-      "4": 70,
-      "5": 80
-    },
+    "MAX_LEVEL": 80
+  },
+  {
+    "Id": "110302 01 r04",
+    "Name": "Pia",
+    "MinHp3": 47,
+    "MinHp4": 58,
+    "MinHp5": 68,
+    "MaxHp": 482,
+    "PlusHp0": 56,
+    "PlusHp1": 65,
+    "PlusHp2": 77,
+    "PlusHp3": 65,
+    "PlusHp4": 32,
+    "McFullBonusHp5": 28,
+    "MinAtk3": 26,
+    "MinAtk4": 32,
+    "MinAtk5": 37,
+    "MaxAtk": 266,
+    "PlusAtk0": 31,
+    "PlusAtk1": 36,
+    "PlusAtk2": 42,
+    "PlusAtk3": 36,
+    "PlusAtk4": 18,
+    "McFullBonusAtk5": 17,
+    "type": "Lance",
+    "rarity": "4",
+    "element": "Wind",
+    "img": "110302 01 r04.png",
+    "MAX_LEVEL": 80
+  },
+  {
+    "Id": "110303 01 r04",
+    "Name": "Elias",
+    "MinHp3": 46,
+    "MinHp4": 46,
+    "MinHp5": 66,
+    "MaxHp": 467,
+    "PlusHp0": 54,
+    "PlusHp1": 63,
+    "PlusHp2": 75,
+    "PlusHp3": 63,
+    "PlusHp4": 31,
+    "McFullBonusHp5": 27,
+    "MinAtk3": 24,
+    "MinAtk4": 24,
+    "MinAtk5": 34,
+    "MaxAtk": 244,
+    "PlusAtk0": 28,
+    "PlusAtk1": 33,
+    "PlusAtk2": 39,
+    "PlusAtk3": 33,
+    "PlusAtk4": 16,
+    "McFullBonusAtk5": 16,
+    "type": "Bow",
+    "rarity": "4",
+    "element": "Light",
+    "img": "110303 01 r04.png",
+    "MAX_LEVEL": 80
+  },
+  {
+    "Id": "110304 01 r04",
+    "Name": "Vixel",
+    "MinHp3": 46,
+    "MinHp4": 57,
+    "MinHp5": 66,
+    "MaxHp": 470,
+    "PlusHp0": 55,
+    "PlusHp1": 63,
+    "PlusHp2": 75,
+    "PlusHp3": 63,
+    "PlusHp4": 31,
+    "McFullBonusHp5": 29,
+    "MinAtk3": 26,
+    "MinAtk4": 32,
+    "MinAtk5": 38,
+    "MaxAtk": 270,
+    "PlusAtk0": 31,
+    "PlusAtk1": 36,
+    "PlusAtk2": 43,
+    "PlusAtk3": 36,
+    "PlusAtk4": 18,
+    "McFullBonusAtk5": 18,
+    "type": "Staff",
+    "rarity": "4",
+    "element": "Light",
+    "img": "110304 01 r04.png",
+    "MAX_LEVEL": 80
+  },
+  {
+    "Id": "110305 01 r05",
+    "Name": "Lucretia",
+    "MinHp3": 44,
+    "MinHp4": 54,
+    "MinHp5": 63,
+    "MaxHp": 449,
+    "PlusHp0": 52,
+    "PlusHp1": 61,
+    "PlusHp2": 72,
+    "PlusHp3": 61,
+    "PlusHp4": 30,
+    "McFullBonusHp5": 26,
+    "MinAtk3": 30,
+    "MinAtk4": 37,
+    "MinAtk5": 43,
+    "MaxAtk": 305,
+    "PlusAtk0": 35,
+    "PlusAtk1": 41,
+    "PlusAtk2": 49,
+    "PlusAtk3": 41,
+    "PlusAtk4": 20,
+    "McFullBonusAtk5": 19,
+    "type": "Wand",
+    "rarity": "5",
+    "element": "Light",
+    "img": "110305 01 r05.png",
     "MAX_LEVEL": 80
   }
 ];

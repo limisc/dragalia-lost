@@ -5,6 +5,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101001,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -22,13 +26,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -36,6 +33,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101001,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -53,13 +54,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -67,6 +61,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101001,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -84,13 +82,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -98,6 +89,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101001,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -115,13 +110,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -129,6 +117,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101001,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -146,13 +138,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -160,6 +145,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 101001,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 25,
+    "MaxAtk": 86,
     "AssembleCoin": 500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 1,
@@ -177,13 +166,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -191,6 +173,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101001,
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -208,13 +194,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -222,6 +201,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101001,
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -239,13 +222,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -253,6 +229,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101002,
+    "MinHp": 27,
+    "MaxHp": 92,
+    "MinAtk": 108,
+    "MaxAtk": 362,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -270,13 +250,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -284,6 +257,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -301,13 +278,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -315,6 +285,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -332,13 +306,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -346,6 +313,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -363,13 +334,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -377,6 +341,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101002,
+    "MinHp": 27,
+    "MaxHp": 92,
+    "MinAtk": 108,
+    "MaxAtk": 362,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -394,13 +362,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -408,6 +369,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 101002,
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 62,
+    "MaxAtk": 208,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 3,
@@ -425,13 +390,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -439,6 +397,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101002,
+    "MinHp": 21,
+    "MaxHp": 71,
+    "MinAtk": 83,
+    "MaxAtk": 278,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -456,13 +418,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -470,6 +425,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101002,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 77,
+    "MaxAtk": 257,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -487,13 +446,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -501,6 +453,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101003,
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -518,13 +474,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -532,6 +481,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101003,
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -549,13 +502,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -563,6 +509,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101003,
+    "MinHp": 47,
+    "MaxHp": 158,
+    "MinAtk": 157,
+    "MaxAtk": 524,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -580,13 +530,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -594,6 +537,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 101003,
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -611,13 +558,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -625,6 +565,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 101003,
+    "MinHp": 47,
+    "MaxHp": 158,
+    "MinAtk": 157,
+    "MaxAtk": 524,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -642,13 +586,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -656,6 +593,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 101003,
+    "MinHp": 30,
+    "MaxHp": 101,
+    "MinAtk": 108,
+    "MaxAtk": 362,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 15,
@@ -673,13 +614,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -687,6 +621,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101003,
+    "MinHp": 35,
+    "MaxHp": 117,
+    "MinAtk": 136,
+    "MaxAtk": 456,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -704,13 +642,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -718,6 +649,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 101003,
+    "MinHp": 38,
+    "MaxHp": 129,
+    "MinAtk": 129,
+    "MaxAtk": 430,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -735,13 +670,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -749,6 +677,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102001,
+    "MinHp": 15,
+    "MaxHp": 53,
+    "MinAtk": 68,
+    "MaxAtk": 229,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -766,13 +698,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -780,6 +705,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102001,
+    "MinHp": 15,
+    "MaxHp": 53,
+    "MinAtk": 68,
+    "MaxAtk": 229,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -797,13 +726,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -811,6 +733,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102001,
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -828,13 +754,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -842,6 +761,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102001,
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -859,13 +782,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -873,6 +789,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102001,
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -890,13 +810,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -904,6 +817,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 102001,
+    "MinHp": 6,
+    "MaxHp": 20,
+    "MinAtk": 28,
+    "MaxAtk": 94,
     "AssembleCoin": 500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 1,
@@ -921,13 +838,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -935,6 +845,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102001,
+    "MinHp": 9,
+    "MaxHp": 32,
+    "MinAtk": 44,
+    "MaxAtk": 149,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -952,13 +866,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -966,6 +873,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102001,
+    "MinHp": 9,
+    "MaxHp": 33,
+    "MinAtk": 43,
+    "MaxAtk": 144,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -983,13 +894,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -997,6 +901,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -1014,13 +922,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1028,6 +929,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102002,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 114,
+    "MaxAtk": 383,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -1045,13 +950,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1059,6 +957,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -1076,13 +978,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1090,6 +985,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102002,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 114,
+    "MaxAtk": 383,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -1107,13 +1006,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1121,6 +1013,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -1138,13 +1034,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1152,6 +1041,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 102002,
+    "MinHp": 14,
+    "MaxHp": 48,
+    "MinAtk": 68,
+    "MaxAtk": 227,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 3,
@@ -1169,13 +1062,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1183,6 +1069,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102002,
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 83,
+    "MaxAtk": 278,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -1200,13 +1090,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1214,6 +1097,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102002,
+    "MinHp": 18,
+    "MaxHp": 62,
+    "MinAtk": 88,
+    "MaxAtk": 295,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -1231,13 +1118,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1245,6 +1125,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102003,
+    "MinHp": 39,
+    "MaxHp": 132,
+    "MinAtk": 171,
+    "MaxAtk": 572,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -1262,13 +1146,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1276,6 +1153,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102003,
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 163,
+    "MaxAtk": 544,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -1293,13 +1174,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1307,6 +1181,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 102003,
+    "MinHp": 39,
+    "MaxHp": 132,
+    "MinAtk": 171,
+    "MaxAtk": 572,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -1324,13 +1202,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1338,6 +1209,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 102003,
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 163,
+    "MaxAtk": 544,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -1355,13 +1230,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1369,6 +1237,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 203,
     "CraftGroupId": 102003,
+    "MinHp": 37,
+    "MaxHp": 125,
+    "MinAtk": 177,
+    "MaxAtk": 590,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -1386,13 +1258,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1400,6 +1265,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 102003,
+    "MinHp": 25,
+    "MaxHp": 84,
+    "MinAtk": 118,
+    "MaxAtk": 395,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 15,
@@ -1417,13 +1286,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1431,6 +1293,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102003,
+    "MinHp": 32,
+    "MaxHp": 108,
+    "MinAtk": 140,
+    "MaxAtk": 469,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -1448,13 +1314,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1462,6 +1321,10 @@ const weapon =
     "CraftNodeId": 203,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102003,
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 144,
+    "MaxAtk": 483,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -1479,13 +1342,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1493,6 +1349,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 102003,
+    "MinHp": 35,
+    "MaxHp": 117,
+    "MinAtk": 133,
+    "MaxAtk": 446,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -1510,13 +1370,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1524,6 +1377,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103001,
+    "MinHp": 19,
+    "MaxHp": 64,
+    "MinAtk": 61,
+    "MaxAtk": 205,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -1541,13 +1398,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1555,6 +1405,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -1572,13 +1426,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1586,6 +1433,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -1603,13 +1454,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1617,6 +1461,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103001,
+    "MinHp": 19,
+    "MaxHp": 64,
+    "MinAtk": 61,
+    "MaxAtk": 205,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -1634,13 +1482,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1648,6 +1489,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -1665,13 +1510,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1679,6 +1517,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 103001,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 25,
+    "MaxAtk": 84,
     "AssembleCoin": 500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 1,
@@ -1696,13 +1538,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1710,6 +1545,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103001,
+    "MinHp": 11,
+    "MaxHp": 38,
+    "MinAtk": 39,
+    "MaxAtk": 133,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -1727,13 +1566,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1741,6 +1573,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103001,
+    "MinHp": 12,
+    "MaxHp": 40,
+    "MinAtk": 38,
+    "MaxAtk": 129,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -1758,13 +1594,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -1772,6 +1601,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103002,
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -1789,13 +1622,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1803,6 +1629,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103002,
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -1820,13 +1650,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1834,6 +1657,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103002,
+    "MinHp": 31,
+    "MaxHp": 106,
+    "MinAtk": 98,
+    "MaxAtk": 327,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -1851,13 +1678,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1865,6 +1685,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103002,
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -1882,13 +1706,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1896,6 +1713,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103002,
+    "MinHp": 31,
+    "MaxHp": 106,
+    "MinAtk": 98,
+    "MaxAtk": 327,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -1913,13 +1734,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1927,6 +1741,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 103002,
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 61,
+    "MaxAtk": 204,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 3,
@@ -1944,13 +1762,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1958,6 +1769,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103002,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 75,
+    "MaxAtk": 252,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -1975,13 +1790,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -1989,6 +1797,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103002,
+    "MinHp": 21,
+    "MaxHp": 72,
+    "MinAtk": 81,
+    "MaxAtk": 273,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -2006,13 +1818,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2020,6 +1825,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103003,
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -2037,13 +1846,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2051,6 +1853,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103003,
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 529,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -2068,13 +1874,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2082,6 +1881,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103003,
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -2099,13 +1902,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2113,6 +1909,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 103003,
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 529,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -2130,13 +1930,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2144,6 +1937,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 103003,
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -2161,13 +1958,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2175,6 +1965,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 103003,
+    "MinHp": 30,
+    "MaxHp": 102,
+    "MinAtk": 106,
+    "MaxAtk": 355,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 15,
@@ -2192,13 +1986,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2206,6 +1993,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103003,
+    "MinHp": 35,
+    "MaxHp": 118,
+    "MinAtk": 134,
+    "MaxAtk": 447,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -2223,13 +2014,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2237,6 +2021,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 103003,
+    "MinHp": 37,
+    "MaxHp": 124,
+    "MinAtk": 130,
+    "MaxAtk": 434,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -2254,13 +2042,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2268,6 +2049,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104001,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 70,
+    "MaxAtk": 234,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -2285,13 +2070,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2299,6 +2077,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104001,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 70,
+    "MaxAtk": 234,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -2316,13 +2098,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2330,6 +2105,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104001,
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -2347,13 +2126,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2361,6 +2133,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104001,
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -2378,13 +2154,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2392,6 +2161,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104001,
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 10,
@@ -2409,13 +2182,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2423,6 +2189,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 104001,
+    "MinHp": 7,
+    "MaxHp": 26,
+    "MinAtk": 26,
+    "MaxAtk": 87,
     "AssembleCoin": 500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 1,
@@ -2440,13 +2210,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2454,6 +2217,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104001,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 44,
+    "MaxAtk": 147,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -2471,13 +2238,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2485,6 +2245,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104001,
+    "MinHp": 12,
+    "MaxHp": 41,
+    "MinAtk": 41,
+    "MaxAtk": 139,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 5,
@@ -2502,13 +2266,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -2516,6 +2273,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104002,
+    "MinHp": 28,
+    "MaxHp": 95,
+    "MinAtk": 114,
+    "MaxAtk": 380,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -2533,13 +2294,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2547,6 +2301,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -2564,13 +2322,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2578,6 +2329,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -2595,13 +2350,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2609,6 +2357,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104002,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -2626,13 +2378,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2640,6 +2385,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104002,
+    "MinHp": 28,
+    "MaxHp": 95,
+    "MinAtk": 114,
+    "MaxAtk": 380,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 30,
@@ -2657,13 +2406,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2671,6 +2413,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 104002,
+    "MinHp": 18,
+    "MaxHp": 62,
+    "MinAtk": 63,
+    "MaxAtk": 212,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Iron Ore",
     "CraftMaterialQuantity1": 3,
@@ -2688,13 +2434,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2702,6 +2441,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104002,
+    "MinHp": 21,
+    "MaxHp": 73,
+    "MinAtk": 87,
+    "MaxAtk": 292,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -2719,13 +2462,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2733,6 +2469,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104002,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 82,
+    "MaxAtk": 275,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 20,
@@ -2750,13 +2490,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -2764,6 +2497,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104003,
+    "MinHp": 46,
+    "MaxHp": 155,
+    "MinAtk": 170,
+    "MaxAtk": 567,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -2781,13 +2518,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2795,6 +2525,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -2812,13 +2546,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2826,6 +2553,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 104003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -2843,13 +2574,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2857,6 +2581,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -2874,13 +2602,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2888,6 +2609,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 104003,
+    "MinHp": 46,
+    "MaxHp": 155,
+    "MinAtk": 170,
+    "MaxAtk": 567,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Meteorite",
     "CraftMaterialQuantity1": 150,
@@ -2905,13 +2630,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2919,6 +2637,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 104003,
+    "MinHp": 32,
+    "MaxHp": 109,
+    "MinAtk": 110,
+    "MaxAtk": 368,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 15,
@@ -2936,13 +2658,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2950,6 +2665,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104003,
+    "MinHp": 36,
+    "MaxHp": 120,
+    "MinAtk": 143,
+    "MaxAtk": 479,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -2967,13 +2686,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -2981,6 +2693,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 104003,
+    "MinHp": 38,
+    "MaxHp": 127,
+    "MinAtk": 139,
+    "MaxAtk": 465,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Granite",
     "CraftMaterialQuantity1": 150,
@@ -2998,13 +2714,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3012,6 +2721,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105001,
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 68,
+    "MaxAtk": 227,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3029,13 +2742,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3043,6 +2749,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3060,13 +2770,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3074,6 +2777,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105001,
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 68,
+    "MaxAtk": 227,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3091,13 +2798,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3105,6 +2805,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3122,13 +2826,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3136,6 +2833,10 @@ const weapon =
     "CraftNodeId": "",
     "ParentCraftNodeId": "",
     "CraftGroupId": "",
+    "MinHp": 16,
+    "MaxHp": 55,
+    "MinAtk": 59,
+    "MaxAtk": 198,
     "AssembleCoin": "",
     "CraftMaterial1": "",
     "CraftMaterialQuantity1": "",
@@ -3153,13 +2854,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "0",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3167,6 +2861,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105001,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3184,13 +2882,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3198,6 +2889,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 105001,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 26,
+    "MaxAtk": 87,
     "AssembleCoin": 500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 1,
@@ -3215,13 +2910,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3229,6 +2917,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105001,
+    "MinHp": 11,
+    "MaxHp": 39,
+    "MinAtk": 41,
+    "MaxAtk": 139,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -3246,13 +2938,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3260,6 +2945,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105001,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 42,
+    "MaxAtk": 143,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -3277,13 +2966,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3291,6 +2973,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105002,
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -3308,13 +2994,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3322,6 +3001,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105002,
+    "MinHp": 28,
+    "MaxHp": 94,
+    "MinAtk": 110,
+    "MaxAtk": 369,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -3339,13 +3022,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3353,6 +3029,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105002,
+    "MinHp": 28,
+    "MaxHp": 94,
+    "MinAtk": 110,
+    "MaxAtk": 369,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -3370,13 +3050,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3384,6 +3057,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105002,
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -3401,13 +3078,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3415,6 +3085,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105002,
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -3432,13 +3106,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3446,6 +3113,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 105002,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 63,
+    "MaxAtk": 212,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 3,
@@ -3463,13 +3134,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3477,6 +3141,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105002,
+    "MinHp": 22,
+    "MaxHp": 76,
+    "MinAtk": 82,
+    "MaxAtk": 276,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -3494,13 +3162,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3508,6 +3169,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105002,
+    "MinHp": 21,
+    "MaxHp": 72,
+    "MinAtk": 85,
+    "MaxAtk": 284,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -3525,13 +3190,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -3539,6 +3197,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105003,
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -3556,13 +3218,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3570,6 +3225,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105003,
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 156,
+    "MaxAtk": 523,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -3587,13 +3246,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3601,6 +3253,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 105003,
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 156,
+    "MaxAtk": 523,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -3618,13 +3274,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3632,6 +3281,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105003,
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -3649,13 +3302,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3663,6 +3309,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 105003,
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -3680,13 +3330,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3694,6 +3337,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 105003,
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 110,
+    "MaxAtk": 369,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 15,
@@ -3711,13 +3358,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3725,6 +3365,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105003,
+    "MinHp": 35,
+    "MaxHp": 119,
+    "MinAtk": 139,
+    "MaxAtk": 465,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -3742,13 +3386,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3756,6 +3393,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 105003,
+    "MinHp": 40,
+    "MaxHp": 135,
+    "MinAtk": 128,
+    "MaxAtk": 429,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -3773,13 +3414,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -3787,6 +3421,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3804,13 +3442,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3818,6 +3449,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 106001,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3835,13 +3470,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3849,6 +3477,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3866,13 +3498,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3880,6 +3505,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3897,13 +3526,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3911,6 +3533,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 106001,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 10,
@@ -3928,13 +3554,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3942,6 +3561,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 106001,
+    "MinHp": 6,
+    "MaxHp": 23,
+    "MinAtk": 24,
+    "MaxAtk": 82,
     "AssembleCoin": 500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 1,
@@ -3959,13 +3582,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -3973,6 +3589,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106001,
+    "MinHp": 10,
+    "MaxHp": 35,
+    "MinAtk": 40,
+    "MaxAtk": 135,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -3990,13 +3610,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4004,6 +3617,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106001,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 39,
+    "MaxAtk": 131,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 5,
@@ -4021,13 +3638,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4035,6 +3645,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -4052,13 +3666,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4066,6 +3673,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -4083,13 +3694,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4097,6 +3701,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106002,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -4114,13 +3722,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4128,6 +3729,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 106002,
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 96,
+    "MaxAtk": 320,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -4145,13 +3750,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4159,6 +3757,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 106002,
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 96,
+    "MaxAtk": 320,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 30,
@@ -4176,13 +3778,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4190,6 +3785,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 106002,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 60,
+    "MaxAtk": 200,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Fiend's Claw",
     "CraftMaterialQuantity1": 3,
@@ -4207,13 +3806,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4221,6 +3813,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106002,
+    "MinHp": 21,
+    "MaxHp": 70,
+    "MinAtk": 80,
+    "MaxAtk": 267,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -4238,13 +3834,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4252,6 +3841,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106002,
+    "MinHp": 23,
+    "MaxHp": 79,
+    "MinAtk": 73,
+    "MaxAtk": 246,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 20,
@@ -4269,13 +3862,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4283,6 +3869,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -4300,13 +3890,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4314,6 +3897,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -4331,13 +3918,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4345,6 +3925,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 106003,
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -4362,13 +3946,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4376,6 +3953,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 106003,
+    "MinHp": 42,
+    "MaxHp": 140,
+    "MinAtk": 160,
+    "MaxAtk": 534,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -4393,13 +3974,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4407,6 +3981,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 203,
     "CraftGroupId": 106003,
+    "MinHp": 42,
+    "MaxHp": 140,
+    "MinAtk": 160,
+    "MaxAtk": 534,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Fiend's Eye",
     "CraftMaterialQuantity1": 150,
@@ -4424,13 +4002,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4438,6 +4009,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 106003,
+    "MinHp": 29,
+    "MaxHp": 98,
+    "MinAtk": 104,
+    "MaxAtk": 347,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 15,
@@ -4455,13 +4030,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4469,6 +4037,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106003,
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 131,
+    "MaxAtk": 438,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -4486,13 +4058,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4500,6 +4065,10 @@ const weapon =
     "CraftNodeId": 203,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106003,
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 131,
+    "MaxAtk": 438,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -4517,13 +4086,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4531,6 +4093,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 106003,
+    "MinHp": 36,
+    "MaxHp": 121,
+    "MinAtk": 127,
+    "MaxAtk": 425,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Fiend's Horn",
     "CraftMaterialQuantity1": 150,
@@ -4548,13 +4114,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -4562,6 +4121,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -4579,13 +4142,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4593,6 +4149,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -4610,13 +4170,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4624,6 +4177,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107001,
+    "MinHp": 16,
+    "MaxHp": 54,
+    "MinAtk": 68,
+    "MaxAtk": 229,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -4641,13 +4198,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4655,6 +4205,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107001,
+    "MinHp": 16,
+    "MaxHp": 54,
+    "MinAtk": 68,
+    "MaxAtk": 229,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -4672,13 +4226,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4686,6 +4233,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107001,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -4703,13 +4254,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4717,6 +4261,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 107001,
+    "MinHp": 6,
+    "MaxHp": 21,
+    "MinAtk": 27,
+    "MaxAtk": 91,
     "AssembleCoin": 500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 1,
@@ -4734,13 +4282,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4748,6 +4289,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107001,
+    "MinHp": 10,
+    "MaxHp": 34,
+    "MinAtk": 43,
+    "MaxAtk": 144,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 5,
@@ -4765,13 +4310,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4779,6 +4317,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107001,
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 5,
@@ -4796,13 +4338,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -4810,6 +4345,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107002,
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -4827,13 +4366,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4841,6 +4373,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107002,
+    "MinHp": 28,
+    "MaxHp": 96,
+    "MinAtk": 105,
+    "MaxAtk": 351,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -4858,13 +4394,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4872,6 +4401,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107002,
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -4889,13 +4422,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4903,6 +4429,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107002,
+    "MinHp": 28,
+    "MaxHp": 96,
+    "MinAtk": 105,
+    "MaxAtk": 351,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -4920,13 +4450,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4934,6 +4457,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107002,
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -4951,13 +4478,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4965,6 +4485,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 107002,
+    "MinHp": 15,
+    "MaxHp": 51,
+    "MinAtk": 66,
+    "MaxAtk": 221,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 3,
@@ -4982,13 +4506,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -4996,6 +4513,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107002,
+    "MinHp": 20,
+    "MaxHp": 67,
+    "MinAtk": 86,
+    "MaxAtk": 287,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 20,
@@ -5013,13 +4534,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5027,6 +4541,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107002,
+    "MinHp": 22,
+    "MaxHp": 74,
+    "MinAtk": 81,
+    "MaxAtk": 270,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 20,
@@ -5044,13 +4562,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5058,6 +4569,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107003,
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5075,13 +4590,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5089,6 +4597,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107003,
+    "MinHp": 40,
+    "MaxHp": 134,
+    "MinAtk": 171,
+    "MaxAtk": 573,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5106,13 +4618,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5120,6 +4625,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107003,
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5137,13 +4646,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5151,6 +4653,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 107003,
+    "MinHp": 40,
+    "MaxHp": 134,
+    "MinAtk": 171,
+    "MaxAtk": 573,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5168,13 +4674,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5182,6 +4681,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 107003,
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5199,13 +4702,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5213,6 +4709,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 107003,
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 115,
+    "MaxAtk": 384,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 15,
@@ -5230,13 +4730,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5244,6 +4737,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107003,
+    "MinHp": 33,
+    "MaxHp": 110,
+    "MinAtk": 141,
+    "MaxAtk": 470,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 150,
@@ -5261,13 +4758,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5275,6 +4765,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 107003,
+    "MinHp": 37,
+    "MaxHp": 125,
+    "MinAtk": 129,
+    "MaxAtk": 433,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 150,
@@ -5292,13 +4786,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5306,6 +4793,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108001,
+    "MinHp": 19,
+    "MaxHp": 66,
+    "MinAtk": 61,
+    "MaxAtk": 205,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -5323,13 +4814,6 @@ const weapon =
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5337,6 +4821,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108001,
+    "MinHp": 19,
+    "MaxHp": 66,
+    "MinAtk": 61,
+    "MaxAtk": 205,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -5354,13 +4842,6 @@ const weapon =
     "element": "Water",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5368,6 +4849,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108001,
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -5385,13 +4870,6 @@ const weapon =
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5399,6 +4877,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108001,
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -5416,13 +4898,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5430,6 +4905,10 @@ const weapon =
     "CraftNodeId": "",
     "ParentCraftNodeId": "",
     "CraftGroupId": "",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 55,
+    "MaxAtk": 185,
     "AssembleCoin": "",
     "CraftMaterial1": "",
     "CraftMaterialQuantity1": "",
@@ -5447,13 +4926,6 @@ const weapon =
     "element": "Light",
     "rarity": "3",
     "tier": "0",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5461,6 +4933,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108001,
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
     "AssembleCoin": 15000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 10,
@@ -5478,13 +4954,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5492,6 +4961,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 108001,
+    "MinHp": 8,
+    "MaxHp": 28,
+    "MinAtk": 23,
+    "MaxAtk": 77,
     "AssembleCoin": 500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 1,
@@ -5509,13 +4982,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5523,6 +4989,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108001,
+    "MinHp": 13,
+    "MaxHp": 44,
+    "MinAtk": 37,
+    "MaxAtk": 125,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 5,
@@ -5540,13 +5010,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5554,6 +5017,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108001,
+    "MinHp": 12,
+    "MaxHp": 42,
+    "MinAtk": 38,
+    "MaxAtk": 129,
     "AssembleCoin": 2500,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 5,
@@ -5571,13 +5038,6 @@ const weapon =
     "element": "None",
     "rarity": "3",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 25,
-      "2": 30,
-      "3": 35,
-      "4": 40
-    },
     "MAX_LEVEL": 40
   },
   {
@@ -5585,6 +5045,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108002,
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 95,
+    "MaxAtk": 317,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -5602,13 +5066,6 @@ const weapon =
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5616,6 +5073,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108002,
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 95,
+    "MaxAtk": 317,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -5633,13 +5094,6 @@ const weapon =
     "element": "Water",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5647,6 +5101,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108002,
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -5664,13 +5122,6 @@ const weapon =
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5678,6 +5129,10 @@ const weapon =
     "CraftNodeId": 304,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108002,
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -5695,13 +5150,6 @@ const weapon =
     "element": "Light",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5709,6 +5157,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108002,
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
     "AssembleCoin": 120000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 30,
@@ -5726,13 +5178,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5740,6 +5185,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 108002,
+    "MinHp": 20,
+    "MaxHp": 68,
+    "MinAtk": 56,
+    "MaxAtk": 188,
     "AssembleCoin": 4000,
     "CraftMaterial1": "Bat's Wing",
     "CraftMaterialQuantity1": 3,
@@ -5757,13 +5206,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5771,6 +5213,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108002,
+    "MinHp": 24,
+    "MaxHp": 82,
+    "MinAtk": 77,
+    "MaxAtk": 257,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 20,
@@ -5788,13 +5234,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5802,6 +5241,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108002,
+    "MinHp": 26,
+    "MaxHp": 89,
+    "MinAtk": 73,
+    "MaxAtk": 244,
     "AssembleCoin": 20000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 20,
@@ -5819,13 +5262,6 @@ const weapon =
     "element": "None",
     "rarity": "4",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 50,
-      "1": 55,
-      "2": 60,
-      "3": 65,
-      "4": 70
-    },
     "MAX_LEVEL": 70
   },
   {
@@ -5833,6 +5269,10 @@ const weapon =
     "CraftNodeId": 301,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108003,
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5850,13 +5290,6 @@ const weapon =
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5864,6 +5297,10 @@ const weapon =
     "CraftNodeId": 302,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108003,
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5881,13 +5318,6 @@ const weapon =
     "element": "Water",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5895,6 +5325,10 @@ const weapon =
     "CraftNodeId": 303,
     "ParentCraftNodeId": 201,
     "CraftGroupId": 108003,
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5912,13 +5346,6 @@ const weapon =
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5926,6 +5353,10 @@ const weapon =
     "CraftNodeId": 305,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108003,
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 153,
+    "MaxAtk": 513,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5943,13 +5374,6 @@ const weapon =
     "element": "Light",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5957,6 +5381,10 @@ const weapon =
     "CraftNodeId": 306,
     "ParentCraftNodeId": 202,
     "CraftGroupId": 108003,
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 153,
+    "MaxAtk": 513,
     "AssembleCoin": 900000,
     "CraftMaterial1": "Bewitching Wings",
     "CraftMaterialQuantity1": 150,
@@ -5974,13 +5402,6 @@ const weapon =
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -5988,6 +5409,10 @@ const weapon =
     "CraftNodeId": 101,
     "ParentCraftNodeId": 0,
     "CraftGroupId": 108003,
+    "MinHp": 35,
+    "MaxHp": 119,
+    "MinAtk": 98,
+    "MaxAtk": 327,
     "AssembleCoin": 25000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 15,
@@ -6005,13 +5430,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "1",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -6019,6 +5437,10 @@ const weapon =
     "CraftNodeId": 201,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108003,
+    "MinHp": 43,
+    "MaxHp": 146,
+    "MinAtk": 120,
+    "MaxAtk": 400,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 150,
@@ -6036,13 +5458,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -6050,6 +5465,10 @@ const weapon =
     "CraftNodeId": 202,
     "ParentCraftNodeId": 101,
     "CraftGroupId": 108003,
+    "MinHp": 40,
+    "MaxHp": 135,
+    "MinAtk": 126,
+    "MaxAtk": 421,
     "AssembleCoin": 150000,
     "CraftMaterial1": "Ancient Bird's Feather",
     "CraftMaterialQuantity1": 150,
@@ -6067,13 +5486,6 @@ const weapon =
     "element": "None",
     "rarity": "5",
     "tier": "2",
-    "LEVEL_LIMIT": {
-      "0": 80,
-      "1": 85,
-      "2": 90,
-      "3": 95,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   }
 ];

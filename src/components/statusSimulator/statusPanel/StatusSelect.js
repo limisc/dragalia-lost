@@ -5,7 +5,7 @@ class RaritySelect extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "5": ["50", "40", "30", "20", "10", "0"],
+      "5": ["50", "45", "40", "30", "20", "10", "0"],
       "4": ["40", "30", "20", "10", "0"],
       "3": ["30", "20", "10", "0"],
     }

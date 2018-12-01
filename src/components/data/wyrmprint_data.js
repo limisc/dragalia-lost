@@ -9,13 +9,6 @@ const wyrmprint =
     "Id": "400001",
     "img": "400001 01.png",
     "rarity": "2",
-    "LEVEL_LIMIT": {
-      "0": 10,
-      "1": 15,
-      "2": 20,
-      "3": 25,
-      "4": 30
-    },
     "MAX_LEVEL": 30
   },
   {
@@ -27,13 +20,6 @@ const wyrmprint =
     "Id": "400002",
     "img": "400002 01.png",
     "rarity": "2",
-    "LEVEL_LIMIT": {
-      "0": 10,
-      "1": 15,
-      "2": 20,
-      "3": 25,
-      "4": 30
-    },
     "MAX_LEVEL": 30
   },
   {
@@ -45,13 +31,6 @@ const wyrmprint =
     "Id": "400003",
     "img": "400003 01.png",
     "rarity": "2",
-    "LEVEL_LIMIT": {
-      "0": 10,
-      "1": 15,
-      "2": 20,
-      "3": 25,
-      "4": 30
-    },
     "MAX_LEVEL": 30
   },
   {
@@ -63,13 +42,6 @@ const wyrmprint =
     "Id": "400004",
     "img": "400004 01.png",
     "rarity": "2",
-    "LEVEL_LIMIT": {
-      "0": 10,
-      "1": 15,
-      "2": 20,
-      "3": 25,
-      "4": 30
-    },
     "MAX_LEVEL": 30
   },
   {
@@ -81,13 +53,6 @@ const wyrmprint =
     "Id": "400005",
     "img": "400005 01.png",
     "rarity": "2",
-    "LEVEL_LIMIT": {
-      "0": 10,
-      "1": 15,
-      "2": 20,
-      "3": 25,
-      "4": 30
-    },
     "MAX_LEVEL": 30
   },
   {
@@ -99,13 +64,6 @@ const wyrmprint =
     "Id": "400006",
     "img": "400006 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -117,13 +75,6 @@ const wyrmprint =
     "Id": "400007",
     "img": "400007 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -135,13 +86,6 @@ const wyrmprint =
     "Id": "400008",
     "img": "400008 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -153,13 +97,6 @@ const wyrmprint =
     "Id": "400009",
     "img": "400009 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -171,13 +108,6 @@ const wyrmprint =
     "Id": "400010",
     "img": "400010 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -189,13 +119,6 @@ const wyrmprint =
     "Id": "400011",
     "img": "400011 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -207,13 +130,6 @@ const wyrmprint =
     "Id": "400012",
     "img": "400012 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -225,13 +141,6 @@ const wyrmprint =
     "Id": "400013",
     "img": "400013 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -243,13 +152,6 @@ const wyrmprint =
     "Id": "400014",
     "img": "400014 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -261,13 +163,6 @@ const wyrmprint =
     "Id": "400015",
     "img": "400015 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -279,13 +174,6 @@ const wyrmprint =
     "Id": "400016",
     "img": "400016 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -297,13 +185,6 @@ const wyrmprint =
     "Id": "400017",
     "img": "400017 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -315,13 +196,6 @@ const wyrmprint =
     "Id": "400018",
     "img": "400018 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -333,13 +207,6 @@ const wyrmprint =
     "Id": "400019",
     "img": "400019 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -351,13 +218,6 @@ const wyrmprint =
     "Id": "400020",
     "img": "400020 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -369,13 +229,6 @@ const wyrmprint =
     "Id": "400021",
     "img": "400021 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -387,13 +240,6 @@ const wyrmprint =
     "Id": "400022",
     "img": "400022 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -405,13 +251,6 @@ const wyrmprint =
     "Id": "400023",
     "img": "400023 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -423,13 +262,6 @@ const wyrmprint =
     "Id": "400024",
     "img": "400024 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -441,13 +273,6 @@ const wyrmprint =
     "Id": "400025",
     "img": "400025 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -459,13 +284,6 @@ const wyrmprint =
     "Id": "400026",
     "img": "400026 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -477,13 +295,6 @@ const wyrmprint =
     "Id": "400028",
     "img": "400028 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -495,13 +306,6 @@ const wyrmprint =
     "Id": "400029",
     "img": "400029 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -513,13 +317,6 @@ const wyrmprint =
     "Id": "400031",
     "img": "400031 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -531,13 +328,6 @@ const wyrmprint =
     "Id": "400032",
     "img": "400032 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -549,13 +339,6 @@ const wyrmprint =
     "Id": "400033",
     "img": "400033 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -567,13 +350,6 @@ const wyrmprint =
     "Id": "400034",
     "img": "400034 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -585,13 +361,6 @@ const wyrmprint =
     "Id": "400035",
     "img": "400035 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -603,13 +372,6 @@ const wyrmprint =
     "Id": "400036",
     "img": "400036 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -621,13 +383,6 @@ const wyrmprint =
     "Id": "400037",
     "img": "400037 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -639,13 +394,6 @@ const wyrmprint =
     "Id": "400038",
     "img": "400038 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -657,13 +405,6 @@ const wyrmprint =
     "Id": "400039",
     "img": "400039 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -675,13 +416,6 @@ const wyrmprint =
     "Id": "400040",
     "img": "400040 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -693,13 +427,6 @@ const wyrmprint =
     "Id": "400041",
     "img": "400041 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -711,13 +438,6 @@ const wyrmprint =
     "Id": "400042",
     "img": "400042 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -729,13 +449,6 @@ const wyrmprint =
     "Id": "400043",
     "img": "400043 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -747,13 +460,6 @@ const wyrmprint =
     "Id": "400044",
     "img": "400044 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -765,13 +471,6 @@ const wyrmprint =
     "Id": "400045",
     "img": "400045 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -783,13 +482,6 @@ const wyrmprint =
     "Id": "400046",
     "img": "400046 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -801,13 +493,6 @@ const wyrmprint =
     "Id": "400047",
     "img": "400047 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -819,13 +504,6 @@ const wyrmprint =
     "Id": "400048",
     "img": "400048 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -837,13 +515,6 @@ const wyrmprint =
     "Id": "400049",
     "img": "400049 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -855,13 +526,6 @@ const wyrmprint =
     "Id": "400050",
     "img": "400050 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -873,13 +537,6 @@ const wyrmprint =
     "Id": "400051",
     "img": "400051 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -891,13 +548,6 @@ const wyrmprint =
     "Id": "400052",
     "img": "400052 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -909,13 +559,6 @@ const wyrmprint =
     "Id": "400053",
     "img": "400053 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -927,13 +570,6 @@ const wyrmprint =
     "Id": "400055",
     "img": "400055 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -945,13 +581,6 @@ const wyrmprint =
     "Id": "400056",
     "img": "400056 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -963,13 +592,6 @@ const wyrmprint =
     "Id": "400057",
     "img": "400057 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -981,13 +603,6 @@ const wyrmprint =
     "Id": "400058",
     "img": "400058 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -999,13 +614,6 @@ const wyrmprint =
     "Id": "400059",
     "img": "400059 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1017,13 +625,6 @@ const wyrmprint =
     "Id": "400060",
     "img": "400060 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1035,13 +636,6 @@ const wyrmprint =
     "Id": "400061",
     "img": "400061 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1053,13 +647,6 @@ const wyrmprint =
     "Id": "400062",
     "img": "400062 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1071,13 +658,6 @@ const wyrmprint =
     "Id": "400063",
     "img": "400063 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1089,13 +669,6 @@ const wyrmprint =
     "Id": "400064",
     "img": "400064 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1107,13 +680,6 @@ const wyrmprint =
     "Id": "400065",
     "img": "400065 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1125,13 +691,6 @@ const wyrmprint =
     "Id": "400066",
     "img": "400066 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1143,13 +702,6 @@ const wyrmprint =
     "Id": "400067",
     "img": "400067 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1161,13 +713,6 @@ const wyrmprint =
     "Id": "400068",
     "img": "400068 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1179,13 +724,6 @@ const wyrmprint =
     "Id": "400069",
     "img": "400069 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1197,13 +735,6 @@ const wyrmprint =
     "Id": "400070",
     "img": "400070 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1215,13 +746,6 @@ const wyrmprint =
     "Id": "400071",
     "img": "400071 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1233,13 +757,6 @@ const wyrmprint =
     "Id": "400072",
     "img": "400072 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1251,13 +768,6 @@ const wyrmprint =
     "Id": "400074",
     "img": "400074 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1269,13 +779,6 @@ const wyrmprint =
     "Id": "400075",
     "img": "400075 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1287,13 +790,6 @@ const wyrmprint =
     "Id": "400076",
     "img": "400076 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1305,13 +801,6 @@ const wyrmprint =
     "Id": "400077",
     "img": "400077 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1323,13 +812,6 @@ const wyrmprint =
     "Id": "400078",
     "img": "400078 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1341,13 +823,6 @@ const wyrmprint =
     "Id": "400087",
     "img": "400087 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1359,13 +834,6 @@ const wyrmprint =
     "Id": "400099",
     "img": "400099 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1377,13 +845,6 @@ const wyrmprint =
     "Id": "400100",
     "img": "400100 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1395,13 +856,6 @@ const wyrmprint =
     "Id": "400101",
     "img": "400101 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1413,13 +867,6 @@ const wyrmprint =
     "Id": "400102",
     "img": "400102 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1431,13 +878,6 @@ const wyrmprint =
     "Id": "400103",
     "img": "400103 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1449,13 +889,6 @@ const wyrmprint =
     "Id": "400104",
     "img": "400104 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
   },
   {
@@ -1467,13 +900,6 @@ const wyrmprint =
     "Id": "400105",
     "img": "400105 01.png",
     "rarity": "4",
-    "LEVEL_LIMIT": {
-      "0": 30,
-      "1": 40,
-      "2": 50,
-      "3": 65,
-      "4": 80
-    },
     "MAX_LEVEL": 80
   },
   {
@@ -1485,13 +911,6 @@ const wyrmprint =
     "Id": "400106",
     "img": "400106 01.png",
     "rarity": "3",
-    "LEVEL_LIMIT": {
-      "0": 20,
-      "1": 30,
-      "2": 40,
-      "3": 50,
-      "4": 60
-    },
     "MAX_LEVEL": 60
   },
   {
@@ -1503,14 +922,62 @@ const wyrmprint =
     "Id": "400107",
     "img": "400107 01.png",
     "rarity": "5",
-    "LEVEL_LIMIT": {
-      "0": 40,
-      "1": 55,
-      "2": 70,
-      "3": 85,
-      "4": 100
-    },
     "MAX_LEVEL": 100
+  },
+  {
+    "Name": "Resounding Rendition",
+    "MinHp": 26,
+    "MaxHp": 177,
+    "MinAtk": 9,
+    "MaxAtk": 64,
+    "Id": "400110",
+    "img": "400110 01.png",
+    "rarity": "5",
+    "MAX_LEVEL": 100
+  },
+  {
+    "Name": "Heavenly Holiday",
+    "MinHp": 29,
+    "MaxHp": 195,
+    "MinAtk": 6,
+    "MaxAtk": 46,
+    "Id": "400111",
+    "img": "400111 01.png",
+    "rarity": "5",
+    "MAX_LEVEL": 100
+  },
+  {
+    "Name": "Kicking Back",
+    "MinHp": 22,
+    "MaxHp": 147,
+    "MinAtk": 6,
+    "MaxAtk": 45,
+    "Id": "400112",
+    "img": "400112 01.png",
+    "rarity": "4",
+    "MAX_LEVEL": 80
+  },
+  {
+    "Name": "Secret Friend",
+    "MinHp": 10,
+    "MaxHp": 71,
+    "MinAtk": 3,
+    "MaxAtk": 25,
+    "Id": "400113",
+    "img": "400113 01.png",
+    "rarity": "3",
+    "MAX_LEVEL": 60
+  },
+  {
+    "Name": "As the Snow Falls",
+    "MinHp": 18,
+    "MaxHp": 123,
+    "MinAtk": 4,
+    "MaxAtk": 33,
+    "Id": "400114",
+    "img": "400114 01.png",
+    "rarity": "4",
+    "MAX_LEVEL": 80
   }
 ];
 export default wyrmprint;
