@@ -23,7 +23,11 @@ class Status extends Component {
         level = "",
         unbind = 4,
         img = "add.png",
-        Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase()
+        Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase(),
+        HP,
+        STR,
+        abilityHP,
+        abilitySTR,
       }
     } = this.state;
 
@@ -93,8 +97,14 @@ class Status extends Component {
         </div>
 
         <div className="column">
-          <p>HP:  {this.calcStatus(section, "Hp")}</p>
-          <p>STR: {this.calcStatus(section, "Atk")}</p>
+          <p>HP:  {HP}</p>
+          <p>STR: {STR}</p>
+          {section === "dragon" &&
+            <div>
+              <p>abilityHP:  {abilityHP}</p>
+              <p>abilitySTR: {abilitySTR}</p>
+            </div>
+          }
         </div>
       </div>
     );
@@ -103,7 +113,7 @@ class Status extends Component {
   static getDerivedStateFromProps(props, state) {
     const { status } = props;
     if (status) {
-      if (Object.getOwnPropertyNames(state.status).length === 0 || status.Id !== state.status.Id) {
+      if (Object.getOwnPropertyNames(state.status).length === 0 || status.Id !== state.status.Id || status.HP !== state.status.HP) {
         return {
           disable: false,
           status,

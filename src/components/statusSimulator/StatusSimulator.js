@@ -137,18 +137,36 @@ class StatusSimulator extends Component {
   }
 
   updateStatus(section, status) {
-    this.setState({
-      sets: {
-        ...this.state.sets,
-        [section]: {
-          ...status,
-        }
+    let modifier = 1;
+    if (section === "weapon" || section === "dragon") modifier = 1.5
+
+    let sets = {
+      ...this.state.sets,
+      [section]: {
+        ...status,
+        HP: Math.ceil(this.calcStatus(section, status, "Hp") * modifier),
+        STR: Math.ceil(this.calcStatus(section, status, "Atk") * modifier),
       }
-    });
+    }
+
+    console.log(sets[section].HP, sets[section].STR)
+
+    if (sets.dragon) {
+      let subtotalHP = 0, subtotalSTR = 0;
+      const statusArray = Object.keys(sets), len = statusArray.length;
+      for (let i = 0; i < len; ++i) {
+        subtotalHP = subtotalHP + sets[statusArray[i]].HP;
+        subtotalSTR = subtotalSTR + sets[statusArray[i]].STR;
+      }
+      sets.dragon.abilityHP = this.calcStatus("ability", sets.dragon, "Hp", subtotalHP);
+      sets.dragon.abilitySTR = this.calcStatus("ability", sets.dragon, "Atk", subtotalSTR);;
+    }
+
+    this.setState({ sets });
   }
 
-  calcStatus(section, status, key) {
-    let stats = "";
+  calcStatus(section, status, key, subtotal) {
+    let stats = 0;
     let { level, rarity, unbind } = status;
     let step, statGain;
     level = (level === "" || parseInt(level, 10) === 0) ? 1 : parseInt(level, 10);
@@ -167,8 +185,11 @@ class StatusSimulator extends Component {
         break;
       case "ability":
         const abilityName = parseInt(unbind, 10) === 4 ? "Abilities12" : "Abilities11";
-        const abilityDetails = status.abilityName;
+        const { attr, value } = status[abilityName];
 
+        if ((attr === "both") || (attr === "Strength" && key === "Atk") || (attr === "HP" && key === "Hp")) {
+          stats = Math.ceil(subtotal * value / 100);
+        }
         break;
       default:
         break;
