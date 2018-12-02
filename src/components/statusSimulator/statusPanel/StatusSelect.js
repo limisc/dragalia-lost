@@ -9,11 +9,13 @@ class RaritySelect extends Component {
       "4": ["40", "30", "20", "10", "0"],
       "3": ["30", "20", "10", "0"],
     }
+
+    this._onChange = this._onChange.bind(this);
   }
 
 
   render() {
-    const { disable, status: { rarity, mana, rarityField = [] }, updateValue } = this.props;
+    const { disable, status: { rarity, mana, rarityField = [] } } = this.props;
     const { [rarity]: manaField = [] } = this.state;
     return (
       <div className="equal width fields">
@@ -22,7 +24,7 @@ class RaritySelect extends Component {
           {this.isString(rarityField) ?
             <input disabled value={rarity} />
             :
-            <select id="rarity" disabled={disable} value={rarity} onChange={updateValue}>
+            <select id="rarity" disabled={disable} value={rarity} onChange={this._onChange}>
               {rarityField.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
             </select>
           }
@@ -30,33 +32,21 @@ class RaritySelect extends Component {
 
         <div className="field">
           <label>Mana Circle</label>
-          <select id="mana" disabled={disable} value={mana} onChange={updateValue}>
+          <select id="mana" disabled={disable} value={mana} onChange={this._onChange}>
             {manaField.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
           </select>
         </div>
-        {/* <div className="field">
-          <label>Rarity</label>
-          {rarity === "5" ?
-            <input id="rarity" disabled value={rarity} />
-            :
-            <select id="rarity" disabled={disable} value={rarity} onChange={updateValue}>
-              {rarityField.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
-            </select>
-          }
-        </div>
-
-        <div className="field">
-          <label>Mana Circle</label>
-          <select id="mana" disabled={disable} value={mana} onChange={updateValue}>
-            {this.state.mana[rarity].map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
-          </select>
-        </div> */}
       </div>
     );
   }
 
   isString(value) {
     return typeof value === 'string' || value instanceof String;
+  }
+
+  _onChange(e) {
+    const { id, value } = e.target;
+    this.props.updateValue(id, value)
   }
 }
 

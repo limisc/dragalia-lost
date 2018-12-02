@@ -155,14 +155,20 @@ class StatusSimulator extends Component {
       let subtotalHP = 0, subtotalSTR = 0;
       const statusArray = Object.keys(sets), len = statusArray.length;
       for (let i = 0; i < len; ++i) {
-        subtotalHP = subtotalHP + sets[statusArray[i]].HP;
-        subtotalSTR = subtotalSTR + sets[statusArray[i]].STR;
+        if (sets[statusArray[i]]) {
+          subtotalHP = subtotalHP + sets[statusArray[i]].HP;
+          subtotalSTR = subtotalSTR + sets[statusArray[i]].STR;
+        }
       }
       sets.dragon.abilityHP = this.calcStatus("ability", sets.dragon, "Hp", subtotalHP);
       sets.dragon.abilitySTR = this.calcStatus("ability", sets.dragon, "Atk", subtotalSTR);;
     }
 
     this.setState({ sets });
+  }
+
+  calcSets(sets) {
+
   }
 
   calcStatus(section, status, key, subtotal) {
@@ -189,6 +195,7 @@ class StatusSimulator extends Component {
 
         if ((attr === "both") || (attr === "Strength" && key === "Atk") || (attr === "HP" && key === "Hp")) {
           stats = Math.ceil(subtotal * value / 100);
+          console.log(stats)
         }
         break;
       default:

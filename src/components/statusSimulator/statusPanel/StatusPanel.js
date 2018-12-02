@@ -18,7 +18,25 @@ class StatusPanel extends Component {
             updateStatus={updateStatus}
           />
         )}
-      </div>
+        <div className="three column row">
+          <div id="avatar-section" className="three wide column">
+            <img
+              alt="halidom.png"
+              className="avatar"
+              src={`${IMG_PATH}/icon/halidom.png`}
+            />
+            <p style={{ textAlign: "center" }}>
+              <b>Facility</b>
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div >
     );
   }
 }

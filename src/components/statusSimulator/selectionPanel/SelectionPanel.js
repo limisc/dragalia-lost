@@ -17,6 +17,7 @@ class SelectionPanel extends Component {
       weapon,
       wyrmprint,
       dragon,
+
     }
   }
 
@@ -25,7 +26,7 @@ class SelectionPanel extends Component {
       IMG_PATH, section, filters, filterField,
       handleFilter, handleSelection,
     } = this.props;
-
+    const element = ["Flame", "Water", "Wind", "Light", "Shadow"];
     return (
       <div id="right-panel" className="six wide column">
         <FilterForm
@@ -46,6 +47,10 @@ class SelectionPanel extends Component {
           <tbody>
             {this.state[section]
               .filter(status => filterField.every(key => status[key].includes(filters[key])))
+              .sort((status1, status2) => status1.Name.localeCompare(status2.Name))
+              .sort((status1, status2) => element.indexOf(status1.element) - element.indexOf(status2.element))
+              .sort((status1, status2) => status2.tier - status1.tier)
+              .sort((status1, status2) => status2.rarity - status1.rarity)
               .map((status, i) =>
                 <SelectItem
                   key={i}
