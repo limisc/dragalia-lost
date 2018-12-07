@@ -1,7 +1,7 @@
 # dragalia-lost
 Tool for the game - Dragalia Lost
 
-###[Demo](https://junlico.github.io/dragalia-lost/)
+### [Demo](https://junlico.github.io/dragalia-lost/)
 
 
 Data source:
