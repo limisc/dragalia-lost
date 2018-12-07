@@ -4,20 +4,24 @@
   background-color: blanchedalmond
 } */
 
-img.avatar {
+img.status-avatar {
   width: 90px;
   display: block;
   margin: auto;
 }
 
-button#reset-btn {
-  margin-top: 7px;
+button#max-btn {
+  margin-top: 24px;
 }
 
-img.selection-img {
+img.selection-avatar {
   width: 64px;
   display: block;
   margin: auto;
+}
+
+img.selection-icon {
+  width: 32px;
 }
 
 div.unbind-set {

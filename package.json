@@ -6,8 +6,11 @@
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
-    "semantic-ui-react": "^0.83.0"
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
