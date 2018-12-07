@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateLevel: (section, key, value) => dispatch(updateStatusLevel(section, key, value)),
+    updateLevel: (section, key, value, facilityType) => dispatch(updateStatusLevel(section, key, value, facilityType)),
   }
 }
 
@@ -29,9 +29,13 @@ class InputItem extends Component {
   // }
 
   render() {
-    const { section, label, statusSets: { [section]: status } } = this.props;
-    const { [label]: value = "" } = status || {};
-    // console.log(section, label, value)
+    const { section, label, statusSets: { [section]: status }, facilityType } = this.props;
+    let value = ""
+    if (facilityType) {
+      value = status[facilityType][label];
+    } else if (status) {
+      value = status[label];
+    }
     return (
       <div className="field">
         <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>
@@ -47,8 +51,8 @@ class InputItem extends Component {
   }
 
   _onChange(e) {
-    const { section, label, updateLevel } = this.props;
-    updateLevel(section, label, e.target.value);
+    const { section, label, facilityType, updateLevel } = this.props;
+    updateLevel(section, label, e.target.value, facilityType);
   }
 
   _handleKeyPress(e) {
@@ -62,6 +66,7 @@ class InputItem extends Component {
 InputItem.propTypes = {
   section: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+  facilityType: PropTypes.string,
   statusSets: PropTypes.object.isRequired,
   updateLevel: PropTypes.func.isRequired,
 }
