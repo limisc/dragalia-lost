@@ -26,7 +26,6 @@ class InputItem extends Component {
     //because for each statusField, section will not change except change coding layout.
     const { section } = this.props;
     return nextProps.statusSets[section] !== this.props.statusSets[section];
-
   }
 
   render() {

@@ -172,19 +172,18 @@ const statusReducer = (state, action) => {
     }
     case actionTypes.UPDATE_STATUS_ADVENTURER_RARITY_MANA: {
       const { key, value } = action;
-      let { level, mana, img } = state.adventurer;
-
-      let new_state = { ...state, adventurer: { ...state.adventurer, [key]: value } }
+      let new_adventurer = { ...state.adventurer, [key]: value };
       if (key === "curRarity") {
         //curRarity: value
+        let { level, mana, img } = state.adventurer;
         const levelLimit = getLevelLimit("adventurer", value);
         const manaLimit = getLevelLimit("mana", value);
         level = parseInt(level, 10) > levelLimit ? levelLimit : level;
         mana = parseInt(mana, 10) > manaLimit ? manaLimit : mana;
         img = img.slice(0, -5) + value + ".png";
-        new_state = { ...new_state, adventurer: { ...new_state.adventurer, level, mana, img } };
+        new_adventurer = { ...new_adventurer, level, mana, img };
       }
-      return new_state;
+      return { ...state, adventurer: new_adventurer };
     }
     default: return state;
   }

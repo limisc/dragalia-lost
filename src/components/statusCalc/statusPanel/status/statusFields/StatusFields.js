@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import InputItem from './InputItem';
 import MaxLVButton from './MaxLVButton';
 import UnbindItem from './UnbindItem';
+import SelectItem from './SelectItem';
 
 const mapStateToProps = (state) => {
   const { statusSets } = state;
@@ -35,7 +36,7 @@ class StatusFields extends Component {
           />
         </div>
         {section === "adventurer" ?
-          <div>....</div>
+          <SelectItem />
           :
           <UnbindItem
             section={section}

@@ -60,7 +60,7 @@ export const handleSection = (section, statusSets) => (dispatch) => {
 const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
 const selectStatus = actionCreator(actionTypes.SELECT_STATUS, "section", "status");
 export const handleSelection = (section, status) => (dispatch) => {
-  const { Id, rarity, img, MAX_LEVEL } = status;
+  const { Id, rarity, unbind, img } = status;
   let addtional = {};
 
   if (section === "adventurer") {
@@ -70,7 +70,7 @@ export const handleSelection = (section, status) => (dispatch) => {
   } else {
     addtional = { img: `${section}/${img}`, unbind: 4 };
   }
-  dispatch(selectStatus(section, { ...status, ...addtional, level: MAX_LEVEL }));
+  dispatch(selectStatus(section, { ...status, ...addtional, level: getLevelLimit(section, rarity, unbind) }));
 }
 export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value");
 export const updateStatusUnbind = actionCreator(actionTypes.UPDATE_STATUS_UNBIND, "section", "value");
