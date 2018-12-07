@@ -1,21 +1,20 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { hanldeSection } from '../../../../redux/actions/actions';
+import { handleSection } from '../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
-  const { UIData: { IMG_PATH }, statusSets } = state;
+  const { statusSets } = state;
   return {
-    IMG_PATH,
-    statusSets,
+    statusSets
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    hanldeSection: (section, statusSets) => dispatch(hanldeSection(section, statusSets)),
-  };
+    handleSection: (section, statusSets) => dispatch(handleSection(section, statusSets)),
+  }
 }
-
 
 class StatusAvatar extends Component {
   constructor(props) {
@@ -23,19 +22,26 @@ class StatusAvatar extends Component {
     this._onClick = this._onClick.bind(this);
   }
 
+  shouldComponentUpdate(nextProps) {
+    const { section } = nextProps;
+    const { img: nextImg = "" } = nextProps.statusSets[section] || {};
+    const { img = "" } = this.props.statusSets[section] || {};
+    return nextImg !== img;
+  }
+
   render() {
-    const { IMG_PATH, section, statusSets: { [section]: status } } = this.props;
-    let {
+    const { section, statusSets: { [section]: status } } = this.props;
+    const {
       img = "icon/add.png",
       Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase(),
     } = status || {};
-
+    console.log("StatusAvatar", section)
     return (
       <Fragment>
         <img
           className="status-avatar"
           alt={img}
-          src={`${IMG_PATH}/${img}`}
+          src={`${process.env.PUBLIC_URL}/img/${img}`}
           onClick={this._onClick}
         />
         <p style={{ textAlign: "center" }}><b>{Name}</b></p>
@@ -44,12 +50,18 @@ class StatusAvatar extends Component {
   }
 
   _onClick() {
-    const { section, statusSets, hanldeSection } = this.props;
-    hanldeSection(section, statusSets);
+    const { section, statusSets, handleSection } = this.props;
+    handleSection(section, statusSets);
   }
+}
+
+StatusAvatar.propTypes = {
+  section: PropTypes.string.isRequired,
+  statusSets: PropTypes.object.isRequired,
+  handleSection: PropTypes.func.isRequired,
 }
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(StatusAvatar);

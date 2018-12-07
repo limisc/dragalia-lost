@@ -27,6 +27,18 @@ const RESET_FACILITY = {
   }
 }
 
+const detailsReducer = (state, action) => {
+  switch (action.type) {
+    case actionTypes.TOGGLE_DETAILS: {
+      return !state;
+    }
+    case actionTypes.HIDE_DETAILS: {
+      return false;
+    }
+    default: return state;
+  }
+}
+
 const sectionReducer = (state, action) => {
   switch (action.type) {
     case actionTypes.SET_SECTION: {
@@ -124,7 +136,6 @@ const statusReducer = (state, action) => {
       const limit = getLevelLimit(section, curRarity || rarity, unbind);
       let value = parseInt(action.value, 10) || "";
       value = value > limit ? limit : value;
-
       return {
         ...state,
         [section]: {
@@ -132,7 +143,6 @@ const statusReducer = (state, action) => {
           [action.key]: value,
         }
       }
-
     }
     case actionTypes.UPDATE_STATUS_UNBIND: {
       const { value } = action;
@@ -195,6 +205,7 @@ const getLevelLimit = (key, rarity, unbind = 4) => {
 
 const rootReducer = (state, action) => {
   return {
+    showDetails: detailsReducer(state.showDetails, action),
     selectedSection: sectionReducer(state.selectedSection, action),
     filters: filterReducer(state.filters, action, state.statusSets),
     statusSets: statusReducer(state.statusSets, action),

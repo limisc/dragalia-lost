@@ -12,6 +12,10 @@ const actionCreator = (type, ...argNames) => {
   }
 }
 
+//modify details pannel show/hide
+export const toggleDetails = actionCreator(actionTypes.TOGGLE_DETAILS);
+const hideDetails = actionCreator(actionTypes.HIDE_DETAILS);
+
 //modify filters
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const setFilters = actionCreator(actionTypes.SET_FILTERS, "key", "value");
@@ -21,7 +25,7 @@ const setFiltersDragonElement = actionCreator(actionTypes.SET_FILTERS_DRAGON_ELE
 
 //modify section
 const setSection = actionCreator(actionTypes.SET_SECTION, "section")
-export const hanldeSection = (section, statusSets) => (dispatch) => {
+export const handleSection = (section, statusSets) => (dispatch) => {
   const { adventurer, weapon } = statusSets;
   if (section === "adventurer" && weapon) {
     dispatch(setFiltersAdventurerType());
@@ -33,6 +37,7 @@ export const hanldeSection = (section, statusSets) => (dispatch) => {
     dispatch(resetFilters());
   }
 
+  dispatch(hideDetails());
   dispatch(setSection(section));
   if (statusSets[section]) dispatch(removeStatus(section));
 }
@@ -53,6 +58,6 @@ export const handleSelection = (section, status) => (dispatch) => {
   }
   dispatch(selectStatus(section, { ...status, ...addtional, level: MAX_LEVEL }));
 }
-export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value", "label");
+export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value");
 export const updateStatusUnbind = actionCreator(actionTypes.UPDATE_STATUS_UNBIND, "section", "value");
 export const updateStatusAdventurerRarityMana = actionCreator(actionTypes.UPDATE_STATUS_ADVENTURER_RARITY_MANA, "key", "value");

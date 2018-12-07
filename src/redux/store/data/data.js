@@ -1,10 +1,7 @@
 import LEVEL_LIMIT from './level_data';
-import adventurer from './adventurer_data';
-import weapon from './weapon_data';
-import wyrmprint from './wyrmprint_data';
-import dragon from './dragon_data';
 
 const data = {
+  showDetails: true,
   selectedSection: null,
   filters: {
     type: "",
@@ -34,19 +31,7 @@ const data = {
     },
   },
   UIData: {
-    IMG_PATH: `${process.env.PUBLIC_URL}/img`,
-    filterOptions: {
-      type: ["Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
-      element: ["Flame", "Water", "Wind", "Light", "Shadow"],
-      rarity: ["5", "4", "3"],
-      tier: ["3", "2", "1"],
-    },
-    selectData: {
-      adventurer,
-      weapon,
-      wyrmprint,
-      dragon,
-    },
+
     LEVEL_LIMIT,
   }
 };

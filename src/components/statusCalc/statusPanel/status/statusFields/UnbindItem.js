@@ -1,12 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { updateStatusUnbind } from '../../../../../redux/actions/actions';
 
-function mapStateToProps(state) {
-  const { UIData: { IMG_PATH }, statusSets } = state;
+const mapStateToProps = (state) => {
   return {
-    IMG_PATH,
-    statusSets,
+    statusSets: state.statusSets,
   };
 }
 
@@ -15,15 +14,25 @@ const mapDispatchToProps = (dispatch) => {
     updateStatusUnbind: (section, value) => dispatch(updateStatusUnbind(section, value)),
   }
 }
+
 class UnbindItem extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      IMG_PATH: `${process.env.PUBLIC_URL}/img`
+    }
     this._unbindDecrement = this._unbindDecrement.bind(this);
     this._unbindIncrement = this._unbindIncrement.bind(this);
   }
 
+  shouldComponentUpdate(nextProps) {
+    const { section } = nextProps;
+    const { unbind: nextUnbind = 4 } = nextProps.statusSets[section] || {};
+    const { unbind = "" } = this.props.statusSets[section] || {};
+    return nextUnbind !== unbind;
+  }
   render() {
-    const { IMG_PATH, section, statusSets: { [section]: status } } = this.props;
+    const { section, statusSets: { [section]: status } } = this.props, { IMG_PATH } = this.state;
     const { unbind = 4 } = status || {};
     return (
       <div className="unbind-set">
@@ -64,6 +73,13 @@ class UnbindItem extends Component {
       updateStatusUnbind(section, 1);
     }
   }
+}
+
+UnbindItem.propTypes = {
+  //props
+  section: PropTypes.string.isRequired,
+  //redux
+  statusSets: PropTypes.object.isRequired,
 }
 
 export default connect(

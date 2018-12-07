@@ -1,30 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import StatusAvatar from './StatusAvatar';
-import StatusSettings from './statusSettings/StatusSettings';
+import StatusFields from './statusFields/StatusFields';
 
-const Status = (props) => {
-  const { section } = props;
-  return (
-    <div className="column">
-      <div className="ui two column grid">
-        <div className="six wide column">
-          <StatusAvatar
-            section={section}
-          />
-        </div>
+const mapStateToProps = (state) => {
+  const { statusSets } = state;
+  return {
+    statusSets
+  };
+}
 
-        <div className="nine wide column">
-          <StatusSettings
-            section={section}
-          />
+class Status extends Component {
+
+  shouldComponentUpdate(nextProps) {
+    //because for each statusField, section will not change except change coding layout.
+    const { section } = nextProps;
+    return nextProps.statusSets[section] !== this.props.statusSets[section];
+  }
+
+  render() {
+    const { section } = this.props;
+    console.log("Status.js", section)
+    return (
+      <div className="column">
+        <div className="ui two column grid">
+          <div className="six wide column">
+            <StatusAvatar
+              section={section}
+            />
+          </div>
+
+          <div className="nine wide column">
+            <StatusFields
+              section={section}
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 Status.propTypes = {
   section: PropTypes.string.isRequired,
 }
-export default Status;
+export default connect(
+  mapStateToProps,
+)(Status);

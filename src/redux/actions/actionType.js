@@ -1,4 +1,7 @@
 const actionTypes = {
+  //modify details button
+  TOGGLE_DETAILS: "TOGGLE_DETAILS",
+  HIDE_DETAILS: "HIDE_DETAILS",
   //modify section
   SET_SECTION: "SET_SECTION",
 
