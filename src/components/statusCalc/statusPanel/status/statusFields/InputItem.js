@@ -32,6 +32,7 @@ class InputItem extends Component {
   render() {
     const { section, label, statusSets: { [section]: status } } = this.props;
     const { [label]: value = "" } = status || {};
+    console.log(section, label, value)
     return (
       <div className="field">
         <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>

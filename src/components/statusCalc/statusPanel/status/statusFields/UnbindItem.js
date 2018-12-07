@@ -27,7 +27,7 @@ class UnbindItem extends Component {
 
   shouldComponentUpdate(nextProps) {
     const { section } = nextProps;
-    const { unbind: nextUnbind = 4 } = nextProps.statusSets[section] || {};
+    const { unbind: nextUnbind = "" } = nextProps.statusSets[section] || {};
     const { unbind = "" } = this.props.statusSets[section] || {};
     return nextUnbind !== unbind;
   }

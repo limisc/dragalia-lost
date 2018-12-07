@@ -12,6 +12,20 @@ const actionCreator = (type, ...argNames) => {
   }
 }
 
+export const getLevelLimit = (key, rarity, unbind = 4) => {
+  switch (key) {
+    case "mana":
+    case "adventurer":
+      return LEVEL_LIMIT[key][rarity];
+    case "facility":
+      return 30;
+    default:
+      return LEVEL_LIMIT[key][rarity][unbind];
+  }
+}
+
+
+
 //modify details pannel show/hide
 export const toggleDetails = actionCreator(actionTypes.TOGGLE_DETAILS);
 const hideDetails = actionCreator(actionTypes.HIDE_DETAILS);
@@ -50,7 +64,7 @@ export const handleSelection = (section, status) => (dispatch) => {
   let addtional = {};
 
   if (section === "adventurer") {
-    addtional = { img: `${section}/${Id}_r0${rarity}.png`, curRarity: rarity, mana: LEVEL_LIMIT.mana[rarity] };
+    addtional = { img: `${section}/${Id}_r0${rarity}.png`, curRarity: rarity, mana: getLevelLimit("mana", rarity) };
   } else if (section === "wyrmprint") {
     addtional = { img: `${section}/${Id}_02.png`, unbind: 4 };
   } else {

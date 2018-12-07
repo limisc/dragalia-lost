@@ -26,6 +26,7 @@ class StatusAvatar extends Component {
     const { section } = nextProps;
     const { img: nextImg = "" } = nextProps.statusSets[section] || {};
     const { img = "" } = this.props.statusSets[section] || {};
+    console.log(nextImg, img)
     return nextImg !== img;
   }
 

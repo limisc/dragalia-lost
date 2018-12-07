@@ -1,5 +1,3 @@
-import LEVEL_LIMIT from './level_data';
-
 const data = {
   showDetails: true,
   selectedSection: null,
@@ -30,10 +28,6 @@ const data = {
       }
     },
   },
-  UIData: {
-
-    LEVEL_LIMIT,
-  }
 };
 
 export default data;

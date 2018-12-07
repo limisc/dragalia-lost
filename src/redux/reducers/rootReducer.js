@@ -1,7 +1,7 @@
 // import statusReducer from './statusReducer';
 // import selectReducer from './selectReducer';
 import actionTypes from '../actions/actionType';
-import LEVEL_LIMIT from '../store/data/level_data';
+import { getLevelLimit } from '../actions/actions';
 import EXTRA_FACILITY from '../store/data/extraFacility';
 
 const RESET_FILTER = {
@@ -145,28 +145,29 @@ const statusReducer = (state, action) => {
       }
     }
     case actionTypes.UPDATE_STATUS_UNBIND: {
+      // action: { section, value }
       const { value } = action;
       const { [section]: status } = state;
-      let { rarity, unbind, level, img } = status;
+      let { rarity, unbind, level } = status;
+      let new_status = {};
       unbind = unbind + value;
       if (unbind < 0) {
         unbind = 0;
       } else if (unbind > 4) {
         unbind = 4;
       }
-      if (section === "wyrmprint") {
-        img = unbind < 2 ? (img.slice(0, -5) + "1.png") : (img.slice(0, -5) + "2.png");
-      }
+
       const limit = getLevelLimit(section, rarity, unbind);
       level = parseInt(level, 10) > limit ? limit : level;
+      new_status = { ...status, unbind, level };
+      if (section === "wyrmprint") {
+        const img = unbind < 2 ? (status.img.slice(0, -5) + "1.png") : (status.img.slice(0, -5) + "2.png");
+        new_status = { ...new_status, img };
+      }
+
       return {
         ...state,
-        [section]: {
-          ...status,
-          unbind,
-          level,
-          img,
-        }
+        [section]: new_status,
       }
     }
     case actionTypes.UPDATE_STATUS_ADVENTURER_RARITY_MANA: {
@@ -189,27 +190,12 @@ const statusReducer = (state, action) => {
   }
 }
 
-const getLevelLimit = (key, rarity, unbind = 4) => {
-  switch (key) {
-    case "mana":
-    case "adventurer":
-      return LEVEL_LIMIT[key][rarity];
-    case "facility":
-      return 30;
-    default:
-      return LEVEL_LIMIT[key][rarity][unbind];
-  }
-}
-
-
-
 const rootReducer = (state, action) => {
   return {
     showDetails: detailsReducer(state.showDetails, action),
     selectedSection: sectionReducer(state.selectedSection, action),
     filters: filterReducer(state.filters, action, state.statusSets),
     statusSets: statusReducer(state.statusSets, action),
-    UIData: state.UIData,
   }
 }
 
