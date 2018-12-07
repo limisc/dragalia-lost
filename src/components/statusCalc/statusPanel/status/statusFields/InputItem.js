@@ -22,16 +22,16 @@ class InputItem extends Component {
     this._onChange = this._onChange.bind(this);
   }
 
-  shouldComponentUpdate(nextProps) {
-    //because for each statusField, section will not change except change coding layout.
-    const { section } = this.props;
-    return nextProps.statusSets[section] !== this.props.statusSets[section];
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   //because for each statusField, section will not change except change coding layout.
+  //   const { section } = this.props;
+  //   return nextProps.statusSets[section] !== this.props.statusSets[section];
+  // }
 
   render() {
     const { section, label, statusSets: { [section]: status } } = this.props;
     const { [label]: value = "" } = status || {};
-    console.log(section, label, value)
+    // console.log(section, label, value)
     return (
       <div className="field">
         <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>

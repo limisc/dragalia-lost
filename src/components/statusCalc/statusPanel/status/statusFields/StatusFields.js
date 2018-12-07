@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import InputItem from './InputItem';
 import MaxLVButton from './MaxLVButton';
-import UnbindItem from './UnbindItem';
-import SelectItem from './SelectItem';
+// import UnbindItem from './UnbindItem';
+// import SelectItem from './SelectItem';
 
 const mapStateToProps = (state) => {
   const { statusSets } = state;
@@ -15,34 +15,36 @@ const mapStateToProps = (state) => {
 
 class StatusFields extends Component {
 
-  shouldComponentUpdate(nextProps) {
-    //because for each statusField, section will not change except change coding layout.
-    const { section } = nextProps;
-    return nextProps.statusSets[section] !== this.props.statusSets[section];
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   //because for each statusField, section will not change except change coding layout.
+  //   const { section } = nextProps;
+  //   return nextProps.statusSets[section] !== this.props.statusSets[section];
+  // }
 
   render() {
     const { section } = this.props;
-    console.log("StatusField", section)
+    // console.log("StatusField", section)
     return (
-      <div className="ui form">
-        <div className="equal width fields">
-          <InputItem
-            label="level"
-            section={section}
-          />
-          <MaxLVButton
-            section={section}
-          />
-        </div>
-        {section === "adventurer" ?
+      <div className="nine wide column">
+        <div className="ui form">
+          <div className="equal width fields">
+            <InputItem
+              label="level"
+              section={section}
+            />
+            <MaxLVButton
+              section={section}
+            />
+          </div>
+          {/* {section === "adventurer" ?
           <SelectItem />
           :
           <UnbindItem
             section={section}
           />
-        }
+        } */}
 
+        </div>
       </div>
     );
   }

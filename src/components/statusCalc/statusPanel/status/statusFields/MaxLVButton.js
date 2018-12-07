@@ -21,16 +21,16 @@ class MaxLevelButton extends Component {
     this._onClick = this._onClick.bind(this);
   }
 
-  shouldComponentUpdate(nextProps) {
-    const { section } = nextProps;
-    const { Id: nextId = "" } = nextProps.statusSets[section] || {};
-    const { Id = "" } = this.props.statusSets[section] || {};
-    return nextId !== Id;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const { section } = nextProps;
+  //   const { Id: nextId = "" } = nextProps.statusSets[section] || {};
+  //   const { Id = "" } = this.props.statusSets[section] || {};
+  //   return nextId !== Id;
+  // }
 
   render() {
     const { section, statusSets: { [section]: status } } = this.props;
-    console.log("MAXLV", section)
+    // console.log("MAXLV", section)
     return (
       <div className="field">
         <button id="max-btn" className="ui button" disabled={!status} onClick={this._onClick}>MAX LV.</button>
