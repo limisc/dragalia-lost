@@ -40,8 +40,8 @@ table.ui.celled.table th, table.ui.celled.table td {
 table td#table-left-align {
   text-align: left;
 }
-/*
+
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} */
+}

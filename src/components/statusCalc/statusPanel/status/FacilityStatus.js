@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import InputItem from './statusFields/InputItem';
-import uuidv4 from 'uuid/v4';
+// import uuidv4 from 'uuid/v4';
 
 const mapStateToProps = (state) => {
   const { adventurer: { type, element }, facility } = state.statusSets;
@@ -36,12 +36,12 @@ class FacilityStatus extends Component {
           <div className="nine wide column">
             <div className="ui form">
               <div className="two fields">
-                {contentList.map(item =>
+                {contentList.map((item, i) =>
                   <InputItem
-                    key={uuidv4()}
+                    key={i}
                     section="facility"
-                    facilityType={facilityType}
                     label={item}
+                    facilityType={facilityType}
                   />
                 )}
               </div>

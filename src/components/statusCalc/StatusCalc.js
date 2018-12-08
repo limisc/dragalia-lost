@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import StatusPanel from './statusPanel/StatusPanel';
 import SelectPanel from './selectPanel/SelectPanel';
 import DetailsPanel from './detailsPanel/DetailsPanel';
-import { toggleDetails } from '../../redux/actions/actions'
+// import { toggleDetails } from '../../redux/actions/actions'
 
 const mapStateToProps = (state) => {
   return {
-    showDetails: state.showDetails,
+    // showDetails: state.showDetails,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleDetails: () => dispatch(toggleDetails()),
+    // toggleDetails: () => dispatch(toggleDetails()),
   }
 }
 
@@ -22,40 +22,42 @@ const mapDispatchToProps = (dispatch) => {
 class StatusCalc extends Component {
   constructor(props) {
     super(props);
-    this._onClick = this._onClick.bind(this);
+    // this._onClick = this._onClick.bind(this);
   }
 
   render() {
-    const { showDetails } = this.props;
+    // const { showDetails } = this.props;
     return (
       <div className="ui doubling stackable two column grid" style={{ margin: "1em" }}>
         <div id="left-panel" className="nine wide column">
+          <DetailsPanel />
+          <div className="ui divider"></div>
           <StatusPanel />
         </div>
 
         <div id="right-panel" className="six wide column">
-          <button className={showDetails ? "ui violet button" : "ui button"} onClick={this._onClick}>Details</button>
-          <div className="ui divider"></div>
+          {/* <button className={showDetails ? "ui violet button" : "ui button"} onClick={this._onClick}>Details</button> */}
+          {/* <div className="ui divider"></div>
           {showDetails ?
             <DetailsPanel />
-            :
-            <SelectPanel />
-          }
+            : */}
+          <SelectPanel />
+          {/* } */}
         </div>
       </div>
     );
   }
 
-  _onClick() {
-    this.props.toggleDetails();
-  }
+  // _onClick() {
+  //   this.props.toggleDetails();
+  // }
 };
 
 
-StatusCalc.propTypes = {
-  showDetails: PropTypes.bool.isRequired,
-  toggleDetails: PropTypes.func.isRequired,
-}
+// StatusCalc.propTypes = {
+//   showDetails: PropTypes.bool.isRequired,
+//   toggleDetails: PropTypes.func.isRequired,
+// }
 
 export default connect(
   mapStateToProps,

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Status from './status/Status';
-import uuidv4 from 'uuid/v4';
 import FacilityStatus from './status/FacilityStatus';
+// import uuidv4 from 'uuid/v4';
 
 const mapStateToProps = (state) => {
   const { adventurer, facility } = state.statusSets;
@@ -25,16 +25,17 @@ class StatusPanel extends Component {
     const { adventurer, facility } = this.props;
     return (
       <div className="ui two column grid">
-        {sections.map(section =>
+        {sections.map((section, i) =>
           <Status
-            key={uuidv4()}
+            key={i}
             section={section}
           />
         )}
 
         {adventurer &&
-          facility.typeList.map(facilityType =>
+          facility.typeList.map((facilityType, i) =>
             <FacilityStatus
+              key={i}
               facilityType={facilityType}
             />
           )

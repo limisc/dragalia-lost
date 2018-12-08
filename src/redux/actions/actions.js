@@ -72,6 +72,10 @@ export const handleSelection = (section, status) => (dispatch) => {
   }
   dispatch(selectStatus(section, { ...status, ...addtional, level: getLevelLimit(section, rarity, unbind) }));
 }
-export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value");
+export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value", "facilityType");
 export const updateStatusUnbind = actionCreator(actionTypes.UPDATE_STATUS_UNBIND, "section", "value");
 export const updateStatusAdventurerRarityMana = actionCreator(actionTypes.UPDATE_STATUS_ADVENTURER_RARITY_MANA, "key", "value");
+
+
+//calc Status
+export const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "field", "value");

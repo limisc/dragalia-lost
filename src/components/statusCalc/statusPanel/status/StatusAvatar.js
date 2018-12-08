@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { handleSection } from '../../../../redux/actions/actions';
@@ -22,12 +22,12 @@ class StatusAvatar extends Component {
     this._onClick = this._onClick.bind(this);
   }
 
-  shouldComponentUpdate(nextProps) {
-    const { section } = nextProps;
-    const { img: nextImg = "" } = nextProps.statusSets[section] || {};
-    const { img = "" } = this.props.statusSets[section] || {};
-    return nextImg !== img;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   const { section } = nextProps;
+  //   const { img: nextImg = "" } = nextProps.statusSets[section] || {};
+  //   const { img = "" } = this.props.statusSets[section] || {};
+  //   return nextImg !== img;
+  // }
 
   render() {
     const { section, statusSets: { [section]: status } } = this.props;
@@ -35,9 +35,9 @@ class StatusAvatar extends Component {
       img = "icon/add.png",
       Name = section.charAt(0).toUpperCase() + section.slice(1).toLowerCase(),
     } = status || {};
-    console.log("StatusAvatar", section)
+    // console.log("StatusAvatar", section)
     return (
-      <Fragment>
+      <div className="six wide column">
         <img
           className="status-avatar"
           alt={img}
@@ -45,7 +45,7 @@ class StatusAvatar extends Component {
           onClick={this._onClick}
         />
         <p style={{ textAlign: "center" }}><b>{Name}</b></p>
-      </Fragment >
+      </div>
     );
   }
 
