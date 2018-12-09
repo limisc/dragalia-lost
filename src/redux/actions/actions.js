@@ -94,24 +94,24 @@ const calcStats = (section, status, key, modifier = 1) => {
     let level = parseInt(status.level, 10);
     if (!level || level < 1) level = 1;
     let steps, statGain;
-    switch (section) {
-      case "adventurer": {
+
+
+    if (level === status.MAX_LEVEL) {
+      stats = status["Max" + key];
+    } else {
+      if (section === "adventurer") {
         steps = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
         statGain = (level - 1) * steps;
-        stats = status["Min" + key + status.curRarity] + statGain + getManaBonus(status, key);
-        break;
-      }
-      case "weapon":
-      case "wyrmprint":
-      case "dragon":
+        stats = status["Min" + key + status.curRarity] + statGain;
+      } else {
         steps = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
         statGain = (level - 1) * steps;
-        stats = Math.ceil(status["Min" + key] + statGain) * modifier;
-        break;
-      default:
-        break;
+        stats = status["Min" + key] + statGain;
+      }
     }
-    stats = Math.ceil(stats)
+
+    if (section === "adventurer") stats = stats + getManaBonus(status, key);
+    stats = Math.ceil(Math.ceil(stats) * modifier);
   }
   return stats;
 }
@@ -148,6 +148,7 @@ const calcDetails = (statusSets) => {
       }
       HP = calcStats(section, statusSets[section], "HP", modifier);
       STR = calcStats(section, statusSets[section], "STR", modifier);
+
     }
     details[section] = { HP, STR };
   })
