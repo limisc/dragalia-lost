@@ -1,4 +1,4 @@
-const weapon = 
+const weapon =
 [
   {
     "Id": 30130102,
@@ -2853,7 +2853,7 @@ const weapon =
     "CraftMaterial5": "",
     "CraftMaterialQuantity5": "",
     "img": "305028_01_30401.png",
-    "tier": "0",
+    "tier": "3",
     "MAX_LEVEL": 40
   },
   {
@@ -4925,7 +4925,7 @@ const weapon =
     "CraftMaterial5": "",
     "CraftMaterialQuantity5": "",
     "img": "308026_01_30401.png",
-    "tier": "0",
+    "tier": "3",
     "MAX_LEVEL": 40
   },
   {
