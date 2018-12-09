@@ -133,11 +133,11 @@ const getManaBonus = (status, key) => {
 
 const calcDetails = (statusSets) => {
   const details = {};
-  let modifier = 1;
-  let HP, STR;
+  let modifier, HP, STR;
   const { adventurer, dragon, facility } = statusSets;
 
   ["adventurer", "weapon", "wyrmprint", "dragon"].forEach(section => {
+    modifier = 1
     HP = 0;
     STR = 0;
     if (statusSets[section]) {
@@ -170,8 +170,6 @@ const calcDetails = (statusSets) => {
       }
     })
   })
-  console.log(adventurer_HP_percent, adventurer_STR_percent)
-  console.log(dragon_HP_percent, dragon_STR_percent)
 
   details.facility = {
     HP: Math.ceil(details.adventurer.HP * adventurer_HP_percent / 100) + Math.ceil(calcStats("dragon", dragon, "HP") * dragon_HP_percent / 100),
