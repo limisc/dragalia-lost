@@ -35,6 +35,7 @@ const data = {
     dragon: { HP: 0, STR: 0 },
     ability: { HP: 0, STR: 0 },
     facility: { HP: 0, STR: 0 },
+    total: { HP: 0, STR: 0 },
   }
 };
 

@@ -41,7 +41,7 @@ class SelectPanel extends Component {
 
   // }
   render() {
-    console.log("SelectPanel")
+    // console.log("SelectPanel")
 
     const {
       props: { selectedSection, filters },

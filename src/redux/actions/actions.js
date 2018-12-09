@@ -1,6 +1,6 @@
 import actionTypes from './actionType';
 import LEVEL_LIMIT from '../store/data/level_data';
-
+import facilities from '../store/data/facility_data';
 //simple action creator
 const actionCreator = (type, ...argNames) => {
   return (...args) => {
@@ -60,6 +60,8 @@ export const handleSection = (section, statusSets) => (dispatch) => {
 const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
 const selectStatus = actionCreator(actionTypes.SELECT_STATUS, "section", "status");
 export const handleSelection = (section, status) => (dispatch) => {
+  // const state = getState()
+  // console.log(state)
   const { Id, rarity, unbind, img } = status;
   let addtional = {};
 
@@ -70,6 +72,7 @@ export const handleSelection = (section, status) => (dispatch) => {
   } else {
     addtional = { img: `${section}/${img}`, unbind: 4 };
   }
+
   dispatch(selectStatus(section, { ...status, ...addtional, level: getLevelLimit(section, rarity, unbind) }));
 }
 export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value", "facilityType");
@@ -78,4 +81,127 @@ export const updateStatusAdventurerRarityMana = actionCreator(actionTypes.UPDATE
 
 
 //calc Status
-export const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "field", "value");
+const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "details");
+
+export const handleDetails = (statusSets) => (dispatch) => {
+  const details = calcDetails(statusSets);
+  dispatch(updateDetails(details));
+}
+
+const calcStats = (section, status, key, modifier = 1) => {
+  let stats = 0;
+  if (status) {
+    let level = parseInt(status.level, 10);
+    if (!level || level < 1) level = 1;
+    let steps, statGain;
+    switch (section) {
+      case "adventurer": {
+        steps = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
+        statGain = (level - 1) * steps;
+        stats = status["Min" + key + status.curRarity] + statGain + getManaBonus(status, key);
+        break;
+      }
+      case "weapon":
+      case "wyrmprint":
+      case "dragon":
+        steps = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
+        statGain = (level - 1) * steps;
+        stats = Math.ceil(status["Min" + key] + statGain) * modifier;
+        break;
+      default:
+        break;
+    }
+    stats = Math.ceil(stats)
+  }
+  return stats;
+}
+
+const getManaBonus = (status, key) => {
+  const mana = status.mana.toString();
+  const index = ["50", "45", "40", "30", "20", "10", "0"].indexOf(mana);
+  const statArray = [
+    status["McFullBonus" + key + "5"],
+    status["Plus" + key + "4"],
+    status["Plus" + key + "3"],
+    status["Plus" + key + "2"],
+    status["Plus" + key + "1"],
+    status["Plus" + key + "0"],
+    0,
+  ]
+  return statArray.slice(index).reduce((acc, cur) => acc + cur);
+}
+
+const calcDetails = (statusSets) => {
+  const details = {};
+  let modifier = 1;
+  let HP, STR;
+  const { adventurer, dragon, facility } = statusSets;
+
+  ["adventurer", "weapon", "wyrmprint", "dragon"].forEach(section => {
+    HP = 0;
+    STR = 0;
+    if (statusSets[section]) {
+      if (["weapon", "dragon"].includes(section) && adventurer) {
+        if (statusSets[section].element === adventurer.element) {
+          modifier = 1.5;
+        }
+      }
+      HP = calcStats(section, statusSets[section], "HP", modifier);
+      STR = calcStats(section, statusSets[section], "STR", modifier);
+    }
+    details[section] = { HP, STR };
+  })
+
+  let adventurer_HP_percent = 0,
+    adventurer_STR_percent = 0,
+    dragon_HP_percent = 0,
+    dragon_STR_percent = 0;
+
+  facility.typeList.forEach(type => {
+    facility[type].contentList.forEach(item => {
+      let level = facility[type][item];
+      const { HP = 0, STR = 0 } = facilities[type][level] || {};
+      if (type === "statue") {
+        dragon_HP_percent = dragon_HP_percent + HP;
+        dragon_STR_percent = dragon_STR_percent + STR;
+      } else {
+        adventurer_HP_percent = adventurer_HP_percent + HP;
+        adventurer_STR_percent = adventurer_STR_percent + STR;
+      }
+    })
+  })
+  console.log(adventurer_HP_percent, adventurer_STR_percent)
+  console.log(dragon_HP_percent, dragon_STR_percent)
+
+  details.facility = {
+    HP: Math.ceil(details.adventurer.HP * adventurer_HP_percent / 100) + Math.ceil(calcStats("dragon", dragon, "HP") * dragon_HP_percent / 100),
+    STR: Math.ceil(details.adventurer.STR * adventurer_STR_percent / 100) + Math.ceil(calcStats("dragon", dragon, "STR") * dragon_STR_percent / 100)
+  }
+
+  let subtotal_HP = 0, subtotal_STR = 0;
+  Object.keys(details).forEach(field => {
+    subtotal_HP = subtotal_HP + details[field].HP;
+    subtotal_STR = subtotal_STR + details[field].STR;
+  })
+
+  HP = 0;
+  STR = 0;
+  if (adventurer && dragon && adventurer.element === dragon.element) {
+    const ability = (dragon.unbind === 4) ? "Abilities12" : "Abilities11";
+    if (dragon[ability].attr === "HP") {
+      HP = Math.ceil((dragon[ability].value / 100) * subtotal_HP);
+    } else if (dragon[ability].attr === "Strength") {
+      STR = Math.ceil((dragon[ability].value / 100) * subtotal_STR);
+    } else if (dragon[ability].attr === "both") {
+      HP = Math.ceil((dragon[ability].value / 100) * subtotal_HP);
+      STR = Math.ceil((dragon[ability].value / 100) * subtotal_STR);
+    }
+  }
+
+  details.ability = { HP, STR };
+  details.total = {
+    HP: subtotal_HP + HP,
+    STR: subtotal_STR + STR,
+  }
+  return details;
+}

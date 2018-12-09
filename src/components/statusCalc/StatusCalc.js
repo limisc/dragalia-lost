@@ -4,17 +4,19 @@ import { connect } from 'react-redux';
 import StatusPanel from './statusPanel/StatusPanel';
 import SelectPanel from './selectPanel/SelectPanel';
 import DetailsPanel from './detailsPanel/DetailsPanel';
-// import { toggleDetails } from '../../redux/actions/actions'
+import { handleDetails } from '../../redux/actions/actions'
 
 const mapStateToProps = (state) => {
   return {
     // showDetails: state.showDetails,
+    statusSets: state.statusSets
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     // toggleDetails: () => dispatch(toggleDetails()),
+    handleDetails: (statusSets) => dispatch(handleDetails(statusSets)),
   }
 }
 
@@ -22,7 +24,7 @@ const mapDispatchToProps = (dispatch) => {
 class StatusCalc extends Component {
   constructor(props) {
     super(props);
-    // this._onClick = this._onClick.bind(this);
+    this._onClick = this._onClick.bind(this);
   }
 
   render() {
@@ -36,21 +38,18 @@ class StatusCalc extends Component {
         </div>
 
         <div id="right-panel" className="six wide column">
-          {/* <button className={showDetails ? "ui violet button" : "ui button"} onClick={this._onClick}>Details</button> */}
-          {/* <div className="ui divider"></div>
-          {showDetails ?
-            <DetailsPanel />
-            : */}
+          <button className="ui violet button" onClick={this._onClick}>Calc Details</button>
+          <div className="ui divider"></div>
           <SelectPanel />
-          {/* } */}
         </div>
       </div>
     );
   }
 
-  // _onClick() {
-  //   this.props.toggleDetails();
-  // }
+  _onClick() {
+    const { statusSets, handleDetails } = this.props;
+    handleDetails(statusSets);
+  }
 };
 
 

@@ -5,10 +5,9 @@ import InputItem from './statusFields/InputItem';
 // import uuidv4 from 'uuid/v4';
 
 const mapStateToProps = (state) => {
-  const { adventurer: { type, element }, facility } = state.statusSets;
+  const { adventurer, facility } = state.statusSets;
   return {
-    type,
-    element,
+    adventurer,
     facility,
   };
 }
@@ -53,8 +52,14 @@ class FacilityStatus extends Component {
   }
 
   getImagePath() {
-    const { facilityType, type, element } = this.props;
-    const name = facilityType === "dojo" ? type : element;
+    const { facilityType, adventurer, facility } = this.props;
+    let name;
+    if (adventurer) {
+      const { type, element } = adventurer
+      name = facilityType === "dojo" ? type : element;
+    } else {
+      name = facility.element;
+    }
     return `${process.env.PUBLIC_URL}/img/facility/${facilityType}_${name}.png`;
   }
 }

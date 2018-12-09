@@ -39,7 +39,7 @@ class FilterForm extends Component {
       state: { filterOptions }
     } = this;
 
-    console.log("FilterForm")
+    // console.log("FilterForm")
     return (
       <div className="ui form">
         <div className="four fields">

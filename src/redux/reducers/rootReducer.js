@@ -81,7 +81,6 @@ const filterReducer = (state, action, statusSets) => {
   }
 }
 
-
 const statusReducer = (state, action) => {
   const { section } = action;
   switch (action.type) {
@@ -89,7 +88,7 @@ const statusReducer = (state, action) => {
       // action: { section, status }
       const { status } = action;
       const { type, element } = status;
-
+      console.log(element)
       let new_state = { ...state, [section]: status }
       /*************************************************************************************************/
       if (section === "adventurer") {
@@ -108,6 +107,11 @@ const statusReducer = (state, action) => {
           facility = { ...facility, typeList: [...facility.typeList, ...typeList], ...rest };
         }
 
+        new_state = { ...new_state, facility };
+      } else if (section === "dragon" && !state.adventurer && EXTRA_FACILITY[element] && EXTRA_FACILITY[element].statue) {
+        let facility = { ...RESET_FACILITY, type, element };
+        const { statue } = EXTRA_FACILITY[element];
+        facility = { ...facility, typeList: [...facility.typeList, "statue"], statue };
         new_state = { ...new_state, facility };
       }
       /*************************************************************************************************/
@@ -195,56 +199,33 @@ const statusReducer = (state, action) => {
   }
 }
 
+const statsReducer = (state, action) => {
+  const { details } = action;
+  switch (action.type) {
+    case actionTypes.UPDATE_DETAILS: {
+      return updateObject(state, details);
+    }
+    case actionTypes.REMOVE_STATUS: {
+      return { ...state, [action.field]: { HP: 0, STR: 0 } };
+    }
+    default: return state;
+  }
+}
+
+const updateObject = (oldObject, ...newValues) => {
+  return Object.assign({}, oldObject, ...newValues);
+}
+
+
 const rootReducer = (state, action) => {
   return {
     showDetails: detailsReducer(state.showDetails, action),
     selectedSection: sectionReducer(state.selectedSection, action),
     filters: filterReducer(state.filters, action, state.statusSets),
     statusSets: statusReducer(state.statusSets, action),
+    stats: statsReducer(state.stats, action)
   }
 }
 
-const calcStats = (section, status, key, modifier) => {
-  let stats = 0;
-  if (status) {
-    let level = parseInt(status.level, 10);
-    if (!level || level < 1) level = 1;
-    let steps, statGain;
-    switch (section) {
-      case "adventurer": {
-        steps = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
-        statGain = (level - 1) * steps;
-        stats = status["Min" + key + status.curRarity] + statGain + this.getManaBonus(status, key);
-        break;
-      }
-      case "weapon":
-      case "wyrmprint":
-      case "dragon":
-        steps = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
-        statGain = (level - 1) * steps;
-        stats = Math.ceil(status["Min" + key] + statGain) * modifier;
-        break;
-      default:
-        break;
-    }
-    stats = Math.ceil(stats)
-  }
-  return stats;
-}
-
-const getManaBonus = (status, key) => {
-  const mana = status.mana.toString();
-  const index = ["50", "45", "40", "30", "20", "10", "0"].indexOf(mana);
-  const statArray = [
-    status["McFullBonus" + key + "5"],
-    status["Plus" + key + "4"],
-    status["Plus" + key + "3"],
-    status["Plus" + key + "2"],
-    status["Plus" + key + "1"],
-    status["Plus" + key + "0"],
-    0,
-  ]
-  return statArray.slice(index).reduce((acc, cur) => acc + cur);
-}
 
 export default rootReducer;

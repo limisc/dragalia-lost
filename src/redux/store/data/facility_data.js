@@ -1,4 +1,4 @@
-export const facilities = {
+const facilities = {
   altar: {
     "1": { HP: 0.5, STR: 0.5 },
     "2": { HP: 1, STR: 0.5 },
@@ -127,4 +127,6 @@ export const facilities = {
     "29": { HP: 8, STR: 7 },
     "30": { HP: 8.5, STR: 7 },
   }
-}
+};
+
+export default facilities;

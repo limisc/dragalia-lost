@@ -32,16 +32,30 @@ class StatusPanel extends Component {
           />
         )}
 
-        {adventurer &&
-          facility.typeList.map((facilityType, i) =>
-            <FacilityStatus
-              key={i}
-              facilityType={facilityType}
-            />
-          )
-        }
+        {this.facilityLayout(adventurer, facility)}
       </div>
     );
+  }
+
+  facilityLayout = (adventurer, facility) => {
+    if (adventurer) {
+      return (
+        facility.typeList.map((facilityType, i) =>
+          <FacilityStatus
+            key={i}
+            facilityType={facilityType}
+          />
+        )
+      )
+    } else if (facility.statue) {
+      return (
+        <FacilityStatus
+          facilityType="statue"
+        />
+      )
+    } else {
+      return null;
+    }
   }
 }
 

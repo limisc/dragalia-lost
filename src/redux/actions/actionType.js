@@ -23,6 +23,7 @@ const actionTypes = {
 
   //calc status
   UPDATE_DETAILS: "UPDATE_DETAILS",
+
 }
 
 export default actionTypes;
