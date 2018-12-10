@@ -1,8 +1,11 @@
-const dragon =
+const dragon = 
 [
   {
     "Id": 20040301,
-    "Name": "Midgardsormr",
+    "Name": {
+      "en": "Midgardsormr",
+      "zh": "\u8036\u68a6\u52a0\u5f97"
+    },
     "element": "Wind",
     "rarity": "4",
     "MinHP": 20,
@@ -10,19 +13,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 66,
     "Abilities11": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 8
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 10
     },
-    "img": "210001_01.png",
+    "image": "210001_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040101,
-    "Name": "Brunhilda",
+    "Name": {
+      "en": "Brunhilda",
+      "zh": "\u5e03\u4f26\u5e0c\u5c14\u5fb7"
+    },
     "element": "Flame",
     "rarity": "4",
     "MinHP": 20,
@@ -30,19 +38,24 @@ const dragon =
     "MinSTR": 7,
     "MaxSTR": 70,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 15
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 20
     },
-    "img": "210002_01.png",
+    "image": "210002_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040201,
-    "Name": "Mercury",
+    "Name": {
+      "en": "Mercury",
+      "zh": "\u58a8\u4e18\u5229"
+    },
     "element": "Water",
     "rarity": "4",
     "MinHP": 21,
@@ -50,19 +63,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 62,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Water",
+      "field": "HP",
       "value": 15
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Water",
+      "field": "HP",
       "value": 20
     },
-    "img": "210003_01.png",
+    "image": "210003_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040401,
-    "Name": "Jupiter",
+    "Name": {
+      "en": "Jupiter",
+      "zh": "\u6731\u5e87\u7279"
+    },
     "element": "Light",
     "rarity": "4",
     "MinHP": 20,
@@ -70,19 +88,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 65,
     "Abilities11": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 8
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 10
     },
-    "img": "210004_01.png",
+    "image": "210004_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040501,
-    "Name": "Zodiark",
+    "Name": {
+      "en": "Zodiark",
+      "zh": "\u4f50\u8fea\u4e9a\u514b"
+    },
     "element": "Shadow",
     "rarity": "4",
     "MinHP": 20,
@@ -90,19 +113,24 @@ const dragon =
     "MinSTR": 7,
     "MaxSTR": 70,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 15
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 20
     },
-    "img": "210005_01.png",
+    "image": "210005_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040102,
-    "Name": "Phoenix",
+    "Name": {
+      "en": "Phoenix",
+      "zh": "\u83f2\u5c3c\u514b\u65af"
+    },
     "element": "Flame",
     "rarity": "4",
     "MinHP": 29,
@@ -110,19 +138,24 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 97,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Flame",
+      "field": "HP",
       "value": 30
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Flame",
+      "field": "HP",
       "value": 45
     },
-    "img": "210006_01.png",
+    "image": "210006_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040103,
-    "Name": "Ifrit",
+    "Name": {
+      "en": "Ifrit",
+      "zh": "\u4f0a\u592b\u5229\u7279"
+    },
     "element": "Flame",
     "rarity": "4",
     "MinHP": 29,
@@ -130,19 +163,24 @@ const dragon =
     "MinSTR": 10,
     "MaxSTR": 101,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 30
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 45
     },
-    "img": "210007_01.png",
+    "image": "210007_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040202,
-    "Name": "Poli\u02bbahu",
+    "Name": {
+      "en": "Poli\u02bbahu",
+      "zh": "\u6ce2\u4e3d\u4e9a\u8299"
+    },
     "element": "Water",
     "rarity": "4",
     "MinHP": 30,
@@ -150,19 +188,24 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 95,
     "Abilities11": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 15
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 20
     },
-    "img": "210008_01.png",
+    "image": "210008_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20050303,
-    "Name": "Sylvia",
+    "Name": {
+      "en": "Sylvia",
+      "zh": "\u5e0c\u5c14\u7ef4\u4e9a"
+    },
     "element": "Wind",
     "rarity": "5",
     "MinHP": 22,
@@ -170,19 +213,24 @@ const dragon =
     "MinSTR": 7,
     "MaxSTR": 72,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 20
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 30
     },
-    "img": "210010_01.png",
+    "image": "210010_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20040303,
-    "Name": "Stribog",
+    "Name": {
+      "en": "Stribog",
+      "zh": "\u65af\u7279\u5229\u4f2f\u683c"
+    },
     "element": "Wind",
     "rarity": "4",
     "MinHP": 30,
@@ -190,19 +238,24 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 91,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 30
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 45
     },
-    "img": "210011_01.png",
+    "image": "210011_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040402,
-    "Name": "Unicorn",
+    "Name": {
+      "en": "Unicorn",
+      "zh": "\u72ec\u89d2\u517d"
+    },
     "element": "Light",
     "rarity": "4",
     "MinHP": 30,
@@ -210,19 +263,24 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 95,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 30
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 45
     },
-    "img": "210012_01.png",
+    "image": "210012_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040403,
-    "Name": "Lindworm",
+    "Name": {
+      "en": "Lindworm",
+      "zh": "\u6797\u5fb7\u5df4\u9c81\u59c6"
+    },
     "element": "Light",
     "rarity": "4",
     "MinHP": 29,
@@ -230,19 +288,24 @@ const dragon =
     "MinSTR": 10,
     "MaxSTR": 100,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 30
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 45
     },
-    "img": "210013_01.png",
+    "image": "210013_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040502,
-    "Name": "Juggernaut",
+    "Name": {
+      "en": "Juggernaut",
+      "zh": "\u672d\u683c\u7eb3\u7279"
+    },
     "element": "Shadow",
     "rarity": "4",
     "MinHP": 29,
@@ -250,19 +313,24 @@ const dragon =
     "MinSTR": 10,
     "MaxSTR": 102,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 30
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 45
     },
-    "img": "210014_01.png",
+    "image": "210014_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20040503,
-    "Name": "Silke",
+    "Name": {
+      "en": "Silke",
+      "zh": "\u5e0c\u9732\u59ec"
+    },
     "element": "Shadow",
     "rarity": "4",
     "MinHP": 29,
@@ -270,19 +338,24 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 97,
     "Abilities11": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 15
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 20
     },
-    "img": "210015_01.png",
+    "image": "210015_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20050101,
-    "Name": "Agni",
+    "Name": {
+      "en": "Agni",
+      "zh": "\u963f\u683c\u5c3c"
+    },
     "element": "Flame",
     "rarity": "5",
     "MinHP": 36,
@@ -290,19 +363,24 @@ const dragon =
     "MinSTR": 12,
     "MaxSTR": 127,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 40
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 60
     },
-    "img": "210016_01.png",
+    "image": "210016_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050203,
-    "Name": "Leviathan",
+    "Name": {
+      "en": "Leviathan",
+      "zh": "\u5229\u7ef4\u5766"
+    },
     "element": "Water",
     "rarity": "5",
     "MinHP": 37,
@@ -310,19 +388,24 @@ const dragon =
     "MinSTR": 12,
     "MaxSTR": 125,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 40
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 60
     },
-    "img": "210017_01.png",
+    "image": "210017_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050301,
-    "Name": "Zephyr",
+    "Name": {
+      "en": "Zephyr",
+      "zh": "\u74e6\u57fa\u626c"
+    },
     "element": "Wind",
     "rarity": "5",
     "MinHP": 36,
@@ -330,19 +413,24 @@ const dragon =
     "MinSTR": 12,
     "MaxSTR": 126,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 40
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 60
     },
-    "img": "210018_01.png",
+    "image": "210018_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050501,
-    "Name": "Nidhogg",
+    "Name": {
+      "en": "Nidhogg",
+      "zh": "\u5c3c\u5fb7\u970d\u683c"
+    },
     "element": "Shadow",
     "rarity": "5",
     "MinHP": 37,
@@ -350,19 +438,24 @@ const dragon =
     "MinSTR": 12,
     "MaxSTR": 121,
     "Abilities11": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 20
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 30
     },
-    "img": "210019_01.png",
+    "image": "210019_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050401,
-    "Name": "Jeanne d'Arc",
+    "Name": {
+      "en": "Jeanne d'Arc",
+      "zh": "\u8d1e\u5fb7"
+    },
     "element": "Light",
     "rarity": "5",
     "MinHP": 38,
@@ -370,19 +463,24 @@ const dragon =
     "MinSTR": 11,
     "MaxSTR": 113,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 40
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 60
     },
-    "img": "210020_01.png",
+    "image": "210020_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20030101,
-    "Name": "Homura",
+    "Name": {
+      "en": "Homura",
+      "zh": "\u706b\u9f99"
+    },
     "element": "Flame",
     "rarity": "3",
     "MinHP": 18,
@@ -390,19 +488,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 63,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 10
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 15
     },
-    "img": "210021_01.png",
+    "image": "210021_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030102,
-    "Name": "Cinder Drake",
+    "Name": {
+      "en": "Cinder Drake",
+      "zh": "\u7130\u9f99"
+    },
     "element": "Flame",
     "rarity": "3",
     "MinHP": 19,
@@ -410,19 +513,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 57,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Flame",
+      "field": "HP",
       "value": 10
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Flame",
+      "field": "HP",
       "value": 15
     },
-    "img": "210022_01.png",
+    "image": "210022_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030103,
-    "Name": "Kindling Imp",
+    "Name": {
+      "en": "Kindling Imp",
+      "zh": "\u70db\u9b54"
+    },
     "element": "Flame",
     "rarity": "3",
     "MinHP": 18,
@@ -430,19 +538,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 60,
     "Abilities11": {
-      "attr": "both",
+      "element": "Flame",
+      "field": "BOTH",
       "value": 5
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Flame",
+      "field": "BOTH",
       "value": 8
     },
-    "img": "210023_01.png",
+    "image": "210023_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20050104,
-    "Name": "Cerberus",
+    "Name": {
+      "en": "Cerberus",
+      "zh": "\u574e\u8d1d\u841d\u4e1d"
+    },
     "element": "Flame",
     "rarity": "5",
     "MinHP": 36,
@@ -450,19 +563,24 @@ const dragon =
     "MinSTR": 12,
     "MaxSTR": 127,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 40
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 60
     },
-    "img": "210024_01.png",
+    "image": "210024_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050201,
-    "Name": "Poseidon",
+    "Name": {
+      "en": "Poseidon",
+      "zh": "\u6ce2\u585e\u51ac"
+    },
     "element": "Water",
     "rarity": "5",
     "MinHP": 37,
@@ -470,19 +588,24 @@ const dragon =
     "MinSTR": 11,
     "MaxSTR": 119,
     "Abilities11": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 20
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 30
     },
-    "img": "210025_01.png",
+    "image": "210025_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050304,
-    "Name": "Garuda",
+    "Name": {
+      "en": "Garuda",
+      "zh": "\u8fe6\u697c\u7f57"
+    },
     "element": "Wind",
     "rarity": "5",
     "MinHP": 38,
@@ -490,19 +613,24 @@ const dragon =
     "MinSTR": 11,
     "MaxSTR": 114,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 40
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 60
     },
-    "img": "210036_01.png",
+    "image": "210036_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050302,
-    "Name": "High Midgardsormr",
+    "Name": {
+      "en": "High Midgardsormr",
+      "zh": "\u771f\u8036\u68a6\u52a0\u5f97"
+    },
     "element": "Wind",
     "rarity": "5",
     "MinHP": 35,
@@ -510,19 +638,24 @@ const dragon =
     "MinSTR": 11,
     "MaxSTR": 114,
     "Abilities11": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 20
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 30
     },
-    "img": "210038_01.png",
+    "image": "210038_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20050405,
-    "Name": "Cupid",
+    "Name": {
+      "en": "Cupid",
+      "zh": "\u4e18\u6bd4\u7279"
+    },
     "element": "Light",
     "rarity": "5",
     "MinHP": 37,
@@ -530,19 +663,24 @@ const dragon =
     "MinSTR": 11,
     "MaxSTR": 119,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 40
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 60
     },
-    "img": "210049_01.png",
+    "image": "210049_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20040302,
-    "Name": "Roc",
+    "Name": {
+      "en": "Roc",
+      "zh": "\u6c83\u683c\u5c14"
+    },
     "element": "Wind",
     "rarity": "4",
     "MinHP": 29,
@@ -550,19 +688,24 @@ const dragon =
     "MinSTR": 10,
     "MaxSTR": 101,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 30
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 45
     },
-    "img": "210050_01.png",
+    "image": "210050_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20050103,
-    "Name": "Pele",
+    "Name": {
+      "en": "Pele",
+      "zh": "\u4f69\u96f7"
+    },
     "element": "Flame",
     "rarity": "5",
     "MinHP": 22,
@@ -570,19 +713,24 @@ const dragon =
     "MinSTR": 7,
     "MaxSTR": 76,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 20
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Flame",
+      "field": "STR",
       "value": 30
     },
-    "img": "210057_01.png",
+    "image": "210057_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20040203,
-    "Name": "Vodyanoy",
+    "Name": {
+      "en": "Vodyanoy",
+      "zh": "\u6c83\u52a0\u8bfa\u4f0a"
+    },
     "element": "Water",
     "rarity": "4",
     "MinHP": 29,
@@ -590,19 +738,24 @@ const dragon =
     "MinSTR": 10,
     "MaxSTR": 100,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 30
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 45
     },
-    "img": "210058_01.png",
+    "image": "210058_01.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": 20030201,
-    "Name": "Fubuki",
+    "Name": {
+      "en": "Fubuki",
+      "zh": "\u96ea\u9f99"
+    },
     "element": "Water",
     "rarity": "3",
     "MinHP": 18,
@@ -610,19 +763,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 63,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 10
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Water",
+      "field": "STR",
       "value": 15
     },
-    "img": "210059_01.png",
+    "image": "210059_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030301,
-    "Name": "Tsumuji",
+    "Name": {
+      "en": "Tsumuji",
+      "zh": "\u65cb\u9f99"
+    },
     "element": "Wind",
     "rarity": "3",
     "MinHP": 18,
@@ -630,19 +788,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 63,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 10
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Wind",
+      "field": "STR",
       "value": 15
     },
-    "img": "210060_01.png",
+    "image": "210060_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030401,
-    "Name": "Hinata",
+    "Name": {
+      "en": "Hinata",
+      "zh": "\u9633\u9f99"
+    },
     "element": "Light",
     "rarity": "3",
     "MinHP": 18,
@@ -650,19 +813,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 62,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 10
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Light",
+      "field": "STR",
       "value": 15
     },
-    "img": "210061_01.png",
+    "image": "210061_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030501,
-    "Name": "Hikage",
+    "Name": {
+      "en": "Hikage",
+      "zh": "\u5f71\u9f99"
+    },
     "element": "Shadow",
     "rarity": "3",
     "MinHP": 18,
@@ -670,19 +838,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 64,
     "Abilities11": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 10
     },
     "Abilities12": {
-      "attr": "Strength",
+      "element": "Shadow",
+      "field": "STR",
       "value": 15
     },
-    "img": "210062_01.png",
+    "image": "210062_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030202,
-    "Name": "Snow Drake",
+    "Name": {
+      "en": "Snow Drake",
+      "zh": "\u51b0\u9f99"
+    },
     "element": "Water",
     "rarity": "3",
     "MinHP": 19,
@@ -690,19 +863,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 57,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Water",
+      "field": "HP",
       "value": 10
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Water",
+      "field": "HP",
       "value": 15
     },
-    "img": "210063_01.png",
+    "image": "210063_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030302,
-    "Name": "Gust Drake",
+    "Name": {
+      "en": "Gust Drake",
+      "zh": "\u98ce\u9f99"
+    },
     "element": "Wind",
     "rarity": "3",
     "MinHP": 19,
@@ -710,19 +888,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 57,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 10
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Wind",
+      "field": "HP",
       "value": 15
     },
-    "img": "210064_01.png",
+    "image": "210064_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030402,
-    "Name": "Moon Drake",
+    "Name": {
+      "en": "Moon Drake",
+      "zh": "\u6708\u9f99"
+    },
     "element": "Light",
     "rarity": "3",
     "MinHP": 19,
@@ -730,19 +913,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 56,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 10
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Light",
+      "field": "HP",
       "value": 15
     },
-    "img": "210065_01.png",
+    "image": "210065_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030502,
-    "Name": "Gloom Drake",
+    "Name": {
+      "en": "Gloom Drake",
+      "zh": "\u6697\u9f99"
+    },
     "element": "Shadow",
     "rarity": "3",
     "MinHP": 19,
@@ -750,19 +938,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 58,
     "Abilities11": {
-      "attr": "HP",
+      "element": "Shadow",
+      "field": "HP",
       "value": 10
     },
     "Abilities12": {
-      "attr": "HP",
+      "element": "Shadow",
+      "field": "HP",
       "value": 15
     },
-    "img": "210066_01.png",
+    "image": "210066_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030203,
-    "Name": "Wellspring Imp",
+    "Name": {
+      "en": "Wellspring Imp",
+      "zh": "\u4e95\u9b54"
+    },
     "element": "Water",
     "rarity": "3",
     "MinHP": 18,
@@ -770,19 +963,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 60,
     "Abilities11": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 5
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Water",
+      "field": "BOTH",
       "value": 8
     },
-    "img": "210067_01.png",
+    "image": "210067_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030303,
-    "Name": "Zephyr Imp",
+    "Name": {
+      "en": "Zephyr Imp",
+      "zh": "\u6c14\u9b54"
+    },
     "element": "Wind",
     "rarity": "3",
     "MinHP": 18,
@@ -790,19 +988,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 60,
     "Abilities11": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 5
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Wind",
+      "field": "BOTH",
       "value": 8
     },
-    "img": "210068_01.png",
+    "image": "210068_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030403,
-    "Name": "Astral Imp",
+    "Name": {
+      "en": "Astral Imp",
+      "zh": "\u661f\u9b54"
+    },
     "element": "Light",
     "rarity": "3",
     "MinHP": 18,
@@ -810,19 +1013,24 @@ const dragon =
     "MinSTR": 5,
     "MaxSTR": 59,
     "Abilities11": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 5
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 8
     },
-    "img": "210069_01.png",
+    "image": "210069_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20030503,
-    "Name": "Pallid Imp",
+    "Name": {
+      "en": "Pallid Imp",
+      "zh": "\u5893\u9b54"
+    },
     "element": "Shadow",
     "rarity": "3",
     "MinHP": 18,
@@ -830,19 +1038,24 @@ const dragon =
     "MinSTR": 6,
     "MaxSTR": 61,
     "Abilities11": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 5
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 8
     },
-    "img": "210070_01.png",
+    "image": "210070_01.png",
     "MAX_LEVEL": 60
   },
   {
     "Id": 20050505,
-    "Name": "Maritimus",
+    "Name": {
+      "en": "Maritimus",
+      "zh": "\u739b\u5229\u8482\u59c6\u65af"
+    },
     "element": "Shadow",
     "rarity": "5",
     "MinHP": 22,
@@ -850,19 +1063,24 @@ const dragon =
     "MinSTR": 7,
     "MaxSTR": 73,
     "Abilities11": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 10
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Shadow",
+      "field": "BOTH",
       "value": 15
     },
-    "img": "210072_01.png",
+    "image": "210072_01.png",
     "MAX_LEVEL": 100
   },
   {
     "Id": 20040405,
-    "Name": "Silke",
+    "Name": {
+      "en": "Silke",
+      "zh": "\u5e0c\u9732\u59ec"
+    },
     "element": "Light",
     "rarity": "4",
     "MinHP": 30,
@@ -870,14 +1088,16 @@ const dragon =
     "MinSTR": 9,
     "MaxSTR": 95,
     "Abilities11": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 15
     },
     "Abilities12": {
-      "attr": "both",
+      "element": "Light",
+      "field": "BOTH",
       "value": 20
     },
-    "img": "210075_01.png",
+    "image": "210075_01.png",
     "MAX_LEVEL": 80
   }
 ];

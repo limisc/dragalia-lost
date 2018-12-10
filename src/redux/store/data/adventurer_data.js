@@ -1,10 +1,14 @@
-const adventurer =
+const adventurer = 
 [
   {
     "Id": "100001_01",
-    "Name": "Euden",
-    "type": "Sword",
+    "Name": {
+      "en": "Euden"
+    },
+    "NameZH": "\u5c24\u8482\u5c14",
+    "weaponType": "Sword",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 40,
     "MinHP4": 58,
@@ -26,13 +30,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "100001_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "100002_01",
-    "Name": "Elisanne",
-    "type": "Lance",
+    "Name": {
+      "en": "Elisanne",
+      "zh": "\u57c3\u5c14\u83f2\u8389\u4e1d"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 42,
     "MinHP4": 61,
@@ -54,13 +63,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 15,
+    "image": "100002_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "100002_02",
-    "Name": "Elisanne",
-    "type": "Lance",
+    "Name": {
+      "en": "Elisanne",
+      "zh": "\u57c3\u5c14\u83f2\u8389\u4e1d"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Light",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -82,13 +96,18 @@ const adventurer =
     "PlusSTR3": 39,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 18,
+    "image": "100002_02_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "100003_01",
-    "Name": "Ranzal",
-    "type": "Axe",
+    "Name": {
+      "en": "Ranzal"
+    },
+    "NameZH": "\u5170\u624e\u535c",
+    "weaponType": "Axe",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 44,
     "MinHP4": 55,
@@ -110,13 +129,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "100003_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "100004_01",
-    "Name": "Cleo",
-    "type": "Staff",
+    "Name": {
+      "en": "Cleo"
+    },
+    "NameZH": "\u5e93\u83c8\u4e4c",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Shadow",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -138,13 +162,18 @@ const adventurer =
     "PlusSTR3": 35,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "100004_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "100006_01",
-    "Name": "Luca",
-    "type": "Bow",
+    "Name": {
+      "en": "Luca"
+    },
+    "NameZH": "\u5362\u5361",
+    "weaponType": "Bow",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -166,13 +195,18 @@ const adventurer =
     "PlusSTR3": 35,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "100006_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110001_01",
-    "Name": "Alain",
-    "type": "Lance",
+    "Name": {
+      "en": "Alain"
+    },
+    "NameZH": "\u963f\u5170",
+    "weaponType": "Lance",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -194,13 +228,18 @@ const adventurer =
     "PlusSTR3": 33,
     "PlusSTR4": 16,
     "McFullBonusSTR5": 17,
+    "image": "110001_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110002_01",
-    "Name": "Aoi",
-    "type": "Blade",
+    "Name": {
+      "en": "Aoi"
+    },
+    "NameZH": "\u8475",
+    "weaponType": "Blade",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -222,13 +261,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 16,
+    "image": "110002_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110003_01",
-    "Name": "Joe",
-    "type": "Bow",
+    "Name": {
+      "en": "Joe"
+    },
+    "NameZH": "\u4e54",
+    "weaponType": "Bow",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 40,
     "MinHP4": 50,
@@ -250,13 +294,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110003_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110004_01",
-    "Name": "Xania",
-    "type": "Wand",
+    "Name": {
+      "en": "Xania"
+    },
+    "NameZH": "\u6851\u59ae\u96c5",
+    "weaponType": "Wand",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 39,
     "MinHP4": 49,
@@ -278,13 +327,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 17,
+    "image": "110004_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110005_01",
-    "Name": "Renelle",
-    "type": "Dagger",
+    "Name": {
+      "en": "Renelle"
+    },
+    "NameZH": "\u62c9\u8f9b",
+    "weaponType": "Dagger",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -306,13 +360,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110005_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110006_01",
-    "Name": "Aurien",
-    "type": "Staff",
+    "Name": {
+      "en": "Aurien"
+    },
+    "NameZH": "\u6b27\u96f7\u56e0",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Flame",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -334,13 +393,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110006_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110007_01",
-    "Name": "Vanessa",
-    "type": "Axe",
+    "Name": {
+      "en": "Vanessa"
+    },
+    "NameZH": "\u51e1\u59ae\u838e",
+    "weaponType": "Axe",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -362,13 +426,18 @@ const adventurer =
     "PlusSTR3": 40,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 18,
+    "image": "110007_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110008_01",
-    "Name": "Karl",
-    "type": "Sword",
+    "Name": {
+      "en": "Karl"
+    },
+    "NameZH": "\u5361\u5c14",
+    "weaponType": "Sword",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 45,
     "MinHP4": 56,
@@ -390,13 +459,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 20,
+    "image": "110008_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110009_01",
-    "Name": "Sinoa",
-    "type": "Wand",
+    "Name": {
+      "en": "Sinoa"
+    },
+    "NameZH": "\u5e0c\u8bfa\u4e9a",
+    "weaponType": "Wand",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 44,
     "MinHP4": 55,
@@ -418,13 +492,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 17,
+    "image": "110009_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110010_01",
-    "Name": "Mikoto",
-    "type": "Blade",
+    "Name": {
+      "en": "Mikoto"
+    },
+    "NameZH": "\u7c73\u79d1\u7279",
+    "weaponType": "Blade",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Flame",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -446,13 +525,18 @@ const adventurer =
     "PlusSTR3": 42,
     "PlusSTR4": 21,
     "McFullBonusSTR5": 18,
+    "image": "110010_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110011_01",
-    "Name": "Ezelith",
-    "type": "Dagger",
+    "Name": {
+      "en": "Ezelith"
+    },
+    "NameZH": "\u827e\u8d5b\u8389\u7279",
+    "weaponType": "Dagger",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Flame",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -474,13 +558,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 18,
+    "image": "110011_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110012_01",
-    "Name": "Rex",
-    "type": "Axe",
+    "Name": {
+      "en": "Rex"
+    },
+    "NameZH": "\u96f7\u514b\u65af",
+    "weaponType": "Axe",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -502,13 +591,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 19,
+    "image": "110012_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110013_01",
-    "Name": "Waike",
-    "type": "Bow",
+    "Name": {
+      "en": "Waike"
+    },
+    "NameZH": "\u5a01\u514b",
+    "weaponType": "Bow",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -530,13 +624,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110013_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110014_01",
-    "Name": "Cibella",
-    "type": "Lance",
+    "Name": {
+      "en": "Cibella"
+    },
+    "NameZH": "\u4f11\u8d1d\u5c14",
+    "weaponType": "Lance",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 44,
     "MinHP4": 54,
@@ -558,13 +657,18 @@ const adventurer =
     "PlusSTR3": 33,
     "PlusSTR4": 16,
     "McFullBonusSTR5": 16,
+    "image": "110014_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110015_01",
-    "Name": "Zardin",
-    "type": "Sword",
+    "Name": {
+      "en": "Zardin"
+    },
+    "NameZH": "\u590f\u8fea",
+    "weaponType": "Sword",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 44,
     "MinHP4": 54,
@@ -586,13 +690,18 @@ const adventurer =
     "PlusSTR3": 33,
     "PlusSTR4": 16,
     "McFullBonusSTR5": 16,
+    "image": "110015_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110016_01",
-    "Name": "Jurota",
-    "type": "Blade",
+    "Name": {
+      "en": "Jurota"
+    },
+    "NameZH": "\u5341\u90ce\u592a",
+    "weaponType": "Blade",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -614,13 +723,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 20,
+    "image": "110016_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110017_01",
-    "Name": "Ricardt",
-    "type": "Staff",
+    "Name": {
+      "en": "Ricardt"
+    },
+    "NameZH": "\u91cc\u5361\u591a",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 42,
     "MinHP4": 53,
@@ -642,13 +756,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "110017_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110018_01",
-    "Name": "Karina",
-    "type": "Axe",
+    "Name": {
+      "en": "Karina"
+    },
+    "NameZH": "\u5361\u4e3d\u5a1c",
+    "weaponType": "Axe",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -670,13 +789,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110018_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110019_01",
-    "Name": "Thaniel",
-    "type": "Staff",
+    "Name": {
+      "en": "Thaniel"
+    },
+    "NameZH": "\u585e\u7eb3",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -698,13 +822,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110019_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110020_01",
-    "Name": "Luther",
-    "type": "Dagger",
+    "Name": {
+      "en": "Luther"
+    },
+    "NameZH": "\u5362\u5854",
+    "weaponType": "Dagger",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 45,
     "MinHP4": 56,
@@ -726,13 +855,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110020_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110021_01",
-    "Name": "Xainfried",
-    "type": "Lance",
+    "Name": {
+      "en": "Xainfried"
+    },
+    "NameZH": "\u624e\u56e0\u5f17\u62c9\u5fb7",
+    "weaponType": "Lance",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Water",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -754,13 +888,18 @@ const adventurer =
     "PlusSTR3": 39,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 17,
+    "image": "110021_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110022_01",
-    "Name": "Xander",
-    "type": "Sword",
+    "Name": {
+      "en": "Xander"
+    },
+    "NameZH": "\u963f\u83b1\u514b\u897f\u65af",
+    "weaponType": "Sword",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Water",
     "MinHP3": 44,
     "MinHP4": 55,
@@ -782,13 +921,18 @@ const adventurer =
     "PlusSTR3": 40,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 19,
+    "image": "110022_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110023_01",
-    "Name": "Johanna",
-    "type": "Axe",
+    "Name": {
+      "en": "Johanna"
+    },
+    "NameZH": "\u4f0a\u6c49\u5a1c",
+    "weaponType": "Axe",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -810,13 +954,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110023_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110024_01",
-    "Name": "Sophie",
-    "type": "Staff",
+    "Name": {
+      "en": "Sophie"
+    },
+    "NameZH": "\u7d22\u83f2",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -838,13 +987,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110024_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110025_01",
-    "Name": "Nicolas",
-    "type": "Wand",
+    "Name": {
+      "en": "Nicolas"
+    },
+    "NameZH": "\u5c3c\u53e4\u62c9",
+    "weaponType": "Wand",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 39,
     "MinHP4": 49,
@@ -866,13 +1020,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 17,
+    "image": "110025_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110026_01",
-    "Name": "Francesca",
-    "type": "Dagger",
+    "Name": {
+      "en": "Francesca"
+    },
+    "NameZH": "\u5f17\u5170\u5207\u65af\u5361",
+    "weaponType": "Dagger",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -894,13 +1053,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110026_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110027_01",
-    "Name": "Melody",
-    "type": "Blade",
+    "Name": {
+      "en": "Melody"
+    },
+    "NameZH": "\u7c73\u7f57\u8482",
+    "weaponType": "Blade",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 41,
     "MinHP4": 51,
@@ -922,13 +1086,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110027_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110028_01",
-    "Name": "Philia",
-    "type": "Bow",
+    "Name": {
+      "en": "Philia"
+    },
+    "NameZH": "\u83f2\u4e3d\u96c5",
+    "weaponType": "Bow",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Wind",
     "MinHP3": 40,
     "MinHP4": 50,
@@ -950,13 +1119,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110028_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110029_01",
-    "Name": "Aeleen",
-    "type": "Lance",
+    "Name": {
+      "en": "Aeleen"
+    },
+    "NameZH": "\u827e\u9732",
+    "weaponType": "Lance",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 45,
     "MinHP4": 55,
@@ -978,13 +1152,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 16,
+    "image": "110029_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110030_01",
-    "Name": "Musashi",
-    "type": "Blade",
+    "Name": {
+      "en": "Musashi"
+    },
+    "NameZH": "\u6b66\u85cf",
+    "weaponType": "Blade",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1006,13 +1185,18 @@ const adventurer =
     "PlusSTR3": 40,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 19,
+    "image": "110030_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110031_01",
-    "Name": "Eleonora",
-    "type": "Bow",
+    "Name": {
+      "en": "Eleonora"
+    },
+    "NameZH": "\u827e\u857e\u6b27\u8bfa\u62c9",
+    "weaponType": "Bow",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -1034,13 +1218,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 19,
+    "image": "110031_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110032_01",
-    "Name": "Maribelle",
-    "type": "Wand",
+    "Name": {
+      "en": "Maribelle"
+    },
+    "NameZH": "\u6885\u8389\u8d1d\u5c14",
+    "weaponType": "Wand",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Wind",
     "MinHP3": 44,
     "MinHP4": 54,
@@ -1062,13 +1251,18 @@ const adventurer =
     "PlusSTR3": 41,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 20,
+    "image": "110032_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110033_01",
-    "Name": "Linus",
-    "type": "Axe",
+    "Name": {
+      "en": "Linus"
+    },
+    "NameZH": "\u83b1\u7eb3\u65af",
+    "weaponType": "Axe",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -1090,13 +1284,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "110033_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110034_01",
-    "Name": "Malka",
-    "type": "Lance",
+    "Name": {
+      "en": "Malka"
+    },
+    "NameZH": "\u9a6c\u5c14\u5361",
+    "weaponType": "Lance",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1118,13 +1317,18 @@ const adventurer =
     "PlusSTR3": 35,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110034_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110035_01",
-    "Name": "Raemond",
-    "type": "Sword",
+    "Name": {
+      "en": "Raemond"
+    },
+    "NameZH": "\u83b1\u8499\u5fb7",
+    "weaponType": "Sword",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 40,
     "MinHP4": 49,
@@ -1146,13 +1350,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110035_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110036_01",
-    "Name": "Malora",
-    "type": "Bow",
+    "Name": {
+      "en": "Malora"
+    },
+    "NameZH": "\u9a6c\u841d\u62c9",
+    "weaponType": "Bow",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 42,
     "MinHP4": 53,
@@ -1174,13 +1383,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110036_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110037_01",
-    "Name": "Irfan",
-    "type": "Dagger",
+    "Name": {
+      "en": "Irfan"
+    },
+    "NameZH": "\u4f0a\u5c14\u51e1",
+    "weaponType": "Dagger",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1202,13 +1416,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110037_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110038_01",
-    "Name": "Hope",
-    "type": "Staff",
+    "Name": {
+      "en": "Hope"
+    },
+    "NameZH": "\u970d\u666e",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -1230,13 +1449,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "110038_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110039_01",
-    "Name": "Ryozen",
-    "type": "Lance",
+    "Name": {
+      "en": "Ryozen"
+    },
+    "NameZH": "\u6881\u6cc9",
+    "weaponType": "Lance",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -1258,13 +1482,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110039_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110040_01",
-    "Name": "Rawn",
-    "type": "Bow",
+    "Name": {
+      "en": "Rawn"
+    },
+    "NameZH": "\u4e4c\u5c14\u5609",
+    "weaponType": "Bow",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -1286,13 +1515,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 19,
+    "image": "110040_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110041_01",
-    "Name": "Amane",
-    "type": "Wand",
+    "Name": {
+      "en": "Amane"
+    },
+    "NameZH": "\u5929\u97f3",
+    "weaponType": "Wand",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -1314,13 +1548,18 @@ const adventurer =
     "PlusSTR3": 40,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 18,
+    "image": "110041_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110042_01",
-    "Name": "Julietta",
-    "type": "Axe",
+    "Name": {
+      "en": "Julietta",
+      "zh": "\u6731\u4e3d\u53f6"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Light",
     "MinHP3": 48,
     "MinHP4": 60,
@@ -1342,13 +1581,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 20,
+    "image": "110042_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110043_01",
-    "Name": "Hildegarde",
-    "type": "Staff",
+    "Name": {
+      "en": "Hildegarde"
+    },
+    "NameZH": "\u5e0c\u5c14\u5fb7\u52a0\u5fb7",
+    "weaponType": "Staff",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Light",
     "MinHP3": 47,
     "MinHP4": 59,
@@ -1370,13 +1614,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 20,
+    "image": "110043_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110044_01",
-    "Name": "Taro",
-    "type": "Blade",
+    "Name": {
+      "en": "Taro"
+    },
+    "NameZH": "\u592a\u90ce",
+    "weaponType": "Blade",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -1398,13 +1647,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 17,
+    "image": "110044_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110045_01",
-    "Name": "Erik",
-    "type": "Axe",
+    "Name": {
+      "en": "Erik"
+    },
+    "NameZH": "\u57c3\u91cc\u514b",
+    "weaponType": "Axe",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -1426,13 +1680,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 17,
+    "image": "110045_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110046_01",
-    "Name": "Rodrigo",
-    "type": "Sword",
+    "Name": {
+      "en": "Rodrigo"
+    },
+    "NameZH": "\u7f57\u5fb7\u91cc\u6208",
+    "weaponType": "Sword",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 39,
     "MinHP4": 49,
@@ -1454,13 +1713,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 17,
+    "image": "110046_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110047_02",
-    "Name": "Althemia",
-    "type": "Staff",
+    "Name": {
+      "en": "Althemia"
+    },
+    "NameZH": "\u4f0a\u9732\u7f07\u7c73\u5a05",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -1482,13 +1746,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110047_02_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110047_01",
-    "Name": "Althemia",
-    "type": "Wand",
+    "Name": {
+      "en": "Althemia"
+    },
+    "NameZH": "\u4f0a\u9732\u7f07\u7c73\u5a05",
+    "weaponType": "Wand",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 41,
     "MinHP4": 51,
@@ -1510,13 +1779,18 @@ const adventurer =
     "PlusSTR3": 35,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 18,
+    "image": "110047_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110048_01",
-    "Name": "Vice",
-    "type": "Dagger",
+    "Name": {
+      "en": "Vice"
+    },
+    "NameZH": "\u534e\u5179",
+    "weaponType": "Dagger",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1538,13 +1812,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110048_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110049_02",
-    "Name": "Edward",
-    "type": "Blade",
+    "Name": {
+      "en": "Edward"
+    },
+    "NameZH": "\u7231\u5fb7\u534e",
+    "weaponType": "Blade",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 39,
     "MinHP4": 48,
@@ -1566,13 +1845,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 19,
+    "image": "110049_02_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110049_01",
-    "Name": "Edward",
-    "type": "Staff",
+    "Name": {
+      "en": "Edward"
+    },
+    "NameZH": "\u7231\u5fb7\u534e",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1594,13 +1878,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110049_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110050_01",
-    "Name": "Berserker",
-    "type": "Sword",
+    "Name": {
+      "en": "Berserker"
+    },
+    "NameZH": "\u8d1d\u5c14\u624e\u514b",
+    "weaponType": "Sword",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Shadow",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -1622,13 +1911,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 16,
+    "image": "110050_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110051_01",
-    "Name": "Kleimann",
-    "type": "Wand",
+    "Name": {
+      "en": "Kleimann"
+    },
+    "NameZH": "\u514b\u96f7\u4f0a\u66fc",
+    "weaponType": "Wand",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Shadow",
     "MinHP3": 44,
     "MinHP4": 55,
@@ -1650,13 +1944,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 17,
+    "image": "110051_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110052_01",
-    "Name": "Orion",
-    "type": "Dagger",
+    "Name": {
+      "en": "Orion"
+    },
+    "NameZH": "\u4fc4\u91cc\u7fc1",
+    "weaponType": "Dagger",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Shadow",
     "MinHP3": 45,
     "MinHP4": 56,
@@ -1678,13 +1977,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110052_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110053_01",
-    "Name": "Nefaria",
-    "type": "Bow",
+    "Name": {
+      "en": "Nefaria"
+    },
+    "NameZH": "\u5948\u6cd5\u5229\u8036",
+    "weaponType": "Bow",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Shadow",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -1706,13 +2010,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 16,
+    "image": "110053_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110063_01",
-    "Name": "Estelle",
-    "type": "Staff",
+    "Name": {
+      "en": "Estelle"
+    },
+    "NameZH": "\u827e\u4e1d\u8482\u5c14",
+    "weaponType": "Staff",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Light",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -1734,13 +2043,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "110063_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110067_01",
-    "Name": "Vida",
-    "type": "Dagger",
+    "Name": {
+      "en": "Vida"
+    },
+    "NameZH": "\u7ef4\u7279",
+    "weaponType": "Dagger",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 42,
     "MinHP4": 52,
@@ -1762,13 +2076,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 17,
+    "image": "110067_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110252_01",
-    "Name": "Lily",
-    "type": "Wand",
+    "Name": {
+      "en": "Lily"
+    },
+    "NameZH": "\u8389\u8389",
+    "weaponType": "Wand",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Water",
     "MinHP3": 44,
     "MinHP4": 54,
@@ -1790,13 +2109,18 @@ const adventurer =
     "PlusSTR3": 41,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 19,
+    "image": "110252_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110253_01",
-    "Name": "Orsem",
-    "type": "Dagger",
+    "Name": {
+      "en": "Orsem"
+    },
+    "NameZH": "\u5965\u5c14\u68ee",
+    "weaponType": "Dagger",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 43,
     "MinHP4": 53,
@@ -1818,13 +2142,18 @@ const adventurer =
     "PlusSTR3": 39,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 18,
+    "image": "110253_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110254_01",
-    "Name": "Zace",
-    "type": "Lance",
+    "Name": {
+      "en": "Zace"
+    },
+    "NameZH": "\u5409\u65af",
+    "weaponType": "Lance",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Shadow",
     "MinHP3": 39,
     "MinHP4": 49,
@@ -1846,13 +2175,18 @@ const adventurer =
     "PlusSTR3": 37,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 17,
+    "image": "110254_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110255_01",
-    "Name": "Celliera",
-    "type": "Blade",
+    "Name": {
+      "en": "Celliera"
+    },
+    "NameZH": "\u8d5b\u4e3d\u827e\u62c9",
+    "weaponType": "Blade",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Water",
     "MinHP3": 40,
     "MinHP4": 40,
@@ -1874,13 +2208,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 18,
+    "image": "110255_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110256_01",
-    "Name": "Louise",
-    "type": "Bow",
+    "Name": {
+      "en": "Louise"
+    },
+    "NameZH": "\u6d1b\u4f9d\u6cfd",
+    "weaponType": "Bow",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Wind",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -1902,13 +2241,18 @@ const adventurer =
     "PlusSTR3": 38,
     "PlusSTR4": 19,
     "McFullBonusSTR5": 16,
+    "image": "110256_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110257_01",
-    "Name": "Lowen",
-    "type": "Staff",
+    "Name": {
+      "en": "Lowen"
+    },
+    "NameZH": "\u5362\u6069",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -1930,13 +2274,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110257_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110258_01",
-    "Name": "Pietro",
-    "type": "Axe",
+    "Name": {
+      "en": "Pietro"
+    },
+    "NameZH": "\u76ae\u591a\u7279",
+    "weaponType": "Axe",
     "rarity": "3",
+    "curRarity": "3",
     "element": "Water",
     "MinHP3": 43,
     "MinHP4": 54,
@@ -1958,13 +2307,18 @@ const adventurer =
     "PlusSTR3": 34,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 15,
+    "image": "110258_01_r03.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110266_01",
-    "Name": "Naveed",
-    "type": "Sword",
+    "Name": {
+      "en": "Naveed"
+    },
+    "NameZH": "\u7eb3\u6770\u592b",
+    "weaponType": "Sword",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Flame",
     "MinHP3": 44,
     "MinHP4": 55,
@@ -1986,13 +2340,18 @@ const adventurer =
     "PlusSTR3": 41,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 18,
+    "image": "110266_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110267_01",
-    "Name": "Hawk",
-    "type": "Bow",
+    "Name": {
+      "en": "Hawk"
+    },
+    "NameZH": "\u970d\u514b",
+    "weaponType": "Bow",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Wind",
     "MinHP3": 45,
     "MinHP4": 55,
@@ -2014,13 +2373,18 @@ const adventurer =
     "PlusSTR3": 40,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 18,
+    "image": "110267_01_r05.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110269_01",
-    "Name": "Verica",
-    "type": "Staff",
+    "Name": {
+      "en": "Verica"
+    },
+    "NameZH": "\u7ef4\u5c14\u838e\u62c9",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -2042,13 +2406,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 19,
+    "image": "110269_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110270_01",
-    "Name": "Melsa",
-    "type": "Dagger",
+    "Name": {
+      "en": "Melsa"
+    },
+    "NameZH": "\u6885\u9732\u838e",
+    "weaponType": "Dagger",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Flame",
     "MinHP3": 43,
     "MinHP4": 43,
@@ -2070,13 +2439,18 @@ const adventurer =
     "PlusSTR3": 35,
     "PlusSTR4": 17,
     "McFullBonusSTR5": 16,
+    "image": "110270_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110302_01",
-    "Name": "Pia",
-    "type": "Lance",
+    "Name": {
+      "en": "Pia"
+    },
+    "NameZH": "\u76ae\u96c5\u831c",
+    "weaponType": "Lance",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Wind",
     "MinHP3": 47,
     "MinHP4": 58,
@@ -2098,13 +2472,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 17,
+    "image": "110302_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110303_01",
-    "Name": "Elias",
-    "type": "Bow",
+    "Name": {
+      "en": "Elias"
+    },
+    "NameZH": "\u57c3\u5229\u4e9a\u65af",
+    "weaponType": "Bow",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 46,
     "MinHP4": 46,
@@ -2126,13 +2505,18 @@ const adventurer =
     "PlusSTR3": 33,
     "PlusSTR4": 16,
     "McFullBonusSTR5": 16,
+    "image": "110303_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110304_01",
-    "Name": "Vixel",
-    "type": "Staff",
+    "Name": {
+      "en": "Vixel"
+    },
+    "NameZH": "\u7ef4\u514b\u585e\u5c14",
+    "weaponType": "Staff",
     "rarity": "4",
+    "curRarity": "4",
     "element": "Light",
     "MinHP3": 46,
     "MinHP4": 57,
@@ -2154,13 +2538,18 @@ const adventurer =
     "PlusSTR3": 36,
     "PlusSTR4": 18,
     "McFullBonusSTR5": 18,
+    "image": "110304_01_r04.png",
     "MAX_LEVEL": 80
   },
   {
     "Id": "110305_01",
-    "Name": "Lucretia",
-    "type": "Wand",
+    "Name": {
+      "en": "Lucretia"
+    },
+    "NameZH": "\u5362\u514b\u96f7\u9f50\u5a05",
+    "weaponType": "Wand",
     "rarity": "5",
+    "curRarity": "5",
     "element": "Light",
     "MinHP3": 44,
     "MinHP4": 54,
@@ -2182,6 +2571,7 @@ const adventurer =
     "PlusSTR3": 41,
     "PlusSTR4": 20,
     "McFullBonusSTR5": 19,
+    "image": "110305_01_r05.png",
     "MAX_LEVEL": 80
   }
 ];

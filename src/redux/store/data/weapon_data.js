@@ -1,9 +1,68 @@
-const weapon =
+const weapon = 
 [
   {
-    "Id": 30130102,
-    "Name": "Blazing Blade",
-    "type": "Sword",
+    "Id": "30119901",
+    "BaseId": "301001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Sword",
+    "WeaponNameZH": "\u8001\u65e7\u7684\u5251",
+    "Type": "Sword",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "0",
+    "ParentCraftNodeId": "0",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30129901",
+    "BaseId": "301002",
+    "FormId": "29901",
+    "WeaponName": "Soldier's Brand",
+    "WeaponNameZH": "Soldier's Brand",
+    "Type": "Sword",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "0",
+    "ParentCraftNodeId": "0",
+    "CraftGroupId": "",
+    "MinHp": "4",
+    "MaxHp": "15",
+    "MinAtk": "16",
+    "MaxAtk": "54",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "301013_01_30101",
+    "Name": {
+      "en": "Blazing Blade",
+      "zh": "\u707c\u70ed\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -24,14 +83,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301013_01_30101.png",
+    "image": "301013_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30130201,
-    "Name": "Rainbreaker",
-    "type": "Sword",
+    "Id": "301006_01_30201",
+    "Name": {
+      "en": "Rainbreaker",
+      "zh": "\u88c2\u96e8\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 304,
@@ -52,14 +114,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301006_01_30201.png",
+    "image": "301006_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30130302,
-    "Name": "Grassrunner",
-    "type": "Sword",
+    "Id": "301035_01_30301",
+    "Name": {
+      "en": "Grassrunner",
+      "zh": "\u8349\u4e0a\u98de"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 305,
@@ -80,14 +145,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301035_01_30301.png",
+    "image": "301035_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30130401,
-    "Name": "Featherblade",
-    "type": "Sword",
+    "Id": "301007_01_30401",
+    "Name": {
+      "en": "Featherblade",
+      "zh": "\u8f7b\u7fbd\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 302,
@@ -108,14 +176,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301007_01_30401.png",
+    "image": "301007_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30130501,
-    "Name": "Blood Price",
-    "type": "Sword",
+    "Id": "301008_01_30501",
+    "Name": {
+      "en": "Blood Price",
+      "zh": "\u9c9c\u8840\u51b3\u6597"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -136,14 +207,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301008_01_30501.png",
+    "image": "301008_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30139901,
-    "Name": "Knight's Sword",
-    "type": "Sword",
+    "Id": "301030_01_39901",
+    "Name": {
+      "en": "Knight's Sword",
+      "zh": "\u9a91\u58eb\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -164,14 +238,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301030_01_39901.png",
+    "image": "301030_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30139902,
-    "Name": "Ensorcelled Sword",
-    "type": "Sword",
+    "Id": "301038_01_39901",
+    "Name": {
+      "en": "Ensorcelled Sword",
+      "zh": "\u9644\u9b54\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -192,14 +269,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301038_01_39901.png",
+    "image": "301038_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30139903,
-    "Name": "Broadedge",
-    "type": "Sword",
+    "Id": "301039_01_39901",
+    "Name": {
+      "en": "Broadedge",
+      "zh": "\u72c2\u91ce\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -220,14 +300,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301039_01_39901.png",
+    "image": "301039_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30140104,
-    "Name": "Crimson Cry",
-    "type": "Sword",
+    "Id": "301014_01_40101",
+    "Name": {
+      "en": "Crimson Cry",
+      "zh": "\u7eef\u7ea2\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -248,14 +331,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301014_01_40101.png",
+    "image": "301014_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30140201,
-    "Name": "Mercurius",
-    "type": "Sword",
+    "Id": "301009_01_40201",
+    "Name": {
+      "en": "Mercurius",
+      "zh": "\u58a8\u4e18\u5229\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 303,
@@ -276,14 +362,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301009_01_40201.png",
+    "image": "301009_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30140301,
-    "Name": "Wingblade",
-    "type": "Sword",
+    "Id": "301034_01_40301",
+    "Name": {
+      "en": "Wingblade",
+      "zh": "\u7075\u7ffc\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -304,14 +393,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301034_01_40301.png",
+    "image": "301034_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30140401,
-    "Name": "Astral Edge",
-    "type": "Sword",
+    "Id": "301036_01_40401",
+    "Name": {
+      "en": "Astral Edge",
+      "zh": "\u4e03\u661f\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 305,
@@ -332,14 +424,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301036_01_40401.png",
+    "image": "301036_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30140501,
-    "Name": "Dark Dementia",
-    "type": "Sword",
+    "Id": "301011_01_40501",
+    "Name": {
+      "en": "Dark Dementia",
+      "zh": "\u72c2\u4e71\u9ed1\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 302,
@@ -354,20 +449,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301011_01_40501.png",
+    "image": "301011_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30149901,
-    "Name": "Knights' Grace",
-    "type": "Sword",
+    "Id": "301040_01_49901",
+    "Name": {
+      "en": "Knights' Grace",
+      "zh": "\u9a91\u58eb\u957f\u4e3d\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -388,14 +486,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301040_01_49901.png",
+    "image": "301040_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30149902,
-    "Name": "Blade of Glory",
-    "type": "Sword",
+    "Id": "301031_01_49901",
+    "Name": {
+      "en": "Blade of Glory",
+      "zh": "\u8363\u8000\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -416,14 +517,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301031_01_49901.png",
+    "image": "301031_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30149903,
-    "Name": "Gilda Sword",
-    "type": "Sword",
+    "Id": "301012_01_49901",
+    "Name": {
+      "en": "Gilda Sword",
+      "zh": "\u5409\u5c14\u8fbe\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -444,14 +548,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301012_01_49901.png",
+    "image": "301012_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30150101,
-    "Name": "Levatein",
-    "type": "Sword",
+    "Id": "301032_01_50101",
+    "Name": {
+      "en": "Levatein",
+      "zh": "\u96f7\u74e6\u6c40"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -472,14 +579,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "301032_01_50101.png",
+    "image": "301032_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30150202,
-    "Name": "Eoantide",
-    "type": "Sword",
+    "Id": "301010_01_50201",
+    "Name": {
+      "en": "Eoantide",
+      "zh": "\u539f\u521d\u767d\u6d6a"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 302,
@@ -500,14 +610,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "301010_01_50201.png",
+    "image": "301010_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30150301,
-    "Name": "Durandal",
-    "type": "Sword",
+    "Id": "301033_01_50301",
+    "Name": {
+      "en": "Durandal",
+      "zh": "\u675c\u6717\u8fbe\u5c14"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -528,14 +641,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "301033_01_50301.png",
+    "image": "301033_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30150401,
-    "Name": "Zex's End",
-    "type": "Sword",
+    "Id": "301015_01_50401",
+    "Name": {
+      "en": "Zex's End",
+      "zh": "\u8d5b\u514b\u65af\u7684\u7ec8\u7109"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 303,
@@ -556,14 +672,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "301015_01_50401.png",
+    "image": "301015_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30150501,
-    "Name": "D\u00e1insleif",
-    "type": "Sword",
+    "Id": "301037_01_50501",
+    "Name": {
+      "en": "D\u00e1insleif",
+      "zh": "\u6234\u56e0\u65af\u83b1\u592b"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -582,16 +701,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "301037_01_50501.png",
+    "image": "301037_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30159901,
-    "Name": "Hero's Sword",
-    "type": "Sword",
+    "Id": "301041_01_59901",
+    "Name": {
+      "en": "Hero's Sword",
+      "zh": "\u82f1\u96c4\u4e4b\u5251"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -612,14 +734,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "301041_01_59901.png",
+    "image": "301041_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30159902,
-    "Name": "Hauteclaire",
-    "type": "Sword",
+    "Id": "301042_01_59901",
+    "Name": {
+      "en": "Hauteclaire",
+      "zh": "\u5965\u6258\u514b\u83b1\u5c14"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -640,14 +765,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "301042_01_59901.png",
+    "image": "301042_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30159903,
-    "Name": "Gram",
-    "type": "Sword",
+    "Id": "301043_01_59901",
+    "Name": {
+      "en": "Gram",
+      "zh": "\u683c\u62c9\u58a8"
+    },
+    "weaponType": "Sword",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -668,14 +796,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "301043_01_59901.png",
+    "image": "301043_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30230101,
-    "Name": "Valkaheim Blade",
-    "type": "Blade",
+    "Id": "30219901",
+    "BaseId": "302001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Blade",
+    "WeaponNameZH": "Battleworn Blade",
+    "Type": "Blade",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30229901",
+    "BaseId": "302002",
+    "FormId": "29901",
+    "WeaponName": "Striker",
+    "WeaponNameZH": "\u6253\u5200",
+    "Type": "Blade",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "3",
+    "MaxHp": "13",
+    "MinAtk": "17",
+    "MaxAtk": "59",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "302006_01_30101",
+    "Name": {
+      "en": "Valkaheim Blade",
+      "zh": "\u5df4\u5c14\u52a0\u4e4b\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -696,14 +883,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302006_01_30101.png",
+    "image": "302006_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30230201,
-    "Name": "Alighting Butterfly",
-    "type": "Blade",
+    "Id": "302007_01_30201",
+    "Name": {
+      "en": "Alighting Butterfly",
+      "zh": "\u82b1\u8776\u6751\u96e8"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 302,
@@ -724,14 +914,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302007_01_30201.png",
+    "image": "302007_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30230302,
-    "Name": "Dragon Commander",
-    "type": "Blade",
+    "Id": "302024_01_30301",
+    "Name": {
+      "en": "Dragon Commander",
+      "zh": "\u9f99\u5c06\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -752,14 +945,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302024_01_30301.png",
+    "image": "302024_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30230401,
-    "Name": "Chanzelian Blade",
-    "type": "Blade",
+    "Id": "302027_01_30401",
+    "Name": {
+      "en": "Chanzelian Blade",
+      "zh": "\u9999\u69ad\u5229\u4e9a\u4e4b\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 304,
@@ -780,14 +976,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302027_01_30401.png",
+    "image": "302027_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30230501,
-    "Name": "Sanguine Rain",
-    "type": "Blade",
+    "Id": "302009_01_30501",
+    "Name": {
+      "en": "Sanguine Rain",
+      "zh": "\u5996\u5200\u8840\u96e8"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -808,14 +1007,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302009_01_30501.png",
+    "image": "302009_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30239901,
-    "Name": "Subjugator",
-    "type": "Blade",
+    "Id": "302021_01_39901",
+    "Name": {
+      "en": "Subjugator",
+      "zh": "\u8ba8\u4f10\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -836,14 +1038,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302021_01_39901.png",
+    "image": "302021_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30239902,
-    "Name": "High Shamshir",
-    "type": "Blade",
+    "Id": "302030_01_39901",
+    "Name": {
+      "en": "High Shamshir",
+      "zh": "\u820d\u65bd\u5c14\u5f2f\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -864,14 +1069,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302030_01_39901.png",
+    "image": "302030_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30239903,
-    "Name": "Fusion Blade",
-    "type": "Blade",
+    "Id": "302008_01_39901",
+    "Name": {
+      "en": "Fusion Blade",
+      "zh": "\u6b21\u4e16\u4ee3\u4e4b\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -892,14 +1100,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302008_01_39901.png",
+    "image": "302008_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30240101,
-    "Name": "Flametongue",
-    "type": "Blade",
+    "Id": "302015_01_40101",
+    "Name": {
+      "en": "Flametongue",
+      "zh": "\u7eef\u708e\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -920,14 +1131,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302015_01_40101.png",
+    "image": "302015_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30240202,
-    "Name": "Sousui",
-    "type": "Blade",
+    "Id": "302022_01_40201",
+    "Name": {
+      "en": "Sousui",
+      "zh": "\u82cd\u6c34\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 304,
@@ -948,14 +1162,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302022_01_40201.png",
+    "image": "302022_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30240301,
-    "Name": "Tempest Blade",
-    "type": "Blade",
+    "Id": "302011_01_40301",
+    "Name": {
+      "en": "Tempest Blade",
+      "zh": "\u66b4\u98ce\u4e4b\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -976,14 +1193,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302011_01_40301.png",
+    "image": "302011_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30240402,
-    "Name": "Thunderfang",
-    "type": "Blade",
+    "Id": "302026_01_40401",
+    "Name": {
+      "en": "Thunderfang",
+      "zh": "\u7f20\u96f7\u65a9\u86c7\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 305,
@@ -1004,14 +1224,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302026_01_40401.png",
+    "image": "302026_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30240501,
-    "Name": "Ghizlam's Darkblade",
-    "type": "Blade",
+    "Id": "302029_01_40501",
+    "Name": {
+      "en": "Ghizlam's Darkblade",
+      "zh": "\u6697\u5200\u9f50\u5179\u62c9\u59c6"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -1026,20 +1249,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302029_01_40501.png",
+    "image": "302029_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30249901,
-    "Name": "Guardian Seal",
-    "type": "Blade",
+    "Id": "302012_01_49901",
+    "Name": {
+      "en": "Guardian Seal",
+      "zh": "\u9547\u5b88\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -1060,14 +1286,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302012_01_49901.png",
+    "image": "302012_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30249902,
-    "Name": "Iron Blade",
-    "type": "Blade",
+    "Id": "302031_01_49901",
+    "Name": {
+      "en": "Iron Blade",
+      "zh": "\u9ed1\u94a2\u4e4b\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -1088,14 +1317,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302031_01_49901.png",
+    "image": "302031_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30249903,
-    "Name": "Masamura's Pride",
-    "type": "Blade",
+    "Id": "302032_01_49901",
+    "Name": {
+      "en": "Masamura's Pride",
+      "zh": "\u673a\u68b0\u5200\u6b63\u6751"
+    },
+    "weaponType": "Blade",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -1116,14 +1348,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302032_01_49901.png",
+    "image": "302032_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30250101,
-    "Name": "Heaven's Acuity",
-    "type": "Blade",
+    "Id": "302013_01_50101",
+    "Name": {
+      "en": "Heaven's Acuity",
+      "zh": "\u5929\u4e4b\u5c3e\u7fbd\u5f20"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -1144,14 +1379,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "302013_01_50101.png",
+    "image": "302013_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30250201,
-    "Name": "Maar Oasis",
-    "type": "Blade",
+    "Id": "302010_01_50201",
+    "Name": {
+      "en": "Maar Oasis",
+      "zh": "\u706b\u53e3\u7eff\u6d32"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 303,
@@ -1172,14 +1410,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "302010_01_50201.png",
+    "image": "302010_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30250301,
-    "Name": "Anemone",
-    "type": "Blade",
+    "Id": "302023_01_50301",
+    "Name": {
+      "en": "Anemone",
+      "zh": "\u6de1\u7d2b\u5200\u94f6\u83b2"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -1200,14 +1441,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "302023_01_50301.png",
+    "image": "302023_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30250401,
-    "Name": "Heavenwing",
-    "type": "Blade",
+    "Id": "302025_01_50401",
+    "Name": {
+      "en": "Heavenwing",
+      "zh": "\u5929\u7ffc\u4e4b\u5200"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 304,
@@ -1228,14 +1472,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "302025_01_50401.png",
+    "image": "302025_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30250501,
-    "Name": "Blackwing",
-    "type": "Blade",
+    "Id": "302028_01_50501",
+    "Name": {
+      "en": "Blackwing",
+      "zh": "\u9ed1\u7ffc\u5492\u5203"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -1254,16 +1501,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "302028_01_50501.png",
+    "image": "302028_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30259901,
-    "Name": "Dane's Favor",
-    "type": "Blade",
+    "Id": "302014_01_59901",
+    "Name": {
+      "en": "Dane's Favor",
+      "zh": "\u9738\u738b\u53f7"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -1284,14 +1534,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "302014_01_59901.png",
+    "image": "302014_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30259902,
-    "Name": "Crimson Shade",
-    "type": "Blade",
+    "Id": "302033_01_59901",
+    "Name": {
+      "en": "Crimson Shade",
+      "zh": "\u591c\u53c9\u5f71\u5149"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -1312,14 +1565,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "302033_01_59901.png",
+    "image": "302033_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30259903,
-    "Name": "Souleater",
-    "type": "Blade",
+    "Id": "302034_01_59901",
+    "Name": {
+      "en": "Souleater",
+      "zh": "\u9b42\u55b0\u864e\u94c1"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 203,
@@ -1340,14 +1596,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "302034_01_59901.png",
+    "image": "302034_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30259904,
-    "Name": "Villagelight",
-    "type": "Blade",
+    "Id": "302035_01_59901",
+    "Name": {
+      "en": "Villagelight",
+      "zh": "\u6751\u6b63"
+    },
+    "weaponType": "Blade",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -1368,14 +1627,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "302035_01_59901.png",
+    "image": "302035_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30330101,
-    "Name": "Cruel Kukri",
-    "type": "Dagger",
+    "Id": "30319901",
+    "BaseId": "303001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Dagger",
+    "WeaponNameZH": "Battleworn Dagger",
+    "Type": "Dagger",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30329902",
+    "BaseId": "303005",
+    "FormId": "29901",
+    "WeaponName": "Thief's Dagger",
+    "WeaponNameZH": "\u76d7\u8d3c\u5315\u9996",
+    "Type": "Dagger",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "4",
+    "MaxHp": "15",
+    "MinAtk": "15",
+    "MaxAtk": "53",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "303027_01_30101",
+    "Name": {
+      "en": "Cruel Kukri",
+      "zh": "\u65e0\u60c5\u53cd\u66f2\u5200"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -1396,14 +1714,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303027_01_30101.png",
+    "image": "303027_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30330201,
-    "Name": "Water Dagger",
-    "type": "Dagger",
+    "Id": "303021_01_30201",
+    "Name": {
+      "en": "Water Dagger",
+      "zh": "\u6c34\u4e4b\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 303,
@@ -1424,14 +1745,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303021_01_30201.png",
+    "image": "303021_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30330301,
-    "Name": "Stormspawn",
-    "type": "Dagger",
+    "Id": "303007_01_30301",
+    "Name": {
+      "en": "Stormspawn",
+      "zh": "\u98ce\u66b4\u4e4b\u5b50"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -1452,14 +1776,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303007_01_30301.png",
+    "image": "303007_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30330401,
-    "Name": "Conscience",
-    "type": "Dagger",
+    "Id": "303008_01_30401",
+    "Name": {
+      "en": "Conscience",
+      "zh": "\u542b\u5fc3\u6000\u5200"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 302,
@@ -1480,14 +1807,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303008_01_30401.png",
+    "image": "303008_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30330501,
-    "Name": "Assassin's Knife",
-    "type": "Dagger",
+    "Id": "303009_01_30501",
+    "Name": {
+      "en": "Assassin's Knife",
+      "zh": "\u6697\u6740\u4e4b\u5203"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -1508,14 +1838,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303009_01_30501.png",
+    "image": "303009_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30339901,
-    "Name": "Bejeweled Dagger",
-    "type": "Dagger",
+    "Id": "303026_01_39901",
+    "Name": {
+      "en": "Bejeweled Dagger",
+      "zh": "\u5b9d\u9970\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -1536,14 +1869,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303026_01_39901.png",
+    "image": "303026_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30339902,
-    "Name": "Gear Knife",
-    "type": "Dagger",
+    "Id": "303032_01_39901",
+    "Name": {
+      "en": "Gear Knife",
+      "zh": "\u9f7f\u8f6e\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -1564,14 +1900,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303032_01_39901.png",
+    "image": "303032_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30339903,
-    "Name": "Lover's Ally",
-    "type": "Dagger",
+    "Id": "303003_01_39901",
+    "Name": {
+      "en": "Lover's Ally",
+      "zh": "\u7231\u4e4b\u5315\u9996"
+    },
+    "weaponType": "Dagger",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -1592,14 +1931,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303003_01_39901.png",
+    "image": "303003_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30340101,
-    "Name": "Scarlet Talon",
-    "type": "Dagger",
+    "Id": "303015_01_40101",
+    "Name": {
+      "en": "Scarlet Talon",
+      "zh": "\u7ea2\u83b2\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -1620,14 +1962,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303015_01_40101.png",
+    "image": "303015_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30340201,
-    "Name": "Ultramarine Knife",
-    "type": "Dagger",
+    "Id": "303018_01_40201",
+    "Name": {
+      "en": "Ultramarine Knife",
+      "zh": "\u6ca7\u6d77\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 302,
@@ -1648,14 +1993,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303018_01_40201.png",
+    "image": "303018_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30340301,
-    "Name": "Queensflight",
-    "type": "Dagger",
+    "Id": "303029_01_40301",
+    "Name": {
+      "en": "Queensflight",
+      "zh": "\u738b\u5983\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -1676,14 +2024,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303029_01_40301.png",
+    "image": "303029_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30340401,
-    "Name": "Nightbreaker",
-    "type": "Dagger",
+    "Id": "303017_01_40401",
+    "Name": {
+      "en": "Nightbreaker",
+      "zh": "\u5669\u68a6\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 303,
@@ -1704,14 +2055,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303017_01_40401.png",
+    "image": "303017_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30340502,
-    "Name": "Dark Sacrifice",
-    "type": "Dagger",
+    "Id": "303011_01_40501",
+    "Name": {
+      "en": "Dark Sacrifice",
+      "zh": "\u8bc5\u5492\u732e\u796d"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -1726,20 +2080,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303011_01_40501.png",
+    "image": "303011_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30349901,
-    "Name": "Hard Breaker",
-    "type": "Dagger",
+    "Id": "303033_01_49901",
+    "Name": {
+      "en": "Hard Breaker",
+      "zh": "\u7834\u574f\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -1760,14 +2117,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303033_01_49901.png",
+    "image": "303033_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30349902,
-    "Name": "Wyrmfang",
-    "type": "Dagger",
+    "Id": "303012_01_49901",
+    "Name": {
+      "en": "Wyrmfang",
+      "zh": "\u9f99\u7259\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -1788,14 +2148,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303012_01_49901.png",
+    "image": "303012_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30349903,
-    "Name": "The Dreamer's Greatsword",
-    "type": "Dagger",
+    "Id": "303034_01_49901",
+    "Name": {
+      "en": "The Dreamer's Greatsword",
+      "zh": "\u68a6\u60f3\u5927\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -1816,14 +2179,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303034_01_49901.png",
+    "image": "303034_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30350102,
-    "Name": "Aeternal Flame",
-    "type": "Dagger",
+    "Id": "303013_01_50101",
+    "Name": {
+      "en": "Aeternal Flame",
+      "zh": "\u4e45\u8fdc\u4e4b\u7130"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -1844,14 +2210,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "303013_01_50101.png",
+    "image": "303013_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30350201,
-    "Name": "Lux Lamina",
-    "type": "Dagger",
+    "Id": "303020_01_50201",
+    "Name": {
+      "en": "Lux Lamina",
+      "zh": "\u6e56\u5149\u4e4b\u5203"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 304,
@@ -1872,14 +2241,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "303020_01_50201.png",
+    "image": "303020_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30350301,
-    "Name": "Karlsnautr",
-    "type": "Dagger",
+    "Id": "303028_01_50301",
+    "Name": {
+      "en": "Karlsnautr",
+      "zh": "\u6e05\u98ce\u7075\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -1900,14 +2272,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "303028_01_50301.png",
+    "image": "303028_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30350401,
-    "Name": "Thunderblade Sugaar",
-    "type": "Dagger",
+    "Id": "303030_01_50401",
+    "Name": {
+      "en": "Thunderblade Sugaar",
+      "zh": "\u96f7\u5203\u4fee\u4f3d\u5c14"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 305,
@@ -1928,14 +2303,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "303030_01_50401.png",
+    "image": "303030_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30350501,
-    "Name": "Honor Edge",
-    "type": "Dagger",
+    "Id": "303031_01_50501",
+    "Name": {
+      "en": "Honor Edge",
+      "zh": "\u540d\u8a89\u7d2b\u77ed\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -1954,16 +2332,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "303031_01_50501.png",
+    "image": "303031_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30359901,
-    "Name": "Kris Naga",
-    "type": "Dagger",
+    "Id": "303035_01_59901",
+    "Name": {
+      "en": "Kris Naga",
+      "zh": "\u9a6c\u6765\u514b\u529b\u58eb\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -1984,14 +2365,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "303035_01_59901.png",
+    "image": "303035_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30359902,
-    "Name": "Treasure of the Iron Rose",
-    "type": "Dagger",
+    "Id": "303014_01_59901",
+    "Name": {
+      "en": "Treasure of the Iron Rose",
+      "zh": "\u94c1\u8537\u8587\u91c7\u6458\u5b9d\u5251"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -2012,14 +2396,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "303014_01_59901.png",
+    "image": "303014_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30359903,
-    "Name": "Hedgehog",
-    "type": "Dagger",
+    "Id": "303036_01_59901",
+    "Name": {
+      "en": "Hedgehog",
+      "zh": "\u523a\u732c\u4e4b\u5203"
+    },
+    "weaponType": "Dagger",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -2040,14 +2427,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "303036_01_59901.png",
+    "image": "303036_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30430101,
-    "Name": "Argent Battleaxe",
-    "type": "Axe",
+    "Id": "30419901",
+    "BaseId": "304001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Axe",
+    "WeaponNameZH": "Battleworn Axe",
+    "Type": "Axe",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30429903",
+    "BaseId": "304003",
+    "FormId": "29901",
+    "WeaponName": "Soldier's Axe",
+    "WeaponNameZH": "Soldier's Axe",
+    "Type": "Axe",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "4",
+    "MaxHp": "16",
+    "MinAtk": "16",
+    "MaxAtk": "55",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "304018_01_30101",
+    "Name": {
+      "en": "Argent Battleaxe",
+      "zh": "\u767d\u94f6\u9a91\u58eb\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -2068,14 +2514,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304018_01_30101.png",
+    "image": "304018_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30430201,
-    "Name": "Axe of the Waves",
-    "type": "Axe",
+    "Id": "304006_01_30201",
+    "Name": {
+      "en": "Axe of the Waves",
+      "zh": "\u6c34\u6d41\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 302,
@@ -2096,14 +2545,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304006_01_30201.png",
+    "image": "304006_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30430301,
-    "Name": "Singing Cyclone",
-    "type": "Axe",
+    "Id": "304007_01_30301",
+    "Name": {
+      "en": "Singing Cyclone",
+      "zh": "\u98d3\u98ce\u6b4c\u8005"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -2124,14 +2576,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304007_01_30301.png",
+    "image": "304007_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30430401,
-    "Name": "Flash Axe",
-    "type": "Axe",
+    "Id": "304008_01_30401",
+    "Name": {
+      "en": "Flash Axe",
+      "zh": "\u95ea\u5149\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 304,
@@ -2152,14 +2607,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304008_01_30401.png",
+    "image": "304008_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30430501,
-    "Name": "Soulreaver",
-    "type": "Axe",
+    "Id": "304009_01_30501",
+    "Name": {
+      "en": "Soulreaver",
+      "zh": "\u7075\u9b42\u6536\u5272\u8005"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -2180,14 +2638,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304009_01_30501.png",
+    "image": "304009_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30439901,
-    "Name": "Warrior's Axe",
-    "type": "Axe",
+    "Id": "304025_01_39901",
+    "Name": {
+      "en": "Warrior's Axe",
+      "zh": "\u6218\u58eb\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -2208,14 +2669,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304025_01_39901.png",
+    "image": "304025_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30439902,
-    "Name": "Ennobled Axe",
-    "type": "Axe",
+    "Id": "304031_01_39901",
+    "Name": {
+      "en": "Ennobled Axe",
+      "zh": "\u9ad8\u8d35\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -2236,14 +2700,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304031_01_39901.png",
+    "image": "304031_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30439903,
-    "Name": "Juggernaut",
-    "type": "Axe",
+    "Id": "304032_01_39901",
+    "Name": {
+      "en": "Juggernaut",
+      "zh": "\u57ce\u5899\u7834\u574f\u8005"
+    },
+    "weaponType": "Axe",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -2264,14 +2731,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304032_01_39901.png",
+    "image": "304032_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30440102,
-    "Name": "Crimsonclaw",
-    "type": "Axe",
+    "Id": "304010_01_40101",
+    "Name": {
+      "en": "Crimsonclaw",
+      "zh": "\u7eef\u7ea2\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -2292,14 +2762,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304010_01_40101.png",
+    "image": "304010_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30440201,
-    "Name": "Aqua Labrys",
-    "type": "Axe",
+    "Id": "304011_01_40201",
+    "Name": {
+      "en": "Aqua Labrys",
+      "zh": "\u6df1\u6d77\u53cc\u5203\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 303,
@@ -2320,14 +2793,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304011_01_40201.png",
+    "image": "304011_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30440301,
-    "Name": "Winged Destruction",
-    "type": "Axe",
+    "Id": "304016_01_40301",
+    "Name": {
+      "en": "Winged Destruction",
+      "zh": "\u53cc\u8272\u7ffc\u788e\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -2348,14 +2824,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304016_01_40301.png",
+    "image": "304016_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30440401,
-    "Name": "Shining Axe",
-    "type": "Axe",
+    "Id": "304015_01_40401",
+    "Name": {
+      "en": "Shining Axe",
+      "zh": "\u95ea\u8000\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 305,
@@ -2376,14 +2855,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304015_01_40401.png",
+    "image": "304015_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30440501,
-    "Name": "Traitor's Despair",
-    "type": "Axe",
+    "Id": "304030_01_40501",
+    "Name": {
+      "en": "Traitor's Despair",
+      "zh": "\u7edd\u671b\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 302,
@@ -2398,20 +2880,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304030_01_40501.png",
+    "image": "304030_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30449901,
-    "Name": "Plain Axe",
-    "type": "Axe",
+    "Id": "304026_01_49901",
+    "Name": {
+      "en": "Plain Axe",
+      "zh": "\u5e73\u51e1\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -2432,14 +2917,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304026_01_49901.png",
+    "image": "304026_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30449902,
-    "Name": "The Tyrant",
-    "type": "Axe",
+    "Id": "304033_01_49901",
+    "Name": {
+      "en": "The Tyrant",
+      "zh": "\u66b4\u541b\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -2460,14 +2948,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304033_01_49901.png",
+    "image": "304033_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30449903,
-    "Name": "Souvenir Axe",
-    "type": "Axe",
+    "Id": "304034_01_49901",
+    "Name": {
+      "en": "Souvenir Axe",
+      "zh": "\u7eaa\u5ff5\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -2488,14 +2979,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304034_01_49901.png",
+    "image": "304034_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30450101,
-    "Name": "Axe of the Blazing King",
-    "type": "Axe",
+    "Id": "304027_01_50101",
+    "Name": {
+      "en": "Axe of the Blazing King",
+      "zh": "\u706b\u5c71\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -2516,14 +3010,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "304027_01_50101.png",
+    "image": "304027_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30450201,
-    "Name": "Grand Seadragon",
-    "type": "Axe",
+    "Id": "304028_01_50201",
+    "Name": {
+      "en": "Grand Seadragon",
+      "zh": "\u6d77\u9f99\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 304,
@@ -2544,14 +3041,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "304028_01_50201.png",
+    "image": "304028_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30450301,
-    "Name": "Axe of the Southern Cross",
-    "type": "Axe",
+    "Id": "304029_01_50301",
+    "Name": {
+      "en": "Axe of the Southern Cross",
+      "zh": "\u5357\u5341\u5b57\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 305,
@@ -2572,14 +3072,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "304029_01_50301.png",
+    "image": "304029_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30450401,
-    "Name": "Radiant Swath",
-    "type": "Axe",
+    "Id": "304013_01_50401",
+    "Name": {
+      "en": "Radiant Swath",
+      "zh": "\u5723\u5149\u6218\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 302,
@@ -2600,14 +3103,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "304013_01_50401.png",
+    "image": "304013_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30450501,
-    "Name": "Primordial Titan",
-    "type": "Axe",
+    "Id": "304014_01_50501",
+    "Name": {
+      "en": "Primordial Titan",
+      "zh": "\u5de8\u7075\u9739\u96f3"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -2626,16 +3132,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "304014_01_50501.png",
+    "image": "304014_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30459901,
-    "Name": "Victory Axe",
-    "type": "Axe",
+    "Id": "304012_01_59901",
+    "Name": {
+      "en": "Victory Axe",
+      "zh": "\u80dc\u5229\u4e4b\u65a7"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -2656,14 +3165,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "304012_01_59901.png",
+    "image": "304012_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30459902,
-    "Name": "Executioner Axe Strafe",
-    "type": "Axe",
+    "Id": "304035_01_59901",
+    "Name": {
+      "en": "Executioner Axe Strafe",
+      "zh": "\u5904\u5211\u65a7\u5236\u88c1"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -2684,14 +3196,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "304035_01_59901.png",
+    "image": "304035_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30459903,
-    "Name": "Halfling's Broadaxe",
-    "type": "Axe",
+    "Id": "304036_01_59901",
+    "Name": {
+      "en": "Halfling's Broadaxe",
+      "zh": "\u602a\u7ae5\u4e4b\u94ba"
+    },
+    "weaponType": "Axe",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -2712,14 +3227,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "304036_01_59901.png",
+    "image": "304036_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30530101,
-    "Name": "Unsung Hero's Lance",
-    "type": "Lance",
+    "Id": "30519901",
+    "BaseId": "305001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Lance",
+    "WeaponNameZH": "Battleworn Lance",
+    "Type": "Lance",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30529902",
+    "BaseId": "305003",
+    "FormId": "29901",
+    "WeaponName": "Adventurer's Lance",
+    "WeaponNameZH": "\u5192\u9669\u8005\u4e4b\u67aa",
+    "Type": "Lance",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "4",
+    "MaxHp": "15",
+    "MinAtk": "16",
+    "MaxAtk": "55",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "305006_01_30101",
+    "Name": {
+      "en": "Unsung Hero's Lance",
+      "zh": "\u65e0\u540d\u52c7\u8005\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -2740,14 +3314,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305006_01_30101.png",
+    "image": "305006_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30530201,
-    "Name": "Azure Jewel",
-    "type": "Lance",
+    "Id": "305007_01_30201",
+    "Name": {
+      "en": "Azure Jewel",
+      "zh": "\u84dd\u5b9d\u77f3\u94a2\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 303,
@@ -2768,14 +3345,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305007_01_30201.png",
+    "image": "305007_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30530301,
-    "Name": "Gale Spear",
-    "type": "Lance",
+    "Id": "305017_01_30301",
+    "Name": {
+      "en": "Gale Spear",
+      "zh": "\u75be\u98ce\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -2796,14 +3376,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305017_01_30301.png",
+    "image": "305017_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30530401,
-    "Name": "Moonpiercer",
-    "type": "Lance",
+    "Id": "305008_01_30401",
+    "Name": {
+      "en": "Moonpiercer",
+      "zh": "\u6708\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 304,
@@ -2824,14 +3407,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305008_01_30401.png",
+    "image": "305008_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30530402,
-    "Name": "Jack-o'-Lance",
-    "type": "Lance",
+    "Id": "305028_01_30401",
+    "Name": {
+      "en": "Jack-o'-Lance",
+      "zh": "\u6770\u514b\u5357\u74dc\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": "",
@@ -2840,7 +3426,7 @@ const weapon =
     "MinHP": 16,
     "MaxHP": 55,
     "MinSTR": 59,
-    "MaxSTR": 198,
+    "MaxSTR": 195,
     "AssembleCoin": "",
     "CraftMaterial1": "",
     "CraftMaterialQuantity1": "",
@@ -2852,14 +3438,17 @@ const weapon =
     "CraftMaterialQuantity4": "",
     "CraftMaterial5": "",
     "CraftMaterialQuantity5": "",
-    "img": "305028_01_30401.png",
+    "image": "305028_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30530501,
-    "Name": "Lance of the Dark",
-    "type": "Lance",
+    "Id": "305034_01_30501",
+    "Name": {
+      "en": "Lance of the Dark",
+      "zh": "\u6697\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -2880,14 +3469,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305034_01_30501.png",
+    "image": "305034_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30539901,
-    "Name": "Trident",
-    "type": "Lance",
+    "Id": "305039_01_39901",
+    "Name": {
+      "en": "Trident",
+      "zh": "\u4e09\u53c9\u621f"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -2908,14 +3500,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305039_01_39901.png",
+    "image": "305039_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30539902,
-    "Name": "Mailbreaker",
-    "type": "Lance",
+    "Id": "305013_01_39901",
+    "Name": {
+      "en": "Mailbreaker",
+      "zh": "\u7834\u574f\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -2936,14 +3531,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305013_01_39901.png",
+    "image": "305013_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30539903,
-    "Name": "Drill Lance",
-    "type": "Lance",
+    "Id": "305010_01_39901",
+    "Name": {
+      "en": "Drill Lance",
+      "zh": "\u94bb\u5934\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -2964,14 +3562,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305010_01_39901.png",
+    "image": "305010_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30540101,
-    "Name": "Flameserpent",
-    "type": "Lance",
+    "Id": "305031_01_40101",
+    "Name": {
+      "en": "Flameserpent",
+      "zh": "\u7130\u87d2"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -2992,14 +3593,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305031_01_40101.png",
+    "image": "305031_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30540201,
-    "Name": "Abyssal Prize",
-    "type": "Lance",
+    "Id": "305016_01_40201",
+    "Name": {
+      "en": "Abyssal Prize",
+      "zh": "\u5927\u6d77\u5b9d\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 304,
@@ -3020,14 +3624,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305016_01_40201.png",
+    "image": "305016_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30540302,
-    "Name": "Tempest Spear",
-    "type": "Lance",
+    "Id": "305011_01_40301",
+    "Name": {
+      "en": "Tempest Spear",
+      "zh": "\u98ce\u66b4\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 305,
@@ -3048,14 +3655,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305011_01_40301.png",
+    "image": "305011_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30540402,
-    "Name": "Thunderbolt",
-    "type": "Lance",
+    "Id": "305012_01_40401",
+    "Name": {
+      "en": "Thunderbolt",
+      "zh": "\u7535\u51fb\u957f\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 302,
@@ -3076,14 +3686,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305012_01_40401.png",
+    "image": "305012_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30540501,
-    "Name": "Hellish Lance",
-    "type": "Lance",
+    "Id": "305035_01_40501",
+    "Name": {
+      "en": "Hellish Lance",
+      "zh": "\u5730\u72f1\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -3098,20 +3711,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305035_01_40501.png",
+    "image": "305035_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30549901,
-    "Name": "Strong Halberd",
-    "type": "Lance",
+    "Id": "305029_01_49901",
+    "Name": {
+      "en": "Strong Halberd",
+      "zh": "\u5f3a\u8005\u4e4b\u621f"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -3132,14 +3748,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305029_01_49901.png",
+    "image": "305029_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30549902,
-    "Name": "Lance of the Innocent",
-    "type": "Lance",
+    "Id": "305040_01_49901",
+    "Name": {
+      "en": "Lance of the Innocent",
+      "zh": "\u5723\u6d01\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -3160,14 +3779,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305040_01_49901.png",
+    "image": "305040_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30549903,
-    "Name": "Ironside Lance",
-    "type": "Lance",
+    "Id": "305041_01_49901",
+    "Name": {
+      "en": "Steel Brigade Lance",
+      "zh": "\u94c1\u9a91\u5175\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -3188,14 +3810,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305041_01_49901.png",
+    "image": "305041_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30550101,
-    "Name": "Calamity Trigger",
-    "type": "Lance",
+    "Id": "305030_01_50101",
+    "Name": {
+      "en": "Calamity Trigger",
+      "zh": "\u707e\u7978\u4e4b\u5319"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -3216,14 +3841,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "305030_01_50101.png",
+    "image": "305030_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30550201,
-    "Name": "Ocean Lord",
-    "type": "Lance",
+    "Id": "305014_01_50201",
+    "Name": {
+      "en": "Ocean Lord",
+      "zh": "\u7834\u6d6a\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 304,
@@ -3244,14 +3872,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "305014_01_50201.png",
+    "image": "305014_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30550301,
-    "Name": "Spear of the Northern Cross",
-    "type": "Lance",
+    "Id": "305032_01_50301",
+    "Name": {
+      "en": "Spear of the Northern Cross",
+      "zh": "\u5317\u5341\u5b57\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 305,
@@ -3272,14 +3903,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "305032_01_50301.png",
+    "image": "305032_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30550402,
-    "Name": "Thunder King's Greatspear",
-    "type": "Lance",
+    "Id": "305033_01_50401",
+    "Name": {
+      "en": "Thunder King's Greatspear",
+      "zh": "\u96f7\u9706\u8c6a\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 302,
@@ -3300,14 +3934,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "305033_01_50401.png",
+    "image": "305033_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30550501,
-    "Name": "Mistilteinn",
-    "type": "Lance",
+    "Id": "305036_01_50501",
+    "Name": {
+      "en": "Mistilteinn",
+      "zh": "\u7c73\u65af\u7279\u6c40"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -3326,16 +3963,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "305036_01_50501.png",
+    "image": "305036_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30559901,
-    "Name": "Pactspear",
-    "type": "Lance",
+    "Id": "305015_01_59901",
+    "Name": {
+      "en": "Pactspear",
+      "zh": "\u62a4\u6cd5\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -3356,14 +3996,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "305015_01_59901.png",
+    "image": "305015_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30559902,
-    "Name": "Compass Needle",
-    "type": "Lance",
+    "Id": "305042_01_59901",
+    "Name": {
+      "en": "Compass Needle",
+      "zh": "\u7f57\u76d8\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -3384,14 +4027,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "305042_01_59901.png",
+    "image": "305042_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30559903,
-    "Name": "Gae Bolg",
-    "type": "Lance",
+    "Id": "305043_01_59901",
+    "Name": {
+      "en": "Gae Bolg",
+      "zh": "\u5343\u68d8\u523a\u4e4b\u67aa"
+    },
+    "weaponType": "Lance",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -3412,14 +4058,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "305043_01_59901.png",
+    "image": "305043_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30630101,
-    "Name": "Flightfyre",
-    "type": "Bow",
+    "Id": "30619901",
+    "BaseId": "306001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Bow",
+    "WeaponNameZH": "Battleworn Bow",
+    "Type": "Bow",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30629902",
+    "BaseId": "306005",
+    "FormId": "29901",
+    "WeaponName": "Soldier's Bow",
+    "WeaponNameZH": "Soldier's Bow",
+    "Type": "Bow",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "4",
+    "MaxHp": "15",
+    "MinAtk": "15",
+    "MaxAtk": "52",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "306006_01_30101",
+    "Name": {
+      "en": "Flightfyre",
+      "zh": "\u98de\u706b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -3440,14 +4145,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306006_01_30101.png",
+    "image": "306006_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30630201,
-    "Name": "Tidal Bow",
-    "type": "Bow",
+    "Id": "306007_01_30201",
+    "Name": {
+      "en": "Tidal Bow",
+      "zh": "\u6df1\u6d77\u4e4b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 304,
@@ -3468,14 +4176,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306007_01_30201.png",
+    "image": "306007_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30630302,
-    "Name": "Proof of the Wind",
-    "type": "Bow",
+    "Id": "306003_01_30301",
+    "Name": {
+      "en": "Proof of the Wind",
+      "zh": "\u72c2\u98ce\u8bd5\u70bc"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -3496,14 +4207,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306003_01_30301.png",
+    "image": "306003_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30630401,
-    "Name": "Galvanic Bow",
-    "type": "Bow",
+    "Id": "306009_01_30401",
+    "Name": {
+      "en": "Galvanic Bow",
+      "zh": "\u96f7\u7535\u6218\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 303,
@@ -3524,14 +4238,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306009_01_30401.png",
+    "image": "306009_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30630501,
-    "Name": "Cimmerian Bow",
-    "type": "Bow",
+    "Id": "306018_01_30501",
+    "Name": {
+      "en": "Cimmerian Bow",
+      "zh": "\u6697\u4e4b\u9b54\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -3552,14 +4269,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306018_01_30501.png",
+    "image": "306018_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30639901,
-    "Name": "Composite Bow",
-    "type": "Bow",
+    "Id": "306026_01_39901",
+    "Name": {
+      "en": "Composite Bow",
+      "zh": "\u590d\u5408\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -3580,14 +4300,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306026_01_39901.png",
+    "image": "306026_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30639902,
-    "Name": "Machine Bow",
-    "type": "Bow",
+    "Id": "306012_01_39901",
+    "Name": {
+      "en": "Machine Bow",
+      "zh": "\u673a\u68b0\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -3608,14 +4331,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306012_01_39901.png",
+    "image": "306012_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30639903,
-    "Name": "Hunter's Bow",
-    "type": "Bow",
+    "Id": "306032_01_39901",
+    "Name": {
+      "en": "Hunter's Bow",
+      "zh": "\u730e\u624b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -3636,14 +4362,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306032_01_39901.png",
+    "image": "306032_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30640102,
-    "Name": "Armored Inferno",
-    "type": "Bow",
+    "Id": "306028_01_40101",
+    "Name": {
+      "en": "Armored Inferno",
+      "zh": "\u88c5\u7532\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -3664,14 +4393,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306028_01_40101.png",
+    "image": "306028_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30640201,
-    "Name": "Frostslinger Bow",
-    "type": "Bow",
+    "Id": "306010_01_40201",
+    "Name": {
+      "en": "Frostslinger Bow",
+      "zh": "\u51b0\u7ed3\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 302,
@@ -3692,14 +4424,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306010_01_40201.png",
+    "image": "306010_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30640302,
-    "Name": "Epidemic",
-    "type": "Bow",
+    "Id": "306008_01_40301",
+    "Name": {
+      "en": "Epidemic",
+      "zh": "\u75ab\u75c5\u4e4b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -3720,14 +4455,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306008_01_40301.png",
+    "image": "306008_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30640403,
-    "Name": "Holy Bow",
-    "type": "Bow",
+    "Id": "306037_01_40401",
+    "Name": {
+      "en": "Holy Bow",
+      "zh": "\u795e\u5723\u4e4b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 304,
@@ -3748,14 +4486,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306037_01_40401.png",
+    "image": "306037_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30640501,
-    "Name": "Macabre Malediction",
-    "type": "Bow",
+    "Id": "306016_01_40501",
+    "Name": {
+      "en": "Macabre Malediction",
+      "zh": "\u546a\u9ab8\u9b54\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -3770,20 +4511,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306016_01_40501.png",
+    "image": "306016_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30649901,
-    "Name": "Executor",
-    "type": "Bow",
+    "Id": "306013_01_49901",
+    "Name": {
+      "en": "Executor",
+      "zh": "\u6267\u884c\u8005\u4e4b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -3804,14 +4548,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306013_01_49901.png",
+    "image": "306013_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30649902,
-    "Name": "Faerie Bow",
-    "type": "Bow",
+    "Id": "306033_01_49901",
+    "Name": {
+      "en": "Faerie Bow",
+      "zh": "\u7cbe\u7075\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -3832,14 +4579,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306033_01_49901.png",
+    "image": "306033_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30649903,
-    "Name": "Duskhawk",
-    "type": "Bow",
+    "Id": "306011_01_49901",
+    "Name": {
+      "en": "Duskhawk",
+      "zh": "\u5f17\u6d1b\u91cc\u5fb7\u5c14"
+    },
+    "weaponType": "Bow",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -3860,14 +4610,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306011_01_49901.png",
+    "image": "306011_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30650101,
-    "Name": "Lupis Solis",
-    "type": "Bow",
+    "Id": "306027_01_50101",
+    "Name": {
+      "en": "Lupis Solis",
+      "zh": "\u708e\u72fc\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -3888,14 +4641,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "306027_01_50101.png",
+    "image": "306027_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30650201,
-    "Name": "Peacock's Whorl",
-    "type": "Bow",
+    "Id": "306029_01_50201",
+    "Name": {
+      "en": "Peacock's Whorl",
+      "zh": "\u84dd\u5b54\u96c0\u521b\u6d77\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 302,
@@ -3916,14 +4672,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "306029_01_50201.png",
+    "image": "306029_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30650302,
-    "Name": "Stellar Pegasus",
-    "type": "Bow",
+    "Id": "306030_01_50301",
+    "Name": {
+      "en": "Stellar Pegasus",
+      "zh": "\u5929\u9a6c\u5f13\u963f\u65af\u7279\u5c14"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -3944,14 +4703,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "306030_01_50301.png",
+    "image": "306030_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30650402,
-    "Name": "Thunderbow",
-    "type": "Bow",
+    "Id": "306031_01_50401",
+    "Name": {
+      "en": "Thunderbow",
+      "zh": "\u5929\u96f7\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 304,
@@ -3972,14 +4734,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "306031_01_50401.png",
+    "image": "306031_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30650501,
-    "Name": "Necro Arcus",
-    "type": "Bow",
+    "Id": "306014_01_50501",
+    "Name": {
+      "en": "Necro Arcus",
+      "zh": "\u4ea1\u9ab8\u4e4b\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -3998,16 +4763,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "306014_01_50501.png",
+    "image": "306014_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30659901,
-    "Name": "Nitralica's Koto",
-    "type": "Bow",
+    "Id": "306015_01_59901",
+    "Name": {
+      "en": "Nitralica's Koto",
+      "zh": "\u7434\u5f13\u5c3c\u6258\u62c9\u91cc\u5361"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -4028,14 +4796,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "306015_01_59901.png",
+    "image": "306015_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30659902,
-    "Name": "Accelerator",
-    "type": "Bow",
+    "Id": "306034_01_59901",
+    "Name": {
+      "en": "Accelerator",
+      "zh": "\u52a0\u901f\u9f7f\u8f6e\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -4056,14 +4827,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "306034_01_59901.png",
+    "image": "306034_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30659903,
-    "Name": "Starchaser",
-    "type": "Bow",
+    "Id": "306035_01_59901",
+    "Name": {
+      "en": "Starchaser",
+      "zh": "\u5760\u661f\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 203,
@@ -4084,14 +4858,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "306035_01_59901.png",
+    "image": "306035_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30659904,
-    "Name": "Chimera's Guilt",
-    "type": "Bow",
+    "Id": "306036_01_59901",
+    "Name": {
+      "en": "Chimera's Guilt",
+      "zh": "\u9d7a\u7a7f\u5f13"
+    },
+    "weaponType": "Bow",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -4112,14 +4889,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "306036_01_59901.png",
+    "image": "306036_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30730101,
-    "Name": "Sunrise Scepter",
-    "type": "Wand",
+    "Id": "30719901",
+    "BaseId": "307001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Wand",
+    "WeaponNameZH": "Battleworn Wand",
+    "Type": "Wand",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30729902",
+    "BaseId": "307002",
+    "FormId": "29901",
+    "WeaponName": "Enchanted Wand",
+    "WeaponNameZH": "Enchanted Wand",
+    "Type": "Wand",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "3",
+    "MaxHp": "13",
+    "MinAtk": "17",
+    "MaxAtk": "57",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "307006_01_30101",
+    "Name": {
+      "en": "Sunrise Scepter",
+      "zh": "\u65ed\u65e5\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -4140,14 +4976,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307006_01_30101.png",
+    "image": "307006_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30730201,
-    "Name": "Oceandweller",
-    "type": "Wand",
+    "Id": "307033_01_30201",
+    "Name": {
+      "en": "Oceandweller",
+      "zh": "\u6fc0\u6d41\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 302,
@@ -4168,14 +5007,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307033_01_30201.png",
+    "image": "307033_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30730301,
-    "Name": "Menace of the Storm",
-    "type": "Wand",
+    "Id": "307007_01_30301",
+    "Name": {
+      "en": "Menace of the Storm",
+      "zh": "\u5a01\u80c1\u98ce\u66b4"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 304,
@@ -4196,14 +5038,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307007_01_30301.png",
+    "image": "307007_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30730401,
-    "Name": "Thunder Wand",
-    "type": "Wand",
+    "Id": "307021_01_30401",
+    "Name": {
+      "en": "Thunder Wand",
+      "zh": "\u96f7\u9706\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 305,
@@ -4224,14 +5069,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307021_01_30401.png",
+    "image": "307021_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30730501,
-    "Name": "Meggidoth Ruiner",
-    "type": "Wand",
+    "Id": "307008_01_30501",
+    "Name": {
+      "en": "Meggidoth Ruiner",
+      "zh": "\u6885\u5947\u7279\u65af\u7834\u574f\u8005"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -4252,14 +5100,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307008_01_30501.png",
+    "image": "307008_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30739901,
-    "Name": "Wizard's Rod",
-    "type": "Wand",
+    "Id": "307042_01_39901",
+    "Name": {
+      "en": "Wizard's Rod",
+      "zh": "\u9b54\u6cd5\u5e08\u4e4b\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -4280,14 +5131,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307042_01_39901.png",
+    "image": "307042_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30739902,
-    "Name": "Sorcerer's Cudgel",
-    "type": "Wand",
+    "Id": "307004_01_39901",
+    "Name": {
+      "en": "Sorcerer's Cudgel",
+      "zh": "\u5deb\u672f\u4e4b\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -4308,14 +5162,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307004_01_39901.png",
+    "image": "307004_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30739903,
-    "Name": "Conchoidal Rod",
-    "type": "Wand",
+    "Id": "307037_01_39901",
+    "Name": {
+      "en": "Conchoidal Rod",
+      "zh": "\u6d77\u87ba\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -4336,14 +5193,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307037_01_39901.png",
+    "image": "307037_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30740101,
-    "Name": "Firefiend's Howl",
-    "type": "Wand",
+    "Id": "307016_01_40101",
+    "Name": {
+      "en": "Firefiend's Howl",
+      "zh": "\u708e\u517d\u5486\u54ee\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -4364,14 +5224,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307016_01_40101.png",
+    "image": "307016_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30740201,
-    "Name": "Rod of Tears",
-    "type": "Wand",
+    "Id": "307036_01_40201",
+    "Name": {
+      "en": "Rod of Tears",
+      "zh": "\u6cea\u4e4b\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 304,
@@ -4392,14 +5255,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307036_01_40201.png",
+    "image": "307036_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30740301,
-    "Name": "Tempest Wand",
-    "type": "Wand",
+    "Id": "307018_01_40301",
+    "Name": {
+      "en": "Tempest Wand",
+      "zh": "\u66b4\u98ce\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -4420,14 +5286,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307018_01_40301.png",
+    "image": "307018_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30740402,
-    "Name": "Conductor Rod",
-    "type": "Wand",
+    "Id": "307010_01_40401",
+    "Name": {
+      "en": "Conductor Rod",
+      "zh": "\u95ea\u5149\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 305,
@@ -4448,14 +5317,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307010_01_40401.png",
+    "image": "307010_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30740501,
-    "Name": "Accursed Vare",
-    "type": "Wand",
+    "Id": "307011_01_40501",
+    "Name": {
+      "en": "Accursed Vare",
+      "zh": "\u8bc5\u5492\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -4470,20 +5342,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307011_01_40501.png",
+    "image": "307011_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30749901,
-    "Name": "Latchkey",
-    "type": "Wand",
+    "Id": "307012_01_49901",
+    "Name": {
+      "en": "Latchkey",
+      "zh": "\u5319\u4e4b\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -4504,14 +5379,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307012_01_49901.png",
+    "image": "307012_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30749902,
-    "Name": "Rod of Alchemy",
-    "type": "Wand",
+    "Id": "307038_01_49901",
+    "Name": {
+      "en": "Rod of Alchemy",
+      "zh": "\u70bc\u91d1\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -4532,14 +5410,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307038_01_49901.png",
+    "image": "307038_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30749903,
-    "Name": "Moonlight Rod",
-    "type": "Wand",
+    "Id": "307039_01_49901",
+    "Name": {
+      "en": "Moonlight Rod",
+      "zh": "\u6708\u5149\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -4560,14 +5441,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307039_01_49901.png",
+    "image": "307039_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30750101,
-    "Name": "Terranigmus",
-    "type": "Wand",
+    "Id": "307015_01_50101",
+    "Name": {
+      "en": "Terranigmus",
+      "zh": "\u5927\u5730\u4e4b\u6bcd"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -4588,14 +5472,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "307015_01_50101.png",
+    "image": "307015_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30750202,
-    "Name": "Ocean Monarch",
-    "type": "Wand",
+    "Id": "307032_01_50201",
+    "Name": {
+      "en": "Ocean Monarch",
+      "zh": "\u5927\u6d0b\u541b\u4e3b"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 304,
@@ -4616,14 +5503,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "307032_01_50201.png",
+    "image": "307032_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30750301,
-    "Name": "Phytalmios",
-    "type": "Wand",
+    "Id": "307014_01_50301",
+    "Name": {
+      "en": "Phytalmios",
+      "zh": "\u4e91\u4e4b\u82b1\u51a0"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 302,
@@ -4644,14 +5534,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "307014_01_50301.png",
+    "image": "307014_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30750401,
-    "Name": "Twilight Shimmer",
-    "type": "Wand",
+    "Id": "307034_01_50401",
+    "Name": {
+      "en": "Twilight Shimmer",
+      "zh": "\u767d\u663c\u4e4b\u591c"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 305,
@@ -4672,14 +5565,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "307034_01_50401.png",
+    "image": "307034_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30750501,
-    "Name": "Underworld Despair",
-    "type": "Wand",
+    "Id": "307035_01_50501",
+    "Name": {
+      "en": "Underworld Despair",
+      "zh": "\u9a71\u51a5\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 303,
@@ -4698,16 +5594,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "307035_01_50501.png",
+    "image": "307035_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30759901,
-    "Name": "Wand of the Torrent",
-    "type": "Wand",
+    "Id": "307031_01_59901",
+    "Name": {
+      "en": "Wand of the Torrent",
+      "zh": "\u4e71\u6d41\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -4728,14 +5627,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307031_01_59901.png",
+    "image": "307031_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30759902,
-    "Name": "Welkin Wand",
-    "type": "Wand",
+    "Id": "307040_01_59901",
+    "Name": {
+      "en": "Welkin Wand",
+      "zh": "\u82cd\u7a79\u9b54\u6756"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -4756,14 +5658,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "307040_01_59901.png",
+    "image": "307040_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30759903,
-    "Name": "Chaotic Horizon",
-    "type": "Wand",
+    "Id": "307041_01_59901",
+    "Name": {
+      "en": "Chaotic Horizon",
+      "zh": "\u6df7\u6c8c\u4e4b\u6e90"
+    },
+    "weaponType": "Wand",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -4784,14 +5689,73 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "307041_01_59901.png",
+    "image": "307041_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30830101,
-    "Name": "Staff of the Valiant Flame",
-    "type": "Staff",
+    "Id": "30819901",
+    "BaseId": "308001",
+    "FormId": "19901",
+    "WeaponName": "Battleworn Staff",
+    "WeaponNameZH": "Battleworn Staff",
+    "Type": "Staff",
+    "Rarity": "1",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "0",
+    "MaxHp": "0",
+    "MinAtk": "0",
+    "MaxAtk": "0",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "30829903",
+    "BaseId": "308004",
+    "FormId": "29901",
+    "WeaponName": "Staff of Affection",
+    "WeaponNameZH": "\u6148\u7231\u4e4b\u6756",
+    "Type": "Staff",
+    "Rarity": "2",
+    "ElementalType": "None",
+    "CraftNodeId": "",
+    "ParentCraftNodeId": "",
+    "CraftGroupId": "",
+    "MinHp": "5",
+    "MaxHp": "18",
+    "MinAtk": "14",
+    "MaxAtk": "49",
+    "AssembleCoin": "",
+    "CraftMaterial1": "",
+    "CraftMaterialQuantity1": "",
+    "CraftMaterial2": "",
+    "CraftMaterialQuantity2": "",
+    "CraftMaterial3": "",
+    "CraftMaterialQuantity3": "",
+    "CraftMaterial4": "",
+    "CraftMaterialQuantity4": "",
+    "CraftMaterial5": "",
+    "CraftMaterialQuantity5": ""
+  },
+  {
+    "Id": "308006_01_30101",
+    "Name": {
+      "en": "Staff of the Valiant Flame",
+      "zh": "\u70c8\u7130\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -4812,14 +5776,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308006_01_30101.png",
+    "image": "308006_01_30101.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30830201,
-    "Name": "Scendecipher",
-    "type": "Staff",
+    "Id": "308007_01_30201",
+    "Name": {
+      "en": "Scendecipher",
+      "zh": "\u89c2\u6d6a\u6cd5\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Water",
     "CraftNodeId": 302,
@@ -4840,14 +5807,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308007_01_30201.png",
+    "image": "308007_01_30201.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30830301,
-    "Name": "Windreader",
-    "type": "Staff",
+    "Id": "308008_01_30301",
+    "Name": {
+      "en": "Windreader",
+      "zh": "\u6c14\u8c61\u6cd5\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -4868,14 +5838,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308008_01_30301.png",
+    "image": "308008_01_30301.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30830401,
-    "Name": "Astrolabe",
-    "type": "Staff",
+    "Id": "308009_01_30401",
+    "Name": {
+      "en": "Astrolabe",
+      "zh": "\u661f\u76d8\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": 304,
@@ -4896,14 +5869,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308009_01_30401.png",
+    "image": "308009_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30830402,
-    "Name": "Vampire's Lantern",
-    "type": "Staff",
+    "Id": "308026_01_30401",
+    "Name": {
+      "en": "Vampire's Lantern",
+      "zh": "\u5438\u8840\u9b3c\u706f\u7b3c"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Light",
     "CraftNodeId": "",
@@ -4924,14 +5900,17 @@ const weapon =
     "CraftMaterialQuantity4": "",
     "CraftMaterial5": "",
     "CraftMaterialQuantity5": "",
-    "img": "308026_01_30401.png",
+    "image": "308026_01_30401.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30830501,
-    "Name": "Meggidoth Wisp",
-    "type": "Staff",
+    "Id": "308020_01_30501",
+    "Name": {
+      "en": "Meggidoth Wisp",
+      "zh": "\u6885\u5947\u7279\u65af\u7684\u4f4e\u8bed"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -4952,14 +5931,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308020_01_30501.png",
+    "image": "308020_01_30501.png",
     "tier": "3",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30839901,
-    "Name": "Staff of Grace",
-    "type": "Staff",
+    "Id": "308002_01_39901",
+    "Name": {
+      "en": "Staff of Grace",
+      "zh": "\u6069\u60e0\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 101,
@@ -4980,14 +5962,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308002_01_39901.png",
+    "image": "308002_01_39901.png",
     "tier": "1",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30839902,
-    "Name": "Long Ankh",
-    "type": "Staff",
+    "Id": "307003_01_39901",
+    "Name": {
+      "en": "Long Ankh",
+      "zh": "\u957f\u751f\u7b26"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 202,
@@ -5008,14 +5993,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "307003_01_39901.png",
+    "image": "307003_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30839903,
-    "Name": "Staff of the Horned Snake",
-    "type": "Staff",
+    "Id": "308036_01_39901",
+    "Name": {
+      "en": "Staff of the Horned Snake",
+      "zh": "\u89d2\u86c7\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "3",
     "element": "None",
     "CraftNodeId": 201,
@@ -5036,14 +6024,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308036_01_39901.png",
+    "image": "308036_01_39901.png",
     "tier": "2",
     "MAX_LEVEL": 40
   },
   {
-    "Id": 30840101,
-    "Name": "Ark Voyager",
-    "type": "Staff",
+    "Id": "308021_01_40101",
+    "Name": {
+      "en": "Ark Voyager",
+      "zh": "\u5929\u706b\u6cd5\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -5064,14 +6055,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308021_01_40101.png",
+    "image": "308021_01_40101.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30840201,
-    "Name": "Marine Staff",
-    "type": "Staff",
+    "Id": "308022_01_40201",
+    "Name": {
+      "en": "Marine Staff",
+      "zh": "\u6d77\u6d0b\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "Water",
     "CraftNodeId": 302,
@@ -5092,14 +6086,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308022_01_40201.png",
+    "image": "308022_01_40201.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30840301,
-    "Name": "Windeater Staff",
-    "type": "Staff",
+    "Id": "308033_01_40301",
+    "Name": {
+      "en": "Windeater Staff",
+      "zh": "\u98df\u98ce\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -5120,14 +6117,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308033_01_40301.png",
+    "image": "308033_01_40301.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30840401,
-    "Name": "Tonitrus",
-    "type": "Staff",
+    "Id": "308018_01_40401",
+    "Name": {
+      "en": "Tonitrus",
+      "zh": "\u96f7\u7535\u6756\u6258\u5c3c\u6258\u9c81\u65af"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "Light",
     "CraftNodeId": 304,
@@ -5148,14 +6148,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308018_01_40401.png",
+    "image": "308018_01_40401.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30840501,
-    "Name": "Sanity's Bane",
-    "type": "Staff",
+    "Id": "308019_01_40501",
+    "Name": {
+      "en": "Sanity's Bane",
+      "zh": "\u8bc5\u5492\u4e4b\u82cf\u5fc5\u5229\u5c14"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "Shadow",
     "CraftNodeId": 305,
@@ -5170,20 +6173,23 @@ const weapon =
     "CraftMaterialQuantity1": 30,
     "CraftMaterial2": "Abyss Stone",
     "CraftMaterialQuantity2": 10,
-    "CraftMaterial3": "Violet Insignia",
+    "CraftMaterial3": "Purple Insignia",
     "CraftMaterialQuantity3": 50,
     "CraftMaterial4": 0,
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308019_01_40501.png",
+    "image": "308019_01_40501.png",
     "tier": "3",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30849901,
-    "Name": "Staff of Life",
-    "type": "Staff",
+    "Id": "308005_01_49901",
+    "Name": {
+      "en": "Staff of Life",
+      "zh": "\u517b\u751f\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 101,
@@ -5204,14 +6210,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308005_01_49901.png",
+    "image": "308005_01_49901.png",
     "tier": "1",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30849902,
-    "Name": "Staff of Fortune",
-    "type": "Staff",
+    "Id": "308013_01_49901",
+    "Name": {
+      "en": "Staff of Fortune",
+      "zh": "\u5e78\u8fd0\u6743\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 202,
@@ -5232,14 +6241,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308013_01_49901.png",
+    "image": "308013_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30849903,
-    "Name": "Beauty's Balm",
-    "type": "Staff",
+    "Id": "308010_01_49901",
+    "Name": {
+      "en": "Beauty's Balm",
+      "zh": "\u7f8e\u8c8c\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "4",
     "element": "None",
     "CraftNodeId": 201,
@@ -5260,14 +6272,17 @@ const weapon =
     "CraftMaterialQuantity4": 0,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308010_01_49901.png",
+    "image": "308010_01_49901.png",
     "tier": "2",
     "MAX_LEVEL": 70
   },
   {
-    "Id": 30850101,
-    "Name": "Staff of the Red Emperor",
-    "type": "Staff",
+    "Id": "308031_01_50101",
+    "Name": {
+      "en": "Staff of the Red Emperor",
+      "zh": "\u8d64\u5e1d\u708e\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "Flame",
     "CraftNodeId": 301,
@@ -5288,14 +6303,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Vermilion Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "308031_01_50101.png",
+    "image": "308031_01_50101.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30850201,
-    "Name": "Bracing Waters",
-    "type": "Staff",
+    "Id": "308011_01_50201",
+    "Name": {
+      "en": "Bracing Waters",
+      "zh": "\u6c34\u4e4b\u795d\u798f"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "Water",
     "CraftNodeId": 302,
@@ -5316,14 +6334,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Azure Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "308011_01_50201.png",
+    "image": "308011_01_50201.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30850301,
-    "Name": "Ancient Mage's Windcane",
-    "type": "Staff",
+    "Id": "308032_01_50301",
+    "Name": {
+      "en": "Ancient Mage's Windcane",
+      "zh": "\u53e4\u4ee3\u9b54\u6cd5\u65cb\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "Wind",
     "CraftNodeId": 303,
@@ -5344,14 +6365,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Jade Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "308032_01_50301.png",
+    "image": "308032_01_50301.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30850401,
-    "Name": "Light of Judgment",
-    "type": "Staff",
+    "Id": "308014_01_50401",
+    "Name": {
+      "en": "Light of Judgment",
+      "zh": "\u5236\u88c1\u5149\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "Light",
     "CraftNodeId": 305,
@@ -5372,14 +6396,17 @@ const weapon =
     "CraftMaterialQuantity4": 2,
     "CraftMaterial5": "Royal Amber Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "308014_01_50401.png",
+    "image": "308014_01_50401.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30850501,
-    "Name": "Caduceus",
-    "type": "Staff",
+    "Id": "308015_01_50501",
+    "Name": {
+      "en": "Caduceus",
+      "zh": "\u5546\u795e\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "Shadow",
     "CraftNodeId": 306,
@@ -5398,16 +6425,19 @@ const weapon =
     "CraftMaterialQuantity3": 100,
     "CraftMaterial4": "Twinkling Sand",
     "CraftMaterialQuantity4": 2,
-    "CraftMaterial5": "Royal Violet Insignia",
+    "CraftMaterial5": "Royal Purple Insignia",
     "CraftMaterialQuantity5": 200,
-    "img": "308015_01_50501.png",
+    "image": "308015_01_50501.png",
     "tier": "3",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30859901,
-    "Name": "Cane of Soul's Repose",
-    "type": "Staff",
+    "Id": "308030_01_59901",
+    "Name": {
+      "en": "Cane of Soul's Repose",
+      "zh": "\u9547\u9b42\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 101,
@@ -5428,14 +6458,17 @@ const weapon =
     "CraftMaterialQuantity4": 1,
     "CraftMaterial5": 0,
     "CraftMaterialQuantity5": 0,
-    "img": "308030_01_59901.png",
+    "image": "308030_01_59901.png",
     "tier": "1",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30859902,
-    "Name": "Rainbow Cane",
-    "type": "Staff",
+    "Id": "308038_01_59901",
+    "Name": {
+      "en": "Rainbow Cane",
+      "zh": "\u8679\u4e4b\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 201,
@@ -5456,14 +6489,17 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "308038_01_59901.png",
+    "image": "308038_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   },
   {
-    "Id": 30859903,
-    "Name": "Otherworldly Bough",
-    "type": "Staff",
+    "Id": "308039_01_59901",
+    "Name": {
+      "en": "Otherworldly Bough",
+      "zh": "\u5f02\u5f62\u6811\u679d\u6756"
+    },
+    "weaponType": "Staff",
     "rarity": "5",
     "element": "None",
     "CraftNodeId": 202,
@@ -5484,7 +6520,7 @@ const weapon =
     "CraftMaterialQuantity4": 20,
     "CraftMaterial5": "Twinkling Sand",
     "CraftMaterialQuantity5": 1,
-    "img": "308039_01_59901.png",
+    "image": "308039_01_59901.png",
     "tier": "2",
     "MAX_LEVEL": 100
   }
