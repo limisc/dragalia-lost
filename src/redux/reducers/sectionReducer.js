@@ -1,4 +1,4 @@
-import actionType from '../actions/actionType';
+import actionTypes from '../actions/actionTypes';
 import { createReducer } from '../actions/actions';
 
 
@@ -8,7 +8,7 @@ const setSection = (state, action) => {
 }
 
 const sectionReducer = createReducer({}, {
-  [actionType.SET_SECTION]: setSection,
+  [actionTypes.SET_SECTION]: setSection,
 });
 
 export default sectionReducer;

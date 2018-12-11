@@ -1,4 +1,4 @@
-import actionTypes from './actionType';
+import actionTypes from './actionTypes';
 import LEVEL_LIMIT from '../store/data/level_data';
 
 //simple action creator
@@ -66,15 +66,15 @@ export const handleSection = (section) => (dispatch, getState) => {
 // const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
 const selectStats = actionCreator(actionTypes.SELECT_STATS, "section", "item");
 export const handleSelection = (section, item) => (dispatch) => {
-  const { rarity, unbind } = item;
-  console.log(section, rarity, unbind)
-  // const addState = { level: getLevelLimit(section, rarity, unbind) };
-  // if (section === "adventurer") {
-  //   addState.mana = getLevelLimit("mana", rarity);
-  // } else {
-  //   addState.unbind = 4;
-  // }
-  // dispatch(selectStats(section, updateObject(item, addState)));
+  const { rarity, unbind = 4 } = item;
+  const addState = { level: getLevelLimit(section, rarity, unbind) };
+  if (section === "adventurer") {
+    addState.mana = getLevelLimit("mana", rarity);
+  } else {
+    addState.unbind = 4;
+  }
+  dispatch(selectStats(section, updateObject(item, addState)));
+  // console.log(updateObject(item, addState))
 }
 
 export const updateStatsLevel = actionCreator(actionTypes.UPDATE_STATS_LEVEL, "section", "key", "value", "facilityType");

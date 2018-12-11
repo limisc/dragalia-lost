@@ -1,5 +1,7 @@
 const actionTypes = {
 
+  SET_LANGUAGE: "SET_LANGUAGE",
+
   //modify section
   SET_SECTION: "SET_SECTION",
 

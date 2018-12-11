@@ -23,31 +23,31 @@ class ListItem extends Component {
   }
 
   render() {
-    const { section, stats, filterField } = this.props;
+    const { section, item, filterField } = this.props;
     return (
       <tr>
         <td>
           <img
             className="selection-avatar"
-            alt={stats.Name["zh"]}
-            src={`${process.env.PUBLIC_URL}/image/${section}/${stats.image}`}
+            alt={item.Name["zh"]}
+            src={`${process.env.PUBLIC_URL}/image/${section}/${item.image}`}
             onClick={this._onClick}
           />
         </td>
-        <td id="table-left-align">{stats.Name["zh"]}</td>
+        <td id="table-left-align">{item.Name["zh"]}</td>
         {filterField.map((field) => {
           if (field === "element" || field === "weaponType") {
             return (
               <td key={uuidv4()}>
                 <img
                   className="selection-icon"
-                  alt={stats[field]}
-                  src={`${process.env.PUBLIC_URL}/image/icon/icon_${field}_${stats[field]}.png`}
+                  alt={item[field]}
+                  src={`${process.env.PUBLIC_URL}/image/icon/icon_${field}_${item[field]}.png`}
                 />
               </td>
             )
           }
-          return <td key={uuidv4()}>{stats[field]}</td>;
+          return <td key={uuidv4()}>{item[field]}</td>;
         })}
       </tr>
     );
@@ -61,7 +61,7 @@ class ListItem extends Component {
 
 ListItem.propTypes = {
   section: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  item: PropTypes.object.isRequired,
   filterField: PropTypes.arrayOf(PropTypes.string).isRequired,
   onClick: PropTypes.func.isRequired,
 }

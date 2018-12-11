@@ -94,7 +94,7 @@ class SelectPanel extends Component {
                     <ListItem
                       key={uuidv4()}
                       section={focusSection}
-                      stats={item}
+                      item={item}
                       filterField={filterField}
                     />
                   )}

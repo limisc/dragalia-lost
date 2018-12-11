@@ -1,4 +1,4 @@
-import actionType from '../actions/actionType';
+import actionTypes from '../actions/actionTypes';
 import { updateObject, createReducer } from '../actions/actions';
 
 const INIT_FILTERS = {
@@ -34,11 +34,11 @@ const setFiltersDragonElement = (state, filter, stats) => {
 }
 
 const filterReducer = createReducer({}, {
-  [actionType.RESET_FILTERS]: resetFilters,
-  [actionType.SET_FILTERS]: setFilters,
-  [actionType.SET_FILTERS_ADVENTURER_WEAPON_TYPE]: setFiltersAdventurerWeaponType,
-  [actionType.SET_FILTERS_WEAPON_TYPE]: setFiltersWeaponType,
-  [actionType.SET_FILTERS_DRAGON_ELEMENT]: setFiltersDragonElement,
+  [actionTypes.RESET_FILTERS]: resetFilters,
+  [actionTypes.SET_FILTERS]: setFilters,
+  [actionTypes.SET_FILTERS_ADVENTURER_WEAPON_TYPE]: setFiltersAdventurerWeaponType,
+  [actionTypes.SET_FILTERS_WEAPON_TYPE]: setFiltersWeaponType,
+  [actionTypes.SET_FILTERS_DRAGON_ELEMENT]: setFiltersDragonElement,
 })
 
 export default filterReducer;

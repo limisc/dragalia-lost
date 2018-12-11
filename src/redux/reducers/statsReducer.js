@@ -1,4 +1,4 @@
-import actionType from '../actions/actionType';
+import actionTypes from '../actions/actionTypes';
 import { updateObject, createReducer } from '../actions/actions';
 
 
@@ -6,6 +6,7 @@ const selectStats = (state, action) => {
   // action = { section, item }
   const { weaponType } = action.item;
   let new_state = updateObject(state, { [action.section]: action.item });
+  console.log(new_state)
   //if adventurer & weapon weaponType are different, then remove the one previous selected, but keep recent one.
   const checkArray = ["adventurer", "weapon"];
   const index = checkArray.indexOf(action.section);
@@ -21,7 +22,7 @@ const selectStats = (state, action) => {
 
 
 const statsReducer = createReducer({}, {
-  [actionType.SELECT_STATS]: selectStats,
+  [actionTypes.SELECT_STATS]: selectStats,
 
 })
 

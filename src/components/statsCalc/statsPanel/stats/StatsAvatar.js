@@ -5,6 +5,7 @@ import { handleSection } from '../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
+    language: state.language,
     stats: state.stats,
   };
 }
@@ -23,11 +24,13 @@ class StatsAvatar extends Component {
 
 
   render() {
-    const { section, stats } = this.props;
+    const { language, section, stats } = this.props;
     const {
       image = "add.png",
-      Name = section.charAt(0).toUpperCase() + section.slice(1),
+      Name,
     } = stats[section] || {};
+    const avatarName = Name ? Name[language] : (section.charAt(0).toUpperCase() + section.slice(1));
+
     return (
       <div className="six wide column">
         <img
@@ -36,7 +39,7 @@ class StatsAvatar extends Component {
           src={`${process.env.PUBLIC_URL}/image/${section}/${image}`}
           onClick={this._onClick}
         />
-        <p style={{ textAlign: "center" }}><b>{Name}</b></p>
+        <p style={{ textAlign: "center" }}><b>{avatarName}</b></p>
       </div>
     );
   }
