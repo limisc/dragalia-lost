@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import WeaponCraft from './components/weaponCraft/WeaponCraft';
-import StatusCalc from './components/statusCalc/StatusCalc';
+import StatsCalc from './components/statsCalc/StatsCalc';
 class App extends Component {
   render() {
     return (
       <div id="app">
         {/* <WeaponCraft/> */}
-        <StatusCalc/>
+        <StatsCalc/>
       </div >
     );
   }

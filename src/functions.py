@@ -102,6 +102,7 @@ def update_weapon_data():
   weapons = []
   for i in raw_data["cargoquery"]:
     weapon = i["title"]
+
     if weapon["Id"] != "" and (not any(w["Id"] == weapon["Id"] for w in weapons)) and int(weapon["Rarity"]) >= 3:
       weapon["image"] = "%s_01_%s.png" % (weapon.pop("BaseId", None), weapon.pop("FormId", None))
 
@@ -140,7 +141,7 @@ def update_weapon_data():
 
       weapon["Id"] = weapon["image"][:-4]
       weapon["MAX_LEVEL"] = MAX_LEVEL[weapon['rarity']]
-    weapons.append(weapon)
+      weapons.append(weapon)
 
   save_file(weapons, "weapon", "weapon_data.js")
 
@@ -254,4 +255,4 @@ def update_dragon_data():
 
 
 if __name__ == "__main__":
-  update_dragon_data()
+  update_weapon_data()

@@ -9,10 +9,10 @@ import dragon from '../../../redux/store/data/dragon_data';
 import FilterForm from './FilterForm';
 import ListItem from './ListItem';
 
-function mapStateToProps(state) {
-  const { selectedSection, filters } = state;
+const mapStateToProps = (state) => {
+  const { focusSection, filters } = state;
   return {
-    selectedSection,
+    focusSection,
     filters,
   };
 }
@@ -22,8 +22,8 @@ class SelectPanel extends Component {
     super(props);
     this.state = {
       filterFields: {
-        adventurer: ["type", "rarity", "element"],
-        weapon: ["type", "rarity", "tier"],
+        adventurer: ["weaponType", "rarity", "element"],
+        weapon: ["weaponType", "rarity", "tier"],
         wyrmprint: ["rarity"],
         dragon: ["rarity", "element"],
       },
@@ -41,26 +41,25 @@ class SelectPanel extends Component {
 
   // }
   render() {
-    // console.log("SelectPanel")
 
+    const { focusSection, filters } = this.props;
     const {
-      props: { selectedSection, filters },
-      state: { filterFields: { [selectedSection]: filterField }, selectData: { [selectedSection]: data }, element }
-    } = this;
-
+      filterFields: { [focusSection]: filterField },
+      selectData: { [focusSection]: data },
+      element
+    } = this.state;
 
     return (
       <Fragment>
-        {selectedSection &&
+        {focusSection &&
           <Fragment>
             <FilterForm
               filterField={filterField}
             />
-
             <table className="ui celled table">
               <thead>
                 <tr>
-                  <th>{this.capitalise(selectedSection)}</th>
+                  <th>{this.capitalise("adventurer")}</th>
                   <th>Name</th>
                   {filterField.map(field => <th key={uuidv4()}>{this.capitalise(field)}</th>)}
                 </tr>
@@ -68,16 +67,34 @@ class SelectPanel extends Component {
 
               <tbody>
                 {data
-                  .filter(item => filterField.every(key => item[key].includes(filters[key])))
-                  .sort((item1, item2) => item1.Name.localeCompare(item2.Name))
-                  .sort((item1, item2) => element.indexOf(item1.element) - element.indexOf(item2.element))
-                  .sort((item1, item2) => item2.tier - item1.tier)
-                  .sort((item1, item2) => item2.rarity - item1.rarity)
+                  .filter(item => {
+                    for (let key of filterField) {
+                      if (!item[key].includes(filters[key])) return false;
+                    }
+                    return true;
+                  })
+                  .sort((item1, item2) => {
+                    if (item1.rarity > item2.rarity) return -1;
+                    if (item1.rarity < item2.rarity) return 1;
+
+                    if (item1.tier) {
+                      let tier1 = parseInt(item1.tier, 10), tier2 = parseInt(item2.tier, 10);
+                      if (tier1 > tier2) return -1;
+                      if (tier1 < tier2) return 1;
+                    }
+
+                    if (item1.element) {
+                      let element1 = element.indexOf(item1.element),
+                        element2 = element.indexOf(item2.element);
+                      if (element1 > element2) return 1;
+                      if (element1 < element2) return -1;
+                    }
+                  })
                   .map(item =>
                     <ListItem
                       key={uuidv4()}
-                      section={selectedSection}
-                      status={item}
+                      section={focusSection}
+                      stats={item}
                       filterField={filterField}
                     />
                   )}
@@ -90,14 +107,13 @@ class SelectPanel extends Component {
   }
 
   capitalise(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    return word.charAt(0).toUpperCase() + word.slice(1);
   }
 }
 
 SelectPanel.propTypes = {
-  selectedSection: PropTypes.string,
+  focusSection: PropTypes.string,
   filters: PropTypes.objectOf(PropTypes.string).isRequired,
-
 }
 
 export default connect(

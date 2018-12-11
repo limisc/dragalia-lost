@@ -1,6 +1,6 @@
 import actionTypes from './actionType';
 import LEVEL_LIMIT from '../store/data/level_data';
-import facilities from '../store/data/facility_data';
+
 //simple action creator
 const actionCreator = (type, ...argNames) => {
   return (...args) => {
@@ -12,37 +12,47 @@ const actionCreator = (type, ...argNames) => {
   }
 }
 
-export const getLevelLimit = (key, rarity, unbind = 4) => {
-  switch (key) {
-    case "mana":
-    case "adventurer":
-      return LEVEL_LIMIT[key][rarity];
-    case "facility":
-      return 30;
+export const getLevelLimit = (section, rarity, unbind = 4) => {
+  switch (section) {
+    case "weapon":
+    case "wyrmprint":
+    case "dragon":
+      return LEVEL_LIMIT[section][rarity][unbind];
     default:
-      return LEVEL_LIMIT[key][rarity][unbind];
+      return LEVEL_LIMIT[section][rarity];
   }
 }
 
+export const createReducer = (initState, handlers) => {
+  return (state = initState, action, ...args) => {
+    if (handlers.hasOwnProperty(action.type)) {
+      return handlers[action.type](state, action, ...args);
+    } else {
+      return state;
+    }
+  }
+}
 
-
-//modify details pannel show/hide
-export const toggleDetails = actionCreator(actionTypes.TOGGLE_DETAILS);
-const hideDetails = actionCreator(actionTypes.HIDE_DETAILS);
+export const updateObject = (oldObject, newValues) => {
+  return Object.assign({}, oldObject, newValues);
+}
 
 //modify filters
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const setFilters = actionCreator(actionTypes.SET_FILTERS, "key", "value");
-const setFiltersAdventurerType = actionCreator(actionTypes.SET_FILTERS_ADVENTURER_TYPE);
+const setFiltersAdventurerWeaponType = actionCreator(actionTypes.SET_FILTERS_ADVENTURER_WEAPON_TYPE);
 const setFiltersWeaponType = actionCreator(actionTypes.SET_FILTERS_WEAPON_TYPE);
 const setFiltersDragonElement = actionCreator(actionTypes.SET_FILTERS_DRAGON_ELEMENT);
 
 //modify section
 const setSection = actionCreator(actionTypes.SET_SECTION, "section")
-export const handleSection = (section, statusSets) => (dispatch) => {
-  const { adventurer, weapon } = statusSets;
+export const handleSection = (section) => (dispatch, getState) => {
+  const state = getState();
+  const { adventurer, weapon } = state.stats;
+
+  dispatch(setSection(section));
   if (section === "adventurer" && weapon) {
-    dispatch(setFiltersAdventurerType());
+    dispatch(setFiltersAdventurerWeaponType());
   } else if (section === "weapon" && adventurer) {
     dispatch(setFiltersWeaponType());
   } else if (section === "dragon" && adventurer) {
@@ -50,34 +60,26 @@ export const handleSection = (section, statusSets) => (dispatch) => {
   } else {
     dispatch(resetFilters());
   }
-
-  dispatch(hideDetails());
-  dispatch(setSection(section));
-  if (statusSets[section]) dispatch(removeStatus(section));
 }
 
 //modify status
-const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
-const selectStatus = actionCreator(actionTypes.SELECT_STATUS, "section", "status");
-export const handleSelection = (section, status) => (dispatch) => {
-  // const state = getState()
-  // console.log(state)
-  const { Id, rarity, unbind, img } = status;
-  let addtional = {};
-
-  if (section === "adventurer") {
-    addtional = { img: `${section}/${Id}_r0${rarity}.png`, curRarity: rarity, mana: getLevelLimit("mana", rarity) };
-  } else if (section === "wyrmprint") {
-    addtional = { img: `${section}/${Id}_02.png`, unbind: 4 };
-  } else {
-    addtional = { img: `${section}/${img}`, unbind: 4 };
-  }
-
-  dispatch(selectStatus(section, { ...status, ...addtional, level: getLevelLimit(section, rarity, unbind) }));
+// const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
+const selectStats = actionCreator(actionTypes.SELECT_STATS, "section", "item");
+export const handleSelection = (section, item) => (dispatch) => {
+  const { rarity, unbind } = item;
+  console.log(section, rarity, unbind)
+  // const addState = { level: getLevelLimit(section, rarity, unbind) };
+  // if (section === "adventurer") {
+  //   addState.mana = getLevelLimit("mana", rarity);
+  // } else {
+  //   addState.unbind = 4;
+  // }
+  // dispatch(selectStats(section, updateObject(item, addState)));
 }
-export const updateStatusLevel = actionCreator(actionTypes.UPDATE_STATUS_LEVEL, "section", "key", "value", "facilityType");
-export const updateStatusUnbind = actionCreator(actionTypes.UPDATE_STATUS_UNBIND, "section", "value");
-export const updateStatusAdventurerRarityMana = actionCreator(actionTypes.UPDATE_STATUS_ADVENTURER_RARITY_MANA, "key", "value");
+
+export const updateStatsLevel = actionCreator(actionTypes.UPDATE_STATS_LEVEL, "section", "key", "value", "facilityType");
+export const updateStatsUnbind = actionCreator(actionTypes.UPDATE_STATS_UNBIND, "section", "value");
+export const updateStatsAdventurerRarityMana = actionCreator(actionTypes.UPDATE_STATS_ADVENTURER_RARITY_MANA, "key", "value");
 
 
 //calc Status
@@ -161,7 +163,8 @@ const calcDetails = (statusSets) => {
   facility.typeList.forEach(type => {
     facility[type].contentList.forEach(item => {
       let level = facility[type][item];
-      const { HP = 0, STR = 0 } = facilities[type][level] || {};
+      // const { HP = 0, STR = 0 } = facilities[type][level] || {};
+      const HP = 0, STR = 0;
       if (type === "statue") {
         dragon_HP_percent = dragon_HP_percent + HP;
         dragon_STR_percent = dragon_STR_percent + STR;

@@ -1,12 +1,12 @@
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from '../reducers/rootReducer';
 import thunk from 'redux-thunk';
-import data from './data/data';
+import state from './data/state';
 
 
 const store = createStore(
   rootReducer,
-  data,
+  state,
   applyMiddleware(thunk),
 );
 

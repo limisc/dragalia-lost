@@ -3,9 +3,9 @@ const adventurer =
   {
     "Id": "100001_01",
     "Name": {
-      "en": "Euden"
+      "en": "Euden",
+      "zh": "\u5c24\u8482\u5c14"
     },
-    "NameZH": "\u5c24\u8482\u5c14",
     "weaponType": "Sword",
     "rarity": "4",
     "curRarity": "4",
@@ -102,9 +102,9 @@ const adventurer =
   {
     "Id": "100003_01",
     "Name": {
-      "en": "Ranzal"
+      "en": "Ranzal",
+      "zh": "\u5170\u624e\u535c"
     },
-    "NameZH": "\u5170\u624e\u535c",
     "weaponType": "Axe",
     "rarity": "4",
     "curRarity": "4",
@@ -135,9 +135,9 @@ const adventurer =
   {
     "Id": "100004_01",
     "Name": {
-      "en": "Cleo"
+      "en": "Cleo",
+      "zh": "\u5e93\u83c8\u4e4c"
     },
-    "NameZH": "\u5e93\u83c8\u4e4c",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -168,9 +168,9 @@ const adventurer =
   {
     "Id": "100006_01",
     "Name": {
-      "en": "Luca"
+      "en": "Luca",
+      "zh": "\u5362\u5361"
     },
-    "NameZH": "\u5362\u5361",
     "weaponType": "Bow",
     "rarity": "4",
     "curRarity": "4",
@@ -201,9 +201,9 @@ const adventurer =
   {
     "Id": "110001_01",
     "Name": {
-      "en": "Alain"
+      "en": "Alain",
+      "zh": "\u963f\u5170"
     },
-    "NameZH": "\u963f\u5170",
     "weaponType": "Lance",
     "rarity": "3",
     "curRarity": "3",
@@ -234,9 +234,9 @@ const adventurer =
   {
     "Id": "110002_01",
     "Name": {
-      "en": "Aoi"
+      "en": "Aoi",
+      "zh": "\u8475"
     },
-    "NameZH": "\u8475",
     "weaponType": "Blade",
     "rarity": "3",
     "curRarity": "3",
@@ -267,9 +267,9 @@ const adventurer =
   {
     "Id": "110003_01",
     "Name": {
-      "en": "Joe"
+      "en": "Joe",
+      "zh": "\u4e54"
     },
-    "NameZH": "\u4e54",
     "weaponType": "Bow",
     "rarity": "3",
     "curRarity": "3",
@@ -300,9 +300,9 @@ const adventurer =
   {
     "Id": "110004_01",
     "Name": {
-      "en": "Xania"
+      "en": "Xania",
+      "zh": "\u6851\u59ae\u96c5"
     },
-    "NameZH": "\u6851\u59ae\u96c5",
     "weaponType": "Wand",
     "rarity": "3",
     "curRarity": "3",
@@ -333,9 +333,9 @@ const adventurer =
   {
     "Id": "110005_01",
     "Name": {
-      "en": "Renelle"
+      "en": "Renelle",
+      "zh": "\u62c9\u8f9b"
     },
-    "NameZH": "\u62c9\u8f9b",
     "weaponType": "Dagger",
     "rarity": "3",
     "curRarity": "3",
@@ -366,9 +366,9 @@ const adventurer =
   {
     "Id": "110006_01",
     "Name": {
-      "en": "Aurien"
+      "en": "Aurien",
+      "zh": "\u6b27\u96f7\u56e0"
     },
-    "NameZH": "\u6b27\u96f7\u56e0",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -399,9 +399,9 @@ const adventurer =
   {
     "Id": "110007_01",
     "Name": {
-      "en": "Vanessa"
+      "en": "Vanessa",
+      "zh": "\u51e1\u59ae\u838e"
     },
-    "NameZH": "\u51e1\u59ae\u838e",
     "weaponType": "Axe",
     "rarity": "4",
     "curRarity": "4",
@@ -432,9 +432,9 @@ const adventurer =
   {
     "Id": "110008_01",
     "Name": {
-      "en": "Karl"
+      "en": "Karl",
+      "zh": "\u5361\u5c14"
     },
-    "NameZH": "\u5361\u5c14",
     "weaponType": "Sword",
     "rarity": "4",
     "curRarity": "4",
@@ -465,9 +465,9 @@ const adventurer =
   {
     "Id": "110009_01",
     "Name": {
-      "en": "Sinoa"
+      "en": "Sinoa",
+      "zh": "\u5e0c\u8bfa\u4e9a"
     },
-    "NameZH": "\u5e0c\u8bfa\u4e9a",
     "weaponType": "Wand",
     "rarity": "4",
     "curRarity": "4",
@@ -498,9 +498,9 @@ const adventurer =
   {
     "Id": "110010_01",
     "Name": {
-      "en": "Mikoto"
+      "en": "Mikoto",
+      "zh": "\u7c73\u79d1\u7279"
     },
-    "NameZH": "\u7c73\u79d1\u7279",
     "weaponType": "Blade",
     "rarity": "5",
     "curRarity": "5",
@@ -531,9 +531,9 @@ const adventurer =
   {
     "Id": "110011_01",
     "Name": {
-      "en": "Ezelith"
+      "en": "Ezelith",
+      "zh": "\u827e\u8d5b\u8389\u7279"
     },
-    "NameZH": "\u827e\u8d5b\u8389\u7279",
     "weaponType": "Dagger",
     "rarity": "5",
     "curRarity": "5",
@@ -564,9 +564,9 @@ const adventurer =
   {
     "Id": "110012_01",
     "Name": {
-      "en": "Rex"
+      "en": "Rex",
+      "zh": "\u96f7\u514b\u65af"
     },
-    "NameZH": "\u96f7\u514b\u65af",
     "weaponType": "Axe",
     "rarity": "3",
     "curRarity": "3",
@@ -597,9 +597,9 @@ const adventurer =
   {
     "Id": "110013_01",
     "Name": {
-      "en": "Waike"
+      "en": "Waike",
+      "zh": "\u5a01\u514b"
     },
-    "NameZH": "\u5a01\u514b",
     "weaponType": "Bow",
     "rarity": "3",
     "curRarity": "3",
@@ -630,9 +630,9 @@ const adventurer =
   {
     "Id": "110014_01",
     "Name": {
-      "en": "Cibella"
+      "en": "Cibella",
+      "zh": "\u4f11\u8d1d\u5c14"
     },
-    "NameZH": "\u4f11\u8d1d\u5c14",
     "weaponType": "Lance",
     "rarity": "3",
     "curRarity": "3",
@@ -663,9 +663,9 @@ const adventurer =
   {
     "Id": "110015_01",
     "Name": {
-      "en": "Zardin"
+      "en": "Zardin",
+      "zh": "\u590f\u8fea"
     },
-    "NameZH": "\u590f\u8fea",
     "weaponType": "Sword",
     "rarity": "3",
     "curRarity": "3",
@@ -696,9 +696,9 @@ const adventurer =
   {
     "Id": "110016_01",
     "Name": {
-      "en": "Jurota"
+      "en": "Jurota",
+      "zh": "\u5341\u90ce\u592a"
     },
-    "NameZH": "\u5341\u90ce\u592a",
     "weaponType": "Blade",
     "rarity": "3",
     "curRarity": "3",
@@ -729,9 +729,9 @@ const adventurer =
   {
     "Id": "110017_01",
     "Name": {
-      "en": "Ricardt"
+      "en": "Ricardt",
+      "zh": "\u91cc\u5361\u591a"
     },
-    "NameZH": "\u91cc\u5361\u591a",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -762,9 +762,9 @@ const adventurer =
   {
     "Id": "110018_01",
     "Name": {
-      "en": "Karina"
+      "en": "Karina",
+      "zh": "\u5361\u4e3d\u5a1c"
     },
-    "NameZH": "\u5361\u4e3d\u5a1c",
     "weaponType": "Axe",
     "rarity": "4",
     "curRarity": "4",
@@ -795,9 +795,9 @@ const adventurer =
   {
     "Id": "110019_01",
     "Name": {
-      "en": "Thaniel"
+      "en": "Thaniel",
+      "zh": "\u585e\u7eb3"
     },
-    "NameZH": "\u585e\u7eb3",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -828,9 +828,9 @@ const adventurer =
   {
     "Id": "110020_01",
     "Name": {
-      "en": "Luther"
+      "en": "Luther",
+      "zh": "\u5362\u5854"
     },
-    "NameZH": "\u5362\u5854",
     "weaponType": "Dagger",
     "rarity": "4",
     "curRarity": "4",
@@ -861,9 +861,9 @@ const adventurer =
   {
     "Id": "110021_01",
     "Name": {
-      "en": "Xainfried"
+      "en": "Xainfried",
+      "zh": "\u624e\u56e0\u5f17\u62c9\u5fb7"
     },
-    "NameZH": "\u624e\u56e0\u5f17\u62c9\u5fb7",
     "weaponType": "Lance",
     "rarity": "5",
     "curRarity": "5",
@@ -894,9 +894,9 @@ const adventurer =
   {
     "Id": "110022_01",
     "Name": {
-      "en": "Xander"
+      "en": "Xander",
+      "zh": "\u963f\u83b1\u514b\u897f\u65af"
     },
-    "NameZH": "\u963f\u83b1\u514b\u897f\u65af",
     "weaponType": "Sword",
     "rarity": "5",
     "curRarity": "5",
@@ -927,9 +927,9 @@ const adventurer =
   {
     "Id": "110023_01",
     "Name": {
-      "en": "Johanna"
+      "en": "Johanna",
+      "zh": "\u4f0a\u6c49\u5a1c"
     },
-    "NameZH": "\u4f0a\u6c49\u5a1c",
     "weaponType": "Axe",
     "rarity": "3",
     "curRarity": "3",
@@ -960,9 +960,9 @@ const adventurer =
   {
     "Id": "110024_01",
     "Name": {
-      "en": "Sophie"
+      "en": "Sophie",
+      "zh": "\u7d22\u83f2"
     },
-    "NameZH": "\u7d22\u83f2",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -993,9 +993,9 @@ const adventurer =
   {
     "Id": "110025_01",
     "Name": {
-      "en": "Nicolas"
+      "en": "Nicolas",
+      "zh": "\u5c3c\u53e4\u62c9"
     },
-    "NameZH": "\u5c3c\u53e4\u62c9",
     "weaponType": "Wand",
     "rarity": "3",
     "curRarity": "3",
@@ -1026,9 +1026,9 @@ const adventurer =
   {
     "Id": "110026_01",
     "Name": {
-      "en": "Francesca"
+      "en": "Francesca",
+      "zh": "\u5f17\u5170\u5207\u65af\u5361"
     },
-    "NameZH": "\u5f17\u5170\u5207\u65af\u5361",
     "weaponType": "Dagger",
     "rarity": "3",
     "curRarity": "3",
@@ -1059,9 +1059,9 @@ const adventurer =
   {
     "Id": "110027_01",
     "Name": {
-      "en": "Melody"
+      "en": "Melody",
+      "zh": "\u7c73\u7f57\u8482"
     },
-    "NameZH": "\u7c73\u7f57\u8482",
     "weaponType": "Blade",
     "rarity": "3",
     "curRarity": "3",
@@ -1092,9 +1092,9 @@ const adventurer =
   {
     "Id": "110028_01",
     "Name": {
-      "en": "Philia"
+      "en": "Philia",
+      "zh": "\u83f2\u4e3d\u96c5"
     },
-    "NameZH": "\u83f2\u4e3d\u96c5",
     "weaponType": "Bow",
     "rarity": "3",
     "curRarity": "3",
@@ -1125,9 +1125,9 @@ const adventurer =
   {
     "Id": "110029_01",
     "Name": {
-      "en": "Aeleen"
+      "en": "Aeleen",
+      "zh": "\u827e\u9732"
     },
-    "NameZH": "\u827e\u9732",
     "weaponType": "Lance",
     "rarity": "4",
     "curRarity": "4",
@@ -1158,9 +1158,9 @@ const adventurer =
   {
     "Id": "110030_01",
     "Name": {
-      "en": "Musashi"
+      "en": "Musashi",
+      "zh": "\u6b66\u85cf"
     },
-    "NameZH": "\u6b66\u85cf",
     "weaponType": "Blade",
     "rarity": "4",
     "curRarity": "4",
@@ -1191,9 +1191,9 @@ const adventurer =
   {
     "Id": "110031_01",
     "Name": {
-      "en": "Eleonora"
+      "en": "Eleonora",
+      "zh": "\u827e\u857e\u6b27\u8bfa\u62c9"
     },
-    "NameZH": "\u827e\u857e\u6b27\u8bfa\u62c9",
     "weaponType": "Bow",
     "rarity": "4",
     "curRarity": "4",
@@ -1224,9 +1224,9 @@ const adventurer =
   {
     "Id": "110032_01",
     "Name": {
-      "en": "Maribelle"
+      "en": "Maribelle",
+      "zh": "\u6885\u8389\u8d1d\u5c14"
     },
-    "NameZH": "\u6885\u8389\u8d1d\u5c14",
     "weaponType": "Wand",
     "rarity": "5",
     "curRarity": "5",
@@ -1257,9 +1257,9 @@ const adventurer =
   {
     "Id": "110033_01",
     "Name": {
-      "en": "Linus"
+      "en": "Linus",
+      "zh": "\u83b1\u7eb3\u65af"
     },
-    "NameZH": "\u83b1\u7eb3\u65af",
     "weaponType": "Axe",
     "rarity": "3",
     "curRarity": "3",
@@ -1290,9 +1290,9 @@ const adventurer =
   {
     "Id": "110034_01",
     "Name": {
-      "en": "Malka"
+      "en": "Malka",
+      "zh": "\u9a6c\u5c14\u5361"
     },
-    "NameZH": "\u9a6c\u5c14\u5361",
     "weaponType": "Lance",
     "rarity": "3",
     "curRarity": "3",
@@ -1323,9 +1323,9 @@ const adventurer =
   {
     "Id": "110035_01",
     "Name": {
-      "en": "Raemond"
+      "en": "Raemond",
+      "zh": "\u83b1\u8499\u5fb7"
     },
-    "NameZH": "\u83b1\u8499\u5fb7",
     "weaponType": "Sword",
     "rarity": "3",
     "curRarity": "3",
@@ -1356,9 +1356,9 @@ const adventurer =
   {
     "Id": "110036_01",
     "Name": {
-      "en": "Malora"
+      "en": "Malora",
+      "zh": "\u9a6c\u841d\u62c9"
     },
-    "NameZH": "\u9a6c\u841d\u62c9",
     "weaponType": "Bow",
     "rarity": "3",
     "curRarity": "3",
@@ -1389,9 +1389,9 @@ const adventurer =
   {
     "Id": "110037_01",
     "Name": {
-      "en": "Irfan"
+      "en": "Irfan",
+      "zh": "\u4f0a\u5c14\u51e1"
     },
-    "NameZH": "\u4f0a\u5c14\u51e1",
     "weaponType": "Dagger",
     "rarity": "3",
     "curRarity": "3",
@@ -1422,9 +1422,9 @@ const adventurer =
   {
     "Id": "110038_01",
     "Name": {
-      "en": "Hope"
+      "en": "Hope",
+      "zh": "\u970d\u666e"
     },
-    "NameZH": "\u970d\u666e",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -1455,9 +1455,9 @@ const adventurer =
   {
     "Id": "110039_01",
     "Name": {
-      "en": "Ryozen"
+      "en": "Ryozen",
+      "zh": "\u6881\u6cc9"
     },
-    "NameZH": "\u6881\u6cc9",
     "weaponType": "Lance",
     "rarity": "4",
     "curRarity": "4",
@@ -1488,9 +1488,9 @@ const adventurer =
   {
     "Id": "110040_01",
     "Name": {
-      "en": "Rawn"
+      "en": "Rawn",
+      "zh": "\u4e4c\u5c14\u5609"
     },
-    "NameZH": "\u4e4c\u5c14\u5609",
     "weaponType": "Bow",
     "rarity": "4",
     "curRarity": "4",
@@ -1521,9 +1521,9 @@ const adventurer =
   {
     "Id": "110041_01",
     "Name": {
-      "en": "Amane"
+      "en": "Amane",
+      "zh": "\u5929\u97f3"
     },
-    "NameZH": "\u5929\u97f3",
     "weaponType": "Wand",
     "rarity": "4",
     "curRarity": "4",
@@ -1587,9 +1587,9 @@ const adventurer =
   {
     "Id": "110043_01",
     "Name": {
-      "en": "Hildegarde"
+      "en": "Hildegarde",
+      "zh": "\u5e0c\u5c14\u5fb7\u52a0\u5fb7"
     },
-    "NameZH": "\u5e0c\u5c14\u5fb7\u52a0\u5fb7",
     "weaponType": "Staff",
     "rarity": "5",
     "curRarity": "5",
@@ -1620,9 +1620,9 @@ const adventurer =
   {
     "Id": "110044_01",
     "Name": {
-      "en": "Taro"
+      "en": "Taro",
+      "zh": "\u592a\u90ce"
     },
-    "NameZH": "\u592a\u90ce",
     "weaponType": "Blade",
     "rarity": "3",
     "curRarity": "3",
@@ -1653,9 +1653,9 @@ const adventurer =
   {
     "Id": "110045_01",
     "Name": {
-      "en": "Erik"
+      "en": "Erik",
+      "zh": "\u57c3\u91cc\u514b"
     },
-    "NameZH": "\u57c3\u91cc\u514b",
     "weaponType": "Axe",
     "rarity": "3",
     "curRarity": "3",
@@ -1686,9 +1686,9 @@ const adventurer =
   {
     "Id": "110046_01",
     "Name": {
-      "en": "Rodrigo"
+      "en": "Rodrigo",
+      "zh": "\u7f57\u5fb7\u91cc\u6208"
     },
-    "NameZH": "\u7f57\u5fb7\u91cc\u6208",
     "weaponType": "Sword",
     "rarity": "3",
     "curRarity": "3",
@@ -1719,9 +1719,9 @@ const adventurer =
   {
     "Id": "110047_02",
     "Name": {
-      "en": "Althemia"
+      "en": "Althemia",
+      "zh": "\u4f0a\u9732\u7f07\u7c73\u5a05"
     },
-    "NameZH": "\u4f0a\u9732\u7f07\u7c73\u5a05",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -1752,9 +1752,9 @@ const adventurer =
   {
     "Id": "110047_01",
     "Name": {
-      "en": "Althemia"
+      "en": "Althemia",
+      "zh": "\u4f0a\u9732\u7f07\u7c73\u5a05"
     },
-    "NameZH": "\u4f0a\u9732\u7f07\u7c73\u5a05",
     "weaponType": "Wand",
     "rarity": "3",
     "curRarity": "3",
@@ -1785,9 +1785,9 @@ const adventurer =
   {
     "Id": "110048_01",
     "Name": {
-      "en": "Vice"
+      "en": "Vice",
+      "zh": "\u534e\u5179"
     },
-    "NameZH": "\u534e\u5179",
     "weaponType": "Dagger",
     "rarity": "3",
     "curRarity": "3",
@@ -1818,9 +1818,9 @@ const adventurer =
   {
     "Id": "110049_02",
     "Name": {
-      "en": "Edward"
+      "en": "Edward",
+      "zh": "\u7231\u5fb7\u534e"
     },
-    "NameZH": "\u7231\u5fb7\u534e",
     "weaponType": "Blade",
     "rarity": "3",
     "curRarity": "3",
@@ -1851,9 +1851,9 @@ const adventurer =
   {
     "Id": "110049_01",
     "Name": {
-      "en": "Edward"
+      "en": "Edward",
+      "zh": "\u7231\u5fb7\u534e"
     },
-    "NameZH": "\u7231\u5fb7\u534e",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -1884,9 +1884,9 @@ const adventurer =
   {
     "Id": "110050_01",
     "Name": {
-      "en": "Berserker"
+      "en": "Berserker",
+      "zh": "\u8d1d\u5c14\u624e\u514b"
     },
-    "NameZH": "\u8d1d\u5c14\u624e\u514b",
     "weaponType": "Sword",
     "rarity": "4",
     "curRarity": "4",
@@ -1917,9 +1917,9 @@ const adventurer =
   {
     "Id": "110051_01",
     "Name": {
-      "en": "Kleimann"
+      "en": "Kleimann",
+      "zh": "\u514b\u96f7\u4f0a\u66fc"
     },
-    "NameZH": "\u514b\u96f7\u4f0a\u66fc",
     "weaponType": "Wand",
     "rarity": "4",
     "curRarity": "4",
@@ -1950,9 +1950,9 @@ const adventurer =
   {
     "Id": "110052_01",
     "Name": {
-      "en": "Orion"
+      "en": "Orion",
+      "zh": "\u4fc4\u91cc\u7fc1"
     },
-    "NameZH": "\u4fc4\u91cc\u7fc1",
     "weaponType": "Dagger",
     "rarity": "4",
     "curRarity": "4",
@@ -1983,9 +1983,9 @@ const adventurer =
   {
     "Id": "110053_01",
     "Name": {
-      "en": "Nefaria"
+      "en": "Nefaria",
+      "zh": "\u5948\u6cd5\u5229\u8036"
     },
-    "NameZH": "\u5948\u6cd5\u5229\u8036",
     "weaponType": "Bow",
     "rarity": "5",
     "curRarity": "5",
@@ -2016,9 +2016,9 @@ const adventurer =
   {
     "Id": "110063_01",
     "Name": {
-      "en": "Estelle"
+      "en": "Estelle",
+      "zh": "\u827e\u4e1d\u8482\u5c14"
     },
-    "NameZH": "\u827e\u4e1d\u8482\u5c14",
     "weaponType": "Staff",
     "rarity": "3",
     "curRarity": "3",
@@ -2049,9 +2049,9 @@ const adventurer =
   {
     "Id": "110067_01",
     "Name": {
-      "en": "Vida"
+      "en": "Vida",
+      "zh": "\u7ef4\u7279"
     },
-    "NameZH": "\u7ef4\u7279",
     "weaponType": "Dagger",
     "rarity": "3",
     "curRarity": "3",
@@ -2082,9 +2082,9 @@ const adventurer =
   {
     "Id": "110252_01",
     "Name": {
-      "en": "Lily"
+      "en": "Lily",
+      "zh": "\u8389\u8389"
     },
-    "NameZH": "\u8389\u8389",
     "weaponType": "Wand",
     "rarity": "5",
     "curRarity": "5",
@@ -2115,9 +2115,9 @@ const adventurer =
   {
     "Id": "110253_01",
     "Name": {
-      "en": "Orsem"
+      "en": "Orsem",
+      "zh": "\u5965\u5c14\u68ee"
     },
-    "NameZH": "\u5965\u5c14\u68ee",
     "weaponType": "Dagger",
     "rarity": "4",
     "curRarity": "4",
@@ -2148,9 +2148,9 @@ const adventurer =
   {
     "Id": "110254_01",
     "Name": {
-      "en": "Zace"
+      "en": "Zace",
+      "zh": "\u5409\u65af"
     },
-    "NameZH": "\u5409\u65af",
     "weaponType": "Lance",
     "rarity": "3",
     "curRarity": "3",
@@ -2181,9 +2181,9 @@ const adventurer =
   {
     "Id": "110255_01",
     "Name": {
-      "en": "Celliera"
+      "en": "Celliera",
+      "zh": "\u8d5b\u4e3d\u827e\u62c9"
     },
-    "NameZH": "\u8d5b\u4e3d\u827e\u62c9",
     "weaponType": "Blade",
     "rarity": "4",
     "curRarity": "4",
@@ -2214,9 +2214,9 @@ const adventurer =
   {
     "Id": "110256_01",
     "Name": {
-      "en": "Louise"
+      "en": "Louise",
+      "zh": "\u6d1b\u4f9d\u6cfd"
     },
-    "NameZH": "\u6d1b\u4f9d\u6cfd",
     "weaponType": "Bow",
     "rarity": "5",
     "curRarity": "5",
@@ -2247,9 +2247,9 @@ const adventurer =
   {
     "Id": "110257_01",
     "Name": {
-      "en": "Lowen"
+      "en": "Lowen",
+      "zh": "\u5362\u6069"
     },
-    "NameZH": "\u5362\u6069",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -2280,9 +2280,9 @@ const adventurer =
   {
     "Id": "110258_01",
     "Name": {
-      "en": "Pietro"
+      "en": "Pietro",
+      "zh": "\u76ae\u591a\u7279"
     },
-    "NameZH": "\u76ae\u591a\u7279",
     "weaponType": "Axe",
     "rarity": "3",
     "curRarity": "3",
@@ -2313,9 +2313,9 @@ const adventurer =
   {
     "Id": "110266_01",
     "Name": {
-      "en": "Naveed"
+      "en": "Naveed",
+      "zh": "\u7eb3\u6770\u592b"
     },
-    "NameZH": "\u7eb3\u6770\u592b",
     "weaponType": "Sword",
     "rarity": "5",
     "curRarity": "5",
@@ -2346,9 +2346,9 @@ const adventurer =
   {
     "Id": "110267_01",
     "Name": {
-      "en": "Hawk"
+      "en": "Hawk",
+      "zh": "\u970d\u514b"
     },
-    "NameZH": "\u970d\u514b",
     "weaponType": "Bow",
     "rarity": "5",
     "curRarity": "5",
@@ -2379,9 +2379,9 @@ const adventurer =
   {
     "Id": "110269_01",
     "Name": {
-      "en": "Verica"
+      "en": "Verica",
+      "zh": "\u7ef4\u5c14\u838e\u62c9"
     },
-    "NameZH": "\u7ef4\u5c14\u838e\u62c9",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -2412,9 +2412,9 @@ const adventurer =
   {
     "Id": "110270_01",
     "Name": {
-      "en": "Melsa"
+      "en": "Melsa",
+      "zh": "\u6885\u9732\u838e"
     },
-    "NameZH": "\u6885\u9732\u838e",
     "weaponType": "Dagger",
     "rarity": "4",
     "curRarity": "4",
@@ -2445,9 +2445,9 @@ const adventurer =
   {
     "Id": "110302_01",
     "Name": {
-      "en": "Pia"
+      "en": "Pia",
+      "zh": "\u76ae\u96c5\u831c"
     },
-    "NameZH": "\u76ae\u96c5\u831c",
     "weaponType": "Lance",
     "rarity": "4",
     "curRarity": "4",
@@ -2478,9 +2478,9 @@ const adventurer =
   {
     "Id": "110303_01",
     "Name": {
-      "en": "Elias"
+      "en": "Elias",
+      "zh": "\u57c3\u5229\u4e9a\u65af"
     },
-    "NameZH": "\u57c3\u5229\u4e9a\u65af",
     "weaponType": "Bow",
     "rarity": "4",
     "curRarity": "4",
@@ -2511,9 +2511,9 @@ const adventurer =
   {
     "Id": "110304_01",
     "Name": {
-      "en": "Vixel"
+      "en": "Vixel",
+      "zh": "\u7ef4\u514b\u585e\u5c14"
     },
-    "NameZH": "\u7ef4\u514b\u585e\u5c14",
     "weaponType": "Staff",
     "rarity": "4",
     "curRarity": "4",
@@ -2544,9 +2544,9 @@ const adventurer =
   {
     "Id": "110305_01",
     "Name": {
-      "en": "Lucretia"
+      "en": "Lucretia",
+      "zh": "\u5362\u514b\u96f7\u9f50\u5a05"
     },
-    "NameZH": "\u5362\u514b\u96f7\u9f50\u5a05",
     "weaponType": "Wand",
     "rarity": "5",
     "curRarity": "5",
