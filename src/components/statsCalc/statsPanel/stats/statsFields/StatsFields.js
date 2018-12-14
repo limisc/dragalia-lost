@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import InputItem from './InputItem';
-import MaxLVButton from './MaxLVButton';
-import UnbindItem from './UnbindItem';
 import SelectItem from './SelectItem';
 
 const mapStateToProps = (state) => {
-  const { statusSets } = state;
   return {
-    statusSets
+    stats: state.stats,
   };
 }
 
-class StatusFields extends Component {
+class StatsFields extends Component {
 
   // shouldComponentUpdate(nextProps) {
   //   //because for each statusField, section will not change except change coding layout.
@@ -21,27 +18,43 @@ class StatusFields extends Component {
   //   return nextProps.statusSets[section] !== this.props.statusSets[section];
   // }
 
+
   render() {
     const { section } = this.props;
     // console.log("StatusField", section)
     return (
-      <div className="nine wide column">
+      <div className="ten wide column">
         <div className="ui form">
-          <div className="equal width fields">
+          <div className="two fields">
             <InputItem
               label="level"
               section={section}
             />
-            <MaxLVButton
-              section={section}
-            />
+            {section === "adventurer" ?
+              <SelectItem
+                label="curRarity"
+                section={section}
+              />
+              :
+              <SelectItem
+                label="unbind"
+                section={section}
+              />
+            }
           </div>
-          {section === "adventurer" ?
-            <SelectItem />
-            :
-            <UnbindItem
-              section={section}
-            />
+          {section === "adventurer" &&
+            <div className="two fields">
+              <SelectItem
+                label="mana"
+                section={section}
+              />
+              {this.props.stats[section] &&
+                <div className="field">
+                  <label>EX</label>
+                  <input disabled value={"DEV..."}/>
+                </div>
+              }
+            </div>
           }
         </div>
       </div>
@@ -49,10 +62,10 @@ class StatusFields extends Component {
   }
 }
 
-StatusFields.propTypes = {
+StatsFields.propTypes = {
   section: PropTypes.string.isRequired,
-  statusSets: PropTypes.object.isRequired,
+  stats: PropTypes.object.isRequired,
 }
 export default connect(
   mapStateToProps,
-)(StatusFields);
+)(StatsFields);

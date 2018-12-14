@@ -1,58 +1,52 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { updateStatusUnbind } from '../../../../../redux/actions/actions';
+import { updatStatsValue } from '../../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
-    statusSets: state.statusSets,
+    stats: state.stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateStatusUnbind: (section, value) => dispatch(updateStatusUnbind(section, value)),
+    updateUnbind: (section, value) => dispatch(updatStatsValue(section, "unbind", value)),
   }
 }
 
 class UnbindItem extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      IMG_PATH: `${process.env.PUBLIC_URL}/img`
-    }
+
     this._unbindDecrement = this._unbindDecrement.bind(this);
     this._unbindIncrement = this._unbindIncrement.bind(this);
   }
 
-  shouldComponentUpdate(nextProps) {
-    const { section } = nextProps;
-    const { unbind: nextUnbind = "" } = nextProps.statusSets[section] || {};
-    const { unbind = "" } = this.props.statusSets[section] || {};
-    return nextUnbind !== unbind;
-  }
+  // shouldComponentUpdate(nextProps) {
+  // }
   render() {
-    const { section, statusSets: { [section]: status } } = this.props, { IMG_PATH } = this.state;
-    const { unbind = 4 } = status || {};
+    const { section, stats: { [section]: item } } = this.props;
+    const { unbind = 4 } = item || {};
     return (
       <div className="unbind-set">
-        {status &&
+        {item &&
           <Fragment>
             <img
               className="unbind-set"
               alt="left-icon"
-              src={`${IMG_PATH}/icon/left-icon.png`}
+              src={`${process.env.PUBLIC_URL}/image/icon/left-icon.png`}
               onClick={this._unbindDecrement}
             />
             <img
               className="unbind-set"
               alt="unbind_image"
-              src={`${IMG_PATH}/unbind/${unbind}_Unbind.png`}
+              src={`${process.env.PUBLIC_URL}/image/unbind/${unbind}_Unbind.png`}
             />
             <img
               className="unbind-set"
               alt="right-icon"
-              src={`${IMG_PATH}/icon/right-icon.png`}
+              src={`${process.env.PUBLIC_URL}/image/icon/right-icon.png`}
               onClick={this._unbindIncrement}
             />
           </Fragment>
@@ -62,15 +56,15 @@ class UnbindItem extends Component {
   }
 
   _unbindDecrement() {
-    const { section, statusSets: { [section]: { unbind } }, updateStatusUnbind } = this.props;
+    const { section, stats: { [section]: { unbind } }, updateUnbind } = this.props;
     if (unbind > 0) {
-      updateStatusUnbind(section, -1);
+      updateUnbind(section, -1);
     }
   }
   _unbindIncrement() {
-    const { section, statusSets: { [section]: { unbind } }, updateStatusUnbind } = this.props;
+    const { section, stats: { [section]: { unbind } }, updateUnbind } = this.props;
     if (unbind < 4) {
-      updateStatusUnbind(section, 1);
+      updateUnbind(section, 1);
     }
   }
 }
@@ -79,7 +73,7 @@ UnbindItem.propTypes = {
   //props
   section: PropTypes.string.isRequired,
   //redux
-  statusSets: PropTypes.object.isRequired,
+  stats: PropTypes.object.isRequired,
 }
 
 export default connect(

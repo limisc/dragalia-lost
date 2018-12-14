@@ -10,10 +10,17 @@ function mapStateToProps(state) {
 }
 
 class DetailsPanel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fields: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom", "total"],
+    }
+  }
+
   render() {
     // const { stats } = this.props;
     return (
-      <table className="ui orange celled table">
+      <table className="ui violet celled table">
         <thead>
           <tr>
             <th>Field</th>
@@ -24,7 +31,7 @@ class DetailsPanel extends Component {
         </thead>
 
         <tbody>
-          {["adventurer", "weapon", "wyrmprint", "dragon", "ability", "facility", "total"].map(field => {
+          {this.state.fields.map(field => {
             return (
               <DetailItem
                 key={uuidv4()}

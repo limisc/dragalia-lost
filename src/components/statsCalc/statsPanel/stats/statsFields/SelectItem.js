@@ -1,82 +1,77 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
-// import LEVEL_LIMIT from '../../../../../redux/store/data/level_data';
-import { updateStatusAdventurerRarityMana } from '../../../../../redux/actions/actions';
-
+import { capitalise, updateStatsValue } from '../../../../../redux/actions/actions';
 const mapStateToProps = (state) => {
   return {
-    adventurer: state.statusSets.adventurer
+    stats: state.stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateRarityMana: (key, value) => dispatch(updateStatusAdventurerRarityMana(key, value)),
+    onChange: (section, key, value) => dispatch(updateStatsValue(section, key, value)),
   }
 }
 
 class SelectItem extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      manaSelect: {
-        "5": ["50", "45", "40", "30", "20", "10", "0"],
-        "4": ["40", "30", "20", "10", "0"],
-        "3": ["30", "20", "10", "0"],
+      mana: {
+        5: ["50", "45", "40", "30", "20", "10", "0"],
+        4: ["40", "30", "20", "10", "0"],
+        3: ["30", "20", "10", "0"],
       },
-      raritySelect: {
-        "3": ["5", "4", "3"],
-        "4": ["5", "4"],
-        "5": "5",
-      }
+      curRarity: {
+        5: ["5"],
+        4: ["5", "4"],
+        3: ["5", "4", "3"],
+      },
+      unbind: ["4", "3", "2", "1", "0"],
     }
     this._onChange = this._onChange.bind(this);
+    this.getSelectOptions = this.getSelectOptions.bind(this);
   }
 
   render() {
-    const { adventurer } = this.props;
-    const { rarity = "5", curRarity = "", mana } = adventurer || {};
-    const { manaSelect: { [curRarity]: manaOptions = [] }, raritySelect: { [rarity]: rarityOptions } } = this.state;
+    const { section, label, stats } = this.props;
+
     return (
+      <div className="field">
+        {stats[section] &&
+          <Fragment>
+            <label>{capitalise(label)}</label>
 
-      <div className="equal width fields">
-        <div className="field">
-          <label>Rarity</label>
-          {this.isString(rarityOptions) ?
-            <input disabled value={curRarity} />
-            :
-            <select id="curRarity" disabled={!adventurer} value={curRarity} onChange={this._onChange}>
-              {rarityOptions.map(opt => <option key={uuidv4()} value={opt}>{opt}</option>)}
+            <select id={label} value={stats[section][label]} onChange={this._onChange}>
+              {this.getSelectOptions().map(opt => <option key={uuidv4()} value={opt}>{opt}</option>)}
             </select>
-          }
-        </div>
-
-        <div className="field">
-          <label>Mana</label>
-          <select id="mana" disabled={!adventurer} value={mana} onChange={this._onChange}>
-            {manaOptions.map(opt => <option key={uuidv4()} value={opt}>{opt}</option>)}
-          </select>
-        </div>
+          </Fragment>
+        }
       </div>
     );
   }
 
-  isString(value) {
-    return typeof value === 'string' || value instanceof String;
+
+  getSelectOptions() {
+    const { section, label, stats } = this.props;
+    const { [label]: options } = this.state;
+    if (section === "adventurer") {
+      if (label === "curRarity") {
+        return options[stats[section].rarity];
+      } else if (label === "mana") {
+        return options[stats[section].curRarity];
+      }
+    } else if (label === "unbind") {
+      return options;
+    }
+    return [];
   }
 
   _onChange(e) {
-    const { id, value } = e.target;
-    this.props.updateRarityMana(id, value);
+    const { section, onChange } = this.props;
+    onChange(section, e.target.id, e.target.value)
   }
-}
-
-SelectItem.propTypes = {
-  //redux
-  adventurer: PropTypes.object,
 }
 
 export default connect(

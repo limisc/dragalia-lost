@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 // import uuidv4 from 'uuid/v4';
 import Stats from './stats/Stats';
+import HalidomStats from './stats/HalidomStats';
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  const { adventurer, dragon } = state.stats;
   return {
-
+    // adventurer,
+    // dragon,
   };
 }
 
@@ -15,20 +17,36 @@ class StatsPanel extends Component {
     super(props);
     this.state = {
       sections: ["adventurer", "weapon", "wyrmprint", "dragon"],
+      halidom: ["element", "weaponType", "statue"],
     }
   }
+  /*
+  halidom,  section : "adventurer", "dragon"
+            "field": "element", "weaponType",
+
+  */
 
   render() {
-    const { sections } = this.state;
+    const { sections, halidom } = this.state;
     return (
-      <div className="ui two column grid">
+      <Fragment>
+        {/* <div className="ui doubling stackable vertically divided grid "> */}
         {sections.map(section =>
           <Stats
             key={section}
             section={section}
           />
         )}
-      </div>
+        {/* </div> */}
+        <div className="ui divider"></div>
+        Halidom %
+        {halidom.map(field =>
+          <HalidomStats
+            key={field}
+            field={field}
+          />
+        )}
+      </Fragment>
     );
   }
 }

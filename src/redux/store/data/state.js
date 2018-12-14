@@ -13,20 +13,19 @@ const state = {
     wyrmprint: null,
     dragon: null,
     halidom: {
-      elementType: { HP: 0, STR: 0 },
-      weaponType: { HP: 0, STR: 0 },
-      dragon: { HP: 0, STR: 0 },
+      element: { HP: "", STR: "" },
+      weaponType: { HP: "", STR: "" },
+      statue: { HP: "", STR: "" },
     }
   },
-  // details: {
-  //   adventurer: { HP: 0, STR: 0 },
-  //   weapon: { HP: 0, STR: 0 },
-  //   wyrmprint: { HP: 0, STR: 0 },
-  //   dragon: { HP: 0, STR: 0 },
-  //   ability: { HP: 0, STR: 0 },
-  //   facility: { HP: 0, STR: 0 },
-  //   total: { HP: 0, STR: 0 },
-  // }
+  details: {
+    adventurer: { HP: 0, STR: 0 },
+    weapon: { HP: 0, STR: 0 },
+    wyrmprint: { HP: 0, STR: 0 },
+    dragon: { HP: 0, STR: 0 },
+    ability: { HP: 0, STR: 0 },
+    halidom: { HP: 0, STR: 0 },
+  }
 };
 
 export default state;

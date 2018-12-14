@@ -8,7 +8,7 @@ import wyrmprint from '../../../redux/store/data/wyrmprint_data';
 import dragon from '../../../redux/store/data/dragon_data';
 import FilterForm from './FilterForm';
 import ListItem from './ListItem';
-
+import { capitalise } from '../../../redux/actions/actions';
 const mapStateToProps = (state) => {
   const { focusSection, filters } = state;
   return {
@@ -33,7 +33,6 @@ class SelectPanel extends Component {
         wyrmprint,
         dragon,
       },
-      element: ["Flame", "Water", "Wind", "Light", "Shadow"],
     }
   }
 
@@ -46,7 +45,6 @@ class SelectPanel extends Component {
     const {
       filterFields: { [focusSection]: filterField },
       selectData: { [focusSection]: data },
-      element
     } = this.state;
 
     return (
@@ -59,9 +57,9 @@ class SelectPanel extends Component {
             <table className="ui celled table">
               <thead>
                 <tr>
-                  <th>{this.capitalise("adventurer")}</th>
+                  <th>{capitalise(focusSection)}</th>
                   <th>Name</th>
-                  {filterField.map(field => <th key={uuidv4()}>{this.capitalise(field)}</th>)}
+                  {filterField.map(field => <th key={uuidv4()}>{capitalise(field)}</th>)}
                 </tr>
               </thead>
 
@@ -73,23 +71,7 @@ class SelectPanel extends Component {
                     }
                     return true;
                   })
-                  .sort((item1, item2) => {
-                    if (item1.rarity > item2.rarity) return -1;
-                    if (item1.rarity < item2.rarity) return 1;
-
-                    if (item1.tier) {
-                      let tier1 = parseInt(item1.tier, 10), tier2 = parseInt(item2.tier, 10);
-                      if (tier1 > tier2) return -1;
-                      if (tier1 < tier2) return 1;
-                    }
-
-                    if (item1.element) {
-                      let element1 = element.indexOf(item1.element),
-                        element2 = element.indexOf(item2.element);
-                      if (element1 > element2) return 1;
-                      if (element1 < element2) return -1;
-                    }
-                  })
+                  .sort((item1, item2) => this.sortFunction(item1, item2))
                   .map(item =>
                     <ListItem
                       key={uuidv4()}
@@ -106,12 +88,37 @@ class SelectPanel extends Component {
     );
   }
 
-  capitalise(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
+  sortFunction(item1, item2) {
+    if (item1.rarity > item2.rarity) return -1;
+    if (item1.rarity < item2.rarity) return 1;
+
+    if (item1.tier) {
+      let tier1 = parseInt(item1.tier, 10), tier2 = parseInt(item2.tier, 10);
+      if (tier1 > tier2) return -1;
+      if (tier1 < tier2) return 1;
+    }
+
+    if (item1.element) {
+      const element = ["Flame", "Water", "Wind", "Light", "Shadow"];
+      const element1 = element.indexOf(item1.element),
+        element2 = element.indexOf(item2.element);
+      if (element1 > element2) return 1;
+      if (element1 < element2) return -1;
+    }
+
+    if (item1.weaponType) {
+      const weaponType = ["Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"];
+      const weaponType1 = weaponType.indexOf(item1.weaponType),
+        weaponType2 = weaponType.indexOf(item2.weaponType);
+      if (weaponType1 > weaponType2) return 1;
+      if (weaponType1 < weaponType2) return -1;
+    }
+    return 0;
   }
 }
 
 SelectPanel.propTypes = {
+  //redux
   focusSection: PropTypes.string,
   filters: PropTypes.objectOf(PropTypes.string).isRequired,
 }

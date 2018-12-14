@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {capitalise} from '../../redux/actions/actions';
 class FilterForm extends Component {
 
   constructor(props) {
@@ -20,7 +20,7 @@ class FilterForm extends Component {
         <div className="four fields">
           {Object.keys(this.state).map((field, i) => (
             <div className="field" key={i}>
-              <label>{field.charAt(0).toUpperCase() + field.slice(1)}</label>
+              <label>{capitalise(field)}</label>
               <select id={field} value={filters[field]} onChange={handleFilter}>
                 <option value="">All</option>
                 {this.state[field].map((op, j) => (<option key={j} value={op}>{op}</option>))}

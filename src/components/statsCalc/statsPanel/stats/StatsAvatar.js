@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { handleSection } from '../../../../redux/actions/actions';
+import { capitalise, handleSection } from '../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
@@ -29,10 +29,10 @@ class StatsAvatar extends Component {
       image = "add.png",
       Name,
     } = stats[section] || {};
-    const avatarName = Name ? Name[language] : (section.charAt(0).toUpperCase() + section.slice(1));
+    const avatarName = Name ? Name[language] : capitalise(section);
 
     return (
-      <div className="six wide column">
+      <div className="five wide column">
         <img
           className="status-avatar"
           alt={image}

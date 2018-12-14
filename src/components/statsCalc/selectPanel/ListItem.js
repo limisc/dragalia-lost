@@ -6,7 +6,7 @@ import { handleSelection } from '../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
-
+    language: state.language,
   };
 }
 
@@ -23,18 +23,18 @@ class ListItem extends Component {
   }
 
   render() {
-    const { section, item, filterField } = this.props;
+    const { language, section, item, filterField } = this.props;
     return (
       <tr>
         <td>
           <img
             className="selection-avatar"
-            alt={item.Name["zh"]}
+            alt={item.Name[language]}
             src={`${process.env.PUBLIC_URL}/image/${section}/${item.image}`}
             onClick={this._onClick}
           />
         </td>
-        <td id="table-left-align">{item.Name["zh"]}</td>
+        <td id="table-left-align">{item.Name[language]}</td>
         {filterField.map((field) => {
           if (field === "element" || field === "weaponType") {
             return (
@@ -42,7 +42,7 @@ class ListItem extends Component {
                 <img
                   className="selection-icon"
                   alt={item[field]}
-                  src={`${process.env.PUBLIC_URL}/image/icon/icon_${field}_${item[field]}.png`}
+                  src={`${process.env.PUBLIC_URL}/image/icon/${field}_${item[field]}.png`}
                 />
               </td>
             )

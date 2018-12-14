@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
+import { capitalise } from '../../../redux/actions/actions';
 function mapStateToProps(state) {
   return {
-    stats: state.stats,
+    details: state.details,
   };
 }
 
 class DetailItem extends Component {
   render() {
-    const { label, stats } = this.props;
+    const { label, details: { [label]: field } } = this.props;
+    const { HP = 0, STR = 0 } = field || {};
     return (
       <tr>
-        <td>{label.charAt(0).toUpperCase() + label.slice(1)}</td>
-        <td>{stats[label].HP}</td>
-        <td>{stats[label].STR}</td>
+        <td>{capitalise(label)}</td>
+        <td>{HP}</td>
+        <td>{STR}</td>
       </tr>
     );
   }

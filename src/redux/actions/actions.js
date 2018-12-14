@@ -1,5 +1,5 @@
 import actionTypes from './actionTypes';
-import LEVEL_LIMIT from '../store/data/level_data';
+import { LEVEL_LIMIT, HALIDOM_LIMIT } from '../store/data/level_data';
 
 //simple action creator
 const actionCreator = (type, ...argNames) => {
@@ -12,7 +12,7 @@ const actionCreator = (type, ...argNames) => {
   }
 }
 
-export const getLevelLimit = (section, rarity, unbind = 4) => {
+export const getStatsLimit = (section, rarity, unbind = 4) => {
   switch (section) {
     case "weapon":
     case "wyrmprint":
@@ -21,6 +21,13 @@ export const getLevelLimit = (section, rarity, unbind = 4) => {
     default:
       return LEVEL_LIMIT[section][rarity];
   }
+}
+
+export const getHalidomLimit = (field, type, label) => {
+  if (!label) {
+    return HALIDOM_LIMIT[field][type];
+  }
+  return HALIDOM_LIMIT[field][type][label];
 }
 
 export const createReducer = (initState, handlers) => {
@@ -37,6 +44,14 @@ export const updateObject = (oldObject, newValues) => {
   return Object.assign({}, oldObject, newValues);
 }
 
+
+export const capitalise = (word) => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+
+
+
 //modify filters
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const setFilters = actionCreator(actionTypes.SET_FILTERS, "key", "value");
@@ -49,7 +64,6 @@ const setSection = actionCreator(actionTypes.SET_SECTION, "section")
 export const handleSection = (section) => (dispatch, getState) => {
   const state = getState();
   const { adventurer, weapon } = state.stats;
-
   dispatch(setSection(section));
   if (section === "adventurer" && weapon) {
     dispatch(setFiltersAdventurerWeaponType());
@@ -62,33 +76,29 @@ export const handleSection = (section) => (dispatch, getState) => {
   }
 }
 
-//modify status
-// const removeStatus = actionCreator(actionTypes.REMOVE_STATUS, "section");
+//modify stats
 const selectStats = actionCreator(actionTypes.SELECT_STATS, "section", "item");
+const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "section");
 export const handleSelection = (section, item) => (dispatch) => {
   const { rarity, unbind = 4 } = item;
-  const addState = { level: getLevelLimit(section, rarity, unbind) };
+  const addState = { level: getStatsLimit(section, rarity, unbind) };
   if (section === "adventurer") {
-    addState.mana = getLevelLimit("mana", rarity);
+    addState.mana = getStatsLimit("mana", rarity);
+  } else if (section === "wyrmprint") {
+    addState.image = item.image.slice(0, -5) + "2.png";
+    addState.unbind = 4;
   } else {
     addState.unbind = 4;
   }
   dispatch(selectStats(section, updateObject(item, addState)));
-  // console.log(updateObject(item, addState))
+  dispatch(updateDetails(section));
 }
 
-export const updateStatsLevel = actionCreator(actionTypes.UPDATE_STATS_LEVEL, "section", "key", "value", "facilityType");
-export const updateStatsUnbind = actionCreator(actionTypes.UPDATE_STATS_UNBIND, "section", "value");
-export const updateStatsAdventurerRarityMana = actionCreator(actionTypes.UPDATE_STATS_ADVENTURER_RARITY_MANA, "key", "value");
 
+export const updateStatsValue = actionCreator(actionTypes.UPDATE_STATS_VALUE, "section", "key", "value", "field");
 
 //calc Status
-const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "details");
 
-export const handleDetails = (statusSets) => (dispatch) => {
-  const details = calcDetails(statusSets);
-  dispatch(updateDetails(details));
-}
 
 const calcStats = (section, status, key, modifier = 1) => {
   let stats = 0;
@@ -162,7 +172,7 @@ const calcDetails = (statusSets) => {
 
   facility.typeList.forEach(type => {
     facility[type].contentList.forEach(item => {
-      let level = facility[type][item];
+      // let level = facility[type][item];
       // const { HP = 0, STR = 0 } = facilities[type][level] || {};
       const HP = 0, STR = 0;
       if (type === "statue") {

@@ -1,25 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { updateStatusLevel } from '../../../../../redux/actions/actions';
+import { capitalise, updateStatsValue, updateHalidomValue } from '../../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
-  const { statusSets } = state;
   return {
-    statusSets,
+    stats: state.stats,
+    halidom: state.halidom,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateLevel: (section, key, value, facilityType) => dispatch(updateStatusLevel(section, key, value, facilityType)),
+    updateStats: (section, key, value, field) => dispatch(updateStatsValue(section, key, value, field)),
   }
 }
 
 class InputItem extends Component {
   constructor(props) {
     super(props);
-    this._onChange = this._onChange.bind(this);
+    this._updateStats = this._updateStats.bind(this);
+    // // this._updateHalidom = this._updateHalidom.bind(this);
   }
 
   // shouldComponentUpdate(nextProps) {
@@ -29,31 +30,35 @@ class InputItem extends Component {
   // }
 
   render() {
-    const { section, label, statusSets: { [section]: status }, facilityType } = this.props;
+    const { section, field, label, stats: { [section]: item } } = this.props;
     let value = ""
-    if (facilityType) {
-      value = status[facilityType][label];
-    } else if (status) {
-      value = status[label];
+    if (section === "halidom") {
+      value = item[field][label];
+    } else if (item) {
+      value = item[label];
     }
     return (
       <div className="field">
-        <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>
-        <input
-          type="number"
-          disabled={!status}
-          value={value}
-          onChange={this._onChange}
-          onKeyPress={this._handleKeyPress}
-        />
+        {item &&
+          <Fragment>
+            <label>{capitalise(label)}</label>
+            <input
+              type="number"
+              value={value}
+              onChange={this._updateStats}
+              onKeyPress={this._handleKeyPress}
+            />
+          </Fragment>
+        }
       </div>
     );
   }
 
-  _onChange(e) {
-    const { section, label, facilityType, updateLevel } = this.props;
-    updateLevel(section, label, e.target.value, facilityType);
+  _updateStats(e) {
+    const { section, field, label, updateStats } = this.props;
+    updateStats(section, label, e.target.value, field);
   }
+
 
   _handleKeyPress(e) {
     //prevent user enter + - e in number input field.
@@ -67,8 +72,8 @@ InputItem.propTypes = {
   section: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   facilityType: PropTypes.string,
-  statusSets: PropTypes.object.isRequired,
-  updateLevel: PropTypes.func.isRequired,
+  stats: PropTypes.object.isRequired,
+  // updateLevel: PropTypes.func.isRequired,
 }
 
 export default connect(

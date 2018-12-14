@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
-import { resetFilters, setFilters } from '../../../redux/actions/actions';
+import { capitalise, resetFilters, setFilters } from '../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   const { language, filters } = state;
@@ -40,13 +40,13 @@ class FilterForm extends Component {
 
   render() {
     const { filters, filterField } = this.props;
-    const language = "zh";
+    // const language = "zh";
     return (
       <div className="ui form">
         <div className="four fields">
           {filterField.map(field =>
             <div className="field" key={uuidv4()}>
-              <label>{field.charAt(0).toUpperCase() + field.slice(1)}</label>
+              <label>{capitalise(field)}</label>
               <select id={field} value={filters[field]} onChange={this._onChange}>
                 <option value="">All</option>
                 {this.state.filterOptions[field].map(opt => <option key={uuidv4()} value={opt}>{opt}</option>)}
@@ -55,7 +55,7 @@ class FilterForm extends Component {
           )}
           <div className="field">
             <label>&nbsp;</label>
-            <button className="ui button" onClick={this._onClick}>Clear Filter</button>
+            <button className="ui button" onClick={this._onClick}>Clear</button>
           </div>
         </div>
       </div>

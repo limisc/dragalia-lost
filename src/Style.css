@@ -1,36 +1,32 @@
-/* div#left-panel {
-  height: 100%;
-  margin: 0px;
-  background-color: blanchedalmond
-} */
+body, table.ui.celled.table {
+  background-color: #fff8e7;
+}
 
-img.status-avatar {
-  width: 90px;
+img {
   display: block;
   margin: auto;
 }
 
-button#max-btn {
-  margin-top: 24px;
+img.status-avatar {
+  width: 100%;
+  max-width: 80px;
 }
 
 img.selection-avatar {
   width: 64px;
-  display: block;
-  margin: auto;
 }
 
-img.selection-icon {
+img.selection-icon, img.halidom-icon {
   width: 32px;
 }
 
-div.unbind-set {
-  text-align: center;
-}
-
-img.unbind-set {
-  height: 30px;
-  margin-right: 10px;
+img.halidom-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 table.ui.celled.table th, table.ui.celled.table td {
@@ -45,3 +41,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* div.field {max-width: 2 em !important;} */
+
+/* div.field select, div.field input, .ui.form input[type="number"] {padding-left: .2em !important;} */
+
+/* img.unbind-set {height: 15px !important;} */

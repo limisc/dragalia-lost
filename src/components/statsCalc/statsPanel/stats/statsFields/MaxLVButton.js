@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { updateStatusLevel } from '../../../../../redux/actions/actions';
+import { updatStatsValue } from '../../../../../redux/actions/actions';
 const mapStateToProps = (state) => {
-  const { statusSets } = state;
   return {
-    statusSets
+    stats: state.stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toMaxLevel: (section) => dispatch(updateStatusLevel(section, "level", "100")),
+    toMaxLevel: (section) => dispatch(updatStatsValue(section, "level", "100")),
   }
 }
 
@@ -29,11 +28,12 @@ class MaxLevelButton extends Component {
   // }
 
   render() {
-    const { section, statusSets: { [section]: status } } = this.props;
+    const { section, stats: { [section]: item } } = this.props;
     // console.log("MAXLV", section)
     return (
       <div className="field">
-        <button id="max-btn" className="ui button" disabled={!status} onClick={this._onClick}>MAX LV.</button>
+        <label>&nbsp;</label>
+        <button id="max-btn" className="ui button" disabled={!item} onClick={this._onClick}>MAX</button>
       </div>
     );
   }
@@ -49,7 +49,7 @@ MaxLevelButton.propTypes = {
   //props
   section: PropTypes.string.isRequired,
   //redux store
-  statusSets: PropTypes.object.isRequired,
+  stats: PropTypes.object.isRequired,
 }
 export default connect(
   mapStateToProps,
