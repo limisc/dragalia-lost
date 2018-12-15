@@ -113,6 +113,10 @@ class SelectPanel extends Component {
       if (weaponType1 > weaponType2) return 1;
       if (weaponType1 < weaponType2) return -1;
     }
+
+    if (item1.Name.en > item2.Name.en) return 1;
+    if (item1.Name.en < item2.Name.en) return -1;
+
     return 0;
   }
 }

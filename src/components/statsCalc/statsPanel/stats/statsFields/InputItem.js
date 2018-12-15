@@ -31,12 +31,14 @@ class InputItem extends Component {
 
   render() {
     const { section, field, label, stats: { [section]: item } } = this.props;
-    let value = ""
+    let value = "", step = "1";
     if (section === "halidom") {
       value = item[field][label];
+      step = "0.5";
     } else if (item) {
       value = item[label];
     }
+    console.log(section, step)
     return (
       <div className="field">
         {item &&
@@ -45,8 +47,10 @@ class InputItem extends Component {
             <input
               type="number"
               value={value}
+              min="0"
+              step={step}
               onChange={this._updateStats}
-              onKeyPress={this._handleKeyPress}
+            // onKeyPress={this._handleKeyPress}
             />
           </Fragment>
         }

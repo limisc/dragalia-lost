@@ -98,7 +98,7 @@ const updateHalidom = (state, action) => {
     type = state.adventurer[field];
   }
   const limit = getHalidomLimit(field, type, key);
-  value = parseInt(value, 10) || "";
+  value = parseFloat(value) || "";
   if (value > limit) value = limit;
   return {
     ...state,
