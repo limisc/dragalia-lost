@@ -1,4 +1,4 @@
-const wyrmprint = 
+const wyrmprint =
 [
   {
     "Id": "400001",
@@ -983,8 +983,8 @@ const wyrmprint =
   {
     "Id": "400075",
     "Name": {
-      "en": "Tough Love\n\u9b54\u9b3c\u6559\u5b98\u7684\u58f0\u63f4",
-      "zh": "Tough Love\n\u9b54\u9b3c\u6559\u5b98\u7684\u58f0\u63f4"
+      "en": "Tough Love",
+      "zh": "\u9b54\u9b3c\u6559\u5b98\u7684\u58f0\u63f4"
     },
     "rarity": "5",
     "MinHP": 26,

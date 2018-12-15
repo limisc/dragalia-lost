@@ -146,9 +146,23 @@ const updateStatsValue = updateStatsCreator({}, {
   STR: updateHalidom,
 });
 
+const resetStats = () => {
+  return {
+    adventurer: null,
+    weapon: null,
+    wyrmprint: null,
+    dragon: null,
+    halidom: {
+      element: { HP: "", STR: "" },
+      weaponType: { HP: "", STR: "" },
+      statue: { HP: "", STR: "" },
+    }
+  }
+}
 
 const statsReducer = createReducer({}, {
   [actionTypes.SELECT_STATS]: selectStats,
+  [actionTypes.RESET_STATS]: resetStats,
   [actionTypes.UPDATE_STATS_VALUE]: updateStatsValue,
 })
 

@@ -14,6 +14,7 @@ const actionTypes = {
 
   //modify status
   SELECT_STATS: "SELECT_STATS",
+  RESET_STATS: "RESET_STATS",
   UPDATE_STATS_VALUE: "UPDATE_STATS_VALUE",
 
   //modify halidom

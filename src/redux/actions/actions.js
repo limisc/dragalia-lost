@@ -78,7 +78,7 @@ export const handleSection = (section) => (dispatch, getState) => {
 
 //modify stats
 const selectStats = actionCreator(actionTypes.SELECT_STATS, "section", "item");
-const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "section");
+const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS);
 
 export const handleSelection = (section, item) => (dispatch) => {
   const { rarity, unbind = 4 } = item;
@@ -92,13 +92,18 @@ export const handleSelection = (section, item) => (dispatch) => {
     addState.unbind = 4;
   }
   dispatch(selectStats(section, updateObject(item, addState)));
-  dispatch(updateDetails(section));
+  dispatch(updateDetails());
 }
 
-
+export const resetStats = () => (dispatch) => {
+  dispatch(actionCreator(actionTypes.RESET_STATS)());
+  dispatch(resetFilters());
+  dispatch(setSection(null));
+  dispatch(updateDetails());
+};
 export const updateStatsValue = actionCreator(actionTypes.UPDATE_STATS_VALUE, "section", "key", "value", "field");
 
 export const updateStats = (section, key, value, field) => (dispatch) => {
   dispatch(updateStatsValue(section, key, value, field));
-  dispatch(updateDetails(section));
+  dispatch(updateDetails());
 }
