@@ -23,7 +23,6 @@ const rootReducer = (state, action) => {
     stats: statsReducer(state.stats, action),
     details: detailReducer(state.details, action, state.stats),
   }
-
 }
 
 

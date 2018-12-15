@@ -1,6 +1,6 @@
 const state = {
   focusSection: null,
-  language: "zh",
+  language: "en",
   filters: {
     weaponType: "",
     rarity: "",

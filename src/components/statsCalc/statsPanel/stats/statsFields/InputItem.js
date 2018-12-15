@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { capitalise, updateStatsValue, updateHalidomValue } from '../../../../../redux/actions/actions';
+import { capitalise, updateStats } from '../../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateStats: (section, key, value, field) => dispatch(updateStatsValue(section, key, value, field)),
+    updateStats: (section, key, value, field) => dispatch(updateStats(section, key, value, field)),
   }
 }
 

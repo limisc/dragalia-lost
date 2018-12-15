@@ -3,17 +3,16 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import InputItem from './statsFields/InputItem';
 const mapStateToProps = (state) => {
-  const { adventurer, dragon, halidom } = state.stats;
+  const { adventurer, dragon } = state.stats;
   return {
     adventurer,
     dragon,
-    halidom
   };
 }
 
 class HalidomStats extends Component {
   render() {
-    const { field, adventurer, dragon, halidom } = this.props;
+    const { field, adventurer, dragon } = this.props;
     const item = field === "statue" ? dragon : adventurer;
     let type = "";
     if (item) {

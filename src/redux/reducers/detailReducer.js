@@ -1,16 +1,19 @@
 import actionTypes from '../actions/actionTypes';
-import { updateObject, createReducer } from '../actions/actions';
+import {
+  updateObject,
+  createReducer
+} from '../actions/actions';
 
 
-const updateDetailsCreator = (initState, handlers) => {
-  return (state = initState, action, stats) => {
-    if (handlers.hasOwnProperty(action.section)) {
-      return handlers[action.section](state, stats);
-    } else {
-      return state;
-    }
-  }
-}
+// const updateDetailsCreator = (initState, handlers) => {
+//   return (state = initState, action, stats) => {
+//     if (handlers.hasOwnProperty(action.section)) {
+//       return handlers[action.section](state, stats, action);
+//     } else {
+//       return state;
+//     }
+//   }
+// }
 
 const getManaBonus = (adventurer, key) => {
   const mana = adventurer.mana.toString();
@@ -27,85 +30,82 @@ const getManaBonus = (adventurer, key) => {
   return statArray.slice(index).reduce((acc, cur) => acc + cur);
 }
 
-const calcDetails = (section, item, modifier = 1) => {
-  const details = { HP: 0, STR: 0 };
+const calcDetail = (section, item, modifier = 1) => {
+  const detail = { HP: 0, STR: 0 };
   if (item) {
     let level = parseInt(item.level, 10);
     if (!level || level < 1) level = 1;
-    let stats, steps, statGain;
-
-    Object.keys(details).forEach(key => {
+    let stats;
+    Object.keys(detail).forEach(key => {
       stats = 0;
       if (level === item.MAX_LEVEL) {
         stats = item["Max" + key];
-      } else if (section === "adventurer") {
-        steps = (item["Max" + key] - item["Min" + key + "5"]) / (item.MAX_LEVEL - 1);
-        statGain = (level - 1) * steps;
-        stats = item["Min" + key + item.curRarity] + statGain;
       } else {
-        steps = (item["Max" + key] - item["Min" + key]) / (item.MAX_LEVEL - 1);
-        statGain = (level - 1) * steps;
-        stats = item["Min" + key] + statGain;
+        let steps, stepMin, statsMin, statGain;
+        if (section === "adventurer") {
+          stepMin = "Min" + key + "5";
+          statsMin = "Min" + key + item.curRarity;
+        } else {
+          stepMin = "Min" + key;
+          statsMin = stepMin;
+        }
+
+        if (level === 1) {
+          stats = item[statsMin];
+        } else {
+          steps = (item["Max" + key] - item[stepMin]) / (item.MAX_LEVEL - 1);
+          statGain = (level - 1) * steps;
+          stats = item[statsMin] + statGain;
+        }
       }
-
       if (section === "adventurer") stats = stats + getManaBonus(item, key);
-
-      details[key] = Math.ceil(Math.ceil(stats) * modifier);
+      detail[key] = Math.ceil(Math.ceil(stats) * modifier);
     });
   }
-  return details;
+  return detail;
 }
 
+const updateDetails = (state, action, stats) => {
+  const details = {};
+  const { adventurer, dragon } = stats;
+  ["adventurer", "weapon", "wyrmprint", "dragon"].forEach(section => {
+    let modifier = 1;
+    if (["weapon", "dragon"].includes(section) && stats[section] && adventurer && stats[section].element === adventurer.element) {
+      modifier = 1.5;
+    }
+    details[section] = calcDetail(section, stats[section], modifier);
+  })
 
-const getWeaponDragon = (section, stats) => {
-  let modifier = 1;
-  if (stats.adventurer && stats.adventurer.element === stats[section].element) modifier = 1.5;
-  return calcDetails([section], stats[section], modifier);
-}
-
-const getHalidom = (state, stats) => {
-  //changes when adventurer, dragon, and halidom changes.
-  const detail = { HP: 0, STR: 0 };
-  const { halidom: { element, weaponType, statue }, adventurer, dragon } = stats;
-  const adventurer_HP_percent = element.HP + weaponType.HP;
-  const adventurer_STR_percent = element.STR + weaponType.STR;
-  if (adventurer) {
-    detail.HP = Math.ceil(adventurer.HP * (element.HP + weaponType.HP) * 0.01);
-    detail.STR = Math.ceil(adventurer.STR * (element.STR + weaponType.STR) * 0.01);
+  //calc halidom
+  const { element, weaponType, statue } = stats.halidom;
+  const dragonDetail = calcDetail("dragon", dragon);
+  details.halidom = {
+    HP: Math.ceil(details.adventurer.HP * (element.HP + weaponType.HP) * 0.01) + Math.ceil(dragonDetail.HP * statue.HP * 0.01),
+    STR: Math.ceil(details.adventurer.STR * (element.STR + weaponType.STR) * 0.01) + Math.ceil(dragonDetail.STR * statue.HP * 0.01),
   }
 
-  if (dragon) {
+
+  const subTotal = { HP: 0, STR: 0 };
+  Object.keys(details).forEach(field => {
+    subTotal.HP += details[field].HP;
+    subTotal.STR += details[field].STR;
+  })
+
+  //calc ability
+  details.ability = { HP: 0, STR: 0 };
+  if (adventurer && dragon && adventurer.element === dragon.element) {
+    const abilityName = dragon.unbind === 4 ? "Abilities12" : "Abilities11";
+    if (dragon[abilityName].field === "HP") {
+      details.ability.HP = Math.ceil(subTotal.HP * dragon[abilityName].value * 0.01);
+    } else if (dragon[abilityName].field === "STR") {
+      details.ability.STR = Math.ceil(subTotal.STR * dragon[abilityName].value * 0.01);
+    } else if (dragon[abilityName].field === "BOTH") {
+      details.ability.HP = Math.ceil(subTotal.HP * dragon[abilityName].value * 0.01);
+      details.ability.STR = Math.ceil(subTotal.STR * dragon[abilityName].value * 0.01);
+    }
   }
+  return updateObject(state, details);
 }
-
-
-const updateDetailsAdventurer = (state, stats) => {
-  const adventurer = calcDetails("adventurer", stats.adventurer);
-
-  return updateObject(state, { adventurer });
-}
-
-const updateDetailsWeapon = (state, stats) => {
-  let modifier = 1;
-  if (stats.adventurer && stats.adventurer.element === stats.weapon.element) modifier = 1.5;
-  const weapon = calcDetails("weapon", stats.weapon, modifier);
-  return updateObject(state, { weapon });
-}
-
-const updateDetailsWyrmprint = (state, stats) => {
-  const wyrmprint = calcDetails("wyrmprint", stats.wyrmprint);
-  return updateObject(state, { wyrmprint });
-}
-
-// const updateDetailsHalidom =
-
-
-
-const updateDetails = updateDetailsCreator({}, {
-  adventurer: updateDetailsAdventurer,
-  weapon: updateDetailsWeapon,
-  wyrmprint: updateDetailsWyrmprint,
-})
 
 const detailReducer = createReducer({}, {
   [actionTypes.UPDATE_DETAILS]: updateDetails,

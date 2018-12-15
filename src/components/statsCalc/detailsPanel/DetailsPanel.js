@@ -5,7 +5,7 @@ import uuidv4 from 'uuid/v4';
 
 function mapStateToProps(state) {
   return {
-    stats: state.stats,
+    details: state.details,
   };
 }
 
@@ -13,12 +13,13 @@ class DetailsPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fields: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom", "total"],
+      fields: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom"],
     }
   }
 
   render() {
-    // const { stats } = this.props;
+    const { details } = this.props;
+    const total = this.calcTotal(details);
     return (
       <table className="ui violet celled table">
         <thead>
@@ -40,41 +41,25 @@ class DetailsPanel extends Component {
             );
           })}
         </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <th>{total.HP}</th>
+            <th>{total.STR}</th>
+          </tr>
+        </tfoot>
       </table>
     );
   }
-  // calcStatus(section, status, key, subtotal) {
-  //   let stats = 0;
-  //   let { level, rarity, unbind } = status;
-  //   let step, statGain;
-  //   level = (level === "" || parseInt(level, 10) === 0) ? 1 : parseInt(level, 10);
-  //   switch (section) {
-  //     case "adventurer":
-  //       step = (status["Max" + key] - status["Min" + key + "5"]) / (status.MAX_LEVEL - 1);
-  //       statGain = (level - 1) * step;
-  //       stats = Math.ceil(status["Min" + key + rarity] + statGain) + this.getManaBonus(status, key);
-  //       break;
-  //     case "weapon":
-  //     case "dragon":
-  //     case "wyrmprint":
-  //       step = (status["Max" + key] - status["Min" + key]) / (status.MAX_LEVEL - 1);
-  //       statGain = (level - 1) * step;
-  //       stats = Math.ceil(status["Min" + key] + statGain);
-  //       break;
-  //     case "ability":
-  //       const abilityName = parseInt(unbind, 10) === 4 ? "Abilities12" : "Abilities11";
-  //       const { attr, value } = status[abilityName];
 
-  //       if ((attr === "both") || (attr === "Strength" && key === "Atk") || (attr === "HP" && key === "Hp")) {
-  //         stats = Math.ceil(subtotal * value / 100);
-  //         console.log(stats)
-  //       }
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  //   return stats;
-  // }
+  calcTotal(details) {
+    const total = { HP: 0, STR: 0 };
+    Object.keys(details).forEach(key => {
+      total.HP += details[key].HP;
+      total.STR += details[key].STR;
+    });
+    return total;
+  }
 }
 export default connect(
   mapStateToProps,

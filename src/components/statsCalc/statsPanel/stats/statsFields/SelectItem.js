@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import uuidv4 from 'uuid/v4';
-import { capitalise, updateStatsValue } from '../../../../../redux/actions/actions';
+import { capitalise, updateStats } from '../../../../../redux/actions/actions';
 const mapStateToProps = (state) => {
   return {
     stats: state.stats,
@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChange: (section, key, value) => dispatch(updateStatsValue(section, key, value)),
+    onChange: (section, key, value) => dispatch(updateStats(section, key, value)),
   }
 }
 
