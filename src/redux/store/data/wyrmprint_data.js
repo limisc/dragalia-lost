@@ -1245,6 +1245,20 @@ const wyrmprint =
     "MaxSTR": 33,
     "image": "400114_01.png",
     "MAX_LEVEL": 80
+  },
+  {
+    "Id": "400121",
+    "Name": {
+      "en": "Volcanic Queen",
+      "zh": "烈焰女王"
+    },
+    "rarity": "5",
+    "MinHP": 24,
+    "MaxHP": 165,
+    "MinSTR": 5,
+    "MaxSTR": 39,
+    "image": "400121_01.png",
+    "MAX_LEVEL": 100
   }
 ];
 export default wyrmprint;

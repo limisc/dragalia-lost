@@ -38,7 +38,6 @@ class InputItem extends Component {
     } else if (item) {
       value = item[label];
     }
-    console.log(section, step)
     return (
       <div className="field">
         {item &&
