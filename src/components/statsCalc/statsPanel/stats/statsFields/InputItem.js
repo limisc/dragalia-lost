@@ -50,7 +50,7 @@ class InputItem extends Component {
               min="0"
               step={step}
               onChange={this._updateStats}
-            // onKeyPress={this._handleKeyPress}
+              onKeyPress={this._handleKeyPress}
             />
           </Fragment>
         }

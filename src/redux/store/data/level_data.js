@@ -22,7 +22,7 @@ export const LEVEL_LIMIT = {
 export const HALIDOM_LIMIT = {
   element: {
     Flame: { HP: 16, STR: 15 },
-    Water: { HP: 16, STR: 15 },
+    Water: { HP: 24.5, STR: 22 },
     Wind: { HP: 24.5, STR: 22 },
     Light: { HP: 24.5, STR: 22 },
     Shadow: { HP: 16, STR: 15 },
