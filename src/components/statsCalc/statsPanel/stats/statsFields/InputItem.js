@@ -1,12 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { capitalise, updateStats } from '../../../../../redux/actions/actions';
+import { updateStats } from '../../../../../redux/actions/actions';
+import ui from '../../../../../redux/store/data/ui_data';
 
 const mapStateToProps = (state) => {
+  const { language, stats, halidom } = state;
   return {
-    stats: state.stats,
-    halidom: state.halidom,
+    language,
+    stats,
+    halidom,
   };
 }
 
@@ -30,7 +33,7 @@ class InputItem extends Component {
   // }
 
   render() {
-    const { section, field, label, stats: { [section]: item } } = this.props;
+    const { language, section, field, label, stats: { [section]: item } } = this.props;
     let value = "", step = "1";
     if (section === "halidom") {
       value = item[field][label];
@@ -42,7 +45,7 @@ class InputItem extends Component {
       <div className="field">
         {item &&
           <Fragment>
-            <label>{capitalise(label)}</label>
+            <label>{ui[label][language]}</label>
             <input
               type="number"
               value={value}
