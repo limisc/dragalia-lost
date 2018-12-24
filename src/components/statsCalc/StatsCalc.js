@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import StatsPanel from './statsPanel/StatsPanel';
 import SelectPanel from './selectPanel/SelectPanel';
 import DetailsPanel from './detailsPanel/DetailsPanel';
-import { setLanguage, resetStats } from '../../redux/actions/actions'
+import { setLanguage, resetStats } from '../../redux/actions/actions';
+
 const mapStateToProps = (state) => {
   return {
     language: state.language,
@@ -24,28 +25,24 @@ class StatsCalc extends Component {
   }
 
   render() {
-    const { language } = this.props;
     return (
       <div className="ui doubling stackable two column grid" style={{ margin: "1em" }}>
         <div className="four wide column">
-          {/* <div className="row"> */}
           <div className="ui form">
             <div className="fields">
               <div className="field">
-                <select value={language} onChange={this._setLanguage}>
+                <select value={this.props.language} onChange={this._setLanguage}>
                   <option value="en">English</option>
                   <option value="zh">简中</option>
                 </select>
               </div>
 
-              <div className="field" style={{ float: "right !important" }}>
-                <button className="ui button" style={{ float: "right !important" }} onClick={this.props.resetStats}>Reset</button>
+              <div className="field">
+                <button className="ui button" onClick={this.props.resetStats}>Reset</button>
               </div>
             </div>
-            {/* </div> */}
           </div>
-          <DetailsPanel
-          />
+          <DetailsPanel />
         </div>
         <div className="six wide column">
           <StatsPanel />
@@ -58,8 +55,7 @@ class StatsCalc extends Component {
   }
 
   _setLanguage(e) {
-    const { setLanguage } = this.props;
-    setLanguage(e.target.value);
+    this.props.setLanguage(e.target.value);
   }
 };
 

@@ -28,7 +28,6 @@ class StatsPanel extends Component {
           />
         )}
         <div className="ui divider"></div>
-        Halidom %
         {halidom.map(field =>
           <HalidomStats
             key={field}

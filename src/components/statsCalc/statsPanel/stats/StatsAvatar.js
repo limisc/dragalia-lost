@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { capitalise, handleSection } from '../../../../redux/actions/actions';
-
+import { handleSection } from '../../../../redux/actions/actions';
+import ui from '../../../../redux/store/data/ui_data';
 const mapStateToProps = (state) => {
   return {
     language: state.language,
@@ -22,14 +22,12 @@ class StatsAvatar extends Component {
     this._onClick = this._onClick.bind(this);
   }
 
-
   render() {
     const { language, section, stats } = this.props;
     const {
       image = "add.png",
-      Name,
+      Name = ui[section],
     } = stats[section] || {};
-    const avatarName = Name ? Name[language] : capitalise(section);
 
     return (
       <div className="five wide column">
@@ -39,7 +37,7 @@ class StatsAvatar extends Component {
           src={`${process.env.PUBLIC_URL}/image/${section}/${image}`}
           onClick={this._onClick}
         />
-        <p style={{ textAlign: "center" }}><b>{avatarName}</b></p>
+        <p style={{ textAlign: "center" }}><b>{Name[language]}</b></p>
       </div>
     );
   }

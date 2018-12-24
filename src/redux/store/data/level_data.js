@@ -38,7 +38,7 @@ export const HALIDOM_LIMIT = {
     Staff: { HP: 23, STR: 23 },
   },
   statue: {
-    Flame: { HP: 0, STR: 0 },
+    Flame: { HP: 11.5, STR: 11.5 },
     Water: { HP: 0, STR: 0 },
     Wind: { HP: 11.5, STR: 11.5 },
     Light: { HP: 0, STR: 0 },

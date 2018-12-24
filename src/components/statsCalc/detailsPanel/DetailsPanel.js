@@ -24,7 +24,7 @@ class DetailsPanel extends Component {
       <table className="ui violet celled table">
         <thead>
           <tr>
-            <th>Field</th>
+            <th></th>
             <th>HP</th>
             <th>STR</th>
             {/* <th>Diff</th> */}

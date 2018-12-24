@@ -8,10 +8,12 @@ import wyrmprint from '../../../redux/store/data/wyrmprint_data';
 import dragon from '../../../redux/store/data/dragon_data';
 import FilterForm from './FilterForm';
 import ListItem from './ListItem';
-import { capitalise } from '../../../redux/actions/actions';
+import ui from '../../../redux/store/data/ui_data';
+
 const mapStateToProps = (state) => {
-  const { focusSection, filters } = state;
+  const { language, focusSection, filters } = state;
   return {
+    language,
     focusSection,
     filters,
   };
@@ -41,7 +43,7 @@ class SelectPanel extends Component {
   // }
   render() {
 
-    const { focusSection, filters } = this.props;
+    const { language, focusSection, filters } = this.props;
     const {
       filterFields: { [focusSection]: filterField },
       selectData: { [focusSection]: data },
@@ -57,9 +59,9 @@ class SelectPanel extends Component {
             <table className="ui celled table">
               <thead>
                 <tr>
-                  <th>{capitalise(focusSection)}</th>
-                  <th>Name</th>
-                  {filterField.map(field => <th key={uuidv4()}>{capitalise(field)}</th>)}
+                  <th>{ui[focusSection][language]}</th>
+                  <th>{ui.name[language]}</th>
+                  {filterField.map(field => <th key={uuidv4()}>{ui[field][language]}</th>)}
                 </tr>
               </thead>
 

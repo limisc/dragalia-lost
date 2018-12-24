@@ -2,7 +2,7 @@ body, table.ui.celled.table {
   background-color: #fff8e7;
 }
 
-img {
+img, #facility-btn {
   display: block;
   margin: auto;
 }
