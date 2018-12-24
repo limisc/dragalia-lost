@@ -17,7 +17,7 @@ const ui = {
   unbind: { en: "Unbind", zh: "上限解锁", ja: "" },
   HP: { en: "HP", zh: "HP" },
   STR: { en: "STR", zh: "攻击力" },
-  name: { en: "Name", zh: "名字" },
+  name: { en: "Name", zh: "名称" },
   Sword: { en: "Sword", zh: "剑", ja: "" },
   Blade: { en: "Blade", zh: "刀", ja: "" },
   Dagger: { en: "Dagger", zh: "短剑", ja: "" },

@@ -33,7 +33,7 @@ class StatsCalc extends Component {
               <div className="field">
                 <select value={this.props.language} onChange={this._setLanguage}>
                   <option value="en">English</option>
-                  <option value="zh">简中</option>
+                  <option value="zh">{`\u7b80\u4e2d`}</option>
                 </select>
               </div>
 
