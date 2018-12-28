@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import uuidv4 from 'uuid/v4';
 import { updateStats } from '../../../../../redux/actions/actions';
-import ui from '../../../../../redux/store/data/ui_data';
+import ui_content from '../../../../../redux/store/data/ui_content';
 const mapStateToProps = (state) => {
   return {
     language: state.language,
@@ -43,7 +43,7 @@ class SelectItem extends Component {
       <div className="field">
         {stats[section] &&
           <Fragment>
-            <label>{ui[label][language]}</label>
+            <label>{ui_content[label][language]}</label>
 
             <select id={label} value={stats[section][label]} onChange={this._onChange}>
               {this.getSelectOptions().map(opt => <option key={uuidv4()} value={opt}>{opt}</option>)}

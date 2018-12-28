@@ -1125,5 +1125,30 @@ const dragon =
       "image": "210076_01.png",
       "MAX_LEVEL": 100
     },
+    {
+      "Id": 20050102,
+      "Name": {
+        "en": "High Brunhilda",
+        "zh": "真布伦希尔德"
+      },
+      "element": "Flame",
+      "rarity": "5",
+      "MinHP": 35,
+      "MaxHP": 350,
+      "MinSTR": 12,
+      "MaxSTR": 120,
+      "Abilities11": {
+        "element": "Flame",
+        "field": "BOTH",
+        "value": 20
+      },
+      "Abilities12": {
+        "element": "Flame",
+        "field": "BOTH",
+        "value": 30
+      },
+      "image": "210039_01.png",
+      "MAX_LEVEL": 100
+    },
   ];
 export default dragon;

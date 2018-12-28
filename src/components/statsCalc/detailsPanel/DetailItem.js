@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import ui from '../../../redux/store/data/ui_data';
+import ui_content from '../../../redux/store/data/ui_content';
 
 function mapStateToProps(state) {
   return {
@@ -16,7 +16,7 @@ class DetailItem extends Component {
     const { HP = 0, STR = 0 } = field || {};
     return (
       <tr>
-        <td>{ui[label][language]}</td>
+        <td>{ui_content[label][language]}</td>
         <td>{HP}</td>
         <td>{STR}</td>
       </tr>

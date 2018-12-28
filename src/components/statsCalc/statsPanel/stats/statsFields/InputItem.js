@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { updateStats } from '../../../../../redux/actions/actions';
-import ui from '../../../../../redux/store/data/ui_data';
+import ui_content from '../../../../../redux/store/data/ui_content';
 
 const mapStateToProps = (state) => {
   const { language, stats, halidom } = state;
@@ -15,15 +15,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateStats: (section, key, value, field) => dispatch(updateStats(section, key, value, field)),
+    onChange: (section, key, value) => dispatch(updateStats(section, key, value)),
   }
 }
 
 class InputItem extends Component {
   constructor(props) {
     super(props);
-    this._updateStats = this._updateStats.bind(this);
-    // // this._updateHalidom = this._updateHalidom.bind(this);
+    this._onChange = this._onChange.bind(this);
   }
 
   // shouldComponentUpdate(nextProps) {
@@ -33,25 +32,19 @@ class InputItem extends Component {
   // }
 
   render() {
-    const { language, section, field, label, stats: { [section]: item } } = this.props;
-    let value = "", step = "1";
-    if (section === "halidom") {
-      value = item[field][label];
-      step = "0.5";
-    } else if (item) {
-      value = item[label];
-    }
+    const { language, section, label, stats: { [section]: item } } = this.props;
+    // const value = item ? item[label] : "";
+
     return (
       <div className="field">
         {item &&
           <Fragment>
-            <label>{ui[label][language]}</label>
+            <label>{ui_content[label][language]}</label>
             <input
               type="number"
-              value={value}
-              min="0"
-              step={step}
-              onChange={this._updateStats}
+              min="1"
+              value={item[label]}
+              onChange={this._onChange}
               onKeyPress={this._handleKeyPress}
             />
           </Fragment>
@@ -60,9 +53,9 @@ class InputItem extends Component {
     );
   }
 
-  _updateStats(e) {
-    const { section, field, label, updateStats } = this.props;
-    updateStats(section, label, e.target.value, field);
+  _onChange(e) {
+    const { section, label, onChange } = this.props;
+    onChange(section, label, e.target.value);
   }
 
 

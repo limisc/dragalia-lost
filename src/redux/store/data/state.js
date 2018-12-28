@@ -12,11 +12,11 @@ const state = {
     weapon: null,
     wyrmprint: null,
     dragon: null,
-    halidom: {
-      element: { HP: "", STR: "" },
-      weaponType: { HP: "", STR: "" },
-      statue: { HP: "", STR: "" },
-    }
+  },
+  halidom: {
+    element: null,
+    weaponType: null,
+    fafnir: null,
   },
   details: {
     adventurer: { HP: 0, STR: 0 },

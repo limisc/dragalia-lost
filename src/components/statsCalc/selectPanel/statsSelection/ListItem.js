@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
-import { handleSelection } from '../../../redux/actions/actions';
+import { handleSelection } from '../../../../redux/actions/actions';
 
 const mapStateToProps = (state) => {
   return {
@@ -34,7 +34,7 @@ class ListItem extends Component {
             onClick={this._onClick}
           />
         </td>
-        <td id="table-left-align">{item.Name[language]}</td>
+        <td className="table-left-align">{item.Name[language]}</td>
         {filterField.map((field) => {
           if (field === "element" || field === "weaponType") {
             return (

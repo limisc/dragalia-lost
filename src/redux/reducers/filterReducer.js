@@ -1,5 +1,5 @@
 import actionTypes from '../actions/actionTypes';
-import { updateObject, createReducer } from '../actions/actions';
+import { updateObject, reducerCreator } from '../actions/actions';
 
 const INIT_FILTERS = {
   weaponType: "",
@@ -33,7 +33,7 @@ const setFiltersDragonElement = (state, filter, stats) => {
   return updateObject(INIT_FILTERS, { element: stats.adventurer.element });
 }
 
-const filterReducer = createReducer({}, {
+const filterReducer = reducerCreator({
   [actionTypes.RESET_FILTERS]: resetFilters,
   [actionTypes.SET_FILTERS]: setFilters,
   [actionTypes.SET_FILTERS_ADVENTURER_WEAPON_TYPE]: setFiltersAdventurerWeaponType,

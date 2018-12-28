@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
-import { resetFilters, setFilters } from '../../../redux/actions/actions';
-import ui from '../../../redux/store/data/ui_data';
+import { resetFilters, setFilters } from '../../../../redux/actions/actions';
+import ui_content from '../../../../redux/store/data/ui_content';
 
 const mapStateToProps = (state) => {
   const { language, filters } = state;
@@ -36,7 +36,7 @@ class FilterForm extends Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    return nextProps.filters !== this.props.filters || nextProps.filterField !== this.props.filterField || nextProps.language !== this.props.language;
+    return nextProps.language !== this.props.language || nextProps.filters !== this.props.filters || nextProps.filterField !== this.props.filterField;
   }
 
   render() {
@@ -46,16 +46,16 @@ class FilterForm extends Component {
         <div className="four fields">
           {filterField.map(field =>
             <div className="field" key={uuidv4()}>
-              <label>{ui[field][language]}</label>
+              <label>{ui_content[field][language]}</label>
               <select id={field} value={filters[field]} onChange={this._onChange}>
                 <option value="">All</option>
-                {this.state.filterOptions[field].map(opt => <option key={uuidv4()} value={opt}>{ui[opt][language]}</option>)}
+                {this.state.filterOptions[field].map(opt => <option key={uuidv4()} value={opt}>{ui_content[opt][language]}</option>)}
               </select>
             </div>
           )}
           <div className="field">
             <label>&nbsp;</label>
-            <button className="ui button" onClick={this._onClick}>Clear</button>
+            <button className="ui fluid button" onClick={this._onClick}>Clear</button>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-export const LEVEL_LIMIT = {
+const LEVEL_LIMIT = {
   mana: { "3": 30, "4": 40, "5": 50 },
   adventurer: { "3": 60, "4": 70, "5": 80 },
   weapon: {//rarity: each unbind level limit,
@@ -19,29 +19,4 @@ export const LEVEL_LIMIT = {
   }
 };
 
-export const HALIDOM_LIMIT = {
-  element: {
-    Flame: { HP: 16, STR: 15 },
-    Water: { HP: 24.5, STR: 22 },
-    Wind: { HP: 24.5, STR: 22 },
-    Light: { HP: 24.5, STR: 22 },
-    Shadow: { HP: 16, STR: 15 },
-  },
-  weaponType: {
-    Sword: { HP: 23, STR: 23 },
-    Blade: { HP: 23, STR: 23 },
-    Dagger: { HP: 23, STR: 23 },
-    Axe: { HP: 23, STR: 23 },
-    Lance: { HP: 23, STR: 23 },
-    Bow: { HP: 23, STR: 23 },
-    Wand: { HP: 23, STR: 23 },
-    Staff: { HP: 23, STR: 23 },
-  },
-  statue: {
-    Flame: { HP: 11.5, STR: 11.5 },
-    Water: { HP: 0, STR: 0 },
-    Wind: { HP: 11.5, STR: 11.5 },
-    Light: { HP: 0, STR: 0 },
-    Shadow: { HP: 0, STR: 0 },
-  }
-};
+export default LEVEL_LIMIT;

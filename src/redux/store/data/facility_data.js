@@ -1,5 +1,6 @@
 export const facility_value = {
   altar: {
+    "0": { HP: 0, STR: 0 },
     "1": { HP: 0.5, STR: 0.5 },
     "2": { HP: 1, STR: 0.5 },
     "3": { HP: 1, STR: 1 },
@@ -32,6 +33,7 @@ export const facility_value = {
     "30": { HP: 8, STR: 7.5 },
   },
   dojo: {
+    "0": { HP: 0, STR: 0 },
     "1": { HP: 3, STR: 3 },
     "2": { HP: 3.5, STR: 3 },
     "3": { HP: 3.5, STR: 3.5 },
@@ -64,6 +66,7 @@ export const facility_value = {
     "30": { HP: 11.5, STR: 11.5 },
   },
   fafnir: {
+    "0": { HP: 0, STR: 0 },
     "1": { HP: 3, STR: 3 },
     "2": { HP: 3.5, STR: 3 },
     "3": { HP: 3.5, STR: 3.5 },
@@ -96,6 +99,7 @@ export const facility_value = {
     "30": { HP: 11.5, STR: 11.5 },
   },
   event: {
+    "0": { HP: 0, STR: 0 },
     "1": { HP: 1, STR: 0 },
     "2": { HP: 1.5, STR: 0 },
     "3": { HP: 1.5, STR: 0.5 },
@@ -130,75 +134,96 @@ export const facility_value = {
 };
 
 
-export const adventurer_facility = {
-  Flame: [
-    { name: "Flame Altar", type: "altar", level: 30, image: "altar_Flame.png" },
-    { name: "Flame Altar", type: "altar", level: 30, image: "altar_Flame.png" },
-  ],
-  Water: [
-    { name: "Water Altar", type: "altar", level: 30, image: "altar_Water.png" },
-    { name: "Water Altar", type: "altar", level: 30, image: "altar_Water.png" },
-    { name: "Yuletree", type: "event", level: 30, image: "event_Yuletree.png" },
-  ],
-  Wind: [
-    { name: "Wind Altar", type: "altar", level: 30, image: "altar_Wind.png" },
-    { name: "Wind Altar", type: "altar", level: 30, image: "altar_Wind.png" },
-    { name: "Wind Shrine", type: "event", level: 30, image: "event_Wind_Shrine.png" },
-  ],
-  Light: [
-    { name: "Light Altar", type: "altar", level: 30, image: "altar_Light.png" },
-    { name: "Light Altar", type: "altar", level: 30, image: "altar_Light.png" },
-    { name: "Sweet Retreat", type: "event", level: 30, image: "event_Sweet_Retreat.png" },
-  ],
-  Shadow: [
-    { name: "Shadow Altar", type: "altar", level: 30, image: "altar_Shadow.png" },
-    { name: "Shadow Altar", type: "altar", level: 30, image: "altar_Shadow.png" },
-  ],
-  Sword: [
-    { name: "Sword Dojo", type: "dojo", level: 16, image: "dojo_Sword.png" },
-    { name: "Sword Dojo", type: "dojo", level: 16, image: "dojo_Sword.png" },
-  ],
-  Blade: [
-    { name: "Blade Dojo", type: "dojo", level: 16, image: "dojo_Blade.png" },
-    { name: "Blade Dojo", type: "dojo", level: 16, image: "dojo_Blade.png" },
-  ],
-  Dagger: [
-    { name: "Dagger Dojo", type: "dojo", level: 16, image: "dojo_Dagger.png" },
-    { name: "Dagger Dojo", type: "dojo", level: 16, image: "dojo_Dagger.png" },
-  ],
-  Axe: [
-    { name: "Axe Dojo", type: "dojo", level: 16, image: "dojo_Axe.png" },
-    { name: "Axe Dojo", type: "dojo", level: 16, image: "dojo_Axe.png" },
-  ],
-  Lance: [
-    { name: "Lance Dojo", type: "dojo", level: 16, image: "dojo_Lance.png" },
-    { name: "Lance Dojo", type: "dojo", level: 16, image: "dojo_Lance.png" },
-  ],
-  Bow: [
-    { name: "Bow Dojo", type: "dojo", level: 16, image: "dojo_Bow.png" },
-    { name: "Bow Dojo", type: "dojo", level: 16, image: "dojo_Bow.png" },
-  ],
-  Wand: [
-    { name: "Wand Dojo", type: "dojo", level: 16, image: "dojo_Wand.png" },
-    { name: "Wand Dojo", type: "dojo", level: 16, image: "dojo_Wand.png" },
-  ],
-  Staff: [
-    { name: "Staff Dojo", type: "dojo", level: 16, image: "dojo_Staff.png" },
-    { name: "Staff Dojo", type: "dojo", level: 16, image: "dojo_Staff.png" },
-  ],
+export const altar = {
+  Flame: {
+    id: [0, 1],
+    "0": { name: { en: "Flame Altar", zh: "火之祭坛" }, type: "altar", level: 30, image: "altar_Flame.png" },
+    "1": { name: { en: "Flame Altar", zh: "火之祭坛" }, type: "altar", level: 30, image: "altar_Flame.png" },
+  },
+  Water: {
+    id: [0, 1, 2],
+    "0": { name: { en: "Water Altar", zh: "水之祭坛" }, type: "altar", level: 30, image: "altar_Water.png" },
+    "1": { name: { en: "Water Altar", zh: "水之祭坛" }, type: "altar", level: 30, image: "altar_Water.png" },
+    "2": { name: { en: "Yuletree", zh: "星龙树" }, type: "event", level: 30, image: "event_Yuletree.png" },
+  },
+  Wind: {
+    id: [0, 1, 2],
+    "0": { name: { en: "Wind Altar", zh: "风之祭坛" }, type: "altar", level: 30, image: "altar_Wind.png" },
+    "1": { name: { en: "Wind Altar", zh: "风之祭坛" }, type: "altar", level: 30, image: "altar_Wind.png" },
+    "2": { name: { en: "Wind Shrine", zh: "风之神龛" }, type: "event", level: 30, image: "event_Wind_Shrine.png" },
+  },
+  Light: {
+    id: [0, 1, 2],
+    "0": { name: { en: "Light Altar", zh: "光之祭坛" }, type: "altar", level: 30, image: "altar_Light.png" },
+    "1": { name: { en: "Light Altar", zh: "光之祭坛" }, type: "altar", level: 30, image: "altar_Light.png" },
+    "2": { name: { en: "Sweet Retreat", zh: "点心之家" }, type: "event", level: 30, image: "event_Sweet_Retreat.png" },
+  },
+  Shadow: {
+    id: [0, 1],
+    "0": { name: { en: "Shadow Altar", zh: "暗之祭坛" }, type: "altar", level: 30, image: "altar_Shadow.png" },
+    "1": { name: { en: "Shadow Altar", zh: "暗之祭坛" }, type: "altar", level: 30, image: "altar_Shadow.png" },
+  },
 };
 
-export const dragon_facility = {
-  Flame: [
-    { name: "Fafnir Statue (Flame)", type: "fafnir", level: 0, image: "fafnir_Flame.png" },
-  ],
-  Water: [
-  ],
-  Wind: [
-    { name: "Fafnir Statue (Wind)", type: "fafnir", level: 0, image: "fafnir_Wind.png" },
-  ],
-  Light: [
-  ],
-  Shadow: [
-  ],
+export const dojo = {
+  Sword: {
+    id: [0, 1],
+    "0": { name: { en: "Sword Dojo", zh: "剑之训练场" }, type: "dojo", level: 16, image: "dojo_Sword.png" },
+    "1": { name: { en: "Sword Dojo", zh: "剑之训练场" }, type: "dojo", level: 16, image: "dojo_Sword.png" },
+  },
+  Blade: {
+    id: [0, 1],
+    "0": { name: { en: "Blade Dojo", zh: "刀之训练场" }, type: "dojo", level: 16, image: "dojo_Blade.png" },
+    "1": { name: { en: "Blade Dojo", zh: "刀之训练场" }, type: "dojo", level: 16, image: "dojo_Blade.png" },
+  },
+  Dagger: {
+    id: [0, 1],
+    /*
+{en: , zh:"之训练场"}
+    */
+    "0": { name: { en: "Dagger Dojo", zh: "短剑之训练场" }, type: "dojo", level: 16, image: "dojo_Dagger.png" },
+    "1": { name: { en: "Dagger Dojo", zh: "短剑之训练场" }, type: "dojo", level: 16, image: "dojo_Dagger.png" },
+  },
+  Axe: {
+    id: [0, 1],
+    "0": { name: { en: "Axe Dojo", zh: "斧之训练场" }, type: "dojo", level: 16, image: "dojo_Axe.png" },
+    "1": { name: { en: "Axe Dojo", zh: "斧之训练场" }, type: "dojo", level: 16, image: "dojo_Axe.png" },
+  },
+  Lance: {
+    id: [0, 1],
+    "0": { name: { en: "Lance Dojo", zh: "枪之训练场" }, type: "dojo", level: 16, image: "dojo_Lance.png" },
+    "1": { name: { en: "Lance Dojo", zh: "枪之训练场" }, type: "dojo", level: 16, image: "dojo_Lance.png" },
+  },
+  Bow:
+  {
+    id: [0, 1],
+    "0": { name: { en: "Bow Dojo", zh: "弓之训练场" }, type: "dojo", level: 16, image: "dojo_Bow.png" },
+    "1": { name: { en: "Bow Dojo", zh: "弓之训练场" }, type: "dojo", level: 16, image: "dojo_Bow.png" },
+  },
+  Wand:
+  {
+    id: [0, 1],
+    "0": { name: { en: "Wand Dojo", zh: "魔杖之训练场" }, type: "dojo", level: 16, image: "dojo_Wand.png" },
+    "1": { name: { en: "Wand Dojo", zh: "魔杖之训练场" }, type: "dojo", level: 16, image: "dojo_Wand.png" },
+  },
+  Staff:
+  {
+    id: [0, 1],
+    "0": { name: { en: "Staff Dojo", zh: "法杖之训练场" }, type: "dojo", level: 16, image: "dojo_Staff.png" },
+    "1": { name: { en: "Staff Dojo", zh: "法杖之训练场" }, type: "dojo", level: 16, image: "dojo_Staff.png" },
+  },
+};
+
+export const fafnir = {
+  Flame: {
+    id: [0],
+    "0": { name: { en: "Fafnir Statue (Flame)", zh: "火之法夫纳像" }, type: "fafnir", level: 0, image: "fafnir_Flame.png" },
+  },
+  Water: null,
+  Wind: {
+    id: [0],
+    "0": { name: { en: "Fafnir Statue (Wind)", zh: "风之法夫纳像" }, type: "fafnir", level: 0, image: "fafnir_Wind.png" },
+  },
+  Light: null,
+  Shadow: null,
 };

@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import StatsPanel from './statsPanel/StatsPanel';
 import SelectPanel from './selectPanel/SelectPanel';
 import DetailsPanel from './detailsPanel/DetailsPanel';
-import { setLanguage, resetStats } from '../../redux/actions/actions';
+import { setLanguage, resetAll } from '../../redux/actions/actions';
+
+import ui_content from '../../redux/store/data/ui_content';
 
 const mapStateToProps = (state) => {
   return {
@@ -14,7 +16,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     setLanguage: (language) => dispatch(setLanguage(language)),
-    resetStats: () => dispatch(resetStats()),
+    resetAll: () => dispatch(resetAll()),
   }
 }
 
@@ -38,7 +40,7 @@ class StatsCalc extends Component {
               </div>
 
               <div className="field">
-                <button className="ui button" onClick={this.props.resetStats}>Reset</button>
+                <button className="ui button" onClick={this.props.resetAll}>{ui_content["reset"][this.props.language]}</button>
               </div>
             </div>
           </div>
@@ -47,7 +49,7 @@ class StatsCalc extends Component {
         <div className="six wide column">
           <StatsPanel />
         </div>
-        <div className="five wide column">
+        <div className="six wide column">
           <SelectPanel />
         </div>
       </div >

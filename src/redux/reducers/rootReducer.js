@@ -1,19 +1,23 @@
 import actionTypes from '../actions/actionTypes';
-import { createReducer } from '../actions/actions';
-import sectionReducer from './sectionReducer';
 import filterReducer from './filterReducer';
 import statsReducer from './statsReducer';
+import halidomReducer from './halidomReducer';
 import detailReducer from './detailReducer';
 
-const setLanguage = (state, action) => {
-  return action.language;
+
+const languageReducer = (language, action) => {
+  if (action.type === actionTypes.SET_LANGUAGE) {
+    return action.language;
+  }
+  return language;
 }
 
-const languageReducer = createReducer({}, {
-  [actionTypes.SET_LANGUAGE]: setLanguage,
-})
-
-
+const sectionReducer = (section, action) => {
+  if (action.type === actionTypes.SET_SECTION) {
+    return action.section;
+  }
+  return section;
+}
 
 const rootReducer = (state, action) => {
   return {
@@ -21,9 +25,9 @@ const rootReducer = (state, action) => {
     language: languageReducer(state.language, action),
     filters: filterReducer(state.filters, action, state.stats),
     stats: statsReducer(state.stats, action),
-    details: detailReducer(state.details, action, state.stats),
+    halidom: halidomReducer(state.halidom, action, state.stats),
+    details: detailReducer(state.details, state.stats, state.halidom, action),
   }
 }
-
 
 export default rootReducer;

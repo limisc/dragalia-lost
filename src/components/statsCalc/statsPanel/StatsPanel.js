@@ -1,11 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+
 import Stats from './stats/Stats';
 import HalidomStats from './stats/HalidomStats';
 
+import { setSection } from '../../../redux/actions/actions';
+
+import ui_content from '../../../redux/store/data/ui_content';
+
 const mapStateToProps = (state) => {
+  const { language, stats: { adventurer, dragon } } = state;
   return {
+    language,
+    adventurer,
+    dragon,
   };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClick: () => dispatch(setSection("halidom")),
+  }
 }
 
 class StatsPanel extends Component {
@@ -13,12 +28,13 @@ class StatsPanel extends Component {
     super(props);
     this.state = {
       sections: ["adventurer", "weapon", "wyrmprint", "dragon"],
-      halidom: ["element", "weaponType", "statue"],
+      halidom: ["element", "weaponType", "fafnir"],
     }
   }
 
   render() {
-    const { sections, halidom } = this.state;
+    const { sections } = this.state;
+    const { language, adventurer, dragon } = this.props;
     return (
       <Fragment>
         {sections.map(section =>
@@ -28,12 +44,35 @@ class StatsPanel extends Component {
           />
         )}
         <div className="ui divider"></div>
-        {halidom.map(field =>
-          <HalidomStats
-            key={field}
-            field={field}
-          />
-        )}
+
+        {(adventurer || dragon) &&
+          <table className="ui unstackable fixed table">
+            <thead>
+              <tr>
+                <th className="four wide column"><button className="ui button" onClick={this.props.onClick}>{ui_content["setting"][language]}</button></th>
+                <th>HP %</th>
+                <th>STR %</th>
+              </tr>
+            </thead>
+            <tbody>
+              {adventurer &&
+                <Fragment>
+                  <HalidomStats
+                    field="element"
+                  />
+                  <HalidomStats
+                    field="weaponType"
+                  />
+                </Fragment>
+              }
+              {dragon &&
+                <HalidomStats
+                  field="fafnir"
+                />
+              }
+            </tbody>
+          </table>
+        }
       </Fragment>
     );
   }
@@ -41,4 +80,5 @@ class StatsPanel extends Component {
 
 export default connect(
   mapStateToProps,
+  mapDispatchToProps
 )(StatsPanel);

@@ -48,12 +48,12 @@ class StatsFields extends Component {
                 label="mana"
                 section={section}
               />
-              {this.props.stats[section] &&
+              {/* {this.props.stats[section] &&
                 <div className="field">
                   <label>EX</label>
                   <input disabled value={"DEV..."}/>
                 </div>
-              }
+              } */}
             </div>
           }
         </div>

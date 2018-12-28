@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { handleSection } from '../../../../redux/actions/actions';
-import ui from '../../../../redux/store/data/ui_data';
+import ui_content from '../../../../redux/store/data/ui_content';
 const mapStateToProps = (state) => {
   return {
     language: state.language,
@@ -26,7 +26,7 @@ class StatsAvatar extends Component {
     const { language, section, stats } = this.props;
     const {
       image = "add.png",
-      Name = ui[section],
+      Name = ui_content[section],
     } = stats[section] || {};
 
     return (
