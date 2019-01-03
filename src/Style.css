@@ -2,22 +2,9 @@ body, table, table th {
   background-color: #fff8e7 !important;
 }
 
-img, #facility-btn {
+img {
   display: block;
   margin: auto;
-}
-
-img.status-avatar {
-  width: 100%;
-  max-width: 80px;
-}
-
-img.selection-avatar {
-  width: 64px;
-}
-
-img.selection-icon, img.halidom-icon {
-  width: 32px;
 }
 
 img.l {
@@ -33,37 +20,9 @@ img.s {
   width: 32px;
 }
 
-img.halidom-icon {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-/* table.ui.celled.table th, table.ui.celled.table td {
-  text-align: center;
-} */
-
-table {
+table, p {
   text-align: center !important;
 }
-
-table td.table-left-align {
-  text-align: left !important;
-}
-
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* div.field {max-width: 2 em !important;} */
-
-/* div.field select, div.field input, .ui.form input[type="number"] {padding-left: .2em !important;} */
-
-/* img.unbind-set {height: 15px !important;} */
 
 input[type=range].slider {
   -webkit-appearance: none;
@@ -161,72 +120,4 @@ input[type=range].slider::-ms-thumb {
 
 input[type=range].slider:focus::-ms-fill-upper {
   background: #e1edf7;
-}
-
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

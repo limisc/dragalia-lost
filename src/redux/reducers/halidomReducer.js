@@ -1,32 +1,63 @@
-import actionTypes from '../actions/actionTypes';
 import { reducerCreator } from '../actions/actions';
-import { altar, dojo, fafnir } from '../store/data/facility_data';
+import actionTypes from '../actions/actionTypes';
+import state from '../store/state';
+import * as facilities from '../actions/facility';
+
+const resetHalidom = () => {
+  return { ...state.halidom };
+}
+
+const defaultHalidom = (halidom) => {
+  const LV = { element: 30, weapon: 16, dragon: 0 };
+  let update = {};
+
+  for (const f in halidom) {
+    if (halidom.hasOwnProperty(f) && halidom[f]) {
+      let facility = { ...halidom[f] };
+      let item = null;
+      for (const i of halidom[f].list) {
+        item = { ...halidom[f][i], level: LV[f] }
+        facility = { ...facility, [i]: item };
+      }
+      update = { ...update, [f]: facility };
+    }
+  }
+  return { ...halidom, ...update };
+}
+
+const maxHalidom = (halidom) => {
+  let update = {};
+  for (const f in halidom) {
+    if (halidom.hasOwnProperty(f) && halidom[f]) {
+      let facility = { ...halidom[f] };
+      let item = null;
+      for (const i of halidom[f].list) {
+        item = { ...halidom[f][i], level: 30 }
+        facility = { ...facility, [i]: item };
+      }
+      update = { ...update, [f]: facility };
+    }
+  }
+  return { ...halidom, ...update };
+}
 
 const selectHalidom = (halidom, action, stats) => {
   const { section, item } = action;
   const prevItem = stats[section];
   if (section === "adventurer") {
-    let { element, weaponType } = halidom;
+    let { element, weapon } = halidom;
     if (!prevItem) {
-      element = altar[item.element];
-      weaponType = dojo[item.weaponType];
+      element = facilities.element[item.element];
+      weapon = facilities.weapon[item.type];
     } else {
-      if (prevItem.element !== item.element) element = altar[item.element];
-      if (prevItem.weaponType !== item.weaponType) weaponType = dojo[item.weaponType];
+      if (prevItem.element !== item.element) element = facilities.element[item.element];
+      if (prevItem.type !== item.type) weapon = facilities.weapon[item.type];
     }
-    return { ...halidom, element, weaponType };
+    return { ...halidom, element, weapon };
   } else if ((section === "dragon") && (!prevItem || prevItem.element !== item.element)) {
-    return { ...halidom, fafnir: fafnir[item.element] };
+    return { ...halidom, dragon: facilities.dragon[item.element] };
   }
   return halidom;
-}
-
-const resetHalidom = () => {
-  return {
-    element: null,
-    weaponType: null,
-    fafnir: null,
-  }
 }
 
 const updateHalidom = (halidom, action) => {
@@ -43,45 +74,12 @@ const updateHalidom = (halidom, action) => {
   };
 }
 
-const defaultHalidom = (halidom) => {
-  const defaultLevel = { element: 30, weaponType: 16, fafnir: 0 };
-  let new_halidom = {};
-  Object.keys(halidom).forEach(field => {
-    if (halidom[field]) {
-      let facility = { ...halidom[field] };
-      let item = null;
-      halidom[field].id.forEach(index => {
-        item = { ...halidom[field][index], level: defaultLevel[field] };
-        facility = { ...facility, [index]: item };
-      })
-      new_halidom = { ...new_halidom, [field]: facility };
-    }
-  })
-  return { ...halidom, ...new_halidom };
-}
-
-const maxHalidom = (halidom) => {
-  let new_halidom = {};
-  Object.keys(halidom).forEach(field => {
-    if (halidom[field]) {
-      let facility = { ...halidom[field] };
-      let item = null;
-      halidom[field].id.forEach(index => {
-        item = { ...halidom[field][index], level: 30 };
-        facility = { ...facility, [index]: item };
-      })
-      new_halidom = { ...new_halidom, [field]: facility };
-    }
-  })
-  return { ...halidom, ...new_halidom };
-}
-
 const halidomReducer = reducerCreator({
+  [actionTypes.UPDATE_HALIDOM]: updateHalidom,
   [actionTypes.SELECT_HALIDOM]: selectHalidom,
   [actionTypes.RESET_HALIDOM]: resetHalidom,
-  [actionTypes.UPDATE_HALIDOM]: updateHalidom,
   [actionTypes.DEFAULT_HALIDOM]: defaultHalidom,
   [actionTypes.MAX_HALIDOM]: maxHalidom,
-})
+});
 
 export default halidomReducer;

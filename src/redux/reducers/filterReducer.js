@@ -1,44 +1,36 @@
+import { reducerCreator } from '../actions/actions';
 import actionTypes from '../actions/actionTypes';
-import { updateObject, reducerCreator } from '../actions/actions';
+import state from '../store/state';
 
-const INIT_FILTERS = {
-  weaponType: "",
-  rarity: "",
-  element: "",
-  tier: "",
-}
+const INIT_FILTERS = { ...state.filters };
 
 const resetFilters = () => {
-  return updateObject(INIT_FILTERS);
+  return INIT_FILTERS;
 }
 
-
-const setFilters = (state, action) => {
-  //action: { key, value }
-  return updateObject(state, { [action.key]: action.value });
+const selectFilters = (filters, action) => {
+  return { ...filters, [action.key]: action.value };
 }
 
-
-const setFiltersAdventurerWeaponType = (state, filter, stats) => {
-  return updateObject(INIT_FILTERS, { weaponType: stats.weapon.weaponType });
+const narrowDown = (_, action, stats) => {
+  const { section } = action;
+  const { adventurer, weapon } = stats;
+  if (section === "adventurer" && weapon) {
+    return { ...INIT_FILTERS, type: weapon.type };
+  } else if (section === "weapon" && adventurer) {
+    return { ...INIT_FILTERS, type: adventurer.type };
+  } else if (section === "dragon" && adventurer) {
+    return { ...INIT_FILTERS, element: adventurer.element };
+  } else {
+    return INIT_FILTERS;
+  }
 }
 
-
-const setFiltersWeaponType = (state, filter, stats) => {
-  return updateObject(INIT_FILTERS, { weaponType: stats.adventurer.weaponType });
-}
-
-
-const setFiltersDragonElement = (state, filter, stats) => {
-  return updateObject(INIT_FILTERS, { element: stats.adventurer.element });
-}
 
 const filterReducer = reducerCreator({
   [actionTypes.RESET_FILTERS]: resetFilters,
-  [actionTypes.SET_FILTERS]: setFilters,
-  [actionTypes.SET_FILTERS_ADVENTURER_WEAPON_TYPE]: setFiltersAdventurerWeaponType,
-  [actionTypes.SET_FILTERS_WEAPON_TYPE]: setFiltersWeaponType,
-  [actionTypes.SET_FILTERS_DRAGON_ELEMENT]: setFiltersDragonElement,
-})
+  [actionTypes.SELECT_FILTERS]: selectFilters,
+  [actionTypes.NARROW_DOWN_FILTERS]: narrowDown,
+});
 
 export default filterReducer;
