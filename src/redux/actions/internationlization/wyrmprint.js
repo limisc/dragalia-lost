@@ -509,6 +509,31 @@ const wyrmprint =
     "en": "Luck of the Draw",
     "zh": "新年运势签",
     "ja": "新年最初の運試し"
+  },
+  "400131": {
+    "en": "Astounding Trick",
+    "zh": "绝妙戏法",
+    "ja": "ワンダフルトリック"
+  },
+  "400129": {
+    "en": "Stellar Show",
+    "zh": "完美表演",
+    "ja": "ベストパフォーマンス"
+  },
+  "400128": {
+    "en": "Dragon and Tamer",
+    "zh": "驯龙马戏团",
+    "ja": "ドラゴンサーカス"
+  },
+  "400090": {
+    "en": "Slow and Steady",
+    "zh": "不起眼的工作",
+    "ja": "地道な活動"
+  },
+  "400130": {
+    "en": "Welcome, One and All",
+    "zh": "闪耀之处",
+    "ja": "輝ける場所"
   }
 };
 export default wyrmprint;

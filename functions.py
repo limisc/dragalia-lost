@@ -229,6 +229,6 @@ def set_updates(section, item, abilities=None):
 if __name__ == "__main__":
     limit = get_limit()
     # set_adventurer(limit)
-    set_weapon(limit)
-    # set_wyrmprint(limit)
-    # set_dragon(limit)
+    # set_weapon(limit)
+    set_wyrmprint(limit)
+    set_dragon(limit)

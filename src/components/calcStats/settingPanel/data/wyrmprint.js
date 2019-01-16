@@ -1208,6 +1208,23 @@ const wyrmprint =
     "unbind": 4
   },
   {
+    "Id": "400090",
+    "Name": {
+      "en": "Slow and Steady",
+      "zh": "不起眼的工作",
+      "ja": "地道な活動"
+    },
+    "rarity": "4",
+    "MinHP": 23,
+    "MaxHP": 156,
+    "MinSTR": 5,
+    "MaxSTR": 37,
+    "image": "400090_01.png",
+    "level": 80,
+    "MAX_LEVEL": 80,
+    "unbind": 4
+  },
+  {
     "Id": "400091",
     "Name": {
       "en": "A Wish Upon the Yuletree",
@@ -1630,6 +1647,74 @@ const wyrmprint =
     "image": "400127_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
+    "unbind": 4
+  },
+  {
+    "Id": "400128",
+    "Name": {
+      "en": "Dragon and Tamer",
+      "zh": "驯龙马戏团",
+      "ja": "ドラゴンサーカス"
+    },
+    "rarity": "5",
+    "MinHP": 27,
+    "MaxHP": 183,
+    "MinSTR": 8,
+    "MaxSTR": 57,
+    "image": "400128_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
+    "Id": "400129",
+    "Name": {
+      "en": "Stellar Show",
+      "zh": "完美表演",
+      "ja": "ベストパフォーマンス"
+    },
+    "rarity": "5",
+    "MinHP": 26,
+    "MaxHP": 176,
+    "MinSTR": 9,
+    "MaxSTR": 65,
+    "image": "400129_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
+    "Id": "400130",
+    "Name": {
+      "en": "Welcome, One and All",
+      "zh": "闪耀之处",
+      "ja": "輝ける場所"
+    },
+    "rarity": "3",
+    "MinHP": 10,
+    "MaxHP": 71,
+    "MinSTR": 3,
+    "MaxSTR": 25,
+    "image": "400130_01.png",
+    "level": 60,
+    "MAX_LEVEL": 60,
+    "unbind": 4
+  },
+  {
+    "Id": "400131",
+    "Name": {
+      "en": "Astounding Trick",
+      "zh": "绝妙戏法",
+      "ja": "ワンダフルトリック"
+    },
+    "rarity": "5",
+    "MinHP": 22,
+    "MaxHP": 151,
+    "MinSTR": 8,
+    "MaxSTR": 54,
+    "image": "400131_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
     "unbind": 4
   }
 ];

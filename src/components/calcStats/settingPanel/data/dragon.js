@@ -1171,6 +1171,32 @@ const dragon =
     "unbind": 4
   },
   {
+    "Id": "20050407",
+    "Name": {
+      "en": "Liger",
+      "zh": "雷牙",
+      "ja": "ライガ"
+    },
+    "element": "Light",
+    "rarity": "5",
+    "MinHP": 37,
+    "MaxHP": 377,
+    "MinSTR": 11,
+    "MaxSTR": 119,
+    "Abilities11": {
+      "HP": 20,
+      "STR": 20
+    },
+    "Abilities12": {
+      "HP": 30,
+      "STR": 30
+    },
+    "image": "210043_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
     "Id": "20050501",
     "Name": {
       "en": "Nidhogg",

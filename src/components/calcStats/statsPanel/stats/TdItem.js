@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import SmallIcon from '../../rightPanel/selectStats/SmallIcon';
+import SmallIcon from '../../settingPanel/selectStats/SmallIcon';
 
 import { getHalidomValue } from "../../../../redux/actions/actions";
 const mapStateToProps = (state) => {

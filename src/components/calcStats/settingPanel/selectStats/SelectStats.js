@@ -34,7 +34,7 @@ class SelectStats extends Component {
         adventurer: ["type", "element", "rarity"],
         weapon: ["type", "rarity", "tier"],
         wyrmprint: ["rarity"],
-        dragon: ["rarity", "element"],
+        dragon: ["element", "rarity"],
       },
       selectData: {
         adventurer,

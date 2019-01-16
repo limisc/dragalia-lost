@@ -25,7 +25,7 @@ const SelectHalidom = ({ language, halidom, defaultLv, maxLv }) => {
       <button className="ui button" onClick={maxLv}>{translate("max", language)}</button>
       <table className="ui single line table">
         <tbody>
-          {Object.keys(halidom).map(f =>
+          {["element", "weapon", "dragon"].map(f =>
             halidom[f] && halidom[f].list.map(i =>
               <Facility
                 key={f + i}

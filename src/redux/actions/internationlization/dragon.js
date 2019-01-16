@@ -244,6 +244,11 @@ const dragon =
     "en": "Marishiten",
     "zh": "摩利支天",
     "ja": "マリシテン"
+  },
+  "20050407": {
+    "en": "Liger",
+    "zh": "雷牙",
+    "ja": "ライガ"
   }
 };
 export default dragon;

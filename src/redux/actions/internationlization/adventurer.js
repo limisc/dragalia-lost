@@ -399,6 +399,26 @@ const adventurer =
     "en": "Ieyasu",
     "zh": "家康",
     "ja": "イエヤス"
+  },
+  "100029": {
+    "en": "Sarisse",
+    "zh": "希里丝",
+    "ja": "シーリス"
+  },
+  "110275": {
+    "en": "Annelie",
+    "zh": "安妮利艾",
+    "ja": "アンネリーエ"
+  },
+  "110276": {
+    "en": "Fritz",
+    "zh": "弗里茨",
+    "ja": "フリッツ"
+  },
+  "110261": {
+    "en": "Marty",
+    "zh": "马蒂",
+    "ja": "マーティ"
   }
 };
 export default adventurer;

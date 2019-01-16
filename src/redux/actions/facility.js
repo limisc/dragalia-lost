@@ -152,10 +152,11 @@ export const element = {
     "2": { id: "101101", type: "event", level: 30, image: "event_Wind_Shrine.png" },
   },
   Light: {
-    list: [0, 1, 2],
+    list: [0, 1, 2, 3],
     "0": { id: "100404", type: "altar", level: 30, image: "altar_Light.png" },
     "1": { id: "100404", type: "altar", level: 30, image: "altar_Light.png" },
     "2": { id: "101501", type: "event", level: 30, image: "event_Sweet_Retreat.png" },
+    "3": { id: "100901", type: "event", level: 30, image: "event_Circus_Tent.png" },
   },
   Shadow: {
     list: [0, 1],

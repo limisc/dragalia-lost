@@ -21,6 +21,7 @@ const facility = {
   "101101": { en: "Wind Shrine", zh: "风之神龛", ja: "風の祠" },
   "101501": { en: "Sweet Retreat", zh: "点心之家", ja: "お菓子の家" },
   "101601": { en: "Yuletree", zh: "星龙树", ja: "星竜樹" },
+  "100901": { en: "Circus Tent", zh: "马戏团帐篷", ja: "サーカステント" },
 }
 
 export default facility;
