@@ -21,7 +21,7 @@ const StatsName = ({ language, section, stats, name }) => {
   }
 
   return (
-    <p>{translate(label, language)}</p>
+    <p style={{ textAlign: "center" }}>{translate(label, language)}</p>
   );
 };
 
