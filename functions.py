@@ -88,7 +88,8 @@ def set_data(section, param, replace, omit, limit):
     for i in raw_data["cargoquery"]:
         item = i["title"]
         item["image"] = set_image(section, item)
-        if item[id] != "" and item["image"] not in duplicate_check and int(item["Rarity"]) >= 3:
+        #item[id] != ""
+        if  item[id].isdigit() and item["image"] not in duplicate_check and int(item["Rarity"]) >= 3:
             item.update(set_updates(section, item, abilities))
             kv = list(item.items())
             item.clear()
@@ -230,5 +231,5 @@ if __name__ == "__main__":
     limit = get_limit()
     # set_adventurer(limit)
     # set_weapon(limit)
-    set_wyrmprint(limit)
+    # set_wyrmprint(limit)
     set_dragon(limit)

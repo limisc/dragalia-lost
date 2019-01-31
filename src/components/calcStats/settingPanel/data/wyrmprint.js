@@ -1191,6 +1191,23 @@ const wyrmprint =
     "unbind": 4
   },
   {
+    "Id": "400080",
+    "Name": {
+      "en": "Warrior Maiden",
+      "zh": "战旗少女",
+      "ja": "戦旗の乙女"
+    },
+    "rarity": "5",
+    "MinHP": 27,
+    "MaxHP": 180,
+    "MinSTR": 9,
+    "MaxSTR": 60,
+    "image": "400080_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
     "Id": "400087",
     "Name": {
       "en": "Plunder Pals",
@@ -1713,6 +1730,74 @@ const wyrmprint =
     "MinSTR": 8,
     "MaxSTR": 54,
     "image": "400131_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
+    "Id": "400136",
+    "Name": {
+      "en": "Lunar Festivities",
+      "zh": "春节祭典",
+      "ja": "春節のお祭り"
+    },
+    "rarity": "4",
+    "MinHP": 21,
+    "MaxHP": 141,
+    "MinSTR": 7,
+    "MaxSTR": 51,
+    "image": "400136_01.png",
+    "level": 80,
+    "MAX_LEVEL": 80,
+    "unbind": 4
+  },
+  {
+    "Id": "400137",
+    "Name": {
+      "en": "Blossoms Ablaze",
+      "zh": "仙花焰",
+      "ja": "仙花焔"
+    },
+    "rarity": "3",
+    "MinHP": 10,
+    "MaxHP": 71,
+    "MinSTR": 3,
+    "MaxSTR": 25,
+    "image": "400137_01.png",
+    "level": 60,
+    "MAX_LEVEL": 60,
+    "unbind": 4
+  },
+  {
+    "Id": "400138",
+    "Name": {
+      "en": "Dragon Dance",
+      "zh": "龙之舞",
+      "ja": "ドラゴンダンス"
+    },
+    "rarity": "4",
+    "MinHP": 18,
+    "MaxHP": 123,
+    "MinSTR": 4,
+    "MaxSTR": 33,
+    "image": "400138_01.png",
+    "level": 80,
+    "MAX_LEVEL": 80,
+    "unbind": 4
+  },
+  {
+    "Id": "400163",
+    "Name": {
+      "en": "Kung Fu Masters",
+      "zh": "功夫之道",
+      "ja": "功夫の道"
+    },
+    "rarity": "5",
+    "MinHP": 26,
+    "MaxHP": 176,
+    "MinSTR": 9,
+    "MaxSTR": 64,
+    "image": "400163_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4

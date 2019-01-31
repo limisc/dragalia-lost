@@ -419,6 +419,26 @@ const adventurer =
     "en": "Marty",
     "zh": "马蒂",
     "ja": "マーティ"
+  },
+  "110268": {
+    "en": "Lin You",
+    "zh": "林佑",
+    "ja": "リンユー"
+  },
+  "110314": {
+    "en": "Su Fang",
+    "zh": "苏方",
+    "ja": "スオウ"
+  },
+  "110315": {
+    "en": "Ku Hai",
+    "zh": "苦海",
+    "ja": "クガイ"
+  },
+  "110316": {
+    "en": "Xiao Lei",
+    "zh": "小蕾",
+    "ja": "シャオレイ"
   }
 };
 export default adventurer;

@@ -249,6 +249,16 @@ const dragon =
     "en": "Liger",
     "zh": "雷牙",
     "ja": "ライガ"
+  },
+  "20050206": {
+    "en": "Peng Lai",
+    "zh": "蓬莱",
+    "ja": "ホウライ"
+  },
+  "20050305": {
+    "en": "Long Long",
+    "zh": "龙龙",
+    "ja": "ロンロン"
   }
 };
 export default dragon;

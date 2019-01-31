@@ -534,6 +534,31 @@ const wyrmprint =
     "en": "Welcome, One and All",
     "zh": "闪耀之处",
     "ja": "輝ける場所"
+  },
+  "400080": {
+    "en": "Warrior Maiden",
+    "zh": "战旗少女",
+    "ja": "戦旗の乙女"
+  },
+  "400136": {
+    "en": "Lunar Festivities",
+    "zh": "春节祭典",
+    "ja": "春節のお祭り"
+  },
+  "400137": {
+    "en": "Blossoms Ablaze",
+    "zh": "仙花焰",
+    "ja": "仙花焔"
+  },
+  "400138": {
+    "en": "Dragon Dance",
+    "zh": "龙之舞",
+    "ja": "ドラゴンダンス"
+  },
+  "400163": {
+    "en": "Kung Fu Masters",
+    "zh": "功夫之道",
+    "ja": "功夫の道"
   }
 };
 export default wyrmprint;

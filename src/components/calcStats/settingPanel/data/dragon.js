@@ -989,6 +989,32 @@ const dragon =
     "unbind": 4
   },
   {
+    "Id": "20050206",
+    "Name": {
+      "en": "Peng Lai",
+      "zh": "蓬莱",
+      "ja": "ホウライ"
+    },
+    "element": "Water",
+    "rarity": "5",
+    "MinHP": 22,
+    "MaxHP": 222,
+    "MinSTR": 7,
+    "MaxSTR": 75,
+    "Abilities11": {
+      "HP": 20,
+      "STR": 0
+    },
+    "Abilities12": {
+      "HP": 30,
+      "STR": 0
+    },
+    "image": "210079_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
     "Id": "20050301",
     "Name": {
       "en": "Zephyr",
@@ -1088,6 +1114,32 @@ const dragon =
       "STR": 0
     },
     "image": "210036_01.png",
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
+    "Id": "20050305",
+    "Name": {
+      "en": "Long Long",
+      "zh": "龙龙",
+      "ja": "ロンロン"
+    },
+    "element": "Wind",
+    "rarity": "5",
+    "MinHP": 36,
+    "MaxHP": 369,
+    "MinSTR": 12,
+    "MaxSTR": 126,
+    "Abilities11": {
+      "HP": 0,
+      "STR": 30
+    },
+    "Abilities12": {
+      "HP": 0,
+      "STR": 45
+    },
+    "image": "210080_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
