@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import TdItem from './TdItem';
 
-import { translate, setSection } from "../../../../redux/actions/actions";
+import { translate, setSection } from "actions";
 
 const mapStateToProps = (state) => {
   return {

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import StatsName from '../../statsPanel/stats/StatsName';
 import SmallIcon from './SmallIcon';
 
-import { selectStats } from "../../../../redux/actions/actions";
+import { selectStats } from "actions";
 
 const mapStateToProps = (state) => {
   return {

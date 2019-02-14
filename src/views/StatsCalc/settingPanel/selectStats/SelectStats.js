@@ -9,7 +9,7 @@ import weapon from '../data/weapon';
 import wyrmprint from '../data/wyrmprint';
 import dragon from '../data/dragon';
 
-import { translate } from "../../../../redux/actions/actions";
+import { translate } from "actions";
 
 const mapStateToProps = (state) => {
   const { language, focusSection, filters } = state;

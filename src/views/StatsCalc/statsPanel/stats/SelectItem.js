@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { translate, updateStats } from "../../../../redux/actions/actions";
+import { translate, updateStats } from "actions";
 
 const mapStateToProps = (state) => {
   return {

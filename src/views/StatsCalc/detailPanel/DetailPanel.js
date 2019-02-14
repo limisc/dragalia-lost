@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
-import { translate } from "../../../redux/actions/actions";
+import { translate } from "actions";
 const mapStateToProps = (state) => {
   const { language, stats, halidom, details } = state;
   return {

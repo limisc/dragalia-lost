@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { updateHalidom } from "../../../../redux/actions/actions";
+import { updateHalidom } from "actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -44,8 +44,8 @@ class Slider extends Component {
 
 
 Slider.propTypes = {
-  field:PropTypes.string.isRequired,
-  index:PropTypes.number.isRequired,
+  field: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 }
 
 export default connect(

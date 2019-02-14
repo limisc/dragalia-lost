@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import StatsName from '../../statsPanel/stats/StatsName';
 import Slider from './Slider';
-import { updateHalidom } from "../../../../redux/actions/actions";
-import facility from '../../../../redux/actions/internationlization/facility'
+import { updateHalidom } from "actions";
+import facility from "intl/facility";
 
 const mapStateToProps = (state) => {
   return {

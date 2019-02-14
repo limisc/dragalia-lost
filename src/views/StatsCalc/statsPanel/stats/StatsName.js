@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { translate } from "../../../../redux/actions/actions";
+import { translate } from "actions";
 
 const mapStateToProps = (state) => {
   return {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { translate, defaultHalidom, maxHalidom } from "../../../../redux/actions/actions";
+import { translate, defaultHalidom, maxHalidom } from "actions";
 import Facility from './Facility';
 
 const mapStateToProps = (state) => {

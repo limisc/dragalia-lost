@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import SmallIcon from '../../settingPanel/selectStats/SmallIcon';
 
-import { getHalidomValue } from "../../../../redux/actions/actions";
+import { getHalidomValue } from "actions";
 const mapStateToProps = (state) => {
   return {
     halidom: state.halidom,

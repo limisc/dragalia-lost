@@ -4,7 +4,7 @@ import StatsPanel from "./statsPanel/StatsPanel";
 import SettingPanel from './settingPanel/SettingPanel';
 import DetailsPanel from './detailPanel/DetailPanel';
 
-import { translate, selectLanguage, resetAll } from '../../redux/actions/actions';
+import { translate, selectLanguage, resetAll } from "actions";
 
 
 

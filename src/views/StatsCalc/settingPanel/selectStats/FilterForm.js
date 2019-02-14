@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { translate, setFilters, resetFilters } from "../../../../redux/actions/actions";
+import { translate, setFilters, resetFilters } from "actions";
 
 const mapStateToProps = (state) => {
   return {

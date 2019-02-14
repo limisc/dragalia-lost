@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { selectSection } from "../../../../redux/actions/actions";
+import { selectSection } from "actions";
 
 const mapStateToProps = (state) => {
   return {
