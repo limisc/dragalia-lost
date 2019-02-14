@@ -1,3 +1,70 @@
+/* eslint-disable no-unused-vars */
+import React, { Component } from 'react';
+import { Grid, Paper } from '@material-ui/core';
+
+import { AppContext } from "context";
+// import { getTitle } from "selectors";
+import StatsPanel from "./statsPanel/StatsPanel";
+import SettingPanel from './settingPanel/SettingPanel';
+import DetailsPanel from './DetailsPanel';
+
+class StatsCalculator extends Component {
+  render() {
+    const { classes, match: { params: { lang = "en" } } } = this.props;
+    // document.title = getTitle(lang);
+    return (
+      <AppContext.Provider value={{ lang }}>
+        <Grid container
+          spacing={8}
+          alignItems="flex-start"
+        >
+          <Grid item xs={12} lg={4} container >
+            <Paper className="fluid padding">
+              <DetailsPanel />
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={4} container>
+            <Paper className="fluid">
+              <StatsPanel />
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={4} container>
+            <Paper className="fluid padding">
+              <SettingPanel />
+            </Paper>
+          </Grid>
+        </Grid>
+      </AppContext.Provider >
+    );
+  }
+}
+
+StatsCalculator.contextType = AppContext;
+
+export default StatsCalculator;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import StatsPanel from "./statsPanel/StatsPanel";
@@ -64,3 +131,5 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps,
 )(CalcStats);
+
+*/

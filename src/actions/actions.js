@@ -1,7 +1,7 @@
 import actionTypes from './actionTypes';
 import limit from './limit';
 import { value } from './facility';
-import * as intl from './internationlization';
+// import * as intl from './internationlization';
 import equipment from './equipment';
 
 const actionCreator = (type, ...argNames) => {
@@ -50,22 +50,22 @@ export const getHalidomValue = (facility) => {
   return { HP: n_HP, STR: n_STR };
 }
 
-export const translate = (content, language = "en", section = "intl") => {
-  let translate;
-  try {
-    if (typeof content === "object") {
-      if (content.hasOwnProperty(language)) translate = content[language];
-      if (translate === "") translate = content["en"];
-    } else {
-      translate = intl[section][content][language];
-      if (translate === "") translate = intl[section][content]["en"];
-    }
-  } catch (err) {
-    if (content) translate = content.charAt(0).toUpperCase() + content.slice(1);
-    console.error("error! translate [ content: ", content, ", language: ", language, ", section: ", section, "]");
-  }
-  return translate;
-}
+// export const translate = (content, language = "en", section = "intl") => {
+//   let translate;
+//   try {
+//     if (typeof content === "object") {
+//       if (content.hasOwnProperty(language)) translate = content[language];
+//       if (translate === "") translate = content["en"];
+//     } else {
+//       translate = intl[section][content][language];
+//       if (translate === "") translate = intl[section][content]["en"];
+//     }
+//   } catch (err) {
+//     if (content) translate = content.charAt(0).toUpperCase() + content.slice(1);
+//     console.error("error! translate [ content: ", content, ", language: ", language, ", section: ", section, "]");
+//   }
+//   return translate;
+// }
 
 export const selectLanguage = actionCreator(actionTypes.SELECT_LANGUAGE, "language");
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
