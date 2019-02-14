@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import { Grid, Paper } from '@material-ui/core';
 
 import { AppContext } from "context";
-// import { getTitle } from "selectors";
-import StatsPanel from "./statsPanel/StatsPanel";
-import SettingPanel from './settingPanel/SettingPanel';
+import { getTitle } from "actions";
 import DetailsPanel from './DetailsPanel';
+import StatsPanel from "./statsPanel/StatsPanel";
+import TablePanel from './TablePanel';
 
 class StatsCalculator extends Component {
   render() {
-    const { classes, match: { params: { lang = "en" } } } = this.props;
-    // document.title = getTitle(lang);
+    const { lang = "en" } = this.props.match.params;
+    document.title = getTitle(lang);
     return (
       <AppContext.Provider value={{ lang }}>
         <Grid container
@@ -30,7 +30,7 @@ class StatsCalculator extends Component {
           </Grid>
           <Grid item xs={12} lg={4} container>
             <Paper className="fluid padding">
-              <SettingPanel />
+              <TablePanel />
             </Paper>
           </Grid>
         </Grid>

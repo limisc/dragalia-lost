@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import SmallIcon from '../../settingPanel/selectStats/SmallIcon';
+// import SmallIcon from '../../settingPanel/selectStats/SmallIcon';
 
 import { getHalidomValue } from "actions";
+import { Image } from "components";
+
 const mapStateToProps = (state) => {
   return {
     halidom: state.halidom,
@@ -29,7 +31,7 @@ class TdItem extends Component {
     const detail = getHalidomValue(halidom[field]);
     return (
       <tr>
-        <td><SmallIcon image={image} /></td>
+        <td><Image size="sm" image={image} statsKey="icon" /></td>
         <td>{detail.HP}</td>
         <td>{detail.STR}</td>
       </tr>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SelectStats from './selectStats/SelectStats';
+import SelectStats from './SelectStats';
 import SelectHalidom from './settingHalidom/SelectHalidom';
 
 const mapStateToProps = (state) => {

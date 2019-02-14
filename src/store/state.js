@@ -1,10 +1,10 @@
 const state = {
   language: "en",
-  focusSection: null,
+  focusSection: "adventurer",
   filters: {
     type: "",
     element: "",
-    rarity: "5",
+    rarity: "",
     tier: "",
   },
   stats: {

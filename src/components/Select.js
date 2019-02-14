@@ -13,17 +13,17 @@ import {
 import { AppContext } from "context";
 import { buildOptions, translate } from "actions";
 class CustomSelect extends Component {
-  state = {
-    labelWidth: 0,
-  }
-  componentDidMount() {
-    const { label } = this.props;
-    if (label) {
-      this.setState({
-        labelWidth: ReactDOM.findDOMNode(this.InputLabelRef).offsetWidth,
-      });
-    }
-  }
+  // state = {
+  //   labelWidth: 0,
+  // }
+  // componentDidMount() {
+  //   const { label } = this.props;
+  //   if (label) {
+  //     this.setState({
+  //       labelWidth: ReactDOM.findDOMNode(this.InputLabelRef).offsetWidth,
+  //     });
+  //   }
+  // }
 
   _buildOptions = (lang) => {
     const { built, options } = this.props;
@@ -47,7 +47,7 @@ class CustomSelect extends Component {
     } = this.props;
     const { lang } = this.context;
     const options = this._buildOptions(lang);
-
+    const labelWidth = label ? 100 : 0;
     return (
       <FormControl
         className="fluid"
@@ -56,9 +56,9 @@ class CustomSelect extends Component {
       >
         {label &&
           <InputLabel
-            ref={ref => {
-              this.InputLabelRef = ref;
-            }}
+          // ref={ref => {
+          //   this.InputLabelRef = ref;
+          // }}
           >
             {translate(label, lang)}
           </InputLabel>
@@ -68,7 +68,7 @@ class CustomSelect extends Component {
           onChange={onChange}
           input={
             <OutlinedInput
-              labelWidth={this.state.labelWidth}
+              labelWidth={labelWidth}
             />
           }
           inputProps={{

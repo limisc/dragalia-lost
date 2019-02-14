@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Button, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
+import { Paper, Grid, Button, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 
 import { AppContext, history } from "context";
 import { translate, resetAll } from "actions";
@@ -75,30 +75,32 @@ class DetailsPanel extends Component {
           </Grid>
         </Grid>
 
-        <Table className="details-table">
-          <TableHead>
-            <TableRow>
-              <TableCell></TableCell>
-              <TableCell align="right">{translate("HP", lang)}</TableCell>
-              <TableCell align="right">{translate("STR", lang)}</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {this.state.rows.map(row => (
-              <TableRow key={row}>
-                <TableCell>{translate(row, lang)}</TableCell>
-                <TableCell align="right">{details[row].HP}</TableCell>
-                <TableCell align="right">{details[row].STR}</TableCell>
+        <Paper className="fluid gutter-top">
+          <Table className="details-table">
+            <TableHead>
+              <TableRow>
+                <TableCell></TableCell>
+                <TableCell align="right">{translate("HP", lang)}</TableCell>
+                <TableCell align="right">{translate("STR", lang)}</TableCell>
               </TableRow>
-            ))}
+            </TableHead>
+            <TableBody>
+              {this.state.rows.map(row => (
+                <TableRow key={row}>
+                  <TableCell>{translate(row, lang)}</TableCell>
+                  <TableCell align="right">{details[row].HP}</TableCell>
+                  <TableCell align="right">{details[row].STR}</TableCell>
+                </TableRow>
+              ))}
 
-            <TableRow>
-              <TableCell>{translate("total", lang)}</TableCell>
-              <TableCell align="right">{total.HP}</TableCell>
-              <TableCell align="right">{total.STR}</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+              <TableRow>
+                <TableCell>{translate("total", lang)}</TableCell>
+                <TableCell align="right">{total.HP}</TableCell>
+                <TableCell align="right">{total.STR}</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </Paper>
 
       </Fragment>
     );
