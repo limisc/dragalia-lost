@@ -115,7 +115,7 @@ const updateAbility = (details, stats) => {
   let HP = 0, STR = 0;
   const { adventurer, dragon } = stats;
   if (adventurer && dragon && adventurer.element === dragon.element) {
-    const abilityName = dragon.unbind === 4 ? "Abilities12" : "Abilities11";
+    const abilityName = dragon.unbind === 4 ? "ability1" : "ability2";
     HP = Math.ceil(prevHP * dragon[abilityName].HP * 0.01);
     STR = Math.ceil(prevSTR * dragon[abilityName].STR * 0.01);
   }

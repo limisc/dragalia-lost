@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SelectStats from './SelectStats';
-import SelectHalidom from './settingHalidom/SelectHalidom';
+import SelectStats from "./SelectStats";
+import SettingHalidom from "./SettingHalidom";
 
 const mapStateToProps = (state) => {
   return {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 
 const SelectPanel = ({ focusSection }) => {
   if (focusSection === "halidom") {
-    return <SelectHalidom />
+    return <SettingHalidom />
   } else if (focusSection) {
     return <SelectStats />
   }
