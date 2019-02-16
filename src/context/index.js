@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserHistory } from 'history';
 
 export const history = createBrowserHistory({
-  // basename: "/dungeon-check"
+  basename: "/dragalia-lost"
 });
 
 export const AppContext = React.createContext({
