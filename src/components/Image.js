@@ -18,7 +18,7 @@ class Image extends PureComponent {
       <img
         className={size}
         alt={image}
-        src={`${process.env.PUBLIC_URL}/image/${section}/${image}`}
+        src={`${process.env.PUBLIC_URL}/image/${section}/${image}.png`}
         onClick={onClick}
       />
     );

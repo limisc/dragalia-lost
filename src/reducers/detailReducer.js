@@ -17,43 +17,45 @@ const getManaBonus = (adventurer, key) => {
 }
 
 const calcDetail = (section, item, modifier = 1) => {
-  const detail = { HP: 0, STR: 0 };
+  let HP = 0, STR = 0;
   if (item) {
-    let level = parseInt(item.level, 10);
+    let { level, curRarity } = item;
+    level = parseInt(level, 10);
     if (!level || level < 1) level = 1;
 
-    for (const key in detail) {
-      if (detail.hasOwnProperty(key)) {
-        let stats = 0;
-        if (level === item.MAX_LEVEL) {
-          stats = item["Max" + key];
-        } else {
-          let steps, stepMin, statsMin, statsGain;
-          if (section === "adventurer") {
-            stepMin = "Min" + key + "5";
-            statsMin = "Min" + key + item.curRarity;
-          } else {
-            stepMin = "Min" + key;
-            statsMin = stepMin;
-          }
+    if (level === item.MAX_LEVEL) {
+      HP = item.MaxHp;
+      STR = item.MaxAtk;
+    } else {
+      let base_HP, base_STR, stepHP, stepSTR;
+      if (section === "adventurer") {
+        base_HP = item["MinHp" + curRarity];
+        base_STR = item["MinHp" + curRarity];
+        stepHP = "MinHp5";
+        stepSTR = "MinAtk5";
+      } else {
+        base_HP = item.MinHp;
+        base_STR = item.MinAtk;
+        stepHP = "MinHp";
+        stepSTR = "MinAtk";
+      }
 
-          if (level === 1) {
-            stats = item[statsMin];
-          } else {
-            steps = (item["Max" + key] - item[stepMin]) / (item.MAX_LEVEL - 1);
-            statsGain = (level - 1) * steps;
-            stats = item[statsMin] + statsGain;
-          }
-        }
-
-        if (section === "adventurer") {
-          stats = stats + getManaBonus(item, key);
-        }
-        detail[key] = Math.ceil(Math.ceil(stats) * modifier);
+      if (level === 1) {
+        HP = base_HP;
+        STR = base_STR;
+      } else {
+        HP = base_HP + (level - 1) / (item.MAX_LEVEL - 1) * (item.MaxHp - item[stepHP]);
+        STR = base_STR + (level - 1) / (item.MAX_LEVEL - 1) * (item.MaxAtk - item[stepSTR])
       }
     }
+    if (section === "adventurer") {
+      HP = HP + getManaBonus(item, "Hp");
+      STR = STR + getManaBonus(item, "Atk");
+    }
+    HP = Math.ceil(Math.ceil(HP) * modifier);
+    STR = Math.ceil(Math.ceil(STR) * modifier);
   }
-  return detail;
+  return { HP, STR };
 }
 
 const updateStats = (details, stats, section) => {
@@ -94,9 +96,10 @@ const updateHalidom = (details, stats, halidom) => {
     STR = facility.STR;
   }
   if (halidom.dragon) {
-    const dragonDetail = calcDetail("dragon", stats.dragon);
+    // const dragonDetail = calcDetail("dragon", stats.dragon);
     const dragon = getHalidomValue(halidom.dragon);
-    facility = calcFacility(dragonDetail, dragon);
+    // facility = calcFacility(dragonDetail, dragon);
+    facility = calcFacility(details.dragon, dragon);
     HP += facility.HP;
     STR += facility.STR;
   }
@@ -115,7 +118,7 @@ const updateAbility = (details, stats) => {
   let HP = 0, STR = 0;
   const { adventurer, dragon } = stats;
   if (adventurer && dragon && adventurer.element === dragon.element) {
-    const abilityName = dragon.unbind === 4 ? "ability1" : "ability2";
+    const abilityName = dragon.unbind === 4 ? "ability2" : "ability1";
     HP = Math.ceil(prevHP * dragon[abilityName].HP * 0.01);
     STR = Math.ceil(prevSTR * dragon[abilityName].STR * 0.01);
   }

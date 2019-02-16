@@ -1,34 +1,44 @@
 const equipment = {
   "Flame": {
-    "Id": "400072",
+    "Id": "400072_0",
     "Name": {
       "en": "Glorious Tempest",
-      "zh": "暴风的荣耀",
-      "ja": "テンペストグローリー"
+      "ja": "テンペストグローリー",
+      "zh": "暴风的荣耀"
     },
     "rarity": "5",
-    "MinHP": 24,
-    "MaxHP": 165,
-    "MinSTR": 5,
-    "MaxSTR": 39,
-    "image": "400072_02.png",
+    "MinHp": 24,
+    "MaxHp": 165,
+    "MinAtk": 5,
+    "MaxAtk": 39,
+    "Abilities11": 60,
+    "Abilities12": 100,
+    "Abilities21": 30,
+    "Abilities22": 60,
+    "Abilities31": 20,
+    "Abilities32": 40,
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   "Water": {
-    "Id": "400121",
+    "Id": "400121_0",
     "Name": {
       "en": "Volcanic Queen",
-      "zh": "烈焰女王",
-      "ja": "ヴォルカニッククイーン"
+      "ja": "ヴォルカニッククイーン",
+      "zh": "烈焰女王"
     },
     "rarity": "5",
-    "MinHP": 24,
-    "MaxHP": 165,
-    "MinSTR": 5,
-    "MaxSTR": 39,
-    "image": "400121_02.png",
+    "MinHp": 24,
+    "MaxHp": 165,
+    "MinAtk": 5,
+    "MaxAtk": 39,
+    "Abilities11": 60,
+    "Abilities12": 100,
+    "Abilities21": 30,
+    "Abilities22": 60,
+    "Abilities31": 20,
+    "Abilities32": 40,
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4

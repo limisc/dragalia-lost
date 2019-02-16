@@ -6,13 +6,10 @@ export const translate = (content, lang = "en", field) => {
   if (content) {
     if (field) {
       return "";
-    } else if (typeof content === "object" && content[lang]) {
-      return content[lang];
-    } else if (intl[content] && intl[content][lang]) {
-      if (intl[content][lang] === "") return intl[content]["en"];
-      return intl[content][lang];
+    } else if (intl[content]) {
+      return intl[content][lang] ? intl[content][lang] : intl[content]["en"];
     }
-    return content.charAt(0).toUpperCase() + content.slice(1);
+    return content;
   }
   return "";
 }

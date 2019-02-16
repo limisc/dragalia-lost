@@ -10,22 +10,22 @@ const selectStats = (stats, action) => {
   const { section, item } = action;
   const { adventurer, weapon } = stats;
 
-  let image = item.image;
-  if (section === "adventurer") {
-    image = item.image.slice(0, -5) + item.curRarity + ".png";
-  } else if (section === "wyrmprint") {
-    const { unbind } = item;
-    const part = item.image.slice(0, -5);
-    image = unbind < 2 ? (part + "1.png") : (part + "2.png");
-  }
+  // let image = item.image;
+  // if (section === "adventurer") {
+  //   image = item.image.slice(0, -5) + item.curRarity + ".png";
+  // } else if (section === "wyrmprint") {
+  //   const { unbind } = item;
+  //   const part = item.image.slice(0, -5);
+  //   image = unbind < 2 ? (part + "1.png") : (part + "2.png");
+  // }
 
 
   if (section === "adventurer" && weapon && weapon.type !== item.type) {
-    return { ...stats, adventurer: { ...item, image }, weapon: null };
+    return { ...stats, adventurer: item, weapon: null };
   } else if (section === "weapon" && adventurer && adventurer.type !== item.type) {
     return { ...stats, weapon: item, adventurer: null };
   } else {
-    return { ...stats, [section]: { ...item, image } };
+    return { ...stats, [section]: item };
   }
 }
 
@@ -48,8 +48,7 @@ const updateRarity = (stats, action) => {
   const item = stats[section];
   const level = getStatsLimit(section, value);
   const mana = setValue(item.mana, "mana", value);
-  const image = item.image.slice(0, -5) + value + ".png";
-  return { ...stats, [section]: { ...item, curRarity: value, level, mana, image } };
+  return { ...stats, [section]: { ...item, curRarity: value, level, mana } };
 }
 
 const updateMana = (stats, action) => {
@@ -64,12 +63,6 @@ const updateUnbind = (stats, action) => {
   const unbind = parseInt(value, 10);
   const level = getStatsLimit(section, item.rarity, unbind);
   let updateSection = { ...item, unbind, level };
-
-  if (section === "wyrmprint") {
-    const part = item.image.slice(0, -5);
-    const image = unbind < 2 ? (part + "1.png") : (part + "2.png");
-    updateSection = { ...updateSection, image };
-  }
   return { ...stats, [section]: updateSection };
 }
 

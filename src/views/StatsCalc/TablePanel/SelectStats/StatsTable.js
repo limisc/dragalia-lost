@@ -108,7 +108,7 @@ class StatsTable extends Component {
         return cellData[lang];
       case "type":
       case "element":
-        const image = `${dataKey}_${cellData}.png`
+        const image = `${dataKey}_${cellData}`
         return <Image
           size="sm"
           statsKey="icon"

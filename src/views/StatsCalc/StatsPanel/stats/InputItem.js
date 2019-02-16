@@ -29,7 +29,7 @@ class InputItem extends Component {
   render() {
     const { language, section, label, stats: { [section]: item } } = this.props;
     return (
-      <div className="field">
+      <>
         {item &&
           <Fragment>
             <label>{translate(label, language)}</label>
@@ -41,7 +41,7 @@ class InputItem extends Component {
             />
           </Fragment>
         }
-      </div>
+      </>
     );
   }
 

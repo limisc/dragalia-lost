@@ -47,6 +47,7 @@ def save_file(data, section, file_type='data'):
             json.dump(data, f, indent=2, ensure_ascii=False)
         f.write(';\n')
         f.write('export default %s;' % section)
+    print("Save file: {}".format(file))
 
 
 def print_data(data):
@@ -74,15 +75,24 @@ def get_name(section):
 
 def set_name(name_dict, item, section):
     id = item["BaseId"] if section == "wyrmprint" else item["Id"]
-
-    if (id in name_dict):
-        name = name_dict[id]
+    if id in name_dict:
+        name = dict(name_dict[id])
+        for lang in ["ja", "zh"]:
+            if name[lang] == "":
+                name[lang] = name["en"]
     else:
-        name_en = item["Name"] if "Name" in item else ""
-        name_jp = item["NameJP"] if "NameJP" in item else ""
-        name = {"en": name_en, "zh": "", "ja": name_jp}
-        name_dict[id] = name
-        print("{} - en: {:<30} jp: {}".format(id, name_en, name_jp))
+        if "Name" in item:
+            name_en = item["Name"]
+        elif "WeaponName" in item:
+            name_en = item["WeaponName"]
+        else:
+            name_en = ""
+
+        name_ja = item["NameJP"] if "NameJP" in item else name_en
+        name = {"en": name_en, "zh": name_en, "ja": name_ja}
+        name_dict[id] = {"en": name_en, "zh": "",
+                         "ja": item["NameJP"] if "NameJP" in item else ""}
+        print("{} - en: {:<30} jp: {}".format(id, name_en, name_ja))
     return name
 
 
@@ -226,7 +236,7 @@ def set_dragon():
 def set_data(section, param, replace, omit):
     item_list = []
     duplicate_check = []
-
+    keep_str = ["tier", "curRarity", "mana"]
     Id = "BaseId" if section == "wyrmprint" else "Id"
     names = get_name(section)
     o_len = len(names)
@@ -247,24 +257,23 @@ def set_data(section, param, replace, omit):
                     r_item["Name"] = set_name(names, item, section)
                 elif k in replace:
                     r_item[replace[k]] = v
+                elif k in keep_str:
+                    r_item[k] = str(v)
                 elif isinstance(v, str) and v.isdigit():
                     r_item[k] = int(v)
                 else:
                     r_item[k] = v
             item_list.append(r_item)
-    # if (len(names) > o_len) {
-    #     save_file(names, section, "intl")
-    # }
-    # break
-
-    print_data(item_list)
+    save_file(item_list, section)
+    if len(names) > o_len:
+        save_file(names, section, "intl")
 
 
 if __name__ == "__main__":
     limit = get_limit()
     abilities = get_abilities("abilitie")
     coAbilities = get_abilities("coAbilitie")
-    # set_adventurer()
-    # set_weapon()
-    # set_wyrmprint()
+    set_adventurer()
+    set_weapon()
+    set_wyrmprint()
     set_dragon()

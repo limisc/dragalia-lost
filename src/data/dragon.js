@@ -1,1327 +1,1405 @@
 const dragon = 
 [
   {
-    "Id": "20030101",
+    "Id": "210021_01",
     "Name": {
       "en": "Homura",
-      "zh": "火龙",
-      "ja": "ホムラリュウ"
+      "ja": "ホムラリュウ",
+      "zh": "火龙"
     },
     "element": "Flame",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 184,
-    "MinSTR": 6,
-    "MaxSTR": 63,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 184,
+    "MinAtk": 6,
+    "MaxAtk": 63,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 0,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 15
     },
-    "image": "210021_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030102",
+    "Id": "210022_01",
     "Name": {
       "en": "Cinder Drake",
-      "zh": "焰龙",
-      "ja": "バーンドラコ"
+      "ja": "バーンドラコ",
+      "zh": "焰龙"
     },
     "element": "Flame",
     "rarity": "3",
-    "MinHP": 19,
-    "MaxHP": 190,
-    "MinSTR": 5,
-    "MaxSTR": 57,
-    "Abilities11": {
+    "MinHp": 19,
+    "MaxHp": 190,
+    "MinAtk": 5,
+    "MaxAtk": 57,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 10,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 0
     },
-    "image": "210022_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030103",
+    "Id": "210023_01",
     "Name": {
       "en": "Kindling Imp",
-      "zh": "烛魔",
-      "ja": "キャンドルインプ"
+      "ja": "キャンドルインプ",
+      "zh": "烛魔"
     },
     "element": "Flame",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 187,
-    "MinSTR": 6,
-    "MaxSTR": 60,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 187,
+    "MinAtk": 6,
+    "MaxAtk": 60,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 5,
       "STR": 5
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 8,
       "STR": 8
     },
-    "image": "210023_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030201",
+    "Id": "210059_01",
     "Name": {
       "en": "Fubuki",
-      "zh": "雪龙",
-      "ja": "フブキリュウ"
+      "ja": "フブキリュウ",
+      "zh": "雪龙"
     },
     "element": "Water",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 185,
-    "MinSTR": 6,
-    "MaxSTR": 63,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 185,
+    "MinAtk": 6,
+    "MaxAtk": 63,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 0,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 15
     },
-    "image": "210059_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030202",
+    "Id": "210063_01",
     "Name": {
       "en": "Snow Drake",
-      "zh": "冰龙",
-      "ja": "アイスドラコ"
+      "ja": "アイスドラコ",
+      "zh": "冰龙"
     },
     "element": "Water",
     "rarity": "3",
-    "MinHP": 19,
-    "MaxHP": 191,
-    "MinSTR": 5,
-    "MaxSTR": 57,
-    "Abilities11": {
+    "MinHp": 19,
+    "MaxHp": 191,
+    "MinAtk": 5,
+    "MaxAtk": 57,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 10,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 0
     },
-    "image": "210063_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030203",
+    "Id": "210067_01",
     "Name": {
       "en": "Wellspring Imp",
-      "zh": "井魔",
-      "ja": "ウェルインプ"
+      "ja": "ウェルインプ",
+      "zh": "井魔"
     },
     "element": "Water",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 187,
-    "MinSTR": 6,
-    "MaxSTR": 60,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 187,
+    "MinAtk": 6,
+    "MaxAtk": 60,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 5,
       "STR": 5
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 8,
       "STR": 8
     },
-    "image": "210067_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030301",
+    "Id": "210060_01",
     "Name": {
       "en": "Tsumuji",
-      "zh": "旋龙",
-      "ja": "ツムジリュウ"
+      "ja": "ツムジリュウ",
+      "zh": "旋龙"
     },
     "element": "Wind",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 184,
-    "MinSTR": 6,
-    "MaxSTR": 63,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 184,
+    "MinAtk": 6,
+    "MaxAtk": 63,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 0,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 15
     },
-    "image": "210060_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030302",
+    "Id": "210064_01",
     "Name": {
       "en": "Gust Drake",
-      "zh": "风龙",
-      "ja": "ウインドラコ"
+      "ja": "ウインドラコ",
+      "zh": "风龙"
     },
     "element": "Wind",
     "rarity": "3",
-    "MinHP": 19,
-    "MaxHP": 191,
-    "MinSTR": 5,
-    "MaxSTR": 57,
-    "Abilities11": {
+    "MinHp": 19,
+    "MaxHp": 191,
+    "MinAtk": 5,
+    "MaxAtk": 57,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 10,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 0
     },
-    "image": "210064_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030303",
+    "Id": "210068_01",
     "Name": {
       "en": "Zephyr Imp",
-      "zh": "气魔",
-      "ja": "エアリアルインプ"
+      "ja": "エアリアルインプ",
+      "zh": "气魔"
     },
     "element": "Wind",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 187,
-    "MinSTR": 6,
-    "MaxSTR": 60,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 187,
+    "MinAtk": 6,
+    "MaxAtk": 60,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 5,
       "STR": 5
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 8,
       "STR": 8
     },
-    "image": "210068_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030401",
+    "Id": "210061_01",
     "Name": {
       "en": "Hinata",
-      "zh": "阳龙",
-      "ja": "ヒナタリュウ"
+      "ja": "ヒナタリュウ",
+      "zh": "阳龙"
     },
     "element": "Light",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 185,
-    "MinSTR": 6,
-    "MaxSTR": 62,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 185,
+    "MinAtk": 6,
+    "MaxAtk": 62,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 0,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 15
     },
-    "image": "210061_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030402",
+    "Id": "210065_01",
     "Name": {
       "en": "Moon Drake",
-      "zh": "月龙",
-      "ja": "ムーンドラコ"
+      "ja": "ムーンドラコ",
+      "zh": "月龙"
     },
     "element": "Light",
     "rarity": "3",
-    "MinHP": 19,
-    "MaxHP": 192,
-    "MinSTR": 5,
-    "MaxSTR": 56,
-    "Abilities11": {
+    "MinHp": 19,
+    "MaxHp": 192,
+    "MinAtk": 5,
+    "MaxAtk": 56,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 10,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 0
     },
-    "image": "210065_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030403",
+    "Id": "210069_01",
     "Name": {
       "en": "Astral Imp",
-      "zh": "星魔",
-      "ja": "スターインプ"
+      "ja": "スターインプ",
+      "zh": "星魔"
     },
     "element": "Light",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 188,
-    "MinSTR": 5,
-    "MaxSTR": 59,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 188,
+    "MinAtk": 5,
+    "MaxAtk": 59,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 5,
       "STR": 5
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 8,
       "STR": 8
     },
-    "image": "210069_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030501",
+    "Id": "210062_01",
     "Name": {
       "en": "Hikage",
-      "zh": "影龙",
-      "ja": "ヒカゲリュウ"
+      "ja": "ヒカゲリュウ",
+      "zh": "影龙"
     },
     "element": "Shadow",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 183,
-    "MinSTR": 6,
-    "MaxSTR": 64,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 183,
+    "MinAtk": 6,
+    "MaxAtk": 64,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 0,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 15
     },
-    "image": "210062_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030502",
+    "Id": "210066_01",
     "Name": {
       "en": "Gloom Drake",
-      "zh": "暗龙",
-      "ja": "ダークドラコ"
+      "ja": "ダークドラコ",
+      "zh": "暗龙"
     },
     "element": "Shadow",
     "rarity": "3",
-    "MinHP": 19,
-    "MaxHP": 190,
-    "MinSTR": 5,
-    "MaxSTR": 58,
-    "Abilities11": {
+    "MinHp": 19,
+    "MaxHp": 190,
+    "MinAtk": 5,
+    "MaxAtk": 58,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 10,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 0
     },
-    "image": "210066_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20030503",
+    "Id": "210070_01",
     "Name": {
       "en": "Pallid Imp",
-      "zh": "墓魔",
-      "ja": "グレイヴインプ"
+      "ja": "グレイヴインプ",
+      "zh": "墓魔"
     },
     "element": "Shadow",
     "rarity": "3",
-    "MinHP": 18,
-    "MaxHP": 186,
-    "MinSTR": 6,
-    "MaxSTR": 61,
-    "Abilities11": {
+    "MinHp": 18,
+    "MaxHp": 186,
+    "MinAtk": 6,
+    "MaxAtk": 61,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "ability1": {
       "HP": 5,
       "STR": 5
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 8,
       "STR": 8
     },
-    "image": "210070_01.png",
     "level": 60,
     "MAX_LEVEL": 60,
     "unbind": 4
   },
   {
-    "Id": "20040101",
+    "Id": "210002_01",
     "Name": {
       "en": "Brunhilda",
-      "zh": "布伦希尔德",
-      "ja": "ブリュンヒルデ"
+      "ja": "ブリュンヒルデ",
+      "zh": "布伦希尔德"
     },
     "element": "Flame",
     "rarity": "4",
-    "MinHP": 20,
-    "MaxHP": 203,
-    "MinSTR": 7,
-    "MaxSTR": 70,
-    "Abilities11": {
+    "MinHp": 20,
+    "MaxHp": 203,
+    "MinAtk": 7,
+    "MaxAtk": 70,
+    "Abilities11": 30,
+    "Abilities12": 40,
+    "ability1": {
       "HP": 0,
       "STR": 15
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 20
     },
-    "image": "210002_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040102",
+    "Id": "210006_01",
     "Name": {
       "en": "Phoenix",
-      "zh": "菲尼克斯",
-      "ja": "フェニックス"
+      "ja": "フェニックス",
+      "zh": "菲尼克斯"
     },
     "element": "Flame",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 299,
-    "MinSTR": 9,
-    "MaxSTR": 97,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 299,
+    "MinAtk": 9,
+    "MaxAtk": 97,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 30,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 45,
       "STR": 0
     },
-    "image": "210006_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040103",
+    "Id": "210007_01",
     "Name": {
       "en": "Ifrit",
-      "zh": "伊夫利特",
-      "ja": "イフリート"
+      "ja": "イフリート",
+      "zh": "伊夫利特"
     },
     "element": "Flame",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 295,
-    "MinSTR": 10,
-    "MaxSTR": 101,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 295,
+    "MinAtk": 10,
+    "MaxAtk": 101,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210007_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040201",
+    "Id": "210003_01",
     "Name": {
       "en": "Mercury",
-      "zh": "墨丘利",
-      "ja": "マーキュリー"
+      "ja": "マーキュリー",
+      "zh": "墨丘利"
     },
     "element": "Water",
     "rarity": "4",
-    "MinHP": 21,
-    "MaxHP": 211,
-    "MinSTR": 6,
-    "MaxSTR": 62,
-    "Abilities11": {
+    "MinHp": 21,
+    "MaxHp": 211,
+    "MinAtk": 6,
+    "MaxAtk": 62,
+    "Abilities11": 30,
+    "Abilities12": 40,
+    "ability1": {
       "HP": 15,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 20,
       "STR": 0
     },
-    "image": "210003_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040202",
+    "Id": "210008_01",
     "Name": {
       "en": "Poliʻahu",
-      "zh": "波丽亚芙",
-      "ja": "ポリアフ"
+      "ja": "ポリアフ",
+      "zh": "波丽亚芙"
     },
     "element": "Water",
     "rarity": "4",
-    "MinHP": 30,
-    "MaxHP": 301,
-    "MinSTR": 9,
-    "MaxSTR": 95,
-    "Abilities11": {
+    "MinHp": 30,
+    "MaxHp": 301,
+    "MinAtk": 9,
+    "MaxAtk": 95,
+    "Abilities11": 60,
+    "Abilities12": 70,
+    "ability1": {
       "HP": 15,
       "STR": 15
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 20,
       "STR": 20
     },
-    "image": "210008_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040203",
+    "Id": "210058_01",
     "Name": {
       "en": "Vodyanoy",
-      "zh": "沃加诺伊",
-      "ja": "ヴォジャノーイ"
+      "ja": "ヴォジャノーイ",
+      "zh": "沃加诺伊"
     },
     "element": "Water",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 296,
-    "MinSTR": 10,
-    "MaxSTR": 100,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 296,
+    "MinAtk": 10,
+    "MaxAtk": 100,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210058_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040301",
+    "Id": "210001_01",
     "Name": {
       "en": "Midgardsormr",
-      "zh": "耶梦加得",
-      "ja": "ミドガルズオルム"
+      "ja": "ミドガルズオルム",
+      "zh": "耶梦加得"
     },
     "element": "Wind",
     "rarity": "4",
-    "MinHP": 20,
-    "MaxHP": 206,
-    "MinSTR": 6,
-    "MaxSTR": 66,
-    "Abilities11": {
+    "MinHp": 20,
+    "MaxHp": 206,
+    "MinAtk": 6,
+    "MaxAtk": 66,
+    "Abilities11": 30,
+    "Abilities12": 50,
+    "ability1": {
       "HP": 8,
       "STR": 8
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 10,
       "STR": 10
     },
-    "image": "210001_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040302",
+    "Id": "210050_01",
     "Name": {
       "en": "Roc",
-      "zh": "沃格尔",
-      "ja": "フォーゲル"
+      "ja": "フォーゲル",
+      "zh": "沃格尔"
     },
     "element": "Wind",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 296,
-    "MinSTR": 10,
-    "MaxSTR": 101,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 296,
+    "MinAtk": 10,
+    "MaxAtk": 101,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210050_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040303",
+    "Id": "210011_01",
     "Name": {
       "en": "Stribog",
-      "zh": "斯特利伯格",
-      "ja": "ストリボーグ"
+      "ja": "ストリボーグ",
+      "zh": "斯特利伯格"
     },
     "element": "Wind",
     "rarity": "4",
-    "MinHP": 30,
-    "MaxHP": 306,
-    "MinSTR": 9,
-    "MaxSTR": 91,
-    "Abilities11": {
+    "MinHp": 30,
+    "MaxHp": 306,
+    "MinAtk": 9,
+    "MaxAtk": 91,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 30,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 45,
       "STR": 0
     },
-    "image": "210011_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040401",
+    "Id": "210004_01",
     "Name": {
       "en": "Jupiter",
-      "zh": "朱庇特",
-      "ja": "ユピテル"
+      "ja": "ユピテル",
+      "zh": "朱庇特"
     },
     "element": "Light",
     "rarity": "4",
-    "MinHP": 20,
-    "MaxHP": 207,
-    "MinSTR": 6,
-    "MaxSTR": 65,
-    "Abilities11": {
+    "MinHp": 20,
+    "MaxHp": 207,
+    "MinAtk": 6,
+    "MaxAtk": 65,
+    "Abilities11": 30,
+    "Abilities12": 50,
+    "ability1": {
       "HP": 8,
       "STR": 8
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 10,
       "STR": 10
     },
-    "image": "210004_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040402",
+    "Id": "210012_01",
     "Name": {
       "en": "Unicorn",
-      "zh": "独角兽",
-      "ja": "ユニコーン"
+      "ja": "ユニコーン",
+      "zh": "独角兽"
     },
     "element": "Light",
     "rarity": "4",
-    "MinHP": 30,
-    "MaxHP": 301,
-    "MinSTR": 9,
-    "MaxSTR": 95,
-    "Abilities11": {
+    "MinHp": 30,
+    "MaxHp": 301,
+    "MinAtk": 9,
+    "MaxAtk": 95,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 30,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 45,
       "STR": 0
     },
-    "image": "210012_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040403",
+    "Id": "210013_01",
     "Name": {
       "en": "Lindworm",
-      "zh": "林德巴鲁姆",
-      "ja": "リンドヴルム"
+      "ja": "リンドヴルム",
+      "zh": "林德巴鲁姆"
     },
     "element": "Light",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 297,
-    "MinSTR": 10,
-    "MaxSTR": 100,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 297,
+    "MinAtk": 10,
+    "MaxAtk": 100,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210013_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040405",
+    "Id": "210075_01",
     "Name": {
       "en": "Silke",
-      "zh": "希露姬",
-      "ja": "シルキー"
+      "ja": "シルキー",
+      "zh": "希露姬"
     },
     "element": "Light",
     "rarity": "4",
-    "MinHP": 30,
-    "MaxHP": 301,
-    "MinSTR": 9,
-    "MaxSTR": 95,
-    "Abilities11": {
+    "MinHp": 30,
+    "MaxHp": 301,
+    "MinAtk": 9,
+    "MaxAtk": 95,
+    "Abilities11": 60,
+    "Abilities12": 70,
+    "ability1": {
       "HP": 15,
       "STR": 15
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 20,
       "STR": 20
     },
-    "image": "210075_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040501",
+    "Id": "210005_01",
     "Name": {
       "en": "Zodiark",
-      "zh": "佐迪亚克",
-      "ja": "ゾディアーク"
+      "ja": "ゾディアーク",
+      "zh": "佐迪亚克"
     },
     "element": "Shadow",
     "rarity": "4",
-    "MinHP": 20,
-    "MaxHP": 202,
-    "MinSTR": 7,
-    "MaxSTR": 70,
-    "Abilities11": {
+    "MinHp": 20,
+    "MaxHp": 202,
+    "MinAtk": 7,
+    "MaxAtk": 70,
+    "Abilities11": 30,
+    "Abilities12": 40,
+    "ability1": {
       "HP": 0,
       "STR": 15
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 20
     },
-    "image": "210005_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040502",
+    "Id": "210014_01",
     "Name": {
       "en": "Juggernaut",
-      "zh": "札格纳特",
-      "ja": "ジャガーノート"
+      "ja": "ジャガーノート",
+      "zh": "札格纳特"
     },
     "element": "Shadow",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 294,
-    "MinSTR": 10,
-    "MaxSTR": 102,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 294,
+    "MinAtk": 10,
+    "MaxAtk": 102,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210014_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20040503",
+    "Id": "210015_01",
     "Name": {
       "en": "Silke",
-      "zh": "希露姬",
-      "ja": "シルキー"
+      "ja": "シルキー",
+      "zh": "希露姬"
     },
     "element": "Shadow",
     "rarity": "4",
-    "MinHP": 29,
-    "MaxHP": 299,
-    "MinSTR": 9,
-    "MaxSTR": 97,
-    "Abilities11": {
+    "MinHp": 29,
+    "MaxHp": 299,
+    "MinAtk": 9,
+    "MaxAtk": 97,
+    "Abilities11": 60,
+    "Abilities12": 70,
+    "ability1": {
       "HP": 15,
       "STR": 15
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 20,
       "STR": 20
     },
-    "image": "210015_01.png",
     "level": 80,
     "MAX_LEVEL": 80,
     "unbind": 4
   },
   {
-    "Id": "20050101",
+    "Id": "210016_01",
     "Name": {
       "en": "Agni",
-      "zh": "阿格尼",
-      "ja": "アグニ"
+      "ja": "アグニ",
+      "zh": "阿格尼"
     },
     "element": "Flame",
     "rarity": "5",
-    "MinHP": 36,
-    "MaxHP": 369,
-    "MinSTR": 12,
-    "MaxSTR": 127,
-    "Abilities11": {
+    "MinHp": 36,
+    "MaxHp": 369,
+    "MinAtk": 12,
+    "MaxAtk": 127,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210016_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050102",
+    "Id": "210039_01",
     "Name": {
       "en": "High Brunhilda",
-      "zh": "真布伦希尔德",
-      "ja": "真ブリュンヒルデ"
+      "ja": "真ブリュンヒルデ",
+      "zh": "真布伦希尔德"
     },
     "element": "Flame",
     "rarity": "5",
-    "MinHP": 35,
-    "MaxHP": 350,
-    "MinSTR": 12,
-    "MaxSTR": 120,
-    "Abilities11": {
+    "MinHp": 35,
+    "MaxHp": 350,
+    "MinAtk": 12,
+    "MaxAtk": 120,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 20,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 30
     },
-    "image": "210039_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050103",
+    "Id": "210057_01",
     "Name": {
       "en": "Pele",
-      "zh": "佩雷",
-      "ja": "ペレ"
+      "ja": "ペレ",
+      "zh": "佩雷"
     },
     "element": "Flame",
     "rarity": "5",
-    "MinHP": 22,
-    "MaxHP": 221,
-    "MinSTR": 7,
-    "MaxSTR": 76,
-    "Abilities11": {
+    "MinHp": 22,
+    "MaxHp": 221,
+    "MinAtk": 7,
+    "MaxAtk": 76,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "ability1": {
       "HP": 0,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 30
     },
-    "image": "210057_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050104",
+    "Id": "210024_01",
     "Name": {
       "en": "Cerberus",
-      "zh": "坎贝萝丝",
-      "ja": "ケルベロス"
+      "ja": "ケルベロス",
+      "zh": "坎贝萝丝"
     },
     "element": "Flame",
     "rarity": "5",
-    "MinHP": 36,
-    "MaxHP": 369,
-    "MinSTR": 12,
-    "MaxSTR": 127,
-    "Abilities11": {
+    "MinHp": 36,
+    "MaxHp": 369,
+    "MinAtk": 12,
+    "MaxAtk": 127,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210024_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050201",
+    "Id": "210052_01",
+    "Name": {
+      "en": "Prometheus",
+      "ja": "プロメテウス",
+      "zh": "普罗米修斯"
+    },
+    "element": "Flame",
+    "rarity": "5",
+    "MinHp": 37,
+    "MaxHp": 374,
+    "MinAtk": 12,
+    "MaxAtk": 121,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
+      "HP": 0,
+      "STR": 35
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 50
+    },
+    "level": 100,
+    "MAX_LEVEL": 100,
+    "unbind": 4
+  },
+  {
+    "Id": "210025_01",
     "Name": {
       "en": "Poseidon",
-      "zh": "波塞冬",
-      "ja": "ポセイドン"
+      "ja": "ポセイドン",
+      "zh": "波塞冬"
     },
     "element": "Water",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 376,
-    "MinSTR": 11,
-    "MaxSTR": 119,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 376,
+    "MinAtk": 11,
+    "MaxAtk": 119,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 20,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 30
     },
-    "image": "210025_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050203",
+    "Id": "210017_01",
     "Name": {
       "en": "Leviathan",
-      "zh": "利维坦",
-      "ja": "リヴァイアサン"
+      "ja": "リヴァイアサン",
+      "zh": "利维坦"
     },
     "element": "Water",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 370,
-    "MinSTR": 12,
-    "MaxSTR": 125,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 370,
+    "MinAtk": 12,
+    "MaxAtk": 125,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210017_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050205",
+    "Id": "210076_01",
     "Name": {
       "en": "Jeanne d'Arc",
-      "zh": "贞德",
-      "ja": "ジャンヌダルク"
+      "ja": "ジャンヌダルク",
+      "zh": "贞德"
     },
     "element": "Water",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 370,
-    "MinSTR": 12,
-    "MaxSTR": 125,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 370,
+    "MinAtk": 12,
+    "MaxAtk": 125,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210076_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050206",
+    "Id": "210079_01",
     "Name": {
       "en": "Peng Lai",
-      "zh": "蓬莱",
-      "ja": "ホウライ"
+      "ja": "ホウライ",
+      "zh": "蓬莱"
     },
     "element": "Water",
     "rarity": "5",
-    "MinHP": 22,
-    "MaxHP": 222,
-    "MinSTR": 7,
-    "MaxSTR": 75,
-    "Abilities11": {
+    "MinHp": 22,
+    "MaxHp": 222,
+    "MinAtk": 7,
+    "MaxAtk": 75,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "ability1": {
       "HP": 20,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 0
     },
-    "image": "210079_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050301",
+    "Id": "210018_01",
     "Name": {
       "en": "Zephyr",
-      "zh": "瓦基扬",
-      "ja": "ワキヤン"
+      "ja": "ワキヤン",
+      "zh": "瓦基扬"
     },
     "element": "Wind",
     "rarity": "5",
-    "MinHP": 36,
-    "MaxHP": 369,
-    "MinSTR": 12,
-    "MaxSTR": 126,
-    "Abilities11": {
+    "MinHp": 36,
+    "MaxHp": 369,
+    "MinAtk": 12,
+    "MaxAtk": 126,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210018_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050302",
+    "Id": "210038_01",
     "Name": {
       "en": "High Midgardsormr",
-      "zh": "真耶梦加得",
-      "ja": "真ミドガルズオルム"
+      "ja": "真ミドガルズオルム",
+      "zh": "真耶梦加得"
     },
     "element": "Wind",
     "rarity": "5",
-    "MinHP": 35,
-    "MaxHP": 356,
-    "MinSTR": 11,
-    "MaxSTR": 114,
-    "Abilities11": {
+    "MinHp": 35,
+    "MaxHp": 356,
+    "MinAtk": 11,
+    "MaxAtk": 114,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 20,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 30
     },
-    "image": "210038_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050303",
+    "Id": "210010_01",
     "Name": {
       "en": "Sylvia",
-      "zh": "希尔维亚",
-      "ja": "シルヴィア"
+      "ja": "シルヴィア",
+      "zh": "希尔维亚"
     },
     "element": "Wind",
     "rarity": "5",
-    "MinHP": 22,
-    "MaxHP": 225,
-    "MinSTR": 7,
-    "MaxSTR": 72,
-    "Abilities11": {
+    "MinHp": 22,
+    "MaxHp": 225,
+    "MinAtk": 7,
+    "MaxAtk": 72,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "ability1": {
       "HP": 20,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 0
     },
-    "image": "210010_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050304",
+    "Id": "210036_01",
     "Name": {
       "en": "Garuda",
-      "zh": "迦楼罗",
-      "ja": "ガルーダ"
+      "ja": "ガルーダ",
+      "zh": "迦楼罗"
     },
     "element": "Wind",
     "rarity": "5",
-    "MinHP": 38,
-    "MaxHP": 383,
-    "MinSTR": 11,
-    "MaxSTR": 114,
-    "Abilities11": {
+    "MinHp": 38,
+    "MaxHp": 383,
+    "MinAtk": 11,
+    "MaxAtk": 114,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 40,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 60,
       "STR": 0
     },
-    "image": "210036_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050305",
+    "Id": "210080_01",
     "Name": {
       "en": "Long Long",
-      "zh": "龙龙",
-      "ja": "ロンロン"
+      "ja": "ロンロン",
+      "zh": "龙龙"
     },
     "element": "Wind",
     "rarity": "5",
-    "MinHP": 36,
-    "MaxHP": 369,
-    "MinSTR": 12,
-    "MaxSTR": 126,
-    "Abilities11": {
+    "MinHp": 36,
+    "MaxHp": 369,
+    "MinAtk": 12,
+    "MaxAtk": 126,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 30
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 45
     },
-    "image": "210080_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050401",
+    "Id": "210020_01",
     "Name": {
       "en": "Jeanne d'Arc",
-      "zh": "贞德",
-      "ja": "ジャンヌダルク"
+      "ja": "ジャンヌダルク",
+      "zh": "贞德"
     },
     "element": "Light",
     "rarity": "5",
-    "MinHP": 38,
-    "MaxHP": 384,
-    "MinSTR": 11,
-    "MaxSTR": 113,
-    "Abilities11": {
+    "MinHp": 38,
+    "MaxHp": 384,
+    "MinAtk": 11,
+    "MaxAtk": 113,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 40,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 60,
       "STR": 0
     },
-    "image": "210020_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050405",
+    "Id": "210049_01",
     "Name": {
       "en": "Cupid",
-      "zh": "丘比特",
-      "ja": "キューピッド"
+      "ja": "キューピッド",
+      "zh": "丘比特"
     },
     "element": "Light",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 377,
-    "MinSTR": 11,
-    "MaxSTR": 119,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 377,
+    "MinAtk": 11,
+    "MaxAtk": 119,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210049_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050406",
+    "Id": "210078_01",
     "Name": {
       "en": "Shishimai",
-      "zh": "狮子舞",
-      "ja": "シシマイ"
+      "ja": "シシマイ",
+      "zh": "狮子舞"
     },
     "element": "Light",
     "rarity": "5",
-    "MinHP": 22,
-    "MaxHP": 223,
-    "MinSTR": 7,
-    "MaxSTR": 75,
-    "Abilities11": {
+    "MinHp": 22,
+    "MaxHp": 223,
+    "MinAtk": 7,
+    "MaxAtk": 75,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "ability1": {
       "HP": 0,
       "STR": 0
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 0
     },
-    "image": "210078_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050407",
+    "Id": "210043_01",
     "Name": {
       "en": "Liger",
-      "zh": "雷牙",
-      "ja": "ライガ"
+      "ja": "ライガ",
+      "zh": "雷牙"
     },
     "element": "Light",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 377,
-    "MinSTR": 11,
-    "MaxSTR": 119,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 377,
+    "MinAtk": 11,
+    "MaxAtk": 119,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 20,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 30
     },
-    "image": "210043_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050501",
+    "Id": "210019_01",
     "Name": {
       "en": "Nidhogg",
-      "zh": "尼德霍格",
-      "ja": "ニーズヘッグ"
+      "ja": "ニーズヘッグ",
+      "zh": "尼德霍格"
     },
     "element": "Shadow",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 374,
-    "MinSTR": 12,
-    "MaxSTR": 121,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 374,
+    "MinAtk": 12,
+    "MaxAtk": 121,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 20,
       "STR": 20
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 30,
       "STR": 30
     },
-    "image": "210019_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050505",
+    "Id": "210072_01",
     "Name": {
       "en": "Maritimus",
-      "zh": "玛利蒂姆斯",
-      "ja": "マリティムス"
+      "ja": "マリティムス",
+      "zh": "玛利蒂姆斯"
     },
     "element": "Shadow",
     "rarity": "5",
-    "MinHP": 22,
-    "MaxHP": 224,
-    "MinSTR": 7,
-    "MaxSTR": 73,
-    "Abilities11": {
+    "MinHp": 22,
+    "MaxHp": 224,
+    "MinAtk": 7,
+    "MaxAtk": 73,
+    "Abilities11": 50,
+    "Abilities12": 60,
+    "ability1": {
       "HP": 10,
       "STR": 10
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 15,
       "STR": 15
     },
-    "image": "210072_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4
   },
   {
-    "Id": "20050506",
+    "Id": "210077_01",
     "Name": {
       "en": "Marishiten",
-      "zh": "摩利支天",
-      "ja": "マリシテン"
+      "ja": "マリシテン",
+      "zh": "摩利支天"
     },
     "element": "Shadow",
     "rarity": "5",
-    "MinHP": 37,
-    "MaxHP": 374,
-    "MinSTR": 12,
-    "MaxSTR": 121,
-    "Abilities11": {
+    "MinHp": 37,
+    "MaxHp": 374,
+    "MinAtk": 12,
+    "MaxAtk": 121,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
       "HP": 0,
       "STR": 40
     },
-    "Abilities12": {
+    "ability2": {
       "HP": 0,
       "STR": 60
     },
-    "image": "210077_01.png",
     "level": 100,
     "MAX_LEVEL": 100,
     "unbind": 4

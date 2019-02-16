@@ -21,7 +21,24 @@ class ListItem extends Component {
 
   render() {
     const { statsKey, item } = this.props;
-    const image = item ? item.image : "add.png";
+
+    let image = "add";
+    if (item) {
+      switch (statsKey) {
+        case "adventurer":
+          image = item.Id + item.rarity;
+          break;
+        case "wyrmprint":
+        case "wyrmprint1":
+        case "wyrmprint2":
+          image = item.Id + "1";
+          break;
+        default:
+          image = item.Id;
+          break;
+      }
+    }
+
     return (
       <Image
         size="md"
@@ -32,7 +49,6 @@ class ListItem extends Component {
     );
   }
 }
-
 
 ListItem.propTypes = {
   statsKey: PropTypes.string.isRequired,

@@ -1,327 +1,311 @@
 const weapon = 
 [
   {
-    "Id": "30130102",
+    "Id": "301013_01_30101",
     "Name": {
       "en": "Blazing Blade",
       "zh": "灼热之剑",
-      "ja": ""
+      "ja": "ハードヒートソード"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 17,
-    "MaxHP": 57,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "301013_01_30101.png",
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30130201",
+    "Id": "301006_01_30201",
     "Name": {
       "en": "Rainbreaker",
       "zh": "裂雨剑",
-      "ja": ""
+      "ja": "レインブレイカー"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 17,
-    "MaxHP": 57,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "301006_01_30201.png",
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30130302",
+    "Id": "301035_01_30301",
     "Name": {
       "en": "Grassrunner",
       "zh": "草上飞",
-      "ja": ""
+      "ja": "グラスランナー"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 17,
-    "MaxHP": 57,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "301035_01_30301.png",
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30130401",
+    "Id": "301007_01_30401",
     "Name": {
       "en": "Featherblade",
       "zh": "轻羽剑",
-      "ja": ""
+      "ja": "フェザーソード"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 17,
-    "MaxHP": 57,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "301007_01_30401.png",
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30130501",
+    "Id": "301008_01_30501",
     "Name": {
       "en": "Blood Price",
       "zh": "鲜血决斗",
-      "ja": ""
+      "ja": "ブラッドデュエル"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 17,
-    "MaxHP": 57,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "301008_01_30501.png",
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30139901",
+    "Id": "301030_01_39901",
     "Name": {
       "en": "Knight's Sword",
       "zh": "骑士剑",
-      "ja": ""
+      "ja": "ナイツソード"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "None",
-    "MinHP": 7,
-    "MaxHP": 24,
-    "MinSTR": 25,
-    "MaxSTR": 86,
-    "image": "301030_01_39901.png",
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 25,
+    "MaxAtk": 86,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30139902",
+    "Id": "301038_01_39901",
     "Name": {
       "en": "Ensorcelled Sword",
       "zh": "附魔剑",
-      "ja": ""
+      "ja": "エンチャントソード"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "None",
-    "MinHP": 10,
-    "MaxHP": 36,
-    "MinSTR": 42,
-    "MaxSTR": 140,
-    "image": "301038_01_39901.png",
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30139903",
+    "Id": "301039_01_39901",
     "Name": {
       "en": "Broadedge",
       "zh": "狂野之剑",
-      "ja": ""
+      "ja": "ワイドソード"
     },
     "type": "Sword",
     "rarity": "3",
     "element": "None",
-    "MinHP": 10,
-    "MaxHP": 36,
-    "MinSTR": 42,
-    "MaxSTR": 140,
-    "image": "301039_01_39901.png",
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30140104",
+    "Id": "301014_01_40101",
     "Name": {
       "en": "Crimson Cry",
       "zh": "绯红剑",
-      "ja": ""
+      "ja": "クリムゾンソード"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 27,
-    "MaxHP": 92,
-    "MinSTR": 108,
-    "MaxSTR": 362,
-    "image": "301014_01_40101.png",
+    "MinHp": 27,
+    "MaxHp": 92,
+    "MinAtk": 108,
+    "MaxAtk": 362,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30140201",
+    "Id": "301009_01_40201",
     "Name": {
       "en": "Mercurius",
       "zh": "墨丘利之剑",
-      "ja": ""
+      "ja": "メルクリウスソード"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "301009_01_40201.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30140301",
+    "Id": "301034_01_40301",
     "Name": {
       "en": "Wingblade",
       "zh": "灵翼剑",
-      "ja": ""
+      "ja": "ウイングソード"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "301034_01_40301.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30140401",
+    "Id": "301036_01_40401",
     "Name": {
       "en": "Astral Edge",
       "zh": "七星剑",
-      "ja": ""
+      "ja": "七星剣"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "301036_01_40401.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30140501",
+    "Id": "301011_01_40501",
     "Name": {
       "en": "Dark Dementia",
       "zh": "狂乱黑剑",
-      "ja": ""
+      "ja": "狂乱の黒剣"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 27,
-    "MaxHP": 92,
-    "MinSTR": 108,
-    "MaxSTR": 362,
-    "image": "301011_01_40501.png",
+    "MinHp": 27,
+    "MaxHp": 92,
+    "MinAtk": 108,
+    "MaxAtk": 362,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30149901",
+    "Id": "301040_01_49901",
     "Name": {
       "en": "Knights' Grace",
       "zh": "骑士长丽剑",
-      "ja": ""
+      "ja": "騎士長の麗剣"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "None",
-    "MinHP": 17,
-    "MaxHP": 58,
-    "MinSTR": 62,
-    "MaxSTR": 208,
-    "image": "301040_01_49901.png",
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 62,
+    "MaxAtk": 208,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30149902",
+    "Id": "301031_01_49901",
     "Name": {
       "en": "Blade of Glory",
       "zh": "荣耀之剑",
-      "ja": ""
+      "ja": "グロリアスソード"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "None",
-    "MinHP": 21,
-    "MaxHP": 71,
-    "MinSTR": 83,
-    "MaxSTR": 278,
-    "image": "301031_01_49901.png",
+    "MinHp": 21,
+    "MaxHp": 71,
+    "MinAtk": 83,
+    "MaxAtk": 278,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30149903",
+    "Id": "301012_01_49901",
     "Name": {
       "en": "Gilda Sword",
       "zh": "吉尔达之剑",
-      "ja": ""
+      "ja": "ギルダソード"
     },
     "type": "Sword",
     "rarity": "4",
     "element": "None",
-    "MinHP": 24,
-    "MaxHP": 81,
-    "MinSTR": 77,
-    "MaxSTR": 257,
-    "image": "301012_01_49901.png",
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 77,
+    "MaxAtk": 257,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30150101",
+    "Id": "301032_01_50101",
     "Name": {
       "en": "Levatein",
       "zh": "雷瓦汀",
@@ -330,18 +314,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 42,
-    "MaxHP": 143,
-    "MinSTR": 166,
-    "MaxSTR": 556,
-    "image": "301032_01_50101.png",
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30150202",
+    "Id": "301010_01_50201",
     "Name": {
       "en": "Eoantide",
       "zh": "原初白浪",
@@ -350,18 +333,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 42,
-    "MaxHP": 143,
-    "MinSTR": 166,
-    "MaxSTR": 556,
-    "image": "301010_01_50201.png",
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30150301",
+    "Id": "301033_01_50301",
     "Name": {
       "en": "Durandal",
       "zh": "杜朗达尔",
@@ -370,18 +352,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 47,
-    "MaxHP": 158,
-    "MinSTR": 157,
-    "MaxSTR": 524,
-    "image": "301033_01_50301.png",
+    "MinHp": 47,
+    "MaxHp": 158,
+    "MinAtk": 157,
+    "MaxAtk": 524,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30150401",
+    "Id": "301015_01_50401",
     "Name": {
       "en": "Zex's End",
       "zh": "赛克斯的终焉",
@@ -390,18 +371,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 42,
-    "MaxHP": 143,
-    "MinSTR": 166,
-    "MaxSTR": 556,
-    "image": "301015_01_50401.png",
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 166,
+    "MaxAtk": 556,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30150501",
+    "Id": "301037_01_50501",
     "Name": {
       "en": "Dáinsleif",
       "zh": "戴因斯莱夫",
@@ -410,18 +390,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 47,
-    "MaxHP": 158,
-    "MinSTR": 157,
-    "MaxSTR": 524,
-    "image": "301037_01_50501.png",
+    "MinHp": 47,
+    "MaxHp": 158,
+    "MinAtk": 157,
+    "MaxAtk": 524,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30159901",
+    "Id": "301041_01_59901",
     "Name": {
       "en": "Hero's Sword",
       "zh": "英雄之剑",
@@ -430,18 +409,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "None",
-    "MinHP": 30,
-    "MaxHP": 101,
-    "MinSTR": 108,
-    "MaxSTR": 362,
-    "image": "301041_01_59901.png",
+    "MinHp": 30,
+    "MaxHp": 101,
+    "MinAtk": 108,
+    "MaxAtk": 362,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30159902",
+    "Id": "301042_01_59901",
     "Name": {
       "en": "Hauteclaire",
       "zh": "奥托克莱尔",
@@ -450,18 +428,17 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "None",
-    "MinHP": 35,
-    "MaxHP": 117,
-    "MinSTR": 136,
-    "MaxSTR": 456,
-    "image": "301042_01_59901.png",
+    "MinHp": 35,
+    "MaxHp": 117,
+    "MinAtk": 136,
+    "MaxAtk": 456,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30159903",
+    "Id": "301043_01_59901",
     "Name": {
       "en": "Gram",
       "zh": "格拉墨",
@@ -470,358 +447,340 @@ const weapon =
     "type": "Sword",
     "rarity": "5",
     "element": "None",
-    "MinHP": 38,
-    "MaxHP": 129,
-    "MinSTR": 129,
-    "MaxSTR": 430,
-    "image": "301043_01_59901.png",
+    "MinHp": 38,
+    "MaxHp": 129,
+    "MinAtk": 129,
+    "MaxAtk": 430,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30159904",
+    "Id": "301046_01_59901",
     "Name": {
       "en": "Lucky Hanetsuki Paddle",
       "zh": "招福羽子板",
-      "ja": ""
+      "ja": "Lucky Hanetsuki Paddle"
     },
     "type": "Sword",
     "rarity": "5",
     "element": "None",
-    "MinHP": 31,
-    "MaxHP": 106,
-    "MinSTR": 105,
-    "MaxSTR": 351,
-    "image": "301046_01_59901.png",
+    "MinHp": 31,
+    "MaxHp": 106,
+    "MinAtk": 105,
+    "MaxAtk": 351,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30230101",
+    "Id": "302006_01_30101",
     "Name": {
       "en": "Valkaheim Blade",
       "zh": "巴尔加之刃",
-      "ja": ""
+      "ja": "バルカブレード"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 15,
-    "MaxHP": 53,
-    "MinSTR": 68,
-    "MaxSTR": 229,
-    "image": "302006_01_30101.png",
+    "MinHp": 15,
+    "MaxHp": 53,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30230201",
+    "Id": "302007_01_30201",
     "Name": {
       "en": "Alighting Butterfly",
       "zh": "花蝶村雨",
-      "ja": ""
+      "ja": "花蝶村雨"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 15,
-    "MaxHP": 53,
-    "MinSTR": 68,
-    "MaxSTR": 229,
-    "image": "302007_01_30201.png",
+    "MinHp": 15,
+    "MaxHp": 53,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30230302",
+    "Id": "302024_01_30301",
     "Name": {
       "en": "Dragon Commander",
       "zh": "龙将刀",
-      "ja": ""
+      "ja": "竜将刀"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 15,
-    "MaxHP": 50,
-    "MinSTR": 70,
-    "MaxSTR": 236,
-    "image": "302024_01_30301.png",
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30230401",
+    "Id": "302027_01_30401",
     "Name": {
       "en": "Chanzelian Blade",
       "zh": "香榭利亚之刃",
-      "ja": ""
+      "ja": "シャンゼリアブレード"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 15,
-    "MaxHP": 50,
-    "MinSTR": 70,
-    "MaxSTR": 236,
-    "image": "302027_01_30401.png",
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30230501",
+    "Id": "302009_01_30501",
     "Name": {
       "en": "Sanguine Rain",
       "zh": "妖刀血雨",
-      "ja": ""
+      "ja": "妖刀血雨"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 15,
-    "MaxHP": 50,
-    "MinSTR": 70,
-    "MaxSTR": 236,
-    "image": "302009_01_30501.png",
+    "MinHp": 15,
+    "MaxHp": 50,
+    "MinAtk": 70,
+    "MaxAtk": 236,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30239901",
+    "Id": "302021_01_39901",
     "Name": {
       "en": "Subjugator",
       "zh": "讨伐刀",
-      "ja": ""
+      "ja": "討伐刀"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "None",
-    "MinHP": 6,
-    "MaxHP": 20,
-    "MinSTR": 28,
-    "MaxSTR": 94,
-    "image": "302021_01_39901.png",
+    "MinHp": 6,
+    "MaxHp": 20,
+    "MinAtk": 28,
+    "MaxAtk": 94,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30239902",
+    "Id": "302030_01_39901",
     "Name": {
       "en": "High Shamshir",
       "zh": "舍施尔弯刀",
-      "ja": ""
+      "ja": "ロードシャムシール"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "None",
-    "MinHP": 9,
-    "MaxHP": 32,
-    "MinSTR": 44,
-    "MaxSTR": 149,
-    "image": "302030_01_39901.png",
+    "MinHp": 9,
+    "MaxHp": 32,
+    "MinAtk": 44,
+    "MaxAtk": 149,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30239903",
+    "Id": "302008_01_39901",
     "Name": {
       "en": "Fusion Blade",
       "zh": "次世代之刃",
-      "ja": ""
+      "ja": "ネクストブレード"
     },
     "type": "Blade",
     "rarity": "3",
     "element": "None",
-    "MinHP": 9,
-    "MaxHP": 33,
-    "MinSTR": 43,
-    "MaxSTR": 144,
-    "image": "302008_01_39901.png",
+    "MinHp": 9,
+    "MaxHp": 33,
+    "MinAtk": 43,
+    "MaxAtk": 144,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30240101",
+    "Id": "302015_01_40101",
     "Name": {
       "en": "Flametongue",
       "zh": "绯炎刀",
-      "ja": ""
+      "ja": "緋炎刀"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 108,
-    "MaxSTR": 361,
-    "image": "302015_01_40101.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30240202",
+    "Id": "302022_01_40201",
     "Name": {
       "en": "Sousui",
       "zh": "苍水刀",
-      "ja": ""
+      "ja": "蒼水刀"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 24,
-    "MaxHP": 81,
-    "MinSTR": 114,
-    "MaxSTR": 383,
-    "image": "302022_01_40201.png",
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 114,
+    "MaxAtk": 383,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30240301",
+    "Id": "302011_01_40301",
     "Name": {
       "en": "Tempest Blade",
       "zh": "暴风之刃",
-      "ja": ""
+      "ja": "テンペストブレード"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 108,
-    "MaxSTR": 361,
-    "image": "302011_01_40301.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30240402",
+    "Id": "302026_01_40401",
     "Name": {
       "en": "Thunderfang",
       "zh": "缠雷斩蛇刀",
-      "ja": ""
+      "ja": "纏雷斬蛇刀"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 24,
-    "MaxHP": 81,
-    "MinSTR": 114,
-    "MaxSTR": 383,
-    "image": "302026_01_40401.png",
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 114,
+    "MaxAtk": 383,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30240501",
+    "Id": "302029_01_40501",
     "Name": {
       "en": "Ghizlam's Darkblade",
       "zh": "暗刀齐兹拉姆",
-      "ja": ""
+      "ja": "闇刀ジズラム"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 108,
-    "MaxSTR": 361,
-    "image": "302029_01_40501.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 108,
+    "MaxAtk": 361,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30249901",
+    "Id": "302012_01_49901",
     "Name": {
       "en": "Guardian Seal",
       "zh": "镇守刀",
-      "ja": ""
+      "ja": "鎮守刀"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "None",
-    "MinHP": 14,
-    "MaxHP": 48,
-    "MinSTR": 68,
-    "MaxSTR": 227,
-    "image": "302012_01_49901.png",
+    "MinHp": 14,
+    "MaxHp": 48,
+    "MinAtk": 68,
+    "MaxAtk": 227,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30249902",
+    "Id": "302031_01_49901",
     "Name": {
       "en": "Iron Blade",
       "zh": "黑钢之刃",
-      "ja": ""
+      "ja": "クロガネブレード"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "None",
-    "MinHP": 20,
-    "MaxHP": 69,
-    "MinSTR": 83,
-    "MaxSTR": 278,
-    "image": "302031_01_49901.png",
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 83,
+    "MaxAtk": 278,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30249903",
+    "Id": "302032_01_49901",
     "Name": {
       "en": "Masamura's Pride",
       "zh": "机械刀正村",
-      "ja": ""
+      "ja": "機構刀サマラム"
     },
     "type": "Blade",
     "rarity": "4",
     "element": "None",
-    "MinHP": 18,
-    "MaxHP": 62,
-    "MinSTR": 88,
-    "MaxSTR": 295,
-    "image": "302032_01_49901.png",
+    "MinHp": 18,
+    "MaxHp": 62,
+    "MinAtk": 88,
+    "MaxAtk": 295,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30250101",
+    "Id": "302013_01_50101",
     "Name": {
       "en": "Heaven's Acuity",
       "zh": "天之尾羽张",
@@ -830,18 +789,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 39,
-    "MaxHP": 132,
-    "MinSTR": 171,
-    "MaxSTR": 572,
-    "image": "302013_01_50101.png",
+    "MinHp": 39,
+    "MaxHp": 132,
+    "MinAtk": 171,
+    "MaxAtk": 572,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30250201",
+    "Id": "302010_01_50201",
     "Name": {
       "en": "Maar Oasis",
       "zh": "火口绿洲",
@@ -850,18 +808,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 42,
-    "MaxHP": 143,
-    "MinSTR": 163,
-    "MaxSTR": 544,
-    "image": "302010_01_50201.png",
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 163,
+    "MaxAtk": 544,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30250301",
+    "Id": "302023_01_50301",
     "Name": {
       "en": "Anemone",
       "zh": "淡紫刀银莲",
@@ -870,18 +827,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 39,
-    "MaxHP": 132,
-    "MinSTR": 171,
-    "MaxSTR": 572,
-    "image": "302023_01_50301.png",
+    "MinHp": 39,
+    "MaxHp": 132,
+    "MinAtk": 171,
+    "MaxAtk": 572,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30250401",
+    "Id": "302025_01_50401",
     "Name": {
       "en": "Heavenwing",
       "zh": "天翼之刀",
@@ -890,18 +846,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 42,
-    "MaxHP": 143,
-    "MinSTR": 163,
-    "MaxSTR": 544,
-    "image": "302025_01_50401.png",
+    "MinHp": 42,
+    "MaxHp": 143,
+    "MinAtk": 163,
+    "MaxAtk": 544,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30250501",
+    "Id": "302028_01_50501",
     "Name": {
       "en": "Blackwing",
       "zh": "黑翼咒刃",
@@ -910,18 +865,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 37,
-    "MaxHP": 125,
-    "MinSTR": 177,
-    "MaxSTR": 590,
-    "image": "302028_01_50501.png",
+    "MinHp": 37,
+    "MaxHp": 125,
+    "MinAtk": 177,
+    "MaxAtk": 590,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30259901",
+    "Id": "302014_01_59901",
     "Name": {
       "en": "Dane's Favor",
       "zh": "霸王号",
@@ -930,18 +884,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "None",
-    "MinHP": 25,
-    "MaxHP": 84,
-    "MinSTR": 118,
-    "MaxSTR": 395,
-    "image": "302014_01_59901.png",
+    "MinHp": 25,
+    "MaxHp": 84,
+    "MinAtk": 118,
+    "MaxAtk": 395,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30259902",
+    "Id": "302033_01_59901",
     "Name": {
       "en": "Crimson Shade",
       "zh": "夜叉影光",
@@ -950,18 +903,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "None",
-    "MinHP": 32,
-    "MaxHP": 108,
-    "MinSTR": 140,
-    "MaxSTR": 469,
-    "image": "302033_01_59901.png",
+    "MinHp": 32,
+    "MaxHp": 108,
+    "MinAtk": 140,
+    "MaxAtk": 469,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30259903",
+    "Id": "302034_01_59901",
     "Name": {
       "en": "Souleater",
       "zh": "魂喰虎铁",
@@ -970,18 +922,17 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "None",
-    "MinHP": 30,
-    "MaxHP": 103,
-    "MinSTR": 144,
-    "MaxSTR": 483,
-    "image": "302034_01_59901.png",
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 144,
+    "MaxAtk": 483,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30259904",
+    "Id": "302035_01_59901",
     "Name": {
       "en": "Villagelight",
       "zh": "村正",
@@ -990,338 +941,321 @@ const weapon =
     "type": "Blade",
     "rarity": "5",
     "element": "None",
-    "MinHP": 35,
-    "MaxHP": 117,
-    "MinSTR": 133,
-    "MaxSTR": 446,
-    "image": "302035_01_59901.png",
+    "MinHp": 35,
+    "MaxHp": 117,
+    "MinAtk": 133,
+    "MaxAtk": 446,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30330101",
+    "Id": "303027_01_30101",
     "Name": {
       "en": "Cruel Kukri",
       "zh": "无情反曲刀",
-      "ja": ""
+      "ja": "クルーエルククリ"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 19,
-    "MaxHP": 64,
-    "MinSTR": 61,
-    "MaxSTR": 205,
-    "image": "303027_01_30101.png",
+    "MinHp": 19,
+    "MaxHp": 64,
+    "MinAtk": 61,
+    "MaxAtk": 205,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30330201",
+    "Id": "303021_01_30201",
     "Name": {
       "en": "Water Dagger",
       "zh": "水之短剑",
-      "ja": ""
+      "ja": "ウォーターダガー"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 63,
-    "MaxSTR": 212,
-    "image": "303021_01_30201.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30330301",
+    "Id": "303007_01_30301",
     "Name": {
       "en": "Stormspawn",
       "zh": "风暴之子",
-      "ja": ""
+      "ja": "嵐の落とし子"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 63,
-    "MaxSTR": 212,
-    "image": "303007_01_30301.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30330401",
+    "Id": "303008_01_30401",
     "Name": {
       "en": "Conscience",
       "zh": "含心怀刀",
-      "ja": ""
+      "ja": "心ある懐剣"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 19,
-    "MaxHP": 64,
-    "MinSTR": 61,
-    "MaxSTR": 205,
-    "image": "303008_01_30401.png",
+    "MinHp": 19,
+    "MaxHp": 64,
+    "MinAtk": 61,
+    "MaxAtk": 205,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30330501",
+    "Id": "303009_01_30501",
     "Name": {
       "en": "Assassin's Knife",
       "zh": "暗杀之刃",
-      "ja": ""
+      "ja": "アサシンナイフ"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 63,
-    "MaxSTR": 212,
-    "image": "303009_01_30501.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 63,
+    "MaxAtk": 212,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30339901",
+    "Id": "303026_01_39901",
     "Name": {
       "en": "Bejeweled Dagger",
       "zh": "宝饰短剑",
-      "ja": ""
+      "ja": "宝飾の短剣"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "None",
-    "MinHP": 7,
-    "MaxHP": 24,
-    "MinSTR": 25,
-    "MaxSTR": 84,
-    "image": "303026_01_39901.png",
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 25,
+    "MaxAtk": 84,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30339902",
+    "Id": "303032_01_39901",
     "Name": {
       "en": "Gear Knife",
       "zh": "齿轮短剑",
-      "ja": ""
+      "ja": "ギアーズナイフ"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "None",
-    "MinHP": 11,
-    "MaxHP": 38,
-    "MinSTR": 39,
-    "MaxSTR": 133,
-    "image": "303032_01_39901.png",
+    "MinHp": 11,
+    "MaxHp": 38,
+    "MinAtk": 39,
+    "MaxAtk": 133,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30339903",
+    "Id": "303003_01_39901",
     "Name": {
       "en": "Lover's Ally",
       "zh": "爱之匕首",
-      "ja": ""
+      "ja": "ラブナイフ"
     },
     "type": "Dagger",
     "rarity": "3",
     "element": "None",
-    "MinHP": 12,
-    "MaxHP": 40,
-    "MinSTR": 38,
-    "MaxSTR": 129,
-    "image": "303003_01_39901.png",
+    "MinHp": 12,
+    "MaxHp": 40,
+    "MinAtk": 38,
+    "MaxAtk": 129,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30340101",
+    "Id": "303015_01_40101",
     "Name": {
       "en": "Scarlet Talon",
       "zh": "红莲短剑",
-      "ja": ""
+      "ja": "紅蓮の短剣"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 27,
-    "MaxHP": 93,
-    "MinSTR": 106,
-    "MaxSTR": 354,
-    "image": "303015_01_40101.png",
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30340201",
+    "Id": "303018_01_40201",
     "Name": {
       "en": "Ultramarine Knife",
       "zh": "沧海短剑",
-      "ja": ""
+      "ja": "蒼海の短剣"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 27,
-    "MaxHP": 93,
-    "MinSTR": 106,
-    "MaxSTR": 354,
-    "image": "303018_01_40201.png",
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30340301",
+    "Id": "303029_01_40301",
     "Name": {
       "en": "Queensflight",
       "zh": "王妃短剑",
-      "ja": ""
+      "ja": "古妃の短剣"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 31,
-    "MaxHP": 106,
-    "MinSTR": 98,
-    "MaxSTR": 327,
-    "image": "303029_01_40301.png",
+    "MinHp": 31,
+    "MaxHp": 106,
+    "MinAtk": 98,
+    "MaxAtk": 327,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30340401",
+    "Id": "303017_01_40401",
     "Name": {
       "en": "Nightbreaker",
       "zh": "噩梦短剑",
-      "ja": ""
+      "ja": "ナイトメアブレイカー"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 27,
-    "MaxHP": 93,
-    "MinSTR": 106,
-    "MaxSTR": 354,
-    "image": "303017_01_40401.png",
+    "MinHp": 27,
+    "MaxHp": 93,
+    "MinAtk": 106,
+    "MaxAtk": 354,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30340502",
+    "Id": "303011_01_40501",
     "Name": {
       "en": "Dark Sacrifice",
       "zh": "诅咒献祭",
-      "ja": ""
+      "ja": "カースサクリファイス"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 31,
-    "MaxHP": 106,
-    "MinSTR": 98,
-    "MaxSTR": 327,
-    "image": "303011_01_40501.png",
+    "MinHp": 31,
+    "MaxHp": 106,
+    "MinAtk": 98,
+    "MaxAtk": 327,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30349901",
+    "Id": "303033_01_49901",
     "Name": {
       "en": "Hard Breaker",
       "zh": "破坏短剑",
-      "ja": ""
+      "ja": "ハードブレイカー"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "None",
-    "MinHP": 17,
-    "MaxHP": 58,
-    "MinSTR": 61,
-    "MaxSTR": 204,
-    "image": "303033_01_49901.png",
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 61,
+    "MaxAtk": 204,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30349902",
+    "Id": "303012_01_49901",
     "Name": {
       "en": "Wyrmfang",
       "zh": "龙牙短剑",
-      "ja": ""
+      "ja": "竜牙の短剣"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "None",
-    "MinHP": 24,
-    "MaxHP": 81,
-    "MinSTR": 75,
-    "MaxSTR": 252,
-    "image": "303012_01_49901.png",
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 75,
+    "MaxAtk": 252,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30349903",
+    "Id": "303034_01_49901",
     "Name": {
       "en": "The Dreamer's Greatsword",
       "zh": "梦想大剑",
-      "ja": ""
+      "ja": "夢想の大剣"
     },
     "type": "Dagger",
     "rarity": "4",
     "element": "None",
-    "MinHP": 21,
-    "MaxHP": 72,
-    "MinSTR": 81,
-    "MaxSTR": 273,
-    "image": "303034_01_49901.png",
+    "MinHp": 21,
+    "MaxHp": 72,
+    "MinAtk": 81,
+    "MaxAtk": 273,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30350102",
+    "Id": "303013_01_50101",
     "Name": {
       "en": "Aeternal Flame",
       "zh": "久远之焰",
@@ -1330,18 +1264,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 43,
-    "MaxHP": 144,
-    "MinSTR": 163,
-    "MaxSTR": 545,
-    "image": "303013_01_50101.png",
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30350201",
+    "Id": "303020_01_50201",
     "Name": {
       "en": "Lux Lamina",
       "zh": "湖光之刃",
@@ -1350,18 +1283,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 45,
-    "MaxHP": 152,
-    "MinSTR": 158,
-    "MaxSTR": 529,
-    "image": "303020_01_50201.png",
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 529,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30350301",
+    "Id": "303028_01_50301",
     "Name": {
       "en": "Karlsnautr",
       "zh": "清风灵剑",
@@ -1370,18 +1302,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 43,
-    "MaxHP": 144,
-    "MinSTR": 163,
-    "MaxSTR": 545,
-    "image": "303028_01_50301.png",
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30350401",
+    "Id": "303030_01_50401",
     "Name": {
       "en": "Thunderblade Sugaar",
       "zh": "雷刃修伽尔",
@@ -1390,18 +1321,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 45,
-    "MaxHP": 152,
-    "MinSTR": 158,
-    "MaxSTR": 529,
-    "image": "303030_01_50401.png",
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 529,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30350501",
+    "Id": "303031_01_50501",
     "Name": {
       "en": "Honor Edge",
       "zh": "名誉紫短剑",
@@ -1410,18 +1340,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 43,
-    "MaxHP": 144,
-    "MinSTR": 163,
-    "MaxSTR": 545,
-    "image": "303031_01_50501.png",
+    "MinHp": 43,
+    "MaxHp": 144,
+    "MinAtk": 163,
+    "MaxAtk": 545,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30359901",
+    "Id": "303035_01_59901",
     "Name": {
       "en": "Kris Naga",
       "zh": "马来克力士剑",
@@ -1430,18 +1359,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "None",
-    "MinHP": 30,
-    "MaxHP": 102,
-    "MinSTR": 106,
-    "MaxSTR": 355,
-    "image": "303035_01_59901.png",
+    "MinHp": 30,
+    "MaxHp": 102,
+    "MinAtk": 106,
+    "MaxAtk": 355,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30359902",
+    "Id": "303014_01_59901",
     "Name": {
       "en": "Treasure of the Iron Rose",
       "zh": "铁蔷薇采摘宝剑",
@@ -1450,18 +1378,17 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "None",
-    "MinHP": 35,
-    "MaxHP": 118,
-    "MinSTR": 134,
-    "MaxSTR": 447,
-    "image": "303014_01_59901.png",
+    "MinHp": 35,
+    "MaxHp": 118,
+    "MinAtk": 134,
+    "MaxAtk": 447,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30359903",
+    "Id": "303036_01_59901",
     "Name": {
       "en": "Hedgehog",
       "zh": "刺猬之刃",
@@ -1470,338 +1397,321 @@ const weapon =
     "type": "Dagger",
     "rarity": "5",
     "element": "None",
-    "MinHP": 37,
-    "MaxHP": 124,
-    "MinSTR": 130,
-    "MaxSTR": 434,
-    "image": "303036_01_59901.png",
+    "MinHp": 37,
+    "MaxHp": 124,
+    "MinAtk": 130,
+    "MaxAtk": 434,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30430101",
+    "Id": "304018_01_30101",
     "Name": {
       "en": "Argent Battleaxe",
       "zh": "白银骑士之斧",
-      "ja": ""
+      "ja": "白銀の騎士斧"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 70,
-    "MaxSTR": 234,
-    "image": "304018_01_30101.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 70,
+    "MaxAtk": 234,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30430201",
+    "Id": "304006_01_30201",
     "Name": {
       "en": "Axe of the Waves",
       "zh": "水流之斧",
-      "ja": ""
+      "ja": "カレントアックス"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 70,
-    "MaxSTR": 234,
-    "image": "304006_01_30201.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 70,
+    "MaxAtk": 234,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30430301",
+    "Id": "304007_01_30301",
     "Name": {
       "en": "Singing Cyclone",
       "zh": "飓风歌者",
-      "ja": ""
+      "ja": "サイクロンシンガー"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 19,
-    "MaxHP": 65,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "304007_01_30301.png",
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30430401",
+    "Id": "304008_01_30401",
     "Name": {
       "en": "Flash Axe",
       "zh": "闪光战斧",
-      "ja": ""
+      "ja": "フラッシュアックス"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 19,
-    "MaxHP": 65,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "304008_01_30401.png",
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30430501",
+    "Id": "304009_01_30501",
     "Name": {
       "en": "Soulreaver",
       "zh": "灵魂收割者",
-      "ja": ""
+      "ja": "ソウルリーパー"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 19,
-    "MaxHP": 65,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "304009_01_30501.png",
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30439901",
+    "Id": "304025_01_39901",
     "Name": {
       "en": "Warrior's Axe",
       "zh": "战士之斧",
-      "ja": ""
+      "ja": "戦士の斧"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "None",
-    "MinHP": 7,
-    "MaxHP": 26,
-    "MinSTR": 26,
-    "MaxSTR": 87,
-    "image": "304025_01_39901.png",
+    "MinHp": 7,
+    "MaxHp": 26,
+    "MinAtk": 26,
+    "MaxAtk": 87,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30439902",
+    "Id": "304031_01_39901",
     "Name": {
       "en": "Ennobled Axe",
       "zh": "高贵之斧",
-      "ja": ""
+      "ja": "ノーブルアックス"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "None",
-    "MinHP": 11,
-    "MaxHP": 37,
-    "MinSTR": 44,
-    "MaxSTR": 147,
-    "image": "304031_01_39901.png",
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 44,
+    "MaxAtk": 147,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30439903",
+    "Id": "304032_01_39901",
     "Name": {
       "en": "Juggernaut",
       "zh": "城墙破坏者",
-      "ja": ""
+      "ja": "ウォールクラッシャー"
     },
     "type": "Axe",
     "rarity": "3",
     "element": "None",
-    "MinHP": 12,
-    "MaxHP": 41,
-    "MinSTR": 41,
-    "MaxSTR": 139,
-    "image": "304032_01_39901.png",
+    "MinHp": 12,
+    "MaxHp": 41,
+    "MinAtk": 41,
+    "MaxAtk": 139,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30440102",
+    "Id": "304010_01_40101",
     "Name": {
       "en": "Crimsonclaw",
       "zh": "绯红战斧",
-      "ja": ""
+      "ja": "クリムゾンアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 28,
-    "MaxHP": 95,
-    "MinSTR": 114,
-    "MaxSTR": 380,
-    "image": "304010_01_40101.png",
+    "MinHp": 28,
+    "MaxHp": 95,
+    "MinAtk": 114,
+    "MaxAtk": 380,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30440201",
+    "Id": "304011_01_40201",
     "Name": {
       "en": "Aqua Labrys",
       "zh": "深海双刃斧",
-      "ja": ""
+      "ja": "ディープラブリュス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 107,
-    "MaxSTR": 357,
-    "image": "304011_01_40201.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30440301",
+    "Id": "304016_01_40301",
     "Name": {
       "en": "Winged Destruction",
       "zh": "双色翼碎斧",
-      "ja": ""
+      "ja": "双色翼の砕斧"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 107,
-    "MaxSTR": 357,
-    "image": "304016_01_40301.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30440401",
+    "Id": "304015_01_40401",
     "Name": {
       "en": "Shining Axe",
       "zh": "闪耀之斧",
-      "ja": ""
+      "ja": "シャイニングアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 31,
-    "MaxHP": 105,
-    "MinSTR": 107,
-    "MaxSTR": 357,
-    "image": "304015_01_40401.png",
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30440501",
+    "Id": "304030_01_40501",
     "Name": {
       "en": "Traitor's Despair",
       "zh": "绝望之斧",
-      "ja": ""
+      "ja": "ディスペアーアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 28,
-    "MaxHP": 95,
-    "MinSTR": 114,
-    "MaxSTR": 380,
-    "image": "304030_01_40501.png",
+    "MinHp": 28,
+    "MaxHp": 95,
+    "MinAtk": 114,
+    "MaxAtk": 380,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30449901",
+    "Id": "304026_01_49901",
     "Name": {
       "en": "Plain Axe",
       "zh": "平凡之斧",
-      "ja": ""
+      "ja": "コモンアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "None",
-    "MinHP": 18,
-    "MaxHP": 62,
-    "MinSTR": 63,
-    "MaxSTR": 212,
-    "image": "304026_01_49901.png",
+    "MinHp": 18,
+    "MaxHp": 62,
+    "MinAtk": 63,
+    "MaxAtk": 212,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30449902",
+    "Id": "304033_01_49901",
     "Name": {
       "en": "The Tyrant",
       "zh": "暴君之斧",
-      "ja": ""
+      "ja": "タイラントアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "None",
-    "MinHP": 21,
-    "MaxHP": 73,
-    "MinSTR": 87,
-    "MaxSTR": 292,
-    "image": "304033_01_49901.png",
+    "MinHp": 21,
+    "MaxHp": 73,
+    "MinAtk": 87,
+    "MaxAtk": 292,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30449903",
+    "Id": "304034_01_49901",
     "Name": {
       "en": "Souvenir Axe",
       "zh": "纪念战斧",
-      "ja": ""
+      "ja": "スーベニアアックス"
     },
     "type": "Axe",
     "rarity": "4",
     "element": "None",
-    "MinHP": 24,
-    "MaxHP": 81,
-    "MinSTR": 82,
-    "MaxSTR": 275,
-    "image": "304034_01_49901.png",
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 82,
+    "MaxAtk": 275,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30450101",
+    "Id": "304027_01_50101",
     "Name": {
       "en": "Axe of the Blazing King",
       "zh": "火山战斧",
@@ -1810,18 +1720,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 46,
-    "MaxHP": 155,
-    "MinSTR": 170,
-    "MaxSTR": 567,
-    "image": "304027_01_50101.png",
+    "MinHp": 46,
+    "MaxHp": 155,
+    "MinAtk": 170,
+    "MaxAtk": 567,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30450201",
+    "Id": "304028_01_50201",
     "Name": {
       "en": "Grand Seadragon",
       "zh": "海龙战斧",
@@ -1830,18 +1739,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 175,
-    "MaxSTR": 584,
-    "image": "304028_01_50201.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30450301",
+    "Id": "304029_01_50301",
     "Name": {
       "en": "Axe of the Southern Cross",
       "zh": "南十字之斧",
@@ -1850,18 +1758,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 175,
-    "MaxSTR": 584,
-    "image": "304029_01_50301.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30450401",
+    "Id": "304013_01_50401",
     "Name": {
       "en": "Radiant Swath",
       "zh": "圣光战斧",
@@ -1870,18 +1777,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 175,
-    "MaxSTR": 584,
-    "image": "304013_01_50401.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 175,
+    "MaxAtk": 584,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30450501",
+    "Id": "304014_01_50501",
     "Name": {
       "en": "Primordial Titan",
       "zh": "巨灵霹雳",
@@ -1890,18 +1796,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 46,
-    "MaxHP": 155,
-    "MinSTR": 170,
-    "MaxSTR": 567,
-    "image": "304014_01_50501.png",
+    "MinHp": 46,
+    "MaxHp": 155,
+    "MinAtk": 170,
+    "MaxAtk": 567,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30459901",
+    "Id": "304012_01_59901",
     "Name": {
       "en": "Victory Axe",
       "zh": "胜利之斧",
@@ -1910,18 +1815,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "None",
-    "MinHP": 32,
-    "MaxHP": 109,
-    "MinSTR": 110,
-    "MaxSTR": 368,
-    "image": "304012_01_59901.png",
+    "MinHp": 32,
+    "MaxHp": 109,
+    "MinAtk": 110,
+    "MaxAtk": 368,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30459902",
+    "Id": "304035_01_59901",
     "Name": {
       "en": "Executioner Axe Strafe",
       "zh": "处刑斧制裁",
@@ -1930,18 +1834,17 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "None",
-    "MinHP": 36,
-    "MaxHP": 120,
-    "MinSTR": 143,
-    "MaxSTR": 479,
-    "image": "304035_01_59901.png",
+    "MinHp": 36,
+    "MaxHp": 120,
+    "MinAtk": 143,
+    "MaxAtk": 479,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30459903",
+    "Id": "304036_01_59901",
     "Name": {
       "en": "Halfling's Broadaxe",
       "zh": "怪童之钺",
@@ -1950,358 +1853,340 @@ const weapon =
     "type": "Axe",
     "rarity": "5",
     "element": "None",
-    "MinHP": 38,
-    "MaxHP": 127,
-    "MinSTR": 139,
-    "MaxSTR": 465,
-    "image": "304036_01_59901.png",
+    "MinHp": 38,
+    "MaxHp": 127,
+    "MinAtk": 139,
+    "MaxAtk": 465,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30530101",
+    "Id": "305006_01_30101",
     "Name": {
       "en": "Unsung Hero's Lance",
       "zh": "无名勇者之枪",
-      "ja": ""
+      "ja": "名もなき勇者たちの槍"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 17,
-    "MaxHP": 58,
-    "MinSTR": 68,
-    "MaxSTR": 227,
-    "image": "305006_01_30101.png",
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 68,
+    "MaxAtk": 227,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30530201",
+    "Id": "305007_01_30201",
     "Name": {
       "en": "Azure Jewel",
       "zh": "蓝宝石钢枪",
-      "ja": ""
+      "ja": "ブルージュエリー"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "305007_01_30201.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30530301",
+    "Id": "305017_01_30301",
     "Name": {
       "en": "Gale Spear",
       "zh": "疾风之枪",
-      "ja": ""
+      "ja": "ゲイルスピア"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 17,
-    "MaxHP": 58,
-    "MinSTR": 68,
-    "MaxSTR": 227,
-    "image": "305017_01_30301.png",
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 68,
+    "MaxAtk": 227,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30530401",
+    "Id": "305008_01_30401",
     "Name": {
       "en": "Moonpiercer",
       "zh": "月之枪",
-      "ja": ""
+      "ja": "ムーンピック"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "305008_01_30401.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30530402",
+    "Id": "305028_01_30401",
     "Name": {
       "en": "Jack-o'-Lance",
       "zh": "杰克南瓜枪",
-      "ja": ""
+      "ja": "ジャック・オ・スピア"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 16,
-    "MaxHP": 55,
-    "MinSTR": 59,
-    "MaxSTR": 198,
-    "image": "305028_01_30401.png",
+    "MinHp": 16,
+    "MaxHp": 55,
+    "MinAtk": 59,
+    "MaxAtk": 198,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30530501",
+    "Id": "305034_01_30501",
     "Name": {
       "en": "Lance of the Dark",
       "zh": "暗之枪",
-      "ja": ""
+      "ja": "ダークスピア"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 18,
-    "MaxHP": 61,
-    "MinSTR": 66,
-    "MaxSTR": 220,
-    "image": "305034_01_30501.png",
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30539901",
+    "Id": "305039_01_39901",
     "Name": {
       "en": "Trident",
       "zh": "三叉戟",
-      "ja": ""
+      "ja": "トライデント"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "None",
-    "MinHP": 7,
-    "MaxHP": 24,
-    "MinSTR": 26,
-    "MaxSTR": 87,
-    "image": "305039_01_39901.png",
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 26,
+    "MaxAtk": 87,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30539902",
+    "Id": "305013_01_39901",
     "Name": {
       "en": "Mailbreaker",
       "zh": "破坏之枪",
-      "ja": ""
+      "ja": "ブレイクスピア"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "None",
-    "MinHP": 11,
-    "MaxHP": 39,
-    "MinSTR": 41,
-    "MaxSTR": 139,
-    "image": "305013_01_39901.png",
+    "MinHp": 11,
+    "MaxHp": 39,
+    "MinAtk": 41,
+    "MaxAtk": 139,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30539903",
+    "Id": "305010_01_39901",
     "Name": {
       "en": "Drill Lance",
       "zh": "钻头枪",
-      "ja": ""
+      "ja": "ドリルランス"
     },
     "type": "Lance",
     "rarity": "3",
     "element": "None",
-    "MinHP": 11,
-    "MaxHP": 37,
-    "MinSTR": 42,
-    "MaxSTR": 143,
-    "image": "305010_01_39901.png",
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 42,
+    "MaxAtk": 143,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30540101",
+    "Id": "305031_01_40101",
     "Name": {
       "en": "Flameserpent",
       "zh": "焰蟒",
-      "ja": ""
+      "ja": "焔大蛇"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 29,
-    "MaxHP": 99,
-    "MinSTR": 107,
-    "MaxSTR": 358,
-    "image": "305031_01_40101.png",
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30540201",
+    "Id": "305016_01_40201",
     "Name": {
       "en": "Abyssal Prize",
       "zh": "大海宝枪",
-      "ja": ""
+      "ja": "大海の宝槍"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 28,
-    "MaxHP": 94,
-    "MinSTR": 110,
-    "MaxSTR": 369,
-    "image": "305016_01_40201.png",
+    "MinHp": 28,
+    "MaxHp": 94,
+    "MinAtk": 110,
+    "MaxAtk": 369,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30540302",
+    "Id": "305011_01_40301",
     "Name": {
       "en": "Tempest Spear",
       "zh": "风暴之枪",
-      "ja": ""
+      "ja": "テンペストスピア"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 28,
-    "MaxHP": 94,
-    "MinSTR": 110,
-    "MaxSTR": 369,
-    "image": "305011_01_40301.png",
+    "MinHp": 28,
+    "MaxHp": 94,
+    "MinAtk": 110,
+    "MaxAtk": 369,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30540402",
+    "Id": "305012_01_40401",
     "Name": {
       "en": "Thunderbolt",
       "zh": "电击长枪",
-      "ja": ""
+      "ja": "ライトニングランス"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 29,
-    "MaxHP": 99,
-    "MinSTR": 107,
-    "MaxSTR": 358,
-    "image": "305012_01_40401.png",
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30540501",
+    "Id": "305035_01_40501",
     "Name": {
       "en": "Hellish Lance",
       "zh": "地狱之枪",
-      "ja": ""
+      "ja": "ランスオブヘル"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 29,
-    "MaxHP": 99,
-    "MinSTR": 107,
-    "MaxSTR": 358,
-    "image": "305035_01_40501.png",
+    "MinHp": 29,
+    "MaxHp": 99,
+    "MinAtk": 107,
+    "MaxAtk": 358,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30549901",
+    "Id": "305029_01_49901",
     "Name": {
       "en": "Strong Halberd",
       "zh": "强者之戟",
-      "ja": ""
+      "ja": "ストロングハルバード"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "None",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 63,
-    "MaxSTR": 212,
-    "image": "305029_01_49901.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 63,
+    "MaxAtk": 212,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30549902",
+    "Id": "305040_01_49901",
     "Name": {
       "en": "Lance of the Innocent",
       "zh": "圣洁之枪",
-      "ja": ""
+      "ja": "イノセントスピア"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "None",
-    "MinHP": 22,
-    "MaxHP": 76,
-    "MinSTR": 82,
-    "MaxSTR": 276,
-    "image": "305040_01_49901.png",
+    "MinHp": 22,
+    "MaxHp": 76,
+    "MinAtk": 82,
+    "MaxAtk": 276,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30549903",
+    "Id": "305041_01_49901",
     "Name": {
       "en": "Steel Brigade Lance",
       "zh": "铁骑兵之枪",
-      "ja": ""
+      "ja": "鉄騎兵の槍"
     },
     "type": "Lance",
     "rarity": "4",
     "element": "None",
-    "MinHP": 21,
-    "MaxHP": 72,
-    "MinSTR": 85,
-    "MaxSTR": 284,
-    "image": "305041_01_49901.png",
+    "MinHp": 21,
+    "MaxHp": 72,
+    "MinAtk": 85,
+    "MaxAtk": 284,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30550101",
+    "Id": "305030_01_50101",
     "Name": {
       "en": "Calamity Trigger",
       "zh": "灾祸之匙",
@@ -2310,18 +2195,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 43,
-    "MaxHP": 145,
-    "MinSTR": 170,
-    "MaxSTR": 567,
-    "image": "305030_01_50101.png",
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30550201",
+    "Id": "305014_01_50201",
     "Name": {
       "en": "Ocean Lord",
       "zh": "破浪之枪",
@@ -2330,18 +2214,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 49,
-    "MaxHP": 165,
-    "MinSTR": 156,
-    "MaxSTR": 523,
-    "image": "305014_01_50201.png",
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 156,
+    "MaxAtk": 523,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30550301",
+    "Id": "305032_01_50301",
     "Name": {
       "en": "Spear of the Northern Cross",
       "zh": "北十字之枪",
@@ -2350,18 +2233,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 49,
-    "MaxHP": 165,
-    "MinSTR": 156,
-    "MaxSTR": 523,
-    "image": "305032_01_50301.png",
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 156,
+    "MaxAtk": 523,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30550402",
+    "Id": "305033_01_50401",
     "Name": {
       "en": "Thunder King's Greatspear",
       "zh": "雷霆豪枪",
@@ -2370,18 +2252,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 43,
-    "MaxHP": 145,
-    "MinSTR": 170,
-    "MaxSTR": 567,
-    "image": "305033_01_50401.png",
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30550501",
+    "Id": "305036_01_50501",
     "Name": {
       "en": "Mistilteinn",
       "zh": "米斯特汀",
@@ -2390,18 +2271,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 43,
-    "MaxHP": 145,
-    "MinSTR": 170,
-    "MaxSTR": 567,
-    "image": "305036_01_50501.png",
+    "MinHp": 43,
+    "MaxHp": 145,
+    "MinAtk": 170,
+    "MaxAtk": 567,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30559901",
+    "Id": "305015_01_59901",
     "Name": {
       "en": "Pactspear",
       "zh": "护法之枪",
@@ -2410,18 +2290,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "None",
-    "MinHP": 30,
-    "MaxHP": 103,
-    "MinSTR": 110,
-    "MaxSTR": 369,
-    "image": "305015_01_59901.png",
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 110,
+    "MaxAtk": 369,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30559902",
+    "Id": "305042_01_59901",
     "Name": {
       "en": "Compass Needle",
       "zh": "罗盘枪",
@@ -2430,18 +2309,17 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "None",
-    "MinHP": 35,
-    "MaxHP": 119,
-    "MinSTR": 139,
-    "MaxSTR": 465,
-    "image": "305042_01_59901.png",
+    "MinHp": 35,
+    "MaxHp": 119,
+    "MinAtk": 139,
+    "MaxAtk": 465,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30559903",
+    "Id": "305043_01_59901",
     "Name": {
       "en": "Gae Bolg",
       "zh": "千棘刺之枪",
@@ -2450,338 +2328,321 @@ const weapon =
     "type": "Lance",
     "rarity": "5",
     "element": "None",
-    "MinHP": 40,
-    "MaxHP": 135,
-    "MinSTR": 128,
-    "MaxSTR": 429,
-    "image": "305043_01_59901.png",
+    "MinHp": 40,
+    "MaxHp": 135,
+    "MinAtk": 128,
+    "MaxAtk": 429,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30630101",
+    "Id": "306006_01_30101",
     "Name": {
       "en": "Flightfyre",
       "zh": "飞火弓",
-      "ja": ""
+      "ja": "フライトファイア"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 64,
-    "MaxSTR": 214,
-    "image": "306006_01_30101.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30630201",
+    "Id": "306007_01_30201",
     "Name": {
       "en": "Tidal Bow",
       "zh": "深海之弓",
-      "ja": ""
+      "ja": "オーシャンボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 62,
-    "MaxSTR": 207,
-    "image": "306007_01_30201.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30630302",
+    "Id": "306003_01_30301",
     "Name": {
       "en": "Proof of the Wind",
       "zh": "狂风试炼",
-      "ja": ""
+      "ja": "エアリアルプルーフ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 64,
-    "MaxSTR": 214,
-    "image": "306003_01_30301.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30630401",
+    "Id": "306009_01_30401",
     "Name": {
       "en": "Galvanic Bow",
       "zh": "雷电战弓",
-      "ja": ""
+      "ja": "エレクトロボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 64,
-    "MaxSTR": 214,
-    "image": "306009_01_30401.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30630501",
+    "Id": "306018_01_30501",
     "Name": {
       "en": "Cimmerian Bow",
       "zh": "暗之魔弓",
-      "ja": ""
+      "ja": "ダークボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 62,
-    "MaxSTR": 207,
-    "image": "306018_01_30501.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30639901",
+    "Id": "306026_01_39901",
     "Name": {
       "en": "Composite Bow",
       "zh": "复合弓",
-      "ja": ""
+      "ja": "コンポジットボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "None",
-    "MinHP": 6,
-    "MaxHP": 23,
-    "MinSTR": 24,
-    "MaxSTR": 82,
-    "image": "306026_01_39901.png",
+    "MinHp": 6,
+    "MaxHp": 23,
+    "MinAtk": 24,
+    "MaxAtk": 82,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30639902",
+    "Id": "306012_01_39901",
     "Name": {
       "en": "Machine Bow",
       "zh": "机械弓",
-      "ja": ""
+      "ja": "マシンナリーボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "None",
-    "MinHP": 10,
-    "MaxHP": 35,
-    "MinSTR": 40,
-    "MaxSTR": 135,
-    "image": "306012_01_39901.png",
+    "MinHp": 10,
+    "MaxHp": 35,
+    "MinAtk": 40,
+    "MaxAtk": 135,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30639903",
+    "Id": "306032_01_39901",
     "Name": {
       "en": "Hunter's Bow",
       "zh": "猎手弓",
-      "ja": ""
+      "ja": "ハンターボウ"
     },
     "type": "Bow",
     "rarity": "3",
     "element": "None",
-    "MinHP": 11,
-    "MaxHP": 37,
-    "MinSTR": 39,
-    "MaxSTR": 131,
-    "image": "306032_01_39901.png",
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 39,
+    "MaxAtk": 131,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30640102",
+    "Id": "306028_01_40101",
     "Name": {
       "en": "Armored Inferno",
       "zh": "装甲弓",
-      "ja": ""
+      "ja": "アーマードフレアボウ"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 104,
-    "MaxSTR": 347,
-    "image": "306028_01_40101.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30640201",
+    "Id": "306010_01_40201",
     "Name": {
       "en": "Frostslinger Bow",
       "zh": "冰结弓",
-      "ja": ""
+      "ja": "氷結弓"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 104,
-    "MaxSTR": 347,
-    "image": "306010_01_40201.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30640302",
+    "Id": "306008_01_40301",
     "Name": {
       "en": "Epidemic",
       "zh": "疫病之弓",
-      "ja": ""
+      "ja": "エピデミックボウ"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 104,
-    "MaxSTR": 347,
-    "image": "306008_01_40301.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 104,
+    "MaxAtk": 347,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30640403",
+    "Id": "306037_01_40401",
     "Name": {
       "en": "Holy Bow",
       "zh": "神圣之弓",
-      "ja": ""
+      "ja": "ホーリーボウ"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 30,
-    "MaxHP": 103,
-    "MinSTR": 96,
-    "MaxSTR": 320,
-    "image": "306037_01_40401.png",
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 96,
+    "MaxAtk": 320,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30640501",
+    "Id": "306016_01_40501",
     "Name": {
       "en": "Macabre Malediction",
       "zh": "呪骸魔弓",
-      "ja": ""
+      "ja": "呪骸の魔弓"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 30,
-    "MaxHP": 103,
-    "MinSTR": 96,
-    "MaxSTR": 320,
-    "image": "306016_01_40501.png",
+    "MinHp": 30,
+    "MaxHp": 103,
+    "MinAtk": 96,
+    "MaxAtk": 320,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30649901",
+    "Id": "306013_01_49901",
     "Name": {
       "en": "Executor",
       "zh": "执行者之弓",
-      "ja": ""
+      "ja": "エグゼキューター"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "None",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 60,
-    "MaxSTR": 200,
-    "image": "306013_01_49901.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 60,
+    "MaxAtk": 200,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30649902",
+    "Id": "306033_01_49901",
     "Name": {
       "en": "Faerie Bow",
       "zh": "精灵弓",
-      "ja": ""
+      "ja": "妖精の弓"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "None",
-    "MinHP": 21,
-    "MaxHP": 70,
-    "MinSTR": 80,
-    "MaxSTR": 267,
-    "image": "306033_01_49901.png",
+    "MinHp": 21,
+    "MaxHp": 70,
+    "MinAtk": 80,
+    "MaxAtk": 267,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30649903",
+    "Id": "306011_01_49901",
     "Name": {
       "en": "Duskhawk",
       "zh": "弗洛里德尔",
-      "ja": ""
+      "ja": "フローリデル"
     },
     "type": "Bow",
     "rarity": "4",
     "element": "None",
-    "MinHP": 23,
-    "MaxHP": 79,
-    "MinSTR": 73,
-    "MaxSTR": 246,
-    "image": "306011_01_49901.png",
+    "MinHp": 23,
+    "MaxHp": 79,
+    "MinAtk": 73,
+    "MaxAtk": 246,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30650101",
+    "Id": "306027_01_50101",
     "Name": {
       "en": "Lupis Solis",
       "zh": "炎狼弓",
@@ -2790,18 +2651,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 155,
-    "MaxSTR": 518,
-    "image": "306027_01_50101.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30650201",
+    "Id": "306029_01_50201",
     "Name": {
       "en": "Peacock's Whorl",
       "zh": "蓝孔雀创海弓",
@@ -2810,18 +2670,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 155,
-    "MaxSTR": 518,
-    "image": "306029_01_50201.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30650302",
+    "Id": "306030_01_50301",
     "Name": {
       "en": "Stellar Pegasus",
       "zh": "天马弓阿斯特尔",
@@ -2830,18 +2689,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 44,
-    "MaxHP": 147,
-    "MinSTR": 155,
-    "MaxSTR": 518,
-    "image": "306030_01_50301.png",
+    "MinHp": 44,
+    "MaxHp": 147,
+    "MinAtk": 155,
+    "MaxAtk": 518,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30650402",
+    "Id": "306031_01_50401",
     "Name": {
       "en": "Thunderbow",
       "zh": "天雷弓",
@@ -2850,18 +2708,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 42,
-    "MaxHP": 140,
-    "MinSTR": 160,
-    "MaxSTR": 534,
-    "image": "306031_01_50401.png",
+    "MinHp": 42,
+    "MaxHp": 140,
+    "MinAtk": 160,
+    "MaxAtk": 534,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30650501",
+    "Id": "306014_01_50501",
     "Name": {
       "en": "Necro Arcus",
       "zh": "亡骸之弓",
@@ -2870,18 +2727,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 42,
-    "MaxHP": 140,
-    "MinSTR": 160,
-    "MaxSTR": 534,
-    "image": "306014_01_50501.png",
+    "MinHp": 42,
+    "MaxHp": 140,
+    "MinAtk": 160,
+    "MaxAtk": 534,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30659901",
+    "Id": "306015_01_59901",
     "Name": {
       "en": "Nitralica's Koto",
       "zh": "琴弓尼托拉里卡",
@@ -2890,18 +2746,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "None",
-    "MinHP": 29,
-    "MaxHP": 98,
-    "MinSTR": 104,
-    "MaxSTR": 347,
-    "image": "306015_01_59901.png",
+    "MinHp": 29,
+    "MaxHp": 98,
+    "MinAtk": 104,
+    "MaxAtk": 347,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30659902",
+    "Id": "306034_01_59901",
     "Name": {
       "en": "Accelerator",
       "zh": "加速齿轮弓",
@@ -2910,18 +2765,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "None",
-    "MinHP": 34,
-    "MaxHP": 115,
-    "MinSTR": 131,
-    "MaxSTR": 438,
-    "image": "306034_01_59901.png",
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 131,
+    "MaxAtk": 438,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30659903",
+    "Id": "306035_01_59901",
     "Name": {
       "en": "Starchaser",
       "zh": "坠星弓",
@@ -2930,18 +2784,17 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "None",
-    "MinHP": 34,
-    "MaxHP": 115,
-    "MinSTR": 131,
-    "MaxSTR": 438,
-    "image": "306035_01_59901.png",
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 131,
+    "MaxAtk": 438,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30659904",
+    "Id": "306036_01_59901",
     "Name": {
       "en": "Chimera's Guilt",
       "zh": "鵺穿弓",
@@ -2950,338 +2803,321 @@ const weapon =
     "type": "Bow",
     "rarity": "5",
     "element": "None",
-    "MinHP": 36,
-    "MaxHP": 121,
-    "MinSTR": 127,
-    "MaxSTR": 425,
-    "image": "306036_01_59901.png",
+    "MinHp": 36,
+    "MaxHp": 121,
+    "MinAtk": 127,
+    "MaxAtk": 425,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30730101",
+    "Id": "307006_01_30101",
     "Name": {
       "en": "Sunrise Scepter",
       "zh": "旭日魔杖",
-      "ja": ""
+      "ja": "サンライズロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "307006_01_30101.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30730201",
+    "Id": "307033_01_30201",
     "Name": {
       "en": "Oceandweller",
       "zh": "激流魔杖",
-      "ja": ""
+      "ja": "激流のロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "307033_01_30201.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30730301",
+    "Id": "307007_01_30301",
     "Name": {
       "en": "Menace of the Storm",
       "zh": "威胁风暴",
-      "ja": ""
+      "ja": "ストームメイス"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 16,
-    "MaxHP": 54,
-    "MinSTR": 68,
-    "MaxSTR": 229,
-    "image": "307007_01_30301.png",
+    "MinHp": 16,
+    "MaxHp": 54,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30730401",
+    "Id": "307021_01_30401",
     "Name": {
       "en": "Thunder Wand",
       "zh": "雷霆魔杖",
-      "ja": ""
+      "ja": "サンダーロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 16,
-    "MaxHP": 54,
-    "MinSTR": 68,
-    "MaxSTR": 229,
-    "image": "307021_01_30401.png",
+    "MinHp": 16,
+    "MaxHp": 54,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30730501",
+    "Id": "307008_01_30501",
     "Name": {
       "en": "Meggidoth Ruiner",
       "zh": "梅奇特斯破坏者",
-      "ja": ""
+      "ja": "メギトスブレイカー"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 16,
-    "MaxHP": 56,
-    "MinSTR": 66,
-    "MaxSTR": 222,
-    "image": "307008_01_30501.png",
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30739901",
+    "Id": "307042_01_39901",
     "Name": {
       "en": "Wizard's Rod",
       "zh": "魔法师之杖",
-      "ja": ""
+      "ja": "ウィザードロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "None",
-    "MinHP": 6,
-    "MaxHP": 21,
-    "MinSTR": 27,
-    "MaxSTR": 91,
-    "image": "307042_01_39901.png",
+    "MinHp": 6,
+    "MaxHp": 21,
+    "MinAtk": 27,
+    "MaxAtk": 91,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30739902",
+    "Id": "307004_01_39901",
     "Name": {
       "en": "Sorcerer's Cudgel",
       "zh": "巫术之杖",
-      "ja": ""
+      "ja": "ソーサリーロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "None",
-    "MinHP": 10,
-    "MaxHP": 34,
-    "MinSTR": 43,
-    "MaxSTR": 144,
-    "image": "307004_01_39901.png",
+    "MinHp": 10,
+    "MaxHp": 34,
+    "MinAtk": 43,
+    "MaxAtk": 144,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30739903",
+    "Id": "307037_01_39901",
     "Name": {
       "en": "Conchoidal Rod",
       "zh": "海螺魔杖",
-      "ja": ""
+      "ja": "シェルロッド"
     },
     "type": "Wand",
     "rarity": "3",
     "element": "None",
-    "MinHP": 10,
-    "MaxHP": 36,
-    "MinSTR": 42,
-    "MaxSTR": 140,
-    "image": "307037_01_39901.png",
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30740101",
+    "Id": "307016_01_40101",
     "Name": {
       "en": "Firefiend's Howl",
       "zh": "炎兽咆哮杖",
-      "ja": ""
+      "ja": "フレイムブルートハウル"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 26,
-    "MaxHP": 87,
-    "MinSTR": 111,
-    "MaxSTR": 372,
-    "image": "307016_01_40101.png",
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30740201",
+    "Id": "307036_01_40201",
     "Name": {
       "en": "Rod of Tears",
       "zh": "泪之杖",
-      "ja": ""
+      "ja": "ティアーズロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 28,
-    "MaxHP": 96,
-    "MinSTR": 105,
-    "MaxSTR": 351,
-    "image": "307036_01_40201.png",
+    "MinHp": 28,
+    "MaxHp": 96,
+    "MinAtk": 105,
+    "MaxAtk": 351,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30740301",
+    "Id": "307018_01_40301",
     "Name": {
       "en": "Tempest Wand",
       "zh": "暴风魔杖",
-      "ja": ""
+      "ja": "テンペストロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 26,
-    "MaxHP": 87,
-    "MinSTR": 111,
-    "MaxSTR": 372,
-    "image": "307018_01_40301.png",
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30740402",
+    "Id": "307010_01_40401",
     "Name": {
       "en": "Conductor Rod",
       "zh": "闪光魔杖",
-      "ja": ""
+      "ja": "ライトニングロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 28,
-    "MaxHP": 96,
-    "MinSTR": 105,
-    "MaxSTR": 351,
-    "image": "307010_01_40401.png",
+    "MinHp": 28,
+    "MaxHp": 96,
+    "MinAtk": 105,
+    "MaxAtk": 351,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30740501",
+    "Id": "307011_01_40501",
     "Name": {
       "en": "Accursed Vare",
       "zh": "诅咒魔杖",
-      "ja": ""
+      "ja": "カースロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 26,
-    "MaxHP": 87,
-    "MinSTR": 111,
-    "MaxSTR": 372,
-    "image": "307011_01_40501.png",
+    "MinHp": 26,
+    "MaxHp": 87,
+    "MinAtk": 111,
+    "MaxAtk": 372,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30749901",
+    "Id": "307012_01_49901",
     "Name": {
       "en": "Latchkey",
       "zh": "匙之杖",
-      "ja": ""
+      "ja": "キーロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "None",
-    "MinHP": 15,
-    "MaxHP": 51,
-    "MinSTR": 66,
-    "MaxSTR": 221,
-    "image": "307012_01_49901.png",
+    "MinHp": 15,
+    "MaxHp": 51,
+    "MinAtk": 66,
+    "MaxAtk": 221,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30749902",
+    "Id": "307038_01_49901",
     "Name": {
       "en": "Rod of Alchemy",
       "zh": "炼金魔杖",
-      "ja": ""
+      "ja": "アルケミーロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "None",
-    "MinHP": 20,
-    "MaxHP": 67,
-    "MinSTR": 86,
-    "MaxSTR": 287,
-    "image": "307038_01_49901.png",
+    "MinHp": 20,
+    "MaxHp": 67,
+    "MinAtk": 86,
+    "MaxAtk": 287,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30749903",
+    "Id": "307039_01_49901",
     "Name": {
       "en": "Moonlight Rod",
       "zh": "月光魔杖",
-      "ja": ""
+      "ja": "ムーンライトロッド"
     },
     "type": "Wand",
     "rarity": "4",
     "element": "None",
-    "MinHP": 22,
-    "MaxHP": 74,
-    "MinSTR": 81,
-    "MaxSTR": 270,
-    "image": "307039_01_49901.png",
+    "MinHp": 22,
+    "MaxHp": 74,
+    "MinAtk": 81,
+    "MaxAtk": 270,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30750101",
+    "Id": "307015_01_50101",
     "Name": {
       "en": "Terranigmus",
       "zh": "大地之母",
@@ -3290,18 +3126,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 45,
-    "MaxHP": 152,
-    "MinSTR": 158,
-    "MaxSTR": 528,
-    "image": "307015_01_50101.png",
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30750202",
+    "Id": "307032_01_50201",
     "Name": {
       "en": "Ocean Monarch",
       "zh": "大洋君主",
@@ -3310,18 +3145,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 40,
-    "MaxHP": 134,
-    "MinSTR": 171,
-    "MaxSTR": 573,
-    "image": "307032_01_50201.png",
+    "MinHp": 40,
+    "MaxHp": 134,
+    "MinAtk": 171,
+    "MaxAtk": 573,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30750301",
+    "Id": "307014_01_50301",
     "Name": {
       "en": "Phytalmios",
       "zh": "云之花冠",
@@ -3330,18 +3164,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 45,
-    "MaxHP": 152,
-    "MinSTR": 158,
-    "MaxSTR": 528,
-    "image": "307014_01_50301.png",
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30750401",
+    "Id": "307034_01_50401",
     "Name": {
       "en": "Twilight Shimmer",
       "zh": "白昼之夜",
@@ -3350,18 +3183,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 40,
-    "MaxHP": 134,
-    "MinSTR": 171,
-    "MaxSTR": 573,
-    "image": "307034_01_50401.png",
+    "MinHp": 40,
+    "MaxHp": 134,
+    "MinAtk": 171,
+    "MaxAtk": 573,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30750501",
+    "Id": "307035_01_50501",
     "Name": {
       "en": "Underworld Despair",
       "zh": "驱冥杖",
@@ -3370,18 +3202,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 45,
-    "MaxHP": 152,
-    "MinSTR": 158,
-    "MaxSTR": 528,
-    "image": "307035_01_50501.png",
+    "MinHp": 45,
+    "MaxHp": 152,
+    "MinAtk": 158,
+    "MaxAtk": 528,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30759901",
+    "Id": "307031_01_59901",
     "Name": {
       "en": "Wand of the Torrent",
       "zh": "乱流魔杖",
@@ -3390,18 +3221,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "None",
-    "MinHP": 27,
-    "MaxHP": 90,
-    "MinSTR": 115,
-    "MaxSTR": 384,
-    "image": "307031_01_59901.png",
+    "MinHp": 27,
+    "MaxHp": 90,
+    "MinAtk": 115,
+    "MaxAtk": 384,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30759902",
+    "Id": "307040_01_59901",
     "Name": {
       "en": "Welkin Wand",
       "zh": "苍穹魔杖",
@@ -3410,18 +3240,17 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "None",
-    "MinHP": 33,
-    "MaxHP": 110,
-    "MinSTR": 141,
-    "MaxSTR": 470,
-    "image": "307040_01_59901.png",
+    "MinHp": 33,
+    "MaxHp": 110,
+    "MinAtk": 141,
+    "MaxAtk": 470,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30759903",
+    "Id": "307041_01_59901",
     "Name": {
       "en": "Chaotic Horizon",
       "zh": "混沌之源",
@@ -3430,358 +3259,340 @@ const weapon =
     "type": "Wand",
     "rarity": "5",
     "element": "None",
-    "MinHP": 37,
-    "MaxHP": 125,
-    "MinSTR": 129,
-    "MaxSTR": 433,
-    "image": "307041_01_59901.png",
+    "MinHp": 37,
+    "MaxHp": 125,
+    "MinAtk": 129,
+    "MaxAtk": 433,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30830101",
+    "Id": "308006_01_30101",
     "Name": {
       "en": "Staff of the Valiant Flame",
       "zh": "烈焰之杖",
-      "ja": ""
+      "ja": "猛き炎の杖"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Flame",
-    "MinHP": 19,
-    "MaxHP": 66,
-    "MinSTR": 61,
-    "MaxSTR": 205,
-    "image": "308006_01_30101.png",
+    "MinHp": 19,
+    "MaxHp": 66,
+    "MinAtk": 61,
+    "MaxAtk": 205,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30830201",
+    "Id": "308007_01_30201",
     "Name": {
       "en": "Scendecipher",
       "zh": "观浪法杖",
-      "ja": ""
+      "ja": "ウェーブリポート"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Water",
-    "MinHP": 19,
-    "MaxHP": 66,
-    "MinSTR": 61,
-    "MaxSTR": 205,
-    "image": "308007_01_30201.png",
+    "MinHp": 19,
+    "MaxHp": 66,
+    "MinAtk": 61,
+    "MaxAtk": 205,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30830301",
+    "Id": "308008_01_30301",
     "Name": {
       "en": "Windreader",
       "zh": "气象法杖",
-      "ja": ""
+      "ja": "ウェザーリポート"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Wind",
-    "MinHP": 20,
-    "MaxHP": 69,
-    "MinSTR": 59,
-    "MaxSTR": 199,
-    "image": "308008_01_30301.png",
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30830401",
+    "Id": "308009_01_30401",
     "Name": {
       "en": "Astrolabe",
       "zh": "星盘之杖",
-      "ja": ""
+      "ja": "アストロラーベ"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 20,
-    "MaxHP": 69,
-    "MinSTR": 59,
-    "MaxSTR": 199,
-    "image": "308009_01_30401.png",
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30830402",
+    "Id": "308026_01_30401",
     "Name": {
       "en": "Vampire's Lantern",
       "zh": "吸血鬼灯笼",
-      "ja": ""
+      "ja": "ヴァンパイア・ランタン"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Light",
-    "MinHP": 17,
-    "MaxHP": 59,
-    "MinSTR": 55,
-    "MaxSTR": 185,
-    "image": "308026_01_30401.png",
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 55,
+    "MaxAtk": 185,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30830501",
+    "Id": "308020_01_30501",
     "Name": {
       "en": "Meggidoth Wisp",
       "zh": "梅奇特斯的低语",
-      "ja": ""
+      "ja": "メギトスウィスプ"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "Shadow",
-    "MinHP": 20,
-    "MaxHP": 69,
-    "MinSTR": 59,
-    "MaxSTR": 199,
-    "image": "308020_01_30501.png",
+    "MinHp": 20,
+    "MaxHp": 69,
+    "MinAtk": 59,
+    "MaxAtk": 199,
+    "tier": "3",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30839901",
+    "Id": "308002_01_39901",
     "Name": {
       "en": "Staff of Grace",
       "zh": "恩惠之杖",
-      "ja": ""
+      "ja": "恩恵の杖"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "None",
-    "MinHP": 8,
-    "MaxHP": 28,
-    "MinSTR": 23,
-    "MaxSTR": 77,
-    "image": "308002_01_39901.png",
+    "MinHp": 8,
+    "MaxHp": 28,
+    "MinAtk": 23,
+    "MaxAtk": 77,
+    "tier": "1",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30839902",
+    "Id": "307003_01_39901",
     "Name": {
       "en": "Long Ankh",
       "zh": "长生符",
-      "ja": ""
+      "ja": "ロングアンク"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "None",
-    "MinHP": 13,
-    "MaxHP": 44,
-    "MinSTR": 37,
-    "MaxSTR": 125,
-    "image": "307003_01_39901.png",
+    "MinHp": 13,
+    "MaxHp": 44,
+    "MinAtk": 37,
+    "MaxAtk": 125,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30839903",
+    "Id": "308036_01_39901",
     "Name": {
       "en": "Staff of the Horned Snake",
       "zh": "角蛇之杖",
-      "ja": ""
+      "ja": "角蛇の杖"
     },
     "type": "Staff",
     "rarity": "3",
     "element": "None",
-    "MinHP": 12,
-    "MaxHP": 42,
-    "MinSTR": 38,
-    "MaxSTR": 129,
-    "image": "308036_01_39901.png",
+    "MinHp": 12,
+    "MaxHp": 42,
+    "MinAtk": 38,
+    "MaxAtk": 129,
+    "tier": "2",
     "level": 40,
     "MAX_LEVEL": 40,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30840101",
+    "Id": "308021_01_40101",
     "Name": {
       "en": "Ark Voyager",
       "zh": "天火法杖",
-      "ja": ""
+      "ja": "アークフレアスタッフ"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "Flame",
-    "MinHP": 34,
-    "MaxHP": 115,
-    "MinSTR": 95,
-    "MaxSTR": 317,
-    "image": "308021_01_40101.png",
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 95,
+    "MaxAtk": 317,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30840201",
+    "Id": "308022_01_40201",
     "Name": {
       "en": "Marine Staff",
       "zh": "海洋之杖",
-      "ja": ""
+      "ja": "マリーンスタッフ"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "Water",
-    "MinHP": 34,
-    "MaxHP": 115,
-    "MinSTR": 95,
-    "MaxSTR": 317,
-    "image": "308022_01_40201.png",
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 95,
+    "MaxAtk": 317,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30840301",
+    "Id": "308033_01_40301",
     "Name": {
       "en": "Windeater Staff",
       "zh": "食风之杖",
-      "ja": ""
+      "ja": "風喰いの杖"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "Wind",
-    "MinHP": 32,
-    "MaxHP": 107,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "308033_01_40301.png",
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30840401",
+    "Id": "308018_01_40401",
     "Name": {
       "en": "Tonitrus",
       "zh": "雷电杖托尼托鲁斯",
-      "ja": ""
+      "ja": "雷電杖トニトルス"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "Light",
-    "MinHP": 32,
-    "MaxHP": 107,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "308018_01_40401.png",
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30840501",
+    "Id": "308019_01_40501",
     "Name": {
       "en": "Sanity's Bane",
       "zh": "诅咒之苏必利尔",
-      "ja": ""
+      "ja": "カースドスペリア"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "Shadow",
-    "MinHP": 32,
-    "MaxHP": 107,
-    "MinSTR": 99,
-    "MaxSTR": 333,
-    "image": "308019_01_40501.png",
+    "MinHp": 32,
+    "MaxHp": 107,
+    "MinAtk": 99,
+    "MaxAtk": 333,
+    "tier": "3",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30849901",
+    "Id": "308005_01_49901",
     "Name": {
       "en": "Staff of Life",
       "zh": "养生杖",
-      "ja": ""
+      "ja": "ライフスタッフ"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "None",
-    "MinHP": 20,
-    "MaxHP": 68,
-    "MinSTR": 56,
-    "MaxSTR": 188,
-    "image": "308005_01_49901.png",
+    "MinHp": 20,
+    "MaxHp": 68,
+    "MinAtk": 56,
+    "MaxAtk": 188,
+    "tier": "1",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30849902",
+    "Id": "308013_01_49901",
     "Name": {
       "en": "Staff of Fortune",
       "zh": "幸运权杖",
-      "ja": ""
+      "ja": "フォーチュンスタッフ"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "None",
-    "MinHP": 24,
-    "MaxHP": 82,
-    "MinSTR": 77,
-    "MaxSTR": 257,
-    "image": "308013_01_49901.png",
+    "MinHp": 24,
+    "MaxHp": 82,
+    "MinAtk": 77,
+    "MaxAtk": 257,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30849903",
+    "Id": "308010_01_49901",
     "Name": {
       "en": "Beauty's Balm",
       "zh": "美貌之杖",
-      "ja": ""
+      "ja": "ビューティフルメイク"
     },
     "type": "Staff",
     "rarity": "4",
     "element": "None",
-    "MinHP": 26,
-    "MaxHP": 89,
-    "MinSTR": 73,
-    "MaxSTR": 244,
-    "image": "308010_01_49901.png",
+    "MinHp": 26,
+    "MaxHp": 89,
+    "MinAtk": 73,
+    "MaxAtk": 244,
+    "tier": "2",
     "level": 70,
     "MAX_LEVEL": 70,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30850101",
+    "Id": "308031_01_50101",
     "Name": {
       "en": "Staff of the Red Emperor",
       "zh": "赤帝炎杖",
@@ -3790,18 +3601,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "Flame",
-    "MinHP": 53,
-    "MaxHP": 178,
-    "MinSTR": 146,
-    "MaxSTR": 487,
-    "image": "308031_01_50101.png",
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30850201",
+    "Id": "308011_01_50201",
     "Name": {
       "en": "Bracing Waters",
       "zh": "水之祝福",
@@ -3810,18 +3620,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "Water",
-    "MinHP": 53,
-    "MaxHP": 178,
-    "MinSTR": 146,
-    "MaxSTR": 487,
-    "image": "308011_01_50201.png",
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30850301",
+    "Id": "308032_01_50301",
     "Name": {
       "en": "Ancient Mage's Windcane",
       "zh": "古代魔法旋杖",
@@ -3830,18 +3639,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "Wind",
-    "MinHP": 53,
-    "MaxHP": 178,
-    "MinSTR": 146,
-    "MaxSTR": 487,
-    "image": "308032_01_50301.png",
+    "MinHp": 53,
+    "MaxHp": 178,
+    "MinAtk": 146,
+    "MaxAtk": 487,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30850401",
+    "Id": "308014_01_50401",
     "Name": {
       "en": "Light of Judgment",
       "zh": "制裁光杖",
@@ -3850,18 +3658,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "Light",
-    "MinHP": 49,
-    "MaxHP": 165,
-    "MinSTR": 153,
-    "MaxSTR": 513,
-    "image": "308014_01_50401.png",
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 153,
+    "MaxAtk": 513,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30850501",
+    "Id": "308015_01_50501",
     "Name": {
       "en": "Caduceus",
       "zh": "商神杖",
@@ -3870,18 +3677,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "Shadow",
-    "MinHP": 49,
-    "MaxHP": 165,
-    "MinSTR": 153,
-    "MaxSTR": 513,
-    "image": "308015_01_50501.png",
+    "MinHp": 49,
+    "MaxHp": 165,
+    "MinAtk": 153,
+    "MaxAtk": 513,
+    "tier": "3",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "3"
+    "unbind": 4
   },
   {
-    "Id": "30859901",
+    "Id": "308030_01_59901",
     "Name": {
       "en": "Cane of Soul's Repose",
       "zh": "镇魂之杖",
@@ -3890,18 +3696,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "None",
-    "MinHP": 35,
-    "MaxHP": 119,
-    "MinSTR": 98,
-    "MaxSTR": 327,
-    "image": "308030_01_59901.png",
+    "MinHp": 35,
+    "MaxHp": 119,
+    "MinAtk": 98,
+    "MaxAtk": 327,
+    "tier": "1",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "1"
+    "unbind": 4
   },
   {
-    "Id": "30859902",
+    "Id": "308038_01_59901",
     "Name": {
       "en": "Rainbow Cane",
       "zh": "虹之杖",
@@ -3910,18 +3715,17 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "None",
-    "MinHP": 43,
-    "MaxHP": 146,
-    "MinSTR": 120,
-    "MaxSTR": 400,
-    "image": "308038_01_59901.png",
+    "MinHp": 43,
+    "MaxHp": 146,
+    "MinAtk": 120,
+    "MaxAtk": 400,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   },
   {
-    "Id": "30859903",
+    "Id": "308039_01_59901",
     "Name": {
       "en": "Otherworldly Bough",
       "zh": "异形树枝杖",
@@ -3930,15 +3734,14 @@ const weapon =
     "type": "Staff",
     "rarity": "5",
     "element": "None",
-    "MinHP": 40,
-    "MaxHP": 135,
-    "MinSTR": 126,
-    "MaxSTR": 421,
-    "image": "308039_01_59901.png",
+    "MinHp": 40,
+    "MaxHp": 135,
+    "MinAtk": 126,
+    "MaxAtk": 421,
+    "tier": "2",
     "level": 100,
     "MAX_LEVEL": 100,
-    "unbind": 4,
-    "tier": "2"
+    "unbind": 4
   }
 ];
 export default weapon;

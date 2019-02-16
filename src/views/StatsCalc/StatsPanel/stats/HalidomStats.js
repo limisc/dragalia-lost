@@ -28,10 +28,10 @@ class HalidomStats extends Component {
     const { language, stats: { adventurer, dragon } } = this.props;
     let element = "", weapon = "";
     if (adventurer) {
-      element = `element_${adventurer.element}.png`;
-      weapon = `type_${adventurer.type}.png`;
+      element = `element_${adventurer.element}`;
+      weapon = `type_${adventurer.type}`;
     }
-    const fafnir = dragon ? `dragon_${dragon.element}.png` : "";
+    const fafnir = dragon ? `dragon_${dragon.element}` : "";
     return (
       <Fragment>
         {(adventurer || dragon) &&

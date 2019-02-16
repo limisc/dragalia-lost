@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import StatsName from '../../statsPanel/stats/StatsName';
+// import StatsName from '../../statsPanel/stats/StatsName';
+import { AppContext } from "context";
 import Slider from './Slider';
 import { updateHalidom } from "actions";
 import facility from "intl/facility";
@@ -45,8 +47,13 @@ class Facility extends Component {
   }
 
   render() {
+    const { lang } = this.context;
     const { field, index, item: { id, level, image } } = this.props;
     const { image_path } = this.state;
+    let name = "";
+    if (facility[id] && facility[id][lang]) {
+      name = facility[id][lang];
+    }
     return (
       <tr>
         <td>
@@ -57,10 +64,7 @@ class Facility extends Component {
           />
         </td>
         <td>
-          <StatsName
-            section="facility"
-            name={facility[id]}
-          />
+          {name}
         </td>
         <td>{level}</td>
         <td>
@@ -89,6 +93,7 @@ class Facility extends Component {
   }
 }
 
+Facility.contextType = AppContext;
 
 Facility.propTypes = {
   item: PropTypes.object,

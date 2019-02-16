@@ -24,7 +24,12 @@ const mapDispatchToProps = (dispatch) => {
 
 class DetailsPanel extends Component {
   state = {
-    rows: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom"]
+    rows: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom"],
+    total: {
+      en: "Total (Adjusted - Fafnir Statue)",
+      ja: "合計 (調整 - ファフ二ール像)",
+      zh: "合计 (修正法夫纳像加成)",
+    },
   }
 
   _changeLang = (e) => {
@@ -46,6 +51,7 @@ class DetailsPanel extends Component {
     const { lang } = this.context;
     const { details } = this.props;
     const total = this._getTotal(details);
+
     return (
       <Fragment>
         <Grid container spacing={8}>
@@ -94,14 +100,13 @@ class DetailsPanel extends Component {
               ))}
 
               <TableRow>
-                <TableCell>{translate("total", lang)}</TableCell>
+                <TableCell>{this.state.total[lang]}</TableCell>
                 <TableCell align="right">{total.HP}</TableCell>
                 <TableCell align="right">{total.STR}</TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </Paper>
-
       </Fragment>
     );
   }
