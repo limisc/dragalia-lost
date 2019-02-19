@@ -26,7 +26,10 @@ const Root = () => (
           path="/:lang(en|zh|ja)"
           component={StatsCalc}
         />
-        <Redirect to="/en" />
+        {/* <Redirect to="/en" /> */}
+        <Route
+          component={StatsCalc}
+        />
       </Switch>
     </Router>
   </Provider>
