@@ -547,38 +547,38 @@ const wyrmprint =
   },
   "400142": {
     "en": "The Petal Queen",
-    "ja": "",
+    "ja": "ローズフェアリー",
     "zh": "玫瑰精灵"
   },
   "400143": {
     "en": "A Heartfelt Gift",
-    "ja": "",
+    "ja": "ラッピングフィール",
     "zh": "包装体验"
   },
   "400144": {
     "en": "Valentine's Venture",
-    "ja": "",
+    "ja": "漢のバレンタイン",
     "zh": "男人的情人节"
   },
   "400145": {
     "en": "An Indelible Date",
-    "ja": "",
-    "zh": ""
+    "ja": "トキメキ★デートスタイル",
+    "zh": "心动★约会时光"
   },
   "400146": {
     "en": "Elegant Escort",
-    "ja": "",
-    "zh": ""
+    "ja": "エレガントエスコート",
+    "zh": "优雅护卫"
   },
   "400147": {
     "en": "Take My Hand",
-    "ja": "",
-    "zh": ""
+    "ja": "ギヴ・ミー・ユアハンド",
+    "zh": "牵起你的手"
   },
   "400148": {
     "en": "Honest Repose",
-    "ja": "",
-    "zh": ""
+    "ja": "オネストモーメント",
+    "zh": "坦率一刻"
   },
   "400163": {
     "en": "Kung Fu Masters",

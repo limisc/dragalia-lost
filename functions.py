@@ -271,13 +271,3 @@ def set_data(section, param, replace, omit):
     save_file(item_list, section)
     if len(names) > o_len:
         save_file(names, section, "intl")
-
-
-if __name__ == "__main__":
-    # limit = get_limit()
-    # abilities = get_abilities("abilitie")
-    # coAbilities = get_abilities("coAbilitie")
-    # set_adventurer()
-    # set_weapon()
-    # set_wyrmprint()
-    # set_dragon()
