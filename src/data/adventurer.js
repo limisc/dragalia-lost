@@ -8,8 +8,8 @@ const adventurer =
       "zh": "尤蒂尔"
     },
     "type": "Sword",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 40,
     "MinHp4": 58,
     "MinHp5": 66,
@@ -55,8 +55,8 @@ const adventurer =
       "zh": "埃尔菲莉丝"
     },
     "type": "Lance",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 42,
     "MinHp4": 61,
     "MinHp5": 69,
@@ -102,8 +102,8 @@ const adventurer =
       "zh": "埃尔菲莉丝"
     },
     "type": "Lance",
-    "rarity": "5",
     "element": "Light",
+    "rarity": "5",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 67,
@@ -149,8 +149,8 @@ const adventurer =
       "zh": "兰扎卜"
     },
     "type": "Axe",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -196,8 +196,8 @@ const adventurer =
       "zh": "库菈乌"
     },
     "type": "Dagger",
-    "rarity": "5",
     "element": "Water",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -243,8 +243,8 @@ const adventurer =
       "zh": "库菈乌"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -290,8 +290,8 @@ const adventurer =
       "zh": "卢卡"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -337,8 +337,8 @@ const adventurer =
       "zh": "希里丝"
     },
     "type": "Bow",
-    "rarity": "5",
     "element": "Flame",
+    "rarity": "5",
     "MinHp3": 49,
     "MinHp4": 61,
     "MinHp5": 71,
@@ -384,8 +384,8 @@ const adventurer =
       "zh": "阿兰"
     },
     "type": "Lance",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -431,8 +431,8 @@ const adventurer =
       "zh": "葵"
     },
     "type": "Blade",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -478,8 +478,8 @@ const adventurer =
       "zh": "乔"
     },
     "type": "Bow",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 40,
     "MinHp4": 50,
     "MinHp5": 58,
@@ -525,8 +525,8 @@ const adventurer =
       "zh": "桑妮雅"
     },
     "type": "Wand",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -572,8 +572,8 @@ const adventurer =
       "zh": "拉辛"
     },
     "type": "Dagger",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -619,8 +619,8 @@ const adventurer =
       "zh": "欧雷因"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -666,8 +666,8 @@ const adventurer =
       "zh": "凡妮莎"
     },
     "type": "Axe",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -713,8 +713,8 @@ const adventurer =
       "zh": "卡尔"
     },
     "type": "Sword",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 65,
@@ -760,8 +760,8 @@ const adventurer =
       "zh": "希诺亚"
     },
     "type": "Wand",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -807,8 +807,8 @@ const adventurer =
       "zh": "米科特"
     },
     "type": "Blade",
-    "rarity": "5",
     "element": "Flame",
+    "rarity": "5",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -854,8 +854,8 @@ const adventurer =
       "zh": "艾赛莉特"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -901,8 +901,8 @@ const adventurer =
       "zh": "艾赛莉特"
     },
     "type": "Dagger",
-    "rarity": "5",
     "element": "Flame",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 67,
@@ -948,8 +948,8 @@ const adventurer =
       "zh": "雷克斯"
     },
     "type": "Axe",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -995,8 +995,8 @@ const adventurer =
       "zh": "威克"
     },
     "type": "Bow",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1042,8 +1042,8 @@ const adventurer =
       "zh": "休贝尔"
     },
     "type": "Lance",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1089,8 +1089,8 @@ const adventurer =
       "zh": "夏迪"
     },
     "type": "Sword",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1136,8 +1136,8 @@ const adventurer =
       "zh": "十郎太"
     },
     "type": "Blade",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -1183,8 +1183,8 @@ const adventurer =
       "zh": "里卡多"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -1230,8 +1230,8 @@ const adventurer =
       "zh": "卡丽娜"
     },
     "type": "Axe",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 67,
@@ -1277,8 +1277,8 @@ const adventurer =
       "zh": "塞纳"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -1324,8 +1324,8 @@ const adventurer =
       "zh": "卢塔"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 66,
@@ -1371,8 +1371,8 @@ const adventurer =
       "zh": "扎因弗拉德"
     },
     "type": "Lance",
-    "rarity": "5",
     "element": "Water",
+    "rarity": "5",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 67,
@@ -1418,8 +1418,8 @@ const adventurer =
       "zh": "阿莱克西斯"
     },
     "type": "Sword",
-    "rarity": "5",
     "element": "Water",
+    "rarity": "5",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -1465,8 +1465,8 @@ const adventurer =
       "zh": "阿莱克西斯"
     },
     "type": "Wand",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 63,
     "MinHp5": 96,
@@ -1512,8 +1512,8 @@ const adventurer =
       "zh": "伊汉娜"
     },
     "type": "Axe",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -1559,8 +1559,8 @@ const adventurer =
       "zh": "索菲"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1606,8 +1606,8 @@ const adventurer =
       "zh": "尼古拉"
     },
     "type": "Wand",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -1653,8 +1653,8 @@ const adventurer =
       "zh": "弗兰切斯卡"
     },
     "type": "Dagger",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1700,8 +1700,8 @@ const adventurer =
       "zh": "米罗蒂"
     },
     "type": "Blade",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 41,
     "MinHp4": 51,
     "MinHp5": 59,
@@ -1747,8 +1747,8 @@ const adventurer =
       "zh": "菲丽雅"
     },
     "type": "Bow",
-    "rarity": "3",
     "element": "Wind",
+    "rarity": "3",
     "MinHp3": 40,
     "MinHp4": 50,
     "MinHp5": 58,
@@ -1794,8 +1794,8 @@ const adventurer =
       "zh": "艾露"
     },
     "type": "Lance",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 45,
     "MinHp4": 55,
     "MinHp5": 65,
@@ -1841,8 +1841,8 @@ const adventurer =
       "zh": "武藏"
     },
     "type": "Blade",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -1888,8 +1888,8 @@ const adventurer =
       "zh": "艾蕾欧诺拉"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -1935,8 +1935,8 @@ const adventurer =
       "zh": "梅莉贝尔"
     },
     "type": "Wand",
-    "rarity": "5",
     "element": "Wind",
+    "rarity": "5",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -1982,8 +1982,8 @@ const adventurer =
       "zh": "莱纳斯"
     },
     "type": "Axe",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -2019,7 +2019,14 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "defense1": 5,
+    "defense2": 8,
+    "exDefense0": 5,
+    "exDefense1": 6,
+    "exDefense2": 7,
+    "exDefense3": 8,
+    "exDefense4": 9
   },
   {
     "Id": "110034_01_r0",
@@ -2029,8 +2036,8 @@ const adventurer =
       "zh": "马尔卡"
     },
     "type": "Lance",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -2066,7 +2073,14 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "defense1": 15,
+    "defense2": 20,
+    "exHp0": 5,
+    "exHp1": 6,
+    "exHp2": 7,
+    "exHp3": 8,
+    "exHp4": 9
   },
   {
     "Id": "110035_01_r0",
@@ -2076,8 +2090,8 @@ const adventurer =
       "zh": "莱蒙德"
     },
     "type": "Sword",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 40,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -2123,8 +2137,8 @@ const adventurer =
       "zh": "马萝拉"
     },
     "type": "Bow",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -2170,8 +2184,8 @@ const adventurer =
       "zh": "伊尔凡"
     },
     "type": "Dagger",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -2217,8 +2231,8 @@ const adventurer =
       "zh": "霍普"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -2264,8 +2278,8 @@ const adventurer =
       "zh": "梁泉"
     },
     "type": "Lance",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -2311,8 +2325,8 @@ const adventurer =
       "zh": "乌尔嘉"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -2358,8 +2372,8 @@ const adventurer =
       "zh": "天音"
     },
     "type": "Wand",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -2405,8 +2419,8 @@ const adventurer =
       "zh": "朱丽叶"
     },
     "type": "Axe",
-    "rarity": "5",
     "element": "Light",
+    "rarity": "5",
     "MinHp3": 48,
     "MinHp4": 60,
     "MinHp5": 70,
@@ -2452,8 +2466,8 @@ const adventurer =
       "zh": "希尔德加德"
     },
     "type": "Staff",
-    "rarity": "5",
     "element": "Light",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 59,
     "MinHp5": 68,
@@ -2499,8 +2513,8 @@ const adventurer =
       "zh": "希尔德加德"
     },
     "type": "Staff",
-    "rarity": "5",
     "element": "Flame",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -2546,8 +2560,8 @@ const adventurer =
       "zh": "太郎"
     },
     "type": "Blade",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -2593,8 +2607,8 @@ const adventurer =
       "zh": "埃里克"
     },
     "type": "Axe",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -2640,8 +2654,8 @@ const adventurer =
       "zh": "罗德里戈"
     },
     "type": "Sword",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -2687,8 +2701,8 @@ const adventurer =
       "zh": "伊露缇米娅"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -2734,8 +2748,8 @@ const adventurer =
       "zh": "伊露缇米娅"
     },
     "type": "Wand",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 41,
     "MinHp4": 51,
     "MinHp5": 60,
@@ -2781,8 +2795,8 @@ const adventurer =
       "zh": "华兹"
     },
     "type": "Dagger",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -2828,8 +2842,8 @@ const adventurer =
       "zh": "爱德华"
     },
     "type": "Blade",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 48,
     "MinHp5": 56,
@@ -2875,8 +2889,8 @@ const adventurer =
       "zh": "爱德华"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 61,
@@ -2922,8 +2936,8 @@ const adventurer =
       "zh": "贝尔扎克"
     },
     "type": "Sword",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -2969,8 +2983,8 @@ const adventurer =
       "zh": "克雷伊曼"
     },
     "type": "Wand",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -3016,8 +3030,8 @@ const adventurer =
       "zh": "俄里翁"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 65,
@@ -3063,8 +3077,8 @@ const adventurer =
       "zh": "俄里翁"
     },
     "type": "Sword",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -3110,8 +3124,8 @@ const adventurer =
       "zh": "奈法利耶"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 67,
     "MinHp5": 103,
@@ -3157,8 +3171,8 @@ const adventurer =
       "zh": "奈法利耶"
     },
     "type": "Bow",
-    "rarity": "5",
     "element": "Shadow",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -3204,8 +3218,8 @@ const adventurer =
       "zh": "艾丝蒂尔"
     },
     "type": "Staff",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -3251,8 +3265,8 @@ const adventurer =
       "zh": "维特"
     },
     "type": "Dagger",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 42,
     "MinHp4": 52,
     "MinHp5": 60,
@@ -3298,8 +3312,8 @@ const adventurer =
       "zh": "莉莉"
     },
     "type": "Wand",
-    "rarity": "5",
     "element": "Water",
+    "rarity": "5",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -3345,8 +3359,8 @@ const adventurer =
       "zh": "奥尔森"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -3392,8 +3406,8 @@ const adventurer =
       "zh": "吉斯"
     },
     "type": "Lance",
-    "rarity": "3",
     "element": "Shadow",
+    "rarity": "3",
     "MinHp3": 39,
     "MinHp4": 49,
     "MinHp5": 57,
@@ -3439,8 +3453,8 @@ const adventurer =
       "zh": "赛丽艾拉"
     },
     "type": "Blade",
-    "rarity": "4",
     "element": "Water",
+    "rarity": "4",
     "MinHp3": 40,
     "MinHp4": 40,
     "MinHp5": 58,
@@ -3486,8 +3500,8 @@ const adventurer =
       "zh": "洛依泽"
     },
     "type": "Bow",
-    "rarity": "5",
     "element": "Wind",
+    "rarity": "5",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -3533,8 +3547,8 @@ const adventurer =
       "zh": "卢恩"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -3580,8 +3594,8 @@ const adventurer =
       "zh": "皮多特"
     },
     "type": "Axe",
-    "rarity": "3",
     "element": "Water",
+    "rarity": "3",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 62,
@@ -3627,8 +3641,8 @@ const adventurer =
       "zh": "马蒂"
     },
     "type": "Sword",
-    "rarity": "3",
     "element": "Flame",
+    "rarity": "3",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -3674,8 +3688,8 @@ const adventurer =
       "zh": "纳杰夫"
     },
     "type": "Sword",
-    "rarity": "5",
     "element": "Flame",
+    "rarity": "5",
     "MinHp3": 44,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -3721,8 +3735,8 @@ const adventurer =
       "zh": "霍克"
     },
     "type": "Bow",
-    "rarity": "5",
     "element": "Wind",
+    "rarity": "5",
     "MinHp3": 45,
     "MinHp4": 55,
     "MinHp5": 64,
@@ -3768,8 +3782,8 @@ const adventurer =
       "zh": "林佑"
     },
     "type": "Axe",
-    "rarity": "5",
     "element": "Wind",
+    "rarity": "5",
     "MinHp3": 43,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -3815,8 +3829,8 @@ const adventurer =
       "zh": "维尔莎拉"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -3862,8 +3876,8 @@ const adventurer =
       "zh": "梅露莎"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Flame",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 43,
     "MinHp5": 62,
@@ -3909,8 +3923,8 @@ const adventurer =
       "zh": "安妮利艾"
     },
     "type": "Lance",
-    "rarity": "5",
     "element": "Light",
+    "rarity": "5",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 67,
@@ -3956,8 +3970,8 @@ const adventurer =
       "zh": "弗里茨"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 45,
     "MinHp4": 56,
     "MinHp5": 66,
@@ -4003,8 +4017,8 @@ const adventurer =
       "zh": "皮雅茜"
     },
     "type": "Lance",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -4040,7 +4054,14 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "defense1": 8,
+    "defense2": 10,
+    "exHp0": 7,
+    "exHp1": 8,
+    "exHp2": 9,
+    "exHp3": 10,
+    "exHp4": 12
   },
   {
     "Id": "110303_01_r0",
@@ -4050,8 +4071,8 @@ const adventurer =
       "zh": "埃利亚斯"
     },
     "type": "Bow",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 46,
     "MinHp5": 66,
@@ -4097,8 +4118,8 @@ const adventurer =
       "zh": "维克塞尔"
     },
     "type": "Staff",
-    "rarity": "4",
     "element": "Light",
+    "rarity": "4",
     "MinHp3": 46,
     "MinHp4": 57,
     "MinHp5": 66,
@@ -4144,8 +4165,8 @@ const adventurer =
       "zh": "卢克雷齐娅"
     },
     "type": "Wand",
-    "rarity": "5",
     "element": "Light",
+    "rarity": "5",
     "MinHp3": 44,
     "MinHp4": 54,
     "MinHp5": 63,
@@ -4191,8 +4212,8 @@ const adventurer =
       "zh": "阿迪斯"
     },
     "type": "Blade",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 42,
     "MinHp4": 53,
     "MinHp5": 61,
@@ -4238,8 +4259,8 @@ const adventurer =
       "zh": "山茶花"
     },
     "type": "Axe",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 47,
     "MinHp4": 58,
     "MinHp5": 68,
@@ -4285,8 +4306,8 @@ const adventurer =
       "zh": "牡丹"
     },
     "type": "Lance",
-    "rarity": "4",
     "element": "Shadow",
+    "rarity": "4",
     "MinHp3": 44,
     "MinHp4": 44,
     "MinHp5": 64,
@@ -4332,8 +4353,8 @@ const adventurer =
       "zh": "家康"
     },
     "type": "Blade",
-    "rarity": "5",
     "element": "Shadow",
+    "rarity": "5",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -4379,8 +4400,8 @@ const adventurer =
       "zh": "苏方"
     },
     "type": "Dagger",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 41,
     "MinHp4": 41,
     "MinHp5": 59,
@@ -4426,8 +4447,8 @@ const adventurer =
       "zh": "苦海"
     },
     "type": "Sword",
-    "rarity": "4",
     "element": "Wind",
+    "rarity": "4",
     "MinHp3": 43,
     "MinHp4": 53,
     "MinHp5": 62,
@@ -4473,8 +4494,8 @@ const adventurer =
       "zh": "小蕾"
     },
     "type": "Wand",
-    "rarity": "3",
     "element": "Light",
+    "rarity": "3",
     "MinHp3": 41,
     "MinHp4": 51,
     "MinHp5": 60,
