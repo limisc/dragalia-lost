@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Grid, Paper } from '@material-ui/core';
 import FilterStats from "./FilterStats";
 import StatsTable from "./StatsTable";
 
@@ -39,7 +40,7 @@ class SelectStats extends Component {
     } = this.state;
 
     return (
-      <div className="six wide column">
+      <Paper className="fluid padding">
         <FilterStats
           filterField={filterField}
         />
@@ -47,7 +48,7 @@ class SelectStats extends Component {
         <StatsTable
           fields={filterField}
         />
-      </div>
+      </Paper>
     );
   }
 }

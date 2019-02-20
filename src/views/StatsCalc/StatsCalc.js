@@ -5,8 +5,8 @@ import { Grid, Paper } from '@material-ui/core';
 import { AppContext } from "context";
 import { getTitle } from "actions";
 import DetailsPanel from "./DetailsPanel";
-import StatsPanel from "./StatsPanel";
-import TablePanel from "./TablePanel";
+import StatsPanel from "views/StatsPanel";
+import TablePanel from "views/TablePanel";
 
 class StatsCalc extends Component {
   render() {
@@ -24,14 +24,10 @@ class StatsCalc extends Component {
             </Paper>
           </Grid>
           <Grid item xs={12} lg={4} container>
-            <Paper className="fluid padding-top">
-              <StatsPanel />
-            </Paper>
+            <StatsPanel />
           </Grid>
           <Grid item xs={12} lg={4} container>
-            <Paper className="fluid padding">
-              <TablePanel />
-            </Paper>
+            <TablePanel />
           </Grid>
         </Grid>
       </AppContext.Provider >

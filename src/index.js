@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 // import routes from "./routes";
 import "./styles.css";
@@ -27,9 +27,7 @@ const Root = () => (
           component={StatsCalc}
         />
         {/* <Redirect to="/en" /> */}
-        <Route
-          component={StatsCalc}
-        />
+        <Route component={StatsCalc} />
       </Switch>
     </Router>
   </Provider>

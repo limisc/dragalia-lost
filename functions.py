@@ -117,6 +117,9 @@ def get_abilities(table):
             "Details": item["Details"],
             "Might": item["PartyPowerWeight"]
         }
+        # if "damage taken" in item["Details"]:
+        #     print("{}: {}".format(item["Id"], item["Details"]))
+        r1 = re.search("(?i)Flame|Water|Wind|Light|Shadow", d)
     return results
 
 
@@ -132,6 +135,7 @@ def set_abilities(section, item):
     for a in ability_set:
         if a in item:
             if item[a] in abilities:
+                # if "damage taken" in
                 results[a] = abilities[item[a]]["Might"]
             else:
                 up = a[:-1] + "1"
@@ -270,10 +274,10 @@ def set_data(section, param, replace, omit):
 
 
 if __name__ == "__main__":
-    limit = get_limit()
-    abilities = get_abilities("abilitie")
-    coAbilities = get_abilities("coAbilitie")
-    set_adventurer()
-    set_weapon()
-    set_wyrmprint()
-    set_dragon()
+    # limit = get_limit()
+    # abilities = get_abilities("abilitie")
+    # coAbilities = get_abilities("coAbilitie")
+    # set_adventurer()
+    # set_weapon()
+    # set_wyrmprint()
+    # set_dragon()
