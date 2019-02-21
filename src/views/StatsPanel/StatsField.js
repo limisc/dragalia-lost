@@ -52,14 +52,14 @@ class StatsField extends Component {
             />
           }
         </Grid>
-        <Grid item xs={6}>
-          {section === "adventurer" &&
+        {section === "adventurer" &&
+          <Grid item xs={6}>
             <SelectItem
               label="mana"
               section={section}
             />
-          }
-        </Grid>
+          </Grid>
+        }
       </>
     );
   }

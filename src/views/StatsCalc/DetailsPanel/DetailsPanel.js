@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Paper, Grid, Button, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
+import { Paper, Grid, Button, Table, TableBody, TableCell, TableHead, TableRow, TextField, Hidden, InputAdornment } from '@material-ui/core';
 
 import { AppContext, history } from "context";
 import { translate, resetAll } from "actions";
@@ -30,6 +30,31 @@ class DetailsPanel extends Component {
       ja: "合計 (調整 - ファフ二ール像)",
       zh: "合计 (修正法夫纳像加成)",
     },
+    dungeon: "",
+    info: {
+      hms: {
+        STR: 7230,
+        multiplier: 3.6,
+        element: "Wind",
+        adventage: "Water",
+        disadvantage: "Flame",
+      },
+      hbh: {
+        STR: 7230,
+        multiplier: 4.8,
+        element: "Flame",
+        adventage: "Wind",
+        disadvantage: "Water",
+      }
+    },
+    defense: "",
+    HP: "",
+  }
+
+  _onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
   }
 
   _changeLang = (e) => {
@@ -46,12 +71,95 @@ class DetailsPanel extends Component {
     return { HP, STR };
   }
 
+  _handleKeyPress = (e) => {
+    //prevent user enter + - e in number input field.
+    if (["+", "-", "e", "."].includes(e.key)) {
+      e.preventDefault();
+    }
+  }
 
+  _calcDamage = () => {
+    let damage = "";
+    let { dungeon, defense, HP, info } = this.state;
+    const { adventurer, wyrmprint, dragon } = this.props.stats;
+
+    if (dungeon && adventurer) {
+      let reduce = 0, res = 0, eleModifier = 1;
+      defense = parseInt(defense, 10) || 0;
+      // let reduce = 0, res = 0, defense = 0;
+      if (adventurer.defense1) {
+        let { mana } = adventurer;
+        mana = parseInt(mana, 10);
+        let temp = 0;
+        if (mana >= 30) {
+          temp = adventurer.defense2;
+        } else if (mana >= 10) {
+          temp = adventurer.defense1;
+        }
+        defense += temp;
+      }
+
+      if (adventurer.element === info[dungeon].adventage) {
+        eleModifier = 1.5;
+      } else if (adventurer.element === info[dungeon].disadvantage) {
+        eleModifier = 0.5;
+      }
+
+      if (wyrmprint) {
+        const { unbind } = wyrmprint;
+        if (unbind === "4") {
+          defense += wyrmprint.defense2 || 0;
+          reduce = wyrmprint.enemy === dungeon ? wyrmprint.reduce2 : 0;
+          res += wyrmprint.elementRes === info[dungeon].element ? wyrmprint.res2 : 0;
+        } else {
+          defense += wyrmprint.defense1 || 0;
+          reduce = wyrmprint.enemy === dungeon ? wyrmprint.reduce1 : 0;
+          res += wyrmprint.elementRes === info[dungeon].element ? wyrmprint.res1 : 0;
+        }
+      }
+
+      if (dragon && dragon.elementRes && dragon.elementRes === info[dungeon].element) {
+        res += dragon.unbind === "4" ? dragon.res2 : dragon.res1;
+      }
+
+      const { STR = "", multiplier = "" } = info[dungeon];
+      damage = Math.round(5 / 3 * STR * multiplier * (1 - reduce * 0.01) * (1 - res * 0.01) * 1.05 * eleModifier / (adventurer.DefCoef * (1 + defense * 0.01)));
+    }
+    return damage;
+  }
+
+
+  _calcHP = (totalHP) => {
+    const { dungeon } = this.state;
+    if (dungeon) {
+      let { HP } = this.state;
+      HP = parseInt(HP, 10) || 0;
+      return Math.ceil(totalHP * (1 + HP * 0.01));
+    } else {
+      return "";
+    }
+  }
   render() {
     const { lang } = this.context;
     const { details } = this.props;
+    const { rows, dungeon, HP, defense } = this.state;
+    const hms = {
+      "en": "High Midgardsormr",
+      "ja": "真ミドガルズオルム",
+      "zh": "真耶梦加得"
+    }[lang];
+    const hbh = {
+      "en": "High Brunhilda",
+      "ja": "真ブリュンヒルデ",
+      "zh": "真布伦希尔德"
+    }[lang];
+
+
+    const { STR = "", multiplier = "", element = "" } = this.state.info[dungeon] || {};
     const total = this._getTotal(details);
 
+    const damage = this._calcDamage();
+    const totalHP = this._calcHP(total.HP);
     return (
       <Fragment>
         <Grid container spacing={8}>
@@ -91,7 +199,7 @@ class DetailsPanel extends Component {
               </TableRow>
             </TableHead>
             <TableBody>
-              {this.state.rows.map(row => (
+              {rows.map(row => (
                 <TableRow key={row}>
                   <TableCell>{translate(row, lang)}</TableCell>
                   <TableCell align="right">{details[row].HP}</TableCell>
@@ -107,6 +215,86 @@ class DetailsPanel extends Component {
             </TableBody>
           </Table>
         </Paper>
+
+        <Grid container spacing={8} style={{ marginTop: "16px" }}>
+          <Grid item xs={6} sm={4}>
+            <Select
+              label="dungeon"
+              value={dungeon}
+              built
+              options={[
+                { value: "hms", label: hms },
+                { value: "hbh", label: hbh },
+              ]}
+              onChange={this._onChange}
+            />
+          </Grid>
+          <Hidden smUp>
+            <Grid item sm={4}></Grid>
+          </Hidden>
+          <Grid item xs={6} sm={4}>
+            <TextField
+              disabled={true}
+              label={translate("STR", lang)}
+              value={STR}
+              variant="outlined"
+            />
+          </Grid>
+
+          <Grid item xs={6} sm={4}>
+            <TextField
+              disabled={true}
+              label={translate("multiplier", lang)}
+              value={multiplier}
+              variant="outlined"
+            />
+          </Grid>
+
+          <Grid item xs={6} sm={4}>
+            <TextField
+              disabled={dungeon === ""}
+              label={translate("HP", lang)}
+              value={HP}
+              variant="outlined"
+              InputProps={{
+                name: "HP",
+                type: "number",
+                onKeyPress: this._handleKeyPress,
+                endAdornment: <InputAdornment position="end">%</InputAdornment>,
+              }}
+              onChange={this._onChange}
+            />
+          </Grid>
+
+          <Grid item xs={6} sm={4}>
+            <TextField
+              disabled={dungeon === ""}
+              label={translate("defense", lang)}
+              value={defense}
+              variant="outlined"
+              InputProps={{
+                name: "defense",
+                type: "number",
+                onKeyPress: this._handleKeyPress,
+                endAdornment: <InputAdornment position="end">%</InputAdornment>,
+              }}
+              onChange={this._onChange}
+            />
+          </Grid>
+
+          <Hidden smDown>
+            <Grid item sm={4}></Grid>
+          </Hidden>
+
+          <Grid item xs={6} sm={4}>
+            HP: <p>{totalHP}</p>
+          </Grid>
+
+          <Grid item xs={6} sm={4}>
+            Damage: <p style={{ color: "red" }}><b>{damage}</b></p>
+          </Grid>
+        </Grid>
+
       </Fragment>
     );
   }

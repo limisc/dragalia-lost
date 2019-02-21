@@ -17,9 +17,15 @@ const equipment = {
     "Abilities22": 60,
     "Abilities31": 20,
     "Abilities32": 40,
-    "level": 100,
+    "enemy": "hms",
+    "reduce1": 20,
+    "reduce2": 25,
+    "elementRes": "Wind",
+    "res1": 3,
+    "res2": 5,
     "MAX_LEVEL": 100,
-    "unbind": 4
+    "level": 100,
+    "unbind": "4"
   },
   "Water": {
     "Id": "400121_0",
@@ -39,9 +45,15 @@ const equipment = {
     "Abilities22": 60,
     "Abilities31": 20,
     "Abilities32": 40,
-    "level": 100,
+    "enemy": "hbh",
+    "reduce1": 20,
+    "reduce2": 25,
+    "elementRes": "Flame",
+    "res1": 3,
+    "res2": 5,
     "MAX_LEVEL": 100,
-    "unbind": 4
+    "level": 100,
+    "unbind": "4"
   }
 };
 

@@ -10,7 +10,7 @@ const statsKeys = ["adventurer", "weapon", "wyrmprint", "dragon"];
 
 const SettingPanel = () => {
   return (
-    <Paper className="fluid">
+    <Paper className="fluid padding-top">
       {statsKeys.map(statsKey =>
         <Grid container key={statsKey}>
           <Grid item xs={4}
