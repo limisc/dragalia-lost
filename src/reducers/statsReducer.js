@@ -60,9 +60,9 @@ const updateUnbind = (stats, action) => {
   const { section, value } = action;
   const item = stats[section];
 
-  const unbind = parseInt(value, 10);
-  const level = getStatsLimit(section, item.rarity, unbind);
-  let updateSection = { ...item, unbind, level };
+  // const unbind = parseInt(value, 10);
+  const level = getStatsLimit(section, item.rarity, value);
+  let updateSection = { ...item, unbind: value, level };
   return { ...stats, [section]: updateSection };
 }
 

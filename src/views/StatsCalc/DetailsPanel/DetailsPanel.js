@@ -73,7 +73,7 @@ class DetailsPanel extends Component {
 
   _handleKeyPress = (e) => {
     //prevent user enter + - e in number input field.
-    if (["+", "-", "e", "."].includes(e.key)) {
+    if (["+", "-", "e"].includes(e.key)) {
       e.preventDefault();
     }
   }
