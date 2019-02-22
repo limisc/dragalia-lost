@@ -17,6 +17,8 @@ const facility = {
   //fafnir
   "101001": { en: "Fafnir Statue (Flame)", zh: "火之法夫纳像", ja: "火のファフ二ール像" },
   "101003": { en: "Fafnir Statue (Wind)", zh: "风之法夫纳像", ja: "風のファフ二ール像" },
+  //slime
+  "101901": { en: "Magma Slime Statue", zh: "岩浆史莱姆像", ja: "Magma Slime Statue" },
   //event
   "100901": { en: "Circus Tent", zh: "马戏团帐篷", ja: "サーカステント" },
   "101101": { en: "Wind Shrine", zh: "风之神龛", ja: "風の祠" },

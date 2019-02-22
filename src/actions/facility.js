@@ -98,6 +98,24 @@ export const value = {
     "29": { HP: 11, STR: 11.5 },
     "30": { HP: 11.5, STR: 11.5 },
   },
+  slime: {
+    "0": { HP: 0, STR: 0 },
+    "1": { HP: 0.5, STR: 0.5 },
+    "2": { HP: 1, STR: 0.5 },
+    "3": { HP: 1, STR: 1 },
+    "4": { HP: 1.5, STR: 1 },
+    "5": { HP: 1.5, STR: 1.5 },
+    "6": { HP: 2, STR: 1.5 },
+    "7": { HP: 2, STR: 2 },
+    "8": { HP: 2.5, STR: 2 },
+    "9": { HP: 2.5, STR: 2.5 },
+    "10": { HP: 3, STR: 2.5 },
+    "11": { HP: 3, STR: 3 },
+    "12": { HP: 3.5, STR: 3 },
+    "13": { HP: 3.5, STR: 3.5 },
+    "14": { HP: 4, STR: 3.5 },
+    "15": { HP: 4, STR: 4 },
+  },
   event: {
     "0": { HP: 0, STR: 0 },
     "1": { HP: 1, STR: 0 },
@@ -135,9 +153,10 @@ export const value = {
 
 export const element = {
   Flame: {
-    list: [0, 1],
+    list: [0, 1, 2],
     "0": { id: "100401", type: "altar", level: 30, image: "altar_Flame.png" },
     "1": { id: "100401", type: "altar", level: 30, image: "altar_Flame.png" },
+    "2": { id: "101901", type: "slime", level: 15, image: "slime_Flame.png" },
   },
   Water: {
     list: [0, 1, 2],

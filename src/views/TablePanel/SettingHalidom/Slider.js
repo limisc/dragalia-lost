@@ -29,12 +29,13 @@ class Slider extends Component {
   }
 
   render() {
-    const { level } = this.props;
+    const { level, type } = this.props;
+    const max = type === "slime" ? 15 : 30;
     return (
       <input
         className="slider"
         type="range"
-        min="0" max="30" step="1"
+        min="0" max={max} step="1"
         value={level}
         onChange={this._onChange}
       />

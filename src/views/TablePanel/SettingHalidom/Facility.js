@@ -48,7 +48,7 @@ class Facility extends Component {
 
   render() {
     const { lang } = this.context;
-    const { field, index, item: { id, level, image } } = this.props;
+    const { field, index, item: { id, level, image, type } } = this.props;
     const { image_path } = this.state;
     let name = "";
     if (facility[id] && facility[id][lang]) {
@@ -77,6 +77,7 @@ class Facility extends Component {
             />
             <Slider
               field={field}
+              type={type}
               index={index}
               level={level}
             />

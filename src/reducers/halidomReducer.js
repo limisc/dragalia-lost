@@ -16,7 +16,8 @@ const defaultHalidom = (halidom) => {
       let facility = { ...halidom[f] };
       let item = null;
       for (const i of halidom[f].list) {
-        item = { ...halidom[f][i], level: LV[f] }
+        const level = halidom[f][i].type === "slime" ? 15 : LV[f];
+        item = { ...halidom[f][i], level }
         facility = { ...facility, [i]: item };
       }
       update = { ...update, [f]: facility };
@@ -32,7 +33,8 @@ const maxHalidom = (halidom) => {
       let facility = { ...halidom[f] };
       let item = null;
       for (const i of halidom[f].list) {
-        item = { ...halidom[f][i], level: 30 }
+        const level = halidom[f][i].type === "slime" ? 15 : 30;
+        item = { ...halidom[f][i], level }
         facility = { ...facility, [i]: item };
       }
       update = { ...update, [f]: facility };
