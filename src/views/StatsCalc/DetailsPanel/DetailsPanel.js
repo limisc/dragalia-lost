@@ -9,7 +9,7 @@ import { Select } from "components";
 
 const mapStateToProps = (state) => {
   const { stats, halidom, details } = state;
-  console.log(details)
+  // console.log(details)
   return {
     stats,
     halidom,
@@ -83,7 +83,7 @@ class DetailsPanel extends Component {
   _calcDamage = () => {
     let damage = "";
     let { dungeon, defense, HP, info } = this.state;
-    const { adventurer, wyrmprint, dragon } = this.props.stats;
+    const { adventurer, wyrmprint, dragon, weapon } = this.props.stats;
 
     if (dungeon && adventurer) {
       let reduce = 0, res = 0, eleModifier = 1;
@@ -105,6 +105,12 @@ class DetailsPanel extends Component {
         eleModifier = 1.5;
       } else if (adventurer.element === info[dungeon].disadvantage) {
         eleModifier = 0.5;
+      }
+
+      if (weapon && weapon.defense) {
+        if (weapon.eleDefense === "" || weapon.eleDefense === adventurer.element) {
+          defense += weapon.defense;
+        }
       }
 
       if (wyrmprint) {
@@ -159,7 +165,7 @@ class DetailsPanel extends Component {
 
     const { STR = "", multiplier = "" } = this.state.info[dungeon] || {};
     const total = this._getTotal(details);
-    console.log(total.might)
+    // console.log(total.might)
 
     const damage = this._calcDamage();
     const totalHP = this._calcHP(total.HP);

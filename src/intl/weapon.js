@@ -125,6 +125,31 @@ const weapon =
     "ja": "Lucky Hanetsuki Paddle",
     "zh": "招福羽子板"
   },
+  "301052": {
+    "en": "Hefty Ingot",
+    "ja": "",
+    "zh": ""
+  },
+  "301053": {
+    "en": "Blazing Ingot",
+    "ja": "",
+    "zh": ""
+  },
+  "301055": {
+    "en": "Wind Apogee",
+    "ja": "",
+    "zh": ""
+  },
+  "301056": {
+    "en": "Flame Apogee",
+    "ja": "",
+    "zh": ""
+  },
+  "301058": {
+    "en": "Luster Apogee",
+    "ja": "",
+    "zh": ""
+  },
   "302006": {
     "en": "Valkaheim Blade",
     "ja": "バルカブレード",
@@ -250,6 +275,31 @@ const weapon =
     "ja": "ヴィレッジライト",
     "zh": "村正"
   },
+  "302041": {
+    "en": "Goliath Splitter",
+    "ja": "",
+    "zh": ""
+  },
+  "302042": {
+    "en": "Crimson Steel",
+    "ja": "",
+    "zh": ""
+  },
+  "302044": {
+    "en": "Bladewing",
+    "ja": "",
+    "zh": ""
+  },
+  "302045": {
+    "en": "Scorching Edge",
+    "ja": "",
+    "zh": ""
+  },
+  "302047": {
+    "en": "Thunderous Edge",
+    "ja": "",
+    "zh": ""
+  },
   "303003": {
     "en": "Lover's Ally",
     "ja": "ラブナイフ",
@@ -370,6 +420,41 @@ const weapon =
     "ja": "ヘッジホッグ",
     "zh": "刺猬之刃"
   },
+  "303039": {
+    "en": "Mushroom Dagger",
+    "ja": "",
+    "zh": ""
+  },
+  "303040": {
+    "en": "Chilly Crimini Dagger",
+    "ja": "",
+    "zh": ""
+  },
+  "303042": {
+    "en": "Flaming Fungi Dagger",
+    "ja": "",
+    "zh": ""
+  },
+  "303044": {
+    "en": "Big Boy",
+    "ja": "",
+    "zh": ""
+  },
+  "303045": {
+    "en": "Flaming Big Boy",
+    "ja": "",
+    "zh": ""
+  },
+  "303047": {
+    "en": "Slaughterlust",
+    "ja": "",
+    "zh": ""
+  },
+  "303051": {
+    "en": "Bloodlust",
+    "ja": "",
+    "zh": ""
+  },
   "304006": {
     "en": "Axe of the Waves",
     "ja": "カレントアックス",
@@ -489,6 +574,31 @@ const weapon =
     "en": "Halfling's Broadaxe",
     "ja": "怪童の鉞",
     "zh": "怪童之钺"
+  },
+  "304042": {
+    "en": "Unerring Gaze",
+    "ja": "",
+    "zh": ""
+  },
+  "304043": {
+    "en": "Heavenfire Gaze",
+    "ja": "",
+    "zh": ""
+  },
+  "304045": {
+    "en": "Starlight Gaze",
+    "ja": "",
+    "zh": ""
+  },
+  "304047": {
+    "en": "Fury Crux",
+    "ja": "",
+    "zh": ""
+  },
+  "304050": {
+    "en": "Wave Crux",
+    "ja": "",
+    "zh": ""
   },
   "305006": {
     "en": "Unsung Hero's Lance",
@@ -615,6 +725,31 @@ const weapon =
     "ja": "ゲイボルグ",
     "zh": "千棘刺之枪"
   },
+  "305044": {
+    "en": "Leechspore Lance",
+    "ja": "",
+    "zh": ""
+  },
+  "305045": {
+    "en": "Bubblespore Lance",
+    "ja": "",
+    "zh": ""
+  },
+  "305047": {
+    "en": "Lumenspore Lance",
+    "ja": "",
+    "zh": ""
+  },
+  "305054": {
+    "en": "Piercing Beast",
+    "ja": "",
+    "zh": ""
+  },
+  "305058": {
+    "en": "Tidal Beast",
+    "ja": "",
+    "zh": ""
+  },
   "306003": {
     "en": "Proof of the Wind",
     "ja": "エアリアルプルーフ",
@@ -739,6 +874,21 @@ const weapon =
     "en": "Holy Bow",
     "ja": "ホーリーボウ",
     "zh": "神圣之弓"
+  },
+  "306038": {
+    "en": "Fungus Bow",
+    "ja": "",
+    "zh": ""
+  },
+  "306039": {
+    "en": "Frostfungus",
+    "ja": "",
+    "zh": ""
+  },
+  "306041": {
+    "en": "Firefungus",
+    "ja": "",
+    "zh": ""
   },
   "307003": {
     "en": "Long Ankh",
@@ -865,6 +1015,31 @@ const weapon =
     "ja": "ウィザードロッド",
     "zh": "魔法师之杖"
   },
+  "307046": {
+    "en": "The Scent",
+    "ja": "",
+    "zh": ""
+  },
+  "307047": {
+    "en": "The Scream",
+    "ja": "",
+    "zh": ""
+  },
+  "307049": {
+    "en": "The Wail",
+    "ja": "",
+    "zh": ""
+  },
+  "307051": {
+    "en": "Beastwing",
+    "ja": "",
+    "zh": ""
+  },
+  "307055": {
+    "en": "Wavewing",
+    "ja": "",
+    "zh": ""
+  },
   "308002": {
     "en": "Staff of Grace",
     "ja": "恩恵の杖",
@@ -984,6 +1159,31 @@ const weapon =
     "en": "Otherworldly Bough",
     "ja": "異形樹の枝",
     "zh": "异形树枝杖"
+  },
+  "308040": {
+    "en": "Aurachant",
+    "ja": "",
+    "zh": ""
+  },
+  "308041": {
+    "en": "Flamechant",
+    "ja": "",
+    "zh": ""
+  },
+  "308043": {
+    "en": "Forever Sky",
+    "ja": "",
+    "zh": ""
+  },
+  "308044": {
+    "en": "Twilight Harbinger",
+    "ja": "",
+    "zh": ""
+  },
+  "308046": {
+    "en": "Daybreak Harbinger",
+    "ja": "",
+    "zh": ""
   }
 };
 export default weapon;

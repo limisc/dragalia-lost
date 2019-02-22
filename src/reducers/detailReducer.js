@@ -56,6 +56,13 @@ const calcMight = (section, item, HP, STR) => {
     if (item["Skill"] === "1") {
       might += item.unbind === "4" ? 100 : 50;
     }
+    const abilitySet = ["Abilities11", "Abilities21"];
+    for (const a of abilitySet) {
+      if (item[a]) {
+        might += item[a];
+      }
+    }
+
   } else if (section === "wyrmprint") {
     const abilitySet = item.unbind === "4" ? ["Abilities12", "Abilities22", "Abilities32"] : ["Abilities11", "Abilities21", "Abilities31"];
     for (const a of abilitySet) {
