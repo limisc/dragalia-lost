@@ -25,7 +25,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210002_01",
@@ -52,7 +53,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210003_01",
@@ -79,7 +81,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210004_01",
@@ -106,7 +109,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210005_01",
@@ -133,7 +137,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210006_01",
@@ -160,7 +165,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210007_01",
@@ -187,7 +193,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210008_01",
@@ -214,7 +221,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210010_01",
@@ -241,7 +249,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210011_01",
@@ -268,7 +277,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210012_01",
@@ -295,7 +305,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210013_01",
@@ -322,7 +333,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210014_01",
@@ -349,7 +361,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210015_01",
@@ -376,7 +389,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210016_01",
@@ -403,7 +417,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210017_01",
@@ -430,7 +445,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210018_01",
@@ -457,7 +473,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210019_01",
@@ -484,7 +501,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210020_01",
@@ -511,7 +529,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210021_01",
@@ -538,7 +557,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210022_01",
@@ -565,7 +585,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210023_01",
@@ -592,7 +613,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210024_01",
@@ -619,7 +641,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210025_01",
@@ -646,7 +669,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210036_01",
@@ -673,7 +697,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210038_01",
@@ -702,7 +727,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210039_01",
@@ -731,7 +757,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210043_01",
@@ -758,7 +785,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210049_01",
@@ -785,7 +813,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210050_01",
@@ -812,7 +841,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210052_01",
@@ -842,7 +872,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210057_01",
@@ -869,7 +900,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210058_01",
@@ -896,7 +928,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210059_01",
@@ -923,7 +956,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210060_01",
@@ -950,7 +984,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210061_01",
@@ -977,7 +1012,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210062_01",
@@ -1004,7 +1040,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210063_01",
@@ -1031,7 +1068,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210064_01",
@@ -1058,7 +1096,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210065_01",
@@ -1085,7 +1124,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210066_01",
@@ -1112,7 +1152,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210067_01",
@@ -1139,7 +1180,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210068_01",
@@ -1166,7 +1208,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210069_01",
@@ -1193,7 +1236,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210070_01",
@@ -1220,7 +1264,8 @@ const dragon =
       },
       "MAX_LEVEL": 60,
       "level": 60,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210072_01",
@@ -1247,7 +1292,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210075_01",
@@ -1274,7 +1320,8 @@ const dragon =
       },
       "MAX_LEVEL": 80,
       "level": 80,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210076_01",
@@ -1301,7 +1348,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210077_01",
@@ -1328,7 +1376,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210078_01",
@@ -1347,7 +1396,8 @@ const dragon =
       "Abilities12": 60,
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210079_01",
@@ -1374,7 +1424,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     },
     {
       "Id": "210080_01",
@@ -1401,7 +1452,8 @@ const dragon =
       },
       "MAX_LEVEL": 100,
       "level": 100,
-      "unbind": "4"
+      "unbind": "4",
+      "bond": "30"
     }
   ];
 export default dragon;

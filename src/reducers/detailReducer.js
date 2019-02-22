@@ -16,8 +16,70 @@ const getManaBonus = (adventurer, key) => {
   return statArray.slice(index).reduce((acc, cur) => acc + cur);
 }
 
+
+const calcMight = (section, item, HP, STR) => {
+  const { mana, EX } = item;
+  let might = HP + STR;
+  if (section === "adventurer") {
+    const skillMightSet = {
+      "50": 500,       //300+200,
+      "45": 500,       //300+200,
+      "40": 400,       //200+200,
+      "30": 300,       //200+100,
+      "20": 200,       //100+100,
+      "10": 100,
+      "0": 100,
+    }
+    const abilityNameSet = {
+      "50": ["Abilities12", "Abilities22", "Abilities32"],
+      "45": ["Abilities12", "Abilities22", "Abilities32"],
+      "40": ["Abilities12", "Abilities22", "Abilities31"],
+      "30": ["Abilities12", "Abilities21", "Abilities31"],
+      "20": ["Abilities11", "Abilities21", "Abilities31"],
+      "10": ["Abilities11", "Abilities21"],
+      "0": [],
+    }
+
+    const abilitySet = abilityNameSet[mana];
+
+    for (const a of abilitySet) {
+      if (item[a]) {
+        might += item[a];
+      }
+    }
+
+    const manaValue = parseInt(mana, 10) || 0;
+    const fsMight = manaValue >= 40 ? 120 : manaValue >= 10 ? 60 : 0;
+    const EXValue = (parseInt(EX, 10) || 0) + 1;
+    might += skillMightSet[mana] + fsMight + item["ExAbilityData" + EXValue];
+  } else if (section === "weapon") {
+    if (item["Skill"] === "1") {
+      might += item.unbind === "4" ? 100 : 50;
+    }
+  } else if (section === "wyrmprint") {
+    const abilitySet = item.unbind === "4" ? ["Abilities12", "Abilities22", "Abilities32"] : ["Abilities11", "Abilities21", "Abilities31"];
+    for (const a of abilitySet) {
+      if (item[a]) {
+        might += item[a];
+      }
+    }
+  } else if (section === "dragon") {
+    //Skill Might Value
+    might += item.unbind === "4" ? 100 : 50;
+    const abilitySet = item.unbind === "4" ? ["Abilities12", "Abilities22"] : ["Abilities11", "Abilities21"];
+    for (const a of abilitySet) {
+      if (item[a]) {
+        might += item[a];
+      }
+    }
+
+    might += (parseInt(item.bond, 10) || 0) * 10;
+  }
+  return might;
+}
+
 const calcDetail = (section, item, modifier = 1) => {
-  let HP = 0, STR = 0;
+  let HP = 0, STR = 0, might = 0;
   if (item) {
     let { level, curRarity } = item;
     level = parseInt(level, 10);
@@ -54,13 +116,15 @@ const calcDetail = (section, item, modifier = 1) => {
     }
     HP = Math.ceil(Math.ceil(HP) * modifier);
     STR = Math.ceil(Math.ceil(STR) * modifier);
+    might = calcMight(section, item, HP, STR);
   }
-  return { HP, STR };
+  return { HP, STR, might };
 }
+
 
 const updateStats = (details, stats, section) => {
   if (!stats[section]) {
-    return { ...details, [section]: { HP: 0, STR: 0 } };
+    return { ...details, [section]: { HP: 0, STR: 0, might: 0 } };
   } else {
     let modifier = 1;
     if ((section === "weapon" || section === "dragon") && stats.adventurer && stats[section].element === stats.adventurer.element) {
@@ -104,7 +168,7 @@ const updateHalidom = (details, stats, halidom) => {
     STR += facility.STR;
   }
 
-  return { ...details, halidom: { HP, STR } };
+  return { ...details, halidom: { HP, STR, might: HP + STR } };
 }
 
 const updateAbility = (details, stats) => {
@@ -122,7 +186,7 @@ const updateAbility = (details, stats) => {
     HP = Math.ceil(prevHP * dragon[abilityName].HP * 0.01);
     STR = Math.ceil(prevSTR * dragon[abilityName].STR * 0.01);
   }
-  return { ...details, ability: { HP, STR } };
+  return { ...details, ability: { HP, STR, might: 0 } };
 }
 
 const updateDetails = (details, stats, halidom, section) => {
@@ -145,7 +209,7 @@ const resetDetails = (details) => {
   let new_details = { ...details };
   for (const d in details) {
     if (details.hasOwnProperty(d)) {
-      new_details = { ...new_details, [d]: { HP: 0, STR: 0 } };
+      new_details = { ...new_details, [d]: { HP: 0, STR: 0, might: 0 } };
     }
   }
   return new_details;

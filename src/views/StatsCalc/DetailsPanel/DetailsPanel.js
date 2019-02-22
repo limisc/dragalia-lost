@@ -9,6 +9,7 @@ import { Select } from "components";
 
 const mapStateToProps = (state) => {
   const { stats, halidom, details } = state;
+  console.log(details)
   return {
     stats,
     halidom,
@@ -62,13 +63,14 @@ class DetailsPanel extends Component {
   }
 
   _getTotal = (details) => {
-    let HP = 0, STR = 0;
+    let HP = 0, STR = 0, might = 0;
     const keys = Object.keys(details);
     for (const k of keys) {
       HP += details[k].HP;
       STR += details[k].STR;
+      might += details[k].might;
     }
-    return { HP, STR };
+    return { HP, STR, might };
   }
 
   _handleKeyPress = (e) => {
@@ -155,8 +157,9 @@ class DetailsPanel extends Component {
     }[lang];
 
 
-    const { STR = "", multiplier = "", element = "" } = this.state.info[dungeon] || {};
+    const { STR = "", multiplier = "" } = this.state.info[dungeon] || {};
     const total = this._getTotal(details);
+    console.log(total.might)
 
     const damage = this._calcDamage();
     const totalHP = this._calcHP(total.HP);
@@ -196,6 +199,7 @@ class DetailsPanel extends Component {
                 <TableCell></TableCell>
                 <TableCell align="right">{translate("HP", lang)}</TableCell>
                 <TableCell align="right">{translate("STR", lang)}</TableCell>
+                <TableCell align="right">{translate("might", lang)}</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -204,13 +208,15 @@ class DetailsPanel extends Component {
                   <TableCell>{translate(row, lang)}</TableCell>
                   <TableCell align="right">{details[row].HP}</TableCell>
                   <TableCell align="right">{details[row].STR}</TableCell>
+                  <TableCell align="right">{details[row].might}</TableCell>
                 </TableRow>
               ))}
 
               <TableRow>
-                <TableCell>{this.state.total[lang]}</TableCell>
+                <TableCell>{translate("total", lang)}</TableCell>
                 <TableCell align="right">{total.HP}</TableCell>
                 <TableCell align="right">{total.STR}</TableCell>
+                <TableCell align="right">{total.might}</TableCell>
               </TableRow>
             </TableBody>
           </Table>

@@ -39,23 +39,43 @@ class StatsField extends Component {
           />
         </Grid>
 
-        <Grid item xs={6}>
-          {section === "adventurer" ?
-            <SelectItem
-              label="curRarity"
-              section={section}
-            />
-            :
+        {section === "adventurer" &&
+          <>
+            <Grid item xs={6}>
+              <SelectItem
+                label="curRarity"
+                section={section}
+              />
+            </Grid>
+
+            <Grid item xs={6}>
+              <SelectItem
+                label="mana"
+                section={section}
+              />
+            </Grid>
+
+            <Grid item xs={6}>
+              <SelectItem
+                label="EX"
+                section={section}
+              />
+            </Grid>
+          </>
+        }
+
+        {section !== "adventurer" &&
+          <Grid item xs={6}>
             <SelectItem
               label="unbind"
               section={section}
             />
-          }
-        </Grid>
-        {section === "adventurer" &&
+          </Grid>
+        }
+        {section === "dragon" &&
           <Grid item xs={6}>
-            <SelectItem
-              label="mana"
+            <InputNumber
+              label="bond"
               section={section}
             />
           </Grid>

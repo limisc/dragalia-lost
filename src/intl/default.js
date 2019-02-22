@@ -12,7 +12,7 @@ export default {
   total: { en: "Total", zh: "合计", ja: "合計" },
   HP: { en: "HP", zh: "HP", ja: "HP" },
   STR: { en: "STR", zh: "攻击力", ja: "攻撃力" },
-
+  might: { en: "Might", zh: "战力", ja: "戦力" },
   //UI
   reset: { en: "Reset", zh: "重置", ja: "リセット" },
   default: { en: "Default", zh: "默认值", ja: "デフォルト" },

@@ -53,7 +53,11 @@ const updateRarity = (stats, action) => {
 
 const updateMana = (stats, action) => {
   const { section, value } = action;
-  return { ...stats, [section]: { ...stats[section], mana: value } };
+  let { EX } = stats[section];
+  if (value === "50") {
+    EX = "4";
+  }
+  return { ...stats, [section]: { ...stats[section], mana: value, EX } };
 }
 
 const updateUnbind = (stats, action) => {
@@ -64,6 +68,22 @@ const updateUnbind = (stats, action) => {
   const level = getStatsLimit(section, item.rarity, value);
   let updateSection = { ...item, unbind: value, level };
   return { ...stats, [section]: updateSection };
+}
+
+const updateEX = (stats, action) => {
+  const { section, value } = action;
+  let { mana } = stats[section];
+  if (mana === "50" && value !== "4") {
+    mana = "45";
+  }
+  return { ...stats, [section]: { ...stats[section], mana, EX: value } };
+}
+
+const updateBond = (stats, action) => {
+  const { section, value } = action;
+  let bond = parseInt(value, 10) || "";
+  if (bond > 30) bond = 30;
+  return { ...stats, [section]: { ...stats[section], bond } };
 }
 
 const statsCreator = (handler) => {
@@ -81,6 +101,8 @@ const updateStats = statsCreator({
   curRarity: updateRarity,
   mana: updateMana,
   unbind: updateUnbind,
+  EX: updateEX,
+  bond: updateBond,
 });
 
 const statsReducer = reducerCreator({

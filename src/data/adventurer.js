@@ -45,7 +45,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100002_01_r0",
@@ -92,7 +93,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100002_02_r0",
@@ -139,7 +141,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100003_01_r0",
@@ -186,7 +189,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100004_02_r0",
@@ -233,7 +237,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100004_01_r0",
@@ -280,7 +285,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100006_01_r0",
@@ -327,7 +333,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "100029_02_r0",
@@ -374,7 +381,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110001_01_r0",
@@ -421,7 +429,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110002_01_r0",
@@ -468,7 +477,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110003_01_r0",
@@ -515,7 +525,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110004_01_r0",
@@ -562,7 +573,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110005_01_r0",
@@ -609,7 +621,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110006_01_r0",
@@ -656,7 +669,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110007_01_r0",
@@ -703,7 +717,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110008_01_r0",
@@ -750,7 +765,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110009_01_r0",
@@ -797,7 +813,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110010_01_r0",
@@ -844,7 +861,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110011_02_r0",
@@ -891,7 +909,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110011_01_r0",
@@ -938,7 +957,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110012_01_r0",
@@ -985,7 +1005,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110013_01_r0",
@@ -1032,7 +1053,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110014_01_r0",
@@ -1079,7 +1101,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110015_01_r0",
@@ -1126,7 +1149,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110016_01_r0",
@@ -1173,7 +1197,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110017_01_r0",
@@ -1220,7 +1245,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110018_01_r0",
@@ -1267,7 +1293,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110019_01_r0",
@@ -1314,7 +1341,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110020_01_r0",
@@ -1361,7 +1389,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110021_01_r0",
@@ -1408,7 +1437,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110022_01_r0",
@@ -1455,7 +1485,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110022_02_r0",
@@ -1502,7 +1533,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110023_01_r0",
@@ -1549,7 +1581,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110024_01_r0",
@@ -1596,7 +1629,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110025_01_r0",
@@ -1643,7 +1677,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110026_01_r0",
@@ -1690,7 +1725,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110027_01_r0",
@@ -1737,7 +1773,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110028_01_r0",
@@ -1784,7 +1821,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110029_01_r0",
@@ -1831,7 +1869,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110030_01_r0",
@@ -1878,7 +1917,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110031_01_r0",
@@ -1925,7 +1965,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110032_01_r0",
@@ -1972,7 +2013,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110033_01_r0",
@@ -2020,6 +2062,7 @@ const adventurer =
     "level": 80,
     "mana": "50",
     "curRarity": "5",
+    "EX": "4",
     "defense1": 5,
     "defense2": 8,
     "exDefense0": 5,
@@ -2074,6 +2117,7 @@ const adventurer =
     "level": 80,
     "mana": "50",
     "curRarity": "5",
+    "EX": "4",
     "defense1": 15,
     "defense2": 20,
     "exHp0": 5,
@@ -2127,7 +2171,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110036_01_r0",
@@ -2174,7 +2219,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110037_01_r0",
@@ -2221,7 +2267,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110038_01_r0",
@@ -2268,7 +2315,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110039_01_r0",
@@ -2315,7 +2363,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110040_01_r0",
@@ -2362,7 +2411,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110041_01_r0",
@@ -2409,7 +2459,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110042_01_r0",
@@ -2456,7 +2507,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110043_01_r0",
@@ -2503,7 +2555,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110043_02_r0",
@@ -2550,7 +2603,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110044_01_r0",
@@ -2597,7 +2651,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110045_01_r0",
@@ -2644,7 +2699,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110046_01_r0",
@@ -2691,7 +2747,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110047_02_r0",
@@ -2738,7 +2795,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110047_01_r0",
@@ -2785,7 +2843,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110048_01_r0",
@@ -2832,7 +2891,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110049_02_r0",
@@ -2879,7 +2939,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110049_01_r0",
@@ -2926,7 +2987,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110050_01_r0",
@@ -2973,7 +3035,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110051_01_r0",
@@ -3020,7 +3083,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110052_01_r0",
@@ -3067,7 +3131,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110052_03_r0",
@@ -3114,7 +3179,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110053_02_r0",
@@ -3161,7 +3227,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110053_01_r0",
@@ -3208,7 +3275,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110063_01_r0",
@@ -3255,7 +3323,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110067_01_r0",
@@ -3302,7 +3371,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110252_01_r0",
@@ -3349,7 +3419,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110253_01_r0",
@@ -3396,7 +3467,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110254_01_r0",
@@ -3443,7 +3515,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110255_01_r0",
@@ -3490,7 +3563,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110256_01_r0",
@@ -3537,7 +3611,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110257_01_r0",
@@ -3584,7 +3659,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110258_01_r0",
@@ -3631,7 +3707,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110261_01_r0",
@@ -3678,7 +3755,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110266_01_r0",
@@ -3725,7 +3803,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110267_01_r0",
@@ -3772,7 +3851,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110268_01_r0",
@@ -3819,7 +3899,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110269_01_r0",
@@ -3866,7 +3947,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110270_01_r0",
@@ -3913,7 +3995,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110275_01_r0",
@@ -3960,7 +4043,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110276_01_r0",
@@ -4007,7 +4091,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110302_01_r0",
@@ -4055,6 +4140,7 @@ const adventurer =
     "level": 80,
     "mana": "50",
     "curRarity": "5",
+    "EX": "4",
     "defense1": 8,
     "defense2": 10,
     "exHp0": 7,
@@ -4108,7 +4194,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110304_01_r0",
@@ -4155,7 +4242,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110305_01_r0",
@@ -4202,7 +4290,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110310_01_r0",
@@ -4249,7 +4338,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110311_01_r0",
@@ -4296,7 +4386,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110312_01_r0",
@@ -4343,7 +4434,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110313_01_r0",
@@ -4390,7 +4482,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110314_01_r0",
@@ -4437,7 +4530,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110315_01_r0",
@@ -4484,7 +4578,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   },
   {
     "Id": "110316_01_r0",
@@ -4531,7 +4626,8 @@ const adventurer =
     "MAX_LEVEL": 80,
     "level": 80,
     "mana": "50",
-    "curRarity": "5"
+    "curRarity": "5",
+    "EX": "4"
   }
 ];
 export default adventurer;
