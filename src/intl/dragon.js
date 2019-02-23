@@ -259,6 +259,11 @@ const dragon =
     "en": "Long Long",
     "ja": "ロンロン",
     "zh": "龙龙"
+  },
+  "210089": {
+    "en": "Bronze Fafnir",
+    "ja": "",
+    "zh": "铜法芙纳"
   }
 };
 export default dragon;

@@ -25,12 +25,12 @@ export default {
   rarity: { en: "Rarity", zh: "稀有度", ja: "レアリティ" },
   curRarity: { en: "Rarity", zh: "稀有度", ja: "レアリティ" },
   mana: { en: "Mana Circle", zh: "魔法圆环", ja: "マナサークル" },
-  EX: { en: "EX", zh: "EX", ja: "EXアビリティ" },
+  EX: { en: "CoAbility", zh: "EX", ja: "EXアビリティ" },
   type: { en: "Type", zh: "武器种类", ja: "武器種" },
   element: { en: "Element", zh: "属性", ja: "属性" },
   tier: { en: "Tier", zh: "阶段", ja: "段階" },
   unbind: { en: "Unbind", zh: "上限解锁", ja: "上限解放" },
-
+  bond: { en: "Bond", zh: "信赖度", ja: "Bond" },
   //weaponType
   Sword: { en: "Sword", zh: "剑", ja: "剣" },
   Blade: { en: "Blade", zh: "刀", ja: "刀" },

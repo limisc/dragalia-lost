@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { AppContext } from "context";
-import { translate, updateStats } from "actions";
+import { updateStats } from "actions";
 import { Select } from "components";
 const mapStateToProps = (state, props) => {
   const { section } = props;
@@ -53,7 +52,6 @@ class SelectItem extends Component {
   }
 
   render() {
-    const { lang } = this.context;
     const { label, item } = this.props;
     const options = this._getOptions(label, item);
     let value = "", disabled = true;
@@ -67,7 +65,7 @@ class SelectItem extends Component {
 
       <Select
         disabled={disabled}
-        label={translate(label, lang)}
+        label={label}
         options={options}
         value={value}
         onChange={this._onChange}
@@ -75,7 +73,6 @@ class SelectItem extends Component {
     );
   }
 }
-SelectItem.contextType = AppContext;
 
 SelectItem.propTypes = {
   label: PropTypes.string.isRequired,
