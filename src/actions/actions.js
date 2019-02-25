@@ -84,6 +84,7 @@ const updateDetails = (section) => (dispatch) => {
   switch (section) {
     case "adventurer":
       dispatch(handler("weapon"));
+      dispatch(handler("dragon"));
       break;
     case "weapon":
       dispatch(handler("adventurer"));
