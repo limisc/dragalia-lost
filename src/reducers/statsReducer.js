@@ -33,7 +33,7 @@ const setValue = (value, section, rarity, unbind) => {
   const limit = getStatsLimit(section, rarity, unbind);
   let new_value = parseInt(value, 10) || "";
   if (new_value > limit) new_value = limit;
-  return new_value;
+  return new_value.toString();
 }
 
 const updateLevel = (stats, action) => {
@@ -48,7 +48,8 @@ const updateRarity = (stats, action) => {
   const item = stats[section];
   const level = getStatsLimit(section, value);
   const mana = setValue(item.mana, "mana", value);
-  return { ...stats, [section]: { ...item, curRarity: value, level, mana } };
+  const EX = value !== "5" ? "0" : item.EX;
+  return { ...stats, [section]: { ...item, curRarity: value, level, mana, EX } };
 }
 
 const updateMana = (stats, action) => {

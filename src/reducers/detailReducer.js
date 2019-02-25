@@ -30,7 +30,8 @@ const calcMight = (section, item, HP, STR) => {
       "10": 100,
       "0": 100,
     }
-    const abilityNameSet = {
+
+    const rarity5Set = {
       "50": ["Abilities12", "Abilities22", "Abilities32"],
       "45": ["Abilities12", "Abilities22", "Abilities32"],
       "40": ["Abilities12", "Abilities22", "Abilities31"],
@@ -40,7 +41,17 @@ const calcMight = (section, item, HP, STR) => {
       "0": [],
     }
 
-    const abilitySet = abilityNameSet[mana];
+    const rarityResSet = {
+      "50": ["Abilities12", "Abilities22", "Abilities31"],
+      "45": ["Abilities12", "Abilities22", "Abilities31"],
+      "40": ["Abilities12", "Abilities22"],
+      "30": ["Abilities12", "Abilities21"],
+      "20": ["Abilities11", "Abilities21"],
+      "10": ["Abilities11", "Abilities21"],
+      "0": [],
+    }
+
+    const abilitySet = item.rarity === "5" ? rarity5Set[mana] : rarityResSet[mana];
 
     for (const a of abilitySet) {
       if (item[a]) {
@@ -99,7 +110,7 @@ const calcDetail = (section, item, modifier = 1) => {
       let base_HP, base_STR, stepHP, stepSTR;
       if (section === "adventurer") {
         base_HP = item["MinHp" + curRarity];
-        base_STR = item["MinHp" + curRarity];
+        base_STR = item["MinAtk" + curRarity];
         stepHP = "MinHp5";
         stepSTR = "MinAtk5";
       } else {
