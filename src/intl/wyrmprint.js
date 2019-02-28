@@ -375,6 +375,11 @@ const wyrmprint =
     "ja": "チョコレート・レッスン",
     "zh": "手工巧克力·教学"
   },
+  "400093": {
+    "en": "New World Escort",
+    "ja": "旅のエスコート",
+    "zh": "旅途的护卫"
+  },
   "400099": {
     "en": "Jewels of the Sun",
     "ja": "宝石と剣",
@@ -580,10 +585,30 @@ const wyrmprint =
     "ja": "オネストモーメント",
     "zh": "坦率一刻"
   },
+  "400150": {
+    "en": "A Solitary Light",
+    "ja": "闇の光条",
+    "zh": "暗之光芒"
+  },
+  "400151": {
+    "en": "The Davian Wetlands",
+    "ja": "ダビアの湿地帯",
+    "zh": "达比亚湿地"
+  },
+  "400152": {
+    "en": "Delightful Dancer",
+    "ja": "可憐な舞姫",
+    "zh": "楚楚动人的舞姫"
+  },
   "400163": {
     "en": "Kung Fu Masters",
     "ja": "功夫の道",
     "zh": "功夫之道"
+  },
+  "400167": {
+    "en": "The Shining Overlord",
+    "ja": "シャイニング・オーバーロード",
+    "zh": "光辉・至高霸主"
   },
   "wyrmprint": {
     "en": "Wyrmprint",

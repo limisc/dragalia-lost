@@ -1513,6 +1513,26 @@ const wyrmprint =
     "unbind": "4"
   },
   {
+    "Id": "400093_0",
+    "Name": {
+      "en": "New World Escort",
+      "ja": "旅のエスコート",
+      "zh": "旅途的护卫"
+    },
+    "rarity": "4",
+    "MinHp": 21,
+    "MaxHp": 141,
+    "MinAtk": 7,
+    "MaxAtk": 51,
+    "Abilities11": 20,
+    "Abilities12": 30,
+    "Abilities21": 20,
+    "Abilities22": 40,
+    "MAX_LEVEL": 80,
+    "level": 80,
+    "unbind": "4"
+  },
+  {
     "Id": "400099_0",
     "Name": {
       "en": "Jewels of the Sun",
@@ -2213,8 +2233,8 @@ const wyrmprint =
     "MaxHp": 10,
     "MinAtk": 10,
     "MaxAtk": 10,
-    "Abilities11": 60,
-    "Abilities12": 60,
+    "Abilities11": 100,
+    "Abilities12": 100,
     "MAX_LEVEL": 100,
     "level": 100,
     "unbind": "4"
@@ -2310,6 +2330,67 @@ const wyrmprint =
     "unbind": "4"
   },
   {
+    "Id": "400150_0",
+    "Name": {
+      "en": "A Solitary Light",
+      "ja": "闇の光条",
+      "zh": "暗之光芒"
+    },
+    "rarity": "5",
+    "MinHp": 29,
+    "MaxHp": 195,
+    "MinAtk": 6,
+    "MaxAtk": 46,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 40,
+    "Abilities22": 60,
+    "elementRes": "Shadow",
+    "res1": 5,
+    "res2": 8,
+    "MAX_LEVEL": 100,
+    "level": 100,
+    "unbind": "4"
+  },
+  {
+    "Id": "400151_0",
+    "Name": {
+      "en": "The Davian Wetlands",
+      "ja": "ダビアの湿地帯",
+      "zh": "达比亚湿地"
+    },
+    "rarity": "3",
+    "MinHp": 11,
+    "MaxHp": 76,
+    "MinAtk": 3,
+    "MaxAtk": 20,
+    "Abilities11": 10,
+    "Abilities12": 20,
+    "MAX_LEVEL": 60,
+    "level": 60,
+    "unbind": "4"
+  },
+  {
+    "Id": "400152_0",
+    "Name": {
+      "en": "Delightful Dancer",
+      "ja": "可憐な舞姫",
+      "zh": "楚楚动人的舞姫"
+    },
+    "rarity": "4",
+    "MinHp": 18,
+    "MaxHp": 122,
+    "MinAtk": 4,
+    "MaxAtk": 33,
+    "Abilities11": 10,
+    "Abilities12": 20,
+    "Abilities21": 20,
+    "Abilities22": 40,
+    "MAX_LEVEL": 80,
+    "level": 80,
+    "unbind": "4"
+  },
+  {
     "Id": "400163_0",
     "Name": {
       "en": "Kung Fu Masters",
@@ -2325,6 +2406,26 @@ const wyrmprint =
     "Abilities12": 100,
     "Abilities21": 20,
     "Abilities22": 40,
+    "MAX_LEVEL": 100,
+    "level": 100,
+    "unbind": "4"
+  },
+  {
+    "Id": "400167_0",
+    "Name": {
+      "en": "The Shining Overlord",
+      "ja": "シャイニング・オーバーロード",
+      "zh": "光辉・至高霸主"
+    },
+    "rarity": "5",
+    "MinHp": 26,
+    "MaxHp": 176,
+    "MinAtk": 9,
+    "MaxAtk": 65,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 60,
+    "Abilities22": 80,
     "MAX_LEVEL": 100,
     "level": 100,
     "unbind": "4"

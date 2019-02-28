@@ -789,6 +789,65 @@ const dragon =
     "bond": "30"
   },
   {
+    "Id": "210045_01",
+    "Name": {
+      "en": "Phantom",
+      "ja": "ファントム",
+      "zh": "幽影"
+    },
+    "element": "Shadow",
+    "rarity": "5",
+    "MinHp": 22,
+    "MaxHp": 224,
+    "MinAtk": 7,
+    "MaxAtk": 73,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "ability1": {
+      "HP": 0,
+      "STR": 20
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 30
+    },
+    "MAX_LEVEL": 100,
+    "level": 100,
+    "unbind": "4",
+    "bond": "30"
+  },
+  {
+    "Id": "210048_01",
+    "Name": {
+      "en": "Gilgamesh",
+      "ja": "ギルガメッシュ",
+      "zh": "吉尔伽美什"
+    },
+    "element": "Light",
+    "rarity": "5",
+    "MinHp": 37,
+    "MaxHp": 371,
+    "MinAtk": 12,
+    "MaxAtk": 124,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "ability1": {
+      "HP": 0,
+      "STR": 35
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 50
+    },
+    "elementRes": "Shadow",
+    "res1": 15,
+    "res2": 15,
+    "MAX_LEVEL": 100,
+    "level": 100,
+    "unbind": "4",
+    "bond": "30"
+  },
+  {
     "Id": "210049_01",
     "Name": {
       "en": "Cupid",
