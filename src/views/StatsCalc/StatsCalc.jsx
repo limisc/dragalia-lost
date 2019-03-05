@@ -14,19 +14,20 @@ class StatsCalc extends Component {
     document.title = getTitle(lang);
     return (
       <AppContext.Provider value={{ lang }}>
-        <Grid container
+        <Grid
+          container
           spacing={8}
           alignItems="flex-start"
         >
-          <Grid item xs={12} lg={4} container >
+          <Grid container item xs={12} md={4}>
             <Paper className="fluid padding">
               <DetailsPanel />
             </Paper>
           </Grid>
-          <Grid item xs={12} lg={4} container>
+          <Grid container item xs={12} md={4} className="sticky">
             <StatsPanel />
           </Grid>
-          <Grid item xs={12} lg={4} container>
+          <Grid container item xs={12} md={4}>
             <TablePanel />
           </Grid>
         </Grid>

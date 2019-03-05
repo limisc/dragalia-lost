@@ -14,9 +14,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400007_0",
@@ -32,9 +33,10 @@ const wyrmprint =
     "MaxAtk": 23,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400008_0",
@@ -50,9 +52,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400009_0",
@@ -68,9 +71,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400010_0",
@@ -86,9 +90,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400011_0",
@@ -104,9 +109,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400012_0",
@@ -122,9 +128,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400013_0",
@@ -140,9 +147,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400014_0",
@@ -158,9 +166,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400015_0",
@@ -176,9 +185,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400016_0",
@@ -194,9 +204,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400017_0",
@@ -212,9 +223,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 30,
     "Abilities12": 50,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400018_0",
@@ -230,9 +242,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400019_0",
@@ -248,9 +261,10 @@ const wyrmprint =
     "MaxAtk": 23,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400020_0",
@@ -266,9 +280,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400021_0",
@@ -284,9 +299,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400022_0",
@@ -302,9 +318,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400023_0",
@@ -320,9 +337,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400024_0",
@@ -338,9 +356,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400025_0",
@@ -356,9 +375,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400026_0",
@@ -374,9 +394,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400027_0",
@@ -392,9 +413,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400028_0",
@@ -410,9 +432,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400029_0",
@@ -428,9 +451,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400031_0",
@@ -446,27 +470,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
-  },
-  {
-    "Id": "400032_0",
-    "Name": {
-      "en": "Pumpkin Pail",
-      "ja": "パンプキンボックス",
-      "zh": "南瓜盒"
-    },
-    "rarity": "3",
-    "MinHp": 11,
-    "MaxHp": 76,
-    "MinAtk": 3,
-    "MaxAtk": 20,
-    "Abilities11": 10,
-    "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400033_0",
@@ -484,9 +491,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400034_0",
@@ -504,9 +510,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400035_0",
@@ -524,9 +529,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400036_0",
@@ -544,12 +548,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Water",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400037_0",
@@ -567,12 +570,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Flame",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400038_0",
@@ -590,12 +592,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Wind",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400039_0",
@@ -613,12 +614,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Light",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400040_0",
@@ -636,12 +636,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400041_0",
@@ -659,9 +658,8 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400042_0",
@@ -679,12 +677,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Water",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400043_0",
@@ -702,9 +699,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400044_0",
@@ -722,9 +718,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400045_0",
@@ -742,9 +737,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400046_0",
@@ -762,9 +756,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400047_0",
@@ -782,11 +775,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
+    "Abilities31": 0,
+    "Abilities32": 0,
+    "elementDef": "",
     "defense1": 15,
-    "defense2": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "defense2": 20
   },
   {
     "Id": "400048_0",
@@ -804,9 +797,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400049_0",
@@ -824,9 +816,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400050_0",
@@ -844,12 +835,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Light",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400051_0",
@@ -867,9 +857,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400052_0",
@@ -887,11 +876,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
+    "elementDef": "",
     "defense1": 15,
-    "defense2": 20,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "defense2": 20
   },
   {
     "Id": "400053_0",
@@ -909,9 +898,8 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 10,
     "Abilities22": 20,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400055_0",
@@ -929,12 +917,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Wind",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400056_0",
@@ -952,12 +939,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Water",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400057_0",
@@ -975,12 +961,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Flame",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400058_0",
@@ -998,12 +983,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Light",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400059_0",
@@ -1021,12 +1005,11 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400060_0",
@@ -1044,9 +1027,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400061_0",
@@ -1064,9 +1046,8 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400062_0",
@@ -1084,9 +1065,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400063_0",
@@ -1104,12 +1084,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Wind",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400064_0",
@@ -1127,9 +1106,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400065_0",
@@ -1147,9 +1125,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 20,
     "Abilities22": 30,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400066_0",
@@ -1167,9 +1144,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400067_0",
@@ -1187,12 +1163,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Flame",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400068_0",
@@ -1210,12 +1185,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Light",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400069_0",
@@ -1233,9 +1207,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 30,
     "Abilities22": 50,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400070_0",
@@ -1253,9 +1226,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400071_0",
@@ -1273,9 +1245,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400072_0",
@@ -1295,15 +1266,12 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 20,
     "Abilities32": 40,
-    "enemy": "hms",
-    "reduce1": 20,
-    "reduce2": 25,
+    "conquer": "hms",
+    "reduceDamage1": 20,
+    "reduceDamage2": 25,
     "elementRes": "Wind",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400074_0",
@@ -1321,9 +1289,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400075_0",
@@ -1341,9 +1308,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400076_0",
@@ -1361,12 +1327,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Flame",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400077_0",
@@ -1384,9 +1349,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400078_0",
@@ -1404,12 +1368,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400080_0",
@@ -1427,9 +1390,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400087_0",
@@ -1445,9 +1407,10 @@ const wyrmprint =
     "MaxAtk": 54,
     "Abilities11": 60,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400090_0",
@@ -1465,12 +1428,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400091_0",
@@ -1488,11 +1450,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
+    "elementDef": "",
     "defense1": 8,
-    "defense2": 10,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "defense2": 10
   },
   {
     "Id": "400092_0",
@@ -1508,9 +1470,10 @@ const wyrmprint =
     "MaxAtk": 62,
     "Abilities11": 60,
     "Abilities12": 100,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400093_0",
@@ -1528,9 +1491,8 @@ const wyrmprint =
     "Abilities12": 30,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400099_0",
@@ -1548,9 +1510,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400100_0",
@@ -1566,9 +1527,10 @@ const wyrmprint =
     "MaxAtk": 41,
     "Abilities11": 50,
     "Abilities12": 60,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400101_0",
@@ -1584,9 +1546,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400102_0",
@@ -1604,9 +1567,8 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400103_0",
@@ -1624,9 +1586,8 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400104_0",
@@ -1644,9 +1605,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 50,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400105_0",
@@ -1664,9 +1624,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400106_0",
@@ -1682,11 +1641,13 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 20,
     "Abilities12": 40,
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0,
+    "elementDef": "",
     "defense1": 13,
-    "defense2": 15,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "defense2": 15
   },
   {
     "Id": "400107_0",
@@ -1702,9 +1663,10 @@ const wyrmprint =
     "MaxAtk": 49,
     "Abilities11": 60,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400110_0",
@@ -1722,9 +1684,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400111_0",
@@ -1742,9 +1703,8 @@ const wyrmprint =
     "Abilities12": 70,
     "Abilities21": 40,
     "Abilities22": 50,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400112_0",
@@ -1762,12 +1722,11 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400113_0",
@@ -1783,9 +1742,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 30,
     "Abilities12": 50,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400114_0",
@@ -1803,9 +1763,8 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400115_0",
@@ -1823,9 +1782,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400116_0",
@@ -1843,9 +1801,8 @@ const wyrmprint =
     "Abilities12": 40,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400117_0",
@@ -1861,9 +1818,10 @@ const wyrmprint =
     "MaxAtk": 23,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400118_0",
@@ -1879,9 +1837,10 @@ const wyrmprint =
     "MaxAtk": 53,
     "Abilities11": 30,
     "Abilities12": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400121_0",
@@ -1901,15 +1860,12 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 20,
     "Abilities32": 40,
-    "enemy": "hbh",
-    "reduce1": 20,
-    "reduce2": 25,
+    "conquer": "hbh",
+    "reduceDamage1": 20,
+    "reduceDamage2": 25,
     "elementRes": "Flame",
-    "res1": 3,
-    "res2": 5,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 3,
+    "resistance2": 5
   },
   {
     "Id": "400123_0",
@@ -1925,9 +1881,10 @@ const wyrmprint =
     "MaxAtk": 10,
     "Abilities11": 100,
     "Abilities12": 100,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400124_0",
@@ -1945,12 +1902,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 80,
     "Abilities22": 100,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Light",
-    "res1": 8,
-    "res2": 10,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 8,
+    "resistance2": 10
   },
   {
     "Id": "400125_0",
@@ -1968,9 +1924,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 50,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400126_0",
@@ -1988,9 +1943,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400127_0",
@@ -2008,9 +1962,8 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400128_0",
@@ -2028,12 +1981,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400129_0",
@@ -2051,9 +2003,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400130_0",
@@ -2069,9 +2020,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400131_0",
@@ -2087,9 +2039,10 @@ const wyrmprint =
     "MaxAtk": 54,
     "Abilities11": 60,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400136_0",
@@ -2107,9 +2060,8 @@ const wyrmprint =
     "Abilities12": 60,
     "Abilities21": 60,
     "Abilities22": 60,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400137_0",
@@ -2125,9 +2077,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 20,
     "Abilities12": 40,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400138_0",
@@ -2143,9 +2096,10 @@ const wyrmprint =
     "MaxAtk": 33,
     "Abilities11": 50,
     "Abilities12": 60,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400139_0",
@@ -2163,9 +2117,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400140_0",
@@ -2181,9 +2134,10 @@ const wyrmprint =
     "MaxAtk": 50,
     "Abilities11": 40,
     "Abilities12": 60,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400141_0",
@@ -2199,9 +2153,10 @@ const wyrmprint =
     "MaxAtk": 25,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400142_0",
@@ -2217,9 +2172,10 @@ const wyrmprint =
     "MaxAtk": 53,
     "Abilities11": 60,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400143_0",
@@ -2235,9 +2191,10 @@ const wyrmprint =
     "MaxAtk": 10,
     "Abilities11": 100,
     "Abilities12": 100,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400144_0",
@@ -2253,9 +2210,10 @@ const wyrmprint =
     "MaxAtk": 41,
     "Abilities11": 80,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400145_0",
@@ -2271,9 +2229,10 @@ const wyrmprint =
     "MaxAtk": 41,
     "Abilities11": 80,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400146_0",
@@ -2289,9 +2248,10 @@ const wyrmprint =
     "MaxAtk": 41,
     "Abilities11": 80,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400147_0",
@@ -2307,9 +2267,10 @@ const wyrmprint =
     "MaxAtk": 38,
     "Abilities11": 80,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400148_0",
@@ -2325,9 +2286,10 @@ const wyrmprint =
     "MaxAtk": 40,
     "Abilities11": 80,
     "Abilities12": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400150_0",
@@ -2345,12 +2307,11 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 40,
     "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0,
     "elementRes": "Shadow",
-    "res1": 5,
-    "res2": 8,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "resistance1": 5,
+    "resistance2": 8
   },
   {
     "Id": "400151_0",
@@ -2366,9 +2327,10 @@ const wyrmprint =
     "MaxAtk": 20,
     "Abilities11": 10,
     "Abilities12": 20,
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4"
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400152_0",
@@ -2386,9 +2348,8 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400163_0",
@@ -2406,9 +2367,8 @@ const wyrmprint =
     "Abilities12": 100,
     "Abilities21": 20,
     "Abilities22": 40,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   },
   {
     "Id": "400167_0",
@@ -2426,9 +2386,8 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 60,
     "Abilities22": 80,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4"
+    "Abilities31": 0,
+    "Abilities32": 0
   }
 ];
 export default wyrmprint;

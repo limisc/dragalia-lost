@@ -1,4 +1,11 @@
-export { default as adventurer } from "./adventurer";
-export { default as weapon } from "./weapon";
-export { default as wyrmprint } from "./wyrmprint";
-export { default as dragon } from "./dragon";
+import adventurer from "./adventurer";
+import weapon from "./weapon";
+import wyrmprint from "./wyrmprint";
+import dragon from "./dragon";
+
+export {
+  adventurer,
+  weapon,
+  wyrmprint,
+  dragon,
+};

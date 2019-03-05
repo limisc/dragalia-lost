@@ -15,6 +15,8 @@ const dragon =
     "MaxAtk": 66,
     "Abilities11": 30,
     "Abilities12": 50,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 8,
       "STR": 8
@@ -22,11 +24,7 @@ const dragon =
     "ability2": {
       "HP": 10,
       "STR": 10
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210002_01",
@@ -43,6 +41,8 @@ const dragon =
     "MaxAtk": 70,
     "Abilities11": 30,
     "Abilities12": 40,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 15
@@ -50,11 +50,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 20
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210003_01",
@@ -71,6 +67,8 @@ const dragon =
     "MaxAtk": 62,
     "Abilities11": 30,
     "Abilities12": 40,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 15,
       "STR": 0
@@ -78,11 +76,7 @@ const dragon =
     "ability2": {
       "HP": 20,
       "STR": 0
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210004_01",
@@ -99,6 +93,8 @@ const dragon =
     "MaxAtk": 65,
     "Abilities11": 30,
     "Abilities12": 50,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 8,
       "STR": 8
@@ -106,11 +102,7 @@ const dragon =
     "ability2": {
       "HP": 10,
       "STR": 10
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210005_01",
@@ -127,6 +119,8 @@ const dragon =
     "MaxAtk": 70,
     "Abilities11": 30,
     "Abilities12": 40,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 15
@@ -134,11 +128,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 20
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210006_01",
@@ -155,6 +145,8 @@ const dragon =
     "MaxAtk": 97,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 30,
       "STR": 0
@@ -162,11 +154,7 @@ const dragon =
     "ability2": {
       "HP": 45,
       "STR": 0
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210007_01",
@@ -183,6 +171,8 @@ const dragon =
     "MaxAtk": 101,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -190,11 +180,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210008_01",
@@ -211,6 +197,8 @@ const dragon =
     "MaxAtk": 95,
     "Abilities11": 60,
     "Abilities12": 70,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 15,
       "STR": 15
@@ -218,11 +206,7 @@ const dragon =
     "ability2": {
       "HP": 20,
       "STR": 20
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210010_01",
@@ -239,6 +223,8 @@ const dragon =
     "MaxAtk": 72,
     "Abilities11": 40,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 0
@@ -246,11 +232,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 0
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210011_01",
@@ -267,6 +249,8 @@ const dragon =
     "MaxAtk": 91,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 30,
       "STR": 0
@@ -274,11 +258,7 @@ const dragon =
     "ability2": {
       "HP": 45,
       "STR": 0
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210012_01",
@@ -295,6 +275,8 @@ const dragon =
     "MaxAtk": 95,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 30,
       "STR": 0
@@ -302,11 +284,7 @@ const dragon =
     "ability2": {
       "HP": 45,
       "STR": 0
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210013_01",
@@ -323,6 +301,8 @@ const dragon =
     "MaxAtk": 100,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -330,11 +310,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210014_01",
@@ -351,6 +327,8 @@ const dragon =
     "MaxAtk": 102,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -358,11 +336,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210015_01",
@@ -379,6 +353,8 @@ const dragon =
     "MaxAtk": 97,
     "Abilities11": 60,
     "Abilities12": 70,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 15,
       "STR": 15
@@ -386,11 +362,7 @@ const dragon =
     "ability2": {
       "HP": 20,
       "STR": 20
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210016_01",
@@ -407,6 +379,8 @@ const dragon =
     "MaxAtk": 127,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -414,11 +388,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210017_01",
@@ -435,6 +405,8 @@ const dragon =
     "MaxAtk": 125,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -442,11 +414,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210018_01",
@@ -463,6 +431,8 @@ const dragon =
     "MaxAtk": 126,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -470,11 +440,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210019_01",
@@ -491,6 +457,8 @@ const dragon =
     "MaxAtk": 121,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 20
@@ -498,11 +466,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210020_01",
@@ -519,6 +483,8 @@ const dragon =
     "MaxAtk": 113,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 40,
       "STR": 0
@@ -526,11 +492,7 @@ const dragon =
     "ability2": {
       "HP": 60,
       "STR": 0
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210021_01",
@@ -547,6 +509,8 @@ const dragon =
     "MaxAtk": 63,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 10
@@ -554,11 +518,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 15
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210022_01",
@@ -575,6 +535,8 @@ const dragon =
     "MaxAtk": 57,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 0
@@ -582,11 +544,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 0
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210023_01",
@@ -603,6 +561,8 @@ const dragon =
     "MaxAtk": 60,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 5,
       "STR": 5
@@ -610,11 +570,7 @@ const dragon =
     "ability2": {
       "HP": 8,
       "STR": 8
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210024_01",
@@ -631,6 +587,8 @@ const dragon =
     "MaxAtk": 127,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -638,11 +596,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210025_01",
@@ -659,6 +613,8 @@ const dragon =
     "MaxAtk": 119,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 20
@@ -666,11 +622,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210036_01",
@@ -687,6 +639,8 @@ const dragon =
     "MaxAtk": 114,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 40,
       "STR": 0
@@ -694,11 +648,7 @@ const dragon =
     "ability2": {
       "HP": 60,
       "STR": 0
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210038_01",
@@ -724,11 +674,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210039_01",
@@ -754,11 +700,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210043_01",
@@ -775,6 +717,8 @@ const dragon =
     "MaxAtk": 119,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 20
@@ -782,11 +726,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210045_01",
@@ -803,6 +743,8 @@ const dragon =
     "MaxAtk": 73,
     "Abilities11": 40,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 20
@@ -810,11 +752,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210048_01",
@@ -831,6 +769,8 @@ const dragon =
     "MaxAtk": 124,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 35
@@ -840,12 +780,8 @@ const dragon =
       "STR": 50
     },
     "elementRes": "Shadow",
-    "res1": 15,
-    "res2": 15,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    "resistance1": 15,
+    "resistance2": 15
   },
   {
     "Id": "210049_01",
@@ -862,6 +798,8 @@ const dragon =
     "MaxAtk": 119,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -869,11 +807,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210050_01",
@@ -890,6 +824,8 @@ const dragon =
     "MaxAtk": 101,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -897,11 +833,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210052_01",
@@ -918,6 +850,8 @@ const dragon =
     "MaxAtk": 121,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 35
@@ -927,12 +861,8 @@ const dragon =
       "STR": 50
     },
     "elementRes": "Wind",
-    "res1": 15,
-    "res2": 15,
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    "resistance1": 15,
+    "resistance2": 15
   },
   {
     "Id": "210057_01",
@@ -949,6 +879,8 @@ const dragon =
     "MaxAtk": 76,
     "Abilities11": 40,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 20
@@ -956,11 +888,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 30
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210058_01",
@@ -977,6 +905,8 @@ const dragon =
     "MaxAtk": 100,
     "Abilities11": 60,
     "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -984,11 +914,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210059_01",
@@ -1005,6 +931,8 @@ const dragon =
     "MaxAtk": 63,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 10
@@ -1012,11 +940,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 15
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210060_01",
@@ -1033,6 +957,8 @@ const dragon =
     "MaxAtk": 63,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 10
@@ -1040,11 +966,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 15
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210061_01",
@@ -1061,6 +983,8 @@ const dragon =
     "MaxAtk": 62,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 10
@@ -1068,11 +992,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 15
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210062_01",
@@ -1089,6 +1009,8 @@ const dragon =
     "MaxAtk": 64,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 10
@@ -1096,11 +1018,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 15
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210063_01",
@@ -1117,6 +1035,8 @@ const dragon =
     "MaxAtk": 57,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 0
@@ -1124,11 +1044,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 0
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210064_01",
@@ -1145,6 +1061,8 @@ const dragon =
     "MaxAtk": 57,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 0
@@ -1152,11 +1070,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 0
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210065_01",
@@ -1173,6 +1087,8 @@ const dragon =
     "MaxAtk": 56,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 0
@@ -1180,11 +1096,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 0
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210066_01",
@@ -1201,6 +1113,8 @@ const dragon =
     "MaxAtk": 58,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 0
@@ -1208,11 +1122,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 0
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210067_01",
@@ -1229,6 +1139,8 @@ const dragon =
     "MaxAtk": 60,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 5,
       "STR": 5
@@ -1236,11 +1148,7 @@ const dragon =
     "ability2": {
       "HP": 8,
       "STR": 8
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210068_01",
@@ -1257,6 +1165,8 @@ const dragon =
     "MaxAtk": 60,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 5,
       "STR": 5
@@ -1264,11 +1174,7 @@ const dragon =
     "ability2": {
       "HP": 8,
       "STR": 8
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210069_01",
@@ -1285,6 +1191,8 @@ const dragon =
     "MaxAtk": 59,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 5,
       "STR": 5
@@ -1292,11 +1200,7 @@ const dragon =
     "ability2": {
       "HP": 8,
       "STR": 8
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210070_01",
@@ -1313,6 +1217,8 @@ const dragon =
     "MaxAtk": 61,
     "Abilities11": 20,
     "Abilities12": 30,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 5,
       "STR": 5
@@ -1320,11 +1226,7 @@ const dragon =
     "ability2": {
       "HP": 8,
       "STR": 8
-    },
-    "MAX_LEVEL": 60,
-    "level": 60,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210072_01",
@@ -1341,6 +1243,8 @@ const dragon =
     "MaxAtk": 73,
     "Abilities11": 50,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 10,
       "STR": 10
@@ -1348,11 +1252,7 @@ const dragon =
     "ability2": {
       "HP": 15,
       "STR": 15
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210075_01",
@@ -1369,6 +1269,8 @@ const dragon =
     "MaxAtk": 95,
     "Abilities11": 60,
     "Abilities12": 70,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 15,
       "STR": 15
@@ -1376,11 +1278,7 @@ const dragon =
     "ability2": {
       "HP": 20,
       "STR": 20
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210076_01",
@@ -1397,6 +1295,8 @@ const dragon =
     "MaxAtk": 125,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -1404,11 +1304,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210077_01",
@@ -1425,6 +1321,8 @@ const dragon =
     "MaxAtk": 121,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 40
@@ -1432,11 +1330,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 60
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210078_01",
@@ -1453,6 +1347,8 @@ const dragon =
     "MaxAtk": 75,
     "Abilities11": 40,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 0
@@ -1460,11 +1356,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 0
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210079_01",
@@ -1481,6 +1373,8 @@ const dragon =
     "MaxAtk": 75,
     "Abilities11": 40,
     "Abilities12": 60,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 0
@@ -1488,11 +1382,7 @@ const dragon =
     "ability2": {
       "HP": 30,
       "STR": 0
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210080_01",
@@ -1509,6 +1399,8 @@ const dragon =
     "MaxAtk": 126,
     "Abilities11": 70,
     "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 30
@@ -1516,11 +1408,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 45
-    },
-    "MAX_LEVEL": 100,
-    "level": 100,
-    "unbind": "4",
-    "bond": "30"
+    }
   },
   {
     "Id": "210089_01",
@@ -1537,6 +1425,8 @@ const dragon =
     "MaxAtk": 63,
     "Abilities11": 0,
     "Abilities12": 0,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 0,
       "STR": 0
@@ -1544,11 +1434,7 @@ const dragon =
     "ability2": {
       "HP": 0,
       "STR": 0
-    },
-    "MAX_LEVEL": 80,
-    "level": 80,
-    "unbind": "4",
-    "bond": "30"
+    }
   }
 ];
 export default dragon;
