@@ -1,1 +1,2 @@
-export { default } from "./SelectStats";
+import SelectStats from "./SelectStats";
+export default SelectStats;

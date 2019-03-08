@@ -1,19 +1,37 @@
+.content {
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 959px) {}
+
+@media only screen and (min-width: 960px) {
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65px;
+    flex: 1;
+  }
+}
+
 button.btn {
   font-size: 14px;
   width: 100%;
   height: 100%;
 }
 
-img.lg {
+.lg {
   width: 80px;
+  height: 80px;
 }
 
-img.md {
+.md {
   width: 64px;
+  height: 64px;
 }
 
 img.sm {
   width: 32px;
+  height: 32px;
 }
 
 .fluid {
@@ -34,8 +52,24 @@ img.sm {
 
 .flex {
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.center {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.list-name {
+  flex: 1 1 100px;
+}
+
+.list-rest {
+  display: flex;
+  flex: 0 1 80px;
+  justify-content: center;
 }
 
 .hov:hover {

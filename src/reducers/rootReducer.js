@@ -1,32 +1,40 @@
+import { state } from "store";
 import actionTypes from '../actions/actionTypes';
 import filterReducer from './filterReducer';
 import statsReducer from './statsReducer';
-import halidomReducer from './halidomReducer';
-import detailReducer from './detailReducer';
+// import detailReducer from './detailReducer';
 
+import {
+  getSection,
+} from "actions";
 
-const languageReducer = (language, action) => {
-  if (action.type === actionTypes.SELECT_LANGUAGE) {
-    return action.language;
+const statsKeyReducer = (focusStats, action) => {
+  if (action.type === actionTypes.SELECT_STATSKEY) {
+    return action.statsKey;
   }
-  return language;
+
+  return focusStats;
 }
 
-const sectionReducer = (section, action) => {
-  if (action.type === actionTypes.SELECT_SECTION) {
-    return action.section;
-  }
-  return section;
-}
+const rootReducer = ({
+  focusStats,
+  filters,
+  stats,
+  details,
+}, action) => {
 
-const rootReducer = (state, action) => {
+  if (action.type === actionTypes.RESET) {
+    return state;
+  }
+
+  const section = getSection(focusStats);
   return {
-    language: languageReducer(state.language, action),
-    focusSection: sectionReducer(state.focusSection, action),
-    filters: filterReducer(state.filters, action, state.stats),
-    stats: statsReducer(state.stats, action),
-    halidom: halidomReducer(state.halidom, action, state.stats),
-    details: detailReducer(state.details, state.stats, state.halidom, action),
+    focusStats: statsKeyReducer(focusStats, action),
+    focusSection: section,
+    filters: filterReducer(filters, action, stats),
+    // filters: filterReducer(filters, action, stats),
+    stats: statsReducer(stats, action),
+    // details: detailReducer(details, action),
   }
 }
 

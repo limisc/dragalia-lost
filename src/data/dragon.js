@@ -1,6 +1,6 @@
-const dragon = 
-[
-  {
+const dragon =
+{
+  "210001_01": {
     "Id": "210001_01",
     "Name": {
       "en": "Midgardsormr",
@@ -26,7 +26,7 @@ const dragon =
       "STR": 10
     }
   },
-  {
+  "210002_01": {
     "Id": "210002_01",
     "Name": {
       "en": "Brunhilda",
@@ -52,7 +52,7 @@ const dragon =
       "STR": 20
     }
   },
-  {
+  "210003_01": {
     "Id": "210003_01",
     "Name": {
       "en": "Mercury",
@@ -78,7 +78,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210004_01": {
     "Id": "210004_01",
     "Name": {
       "en": "Jupiter",
@@ -104,7 +104,7 @@ const dragon =
       "STR": 10
     }
   },
-  {
+  "210005_01": {
     "Id": "210005_01",
     "Name": {
       "en": "Zodiark",
@@ -130,7 +130,7 @@ const dragon =
       "STR": 20
     }
   },
-  {
+  "210006_01": {
     "Id": "210006_01",
     "Name": {
       "en": "Phoenix",
@@ -156,7 +156,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210007_01": {
     "Id": "210007_01",
     "Name": {
       "en": "Ifrit",
@@ -182,7 +182,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210008_01": {
     "Id": "210008_01",
     "Name": {
       "en": "Poliʻahu",
@@ -208,7 +208,7 @@ const dragon =
       "STR": 20
     }
   },
-  {
+  "210010_01": {
     "Id": "210010_01",
     "Name": {
       "en": "Sylvia",
@@ -234,7 +234,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210011_01": {
     "Id": "210011_01",
     "Name": {
       "en": "Stribog",
@@ -260,7 +260,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210012_01": {
     "Id": "210012_01",
     "Name": {
       "en": "Unicorn",
@@ -286,7 +286,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210013_01": {
     "Id": "210013_01",
     "Name": {
       "en": "Lindworm",
@@ -312,7 +312,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210014_01": {
     "Id": "210014_01",
     "Name": {
       "en": "Juggernaut",
@@ -338,7 +338,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210015_01": {
     "Id": "210015_01",
     "Name": {
       "en": "Silke",
@@ -364,7 +364,7 @@ const dragon =
       "STR": 20
     }
   },
-  {
+  "210016_01": {
     "Id": "210016_01",
     "Name": {
       "en": "Agni",
@@ -390,7 +390,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210017_01": {
     "Id": "210017_01",
     "Name": {
       "en": "Leviathan",
@@ -416,7 +416,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210018_01": {
     "Id": "210018_01",
     "Name": {
       "en": "Zephyr",
@@ -442,7 +442,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210019_01": {
     "Id": "210019_01",
     "Name": {
       "en": "Nidhogg",
@@ -468,7 +468,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210020_01": {
     "Id": "210020_01",
     "Name": {
       "en": "Jeanne d'Arc",
@@ -494,7 +494,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210021_01": {
     "Id": "210021_01",
     "Name": {
       "en": "Homura",
@@ -520,7 +520,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210022_01": {
     "Id": "210022_01",
     "Name": {
       "en": "Cinder Drake",
@@ -546,7 +546,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210023_01": {
     "Id": "210023_01",
     "Name": {
       "en": "Kindling Imp",
@@ -572,7 +572,7 @@ const dragon =
       "STR": 8
     }
   },
-  {
+  "210024_01": {
     "Id": "210024_01",
     "Name": {
       "en": "Cerberus",
@@ -598,7 +598,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210025_01": {
     "Id": "210025_01",
     "Name": {
       "en": "Poseidon",
@@ -624,7 +624,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210036_01": {
     "Id": "210036_01",
     "Name": {
       "en": "Garuda",
@@ -650,7 +650,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210038_01": {
     "Id": "210038_01",
     "Name": {
       "en": "High Midgardsormr",
@@ -676,7 +676,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210039_01": {
     "Id": "210039_01",
     "Name": {
       "en": "High Brunhilda",
@@ -702,7 +702,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210043_01": {
     "Id": "210043_01",
     "Name": {
       "en": "Liger",
@@ -728,7 +728,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210045_01": {
     "Id": "210045_01",
     "Name": {
       "en": "Phantom",
@@ -754,7 +754,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210048_01": {
     "Id": "210048_01",
     "Name": {
       "en": "Gilgamesh",
@@ -783,7 +783,7 @@ const dragon =
     "resistance1": 15,
     "resistance2": 15
   },
-  {
+  "210049_01": {
     "Id": "210049_01",
     "Name": {
       "en": "Cupid",
@@ -809,7 +809,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210050_01": {
     "Id": "210050_01",
     "Name": {
       "en": "Roc",
@@ -835,7 +835,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210052_01": {
     "Id": "210052_01",
     "Name": {
       "en": "Prometheus",
@@ -864,7 +864,7 @@ const dragon =
     "resistance1": 15,
     "resistance2": 15
   },
-  {
+  "210057_01": {
     "Id": "210057_01",
     "Name": {
       "en": "Pele",
@@ -890,7 +890,7 @@ const dragon =
       "STR": 30
     }
   },
-  {
+  "210058_01": {
     "Id": "210058_01",
     "Name": {
       "en": "Vodyanoy",
@@ -916,7 +916,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210059_01": {
     "Id": "210059_01",
     "Name": {
       "en": "Fubuki",
@@ -942,7 +942,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210060_01": {
     "Id": "210060_01",
     "Name": {
       "en": "Tsumuji",
@@ -968,7 +968,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210061_01": {
     "Id": "210061_01",
     "Name": {
       "en": "Hinata",
@@ -994,7 +994,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210062_01": {
     "Id": "210062_01",
     "Name": {
       "en": "Hikage",
@@ -1020,7 +1020,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210063_01": {
     "Id": "210063_01",
     "Name": {
       "en": "Snow Drake",
@@ -1046,7 +1046,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210064_01": {
     "Id": "210064_01",
     "Name": {
       "en": "Gust Drake",
@@ -1072,7 +1072,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210065_01": {
     "Id": "210065_01",
     "Name": {
       "en": "Moon Drake",
@@ -1098,7 +1098,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210066_01": {
     "Id": "210066_01",
     "Name": {
       "en": "Gloom Drake",
@@ -1124,7 +1124,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210067_01": {
     "Id": "210067_01",
     "Name": {
       "en": "Wellspring Imp",
@@ -1150,7 +1150,7 @@ const dragon =
       "STR": 8
     }
   },
-  {
+  "210068_01": {
     "Id": "210068_01",
     "Name": {
       "en": "Zephyr Imp",
@@ -1176,7 +1176,7 @@ const dragon =
       "STR": 8
     }
   },
-  {
+  "210069_01": {
     "Id": "210069_01",
     "Name": {
       "en": "Astral Imp",
@@ -1202,7 +1202,7 @@ const dragon =
       "STR": 8
     }
   },
-  {
+  "210070_01": {
     "Id": "210070_01",
     "Name": {
       "en": "Pallid Imp",
@@ -1228,7 +1228,7 @@ const dragon =
       "STR": 8
     }
   },
-  {
+  "210072_01": {
     "Id": "210072_01",
     "Name": {
       "en": "Maritimus",
@@ -1254,7 +1254,7 @@ const dragon =
       "STR": 15
     }
   },
-  {
+  "210075_01": {
     "Id": "210075_01",
     "Name": {
       "en": "Silke",
@@ -1280,7 +1280,7 @@ const dragon =
       "STR": 20
     }
   },
-  {
+  "210076_01": {
     "Id": "210076_01",
     "Name": {
       "en": "Jeanne d'Arc",
@@ -1306,7 +1306,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210077_01": {
     "Id": "210077_01",
     "Name": {
       "en": "Marishiten",
@@ -1332,7 +1332,7 @@ const dragon =
       "STR": 60
     }
   },
-  {
+  "210078_01": {
     "Id": "210078_01",
     "Name": {
       "en": "Shishimai",
@@ -1358,7 +1358,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210079_01": {
     "Id": "210079_01",
     "Name": {
       "en": "Peng Lai",
@@ -1384,7 +1384,7 @@ const dragon =
       "STR": 0
     }
   },
-  {
+  "210080_01": {
     "Id": "210080_01",
     "Name": {
       "en": "Long Long",
@@ -1410,7 +1410,7 @@ const dragon =
       "STR": 45
     }
   },
-  {
+  "210089_01": {
     "Id": "210089_01",
     "Name": {
       "en": "Bronze Fafnir",
@@ -1436,5 +1436,5 @@ const dragon =
       "STR": 0
     }
   }
-];
+};
 export default dragon;

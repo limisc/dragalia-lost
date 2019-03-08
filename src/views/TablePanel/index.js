@@ -1,1 +1,2 @@
-export { default } from "./TablePanel";
+import TablePanel from "./TablePanel";
+export default TablePanel;

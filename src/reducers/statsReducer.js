@@ -1,4 +1,42 @@
-import actionTypes from '../actions/actionTypes';
+// @flow
+import { actionTypes } from "actions";
+// import { state } from "store";
+
+const selectStats = (stats, action) => {
+  const { statsKey, item } = action;
+  const { adventurer, weapon } = stats;
+  let updates = {};
+  if (
+    statsKey === "adventurer"
+    && weapon
+    && weapon.type !== item.type
+  ) {
+    updates = { weapon: null };
+  } else if (
+    statsKey === "weapon"
+    && adventurer
+    && adventurer.type !== item.type
+  ) {
+    updates = { adventurer: null };
+  }
+
+  return {
+    ...stats,
+    ...updates,
+    [statsKey]: item,
+  };
+}
+
+const statsReducer = (stats, action) => {
+  if (action.type === actionTypes.SELECT_STATS) {
+    return selectStats(stats, action);
+  }
+
+  return stats;
+}
+
+export default statsReducer;
+/*import actionTypes from '../actions/actionTypes';
 import { getStatsLimit, reducerCreator } from '../actions/actions';
 import state from "../store/state";
 
@@ -9,15 +47,6 @@ const resetStats = () => {
 const selectStats = (stats, action) => {
   const { section, item } = action;
   const { adventurer, weapon } = stats;
-
-  // let image = item.image;
-  // if (section === "adventurer") {
-  //   image = item.image.slice(0, -5) + item.curRarity + ".png";
-  // } else if (section === "wyrmprint") {
-  //   const { unbind } = item;
-  //   const part = item.image.slice(0, -5);
-  //   image = unbind < 2 ? (part + "1.png") : (part + "2.png");
-  // }
 
 
   if (section === "adventurer" && weapon && weapon.type !== item.type) {
@@ -113,3 +142,4 @@ const statsReducer = reducerCreator({
 });
 
 export default statsReducer;
+*/

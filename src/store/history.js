@@ -1,5 +1,7 @@
 import { createBrowserHistory } from 'history';
 
-export const history = createBrowserHistory({
-  basename: "/dragalia-lost"
+const history = createBrowserHistory({
+  // basename: "/dragalia-lost"
 });
+
+export default history;

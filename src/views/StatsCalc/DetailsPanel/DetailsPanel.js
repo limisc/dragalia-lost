@@ -3,10 +3,10 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Paper, Grid, Button, Table, TableBody, TableCell, TableHead, TableRow, TextField, Hidden, InputAdornment } from '@material-ui/core';
 
-import { AppContext, history } from "context";
+import { AppContext } from "context";
 import { translate, resetAll } from "actions";
 import { Select } from "components";
-
+import { history } from "store";
 const mapStateToProps = (state) => {
   const { stats, halidom, details } = state;
   // console.log(details)

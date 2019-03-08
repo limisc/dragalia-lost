@@ -1,36 +1,43 @@
-import { reducerCreator } from '../actions/actions';
-import actionTypes from '../actions/actionTypes';
-import state from '../store/state';
+import {
+  actionTypes,
+  reducerCreator,
+} from "actions";
 
-const INIT_FILTERS = { ...state.filters };
+import state from "store/state";
 
-const resetFilters = () => {
-  return INIT_FILTERS;
-}
+const INIT_FILTERS = {
+  ...state.filters,
+};
 
 const selectFilters = (filters, action) => {
-  return { ...filters, [action.key]: action.value };
+  return {
+    ...filters,
+    [action.key]: action.value
+  };
 }
 
-const narrowDown = (_, action, stats) => {
-  const { section } = action;
+const narrowFilters = (_, action, stats) => {
+  const { statsKey } = action;
   const { adventurer, weapon } = stats;
-  if (section === "adventurer" && weapon) {
-    return { ...INIT_FILTERS, type: weapon.type };
-  } else if (section === "weapon" && adventurer) {
-    return { ...INIT_FILTERS, type: adventurer.type };
-  } else if (section === "dragon" && adventurer) {
-    return { ...INIT_FILTERS, element: adventurer.element };
-  } else {
-    return INIT_FILTERS;
+  let updates = {};
+  if (statsKey === "adventurer" && weapon) {
+    updates = { type: weapon.type };
+  } else if (statsKey === "weapon" && adventurer) {
+    updates = { type: adventurer.type };
+  } else if (statsKey === "dragon" && adventurer) {
+    updates = { element: adventurer.element };
   }
+
+  return {
+    ...INIT_FILTERS,
+    ...updates,
+  };
 }
 
 
 const filterReducer = reducerCreator({
-  [actionTypes.RESET_FILTERS]: resetFilters,
   [actionTypes.SELECT_FILTERS]: selectFilters,
-  [actionTypes.NARROW_DOWN_FILTERS]: narrowDown,
+  [actionTypes.NARROW_FILTERS]: narrowFilters,
 });
 
 export default filterReducer;

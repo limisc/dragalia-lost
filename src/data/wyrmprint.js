@@ -1,6 +1,6 @@
-const wyrmprint = 
-[
-  {
+const wyrmprint =
+{
+  "400006_0": {
     "Id": "400006_0",
     "Name": {
       "en": "Scorn the Destrier",
@@ -19,7 +19,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400007_0": {
     "Id": "400007_0",
     "Name": {
       "en": "Halo",
@@ -38,7 +38,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400008_0": {
     "Id": "400008_0",
     "Name": {
       "en": "Teatime",
@@ -57,7 +57,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400009_0": {
     "Id": "400009_0",
     "Name": {
       "en": "Bellathorna",
@@ -76,7 +76,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400010_0": {
     "Id": "400010_0",
     "Name": {
       "en": "Alberian Banner",
@@ -95,7 +95,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400011_0": {
     "Id": "400011_0",
     "Name": {
       "en": "Cry of the Horn",
@@ -114,7 +114,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400012_0": {
     "Id": "400012_0",
     "Name": {
       "en": "Howling Predator",
@@ -133,7 +133,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400013_0": {
     "Id": "400013_0",
     "Name": {
       "en": "Syndicate Mask",
@@ -152,7 +152,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400014_0": {
     "Id": "400014_0",
     "Name": {
       "en": "Hallowed Mountains",
@@ -171,7 +171,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400015_0": {
     "Id": "400015_0",
     "Name": {
       "en": "Lakeside Euphony",
@@ -190,7 +190,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400016_0": {
     "Id": "400016_0",
     "Name": {
       "en": "Dragon's Nest",
@@ -209,7 +209,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400017_0": {
     "Id": "400017_0",
     "Name": {
       "en": "Enchiridion",
@@ -228,7 +228,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400018_0": {
     "Id": "400018_0",
     "Name": {
       "en": "Ironside Shield",
@@ -247,7 +247,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400019_0": {
     "Id": "400019_0",
     "Name": {
       "en": "Winds of Saint Lotier",
@@ -266,7 +266,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400020_0": {
     "Id": "400020_0",
     "Name": {
       "en": "Aromatherapy",
@@ -285,7 +285,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400021_0": {
     "Id": "400021_0",
     "Name": {
       "en": "Eight-Leaf Clover",
@@ -304,7 +304,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400022_0": {
     "Id": "400022_0",
     "Name": {
       "en": "Forbidden Relic",
@@ -323,7 +323,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400023_0": {
     "Id": "400023_0",
     "Name": {
       "en": "Unfulfilled Visions",
@@ -342,7 +342,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400024_0": {
     "Id": "400024_0",
     "Name": {
       "en": "Liber Grimortis",
@@ -361,7 +361,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400025_0": {
     "Id": "400025_0",
     "Name": {
       "en": "Night Harbinger",
@@ -380,7 +380,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400026_0": {
     "Id": "400026_0",
     "Name": {
       "en": "Tracks of Hope",
@@ -399,7 +399,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400027_0": {
     "Id": "400027_0",
     "Name": {
       "en": "Vio Rhyse Alberia!",
@@ -418,7 +418,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400028_0": {
     "Id": "400028_0",
     "Name": {
       "en": "Potiongrass",
@@ -437,7 +437,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400029_0": {
     "Id": "400029_0",
     "Name": {
       "en": "Crown of Yore",
@@ -456,7 +456,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400031_0": {
     "Id": "400031_0",
     "Name": {
       "en": "Nevermelt Ice",
@@ -475,7 +475,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400033_0": {
     "Id": "400033_0",
     "Name": {
       "en": "Flower in the Fray",
@@ -494,7 +494,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400034_0": {
     "Id": "400034_0",
     "Name": {
       "en": "Destiny's Hand",
@@ -513,7 +513,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400035_0": {
     "Id": "400035_0",
     "Name": {
       "en": "Sniper's Allure",
@@ -532,7 +532,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400036_0": {
     "Id": "400036_0",
     "Name": {
       "en": "Promises in the Rain",
@@ -554,7 +554,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400037_0": {
     "Id": "400037_0",
     "Name": {
       "en": "Fireside Gathering",
@@ -576,7 +576,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400038_0": {
     "Id": "400038_0",
     "Name": {
       "en": "Trove of Knowledge",
@@ -598,7 +598,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400039_0": {
     "Id": "400039_0",
     "Name": {
       "en": "Castaway's Journal",
@@ -620,7 +620,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400040_0": {
     "Id": "400040_0",
     "Name": {
       "en": "Lord of the Skies",
@@ -642,7 +642,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400041_0": {
     "Id": "400041_0",
     "Name": {
       "en": "King's Countenance",
@@ -661,7 +661,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400042_0": {
     "Id": "400042_0",
     "Name": {
       "en": "Braving the Unknown",
@@ -683,7 +683,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400043_0": {
     "Id": "400043_0",
     "Name": {
       "en": "What a Handful!",
@@ -702,7 +702,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400044_0": {
     "Id": "400044_0",
     "Name": {
       "en": "How to Flee Properly",
@@ -721,7 +721,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400045_0": {
     "Id": "400045_0",
     "Name": {
       "en": "One with the Shadows",
@@ -740,7 +740,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400046_0": {
     "Id": "400046_0",
     "Name": {
       "en": "Warlust",
@@ -759,7 +759,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400047_0": {
     "Id": "400047_0",
     "Name": {
       "en": "Armorer's Aspirations",
@@ -781,7 +781,7 @@ const wyrmprint =
     "defense1": 15,
     "defense2": 20
   },
-  {
+  "400048_0": {
     "Id": "400048_0",
     "Name": {
       "en": "Revolutionary Magic",
@@ -800,7 +800,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400049_0": {
     "Id": "400049_0",
     "Name": {
       "en": "Sisters of the Anvil",
@@ -819,7 +819,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400050_0": {
     "Id": "400050_0",
     "Name": {
       "en": "Dueling Dancers",
@@ -841,7 +841,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400051_0": {
     "Id": "400051_0",
     "Name": {
       "en": "Together We Stand",
@@ -860,7 +860,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400052_0": {
     "Id": "400052_0",
     "Name": {
       "en": "Give Me Your Wounded",
@@ -882,7 +882,7 @@ const wyrmprint =
     "defense1": 15,
     "defense2": 20
   },
-  {
+  "400053_0": {
     "Id": "400053_0",
     "Name": {
       "en": "Paladyn Defender",
@@ -901,7 +901,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400055_0": {
     "Id": "400055_0",
     "Name": {
       "en": "Greatwyrm Midgardsormr",
@@ -923,7 +923,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400056_0": {
     "Id": "400056_0",
     "Name": {
       "en": "Greatwyrm Mercury",
@@ -945,7 +945,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400057_0": {
     "Id": "400057_0",
     "Name": {
       "en": "Greatwyrm Brunhilda",
@@ -967,7 +967,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400058_0": {
     "Id": "400058_0",
     "Name": {
       "en": "Greatwyrm Jupiter",
@@ -989,7 +989,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400059_0": {
     "Id": "400059_0",
     "Name": {
       "en": "Greatwyrm Zodiark",
@@ -1011,7 +1011,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400060_0": {
     "Id": "400060_0",
     "Name": {
       "en": "The Warrioresses",
@@ -1030,7 +1030,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400061_0": {
     "Id": "400061_0",
     "Name": {
       "en": "Silke Lends a Hand",
@@ -1049,7 +1049,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400062_0": {
     "Id": "400062_0",
     "Name": {
       "en": "Valiant Crown",
@@ -1068,7 +1068,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400063_0": {
     "Id": "400063_0",
     "Name": {
       "en": "Flash of Genius",
@@ -1090,7 +1090,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400064_0": {
     "Id": "400064_0",
     "Name": {
       "en": "Evening of Luxury",
@@ -1109,7 +1109,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400065_0": {
     "Id": "400065_0",
     "Name": {
       "en": "Worthy Rivals",
@@ -1128,7 +1128,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400066_0": {
     "Id": "400066_0",
     "Name": {
       "en": "Auspex's Prayer",
@@ -1147,7 +1147,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400067_0": {
     "Id": "400067_0",
     "Name": {
       "en": "Dragon Brethren",
@@ -1169,7 +1169,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400068_0": {
     "Id": "400068_0",
     "Name": {
       "en": "Luca's Prank",
@@ -1191,7 +1191,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400069_0": {
     "Id": "400069_0",
     "Name": {
       "en": "Happier Times",
@@ -1210,7 +1210,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400070_0": {
     "Id": "400070_0",
     "Name": {
       "en": "Levin's Champion",
@@ -1229,7 +1229,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400071_0": {
     "Id": "400071_0",
     "Name": {
       "en": "Nightstalker",
@@ -1248,7 +1248,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400072_0": {
     "Id": "400072_0",
     "Name": {
       "en": "Glorious Tempest",
@@ -1273,7 +1273,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400074_0": {
     "Id": "400074_0",
     "Name": {
       "en": "Cleo's Ruse",
@@ -1292,7 +1292,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400075_0": {
     "Id": "400075_0",
     "Name": {
       "en": "Tough Love",
@@ -1311,7 +1311,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400076_0": {
     "Id": "400076_0",
     "Name": {
       "en": "Crystalian Envoy",
@@ -1333,7 +1333,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400077_0": {
     "Id": "400077_0",
     "Name": {
       "en": "Witch's Kitchen",
@@ -1352,7 +1352,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400078_0": {
     "Id": "400078_0",
     "Name": {
       "en": "Of Tricks and Treats",
@@ -1374,7 +1374,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400080_0": {
     "Id": "400080_0",
     "Name": {
       "en": "Warrior Maiden",
@@ -1393,7 +1393,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400087_0": {
     "Id": "400087_0",
     "Name": {
       "en": "Plunder Pals",
@@ -1412,7 +1412,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400090_0": {
     "Id": "400090_0",
     "Name": {
       "en": "Slow and Steady",
@@ -1434,7 +1434,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400091_0": {
     "Id": "400091_0",
     "Name": {
       "en": "A Wish Upon the Yuletree",
@@ -1456,7 +1456,7 @@ const wyrmprint =
     "defense1": 8,
     "defense2": 10
   },
-  {
+  "400092_0": {
     "Id": "400092_0",
     "Name": {
       "en": "The Chocolatiers",
@@ -1475,7 +1475,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400093_0": {
     "Id": "400093_0",
     "Name": {
       "en": "New World Escort",
@@ -1494,7 +1494,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400099_0": {
     "Id": "400099_0",
     "Name": {
       "en": "Jewels of the Sun",
@@ -1513,7 +1513,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400100_0": {
     "Id": "400100_0",
     "Name": {
       "en": "Samurai Siesta",
@@ -1532,7 +1532,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400101_0": {
     "Id": "400101_0",
     "Name": {
       "en": "The Halidom's Picnic",
@@ -1551,7 +1551,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400102_0": {
     "Id": "400102_0",
     "Name": {
       "en": "Better Together",
@@ -1570,7 +1570,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400103_0": {
     "Id": "400103_0",
     "Name": {
       "en": "Gentle Winds",
@@ -1589,7 +1589,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400104_0": {
     "Id": "400104_0",
     "Name": {
       "en": "Gale of Beauty",
@@ -1608,7 +1608,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400105_0": {
     "Id": "400105_0",
     "Name": {
       "en": "Fresh Perspective",
@@ -1627,7 +1627,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400106_0": {
     "Id": "400106_0",
     "Name": {
       "en": "Garuda's Feathers",
@@ -1649,7 +1649,7 @@ const wyrmprint =
     "defense1": 13,
     "defense2": 15
   },
-  {
+  "400107_0": {
     "Id": "400107_0",
     "Name": {
       "en": "Louise's Hobbies",
@@ -1668,7 +1668,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400110_0": {
     "Id": "400110_0",
     "Name": {
       "en": "Resounding Rendition",
@@ -1687,7 +1687,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400111_0": {
     "Id": "400111_0",
     "Name": {
       "en": "Heavenly Holiday",
@@ -1706,7 +1706,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400112_0": {
     "Id": "400112_0",
     "Name": {
       "en": "Kicking Back",
@@ -1728,7 +1728,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400113_0": {
     "Id": "400113_0",
     "Name": {
       "en": "Secret Friend",
@@ -1747,7 +1747,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400114_0": {
     "Id": "400114_0",
     "Name": {
       "en": "As the Snow Falls",
@@ -1766,7 +1766,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400115_0": {
     "Id": "400115_0",
     "Name": {
       "en": "The Prince of Dragonyule",
@@ -1785,7 +1785,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400116_0": {
     "Id": "400116_0",
     "Name": {
       "en": "Saintly Delivery",
@@ -1804,7 +1804,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400117_0": {
     "Id": "400117_0",
     "Name": {
       "en": "Roast Feast",
@@ -1823,7 +1823,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400118_0": {
     "Id": "400118_0",
     "Name": {
       "en": "A Slice of Dragonyule",
@@ -1842,7 +1842,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400121_0": {
     "Id": "400121_0",
     "Name": {
       "en": "Volcanic Queen",
@@ -1867,7 +1867,7 @@ const wyrmprint =
     "resistance1": 3,
     "resistance2": 5
   },
-  {
+  "400123_0": {
     "Id": "400123_0",
     "Name": {
       "en": "The Greatest Gift",
@@ -1886,7 +1886,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400124_0": {
     "Id": "400124_0",
     "Name": {
       "en": "Happy New Year!",
@@ -1908,7 +1908,7 @@ const wyrmprint =
     "resistance1": 8,
     "resistance2": 10
   },
-  {
+  "400125_0": {
     "Id": "400125_0",
     "Name": {
       "en": "Heralds of Hinomoto",
@@ -1927,7 +1927,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400126_0": {
     "Id": "400126_0",
     "Name": {
       "en": "Hanetsuki Rally",
@@ -1946,7 +1946,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400127_0": {
     "Id": "400127_0",
     "Name": {
       "en": "Luck of the Draw",
@@ -1965,7 +1965,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400128_0": {
     "Id": "400128_0",
     "Name": {
       "en": "Dragon and Tamer",
@@ -1987,7 +1987,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400129_0": {
     "Id": "400129_0",
     "Name": {
       "en": "Stellar Show",
@@ -2006,7 +2006,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400130_0": {
     "Id": "400130_0",
     "Name": {
       "en": "Welcome, One and All",
@@ -2025,7 +2025,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400131_0": {
     "Id": "400131_0",
     "Name": {
       "en": "Astounding Trick",
@@ -2044,7 +2044,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400136_0": {
     "Id": "400136_0",
     "Name": {
       "en": "Lunar Festivities",
@@ -2063,7 +2063,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400137_0": {
     "Id": "400137_0",
     "Name": {
       "en": "Blossoms Ablaze",
@@ -2082,7 +2082,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400138_0": {
     "Id": "400138_0",
     "Name": {
       "en": "Dragon Dance",
@@ -2101,7 +2101,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400139_0": {
     "Id": "400139_0",
     "Name": {
       "en": "The Rose Prince",
@@ -2120,7 +2120,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400140_0": {
     "Id": "400140_0",
     "Name": {
       "en": "Entwined Flames",
@@ -2139,7 +2139,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400141_0": {
     "Id": "400141_0",
     "Name": {
       "en": "To My Beloved",
@@ -2158,7 +2158,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400142_0": {
     "Id": "400142_0",
     "Name": {
       "en": "The Petal Queen",
@@ -2177,7 +2177,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400143_0": {
     "Id": "400143_0",
     "Name": {
       "en": "A Heartfelt Gift",
@@ -2196,7 +2196,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400144_0": {
     "Id": "400144_0",
     "Name": {
       "en": "Valentine's Venture",
@@ -2215,7 +2215,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400145_0": {
     "Id": "400145_0",
     "Name": {
       "en": "An Indelible Date",
@@ -2234,7 +2234,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400146_0": {
     "Id": "400146_0",
     "Name": {
       "en": "Elegant Escort",
@@ -2253,7 +2253,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400147_0": {
     "Id": "400147_0",
     "Name": {
       "en": "Take My Hand",
@@ -2272,7 +2272,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400148_0": {
     "Id": "400148_0",
     "Name": {
       "en": "Honest Repose",
@@ -2291,7 +2291,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400150_0": {
     "Id": "400150_0",
     "Name": {
       "en": "A Solitary Light",
@@ -2313,7 +2313,7 @@ const wyrmprint =
     "resistance1": 5,
     "resistance2": 8
   },
-  {
+  "400151_0": {
     "Id": "400151_0",
     "Name": {
       "en": "The Davian Wetlands",
@@ -2332,7 +2332,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400152_0": {
     "Id": "400152_0",
     "Name": {
       "en": "Delightful Dancer",
@@ -2351,7 +2351,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400163_0": {
     "Id": "400163_0",
     "Name": {
       "en": "Kung Fu Masters",
@@ -2370,7 +2370,7 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
-  {
+  "400167_0": {
     "Id": "400167_0",
     "Name": {
       "en": "The Shining Overlord",
@@ -2389,5 +2389,5 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   }
-];
+};
 export default wyrmprint;

@@ -5,7 +5,11 @@ import { connect } from 'react-redux';
 import { Grid, Button } from '@material-ui/core';
 
 import { AppContext } from "context";
-import { translate, setFilters, resetFilters } from "actions";
+import {
+  translate,
+  selectFilters,
+  // resetFilters
+} from "actions";
 import { Select } from "components";
 
 const mapStateToProps = (state) => {
@@ -16,51 +20,52 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setFilters: (key, value) => dispatch(setFilters(key, value)),
-    resetFilters: () => dispatch(resetFilters()),
+    selectFilters: (key, value) => dispatch(selectFilters(key, value)),
+    // resetFilters: () => dispatch(resetFilters()),
   };
 }
 
 class FilterStats extends Component {
-  state = {
-    type: ["", "Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
-    element: ["", "Flame", "Water", "Wind", "Light", "Shadow"],
-    rarity: ["", "5", "4", "3"],
-    tier: ["", "3", "2", "1"],
+  constructor(props) {
+    super(props);
+    this.state = {
+      type: ["", "Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
+      element: ["", "Flame", "Water", "Wind", "Light", "Shadow"],
+      rarity: ["", "5", "4", "3"],
+      tier: ["", "3", "2", "1"],
+    }
+
+    this.onChange = this.onChange.bind(this);
   }
 
-  _onChange = (e) => {
-    this.props.setFilters(e.target.name, e.target.value);
+  onChange = (e) => {
+    this.props.selectFilters(e.target.name, e.target.value);
   }
 
-  _onClick = () => {
-    this.props.resetFilters();
-  }
+  // _onClick = () => {
+  //   this.props.resetFilters();
+  // }
 
   render() {
+    const {
+      fields,
+      filters,
+    } = this.props;
     const { lang } = this.context;
-    const { filters, filterField } = this.props;
     return (
-      <Grid container spacing={8}
-      // style={{
-      //   position: "-webkit-sticky",
-      //   // eslint-disable-next-line
-      //   position: "sticky",
-      //   top: 16,
-      // }}
-      >
-        {filterField.map(field => (
+      <Grid container spacing={8}>
+        {fields.map((field) => (
           <Grid item xs={6} lg={3} key={field}>
             <Select
               label={field}
               value={filters[field]}
               options={this.state[field]}
-              onChange={this._onChange}
+              onChange={this.onChange}
             />
           </Grid>
         ))}
 
-        <Grid item xs={6} lg={3}>
+        {/* <Grid item xs={6} lg={3}>
           <Button
             className="btn"
             color="secondary"
@@ -69,7 +74,7 @@ class FilterStats extends Component {
           >
             {translate("clear", lang)}
           </Button>
-        </Grid>
+        </Grid> */}
       </Grid>
     );
   }

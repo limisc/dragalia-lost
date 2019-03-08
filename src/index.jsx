@@ -9,9 +9,8 @@ import {
 } from 'react-router-dom';
 
 import "./styles.css";
-import store from "store/store";
+import { store, history } from "store";
 import { StatsCalc } from "views";
-import history from "store/history";
 
 const App = () => {
   return (

@@ -1,6 +1,6 @@
-const weapon = 
-[
-  {
+const weapon =
+{
+  "301013_01_30101": {
     "Id": "301013_01_30101",
     "Name": {
       "en": "Blazing Edge",
@@ -19,7 +19,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301053_01_30101": {
     "Id": "301053_01_30101",
     "Name": {
       "en": "Blazing Ingot",
@@ -38,7 +38,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "301006_01_30201": {
     "Id": "301006_01_30201",
     "Name": {
       "en": "Rainbreaker",
@@ -57,7 +57,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301035_01_30301": {
     "Id": "301035_01_30301",
     "Name": {
       "en": "Grassrunner",
@@ -76,7 +76,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301007_01_30401": {
     "Id": "301007_01_30401",
     "Name": {
       "en": "Featherblade",
@@ -95,7 +95,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301008_01_30501": {
     "Id": "301008_01_30501",
     "Name": {
       "en": "Blood Price",
@@ -114,7 +114,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301030_01_39901": {
     "Id": "301030_01_39901",
     "Name": {
       "en": "Knight's Sword",
@@ -133,7 +133,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301038_01_39901": {
     "Id": "301038_01_39901",
     "Name": {
       "en": "Ensorcelled Sword",
@@ -152,7 +152,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301039_01_39901": {
     "Id": "301039_01_39901",
     "Name": {
       "en": "Broadedge",
@@ -171,7 +171,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301052_01_39901": {
     "Id": "301052_01_39901",
     "Name": {
       "en": "Hefty Ingot",
@@ -190,7 +190,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "301014_01_40101": {
     "Id": "301014_01_40101",
     "Name": {
       "en": "Crimson Cry",
@@ -209,7 +209,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301053_01_40101": {
     "Id": "301053_01_40101",
     "Name": {
       "en": "Molten Ingot",
@@ -228,7 +228,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "301056_01_40101": {
     "Id": "301056_01_40101",
     "Name": {
       "en": "Flame Apogee",
@@ -247,7 +247,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 100
   },
-  {
+  "301009_01_40201": {
     "Id": "301009_01_40201",
     "Name": {
       "en": "Mercurius",
@@ -266,7 +266,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301034_01_40301": {
     "Id": "301034_01_40301",
     "Name": {
       "en": "Wingblade",
@@ -285,7 +285,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301036_01_40401": {
     "Id": "301036_01_40401",
     "Name": {
       "en": "Astral Edge",
@@ -304,7 +304,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301058_01_40401": {
     "Id": "301058_01_40401",
     "Name": {
       "en": "Luster Apogee",
@@ -323,7 +323,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "301011_01_40501": {
     "Id": "301011_01_40501",
     "Name": {
       "en": "Dark Dementia",
@@ -342,7 +342,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301040_01_49901": {
     "Id": "301040_01_49901",
     "Name": {
       "en": "Knights' Grace",
@@ -361,7 +361,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301031_01_49901": {
     "Id": "301031_01_49901",
     "Name": {
       "en": "Blade of Glory",
@@ -380,7 +380,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301012_01_49901": {
     "Id": "301012_01_49901",
     "Name": {
       "en": "Gilda Sword",
@@ -399,7 +399,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301055_01_49901": {
     "Id": "301055_01_49901",
     "Name": {
       "en": "Wind Apogee",
@@ -418,7 +418,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "301032_01_50101": {
     "Id": "301032_01_50101",
     "Name": {
       "en": "Levatein",
@@ -437,7 +437,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301056_01_50101": {
     "Id": "301056_01_50101",
     "Name": {
       "en": "Inferno Apogee",
@@ -456,7 +456,7 @@ const weapon =
     "Abilities11": 50,
     "Abilities21": 100
   },
-  {
+  "301010_01_50201": {
     "Id": "301010_01_50201",
     "Name": {
       "en": "Eoantide",
@@ -475,7 +475,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301033_01_50301": {
     "Id": "301033_01_50301",
     "Name": {
       "en": "Durandal",
@@ -494,7 +494,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301015_01_50401": {
     "Id": "301015_01_50401",
     "Name": {
       "en": "Zex's End",
@@ -513,7 +513,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301058_01_50401": {
     "Id": "301058_01_50401",
     "Name": {
       "en": "Aureole Apogee",
@@ -532,7 +532,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "301037_01_50501": {
     "Id": "301037_01_50501",
     "Name": {
       "en": "Dáinsleif",
@@ -551,7 +551,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301041_01_59901": {
     "Id": "301041_01_59901",
     "Name": {
       "en": "Hero's Sword",
@@ -570,7 +570,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301042_01_59901": {
     "Id": "301042_01_59901",
     "Name": {
       "en": "Hauteclaire",
@@ -589,7 +589,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301043_01_59901": {
     "Id": "301043_01_59901",
     "Name": {
       "en": "Gram",
@@ -608,7 +608,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "301046_01_59901": {
     "Id": "301046_01_59901",
     "Name": {
       "en": "Lucky Hanetsuki Paddle",
@@ -627,7 +627,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302006_01_30101": {
     "Id": "302006_01_30101",
     "Name": {
       "en": "Valkaheim Blade",
@@ -646,7 +646,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302042_01_30101": {
     "Id": "302042_01_30101",
     "Name": {
       "en": "Crimson Steel",
@@ -665,7 +665,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "302007_01_30201": {
     "Id": "302007_01_30201",
     "Name": {
       "en": "Alighting Butterfly",
@@ -684,7 +684,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302024_01_30301": {
     "Id": "302024_01_30301",
     "Name": {
       "en": "Dragon Commander",
@@ -703,7 +703,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302027_01_30401": {
     "Id": "302027_01_30401",
     "Name": {
       "en": "Chanzelian Blade",
@@ -722,7 +722,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302009_01_30501": {
     "Id": "302009_01_30501",
     "Name": {
       "en": "Sanguine Rain",
@@ -741,7 +741,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302021_01_39901": {
     "Id": "302021_01_39901",
     "Name": {
       "en": "Subjugator",
@@ -760,7 +760,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302030_01_39901": {
     "Id": "302030_01_39901",
     "Name": {
       "en": "High Shamshir",
@@ -779,7 +779,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302008_01_39901": {
     "Id": "302008_01_39901",
     "Name": {
       "en": "Fusion Blade",
@@ -798,7 +798,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302041_01_39901": {
     "Id": "302041_01_39901",
     "Name": {
       "en": "Goliath Splitter",
@@ -817,7 +817,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "302015_01_40101": {
     "Id": "302015_01_40101",
     "Name": {
       "en": "Flametongue",
@@ -836,7 +836,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302042_01_40101": {
     "Id": "302042_01_40101",
     "Name": {
       "en": "Blazing Steel",
@@ -855,7 +855,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "302045_01_40101": {
     "Id": "302045_01_40101",
     "Name": {
       "en": "Scorching Edge",
@@ -874,7 +874,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 100
   },
-  {
+  "302022_01_40201": {
     "Id": "302022_01_40201",
     "Name": {
       "en": "Sousui",
@@ -893,7 +893,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302011_01_40301": {
     "Id": "302011_01_40301",
     "Name": {
       "en": "Tempest Blade",
@@ -912,7 +912,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302026_01_40401": {
     "Id": "302026_01_40401",
     "Name": {
       "en": "Thunderfang",
@@ -931,7 +931,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302047_01_40401": {
     "Id": "302047_01_40401",
     "Name": {
       "en": "Thunderous Edge",
@@ -950,7 +950,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "302029_01_40501": {
     "Id": "302029_01_40501",
     "Name": {
       "en": "Ghizlam's Darkblade",
@@ -969,7 +969,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302012_01_49901": {
     "Id": "302012_01_49901",
     "Name": {
       "en": "Guardian Seal",
@@ -988,7 +988,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302031_01_49901": {
     "Id": "302031_01_49901",
     "Name": {
       "en": "Iron Blade",
@@ -1007,7 +1007,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302032_01_49901": {
     "Id": "302032_01_49901",
     "Name": {
       "en": "Masamura's Pride",
@@ -1026,7 +1026,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302044_01_49901": {
     "Id": "302044_01_49901",
     "Name": {
       "en": "Bladewing",
@@ -1045,7 +1045,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "302013_01_50101": {
     "Id": "302013_01_50101",
     "Name": {
       "en": "Heaven's Acuity",
@@ -1064,7 +1064,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302045_01_50101": {
     "Id": "302045_01_50101",
     "Name": {
       "en": "Skyrender",
@@ -1083,7 +1083,7 @@ const weapon =
     "Abilities11": 50,
     "Abilities21": 100
   },
-  {
+  "302010_01_50201": {
     "Id": "302010_01_50201",
     "Name": {
       "en": "Maar Oasis",
@@ -1102,7 +1102,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302023_01_50301": {
     "Id": "302023_01_50301",
     "Name": {
       "en": "Anemone",
@@ -1121,7 +1121,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302025_01_50401": {
     "Id": "302025_01_50401",
     "Name": {
       "en": "Heavenwing",
@@ -1140,7 +1140,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302047_01_50401": {
     "Id": "302047_01_50401",
     "Name": {
       "en": "Primal Thunder",
@@ -1159,7 +1159,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "302028_01_50501": {
     "Id": "302028_01_50501",
     "Name": {
       "en": "Blackwing",
@@ -1178,7 +1178,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302014_01_59901": {
     "Id": "302014_01_59901",
     "Name": {
       "en": "Dane's Favor",
@@ -1197,7 +1197,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302033_01_59901": {
     "Id": "302033_01_59901",
     "Name": {
       "en": "Crimson Shade",
@@ -1216,7 +1216,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302034_01_59901": {
     "Id": "302034_01_59901",
     "Name": {
       "en": "Souleater",
@@ -1235,7 +1235,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "302035_01_59901": {
     "Id": "302035_01_59901",
     "Name": {
       "en": "Villagelight",
@@ -1254,7 +1254,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303027_01_30101": {
     "Id": "303027_01_30101",
     "Name": {
       "en": "Cruel Kukri",
@@ -1273,7 +1273,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303042_01_30101": {
     "Id": "303042_01_30101",
     "Name": {
       "en": "Flaming Fungi Dagger",
@@ -1292,7 +1292,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "303045_01_30101": {
     "Id": "303045_01_30101",
     "Name": {
       "en": "Flaming Big Boy",
@@ -1311,7 +1311,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "303021_01_30201": {
     "Id": "303021_01_30201",
     "Name": {
       "en": "Water Dagger",
@@ -1330,7 +1330,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303040_01_30201": {
     "Id": "303040_01_30201",
     "Name": {
       "en": "Chilly Crimini Dagger",
@@ -1349,7 +1349,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "303007_01_30301": {
     "Id": "303007_01_30301",
     "Name": {
       "en": "Stormspawn",
@@ -1368,7 +1368,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303008_01_30401": {
     "Id": "303008_01_30401",
     "Name": {
       "en": "Conscience",
@@ -1387,7 +1387,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303009_01_30501": {
     "Id": "303009_01_30501",
     "Name": {
       "en": "Assassin's Knife",
@@ -1406,7 +1406,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303026_01_39901": {
     "Id": "303026_01_39901",
     "Name": {
       "en": "Bejeweled Dagger",
@@ -1425,7 +1425,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303032_01_39901": {
     "Id": "303032_01_39901",
     "Name": {
       "en": "Gear Knife",
@@ -1444,7 +1444,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303003_01_39901": {
     "Id": "303003_01_39901",
     "Name": {
       "en": "Lover's Ally",
@@ -1463,7 +1463,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303039_01_39901": {
     "Id": "303039_01_39901",
     "Name": {
       "en": "Mushroom Dagger",
@@ -1482,7 +1482,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "303044_01_39901": {
     "Id": "303044_01_39901",
     "Name": {
       "en": "Big Boy",
@@ -1501,7 +1501,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "303015_01_40101": {
     "Id": "303015_01_40101",
     "Name": {
       "en": "Scarlet Talon",
@@ -1520,7 +1520,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303042_01_40101": {
     "Id": "303042_01_40101",
     "Name": {
       "en": "Sizzling Enoki Dagger",
@@ -1539,7 +1539,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "303045_01_40101": {
     "Id": "303045_01_40101",
     "Name": {
       "en": "Big Boy of Justice",
@@ -1558,7 +1558,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "303018_01_40201": {
     "Id": "303018_01_40201",
     "Name": {
       "en": "Ultramarine Knife",
@@ -1577,7 +1577,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303040_01_40201": {
     "Id": "303040_01_40201",
     "Name": {
       "en": "Chilly Chanterelle Dagger",
@@ -1596,7 +1596,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "303051_01_40201": {
     "Id": "303051_01_40201",
     "Name": {
       "en": "Bloodlust",
@@ -1615,7 +1615,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "303029_01_40301": {
     "Id": "303029_01_40301",
     "Name": {
       "en": "Queensflight",
@@ -1634,7 +1634,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303017_01_40401": {
     "Id": "303017_01_40401",
     "Name": {
       "en": "Nightbreaker",
@@ -1653,7 +1653,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303011_01_40501": {
     "Id": "303011_01_40501",
     "Name": {
       "en": "Dark Sacrifice",
@@ -1672,7 +1672,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303033_01_49901": {
     "Id": "303033_01_49901",
     "Name": {
       "en": "Hardbreaker",
@@ -1691,7 +1691,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303012_01_49901": {
     "Id": "303012_01_49901",
     "Name": {
       "en": "Wyrmfang",
@@ -1710,7 +1710,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303034_01_49901": {
     "Id": "303034_01_49901",
     "Name": {
       "en": "The Dreamer's Greatsword",
@@ -1729,7 +1729,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303047_01_49901": {
     "Id": "303047_01_49901",
     "Name": {
       "en": "Slaughterlust",
@@ -1748,7 +1748,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "303013_01_50101": {
     "Id": "303013_01_50101",
     "Name": {
       "en": "Aeternal Flame",
@@ -1767,7 +1767,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303020_01_50201": {
     "Id": "303020_01_50201",
     "Name": {
       "en": "Lux Lamina",
@@ -1786,7 +1786,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303051_01_50201": {
     "Id": "303051_01_50201",
     "Name": {
       "en": "Gorelust",
@@ -1805,7 +1805,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "303028_01_50301": {
     "Id": "303028_01_50301",
     "Name": {
       "en": "Karlsnautr",
@@ -1824,7 +1824,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303030_01_50401": {
     "Id": "303030_01_50401",
     "Name": {
       "en": "Thunderblade Sugaar",
@@ -1843,7 +1843,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303031_01_50501": {
     "Id": "303031_01_50501",
     "Name": {
       "en": "Honor Edge",
@@ -1862,7 +1862,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303035_01_59901": {
     "Id": "303035_01_59901",
     "Name": {
       "en": "Kris Naga",
@@ -1881,7 +1881,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303014_01_59901": {
     "Id": "303014_01_59901",
     "Name": {
       "en": "Treasure of the Iron Rose",
@@ -1900,7 +1900,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "303036_01_59901": {
     "Id": "303036_01_59901",
     "Name": {
       "en": "Hedgehog",
@@ -1919,7 +1919,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304018_01_30101": {
     "Id": "304018_01_30101",
     "Name": {
       "en": "Argent Battleaxe",
@@ -1938,7 +1938,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304006_01_30201": {
     "Id": "304006_01_30201",
     "Name": {
       "en": "Axe of the Waves",
@@ -1957,7 +1957,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304007_01_30301": {
     "Id": "304007_01_30301",
     "Name": {
       "en": "Singing Cyclone",
@@ -1976,7 +1976,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304008_01_30401": {
     "Id": "304008_01_30401",
     "Name": {
       "en": "Flash Axe",
@@ -1995,7 +1995,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304009_01_30501": {
     "Id": "304009_01_30501",
     "Name": {
       "en": "Soulreaver",
@@ -2014,7 +2014,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304025_01_39901": {
     "Id": "304025_01_39901",
     "Name": {
       "en": "Warrior's Axe",
@@ -2033,7 +2033,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304031_01_39901": {
     "Id": "304031_01_39901",
     "Name": {
       "en": "Ennobled Axe",
@@ -2052,7 +2052,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304032_01_39901": {
     "Id": "304032_01_39901",
     "Name": {
       "en": "Juggernaut",
@@ -2071,7 +2071,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304010_01_40101": {
     "Id": "304010_01_40101",
     "Name": {
       "en": "Crimsonclaw",
@@ -2090,7 +2090,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304043_01_40101": {
     "Id": "304043_01_40101",
     "Name": {
       "en": "Heavenfire Gaze",
@@ -2109,7 +2109,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 100
   },
-  {
+  "304011_01_40201": {
     "Id": "304011_01_40201",
     "Name": {
       "en": "Aqua Labrys",
@@ -2128,7 +2128,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304050_01_40201": {
     "Id": "304050_01_40201",
     "Name": {
       "en": "Wave Crux",
@@ -2147,7 +2147,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "304016_01_40301": {
     "Id": "304016_01_40301",
     "Name": {
       "en": "Winged Destruction",
@@ -2166,7 +2166,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304015_01_40401": {
     "Id": "304015_01_40401",
     "Name": {
       "en": "Shining Axe",
@@ -2185,7 +2185,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304045_01_40401": {
     "Id": "304045_01_40401",
     "Name": {
       "en": "Starlight Gaze",
@@ -2204,7 +2204,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "304030_01_40501": {
     "Id": "304030_01_40501",
     "Name": {
       "en": "Traitor's Despair",
@@ -2223,7 +2223,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304026_01_49901": {
     "Id": "304026_01_49901",
     "Name": {
       "en": "Plain Axe",
@@ -2242,7 +2242,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304033_01_49901": {
     "Id": "304033_01_49901",
     "Name": {
       "en": "The Tyrant",
@@ -2261,7 +2261,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304034_01_49901": {
     "Id": "304034_01_49901",
     "Name": {
       "en": "Souvenir Axe",
@@ -2280,7 +2280,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304042_01_49901": {
     "Id": "304042_01_49901",
     "Name": {
       "en": "Unerring Gaze",
@@ -2299,7 +2299,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "304047_01_49901": {
     "Id": "304047_01_49901",
     "Name": {
       "en": "Fury Crux",
@@ -2318,7 +2318,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "304027_01_50101": {
     "Id": "304027_01_50101",
     "Name": {
       "en": "Axe of the Blazing King",
@@ -2337,7 +2337,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304043_01_50101": {
     "Id": "304043_01_50101",
     "Name": {
       "en": "Heavenwrath Gaze",
@@ -2356,7 +2356,7 @@ const weapon =
     "Abilities11": 50,
     "Abilities21": 100
   },
-  {
+  "304028_01_50201": {
     "Id": "304028_01_50201",
     "Name": {
       "en": "Grand Seadragon",
@@ -2375,7 +2375,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304050_01_50201": {
     "Id": "304050_01_50201",
     "Name": {
       "en": "Maelstrom Crux",
@@ -2394,7 +2394,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "304029_01_50301": {
     "Id": "304029_01_50301",
     "Name": {
       "en": "Axe of the Southern Cross",
@@ -2413,7 +2413,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304013_01_50401": {
     "Id": "304013_01_50401",
     "Name": {
       "en": "Radiant Swath",
@@ -2432,7 +2432,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304045_01_50401": {
     "Id": "304045_01_50401",
     "Name": {
       "en": "Starwrath Gaze",
@@ -2451,7 +2451,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "304014_01_50501": {
     "Id": "304014_01_50501",
     "Name": {
       "en": "Primordial Titan",
@@ -2470,7 +2470,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304012_01_59901": {
     "Id": "304012_01_59901",
     "Name": {
       "en": "Victory Axe",
@@ -2489,7 +2489,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304035_01_59901": {
     "Id": "304035_01_59901",
     "Name": {
       "en": "Executioner Axe Strafe",
@@ -2508,7 +2508,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "304036_01_59901": {
     "Id": "304036_01_59901",
     "Name": {
       "en": "Halfling's Broadaxe",
@@ -2527,7 +2527,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305006_01_30101": {
     "Id": "305006_01_30101",
     "Name": {
       "en": "Unsung Hero's Lance",
@@ -2546,7 +2546,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305047_01_30101": {
     "Id": "305047_01_30101",
     "Name": {
       "en": "Lumenspore Lance",
@@ -2565,7 +2565,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "305007_01_30201": {
     "Id": "305007_01_30201",
     "Name": {
       "en": "Azure Jewel",
@@ -2584,7 +2584,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305045_01_30201": {
     "Id": "305045_01_30201",
     "Name": {
       "en": "Bubblespore Lance",
@@ -2603,7 +2603,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "305017_01_30301": {
     "Id": "305017_01_30301",
     "Name": {
       "en": "Gale Spear",
@@ -2622,7 +2622,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305008_01_30401": {
     "Id": "305008_01_30401",
     "Name": {
       "en": "Moonpiercer",
@@ -2641,7 +2641,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305028_01_30401": {
     "Id": "305028_01_30401",
     "Name": {
       "en": "Jack-o'-Lance",
@@ -2660,7 +2660,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305034_01_30501": {
     "Id": "305034_01_30501",
     "Name": {
       "en": "Lance of the Dark",
@@ -2679,7 +2679,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305039_01_39901": {
     "Id": "305039_01_39901",
     "Name": {
       "en": "Trident",
@@ -2698,7 +2698,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305013_01_39901": {
     "Id": "305013_01_39901",
     "Name": {
       "en": "Mailbreaker",
@@ -2717,7 +2717,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305010_01_39901": {
     "Id": "305010_01_39901",
     "Name": {
       "en": "Drill Lance",
@@ -2736,7 +2736,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305044_01_39901": {
     "Id": "305044_01_39901",
     "Name": {
       "en": "Leechspore Lance",
@@ -2755,7 +2755,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "305031_01_40101": {
     "Id": "305031_01_40101",
     "Name": {
       "en": "Flameserpent",
@@ -2774,7 +2774,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305047_01_40101": {
     "Id": "305047_01_40101",
     "Name": {
       "en": "Triggerspore Lance",
@@ -2793,7 +2793,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "305016_01_40201": {
     "Id": "305016_01_40201",
     "Name": {
       "en": "Abyssal Prize",
@@ -2812,7 +2812,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305045_01_40201": {
     "Id": "305045_01_40201",
     "Name": {
       "en": "Shatterspore Lance",
@@ -2831,7 +2831,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "305058_01_40201": {
     "Id": "305058_01_40201",
     "Name": {
       "en": "Tidal Beast",
@@ -2850,7 +2850,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "305011_01_40301": {
     "Id": "305011_01_40301",
     "Name": {
       "en": "Tempest Lance",
@@ -2869,7 +2869,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305012_01_40401": {
     "Id": "305012_01_40401",
     "Name": {
       "en": "Thunderbolt",
@@ -2888,7 +2888,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305035_01_40501": {
     "Id": "305035_01_40501",
     "Name": {
       "en": "Hellish Lance",
@@ -2907,7 +2907,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305029_01_49901": {
     "Id": "305029_01_49901",
     "Name": {
       "en": "Strong Halberd",
@@ -2926,7 +2926,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305040_01_49901": {
     "Id": "305040_01_49901",
     "Name": {
       "en": "Lance of the Innocent",
@@ -2945,7 +2945,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305041_01_49901": {
     "Id": "305041_01_49901",
     "Name": {
       "en": "Ironside Lance",
@@ -2964,7 +2964,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305054_01_49901": {
     "Id": "305054_01_49901",
     "Name": {
       "en": "Piercing Beast",
@@ -2983,7 +2983,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "305030_01_50101": {
     "Id": "305030_01_50101",
     "Name": {
       "en": "Calamity Trigger",
@@ -3002,7 +3002,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305014_01_50201": {
     "Id": "305014_01_50201",
     "Name": {
       "en": "Ocean Lord",
@@ -3021,7 +3021,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305058_01_50201": {
     "Id": "305058_01_50201",
     "Name": {
       "en": "Vortex Beast",
@@ -3040,7 +3040,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "305032_01_50301": {
     "Id": "305032_01_50301",
     "Name": {
       "en": "Spear of the Northern Cross",
@@ -3059,7 +3059,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305033_01_50401": {
     "Id": "305033_01_50401",
     "Name": {
       "en": "Thunder King's Greatspear",
@@ -3078,7 +3078,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305036_01_50501": {
     "Id": "305036_01_50501",
     "Name": {
       "en": "Mistilteinn",
@@ -3097,7 +3097,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305015_01_59901": {
     "Id": "305015_01_59901",
     "Name": {
       "en": "Pactspear",
@@ -3116,7 +3116,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305042_01_59901": {
     "Id": "305042_01_59901",
     "Name": {
       "en": "Compass Needle",
@@ -3135,7 +3135,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "305043_01_59901": {
     "Id": "305043_01_59901",
     "Name": {
       "en": "Gae Bolg",
@@ -3154,7 +3154,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306006_01_30101": {
     "Id": "306006_01_30101",
     "Name": {
       "en": "Flightfyre",
@@ -3173,7 +3173,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306041_01_30101": {
     "Id": "306041_01_30101",
     "Name": {
       "en": "Firefungus",
@@ -3192,7 +3192,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "306007_01_30201": {
     "Id": "306007_01_30201",
     "Name": {
       "en": "Tidal Bow",
@@ -3211,7 +3211,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306039_01_30201": {
     "Id": "306039_01_30201",
     "Name": {
       "en": "Frostfungus",
@@ -3230,7 +3230,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "306003_01_30301": {
     "Id": "306003_01_30301",
     "Name": {
       "en": "Proof of the Wind",
@@ -3249,7 +3249,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306009_01_30401": {
     "Id": "306009_01_30401",
     "Name": {
       "en": "Galvanic Bow",
@@ -3268,7 +3268,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306018_01_30501": {
     "Id": "306018_01_30501",
     "Name": {
       "en": "Cimmerian Bow",
@@ -3287,7 +3287,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306026_01_39901": {
     "Id": "306026_01_39901",
     "Name": {
       "en": "Composite Bow",
@@ -3306,7 +3306,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306012_01_39901": {
     "Id": "306012_01_39901",
     "Name": {
       "en": "Machine Bow",
@@ -3325,7 +3325,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306032_01_39901": {
     "Id": "306032_01_39901",
     "Name": {
       "en": "Hunter's Bow",
@@ -3344,7 +3344,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306038_01_39901": {
     "Id": "306038_01_39901",
     "Name": {
       "en": "Fungus Bow",
@@ -3363,7 +3363,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "306028_01_40101": {
     "Id": "306028_01_40101",
     "Name": {
       "en": "Armored Inferno",
@@ -3382,7 +3382,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306041_01_40101": {
     "Id": "306041_01_40101",
     "Name": {
       "en": "Blazefungus",
@@ -3401,7 +3401,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "306010_01_40201": {
     "Id": "306010_01_40201",
     "Name": {
       "en": "Frostslinger Bow",
@@ -3420,7 +3420,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306039_01_40201": {
     "Id": "306039_01_40201",
     "Name": {
       "en": "Glacial Fungus",
@@ -3439,7 +3439,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "306008_01_40301": {
     "Id": "306008_01_40301",
     "Name": {
       "en": "Epidemic",
@@ -3458,7 +3458,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306037_01_40401": {
     "Id": "306037_01_40401",
     "Name": {
       "en": "Holy Bow",
@@ -3477,7 +3477,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306016_01_40501": {
     "Id": "306016_01_40501",
     "Name": {
       "en": "Macabre Malediction",
@@ -3496,7 +3496,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306013_01_49901": {
     "Id": "306013_01_49901",
     "Name": {
       "en": "Executor",
@@ -3515,7 +3515,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306033_01_49901": {
     "Id": "306033_01_49901",
     "Name": {
       "en": "Faerie Bow",
@@ -3534,7 +3534,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306011_01_49901": {
     "Id": "306011_01_49901",
     "Name": {
       "en": "Duskhawk",
@@ -3553,7 +3553,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306027_01_50101": {
     "Id": "306027_01_50101",
     "Name": {
       "en": "Lupis Solis",
@@ -3572,7 +3572,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306029_01_50201": {
     "Id": "306029_01_50201",
     "Name": {
       "en": "Peacock's Whorl",
@@ -3591,7 +3591,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306030_01_50301": {
     "Id": "306030_01_50301",
     "Name": {
       "en": "Stellar Pegasus",
@@ -3610,7 +3610,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306031_01_50401": {
     "Id": "306031_01_50401",
     "Name": {
       "en": "Thunderbow",
@@ -3629,7 +3629,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306014_01_50501": {
     "Id": "306014_01_50501",
     "Name": {
       "en": "Necro Arcus",
@@ -3648,7 +3648,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306015_01_59901": {
     "Id": "306015_01_59901",
     "Name": {
       "en": "Nitralica's Koto",
@@ -3667,7 +3667,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306034_01_59901": {
     "Id": "306034_01_59901",
     "Name": {
       "en": "Accelerator",
@@ -3686,7 +3686,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306035_01_59901": {
     "Id": "306035_01_59901",
     "Name": {
       "en": "Starchaser",
@@ -3705,7 +3705,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "306036_01_59901": {
     "Id": "306036_01_59901",
     "Name": {
       "en": "Chimera's Guilt",
@@ -3724,7 +3724,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307006_01_30101": {
     "Id": "307006_01_30101",
     "Name": {
       "en": "Sunrise Scepter",
@@ -3743,7 +3743,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307049_01_30101": {
     "Id": "307049_01_30101",
     "Name": {
       "en": "The Wail",
@@ -3762,7 +3762,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "307033_01_30201": {
     "Id": "307033_01_30201",
     "Name": {
       "en": "Oceandweller",
@@ -3781,7 +3781,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307047_01_30201": {
     "Id": "307047_01_30201",
     "Name": {
       "en": "The Scream",
@@ -3800,7 +3800,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 50
   },
-  {
+  "307007_01_30301": {
     "Id": "307007_01_30301",
     "Name": {
       "en": "Menace of the Storm",
@@ -3819,7 +3819,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307021_01_30401": {
     "Id": "307021_01_30401",
     "Name": {
       "en": "Thunder Wand",
@@ -3838,7 +3838,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307008_01_30501": {
     "Id": "307008_01_30501",
     "Name": {
       "en": "Meggidoth Ruiner",
@@ -3857,7 +3857,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307042_01_39901": {
     "Id": "307042_01_39901",
     "Name": {
       "en": "Wizard's Rod",
@@ -3876,7 +3876,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307004_01_39901": {
     "Id": "307004_01_39901",
     "Name": {
       "en": "Sorcerer's Cudgel",
@@ -3895,7 +3895,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307037_01_39901": {
     "Id": "307037_01_39901",
     "Name": {
       "en": "Conchoidal Rod",
@@ -3914,7 +3914,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307046_01_39901": {
     "Id": "307046_01_39901",
     "Name": {
       "en": "The Scent",
@@ -3933,7 +3933,7 @@ const weapon =
     "Abilities11": 20,
     "Abilities21": 0
   },
-  {
+  "307016_01_40101": {
     "Id": "307016_01_40101",
     "Name": {
       "en": "Firefiend's Howl",
@@ -3952,7 +3952,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307049_01_40101": {
     "Id": "307049_01_40101",
     "Name": {
       "en": "The Second Wail",
@@ -3971,7 +3971,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "307036_01_40201": {
     "Id": "307036_01_40201",
     "Name": {
       "en": "Rod of Tears",
@@ -3990,7 +3990,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307047_01_40201": {
     "Id": "307047_01_40201",
     "Name": {
       "en": "The Second Scream",
@@ -4009,7 +4009,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "307055_01_40201": {
     "Id": "307055_01_40201",
     "Name": {
       "en": "Wavewing",
@@ -4028,7 +4028,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "307018_01_40301": {
     "Id": "307018_01_40301",
     "Name": {
       "en": "Tempest Wand",
@@ -4047,7 +4047,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307010_01_40401": {
     "Id": "307010_01_40401",
     "Name": {
       "en": "Conductor Rod",
@@ -4066,7 +4066,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307011_01_40501": {
     "Id": "307011_01_40501",
     "Name": {
       "en": "Accursed Vare",
@@ -4085,7 +4085,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307012_01_49901": {
     "Id": "307012_01_49901",
     "Name": {
       "en": "Latchkey",
@@ -4104,7 +4104,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307038_01_49901": {
     "Id": "307038_01_49901",
     "Name": {
       "en": "Rod of Alchemy",
@@ -4123,7 +4123,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307039_01_49901": {
     "Id": "307039_01_49901",
     "Name": {
       "en": "Moonlight Rod",
@@ -4142,7 +4142,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307051_01_49901": {
     "Id": "307051_01_49901",
     "Name": {
       "en": "Beastwing",
@@ -4161,7 +4161,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "307015_01_50101": {
     "Id": "307015_01_50101",
     "Name": {
       "en": "Terranigmus",
@@ -4180,7 +4180,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307032_01_50201": {
     "Id": "307032_01_50201",
     "Name": {
       "en": "Ocean Monarch",
@@ -4199,7 +4199,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307055_01_50201": {
     "Id": "307055_01_50201",
     "Name": {
       "en": "Tsunamiwing",
@@ -4218,7 +4218,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "307014_01_50301": {
     "Id": "307014_01_50301",
     "Name": {
       "en": "Phytalmios",
@@ -4237,7 +4237,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307034_01_50401": {
     "Id": "307034_01_50401",
     "Name": {
       "en": "Twilight Shimmer",
@@ -4256,7 +4256,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307035_01_50501": {
     "Id": "307035_01_50501",
     "Name": {
       "en": "Underworld Despair",
@@ -4275,7 +4275,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307031_01_59901": {
     "Id": "307031_01_59901",
     "Name": {
       "en": "Wand of the Torrent",
@@ -4294,7 +4294,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307040_01_59901": {
     "Id": "307040_01_59901",
     "Name": {
       "en": "Welkin Wand",
@@ -4313,7 +4313,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307041_01_59901": {
     "Id": "307041_01_59901",
     "Name": {
       "en": "Chaotic Horizon",
@@ -4332,7 +4332,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308006_01_30101": {
     "Id": "308006_01_30101",
     "Name": {
       "en": "Staff of Punishing Flame",
@@ -4351,7 +4351,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308041_01_30101": {
     "Id": "308041_01_30101",
     "Name": {
       "en": "Flamechant",
@@ -4372,7 +4372,7 @@ const weapon =
     "elementDef": "Flame",
     "defense": 3
   },
-  {
+  "308007_01_30201": {
     "Id": "308007_01_30201",
     "Name": {
       "en": "Scendecipher",
@@ -4391,7 +4391,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308008_01_30301": {
     "Id": "308008_01_30301",
     "Name": {
       "en": "Windreader",
@@ -4410,7 +4410,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308009_01_30401": {
     "Id": "308009_01_30401",
     "Name": {
       "en": "Astrolabe",
@@ -4429,7 +4429,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308026_01_30401": {
     "Id": "308026_01_30401",
     "Name": {
       "en": "Vampire's Lantern",
@@ -4448,7 +4448,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308020_01_30501": {
     "Id": "308020_01_30501",
     "Name": {
       "en": "Meggidoth Wisp",
@@ -4467,7 +4467,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308002_01_39901": {
     "Id": "308002_01_39901",
     "Name": {
       "en": "Staff of Grace",
@@ -4486,7 +4486,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "307003_01_39901": {
     "Id": "307003_01_39901",
     "Name": {
       "en": "Long Ankh",
@@ -4505,7 +4505,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308036_01_39901": {
     "Id": "308036_01_39901",
     "Name": {
       "en": "Staff of the Horned Snake",
@@ -4524,7 +4524,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308040_01_39901": {
     "Id": "308040_01_39901",
     "Name": {
       "en": "Aurachant",
@@ -4545,7 +4545,7 @@ const weapon =
     "elementDef": "",
     "defense": 3
   },
-  {
+  "308021_01_40101": {
     "Id": "308021_01_40101",
     "Name": {
       "en": "Ark Voyager",
@@ -4564,7 +4564,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308041_01_40101": {
     "Id": "308041_01_40101",
     "Name": {
       "en": "Ashchant",
@@ -4585,7 +4585,7 @@ const weapon =
     "elementDef": "Flame",
     "defense": 5
   },
-  {
+  "308044_01_40101": {
     "Id": "308044_01_40101",
     "Name": {
       "en": "Twilight Harbinger",
@@ -4604,7 +4604,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 50
   },
-  {
+  "308022_01_40201": {
     "Id": "308022_01_40201",
     "Name": {
       "en": "Marine Staff",
@@ -4623,7 +4623,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308033_01_40301": {
     "Id": "308033_01_40301",
     "Name": {
       "en": "Windeater Staff",
@@ -4642,7 +4642,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308018_01_40401": {
     "Id": "308018_01_40401",
     "Name": {
       "en": "Tonitrus",
@@ -4661,7 +4661,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308046_01_40401": {
     "Id": "308046_01_40401",
     "Name": {
       "en": "Daybreak Harbinger",
@@ -4680,7 +4680,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
-  {
+  "308019_01_40501": {
     "Id": "308019_01_40501",
     "Name": {
       "en": "Sanity's Bane",
@@ -4699,7 +4699,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308005_01_49901": {
     "Id": "308005_01_49901",
     "Name": {
       "en": "Staff of Life",
@@ -4718,7 +4718,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308013_01_49901": {
     "Id": "308013_01_49901",
     "Name": {
       "en": "Staff of Fortune",
@@ -4737,7 +4737,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308010_01_49901": {
     "Id": "308010_01_49901",
     "Name": {
       "en": "Beauty's Balm",
@@ -4756,7 +4756,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308043_01_49901": {
     "Id": "308043_01_49901",
     "Name": {
       "en": "Forever Sky",
@@ -4775,7 +4775,7 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 0
   },
-  {
+  "308031_01_50101": {
     "Id": "308031_01_50101",
     "Name": {
       "en": "Staff of the Red Emperor",
@@ -4794,7 +4794,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308044_01_50101": {
     "Id": "308044_01_50101",
     "Name": {
       "en": "Endless Demise",
@@ -4813,7 +4813,7 @@ const weapon =
     "Abilities11": 50,
     "Abilities21": 50
   },
-  {
+  "308011_01_50201": {
     "Id": "308011_01_50201",
     "Name": {
       "en": "Bracing Waters",
@@ -4832,7 +4832,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308032_01_50301": {
     "Id": "308032_01_50301",
     "Name": {
       "en": "Ancient Mage's Windcane",
@@ -4851,7 +4851,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308014_01_50401": {
     "Id": "308014_01_50401",
     "Name": {
       "en": "Light of Judgment",
@@ -4870,7 +4870,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308046_01_50401": {
     "Id": "308046_01_50401",
     "Name": {
       "en": "Genesis Bringer",
@@ -4889,7 +4889,7 @@ const weapon =
     "Abilities11": 60,
     "Abilities21": 40
   },
-  {
+  "308015_01_50501": {
     "Id": "308015_01_50501",
     "Name": {
       "en": "Caduceus",
@@ -4908,7 +4908,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308030_01_59901": {
     "Id": "308030_01_59901",
     "Name": {
       "en": "Cane of Soul's Repose",
@@ -4927,7 +4927,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308038_01_59901": {
     "Id": "308038_01_59901",
     "Name": {
       "en": "Rainbow Cane",
@@ -4946,7 +4946,7 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
-  {
+  "308039_01_59901": {
     "Id": "308039_01_59901",
     "Name": {
       "en": "Otherworldly Bough",
@@ -4965,5 +4965,5 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   }
-];
+};
 export default weapon;

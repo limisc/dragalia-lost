@@ -1,6 +1,5 @@
 const state = {
-  language: "en",
-  focusSection: "adventurer",
+  focusStats: "adventurer",
   filters: {
     type: "",
     element: "",
@@ -10,21 +9,16 @@ const state = {
   stats: {
     adventurer: null,
     weapon: null,
-    wyrmprint: null,
-    dragon: null,
-  },
-  halidom: {
-    element: null,
-    weapon: null,
+    wyrmprint1: null,
+    wyrmprint2: null,
     dragon: null,
   },
   details: {
     adventurer: { HP: 0, STR: 0, might: 0 },
     weapon: { HP: 0, STR: 0, might: 0 },
-    wyrmprint: { HP: 0, STR: 0, might: 0 },
+    wyrmprint1: { HP: 0, STR: 0, might: 0 },
+    wyrmprint2: { HP: 0, STR: 0, might: 0 },
     dragon: { HP: 0, STR: 0, might: 0 },
-    ability: { HP: 0, STR: 0, might: 0 },
-    halidom: { HP: 0, STR: 0, might: 0 },
   }
 };
 

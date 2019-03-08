@@ -1,8 +1,10 @@
 import React from 'react';
 import { createSelector } from 'reselect';
 import { MenuItem } from '@material-ui/core';
+import { limit } from "data";
 import intl from "intl";
-export const translate = (content, lang = "en", field) => {
+
+const translate = (content, lang = "en", field) => {
   if (content) {
     if (field) {
       return "";
@@ -14,7 +16,7 @@ export const translate = (content, lang = "en", field) => {
   return "";
 }
 
-export const getSection = (statsKey) => {
+const getSection = (statsKey) => {
   if (statsKey === "wyrmprint1" || statsKey === "wyrmprint2") {
     return "wyrmprint";
   } else {
@@ -22,21 +24,21 @@ export const getSection = (statsKey) => {
   }
 }
 
-// export const getMaxLV = (statsKey, rarity, unbind = 4) => {
-//   const section = getSection(statsKey);
-//   unbind = parseInt(unbind, 10);
-//   if (limit[section][rarity]) {
-//     const temp = limit[section][rarity];
-//     if (section === "mana" || section === "adventurer") {
-//       return temp;
-//     } else if (temp[unbind]) {
-//       return temp[unbind];
-//     }
-//   }
-//   return 0;
-// }
+const getMaxLV = (statsKey, rarity, unbind = 4) => {
+  const section = getSection(statsKey);
+  const int_unbind = parseInt(unbind, 10);
+  if (limit[section][rarity]) {
+    const temp = limit[section][rarity];
+    if (section === "mana" || section === "adventurer") {
+      return temp;
+    } else if (temp[int_unbind]) {
+      return temp[int_unbind];
+    }
+  }
 
-export const getTitle = (lang = "en", mode = "stats") => {
+  return "";
+}
+const getTitle = (lang = "en", mode = "stats") => {
   return {
     en: {
       stats: "Dragalia Lost - Stats Calculator",
@@ -53,7 +55,7 @@ export const getTitle = (lang = "en", mode = "stats") => {
   }[lang][mode];
 }
 
-export const buildOptions = createSelector(
+const buildOptions = createSelector(
   options => options,
   (_, lang = "en") => lang,
   (options, lang) => {
@@ -72,3 +74,12 @@ export const buildOptions = createSelector(
     }
   }
 );
+
+
+export {
+  buildOptions,
+  getMaxLV,
+  getTitle,
+  getSection,
+  translate,
+};
