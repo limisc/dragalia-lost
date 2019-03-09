@@ -1,3 +1,7 @@
+body, .color {
+  background-color: #ffedc3;
+}
+
 button.btn {
   font-size: 14px;
   width: 100%;

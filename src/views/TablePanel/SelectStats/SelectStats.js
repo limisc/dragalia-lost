@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Grid, Paper } from '@material-ui/core';
 import FilterStats from "./FilterStats";
 import StatsTable from "./StatsTable";
-
+import { getSection } from "actions";
 const mapStateToProps = (state) => {
   const { language, focusSection, filters } = state;
   return {
@@ -34,9 +34,10 @@ class SelectStats extends Component {
   }
 
   render() {
-    const { language, focusSection, filters } = this.props;
+    const { focusSection } = this.props;
+    const section = getSection(focusSection);
     const {
-      filterFields: { [focusSection]: filterField },
+      filterFields: { [section]: filterField },
     } = this.state;
 
     return (

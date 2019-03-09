@@ -74,7 +74,7 @@ const calcMight = (section, item, HP, STR) => {
       }
     }
 
-  } else if (section === "wyrmprint") {
+  } else if (section === "wyrmprint1" || section === "wyrmprint2") {
     const abilitySet = item.unbind === "4" ? ["Abilities12", "Abilities22", "Abilities32"] : ["Abilities11", "Abilities21", "Abilities31"];
     for (const a of abilitySet) {
       if (item[a]) {
@@ -213,7 +213,8 @@ const updateDetails = (details, stats, halidom, section) => {
       return updateHalidom(details, stats, halidom);
     case "adventurer":
     case "weapon":
-    case "wyrmprint":
+    case "wyrmprint1":
+    case "wyrmprint2":
     case "dragon":
       return updateStats(details, stats, section);
     case "ability":

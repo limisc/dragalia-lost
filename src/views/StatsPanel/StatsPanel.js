@@ -6,7 +6,7 @@ import StatsAvatar from './StatsAvatar';
 import StatsField from './StatsField';
 import HalidomStats from './stats/HalidomStats';
 
-const statsKeys = ["adventurer", "weapon", "wyrmprint", "dragon"];
+const statsKeys = ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon"];
 
 const SettingPanel = () => {
   return (

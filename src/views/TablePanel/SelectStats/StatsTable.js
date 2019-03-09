@@ -8,7 +8,7 @@ import { AutoSizer, Table, Column } from 'react-virtualized';
 
 import { adventurer, weapon, wyrmprint, dragon } from "data";
 import { AppContext } from "context";
-import { translate } from "actions";
+import { translate, getSection } from "actions";
 import { Image } from "components";
 import ListItem from "./ListItem";
 
@@ -60,7 +60,8 @@ class StatsTable extends Component {
 
   _filterData = (fields) => {
     const { focusSection, filters } = this.props;
-    return this.state[focusSection].filter(item => {
+    const section = getSection(focusSection);
+    return this.state[section].filter(item => {
       for (const key of fields) {
         if (!item[key].includes(filters[key])) return false;
       }

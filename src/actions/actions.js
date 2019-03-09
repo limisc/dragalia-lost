@@ -3,7 +3,7 @@ import limit from './limit';
 import { value } from './facility';
 // import * as intl from './internationlization';
 import equipment from './equipment';
-
+import { getSection } from "./selectors";
 const actionCreator = (type, ...argNames) => {
   return (...args) => {
     const action = { type }
@@ -23,7 +23,8 @@ export const reducerCreator = (handler) => {
   }
 }
 
-export const getStatsLimit = (section, rarity, unbind = 4) => {
+export const getStatsLimit = (statsKey, rarity, unbind = 4) => {
+  const section = getSection(statsKey);
   switch (section) {
     case "mana":
     case "adventurer":
@@ -120,8 +121,8 @@ export const selectStats = (section, item) => (dispatch) => {
   dispatch(updateDetails(section));
   const { element } = item;
   if (section === "adventurer" && (element === "Flame" || element === "Water")) {
-    dispatch(setStats("wyrmprint", equipment[element]));
-    dispatch(updateDetails("wyrmprint"));
+    dispatch(setStats("wyrmprint1", equipment[element]));
+    dispatch(updateDetails("wyrmprint1"));
   }
 }
 

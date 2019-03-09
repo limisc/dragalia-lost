@@ -25,7 +25,7 @@ const mapDispatchToProps = (dispatch) => {
 
 class DetailsPanel extends Component {
   state = {
-    rows: ["adventurer", "weapon", "wyrmprint", "dragon", "ability", "halidom"],
+    rows: ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon", "ability", "halidom"],
     total: {
       en: "Total (Adjusted - Fafnir Statue)",
       ja: "合計 (調整 - ファフ二ール像)",
@@ -83,7 +83,7 @@ class DetailsPanel extends Component {
   _calcDamage = () => {
     let damage = "";
     let { dungeon, defense, HP, info } = this.state;
-    const { adventurer, wyrmprint, dragon, weapon } = this.props.stats;
+    const { adventurer, wyrmprint1, wyrmprint2, dragon, weapon } = this.props.stats;
 
     if (dungeon && adventurer) {
       let reduce = 0, res = 0, eleModifier = 1;
@@ -113,18 +113,32 @@ class DetailsPanel extends Component {
         }
       }
 
-      if (wyrmprint) {
-        const { unbind } = wyrmprint;
+      if (wyrmprint1) {
+        const { unbind } = wyrmprint1;
         if (unbind === "4") {
-          defense += wyrmprint.defense2 || 0;
-          reduce = wyrmprint.enemy === dungeon ? wyrmprint.reduce2 : 0;
-          res += wyrmprint.elementRes === info[dungeon].element ? wyrmprint.res2 : 0;
+          defense += wyrmprint1.defense2 || 0;
+          reduce += wyrmprint1.enemy === dungeon ? wyrmprint1.reduce2 : 0;
+          res += wyrmprint1.elementRes === info[dungeon].element ? wyrmprint1.res2 : 0;
         } else {
-          defense += wyrmprint.defense1 || 0;
-          reduce = wyrmprint.enemy === dungeon ? wyrmprint.reduce1 : 0;
-          res += wyrmprint.elementRes === info[dungeon].element ? wyrmprint.res1 : 0;
+          defense += wyrmprint1.defense1 || 0;
+          reduce += wyrmprint1.enemy === dungeon ? wyrmprint1.reduce1 : 0;
+          res += wyrmprint1.elementRes === info[dungeon].element ? wyrmprint1.res1 : 0;
         }
       }
+      console.log("wyrmprint1", defense, reduce, res)
+      if (wyrmprint2) {
+        const { unbind } = wyrmprint2;
+        if (unbind === "4") {
+          defense += wyrmprint2.defense2 || 0;
+          reduce += wyrmprint2.enemy === dungeon ? wyrmprint2.reduce2 : 0;
+          res += wyrmprint2.elementRes === info[dungeon].element ? wyrmprint2.res2 : 0;
+        } else {
+          defense += wyrmprint2.defense1 || 0;
+          reduce += wyrmprint2.enemy === dungeon ? wyrmprint2.reduce1 : 0;
+          res += wyrmprint2.elementRes === info[dungeon].element ? wyrmprint2.res1 : 0;
+        }
+      }
+      console.log("wyrmprint1 + wyrmprint2", defense, reduce, res)
 
       if (dragon && dragon.elementRes && dragon.elementRes === info[dungeon].element) {
         res += dragon.unbind === "4" ? dragon.res2 : dragon.res1;
