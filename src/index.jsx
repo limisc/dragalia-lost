@@ -5,21 +5,27 @@ import { Provider } from 'react-redux';
 import {
   Router,
   Route,
-  // Switch
+  Switch
 } from 'react-router-dom';
 
 import "./styles.css";
-import { store, history } from "store";
 import { StatsCalc } from "views";
+import { history, store, } from "store";
 
 const App = () => {
   return (
     <Provider store={store}>
       <Router history={history}>
-        <Route
-          path="/"
-          component={StatsCalc}
-        />
+        <Switch>
+          <Route
+            path="/:page(stats_calc)/:lang(en|ja|zh)"
+            component={StatsCalc}
+          />
+          <Route
+            path="/"
+            component={StatsCalc}
+          />
+        </Switch>
       </Router>
     </Provider>
   );

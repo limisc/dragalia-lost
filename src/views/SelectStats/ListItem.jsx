@@ -4,9 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
-import { selectStats } from "actions";
-
+// import { selectStats } from "actions";
 const propTypes = {
+  fields: PropTypes.array.isRequired,
   section: PropTypes.string.isRequired,
   item: PropTypes.object,
 };
@@ -20,8 +20,6 @@ class ListItem extends React.Component {
       wyrmprint: ["rarity"],
       dragon: ["element", "rarity"],
     };
-
-    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -29,7 +27,10 @@ class ListItem extends React.Component {
       style,
       section,
       item,
+      fields,
+      onClick,
     } = this.props;
+
     let image = "add";
     if (item) {
       switch (section) {
@@ -44,14 +45,16 @@ class ListItem extends React.Component {
           break;
       }
     }
+
     return (
-      <div style={style} className="flex">
-        <div className="lg center">
+      <div style={style} className="flex list">
+        <div className="list-img">
           <Image
+            id={item.Id}
             size="md"
             statsKey={section}
             image={image}
-            onClick={this.onClick}
+            onClick={onClick}
           />
         </div>
 
@@ -59,7 +62,7 @@ class ListItem extends React.Component {
           {item.Name["en"]}
         </span>
 
-        {this.state[section].map((field) => {
+        {fields.map((field) => {
           switch (field) {
             case "type":
             case "element":
@@ -84,11 +87,6 @@ class ListItem extends React.Component {
       </div>
     );
   }
-
-  onClick = () => {
-    const { focusStats, item, selectStats } = this.props;
-    selectStats(focusStats, item);
-  }
 }
 
 ListItem.propTypes = propTypes;
@@ -101,7 +99,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
+    // selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
   };
 }
 

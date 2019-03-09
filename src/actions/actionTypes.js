@@ -1,11 +1,9 @@
 const actionTypes = {
 
   RESET: "RESET",
-  //modify statsKey
-  SELECT_STATSKEY: "SELECT_STATSKEY",
 
+  SELECT_FOCUS: "SELECT_FOCUS",
   //modify filters
-  // RESET_FILTERS: "RESET_FILTERS",
   SELECT_FILTERS: "SELECT_FILTERS",
   NARROW_FILTERS: "NARROW_FILTERS",
 

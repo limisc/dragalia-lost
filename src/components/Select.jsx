@@ -1,26 +1,35 @@
+// @flow
 /* eslint-disable no-unused-vars */
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  FilledInput,
   FormControl,
   InputLabel,
+  MenuItem,
   Select,
-  FilledInput
 } from '@material-ui/core';
-
-import { AppContext } from "context";
 import {
-  buildOptions,
   translate,
 } from "actions";
-
+import { Context } from "store";
 
 const propTypes = {
-  label: PropTypes.string,
-  options: PropTypes.array.isRequired,
+
 };
 
-class CustomSelect extends Component {
+const defaultProps = {
+
+};
+
+
+class CustomSelect extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
 
   render() {
     const {
@@ -32,8 +41,7 @@ class CustomSelect extends Component {
     } = this.props;
 
     const { lang } = this.context;
-
-    const selectOptions = buildOptions(options, lang);
+    const selectOptions = this.buildOptions(options, lang);
 
     return (
       <FormControl
@@ -56,10 +64,26 @@ class CustomSelect extends Component {
       </FormControl>
     );
   }
+
+  buildOptions = (options, lang) => {
+    if (Array.isArray(options)
+      && (typeof options[0] === "string" || options[0] instanceof String)
+    ) {
+      return options.map((option) => {
+        let label = option;
+        if (option === "") {
+          label = "All";
+        } else if (isNaN(option)) {
+          label = translate(option, lang);
+        }
+        return <MenuItem key={option} value={option}>{label}</MenuItem>;
+      });
+    }
+  }
 }
 
-CustomSelect.contextType = AppContext;
-
+CustomSelect.contextType = Context;
 CustomSelect.propTypes = propTypes;
+CustomSelect.defaultProps = defaultProps;
 
 export default CustomSelect;

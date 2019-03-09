@@ -1,9 +1,11 @@
-import store from "./store";
 import state from "./state";
+import store from "./store";
 import history from "./history";
+import Context from "./context";
 
 export {
-  store,
-  state,
+  Context,
   history,
+  state,
+  store,
 };

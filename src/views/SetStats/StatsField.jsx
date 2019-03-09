@@ -2,12 +2,21 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from '@material-ui/core';
 import { connect } from 'react-redux';
+import { Grid } from '@material-ui/core';
+import {
+  adventurer,
+  weapon,
+  wyrmprint,
+  dragon,
+} from "data";
 
-import { getMaxLV } from "actions";
+import {
+  getLimit,
+  getSection,
+} from "actions";
+
 import StatsAvatar from "./StatsAvatar";
-
 
 const propTypes = {
 
@@ -18,11 +27,10 @@ const defaultProps = {
 };
 
 
-class StatsFields extends Component {
+class StatsField extends Component {
   constructor(props) {
     super(props);
-
-    const { statsKey, item } = props;
+    const { item, statsKey } = props;
     let state = {
       level: "",
       rarity: "",
@@ -34,7 +42,7 @@ class StatsFields extends Component {
     if (item) {
       const rarity = statsKey === "adventurer" ? "5" : item.rarity;
       state = {
-        level: getMaxLV(statsKey, rarity),
+        level: getLimit(statsKey, rarity),
         rarity,
         mana: "50",
         ex: "4",
@@ -47,10 +55,10 @@ class StatsFields extends Component {
 
   render() {
     const {
-      statsKey,
+      uid,
       item,
+      statsKey,
     } = this.props;
-    // console.log(this.state)
 
     const {
       level,
@@ -60,48 +68,46 @@ class StatsFields extends Component {
       unbind,
       bond,
     } = this.state;
-    let image = "add";
-    let label = statsKey;
+    const { Name } = item || {};
 
-    if (item) {
-      label = item.Name["en"];
+    let image = uid;
+    if (!!uid) {
       switch (statsKey) {
         case "adventurer":
-          image = item.Id + rarity;
+          image = uid + rarity;
           break;
         case "wyrmprint1":
         case "wyrmprint2":
           const int_unbind = parseInt(unbind, 10);
-          image = int_unbind >= 2 ? item.Id + "2" : item.Id + "1";
+          image = int_unbind >= 2 ? uid + "2" : uid + "1";
           break;
         default:
-          image = item.Id;
+          image = uid;
           break;
       }
     }
     return (
-      <Grid container>
-        <Grid item xs={4}
+      <Grid container style={{ height: "120px" }}>
+        <Grid
           container
+          item xs={4}
           direction="column"
           justify="center"
           alignItems="center"
         >
           <StatsAvatar
             image={image}
-            label={label}
+            name={Name}
             statsKey={statsKey}
           />
         </Grid>
 
-        <Grid item xs={8}
+        <Grid
           container
+          item xs={8}
           spacing={8}
           alignItems="center"
         >
-          {/* <StatsField
-            section={statsKey}
-          /> */}
         </Grid>
       </Grid>
     );
@@ -109,8 +115,8 @@ class StatsFields extends Component {
 }
 
 
-StatsFields.propTypes = propTypes;
-StatsFields.defaultProps = defaultProps;
+StatsField.propTypes = propTypes;
+StatsField.defaultProps = defaultProps;
 
 const mapStateToProps = (state) => {
   return {
@@ -127,4 +133,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(StatsFields);
+)(StatsField);

@@ -1,57 +1,91 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
-import {
-  Grid,
-} from '@material-ui/core';
-import { AppContext } from "context";
-import { getTitle } from "actions";
+import { Grid } from '@material-ui/core';
+import Context from "store/context";
 import {
   Header,
-  StatsSet,
-  TablePanel,
+  SetStats,
+  SelectStats,
 } from "views";
 
 class StatsCalc extends Component {
 
+  constructor(props) {
+    super(props)
+
+    this.parseSearch = this.parseSearch.bind(this);
+  }
   render() {
-    const { lang = "en" } = this.props.match.params;
-    console.log(this.props)
-    // document.title = getTitle(lang);
-    // const { search } = this.props.location;
-    // const q = {};
-    // search.slice(1).split("&").forEach((v) => {
-    //   console.log(v)
-    //   const a = v.split("=");
-    //   console.log("a", a)
-    //   q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
-    //   console.log("q[a[]],", a.slice(1).join("=").replace(/~and~/g, "&"))
-    // })
+    const {
+      match: { params: { page = "stats_calc", lang = "en" } },
+      location: { search },
+    } = this.props;
+
+    const {
+      adventurer,
+      weapon,
+      wyrmprint1,
+      wyrmprint2,
+      dragon,
+    } = this.parseSearch(search);
+
     return (
-      <AppContext.Provider value={{ lang }}>
-        <Header match={this.props.match} />
-        <main className="content fluid">
+      <Context.Provider
+        value={{
+          lang,
+          page,
+          stats: {
+            adventurer,
+            weapon,
+            wyrmprint1,
+            wyrmprint2,
+            dragon,
+          }
+        }}
+      >
+        <Header />
+        <main className="fluid content">
           <Grid container
             spacing={8}
             alignItems="flex-start"
           >
-            <Grid container item xs={12} md={4} className="sticky">
-
-            </Grid>
-            <Grid container item xs={12} md={4} className="sticky">
-              <StatsSet />
-            </Grid>
-            <Grid container item xs={12} md={4}
+            <Grid
+              container
+              item xs={12} md={4}
               className="sticky"
             >
-              <TablePanel />
+
+            </Grid>
+            <Grid
+              container
+              item xs={12} md={4}
+              className="sticky"
+            >
+              <SetStats />
+            </Grid>
+            <Grid
+              container
+              item xs={12} md={4}
+              className="sticky"
+            >
+              <SelectStats />
             </Grid>
           </Grid>
         </main>
-      </AppContext.Provider>
+      </Context.Provider>
     );
+  }
+
+  parseSearch = (search) => {
+    const q = {};
+    search.slice(1).split("&").forEach((v) => {
+      const a = v.split("=");
+      q[a[0]] = a[1];
+    });
+    return q;
   }
 }
 
-StatsCalc.contextType = AppContext;
+// StatsCalc.contextType = Context;
 
 export default StatsCalc;

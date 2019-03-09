@@ -1,41 +1,45 @@
+// @flow
 /* eslint-disable no-unused-vars */
-import React, { PureComponent, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
+import { translate } from "actions";
+const propTypes = {
 
-import { selectStatsKey } from "actions";
+};
 
-const mapStateToProps = (state) => {
-  return {
-  };
-}
+const defaultProps = {
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    selectStatsKey: (statsKey) => dispatch(selectStatsKey(statsKey)),
-  };
-}
+};
 
-class StatsAvatar extends PureComponent {
+
+class StatsAvatar extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+
+    };
+
     this.onClick = this.onClick.bind(this);
   }
 
   render() {
-    const {
+    let {
       image,
-      label,
+      name,
       statsKey,
     } = this.props;
+
+
+    const label = name ? name["en"] : statsKey;
 
     return (
       <Fragment>
         <Image
-          size="lg"
-          statsKey={statsKey}
+          size={"lg"}
           image={image}
+          statsKey={statsKey}
           onClick={this.onClick}
         />
         {label}
@@ -44,16 +48,25 @@ class StatsAvatar extends PureComponent {
   }
 
   onClick = () => {
-    const { statsKey, selectStatsKey } = this.props;
-    selectStatsKey(statsKey);
+
   }
 }
 
 
-StatsAvatar.propTypes = {
-  statsKey: PropTypes.string.isRequired,
+StatsAvatar.propTypes = propTypes;
+StatsAvatar.defaultProps = defaultProps;
+
+const mapStateToProps = (state) => {
+  return {
+
+  };
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    //: () => dispatch(),
+  };
+}
 
 export default connect(
   mapStateToProps,
