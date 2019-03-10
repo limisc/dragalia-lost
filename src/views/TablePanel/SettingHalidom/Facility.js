@@ -39,9 +39,10 @@ class Facility extends Component {
   }
 
   levelIncrement = () => {
-    let { field, index, item: { level }, updateHalidom } = this.props;
+    let { field, index, item: { level, type }, updateHalidom } = this.props;
     level = parseInt(level, 10) + 1;
-    if (level <= 30) {
+    const limit = (type === "slime" ? 15 : 30);
+    if (level <= limit) {
       updateHalidom(field, index, level)
     }
   }
