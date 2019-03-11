@@ -1,11 +1,12 @@
+import history from "./history";
 import state from "./state";
 import store from "./store";
-import history from "./history";
-import Context from "./context";
+
+const statsFields = ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon"];
 
 export {
-  Context,
   history,
   state,
+  statsFields,
   store,
 };

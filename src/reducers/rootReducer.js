@@ -1,47 +1,45 @@
 import state from "store/state";
 import filterReducer from "./filterReducer";
+import searchReducer from "./searchReducer";
+import statsReducer from "./statsReducer";
 import {
   actionTypes,
   getSection,
 } from "actions";
 
 
-const focusReducer = (focusStats, action) => {
+const focusReducer = (focusKey, action) => {
   if (action.type === actionTypes.SELECT_FOCUS) {
     return action.statsKey;
   }
 
-  return focusStats;
+  return focusKey;
 }
 
 const rootReducer = ({
-  focusStats,
   filters,
+  focusKey,
+  search,
+  stats,
   details,
 }, action) => {
 
   if (action.type === actionTypes.RESET) {
-    return state;
+    return {
+      ...state,
+    };
   }
 
-  const section = getSection(focusStats);
+  const new_stats = statsReducer(stats, action);
+  const new_search = searchReducer(search, action, new_stats);
   return {
-    focusStats: focusReducer(focusStats, action),
-    section,
     filters: filterReducer(filters, action),
+    focusKey: focusReducer(focusKey, action),
+    section: getSection(focusKey),
+    search: new_search,
+    stats: new_stats,
     // details: detailReducer(details, action),
   }
 }
 
 export default rootReducer;
-
-
-
-
-
-
-
-
-
-
-

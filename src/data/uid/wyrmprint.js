@@ -1,5 +1,4 @@
-const wyrmprint_uid =
-[
+const wyrmprint = [
   "400006_0",
   "400007_0",
   "400008_0",
@@ -122,4 +121,4 @@ const wyrmprint_uid =
   "400163_0",
   "400167_0"
 ];
-export default wyrmprint_uid;
+export default wyrmprint;

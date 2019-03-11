@@ -4,7 +4,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
-// import { selectStats } from "actions";
+import { selectStats } from "actions";
+import {
+  history,
+  Context,
+} from "store";
+
 const propTypes = {
   fields: PropTypes.array.isRequired,
   section: PropTypes.string.isRequired,
@@ -20,6 +25,8 @@ class ListItem extends React.Component {
       wyrmprint: ["rarity"],
       dragon: ["element", "rarity"],
     };
+
+    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -54,7 +61,7 @@ class ListItem extends React.Component {
             size="md"
             statsKey={section}
             image={image}
-            onClick={onClick}
+            onClick={this.onClick}
           />
         </div>
 
@@ -87,19 +94,35 @@ class ListItem extends React.Component {
       </div>
     );
   }
+
+  onClick = () => {
+    const {
+      focusKey,
+      item,
+      selectStats,
+    } = this.props;
+
+    selectStats(focusKey, item);
+  }
 }
 
 ListItem.propTypes = propTypes;
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({
+  focusKey,
+  section,
+  stats,
+}) => {
   return {
-
+    focusKey,
+    section,
+    stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
+    selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
   };
 }
 

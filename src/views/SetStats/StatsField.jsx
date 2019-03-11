@@ -4,12 +4,6 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Grid } from '@material-ui/core';
-import {
-  adventurer,
-  weapon,
-  wyrmprint,
-  dragon,
-} from "data";
 
 import {
   getLimit,

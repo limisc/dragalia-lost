@@ -1,6 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { createSelector } from 'reselect';
-import { limit } from "data";
+import {
+  data,
+  limit,
+} from "data";
 import intl from "intl/default";
+
 
 const getSection = (statsKey) => {
   if (statsKey === "wyrmprint1" || statsKey === "wyrmprint2") {
@@ -65,9 +70,47 @@ const getFilters = (props, state) => {
 //       return undefined;
 //     }
 
+const getItem = (statsKey, id) => {
+  const section = getSection(statsKey);
+  if (data[section] && data[section][id]) {
+    return data[section][id];
+  }
+
+  return null;
+}
+
+const getSearch = statsFields => {
+  return createSelector(
+    stats => stats,
+    (stats) => {
+      return statsFields.reduce((result, k) => {
+        if (!!stats[k]) {
+          result.push(`${k}=${stats[k].Id}`);
+        }
+
+        return result;
+      }, []).join("&");
+    }
+  );
+}
+
+const parseSearch = createSelector(
+  search => search.slice(1).split("&"),
+  (searchArray) => {
+    const q = {};
+    searchArray.forEach((v) => {
+      const a = v.split("=");
+      q[a[0]] = getItem(a[0], a[1]);
+    });
+    return q;
+  }
+);
 
 export {
+  getItem,
   getLimit,
   getSection,
+  getSearch,
+  parseSearch,
   translate,
 };

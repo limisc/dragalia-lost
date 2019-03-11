@@ -1,9 +1,8 @@
+import state from "store/state";
 import {
   actionTypes,
   reducerCreator,
 } from "actions";
-
-import state from "store/state";
 
 const INIT_FILTERS = {
   ...state.filters,
@@ -21,11 +20,11 @@ const narrowFilters = (_, action, stats) => {
   const { adventurer, weapon } = stats;
   let updates = {};
   if (statsKey === "adventurer" && weapon) {
-    updates = { type: weapon.type };
+    updates.type = weapon.type;
   } else if (statsKey === "weapon" && adventurer) {
-    updates = { type: adventurer.type };
+    updates.type = adventurer.type;
   } else if (statsKey === "dragon" && adventurer) {
-    updates = { element: adventurer.element };
+    updates.element = adventurer.element;
   }
 
   return {
@@ -33,7 +32,6 @@ const narrowFilters = (_, action, stats) => {
     ...updates,
   };
 }
-
 
 const filterReducer = reducerCreator({
   [actionTypes.SELECT_FILTERS]: selectFilters,

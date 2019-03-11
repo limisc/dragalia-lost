@@ -1,5 +1,4 @@
-const weapon_uid =
-[
+const weapon = [
   "301013_01_30101",
   "301053_01_30101",
   "301006_01_30201",
@@ -262,4 +261,4 @@ const weapon_uid =
   "308038_01_59901",
   "308039_01_59901"
 ];
-export default weapon_uid;
+export default weapon;

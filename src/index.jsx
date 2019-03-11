@@ -5,12 +5,14 @@ import { Provider } from 'react-redux';
 import {
   Router,
   Route,
-  Switch
-} from 'react-router-dom';
-
-import "./styles.css";
+  Switch,
+} from 'react-router';
+import {
+  history,
+  store,
+} from "store";
 import { StatsCalc } from "views";
-import { history, store, } from "store";
+import "./styles.css";
 
 const App = () => {
   return (

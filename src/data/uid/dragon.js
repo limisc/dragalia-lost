@@ -1,5 +1,4 @@
-const dragon_uid =
-[
+const dragon = [
   "210001_01",
   "210002_01",
   "210003_01",
@@ -56,4 +55,4 @@ const dragon_uid =
   "210080_01",
   "210089_01"
 ];
-export default dragon_uid;
+export default dragon;

@@ -3,25 +3,22 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import {
   WindowScroller,
   AutoSizer,
   List,
 } from 'react-virtualized';
 import {
-  adventurer_uid,
-  weapon_uid,
-  wyrmprint_uid,
-  dragon_uid,
-  adventurer,
-  weapon,
-  wyrmprint,
-  dragon,
+  data,
+  uid,
 } from "data";
 import {
   history,
-  Context,
 } from "store";
+import {
+  selectStats,
+} from "actions";
 import ListItem from "./ListItem";
 
 
@@ -38,18 +35,8 @@ class StatsTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {
-        adventurer,
-        weapon,
-        wyrmprint,
-        dragon,
-      },
-      uid: {
-        adventurer: adventurer_uid,
-        weapon: weapon_uid,
-        wyrmprint: wyrmprint_uid,
-        dragon: dragon_uid,
-      },
+      data,
+      uid,
     };
 
     this.onClick = this.onClick.bind(this);
@@ -90,9 +77,9 @@ class StatsTable extends Component {
                       <ListItem
                         key={key}
                         style={style}
-                        section={section}
+                        // section={section}
                         fields={fields}
-                        focusStats={focusStats}
+                        // focusStats={focusStats}
                         item={item}
                         onClick={this.onClick}
                       />
@@ -109,37 +96,48 @@ class StatsTable extends Component {
     );
   }
 
-  onClick = (e) => {
-    const { focusStats } = this.props;
-    let { page, lang, stats } = this.context;
-    stats = { ...stats, [focusStats]: e.target.id };
-    const search = ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon"].reduce((acc, cur) => {
-      return !!stats[cur] ? `${acc}${cur}=${stats[cur]}&` : acc;
-    }, "")
-
-    history.replace(`/${page}/${lang}?${search}`);
+  onClick = () => {
+    const {
+      statsFields,
+      stats,
+      match: {
+        params: { lang = "en", page = "stats_calc" },
+      },
+    } = this.props;
+    console.log(stats)
+    const search = statsFields.reduce((acc, statsKey) => {
+      return !!stats[statsKey] ? `${acc}${statsKey}=${stats[statsKey].Id}&` : acc;
+    });
+    history.push(`${lang}?${search}`);
   }
 }
 
-StatsTable.contextType = Context;
 StatsTable.propTypes = propTypes;
 StatsTable.defaultProps = defaultProps;
 
-const mapStateToProps = ({ focusStats, section, filters }) => {
+const mapStateToProps = ({
+  statsFields,
+  focusStats,
+  section,
+  filters,
+  stats,
+}) => {
   return {
+    statsFields,
     focusStats,
     section,
     filters,
+    stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    //: () => dispatch(),
+    selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
   };
 }
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps,
-)(StatsTable);
+)(StatsTable));

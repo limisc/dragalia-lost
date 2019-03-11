@@ -3,16 +3,15 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { Paper } from '@material-ui/core';
-import { Context } from "store";
-import {
-  adventurer,
-  weapon,
-  wyrmprint,
-  dragon,
-} from "data";
-import { getSection } from "actions";
 import StatsField from "./StatsField";
+import { statsFields } from "store";
+import {
+  getSection,
+  parseSearch,
+  syncStats,
+} from "actions";
 
 const propTypes = {
 
@@ -26,33 +25,39 @@ const defaultProps = {
 class SetStats extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      statsFields: ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon"],
-      adventurer,
-      weapon,
-      wyrmprint,
-      dragon,
-    };
-    console.log("once")
+    this.state = {};
+  }
+
+  static getDerivedStateFromProps(props) {
+    const {
+      history: { action },
+      location: { search },
+      syncStats,
+    } = props;
+
+    if (action === "POP" && search !== props.search) {
+      syncStats(search);
+    }
+
+    return null;
   }
 
   render() {
 
     const {
-      statsFields,
-    } = this.state;
+      stats,
+    } = this.props;
 
     return (
-      <Paper className="fluid sticky">
+      <Paper className="fluid">
         {statsFields.map((statsKey) => {
-          const section = getSection(statsKey);
-          const { [statsKey]: uid } = this.context.stats;
-          const { [section]: { [uid]: item } } = this.state;
-          const key = item ? uid : statsKey;
+          const { [statsKey]: item } = stats;
+          const { Id } = item || {};
+          const key = Id ? Id : statsKey;
           return (
             <StatsField
               key={key}
-              uid={uid}
+              uid={Id}
               item={item}
               statsKey={statsKey}
             />
@@ -63,23 +68,26 @@ class SetStats extends Component {
   }
 }
 
-SetStats.contextType = Context;
 SetStats.propTypes = propTypes;
 SetStats.defaultProps = defaultProps;
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({
+  search,
+  stats,
+}) => {
   return {
-
+    search,
+    stats,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    //: () => dispatch(),
+    syncStats: (search) => dispatch(syncStats(search)),
   };
 }
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps,
-)(SetStats);
+)(SetStats));

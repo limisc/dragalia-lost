@@ -12,7 +12,6 @@ import {
 import {
   translate,
 } from "actions";
-import { Context } from "store";
 
 const propTypes = {
 
@@ -35,12 +34,12 @@ class CustomSelect extends React.Component {
     const {
       disabled,
       label,
+      lang,
       onChange,
       options,
       value,
     } = this.props;
 
-    const { lang } = this.context;
     const selectOptions = this.buildOptions(options, lang);
 
     return (
@@ -82,7 +81,6 @@ class CustomSelect extends React.Component {
   }
 }
 
-CustomSelect.contextType = Context;
 CustomSelect.propTypes = propTypes;
 CustomSelect.defaultProps = defaultProps;
 

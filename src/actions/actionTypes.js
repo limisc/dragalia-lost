@@ -8,6 +8,7 @@ const actionTypes = {
   NARROW_FILTERS: "NARROW_FILTERS",
 
   //modify stats
+  AYNC_STATS: "AYNC_STATS",
   SELECT_STATS: "SELECT_STATS",
   UPDATE_STATS: "UPDATE_STATS",
 

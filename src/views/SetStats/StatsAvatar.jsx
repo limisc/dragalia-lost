@@ -4,7 +4,10 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
-import { translate } from "actions";
+import {
+  selectFocus,
+  translate,
+} from "actions";
 const propTypes = {
 
 };
@@ -48,7 +51,11 @@ class StatsAvatar extends Component {
   }
 
   onClick = () => {
-
+    const {
+      selectFocus,
+      statsKey,
+    } = this.props;
+    selectFocus(statsKey);
   }
 }
 
@@ -64,7 +71,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    //: () => dispatch(),
+    selectFocus: (statsKey) => dispatch(selectFocus(statsKey)),
   };
 }
 

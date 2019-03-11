@@ -1,5 +1,4 @@
-const adventurer_uid =
-[
+const adventurer = [
   "100001_01_r0",
   "100002_01_r0",
   "100002_02_r0",
@@ -101,4 +100,4 @@ const adventurer_uid =
   "110315_01_r0",
   "110316_01_r0"
 ];
-export default adventurer_uid;
+export default adventurer;
