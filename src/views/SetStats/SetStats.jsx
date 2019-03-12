@@ -46,6 +46,7 @@ class SetStats extends Component {
 
     const {
       stats,
+      match: { params: { lang = "en" } },
     } = this.props;
 
     return (
@@ -53,12 +54,13 @@ class SetStats extends Component {
         {statsFields.map((statsKey) => {
           const { [statsKey]: item } = stats;
           const { Id } = item || {};
-          const key = Id ? Id : statsKey;
+          const key = Id || statsKey;
           return (
             <StatsField
               key={key}
               uid={Id}
               item={item}
+              lang={lang}
               statsKey={statsKey}
             />
           );

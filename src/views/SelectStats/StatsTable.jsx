@@ -38,13 +38,10 @@ class StatsTable extends Component {
       data,
       uid,
     };
-
-    this.onClick = this.onClick.bind(this);
   }
 
   render() {
     const {
-      focusStats,
       section,
       filters,
       fields,
@@ -73,17 +70,17 @@ class StatsTable extends Component {
                   rowRenderer={({ key, index, style }) => {
                     const uid = idList[index];
                     const item = data[uid];
-                    return (
-                      <ListItem
-                        key={key}
-                        style={style}
-                        // section={section}
-                        fields={fields}
-                        // focusStats={focusStats}
-                        item={item}
-                        onClick={this.onClick}
-                      />
-                    )
+                    if (item) {
+                      return (
+                        <ListItem
+                          key={key}
+                          style={style}
+                          fields={fields}
+                          item={item}
+                          onClick={this.onClick}
+                        />
+                      )
+                    }
                   }}
                   scrollTop={scrollTop}
                   width={width}
@@ -95,35 +92,18 @@ class StatsTable extends Component {
       </div>
     );
   }
-
-  onClick = () => {
-    const {
-      statsFields,
-      stats,
-      match: {
-        params: { lang = "en", page = "stats_calc" },
-      },
-    } = this.props;
-    console.log(stats)
-    const search = statsFields.reduce((acc, statsKey) => {
-      return !!stats[statsKey] ? `${acc}${statsKey}=${stats[statsKey].Id}&` : acc;
-    });
-    history.push(`${lang}?${search}`);
-  }
 }
 
 StatsTable.propTypes = propTypes;
 StatsTable.defaultProps = defaultProps;
 
 const mapStateToProps = ({
-  statsFields,
   focusStats,
   section,
   filters,
   stats,
 }) => {
   return {
-    statsFields,
     focusStats,
     section,
     filters,

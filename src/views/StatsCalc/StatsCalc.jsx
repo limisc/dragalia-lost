@@ -6,7 +6,7 @@ import {
   SetStats,
   SelectStats,
 } from "views";
-
+import StatsDetails from "./StatsDetails";
 class StatsCalc extends Component {
 
   render() {
@@ -24,7 +24,7 @@ class StatsCalc extends Component {
               item xs={12} md={4}
               className="sticky"
             >
-
+              <StatsDetails />
             </Grid>
             <Grid
               container

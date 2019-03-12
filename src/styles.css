@@ -54,15 +54,20 @@ body {
   border-style: solid;
 }
 
+.stats-details-list {
+  height: 60px;
+  border-bottom: 2px solid #eee;
+}
+
 .list-img {
-  flex: 0 1 100px;
+  flex: 0 1 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .list-name {
-  flex: 1 1 100px;
+  flex: 1 1 200px;
 }
 
 .list-rest {
@@ -84,6 +89,7 @@ body {
   height: 32px;
 }
 
-.MuiPaper-root-10 {
-  background-color: #ffedc3;
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

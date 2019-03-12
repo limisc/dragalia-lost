@@ -754,6 +754,32 @@ const dragon =
       "STR": 30
     }
   },
+  "210046_01": {
+    "Id": "210046_01",
+    "Name": {
+      "en": "Nyarlathotep",
+      "ja": "Nyarlathotep",
+      "zh": "奈亚拉托提普"
+    },
+    "element": "Shadow",
+    "rarity": "5",
+    "MinHp": 36,
+    "MaxHp": 368,
+    "MinAtk": 12,
+    "MaxAtk": 128,
+    "Abilities11": 35,
+    "Abilities12": 50,
+    "Abilities21": 35,
+    "Abilities22": 50,
+    "ability1": {
+      "HP": 0,
+      "STR": 0
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 0
+    }
+  },
   "210048_01": {
     "Id": "210048_01",
     "Name": {

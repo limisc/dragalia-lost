@@ -35,7 +35,6 @@ class ListItem extends React.Component {
       section,
       item,
       fields,
-      onClick,
     } = this.props;
 
     let image = "add";
@@ -54,14 +53,13 @@ class ListItem extends React.Component {
     }
 
     return (
-      <div style={style} className="flex list">
+      <div style={style} className="flex list" onClick={this.onClick}>
         <div className="list-img">
           <Image
-            id={item.Id}
             size="md"
             statsKey={section}
             image={image}
-            onClick={this.onClick}
+          // onClick={this.onClick}
           />
         </div>
 

@@ -30,7 +30,7 @@ const syncStats = (_, action) => {
 const selectStats = (stats, action) => {
   const { statsKey, item } = action;
   const { adventurer, weapon } = stats;
-  let updates = {};
+  const updates = {};
   if (item) {
     if (statsKey === "adventurer") {
       const equipment = {

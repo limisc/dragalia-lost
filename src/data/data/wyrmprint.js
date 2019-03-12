@@ -1842,6 +1842,25 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
+  "400119_0": {
+    "Id": "400119_0",
+    "Name": {
+      "en": "First-Rate Hospitality",
+      "ja": "First-Rate Hospitality",
+      "zh": "顶级服务"
+    },
+    "rarity": "4",
+    "MinHp": 21,
+    "MaxHp": 142,
+    "MinAtk": 7,
+    "MaxAtk": 50,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "Abilities21": 20,
+    "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
   "400121_0": {
     "Id": "400121_0",
     "Name": {
@@ -2348,6 +2367,63 @@ const wyrmprint =
     "Abilities12": 20,
     "Abilities21": 20,
     "Abilities22": 40,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400154_0": {
+    "Id": "400154_0",
+    "Name": {
+      "en": "The Fleeting Girl",
+      "ja": "The Fleeting Girl",
+      "zh": "缥缈的少女"
+    },
+    "rarity": "5",
+    "MinHp": 28,
+    "MaxHp": 187,
+    "MinAtk": 7,
+    "MaxAtk": 53,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 40,
+    "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400156_0": {
+    "Id": "400156_0",
+    "Name": {
+      "en": "The Heretic's Laboratory",
+      "ja": "The Heretic's Laboratory",
+      "zh": "异端研究室"
+    },
+    "rarity": "3",
+    "MinHp": 10,
+    "MaxHp": 71,
+    "MinAtk": 3,
+    "MaxAtk": 25,
+    "Abilities11": 80,
+    "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400157_0": {
+    "Id": "400157_0",
+    "Name": {
+      "en": "Hitting the Books",
+      "ja": "Hitting the Books",
+      "zh": "读书真难?"
+    },
+    "rarity": "5",
+    "MinHp": 22,
+    "MaxHp": 151,
+    "MinAtk": 8,
+    "MaxAtk": 54,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "Abilities31": 0,
     "Abilities32": 0
   },

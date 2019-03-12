@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import actionTypes from './actionTypes';
-import { push } from 'connected-react-router';
 
 const actionCreator = (type, ...argNames) => {
   return (...args) => {
@@ -23,12 +22,14 @@ const reducerCreator = (handler) => {
 }
 
 const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");
+
 const selectFocus = statsKey => dispatch => {
   dispatch({ type: actionTypes.SELECT_FOCUS, statsKey });
-  dispatch(selectStats(statsKey, null));
+
 }
 const selectStats = actionCreator(actionTypes.SELECT_STATS, "statsKey", "item");
 const syncStats = actionCreator(actionTypes.AYNC_STATS, "search");
+const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "statsKey", "state");
 
 export {
   reducerCreator,
@@ -36,4 +37,5 @@ export {
   selectFocus,
   selectStats,
   syncStats,
+  updateDetails,
 };

@@ -1,5 +1,10 @@
-const limit =
-{
+const limit = {
+  bond: 30,
+  altar: 30,
+  dojo: 30,
+  fafnir: 30,
+  slime: 15,
+  event: 30,
   adventurer: { "3": 60, "4": 70, "5": 80 },
   mana: { "3": 30, "4": 40, "5": 50 },
   weapon: {

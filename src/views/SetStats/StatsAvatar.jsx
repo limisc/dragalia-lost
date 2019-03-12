@@ -1,15 +1,20 @@
 // @flow
 /* eslint-disable no-unused-vars */
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
+import { Typography } from '@material-ui/core';
 import {
   selectFocus,
   translate,
 } from "actions";
-const propTypes = {
 
+const propTypes = {
+  image: PropTypes.string,
+  lang: PropTypes.string,
+  name: PropTypes.objectOf(PropTypes.string),
+  statsKey: PropTypes.string.isRequired,
 };
 
 const defaultProps = {
@@ -17,7 +22,7 @@ const defaultProps = {
 };
 
 
-class StatsAvatar extends Component {
+class StatsAvatar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,12 +35,12 @@ class StatsAvatar extends Component {
   render() {
     let {
       image,
+      lang,
       name,
       statsKey,
     } = this.props;
 
-
-    const label = name ? name["en"] : statsKey;
+    const label = !!name ? name[lang] : translate(statsKey, lang);
 
     return (
       <Fragment>
@@ -45,7 +50,9 @@ class StatsAvatar extends Component {
           statsKey={statsKey}
           onClick={this.onClick}
         />
-        {label}
+        <Typography noWrap>
+          {label}
+        </Typography>
       </Fragment>
     );
   }
@@ -63,12 +70,6 @@ class StatsAvatar extends Component {
 StatsAvatar.propTypes = propTypes;
 StatsAvatar.defaultProps = defaultProps;
 
-const mapStateToProps = (state) => {
-  return {
-
-  };
-}
-
 const mapDispatchToProps = (dispatch) => {
   return {
     selectFocus: (statsKey) => dispatch(selectFocus(statsKey)),
@@ -76,6 +77,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 )(StatsAvatar);

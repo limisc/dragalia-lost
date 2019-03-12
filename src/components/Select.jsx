@@ -14,7 +14,10 @@ import {
 } from "actions";
 
 const propTypes = {
-
+  disabled: PropTypes.bool,
+  label: PropTypes.string,
+  lang: PropTypes.string,
+  options: PropTypes.array,
 };
 
 const defaultProps = {

@@ -6,14 +6,10 @@ import { connect } from 'react-redux';
 import { Grid } from '@material-ui/core';
 import { Select } from "components";
 import { selectFilters } from "actions";
+
 const propTypes = {
-
+  fields: PropTypes.array.isRequired,
 };
-
-const defaultProps = {
-
-};
-
 
 class FilterStats extends Component {
   constructor(props) {
@@ -48,29 +44,16 @@ class FilterStats extends Component {
             />
           </Grid>
         ))}
-
-        {/* <Grid item xs={6} lg={3}>
-        <Button
-          className="btn"
-          color="secondary"
-          variant="outlined"
-          onClick={this._onClick}
-        >
-          {translate("clear", lang)}
-        </Button>
-      </Grid> */}
       </Grid>
     );
   }
 
-  onChange = (e) => {
-    this.props.selectFilters(e.target.name, e.target.value);
+  onChange = ({ target: { name, value } }) => {
+    this.props.selectFilters(name, value);
   }
 }
 
-
 FilterStats.propTypes = propTypes;
-FilterStats.defaultProps = defaultProps;
 
 const mapStateToProps = ({ filters }) => {
   return {

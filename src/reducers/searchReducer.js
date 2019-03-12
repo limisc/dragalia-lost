@@ -9,12 +9,11 @@ import {
 
 const searchReducer = (search, action, stats) => {
   const { type } = action;
-  if (type === actionTypes.AYNC_STATS) {
-    return action.search;
-  } else if (type === actionTypes.SELECT_STATS) {
-    const new_search = getSearch(statsFields)(stats);
-    history.push(`?${new_search}`);
-    return new_search;
+  if (type === actionTypes.AYNC_STATS
+    || type === actionTypes.SELECT_STATS) {
+    const newSearch = getSearch(statsFields)(stats);
+    history.push(`?${newSearch}`);
+    return newSearch;
   }
 
   return search;
