@@ -125,7 +125,6 @@ class DetailsPanel extends Component {
           res += wyrmprint1.elementRes === info[dungeon].element ? wyrmprint1.res1 : 0;
         }
       }
-      console.log("wyrmprint1", defense, reduce, res)
       if (wyrmprint2) {
         const { unbind } = wyrmprint2;
         if (unbind === "4") {
@@ -138,7 +137,6 @@ class DetailsPanel extends Component {
           res += wyrmprint2.elementRes === info[dungeon].element ? wyrmprint2.res1 : 0;
         }
       }
-      console.log("wyrmprint1 + wyrmprint2", defense, reduce, res)
 
       if (dragon && dragon.elementRes && dragon.elementRes === info[dungeon].element) {
         res += dragon.unbind === "4" ? dragon.res2 : dragon.res1;

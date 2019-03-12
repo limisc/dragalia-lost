@@ -178,9 +178,10 @@ export const element = {
     "3": { id: "100901", type: "event", level: 30, image: "event_Circus_Tent.png" },
   },
   Shadow: {
-    list: [0, 1],
+    list: ["0", "1", "2"],
     "0": { id: "100405", type: "altar", level: 30, image: "altar_Shadow.png" },
     "1": { id: "100405", type: "altar", level: 30, image: "altar_Shadow.png" },
+    "2": { id: "101701", type: "event", level: 30, image: "event_Library_Obscura.png" },
   },
 };
 
