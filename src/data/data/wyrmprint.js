@@ -1846,7 +1846,7 @@ const wyrmprint =
     "Id": "400119_0",
     "Name": {
       "en": "First-Rate Hospitality",
-      "ja": "First-Rate Hospitality",
+      "ja": "極上のおもてなし",
       "zh": "顶级服务"
     },
     "rarity": "4",
@@ -2374,7 +2374,7 @@ const wyrmprint =
     "Id": "400154_0",
     "Name": {
       "en": "The Fleeting Girl",
-      "ja": "The Fleeting Girl",
+      "ja": "儚げな少女",
       "zh": "缥缈的少女"
     },
     "rarity": "5",
@@ -2393,7 +2393,7 @@ const wyrmprint =
     "Id": "400156_0",
     "Name": {
       "en": "The Heretic's Laboratory",
-      "ja": "The Heretic's Laboratory",
+      "ja": "異端の研究室",
       "zh": "异端研究室"
     },
     "rarity": "3",
@@ -2412,8 +2412,8 @@ const wyrmprint =
     "Id": "400157_0",
     "Name": {
       "en": "Hitting the Books",
-      "ja": "Hitting the Books",
-      "zh": "读书真难?"
+      "ja": "読書は苦手？",
+      "zh": "读书真难？"
     },
     "rarity": "5",
     "MinHp": 22,

@@ -3832,7 +3832,7 @@ const adventurer =
     "Id": "110280_01_r0",
     "Name": {
       "en": "Heinwald",
-      "ja": "Heinwald",
+      "ja": "ハインヴァルト",
       "zh": "海因瓦尔德"
     },
     "type": "Staff",
@@ -3875,7 +3875,7 @@ const adventurer =
     "Id": "110281_01_r0",
     "Name": {
       "en": "Curran",
-      "ja": "Curran",
+      "ja": "クーガー",
       "zh": "库格尔"
     },
     "type": "Axe",

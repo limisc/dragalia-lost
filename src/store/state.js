@@ -1,7 +1,7 @@
 const state = {
   focusKey: "adventurer",
   section: "adventurer",
-  search: "",
+  // search: "",
   filters: {
     type: "",
     element: "",
@@ -13,6 +13,11 @@ const state = {
     weapon: null,
     wyrmprint1: null,
     wyrmprint2: null,
+    dragon: null,
+  },
+  halidom: {
+    element: null,
+    weapon: null,
     dragon: null,
   },
   details: {

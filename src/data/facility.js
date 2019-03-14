@@ -1,4 +1,4 @@
-const value = {
+const values = {
   altar: {
     "0": { HP: 0, STR: 0 },
     "1": { HP: 0.5, STR: 0.5 },
@@ -151,100 +151,91 @@ const value = {
   },
 };
 
-const element = {
-  Flame: {
-    list: ["0", "1", "2"],
-    "0": { id: "100401", type: "altar", image: "altar_Flame" },
-    "1": { id: "100401", type: "altar", image: "altar_Flame" },
-    "2": { id: "101901", type: "slime", image: "slime_Flame" },
-  },
-  Water: {
-    list: ["0", "1", "2"],
-    "0": { id: "100402", type: "altar", image: "altar_Water" },
-    "1": { id: "100402", type: "altar", image: "altar_Water" },
-    "2": { id: "101601", type: "event", image: "event_Yuletree" },
-  },
-  Wind: {
-    list: ["0", "1", "2"],
-    "0": { id: "100403", type: "altar", image: "altar_Wind" },
-    "1": { id: "100403", type: "altar", image: "altar_Wind" },
-    "2": { id: "101101", type: "event", image: "event_Wind_Shrine" },
-  },
-  Light: {
-    list: ["0", "1", "2", "3"],
-    "0": { id: "100404", type: "altar", image: "altar_Light" },
-    "1": { id: "100404", type: "altar", image: "altar_Light" },
-    "2": { id: "101501", type: "event", image: "event_Sweet_Retreat" },
-    "3": { id: "100901", type: "event", image: "event_Circus_Tent" },
-  },
-  Shadow: {
-    list: ["0", "1", "2"],
-    "0": { id: "100405", type: "altar", image: "altar_Shadow" },
-    "1": { id: "100405", type: "altar", image: "altar_Shadow" },
-    "2": { id: "101701", type: "event", image: "event_Library_Obscura" },
-  },
+const elementFacilities = {
+  Flame: [
+    { id: "100401", type: "altar", image: "altar_Flame" },
+    { id: "100401", type: "altar", image: "altar_Flame" },
+    { id: "101901", type: "slime", image: "slime_Flame" },
+  ],
+  Water: [
+    { id: "100402", type: "altar", image: "altar_Water" },
+    { id: "100402", type: "altar", image: "altar_Water" },
+    { id: "101601", type: "event", image: "event_Yuletree" },
+  ],
+  Wind: [
+    { id: "100403", type: "altar", image: "altar_Wind" },
+    { id: "100403", type: "altar", image: "altar_Wind" },
+    { id: "101101", type: "event", image: "event_Wind_Shrine" },
+  ],
+  Light: [
+    { id: "100404", type: "altar", image: "altar_Light" },
+    { id: "100404", type: "altar", image: "altar_Light" },
+    { id: "101501", type: "event", image: "event_Sweet_Retreat" },
+    { id: "100901", type: "event", image: "event_Circus_Tent" },
+  ],
+  Shadow: [
+    { id: "100405", type: "altar", image: "altar_Shadow" },
+    { id: "100405", type: "altar", image: "altar_Shadow" },
+    { id: "101701", type: "event", image: "event_Library_Obscura" },
+  ],
 };
 
-const weapon = {
-  Sword: {
-    list: ["0", "1"],
-    "0": { id: "100501", type: "dojo", image: "dojo_Sword" },
-    "1": { id: "100501", type: "dojo", image: "dojo_Sword" },
-  },
-  Blade: {
-    list: ["0", "1"],
-    "0": { id: "100502", type: "dojo", image: "dojo_Blade" },
-    "1": { id: "100502", type: "dojo", image: "dojo_Blade" },
-  },
-  Dagger: {
-    list: ["0", "1"],
-    "0": { id: "100503", type: "dojo", image: "dojo_Dagger" },
-    "1": { id: "100503", type: "dojo", image: "dojo_Dagger" },
-  },
-  Axe: {
-    list: ["0", "1"],
-    "0": { id: "100504", type: "dojo", image: "dojo_Axe" },
-    "1": { id: "100504", type: "dojo", image: "dojo_Axe" },
-  },
-  Lance: {
-    list: ["0", "1"],
-    "0": { id: "100505", type: "dojo", image: "dojo_Lance" },
-    "1": { id: "100505", type: "dojo", image: "dojo_Lance" },
-  },
-  Bow: {
-    list: ["0", "1"],
-    "0": { id: "100506", type: "dojo", image: "dojo_Bow" },
-    "1": { id: "100506", type: "dojo", image: "dojo_Bow" },
-  },
-  Wand: {
-    list: ["0", "1"],
-    "0": { id: "100507", type: "dojo", image: "dojo_Wand" },
-    "1": { id: "100507", type: "dojo", image: "dojo_Wand" },
-  },
-  Staff: {
-    list: ["0", "1"],
-    "0": { id: "100508", type: "dojo", image: "dojo_Staff" },
-    "1": { id: "100508", type: "dojo", image: "dojo_Staff" },
-  },
+const weaponFacilities = {
+  Sword: [
+    { id: "100501", type: "dojo", image: "dojo_Sword" },
+    { id: "100501", type: "dojo", image: "dojo_Sword" },
+  ],
+  Blade: [
+    { id: "100502", type: "dojo", image: "dojo_Blade" },
+    { id: "100502", type: "dojo", image: "dojo_Blade" },
+  ],
+  Dagger: [
+    { id: "100503", type: "dojo", image: "dojo_Dagger" },
+    { id: "100503", type: "dojo", image: "dojo_Dagger" },
+  ],
+  Axe: [
+    { id: "100504", type: "dojo", image: "dojo_Axe" },
+    { id: "100504", type: "dojo", image: "dojo_Axe" },
+  ],
+  Lance: [
+    { id: "100505", type: "dojo", image: "dojo_Lance" },
+    { id: "100505", type: "dojo", image: "dojo_Lance" },
+  ],
+  Bow: [
+    { id: "100506", type: "dojo", image: "dojo_Bow" },
+    { id: "100506", type: "dojo", image: "dojo_Bow" },
+  ],
+  Wand: [
+    { id: "100507", type: "dojo", image: "dojo_Wand" },
+    { id: "100507", type: "dojo", image: "dojo_Wand" },
+  ],
+  Staff: [
+    { id: "100508", type: "dojo", image: "dojo_Staff" },
+    { id: "100508", type: "dojo", image: "dojo_Staff" },
+  ],
 };
 
-const dragon = {
-  Flame: {
-    list: ["0"],
-    "0": { id: "101001", type: "fafnir", image: "fafnir_Flame" },
-  },
+const dragonFacilities = {
+  Flame: [
+    { id: "101001", type: "fafnir", image: "fafnir_Flame" },
+  ],
   Water: null,
-  Wind: {
-    list: ["0"],
-    "0": { id: "101003", type: "fafnir", image: "fafnir_Wind" },
-  },
+  Wind: [
+    { id: "101003", type: "fafnir", image: "fafnir_Wind" },
+  ],
   Light: null,
   Shadow: null,
 };
 
 export {
-  value,
-  element,
-  weapon,
-  dragon,
+  values,
+  elementFacilities,
+  weaponFacilities,
+  dragonFacilities,
+};
+
+export default {
+  elementFacilities,
+  weaponFacilities,
+  dragonFacilities,
 };

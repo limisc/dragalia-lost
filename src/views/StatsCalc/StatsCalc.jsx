@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core';
 import {
   Header,
   SetStats,
+  SetHalidom,
   SelectStats,
 } from "views";
 import StatsDetails from "./StatsDetails";
@@ -24,8 +25,10 @@ class StatsCalc extends Component {
               item xs={12} md={4}
               className="sticky"
             >
-              <StatsDetails />
+              {/* <StatsDetails /> */}
+              {/* <SetHalidom /> */}
             </Grid>
+
             <Grid
               container
               item xs={12} md={4}
@@ -41,21 +44,10 @@ class StatsCalc extends Component {
               <SelectStats />
             </Grid>
           </Grid>
-        </main>
-      </Fragment>
+        </main >
+      </Fragment >
     );
   }
-
-  // parseSearch = (search) => {
-  //   const q = {};
-  //   search.slice(1).split("&").forEach((v) => {
-  //     const a = v.split("=");
-  //     q[a[0]] = a[1];
-  //   });
-  //   return q;
-  // }
 }
-
-// StatsCalc.contextType = Context;
 
 export default StatsCalc;

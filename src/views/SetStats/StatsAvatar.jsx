@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
 import { Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import {
   selectFocus,
   translate,
@@ -17,18 +18,9 @@ const propTypes = {
   statsKey: PropTypes.string.isRequired,
 };
 
-const defaultProps = {
-
-};
-
-
 class StatsAvatar extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-
-    };
-
     this.onClick = this.onClick.bind(this);
   }
 
@@ -45,14 +37,16 @@ class StatsAvatar extends PureComponent {
     return (
       <Fragment>
         <Image
-          size={"lg"}
+          size="lg"
           image={image}
           statsKey={statsKey}
           onClick={this.onClick}
         />
-        <Typography noWrap>
-          {label}
-        </Typography>
+        <Grid item xs zeroMinWidth>
+          <Typography noWrap>
+            {label}
+          </Typography>
+        </Grid>
       </Fragment>
     );
   }
@@ -66,9 +60,7 @@ class StatsAvatar extends PureComponent {
   }
 }
 
-
 StatsAvatar.propTypes = propTypes;
-StatsAvatar.defaultProps = defaultProps;
 
 const mapDispatchToProps = (dispatch) => {
   return {

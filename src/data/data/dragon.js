@@ -758,7 +758,7 @@ const dragon =
     "Id": "210046_01",
     "Name": {
       "en": "Nyarlathotep",
-      "ja": "Nyarlathotep",
+      "ja": "ニャルラトホテプ",
       "zh": "奈亚拉托提普"
     },
     "element": "Shadow",

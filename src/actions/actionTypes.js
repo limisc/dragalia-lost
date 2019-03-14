@@ -3,16 +3,21 @@ const actionTypes = {
   RESET: "RESET",
 
   SELECT_FOCUS: "SELECT_FOCUS",
-  //modify filters
+  //filters
   SELECT_FILTERS: "SELECT_FILTERS",
   NARROW_FILTERS: "NARROW_FILTERS",
 
-  //modify stats
-  AYNC_STATS: "AYNC_STATS",
+  //stats
+  SYNC_STATS: "SYNC_STATS",
   SELECT_STATS: "SELECT_STATS",
   UPDATE_STATS: "UPDATE_STATS",
 
-  //modify details
+  //halidom
+  RESET_FACILITY: "RESET_FACILITY",
+  NEW_FACILITY: "NEW_FACILITY",
+  UPDATE_FACILITY: "UPDATE_FACILITY",
+
+  //details
   UPDATE_DETAILS: "UPDATE_DETAILS",
 }
 

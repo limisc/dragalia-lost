@@ -10,3 +10,4 @@ export {
   statsFields,
   store,
 };
+export default store;

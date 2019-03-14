@@ -78,7 +78,7 @@ class StatsDetails extends Component {
                 key={row}
                 container
                 alignItems="center"
-                className="stats-details-list"
+                className="details-list"
               >
                 <Grid container item xs={3}>
                   <Typography noWrap>

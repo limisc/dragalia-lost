@@ -120,7 +120,7 @@ class StatsField extends Component {
           />
         </Grid>
 
-        {!!item && (
+        {item && (
           <Fragment>
             <Grid
               container
@@ -209,21 +209,19 @@ class StatsField extends Component {
   setUpdates = (key, value) => {
     let updates = {};
     const { statsKey } = this.props;
-    const { rarity, unbind, ex, mana } = this.state;
+    const { rarity, unbind, ex } = this.state;
 
     switch (key) {
       case "level":
         const intLevel = parseInt(value, 10) || "";
         const limit = getLimit(statsKey, rarity, unbind);
-        updates = {
-          level: (intLevel > limit ? limit : intLevel),
-        };
+        updates.level = intLevel > limit ? limit : intLevel;
         break;
       case "rarity":
         updates = {
           level: getLimit(statsKey, value),
           mana: getLimit("mana", value),
-          ex: (value !== "5" ? "0" : "4"),
+          ex: value !== "5" ? "0" : "4",
         };
         break;
       case "mana":
@@ -233,34 +231,26 @@ class StatsField extends Component {
         } else if (value === "45") {
           newEx = ex;
         }
-        updates = {
-          ex: newEx,
-        };
+        updates.ex = newEx;
         break;
       case "ex":
-        updates = {
-          mana: "45",
-        }
+        updates.mana = "45";
         break;
       case "unbind":
-        updates = {
-          level: getLimit(statsKey, rarity, value),
-        };
+        updates.level = getLimit(statsKey, rarity, value);
         break;
       case "bond":
-        const intBond = parseInt(value, 10);
+        const intBond = parseInt(value, 10) || 0;
         const bondLimit = getLimit("bond");
-        updates = {
-          bond: (intBond > bondLimit ? bondLimit : intBond),
-        };
+        updates.bond = intBond > bondLimit ? bondLimit : intBond;
         break;
       default:
         break;
     }
+
     return updates;
   }
 }
-
 
 StatsField.propTypes = propTypes;
 StatsField.defaultProps = defaultProps;

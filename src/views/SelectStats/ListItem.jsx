@@ -5,10 +5,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
 import { selectStats } from "actions";
-import {
-  history,
-  Context,
-} from "store";
 
 const propTypes = {
   fields: PropTypes.array.isRequired,
@@ -35,6 +31,7 @@ class ListItem extends React.Component {
       section,
       item,
       fields,
+      lang,
     } = this.props;
 
     let image = "add";
@@ -53,40 +50,37 @@ class ListItem extends React.Component {
     }
 
     return (
-      <div style={style} className="flex list" onClick={this.onClick}>
-        <div className="list-img">
+      <div style={style} className="flex stats-list" onClick={this.onClick}>
+        <div className="stats-list-img">
           <Image
             size="md"
             statsKey={section}
             image={image}
-          // onClick={this.onClick}
           />
         </div>
 
-        <span className="list-name">
-          {item.Name["en"]}
+        <span className="stats-list-name">
+          {item.Name[lang]}
         </span>
 
         {fields.map((field) => {
-          switch (field) {
-            case "type":
-            case "element":
-              const icon = `${field}_${item[field]}`;
-              return (
-                <div key={field} className="list-rest">
-                  <Image
-                    size="sm"
-                    statsKey="icon"
-                    image={icon}
-                  />
-                </div>
-              );
-            default:
-              return (
-                <span key={field} className="list-rest">
-                  {item[field]}
-                </span>
-              );
+          if (field === "type" || field === "element") {
+            const icon = `${field}_${item[field]}`;
+            return (
+              <div key={field} className="stats-list-icon">
+                <Image
+                  size="sm"
+                  statsKey="icon"
+                  image={icon}
+                />
+              </div>
+            );
+          } else {
+            return (
+              <span key={field} className="stats-list-icon">
+                {item[field]}
+              </span>
+            );
           }
         })}
       </div>

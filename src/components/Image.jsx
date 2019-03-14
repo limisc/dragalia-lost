@@ -15,11 +15,10 @@ const defaultProps = {
   image: "add",
 };
 
-class Image extends React.Component {
+class Image extends React.PureComponent {
 
   render() {
     const {
-      id,
       size,
       image,
       statsKey,
@@ -29,7 +28,6 @@ class Image extends React.Component {
     const section = getSection(statsKey);
     return (
       <img
-        id={id}
         className={size}
         alt={image}
         src={`${process.env.PUBLIC_URL}/image/${section}/${image}.png`}

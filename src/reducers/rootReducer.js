@@ -1,12 +1,17 @@
+/* eslint-disable no-unused-vars */
 import state from "store/state";
 import filterReducer from "./filterReducer";
-import searchReducer from "./searchReducer";
+// import searchReducer from "./searchReducer";
 import statsReducer from "./statsReducer";
+// import halidomReducer from "./halidomReducer";
 import detailReducer from "./detailReduer";
 import {
   actionTypes,
+  getSearch,
   getSection,
 } from "actions";
+
+import { history } from "store";
 
 
 const focusReducer = (focusKey, action) => {
@@ -20,8 +25,9 @@ const focusReducer = (focusKey, action) => {
 const rootReducer = ({
   filters,
   focusKey,
-  search,
+  // search,
   stats,
+  // halidom,
   details,
 }, action) => {
 
@@ -36,9 +42,10 @@ const rootReducer = ({
   return {
     focusKey: newFocus,
     stats: newStats,
-    filters: filterReducer(filters, action),
     section: getSection(newFocus),
-    search: searchReducer(search, action, newStats),
+    filters: filterReducer(filters, action),
+    // halidom: halidomReducer(halidom, action, newStats),
+    // search: searchReducer(search, action, newStats, stats),
     details: detailReducer(details, action, newStats),
   }
 }

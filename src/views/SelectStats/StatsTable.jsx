@@ -45,6 +45,7 @@ class StatsTable extends Component {
       section,
       filters,
       fields,
+      match: { params: { lang = "en" } },
     } = this.props;
 
     const {
@@ -77,6 +78,7 @@ class StatsTable extends Component {
                           style={style}
                           fields={fields}
                           item={item}
+                          lang={lang}
                           onClick={this.onClick}
                         />
                       )

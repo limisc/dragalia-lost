@@ -3,8 +3,10 @@ import { createSelector } from 'reselect';
 import {
   data,
   limit,
+  values,
 } from "data";
 import intl from "intl/default";
+import { statsFields } from "store";
 
 
 const getSection = (statsKey) => {
@@ -47,34 +49,38 @@ const translate = (content, lang = "en") => {
 }
 
 
-const getIdList = (props, state) => state.uid[props.section];
-const getData = (props, state) => state.data[props.section];
-const getFilters = (props, state) => {
+// const getIdList = (props, state) => state.uid[props.section];
+// const getData = (props, state) => state.data[props.section];
+// const getFilters = (props, state) => {
 
-}
+// }
 
 const getItem = (statsKey, id) => {
   const section = getSection(statsKey);
-  if (data[section] && data[section][id]) {
+  if (data[section]) {
     return data[section][id];
   }
 
   return null;
 }
 
-const getSearch = statsFields => {
-  return createSelector(
-    stats => stats,
-    (stats) => {
-      return statsFields.reduce((result, k) => {
-        if (!!stats[k]) {
-          result.push(`${k}=${stats[k].Id}`);
-        }
+const getValue = (facilitySection, level) => {
+  if (values[facilitySection]) {
+    return values[facilitySection][level] || { HP: 0, STR: 0 };
+  }
 
-        return result;
-      }, []).join("&");
+  return { HP: 0, STR: 0 };
+}
+
+const getSearch = (stats) => {
+  const searchArray = [];
+  statsFields.forEach((k) => {
+    if (stats[k]) {
+      searchArray.push(`${k}=${stats[k].Id}`);
     }
-  );
+  });
+
+  return `?${searchArray.join("&")}`;
 }
 
 const parseSearch = createSelector(
@@ -94,6 +100,7 @@ export {
   getLimit,
   getSection,
   getSearch,
+  getValue,
   parseSearch,
   translate,
 };
