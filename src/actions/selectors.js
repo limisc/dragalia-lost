@@ -95,9 +95,41 @@ const parseSearch = createSelector(
   }
 );
 
+
+const getElement = halidom => halidom.element;
+const getWeapon = halidom => halidom.weapon;
+const getDragon = halidom => halidom.dragon;
+
+
+const getOverView = item => {
+  if (!item) {
+    return { HP: 0, STR: 0 };
+  }
+  let HP = 0, STR = 0;
+  Object.keys(item).forEach((k) => {
+    HP += item[k].HP;
+    STR += item[k].STR;
+  });
+  return { HP, STR };
+}
+
+const getHalidomOverview = () => {
+  return createSelector(
+    [getElement, getWeapon, getDragon],
+    (element, weapon, dragon) => {
+      return {
+        element: getOverView(element),
+        weapon: getOverView(weapon),
+        dragon: getOverView(dragon),
+      };
+    }
+  );
+}
+
 export {
   getItem,
   getLimit,
+  getHalidomOverview,
   getFacilityValue,
   getSection,
   getSearch,

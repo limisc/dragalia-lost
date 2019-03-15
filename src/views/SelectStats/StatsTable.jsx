@@ -63,35 +63,30 @@ class StatsTable extends Component {
           {({ height, scrollTop }) => (
             <AutoSizer disableHeight>
               {({ width }) => (
-                // <List
-                //   autoHeight
-                //   height={height}
-                //   rowCount={idList.length}
-                //   rowHeight={80}
-                //   rowRenderer={({ key, index, style }) => {
-                //     const uid = idList[index];
-                //     const item = data[uid];
-                //     if (item) {
-                //       return (
-                //         <ListItem
-                //           key={key}
-                //           style={style}
-                //           fields={fields}
-                //           item={item}
-                //           lang={lang}
-                //           onClick={this.onClick}
-                //         />
-                //       )
-                //     }
-                //   }}
-                //   scrollTop={scrollTop}
-                //   width={width}
-                // />
-                <div style={{ width: width }}>
-                  <SetHalidom />
-                  <SetHalidom />
-                  <SetHalidom />
-                </div>
+                <List
+                  autoHeight
+                  height={height}
+                  rowCount={idList.length}
+                  rowHeight={80}
+                  rowRenderer={({ key, index, style }) => {
+                    const uid = idList[index];
+                    const item = data[uid];
+                    if (item) {
+                      return (
+                        <ListItem
+                          key={key}
+                          style={style}
+                          fields={fields}
+                          item={item}
+                          lang={lang}
+                          onClick={this.onClick}
+                        />
+                      )
+                    }
+                  }}
+                  scrollTop={scrollTop}
+                  width={width}
+                />
               )}
             </AutoSizer>
           )}
@@ -105,13 +100,11 @@ StatsTable.propTypes = propTypes;
 StatsTable.defaultProps = defaultProps;
 
 const mapStateToProps = ({
-  focusStats,
   section,
   filters,
   stats,
 }) => {
   return {
-    focusStats,
     section,
     filters,
     stats,

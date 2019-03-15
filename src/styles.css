@@ -79,6 +79,11 @@ body {
   border: 1px solid #eee;
 }
 
+.halidom-overview {
+  height: 60px;
+  border: 1px solid #eee;
+}
+
 .lg {
   width: 80px;
 }

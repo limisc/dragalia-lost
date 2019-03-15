@@ -65,7 +65,8 @@ class ListItem extends React.Component {
 
         {fields.map((field) => {
           if (field === "type" || field === "element") {
-            const icon = `${field}_${item[field]}`;
+            const icon = field === "element" ? `${field}_${item[field]}` : `weapon_${item[field]}`;
+            // const icon = `${field}_${item[field]}`;
             return (
               <div key={field} className="stats-list-icon">
                 <Image

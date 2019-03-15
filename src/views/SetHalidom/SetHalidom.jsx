@@ -1,42 +1,49 @@
 // @flow
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Paper } from '@material-ui/core';
-import { facility } from "data";
+import {
+  getHalidomOverview,
+} from "actions";
 import HalidomField from "./HalidomField";
-
-
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
+import OverviewItem from './OverviewItem';
 
 class SetHalidom extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      element: undefined,
-      weapon: undefined,
-      dragon: undefined,
-    };
-  }
 
   render() {
     const {
       adventurer,
       dragon,
+      overview,
     } = this.props;
 
     const { element, type } = adventurer || {};
     const { element: dragonElement } = dragon || {};
     return (
       <Paper className="fluid">
+        {adventurer && (
+          <Fragment>
+            <OverviewItem
+              view={overview.element}
+              field="element"
+              fieldKey={element}
+            />
+            <OverviewItem
+              view={overview.weapon}
+              field="weapon"
+              fieldKey={type}
+            />
+          </Fragment>
+        )}
+
+        {dragon && (
+          <OverviewItem
+            view={overview.dragon}
+            field="dragon"
+            fieldKey={dragonElement}
+          />
+        )}
         <HalidomField
           key={element}
           field="element"
@@ -58,24 +65,18 @@ class SetHalidom extends Component {
   }
 }
 
-
-SetHalidom.propTypes = propTypes;
-SetHalidom.defaultProps = defaultProps;
-
-const mapStateToProps = ({ stats: { adventurer, dragon }, halidom }) => {
+const mapStateToProps = ({
+  halidom,
+  stats: { adventurer, dragon },
+}) => {
+  const makeOverview = getHalidomOverview();
   return {
     adventurer,
     dragon,
-  };
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    //: () => dispatch(),
+    overview: makeOverview(halidom),
   };
 }
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
 )(SetHalidom);
