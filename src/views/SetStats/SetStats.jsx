@@ -9,7 +9,7 @@ import { statsFields } from "store";
 import {
   syncStats,
 } from "actions";
-import store from "store";
+
 const propTypes = {
 
 };
@@ -35,9 +35,10 @@ class SetStats extends Component {
       location: { search },
     } = props;
 
-    console.log(action)
-    if (action === "POP" && search !== state.search) {
-      syncStats(search);
+    if (search !== state.search) {
+      if (action === "POP") {
+        syncStats(search);
+      }
       return {
         search,
       };

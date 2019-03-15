@@ -33,20 +33,10 @@ class StatsField extends Component {
       state = {
         level: getLimit(statsKey, rarity),
         rarity,
-      }
-
-      if (statsKey === "adventurer") {
-        state = {
-          ...state,
-          mana: "50",
-          ex: "4",
-        };
-      } else {
-        state = {
-          ...state,
-          unbind: "4",
-          bond: "30",
-        }
+        mana: "50",
+        ex: "4",
+        unbind: "4",
+        bond: "30",
       }
     }
     updateDetails(statsKey, state);

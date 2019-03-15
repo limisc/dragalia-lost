@@ -151,7 +151,7 @@ const values = {
   },
 };
 
-const elementFacilities = {
+const element = {
   Flame: [
     { id: "100401", type: "altar", image: "altar_Flame" },
     { id: "100401", type: "altar", image: "altar_Flame" },
@@ -180,7 +180,7 @@ const elementFacilities = {
   ],
 };
 
-const weaponFacilities = {
+const weapon = {
   Sword: [
     { id: "100501", type: "dojo", image: "dojo_Sword" },
     { id: "100501", type: "dojo", image: "dojo_Sword" },
@@ -215,7 +215,7 @@ const weaponFacilities = {
   ],
 };
 
-const dragonFacilities = {
+const dragon = {
   Flame: [
     { id: "101001", type: "fafnir", image: "fafnir_Flame" },
   ],
@@ -229,13 +229,13 @@ const dragonFacilities = {
 
 export {
   values,
-  elementFacilities,
-  weaponFacilities,
-  dragonFacilities,
+  element,
+  weapon,
+  dragon,
 };
 
 export default {
-  elementFacilities,
-  weaponFacilities,
-  dragonFacilities,
+  element,
+  weapon,
+  dragon,
 };

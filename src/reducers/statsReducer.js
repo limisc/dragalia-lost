@@ -6,26 +6,29 @@ import {
   reducerCreator,
 } from "actions";
 import {
-  history,
   state,
 } from "store";
 
-const syncStats = (_, action) => {
+const syncStats = (stats, action) => {
   const { search } = action;
-  const stats = parseSearch(search);
+  const newStats = parseSearch(search);
   const {
     adventurer,
     weapon,
     wyrmprint1,
     wyrmprint2,
-  } = stats;
+  } = newStats;
+
+  if (!adventurer) {
+    return state.stats;
+  }
 
   if (
     adventurer
     && weapon
     && adventurer.type !== weapon.type
   ) {
-    stats.weapon = null;
+    newStats.weapon = null;
   }
 
   if (
@@ -33,15 +36,13 @@ const syncStats = (_, action) => {
     && wyrmprint2
     && wyrmprint1.Id === wyrmprint2.Id
   ) {
-    stats.wyrmprint2 = null;
+    newStats.wyrmprint2 = null;
   }
 
-  const newStats = {
+  return {
     ...state.stats,
-    ...stats,
+    ...newStats,
   };
-
-  return newStats;
 }
 
 const updateStats = (statsKey, item, stats) => {

@@ -1,55 +1,44 @@
 import {
   actionTypes,
+  getFacilityValue,
   reducerCreator,
 } from "actions";
 
 
-// const resetHalidom = (halidom, action) => {
-//   const { state: { element, weapon, dragon } } = action;
-//   const updates = {};
-//   if (!element) updates.element = null;
-//   if (!weapon) updates.weapon = null;
-//   if (!dragon) updates.dragon = null;
 
-//   return {
-//     ...halidom,
-//     ...updates,
-//   };
-// }
+const resetField = (halidom, action) => {
+  const { field } = action;
+  if (!halidom[field]) {
+    return halidom;
+  }
 
+  return {
+    ...halidom,
+    [field]: null,
+  };
+}
 
+const updateFacility = (halidom, action) => {
+  const {
+    index,
+    field,
+    facilityType,
+    level,
+  } = action;
+  const value = getFacilityValue(facilityType, level);
 
+  return {
+    ...halidom,
+    [field]: {
+      ...halidom[field],
+      [index]: value,
+    },
+  };
+}
 
+const halidomReducer = reducerCreator({
+  [actionTypes.RESET_FIELD]: resetField,
+  [actionTypes.UPDATE_FACILITY]: updateFacility,
+});
 
-
-// const halidomReducer = reducerCreator({
-//   [actionTypes]
-// })
-
-
-// const halidomReducer = (halidom, action, stats) => {
-//   const { type } = action;
-//   if (type === actionTypes.AYNC_STATS || type === actionTypes.SELECT_STATS) {
-//     let { element, weapon, dragon } = halidom;
-//     if (!stats.adventurer) {
-//       element = null;
-//       weapon = null;
-//     }
-
-//     if (!stats.dragon) dragon = null;
-
-//     if (!element || !weapon || !dragon) {
-//       return {
-//         element,
-//         weapon,
-//         dragon,
-//       }
-//     }
-//   }
-
-
-
-
-//   return halidom;
-// }
-// export default halidomReducer;
+export default halidomReducer;

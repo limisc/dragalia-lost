@@ -64,9 +64,9 @@ const getItem = (statsKey, id) => {
   return null;
 }
 
-const getValue = (facilitySection, level) => {
-  if (values[facilitySection]) {
-    return values[facilitySection][level] || { HP: 0, STR: 0 };
+const getFacilityValue = (facilityType, level) => {
+  if (values[facilityType]) {
+    return values[facilityType][level] || { HP: 0, STR: 0 };
   }
 
   return { HP: 0, STR: 0 };
@@ -98,9 +98,9 @@ const parseSearch = createSelector(
 export {
   getItem,
   getLimit,
+  getFacilityValue,
   getSection,
   getSearch,
-  getValue,
   parseSearch,
   translate,
 };

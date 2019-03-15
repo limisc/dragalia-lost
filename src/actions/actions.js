@@ -21,6 +21,7 @@ const reducerCreator = (handler) => {
     if (handler.hasOwnProperty(action.type)) {
       return handler[action.type](state, action, ...args);
     }
+
     return state;
   }
 }
@@ -35,7 +36,7 @@ const replaceHistory = (search) => {
   const { stats } = store.getState();
   const newSearch = getSearch(stats);
   if (newSearch !== search) {
-    history.replace(search);
+    history.replace(newSearch);
   }
 }
 
@@ -56,18 +57,19 @@ const syncStats = search => dispatch => {
 }
 
 const selectStats = (statsKey, item) => dispatch => {
+  const { stats: prevStats } = store.getState();
   dispatch({ type: actionTypes.SELECT_STATS, statsKey, item });
-  pushHistory();
+  const { stats } = store.getState();
+  if (stats !== prevStats) {
+    const search = getSearch(stats);
+    history.push(search);
+  }
 }
 
-const resetFacility = actionCreator(actionTypes.RESET_FACILITY, "facilityType");
-const newFacility = actionCreator(actionTypes.NEW_FACILITY, "facilityType", "key", "facilityValue");
-const updateFacility = actionCreator(actionTypes.UPDATE_FACILITY, "facilityType", "key", "facilityValue");
+const resetField = actionCreator(actionTypes.RESET_FIELD, "field");
+const updateFacility = actionCreator(actionTypes.UPDATE_FACILITY, "field", "facilityType", "index", "level");
 
 const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "statsKey", "state");
-
-
-
 
 export {
   reducerCreator,
@@ -75,8 +77,7 @@ export {
   selectFocus,
   selectStats,
   syncStats,
-  resetFacility,
-  newFacility,
+  resetField,
   updateFacility,
   updateDetails,
 };

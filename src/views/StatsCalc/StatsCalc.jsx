@@ -26,7 +26,7 @@ class StatsCalc extends Component {
               className="sticky"
             >
               {/* <StatsDetails /> */}
-              {/* <SetHalidom /> */}
+              <SetHalidom />
             </Grid>
 
             <Grid

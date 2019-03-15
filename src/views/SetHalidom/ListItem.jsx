@@ -10,12 +10,9 @@ import {
 import names from "intl/facility";
 import {
   getLimit,
-  getValue,
-  newFacility,
   updateFacility,
 } from "actions";
 import { Image } from "components";
-import { values } from "data/facility";
 import Slider from './Slider';
 
 const propTypes = {
@@ -26,38 +23,37 @@ const propTypes = {
 class ListItem extends Component {
   constructor(props) {
     super(props);
-    const {
-      index,
-      facilityType,
-      facility: { type },
-      newFacility,
-      updateFacility,
-    } = props;
-
-    const max = getLimit(type);
     this.state = {
-      max,
-      type,
-      index,
-      facilityType,
-      level: max,
+      level: 30,
+      max: 30,
     };
     this.onChange = this.onChange.bind(this);
     this.levelDecrement = this.levelDecrement.bind(this);
     this.levelIncrement = this.levelIncrement.bind(this);
+  }
 
-    const value = getValue(type, max);
-    if (index === 0) {
-      newFacility(facilityType, index, value);
-    } else {
-      updateFacility(facilityType, index, value);
-    }
+  componentDidMount() {
+    const {
+      index,
+      field,
+      facility: { type },
+      updateFacility,
+    } = this.props;
+    const max = getLimit(type);
+
+    updateFacility(field, type, index, max);
+    this.setState({
+      max,
+      type,
+      level: max,
+    });
   }
 
   render() {
     const {
       facility,
-      lang,
+      // lang,
+      lang = "en",
     } = this.props;
 
     const {
@@ -84,7 +80,6 @@ class ListItem extends Component {
         <Grid
           container
           item xs={4} md={3}
-          justify="center"
           alignItems="center"
         >
           <Typography noWrap>
@@ -148,17 +143,20 @@ class ListItem extends Component {
   }
 
   onChange = ({ target: { value } }) => {
+    const {
+      index,
+      field,
+      updateFacility,
+    } = this.props;
+
     let {
       type,
-      index,
       timerId,
-      facilityType,
     } = this.state;
-
-    const newValue = this.getValue(type, value);
     clearTimeout(timerId);
+
     timerId = setTimeout(() => {
-      this.props.updateFacility(facilityType, index, newValue);
+      updateFacility(field, type, index, value);
     }, 500);
     this.setState({
       timerId,
@@ -168,32 +166,39 @@ class ListItem extends Component {
 
   levelDecrement = () => {
     const {
-      type,
       index,
+      field,
+      updateFacility,
+    } = this.props;
+
+    const {
+      type,
       level,
-      facilityType,
     } = this.state;
 
     const intLevel = (parseInt(level, 10) || 0) - 1;
     if (intLevel >= 0) {
-      const newValue = this.getValue(type, intLevel);
-      this.props.updateFacility(facilityType, index, newValue);
+      updateFacility(field, type, index, intLevel);
       this.setState({ level: intLevel });
     }
   }
+
   levelIncrement = () => {
+    const {
+      index,
+      field,
+      updateFacility,
+    } = this.props;
+
     const {
       max,
       type,
-      index,
       level,
-      facilityType,
     } = this.state;
 
     const intLevel = (parseInt(level, 10) || 0) + 1;
     if (intLevel <= max) {
-      const newValue = getValue(type, intLevel);
-      this.props.updateFacility(facilityType, index, newValue);
+      updateFacility(field, type, index, intLevel);
       this.setState({ level: intLevel });
     }
   }
@@ -204,8 +209,7 @@ ListItem.propTypes = propTypes;
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    newFacility: (facilityType, key, value) => dispatch(newFacility(facilityType, key, value)),
-    updateFacility: (facilityType, key, value) => dispatch(updateFacility(facilityType, key, value)),
+    updateFacility: (field, facilityType, index, level) => dispatch(updateFacility(field, facilityType, index, level)),
   };
 }
 
