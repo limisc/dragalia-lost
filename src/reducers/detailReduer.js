@@ -56,7 +56,7 @@ const getAdventurerMight = (adventurer, state) => {
   const intMana = parseInt(mana, 10) || 0;
   const intEx = parseInt(ex, 10) || 0;
 
-  const abilitySet = (adventurer.rarity === "5" || adventurer.Id === "100001_01_r0")
+  const abilitySet = (adventurer.rarity === "5" || adventurer.id === "100001_01_r0")
     ? rarity5Set[strMana]
     : rarity34Set[strMana];
 

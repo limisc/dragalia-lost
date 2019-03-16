@@ -5,10 +5,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   Paper,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
 } from '@material-ui/core';
-
 import FilterStats from "./FilterStats";
-import StatsTable from "./StatsTable";
+import StatsList from "./StatsList";
+
 const propTypes = {
 
 };
@@ -23,8 +26,8 @@ class SelectStats extends Component {
     super(props);
     this.state = {
       filterFields: {
-        adventurer: ["type", "element", "rarity"],
-        weapon: ["type", "rarity", "tier"],
+        adventurer: ["weapon", "element", "rarity"],
+        weapon: ["weapon", "rarity", "tier"],
         wyrmprint: ["rarity"],
         dragon: ["element", "rarity"],
       },
@@ -38,10 +41,57 @@ class SelectStats extends Component {
 
     const { [section]: fields } = this.state.filterFields;
 
+    // if (section === "halidom") {
+    //   return <SetHalidom />;
+    // }
+
     return (
-      <Paper className="fluid">
-        <FilterStats fields={fields} />
-        <StatsTable fields={fields} />
+      <Paper style={{
+        // height: "500px",
+        height: "calc(100vh - 80px)",
+        width: "100%",
+        // flex: 1,
+      }}>
+        {/* <FilterStats
+          fields={fields}
+        /> */}
+        {/* <ExpansionPanel>
+
+          <ExpansionPanelSummary>
+            Stats
+          </ExpansionPanelSummary>
+
+          <ExpansionPanelDetails
+            style={{
+              height: "calc(100vh - 150px)",
+              padding: 0,
+            }}
+          >
+            <StatsList
+              fields={fields}
+            />
+          </ExpansionPanelDetails>
+        </ExpansionPanel> */}
+        {/* <div
+          className="stats-list"
+          style={{ height: "50px" }}
+        >
+          <div className="stats-list-image">
+          </div>
+
+          <div className="stats-list-name">
+            Name
+          </div>
+
+          {fields.map((field) => (
+            <div key={field} className="stats-list-icon">
+              {field}
+            </div>
+          ))}
+        </div> */}
+        <StatsList
+          fields={fields}
+        />
       </Paper>
     );
   }

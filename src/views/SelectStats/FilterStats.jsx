@@ -3,9 +3,12 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Grid } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 import { Select } from "components";
-import { selectFilters } from "actions";
+import {
+  selectFilters,
+  selectFocus,
+} from "actions";
 
 const propTypes = {
   fields: PropTypes.array.isRequired,
@@ -20,12 +23,17 @@ class FilterStats extends Component {
       rarity: ["", "5", "4", "3"],
       tier: ["", "3", "2", "1"],
     };
+
+    this.onClick = this.onClick.bind(this);
+    this.onChange = this.onChange.bind(this);
+
   }
 
   render() {
     const {
       fields,
       filters,
+      selectFocus,
     } = this.props;
 
 
@@ -44,12 +52,26 @@ class FilterStats extends Component {
             />
           </Grid>
         ))}
+
+        <Grid item xs={6} lg={3}>
+          <Button
+            variant="contained"
+            style={{ height: "56px", width: "100%" }}
+            onClick={this.onClick}
+          >
+            Set Halidom
+          </Button>
+        </Grid>
       </Grid>
     );
   }
 
   onChange = ({ target: { name, value } }) => {
     this.props.selectFilters(name, value);
+  }
+
+  onClick = () => {
+    this.props.selectFocus("halidom");
   }
 }
 
@@ -64,6 +86,7 @@ const mapStateToProps = ({ filters }) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     selectFilters: (key, value) => dispatch(selectFilters(key, value)),
+    selectFocus: (statsKey) => dispatch(selectFocus(statsKey)),
   };
 }
 

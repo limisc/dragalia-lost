@@ -1,13 +1,13 @@
 const adventurer =
-{
-  "100001_01_r0": {
-    "Id": "100001_01_r0",
-    "Name": {
+[
+  {
+    "id": "100001_01_r0",
+    "name": {
       "en": "Euden",
       "ja": "ユーディル",
       "zh": "尤蒂尔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 40,
@@ -43,14 +43,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "100002_01_r0": {
-    "Id": "100002_01_r0",
-    "Name": {
+  {
+    "id": "100002_01_r0",
+    "name": {
       "en": "Elisanne",
       "ja": "エルフィリス",
       "zh": "埃尔菲莉丝"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 42,
@@ -90,14 +90,14 @@ const adventurer =
     "ExHp3": 10,
     "ExHp4": 12
   },
-  "100002_02_r0": {
-    "Id": "100002_02_r0",
-    "Name": {
+  {
+    "id": "100002_02_r0",
+    "name": {
       "en": "Elisanne",
       "ja": "エルフィリス",
       "zh": "埃尔菲莉丝"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 46,
@@ -138,14 +138,14 @@ const adventurer =
     "ExHp3": 13,
     "ExHp4": 15
   },
-  "100003_01_r0": {
-    "Id": "100003_01_r0",
-    "Name": {
+  {
+    "id": "100003_01_r0",
+    "name": {
       "en": "Ranzal",
       "ja": "ランザーヴ",
       "zh": "兰扎卜"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 44,
@@ -185,14 +185,14 @@ const adventurer =
     "ExDef3": 10,
     "ExDef4": 11
   },
-  "100004_02_r0": {
-    "Id": "100004_02_r0",
-    "Name": {
+  {
+    "id": "100004_02_r0",
+    "name": {
       "en": "Cleo",
       "ja": "クラウ",
       "zh": "库菈乌"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "5",
     "MinHp3": 47,
@@ -228,14 +228,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "100004_01_r0": {
-    "Id": "100004_01_r0",
-    "Name": {
+  {
+    "id": "100004_01_r0",
+    "name": {
       "en": "Cleo",
       "ja": "クラウ",
       "zh": "库菈乌"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 43,
@@ -271,14 +271,14 @@ const adventurer =
     "Ex4": 230,
     "defense1": 8
   },
-  "100006_01_r0": {
-    "Id": "100006_01_r0",
-    "Name": {
+  {
+    "id": "100006_01_r0",
+    "name": {
       "en": "Luca",
       "ja": "リュカ",
       "zh": "卢卡"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 43,
@@ -313,14 +313,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "100029_02_r0": {
-    "Id": "100029_02_r0",
-    "Name": {
+  {
+    "id": "100029_02_r0",
+    "name": {
       "en": "Sarisse",
       "ja": "シーリス",
       "zh": "希里丝"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "5",
     "MinHp3": 49,
@@ -356,14 +356,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110001_01_r0": {
-    "Id": "110001_01_r0",
-    "Name": {
+  {
+    "id": "110001_01_r0",
+    "name": {
       "en": "Alain",
       "ja": "アラン",
       "zh": "阿兰"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 43,
@@ -403,14 +403,14 @@ const adventurer =
     "ExHp3": 8,
     "ExHp4": 9
   },
-  "110002_01_r0": {
-    "Id": "110002_01_r0",
-    "Name": {
+  {
+    "id": "110002_01_r0",
+    "name": {
       "en": "Aoi",
       "ja": "アオイ",
       "zh": "葵"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 39,
@@ -445,14 +445,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110003_01_r0": {
-    "Id": "110003_01_r0",
-    "Name": {
+  {
+    "id": "110003_01_r0",
+    "name": {
       "en": "Joe",
       "ja": "ジョー",
       "zh": "乔"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 40,
@@ -487,14 +487,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110004_01_r0": {
-    "Id": "110004_01_r0",
-    "Name": {
+  {
+    "id": "110004_01_r0",
+    "name": {
       "en": "Xania",
       "ja": "サニア",
       "zh": "桑妮雅"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 39,
@@ -529,14 +529,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110005_01_r0": {
-    "Id": "110005_01_r0",
-    "Name": {
+  {
+    "id": "110005_01_r0",
+    "name": {
       "en": "Renelle",
       "ja": "ラシーヌ",
       "zh": "拉辛"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 42,
@@ -571,14 +571,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110006_01_r0": {
-    "Id": "110006_01_r0",
-    "Name": {
+  {
+    "id": "110006_01_r0",
+    "name": {
       "en": "Aurien",
       "ja": "オーレイン",
       "zh": "欧雷因"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 42,
@@ -613,14 +613,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110007_01_r0": {
-    "Id": "110007_01_r0",
-    "Name": {
+  {
+    "id": "110007_01_r0",
+    "name": {
       "en": "Vanessa",
       "ja": "ヴァネッサ",
       "zh": "凡妮莎"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 42,
@@ -660,14 +660,14 @@ const adventurer =
     "ExDef3": 10,
     "ExDef4": 11
   },
-  "110008_01_r0": {
-    "Id": "110008_01_r0",
-    "Name": {
+  {
+    "id": "110008_01_r0",
+    "name": {
       "en": "Karl",
       "ja": "カール",
       "zh": "卡尔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 45,
@@ -702,14 +702,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110009_01_r0": {
-    "Id": "110009_01_r0",
-    "Name": {
+  {
+    "id": "110009_01_r0",
+    "name": {
       "en": "Sinoa",
       "ja": "シノア",
       "zh": "希诺亚"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 44,
@@ -744,14 +744,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110010_01_r0": {
-    "Id": "110010_01_r0",
-    "Name": {
+  {
+    "id": "110010_01_r0",
+    "name": {
       "en": "Mikoto",
       "ja": "ミコト",
       "zh": "米科特"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "5",
     "MinHp3": 43,
@@ -787,14 +787,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110011_02_r0": {
-    "Id": "110011_02_r0",
-    "Name": {
+  {
+    "id": "110011_02_r0",
+    "name": {
       "en": "Ezelith",
       "ja": "エゼリット",
       "zh": "艾赛莉特"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 46,
@@ -829,14 +829,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110011_01_r0": {
-    "Id": "110011_01_r0",
-    "Name": {
+  {
+    "id": "110011_01_r0",
+    "name": {
       "en": "Ezelith",
       "ja": "エゼリット",
       "zh": "艾赛莉特"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "5",
     "MinHp3": 47,
@@ -872,14 +872,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110012_01_r0": {
-    "Id": "110012_01_r0",
-    "Name": {
+  {
+    "id": "110012_01_r0",
+    "name": {
       "en": "Rex",
       "ja": "レックス",
       "zh": "雷克斯"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 39,
@@ -919,14 +919,14 @@ const adventurer =
     "ExDef3": 8,
     "ExDef4": 9
   },
-  "110013_01_r0": {
-    "Id": "110013_01_r0",
-    "Name": {
+  {
+    "id": "110013_01_r0",
+    "name": {
       "en": "Waike",
       "ja": "ウェイク",
       "zh": "威克"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 42,
@@ -961,14 +961,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110014_01_r0": {
-    "Id": "110014_01_r0",
-    "Name": {
+  {
+    "id": "110014_01_r0",
+    "name": {
       "en": "Cibella",
       "ja": "シュベール",
       "zh": "休贝尔"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 44,
@@ -1008,14 +1008,14 @@ const adventurer =
     "ExHp3": 8,
     "ExHp4": 9
   },
-  "110015_01_r0": {
-    "Id": "110015_01_r0",
-    "Name": {
+  {
+    "id": "110015_01_r0",
+    "name": {
       "en": "Zardin",
       "ja": "シャーディ",
       "zh": "夏迪"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 44,
@@ -1050,14 +1050,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110016_01_r0": {
-    "Id": "110016_01_r0",
-    "Name": {
+  {
+    "id": "110016_01_r0",
+    "name": {
       "en": "Jurota",
       "ja": "ジュウロウタ",
       "zh": "十郎太"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 39,
@@ -1092,14 +1092,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110017_01_r0": {
-    "Id": "110017_01_r0",
-    "Name": {
+  {
+    "id": "110017_01_r0",
+    "name": {
       "en": "Ricardt",
       "ja": "リカート",
       "zh": "里卡多"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 42,
@@ -1136,14 +1136,14 @@ const adventurer =
     "defense1": 15,
     "defense2": 20
   },
-  "110018_01_r0": {
-    "Id": "110018_01_r0",
-    "Name": {
+  {
+    "id": "110018_01_r0",
+    "name": {
       "en": "Karina",
       "ja": "カーリナ",
       "zh": "卡丽娜"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 47,
@@ -1183,14 +1183,14 @@ const adventurer =
     "ExDef3": 10,
     "ExDef4": 11
   },
-  "110019_01_r0": {
-    "Id": "110019_01_r0",
-    "Name": {
+  {
+    "id": "110019_01_r0",
+    "name": {
       "en": "Thaniel",
       "ja": "セイナー",
       "zh": "塞纳"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 46,
@@ -1225,14 +1225,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110020_01_r0": {
-    "Id": "110020_01_r0",
-    "Name": {
+  {
+    "id": "110020_01_r0",
+    "name": {
       "en": "Luther",
       "ja": "ルタ",
       "zh": "卢塔"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 45,
@@ -1267,14 +1267,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110021_01_r0": {
-    "Id": "110021_01_r0",
-    "Name": {
+  {
+    "id": "110021_01_r0",
+    "name": {
       "en": "Xainfried",
       "ja": "ザインフラッド",
       "zh": "扎因弗拉德"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "5",
     "MinHp3": 46,
@@ -1315,14 +1315,14 @@ const adventurer =
     "ExHp3": 13,
     "ExHp4": 15
   },
-  "110022_01_r0": {
-    "Id": "110022_01_r0",
-    "Name": {
+  {
+    "id": "110022_01_r0",
+    "name": {
       "en": "Xander",
       "ja": "アレクシス",
       "zh": "阿莱克西斯"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Water",
     "rarity": "5",
     "MinHp3": 44,
@@ -1358,14 +1358,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110022_02_r0": {
-    "Id": "110022_02_r0",
-    "Name": {
+  {
+    "id": "110022_02_r0",
+    "name": {
       "en": "Xander",
       "ja": "アレクシス",
       "zh": "阿莱克西斯"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 43,
@@ -1400,14 +1400,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110023_01_r0": {
-    "Id": "110023_01_r0",
-    "Name": {
+  {
+    "id": "110023_01_r0",
+    "name": {
       "en": "Johanna",
       "ja": "イハンナ",
       "zh": "伊汉娜"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 43,
@@ -1447,14 +1447,14 @@ const adventurer =
     "ExDef3": 8,
     "ExDef4": 9
   },
-  "110024_01_r0": {
-    "Id": "110024_01_r0",
-    "Name": {
+  {
+    "id": "110024_01_r0",
+    "name": {
       "en": "Sophie",
       "ja": "ソフィ",
       "zh": "索菲"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 42,
@@ -1489,14 +1489,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110025_01_r0": {
-    "Id": "110025_01_r0",
-    "Name": {
+  {
+    "id": "110025_01_r0",
+    "name": {
       "en": "Nicolas",
       "ja": "ニコラ",
       "zh": "尼古拉"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 39,
@@ -1531,14 +1531,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110026_01_r0": {
-    "Id": "110026_01_r0",
-    "Name": {
+  {
+    "id": "110026_01_r0",
+    "name": {
       "en": "Francesca",
       "ja": "フランチェスカ",
       "zh": "弗兰切斯卡"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 42,
@@ -1573,14 +1573,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110027_01_r0": {
-    "Id": "110027_01_r0",
-    "Name": {
+  {
+    "id": "110027_01_r0",
+    "name": {
       "en": "Melody",
       "ja": "メロディ",
       "zh": "米罗蒂"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 41,
@@ -1615,14 +1615,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110028_01_r0": {
-    "Id": "110028_01_r0",
-    "Name": {
+  {
+    "id": "110028_01_r0",
+    "name": {
       "en": "Philia",
       "ja": "フィリア",
       "zh": "菲丽雅"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "3",
     "MinHp3": 40,
@@ -1657,14 +1657,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110029_01_r0": {
-    "Id": "110029_01_r0",
-    "Name": {
+  {
+    "id": "110029_01_r0",
+    "name": {
       "en": "Aeleen",
       "ja": "エイル",
       "zh": "艾露"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 45,
@@ -1704,14 +1704,14 @@ const adventurer =
     "ExHp3": 10,
     "ExHp4": 12
   },
-  "110030_01_r0": {
-    "Id": "110030_01_r0",
-    "Name": {
+  {
+    "id": "110030_01_r0",
+    "name": {
       "en": "Musashi",
       "ja": "ムサシ",
       "zh": "武藏"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 42,
@@ -1746,14 +1746,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110031_01_r0": {
-    "Id": "110031_01_r0",
-    "Name": {
+  {
+    "id": "110031_01_r0",
+    "name": {
       "en": "Eleonora",
       "ja": "エレオノーラ",
       "zh": "艾蕾欧诺拉"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 43,
@@ -1788,14 +1788,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110032_01_r0": {
-    "Id": "110032_01_r0",
-    "Name": {
+  {
+    "id": "110032_01_r0",
+    "name": {
       "en": "Maribelle",
       "ja": "メリィベル",
       "zh": "梅莉贝尔"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Wind",
     "rarity": "5",
     "MinHp3": 44,
@@ -1831,14 +1831,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110033_01_r0": {
-    "Id": "110033_01_r0",
-    "Name": {
+  {
+    "id": "110033_01_r0",
+    "name": {
       "en": "Linus",
       "ja": "ライナス",
       "zh": "莱纳斯"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 43,
@@ -1880,14 +1880,14 @@ const adventurer =
     "ExDef3": 8,
     "ExDef4": 9
   },
-  "110034_01_r0": {
-    "Id": "110034_01_r0",
-    "Name": {
+  {
+    "id": "110034_01_r0",
+    "name": {
       "en": "Malka",
       "ja": "マルカ",
       "zh": "马尔卡"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 42,
@@ -1929,14 +1929,14 @@ const adventurer =
     "ExHp3": 8,
     "ExHp4": 9
   },
-  "110035_01_r0": {
-    "Id": "110035_01_r0",
-    "Name": {
+  {
+    "id": "110035_01_r0",
+    "name": {
       "en": "Raemond",
       "ja": "ライムンド",
       "zh": "莱蒙德"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 40,
@@ -1971,14 +1971,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110036_01_r0": {
-    "Id": "110036_01_r0",
-    "Name": {
+  {
+    "id": "110036_01_r0",
+    "name": {
       "en": "Malora",
       "ja": "マローラ",
       "zh": "马萝拉"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 42,
@@ -2013,14 +2013,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110037_01_r0": {
-    "Id": "110037_01_r0",
-    "Name": {
+  {
+    "id": "110037_01_r0",
+    "name": {
       "en": "Irfan",
       "ja": "イルファン",
       "zh": "伊尔凡"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 42,
@@ -2055,14 +2055,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110038_01_r0": {
-    "Id": "110038_01_r0",
-    "Name": {
+  {
+    "id": "110038_01_r0",
+    "name": {
       "en": "Hope",
       "ja": "ホープ",
       "zh": "霍普"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 43,
@@ -2097,14 +2097,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110039_01_r0": {
-    "Id": "110039_01_r0",
-    "Name": {
+  {
+    "id": "110039_01_r0",
+    "name": {
       "en": "Ryozen",
       "ja": "リョウゼン",
       "zh": "梁泉"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 47,
@@ -2144,14 +2144,14 @@ const adventurer =
     "ExHp3": 10,
     "ExHp4": 12
   },
-  "110040_01_r0": {
-    "Id": "110040_01_r0",
-    "Name": {
+  {
+    "id": "110040_01_r0",
+    "name": {
       "en": "Rawn",
       "ja": "ウルガ",
       "zh": "乌尔嘉"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 46,
@@ -2186,14 +2186,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110041_01_r0": {
-    "Id": "110041_01_r0",
-    "Name": {
+  {
+    "id": "110041_01_r0",
+    "name": {
       "en": "Amane",
       "ja": "アマネ",
       "zh": "天音"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 43,
@@ -2228,14 +2228,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110042_01_r0": {
-    "Id": "110042_01_r0",
-    "Name": {
+  {
+    "id": "110042_01_r0",
+    "name": {
       "en": "Julietta",
       "ja": "ジュリエッタ",
       "zh": "朱丽叶"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 48,
@@ -2276,14 +2276,14 @@ const adventurer =
     "ExDef3": 12,
     "ExDef4": 15
   },
-  "110043_01_r0": {
-    "Id": "110043_01_r0",
-    "Name": {
+  {
+    "id": "110043_01_r0",
+    "name": {
       "en": "Hildegarde",
       "ja": "ヒルデガルド",
       "zh": "希尔德加德"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 47,
@@ -2319,14 +2319,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110043_02_r0": {
-    "Id": "110043_02_r0",
-    "Name": {
+  {
+    "id": "110043_02_r0",
+    "name": {
       "en": "Hildegarde",
       "ja": "ヒルデガルド",
       "zh": "希尔德加德"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "5",
     "MinHp3": 47,
@@ -2362,14 +2362,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110044_01_r0": {
-    "Id": "110044_01_r0",
-    "Name": {
+  {
+    "id": "110044_01_r0",
+    "name": {
       "en": "Taro",
       "ja": "タロウ",
       "zh": "太郎"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 39,
@@ -2404,14 +2404,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110045_01_r0": {
-    "Id": "110045_01_r0",
-    "Name": {
+  {
+    "id": "110045_01_r0",
+    "name": {
       "en": "Erik",
       "ja": "エリック",
       "zh": "埃里克"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 39,
@@ -2451,14 +2451,14 @@ const adventurer =
     "ExDef3": 8,
     "ExDef4": 9
   },
-  "110046_01_r0": {
-    "Id": "110046_01_r0",
-    "Name": {
+  {
+    "id": "110046_01_r0",
+    "name": {
       "en": "Rodrigo",
       "ja": "ロドリゴ",
       "zh": "罗德里戈"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 39,
@@ -2493,14 +2493,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110047_02_r0": {
-    "Id": "110047_02_r0",
-    "Name": {
+  {
+    "id": "110047_02_r0",
+    "name": {
       "en": "Althemia",
       "ja": "イルテミア",
       "zh": "伊露缇米娅"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 46,
@@ -2535,14 +2535,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110047_01_r0": {
-    "Id": "110047_01_r0",
-    "Name": {
+  {
+    "id": "110047_01_r0",
+    "name": {
       "en": "Althemia",
       "ja": "イルテミア",
       "zh": "伊露缇米娅"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 41,
@@ -2577,14 +2577,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110048_01_r0": {
-    "Id": "110048_01_r0",
-    "Name": {
+  {
+    "id": "110048_01_r0",
+    "name": {
       "en": "Vice",
       "ja": "ワイス",
       "zh": "华兹"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 42,
@@ -2619,14 +2619,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110049_02_r0": {
-    "Id": "110049_02_r0",
-    "Name": {
+  {
+    "id": "110049_02_r0",
+    "name": {
       "en": "Edward",
       "ja": "エドワード",
       "zh": "爱德华"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 39,
@@ -2661,14 +2661,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110049_01_r0": {
-    "Id": "110049_01_r0",
-    "Name": {
+  {
+    "id": "110049_01_r0",
+    "name": {
       "en": "Edward",
       "ja": "エドワード",
       "zh": "爱德华"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 42,
@@ -2703,14 +2703,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110050_01_r0": {
-    "Id": "110050_01_r0",
-    "Name": {
+  {
+    "id": "110050_01_r0",
+    "name": {
       "en": "Berserker",
       "ja": "ベルザーク",
       "zh": "贝尔扎克"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 47,
@@ -2745,14 +2745,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110051_01_r0": {
-    "Id": "110051_01_r0",
-    "Name": {
+  {
+    "id": "110051_01_r0",
+    "name": {
       "en": "Kleimann",
       "ja": "クレイマン",
       "zh": "克雷伊曼"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 44,
@@ -2787,14 +2787,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110052_01_r0": {
-    "Id": "110052_01_r0",
-    "Name": {
+  {
+    "id": "110052_01_r0",
+    "name": {
       "en": "Orion",
       "ja": "オリオン",
       "zh": "俄里翁"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 45,
@@ -2829,14 +2829,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110052_03_r0": {
-    "Id": "110052_03_r0",
-    "Name": {
+  {
+    "id": "110052_03_r0",
+    "name": {
       "en": "Orion",
       "ja": "オリオン",
       "zh": "俄里翁"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 44,
@@ -2871,14 +2871,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110053_02_r0": {
-    "Id": "110053_02_r0",
-    "Name": {
+  {
+    "id": "110053_02_r0",
+    "name": {
       "en": "Nefaria",
       "ja": "ネファリエ",
       "zh": "奈法利耶"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 47,
@@ -2913,14 +2913,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110053_01_r0": {
-    "Id": "110053_01_r0",
-    "Name": {
+  {
+    "id": "110053_01_r0",
+    "name": {
       "en": "Nefaria",
       "ja": "ネファリエ",
       "zh": "奈法利耶"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Shadow",
     "rarity": "5",
     "MinHp3": 47,
@@ -2956,14 +2956,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110058_01_r0": {
-    "Id": "110058_01_r0",
-    "Name": {
+  {
+    "id": "110058_01_r0",
+    "name": {
       "en": "Jakob",
       "ja": "ジャン",
       "zh": "让"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 44,
@@ -3003,14 +3003,14 @@ const adventurer =
     "ExHp3": 8,
     "ExHp4": 9
   },
-  "110063_01_r0": {
-    "Id": "110063_01_r0",
-    "Name": {
+  {
+    "id": "110063_01_r0",
+    "name": {
       "en": "Estelle",
       "ja": "エステル",
       "zh": "艾丝蒂尔"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 43,
@@ -3045,14 +3045,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110067_01_r0": {
-    "Id": "110067_01_r0",
-    "Name": {
+  {
+    "id": "110067_01_r0",
+    "name": {
       "en": "Vida",
       "ja": "ヴィッテ",
       "zh": "维特"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 42,
@@ -3087,14 +3087,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110252_01_r0": {
-    "Id": "110252_01_r0",
-    "Name": {
+  {
+    "id": "110252_01_r0",
+    "name": {
       "en": "Lily",
       "ja": "リリィ",
       "zh": "莉莉"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "5",
     "MinHp3": 44,
@@ -3130,14 +3130,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110253_01_r0": {
-    "Id": "110253_01_r0",
-    "Name": {
+  {
+    "id": "110253_01_r0",
+    "name": {
       "en": "Orsem",
       "ja": "オルセム",
       "zh": "奥尔森"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 43,
@@ -3172,14 +3172,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110254_01_r0": {
-    "Id": "110254_01_r0",
-    "Name": {
+  {
+    "id": "110254_01_r0",
+    "name": {
       "en": "Zace",
       "ja": "ジーズ",
       "zh": "吉斯"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Shadow",
     "rarity": "3",
     "MinHp3": 39,
@@ -3219,14 +3219,14 @@ const adventurer =
     "ExHp3": 8,
     "ExHp4": 9
   },
-  "110255_01_r0": {
-    "Id": "110255_01_r0",
-    "Name": {
+  {
+    "id": "110255_01_r0",
+    "name": {
       "en": "Celliera",
       "ja": "セリエラ",
       "zh": "赛丽艾拉"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Water",
     "rarity": "4",
     "MinHp3": 40,
@@ -3261,14 +3261,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110256_01_r0": {
-    "Id": "110256_01_r0",
-    "Name": {
+  {
+    "id": "110256_01_r0",
+    "name": {
       "en": "Louise",
       "ja": "ルイーゼ",
       "zh": "洛依泽"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "5",
     "MinHp3": 47,
@@ -3304,14 +3304,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110257_01_r0": {
-    "Id": "110257_01_r0",
-    "Name": {
+  {
+    "id": "110257_01_r0",
+    "name": {
       "en": "Lowen",
       "ja": "ルーエン",
       "zh": "卢恩"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 46,
@@ -3346,14 +3346,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110258_01_r0": {
-    "Id": "110258_01_r0",
-    "Name": {
+  {
+    "id": "110258_01_r0",
+    "name": {
       "en": "Pietro",
       "ja": "ピドット",
       "zh": "皮多特"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "3",
     "MinHp3": 43,
@@ -3393,14 +3393,14 @@ const adventurer =
     "ExDef3": 8,
     "ExDef4": 9
   },
-  "110261_01_r0": {
-    "Id": "110261_01_r0",
-    "Name": {
+  {
+    "id": "110261_01_r0",
+    "name": {
       "en": "Marty",
       "ja": "マーティ",
       "zh": "马蒂"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "3",
     "MinHp3": 44,
@@ -3435,14 +3435,14 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   },
-  "110266_01_r0": {
-    "Id": "110266_01_r0",
-    "Name": {
+  {
+    "id": "110266_01_r0",
+    "name": {
       "en": "Naveed",
       "ja": "ナジャーフ",
       "zh": "纳杰夫"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "5",
     "MinHp3": 44,
@@ -3478,14 +3478,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110267_01_r0": {
-    "Id": "110267_01_r0",
-    "Name": {
+  {
+    "id": "110267_01_r0",
+    "name": {
       "en": "Hawk",
       "ja": "ホーク",
       "zh": "霍克"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "5",
     "MinHp3": 45,
@@ -3521,14 +3521,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110268_01_r0": {
-    "Id": "110268_01_r0",
-    "Name": {
+  {
+    "id": "110268_01_r0",
+    "name": {
       "en": "Lin You",
       "ja": "リンユー",
       "zh": "林佑"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "5",
     "MinHp3": 43,
@@ -3569,14 +3569,14 @@ const adventurer =
     "ExDef3": 12,
     "ExDef4": 15
   },
-  "110269_01_r0": {
-    "Id": "110269_01_r0",
-    "Name": {
+  {
+    "id": "110269_01_r0",
+    "name": {
       "en": "Verica",
       "ja": "ウェルシェラ",
       "zh": "维尔莎拉"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 46,
@@ -3611,14 +3611,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110270_01_r0": {
-    "Id": "110270_01_r0",
-    "Name": {
+  {
+    "id": "110270_01_r0",
+    "name": {
       "en": "Melsa",
       "ja": "メルサ",
       "zh": "梅露莎"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "4",
     "MinHp3": 43,
@@ -3653,14 +3653,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110274_01_r0": {
-    "Id": "110274_01_r0",
-    "Name": {
+  {
+    "id": "110274_01_r0",
+    "name": {
       "en": "Albert",
       "ja": "アルベール",
       "zh": "阿尔贝尔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 44,
@@ -3696,14 +3696,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110275_01_r0": {
-    "Id": "110275_01_r0",
-    "Name": {
+  {
+    "id": "110275_01_r0",
+    "name": {
       "en": "Annelie",
       "ja": "アンネリーエ",
       "zh": "安妮利艾"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 46,
@@ -3744,14 +3744,14 @@ const adventurer =
     "ExHp3": 13,
     "ExHp4": 15
   },
-  "110276_01_r0": {
-    "Id": "110276_01_r0",
-    "Name": {
+  {
+    "id": "110276_01_r0",
+    "name": {
       "en": "Fritz",
       "ja": "フリッツ",
       "zh": "弗里茨"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 45,
@@ -3786,14 +3786,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110277_01_r0": {
-    "Id": "110277_01_r0",
-    "Name": {
+  {
+    "id": "110277_01_r0",
+    "name": {
       "en": "Felicia",
       "ja": "フェリーチャ",
       "zh": "菲丽嘉"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 43,
@@ -3828,14 +3828,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110280_01_r0": {
-    "Id": "110280_01_r0",
-    "Name": {
+  {
+    "id": "110280_01_r0",
+    "name": {
       "en": "Heinwald",
       "ja": "ハインヴァルト",
       "zh": "海因瓦尔德"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "5",
     "MinHp3": 47,
@@ -3871,14 +3871,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110281_01_r0": {
-    "Id": "110281_01_r0",
-    "Name": {
+  {
+    "id": "110281_01_r0",
+    "name": {
       "en": "Curran",
       "ja": "クーガー",
       "zh": "库格尔"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "5",
     "MinHp3": 43,
@@ -3919,14 +3919,14 @@ const adventurer =
     "ExDef3": 12,
     "ExDef4": 15
   },
-  "110301_01_r0": {
-    "Id": "110301_01_r0",
-    "Name": {
+  {
+    "id": "110301_01_r0",
+    "name": {
       "en": "Odetta",
       "ja": "オデッタ",
       "zh": "欧蒂塔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 43,
@@ -3961,14 +3961,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110302_01_r0": {
-    "Id": "110302_01_r0",
-    "Name": {
+  {
+    "id": "110302_01_r0",
+    "name": {
       "en": "Pia",
       "ja": "ピアチェ",
       "zh": "皮雅茜"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 47,
@@ -4010,14 +4010,14 @@ const adventurer =
     "ExHp3": 10,
     "ExHp4": 12
   },
-  "110303_01_r0": {
-    "Id": "110303_01_r0",
-    "Name": {
+  {
+    "id": "110303_01_r0",
+    "name": {
       "en": "Elias",
       "ja": "エリアス",
       "zh": "埃利亚斯"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 46,
@@ -4052,14 +4052,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110304_01_r0": {
-    "Id": "110304_01_r0",
-    "Name": {
+  {
+    "id": "110304_01_r0",
+    "name": {
       "en": "Vixel",
       "ja": "ヴィクセル",
       "zh": "维克塞尔"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "4",
     "MinHp3": 46,
@@ -4094,14 +4094,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110305_01_r0": {
-    "Id": "110305_01_r0",
-    "Name": {
+  {
+    "id": "110305_01_r0",
+    "name": {
       "en": "Lucretia",
       "ja": "ルクレツィア",
       "zh": "卢克雷齐娅"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "5",
     "MinHp3": 44,
@@ -4137,14 +4137,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110310_01_r0": {
-    "Id": "110310_01_r0",
-    "Name": {
+  {
+    "id": "110310_01_r0",
+    "name": {
       "en": "Addis",
       "ja": "アディス",
       "zh": "阿迪斯"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 42,
@@ -4179,14 +4179,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110311_01_r0": {
-    "Id": "110311_01_r0",
-    "Name": {
+  {
+    "id": "110311_01_r0",
+    "name": {
       "en": "Sazanka",
       "ja": "サザンカ",
       "zh": "山茶花"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 47,
@@ -4226,14 +4226,14 @@ const adventurer =
     "ExDef3": 10,
     "ExDef4": 11
   },
-  "110312_01_r0": {
-    "Id": "110312_01_r0",
-    "Name": {
+  {
+    "id": "110312_01_r0",
+    "name": {
       "en": "Botan",
       "ja": "ボタン",
       "zh": "牡丹"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Shadow",
     "rarity": "4",
     "MinHp3": 44,
@@ -4273,14 +4273,14 @@ const adventurer =
     "ExHp3": 10,
     "ExHp4": 12
   },
-  "110313_01_r0": {
-    "Id": "110313_01_r0",
-    "Name": {
+  {
+    "id": "110313_01_r0",
+    "name": {
       "en": "Ieyasu",
       "ja": "イエヤス",
       "zh": "家康"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Shadow",
     "rarity": "5",
     "MinHp3": 43,
@@ -4316,14 +4316,14 @@ const adventurer =
     "Ex3": 260,
     "Ex4": 320
   },
-  "110314_01_r0": {
-    "Id": "110314_01_r0",
-    "Name": {
+  {
+    "id": "110314_01_r0",
+    "name": {
       "en": "Su Fang",
       "ja": "スオウ",
       "zh": "苏方"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 41,
@@ -4358,14 +4358,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110315_01_r0": {
-    "Id": "110315_01_r0",
-    "Name": {
+  {
+    "id": "110315_01_r0",
+    "name": {
       "en": "Ku Hai",
       "ja": "クガイ",
       "zh": "苦海"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Wind",
     "rarity": "4",
     "MinHp3": 43,
@@ -4400,14 +4400,14 @@ const adventurer =
     "Ex3": 200,
     "Ex4": 230
   },
-  "110316_01_r0": {
-    "Id": "110316_01_r0",
-    "Name": {
+  {
+    "id": "110316_01_r0",
+    "name": {
       "en": "Xiao Lei",
       "ja": "シャオレイ",
       "zh": "小蕾"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "3",
     "MinHp3": 41,
@@ -4442,5 +4442,5 @@ const adventurer =
     "Ex3": 140,
     "Ex4": 170
   }
-};
+];
 export default adventurer;

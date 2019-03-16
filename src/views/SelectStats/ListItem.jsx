@@ -1,115 +1,115 @@
 // @flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import {
+  Typography,
+} from '@material-ui/core';
 import { Image } from "components";
 import { selectStats } from "actions";
 
 const propTypes = {
-  fields: PropTypes.array.isRequired,
-  section: PropTypes.string.isRequired,
-  item: PropTypes.object,
+  section: PropTypes.string,
 };
 
-class ListItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      adventurer: ["type", "element", "rarity"],
-      weapon: ["type", "rarity", "tier"],
-      wyrmprint: ["rarity"],
-      dragon: ["element", "rarity"],
-    };
-
-    this.onClick = this.onClick.bind(this);
-  }
+class ListItem extends PureComponent {
 
   render() {
     const {
+      index,
       style,
       section,
-      item,
-      fields,
-      lang,
+      data: {
+        list,
+        fields,
+        lang = "ja",
+      },
     } = this.props;
 
+    const item = list[index];
+
     let image = "add";
-    if (item) {
-      switch (section) {
-        case "adventurer":
-          image = item.Id + item.rarity;
-          break;
-        case "wyrmprint":
-          image = item.Id + "1";
-          break;
-        default:
-          image = item.Id;
-          break;
-      }
+    switch (section) {
+      case "adventurer":
+        image = item.id + item.rarity;
+        break;
+      case "wyrmprint":
+        image = item.id + "1";
+        break;
+      default:
+        image = item.id;
+        break;
     }
 
+    const name = item.name[lang];
     return (
-      <div style={style} className="flex stats-list" onClick={this.onClick}>
-        <div className="stats-list-img">
+      <div
+        className="stats-list"
+        style={style}
+        onClick={this.onClick}
+      >
+        <div className="stats-list-image">
           <Image
-            size="md"
             statsKey={section}
             image={image}
           />
         </div>
 
-        <span className="stats-list-name">
-          {item.Name[lang]}
-        </span>
+        <div className="stats-list-name">
+          <Typography noWrap>
+            {name}
+          </Typography>
+        </div>
 
         {fields.map((field) => {
-          if (field === "type" || field === "element") {
-            const icon = field === "element" ? `${field}_${item[field]}` : `weapon_${item[field]}`;
-            // const icon = `${field}_${item[field]}`;
+          if (field === "weapon" || field === "element") {
+            const icon = `${field}_${item[field]}`;
             return (
               <div key={field} className="stats-list-icon">
                 <Image
-                  size="sm"
                   statsKey="icon"
+                  size="sm"
                   image={icon}
                 />
               </div>
             );
-          } else {
-            return (
-              <span key={field} className="stats-list-icon">
-                {item[field]}
-              </span>
-            );
           }
+
+          return (
+            <div key={field} className="stats-list-icon">
+              {item[field]}
+            </div>
+          );
         })}
       </div>
     );
   }
 
+  itemKey = (index, data) => {
+    const { list } = data;
+    const item = list[index];
+
+    return item.id;
+  }
+
   onClick = () => {
     const {
+      index,
       focusKey,
-      item,
       selectStats,
+      data: { list: { [index]: item } },
     } = this.props;
-
     selectStats(focusKey, item);
   }
 }
 
 ListItem.propTypes = propTypes;
 
-const mapStateToProps = ({
-  focusKey,
-  section,
-  stats,
-}) => {
+const mapStateToProps = ({ focusKey, section }) => {
   return {
     focusKey,
     section,
-    stats,
   };
 }
 

@@ -1,11 +1,12 @@
-import data from "./data";
-import uid from "./uid";
+import dataList from "./dataList";
+import dataLookup from "./dataLookup";
 import limit from "./limit";
 import facility, { values } from "./facility";
-export default data;
+
+export default dataList;
 export {
-  data,
-  uid,
+  dataList,
+  dataLookup,
   limit,
   facility,
   values,

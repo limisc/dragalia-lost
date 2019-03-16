@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { createSelector } from 'reselect';
 import {
-  data,
+  dataLookup,
   limit,
   values,
 } from "data";
@@ -57,8 +57,8 @@ const translate = (content, lang = "en") => {
 
 const getItem = (statsKey, id) => {
   const section = getSection(statsKey);
-  if (data[section]) {
-    return data[section][id];
+  if (dataLookup[section]) {
+    return dataLookup[section][id];
   }
 
   return null;
@@ -76,7 +76,7 @@ const getSearch = (stats) => {
   const searchArray = [];
   statsFields.forEach((k) => {
     if (stats[k]) {
-      searchArray.push(`${k}=${stats[k].Id}`);
+      searchArray.push(`${k}=${stats[k].id}`);
     }
   });
 

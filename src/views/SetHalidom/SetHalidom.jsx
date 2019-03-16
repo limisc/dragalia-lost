@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Paper } from '@material-ui/core';
+import { Paper, Grid, Button } from '@material-ui/core';
 import {
   getHalidomOverview,
 } from "actions";
@@ -21,7 +21,18 @@ class SetHalidom extends Component {
     const { element, type } = adventurer || {};
     const { element: dragonElement } = dragon || {};
     return (
-      <Paper className="fluid">
+      <Paper style={{ width: "100%", paddingRight: "16px" }}>
+        <Grid container spacing={8} className="filters top">
+          <Grid item xs={6} lg={3}>
+            <Button
+              variant="contained"
+              style={{ height: "56px", width: "100%" }}
+              onClick={this.onClick}
+            >
+              Stats
+          </Button>
+          </Grid>
+        </Grid>
         {adventurer && (
           <Fragment>
             <OverviewItem

@@ -1,13 +1,13 @@
 const weapon =
 {
   "301013_01_30101": {
-    "Id": "301013_01_30101",
-    "Name": {
+    "id": "301013_01_30101",
+    "name": {
       "en": "Blazing Edge",
       "ja": "ハードヒートソード",
       "zh": "灼热之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -20,13 +20,13 @@ const weapon =
     "Abilities21": 0
   },
   "301053_01_30101": {
-    "Id": "301053_01_30101",
-    "Name": {
+    "id": "301053_01_30101",
+    "name": {
       "en": "Blazing Ingot",
       "ja": "ブレイズインゴット",
       "zh": "烈焰铸铁"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -39,13 +39,13 @@ const weapon =
     "Abilities21": 50
   },
   "301006_01_30201": {
-    "Id": "301006_01_30201",
-    "Name": {
+    "id": "301006_01_30201",
+    "name": {
       "en": "Rainbreaker",
       "ja": "レインブレイカー",
       "zh": "裂雨剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -58,13 +58,13 @@ const weapon =
     "Abilities21": 0
   },
   "301035_01_30301": {
-    "Id": "301035_01_30301",
-    "Name": {
+    "id": "301035_01_30301",
+    "name": {
       "en": "Grassrunner",
       "ja": "グラスランナー",
       "zh": "草上飞"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -77,13 +77,13 @@ const weapon =
     "Abilities21": 0
   },
   "301007_01_30401": {
-    "Id": "301007_01_30401",
-    "Name": {
+    "id": "301007_01_30401",
+    "name": {
       "en": "Featherblade",
       "ja": "フェザーソード",
       "zh": "轻羽剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -96,13 +96,13 @@ const weapon =
     "Abilities21": 0
   },
   "301008_01_30501": {
-    "Id": "301008_01_30501",
-    "Name": {
+    "id": "301008_01_30501",
+    "name": {
       "en": "Blood Price",
       "ja": "ブラッドデュエル",
       "zh": "鲜血决斗"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -115,13 +115,13 @@ const weapon =
     "Abilities21": 0
   },
   "301030_01_39901": {
-    "Id": "301030_01_39901",
-    "Name": {
+    "id": "301030_01_39901",
+    "name": {
       "en": "Knight's Sword",
       "ja": "ナイツソード",
       "zh": "骑士剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -134,13 +134,13 @@ const weapon =
     "Abilities21": 0
   },
   "301038_01_39901": {
-    "Id": "301038_01_39901",
-    "Name": {
+    "id": "301038_01_39901",
+    "name": {
       "en": "Ensorcelled Sword",
       "ja": "エンチャントソード",
       "zh": "附魔剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -153,13 +153,13 @@ const weapon =
     "Abilities21": 0
   },
   "301039_01_39901": {
-    "Id": "301039_01_39901",
-    "Name": {
+    "id": "301039_01_39901",
+    "name": {
       "en": "Broadedge",
       "ja": "ワイドソード",
       "zh": "狂野之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -172,13 +172,13 @@ const weapon =
     "Abilities21": 0
   },
   "301052_01_39901": {
-    "Id": "301052_01_39901",
-    "Name": {
+    "id": "301052_01_39901",
+    "name": {
       "en": "Hefty Ingot",
       "ja": "ヘビィインゴット",
       "zh": "沉重铸铁"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -191,13 +191,13 @@ const weapon =
     "Abilities21": 0
   },
   "301014_01_40101": {
-    "Id": "301014_01_40101",
-    "Name": {
+    "id": "301014_01_40101",
+    "name": {
       "en": "Crimson Cry",
       "ja": "クリムゾンソード",
       "zh": "绯红剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -210,13 +210,13 @@ const weapon =
     "Abilities21": 0
   },
   "301053_01_40101": {
-    "Id": "301053_01_40101",
-    "Name": {
+    "id": "301053_01_40101",
+    "name": {
       "en": "Molten Ingot",
       "ja": "ヴォルカノインゴット",
       "zh": "火山铸铁"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -229,13 +229,13 @@ const weapon =
     "Abilities21": 50
   },
   "301056_01_40101": {
-    "Id": "301056_01_40101",
-    "Name": {
+    "id": "301056_01_40101",
+    "name": {
       "en": "Flame Apogee",
       "ja": "グレイテストフレイム",
       "zh": "无上烈焰"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -248,13 +248,13 @@ const weapon =
     "Abilities21": 100
   },
   "301009_01_40201": {
-    "Id": "301009_01_40201",
-    "Name": {
+    "id": "301009_01_40201",
+    "name": {
       "en": "Mercurius",
       "ja": "メルクリウスソード",
       "zh": "墨丘利之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -267,13 +267,13 @@ const weapon =
     "Abilities21": 0
   },
   "301034_01_40301": {
-    "Id": "301034_01_40301",
-    "Name": {
+    "id": "301034_01_40301",
+    "name": {
       "en": "Wingblade",
       "ja": "ウイングソード",
       "zh": "灵翼剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -286,13 +286,13 @@ const weapon =
     "Abilities21": 0
   },
   "301036_01_40401": {
-    "Id": "301036_01_40401",
-    "Name": {
+    "id": "301036_01_40401",
+    "name": {
       "en": "Astral Edge",
       "ja": "七星剣",
       "zh": "七星剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -305,13 +305,13 @@ const weapon =
     "Abilities21": 0
   },
   "301058_01_40401": {
-    "Id": "301058_01_40401",
-    "Name": {
+    "id": "301058_01_40401",
+    "name": {
       "en": "Luster Apogee",
       "ja": "グレイテストブライト",
       "zh": "无上光辉"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -324,13 +324,13 @@ const weapon =
     "Abilities21": 40
   },
   "301011_01_40501": {
-    "Id": "301011_01_40501",
-    "Name": {
+    "id": "301011_01_40501",
+    "name": {
       "en": "Dark Dementia",
       "ja": "狂乱の黒剣",
       "zh": "狂乱黑剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -343,13 +343,13 @@ const weapon =
     "Abilities21": 0
   },
   "301040_01_49901": {
-    "Id": "301040_01_49901",
-    "Name": {
+    "id": "301040_01_49901",
+    "name": {
       "en": "Knights' Grace",
       "ja": "騎士長の麗剣",
       "zh": "骑士长丽剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -362,13 +362,13 @@ const weapon =
     "Abilities21": 0
   },
   "301031_01_49901": {
-    "Id": "301031_01_49901",
-    "Name": {
+    "id": "301031_01_49901",
+    "name": {
       "en": "Blade of Glory",
       "ja": "グロリアスソード",
       "zh": "荣耀之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -381,13 +381,13 @@ const weapon =
     "Abilities21": 0
   },
   "301012_01_49901": {
-    "Id": "301012_01_49901",
-    "Name": {
+    "id": "301012_01_49901",
+    "name": {
       "en": "Gilda Sword",
       "ja": "ギルダソード",
       "zh": "吉尔达之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -400,13 +400,13 @@ const weapon =
     "Abilities21": 0
   },
   "301055_01_49901": {
-    "Id": "301055_01_49901",
-    "Name": {
+    "id": "301055_01_49901",
+    "name": {
       "en": "Wind Apogee",
       "ja": "グレイテストウイング",
       "zh": "无上锐翼"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -419,13 +419,13 @@ const weapon =
     "Abilities21": 0
   },
   "301032_01_50101": {
-    "Id": "301032_01_50101",
-    "Name": {
+    "id": "301032_01_50101",
+    "name": {
       "en": "Levatein",
       "ja": "レーヴァテイン",
       "zh": "雷瓦汀"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -438,13 +438,13 @@ const weapon =
     "Abilities21": 0
   },
   "301056_01_50101": {
-    "Id": "301056_01_50101",
-    "Name": {
+    "id": "301056_01_50101",
+    "name": {
       "en": "Inferno Apogee",
       "ja": "グレイテストインフェルノ",
       "zh": "无上业火"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -457,13 +457,13 @@ const weapon =
     "Abilities21": 100
   },
   "301010_01_50201": {
-    "Id": "301010_01_50201",
-    "Name": {
+    "id": "301010_01_50201",
+    "name": {
       "en": "Eoantide",
       "ja": "原初の白波",
       "zh": "原初白浪"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -476,13 +476,13 @@ const weapon =
     "Abilities21": 0
   },
   "301033_01_50301": {
-    "Id": "301033_01_50301",
-    "Name": {
+    "id": "301033_01_50301",
+    "name": {
       "en": "Durandal",
       "ja": "デュランダル",
       "zh": "杜朗达尔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -495,13 +495,13 @@ const weapon =
     "Abilities21": 0
   },
   "301015_01_50401": {
-    "Id": "301015_01_50401",
-    "Name": {
+    "id": "301015_01_50401",
+    "name": {
       "en": "Zex's End",
       "ja": "エンド・オブ・ゼクス",
       "zh": "赛克斯的终焉"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -514,13 +514,13 @@ const weapon =
     "Abilities21": 0
   },
   "301058_01_50401": {
-    "Id": "301058_01_50401",
-    "Name": {
+    "id": "301058_01_50401",
+    "name": {
       "en": "Aureole Apogee",
       "ja": "グレイテストオリオール",
       "zh": "无上圣耀"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -533,13 +533,13 @@ const weapon =
     "Abilities21": 40
   },
   "301037_01_50501": {
-    "Id": "301037_01_50501",
-    "Name": {
+    "id": "301037_01_50501",
+    "name": {
       "en": "Dáinsleif",
       "ja": "ダインスレイブ",
       "zh": "戴因斯莱夫"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -552,13 +552,13 @@ const weapon =
     "Abilities21": 0
   },
   "301041_01_59901": {
-    "Id": "301041_01_59901",
-    "Name": {
+    "id": "301041_01_59901",
+    "name": {
       "en": "Hero's Sword",
       "ja": "英雄の剣",
       "zh": "英雄之剑"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -571,13 +571,13 @@ const weapon =
     "Abilities21": 0
   },
   "301042_01_59901": {
-    "Id": "301042_01_59901",
-    "Name": {
+    "id": "301042_01_59901",
+    "name": {
       "en": "Hauteclaire",
       "ja": "オートクレール",
       "zh": "奥托克莱尔"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -590,13 +590,13 @@ const weapon =
     "Abilities21": 0
   },
   "301043_01_59901": {
-    "Id": "301043_01_59901",
-    "Name": {
+    "id": "301043_01_59901",
+    "name": {
       "en": "Gram",
       "ja": "グラム",
       "zh": "格拉墨"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -609,13 +609,13 @@ const weapon =
     "Abilities21": 0
   },
   "301046_01_59901": {
-    "Id": "301046_01_59901",
-    "Name": {
+    "id": "301046_01_59901",
+    "name": {
       "en": "Lucky Hanetsuki Paddle",
       "ja": "福招きの羽子板",
       "zh": "招福羽子板"
     },
-    "type": "Sword",
+    "weapon": "Sword",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -628,13 +628,13 @@ const weapon =
     "Abilities21": 0
   },
   "302006_01_30101": {
-    "Id": "302006_01_30101",
-    "Name": {
+    "id": "302006_01_30101",
+    "name": {
       "en": "Valkaheim Blade",
       "ja": "バルカブレード",
       "zh": "巴尔加之刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -647,13 +647,13 @@ const weapon =
     "Abilities21": 0
   },
   "302042_01_30101": {
-    "Id": "302042_01_30101",
-    "Name": {
+    "id": "302042_01_30101",
+    "name": {
       "en": "Crimson Steel",
       "ja": "朱鋼丸",
       "zh": "朱钢丸"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -666,13 +666,13 @@ const weapon =
     "Abilities21": 50
   },
   "302007_01_30201": {
-    "Id": "302007_01_30201",
-    "Name": {
+    "id": "302007_01_30201",
+    "name": {
       "en": "Alighting Butterfly",
       "ja": "花蝶村雨",
       "zh": "花蝶村雨"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -685,13 +685,13 @@ const weapon =
     "Abilities21": 0
   },
   "302024_01_30301": {
-    "Id": "302024_01_30301",
-    "Name": {
+    "id": "302024_01_30301",
+    "name": {
       "en": "Dragon Commander",
       "ja": "竜将刀",
       "zh": "龙将刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -704,13 +704,13 @@ const weapon =
     "Abilities21": 0
   },
   "302027_01_30401": {
-    "Id": "302027_01_30401",
-    "Name": {
+    "id": "302027_01_30401",
+    "name": {
       "en": "Chanzelian Blade",
       "ja": "シャンゼリアブレード",
       "zh": "香榭利亚之刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -723,13 +723,13 @@ const weapon =
     "Abilities21": 0
   },
   "302009_01_30501": {
-    "Id": "302009_01_30501",
-    "Name": {
+    "id": "302009_01_30501",
+    "name": {
       "en": "Sanguine Rain",
       "ja": "妖刀血雨",
       "zh": "妖刀血雨"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -742,13 +742,13 @@ const weapon =
     "Abilities21": 0
   },
   "302021_01_39901": {
-    "Id": "302021_01_39901",
-    "Name": {
+    "id": "302021_01_39901",
+    "name": {
       "en": "Subjugator",
       "ja": "討伐刀",
       "zh": "讨伐刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -761,13 +761,13 @@ const weapon =
     "Abilities21": 0
   },
   "302030_01_39901": {
-    "Id": "302030_01_39901",
-    "Name": {
+    "id": "302030_01_39901",
+    "name": {
       "en": "High Shamshir",
       "ja": "ロードシャムシール",
       "zh": "舍施尔弯刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -780,13 +780,13 @@ const weapon =
     "Abilities21": 0
   },
   "302008_01_39901": {
-    "Id": "302008_01_39901",
-    "Name": {
+    "id": "302008_01_39901",
+    "name": {
       "en": "Fusion Blade",
       "ja": "ネクストブレード",
       "zh": "次世代之刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -799,13 +799,13 @@ const weapon =
     "Abilities21": 0
   },
   "302041_01_39901": {
-    "Id": "302041_01_39901",
-    "Name": {
+    "id": "302041_01_39901",
+    "name": {
       "en": "Goliath Splitter",
       "ja": "鋼丸",
       "zh": "钢丸"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -818,13 +818,13 @@ const weapon =
     "Abilities21": 0
   },
   "302015_01_40101": {
-    "Id": "302015_01_40101",
-    "Name": {
+    "id": "302015_01_40101",
+    "name": {
       "en": "Flametongue",
       "ja": "緋炎刀",
       "zh": "绯炎刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -837,13 +837,13 @@ const weapon =
     "Abilities21": 0
   },
   "302042_01_40101": {
-    "Id": "302042_01_40101",
-    "Name": {
+    "id": "302042_01_40101",
+    "name": {
       "en": "Blazing Steel",
       "ja": "真打・紅焔鋼丸",
       "zh": "终极・红焰钢丸"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -856,13 +856,13 @@ const weapon =
     "Abilities21": 50
   },
   "302045_01_40101": {
-    "Id": "302045_01_40101",
-    "Name": {
+    "id": "302045_01_40101",
+    "name": {
       "en": "Scorching Edge",
       "ja": "烈斬刀・却火",
       "zh": "烈斩刀・劫火"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -875,13 +875,13 @@ const weapon =
     "Abilities21": 100
   },
   "302022_01_40201": {
-    "Id": "302022_01_40201",
-    "Name": {
+    "id": "302022_01_40201",
+    "name": {
       "en": "Sousui",
       "ja": "蒼水刀",
       "zh": "苍水刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -894,13 +894,13 @@ const weapon =
     "Abilities21": 0
   },
   "302011_01_40301": {
-    "Id": "302011_01_40301",
-    "Name": {
+    "id": "302011_01_40301",
+    "name": {
       "en": "Tempest Blade",
       "ja": "テンペストブレード",
       "zh": "暴风之刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -913,13 +913,13 @@ const weapon =
     "Abilities21": 0
   },
   "302026_01_40401": {
-    "Id": "302026_01_40401",
-    "Name": {
+    "id": "302026_01_40401",
+    "name": {
       "en": "Thunderfang",
       "ja": "纏雷斬蛇刀",
       "zh": "缠雷斩蛇刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -932,13 +932,13 @@ const weapon =
     "Abilities21": 0
   },
   "302047_01_40401": {
-    "Id": "302047_01_40401",
-    "Name": {
+    "id": "302047_01_40401",
+    "name": {
       "en": "Thunderous Edge",
       "ja": "烈斬刀・轟雷",
       "zh": "烈斩刀・轰雷"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -951,13 +951,13 @@ const weapon =
     "Abilities21": 40
   },
   "302029_01_40501": {
-    "Id": "302029_01_40501",
-    "Name": {
+    "id": "302029_01_40501",
+    "name": {
       "en": "Ghizlam's Darkblade",
       "ja": "闇刀ジズラム",
       "zh": "暗刀齐兹拉姆"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -970,13 +970,13 @@ const weapon =
     "Abilities21": 0
   },
   "302012_01_49901": {
-    "Id": "302012_01_49901",
-    "Name": {
+    "id": "302012_01_49901",
+    "name": {
       "en": "Guardian Seal",
       "ja": "鎮守刀",
       "zh": "镇守刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -989,13 +989,13 @@ const weapon =
     "Abilities21": 0
   },
   "302031_01_49901": {
-    "Id": "302031_01_49901",
-    "Name": {
+    "id": "302031_01_49901",
+    "name": {
       "en": "Iron Blade",
       "ja": "クロガネブレード",
       "zh": "黑钢之刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -1008,13 +1008,13 @@ const weapon =
     "Abilities21": 0
   },
   "302032_01_49901": {
-    "Id": "302032_01_49901",
-    "Name": {
+    "id": "302032_01_49901",
+    "name": {
       "en": "Masamura's Pride",
       "ja": "機構刀サマラム",
       "zh": "机械刀正村"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -1027,13 +1027,13 @@ const weapon =
     "Abilities21": 0
   },
   "302044_01_49901": {
-    "Id": "302044_01_49901",
-    "Name": {
+    "id": "302044_01_49901",
+    "name": {
       "en": "Bladewing",
       "ja": "斬刀・虚",
       "zh": "斩刀・虚"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -1046,13 +1046,13 @@ const weapon =
     "Abilities21": 0
   },
   "302013_01_50101": {
-    "Id": "302013_01_50101",
-    "Name": {
+    "id": "302013_01_50101",
+    "name": {
       "en": "Heaven's Acuity",
       "ja": "天之尾羽張",
       "zh": "天之尾羽张"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -1065,13 +1065,13 @@ const weapon =
     "Abilities21": 0
   },
   "302045_01_50101": {
-    "Id": "302045_01_50101",
-    "Name": {
+    "id": "302045_01_50101",
+    "name": {
       "en": "Skyrender",
       "ja": "烈斬刀・天変却火",
       "zh": "烈斩刀・天变劫火"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -1084,13 +1084,13 @@ const weapon =
     "Abilities21": 100
   },
   "302010_01_50201": {
-    "Id": "302010_01_50201",
-    "Name": {
+    "id": "302010_01_50201",
+    "name": {
       "en": "Maar Oasis",
       "ja": "マールオアシス",
       "zh": "火口绿洲"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -1103,13 +1103,13 @@ const weapon =
     "Abilities21": 0
   },
   "302023_01_50301": {
-    "Id": "302023_01_50301",
-    "Name": {
+    "id": "302023_01_50301",
+    "name": {
       "en": "Anemone",
       "ja": "淡紫刀アネモネ",
       "zh": "淡紫刀银莲"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -1122,13 +1122,13 @@ const weapon =
     "Abilities21": 0
   },
   "302025_01_50401": {
-    "Id": "302025_01_50401",
-    "Name": {
+    "id": "302025_01_50401",
+    "name": {
       "en": "Heavenwing",
       "ja": "天の翼刀",
       "zh": "天翼之刀"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -1141,13 +1141,13 @@ const weapon =
     "Abilities21": 0
   },
   "302047_01_50401": {
-    "Id": "302047_01_50401",
-    "Name": {
+    "id": "302047_01_50401",
+    "name": {
       "en": "Primal Thunder",
       "ja": "烈斬刀・轟雷創世",
       "zh": "烈斩刀・轰雷创世"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -1160,13 +1160,13 @@ const weapon =
     "Abilities21": 40
   },
   "302028_01_50501": {
-    "Id": "302028_01_50501",
-    "Name": {
+    "id": "302028_01_50501",
+    "name": {
       "en": "Blackwing",
       "ja": "黒翼の呪刀",
       "zh": "黑翼咒刃"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -1179,13 +1179,13 @@ const weapon =
     "Abilities21": 0
   },
   "302014_01_59901": {
-    "Id": "302014_01_59901",
-    "Name": {
+    "id": "302014_01_59901",
+    "name": {
       "en": "Dane's Favor",
       "ja": "覇王号",
       "zh": "霸王号"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -1198,13 +1198,13 @@ const weapon =
     "Abilities21": 0
   },
   "302033_01_59901": {
-    "Id": "302033_01_59901",
-    "Name": {
+    "id": "302033_01_59901",
+    "name": {
       "en": "Crimson Shade",
       "ja": "夜叉影光",
       "zh": "夜叉影光"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -1217,13 +1217,13 @@ const weapon =
     "Abilities21": 0
   },
   "302034_01_59901": {
-    "Id": "302034_01_59901",
-    "Name": {
+    "id": "302034_01_59901",
+    "name": {
       "en": "Souleater",
       "ja": "魂喰虎鉄",
       "zh": "魂喰虎铁"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -1236,13 +1236,13 @@ const weapon =
     "Abilities21": 0
   },
   "302035_01_59901": {
-    "Id": "302035_01_59901",
-    "Name": {
+    "id": "302035_01_59901",
+    "name": {
       "en": "Villagelight",
       "ja": "ヴィレッジライト",
       "zh": "村正"
     },
-    "type": "Blade",
+    "weapon": "Blade",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -1255,13 +1255,13 @@ const weapon =
     "Abilities21": 0
   },
   "303027_01_30101": {
-    "Id": "303027_01_30101",
-    "Name": {
+    "id": "303027_01_30101",
+    "name": {
       "en": "Cruel Kukri",
       "ja": "クルーエルククリ",
       "zh": "无情反曲刀"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -1274,13 +1274,13 @@ const weapon =
     "Abilities21": 0
   },
   "303042_01_30101": {
-    "Id": "303042_01_30101",
-    "Name": {
+    "id": "303042_01_30101",
+    "name": {
       "en": "Flaming Fungi Dagger",
       "ja": "アチアチキノコの短剣",
       "zh": "灼热蘑菇短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -1293,13 +1293,13 @@ const weapon =
     "Abilities21": 50
   },
   "303045_01_30101": {
-    "Id": "303045_01_30101",
-    "Name": {
+    "id": "303045_01_30101",
+    "name": {
       "en": "Flaming Big Boy",
       "ja": "フレイムヘヴィ",
       "zh": "火焰重刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -1312,13 +1312,13 @@ const weapon =
     "Abilities21": 50
   },
   "303021_01_30201": {
-    "Id": "303021_01_30201",
-    "Name": {
+    "id": "303021_01_30201",
+    "name": {
       "en": "Water Dagger",
       "ja": "ウォーターダガー",
       "zh": "水之短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -1331,13 +1331,13 @@ const weapon =
     "Abilities21": 0
   },
   "303040_01_30201": {
-    "Id": "303040_01_30201",
-    "Name": {
+    "id": "303040_01_30201",
+    "name": {
       "en": "Chilly Crimini Dagger",
       "ja": "ヒエヒエキノコの短剣",
       "zh": "冰冷蘑菇短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -1350,13 +1350,13 @@ const weapon =
     "Abilities21": 50
   },
   "303007_01_30301": {
-    "Id": "303007_01_30301",
-    "Name": {
+    "id": "303007_01_30301",
+    "name": {
       "en": "Stormspawn",
       "ja": "嵐の落とし子",
       "zh": "风暴之子"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -1369,13 +1369,13 @@ const weapon =
     "Abilities21": 0
   },
   "303008_01_30401": {
-    "Id": "303008_01_30401",
-    "Name": {
+    "id": "303008_01_30401",
+    "name": {
       "en": "Conscience",
       "ja": "心ある懐剣",
       "zh": "含心怀刀"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -1388,13 +1388,13 @@ const weapon =
     "Abilities21": 0
   },
   "303009_01_30501": {
-    "Id": "303009_01_30501",
-    "Name": {
+    "id": "303009_01_30501",
+    "name": {
       "en": "Assassin's Knife",
       "ja": "アサシンナイフ",
       "zh": "暗杀之刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -1407,13 +1407,13 @@ const weapon =
     "Abilities21": 0
   },
   "303026_01_39901": {
-    "Id": "303026_01_39901",
-    "Name": {
+    "id": "303026_01_39901",
+    "name": {
       "en": "Bejeweled Dagger",
       "ja": "宝飾の短剣",
       "zh": "宝饰短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -1426,13 +1426,13 @@ const weapon =
     "Abilities21": 0
   },
   "303032_01_39901": {
-    "Id": "303032_01_39901",
-    "Name": {
+    "id": "303032_01_39901",
+    "name": {
       "en": "Gear Knife",
       "ja": "ギアーズナイフ",
       "zh": "齿轮短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -1445,13 +1445,13 @@ const weapon =
     "Abilities21": 0
   },
   "303003_01_39901": {
-    "Id": "303003_01_39901",
-    "Name": {
+    "id": "303003_01_39901",
+    "name": {
       "en": "Lover's Ally",
       "ja": "ラブナイフ",
       "zh": "爱之匕首"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -1464,13 +1464,13 @@ const weapon =
     "Abilities21": 0
   },
   "303039_01_39901": {
-    "Id": "303039_01_39901",
-    "Name": {
+    "id": "303039_01_39901",
+    "name": {
       "en": "Mushroom Dagger",
       "ja": "キノコの短剣",
       "zh": "蘑菇短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -1483,13 +1483,13 @@ const weapon =
     "Abilities21": 0
   },
   "303044_01_39901": {
-    "Id": "303044_01_39901",
-    "Name": {
+    "id": "303044_01_39901",
+    "name": {
       "en": "Big Boy",
       "ja": "ベリーヘヴィ",
       "zh": "重刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -1502,13 +1502,13 @@ const weapon =
     "Abilities21": 0
   },
   "303015_01_40101": {
-    "Id": "303015_01_40101",
-    "Name": {
+    "id": "303015_01_40101",
+    "name": {
       "en": "Scarlet Talon",
       "ja": "紅蓮の短剣",
       "zh": "红莲短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -1521,13 +1521,13 @@ const weapon =
     "Abilities21": 0
   },
   "303042_01_40101": {
-    "Id": "303042_01_40101",
-    "Name": {
+    "id": "303042_01_40101",
+    "name": {
       "en": "Sizzling Enoki Dagger",
       "ja": "ゲキアツキノコの短剣",
       "zh": "炽热蘑菇短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -1540,13 +1540,13 @@ const weapon =
     "Abilities21": 50
   },
   "303045_01_40101": {
-    "Id": "303045_01_40101",
-    "Name": {
+    "id": "303045_01_40101",
+    "name": {
       "en": "Big Boy of Justice",
       "ja": "ジャスティスヘヴィ",
       "zh": "正义重刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -1559,13 +1559,13 @@ const weapon =
     "Abilities21": 50
   },
   "303018_01_40201": {
-    "Id": "303018_01_40201",
-    "Name": {
+    "id": "303018_01_40201",
+    "name": {
       "en": "Ultramarine Knife",
       "ja": "蒼海の短剣",
       "zh": "沧海短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -1578,13 +1578,13 @@ const weapon =
     "Abilities21": 0
   },
   "303040_01_40201": {
-    "Id": "303040_01_40201",
-    "Name": {
+    "id": "303040_01_40201",
+    "name": {
       "en": "Chilly Chanterelle Dagger",
       "ja": "メチャヒエキノコの短剣",
       "zh": "冰冻蘑菇短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -1597,13 +1597,13 @@ const weapon =
     "Abilities21": 50
   },
   "303051_01_40201": {
-    "Id": "303051_01_40201",
-    "Name": {
+    "id": "303051_01_40201",
+    "name": {
       "en": "Bloodlust",
       "ja": "血潮啜る狂牙",
       "zh": "嗜血狂牙"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -1616,13 +1616,13 @@ const weapon =
     "Abilities21": 40
   },
   "303029_01_40301": {
-    "Id": "303029_01_40301",
-    "Name": {
+    "id": "303029_01_40301",
+    "name": {
       "en": "Queensflight",
       "ja": "古妃の短剣",
       "zh": "王妃短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -1635,13 +1635,13 @@ const weapon =
     "Abilities21": 0
   },
   "303017_01_40401": {
-    "Id": "303017_01_40401",
-    "Name": {
+    "id": "303017_01_40401",
+    "name": {
       "en": "Nightbreaker",
       "ja": "ナイトメアブレイカー",
       "zh": "噩梦短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -1654,13 +1654,13 @@ const weapon =
     "Abilities21": 0
   },
   "303011_01_40501": {
-    "Id": "303011_01_40501",
-    "Name": {
+    "id": "303011_01_40501",
+    "name": {
       "en": "Dark Sacrifice",
       "ja": "カースサクリファイス",
       "zh": "诅咒献祭"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -1673,13 +1673,13 @@ const weapon =
     "Abilities21": 0
   },
   "303033_01_49901": {
-    "Id": "303033_01_49901",
-    "Name": {
+    "id": "303033_01_49901",
+    "name": {
       "en": "Hardbreaker",
       "ja": "ハードブレイカー",
       "zh": "破坏短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -1692,13 +1692,13 @@ const weapon =
     "Abilities21": 0
   },
   "303012_01_49901": {
-    "Id": "303012_01_49901",
-    "Name": {
+    "id": "303012_01_49901",
+    "name": {
       "en": "Wyrmfang",
       "ja": "竜牙の短剣",
       "zh": "龙牙短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -1711,13 +1711,13 @@ const weapon =
     "Abilities21": 0
   },
   "303034_01_49901": {
-    "Id": "303034_01_49901",
-    "Name": {
+    "id": "303034_01_49901",
+    "name": {
       "en": "The Dreamer's Greatsword",
       "ja": "夢想の大剣",
       "zh": "梦想大剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -1730,13 +1730,13 @@ const weapon =
     "Abilities21": 0
   },
   "303047_01_49901": {
-    "Id": "303047_01_49901",
-    "Name": {
+    "id": "303047_01_49901",
+    "name": {
       "en": "Slaughterlust",
       "ja": "仇屠る狂牙",
       "zh": "屠仇狂牙"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -1749,13 +1749,13 @@ const weapon =
     "Abilities21": 0
   },
   "303013_01_50101": {
-    "Id": "303013_01_50101",
-    "Name": {
+    "id": "303013_01_50101",
+    "name": {
       "en": "Aeternal Flame",
       "ja": "久遠の焔",
       "zh": "久远之焰"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -1768,13 +1768,13 @@ const weapon =
     "Abilities21": 0
   },
   "303020_01_50201": {
-    "Id": "303020_01_50201",
-    "Name": {
+    "id": "303020_01_50201",
+    "name": {
       "en": "Lux Lamina",
       "ja": "ラクスラーミナ",
       "zh": "湖光之刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -1787,13 +1787,13 @@ const weapon =
     "Abilities21": 0
   },
   "303051_01_50201": {
-    "Id": "303051_01_50201",
-    "Name": {
+    "id": "303051_01_50201",
+    "name": {
       "en": "Gorelust",
       "ja": "鮮血浴びる狂牙",
       "zh": "浴血狂牙"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -1806,13 +1806,13 @@ const weapon =
     "Abilities21": 40
   },
   "303028_01_50301": {
-    "Id": "303028_01_50301",
-    "Name": {
+    "id": "303028_01_50301",
+    "name": {
       "en": "Karlsnautr",
       "ja": "カールスナウト",
       "zh": "清风灵剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -1825,13 +1825,13 @@ const weapon =
     "Abilities21": 0
   },
   "303030_01_50401": {
-    "Id": "303030_01_50401",
-    "Name": {
+    "id": "303030_01_50401",
+    "name": {
       "en": "Thunderblade Sugaar",
       "ja": "雷刃シュガール",
       "zh": "雷刃修伽尔"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -1844,13 +1844,13 @@ const weapon =
     "Abilities21": 0
   },
   "303031_01_50501": {
-    "Id": "303031_01_50501",
-    "Name": {
+    "id": "303031_01_50501",
+    "name": {
       "en": "Honor Edge",
       "ja": "名誉の紫短剣",
       "zh": "名誉紫短剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -1863,13 +1863,13 @@ const weapon =
     "Abilities21": 0
   },
   "303035_01_59901": {
-    "Id": "303035_01_59901",
-    "Name": {
+    "id": "303035_01_59901",
+    "name": {
       "en": "Kris Naga",
       "ja": "クリスナーガ",
       "zh": "马来克力士剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -1882,13 +1882,13 @@ const weapon =
     "Abilities21": 0
   },
   "303014_01_59901": {
-    "Id": "303014_01_59901",
-    "Name": {
+    "id": "303014_01_59901",
+    "name": {
       "en": "Treasure of the Iron Rose",
       "ja": "鉄薔薇摘みの宝剣",
       "zh": "铁蔷薇采摘宝剑"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -1901,13 +1901,13 @@ const weapon =
     "Abilities21": 0
   },
   "303036_01_59901": {
-    "Id": "303036_01_59901",
-    "Name": {
+    "id": "303036_01_59901",
+    "name": {
       "en": "Hedgehog",
       "ja": "ヘッジホッグ",
       "zh": "刺猬之刃"
     },
-    "type": "Dagger",
+    "weapon": "Dagger",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -1920,13 +1920,13 @@ const weapon =
     "Abilities21": 0
   },
   "304018_01_30101": {
-    "Id": "304018_01_30101",
-    "Name": {
+    "id": "304018_01_30101",
+    "name": {
       "en": "Argent Battleaxe",
       "ja": "白銀の騎士斧",
       "zh": "白银骑士之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -1939,13 +1939,13 @@ const weapon =
     "Abilities21": 0
   },
   "304006_01_30201": {
-    "Id": "304006_01_30201",
-    "Name": {
+    "id": "304006_01_30201",
+    "name": {
       "en": "Axe of the Waves",
       "ja": "カレントアックス",
       "zh": "水流之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -1958,13 +1958,13 @@ const weapon =
     "Abilities21": 0
   },
   "304007_01_30301": {
-    "Id": "304007_01_30301",
-    "Name": {
+    "id": "304007_01_30301",
+    "name": {
       "en": "Singing Cyclone",
       "ja": "サイクロンシンガー",
       "zh": "飓风歌者"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -1977,13 +1977,13 @@ const weapon =
     "Abilities21": 0
   },
   "304008_01_30401": {
-    "Id": "304008_01_30401",
-    "Name": {
+    "id": "304008_01_30401",
+    "name": {
       "en": "Flash Axe",
       "ja": "フラッシュアックス",
       "zh": "闪光战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -1996,13 +1996,13 @@ const weapon =
     "Abilities21": 0
   },
   "304009_01_30501": {
-    "Id": "304009_01_30501",
-    "Name": {
+    "id": "304009_01_30501",
+    "name": {
       "en": "Soulreaver",
       "ja": "ソウルリーパー",
       "zh": "灵魂收割者"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -2015,13 +2015,13 @@ const weapon =
     "Abilities21": 0
   },
   "304025_01_39901": {
-    "Id": "304025_01_39901",
-    "Name": {
+    "id": "304025_01_39901",
+    "name": {
       "en": "Warrior's Axe",
       "ja": "戦士の斧",
       "zh": "战士之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -2034,13 +2034,13 @@ const weapon =
     "Abilities21": 0
   },
   "304031_01_39901": {
-    "Id": "304031_01_39901",
-    "Name": {
+    "id": "304031_01_39901",
+    "name": {
       "en": "Ennobled Axe",
       "ja": "ノーブルアックス",
       "zh": "高贵之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -2053,13 +2053,13 @@ const weapon =
     "Abilities21": 0
   },
   "304032_01_39901": {
-    "Id": "304032_01_39901",
-    "Name": {
+    "id": "304032_01_39901",
+    "name": {
       "en": "Juggernaut",
       "ja": "ウォールクラッシャー",
       "zh": "城墙破坏者"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -2072,13 +2072,13 @@ const weapon =
     "Abilities21": 0
   },
   "304010_01_40101": {
-    "Id": "304010_01_40101",
-    "Name": {
+    "id": "304010_01_40101",
+    "name": {
       "en": "Crimsonclaw",
       "ja": "クリムゾンアックス",
       "zh": "绯红战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -2091,13 +2091,13 @@ const weapon =
     "Abilities21": 0
   },
   "304043_01_40101": {
-    "Id": "304043_01_40101",
-    "Name": {
+    "id": "304043_01_40101",
+    "name": {
       "en": "Heavenfire Gaze",
       "ja": "天炎グランサイト",
       "zh": "天火奇观之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -2110,13 +2110,13 @@ const weapon =
     "Abilities21": 100
   },
   "304011_01_40201": {
-    "Id": "304011_01_40201",
-    "Name": {
+    "id": "304011_01_40201",
+    "name": {
       "en": "Aqua Labrys",
       "ja": "ディープラブリュス",
       "zh": "深海双刃斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -2129,13 +2129,13 @@ const weapon =
     "Abilities21": 0
   },
   "304050_01_40201": {
-    "Id": "304050_01_40201",
-    "Name": {
+    "id": "304050_01_40201",
+    "name": {
       "en": "Wave Crux",
       "ja": "怒涛の戦斧",
       "zh": "怒涛战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -2148,13 +2148,13 @@ const weapon =
     "Abilities21": 40
   },
   "304016_01_40301": {
-    "Id": "304016_01_40301",
-    "Name": {
+    "id": "304016_01_40301",
+    "name": {
       "en": "Winged Destruction",
       "ja": "双色翼の砕斧",
       "zh": "双色翼碎斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -2167,13 +2167,13 @@ const weapon =
     "Abilities21": 0
   },
   "304015_01_40401": {
-    "Id": "304015_01_40401",
-    "Name": {
+    "id": "304015_01_40401",
+    "name": {
       "en": "Shining Axe",
       "ja": "シャイニングアックス",
       "zh": "闪耀之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -2186,13 +2186,13 @@ const weapon =
     "Abilities21": 0
   },
   "304045_01_40401": {
-    "Id": "304045_01_40401",
-    "Name": {
+    "id": "304045_01_40401",
+    "name": {
       "en": "Starlight Gaze",
       "ja": "星煌グランサイト",
       "zh": "星煌奇观之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -2205,13 +2205,13 @@ const weapon =
     "Abilities21": 40
   },
   "304030_01_40501": {
-    "Id": "304030_01_40501",
-    "Name": {
+    "id": "304030_01_40501",
+    "name": {
       "en": "Traitor's Despair",
       "ja": "ディスペアーアックス",
       "zh": "绝望之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -2224,13 +2224,13 @@ const weapon =
     "Abilities21": 0
   },
   "304026_01_49901": {
-    "Id": "304026_01_49901",
-    "Name": {
+    "id": "304026_01_49901",
+    "name": {
       "en": "Plain Axe",
       "ja": "コモンアックス",
       "zh": "平凡之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -2243,13 +2243,13 @@ const weapon =
     "Abilities21": 0
   },
   "304033_01_49901": {
-    "Id": "304033_01_49901",
-    "Name": {
+    "id": "304033_01_49901",
+    "name": {
       "en": "The Tyrant",
       "ja": "タイラントアックス",
       "zh": "暴君之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -2262,13 +2262,13 @@ const weapon =
     "Abilities21": 0
   },
   "304034_01_49901": {
-    "Id": "304034_01_49901",
-    "Name": {
+    "id": "304034_01_49901",
+    "name": {
       "en": "Souvenir Axe",
       "ja": "スーベニアアックス",
       "zh": "纪念战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -2281,13 +2281,13 @@ const weapon =
     "Abilities21": 0
   },
   "304042_01_49901": {
-    "Id": "304042_01_49901",
-    "Name": {
+    "id": "304042_01_49901",
+    "name": {
       "en": "Unerring Gaze",
       "ja": "グランサイト",
       "zh": "奇观之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -2300,13 +2300,13 @@ const weapon =
     "Abilities21": 0
   },
   "304047_01_49901": {
-    "Id": "304047_01_49901",
-    "Name": {
+    "id": "304047_01_49901",
+    "name": {
       "en": "Fury Crux",
       "ja": "怒号の戦斧",
       "zh": "怒号战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -2319,13 +2319,13 @@ const weapon =
     "Abilities21": 0
   },
   "304027_01_50101": {
-    "Id": "304027_01_50101",
-    "Name": {
+    "id": "304027_01_50101",
+    "name": {
       "en": "Axe of the Blazing King",
       "ja": "ヴォルカニックアックス",
       "zh": "火山战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -2338,13 +2338,13 @@ const weapon =
     "Abilities21": 0
   },
   "304043_01_50101": {
-    "Id": "304043_01_50101",
-    "Name": {
+    "id": "304043_01_50101",
+    "name": {
       "en": "Heavenwrath Gaze",
       "ja": "天炎グランサイト・レイジ",
       "zh": "天火奇观・震怒"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -2357,13 +2357,13 @@ const weapon =
     "Abilities21": 100
   },
   "304028_01_50201": {
-    "Id": "304028_01_50201",
-    "Name": {
+    "id": "304028_01_50201",
+    "name": {
       "en": "Grand Seadragon",
       "ja": "グランドシードラゴン",
       "zh": "海龙战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -2376,13 +2376,13 @@ const weapon =
     "Abilities21": 0
   },
   "304050_01_50201": {
-    "Id": "304050_01_50201",
-    "Name": {
+    "id": "304050_01_50201",
+    "name": {
       "en": "Maelstrom Crux",
       "ja": "狂潤怒涛の戦斧",
       "zh": "狂澜怒涛战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -2395,13 +2395,13 @@ const weapon =
     "Abilities21": 40
   },
   "304029_01_50301": {
-    "Id": "304029_01_50301",
-    "Name": {
+    "id": "304029_01_50301",
+    "name": {
       "en": "Axe of the Southern Cross",
       "ja": "サザンクロスアックス",
       "zh": "南十字之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -2414,13 +2414,13 @@ const weapon =
     "Abilities21": 0
   },
   "304013_01_50401": {
-    "Id": "304013_01_50401",
-    "Name": {
+    "id": "304013_01_50401",
+    "name": {
       "en": "Radiant Swath",
       "ja": "オプティカルアックス",
       "zh": "圣光战斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -2433,13 +2433,13 @@ const weapon =
     "Abilities21": 0
   },
   "304045_01_50401": {
-    "Id": "304045_01_50401",
-    "Name": {
+    "id": "304045_01_50401",
+    "name": {
       "en": "Starwrath Gaze",
       "ja": "星煌グランサイト・ラース",
       "zh": "星煌奇观・愤怒"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -2452,13 +2452,13 @@ const weapon =
     "Abilities21": 40
   },
   "304014_01_50501": {
-    "Id": "304014_01_50501",
-    "Name": {
+    "id": "304014_01_50501",
+    "name": {
       "en": "Primordial Titan",
       "ja": "ギガスセリクス",
       "zh": "巨灵霹雳"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -2471,13 +2471,13 @@ const weapon =
     "Abilities21": 0
   },
   "304012_01_59901": {
-    "Id": "304012_01_59901",
-    "Name": {
+    "id": "304012_01_59901",
+    "name": {
       "en": "Victory Axe",
       "ja": "ヴィクトリーアックス",
       "zh": "胜利之斧"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -2490,13 +2490,13 @@ const weapon =
     "Abilities21": 0
   },
   "304035_01_59901": {
-    "Id": "304035_01_59901",
-    "Name": {
+    "id": "304035_01_59901",
+    "name": {
       "en": "Executioner Axe Strafe",
       "ja": "処刑斧シュトラーフェ",
       "zh": "处刑斧制裁"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -2509,13 +2509,13 @@ const weapon =
     "Abilities21": 0
   },
   "304036_01_59901": {
-    "Id": "304036_01_59901",
-    "Name": {
+    "id": "304036_01_59901",
+    "name": {
       "en": "Halfling's Broadaxe",
       "ja": "怪童の鉞",
       "zh": "怪童之钺"
     },
-    "type": "Axe",
+    "weapon": "Axe",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -2528,13 +2528,13 @@ const weapon =
     "Abilities21": 0
   },
   "305006_01_30101": {
-    "Id": "305006_01_30101",
-    "Name": {
+    "id": "305006_01_30101",
+    "name": {
       "en": "Unsung Hero's Lance",
       "ja": "名もなき勇者たちの槍",
       "zh": "无名勇者之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -2547,13 +2547,13 @@ const weapon =
     "Abilities21": 0
   },
   "305047_01_30101": {
-    "Id": "305047_01_30101",
-    "Name": {
+    "id": "305047_01_30101",
+    "name": {
       "en": "Lumenspore Lance",
       "ja": "パラソルバーナー",
       "zh": "喷火阳伞"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -2566,13 +2566,13 @@ const weapon =
     "Abilities21": 50
   },
   "305007_01_30201": {
-    "Id": "305007_01_30201",
-    "Name": {
+    "id": "305007_01_30201",
+    "name": {
       "en": "Azure Jewel",
       "ja": "ブルージュエリー",
       "zh": "蓝宝石钢枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -2585,13 +2585,13 @@ const weapon =
     "Abilities21": 0
   },
   "305045_01_30201": {
-    "Id": "305045_01_30201",
-    "Name": {
+    "id": "305045_01_30201",
+    "name": {
       "en": "Bubblespore Lance",
       "ja": "パラソルバブル",
       "zh": "泡沫阳伞"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -2604,13 +2604,13 @@ const weapon =
     "Abilities21": 50
   },
   "305017_01_30301": {
-    "Id": "305017_01_30301",
-    "Name": {
+    "id": "305017_01_30301",
+    "name": {
       "en": "Gale Spear",
       "ja": "ゲイルスピア",
       "zh": "疾风之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -2623,13 +2623,13 @@ const weapon =
     "Abilities21": 0
   },
   "305008_01_30401": {
-    "Id": "305008_01_30401",
-    "Name": {
+    "id": "305008_01_30401",
+    "name": {
       "en": "Moonpiercer",
       "ja": "ムーンピック",
       "zh": "月之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -2642,13 +2642,13 @@ const weapon =
     "Abilities21": 0
   },
   "305028_01_30401": {
-    "Id": "305028_01_30401",
-    "Name": {
+    "id": "305028_01_30401",
+    "name": {
       "en": "Jack-o'-Lance",
       "ja": "ジャック・オ・スピア",
       "zh": "杰克南瓜枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -2661,13 +2661,13 @@ const weapon =
     "Abilities21": 0
   },
   "305034_01_30501": {
-    "Id": "305034_01_30501",
-    "Name": {
+    "id": "305034_01_30501",
+    "name": {
       "en": "Lance of the Dark",
       "ja": "ダークスピア",
       "zh": "暗之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -2680,13 +2680,13 @@ const weapon =
     "Abilities21": 0
   },
   "305039_01_39901": {
-    "Id": "305039_01_39901",
-    "Name": {
+    "id": "305039_01_39901",
+    "name": {
       "en": "Trident",
       "ja": "トライデント",
       "zh": "三叉戟"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -2699,13 +2699,13 @@ const weapon =
     "Abilities21": 0
   },
   "305013_01_39901": {
-    "Id": "305013_01_39901",
-    "Name": {
+    "id": "305013_01_39901",
+    "name": {
       "en": "Mailbreaker",
       "ja": "ブレイクスピア",
       "zh": "破坏之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -2718,13 +2718,13 @@ const weapon =
     "Abilities21": 0
   },
   "305010_01_39901": {
-    "Id": "305010_01_39901",
-    "Name": {
+    "id": "305010_01_39901",
+    "name": {
       "en": "Drill Lance",
       "ja": "ドリルランス",
       "zh": "钻头枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -2737,13 +2737,13 @@ const weapon =
     "Abilities21": 0
   },
   "305044_01_39901": {
-    "Id": "305044_01_39901",
-    "Name": {
+    "id": "305044_01_39901",
+    "name": {
       "en": "Leechspore Lance",
       "ja": "パラソルランス",
       "zh": "尖枪阳伞"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -2756,13 +2756,13 @@ const weapon =
     "Abilities21": 0
   },
   "305031_01_40101": {
-    "Id": "305031_01_40101",
-    "Name": {
+    "id": "305031_01_40101",
+    "name": {
       "en": "Flameserpent",
       "ja": "焔大蛇",
       "zh": "焰蟒"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -2775,13 +2775,13 @@ const weapon =
     "Abilities21": 0
   },
   "305047_01_40101": {
-    "Id": "305047_01_40101",
-    "Name": {
+    "id": "305047_01_40101",
+    "name": {
       "en": "Triggerspore Lance",
       "ja": "パラソルイグニション",
       "zh": "焚身阳伞"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -2794,13 +2794,13 @@ const weapon =
     "Abilities21": 50
   },
   "305016_01_40201": {
-    "Id": "305016_01_40201",
-    "Name": {
+    "id": "305016_01_40201",
+    "name": {
       "en": "Abyssal Prize",
       "ja": "大海の宝槍",
       "zh": "大海宝枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -2813,13 +2813,13 @@ const weapon =
     "Abilities21": 0
   },
   "305045_01_40201": {
-    "Id": "305045_01_40201",
-    "Name": {
+    "id": "305045_01_40201",
+    "name": {
       "en": "Shatterspore Lance",
       "ja": "パラソルスプラッシュ",
       "zh": "喷溅阳伞"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -2832,13 +2832,13 @@ const weapon =
     "Abilities21": 50
   },
   "305058_01_40201": {
-    "Id": "305058_01_40201",
-    "Name": {
+    "id": "305058_01_40201",
+    "name": {
       "en": "Tidal Beast",
       "ja": "ウェーブビースト",
       "zh": "波澜凶兽之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -2851,13 +2851,13 @@ const weapon =
     "Abilities21": 40
   },
   "305011_01_40301": {
-    "Id": "305011_01_40301",
-    "Name": {
+    "id": "305011_01_40301",
+    "name": {
       "en": "Tempest Lance",
       "ja": "テンペストスピア",
       "zh": "风暴之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -2870,13 +2870,13 @@ const weapon =
     "Abilities21": 0
   },
   "305012_01_40401": {
-    "Id": "305012_01_40401",
-    "Name": {
+    "id": "305012_01_40401",
+    "name": {
       "en": "Thunderbolt",
       "ja": "ライトニングランス",
       "zh": "电击长枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -2889,13 +2889,13 @@ const weapon =
     "Abilities21": 0
   },
   "305035_01_40501": {
-    "Id": "305035_01_40501",
-    "Name": {
+    "id": "305035_01_40501",
+    "name": {
       "en": "Hellish Lance",
       "ja": "ランスオブヘル",
       "zh": "地狱之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -2908,13 +2908,13 @@ const weapon =
     "Abilities21": 0
   },
   "305029_01_49901": {
-    "Id": "305029_01_49901",
-    "Name": {
+    "id": "305029_01_49901",
+    "name": {
       "en": "Strong Halberd",
       "ja": "ストロングハルバード",
       "zh": "强者之戟"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -2927,13 +2927,13 @@ const weapon =
     "Abilities21": 0
   },
   "305040_01_49901": {
-    "Id": "305040_01_49901",
-    "Name": {
+    "id": "305040_01_49901",
+    "name": {
       "en": "Lance of the Innocent",
       "ja": "イノセントスピア",
       "zh": "圣洁之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -2946,13 +2946,13 @@ const weapon =
     "Abilities21": 0
   },
   "305041_01_49901": {
-    "Id": "305041_01_49901",
-    "Name": {
+    "id": "305041_01_49901",
+    "name": {
       "en": "Ironside Lance",
       "ja": "鉄騎兵の槍",
       "zh": "铁骑兵之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -2965,13 +2965,13 @@ const weapon =
     "Abilities21": 0
   },
   "305054_01_49901": {
-    "Id": "305054_01_49901",
-    "Name": {
+    "id": "305054_01_49901",
+    "name": {
       "en": "Piercing Beast",
       "ja": "ワイルドビースト",
       "zh": "狂野凶兽之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -2984,13 +2984,13 @@ const weapon =
     "Abilities21": 0
   },
   "305030_01_50101": {
-    "Id": "305030_01_50101",
-    "Name": {
+    "id": "305030_01_50101",
+    "name": {
       "en": "Calamity Trigger",
       "ja": "カラミティトリガー",
       "zh": "灾祸之匙"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -3003,13 +3003,13 @@ const weapon =
     "Abilities21": 0
   },
   "305014_01_50201": {
-    "Id": "305014_01_50201",
-    "Name": {
+    "id": "305014_01_50201",
+    "name": {
       "en": "Ocean Lord",
       "ja": "オーシャンロード",
       "zh": "破浪之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -3022,13 +3022,13 @@ const weapon =
     "Abilities21": 0
   },
   "305058_01_50201": {
-    "Id": "305058_01_50201",
-    "Name": {
+    "id": "305058_01_50201",
+    "name": {
       "en": "Vortex Beast",
       "ja": "ヴォルテックスビースト",
       "zh": "漩涡之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -3041,13 +3041,13 @@ const weapon =
     "Abilities21": 40
   },
   "305032_01_50301": {
-    "Id": "305032_01_50301",
-    "Name": {
+    "id": "305032_01_50301",
+    "name": {
       "en": "Spear of the Northern Cross",
       "ja": "ノーザンクロススピア",
       "zh": "北十字之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -3060,13 +3060,13 @@ const weapon =
     "Abilities21": 0
   },
   "305033_01_50401": {
-    "Id": "305033_01_50401",
-    "Name": {
+    "id": "305033_01_50401",
+    "name": {
       "en": "Thunder King's Greatspear",
       "ja": "爆雷の豪槍",
       "zh": "雷霆豪枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -3079,13 +3079,13 @@ const weapon =
     "Abilities21": 0
   },
   "305036_01_50501": {
-    "Id": "305036_01_50501",
-    "Name": {
+    "id": "305036_01_50501",
+    "name": {
       "en": "Mistilteinn",
       "ja": "ミストルティン",
       "zh": "米斯特汀"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -3098,13 +3098,13 @@ const weapon =
     "Abilities21": 0
   },
   "305015_01_59901": {
-    "Id": "305015_01_59901",
-    "Name": {
+    "id": "305015_01_59901",
+    "name": {
       "en": "Pactspear",
       "ja": "ロウフルスピア",
       "zh": "护法之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -3117,13 +3117,13 @@ const weapon =
     "Abilities21": 0
   },
   "305042_01_59901": {
-    "Id": "305042_01_59901",
-    "Name": {
+    "id": "305042_01_59901",
+    "name": {
       "en": "Compass Needle",
       "ja": "羅針槍",
       "zh": "罗盘枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -3136,13 +3136,13 @@ const weapon =
     "Abilities21": 0
   },
   "305043_01_59901": {
-    "Id": "305043_01_59901",
-    "Name": {
+    "id": "305043_01_59901",
+    "name": {
       "en": "Gae Bolg",
       "ja": "ゲイボルグ",
       "zh": "千棘刺之枪"
     },
-    "type": "Lance",
+    "weapon": "Lance",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -3155,13 +3155,13 @@ const weapon =
     "Abilities21": 0
   },
   "306006_01_30101": {
-    "Id": "306006_01_30101",
-    "Name": {
+    "id": "306006_01_30101",
+    "name": {
       "en": "Flightfyre",
       "ja": "フライトファイア",
       "zh": "飞火弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -3174,13 +3174,13 @@ const weapon =
     "Abilities21": 0
   },
   "306041_01_30101": {
-    "Id": "306041_01_30101",
-    "Name": {
+    "id": "306041_01_30101",
+    "name": {
       "en": "Firefungus",
       "ja": "ファイアファンガス",
       "zh": "火蘑弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -3193,13 +3193,13 @@ const weapon =
     "Abilities21": 50
   },
   "306007_01_30201": {
-    "Id": "306007_01_30201",
-    "Name": {
+    "id": "306007_01_30201",
+    "name": {
       "en": "Tidal Bow",
       "ja": "オーシャンボウ",
       "zh": "深海之弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -3212,13 +3212,13 @@ const weapon =
     "Abilities21": 0
   },
   "306039_01_30201": {
-    "Id": "306039_01_30201",
-    "Name": {
+    "id": "306039_01_30201",
+    "name": {
       "en": "Frostfungus",
       "ja": "アイスファンガス",
       "zh": "冰蘑弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -3231,13 +3231,13 @@ const weapon =
     "Abilities21": 50
   },
   "306003_01_30301": {
-    "Id": "306003_01_30301",
-    "Name": {
+    "id": "306003_01_30301",
+    "name": {
       "en": "Proof of the Wind",
       "ja": "エアリアルプルーフ",
       "zh": "狂风试炼"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -3250,13 +3250,13 @@ const weapon =
     "Abilities21": 0
   },
   "306009_01_30401": {
-    "Id": "306009_01_30401",
-    "Name": {
+    "id": "306009_01_30401",
+    "name": {
       "en": "Galvanic Bow",
       "ja": "エレクトロボウ",
       "zh": "雷电战弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -3269,13 +3269,13 @@ const weapon =
     "Abilities21": 0
   },
   "306018_01_30501": {
-    "Id": "306018_01_30501",
-    "Name": {
+    "id": "306018_01_30501",
+    "name": {
       "en": "Cimmerian Bow",
       "ja": "ダークボウ",
       "zh": "暗之魔弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -3288,13 +3288,13 @@ const weapon =
     "Abilities21": 0
   },
   "306026_01_39901": {
-    "Id": "306026_01_39901",
-    "Name": {
+    "id": "306026_01_39901",
+    "name": {
       "en": "Composite Bow",
       "ja": "コンポジットボウ",
       "zh": "复合弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -3307,13 +3307,13 @@ const weapon =
     "Abilities21": 0
   },
   "306012_01_39901": {
-    "Id": "306012_01_39901",
-    "Name": {
+    "id": "306012_01_39901",
+    "name": {
       "en": "Machine Bow",
       "ja": "マシンナリーボウ",
       "zh": "机械弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -3326,13 +3326,13 @@ const weapon =
     "Abilities21": 0
   },
   "306032_01_39901": {
-    "Id": "306032_01_39901",
-    "Name": {
+    "id": "306032_01_39901",
+    "name": {
       "en": "Hunter's Bow",
       "ja": "ハンターボウ",
       "zh": "猎手弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -3345,13 +3345,13 @@ const weapon =
     "Abilities21": 0
   },
   "306038_01_39901": {
-    "Id": "306038_01_39901",
-    "Name": {
+    "id": "306038_01_39901",
+    "name": {
       "en": "Fungus Bow",
       "ja": "ファンガスボウ",
       "zh": "蘑弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -3364,13 +3364,13 @@ const weapon =
     "Abilities21": 0
   },
   "306028_01_40101": {
-    "Id": "306028_01_40101",
-    "Name": {
+    "id": "306028_01_40101",
+    "name": {
       "en": "Armored Inferno",
       "ja": "アーマードフレアボウ",
       "zh": "装甲弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -3383,13 +3383,13 @@ const weapon =
     "Abilities21": 0
   },
   "306041_01_40101": {
-    "Id": "306041_01_40101",
-    "Name": {
+    "id": "306041_01_40101",
+    "name": {
       "en": "Blazefungus",
       "ja": "プロミネンスファンガス",
       "zh": "日珥蘑弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -3402,13 +3402,13 @@ const weapon =
     "Abilities21": 50
   },
   "306010_01_40201": {
-    "Id": "306010_01_40201",
-    "Name": {
+    "id": "306010_01_40201",
+    "name": {
       "en": "Frostslinger Bow",
       "ja": "氷結弓",
       "zh": "冰结弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -3421,13 +3421,13 @@ const weapon =
     "Abilities21": 0
   },
   "306039_01_40201": {
-    "Id": "306039_01_40201",
-    "Name": {
+    "id": "306039_01_40201",
+    "name": {
       "en": "Glacial Fungus",
       "ja": "グレイスシャルファンガス",
       "zh": "冰川蘑弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -3440,13 +3440,13 @@ const weapon =
     "Abilities21": 50
   },
   "306008_01_40301": {
-    "Id": "306008_01_40301",
-    "Name": {
+    "id": "306008_01_40301",
+    "name": {
       "en": "Epidemic",
       "ja": "エピデミックボウ",
       "zh": "疫病之弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -3459,13 +3459,13 @@ const weapon =
     "Abilities21": 0
   },
   "306037_01_40401": {
-    "Id": "306037_01_40401",
-    "Name": {
+    "id": "306037_01_40401",
+    "name": {
       "en": "Holy Bow",
       "ja": "ホーリーボウ",
       "zh": "神圣之弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -3478,13 +3478,13 @@ const weapon =
     "Abilities21": 0
   },
   "306016_01_40501": {
-    "Id": "306016_01_40501",
-    "Name": {
+    "id": "306016_01_40501",
+    "name": {
       "en": "Macabre Malediction",
       "ja": "呪骸の魔弓",
       "zh": "呪骸魔弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -3497,13 +3497,13 @@ const weapon =
     "Abilities21": 0
   },
   "306013_01_49901": {
-    "Id": "306013_01_49901",
-    "Name": {
+    "id": "306013_01_49901",
+    "name": {
       "en": "Executor",
       "ja": "エグゼキューター",
       "zh": "执行者之弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -3516,13 +3516,13 @@ const weapon =
     "Abilities21": 0
   },
   "306033_01_49901": {
-    "Id": "306033_01_49901",
-    "Name": {
+    "id": "306033_01_49901",
+    "name": {
       "en": "Faerie Bow",
       "ja": "妖精の弓",
       "zh": "精灵弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -3535,13 +3535,13 @@ const weapon =
     "Abilities21": 0
   },
   "306011_01_49901": {
-    "Id": "306011_01_49901",
-    "Name": {
+    "id": "306011_01_49901",
+    "name": {
       "en": "Duskhawk",
       "ja": "フローリデル",
       "zh": "弗洛里德尔"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -3554,13 +3554,13 @@ const weapon =
     "Abilities21": 0
   },
   "306027_01_50101": {
-    "Id": "306027_01_50101",
-    "Name": {
+    "id": "306027_01_50101",
+    "name": {
       "en": "Lupis Solis",
       "ja": "イグニートウルフ",
       "zh": "炎狼弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -3573,13 +3573,13 @@ const weapon =
     "Abilities21": 0
   },
   "306029_01_50201": {
-    "Id": "306029_01_50201",
-    "Name": {
+    "id": "306029_01_50201",
+    "name": {
       "en": "Peacock's Whorl",
       "ja": "創海弓アオクジャク",
       "zh": "蓝孔雀创海弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -3592,13 +3592,13 @@ const weapon =
     "Abilities21": 0
   },
   "306030_01_50301": {
-    "Id": "306030_01_50301",
-    "Name": {
+    "id": "306030_01_50301",
+    "name": {
       "en": "Stellar Pegasus",
       "ja": "天馬弓アステル",
       "zh": "天马弓阿斯特尔"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -3611,13 +3611,13 @@ const weapon =
     "Abilities21": 0
   },
   "306031_01_50401": {
-    "Id": "306031_01_50401",
-    "Name": {
+    "id": "306031_01_50401",
+    "name": {
       "en": "Thunderbow",
       "ja": "天雷の弓",
       "zh": "天雷弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -3630,13 +3630,13 @@ const weapon =
     "Abilities21": 0
   },
   "306014_01_50501": {
-    "Id": "306014_01_50501",
-    "Name": {
+    "id": "306014_01_50501",
+    "name": {
       "en": "Necro Arcus",
       "ja": "ネクロアルクス",
       "zh": "亡骸之弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -3649,13 +3649,13 @@ const weapon =
     "Abilities21": 0
   },
   "306015_01_59901": {
-    "Id": "306015_01_59901",
-    "Name": {
+    "id": "306015_01_59901",
+    "name": {
       "en": "Nitralica's Koto",
       "ja": "琴弓ニトラリカ",
       "zh": "琴弓尼托拉里卡"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -3668,13 +3668,13 @@ const weapon =
     "Abilities21": 0
   },
   "306034_01_59901": {
-    "Id": "306034_01_59901",
-    "Name": {
+    "id": "306034_01_59901",
+    "name": {
       "en": "Accelerator",
       "ja": "アクセラレートギア",
       "zh": "加速齿轮弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -3687,13 +3687,13 @@ const weapon =
     "Abilities21": 0
   },
   "306035_01_59901": {
-    "Id": "306035_01_59901",
-    "Name": {
+    "id": "306035_01_59901",
+    "name": {
       "en": "Starchaser",
       "ja": "スターチェイサー",
       "zh": "坠星弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -3706,13 +3706,13 @@ const weapon =
     "Abilities21": 0
   },
   "306036_01_59901": {
-    "Id": "306036_01_59901",
-    "Name": {
+    "id": "306036_01_59901",
+    "name": {
       "en": "Chimera's Guilt",
       "ja": "鵺穿",
       "zh": "鵺穿弓"
     },
-    "type": "Bow",
+    "weapon": "Bow",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -3725,13 +3725,13 @@ const weapon =
     "Abilities21": 0
   },
   "307006_01_30101": {
-    "Id": "307006_01_30101",
-    "Name": {
+    "id": "307006_01_30101",
+    "name": {
       "en": "Sunrise Scepter",
       "ja": "サンライズロッド",
       "zh": "旭日魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -3744,13 +3744,13 @@ const weapon =
     "Abilities21": 0
   },
   "307049_01_30101": {
-    "Id": "307049_01_30101",
-    "Name": {
+    "id": "307049_01_30101",
+    "name": {
       "en": "The Wail",
       "ja": "ヒートヘッド",
       "zh": "灼热之首"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -3763,13 +3763,13 @@ const weapon =
     "Abilities21": 50
   },
   "307033_01_30201": {
-    "Id": "307033_01_30201",
-    "Name": {
+    "id": "307033_01_30201",
+    "name": {
       "en": "Oceandweller",
       "ja": "激流のロッド",
       "zh": "激流魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -3782,13 +3782,13 @@ const weapon =
     "Abilities21": 0
   },
   "307047_01_30201": {
-    "Id": "307047_01_30201",
-    "Name": {
+    "id": "307047_01_30201",
+    "name": {
       "en": "The Scream",
       "ja": "シャウトヘッド",
       "zh": "哀嚎之首"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -3801,13 +3801,13 @@ const weapon =
     "Abilities21": 50
   },
   "307007_01_30301": {
-    "Id": "307007_01_30301",
-    "Name": {
+    "id": "307007_01_30301",
+    "name": {
       "en": "Menace of the Storm",
       "ja": "ストームメイス",
       "zh": "威胁风暴"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -3820,13 +3820,13 @@ const weapon =
     "Abilities21": 0
   },
   "307021_01_30401": {
-    "Id": "307021_01_30401",
-    "Name": {
+    "id": "307021_01_30401",
+    "name": {
       "en": "Thunder Wand",
       "ja": "サンダーロッド",
       "zh": "雷霆魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -3839,13 +3839,13 @@ const weapon =
     "Abilities21": 0
   },
   "307008_01_30501": {
-    "Id": "307008_01_30501",
-    "Name": {
+    "id": "307008_01_30501",
+    "name": {
       "en": "Meggidoth Ruiner",
       "ja": "メギトスブレイカー",
       "zh": "梅奇特斯破坏者"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -3858,13 +3858,13 @@ const weapon =
     "Abilities21": 0
   },
   "307042_01_39901": {
-    "Id": "307042_01_39901",
-    "Name": {
+    "id": "307042_01_39901",
+    "name": {
       "en": "Wizard's Rod",
       "ja": "ウィザードロッド",
       "zh": "魔法师之杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -3877,13 +3877,13 @@ const weapon =
     "Abilities21": 0
   },
   "307004_01_39901": {
-    "Id": "307004_01_39901",
-    "Name": {
+    "id": "307004_01_39901",
+    "name": {
       "en": "Sorcerer's Cudgel",
       "ja": "ソーサリーロッド",
       "zh": "巫术之杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -3896,13 +3896,13 @@ const weapon =
     "Abilities21": 0
   },
   "307037_01_39901": {
-    "Id": "307037_01_39901",
-    "Name": {
+    "id": "307037_01_39901",
+    "name": {
       "en": "Conchoidal Rod",
       "ja": "シェルロッド",
       "zh": "海螺魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -3915,13 +3915,13 @@ const weapon =
     "Abilities21": 0
   },
   "307046_01_39901": {
-    "Id": "307046_01_39901",
-    "Name": {
+    "id": "307046_01_39901",
+    "name": {
       "en": "The Scent",
       "ja": "アロマヘッド",
       "zh": "芳香之首"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -3934,13 +3934,13 @@ const weapon =
     "Abilities21": 0
   },
   "307016_01_40101": {
-    "Id": "307016_01_40101",
-    "Name": {
+    "id": "307016_01_40101",
+    "name": {
       "en": "Firefiend's Howl",
       "ja": "フレイムブルートハウル",
       "zh": "炎兽咆哮杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -3953,13 +3953,13 @@ const weapon =
     "Abilities21": 0
   },
   "307049_01_40101": {
-    "Id": "307049_01_40101",
-    "Name": {
+    "id": "307049_01_40101",
+    "name": {
       "en": "The Second Wail",
       "ja": "メルティングヘッド",
       "zh": "焚化之首"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -3972,13 +3972,13 @@ const weapon =
     "Abilities21": 50
   },
   "307036_01_40201": {
-    "Id": "307036_01_40201",
-    "Name": {
+    "id": "307036_01_40201",
+    "name": {
       "en": "Rod of Tears",
       "ja": "ティアーズロッド",
       "zh": "泪之杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -3991,13 +3991,13 @@ const weapon =
     "Abilities21": 0
   },
   "307047_01_40201": {
-    "Id": "307047_01_40201",
-    "Name": {
+    "id": "307047_01_40201",
+    "name": {
       "en": "The Second Scream",
       "ja": "スクリームヘッド",
       "zh": "悲鸣之首"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -4010,13 +4010,13 @@ const weapon =
     "Abilities21": 50
   },
   "307055_01_40201": {
-    "Id": "307055_01_40201",
-    "Name": {
+    "id": "307055_01_40201",
+    "name": {
       "en": "Wavewing",
       "ja": "波獣の翼",
       "zh": "波兽之翼"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -4029,13 +4029,13 @@ const weapon =
     "Abilities21": 40
   },
   "307018_01_40301": {
-    "Id": "307018_01_40301",
-    "Name": {
+    "id": "307018_01_40301",
+    "name": {
       "en": "Tempest Wand",
       "ja": "テンペストロッド",
       "zh": "暴风魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -4048,13 +4048,13 @@ const weapon =
     "Abilities21": 0
   },
   "307010_01_40401": {
-    "Id": "307010_01_40401",
-    "Name": {
+    "id": "307010_01_40401",
+    "name": {
       "en": "Conductor Rod",
       "ja": "ライトニングロッド",
       "zh": "闪光魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -4067,13 +4067,13 @@ const weapon =
     "Abilities21": 0
   },
   "307011_01_40501": {
-    "Id": "307011_01_40501",
-    "Name": {
+    "id": "307011_01_40501",
+    "name": {
       "en": "Accursed Vare",
       "ja": "カースロッド",
       "zh": "诅咒魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -4086,13 +4086,13 @@ const weapon =
     "Abilities21": 0
   },
   "307012_01_49901": {
-    "Id": "307012_01_49901",
-    "Name": {
+    "id": "307012_01_49901",
+    "name": {
       "en": "Latchkey",
       "ja": "キーロッド",
       "zh": "匙之杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -4105,13 +4105,13 @@ const weapon =
     "Abilities21": 0
   },
   "307038_01_49901": {
-    "Id": "307038_01_49901",
-    "Name": {
+    "id": "307038_01_49901",
+    "name": {
       "en": "Rod of Alchemy",
       "ja": "アルケミーロッド",
       "zh": "炼金魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -4124,13 +4124,13 @@ const weapon =
     "Abilities21": 0
   },
   "307039_01_49901": {
-    "Id": "307039_01_49901",
-    "Name": {
+    "id": "307039_01_49901",
+    "name": {
       "en": "Moonlight Rod",
       "ja": "ムーンライトロッド",
       "zh": "月光魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -4143,13 +4143,13 @@ const weapon =
     "Abilities21": 0
   },
   "307051_01_49901": {
-    "Id": "307051_01_49901",
-    "Name": {
+    "id": "307051_01_49901",
+    "name": {
       "en": "Beastwing",
       "ja": "獣の翼",
       "zh": "兽之翼"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -4162,13 +4162,13 @@ const weapon =
     "Abilities21": 0
   },
   "307015_01_50101": {
-    "Id": "307015_01_50101",
-    "Name": {
+    "id": "307015_01_50101",
+    "name": {
       "en": "Terranigmus",
       "ja": "ランドメイカー",
       "zh": "大地之母"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -4181,13 +4181,13 @@ const weapon =
     "Abilities21": 0
   },
   "307032_01_50201": {
-    "Id": "307032_01_50201",
-    "Name": {
+    "id": "307032_01_50201",
+    "name": {
       "en": "Ocean Monarch",
       "ja": "パシフィックモナーク",
       "zh": "大洋君主"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -4200,13 +4200,13 @@ const weapon =
     "Abilities21": 0
   },
   "307055_01_50201": {
-    "Id": "307055_01_50201",
-    "Name": {
+    "id": "307055_01_50201",
+    "name": {
       "en": "Tsunamiwing",
       "ja": "海嘯獣の翼",
       "zh": "海啸兽之翼"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -4219,13 +4219,13 @@ const weapon =
     "Abilities21": 40
   },
   "307014_01_50301": {
-    "Id": "307014_01_50301",
-    "Name": {
+    "id": "307014_01_50301",
+    "name": {
       "en": "Phytalmios",
       "ja": "クラウドカローラ",
       "zh": "云之花冠"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -4238,13 +4238,13 @@ const weapon =
     "Abilities21": 0
   },
   "307034_01_50401": {
-    "Id": "307034_01_50401",
-    "Name": {
+    "id": "307034_01_50401",
+    "name": {
       "en": "Twilight Shimmer",
       "ja": "スパークルナイト",
       "zh": "白昼之夜"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -4257,13 +4257,13 @@ const weapon =
     "Abilities21": 0
   },
   "307035_01_50501": {
-    "Id": "307035_01_50501",
-    "Name": {
+    "id": "307035_01_50501",
+    "name": {
       "en": "Underworld Despair",
       "ja": "ディスペルハデス",
       "zh": "驱冥杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -4276,13 +4276,13 @@ const weapon =
     "Abilities21": 0
   },
   "307031_01_59901": {
-    "Id": "307031_01_59901",
-    "Name": {
+    "id": "307031_01_59901",
+    "name": {
       "en": "Wand of the Torrent",
       "ja": "タービュランスロッド",
       "zh": "乱流魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -4295,13 +4295,13 @@ const weapon =
     "Abilities21": 0
   },
   "307040_01_59901": {
-    "Id": "307040_01_59901",
-    "Name": {
+    "id": "307040_01_59901",
+    "name": {
       "en": "Welkin Wand",
       "ja": "天空のロッド",
       "zh": "苍穹魔杖"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -4314,13 +4314,13 @@ const weapon =
     "Abilities21": 0
   },
   "307041_01_59901": {
-    "Id": "307041_01_59901",
-    "Name": {
+    "id": "307041_01_59901",
+    "name": {
       "en": "Chaotic Horizon",
       "ja": "カオスホライゾン",
       "zh": "混沌之源"
     },
-    "type": "Wand",
+    "weapon": "Wand",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -4333,13 +4333,13 @@ const weapon =
     "Abilities21": 0
   },
   "308006_01_30101": {
-    "Id": "308006_01_30101",
-    "Name": {
+    "id": "308006_01_30101",
+    "name": {
       "en": "Staff of Punishing Flame",
       "ja": "猛き炎の杖",
       "zh": "烈焰之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -4352,13 +4352,13 @@ const weapon =
     "Abilities21": 0
   },
   "308041_01_30101": {
-    "Id": "308041_01_30101",
-    "Name": {
+    "id": "308041_01_30101",
+    "name": {
       "en": "Flamechant",
       "ja": "フリーファイアオーダー",
       "zh": "火焰唤魔法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "3",
     "tier": "3",
@@ -4373,13 +4373,13 @@ const weapon =
     "defense": 3
   },
   "308007_01_30201": {
-    "Id": "308007_01_30201",
-    "Name": {
+    "id": "308007_01_30201",
+    "name": {
       "en": "Scendecipher",
       "ja": "ウェーブリポート",
       "zh": "观浪法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Water",
     "rarity": "3",
     "tier": "3",
@@ -4392,13 +4392,13 @@ const weapon =
     "Abilities21": 0
   },
   "308008_01_30301": {
-    "Id": "308008_01_30301",
-    "Name": {
+    "id": "308008_01_30301",
+    "name": {
       "en": "Windreader",
       "ja": "ウェザーリポート",
       "zh": "气象法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Wind",
     "rarity": "3",
     "tier": "3",
@@ -4411,13 +4411,13 @@ const weapon =
     "Abilities21": 0
   },
   "308009_01_30401": {
-    "Id": "308009_01_30401",
-    "Name": {
+    "id": "308009_01_30401",
+    "name": {
       "en": "Astrolabe",
       "ja": "アストロラーベ",
       "zh": "星盘之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -4430,13 +4430,13 @@ const weapon =
     "Abilities21": 0
   },
   "308026_01_30401": {
-    "Id": "308026_01_30401",
-    "Name": {
+    "id": "308026_01_30401",
+    "name": {
       "en": "Vampire's Lantern",
       "ja": "ヴァンパイア・ランタン",
       "zh": "吸血鬼灯笼"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "3",
     "tier": "3",
@@ -4449,13 +4449,13 @@ const weapon =
     "Abilities21": 0
   },
   "308020_01_30501": {
-    "Id": "308020_01_30501",
-    "Name": {
+    "id": "308020_01_30501",
+    "name": {
       "en": "Meggidoth Wisp",
       "ja": "メギトスウィスプ",
       "zh": "梅奇特斯的低语"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "3",
     "tier": "3",
@@ -4468,13 +4468,13 @@ const weapon =
     "Abilities21": 0
   },
   "308002_01_39901": {
-    "Id": "308002_01_39901",
-    "Name": {
+    "id": "308002_01_39901",
+    "name": {
       "en": "Staff of Grace",
       "ja": "恩恵の杖",
       "zh": "恩惠之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -4487,13 +4487,13 @@ const weapon =
     "Abilities21": 0
   },
   "307003_01_39901": {
-    "Id": "307003_01_39901",
-    "Name": {
+    "id": "307003_01_39901",
+    "name": {
       "en": "Long Ankh",
       "ja": "ロングアンク",
       "zh": "长生符"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -4506,13 +4506,13 @@ const weapon =
     "Abilities21": 0
   },
   "308036_01_39901": {
-    "Id": "308036_01_39901",
-    "Name": {
+    "id": "308036_01_39901",
+    "name": {
       "en": "Staff of the Horned Snake",
       "ja": "角蛇の杖",
       "zh": "角蛇之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "3",
     "tier": "2",
@@ -4525,13 +4525,13 @@ const weapon =
     "Abilities21": 0
   },
   "308040_01_39901": {
-    "Id": "308040_01_39901",
-    "Name": {
+    "id": "308040_01_39901",
+    "name": {
       "en": "Aurachant",
       "ja": "シンプルオーダー",
       "zh": "简易唤魔法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "3",
     "tier": "1",
@@ -4546,13 +4546,13 @@ const weapon =
     "defense": 3
   },
   "308021_01_40101": {
-    "Id": "308021_01_40101",
-    "Name": {
+    "id": "308021_01_40101",
+    "name": {
       "en": "Ark Voyager",
       "ja": "アークフレアスタッフ",
       "zh": "天火法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -4565,13 +4565,13 @@ const weapon =
     "Abilities21": 0
   },
   "308041_01_40101": {
-    "Id": "308041_01_40101",
-    "Name": {
+    "id": "308041_01_40101",
+    "name": {
       "en": "Ashchant",
       "ja": "フルフレイムオーダー",
       "zh": "烈焰唤魔法杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -4586,13 +4586,13 @@ const weapon =
     "defense": 5
   },
   "308044_01_40101": {
-    "Id": "308044_01_40101",
-    "Name": {
+    "id": "308044_01_40101",
+    "name": {
       "en": "Twilight Harbinger",
       "ja": "暁を報せるもの",
       "zh": "黄昏宣告"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "4",
     "tier": "3",
@@ -4605,13 +4605,13 @@ const weapon =
     "Abilities21": 50
   },
   "308022_01_40201": {
-    "Id": "308022_01_40201",
-    "Name": {
+    "id": "308022_01_40201",
+    "name": {
       "en": "Marine Staff",
       "ja": "マリーンスタッフ",
       "zh": "海洋之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Water",
     "rarity": "4",
     "tier": "3",
@@ -4624,13 +4624,13 @@ const weapon =
     "Abilities21": 0
   },
   "308033_01_40301": {
-    "Id": "308033_01_40301",
-    "Name": {
+    "id": "308033_01_40301",
+    "name": {
       "en": "Windeater Staff",
       "ja": "風喰いの杖",
       "zh": "食风之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Wind",
     "rarity": "4",
     "tier": "3",
@@ -4643,13 +4643,13 @@ const weapon =
     "Abilities21": 0
   },
   "308018_01_40401": {
-    "Id": "308018_01_40401",
-    "Name": {
+    "id": "308018_01_40401",
+    "name": {
       "en": "Tonitrus",
       "ja": "雷電杖トニトルス",
       "zh": "雷电杖托尼托鲁斯"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -4662,13 +4662,13 @@ const weapon =
     "Abilities21": 0
   },
   "308046_01_40401": {
-    "Id": "308046_01_40401",
-    "Name": {
+    "id": "308046_01_40401",
+    "name": {
       "en": "Daybreak Harbinger",
       "ja": "黄昏を告げるもの",
       "zh": "拂晓将至"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "4",
     "tier": "3",
@@ -4681,13 +4681,13 @@ const weapon =
     "Abilities21": 40
   },
   "308019_01_40501": {
-    "Id": "308019_01_40501",
-    "Name": {
+    "id": "308019_01_40501",
+    "name": {
       "en": "Sanity's Bane",
       "ja": "カースドスペリア",
       "zh": "诅咒之苏必利尔"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "4",
     "tier": "3",
@@ -4700,13 +4700,13 @@ const weapon =
     "Abilities21": 0
   },
   "308005_01_49901": {
-    "Id": "308005_01_49901",
-    "Name": {
+    "id": "308005_01_49901",
+    "name": {
       "en": "Staff of Life",
       "ja": "ライフスタッフ",
       "zh": "养生杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -4719,13 +4719,13 @@ const weapon =
     "Abilities21": 0
   },
   "308013_01_49901": {
-    "Id": "308013_01_49901",
-    "Name": {
+    "id": "308013_01_49901",
+    "name": {
       "en": "Staff of Fortune",
       "ja": "フォーチュンスタッフ",
       "zh": "幸运权杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -4738,13 +4738,13 @@ const weapon =
     "Abilities21": 0
   },
   "308010_01_49901": {
-    "Id": "308010_01_49901",
-    "Name": {
+    "id": "308010_01_49901",
+    "name": {
       "en": "Beauty's Balm",
       "ja": "ビューティフルメイク",
       "zh": "美貌之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "4",
     "tier": "2",
@@ -4757,13 +4757,13 @@ const weapon =
     "Abilities21": 0
   },
   "308043_01_49901": {
-    "Id": "308043_01_49901",
-    "Name": {
+    "id": "308043_01_49901",
+    "name": {
       "en": "Forever Sky",
       "ja": "空を望むもの",
       "zh": "祈愿苍穹"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "4",
     "tier": "1",
@@ -4776,13 +4776,13 @@ const weapon =
     "Abilities21": 0
   },
   "308031_01_50101": {
-    "Id": "308031_01_50101",
-    "Name": {
+    "id": "308031_01_50101",
+    "name": {
       "en": "Staff of the Red Emperor",
       "ja": "赤帝の炎杖",
       "zh": "赤帝炎杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -4795,13 +4795,13 @@ const weapon =
     "Abilities21": 0
   },
   "308044_01_50101": {
-    "Id": "308044_01_50101",
-    "Name": {
+    "id": "308044_01_50101",
+    "name": {
       "en": "Endless Demise",
       "ja": "終焉を導くもの",
       "zh": "末日终焉"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Flame",
     "rarity": "5",
     "tier": "3",
@@ -4814,13 +4814,13 @@ const weapon =
     "Abilities21": 50
   },
   "308011_01_50201": {
-    "Id": "308011_01_50201",
-    "Name": {
+    "id": "308011_01_50201",
+    "name": {
       "en": "Bracing Waters",
       "ja": "アクアブレス",
       "zh": "水之祝福"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Water",
     "rarity": "5",
     "tier": "3",
@@ -4833,13 +4833,13 @@ const weapon =
     "Abilities21": 0
   },
   "308032_01_50301": {
-    "Id": "308032_01_50301",
-    "Name": {
+    "id": "308032_01_50301",
+    "name": {
       "en": "Ancient Mage's Windcane",
       "ja": "古代魔術の旋杖",
       "zh": "古代魔法旋杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Wind",
     "rarity": "5",
     "tier": "3",
@@ -4852,13 +4852,13 @@ const weapon =
     "Abilities21": 0
   },
   "308014_01_50401": {
-    "Id": "308014_01_50401",
-    "Name": {
+    "id": "308014_01_50401",
+    "name": {
       "en": "Light of Judgment",
       "ja": "裁きの光杖",
       "zh": "制裁光杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -4871,13 +4871,13 @@ const weapon =
     "Abilities21": 0
   },
   "308046_01_50401": {
-    "Id": "308046_01_50401",
-    "Name": {
+    "id": "308046_01_50401",
+    "name": {
       "en": "Genesis Bringer",
       "ja": "開闢を運ぶもの",
       "zh": "天地伊始"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Light",
     "rarity": "5",
     "tier": "3",
@@ -4890,13 +4890,13 @@ const weapon =
     "Abilities21": 40
   },
   "308015_01_50501": {
-    "Id": "308015_01_50501",
-    "Name": {
+    "id": "308015_01_50501",
+    "name": {
       "en": "Caduceus",
       "ja": "ケリュケイオン",
       "zh": "商神杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "Shadow",
     "rarity": "5",
     "tier": "3",
@@ -4909,13 +4909,13 @@ const weapon =
     "Abilities21": 0
   },
   "308030_01_59901": {
-    "Id": "308030_01_59901",
-    "Name": {
+    "id": "308030_01_59901",
+    "name": {
       "en": "Cane of Soul's Repose",
       "ja": "鎮魂の杖",
       "zh": "镇魂之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "5",
     "tier": "1",
@@ -4928,13 +4928,13 @@ const weapon =
     "Abilities21": 0
   },
   "308038_01_59901": {
-    "Id": "308038_01_59901",
-    "Name": {
+    "id": "308038_01_59901",
+    "name": {
       "en": "Rainbow Cane",
       "ja": "虹の杖",
       "zh": "虹之杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "5",
     "tier": "2",
@@ -4947,13 +4947,13 @@ const weapon =
     "Abilities21": 0
   },
   "308039_01_59901": {
-    "Id": "308039_01_59901",
-    "Name": {
+    "id": "308039_01_59901",
+    "name": {
       "en": "Otherworldly Bough",
       "ja": "異形樹の枝",
       "zh": "异形树枝杖"
     },
-    "type": "Staff",
+    "weapon": "Staff",
     "element": "None",
     "rarity": "5",
     "tier": "2",

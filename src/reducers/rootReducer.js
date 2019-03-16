@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import state from "store/state";
 import filterReducer from "./filterReducer";
 import statsReducer from "./statsReducer";

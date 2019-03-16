@@ -54,22 +54,26 @@ body {
 }
 
 .stats-list {
-  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #eee;
 }
 
-.stats-list-img {
-  flex: 0 1 150px;
+.stats-list-image {
+  min-width: 60px;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .stats-list-name {
-  flex: 1 1 200px;
+  flex: 3 0 25%;
 }
 
 .stats-list-icon {
-  flex: 0 1 80px;
+  width: 15%;
   display: flex;
   justify-content: center;
 }

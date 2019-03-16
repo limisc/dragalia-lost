@@ -62,12 +62,12 @@ class SetStats extends Component {
       <Paper className="fluid">
         {statsFields.map((statsKey) => {
           const { [statsKey]: item } = stats;
-          const { Id } = item || {};
-          const key = Id || statsKey;
+          const { id } = item || {};
+          const key = id || statsKey;
           return (
             <StatsField
               key={key}
-              uid={Id}
+              uid={id}
               item={item}
               lang={lang}
               statsKey={statsKey}

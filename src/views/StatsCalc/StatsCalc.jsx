@@ -23,23 +23,23 @@ class StatsCalc extends Component {
             <Grid
               container
               item xs={12} md={4}
-              className="sticky"
+            // className="sticky"
             >
               {/* <StatsDetails /> */}
-              <SetHalidom />
+              {/* <SetHalidom /> */}
             </Grid>
 
             <Grid
               container
               item xs={12} md={4}
-              className="sticky"
+            // className="sticky"
             >
               <SetStats />
             </Grid>
             <Grid
               container
               item xs={12} md={4}
-              className="sticky"
+            // className="sticky"
             >
               <SelectStats />
             </Grid>

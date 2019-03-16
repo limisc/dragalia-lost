@@ -69,7 +69,7 @@ class StatsField extends Component {
       unbind,
       bond,
     } = this.state;
-    const { Name } = item || {};
+    const { name } = item || {};
 
     let image = uid;
     if (!!uid) {
@@ -99,12 +99,11 @@ class StatsField extends Component {
           direction="column"
           justify="center"
           alignItems="center"
-          // zeroMinWidth
           wrap="nowrap"
         >
           <StatsAvatar
             image={image}
-            name={Name}
+            name={name}
             lang={lang}
             statsKey={statsKey}
           />
