@@ -44,6 +44,7 @@ const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");
 
 const selectFocus = statsKey => dispatch => {
   dispatch({ type: actionTypes.SELECT_FOCUS, statsKey });
+  dispatch({ type: actionTypes.NARROW_FILTERS, statsKey });
   const { stats } = store.getState();
   if (stats[statsKey]) {
     dispatch({ type: actionTypes.SELECT_STATS, statsKey, item: null });
@@ -67,7 +68,8 @@ const selectStats = (statsKey, item) => dispatch => {
 }
 
 const resetField = actionCreator(actionTypes.RESET_FIELD, "field");
-const updateFacility = actionCreator(actionTypes.UPDATE_FACILITY, "field", "facilityType", "index", "level");
+
+const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, "field", "index", "level");
 
 const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "statsKey", "state");
 
@@ -78,6 +80,6 @@ export {
   selectStats,
   syncStats,
   resetField,
-  updateFacility,
+  updateHalidom,
   updateDetails,
 };

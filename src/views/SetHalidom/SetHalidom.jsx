@@ -13,27 +13,14 @@ class SetHalidom extends Component {
 
   render() {
     const {
-      adventurer,
-      dragon,
-      overview,
+      halidom: { element, weapon, dragon },
     } = this.props;
 
-    const { element, type } = adventurer || {};
-    const { element: dragonElement } = dragon || {};
+    // const { element, weapon } = adventurer || {};
+    // const { element: dragonElement } = dragon || {};
     return (
-      <Paper style={{ width: "100%", paddingRight: "16px" }}>
-        <Grid container spacing={8} className="filters top">
-          <Grid item xs={6} lg={3}>
-            <Button
-              variant="contained"
-              style={{ height: "56px", width: "100%" }}
-              onClick={this.onClick}
-            >
-              Stats
-          </Button>
-          </Grid>
-        </Grid>
-        {adventurer && (
+      <Fragment>
+        {/* {adventurer && (
           <Fragment>
             <OverviewItem
               view={overview.element}
@@ -43,48 +30,39 @@ class SetHalidom extends Component {
             <OverviewItem
               view={overview.weapon}
               field="weapon"
-              fieldKey={type}
+              fieldKey={weapon}
             />
           </Fragment>
-        )}
+        )} */}
 
-        {dragon && (
+        {/* {dragon && (
           <OverviewItem
             view={overview.dragon}
             field="dragon"
             fieldKey={dragonElement}
           />
-        )}
+        )} */}
         <HalidomField
-          key={element}
           field="element"
-          fieldType={element}
+          facilities={element}
         />
         <HalidomField
-          key={type}
           field="weapon"
-          fieldType={type}
+          facilities={weapon}
         />
 
         <HalidomField
-          key={`dragon_${dragonElement}`}
           field="dragon"
-          fieldType={dragonElement}
+          facilities={dragon}
         />
-      </Paper>
+      </Fragment>
     );
   }
 }
 
-const mapStateToProps = ({
-  halidom,
-  stats: { adventurer, dragon },
-}) => {
-  const makeOverview = getHalidomOverview();
+const mapStateToProps = ({ halidom }) => {
   return {
-    adventurer,
-    dragon,
-    overview: makeOverview(halidom),
+    halidom,
   };
 }
 

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { resetField } from "actions";
 import { facility } from "data";
-import ListItem from "./ListItem";
+import HalidomItem from "./HalidomItem";
 const propTypes = {
 
 };
@@ -16,35 +16,22 @@ const defaultProps = {
 
 
 class HalidomField extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
 
-    };
-
-    const {
-      field,
-      resetField,
-    } = props;
-    resetField(field);
-  }
   render() {
     const {
+      facilities,
       field,
-      fieldType,
     } = this.props;
 
-    const list = facility[field][fieldType];
-    if (list) {
+    if (facilities) {
       return (
         <Fragment>
-          {list.map((f, i) => (
-            <ListItem
-              key={i}
-              index={i}
+          {facilities.list.map((f) => (
+            <HalidomItem
+              key={f}
+              index={f}
               field={field}
-              facility={f}
-
+              facility={facilities[f]}
             />
           ))}
         </Fragment>
@@ -59,9 +46,9 @@ class HalidomField extends Component {
 HalidomField.propTypes = propTypes;
 HalidomField.defaultProps = defaultProps;
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ halidom }) => {
   return {
-
+    // halidom,
   };
 }
 

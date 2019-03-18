@@ -7,7 +7,7 @@ import {
 } from "actions";
 import { state } from "store";
 
-const syncStats = (stats, action) => {
+const syncStats = (_, action) => {
   const { search } = action;
   const newStats = parseSearch(search);
   const {

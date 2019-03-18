@@ -39,6 +39,7 @@ class SetStats extends Component {
       if (action === "POP") {
         syncStats(search);
       }
+
       return {
         search,
       };
@@ -59,7 +60,7 @@ class SetStats extends Component {
     } = this.state;
 
     return (
-      <Paper className="fluid">
+      <div className="fluid">
         {statsFields.map((statsKey) => {
           const { [statsKey]: item } = stats;
           const { id } = item || {};
@@ -74,7 +75,7 @@ class SetStats extends Component {
             />
           );
         })}
-      </Paper>
+      </div>
     );
   }
 }

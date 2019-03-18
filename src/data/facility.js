@@ -152,77 +152,107 @@ const values = {
 };
 
 const element = {
-  Flame: [
-    { id: "100401", type: "altar", image: "altar_Flame" },
-    { id: "100401", type: "altar", image: "altar_Flame" },
-    { id: "101901", type: "slime", image: "slime_Flame" },
-  ],
-  Water: [
-    { id: "100402", type: "altar", image: "altar_Water" },
-    { id: "100402", type: "altar", image: "altar_Water" },
-    { id: "101601", type: "event", image: "event_Yuletree" },
-  ],
-  Wind: [
-    { id: "100403", type: "altar", image: "altar_Wind" },
-    { id: "100403", type: "altar", image: "altar_Wind" },
-    { id: "101101", type: "event", image: "event_Wind_Shrine" },
-  ],
-  Light: [
-    { id: "100404", type: "altar", image: "altar_Light" },
-    { id: "100404", type: "altar", image: "altar_Light" },
-    { id: "101501", type: "event", image: "event_Sweet_Retreat" },
-    { id: "100901", type: "event", image: "event_Circus_Tent" },
-  ],
-  Shadow: [
-    { id: "100405", type: "altar", image: "altar_Shadow" },
-    { id: "100405", type: "altar", image: "altar_Shadow" },
-    { id: "101701", type: "event", image: "event_Library_Obscura" },
-  ],
+  Flame: {
+    key: "Flame",
+    list: ["0", "1", "2"],
+    "0": { id: "100401", type: "altar", level: 30, image: "TW02_100401" },
+    "1": { id: "100401", type: "altar", level: 30, image: "TW02_100401" },
+    "2": { id: "101901", type: "slime", level: 15, image: "TW02_101901" },
+  },
+  Water: {
+    key: "Water",
+    list: ["0", "1", "2"],
+    "0": { id: "100402", type: "altar", level: 30, image: "TW02_100402" },
+    "1": { id: "100402", type: "altar", level: 30, image: "TW02_100402" },
+    "2": { id: "101601", type: "event", level: 30, image: "TW02_101601" },
+  },
+  Wind: {
+    key: "Wind",
+    list: ["0", "1", "2"],
+    "0": { id: "100403", type: "altar", level: 30, image: "TW02_100403" },
+    "1": { id: "100403", type: "altar", level: 30, image: "TW02_100403" },
+    "2": { id: "101101", type: "event", level: 30, image: "TW02_101101" },
+  },
+  Light: {
+    key: "Light",
+    list: ["0", "1", "2", "3"],
+    "0": { id: "100404", type: "altar", level: 30, image: "TW02_100404" },
+    "1": { id: "100404", type: "altar", level: 30, image: "TW02_100404" },
+    "2": { id: "100901", type: "event", level: 30, image: "TW02_100901" },
+    "3": { id: "101501", type: "event", level: 30, image: "TW02_101501" },
+  },
+  Shadow: {
+    key: "Shadow",
+    list: ["0", "1", "2"],
+    "0": { id: "100405", type: "altar", level: 30, image: "TW02_100405" },
+    "1": { id: "100405", type: "altar", level: 30, image: "TW02_100405" },
+    "2": { id: "101701", type: "event", level: 30, image: "TW02_101701" },
+  },
 };
 
 const weapon = {
-  Sword: [
-    { id: "100501", type: "dojo", image: "dojo_Sword" },
-    { id: "100501", type: "dojo", image: "dojo_Sword" },
-  ],
-  Blade: [
-    { id: "100502", type: "dojo", image: "dojo_Blade" },
-    { id: "100502", type: "dojo", image: "dojo_Blade" },
-  ],
-  Dagger: [
-    { id: "100503", type: "dojo", image: "dojo_Dagger" },
-    { id: "100503", type: "dojo", image: "dojo_Dagger" },
-  ],
-  Axe: [
-    { id: "100504", type: "dojo", image: "dojo_Axe" },
-    { id: "100504", type: "dojo", image: "dojo_Axe" },
-  ],
-  Lance: [
-    { id: "100505", type: "dojo", image: "dojo_Lance" },
-    { id: "100505", type: "dojo", image: "dojo_Lance" },
-  ],
-  Bow: [
-    { id: "100506", type: "dojo", image: "dojo_Bow" },
-    { id: "100506", type: "dojo", image: "dojo_Bow" },
-  ],
-  Wand: [
-    { id: "100507", type: "dojo", image: "dojo_Wand" },
-    { id: "100507", type: "dojo", image: "dojo_Wand" },
-  ],
-  Staff: [
-    { id: "100508", type: "dojo", image: "dojo_Staff" },
-    { id: "100508", type: "dojo", image: "dojo_Staff" },
-  ],
+  Sword: {
+    key: "Sword",
+    list: ["0", "1"],
+    "0": { id: "100501", type: "dojo", level: 30, image: "TW02_100501" },
+    "1": { id: "100501", type: "dojo", level: 30, image: "TW02_100501" },
+  },
+  Blade: {
+    key: "Blade",
+    list: ["0", "1"],
+    "0": { id: "100502", type: "dojo", level: 30, image: "TW02_100502" },
+    "1": { id: "100502", type: "dojo", level: 30, image: "TW02_100502" },
+  },
+  Dagger: {
+    key: "Dagger",
+    list: ["0", "1"],
+    "0": { id: "100503", type: "dojo", level: 30, image: "TW02_100503" },
+    "1": { id: "100503", type: "dojo", level: 30, image: "TW02_100503" },
+  },
+  Axe: {
+    key: "Axe",
+    list: ["0", "1"],
+    "0": { id: "100504", type: "dojo", level: 30, image: "TW02_100504" },
+    "1": { id: "100504", type: "dojo", level: 30, image: "TW02_100504" },
+  },
+  Lance: {
+    key: "Lance",
+    list: ["0", "1"],
+    "0": { id: "100505", type: "dojo", level: 30, image: "TW02_100505" },
+    "1": { id: "100505", type: "dojo", level: 30, image: "TW02_100505" },
+  },
+  Bow: {
+    key: "Bow",
+    list: ["0", "1"],
+    "0": { id: "100506", type: "dojo", level: 30, image: "TW02_100506" },
+    "1": { id: "100506", type: "dojo", level: 30, image: "TW02_100506" },
+  },
+  Wand: {
+    key: "Wand",
+    list: ["0", "1"],
+    "0": { id: "100507", type: "dojo", level: 30, image: "TW02_100507" },
+    "1": { id: "100507", type: "dojo", level: 30, image: "TW02_100507" },
+  },
+  Staff: {
+    key: "Staff",
+    list: ["0", "1"],
+    "0": { id: "100508", type: "dojo", level: 30, image: "TW02_100508" },
+    "1": { id: "100508", type: "dojo", level: 30, image: "TW02_100508" },
+  },
 };
 
 const dragon = {
-  Flame: [
-    { id: "101001", type: "fafnir", image: "fafnir_Flame" },
-  ],
+  Flame: {
+    key: "Flame",
+    list: ["0"],
+    "0": { id: "101001", type: "fafnir", level: 30, image: "TW02_101001" },
+  },
   Water: null,
-  Wind: [
-    { id: "101003", type: "fafnir", image: "fafnir_Wind" },
-  ],
+  Wind: {
+    key: "Wind",
+    list: ["0"],
+    "0": { id: "101003", type: "fafnir", level: 30, image: "TW02_101003" },
+  },
   Light: null,
   Shadow: null,
 };

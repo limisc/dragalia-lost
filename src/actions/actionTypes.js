@@ -14,7 +14,7 @@ const actionTypes = {
 
   //halidom
   RESET_FIELD: "RESET_FIELD",
-  UPDATE_FACILITY: "UPDATE_FACILITY",
+  UPDATE_HALIDOM: "UPDATE_HALIDOM",
 
   //details
   UPDATE_DETAILS: "UPDATE_DETAILS",

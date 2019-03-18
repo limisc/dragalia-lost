@@ -6,6 +6,7 @@ import {
   Router,
   Route,
   Switch,
+  Redirect,
 } from 'react-router';
 import {
   history,
@@ -23,10 +24,7 @@ const App = () => {
             path="/:page(stats_calc)/:lang(en|ja|zh)"
             component={StatsCalc}
           />
-          <Route
-            path="/"
-            component={StatsCalc}
-          />
+          <Redirect to="/stats_calc/en" />
         </Switch>
       </Router>
     </Provider>

@@ -25,7 +25,15 @@ class StatsDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      rows: ["adventurer", "weapon", "wyrmprint1", "wyrmprint2", "dragon", "ability", "halidom"],
+      rows: [
+        "adventurer",
+        "weapon",
+        "wyrmprint1",
+        "wyrmprint2",
+        "dragon",
+        "ability",
+        "halidom"
+      ],
     };
   }
 
@@ -43,7 +51,7 @@ class StatsDetails extends Component {
     const { adventurer } = stats;
     const { element } = adventurer || {};
     return (
-      <Paper className="fluid">
+      <div className="fluid">
         <Grid container style={{ padding: "16px" }}>
           <Grid
             container
@@ -93,7 +101,7 @@ class StatsDetails extends Component {
             )
           })}
         </Grid>
-      </Paper>
+      </div>
     );
   }
 }

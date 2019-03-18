@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
+import "./styles.css";
 
 const propTypes = {
   level: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,

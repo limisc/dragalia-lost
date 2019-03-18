@@ -58,7 +58,6 @@ class Header extends Component {
             >
               {title}
             </Typography>
-            <button>button</button>
           </Toolbar>
         </AppBar>
         <Nav

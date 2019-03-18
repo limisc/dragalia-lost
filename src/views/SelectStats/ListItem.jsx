@@ -3,11 +3,11 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {
-  Typography,
-} from '@material-ui/core';
 import { Image } from "components";
-import { selectStats } from "actions";
+import {
+  translate,
+  selectStats,
+} from "actions";
 
 const propTypes = {
   section: PropTypes.string,
@@ -23,7 +23,7 @@ class ListItem extends PureComponent {
       data: {
         list,
         fields,
-        lang = "ja",
+        lang = "en",
       },
     } = this.props;
 
@@ -45,28 +45,26 @@ class ListItem extends PureComponent {
     const name = item.name[lang];
     return (
       <div
-        className="stats-list"
+        className="list-item flex"
         style={style}
         onClick={this.onClick}
       >
-        <div className="stats-list-image">
+        <div className="stats-list-image center">
           <Image
             statsKey={section}
             image={image}
           />
         </div>
 
-        <div className="stats-list-name">
-          <Typography noWrap>
-            {name}
-          </Typography>
+        <div className="stats-list-name text">
+          {name}
         </div>
 
         {fields.map((field) => {
           if (field === "weapon" || field === "element") {
             const icon = `${field}_${item[field]}`;
             return (
-              <div key={field} className="stats-list-icon">
+              <div key={field} className="stats-list-icon center">
                 <Image
                   statsKey="icon"
                   size="sm"
@@ -77,7 +75,7 @@ class ListItem extends PureComponent {
           }
 
           return (
-            <div key={field} className="stats-list-icon">
+            <div key={field} className="stats-list-icon center">
               {item[field]}
             </div>
           );

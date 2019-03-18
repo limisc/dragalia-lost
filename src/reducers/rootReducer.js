@@ -36,8 +36,8 @@ const rootReducer = ({
     focusKey: newFocus,
     stats: newStats,
     section: getSection(newFocus),
-    filters: filterReducer(filters, action),
-    halidom: halidomReducer(halidom, action),
+    filters: filterReducer(filters, action, newStats),
+    halidom: halidomReducer(halidom, action, newStats),
     details: detailReducer(details, action, newStats),
   }
 }

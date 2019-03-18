@@ -1,9 +1,7 @@
 const state = {
-  focusKey: "adventurer",
-  section: "adventurer",
-  // search: "",
+  focusKey: "weapon",
   filters: {
-    type: "",
+    weapon: "",
     element: "",
     rarity: "",
     tier: "",

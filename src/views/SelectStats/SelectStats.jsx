@@ -9,6 +9,7 @@ import {
   ExpansionPanelSummary,
   ExpansionPanelDetails,
 } from '@material-ui/core';
+import ListHeader from "./ListHeader";
 import FilterStats from "./FilterStats";
 import StatsList from "./StatsList";
 
@@ -41,58 +42,11 @@ class SelectStats extends Component {
 
     const { [section]: fields } = this.state.filterFields;
 
-    // if (section === "halidom") {
-    //   return <SetHalidom />;
-    // }
-
     return (
-      <Paper style={{
-        // height: "500px",
-        height: "calc(100vh - 80px)",
-        width: "100%",
-        // flex: 1,
-      }}>
-        {/* <FilterStats
-          fields={fields}
-        /> */}
-        {/* <ExpansionPanel>
-
-          <ExpansionPanelSummary>
-            Stats
-          </ExpansionPanelSummary>
-
-          <ExpansionPanelDetails
-            style={{
-              height: "calc(100vh - 150px)",
-              padding: 0,
-            }}
-          >
-            <StatsList
-              fields={fields}
-            />
-          </ExpansionPanelDetails>
-        </ExpansionPanel> */}
-        {/* <div
-          className="stats-list"
-          style={{ height: "50px" }}
-        >
-          <div className="stats-list-image">
-          </div>
-
-          <div className="stats-list-name">
-            Name
-          </div>
-
-          {fields.map((field) => (
-            <div key={field} className="stats-list-icon">
-              {field}
-            </div>
-          ))}
-        </div> */}
-        <StatsList
-          fields={fields}
-        />
-      </Paper>
+      <Fragment>
+        <FilterStats fields={fields} />
+        <StatsList fields={fields} />
+      </Fragment>
     );
   }
 }

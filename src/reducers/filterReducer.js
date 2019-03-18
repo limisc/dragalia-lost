@@ -20,9 +20,9 @@ const narrowFilters = (_, action, stats) => {
   const { adventurer, weapon } = stats;
   let updates = {};
   if (statsKey === "adventurer" && weapon) {
-    updates.type = weapon.type;
+    updates.weapon = weapon.weapon;
   } else if (statsKey === "weapon" && adventurer) {
-    updates.type = adventurer.type;
+    updates.weapon = adventurer.weapon;
   } else if (statsKey === "dragon" && adventurer) {
     updates.element = adventurer.element;
   }

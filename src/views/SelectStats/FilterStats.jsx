@@ -18,15 +18,11 @@ class FilterStats extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: ["", "Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
+      weapon: ["", "Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
       element: ["", "Flame", "Water", "Wind", "Light", "Shadow"],
       rarity: ["", "5", "4", "3"],
       tier: ["", "3", "2", "1"],
     };
-
-    this.onClick = this.onClick.bind(this);
-    this.onChange = this.onChange.bind(this);
-
   }
 
   render() {
@@ -36,33 +32,29 @@ class FilterStats extends Component {
       selectFocus,
     } = this.props;
 
-
     return (
-      <Grid container spacing={8} className="filters top">
+      <div className="filters">
         {fields.map((field) => (
-          <Grid
-            key={field}
-            item xs={6} lg={3}
-          >
+          <div key={field} className="filter-select">
             <Select
               label={field}
               value={filters[field]}
               options={this.state[field]}
               onChange={this.onChange}
             />
-          </Grid>
+          </div>
         ))}
 
-        <Grid item xs={6} lg={3}>
+        <div className="filter-select">
           <Button
             variant="contained"
-            style={{ height: "56px", width: "100%" }}
+            className="fluid button"
             onClick={this.onClick}
           >
-            Set Halidom
-          </Button>
-        </Grid>
-      </Grid>
+            Reset
+           </Button>
+        </div>
+      </div>
     );
   }
 

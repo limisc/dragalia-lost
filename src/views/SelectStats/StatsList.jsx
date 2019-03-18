@@ -3,9 +3,11 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Collapse } from '@material-ui/core';
 import { FixedSizeList } from "react-window";
 import AutoSizer from 'react-virtualized-auto-sizer';
 import dataList from "data";
+import ListHeader from "./ListHeader";
 import ListItem from "./ListItem";
 const propTypes = {
 
@@ -20,33 +22,82 @@ class StatsList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: dataList,
+      element: ["Flame", "Water", "Wind", "Light", "Shadow"],
+      weapon: ["Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
     };
   }
 
   render() {
     const {
       fields,
-      list,
+      filters,
+      section,
     } = this.props;
 
+    const {
+      element,
+      weapon,
+    } = this.state;
+
+    let list = dataList[section];
+    list = list.filter((item) => {
+      for (let k of fields) {
+        if (!item[k].includes(filters[k])) {
+          return false;
+        }
+      }
+
+      return true;
+    }).sort((item1, item2) => {
+      if (item1.rarity > item2.rarity) return -1;
+      if (item1.rarity < item2.rarity) return 1;
+
+      if (item1.tier) {
+        if (item1.tier > item2.tier) return -1;
+        if (item1.tier < item2.tier) return 1;
+      }
+
+      if (item1.element) {
+        const element1 = element.indexOf(item1.element),
+          element2 = element.indexOf(item2.element);
+        if (element1 > element2) return 1;
+        if (element1 < element2) return -1;
+      }
+
+      if (item1.weapon) {
+        const weapon1 = weapon.indexOf(item1.weapon),
+          weapon2 = weapon.indexOf(item2.weapon);
+        if (weapon1 > weapon2) return 1;
+        if (weapon1 < weapon2) return -1;
+      }
+
+      if (item1.id > item2.id) return -1;
+      if (item1.id < item2.id) return 1;
+      return 0;
+    });
+
     return (
-      <AutoSizer>
-        {({ height, width }) => (
-          <FixedSizeList
-            height={height}
-            width={width}
-            itemCount={list.length}
-            itemSize={80}
-            itemData={{
-              list,
-              fields,
-            }}
-          >
-            {ListItem}
-          </FixedSizeList>
-        )}
-      </AutoSizer>
+      <Fragment>
+        <ListHeader
+          fields={fields}
+        />
+        <AutoSizer>
+          {({ height, width }) => (
+            <FixedSizeList
+              height={height}
+              width={width}
+              itemSize={80}
+              itemCount={list.length}
+              itemData={{
+                list,
+                fields,
+              }}
+            >
+              {ListItem}
+            </FixedSizeList>
+          )}
+        </AutoSizer>
+      </Fragment>
     );
   }
 }
@@ -56,15 +107,12 @@ StatsList.propTypes = propTypes;
 StatsList.defaultProps = defaultProps;
 
 const mapStateToProps = ({
-  focusKey,
   section,
   filters,
-}, props) => {
-
-  //generate filtered list here,
-  const list = dataList[section];
+}) => {
   return {
-    list,
+    section,
+    filters,
   };
 }
 
