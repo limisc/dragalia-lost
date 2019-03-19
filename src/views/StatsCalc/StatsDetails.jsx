@@ -12,6 +12,7 @@ import {
   translate,
   getHalidomOverview,
 } from "actions";
+import "./styles.css";
 const propTypes = {
 
 };
@@ -40,26 +41,52 @@ class StatsDetails extends Component {
   render() {
     const {
       lang,
-      ...res
+      stats,
+      details,
     } = this.props;
 
     const {
       rows,
     } = this.state;
 
+    const { adventurer } = stats || {};
+    const { name: { [lang]: label = "" } = {} } = adventurer || {};
     return (
-      <Grid container style={{ padding: "16px" }}>
-        <Grid
-          container
-          alignItems="center"
-          style={{ height: "40px" }}
+      <div
+        style={{
+          width: "100%",
+        }}
+      >
+        <table
+          className="details-table"
+          style={{
+            width: "100%",
+          }}
         >
-          <Grid container item xs={3}></Grid>
-          <Grid container item xs={3} justify="flex-end">{translate("HP", lang)}</Grid>
-          <Grid container item xs={3} justify="flex-end">{translate("STR", lang)}</Grid>
-          <Grid container item xs={3} justify="flex-end">{translate("might", lang)}</Grid>
-        </Grid>
-      </Grid>
+          <tbody>
+            <tr>
+              <th>{label}</th>
+              <th>{translate("HP", lang)}</th>
+              <th>{translate("STR", lang)}</th>
+              <th>{translate("might", lang)}</th>
+            </tr>
+
+            {rows.map((row) => {
+              let { HP = 0, STR = 0, might = 0 } = details[row] || {};
+              return (
+                <tr key={row}>
+                  <td>{translate(row, lang)}</td>
+                  <td>{HP}</td>
+                  <td>{STR}</td>
+                  <td>{might}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+
+        </table>
+
+      </div>
     );
   }
 

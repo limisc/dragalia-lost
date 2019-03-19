@@ -7,6 +7,7 @@ import { Grid, Button } from '@material-ui/core';
 import { Select } from "components";
 
 import {
+  translate,
   selectFilters,
   selectFocus,
 } from "actions";
@@ -28,6 +29,7 @@ class FilterStats extends Component {
 
   render() {
     const {
+      lang,
       fields,
       filters,
       selectFocus,
@@ -38,6 +40,7 @@ class FilterStats extends Component {
         {fields.map((field) => (
           <div key={field} className="filter-select">
             <Select
+              lang={lang}
               label={field}
               value={filters[field]}
               options={this.state[field]}
@@ -52,8 +55,8 @@ class FilterStats extends Component {
             className="fluid button"
           // onClick={this.onClick}
           >
-            Reset
-           </Button>
+            {translate("reset", lang)}
+          </Button>
         </div>
       </div>
     );

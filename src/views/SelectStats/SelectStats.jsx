@@ -37,6 +37,7 @@ class SelectStats extends Component {
 
   render() {
     const {
+      lang,
       section,
     } = this.props;
 
@@ -44,8 +45,14 @@ class SelectStats extends Component {
 
     return (
       <Fragment>
-        <FilterStats fields={fields} />
-        <StatsList fields={fields} />
+        <FilterStats
+          lang={lang}
+          fields={fields}
+        />
+        <StatsList
+          lang={lang}
+          fields={fields}
+        />
       </Fragment>
     );
   }

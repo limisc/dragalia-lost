@@ -29,6 +29,7 @@ class StatsList extends Component {
 
   render() {
     const {
+      lang,
       fields,
       filters,
       section,
@@ -79,6 +80,7 @@ class StatsList extends Component {
     return (
       <div style={{ height: "calc(100vh - 290px)" }}>
         <ListHeader
+          lang={lang}
           fields={fields}
         />
         <AutoSizer>
@@ -90,6 +92,7 @@ class StatsList extends Component {
               itemCount={list.length}
               itemData={{
                 list,
+                lang,
                 fields,
               }}
             >

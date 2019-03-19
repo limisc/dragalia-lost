@@ -1,0 +1,26 @@
+/* .details-table>tbody>tr:nth-child(2)>td {
+  background-color: red;
+} */
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  width: 21%;
+  border-bottom: medium solid #EEE;
+  text-align: right;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th:first-child, th:last-child, td:first-child, td:last-child {
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  width: 37%;
+  text-align: left;
+}

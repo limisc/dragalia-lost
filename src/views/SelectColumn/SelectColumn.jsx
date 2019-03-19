@@ -21,6 +21,10 @@ class SelectColumn extends Component {
 
   render() {
     const {
+      lang,
+    } = this.props;
+
+    const {
       value,
     } = this.state;
     return (
@@ -35,8 +39,8 @@ class SelectColumn extends Component {
           <Tab label="stats list" />
           <Tab label="halidom list" />
         </Tabs>
-        {value === 0 && <SelectStats />}
-        {value === 1 && <SetHalidom />}
+        {value === 0 && <SelectStats lang={lang} />}
+        {value === 1 && <SetHalidom lang={lang} />}
       </Fragment>
     );
   }
