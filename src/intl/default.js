@@ -17,7 +17,7 @@ export default {
   reset: { en: "Reset", zh: "重置", ja: "リセット" },
   default: { en: "Default", zh: "默认值", ja: "デフォルト" },
   max: { en: "MAX", zh: "最大值", ja: "最大値" },
-  setting: { en: "Setting", zh: "设置", ja: "設定" },
+  facility: { en: "Facility", zh: "建筑", ja: "施設" },
 
   //stats
   name: { en: "Name", zh: "名称", ja: "名称" },

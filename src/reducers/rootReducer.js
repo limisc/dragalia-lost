@@ -8,6 +8,17 @@ import {
   getSection,
 } from "actions";
 
+const colReducer = (col, action) => {
+  if (action.type === actionTypes.SELECT_FOCUS) {
+    return 0;
+  } else if (action.type === actionTypes.SELECT_COL) {
+    return action.col;
+  }
+
+  return col;
+}
+
+
 const focusReducer = (focusKey, action) => {
   if (action.type === actionTypes.SELECT_FOCUS) {
     return action.statsKey;
@@ -17,6 +28,8 @@ const focusReducer = (focusKey, action) => {
 }
 
 const rootReducer = ({
+  col,
+  // lang,
   filters,
   focusKey,
   stats,
@@ -24,6 +37,7 @@ const rootReducer = ({
   details,
 }, action) => {
   console.log(action.type)
+
   if (action.type === actionTypes.RESET) {
     return {
       ...state,
@@ -33,6 +47,7 @@ const rootReducer = ({
   const newStats = statsReducer(stats, action);
 
   return {
+    col: colReducer(col, action),
     focusKey: newFocus,
     stats: newStats,
     section: getSection(newFocus),

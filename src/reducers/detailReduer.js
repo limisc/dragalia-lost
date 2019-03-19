@@ -106,7 +106,8 @@ const getWyrmprintMight = (wyrmprint) => {
 }
 
 const getDragonMight = (dragon) => {
-  const { unbind } = dragon;
+  const { bond, unbind } = dragon;
+  const intBond = parseInt(bond, 10) || 1;
   const intUnbind = parseInt(unbind, 10) || 0;
   const skillMight = intUnbind === 4 ? 100 : 50;
   const abilitySet = (
@@ -121,7 +122,7 @@ const getDragonMight = (dragon) => {
     }
 
     return acc;
-  }, skillMight);
+  }, skillMight + intBond * 10);
 }
 
 const getMight = (statsKey, item) => {
@@ -248,12 +249,48 @@ const selectStats = (details, action, newStats, prevStats) => {
     wyrmprint2,
     dragon,
   } = newStats;
-  if (statsKey === "dragon") {
-    const sameElement = adventurer && dragon && adventurer.element === dragon.element;
+
+  if (statsKey === "adventurer") {
+    const updates = {};
+    //case select adventurer, auto equipt dungeon wyrmrprint.
+    if (
+      (!prevStats.wyrmprint1 && wyrmprint1)
+      || (
+        prevStats.wyrmprint1
+        && wyrmprint1
+        && prevStats.wyrmprint1.id !== wyrmprint1.id
+      )
+    ) {
+      updates.wyrmprint1 = calcDetails("wyrmprint1", wyrmprint1);
+    }
+
+    if (!prevStats.wyrmprint2 && wyrmprint2) {
+      updates.wyrmprint2 = calcDetails("wyrmprint2", wyrmprint2);
+    }
+
+    const sameElement1 = adventurer && weapon && adventurer.element === weapon.element;
+    const sameElement2 = adventurer && dragon && adventurer.element === dragon.element;
+
     return {
       ...details,
-      dragon: calcDetails(statsKey, dragon, sameElement),
+      ...updates,
+      adventurer: calcDetails(statsKey, adventurer),
+      weapon: calcDetails("weapon", weapon, sameElement1),
+      dragon: calcDetails("dragon", dragon, sameElement2),
+    };
+  } else if (statsKey === "weapon") {
+    const updates = {};
+    if (!adventurer) {
+      updates.adventurer = calcDetails("adventurer", adventurer);
+      updates.dragon = calcDetails("dragon", dragon);
     }
+    const sameElement = adventurer && weapon && adventurer.element === weapon.element;
+
+    return {
+      ...details,
+      ...updates,
+      weapon: calcDetails(statsKey, weapon, sameElement),
+    };
   } else if (statsKey === "wyrmprint1" || statsKey === "wyrmprint2") {
     const complement = {
       wyrmprint1: "wyrmprint2",
@@ -276,42 +313,24 @@ const selectStats = (details, action, newStats, prevStats) => {
       wyrmprint1: calcDetails("wyrmprint1", wyrmprint1),
       wyrmprint2: calcDetails("wyrmprint2", wyrmprint2),
     };
-  } else if (statsKey === "weapon") {
-    const updates = {};
-    if (!adventurer) {
-      updates.adventurer = calcDetails("adventurer", adventurer);
-      updates.dragon = calcDetails("dragon", dragon);
+  } else if (statsKey === "dragon") {
+    const sameElement = adventurer && dragon && adventurer.element === dragon.element;
+
+    return {
+      ...details,
+      dragon: calcDetails(statsKey, dragon, sameElement),
     }
-    const sameElement = adventurer && weapon && adventurer.element === weapon.element;
-    return {
-      ...details,
-      ...updates,
-      weapon: calcDetails(statsKey, weapon, sameElement),
-    };
-  } else if (statsKey === "adventurer") {
-    const sameElement1 = adventurer && weapon && adventurer.element === weapon.element;
-    const sameElement2 = adventurer && dragon && adventurer.element === dragon.element;
-    return {
-      ...details,
-      adventurer: calcDetails(statsKey, adventurer),
-      weapon: calcDetails("weapon", weapon, sameElement1),
-      dragon: calcDetails("dragon", dragon, sameElement2),
-    };
   }
+
   return details;
 }
 
 const updateStats = (details, action, stats) => {
   const { statsKey } = action;
   const { adventurer, [statsKey]: item } = stats;
-  let sameElement = false;
-  if (
-    (statsKey === "weapon" || statsKey === "dragon")
-    && adventurer
-    && adventurer.element === item.element
-  ) {
-    sameElement = true;
-  }
+  const sameElement = (statsKey === "weapon" || statsKey === "dragon")
+    && adventurer && adventurer.element === item.element;
+
   return {
     ...details,
     [statsKey]: calcDetails(statsKey, stats[statsKey], sameElement),

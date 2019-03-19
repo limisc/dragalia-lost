@@ -41,7 +41,7 @@ body {
   margin-right: 0px;
 }
 
-.filter-select:nth-child(3), .filter-select:last-child {
+.filter-select:nth-child(3), .filter-select:nth-child(4) {
   margin-top: 8px
 }
 
@@ -106,6 +106,12 @@ body {
   width: 100%;
   box-sizing: border-box;
   border-bottom: medium solid #EEE;
+  cursor: default;
+}
+
+.list-item:hover {
+  background-color: #F5E8CB;
+  cursor: cell;
 }
 
 .list-header {
@@ -145,6 +151,7 @@ body {
 
 .lg {
   width: 80px;
+  cursor: pointer;
 }
 
 .md {

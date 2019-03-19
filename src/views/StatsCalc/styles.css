@@ -4,6 +4,7 @@
 
 table {
   border-collapse: collapse;
+  cursor: default;
 }
 
 th, td {

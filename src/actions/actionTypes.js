@@ -2,6 +2,7 @@ const actionTypes = {
 
   RESET: "RESET",
 
+  SELECT_COL: "SELECT_COL",
   SELECT_FOCUS: "SELECT_FOCUS",
   //filters
   SELECT_FILTERS: "SELECT_FILTERS",

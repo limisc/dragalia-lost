@@ -3,13 +3,12 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Grid, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { Select } from "components";
 
 import {
   translate,
   selectFilters,
-  selectFocus,
 } from "actions";
 
 const propTypes = {
@@ -32,7 +31,6 @@ class FilterStats extends Component {
       lang,
       fields,
       filters,
-      selectFocus,
     } = this.props;
 
     return (
@@ -82,7 +80,6 @@ const mapStateToProps = ({ filters }) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     selectFilters: (key, value) => dispatch(selectFilters(key, value)),
-    selectFocus: (statsKey) => dispatch(selectFocus(statsKey)),
   };
 }
 

@@ -8,6 +8,25 @@ const INIT_FILTERS = {
   ...state.filters,
 };
 
+const selectFocus = (_, action, stats) => {
+  const { statsKey } = action;
+  const { adventurer, weapon } = stats;
+  if (adventurer) {
+    return {
+      ...INIT_FILTERS,
+      weapon: adventurer.weapon,
+      element: adventurer.element,
+    };
+  } else if (statsKey === "adventurer" && weapon) {
+    return {
+      ...INIT_FILTERS,
+      weapon: weapon.weapon,
+    };
+  }
+
+  return INIT_FILTERS;
+}
+
 const selectFilters = (filters, action) => {
   return {
     ...filters,
@@ -15,32 +34,9 @@ const selectFilters = (filters, action) => {
   };
 }
 
-const narrowFilters = (filters, action, stats) => {
-  const { statsKey } = action;
-  const { adventurer, weapon } = stats;
-  if (statsKey === "adventurer" && weapon) {
-    return {
-      ...INIT_FILTERS,
-      weapon: weapon.weapon,
-    };
-  } else if (statsKey === "weapon" && adventurer) {
-    return {
-      ...INIT_FILTERS,
-      weapon: adventurer.weapon,
-    };
-  } else if (statsKey === "dragon" && adventurer) {
-    return {
-      ...INIT_FILTERS,
-      element: adventurer.element,
-    };
-  }
-
-  return filters;
-}
-
 const filterReducer = reducerCreator({
+  [actionTypes.SELECT_FOCUS]: selectFocus,
   [actionTypes.SELECT_FILTERS]: selectFilters,
-  [actionTypes.NARROW_FILTERS]: narrowFilters,
 });
 
 export default filterReducer;

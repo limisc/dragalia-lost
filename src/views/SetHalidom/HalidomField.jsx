@@ -1,21 +1,15 @@
 // @flow
 /* eslint-disable no-unused-vars */
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { resetField } from "actions";
-import { facility } from "data";
 import HalidomItem from "./HalidomItem";
+
 const propTypes = {
-
+  facilities: PropTypes.object,
+  field: PropTypes.string,
 };
 
-const defaultProps = {
-
-};
-
-
-class HalidomField extends Component {
+class HalidomField extends PureComponent {
 
   render() {
     const {
@@ -44,21 +38,5 @@ class HalidomField extends Component {
 
 
 HalidomField.propTypes = propTypes;
-HalidomField.defaultProps = defaultProps;
 
-const mapStateToProps = ({ halidom }) => {
-  return {
-    // halidom,
-  };
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    resetField: (field) => dispatch(resetField(field)),
-  };
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(HalidomField);
+export default HalidomField;

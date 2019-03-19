@@ -16,7 +16,7 @@ const actionCreator = (type, ...argNames) => {
   }
 }
 
-const reducerCreator = (handler) => {
+export const reducerCreator = (handler) => {
   return (state, action, ...args) => {
     if (handler.hasOwnProperty(action.type)) {
       return handler[action.type](state, action, ...args);
@@ -40,24 +40,23 @@ const replaceHistory = (search) => {
   }
 }
 
-const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");
 
-const selectFocus = statsKey => dispatch => {
-  dispatch({ type: actionTypes.SELECT_FOCUS, statsKey });
-  dispatch({ type: actionTypes.NARROW_FILTERS, statsKey });
+
+export const selectFocus = statsKey => dispatch => {
   const { stats } = store.getState();
   if (stats[statsKey]) {
     dispatch({ type: actionTypes.SELECT_STATS, statsKey, item: null });
     pushHistory();
   }
+  dispatch({ type: actionTypes.SELECT_FOCUS, statsKey });
 }
 
-const syncStats = search => dispatch => {
+export const syncStats = search => dispatch => {
   dispatch({ type: actionTypes.SYNC_STATS, search });
   replaceHistory(search);
 }
 
-const selectStats = (statsKey, item) => dispatch => {
+export const selectStats = (statsKey, item) => dispatch => {
   const { stats: prevStats } = store.getState();
   dispatch({ type: actionTypes.SELECT_STATS, statsKey, item });
   const { stats } = store.getState();
@@ -66,23 +65,8 @@ const selectStats = (statsKey, item) => dispatch => {
     history.push(search);
   }
 }
-
-const updateStats = actionCreator(actionTypes.UPDATE_STATS, "statsKey", "updates");
-
-const resetField = actionCreator(actionTypes.RESET_FIELD, "field");
-
-const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, "field", "index", "level");
-
-const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "statsKey", "state");
-
-export {
-  reducerCreator,
-  selectFilters,
-  selectFocus,
-  selectStats,
-  syncStats,
-  resetField,
-  updateStats,
-  updateHalidom,
-  updateDetails,
-};
+export const selectCol = actionCreator(actionTypes.SELECT_COL, "col");
+export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");
+export const updateStats = actionCreator(actionTypes.UPDATE_STATS, "statsKey", "updates");
+export const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, "field", "index", "level");
+export const updateDetails = actionCreator(actionTypes.UPDATE_DETAILS, "statsKey", "state");
