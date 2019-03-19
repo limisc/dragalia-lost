@@ -3,78 +3,80 @@ body {
   background-image: linear-gradient(to right, #F5E8CB, #96DEDA);
 }
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .fluid {
   width: 100%;
 }
 
 .content {
-  margin-top: 65px;
+  margin-top: 56px;
 }
 
 .column {
   width: 100%;
 }
 
-.column:last-child {
-  height: calc(100vh - 230px);
-}
-
-.filter-select {
-  float: left;
-  width: calc((100% - 8px * (2-1))/(2-1));
-  margin-right: 8px;
-}
-
 .button {
   height: 56px;
 }
 
-/* width < 600px */
-
-@media screen and (max-width:599px) {
-  .content {
-    margin-top: 56px;
-  }
+.filters {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 16px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* width <= 959px */
+.filter-select {
+  width: calc((100% - 8px * (2-1))/(2-1));
+  margin-right: 8px;
+}
 
-@media screen and (max-width: 959px) {
-  .filters {
-    padding: 16px;
-  }
-  .filter-select:nth-child(2) {
-    margin-right: 0px;
-  }
-  .filter-select:nth-child(3) {
-    margin-top: 8px;
-  }
-  .filter-select:nth-child(4) {
-    margin-top: 8px;
+.filter-select:nth-child(2), .filter-select:last-child {
+  margin-right: 0px;
+}
+
+.filter-select:nth-child(3), .filter-select:last-child {
+  margin-top: 8px
+}
+
+/* width < 600px */
+
+@media screen and (min-width:599px) {
+  .content {
+    margin-top: 64px;
   }
 }
 
 /* width >= 960px */
 
 @media screen and (min-width: 960px) {
+  .filters {
+    padding: 0px;
+  }
   .column {
-    float: left;
     width: calc((100% - 8px * (3-1))/(3-1));
     margin-right: 8px;
-  }
-  .column:last-child {
-    margin-right: 0%;
   }
 }
 
 @media screen and (min-width:1280px) {
   .filter-select {
-    /* float: left; */
     width: calc((100% - 8px * (4-1))/(4-1));
-    margin-right: 8px;
   }
   .filter-select:nth-child(2) {
     margin-right: 8px;
+  }
+  .filter-select:last-child {
+    margin-right: 0;
+  }
+  .filter-select:nth-child(3), .filter-select:last-child {
+    margin-top: 0;
   }
 }
 
@@ -100,7 +102,7 @@ body {
   border-bottom: 2px solid #EEE;
 }
 
-.list-item, .list-header {
+.list-item, .list-header, .halidom-overview {
   width: 100%;
   box-sizing: border-box;
   border-bottom: medium solid #EEE;
@@ -121,6 +123,7 @@ body {
 }
 
 .text {
+  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -130,14 +133,14 @@ body {
   width: 15%;
 }
 
-.halidom-list {
-  /* height: 90px; */
-  border: 1px solid #eee;
-}
-
 .halidom-overview {
   height: 60px;
-  border: 1px solid #eee;
+}
+
+.halidom-field {
+  width: 100%;
+  height: 60vh;
+  overflow: auto;
 }
 
 .lg {

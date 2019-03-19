@@ -29,6 +29,7 @@ class InputNumber extends React.Component {
     } = this.props;
     return (
       <TextField
+        className="item-field"
         label={translate(label, lang)}
         value={value}
         onChange={onChange}

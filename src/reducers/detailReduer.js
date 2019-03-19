@@ -1,5 +1,6 @@
 import {
   actionTypes,
+  reducerCreator,
   getLimit,
 } from "actions";
 
@@ -19,8 +20,8 @@ const getManaCircleBonus = (adventurer, key, mana) => {
   return statArray.slice(index).reduce((acc, cur) => acc + cur, 0);
 }
 
-const getAdventurerMight = (adventurer, state) => {
-  const { mana, ex } = state;
+const getAdventurerMight = (adventurer) => {
+  const { mana, ex } = adventurer;
 
   const skillMightSet = {
     "50": 500,       //300+200,
@@ -76,8 +77,8 @@ const getAdventurerMight = (adventurer, state) => {
   return skillMight + abilityMight + fsMight + exMight;
 }
 
-const getWeaponMight = (weapon, state) => {
-  const { unbind } = state;
+const getWeaponMight = (weapon) => {
+  const { unbind } = weapon;
   const intUnbind = parseInt(unbind, 10) || 0;
 
   let skillMight = 0;
@@ -88,15 +89,15 @@ const getWeaponMight = (weapon, state) => {
   return skillMight + weapon.Abilities11 + weapon.Abilities21;
 }
 
-const getWyrmprintMight = (wyrmprint, state) => {
-  const { unbind } = state;
+const getWyrmprintMight = (wyrmprint) => {
+  const { unbind } = wyrmprint;
   const intUnbind = parseInt(unbind, 10) || 0;
   const abilitySet = intUnbind === 4
     ? ["Abilities12", "Abilities22", "Abilities32"]
     : ["Abilities11", "Abilities21", "Abilities31"];
 
   return abilitySet.reduce((acc, k) => {
-    if (wyrmprint[k]) {
+    if (!!wyrmprint[k]) {
       return acc + wyrmprint[k];
     }
 
@@ -104,8 +105,8 @@ const getWyrmprintMight = (wyrmprint, state) => {
   }, 0);
 }
 
-const getDragonMight = (dragon, state) => {
-  const { unbind } = state;
+const getDragonMight = (dragon) => {
+  const { unbind } = dragon;
   const intUnbind = parseInt(unbind, 10) || 0;
   const skillMight = intUnbind === 4 ? 100 : 50;
   const abilitySet = (
@@ -123,36 +124,33 @@ const getDragonMight = (dragon, state) => {
   }, skillMight);
 }
 
-const getMight = (statsKey, item, state) => {
-  if (item) {
-    switch (statsKey) {
-      case "adventurer":
-        return getAdventurerMight(item, state);
-      case "weapon":
-        return getWeaponMight(item, state);
-      case "wyrmprint1":
-      case "wyrmprint2":
-        return getWyrmprintMight(item, state);
-      case "dragon":
-        return getDragonMight(item, state);
-      default:
-        return 0;
-    }
+const getMight = (statsKey, item) => {
+  switch (statsKey) {
+    case "adventurer":
+      return getAdventurerMight(item);
+    case "weapon":
+      return getWeaponMight(item);
+    case "wyrmprint1":
+    case "wyrmprint2":
+      return getWyrmprintMight(item);
+    case "dragon":
+      return getDragonMight(item);
+    default:
+      return 0;
   }
-
-  return 0;
 }
 
-const getDetails = (statsKey, item, state) => {
+const calcDetails = (statsKey, item, sameElement = false) => {
   let HP = 0;
   let STR = 0;
   let might = 0;
-  if (item && state) {
+  if (item) {
     let {
       level,
       mana,
       rarity,
-    } = state;
+      curRarity,
+    } = item;
     const temp = statsKey === "adventurer" ? "5" : rarity;
     const MAX_LEVEL = getLimit(statsKey, temp);
 
@@ -165,8 +163,8 @@ const getDetails = (statsKey, item, state) => {
     } else {
       let base_HP, base_STR, stepHP, stepSTR;
       if (statsKey === "adventurer") {
-        base_HP = item["MinHp" + rarity];
-        base_STR = item["MinAtk" + rarity];
+        base_HP = item["MinHp" + curRarity];
+        base_STR = item["MinAtk" + curRarity];
         stepHP = "MinHp5";
         stepSTR = "MinAtk5";
       } else {
@@ -192,7 +190,13 @@ const getDetails = (statsKey, item, state) => {
 
     HP = Math.ceil(HP);
     STR = Math.ceil(STR);
-    might = getMight(statsKey, item, state);
+
+    if (sameElement) {
+      HP = Math.ceil(HP * 1.5);
+      STR = Math.ceil(STR * 1.5);
+    }
+
+    might = HP + STR + getMight(statsKey, item);
   }
 
   return {
@@ -202,17 +206,123 @@ const getDetails = (statsKey, item, state) => {
   };
 }
 
-const detailReducer = (details, action, stats) => {
-  const { type, statsKey, state } = action;
-  const { [statsKey]: item } = stats;
-  if (type === actionTypes.UPDATE_DETAILS) {
+
+const syncStats = (details, action, stats) => {
+  const updates = {};
+  const { adventurer } = stats;
+  Object.keys(stats).forEach((k) => {
+    const item = stats[k];
+    if (item) {
+      const sameElement = (k === "weapon" || k === "dragon")
+        && adventurer
+        && adventurer.element === item.element;
+      updates[k] = calcDetails(k, item, sameElement);
+    }
+  });
+
+  if (!!Object.keys(updates).length) {
     return {
       ...details,
-      [statsKey]: getDetails(statsKey, item, state),
-    }
+      ...updates,
+    };
   }
 
   return details;
+};
+
+const selectStats = (details, action, newStats, prevStats) => {
+  const { statsKey, item } = action;
+
+  if (
+    prevStats[statsKey]
+    && item
+    && prevStats[statsKey].id === item.id
+  ) {
+    return details;
+  }
+
+  const {
+    adventurer,
+    weapon,
+    wyrmprint1,
+    wyrmprint2,
+    dragon,
+  } = newStats;
+  if (statsKey === "dragon") {
+    const sameElement = adventurer && dragon && adventurer.element === dragon.element;
+    return {
+      ...details,
+      dragon: calcDetails(statsKey, dragon, sameElement),
+    }
+  } else if (statsKey === "wyrmprint1" || statsKey === "wyrmprint2") {
+    const complement = {
+      wyrmprint1: "wyrmprint2",
+      wyrmprint2: "wyrmprint1",
+    };
+
+    const another = complement[statsKey];
+    if (
+      (!prevStats[another] && !newStats[another])
+      || (prevStats[another] && newStats[another] && prevStats[another].id === newStats[another].id)
+    ) {
+      return {
+        ...details,
+        [statsKey]: calcDetails(statsKey, newStats[statsKey]),
+      };
+    }
+
+    return {
+      ...details,
+      wyrmprint1: calcDetails("wyrmprint1", wyrmprint1),
+      wyrmprint2: calcDetails("wyrmprint2", wyrmprint2),
+    };
+  } else if (statsKey === "weapon") {
+    const updates = {};
+    if (!adventurer) {
+      updates.adventurer = calcDetails("adventurer", adventurer);
+      updates.dragon = calcDetails("dragon", dragon);
+    }
+    const sameElement = adventurer && weapon && adventurer.element === weapon.element;
+    return {
+      ...details,
+      ...updates,
+      weapon: calcDetails(statsKey, weapon, sameElement),
+    };
+  } else if (statsKey === "adventurer") {
+    const sameElement1 = adventurer && weapon && adventurer.element === weapon.element;
+    const sameElement2 = adventurer && dragon && adventurer.element === dragon.element;
+    return {
+      ...details,
+      adventurer: calcDetails(statsKey, adventurer),
+      weapon: calcDetails("weapon", weapon, sameElement1),
+      dragon: calcDetails("dragon", dragon, sameElement2),
+    };
+  }
+  return details;
 }
+
+const updateStats = (details, action, stats) => {
+  const { statsKey } = action;
+  const { adventurer, [statsKey]: item } = stats;
+  let sameElement = false;
+  if (
+    (statsKey === "weapon" || statsKey === "dragon")
+    && adventurer
+    && adventurer.element === item.element
+  ) {
+    sameElement = true;
+  }
+  return {
+    ...details,
+    [statsKey]: calcDetails(statsKey, stats[statsKey], sameElement),
+  };
+}
+
+const detailReducer = reducerCreator({
+  [actionTypes.SYNC_STATS]: syncStats,
+  [actionTypes.SELECT_STATS]: selectStats,
+  [actionTypes.UPDATE_STATS]: updateStats,
+});
+
 
 export default detailReducer;

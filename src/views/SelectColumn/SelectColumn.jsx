@@ -1,7 +1,6 @@
 // @flow
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import {
   Tabs,
   Tab,
@@ -11,20 +10,12 @@ import {
   SelectStats,
   SetHalidom,
 } from "views";
-const propTypes = {
 
-};
-
-const defaultProps = {
-
-};
-
-
-class SelectColumn extends React.Component {
+class SelectColumn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 1,
+      value: 0,
     };
   }
 
@@ -54,9 +45,5 @@ class SelectColumn extends React.Component {
     this.setState({ value });
   }
 }
-
-
-SelectColumn.propTypes = propTypes;
-SelectColumn.defaultProps = defaultProps;
 
 export default SelectColumn;

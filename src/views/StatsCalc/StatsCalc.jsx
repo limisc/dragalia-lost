@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
-import { Grid } from '@material-ui/core';
+import { withRouter } from 'react-router-dom';
 import {
   Header,
   SetStats,
@@ -12,23 +12,32 @@ import SelectColumn from "../SelectColumn/SelectColumn";
 class StatsCalc extends Component {
 
   render() {
+    const {
+      match: { params: { lang = "en" } },
+    } = this.props;
     return (
       <Fragment>
         <Header />
-        <div className="fluid content">
+        <main className="fluid content main">
           <div className="column">
-            {/* <StatsDetails /> */}
+            <StatsDetails
+              lang={lang}
+            />
           </div>
           <div className="column">
-            <SetStats />
+            <SetStats
+              lang={lang}
+            />
           </div>
           <div className="column">
-            <SelectColumn />
+            <SelectColumn
+              lang={lang}
+            />
           </div>
-        </div >
+        </main >
       </Fragment >
     );
   }
 }
 
-export default StatsCalc;
+export default withRouter(StatsCalc);

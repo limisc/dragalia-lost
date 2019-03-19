@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Grid, Button } from '@material-ui/core';
 import { Select } from "components";
+
 import {
   selectFilters,
   selectFocus,
@@ -49,7 +50,7 @@ class FilterStats extends Component {
           <Button
             variant="contained"
             className="fluid button"
-            onClick={this.onClick}
+          // onClick={this.onClick}
           >
             Reset
            </Button>

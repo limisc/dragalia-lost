@@ -67,6 +67,8 @@ const selectStats = (statsKey, item) => dispatch => {
   }
 }
 
+const updateStats = actionCreator(actionTypes.UPDATE_STATS, "statsKey", "updates");
+
 const resetField = actionCreator(actionTypes.RESET_FIELD, "field");
 
 const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, "field", "index", "level");
@@ -80,6 +82,7 @@ export {
   selectStats,
   syncStats,
   resetField,
+  updateStats,
   updateHalidom,
   updateDetails,
 };

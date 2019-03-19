@@ -1,5 +1,5 @@
 const state = {
-  focusKey: "weapon",
+  focusKey: "adventurer",
   filters: {
     weapon: "",
     element: "",

@@ -23,7 +23,7 @@ const rootReducer = ({
   halidom,
   details,
 }, action) => {
-
+  console.log(action.type)
   if (action.type === actionTypes.RESET) {
     return {
       ...state,
@@ -38,7 +38,7 @@ const rootReducer = ({
     section: getSection(newFocus),
     filters: filterReducer(filters, action, newStats),
     halidom: halidomReducer(halidom, action, newStats),
-    details: detailReducer(details, action, newStats),
+    details: detailReducer(details, action, newStats, stats),
   }
 }
 

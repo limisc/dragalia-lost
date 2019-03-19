@@ -3,11 +3,10 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Grid } from '@material-ui/core';
 
 import {
   getLimit,
-  updateDetails,
+  updateStats,
 } from "actions";
 
 import StatsAvatar from "./StatsAvatar";
@@ -15,195 +14,179 @@ import InputNumber from "./InputNumber";
 import SelectItem from './SelectItem';
 
 const propTypes = {
-
+  lang: PropTypes.string,
+  statsKey: PropTypes.string,
 };
-
-const defaultProps = {
-
-};
-
 
 class StatsField extends Component {
+
   constructor(props) {
     super(props);
-    const { item, statsKey, updateDetails } = props;
-    let state = null;
-    if (item) {
-      const rarity = statsKey === "adventurer" ? "5" : item.rarity;
-      state = {
-        level: getLimit(statsKey, rarity),
-        rarity,
-        mana: "50",
-        ex: "4",
-        unbind: "4",
-        bond: "30",
-      }
-    }
-    updateDetails(statsKey, state);
-    this.state = state || {};
-
-    this.onChange = this.onChange.bind(this);
-    this.setUpdates = this.setUpdates.bind(this);
-  }
-
-  componentDidUpdate(_, prevState) {
-    if (this.state !== prevState) {
-      const { statsKey, updateDetails } = this.props;
-      updateDetails(statsKey, this.state);
+    const { bond, level } = props.item || {};
+    this.state = {
+      bond,
+      level,
     }
   }
 
   render() {
     const {
-      uid,
-      item,
       lang,
+      item,
       statsKey,
     } = this.props;
 
+    const { bond, level } = this.state;
     const {
-      level,
-      rarity,
-      mana,
       ex,
+      id,
+      mana,
+      name,
       unbind,
-      bond,
-    } = this.state;
-    const { name } = item || {};
+      rarity,
+      curRarity,
+    } = item || {};
 
-    let image = uid;
-    if (!!uid) {
+    let image;
+    if (item) {
       switch (statsKey) {
         case "adventurer":
-          image = uid + rarity;
+          image = id + curRarity;
           break;
         case "wyrmprint1":
         case "wyrmprint2":
           const intUnbind = parseInt(unbind, 10);
-          image = intUnbind >= 2 ? uid + "2" : uid + "1";
+          image = intUnbind >= 2 ? id + "2" : id + "1";
           break;
         default:
-          image = uid;
+          image = id;
           break;
       }
     }
-
     return (
-      <Grid
-        container
-        style={{ height: "120px", marginTop: "10px" }}
-      >
-        <Grid
-          container
-          item xs={4}
-          direction="column"
-          justify="center"
-          alignItems="center"
-          wrap="nowrap"
-        >
+      <div className="stats-field">
+        <div className="stats-avatar">
           <StatsAvatar
-            image={image}
-            name={name}
             lang={lang}
+            image={image}
             statsKey={statsKey}
+            name={name}
           />
-        </Grid>
+        </div>
 
         {item && (
-          <Fragment>
-            <Grid
-              container
-              item xs={8}
-              spacing={8}
-              alignItems="center"
-            >
-              <Grid item xs={6}>
-                <InputNumber
-                  label="level"
+          <div className="stats-setting">
+            <InputNumber
+              label="level"
+              lang={lang}
+              value={level}
+              onChange={this.onChange}
+            />
+
+            {statsKey === "adventurer" && (
+              <Fragment>
+                <div className="item-field">
+                  <SelectItem
+                    label="rarity"
+                    lang={lang}
+                    value={curRarity}
+                    rarity={rarity}
+                    onChange={this.onChange}
+                  />
+                </div>
+
+                <div className="item-field">
+                  <SelectItem
+                    label="mana"
+                    lang={lang}
+                    value={mana}
+                    rarity={rarity}
+                    onChange={this.onChange}
+                  />
+                </div>
+
+                <div className="item-field">
+                  <SelectItem
+                    label="ex"
+                    lang={lang}
+                    value={ex}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </Fragment>
+            )}
+
+            {statsKey !== "adventurer" && (
+              <div className="item-field">
+                <SelectItem
+                  label="unbind"
                   lang={lang}
-                  value={level}
+                  value={unbind}
                   onChange={this.onChange}
                 />
-              </Grid>
+              </div>
+            )}
 
-              {statsKey === "adventurer" && (
-                <Fragment>
-                  <Grid item xs={6}>
-                    <SelectItem
-                      label="rarity"
-                      lang={lang}
-                      value={rarity}
-                      rarity={item.rarity}
-                      onChange={this.onChange}
-                    />
-                  </Grid>
-
-                  <Grid item xs={6}>
-                    <SelectItem
-                      label="mana"
-                      lang={lang}
-                      value={mana}
-                      rarity={rarity}
-                      onChange={this.onChange}
-                    />
-                  </Grid>
-
-                  <Grid item xs={6}>
-                    <SelectItem
-                      label="ex"
-                      lang={lang}
-                      value={ex}
-                      onChange={this.onChange}
-                    />
-                  </Grid>
-                </Fragment>
-              )}
-
-              {statsKey !== "adventurer" && (
-                <Grid item xs={6}>
-                  <SelectItem
-                    label="unbind"
-                    lang={lang}
-                    value={unbind}
-                    onChange={this.onChange}
-                  />
-                </Grid>
-              )}
-
-              {statsKey === "dragon" && (
-                <Grid item xs={6}>
-                  <InputNumber
-                    label="bond"
-                    lang={lang}
-                    value={bond}
-                    onChange={this.onChange}
-                  />
-                </Grid>
-              )}
-            </Grid>
-          </Fragment>
+            {statsKey === "dragon" && (
+              <InputNumber
+                label="bond"
+                lang={lang}
+                value={bond}
+                onChange={this.onChange}
+              />
+            )}
+          </div>
         )}
-      </Grid>
+      </div >
     );
   }
 
   onChange = ({ target: { name, value } }) => {
-    const updates = {
-      [name]: value,
-      ...this.setUpdates(name, value),
+    const updates = this.getUpdates(name, value);
+    const {
+      statsKey,
+      updateStats,
+    } = this.props;
+    if (name === "level" || name === "bond") {
+      let { timerId } = this.state;
+      clearTimeout(timerId);
+      timerId = setTimeout(() => {
+        if (updates[name] === "") {
+          updates[name] = 1;
+          this.setState({
+            [name]: 1,
+          });
+        }
+        updateStats(statsKey, updates);
+      }, 1000);
+
+      this.setState({
+        timerId,
+        [name]: updates[name],
+      });
+    } else {
+      if (updates.level) {
+        this.setState({ level: updates.level });
+      }
+      updateStats(statsKey, updates);
     }
-    this.setState(updates);
   }
 
-  setUpdates = (key, value) => {
-    let updates = {};
-    const { statsKey } = this.props;
-    const { rarity, unbind, ex } = this.state;
+  getUpdates = (key, value) => {
+    let updates = { [key]: value };
+    const { statsKey, item } = this.props;
+    const {
+      ex,
+      unbind,
+      rarity,
+      curRarity,
+    } = item;
 
     switch (key) {
       case "level":
+        const temp = statsKey === "adventurer" ? curRarity : rarity;
         const intLevel = parseInt(value, 10) || "";
-        const limit = getLimit(statsKey, rarity, unbind);
+        const limit = getLimit(statsKey, temp, unbind);
         updates.level = intLevel > limit ? limit : intLevel;
         break;
       case "rarity":
@@ -236,23 +219,22 @@ class StatsField extends Component {
       default:
         break;
     }
-
     return updates;
   }
 }
 
 StatsField.propTypes = propTypes;
-StatsField.defaultProps = defaultProps;
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ stats }, { statsKey }) => {
+  const item = stats[statsKey];
   return {
-
+    item,
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateDetails: (statsKey, state) => dispatch(updateDetails(statsKey, state)),
+    updateStats: (statsKey, updates) => dispatch(updateStats(statsKey, updates)),
   };
 }
 

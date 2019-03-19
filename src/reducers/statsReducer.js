@@ -3,32 +3,67 @@ import {
   actionTypes,
   reducerCreator,
   getItem,
+  getLimit,
   parseSearch,
 } from "actions";
 import { state } from "store";
 
+const buildItem = (statsKey, item) => {
+  if (item) {
+    const rarity = statsKey === "adventurer" ? "5" : item.rarity;
+    let result = {};
+    const level = getLimit(statsKey, rarity);
+
+    switch (statsKey) {
+      case "adventurer":
+        result = {
+          curRarity: rarity,
+          mana: "50",
+          ex: "4",
+        };
+        break;
+      case "dragon":
+        result = {
+          bond: "30",
+          unbind: "4",
+        };
+        break;
+      default:
+        result.unbind = "4";
+        break;
+    }
+
+    return {
+      ...item,
+      ...result,
+      level,
+    };
+  }
+
+  return item;
+}
+
 const syncStats = (_, action) => {
   const { search } = action;
-  const newStats = parseSearch(search);
+  const stats = parseSearch(search);
   const {
     adventurer,
     weapon,
     wyrmprint1,
     wyrmprint2,
-  } = newStats;
+  } = stats;
 
-  //return clean stats if no adventurer.
   if (!adventurer) {
     return state.stats;
   }
 
-  //if adventurer & weapon are different, remove weapon.
+  //if adventurer & weapon are different type, remove weapon.
   if (
     adventurer
     && weapon
     && adventurer.weapon !== weapon.weapon
   ) {
-    newStats.weapon = null;
+    stats.weapon = null;
   }
 
   //can't equipt same wyrmprint.
@@ -37,12 +72,16 @@ const syncStats = (_, action) => {
     && wyrmprint2
     && wyrmprint1.id === wyrmprint2.id
   ) {
-    newStats.wyrmprint2 = null;
+    stats.wyrmprint2 = null;
   }
+
+  Object.keys(stats).forEach((k) => {
+    stats[k] = buildItem(k, stats[k]);
+  });
 
   return {
     ...state.stats,
-    ...newStats,
+    ...stats,
   };
 }
 
@@ -58,15 +97,6 @@ const selectStats = (stats, action) => {
     return stats;
   }
 
-  const updates = updateStats(statsKey, item, stats);
-  return {
-    ...stats,
-    ...updates,
-    [statsKey]: item,
-  };
-}
-
-const updateStats = (statsKey, item, stats) => {
   const updates = {};
   if (item) {
     const {
@@ -84,7 +114,7 @@ const updateStats = (statsKey, item, stats) => {
       const { element } = item;
       const id = equipment[element];
       if (id) {
-        const wyrmprint = getItem("wyrmprint", id);
+        const wyrmprint = buildItem("wyrmprint", getItem("wyrmprint", id));
         const { id: id1 } = wyrmprint1 || {};
         const { id: id2 } = wyrmprint2 || {};
         if (id !== id1 && id !== id2) {
@@ -117,12 +147,30 @@ const updateStats = (statsKey, item, stats) => {
       }
     }
   }
-  return updates;
+
+  const newItem = buildItem(statsKey, item);
+  return {
+    ...stats,
+    ...updates,
+    [statsKey]: newItem,
+  };
 }
 
+const updateStats = (stats, action) => {
+  const { statsKey, updates } = action;
+
+  return {
+    ...stats,
+    [statsKey]: {
+      ...stats[statsKey],
+      ...updates,
+    },
+  };
+}
 const statsReducer = reducerCreator({
   [actionTypes.SYNC_STATS]: syncStats,
   [actionTypes.SELECT_STATS]: selectStats,
+  [actionTypes.UPDATE_STATS]: updateStats,
 });
 
 export default statsReducer;

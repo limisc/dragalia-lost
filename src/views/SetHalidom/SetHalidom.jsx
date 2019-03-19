@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Paper, Grid, Button } from '@material-ui/core';
 import {
   getHalidomOverview,
 } from "actions";
@@ -13,49 +12,46 @@ class SetHalidom extends Component {
 
   render() {
     const {
-      halidom: { element, weapon, dragon },
+      halidom,
     } = this.props;
 
-    // const { element, weapon } = adventurer || {};
-    // const { element: dragonElement } = dragon || {};
+    const getOverview = getHalidomOverview();
+    const overview = getOverview(halidom);
+    const { element, weapon, dragon } = halidom;
     return (
       <Fragment>
-        {/* {adventurer && (
-          <Fragment>
-            <OverviewItem
-              view={overview.element}
-              field="element"
-              fieldKey={element}
-            />
-            <OverviewItem
-              view={overview.weapon}
-              field="weapon"
-              fieldKey={weapon}
-            />
-          </Fragment>
-        )} */}
+        <OverviewItem
+          view={overview.element}
+          fieldKey="element"
+          field={element}
+        />
+        <OverviewItem
+          view={overview.weapon}
+          fieldKey="weapon"
+          field={weapon}
+        />
+        <OverviewItem
+          view={overview.dragon}
+          fieldKey="dragon"
+          field={dragon}
+        />
 
-        {/* {dragon && (
-          <OverviewItem
-            view={overview.dragon}
-            field="dragon"
-            fieldKey={dragonElement}
+        <div className="halidom-field">
+          <HalidomField
+            field="element"
+            facilities={element}
           />
-        )} */}
-        <HalidomField
-          field="element"
-          facilities={element}
-        />
-        <HalidomField
-          field="weapon"
-          facilities={weapon}
-        />
+          <HalidomField
+            field="weapon"
+            facilities={weapon}
+          />
 
-        <HalidomField
-          field="dragon"
-          facilities={dragon}
-        />
-      </Fragment>
+          <HalidomField
+            field="dragon"
+            facilities={dragon}
+          />
+        </div>
+      </Fragment >
     );
   }
 }

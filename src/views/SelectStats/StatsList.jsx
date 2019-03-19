@@ -77,7 +77,7 @@ class StatsList extends Component {
     });
 
     return (
-      <Fragment>
+      <div style={{ height: "calc(100vh - 290px)" }}>
         <ListHeader
           fields={fields}
         />
@@ -97,7 +97,7 @@ class StatsList extends Component {
             </FixedSizeList>
           )}
         </AutoSizer>
-      </Fragment>
+      </div>
     );
   }
 }

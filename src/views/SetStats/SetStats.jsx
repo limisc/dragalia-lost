@@ -1,23 +1,12 @@
 // @flow
 /* eslint-disable no-unused-vars */
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { Paper } from '@material-ui/core';
-import StatsField from "./StatsField";
 import { statsFields } from "store";
-import {
-  syncStats,
-} from "actions";
-
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
+import { syncStats } from "actions";
+import StatsField from "./StatsField";
+import "./styles.css";
 
 class SetStats extends Component {
   constructor(props) {
@@ -51,8 +40,8 @@ class SetStats extends Component {
   render() {
 
     const {
+      lang,
       stats,
-      match: { params: { lang = "en" } },
     } = this.props;
 
     const {
@@ -63,13 +52,10 @@ class SetStats extends Component {
       <div className="fluid">
         {statsFields.map((statsKey) => {
           const { [statsKey]: item } = stats;
-          const { id } = item || {};
-          const key = id || statsKey;
+          const { id = statsKey } = item || {};
           return (
             <StatsField
-              key={key}
-              uid={id}
-              item={item}
+              key={id}
               lang={lang}
               statsKey={statsKey}
             />
@@ -80,15 +66,8 @@ class SetStats extends Component {
   }
 }
 
-SetStats.propTypes = propTypes;
-SetStats.defaultProps = defaultProps;
-
-const mapStateToProps = ({
-  search,
-  stats,
-}) => {
+const mapStateToProps = ({ stats }) => {
   return {
-    search,
     stats,
   };
 }

@@ -64,14 +64,6 @@ const getItem = (statsKey, id) => {
   return null;
 }
 
-const getFacilityValue = (facilityType, level) => {
-  if (values[facilityType]) {
-    return values[facilityType][level] || { HP: 0, STR: 0 };
-  }
-
-  return { HP: 0, STR: 0 };
-}
-
 const getSearch = (stats) => {
   const searchArray = [];
   statsFields.forEach((k) => {
@@ -101,15 +93,34 @@ const getWeapon = halidom => halidom.weapon;
 const getDragon = halidom => halidom.dragon;
 
 
-const getOverView = item => {
-  if (!item) {
+// const getFacilityValue = (type, level) => {
+//   if (values[type]) {
+//     return values[type][level] || { HP: 0, STR: 0 };
+//   }
+
+//   return { HP: 0, STR: 0 };
+// }
+
+const getFacilityValue = (facility) => {
+  if (facility) {
+    const { type, level } = facility;
+    return values[type][level] || { HP: 0, STR: 0 };
+  }
+
+  return { HP: 0, STR: 0 };
+}
+const getOverView = field => {
+  if (!field) {
     return { HP: 0, STR: 0 };
   }
+
   let HP = 0, STR = 0;
-  Object.keys(item).forEach((k) => {
-    HP += item[k].HP;
-    STR += item[k].STR;
+  field.list.forEach((k) => {
+    const value = getFacilityValue(field[k]);
+    HP += value.HP;
+    STR += value.STR;
   });
+
   return { HP, STR };
 }
 
@@ -130,7 +141,7 @@ export {
   getItem,
   getLimit,
   getHalidomOverview,
-  getFacilityValue,
+  // getFacilityValue,
   getSection,
   getSearch,
   parseSearch,

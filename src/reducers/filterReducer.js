@@ -15,22 +15,27 @@ const selectFilters = (filters, action) => {
   };
 }
 
-const narrowFilters = (_, action, stats) => {
+const narrowFilters = (filters, action, stats) => {
   const { statsKey } = action;
   const { adventurer, weapon } = stats;
-  let updates = {};
   if (statsKey === "adventurer" && weapon) {
-    updates.weapon = weapon.weapon;
+    return {
+      ...INIT_FILTERS,
+      weapon: weapon.weapon,
+    };
   } else if (statsKey === "weapon" && adventurer) {
-    updates.weapon = adventurer.weapon;
+    return {
+      ...INIT_FILTERS,
+      weapon: adventurer.weapon,
+    };
   } else if (statsKey === "dragon" && adventurer) {
-    updates.element = adventurer.element;
+    return {
+      ...INIT_FILTERS,
+      element: adventurer.element,
+    };
   }
 
-  return {
-    ...INIT_FILTERS,
-    ...updates,
-  };
+  return filters;
 }
 
 const filterReducer = reducerCreator({

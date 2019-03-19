@@ -7,7 +7,7 @@ import { Image } from "components";
 
 const propTypes = {
   view: PropTypes.object.isRequired,
-  field: PropTypes.string.isRequired,
+  field: PropTypes.object,
 };
 
 const defaultProps = {
@@ -22,47 +22,52 @@ class OverviewItem extends React.PureComponent {
       field,
       fieldKey,
     } = this.props;
-    return (
-      <Grid
-        key={field}
-        container
-        className="halidom-overview"
-        justify="center"
-        alignItems="center"
-        style={{ padding: "32px" }}
-      >
+
+    if (field) {
+      const { key } = field;
+      return (
         <Grid
+          key={field}
           container
-          item xs={6}
+          className="halidom-overview"
           justify="center"
           alignItems="center"
         >
-          <Image
-            size="sm"
-            statsKey="icon"
-            image={`${field}_${fieldKey}`}
-          />
-        </Grid>
+          <Grid
+            container
+            item xs={4}
+            justify="center"
+            alignItems="center"
+          >
+            <Image
+              size="sm"
+              statsKey="icon"
+              image={`${fieldKey}_${key}`}
+            />
+          </Grid>
 
-        <Grid
-          container
-          item xs={3}
-          justify="flex-end"
-          alignItems="center"
-        >
-          {view.HP}
-        </Grid>
+          <Grid
+            container
+            item xs={4}
+            justify="center"
+            alignItems="center"
+          >
+            {view.HP}
+          </Grid>
 
-        <Grid
-          container
-          item xs={3}
-          justify="flex-end"
-          alignItems="center"
-        >
-          {view.STR}
+          <Grid
+            container
+            item xs={4}
+            justify="center"
+            alignItems="center"
+          >
+            {view.STR}
+          </Grid>
         </Grid>
-      </Grid>
-    );
+      );
+    }
+
+    return null;
   }
 }
 

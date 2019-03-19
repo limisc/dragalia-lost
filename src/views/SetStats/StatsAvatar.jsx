@@ -4,8 +4,6 @@ import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
-import { Typography } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
 import {
   selectFocus,
   translate,
@@ -19,10 +17,6 @@ const propTypes = {
 };
 
 class StatsAvatar extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.onClick = this.onClick.bind(this);
-  }
 
   render() {
     let {
@@ -42,11 +36,9 @@ class StatsAvatar extends PureComponent {
           statsKey={statsKey}
           onClick={this.onClick}
         />
-        <Grid item xs zeroMinWidth>
-          <Typography noWrap>
-            {label}
-          </Typography>
-        </Grid>
+        <span className="caption">
+          {label}
+        </span>
       </Fragment>
     );
   }
