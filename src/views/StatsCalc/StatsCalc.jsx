@@ -21,7 +21,7 @@ class StatsCalc extends Component {
     } = this.props;
     return (
       <Fragment>
-        <Header />
+        <Header lang={lang} />
         <main className="fluid content main">
           <div className="column">
             <DetailsCol

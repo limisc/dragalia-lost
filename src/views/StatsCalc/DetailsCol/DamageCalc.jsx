@@ -29,6 +29,26 @@ class DamageCalc extends React.PureComponent {
     };
   }
 
+  static getDerivedStateFromProps(props, state) {
+    const {
+      stats,
+    } = props;
+
+    const { adventurer } = stats;
+    const { id, ex } = adventurer || {};
+    if (adventurer && (id !== state.id || ex !== state.ex)) {
+
+      return {
+        id,
+        ex,
+        EXHP: adventurer["EXHP" + ex] || "",
+        EXDef: adventurer["EXDef" + ex] || "",
+      };
+    }
+
+    return null;
+  }
+
   render() {
     const {
       lang,
@@ -118,6 +138,17 @@ class DamageCalc extends React.PureComponent {
 
         {damage && (
           <Fragment>
+            <div className="details-row">
+              <div className="dungeon-details-col">HP</div>
+              <div className="dungeon-details-col">Min</div>
+              <div className="dungeon-details-col">Max</div>
+            </div>
+
+            <div className="details-row">
+              <div className="dungeon-details-col">{tHP}</div>
+              <div className="dungeon-details-col">{min}</div>
+              <div className="dungeon-details-col">{max}</div>
+            </div>
             <DamageBar
               min={min}
               max={max}
@@ -127,11 +158,6 @@ class DamageCalc extends React.PureComponent {
               width: "100%",
               marginTop: "8px",
             }}>
-              <div className="details-row">
-                <div className="dungeon-details-col">{`HP - ${tHP}`}</div>
-                <div className="dungeon-details-col">{`Min Damage - ${min}`}</div>
-                <div className="dungeon-details-col">{`Max Damage - ${max}`}</div>
-              </div>
               {textArea.map((list, i) => {
                 const content = list.split(",");
                 return (

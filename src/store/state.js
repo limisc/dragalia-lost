@@ -1,6 +1,6 @@
 const state = {
   focusKey: "adventurer",
-  lang: "en",
+  section: "adventurer",
   col: 0,
   filters: {
     weapon: "",

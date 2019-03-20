@@ -8,6 +8,10 @@ body {
   flex-wrap: wrap;
 }
 
+.title {
+  flex-grow: 1;
+}
+
 .flex {
   display: flex;
   align-items: center;

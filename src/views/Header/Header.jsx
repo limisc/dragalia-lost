@@ -1,15 +1,23 @@
 
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import {
   AppBar,
+  Button,
   IconButton,
   Toolbar,
   Typography,
 } from '@material-ui/core';
+import {
+  translate,
+  reset,
+} from "actions";
+import { history } from "store";
 import MenuIcon from '@material-ui/icons/Menu';
 import Nav from "./Nav";
 
-class Header extends Component {
+class Header extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,6 +26,9 @@ class Header extends Component {
   }
 
   render() {
+    const {
+      lang,
+    } = this.props;
     const title = "Dragalia Lost - Stats Calculator";
     const {
       navOpen,
@@ -37,9 +48,16 @@ class Header extends Component {
               variant="h6"
               color="inherit"
               noWrap
+              className="title"
             >
               {title}
             </Typography>
+            <Button
+              color="inherit"
+              onClick={this.onClick}
+            >
+              {translate("reset", lang)}
+            </Button>
           </Toolbar>
         </AppBar>
         <Nav
@@ -54,6 +72,24 @@ class Header extends Component {
     this.setState(state => ({ navOpen: !state.navOpen }));
   };
 
+  onClick = () => {
+    const {
+      reset,
+      location: { pathname },
+    } = this.props;
+    reset();
+    history.push(pathname);
+  }
+
 }
 
-export default Header;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    reset: () => dispatch(reset()),
+  };
+}
+
+export default withRouter(connect(
+  null,
+  mapDispatchToProps,
+)(Header));

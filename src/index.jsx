@@ -7,7 +7,7 @@ import {
   Route,
   Switch,
   Redirect,
-} from 'react-router';
+} from 'react-router-dom';
 import {
   history,
   store,

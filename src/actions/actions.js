@@ -65,6 +65,9 @@ export const selectStats = (statsKey, item) => dispatch => {
     history.push(search);
   }
 }
+export const reset = () => dispatch => {
+  dispatch({ type: actionTypes.RESET });
+};
 export const selectCol = actionCreator(actionTypes.SELECT_COL, "col");
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");

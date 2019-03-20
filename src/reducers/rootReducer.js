@@ -36,7 +36,6 @@ const rootReducer = ({
   halidom,
   details,
 }, action) => {
-  console.log(action.type)
 
   if (action.type === actionTypes.RESET) {
     return {
