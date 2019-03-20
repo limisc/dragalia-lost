@@ -21,10 +21,10 @@ const App = () => {
       <Router history={history}>
         <Switch>
           <Route
-            path="/:page(stats_calc)/:lang(en|ja|zh)"
+            path="/:page(stats|dungeon)/:lang(en|ja|zh)"
             component={StatsCalc}
           />
-          <Redirect to="/stats_calc/en" />
+          <Redirect to="/stats/en" />
         </Switch>
       </Router>
     </Provider>

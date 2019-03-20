@@ -37,11 +37,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 60,
     "Abilities32": 80,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "100002_01_r0",
@@ -79,16 +79,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExHp0": 7,
-    "ExHp1": 8,
-    "ExHp2": 9,
-    "ExHp3": 10,
-    "ExHp4": 12
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXHP0": 7,
+    "EXHP1": 8,
+    "EXHP2": 9,
+    "EXHP3": 10,
+    "EXHP4": 12
   },
   {
     "id": "100002_02_r0",
@@ -127,16 +127,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExHp0": 9,
-    "ExHp1": 10,
-    "ExHp2": 12,
-    "ExHp3": 13,
-    "ExHp4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXHP0": 9,
+    "EXHP1": 10,
+    "EXHP2": 12,
+    "EXHP3": 13,
+    "EXHP4": 15
   },
   {
     "id": "100003_01_r0",
@@ -174,16 +174,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExDef0": 7,
-    "ExDef1": 8,
-    "ExDef2": 9,
-    "ExDef3": 10,
-    "ExDef4": 11
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXDef0": 7,
+    "EXDef1": 8,
+    "EXDef2": 9,
+    "EXDef3": 10,
+    "EXDef4": 11
   },
   {
     "id": "100004_02_r0",
@@ -222,11 +222,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 70,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "100004_01_r0",
@@ -264,12 +264,13 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "defense1": 8
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "DefLV1": "45",
+    "Def1": 8
   },
   {
     "id": "100006_01_r0",
@@ -307,11 +308,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "100029_02_r0",
@@ -350,11 +351,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110001_01_r0",
@@ -392,16 +393,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExHp0": 5,
-    "ExHp1": 6,
-    "ExHp2": 7,
-    "ExHp3": 8,
-    "ExHp4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXHP0": 5,
+    "EXHP1": 6,
+    "EXHP2": 7,
+    "EXHP3": 8,
+    "EXHP4": 9
   },
   {
     "id": "110002_01_r0",
@@ -439,11 +440,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110003_01_r0",
@@ -481,11 +482,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110004_01_r0",
@@ -523,11 +524,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110005_01_r0",
@@ -565,11 +566,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110006_01_r0",
@@ -607,11 +608,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110007_01_r0",
@@ -649,16 +650,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExDef0": 7,
-    "ExDef1": 8,
-    "ExDef2": 9,
-    "ExDef3": 10,
-    "ExDef4": 11
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXDef0": 7,
+    "EXDef1": 8,
+    "EXDef2": 9,
+    "EXDef3": 10,
+    "EXDef4": 11
   },
   {
     "id": "110008_01_r0",
@@ -696,11 +697,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110009_01_r0",
@@ -738,11 +739,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110010_01_r0",
@@ -781,11 +782,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110011_02_r0",
@@ -823,11 +824,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110011_01_r0",
@@ -866,11 +867,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110012_01_r0",
@@ -908,16 +909,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExDef0": 5,
-    "ExDef1": 6,
-    "ExDef2": 7,
-    "ExDef3": 8,
-    "ExDef4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXDef0": 5,
+    "EXDef1": 6,
+    "EXDef2": 7,
+    "EXDef3": 8,
+    "EXDef4": 9
   },
   {
     "id": "110013_01_r0",
@@ -955,11 +956,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110014_01_r0",
@@ -997,16 +998,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExHp0": 5,
-    "ExHp1": 6,
-    "ExHp2": 7,
-    "ExHp3": 8,
-    "ExHp4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXHP0": 5,
+    "EXHP1": 6,
+    "EXHP2": 7,
+    "EXHP3": 8,
+    "EXHP4": 9
   },
   {
     "id": "110015_01_r0",
@@ -1044,11 +1045,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110016_01_r0",
@@ -1086,11 +1087,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110017_01_r0",
@@ -1128,13 +1129,15 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "defense1": 15,
-    "defense2": 20
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "DefLV1": "10",
+    "DefLV2": "30",
+    "Def1": 15,
+    "Def2": 20
   },
   {
     "id": "110018_01_r0",
@@ -1172,16 +1175,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExDef0": 7,
-    "ExDef1": 8,
-    "ExDef2": 9,
-    "ExDef3": 10,
-    "ExDef4": 11
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXDef0": 7,
+    "EXDef1": 8,
+    "EXDef2": 9,
+    "EXDef3": 10,
+    "EXDef4": 11
   },
   {
     "id": "110019_01_r0",
@@ -1219,11 +1222,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110020_01_r0",
@@ -1261,11 +1264,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110021_01_r0",
@@ -1304,16 +1307,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExHp0": 9,
-    "ExHp1": 10,
-    "ExHp2": 12,
-    "ExHp3": 13,
-    "ExHp4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXHP0": 9,
+    "EXHP1": 10,
+    "EXHP2": 12,
+    "EXHP3": 13,
+    "EXHP4": 15
   },
   {
     "id": "110022_01_r0",
@@ -1352,11 +1355,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110022_02_r0",
@@ -1394,11 +1397,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110023_01_r0",
@@ -1436,16 +1439,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExDef0": 5,
-    "ExDef1": 6,
-    "ExDef2": 7,
-    "ExDef3": 8,
-    "ExDef4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXDef0": 5,
+    "EXDef1": 6,
+    "EXDef2": 7,
+    "EXDef3": 8,
+    "EXDef4": 9
   },
   {
     "id": "110024_01_r0",
@@ -1483,11 +1486,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110025_01_r0",
@@ -1525,11 +1528,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110026_01_r0",
@@ -1567,11 +1570,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110027_01_r0",
@@ -1609,11 +1612,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110028_01_r0",
@@ -1651,11 +1654,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110029_01_r0",
@@ -1693,16 +1696,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExHp0": 7,
-    "ExHp1": 8,
-    "ExHp2": 9,
-    "ExHp3": 10,
-    "ExHp4": 12
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXHP0": 7,
+    "EXHP1": 8,
+    "EXHP2": 9,
+    "EXHP3": 10,
+    "EXHP4": 12
   },
   {
     "id": "110030_01_r0",
@@ -1740,11 +1743,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110031_01_r0",
@@ -1782,11 +1785,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110032_01_r0",
@@ -1825,11 +1828,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110033_01_r0",
@@ -1867,18 +1870,20 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "defense1": 5,
-    "defense2": 8,
-    "ExDef0": 5,
-    "ExDef1": 6,
-    "ExDef2": 7,
-    "ExDef3": 8,
-    "ExDef4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXDef0": 5,
+    "EXDef1": 6,
+    "EXDef2": 7,
+    "EXDef3": 8,
+    "EXDef4": 9,
+    "DefLV1": "10",
+    "DefLV2": "30",
+    "Def1": 5,
+    "Def2": 8
   },
   {
     "id": "110034_01_r0",
@@ -1916,18 +1921,20 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "defense1": 15,
-    "defense2": 20,
-    "ExHp0": 5,
-    "ExHp1": 6,
-    "ExHp2": 7,
-    "ExHp3": 8,
-    "ExHp4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXHP0": 5,
+    "EXHP1": 6,
+    "EXHP2": 7,
+    "EXHP3": 8,
+    "EXHP4": 9,
+    "DefLV1": "10",
+    "DefLV2": "30",
+    "Def1": 15,
+    "Def2": 20
   },
   {
     "id": "110035_01_r0",
@@ -1965,11 +1972,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110036_01_r0",
@@ -2007,11 +2014,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110037_01_r0",
@@ -2049,11 +2056,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110038_01_r0",
@@ -2091,11 +2098,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110039_01_r0",
@@ -2133,16 +2140,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExHp0": 7,
-    "ExHp1": 8,
-    "ExHp2": 9,
-    "ExHp3": 10,
-    "ExHp4": 12
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXHP0": 7,
+    "EXHP1": 8,
+    "EXHP2": 9,
+    "EXHP3": 10,
+    "EXHP4": 12
   },
   {
     "id": "110040_01_r0",
@@ -2180,11 +2187,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110041_01_r0",
@@ -2222,11 +2229,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110042_01_r0",
@@ -2265,16 +2272,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExDef0": 9,
-    "ExDef1": 10,
-    "ExDef2": 11,
-    "ExDef3": 12,
-    "ExDef4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXDef0": 9,
+    "EXDef1": 10,
+    "EXDef2": 11,
+    "EXDef3": 12,
+    "EXDef4": 15
   },
   {
     "id": "110043_01_r0",
@@ -2313,11 +2320,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110043_02_r0",
@@ -2356,11 +2363,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110044_01_r0",
@@ -2398,11 +2405,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110045_01_r0",
@@ -2440,16 +2447,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExDef0": 5,
-    "ExDef1": 6,
-    "ExDef2": 7,
-    "ExDef3": 8,
-    "ExDef4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXDef0": 5,
+    "EXDef1": 6,
+    "EXDef2": 7,
+    "EXDef3": 8,
+    "EXDef4": 9
   },
   {
     "id": "110046_01_r0",
@@ -2487,11 +2494,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110047_02_r0",
@@ -2529,11 +2536,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110047_01_r0",
@@ -2571,11 +2578,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110048_01_r0",
@@ -2613,11 +2620,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110049_02_r0",
@@ -2655,11 +2662,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110049_01_r0",
@@ -2697,11 +2704,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110050_01_r0",
@@ -2739,11 +2746,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110051_01_r0",
@@ -2781,11 +2788,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110052_01_r0",
@@ -2823,11 +2830,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110052_03_r0",
@@ -2865,11 +2872,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110053_02_r0",
@@ -2907,11 +2914,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 40,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110053_01_r0",
@@ -2950,11 +2957,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110058_01_r0",
@@ -2992,16 +2999,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExHp0": 5,
-    "ExHp1": 6,
-    "ExHp2": 7,
-    "ExHp3": 8,
-    "ExHp4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXHP0": 5,
+    "EXHP1": 6,
+    "EXHP2": 7,
+    "EXHP3": 8,
+    "EXHP4": 9
   },
   {
     "id": "110063_01_r0",
@@ -3039,11 +3046,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110067_01_r0",
@@ -3081,11 +3088,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110252_01_r0",
@@ -3124,11 +3131,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110253_01_r0",
@@ -3166,11 +3173,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110254_01_r0",
@@ -3208,16 +3215,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExHp0": 5,
-    "ExHp1": 6,
-    "ExHp2": 7,
-    "ExHp3": 8,
-    "ExHp4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXHP0": 5,
+    "EXHP1": 6,
+    "EXHP2": 7,
+    "EXHP3": 8,
+    "EXHP4": 9
   },
   {
     "id": "110255_01_r0",
@@ -3255,11 +3262,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110256_01_r0",
@@ -3298,11 +3305,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110257_01_r0",
@@ -3340,11 +3347,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110258_01_r0",
@@ -3382,16 +3389,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170,
-    "ExDef0": 5,
-    "ExDef1": 6,
-    "ExDef2": 7,
-    "ExDef3": 8,
-    "ExDef4": 9
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170,
+    "EXDef0": 5,
+    "EXDef1": 6,
+    "EXDef2": 7,
+    "EXDef3": 8,
+    "EXDef4": 9
   },
   {
     "id": "110261_01_r0",
@@ -3429,11 +3436,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   },
   {
     "id": "110266_01_r0",
@@ -3472,11 +3479,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110267_01_r0",
@@ -3515,11 +3522,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110268_01_r0",
@@ -3558,16 +3565,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExDef0": 9,
-    "ExDef1": 10,
-    "ExDef2": 11,
-    "ExDef3": 12,
-    "ExDef4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXDef0": 9,
+    "EXDef1": 10,
+    "EXDef2": 11,
+    "EXDef3": 12,
+    "EXDef4": 15
   },
   {
     "id": "110269_01_r0",
@@ -3605,11 +3612,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110270_01_r0",
@@ -3647,11 +3654,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110274_01_r0",
@@ -3690,11 +3697,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110275_01_r0",
@@ -3733,16 +3740,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExHp0": 9,
-    "ExHp1": 10,
-    "ExHp2": 12,
-    "ExHp3": 13,
-    "ExHp4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXHP0": 9,
+    "EXHP1": 10,
+    "EXHP2": 12,
+    "EXHP3": 13,
+    "EXHP4": 15
   },
   {
     "id": "110276_01_r0",
@@ -3780,11 +3787,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110277_01_r0",
@@ -3822,11 +3829,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110280_01_r0",
@@ -3865,11 +3872,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110281_01_r0",
@@ -3908,16 +3915,16 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320,
-    "ExDef0": 9,
-    "ExDef1": 10,
-    "ExDef2": 11,
-    "ExDef3": 12,
-    "ExDef4": 15
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320,
+    "EXDef0": 9,
+    "EXDef1": 10,
+    "EXDef2": 11,
+    "EXDef3": 12,
+    "EXDef4": 15
   },
   {
     "id": "110301_01_r0",
@@ -3955,11 +3962,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110302_01_r0",
@@ -3997,18 +4004,20 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "defense1": 8,
-    "defense2": 10,
-    "ExHp0": 7,
-    "ExHp1": 8,
-    "ExHp2": 9,
-    "ExHp3": 10,
-    "ExHp4": 12
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXHP0": 7,
+    "EXHP1": 8,
+    "EXHP2": 9,
+    "EXHP3": 10,
+    "EXHP4": 12,
+    "DefLV1": "10",
+    "DefLV2": "30",
+    "Def1": 8,
+    "Def2": 10
   },
   {
     "id": "110303_01_r0",
@@ -4046,11 +4055,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110304_01_r0",
@@ -4088,11 +4097,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110305_01_r0",
@@ -4131,11 +4140,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110310_01_r0",
@@ -4173,11 +4182,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110311_01_r0",
@@ -4215,16 +4224,16 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExDef0": 7,
-    "ExDef1": 8,
-    "ExDef2": 9,
-    "ExDef3": 10,
-    "ExDef4": 11
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXDef0": 7,
+    "EXDef1": 8,
+    "EXDef2": 9,
+    "EXDef3": 10,
+    "EXDef4": 11
   },
   {
     "id": "110312_01_r0",
@@ -4262,16 +4271,16 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230,
-    "ExHp0": 7,
-    "ExHp1": 8,
-    "ExHp2": 9,
-    "ExHp3": 10,
-    "ExHp4": 12
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230,
+    "EXHP0": 7,
+    "EXHP1": 8,
+    "EXHP2": 9,
+    "EXHP3": 10,
+    "EXHP4": 12
   },
   {
     "id": "110313_01_r0",
@@ -4310,11 +4319,11 @@ const adventurer =
     "Abilities22": 100,
     "Abilities31": 80,
     "Abilities32": 100,
-    "Ex0": 170,
-    "Ex1": 200,
-    "Ex2": 230,
-    "Ex3": 260,
-    "Ex4": 320
+    "EX0": 170,
+    "EX1": 200,
+    "EX2": 230,
+    "EX3": 260,
+    "EX4": 320
   },
   {
     "id": "110314_01_r0",
@@ -4352,11 +4361,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110315_01_r0",
@@ -4394,11 +4403,11 @@ const adventurer =
     "Abilities21": 60,
     "Abilities22": 100,
     "Abilities31": 60,
-    "Ex0": 110,
-    "Ex1": 140,
-    "Ex2": 170,
-    "Ex3": 200,
-    "Ex4": 230
+    "EX0": 110,
+    "EX1": 140,
+    "EX2": 170,
+    "EX3": 200,
+    "EX4": 230
   },
   {
     "id": "110316_01_r0",
@@ -4436,11 +4445,11 @@ const adventurer =
     "Abilities21": 40,
     "Abilities22": 60,
     "Abilities31": 40,
-    "Ex0": 50,
-    "Ex1": 80,
-    "Ex2": 110,
-    "Ex3": 140,
-    "Ex4": 170
+    "EX0": 50,
+    "EX1": 80,
+    "EX2": 110,
+    "EX3": 140,
+    "EX4": 170
   }
 ];
 export default adventurer;

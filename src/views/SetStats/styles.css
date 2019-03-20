@@ -33,14 +33,6 @@
   text-overflow: ellipsis;
 }
 
-.item-field {
-  width: calc((100% - 8px)/2);
-}
-
-.item-field:nth-child(2n+1) {
-  margin-right: 8px;
-}
-
 @media screen and (min-width: 960px) {
   .stats-field {
     padding-right: 0px;

@@ -45,7 +45,7 @@ const translate = (content, lang = "en") => {
     return intl[content][lang] || intl[content]["en"];
   }
 
-  return "";
+  return content;
 }
 
 

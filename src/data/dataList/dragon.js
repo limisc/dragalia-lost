@@ -805,9 +805,9 @@ const dragon =
       "HP": 0,
       "STR": 50
     },
-    "elementRes": "Shadow",
-    "resistance1": 15,
-    "resistance2": 15
+    "ResEle": "Shadow",
+    "Res1": 15,
+    "Res2": 15
   },
   {
     "id": "210049_01",
@@ -886,9 +886,9 @@ const dragon =
       "HP": 0,
       "STR": 50
     },
-    "elementRes": "Wind",
-    "resistance1": 15,
-    "resistance2": 15
+    "ResEle": "Wind",
+    "Res1": 15,
+    "Res2": 15
   },
   {
     "id": "210057_01",

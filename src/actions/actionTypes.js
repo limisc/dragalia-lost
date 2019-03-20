@@ -5,6 +5,7 @@ const actionTypes = {
   SELECT_COL: "SELECT_COL",
   SELECT_FOCUS: "SELECT_FOCUS",
   //filters
+  RESET_FILTERS: "RESET_FILTERS",
   SELECT_FILTERS: "SELECT_FILTERS",
   NARROW_FILTERS: "NARROW_FILTERS",
 
@@ -14,7 +15,6 @@ const actionTypes = {
   UPDATE_STATS: "UPDATE_STATS",
 
   //halidom
-  RESET_FIELD: "RESET_FIELD",
   UPDATE_HALIDOM: "UPDATE_HALIDOM",
 
   //details

@@ -4369,8 +4369,8 @@ const weapon =
     "MaxAtk": 129,
     "Abilities11": 20,
     "Abilities21": 50,
-    "elementDef": "Flame",
-    "defense": 3
+    "DefEle": "Flame",
+    "Def": 3
   },
   "308007_01_30201": {
     "id": "308007_01_30201",
@@ -4542,8 +4542,8 @@ const weapon =
     "MaxAtk": 81,
     "Abilities11": 20,
     "Abilities21": 0,
-    "elementDef": "",
-    "defense": 3
+    "DefEle": "",
+    "Def": 3
   },
   "308021_01_40101": {
     "id": "308021_01_40101",
@@ -4582,8 +4582,8 @@ const weapon =
     "MaxAtk": 195,
     "Abilities11": 40,
     "Abilities21": 50,
-    "elementDef": "Flame",
-    "defense": 5
+    "DefEle": "Flame",
+    "Def": 5
   },
   "308044_01_40101": {
     "id": "308044_01_40101",

@@ -2,41 +2,37 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  TextField,
-} from '@material-ui/core';
+import { TextField, InputAdornment } from '@material-ui/core';
 import { translate } from "actions";
-
-
 
 const propTypes = {
   label: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
   onChange: PropTypes.func,
 };
 
-class InputNumber extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
-  }
-
+class SettingField extends React.PureComponent {
   render() {
     const {
       label,
       lang,
       value,
+      disabled,
       onChange,
     } = this.props;
     return (
       <TextField
         className="item-field"
+        disabled={disabled}
         label={translate(label, lang)}
         value={value}
         onChange={onChange}
         type="number"
-        inputProps={{
+        InputProps={{
           name: label,
-          onKeyPress: this.handleKeyPress
+          onKeyPress: this.handleKeyPress,
+          endAdornment: <InputAdornment position="end">%</InputAdornment>,
         }}
         variant="filled"
       />
@@ -45,12 +41,12 @@ class InputNumber extends React.Component {
 
   handleKeyPress = (e) => {
     //prevent user enter + - e in number input field.
-    if (["+", "-", "e", "."].includes(e.key)) {
+    if (["+", "-", "e"].includes(e.key)) {
       e.preventDefault();
     }
   }
 }
 
-InputNumber.propTypes = propTypes;
+SettingField.propTypes = propTypes;
 
-export default InputNumber;
+export default SettingField;

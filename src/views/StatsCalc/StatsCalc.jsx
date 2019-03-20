@@ -4,24 +4,29 @@ import { withRouter } from 'react-router-dom';
 import {
   Header,
   SetStats,
-  // SetHalidom,
-  SelectStats,
 } from "views";
-import StatsDetails from "./StatsDetails";
+import DetailsCol from "./DetailsCol";
 import SelectColumn from "../SelectColumn/SelectColumn";
+
 class StatsCalc extends Component {
 
   render() {
     const {
-      match: { params: { lang = "en" } },
+      match: {
+        params: {
+          lang = "en",
+          page = "stats"
+        }
+      },
     } = this.props;
     return (
       <Fragment>
         <Header />
         <main className="fluid content main">
           <div className="column">
-            <StatsDetails
+            <DetailsCol
               lang={lang}
+              page={page}
             />
           </div>
           <div className="column">

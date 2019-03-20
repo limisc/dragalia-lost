@@ -55,7 +55,7 @@ const getAdventurerMight = (adventurer) => {
 
   const strMana = mana.toString() || "0";
   const intMana = parseInt(mana, 10) || 0;
-  const intEx = parseInt(ex, 10) || 0;
+  const intEX = parseInt(ex, 10) || 0;
 
   const abilitySet = (adventurer.rarity === "5" || adventurer.id === "100001_01_r0")
     ? rarity5Set[strMana]
@@ -72,7 +72,7 @@ const getAdventurerMight = (adventurer) => {
     return acc;
   }, 0);
   const fsMight = intMana >= 40 ? 120 : intMana >= 10 ? 60 : 0;
-  const exMight = adventurer["Ex" + intEx];
+  const exMight = adventurer["EX" + intEX];
 
   return skillMight + abilityMight + fsMight + exMight;
 }

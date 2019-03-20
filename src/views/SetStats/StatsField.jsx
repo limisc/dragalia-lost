@@ -9,8 +9,8 @@ import {
   updateStats,
 } from "actions";
 
+import { InputNumber } from "components";
 import StatsAvatar from "./StatsAvatar";
-import InputNumber from "./InputNumber";
 import SelectItem from './SelectItem';
 
 const propTypes = {
@@ -33,6 +33,7 @@ class StatsField extends Component {
     const {
       lang,
       item,
+      focusKey,
       statsKey,
     } = this.props;
 
@@ -46,7 +47,6 @@ class StatsField extends Component {
       rarity,
       curRarity,
     } = item || {};
-
     let image;
     if (item) {
       switch (statsKey) {
@@ -63,8 +63,10 @@ class StatsField extends Component {
           break;
       }
     }
+
+    const style = (focusKey === statsKey && !item) ? { border: "medium solid #F5E8CB" } : null;
     return (
-      <div className="stats-field">
+      <div className="stats-field" style={style}>
         <div className="stats-avatar">
           <StatsAvatar
             lang={lang}
@@ -87,7 +89,7 @@ class StatsField extends Component {
               <Fragment>
                 <div className="item-field">
                   <SelectItem
-                    label="rarity"
+                    label="curRarity"
                     lang={lang}
                     value={curRarity}
                     rarity={rarity}
@@ -100,7 +102,7 @@ class StatsField extends Component {
                     label="mana"
                     lang={lang}
                     value={mana}
-                    rarity={rarity}
+                    rarity={curRarity}
                     onChange={this.onChange}
                   />
                 </div>
@@ -151,6 +153,7 @@ class StatsField extends Component {
       let { timerId } = this.state;
       clearTimeout(timerId);
       timerId = setTimeout(() => {
+        // if level and bond is "", set min value 1.
         if (updates[name] === "") {
           updates[name] = 1;
           this.setState({
@@ -189,11 +192,12 @@ class StatsField extends Component {
         const limit = getLimit(statsKey, temp, unbind);
         updates.level = intLevel > limit ? limit : intLevel;
         break;
-      case "rarity":
+      case "curRarity":
         updates = {
+          ...updates,
           level: getLimit(statsKey, value),
           mana: getLimit("mana", value),
-          ex: value !== "5" ? "0" : "4",
+          ex: value === "5" ? "4" : "0",
         };
         break;
       case "mana":
@@ -225,10 +229,11 @@ class StatsField extends Component {
 
 StatsField.propTypes = propTypes;
 
-const mapStateToProps = ({ stats }, { statsKey }) => {
+const mapStateToProps = ({ stats, focusKey }, { statsKey }) => {
   const item = stats[statsKey];
   return {
     item,
+    focusKey,
   };
 }
 

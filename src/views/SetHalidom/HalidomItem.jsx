@@ -45,7 +45,7 @@ class ListItem extends Component {
     } = this.state;
     const name = names[id][lang] || names[id].en;
     return (
-      <Grid container className="list-item">
+      <Grid container className="halidom-list">
         <Grid
           container
           item xs={4} md={2}

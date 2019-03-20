@@ -1,0 +1,67 @@
+.details-container {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 16px 0 16px;
+}
+
+.collapse-title {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.collapse-div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.details-row, .details-total {
+  width: 100%;
+  display: flex;
+  border-bottom: medium solid #EEE;
+}
+
+.details-total {
+  font-weight: bold;
+}
+
+.f-col {
+  width: 37%;
+  box-sizing: border-box;
+  padding: 16px 0 16px 0;
+}
+
+.r-col {
+  width: 21%;
+  text-align: right;
+  padding: 16px 0 16px 0;
+}
+
+.damage-setting {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+.dungeon-details-col {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 16px 0 16px 0;
+}
+
+.dungeon-details-col:nth-child(3) {
+  text-align: right;
+}
+
+@media screen and (min-width: 960px) {
+  .details-table {
+    padding: 0 0 0 16px;
+  }
+}

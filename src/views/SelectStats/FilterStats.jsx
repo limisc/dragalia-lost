@@ -8,6 +8,7 @@ import { Select } from "components";
 
 import {
   translate,
+  resetFilters,
   selectFilters,
 } from "actions";
 
@@ -51,7 +52,7 @@ class FilterStats extends Component {
           <Button
             variant="contained"
             className="fluid button"
-          // onClick={this.onClick}
+            onClick={this.onClick}
           >
             {translate("reset", lang)}
           </Button>
@@ -65,7 +66,7 @@ class FilterStats extends Component {
   }
 
   onClick = () => {
-    this.props.selectFocus("halidom");
+    this.props.resetFilters();
   }
 }
 
@@ -79,6 +80,7 @@ const mapStateToProps = ({ filters }) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    resetFilters: () => dispatch(resetFilters()),
     selectFilters: (key, value) => dispatch(selectFilters(key, value)),
   };
 }

@@ -3,14 +3,13 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Collapse from '@material-ui/core/Collapse';
 import {
   translate,
   getHalidomOverview,
 } from "actions";
+import StatsDetails from "./StatsDetails";
+import DamageCalc from "./DamageCalc";
 import "./styles.css";
-
-
 const propTypes = {
 
 };
@@ -20,89 +19,59 @@ const defaultProps = {
 };
 
 
-class StatsDetails extends Component {
+class DetailsCol extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      rows: [
-        "adventurer",
-        "weapon",
-        "wyrmprint1",
-        "wyrmprint2",
-        "dragon",
-        "ability",
-        "halidom"
-      ],
-      open: true,
+      open: false,
     };
   }
 
   render() {
     const {
       lang,
+      page,
       stats,
       details,
       halidom,
     } = this.props;
 
-    const {
-      rows,
-      open,
-    } = this.state;
-
+    const { open } = this.state;
     const { adventurer } = stats || {};
-    const { name: { [lang]: label = "" } = {} } = adventurer || {};
+    const {
+      name: {
+        [lang]: label = ""
+      } = {}
+    } = adventurer || {};
 
     const getOverview = getHalidomOverview();
     const overview = getOverview(halidom);
     const newDetails = this.buildDetails(details, overview, stats);
-    const { HP: totalHP = 0, STR: totalSTR = 0, might: totalMight = 0 } = newDetails.total || {};
+    const { total } = newDetails;
     return (
-      <div
-        style={{
-          width: "100%",
-        }}
-      >
-        <table
-          className="details-table"
-          style={{
-            width: "100%",
-          }}
-        >
-          <tbody>
-            <tr onClick={this.onClick}>
-              <th>{label}</th>
-              <th>{translate("HP", lang)}</th>
-              <th>{translate("STR", lang)}</th>
-              <th>{translate("might", lang)}</th>
-            </tr>
-            {rows.map((row) => {
-              let { HP = 0, STR = 0, might = 0 } = newDetails[row] || {};
-              return (
-                <tr key={row}>
-                  <td>{translate(row, lang)}</td>
-                  <td>{HP}</td>
-                  <td>{STR}</td>
-                  <td>{might}</td>
-                </tr>
-              )
-            })}
-            <tr>
-              <td>{translate("total", lang)}</td>
-              <td>{totalHP}</td>
-              <td>{totalSTR}</td>
-              <td>{totalMight}</td>
-            </tr>
-          </tbody>
+      <Fragment>
+        {page === "stats" && (
+          <StatsDetails
+            open={open}
+            lang={lang}
+            label={label}
+            details={newDetails}
+            onClick={this.onClick}
+          />
+        )}
 
-        </table>
-
-      </div>
+        {page === "dungeon" && (
+          <DamageCalc
+            open={open}
+            lang={lang}
+            label={label}
+            stats={stats}
+            total={total}
+            onClick={this.onClick}
+          />
+        )}
+      </Fragment>
     );
-  }
-
-  onClick = () => {
-    this.setState(state => ({ open: !state.open }));
   }
 
   buildDetails = (details, overview, stats) => {
@@ -114,14 +83,11 @@ class StatsDetails extends Component {
       HP += Math.ceil(details.dragon.HP * overview.dragon.HP * 0.01);
       STR += Math.ceil(details.dragon.STR * overview.dragon.STR * 0.01);
     }
-
-
     result.halidom = {
       HP,
       STR,
       might: HP + STR,
     }
-
     let totalHP = 0, totalSTR = 0, totalMight = 0;
     Object.keys(result).forEach((k) => {
       totalHP += result[k].HP;
@@ -155,13 +121,11 @@ class StatsDetails extends Component {
       might: totalMight,
     };
     return result;
-
   }
 }
 
-
-StatsDetails.propTypes = propTypes;
-StatsDetails.defaultProps = defaultProps;
+DetailsCol.propTypes = propTypes;
+DetailsCol.defaultProps = defaultProps;
 
 const mapStateToProps = ({
   stats,
@@ -184,4 +148,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(StatsDetails);
+)(DetailsCol);

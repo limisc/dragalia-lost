@@ -22,6 +22,7 @@ export default {
   //stats
   name: { en: "Name", zh: "名称", ja: "名称" },
   level: { en: "Level", zh: "等级", ja: "レベル" },
+  curRarity: { en: "Rarity", zh: "稀有度", ja: "レアリティ" },
   rarity: { en: "Rarity", zh: "稀有度", ja: "レアリティ" },
   ex: { en: "Co-Ability", zh: "EX", ja: "EXアビリティ" },
   mana: { en: "Mana Circle", zh: "魔法圆环", ja: "マナサークル" },
@@ -46,4 +47,12 @@ export default {
   Wind: { en: "Wind", zh: "风", ja: "風" },
   Light: { en: "Light", zh: "光", ja: "光" },
   Shadow: { en: "Shadow", zh: "暗", ja: "闇" },
+
+  //dungeon
+  hms: { en: "High Midgardsormr", ja: "真ミドガルズオルム", zh: "真耶梦加得" },
+  hbh: { en: "High Brunhilda", ja: "真ブリュンヒルデ", zh: "真布伦希尔德" },
+  multi: { en: "Multi", ja: "乗数", zh: "倍率" },
+  EXHP: { en: "Co-Ability HP", ja: "EXHP", zh: "EXHP" },
+  EXDef: { en: "Co-Ability Def", ja: "EX防御", zh: "EX防御" },
+  Def: { en: "Def", ja: "防御", zh: "防御" },
 };

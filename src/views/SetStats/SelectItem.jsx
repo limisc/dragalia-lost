@@ -21,7 +21,7 @@ class SelectItem extends React.Component {
         "4": ["40", "30", "20", "10", "0"],
         "3": ["30", "20", "10", "0"],
       },
-      rarity: {
+      curRarity: {
         "5": ["5"],
         "4": ["5", "4"],
         "3": ["5", "4", "3"],
@@ -41,6 +41,7 @@ class SelectItem extends React.Component {
     } = this.props;
 
     const options = this.getOptions(label, rarity);
+
     return (
       <Select
         disabled={disabled}
@@ -58,7 +59,7 @@ class SelectItem extends React.Component {
       case "ex":
       case "unbind":
         return this.state.unbind;
-      case "rarity":
+      case "curRarity":
       case "mana":
         return this.state[label][rarity];
       default:

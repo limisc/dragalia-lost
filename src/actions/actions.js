@@ -66,6 +66,7 @@ export const selectStats = (statsKey, item) => dispatch => {
   }
 }
 export const selectCol = actionCreator(actionTypes.SELECT_COL, "col");
+export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, "key", "value");
 export const updateStats = actionCreator(actionTypes.UPDATE_STATS, "statsKey", "updates");
 export const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, "field", "index", "level");

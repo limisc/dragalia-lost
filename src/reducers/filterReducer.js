@@ -8,6 +8,10 @@ const INIT_FILTERS = {
   ...state.filters,
 };
 
+const resetFilters = () => {
+  return INIT_FILTERS;
+}
+
 const selectFocus = (_, action, stats) => {
   const { statsKey } = action;
   const { adventurer, weapon } = stats;
@@ -35,6 +39,7 @@ const selectFilters = (filters, action) => {
 }
 
 const filterReducer = reducerCreator({
+  [actionTypes.RESET_FILTERS]: resetFilters,
   [actionTypes.SELECT_FOCUS]: selectFocus,
   [actionTypes.SELECT_FILTERS]: selectFilters,
 });

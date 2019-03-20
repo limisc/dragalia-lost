@@ -550,9 +550,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Water",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Water",
+    "Res1": 3,
+    "Res2": 5
   },
   "400037_0": {
     "id": "400037_0",
@@ -572,9 +572,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Flame",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Flame",
+    "Res1": 3,
+    "Res2": 5
   },
   "400038_0": {
     "id": "400038_0",
@@ -594,9 +594,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Wind",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Wind",
+    "Res1": 3,
+    "Res2": 5
   },
   "400039_0": {
     "id": "400039_0",
@@ -616,9 +616,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Light",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Light",
+    "Res1": 3,
+    "Res2": 5
   },
   "400040_0": {
     "id": "400040_0",
@@ -638,9 +638,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Shadow",
+    "Res1": 3,
+    "Res2": 5
   },
   "400041_0": {
     "id": "400041_0",
@@ -679,9 +679,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Water",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Water",
+    "Res1": 3,
+    "Res2": 5
   },
   "400043_0": {
     "id": "400043_0",
@@ -777,9 +777,8 @@ const wyrmprint =
     "Abilities22": 20,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementDef": "",
-    "defense1": 15,
-    "defense2": 20
+    "Def1": 15,
+    "Def2": 20
   },
   "400048_0": {
     "id": "400048_0",
@@ -837,9 +836,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Light",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Light",
+    "Res1": 3,
+    "Res2": 5
   },
   "400051_0": {
     "id": "400051_0",
@@ -878,9 +877,8 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementDef": "",
-    "defense1": 15,
-    "defense2": 20
+    "Def1": 15,
+    "Def2": 20
   },
   "400053_0": {
     "id": "400053_0",
@@ -919,9 +917,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Wind",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Wind",
+    "Res1": 3,
+    "Res2": 5
   },
   "400056_0": {
     "id": "400056_0",
@@ -941,9 +939,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Water",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Water",
+    "Res1": 3,
+    "Res2": 5
   },
   "400057_0": {
     "id": "400057_0",
@@ -963,9 +961,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Flame",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Flame",
+    "Res1": 3,
+    "Res2": 5
   },
   "400058_0": {
     "id": "400058_0",
@@ -985,9 +983,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Light",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Light",
+    "Res1": 3,
+    "Res2": 5
   },
   "400059_0": {
     "id": "400059_0",
@@ -1007,9 +1005,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Shadow",
+    "Res1": 3,
+    "Res2": 5
   },
   "400060_0": {
     "id": "400060_0",
@@ -1086,9 +1084,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Wind",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Wind",
+    "Res1": 5,
+    "Res2": 8
   },
   "400064_0": {
     "id": "400064_0",
@@ -1165,9 +1163,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Flame",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Flame",
+    "Res1": 5,
+    "Res2": 8
   },
   "400068_0": {
     "id": "400068_0",
@@ -1187,9 +1185,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Light",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Light",
+    "Res1": 5,
+    "Res2": 8
   },
   "400069_0": {
     "id": "400069_0",
@@ -1269,9 +1267,9 @@ const wyrmprint =
     "conquer": "hms",
     "reduceDamage1": 20,
     "reduceDamage2": 25,
-    "elementRes": "Wind",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Wind",
+    "Res1": 3,
+    "Res2": 5
   },
   "400074_0": {
     "id": "400074_0",
@@ -1329,9 +1327,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Flame",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Flame",
+    "Res1": 5,
+    "Res2": 8
   },
   "400077_0": {
     "id": "400077_0",
@@ -1370,9 +1368,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Shadow",
+    "Res1": 5,
+    "Res2": 8
   },
   "400080_0": {
     "id": "400080_0",
@@ -1430,9 +1428,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Shadow",
+    "Res1": 3,
+    "Res2": 5
   },
   "400091_0": {
     "id": "400091_0",
@@ -1452,9 +1450,8 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementDef": "",
-    "defense1": 8,
-    "defense2": 10
+    "Def1": 8,
+    "Def2": 10
   },
   "400092_0": {
     "id": "400092_0",
@@ -1645,9 +1642,8 @@ const wyrmprint =
     "Abilities22": 0,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementDef": "",
-    "defense1": 13,
-    "defense2": 15
+    "Def1": 13,
+    "Def2": 15
   },
   "400107_0": {
     "id": "400107_0",
@@ -1724,9 +1720,9 @@ const wyrmprint =
     "Abilities22": 40,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Shadow",
+    "Res1": 3,
+    "Res2": 5
   },
   "400113_0": {
     "id": "400113_0",
@@ -1882,9 +1878,9 @@ const wyrmprint =
     "conquer": "hbh",
     "reduceDamage1": 20,
     "reduceDamage2": 25,
-    "elementRes": "Flame",
-    "resistance1": 3,
-    "resistance2": 5
+    "ResEle": "Flame",
+    "Res1": 3,
+    "Res2": 5
   },
   "400123_0": {
     "id": "400123_0",
@@ -1923,9 +1919,9 @@ const wyrmprint =
     "Abilities22": 100,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Light",
-    "resistance1": 8,
-    "resistance2": 10
+    "ResEle": "Light",
+    "Res1": 8,
+    "Res2": 10
   },
   "400125_0": {
     "id": "400125_0",
@@ -2002,9 +1998,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Shadow",
+    "Res1": 5,
+    "Res2": 8
   },
   "400129_0": {
     "id": "400129_0",
@@ -2328,9 +2324,9 @@ const wyrmprint =
     "Abilities22": 60,
     "Abilities31": 0,
     "Abilities32": 0,
-    "elementRes": "Shadow",
-    "resistance1": 5,
-    "resistance2": 8
+    "ResEle": "Shadow",
+    "Res1": 5,
+    "Res2": 8
   },
   "400151_0": {
     "id": "400151_0",

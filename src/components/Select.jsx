@@ -47,7 +47,7 @@ class CustomSelect extends React.Component {
 
     return (
       <FormControl
-        className="fluid select"
+        className="fluid"
         variant="filled"
         disabled={disabled}
       >
