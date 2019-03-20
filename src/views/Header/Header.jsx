@@ -7,7 +7,6 @@ import {
   Button,
   IconButton,
   Toolbar,
-  Typography,
 } from '@material-ui/core';
 import {
   translate,
@@ -44,19 +43,13 @@ class Header extends PureComponent {
             >
               <MenuIcon />
             </IconButton>
-            <Typography
-              variant="h6"
-              color="inherit"
-              noWrap
-              className="title"
-            >
-              {title}
-            </Typography>
+            <h2 className="text title">{title}</h2>
             <Button
               color="inherit"
+              className="reset-button"
               onClick={this.onClick}
             >
-              {translate("reset", lang)}
+              <span className="text">{translate("reset", lang)}</span>
             </Button>
           </Toolbar>
         </AppBar>

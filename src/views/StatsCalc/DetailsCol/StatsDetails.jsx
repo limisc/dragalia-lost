@@ -53,10 +53,10 @@ class StatsDetails extends Component {
           style={{ cursor }}
           onClick={this.onClick}
         >
-          <div className="f-col"><strong>{label}</strong></div>
-          <div className="r-col">{translate("HP", lang)}</div>
-          <div className="r-col">{translate("STR", lang)}</div>
-          <div className="r-col">{translate("might", lang)}</div>
+          <div className="f-col details-header"><strong>{label}</strong></div>
+          <div className="r-col details-header">{translate("HP", lang)}</div>
+          <div className="r-col details-header">{translate("STR", lang)}</div>
+          <div className="r-col details-header">{translate("might", lang)}</div>
         </div>
         <Collapse in={open} unmountOnExit>
           <div className="collapse-div">

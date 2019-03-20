@@ -33,13 +33,24 @@
 .f-col {
   width: 37%;
   box-sizing: border-box;
-  padding: 16px 0 16px 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
 }
 
 .r-col {
   width: 21%;
+  height: 56px;
+  box-sizing: border-box;
   text-align: right;
-  padding: 16px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.details-header {
+  align-items: flex-end;
+  padding-bottom: 16px;
 }
 
 .damage-setting {

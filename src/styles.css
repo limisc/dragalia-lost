@@ -29,6 +29,11 @@ body {
   width: 100%;
 }
 
+.reset-button {
+  width: 100%;
+  max-width: 80px;
+}
+
 .button {
   height: 56px;
 }
