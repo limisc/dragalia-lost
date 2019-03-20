@@ -1,6 +1,5 @@
 // @flow
-/* eslint-disable no-unused-vars */
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { translate } from "actions";
 

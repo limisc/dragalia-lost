@@ -1,16 +1,6 @@
 // @flow
-/* eslint-disable no-unused-vars */
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Select } from "components";
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
 
 class SelectItem extends React.Component {
   constructor(props) {
@@ -67,9 +57,5 @@ class SelectItem extends React.Component {
     }
   }
 }
-
-
-SelectItem.propTypes = propTypes;
-SelectItem.defaultProps = defaultProps;
 
 export default SelectItem;

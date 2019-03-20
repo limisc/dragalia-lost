@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import React, { Component, Fragment } from 'react';
 import {
   AppBar,

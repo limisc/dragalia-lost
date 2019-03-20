@@ -1,23 +1,12 @@
 // @flow
-/* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
-  translate,
   getHalidomOverview,
 } from "actions";
 import StatsDetails from "./StatsDetails";
 import DamageCalc from "./DamageCalc";
 import "./styles.css";
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
 
 class DetailsCol extends Component {
   constructor(props) {
@@ -124,9 +113,6 @@ class DetailsCol extends Component {
   }
 }
 
-DetailsCol.propTypes = propTypes;
-DetailsCol.defaultProps = defaultProps;
-
 const mapStateToProps = ({
   stats,
   halidom,
@@ -139,13 +125,6 @@ const mapStateToProps = ({
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    //: () => dispatch(),
-  };
-}
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
 )(DetailsCol);

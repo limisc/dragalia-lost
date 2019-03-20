@@ -1,13 +1,10 @@
 // @flow
-/* eslint-disable no-unused-vars */
-import React, { PureComponent, Fragment } from 'react';
+
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Image } from "components";
-import {
-  translate,
-  selectStats,
-} from "actions";
+import { selectStats } from "actions";
 
 const propTypes = {
   section: PropTypes.string,

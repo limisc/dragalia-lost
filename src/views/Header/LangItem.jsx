@@ -1,5 +1,5 @@
 // @flow
-/* eslint-disable no-unused-vars */
+
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { ListItem, ListItemText } from '@material-ui/core';

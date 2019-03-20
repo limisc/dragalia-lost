@@ -1,24 +1,7 @@
 // @flow
-/* eslint-disable no-unused-vars */
 import React from 'react';
-import PropTypes from 'prop-types';
-
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
 
 class DamageBar extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
 
   render() {
     const {
@@ -59,12 +42,7 @@ class DamageBar extends React.PureComponent {
         >{pct !== 0 && `${pct.toFixed(2)}%`}</div>
       </div>
     )
-
   }
 }
-
-
-DamageBar.propTypes = propTypes;
-DamageBar.defaultProps = defaultProps;
 
 export default DamageBar;

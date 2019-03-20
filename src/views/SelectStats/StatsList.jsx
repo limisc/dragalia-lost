@@ -1,22 +1,12 @@
 // @flow
-/* eslint-disable no-unused-vars */
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
+
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Collapse } from '@material-ui/core';
 import { FixedSizeList } from "react-window";
 import AutoSizer from 'react-virtualized-auto-sizer';
 import dataList from "data";
 import ListHeader from "./ListHeader";
 import ListItem from "./ListItem";
-const propTypes = {
-
-};
-
-const defaultProps = {
-
-};
-
 
 class StatsList extends Component {
   constructor(props) {
@@ -105,10 +95,6 @@ class StatsList extends Component {
   }
 }
 
-
-StatsList.propTypes = propTypes;
-StatsList.defaultProps = defaultProps;
-
 const mapStateToProps = ({
   section,
   filters,
@@ -119,13 +105,6 @@ const mapStateToProps = ({
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    //: () => dispatch(),
-  };
-}
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
 )(StatsList);
