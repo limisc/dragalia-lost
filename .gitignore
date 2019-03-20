@@ -1,6 +1,7 @@
 .vscode
 .DS_Store
 .flowconfig
+
 /build
 /coverage
 /node_modules

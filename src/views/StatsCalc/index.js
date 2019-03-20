@@ -1,1 +1,2 @@
-export { default } from "./StatsCalc";
+import StatsCalc from "./StatsCalc";
+export default StatsCalc;

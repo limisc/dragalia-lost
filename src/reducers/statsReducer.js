@@ -1,113 +1,174 @@
-import actionTypes from '../actions/actionTypes';
-import { getStatsLimit, reducerCreator } from '../actions/actions';
-import state from "../store/state";
 
-const resetStats = () => {
-  return { ...state.stats };
-}
+import {
+  actionTypes,
+  reducerCreator,
+  getItem,
+  getLimit,
+  parseSearch,
+} from "actions";
+import { state } from "store";
 
-const selectStats = (stats, action) => {
-  const { section, item } = action;
-  const { adventurer, weapon } = stats;
+const buildItem = (statsKey, item) => {
+  if (item) {
+    const rarity = statsKey === "adventurer" ? "5" : item.rarity;
+    let result = {};
+    const level = getLimit(statsKey, rarity);
 
-  // let image = item.image;
-  // if (section === "adventurer") {
-  //   image = item.image.slice(0, -5) + item.curRarity + ".png";
-  // } else if (section === "wyrmprint") {
-  //   const { unbind } = item;
-  //   const part = item.image.slice(0, -5);
-  //   image = unbind < 2 ? (part + "1.png") : (part + "2.png");
-  // }
-
-
-  if (section === "adventurer" && weapon && weapon.type !== item.type) {
-    return { ...stats, adventurer: item, weapon: null };
-  } else if (section === "weapon" && adventurer && adventurer.type !== item.type) {
-    return { ...stats, weapon: item, adventurer: null };
-  } else {
-    return { ...stats, [section]: item };
-  }
-}
-
-const setValue = (value, section, rarity, unbind) => {
-  const limit = getStatsLimit(section, rarity, unbind);
-  let new_value = parseInt(value, 10) || "";
-  if (new_value > limit) new_value = limit;
-  return new_value.toString();
-}
-
-const updateLevel = (stats, action) => {
-  const { section, value } = action;
-  const { rarity, unbind, curRarity } = stats[section];
-  const level = setValue(value, section, curRarity || rarity, unbind);
-  return { ...stats, [section]: { ...stats[section], level } };
-}
-
-const updateRarity = (stats, action) => {
-  const { section, value } = action;
-  const item = stats[section];
-  const level = getStatsLimit(section, value);
-  const mana = setValue(item.mana, "mana", value);
-  const EX = value !== "5" ? "0" : item.EX;
-  return { ...stats, [section]: { ...item, curRarity: value, level, mana, EX } };
-}
-
-const updateMana = (stats, action) => {
-  const { section, value } = action;
-  let { EX } = stats[section];
-  if (value === "50") {
-    EX = "4";
-  }
-  return { ...stats, [section]: { ...stats[section], mana: value, EX } };
-}
-
-const updateUnbind = (stats, action) => {
-  const { section, value } = action;
-  const item = stats[section];
-
-  // const unbind = parseInt(value, 10);
-  const level = getStatsLimit(section, item.rarity, value);
-  let updateSection = { ...item, unbind: value, level };
-  return { ...stats, [section]: updateSection };
-}
-
-const updateEX = (stats, action) => {
-  const { section, value } = action;
-  let { mana } = stats[section];
-  if (mana === "50" && value !== "4") {
-    mana = "45";
-  }
-  return { ...stats, [section]: { ...stats[section], mana, EX: value } };
-}
-
-const updateBond = (stats, action) => {
-  const { section, value } = action;
-  let bond = parseInt(value, 10) || "";
-  if (bond > 30) bond = 30;
-  return { ...stats, [section]: { ...stats[section], bond } };
-}
-
-const statsCreator = (handler) => {
-  return (stats, action) => {
-    if (handler.hasOwnProperty(action.key)) {
-      return handler[action.key](stats, action);
-    } else {
-      return stats;
+    switch (statsKey) {
+      case "adventurer":
+        result = {
+          curRarity: rarity,
+          mana: "50",
+          ex: "4",
+        };
+        break;
+      case "dragon":
+        result = {
+          bond: "30",
+          unbind: "4",
+        };
+        break;
+      default:
+        result.unbind = "4";
+        break;
     }
+
+    return {
+      ...item,
+      ...result,
+      level,
+    };
+  }
+
+  return item;
+}
+
+const syncStats = (_, action) => {
+  const { search } = action;
+  const stats = parseSearch(search);
+  const {
+    adventurer,
+    weapon,
+    wyrmprint1,
+    wyrmprint2,
+  } = stats;
+
+  if (!adventurer) {
+    return state.stats;
+  }
+
+  //if adventurer & weapon are different type, remove weapon.
+  if (
+    adventurer
+    && weapon
+    && adventurer.weapon !== weapon.weapon
+  ) {
+    stats.weapon = null;
+  }
+
+  //can't equipt same wyrmprint.
+  if (
+    wyrmprint1
+    && wyrmprint2
+    && wyrmprint1.id === wyrmprint2.id
+  ) {
+    stats.wyrmprint2 = null;
+  }
+
+  Object.keys(stats).forEach((k) => {
+    stats[k] = buildItem(k, stats[k]);
+  });
+
+  return {
+    ...state.stats,
+    ...stats,
   };
 }
 
-const updateStats = statsCreator({
-  level: updateLevel,
-  curRarity: updateRarity,
-  mana: updateMana,
-  unbind: updateUnbind,
-  EX: updateEX,
-  bond: updateBond,
-});
+const selectStats = (stats, action) => {
+  const { statsKey, item } = action;
+  const { [statsKey]: target } = stats;
+  // stop select same item.
+  if (
+    target
+    && item
+    && target.id === item.id
+  ) {
+    return stats;
+  }
 
+  const updates = {};
+  if (item) {
+    const {
+      adventurer,
+      weapon,
+      wyrmprint1,
+      wyrmprint2,
+    } = stats;
+    if (statsKey === "adventurer") {
+      const equipment = {
+        Flame: "400072_0",
+        Water: "400121_0",
+      };
+
+      const { element } = item;
+      const id = equipment[element];
+      if (id) {
+        const wyrmprint = buildItem("wyrmprint", getItem("wyrmprint", id));
+        const { id: id1 } = wyrmprint1 || {};
+        const { id: id2 } = wyrmprint2 || {};
+        if (id !== id1 && id !== id2) {
+          if (!wyrmprint1 || wyrmprint2) {
+            updates.wyrmprint1 = wyrmprint;
+          } else {
+            updates.wyrmprint2 = wyrmprint;
+          }
+        }
+      }
+
+      if (weapon && weapon.weapon !== item.weapon) {
+        updates.weapon = null;
+      }
+    } else if (
+      statsKey === "weapon"
+      && adventurer
+      && adventurer.weapon !== item.weapon
+    ) {
+      updates.adventurer = null;
+    } else if (statsKey === "wyrmprint1" || statsKey === "wyrmprint2") {
+      //can't equipt the same wyrmprint.
+      const complement = {
+        wyrmprint1: "wyrmprint2",
+        wyrmprint2: "wyrmprint1",
+      };
+      const wyrmprint = stats[complement[statsKey]];
+      if (wyrmprint && wyrmprint.id === item.id) {
+        updates[complement[statsKey]] = null;
+      }
+    }
+  }
+
+  const newItem = buildItem(statsKey, item);
+  return {
+    ...stats,
+    ...updates,
+    [statsKey]: newItem,
+  };
+}
+
+const updateStats = (stats, action) => {
+  const { statsKey, updates } = action;
+
+  return {
+    ...stats,
+    [statsKey]: {
+      ...stats[statsKey],
+      ...updates,
+    },
+  };
+}
 const statsReducer = reducerCreator({
-  [actionTypes.RESET_STATS]: resetStats,
+  [actionTypes.SYNC_STATS]: syncStats,
   [actionTypes.SELECT_STATS]: selectStats,
   [actionTypes.UPDATE_STATS]: updateStats,
 });

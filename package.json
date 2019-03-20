@@ -4,13 +4,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-redux": "^5.1.1",
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "history": "^4.9.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.5",
-    "react-virtualized": "^9.21.0",
+    "react-scripts": "^2.1.8",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.6.2",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
@@ -21,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "flow": "flow"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +37,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "faker": "^4.1.0",
+    "flow-bin": "^0.94.0",
     "gh-pages": "^2.0.1"
   }
 }

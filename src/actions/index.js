@@ -1,3 +1,4 @@
+import actionTypes from "./actionTypes";
+export { actionTypes };
 export * from "./actions";
 export * from "./selectors";
-export { default as actionTypes } from "./actionTypes";

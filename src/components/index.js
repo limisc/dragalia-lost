@@ -1,2 +1,8 @@
-export { default as Select } from "./Select";
-export { default as Image } from "./Image";
+import Image from "./Image";
+import Select from "./Select";
+import InputNumber from "./InputNumber";
+export {
+  Image,
+  InputNumber,
+  Select,
+};

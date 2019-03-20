@@ -1,32 +1,58 @@
-import actionTypes from '../actions/actionTypes';
-import filterReducer from './filterReducer';
-import statsReducer from './statsReducer';
-import halidomReducer from './halidomReducer';
-import detailReducer from './detailReducer';
+import state from "store/state";
+import filterReducer from "./filterReducer";
+import statsReducer from "./statsReducer";
+import halidomReducer from "./halidomReducer";
+import detailReducer from "./detailReducer";
+import {
+  actionTypes,
+  getSection,
+} from "actions";
 
-
-const languageReducer = (language, action) => {
-  if (action.type === actionTypes.SELECT_LANGUAGE) {
-    return action.language;
+const colReducer = (col, action) => {
+  if (action.type === actionTypes.SELECT_FOCUS) {
+    return 0;
+  } else if (action.type === actionTypes.SELECT_COL) {
+    return action.col;
   }
-  return language;
+
+  return col;
 }
 
-const sectionReducer = (section, action) => {
-  if (action.type === actionTypes.SELECT_SECTION) {
-    return action.section;
+
+const focusReducer = (focusKey, action) => {
+  if (action.type === actionTypes.SELECT_FOCUS) {
+    return action.statsKey;
   }
-  return section;
+
+  return focusKey;
 }
 
-const rootReducer = (state, action) => {
+const rootReducer = ({
+  col,
+  // lang,
+  filters,
+  focusKey,
+  stats,
+  halidom,
+  details,
+}, action) => {
+
+  if (action.type === actionTypes.RESET) {
+    return {
+      ...state,
+    };
+  }
+  const newFocus = focusReducer(focusKey, action);
+  const newStats = statsReducer(stats, action);
+
   return {
-    language: languageReducer(state.language, action),
-    focusSection: sectionReducer(state.focusSection, action),
-    filters: filterReducer(state.filters, action, state.stats),
-    stats: statsReducer(state.stats, action),
-    halidom: halidomReducer(state.halidom, action, state.stats),
-    details: detailReducer(state.details, state.stats, state.halidom, action),
+    col: colReducer(col, action),
+    focusKey: newFocus,
+    stats: newStats,
+    section: getSection(newFocus),
+    filters: filterReducer(filters, action, newStats),
+    halidom: halidomReducer(halidom, action, newStats),
+    details: detailReducer(details, action, newStats, stats),
   }
 }
 

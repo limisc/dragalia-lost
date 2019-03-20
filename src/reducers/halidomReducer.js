@@ -1,87 +1,98 @@
-import { reducerCreator } from '../actions/actions';
-import actionTypes from '../actions/actionTypes';
-import state from '../store/state';
-import * as facilities from '../actions/facility';
+import {
+  actionTypes,
+  reducerCreator,
+} from "actions";
+import { facility } from "data";
+import { state } from "store";
 
-const resetHalidom = () => {
-  return { ...state.halidom };
-}
+const syncHalidom = (halidom, action, stats) => {
 
-const defaultHalidom = (halidom) => {
-  const LV = { element: 30, weapon: 16, dragon: 0 };
-  let update = {};
-
-  for (const f in halidom) {
-    if (halidom.hasOwnProperty(f) && halidom[f]) {
-      let facility = { ...halidom[f] };
-      let item = null;
-      for (const i of halidom[f].list) {
-        const level = halidom[f][i].type === "slime" ? 15 : LV[f];
-        item = { ...halidom[f][i], level }
-        facility = { ...facility, [i]: item };
-      }
-      update = { ...update, [f]: facility };
-    }
+  const updates = {};
+  const { adventurer, dragon } = stats;
+  if (adventurer) {
+    const { element, weapon } = adventurer;
+    updates.element = facility.element[element];
+    updates.weapon = facility.weapon[weapon];
   }
-  return { ...halidom, ...update };
-}
 
-const maxHalidom = (halidom) => {
-  let update = {};
-  for (const f in halidom) {
-    if (halidom.hasOwnProperty(f) && halidom[f]) {
-      let facility = { ...halidom[f] };
-      let item = null;
-      for (const i of halidom[f].list) {
-        const level = halidom[f][i].type === "slime" ? 15 : 30;
-        item = { ...halidom[f][i], level }
-        facility = { ...facility, [i]: item };
-      }
-      update = { ...update, [f]: facility };
-    }
+  if (dragon) {
+    const { element: dragonElement } = dragon;
+    updates.dragon = facility.dragon[dragonElement];
   }
-  return { ...halidom, ...update };
+
+  return {
+    ...state.halidom,
+    ...updates,
+  };
 }
 
 const selectHalidom = (halidom, action, stats) => {
-  const { section, item } = action;
-  const prevItem = stats[section];
-  if (section === "adventurer") {
-    let { element, weapon } = halidom;
-    if (!prevItem) {
-      element = facilities.element[item.element];
-      weapon = facilities.weapon[item.type];
+  const { statsKey } = action;
+  const { adventurer, dragon } = stats;
+
+  if (statsKey === "adventurer") {
+    if (adventurer) {
+      const { element, weapon } = adventurer;
+      const updates = {};
+      if (!halidom.element || halidom.element.key !== element) {
+        updates.element = facility.element[element];
+      }
+
+      if (!halidom.weapon || halidom.weapon.key !== weapon) {
+        updates.weapon = facility.weapon[weapon];
+      }
+
+      if (!!Object.keys(updates)) {
+        return {
+          ...halidom,
+          ...updates,
+        };
+      }
     } else {
-      if (prevItem.element !== item.element) element = facilities.element[item.element];
-      if (prevItem.type !== item.type) weapon = facilities.weapon[item.type];
+      return {
+        ...halidom,
+        element: null,
+        weapon: null,
+      };
     }
-    return { ...halidom, element, weapon };
-  } else if ((section === "dragon") && (!prevItem || prevItem.element !== item.element)) {
-    return { ...halidom, dragon: facilities.dragon[item.element] };
+  } else if (statsKey === "dragon") {
+    if (dragon) {
+      const { element } = dragon;
+      if (!halidom.dragon || halidom.dragon.key !== element) {
+        return {
+          ...halidom,
+          dragon: facility.dragon[element],
+        };
+      }
+    } else {
+      return {
+        ...halidom,
+        dragon: null,
+      };
+    }
   }
+
   return halidom;
 }
 
 const updateHalidom = (halidom, action) => {
-  const { facility, index, level } = action;
+  const { field, index, level } = action;
   return {
     ...halidom,
-    [facility]: {
-      ...halidom[facility],
+    [field]: {
+      ...halidom[field],
       [index]: {
-        ...halidom[facility][index],
-        level
-      }
-    }
+        ...halidom[field][index],
+        level,
+      },
+    },
   };
 }
 
 const halidomReducer = reducerCreator({
+  [actionTypes.SYNC_STATS]: syncHalidom,
+  [actionTypes.SELECT_STATS]: selectHalidom,
   [actionTypes.UPDATE_HALIDOM]: updateHalidom,
-  [actionTypes.SELECT_HALIDOM]: selectHalidom,
-  [actionTypes.RESET_HALIDOM]: resetHalidom,
-  [actionTypes.DEFAULT_HALIDOM]: defaultHalidom,
-  [actionTypes.MAX_HALIDOM]: maxHalidom,
 });
 
 export default halidomReducer;

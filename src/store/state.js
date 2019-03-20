@@ -1,8 +1,9 @@
 const state = {
-  language: "en",
-  focusSection: "adventurer",
+  focusKey: "adventurer",
+  section: "adventurer",
+  col: 0,
   filters: {
-    type: "",
+    weapon: "",
     element: "",
     rarity: "",
     tier: "",
@@ -20,14 +21,32 @@ const state = {
     dragon: null,
   },
   details: {
-    adventurer: { HP: 0, STR: 0, might: 0 },
-    weapon: { HP: 0, STR: 0, might: 0 },
-    wyrmprint1: { HP: 0, STR: 0, might: 0 },
-    wyrmprint2: { HP: 0, STR: 0, might: 0 },
-    dragon: { HP: 0, STR: 0, might: 0 },
-    ability: { HP: 0, STR: 0, might: 0 },
-    halidom: { HP: 0, STR: 0, might: 0 },
-  }
+    adventurer: {
+      HP: 0,
+      STR: 0,
+      might: 0,
+    },
+    weapon: {
+      HP: 0,
+      STR: 0,
+      might: 0,
+    },
+    wyrmprint1: {
+      HP: 0,
+      STR: 0,
+      might: 0,
+    },
+    wyrmprint2: {
+      HP: 0,
+      STR: 0,
+      might: 0,
+    },
+    dragon: {
+      HP: 0,
+      STR: 0,
+      might: 0,
+    },
+  },
 };
 
 export default state;
