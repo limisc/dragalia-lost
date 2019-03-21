@@ -32,6 +32,7 @@ class SelectStats extends Component {
           fields={fields}
         />
         <StatsList
+          key={section}
           lang={lang}
           fields={fields}
         />

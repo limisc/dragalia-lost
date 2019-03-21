@@ -77,7 +77,7 @@ class StatsList extends PureComponent {
       <div style={{ height: "calc(100vh - 290px)" }}>
         <TextField
           value={search}
-          className="fluid"
+          className="filters"
           label={translate("search", lang)}
           onChange={this.onChange}
           inputProps={{
