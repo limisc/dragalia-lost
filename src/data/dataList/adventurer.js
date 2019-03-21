@@ -1,4 +1,5 @@
-const adventurer = [
+const adventurer =
+[
   {
     "id": "100001_01_r0",
     "name": {

@@ -1,19 +1,21 @@
 // @flow
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { TextField } from '@material-ui/core';
 import { FixedSizeList } from "react-window";
 import AutoSizer from 'react-virtualized-auto-sizer';
+import { translate } from "actions";
 import dataList from "data";
 import ListHeader from "./ListHeader";
 import ListItem from "./ListItem";
-
-class StatsList extends Component {
+class StatsList extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       element: ["Flame", "Water", "Wind", "Light", "Shadow"],
       weapon: ["Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
+      search: "",
     };
   }
 
@@ -28,6 +30,7 @@ class StatsList extends Component {
     const {
       element,
       weapon,
+      search,
     } = this.state;
 
     let list = dataList[section];
@@ -36,6 +39,10 @@ class StatsList extends Component {
         if (!item[k].includes(filters[k])) {
           return false;
         }
+      }
+
+      if (!item.name[lang].toUpperCase().includes(search.toUpperCase())) {
+        return false;
       }
 
       return true;
@@ -66,9 +73,18 @@ class StatsList extends Component {
       if (item1.id < item2.id) return 1;
       return 0;
     });
-
     return (
       <div style={{ height: "calc(100vh - 290px)" }}>
+        <TextField
+          value={search}
+          className="fluid"
+          label={translate("search", lang)}
+          onChange={this.onChange}
+          inputProps={{
+            name: "search",
+          }}
+          variant="filled"
+        />
         <ListHeader
           lang={lang}
           fields={fields}
@@ -93,6 +109,8 @@ class StatsList extends Component {
       </div>
     );
   }
+
+  onChange = e => this.setState({ [e.target.name]: e.target.value });
 }
 
 const mapStateToProps = ({
