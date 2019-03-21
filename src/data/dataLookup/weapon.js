@@ -95,6 +95,44 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "301065_01_30401": {
+    "id": "301065_01_30401",
+    "name": {
+      "en": "Thunder Ingot",
+      "ja": "Thunder Ingot",
+      "zh": "雷霆铸铁"
+    },
+    "weapon": "Sword",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 42,
+    "MaxAtk": 140,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
+  "301062_01_30401": {
+    "id": "301062_01_30401",
+    "name": {
+      "en": "Empty Flash",
+      "ja": "稲妻の魔剣",
+      "zh": ""
+    },
+    "weapon": "Sword",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 38,
+    "MinAtk": 40,
+    "MaxAtk": 136,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "301008_01_30501": {
     "id": "301008_01_30501",
     "name": {
@@ -169,6 +207,25 @@ const weapon =
     "MinAtk": 42,
     "MaxAtk": 140,
     "Abilities11": 0,
+    "Abilities21": 0
+  },
+  "301047_01_39901": {
+    "id": "301047_01_39901",
+    "name": {
+      "en": "Lonely Ward",
+      "ja": "退魔の剣",
+      "zh": ""
+    },
+    "weapon": "Sword",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 25,
+    "MaxAtk": 86,
+    "Abilities11": 20,
     "Abilities21": 0
   },
   "301052_01_39901": {
@@ -285,6 +342,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "301067_01_40301": {
+    "id": "301067_01_40301",
+    "name": {
+      "en": "Gale Apogee",
+      "ja": "グレイテストゲイル",
+      "zh": ""
+    },
+    "weapon": "Sword",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 21,
+    "MaxHp": 71,
+    "MinAtk": 83,
+    "MaxAtk": 278,
+    "Abilities11": 40,
+    "Abilities21": 20
+  },
   "301036_01_40401": {
     "id": "301036_01_40401",
     "name": {
@@ -322,6 +398,44 @@ const weapon =
     "MaxAtk": 278,
     "Abilities11": 40,
     "Abilities21": 40
+  },
+  "301065_01_40401": {
+    "id": "301065_01_40401",
+    "name": {
+      "en": "Plasma Ingot",
+      "ja": "Plasma Ingot",
+      "zh": ""
+    },
+    "weapon": "Sword",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 17,
+    "MaxHp": 57,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
+  "301062_01_40401": {
+    "id": "301062_01_40401",
+    "name": {
+      "en": "Abandoned Roar",
+      "ja": "Abandoned Roar",
+      "zh": ""
+    },
+    "weapon": "Sword",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 18,
+    "MaxHp": 60,
+    "MinAtk": 64,
+    "MaxAtk": 216,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "301011_01_40501": {
     "id": "301011_01_40501",
@@ -493,6 +607,25 @@ const weapon =
     "MaxAtk": 524,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "301067_01_50301": {
+    "id": "301067_01_50301",
+    "name": {
+      "en": "Hurricane Apogee",
+      "ja": "グレイテストハリケーン",
+      "zh": "无上飓风"
+    },
+    "weapon": "Sword",
+    "element": "Wind",
+    "rarity": "5",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 27,
+    "MaxHp": 92,
+    "MinAtk": 108,
+    "MaxAtk": 362,
+    "Abilities11": 60,
+    "Abilities21": 20
   },
   "301015_01_50401": {
     "id": "301015_01_50401",
@@ -722,6 +855,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "302051_01_30401": {
+    "id": "302051_01_30401",
+    "name": {
+      "en": "Obsidian Alabaster",
+      "ja": "Obsidian Alabaster",
+      "zh": "白曜丸"
+    },
+    "weapon": "Blade",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 9,
+    "MaxHp": 33,
+    "MinAtk": 43,
+    "MaxAtk": 144,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "302009_01_30501": {
     "id": "302009_01_30501",
     "name": {
@@ -740,6 +892,25 @@ const weapon =
     "MaxAtk": 236,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "302054_01_30501": {
+    "id": "302054_01_30501",
+    "name": {
+      "en": "Resentment",
+      "ja": "妖魔刀・怨嗟",
+      "zh": "妖魔刀・怨嗟"
+    },
+    "weapon": "Blade",
+    "element": "Shadow",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 35,
+    "MinAtk": 42,
+    "MaxAtk": 140,
+    "Abilities11": 20,
+    "Abilities21": 50
   },
   "302021_01_39901": {
     "id": "302021_01_39901",
@@ -814,6 +985,25 @@ const weapon =
     "MaxHp": 21,
     "MinAtk": 27,
     "MaxAtk": 91,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "302055_01_39901": {
+    "id": "302055_01_39901",
+    "name": {
+      "en": "Rest Eternal",
+      "ja": "妖刀・幽",
+      "zh": "妖刀・幽"
+    },
+    "weapon": "Blade",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 6,
+    "MaxHp": 22,
+    "MinAtk": 26,
+    "MaxAtk": 88,
     "Abilities11": 20,
     "Abilities21": 0
   },
@@ -912,6 +1102,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "302053_01_40301": {
+    "id": "302053_01_40301",
+    "name": {
+      "en": "Tempestrage",
+      "ja": "烈斬刀・颶風",
+      "zh": "烈斩刀・飓风"
+    },
+    "weapon": "Blade",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 19,
+    "MaxHp": 66,
+    "MinAtk": 85,
+    "MaxAtk": 286,
+    "Abilities11": 40,
+    "Abilities21": 20
+  },
   "302026_01_40401": {
     "id": "302026_01_40401",
     "name": {
@@ -950,6 +1159,25 @@ const weapon =
     "Abilities11": 40,
     "Abilities21": 40
   },
+  "302051_01_40401": {
+    "id": "302051_01_40401",
+    "name": {
+      "en": "Obsidian Scintillation",
+      "ja": "Obsidian Scintillation",
+      "zh": "终极・天光曜丸"
+    },
+    "weapon": "Blade",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 15,
+    "MaxHp": 53,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "302029_01_40501": {
     "id": "302029_01_40501",
     "name": {
@@ -968,6 +1196,25 @@ const weapon =
     "MaxAtk": 361,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "302054_01_40501": {
+    "id": "302054_01_40501",
+    "name": {
+      "en": "Unwelcome Meeting",
+      "ja": "妖魔刀・怨憎会苦",
+      "zh": "妖魔刀・怨憎会苦"
+    },
+    "weapon": "Blade",
+    "element": "Shadow",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 16,
+    "MaxHp": 55,
+    "MinAtk": 66,
+    "MaxAtk": 222,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "302012_01_49901": {
     "id": "302012_01_49901",
@@ -1120,6 +1367,25 @@ const weapon =
     "MaxAtk": 572,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "302053_01_50301": {
+    "id": "302053_01_50301",
+    "name": {
+      "en": "Heavenrend",
+      "ja": "烈斬刀・颶風断空",
+      "zh": "烈斩刀・飓风断空"
+    },
+    "weapon": "Blade",
+    "element": "Wind",
+    "rarity": "5",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 25,
+    "MaxHp": 85,
+    "MinAtk": 111,
+    "MaxAtk": 372,
+    "Abilities11": 60,
+    "Abilities21": 20
   },
   "302025_01_50401": {
     "id": "302025_01_50401",
@@ -1368,6 +1634,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "303050_01_30301": {
+    "id": "303050_01_30301",
+    "name": {
+      "en": "Blustery Button Dagger",
+      "ja": "ビュウビュウキノコの短剣",
+      "zh": "呼啸蘑菇短剑"
+    },
+    "weapon": "Dagger",
+    "element": "Wind",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 36,
+    "MinAtk": 41,
+    "MaxAtk": 137,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "303008_01_30401": {
     "id": "303008_01_30401",
     "name": {
@@ -1386,6 +1671,25 @@ const weapon =
     "MaxAtk": 205,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "303054_01_30401": {
+    "id": "303054_01_30401",
+    "name": {
+      "en": "Dazzling Big Boy",
+      "ja": "Dazzling Big Boy",
+      "zh": "星光重刃"
+    },
+    "weapon": "Dagger",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 12,
+    "MaxHp": 40,
+    "MinAtk": 38,
+    "MaxAtk": 129,
+    "Abilities11": 20,
+    "Abilities21": 50
   },
   "303009_01_30501": {
     "id": "303009_01_30501",
@@ -1634,6 +1938,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "303050_01_40301": {
+    "id": "303050_01_40301",
+    "name": {
+      "en": "Stormy Shiitake Dagger",
+      "ja": "ボウフウキノコの短剣",
+      "zh": "风暴蘑菇短剑"
+    },
+    "weapon": "Dagger",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 17,
+    "MaxHp": 58,
+    "MinAtk": 65,
+    "MaxAtk": 218,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "303017_01_40401": {
     "id": "303017_01_40401",
     "name": {
@@ -1652,6 +1975,25 @@ const weapon =
     "MaxAtk": 354,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "303054_01_40401": {
+    "id": "303054_01_40401",
+    "name": {
+      "en": "Big Boy of Temperance",
+      "ja": "Big Boy of Temperance",
+      "zh": "流星重刃"
+    },
+    "weapon": "Dagger",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 19,
+    "MaxHp": 64,
+    "MinAtk": 61,
+    "MaxAtk": 205,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "303011_01_40501": {
     "id": "303011_01_40501",
@@ -1995,6 +2337,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "304053_01_30401": {
+    "id": "304053_01_30401",
+    "name": {
+      "en": "Abandoned Relic",
+      "ja": "シャインレリック",
+      "zh": "闪耀遗物之斧"
+    },
+    "weapon": "Axe",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 12,
+    "MaxHp": 41,
+    "MinAtk": 41,
+    "MaxAtk": 139,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "304009_01_30501": {
     "id": "304009_01_30501",
     "name": {
@@ -2069,6 +2430,25 @@ const weapon =
     "MinAtk": 41,
     "MaxAtk": 139,
     "Abilities11": 0,
+    "Abilities21": 0
+  },
+  "304037_01_39901": {
+    "id": "304037_01_39901",
+    "name": {
+      "en": "Reclusive Relic",
+      "ja": "レリックアックス",
+      "zh": "遗物之斧"
+    },
+    "weapon": "Axe",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 7,
+    "MaxHp": 26,
+    "MinAtk": 26,
+    "MaxAtk": 87,
+    "Abilities11": 20,
     "Abilities21": 0
   },
   "304010_01_40101": {
@@ -2166,6 +2546,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "304054_01_40301": {
+    "id": "304054_01_40301",
+    "name": {
+      "en": "Stormwind Gaze",
+      "ja": "翠嵐グランサイト",
+      "zh": "翠岚奇观之斧"
+    },
+    "weapon": "Axe",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 24,
+    "MaxHp": 81,
+    "MinAtk": 82,
+    "MaxAtk": 275,
+    "Abilities11": 40,
+    "Abilities21": 20
+  },
   "304015_01_40401": {
     "id": "304015_01_40401",
     "name": {
@@ -2203,6 +2602,25 @@ const weapon =
     "MaxAtk": 292,
     "Abilities11": 40,
     "Abilities21": 40
+  },
+  "304053_01_40401": {
+    "id": "304053_01_40401",
+    "name": {
+      "en": "Banished Relic",
+      "ja": "バニシングレリック",
+      "zh": "灭绝遗物之斧"
+    },
+    "weapon": "Axe",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 19,
+    "MaxHp": 65,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "304030_01_40501": {
     "id": "304030_01_40501",
@@ -2413,6 +2831,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "304054_01_50301": {
+    "id": "304054_01_50301",
+    "name": {
+      "en": "Stormwrath Gaze",
+      "ja": "翠嵐グランサイト・マリス",
+      "zh": "翠岚奇观之斧・恶意"
+    },
+    "weapon": "Axe",
+    "element": "Wind",
+    "rarity": "5",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 31,
+    "MaxHp": 105,
+    "MinAtk": 107,
+    "MaxAtk": 357,
+    "Abilities11": 60,
+    "Abilities21": 20
+  },
   "304013_01_50401": {
     "id": "304013_01_50401",
     "name": {
@@ -2622,6 +3059,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "305057_01_30301": {
+    "id": "305057_01_30301",
+    "name": {
+      "en": "Gustspore Lance",
+      "ja": "パラソルストリーム",
+      "zh": "激流阳伞"
+    },
+    "weapon": "Lance",
+    "element": "Wind",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 39,
+    "MinAtk": 41,
+    "MaxAtk": 139,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "305008_01_30401": {
     "id": "305008_01_30401",
     "name": {
@@ -2660,6 +3116,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "305061_01_30401": {
+    "id": "305061_01_30401",
+    "name": {
+      "en": "Outcast's Wish",
+      "ja": "願望の槍",
+      "zh": ""
+    },
+    "weapon": "Lance",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 35,
+    "MinAtk": 37,
+    "MaxAtk": 125,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "305034_01_30501": {
     "id": "305034_01_30501",
     "name": {
@@ -2678,6 +3153,25 @@ const weapon =
     "MaxAtk": 220,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "305062_01_30501": {
+    "id": "305062_01_30501",
+    "name": {
+      "en": "Quavering Bloodlust",
+      "ja": "ブラッディスピア",
+      "zh": ""
+    },
+    "weapon": "Lance",
+    "element": "Shadow",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 39,
+    "MinAtk": 41,
+    "MaxAtk": 139,
+    "Abilities11": 20,
+    "Abilities21": 50
   },
   "305039_01_39901": {
     "id": "305039_01_39901",
@@ -2742,6 +3236,44 @@ const weapon =
       "en": "Leechspore Lance",
       "ja": "パラソルランス",
       "zh": "尖枪阳伞"
+    },
+    "weapon": "Lance",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 26,
+    "MaxAtk": 87,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "305049_01_39901": {
+    "id": "305049_01_39901",
+    "name": {
+      "en": "Solitary Desire",
+      "ja": "Solitary Desire",
+      "zh": ""
+    },
+    "weapon": "Lance",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 7,
+    "MaxHp": 24,
+    "MinAtk": 26,
+    "MaxAtk": 87,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "305063_01_39901": {
+    "id": "305063_01_39901",
+    "name": {
+      "en": "Heartseeker",
+      "ja": "Heartseeker",
+      "zh": ""
     },
     "weapon": "Lance",
     "element": "None",
@@ -2869,6 +3401,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "305057_01_40301": {
+    "id": "305057_01_40301",
+    "name": {
+      "en": "Tornadospore Lance",
+      "ja": "パラソルトルネード",
+      "zh": "龙卷阳伞"
+    },
+    "weapon": "Lance",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "305012_01_40401": {
     "id": "305012_01_40401",
     "name": {
@@ -2888,6 +3439,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "305061_01_40401": {
+    "id": "305061_01_40401",
+    "name": {
+      "en": "Lonesome Wish",
+      "ja": "願望と奇跡の槍",
+      "zh": "祈愿与奇迹之枪"
+    },
+    "weapon": "Lance",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "305035_01_40501": {
     "id": "305035_01_40501",
     "name": {
@@ -2906,6 +3476,25 @@ const weapon =
     "MaxAtk": 358,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "305062_01_40501": {
+    "id": "305062_01_40501",
+    "name": {
+      "en": "Spear of Tragedy",
+      "ja": "バッドエンドスピア",
+      "zh": ""
+    },
+    "weapon": "Lance",
+    "element": "Shadow",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 18,
+    "MaxHp": 61,
+    "MinAtk": 66,
+    "MaxAtk": 220,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "305029_01_49901": {
     "id": "305029_01_49901",
@@ -3249,6 +3838,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "306048_01_30301": {
+    "id": "306048_01_30301",
+    "name": {
+      "en": "Windfungus",
+      "ja": "ウインドファンガス",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Wind",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 39,
+    "MaxAtk": 131,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "306009_01_30401": {
     "id": "306009_01_30401",
     "name": {
@@ -3268,6 +3876,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "306051_01_30401": {
+    "id": "306051_01_30401",
+    "name": {
+      "en": "Cracklescent Bow",
+      "ja": "清香の弓",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 35,
+    "MinAtk": 40,
+    "MaxAtk": 135,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "306018_01_30501": {
     "id": "306018_01_30501",
     "name": {
@@ -3286,6 +3913,25 @@ const weapon =
     "MaxAtk": 207,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "306052_01_30501": {
+    "id": "306052_01_30501",
+    "name": {
+      "en": "Cacklemurk",
+      "ja": "闇に哄笑する弓",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Shadow",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 39,
+    "MaxAtk": 131,
+    "Abilities11": 20,
+    "Abilities21": 50
   },
   "306026_01_39901": {
     "id": "306026_01_39901",
@@ -3350,6 +3996,44 @@ const weapon =
       "en": "Fungus Bow",
       "ja": "ファンガスボウ",
       "zh": "蘑弓"
+    },
+    "weapon": "Bow",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 6,
+    "MaxHp": 23,
+    "MinAtk": 24,
+    "MaxAtk": 82,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "306043_01_39901": {
+    "id": "306043_01_39901",
+    "name": {
+      "en": "Fragrant Bow",
+      "ja": "香の弓",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 6,
+    "MaxHp": 22,
+    "MinAtk": 25,
+    "MaxAtk": 85,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "306053_01_39901": {
+    "id": "306053_01_39901",
+    "name": {
+      "en": "Mockery",
+      "ja": "嘲弄の弓",
+      "zh": ""
     },
     "weapon": "Bow",
     "element": "None",
@@ -3458,6 +4142,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "306048_01_40301": {
+    "id": "306048_01_40301",
+    "name": {
+      "en": "Stormfungus",
+      "ja": "ストームファンガス",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "306037_01_40401": {
     "id": "306037_01_40401",
     "name": {
@@ -3477,6 +4180,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "306051_01_40401": {
+    "id": "306051_01_40401",
+    "name": {
+      "en": "Heaven's Bouquet",
+      "ja": "天薫の弓",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 16,
+    "MaxHp": 56,
+    "MinAtk": 64,
+    "MaxAtk": 214,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "306016_01_40501": {
     "id": "306016_01_40501",
     "name": {
@@ -3495,6 +4217,25 @@ const weapon =
     "MaxAtk": 320,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "306052_01_40501": {
+    "id": "306052_01_40501",
+    "name": {
+      "en": "Howlshadow",
+      "ja": "暗夜に狂笑する弓",
+      "zh": ""
+    },
+    "weapon": "Bow",
+    "element": "Shadow",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 62,
+    "MaxAtk": 207,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "306013_01_49901": {
     "id": "306013_01_49901",
@@ -3819,6 +4560,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "307054_01_30301": {
+    "id": "307054_01_30301",
+    "name": {
+      "en": "The Bellow",
+      "ja": "ノイズヘッド",
+      "zh": ""
+    },
+    "weapon": "Wand",
+    "element": "Wind",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 11,
+    "MaxHp": 37,
+    "MinAtk": 40,
+    "MaxAtk": 136,
+    "Abilities11": 20,
+    "Abilities21": 50
+  },
   "307021_01_30401": {
     "id": "307021_01_30401",
     "name": {
@@ -3856,6 +4616,25 @@ const weapon =
     "MaxAtk": 222,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "307056_01_30501": {
+    "id": "307056_01_30501",
+    "name": {
+      "en": "Wickedheart",
+      "ja": "邪心のロッド",
+      "zh": ""
+    },
+    "weapon": "Wand",
+    "element": "Shadow",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 10,
+    "MaxHp": 34,
+    "MinAtk": 43,
+    "MaxAtk": 144,
+    "Abilities11": 20,
+    "Abilities21": 50
   },
   "307042_01_39901": {
     "id": "307042_01_39901",
@@ -3930,6 +4709,25 @@ const weapon =
     "MaxHp": 22,
     "MinAtk": 26,
     "MaxAtk": 88,
+    "Abilities11": 20,
+    "Abilities21": 0
+  },
+  "307057_01_39901": {
+    "id": "307057_01_39901",
+    "name": {
+      "en": "Clamor Wand",
+      "ja": "ざわめきのロッド",
+      "zh": ""
+    },
+    "weapon": "Wand",
+    "element": "None",
+    "rarity": "3",
+    "tier": "1",
+    "Skill": false,
+    "MinHp": 6,
+    "MaxHp": 21,
+    "MinAtk": 27,
+    "MaxAtk": 91,
     "Abilities11": 20,
     "Abilities21": 0
   },
@@ -4047,6 +4845,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "307054_01_40301": {
+    "id": "307054_01_40301",
+    "name": {
+      "en": "The Fury",
+      "ja": "レイジングヘッド",
+      "zh": ""
+    },
+    "weapon": "Wand",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 17,
+    "MaxHp": 59,
+    "MinAtk": 64,
+    "MaxAtk": 216,
+    "Abilities11": 40,
+    "Abilities21": 50
+  },
   "307010_01_40401": {
     "id": "307010_01_40401",
     "name": {
@@ -4084,6 +4901,25 @@ const weapon =
     "MaxAtk": 372,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "307056_01_40501": {
+    "id": "307056_01_40501",
+    "name": {
+      "en": "Darkheart",
+      "ja": "禍々しき邪心のロッド",
+      "zh": ""
+    },
+    "weapon": "Wand",
+    "element": "Shadow",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 16,
+    "MaxHp": 54,
+    "MinAtk": 68,
+    "MaxAtk": 229,
+    "Abilities11": 40,
+    "Abilities21": 50
   },
   "307012_01_49901": {
     "id": "307012_01_49901",
@@ -4448,6 +5284,27 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "308050_01_30401": {
+    "id": "308050_01_30401",
+    "name": {
+      "en": "Gleamchant",
+      "ja": "Gleamchant",
+      "zh": ""
+    },
+    "weapon": "Staff",
+    "element": "Light",
+    "rarity": "3",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 13,
+    "MaxHp": 45,
+    "MinAtk": 36,
+    "MaxAtk": 123,
+    "Abilities11": 20,
+    "Abilities21": 50,
+    "DefEle": "Light",
+    "Def": 3
+  },
   "308020_01_30501": {
     "id": "308020_01_30501",
     "name": {
@@ -4642,6 +5499,25 @@ const weapon =
     "Abilities11": 0,
     "Abilities21": 0
   },
+  "308052_01_40301": {
+    "id": "308052_01_40301",
+    "name": {
+      "en": "Wind and Cloud",
+      "ja": "Wind and Cloud",
+      "zh": ""
+    },
+    "weapon": "Staff",
+    "element": "Wind",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 26,
+    "MaxHp": 89,
+    "MinAtk": 73,
+    "MaxAtk": 244,
+    "Abilities11": 40,
+    "Abilities21": 40
+  },
   "308018_01_40401": {
     "id": "308018_01_40401",
     "name": {
@@ -4679,6 +5555,27 @@ const weapon =
     "MaxAtk": 244,
     "Abilities11": 40,
     "Abilities21": 40
+  },
+  "308050_01_40401": {
+    "id": "308050_01_40401",
+    "name": {
+      "en": "Luminchant",
+      "ja": "Luminchant",
+      "zh": ""
+    },
+    "weapon": "Staff",
+    "element": "Light",
+    "rarity": "4",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 21,
+    "MaxHp": 71,
+    "MinAtk": 58,
+    "MaxAtk": 195,
+    "Abilities11": 40,
+    "Abilities21": 50,
+    "DefEle": "Light",
+    "Def": 5
   },
   "308019_01_40501": {
     "id": "308019_01_40501",
@@ -4850,6 +5747,25 @@ const weapon =
     "MaxAtk": 487,
     "Abilities11": 0,
     "Abilities21": 0
+  },
+  "308052_01_50301": {
+    "id": "308052_01_50301",
+    "name": {
+      "en": "Rise and Fall",
+      "ja": "興亡をもたらすもの",
+      "zh": ""
+    },
+    "weapon": "Staff",
+    "element": "Wind",
+    "rarity": "5",
+    "tier": "3",
+    "Skill": false,
+    "MinHp": 34,
+    "MaxHp": 115,
+    "MinAtk": 95,
+    "MaxAtk": 317,
+    "Abilities11": 60,
+    "Abilities21": 40
   },
   "308014_01_50401": {
     "id": "308014_01_50401",
