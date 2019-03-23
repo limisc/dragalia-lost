@@ -1440,7 +1440,7 @@ const dragon =
     "id": "210089_01",
     "name": {
       "en": "Bronze Fafnir",
-      "ja": "Bronze Fafnir",
+      "ja": "ブロンズファフニール",
       "zh": "铜法芙纳"
     },
     "element": "Shadow",
@@ -1466,7 +1466,7 @@ const dragon =
     "id": "210090_01",
     "name": {
       "en": "Silver Fafnir",
-      "ja": "Silver Fafnir",
+      "ja": "シルバーファフニール",
       "zh": "银法芙纳"
     },
     "element": "Shadow",

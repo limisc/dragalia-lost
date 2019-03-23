@@ -99,7 +99,7 @@ const weapon =
     "id": "301065_01_30401",
     "name": {
       "en": "Thunder Ingot",
-      "ja": "Thunder Ingot",
+      "ja": "サンダーインゴット",
       "zh": "雷霆铸铁"
     },
     "weapon": "Sword",
@@ -119,7 +119,7 @@ const weapon =
     "name": {
       "en": "Empty Flash",
       "ja": "稲妻の魔剣",
-      "zh": ""
+      "zh": "电闪魔剑"
     },
     "weapon": "Sword",
     "element": "Light",
@@ -214,7 +214,7 @@ const weapon =
     "name": {
       "en": "Lonely Ward",
       "ja": "退魔の剣",
-      "zh": ""
+      "zh": "退魔之剑"
     },
     "weapon": "Sword",
     "element": "None",
@@ -347,7 +347,7 @@ const weapon =
     "name": {
       "en": "Gale Apogee",
       "ja": "グレイテストゲイル",
-      "zh": ""
+      "zh": "无上烈风"
     },
     "weapon": "Sword",
     "element": "Wind",
@@ -403,8 +403,8 @@ const weapon =
     "id": "301065_01_40401",
     "name": {
       "en": "Plasma Ingot",
-      "ja": "Plasma Ingot",
-      "zh": ""
+      "ja": "プラズマインゴット",
+      "zh": "电浆铸铁"
     },
     "weapon": "Sword",
     "element": "Light",
@@ -422,8 +422,8 @@ const weapon =
     "id": "301062_01_40401",
     "name": {
       "en": "Abandoned Roar",
-      "ja": "Abandoned Roar",
-      "zh": ""
+      "ja": "轟雷の魔剣",
+      "zh": "轰雷魔剑"
     },
     "weapon": "Sword",
     "element": "Light",
@@ -859,7 +859,7 @@ const weapon =
     "id": "302051_01_30401",
     "name": {
       "en": "Obsidian Alabaster",
-      "ja": "Obsidian Alabaster",
+      "ja": "白曜丸",
       "zh": "白曜丸"
     },
     "weapon": "Blade",
@@ -1163,7 +1163,7 @@ const weapon =
     "id": "302051_01_40401",
     "name": {
       "en": "Obsidian Scintillation",
-      "ja": "Obsidian Scintillation",
+      "ja": "真打・天光曜丸",
       "zh": "终极・天光曜丸"
     },
     "weapon": "Blade",
@@ -1676,7 +1676,7 @@ const weapon =
     "id": "303054_01_30401",
     "name": {
       "en": "Dazzling Big Boy",
-      "ja": "Dazzling Big Boy",
+      "ja": "スターライトヘヴィ",
       "zh": "星光重刃"
     },
     "weapon": "Dagger",
@@ -1980,7 +1980,7 @@ const weapon =
     "id": "303054_01_40401",
     "name": {
       "en": "Big Boy of Temperance",
-      "ja": "Big Boy of Temperance",
+      "ja": "メテオシャワーヘヴィ",
       "zh": "流星重刃"
     },
     "weapon": "Dagger",
@@ -3121,7 +3121,7 @@ const weapon =
     "name": {
       "en": "Outcast's Wish",
       "ja": "願望の槍",
-      "zh": ""
+      "zh": "祈愿之枪"
     },
     "weapon": "Lance",
     "element": "Light",
@@ -3159,7 +3159,7 @@ const weapon =
     "name": {
       "en": "Quavering Bloodlust",
       "ja": "ブラッディスピア",
-      "zh": ""
+      "zh": "鲜血之枪"
     },
     "weapon": "Lance",
     "element": "Shadow",
@@ -3253,8 +3253,8 @@ const weapon =
     "id": "305049_01_39901",
     "name": {
       "en": "Solitary Desire",
-      "ja": "Solitary Desire",
-      "zh": ""
+      "ja": "未練の槍",
+      "zh": "怨念之枪"
     },
     "weapon": "Lance",
     "element": "None",
@@ -3272,8 +3272,8 @@ const weapon =
     "id": "305063_01_39901",
     "name": {
       "en": "Heartseeker",
-      "ja": "Heartseeker",
-      "zh": ""
+      "ja": "テリブルスピア",
+      "zh": "恐怖之枪"
     },
     "weapon": "Lance",
     "element": "None",
@@ -3482,7 +3482,7 @@ const weapon =
     "name": {
       "en": "Spear of Tragedy",
       "ja": "バッドエンドスピア",
-      "zh": ""
+      "zh": "末路之枪"
     },
     "weapon": "Lance",
     "element": "Shadow",
@@ -3843,7 +3843,7 @@ const weapon =
     "name": {
       "en": "Windfungus",
       "ja": "ウインドファンガス",
-      "zh": ""
+      "zh": "风蘑弓"
     },
     "weapon": "Bow",
     "element": "Wind",
@@ -3881,7 +3881,7 @@ const weapon =
     "name": {
       "en": "Cracklescent Bow",
       "ja": "清香の弓",
-      "zh": ""
+      "zh": "清香之弓"
     },
     "weapon": "Bow",
     "element": "Light",
@@ -3919,7 +3919,7 @@ const weapon =
     "name": {
       "en": "Cacklemurk",
       "ja": "闇に哄笑する弓",
-      "zh": ""
+      "zh": "暗黑疯笑弓"
     },
     "weapon": "Bow",
     "element": "Shadow",
@@ -4014,7 +4014,7 @@ const weapon =
     "name": {
       "en": "Fragrant Bow",
       "ja": "香の弓",
-      "zh": ""
+      "zh": "芳香之弓"
     },
     "weapon": "Bow",
     "element": "None",
@@ -4033,7 +4033,7 @@ const weapon =
     "name": {
       "en": "Mockery",
       "ja": "嘲弄の弓",
-      "zh": ""
+      "zh": "嘲弄之弓"
     },
     "weapon": "Bow",
     "element": "None",
@@ -4147,7 +4147,7 @@ const weapon =
     "name": {
       "en": "Stormfungus",
       "ja": "ストームファンガス",
-      "zh": ""
+      "zh": "风暴蘑弓"
     },
     "weapon": "Bow",
     "element": "Wind",
@@ -4185,7 +4185,7 @@ const weapon =
     "name": {
       "en": "Heaven's Bouquet",
       "ja": "天薫の弓",
-      "zh": ""
+      "zh": "天薰之弓"
     },
     "weapon": "Bow",
     "element": "Light",
@@ -4223,7 +4223,7 @@ const weapon =
     "name": {
       "en": "Howlshadow",
       "ja": "暗夜に狂笑する弓",
-      "zh": ""
+      "zh": "暗夜狂笑弓"
     },
     "weapon": "Bow",
     "element": "Shadow",
@@ -4565,7 +4565,7 @@ const weapon =
     "name": {
       "en": "The Bellow",
       "ja": "ノイズヘッド",
-      "zh": ""
+      "zh": "噪声之首"
     },
     "weapon": "Wand",
     "element": "Wind",
@@ -4622,7 +4622,7 @@ const weapon =
     "name": {
       "en": "Wickedheart",
       "ja": "邪心のロッド",
-      "zh": ""
+      "zh": "邪念魔杖"
     },
     "weapon": "Wand",
     "element": "Shadow",
@@ -4717,7 +4717,7 @@ const weapon =
     "name": {
       "en": "Clamor Wand",
       "ja": "ざわめきのロッド",
-      "zh": ""
+      "zh": "烦扰魔杖"
     },
     "weapon": "Wand",
     "element": "None",
@@ -4850,7 +4850,7 @@ const weapon =
     "name": {
       "en": "The Fury",
       "ja": "レイジングヘッド",
-      "zh": ""
+      "zh": "狂怒之首"
     },
     "weapon": "Wand",
     "element": "Wind",
@@ -4907,7 +4907,7 @@ const weapon =
     "name": {
       "en": "Darkheart",
       "ja": "禍々しき邪心のロッド",
-      "zh": ""
+      "zh": "不详邪念魔杖"
     },
     "weapon": "Wand",
     "element": "Shadow",
@@ -5288,8 +5288,8 @@ const weapon =
     "id": "308050_01_30401",
     "name": {
       "en": "Gleamchant",
-      "ja": "Gleamchant",
-      "zh": ""
+      "ja": "ホワイトオーダー",
+      "zh": "白光唤魔法杖"
     },
     "weapon": "Staff",
     "element": "Light",
@@ -5503,8 +5503,8 @@ const weapon =
     "id": "308052_01_40301",
     "name": {
       "en": "Wind and Cloud",
-      "ja": "Wind and Cloud",
-      "zh": ""
+      "ja": "風雲を呼ぶもの",
+      "zh": "呼风唤雨"
     },
     "weapon": "Staff",
     "element": "Wind",
@@ -5560,8 +5560,8 @@ const weapon =
     "id": "308050_01_40401",
     "name": {
       "en": "Luminchant",
-      "ja": "Luminchant",
-      "zh": ""
+      "ja": "ブリリアントオーダー",
+      "zh": "闪耀唤魔法杖"
     },
     "weapon": "Staff",
     "element": "Light",
@@ -5753,7 +5753,7 @@ const weapon =
     "name": {
       "en": "Rise and Fall",
       "ja": "興亡をもたらすもの",
-      "zh": ""
+      "zh": "亦兴亦亡"
     },
     "weapon": "Staff",
     "element": "Wind",
