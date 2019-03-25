@@ -14,10 +14,14 @@
   padding: 16px;
 }
 
-.collapse-div {
+[class*='MuiCollapse-container-'] {
   width: 100%;
+}
+
+.collapse-div {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .details-row, .details-total {
