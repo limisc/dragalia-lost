@@ -245,13 +245,13 @@ const dragon = {
   Flame: {
     key: "Flame",
     list: ["0"],
-    "0": { id: "101001", type: "fafnir", level: 30, image: "TW02_101001" },
+    "0": { id: "101001", type: "fafnir", level: 0, image: "TW02_101001" },
   },
   Water: null,
   Wind: {
     key: "Wind",
     list: ["0"],
-    "0": { id: "101003", type: "fafnir", level: 30, image: "TW02_101003" },
+    "0": { id: "101003", type: "fafnir", level: 0, image: "TW02_101003" },
   },
   Light: null,
   Shadow: null,
