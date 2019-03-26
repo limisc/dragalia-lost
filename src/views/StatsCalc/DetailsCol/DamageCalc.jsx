@@ -247,6 +247,7 @@ class DamageCalc extends React.PureComponent {
       }
 
       // wyrmprint Def & Res
+      let wDef = 0, wReduce = 0, wRes = 0;
       if (wyrmprint1) {
         const {
           unbind,
@@ -261,32 +262,32 @@ class DamageCalc extends React.PureComponent {
         } = wyrmprint1;
         if (unbind === "4") {
           if (Def2) {
-            Def += Def2;
+            wDef += Def2;
             textArea.push(`wyrmprint1,Def,${Def2}`);
           }
 
           if (conquer && conquer === dungeon) {
-            reduceDamage += reduceDamage2;
+            wReduce += reduceDamage2;
             textArea.push(`wyrmprint1,reduceDamage,${reduceDamage2}`);
           }
 
           if (ResEle && info.element === ResEle) {
-            Res += Res2;
+            wRes += Res2;
             textArea.push(`wyrmprint1,Res,${Res2}`);
           }
         } else {
           if (Def1) {
-            Def += Def1;
+            wDef += Def1;
             textArea.push(`wyrmprint1,Def,${Def1}`);
           }
 
           if (conquer && conquer === dungeon) {
-            reduceDamage += reduceDamage1;
+            wReduce += reduceDamage1;
             textArea.push(`wyrmprint1,reduceDamage,${reduceDamage1}`);
           }
 
           if (ResEle && info.element === ResEle) {
-            Res += Res1;
+            wRes += Res1;
             textArea.push(`wyrmprint1,Res,${Res1}`);
           }
         }
@@ -306,36 +307,70 @@ class DamageCalc extends React.PureComponent {
         } = wyrmprint2;
         if (unbind === "4") {
           if (Def2) {
-            Def += Def2;
-            textArea.push(`wyrmprint2,Def,${Def2}`);
+            wDef += Def2;
+            if (wDef > 20) {
+              textArea.push(`wyrmprint2,Def,${20 - wDef + Def2}(${Def2})`);
+              wDef = 20;
+            } else {
+              textArea.push(`wyrmprint2,Def,${Def2}`);
+            }
           }
 
           if (conquer && conquer === dungeon) {
-            reduceDamage += reduceDamage2;
-            textArea.push(`wyrmprint2,reduceDamage,${reduceDamage2}`);
+            wReduce += reduceDamage2;
+            if (wReduce > 25) {
+              textArea.push(`wyrmprint2,reduceDamage,${25 - wReduce + reduceDamage2}(${reduceDamage2})`);
+              wReduce = 25;
+            } else {
+              textArea.push(`wyrmprint2,reduceDamage,${reduceDamage2}`);
+            }
           }
 
           if (ResEle && info.element === ResEle) {
-            Res += Res2;
-            textArea.push(`wyrmprint2,Res,${Res2}`);
+            wRes += Res2;
+            if (wRes > 15) {
+              textArea.push(`wyrmprint2,Res,${15 - wRes + Res2}(${Res2})`);
+              wRes = 15;
+            } else {
+              textArea.push(`wyrmprint2,Res,${Res2}`);
+            }
           }
         } else {
           if (Def1) {
-            Def += Def1;
-            textArea.push(`wyrmprint2,Def,${Def1}`);
+            wDef += Def1;
+            if (wDef > 20) {
+              textArea.push(`wyrmprint2,Def,${20 - wDef + Def1}(${Def1})`);
+              wDef = 20;
+            } else {
+              textArea.push(`wyrmprint2,Def,${Def1}`);
+            }
           }
 
           if (conquer && conquer === dungeon) {
-            reduceDamage += reduceDamage1;
-            textArea.push(`wyrmprint2,reduceDamage,${reduceDamage1}`);
+            wReduce += reduceDamage1;
+            if (wReduce > 25) {
+              textArea.push(`wyrmprint2,reduceDamage,${25 - wReduce + reduceDamage1}(${reduceDamage1})`);
+              wReduce = 25;
+            } else {
+              textArea.push(`wyrmprint2,reduceDamage,${reduceDamage1}`);
+            }
           }
 
           if (ResEle && info.element === ResEle) {
-            Res += Res1;
-            textArea.push(`wyrmprint2,Res,${Res1}`);
+            wRes += Res1;
+            if (wRes > 15) {
+              textArea.push(`wyrmprint2,Res,${15 - wRes + Res1}(${Res1})`);
+              wRes = 15;
+            } else {
+              textArea.push(`wyrmprint2,Res,${Res1}`);
+            }
           }
         }
       }
+
+      Def += wDef;
+      reduceDamage += wReduce;
+      Res += wRes;
 
       // dragon Res
       if (
