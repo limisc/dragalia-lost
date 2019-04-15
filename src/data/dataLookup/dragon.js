@@ -1,5 +1,5 @@
 const dragon =
-{
+ {
   "210001_01": {
     "id": "210001_01",
     "name": {
@@ -1436,6 +1436,32 @@ const dragon =
       "STR": 45
     }
   },
+  "210081_01": {
+    "id": "210081_01",
+    "name": {
+      "en": "Simurgh",
+      "ja": "シームルグ",
+      "zh": "思摩夫"
+    },
+    "element": "Water",
+    "rarity": "5",
+    "MinHp": 38,
+    "MaxHp": 383,
+    "MinAtk": 11,
+    "MaxAtk": 113,
+    "Abilities11": 60,
+    "Abilities12": 70,
+    "Abilities21": 5,
+    "Abilities22": 15,
+    "ability1": {
+      "HP": 30,
+      "STR": 0
+    },
+    "ability2": {
+      "HP": 40,
+      "STR": 0
+    }
+  },
   "210089_01": {
     "id": "210089_01",
     "name": {
@@ -1475,6 +1501,32 @@ const dragon =
     "MaxHp": 209,
     "MinAtk": 6,
     "MaxAtk": 63,
+    "Abilities11": 0,
+    "Abilities12": 0,
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "ability1": {
+      "HP": 0,
+      "STR": 0
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 0
+    }
+  },
+  "210091_01": {
+    "id": "210091_01",
+    "name": {
+      "en": "Gold Fafnir",
+      "ja": "ゴールドファフニール",
+      "zh": "金法夫纳"
+    },
+    "element": "Shadow",
+    "rarity": "5",
+    "MinHp": 22,
+    "MaxHp": 229,
+    "MinAtk": 6,
+    "MaxAtk": 69,
     "Abilities11": 0,
     "Abilities12": 0,
     "Abilities21": 0,

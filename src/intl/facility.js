@@ -19,12 +19,14 @@ const facility = {
   "101003": { en: "Fafnir Statue (Wind)", zh: "风之法夫纳像", ja: "風のファフ二ール像" },
   //slime
   "101901": { en: "Magma Slime Statue", zh: "岩浆史莱姆像", ja: "マグマスライム像" },
+  "101902": { en: "Aqua Slime Statue", zh: "水史莱姆像", ja: "アクアスライム像" },
   //event
   "100901": { en: "Circus Tent", zh: "马戏团帐篷", ja: "サーカステント" },
   "101101": { en: "Wind Shrine", zh: "风之神龛", ja: "風の祠" },
   "101501": { en: "Sweet Retreat", zh: "点心之家", ja: "お菓子の家" },
   "101601": { en: "Yuletree", zh: "星龙树", ja: "星竜樹" },
-  "101701": { en: "Library Obscura", zh: "禁书图书馆", ja: "禁書図書館" }
+  "101701": { en: "Library Obscura", zh: "禁书图书馆", ja: "禁書図書館" },
+  "101801": { en: "Dragoñata", zh: "彩偶龙", ja: "ドラゴンパピエ" },
 }
 
 export default facility;

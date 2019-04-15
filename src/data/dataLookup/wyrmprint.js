@@ -1,5 +1,5 @@
 const wyrmprint =
-{
+ {
   "400006_0": {
     "id": "400006_0",
     "name": {
@@ -462,6 +462,25 @@ const wyrmprint =
       "en": "Nevermelt Ice",
       "ja": "溶けない氷",
       "zh": "不融冰"
+    },
+    "rarity": "3",
+    "MinHp": 11,
+    "MaxHp": 76,
+    "MinAtk": 3,
+    "MaxAtk": 20,
+    "Abilities11": 10,
+    "Abilities12": 20,
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400032_0": {
+    "id": "400032_0",
+    "name": {
+      "en": "Pumpkin Pail",
+      "ja": "パンプキンボックス",
+      "zh": "南瓜盒"
     },
     "rarity": "3",
     "MinHp": 11,
@@ -2458,6 +2477,84 @@ const wyrmprint =
     "Abilities12": 80,
     "Abilities21": 60,
     "Abilities22": 80,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400172_0": {
+    "id": "400172_0",
+    "name": {
+      "en": "Forest Bonds",
+      "ja": "森が紡ぐ絆",
+      "zh": "森林中养成的默契"
+    },
+    "rarity": "5",
+    "MinHp": 26,
+    "MaxHp": 177,
+    "MinAtk": 9,
+    "MaxAtk": 64,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 60,
+    "Abilities22": 60,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400174_0": {
+    "id": "400174_0",
+    "name": {
+      "en": "Egg-Shaped Dreams",
+      "ja": "エッグに描く夢",
+      "zh": "描绘在彩蛋上的梦想"
+    },
+    "rarity": "4",
+    "MinHp": 23,
+    "MaxHp": 156,
+    "MinAtk": 5,
+    "MaxAtk": 37,
+    "Abilities11": 40,
+    "Abilities12": 60,
+    "Abilities21": 10,
+    "Abilities22": 20,
+    "Abilities31": 0,
+    "Abilities32": 0,
+    "Def1": 5,
+    "Def2": 8
+  },
+  "400175_0": {
+    "id": "400175_0",
+    "name": {
+      "en": "Tiny Dragoñatas",
+      "ja": "タイニー・ドラゴンパピエ",
+      "zh": "小小彩偶龙"
+    },
+    "rarity": "3",
+    "MinHp": 10,
+    "MaxHp": 71,
+    "MinAtk": 3,
+    "MaxAtk": 25,
+    "Abilities11": 50,
+    "Abilities12": 50,
+    "Abilities21": 0,
+    "Abilities22": 0,
+    "Abilities31": 0,
+    "Abilities32": 0
+  },
+  "400176_0": {
+    "id": "400176_0",
+    "name": {
+      "en": "A Mother's Love",
+      "ja": "母の愛",
+      "zh": "母爱"
+    },
+    "rarity": "5",
+    "MinHp": 22,
+    "MaxHp": 151,
+    "MinAtk": 7,
+    "MaxAtk": 53,
+    "Abilities11": 60,
+    "Abilities12": 80,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "Abilities31": 0,
     "Abilities32": 0
   }

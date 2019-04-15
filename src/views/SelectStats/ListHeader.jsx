@@ -30,10 +30,10 @@ class ListHeader extends React.PureComponent {
         </div>
 
         {fields.map((field) => {
-          if (field === "tier") {
+          if (field === "rarity") {
             return (
               <div key={field} className="stats-list-icon center">
-                {translate("tier", lang)}
+                {translate("rarity", lang)}
               </div>
             );
           }

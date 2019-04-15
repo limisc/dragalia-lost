@@ -10,7 +10,7 @@ class SelectStats extends Component {
     this.state = {
       filterFields: {
         adventurer: ["weapon", "element", "rarity"],
-        weapon: ["weapon", "rarity", "tier"],
+        weapon: ["weapon", "rarity"],
         wyrmprint: ["rarity"],
         dragon: ["element", "rarity"],
       },

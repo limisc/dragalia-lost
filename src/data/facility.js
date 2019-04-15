@@ -161,10 +161,12 @@ const element = {
   },
   Water: {
     key: "Water",
-    list: ["0", "1", "2"],
+    list: ["0", "1", "2", "3", "4"],
     "0": { id: "100402", type: "altar", level: 30, image: "TW02_100402" },
     "1": { id: "100402", type: "altar", level: 30, image: "TW02_100402" },
     "2": { id: "101601", type: "event", level: 30, image: "TW02_101601" },
+    "3": { id: "101801", type: "event", level: 30, image: "TW02_101801" },
+    "4": { id: "101902", type: "slime", level: 15, image: "TW02_101902" },
   },
   Wind: {
     key: "Wind",

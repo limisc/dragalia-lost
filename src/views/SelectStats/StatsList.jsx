@@ -13,7 +13,7 @@ class StatsList extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      element: ["Flame", "Water", "Wind", "Light", "Shadow"],
+      element: ["Flame", "Water", "Wind", "Light", "Shadow", "None"],
       weapon: ["Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
       search: "",
     };
@@ -50,16 +50,16 @@ class StatsList extends PureComponent {
       if (item1.rarity > item2.rarity) return -1;
       if (item1.rarity < item2.rarity) return 1;
 
-      if (item1.tier) {
-        if (item1.tier > item2.tier) return -1;
-        if (item1.tier < item2.tier) return 1;
-      }
-
       if (item1.element) {
         const element1 = element.indexOf(item1.element),
           element2 = element.indexOf(item2.element);
         if (element1 > element2) return 1;
         if (element1 < element2) return -1;
+      }
+
+      if (item1.CraftNodeId) {
+        if (item1.CraftNodeId > item2.CraftNodeId) return -1;
+        if (item1.CraftNodeId < item2.CraftNodeId) return 1;
       }
 
       if (item1.weapon) {

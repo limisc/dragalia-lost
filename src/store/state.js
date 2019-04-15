@@ -6,7 +6,7 @@ const state = {
     weapon: "",
     element: "",
     rarity: "",
-    tier: "",
+    // tier: "",
   },
   stats: {
     adventurer: null,

@@ -23,7 +23,7 @@ class FilterStats extends Component {
       weapon: ["", "Sword", "Blade", "Dagger", "Axe", "Lance", "Bow", "Wand", "Staff"],
       element: ["", "Flame", "Water", "Wind", "Light", "Shadow"],
       rarity: ["", "5", "4", "3"],
-      tier: ["", "3", "2", "1"],
+      // tier: ["", "3", "2", "1"],
     };
   }
 
