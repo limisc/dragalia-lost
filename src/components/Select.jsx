@@ -1,7 +1,5 @@
 // @flow
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   FilledInput,
   FormControl,
@@ -9,57 +7,20 @@ import {
   MenuItem,
   Select,
 } from '@material-ui/core';
-import {
-  translate,
-} from "actions";
+import { translate } from 'appRedux/actions';
+import withTheme from './ThemeContext/withTheme';
 
-const propTypes = {
-  disabled: PropTypes.bool,
-  label: PropTypes.string,
-  lang: PropTypes.string,
-  options: PropTypes.array,
-};
-
-const defaultProps = {
-
-};
-
-
-class CustomSelect extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
+class CustomSelect extends React.PureComponent {
   render() {
-    const {
-      disabled,
-      label,
-      lang,
-      onChange,
-      options,
-      value,
-    } = this.props;
-
+    const { disabled, label, lang, onChange, options, value } = this.props;
     const selectOptions = this.buildOptions(options, lang);
-
     return (
-      <FormControl
-        className="fluid"
-        variant="filled"
-        disabled={disabled}
-      >
+      <FormControl className="fluid" variant="filled" disabled={disabled}>
         <InputLabel>{translate(label, lang)}</InputLabel>
         <Select
           value={value}
           onChange={onChange}
-          input={
-            <FilledInput
-              name={label}
-            />
-          }
+          input={<FilledInput name={label} />}
         >
           {selectOptions}
         </Select>
@@ -67,24 +28,28 @@ class CustomSelect extends React.Component {
     );
   }
 
+  // TODO memo buildOptions
   buildOptions = (options, lang) => {
-    if (Array.isArray(options)
-      && (typeof options[0] === "string" || options[0] instanceof String)
+    if (
+      Array.isArray(options) &&
+      (typeof options[0] === 'string' || options[0] instanceof String)
     ) {
-      return options.map((option) => {
+      return options.map(option => {
         let label = option;
-        if (option === "") {
-          label = "All";
+        if (option === '') {
+          label = 'All';
         } else if (isNaN(option)) {
           label = translate(option, lang);
         }
-        return <MenuItem key={option} value={option}>{label}</MenuItem>;
+
+        return (
+          <MenuItem key={option} value={option}>
+            {label}
+          </MenuItem>
+        );
       });
     }
-  }
+  };
 }
 
-CustomSelect.propTypes = propTypes;
-CustomSelect.defaultProps = defaultProps;
-
-export default CustomSelect;
+export default withTheme(CustomSelect);
