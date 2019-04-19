@@ -16,6 +16,7 @@ const facility = {
   "100508": { en: "Staff Dojo", zh: "法杖之训练场", ja: "杖の訓練場" },
   //fafnir
   "101001": { en: "Fafnir Statue (Flame)", zh: "火之法夫纳像", ja: "火のファフ二ール像" },
+  '101002': { en: 'Fafnir Statue (Water)', zh: '水之法夫纳像', ja: '水のファフニール像' },
   "101003": { en: "Fafnir Statue (Wind)", zh: "风之法夫纳像", ja: "風のファフ二ール像" },
   //slime
   "101901": { en: "Magma Slime Statue", zh: "岩浆史莱姆像", ja: "マグマスライム像" },

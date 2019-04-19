@@ -1683,6 +1683,31 @@ const wyrmprint =
     "Abilities31": 0,
     "Abilities32": 0
   },
+  "400108_0": {
+    "id": "400108_0",
+    "name": {
+      "en": "Queen of the Blue Seas",
+      "ja": "蒼海の女王",
+      "zh": "沧海女王"
+    },
+    "rarity": "5",
+    "MinHp": 24,
+    "MaxHp": 165,
+    "MinAtk": 5,
+    "MaxAtk": 39,
+    "Abilities11": 100,
+    "Abilities12": 100,
+    "Abilities21": 30,
+    "Abilities22": 60,
+    "Abilities31": 20,
+    "Abilities32": 40,
+    "conquer": "hmc",
+    "reduceDamage1": 20,
+    "reduceDamage2": 25,
+    "ResEle": "Water",
+    "Res1": 3,
+    "Res2": 5
+  },
   "400110_0": {
     "id": "400110_0",
     "name": {

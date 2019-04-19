@@ -13,6 +13,13 @@ const dungeonInfo = {
     adventage: "Wind",
     disadvantage: "Water",
   },
+  hmc: {
+    STR: 7230,
+    multi: 2.75,
+    element: 'Water',
+    adventage: 'Flame',
+    disadvantage: 'Wind',
+  },
 };
 
 export default dungeonInfo;

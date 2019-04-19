@@ -624,6 +624,32 @@ const dragon =
       "STR": 30
     }
   },
+  "210026_01": {
+    "id": "210026_01",
+    "name": {
+      "en": "Pazuzu",
+      "ja": "パズズ",
+      "zh": "帕祖祖"
+    },
+    "element": "Wind",
+    "rarity": "5",
+    "MinHp": 36,
+    "MaxHp": 369,
+    "MinAtk": 12,
+    "MaxAtk": 126,
+    "Abilities11": 65,
+    "Abilities12": 85,
+    "Abilities21": 5,
+    "Abilities22": 15,
+    "ability1": {
+      "HP": 0,
+      "STR": 35
+    },
+    "ability2": {
+      "HP": 0,
+      "STR": 50
+    }
+  },
   "210036_01": {
     "id": "210036_01",
     "name": {
@@ -693,6 +719,32 @@ const dragon =
     "Abilities12": 100,
     "Abilities21": 80,
     "Abilities22": 100,
+    "ability1": {
+      "HP": 20,
+      "STR": 20
+    },
+    "ability2": {
+      "HP": 30,
+      "STR": 30
+    }
+  },
+  "210040_01": {
+    "id": "210040_01",
+    "name": {
+      "en": "High Mercury",
+      "ja": "真マーキュリー",
+      "zh": "真墨丘利"
+    },
+    "element": "Water",
+    "rarity": "5",
+    "MinHp": 35,
+    "MaxHp": 357,
+    "MinAtk": 11,
+    "MaxAtk": 113,
+    "Abilities11": 70,
+    "Abilities12": 100,
+    "Abilities21": 0,
+    "Abilities22": 0,
     "ability1": {
       "HP": 20,
       "STR": 20

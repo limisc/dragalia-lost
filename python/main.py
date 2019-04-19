@@ -122,7 +122,7 @@ def regexRes(details=''):
 
     r = re.search(
         r'Reduces (?:(Flame|Water|Wind|Light|Shadow) )?damage taken ' +
-        r'(?:from (High Midgardsormr|High Brunhilda) )?' +
+        r'(?:from (High Midgardsormr|High Brunhilda|High Mercury) )?' +
         r'by \'\'\'(\d+)%\'\'\'', details, re.IGNORECASE
     )
 
@@ -141,6 +141,7 @@ def regexRes(details=''):
             short = {
                 "High Midgardsormr": "hms",
                 "High Brunhilda": "hbh",
+                "High Mercury": "hmc"
             }
 
             return {
@@ -358,4 +359,4 @@ def clear_dict(file):
 
 if __name__ == '__main__':
     print(__file__)
-    download_images('facility', ['101801'])
+    download_images('facility', ['101002'])

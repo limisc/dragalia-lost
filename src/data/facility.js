@@ -249,7 +249,11 @@ const dragon = {
     list: ["0"],
     "0": { id: "101001", type: "fafnir", level: 0, image: "TW02_101001" },
   },
-  Water: null,
+  Water: {
+    key: "Water",
+    list: ["0"],
+    "0": { id: "101002", type: "fafnir", level: 0, image: "TW02_101002" },
+  },
   Wind: {
     key: "Wind",
     list: ["0"],

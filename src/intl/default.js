@@ -51,6 +51,7 @@ export default {
   //dungeon
   hms: { en: "High Midgardsormr", ja: "真ミドガルズオルム", zh: "真耶梦加得" },
   hbh: { en: "High Brunhilda", ja: "真ブリュンヒルデ", zh: "真布伦希尔德" },
+  hmc: { en: "High Mercury", ja: "真マーキュリー", zh: "真墨丘利"},
   multi: { en: "Multi", ja: "乗数", zh: "倍率" },
   EXHP: { en: "Co-Ability HP", ja: "EXHP", zh: "EXHP" },
   EXDef: { en: "Co-Ability Def", ja: "EX防御", zh: "EX防御" },
