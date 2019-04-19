@@ -1,19 +1,18 @@
 {
   "name": "dragalia-lost",
   "homepage": "http://junlico.github.io/dragalia-lost",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "@material-ui/icons": "^3.0.2",
+    "@material-ui/core": "^3.9.3",
     "history": "^4.9.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-redux": "^6.0.1",
-    "react-router-dom": "^4.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.2",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
     "react-virtualized-auto-sizer": "^1.0.2",
-    "react-window": "^1.6.2",
+    "react-window": "^1.8.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
@@ -37,8 +36,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "faker": "^4.1.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "flow-bin": "^0.94.0",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0"
   }
 }
