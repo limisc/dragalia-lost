@@ -1,23 +1,8 @@
-import state from "store/state";
-import filterReducer from "./filterReducer";
-import statsReducer from "./statsReducer";
-import halidomReducer from "./halidomReducer";
-import detailReducer from "./detailReducer";
-import {
-  actionTypes,
-  getSection,
-} from "actions";
-
-const colReducer = (col, action) => {
-  if (action.type === actionTypes.SELECT_FOCUS) {
-    return 0;
-  } else if (action.type === actionTypes.SELECT_COL) {
-    return action.col;
-  }
-
-  return col;
-}
-
+import { state } from '../store';
+import { actionTypes, getDir } from '../actions';
+import filterReducer from './filterReducer';
+import statsReducer from './statsReducer';
+import halidomReducer from './halidomReducer';
 
 const focusReducer = (focusKey, action) => {
   if (action.type === actionTypes.SELECT_FOCUS) {
@@ -25,35 +10,33 @@ const focusReducer = (focusKey, action) => {
   }
 
   return focusKey;
-}
+};
 
-const rootReducer = ({
-  col,
-  // lang,
-  filters,
-  focusKey,
-  stats,
-  halidom,
-  details,
-}, action) => {
+const panelReducer = (panel, action) => {
+  if (action.type === actionTypes.SELECT_FOCUS) {
+    return '0';
+  } else if (action.type === actionTypes.SELECT_PANEL) {
+    return action.panel;
+  }
 
+  return panel;
+};
+
+const rootReducer = ({ focusKey, panel, filters, stats, halidom }, action) => {
   if (action.type === actionTypes.RESET) {
-    return {
-      ...state,
-    };
+    return state;
   }
-  const newFocus = focusReducer(focusKey, action);
-  const newStats = statsReducer(stats, action);
 
+  const newFocusKey = focusReducer(focusKey, action);
+  const newStats = statsReducer(stats, action);
   return {
-    col: colReducer(col, action),
-    focusKey: newFocus,
     stats: newStats,
-    section: getSection(newFocus),
+    focusKey: newFocusKey,
+    dir: getDir(newFocusKey),
+    panel: panelReducer(panel, action),
+    halidom: halidomReducer(halidom, action),
     filters: filterReducer(filters, action, newStats),
-    halidom: halidomReducer(halidom, action, newStats),
-    details: detailReducer(details, action, newStats, stats),
-  }
-}
+  };
+};
 
 export default rootReducer;

@@ -1,8 +1,5 @@
-import state from "store/state";
-import {
-  actionTypes,
-  reducerCreator,
-} from "actions";
+import { actionTypes, reducerCreator } from '../actions';
+import state from '../store/state';
 
 const INIT_FILTERS = {
   ...state.filters,
@@ -10,7 +7,7 @@ const INIT_FILTERS = {
 
 const resetFilters = () => {
   return INIT_FILTERS;
-}
+};
 
 const selectFocus = (_, action, stats) => {
   const { statsKey } = action;
@@ -21,7 +18,7 @@ const selectFocus = (_, action, stats) => {
       weapon: adventurer.weapon,
       element: adventurer.element,
     };
-  } else if (statsKey === "adventurer" && weapon) {
+  } else if (statsKey === 'adventurer' && weapon) {
     return {
       ...INIT_FILTERS,
       weapon: weapon.weapon,
@@ -29,14 +26,14 @@ const selectFocus = (_, action, stats) => {
   }
 
   return INIT_FILTERS;
-}
+};
 
 const selectFilters = (filters, action) => {
   return {
     ...filters,
-    [action.key]: action.value
+    [action.key]: action.value,
   };
-}
+};
 
 const filterReducer = reducerCreator({
   [actionTypes.RESET_FILTERS]: resetFilters,

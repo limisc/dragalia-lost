@@ -1,97 +1,75 @@
-import {
-  actionTypes,
-  reducerCreator,
-} from "actions";
-import { facility } from "data";
-import { state } from "store";
+/* eslint-disable no-unused-vars */
+import { actionTypes, reducerCreator, loadState, saveState } from '../actions';
+import { facilities } from 'data';
 
-const syncHalidom = (halidom, action, stats) => {
-
-  const updates = {};
-  const { adventurer, dragon } = stats;
-  if (adventurer) {
-    const { element, weapon } = adventurer;
-    updates.element = facility.element[element];
-    updates.weapon = facility.weapon[weapon];
+const syncHalidom = key => {
+  const facility = loadState(key);
+  let halidom = facilities;
+  if (facility) {
+    halidom = { ...facilities };
+    Object.keys(halidom).forEach(fKey => {
+      // fKey: element, weapon, dragon
+      Object.keys(halidom[fKey]).forEach(sKey => {
+        // sKey: Flame, Water, Wind...
+        if (halidom[fKey][sKey]) {
+          // facilities.dragon.(Flame|Light|Shadow) === null
+          Object.keys(halidom[fKey][sKey]).forEach(iKey => {
+            if (
+              facility[fKey] &&
+              facility[fKey][sKey] &&
+              facility[fKey][sKey][iKey]
+            ) {
+              halidom[fKey][sKey][iKey] = {
+                ...halidom[fKey][sKey][iKey],
+                ...facility[fKey][sKey][iKey],
+              };
+            }
+          });
+        }
+      });
+    });
   }
+  saveState(key, halidom);
+  return halidom;
+};
 
-  if (dragon) {
-    const { element: dragonElement } = dragon;
-    updates.dragon = facility.dragon[dragonElement];
-  }
-
-  return {
-    ...state.halidom,
-    ...updates,
-  };
-}
-
-const selectHalidom = (halidom, action, stats) => {
-  const { statsKey } = action;
-  const { adventurer, dragon } = stats;
-
-  if (statsKey === "adventurer") {
-    if (adventurer) {
-      const { element, weapon } = adventurer;
-      const updates = {};
-      if (!halidom.element || halidom.element.key !== element) {
-        updates.element = facility.element[element];
-      }
-
-      if (!halidom.weapon || halidom.weapon.key !== weapon) {
-        updates.weapon = facility.weapon[weapon];
-      }
-
-      if (!!Object.keys(updates)) {
-        return {
-          ...halidom,
-          ...updates,
-        };
-      }
-    } else {
-      return {
-        ...halidom,
-        element: null,
-        weapon: null,
-      };
-    }
-  } else if (statsKey === "dragon") {
-    if (dragon) {
-      const { element } = dragon;
-      if (!halidom.dragon || halidom.dragon.key !== element) {
-        return {
-          ...halidom,
-          dragon: facility.dragon[element],
-        };
-      }
-    } else {
-      return {
-        ...halidom,
-        dragon: null,
-      };
-    }
+const loadHalidom = (halidom, action) => {
+  // TODO change key in future, depends on mode
+  const key = 'calcHalidom';
+  const { variation } = action;
+  if (variation === 'sync') {
+    return syncHalidom(key);
+  } else if (variation === 'load') {
+    return loadState(key) || halidom;
   }
 
   return halidom;
-}
+};
 
 const updateHalidom = (halidom, action) => {
-  const { field, index, level } = action;
-  return {
-    ...halidom,
-    [field]: {
-      ...halidom[field],
-      [index]: {
-        ...halidom[field][index],
-        level,
+  const { fKey, sKey, iKey, level } = action;
+
+  if (halidom[fKey][sKey][iKey].level !== level) {
+    return {
+      ...halidom,
+      [fKey]: {
+        ...halidom[fKey],
+        [sKey]: {
+          ...halidom[fKey][sKey],
+          [iKey]: {
+            ...halidom[fKey][sKey][iKey],
+            level,
+          },
+        },
       },
-    },
-  };
-}
+    };
+  }
+
+  return halidom;
+};
 
 const halidomReducer = reducerCreator({
-  [actionTypes.SYNC_STATS]: syncHalidom,
-  [actionTypes.SELECT_STATS]: selectHalidom,
+  [actionTypes.LOAD_HALIDOM]: loadHalidom,
   [actionTypes.UPDATE_HALIDOM]: updateHalidom,
 });
 
