@@ -1,13 +1,12 @@
+import { facilities } from 'data';
+import { loadState } from '../actions';
+
+const halidom = loadState('calcHalidom') || facilities;
+
 const state = {
-  focusKey: "adventurer",
-  section: "adventurer",
-  col: 0,
-  filters: {
-    weapon: "",
-    element: "",
-    rarity: "",
-    // tier: "",
-  },
+  panel: '0',
+  focusKey: 'adventurer',
+  filters: { weapon: '', element: '', rarity: '' },
   stats: {
     adventurer: null,
     weapon: null,
@@ -15,37 +14,13 @@ const state = {
     wyrmprint2: null,
     dragon: null,
   },
-  halidom: {
-    element: null,
-    weapon: null,
-    dragon: null,
-  },
+  halidom: halidom,
   details: {
-    adventurer: {
-      HP: 0,
-      STR: 0,
-      might: 0,
-    },
-    weapon: {
-      HP: 0,
-      STR: 0,
-      might: 0,
-    },
-    wyrmprint1: {
-      HP: 0,
-      STR: 0,
-      might: 0,
-    },
-    wyrmprint2: {
-      HP: 0,
-      STR: 0,
-      might: 0,
-    },
-    dragon: {
-      HP: 0,
-      STR: 0,
-      might: 0,
-    },
+    adventurer: { HP: 0, STR: 0, might: 0 },
+    weapon: { HP: 0, STR: 0, might: 0 },
+    wyrmprint1: { HP: 0, STR: 0, might: 0 },
+    wyrmprint2: { HP: 0, STR: 0, might: 0 },
+    dragon: { HP: 0, STR: 0, might: 0 },
   },
 };
 
