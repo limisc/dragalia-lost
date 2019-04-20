@@ -185,7 +185,8 @@ td.overview {
   cursor: pointer;
 }
 
-@media screen and (max-width: 519px), screen and (min-width: 960px) and (max-width: 1279px) {
+@media screen and (max-width: 519px),
+  screen and (min-width: 960px) and (max-width: 1279px) {
   .col-2-4 {
     width: calc((100% - 8px) / 2);
   }
@@ -221,7 +222,8 @@ td.overview {
   overflow: auto;
 }
 
-@media screen and (min-width: 520px) and (max-width: 959px), screen and (min-width: 1280px) {
+@media screen and (min-width: 520px) and (max-width: 959px),
+  screen and (min-width: 1280px) {
   .col-2-4 {
     width: calc((100% - 8px * 3) / 4);
     margin-right: 8px;
@@ -262,6 +264,9 @@ td.overview {
   }
 }
 
+li .test {
+  padding-left: 12px;
+}
 @media screen and (min-width: 960px) {
   .column {
     width: calc((100% - 8px * 2) / 3);
