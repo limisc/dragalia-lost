@@ -5,15 +5,20 @@ import { connect } from 'react-redux';
 import { getDetails } from 'appRedux/actions';
 import Settings from './Settings';
 import StatsDetail from './StatsDetail';
+import DungeonDetail from './DungeonDetail';
 
 class DetailCol extends React.Component {
   state = {
-    open: true,
+    open: false,
     dungeon: 'hmc',
+    exHP: '',
+    exDef: '',
+    HP: '',
+    def: '',
   };
 
   render() {
-    const { open } = this.state;
+    const { open, ...res } = this.state;
     const { stats, halidom } = this.props;
     const cursor = open ? 'n-resize' : 's-resize';
     const title = stats.adventurer ? stats.adventurer.name : '';
@@ -28,6 +33,7 @@ class DetailCol extends React.Component {
           details={details}
           onClick={this.onClick}
         />
+        <DungeonDetail details={details} onChange={this.onChange} {...res} />
       </>
     );
   }
