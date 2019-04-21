@@ -5,6 +5,7 @@ const halidom = loadState('calcHalidom') || facilities;
 
 const state = {
   panel: '0',
+  dir: 'adventurer',
   focusKey: 'adventurer',
   filters: { weapon: '', element: '', rarity: '' },
   stats: {

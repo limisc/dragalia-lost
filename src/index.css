@@ -10,7 +10,8 @@ button {
   height: 40px;
 }
 
-.col-2-4 button {
+.col-2-4 button,
+button.col-2 {
   height: 55px;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0.09);

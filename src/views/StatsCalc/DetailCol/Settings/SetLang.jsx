@@ -14,7 +14,7 @@ class DetailCol extends React.PureComponent {
     const { lang } = this.props;
 
     return (
-      <FormControl className="col-3" variant="filled">
+      <FormControl className="col-2" variant="filled">
         <InputLabel>{translate('language', lang)}</InputLabel>
         <Select value={lang} input={<FilledInput />} onChange={this.onChange}>
           <MenuItem value="en">English</MenuItem>
