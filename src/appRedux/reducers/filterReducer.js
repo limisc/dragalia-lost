@@ -22,6 +22,7 @@ const selectFocus = (_, action, stats) => {
     return {
       ...INIT_FILTERS,
       weapon: weapon.weapon,
+      element: weapon.element,
     };
   }
 
