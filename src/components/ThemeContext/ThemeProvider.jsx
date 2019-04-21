@@ -16,25 +16,22 @@ class ThemeProvider extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     let {
-      history: { action },
+      location: { search },
       match: {
         params: { page, lang },
       },
     } = props;
-    // detect lang when action === 'POP'
-    if (action === 'POP') {
-      const { search } = props.location;
-      if (!lang) {
-        const exec = langRegEx.exec(navigator.language || '');
-        lang = exec ? exec[0] : 'en';
-        props.history.replace(`/${page}/${lang}${search}`);
 
-        return { lang };
-      } else if (lang !== state.lang) {
-        props.history.replace(`/${page}/${lang}${search}`);
+    if (!lang) {
+      const exec = langRegEx.exec(navigator.language || '');
+      lang = exec ? exec[0] : 'en';
+      props.history.replace(`/${page}/${lang}${search}`);
 
-        return { lang };
-      }
+      return { lang };
+    } else if (lang !== state.lang) {
+      props.history.replace(`/${page}/${lang}${search}`);
+
+      return { lang };
     }
 
     return null;
