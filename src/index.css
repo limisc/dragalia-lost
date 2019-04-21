@@ -84,8 +84,15 @@ img.lg {
   height: 80px;
 }
 
-.avatar > .lg {
+.avatar > img {
   cursor: pointer;
+}
+
+.avatar > .caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
 }
 
 .stats-field {
@@ -116,6 +123,15 @@ img.lg {
 .col-2:nth-child(n + 3),
 .gutter-top {
   margin-top: 8px;
+}
+
+.col-3 {
+  width: calc((100% - 8px * 2) / 3);
+  margin-left: 8px;
+}
+
+.col-3:nth-child(3n + 1) {
+  margin-left: 0px;
 }
 
 .details-title {
@@ -267,6 +283,7 @@ td.overview {
 li .test {
   padding-left: 12px;
 }
+
 @media screen and (min-width: 960px) {
   .column {
     width: calc((100% - 8px * 2) / 3);
