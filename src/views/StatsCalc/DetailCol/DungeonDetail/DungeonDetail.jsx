@@ -4,6 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import DungeonSelect from './DungeonSelect';
 import DungeonSettings from './DungeonSettings';
+import DamageBar from './DamageBar';
 
 class DungeonDetail extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class DungeonDetail extends React.Component {
       <div>
         <div
           style={{
-            height: '40px',
+            height: '60px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
