@@ -10,6 +10,7 @@ button {
   height: 40px;
 }
 
+/* TODO keep one style */
 .col-2-4 button,
 button.col-2 {
   height: 55px;
@@ -41,6 +42,24 @@ tr {
   border-bottom: medium solid #eec2a2;
 }
 
+#stats-detail tr {
+  display: flex;
+}
+
+#stats-detail th,
+#stats-detail td {
+  display: flex;
+  flex: 1 1 25%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#stats-detail th:nth-child(1),
+#stats-detail td:nth-child(1) {
+  flex: 1 1 45%;
+  justify-content: center;
+}
+
 #root {
   padding: 0 16px 0 16px;
 }
@@ -53,7 +72,6 @@ tr {
 }
 
 .center {
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,16 +151,6 @@ img.lg {
 
 .col-3:nth-child(3n + 1) {
   margin-left: 0px;
-}
-
-.details-title {
-  width: 28%;
-  text-align: center;
-}
-
-.details-res {
-  width: 24%;
-  text-align: right;
 }
 
 .stats-list {
@@ -279,10 +287,6 @@ td.overview {
     height: 100vh;
     flex-direction: column;
   }
-}
-
-li .test {
-  padding-left: 12px;
 }
 
 @media screen and (min-width: 960px) {

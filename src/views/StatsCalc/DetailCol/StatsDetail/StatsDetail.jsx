@@ -20,32 +20,31 @@ class StatsDetail extends React.PureComponent {
   render() {
     const { lang, open, cursor, title, details, onClick } = this.props;
     const name = title ? title[lang] : '';
+    // TODO name overflow hidden
     return (
-      <table>
+      <table id="stats-detail">
         <tbody>
           <tr style={{ cursor }} onClick={onClick}>
-            <th className="ellipsis">{name}</th>
-            <th className="details-res">{translate('HP', lang)}</th>
-            <th className="details-res">{translate('STR', lang)}</th>
-            <th className="details-res">{translate('might', lang)}</th>
+            <th>{name}</th>
+            <th>{translate('HP', lang)}</th>
+            <th>{translate('STR', lang)}</th>
+            <th>{translate('might', lang)}</th>
           </tr>
           {open &&
             this.state.rows.map(row => (
               <tr key={row}>
-                <td className="details-title ellipsis">
-                  {translate(row, lang)}
-                </td>
-                <td className="details-res">{details[row].HP}</td>
-                <td className="details-res">{details[row].STR}</td>
-                <td className="details-res">{details[row].might}</td>
+                <td>{translate(row, lang)}</td>
+                <td>{details[row].HP}</td>
+                <td>{details[row].STR}</td>
+                <td>{details[row].might}</td>
               </tr>
             ))}
 
           <tr>
-            <td className="details-title">{translate('total', lang)}</td>
-            <td className="details-res">{details.total.HP}</td>
-            <td className="details-res">{details.total.STR}</td>
-            <td className="details-res">{details.total.might}</td>
+            <td>{translate('total', lang)}</td>
+            <td>{details.total.HP}</td>
+            <td>{details.total.STR}</td>
+            <td>{details.total.might}</td>
           </tr>
         </tbody>
       </table>
