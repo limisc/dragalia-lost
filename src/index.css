@@ -277,15 +277,14 @@ td.overview {
 @media screen and (max-width: 959px) {
   .column {
     width: 100%;
+    flex-direction: column;
   }
   .column:nth-child(2) {
     width: calc(100% + 16px);
-    margin-left: -16px;
+    margin: 8px 0 8px -16px;
   }
   .column:nth-child(3) {
-    margin-top: 8px;
     height: 100vh;
-    flex-direction: column;
   }
 }
 
@@ -293,11 +292,11 @@ td.overview {
   .column {
     width: calc((100% - 8px * 2) / 3);
     margin-right: 8px;
+    height: 100vh;
+    flex-direction: column;
   }
   .column:nth-child(3n) {
     margin-right: 0;
-    height: 100vh;
-    flex-direction: column;
   }
 }
 
