@@ -229,3 +229,150 @@ export const getDetails = (stats, halidom) => {
 
   return details;
 };
+
+export const getDamage = (stats, state, info) => {
+  const { adventurer, weapon, wyrmprint1, wyrmprint2, dragon } = stats;
+  const textArea = [];
+
+  if (adventurer) {
+    const { dungeon, exDef, def } = state;
+    let temp;
+    let tRes = 0;
+    let tReduce = 0;
+    let tDef = exDef * 1 + def * 1;
+
+    if (adventurer.Def1) {
+      const { mana, DefLV1, DefLV2, Def1, Def2 } = adventurer;
+      if (DefLV2 && mana * 1 >= DefLV2) {
+        temp = Def2;
+      } else if (mana >= DefLV1) {
+        temp = Def1;
+      }
+      if (temp) {
+        tDef += temp;
+        textArea.push(`adventurer,Def,${temp}`);
+        temp = null;
+      }
+    }
+
+    // weapon Def
+    if (
+      weapon &&
+      weapon.Def &&
+      adventurer.element.indexOf(weapon.DefEle) !== -1
+    ) {
+      tDef += weapon.Def;
+      textArea.push(`weapon,Def,${weapon.Def}`);
+    }
+
+    let wDef, wReduce, wRes, aLevel;
+    wDef = wReduce = wRes = 0;
+    if (wyrmprint1) {
+      const { unbind, conquer, ResEle } = wyrmprint1;
+
+      aLevel = unbind === '4' ? '2' : '1';
+
+      temp = wyrmprint1['Def' + aLevel];
+      if (temp) {
+        wDef += temp;
+        textArea.push(`wyrmprint1,Def,${temp}`);
+      }
+
+      if (dungeon === conquer) {
+        temp = wyrmprint1['reduceDamage' + aLevel];
+        wReduce += temp;
+        textArea.push(`wyrmprint1,reduceDamage,${temp}`);
+      }
+
+      if (info.element === ResEle) {
+        temp = wyrmprint1['Res' + aLevel];
+        wRes += temp;
+        textArea.push(`wyrmprint1,Res,${temp}`);
+      }
+    }
+
+    if (wyrmprint2) {
+      const { unbind, conquer, ResEle } = wyrmprint2;
+
+      aLevel = unbind === '4' ? '2' : '1';
+
+      temp = wyrmprint2['Def' + aLevel];
+      if (temp) {
+        wDef += temp;
+
+        // maximum value: 20
+        if (wDef > 20) {
+          textArea.push(`wyrmprint2,Def,${temp} -> ${20 - wDef + temp}`);
+          wDef = 20;
+        } else {
+          textArea.push(`wyrmprint2,Def,${temp}`);
+        }
+      }
+
+      if (dungeon === conquer) {
+        temp = wyrmprint2['reduceDamage' + aLevel];
+        wReduce += temp;
+        // maximum value: 25
+        if (wReduce > 25) {
+          textArea.push(
+            `wyrmprint2,reduceDamage,${temp} -> ${25 - wReduce + temp}`
+          );
+          wReduce = 25;
+        } else {
+          textArea.push(`wyrmprint2,reduceDamage,${temp}`);
+        }
+      }
+
+      if (info.element === ResEle) {
+        temp = wyrmprint2['Res' + aLevel];
+        wRes += temp;
+        // maximum value: 25
+        if (wRes > 15) {
+          textArea.push(`wyrmprint2,Res,${temp} -> ${15 - wRes + temp}`);
+          wRes = 15;
+        } else {
+          textArea.push(`wyrmprint2,Res,${temp}`);
+        }
+      }
+    }
+
+    tDef += wDef;
+    tRes += wRes;
+    tReduce += wReduce;
+
+    const { ResEle } = dragon || {};
+    if (ResEle === info.element) {
+      temp = dragon.unbind === '4' ? dragon.Res2 : dragon.Res1;
+      tRes += temp;
+      textArea.push(`dragon,Res,${temp}`);
+    }
+
+    let eleModifier = 1;
+    if (adventurer.element === info.disadvantage) {
+      eleModifier = 0.5;
+    } else if (adventurer.element === info.adventage) {
+      eleModifier = 1.5;
+    }
+
+    const { STR, mult } = info;
+    const base =
+      ((5 / 3) *
+        STR *
+        mult *
+        eleModifier *
+        (1 - tReduce * 0.01) *
+        (1 - tRes * 0.01)) /
+      (adventurer.DefCoef * (1 + tDef * 0.01));
+
+    const max = Math.floor(base * 1.05);
+    const min = Math.floor(base * 0.95);
+
+    return {
+      max,
+      min,
+      textArea,
+    };
+  }
+
+  return { textArea };
+};

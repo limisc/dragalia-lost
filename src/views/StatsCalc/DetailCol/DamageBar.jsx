@@ -12,7 +12,7 @@ class DamageBar extends React.PureComponent {
     } else if (HP <= max && HP > min) {
       pct = ((1.0 * (HP - 1 - min)) / (max - min)) * 100;
     }
-
+    console.log(this.props)
     return (
       <div
         style={{
