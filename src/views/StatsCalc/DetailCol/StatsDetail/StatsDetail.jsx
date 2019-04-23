@@ -31,14 +31,17 @@ class StatsDetail extends React.PureComponent {
             <th>{translate('might', lang)}</th>
           </tr>
           {open &&
-            this.state.rows.map(row => (
-              <tr key={row}>
-                <td>{translate(row, lang)}</td>
-                <td>{details[row].HP}</td>
-                <td>{details[row].STR}</td>
-                <td>{details[row].might}</td>
-              </tr>
-            ))}
+            this.state.rows.map(row => {
+              const { HP, STR, might } = details[row];
+              return (
+                <tr key={row}>
+                  <td>{translate(row, lang)}</td>
+                  <td>{HP}</td>
+                  <td>{STR}</td>
+                  <td>{might}</td>
+                </tr>
+              );
+            })}
 
           <tr>
             <td>{translate('total', lang)}</td>

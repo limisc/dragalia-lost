@@ -3,12 +3,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getDetails, getDamage } from 'appRedux/actions';
+import { Button } from '@material-ui/core';
 import { dungeonInfo } from 'data';
 import Settings from './Settings';
 import StatsDetail from './StatsDetail';
 import DungeonSelect from './DungeonSelect';
 import DungeonSettings from './DungeonSettings';
 import DamageBar from './DamageBar';
+import DamageDetail from './DamageDetail';
 
 class DetailCol extends React.Component {
   state = {
@@ -59,25 +61,24 @@ class DetailCol extends React.Component {
           onClick={this.onClick}
         />
 
-        <div>
-          <div
-            style={{
-              height: '60px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            DungonInfo
-          </div>
-          <DungeonSelect dungeon={dungeon} onChange={this.onChange} />
-          <DungeonSettings onChange={this.onChange} {...res} />
-          <DamageBar
-            max={max}
-            min={min}
-            HP={details.total.HP}
-          />
-        </div>
+        <Button variant="contained" className="fluid" onClick={this.onClick}>
+          Dungeon Info
+        </Button>
+        {!open && (
+          <>
+            <DungeonSelect dungeon={dungeon} onChange={this.onChange} />
+            <DungeonSettings onChange={this.onChange} {...res} />
+            <DamageBar max={max} min={min} HP={details.total.HP} />
+            <DamageDetail
+              baseHP={details.total.HP}
+              min={min}
+              max={max}
+              HP={this.state.HP}
+              exHP={this.state.exHP}
+              textArea={textArea}
+            />
+          </>
+        )}
       </>
     );
   }

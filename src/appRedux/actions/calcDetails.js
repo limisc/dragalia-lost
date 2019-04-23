@@ -250,7 +250,7 @@ export const getDamage = (stats, state, info) => {
       }
       if (temp) {
         tDef += temp;
-        textArea.push(`adventurer,Def,${temp}`);
+        textArea.push(`adventurer,def,${temp}`);
         temp = null;
       }
     }
@@ -262,7 +262,7 @@ export const getDamage = (stats, state, info) => {
       adventurer.element.indexOf(weapon.DefEle) !== -1
     ) {
       tDef += weapon.Def;
-      textArea.push(`weapon,Def,${weapon.Def}`);
+      textArea.push(`weapon,def,${weapon.Def}`);
     }
 
     let wDef, wReduce, wRes, aLevel;
@@ -275,7 +275,7 @@ export const getDamage = (stats, state, info) => {
       temp = wyrmprint1['Def' + aLevel];
       if (temp) {
         wDef += temp;
-        textArea.push(`wyrmprint1,Def,${temp}`);
+        textArea.push(`wyrmprint1,def,${temp}`);
       }
 
       if (dungeon === conquer) {
@@ -287,7 +287,7 @@ export const getDamage = (stats, state, info) => {
       if (info.element === ResEle) {
         temp = wyrmprint1['Res' + aLevel];
         wRes += temp;
-        textArea.push(`wyrmprint1,Res,${temp}`);
+        textArea.push(`wyrmprint1,res,${temp}`);
       }
     }
 
@@ -302,10 +302,10 @@ export const getDamage = (stats, state, info) => {
 
         // maximum value: 20
         if (wDef > 20) {
-          textArea.push(`wyrmprint2,Def,${temp} -> ${20 - wDef + temp}`);
+          textArea.push(`wyrmprint2,def,${temp} -> ${20 - wDef + temp}`);
           wDef = 20;
         } else {
-          textArea.push(`wyrmprint2,Def,${temp}`);
+          textArea.push(`wyrmprint2,def,${temp}`);
         }
       }
 
@@ -328,10 +328,10 @@ export const getDamage = (stats, state, info) => {
         wRes += temp;
         // maximum value: 25
         if (wRes > 15) {
-          textArea.push(`wyrmprint2,Res,${temp} -> ${15 - wRes + temp}`);
+          textArea.push(`wyrmprint2,res,${temp} -> ${15 - wRes + temp}`);
           wRes = 15;
         } else {
-          textArea.push(`wyrmprint2,Res,${temp}`);
+          textArea.push(`wyrmprint2,res,${temp}`);
         }
       }
     }
@@ -344,7 +344,7 @@ export const getDamage = (stats, state, info) => {
     if (ResEle === info.element) {
       temp = dragon.unbind === '4' ? dragon.Res2 : dragon.Res1;
       tRes += temp;
-      textArea.push(`dragon,Res,${temp}`);
+      textArea.push(`dragon,res,${temp}`);
     }
 
     let eleModifier = 1;

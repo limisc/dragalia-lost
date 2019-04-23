@@ -31,33 +31,38 @@ button.col-2 {
   background-color: #eec2a2;
 }
 
-table {
+table,
+tbody {
   border-collapse: collapse;
   width: 100%;
 }
 
 tr {
+  width: 100%;
   height: 60px;
+  display: flex;
   box-sizing: border-box;
   border-bottom: medium solid #eec2a2;
 }
 
-#stats-detail tr {
+th,
+td {
+  flex: 1 1 100%;
   display: flex;
-}
-
-#stats-detail th,
-#stats-detail td {
-  display: flex;
-  flex: 1 1 25%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 #stats-detail th:nth-child(1),
 #stats-detail td:nth-child(1) {
-  flex: 1 1 45%;
-  justify-content: center;
+  flex: 1 1 150%;
+}
+
+#damage-detail {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow: auto;
 }
 
 #root {
@@ -201,11 +206,6 @@ img.lg {
   justify-content: flex-start;
 }
 
-td.overview {
-  width: calc(100% / 3);
-  text-align: center;
-}
-
 .facility-item-icon img.sm {
   cursor: pointer;
 }
@@ -293,6 +293,7 @@ td.overview {
     width: calc((100% - 8px * 2) / 3);
     margin-right: 8px;
     height: 100vh;
+    display: flex;
     flex-direction: column;
   }
   .column:nth-child(3n) {
