@@ -39,7 +39,7 @@ tbody {
 
 tr {
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: flex;
   box-sizing: border-box;
   border-bottom: medium solid #eec2a2;
@@ -149,6 +149,10 @@ img.lg {
   margin-top: 8px;
 }
 
+.gutter {
+  margin: 8px 0 8px 0;
+}
+
 .col-3 {
   width: calc((100% - 8px * 2) / 3);
   margin-left: 8px;
@@ -158,7 +162,7 @@ img.lg {
   margin-left: 0px;
 }
 
-.stats-list {
+#stats-list {
   flex: 1;
 }
 
@@ -182,7 +186,7 @@ img.lg {
   border-bottom: medium solid #eec2a2;
 }
 
-.stats-list .list-item:hover {
+#stats-list .list-item:hover {
   background-color: #eec2a2;
   cursor: cell;
 }
@@ -277,6 +281,7 @@ img.lg {
 @media screen and (max-width: 959px) {
   .column {
     width: 100%;
+    display: flex;
     flex-direction: column;
   }
   .column:nth-child(2) {

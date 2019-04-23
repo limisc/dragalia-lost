@@ -7,22 +7,34 @@ import SetHalidom from './SetHalidom';
 import SelectStats from './SelectStats';
 import NavButtons from './NavButtons';
 
-class SetCol extends Component {
-  // TODO Change to func
-  render() {
-    const { panel } = this.props;
-    return (
-      <Fragment>
-        <NavButtons panel={panel} onClick={this.onClick} />
-        {panel === '1' ? <SetHalidom /> : <SelectStats />}
-      </Fragment>
-    );
-  }
+// class SetCol extends Component {
+//   // TODO Change to func
+//   render() {
+//     const { panel } = this.props;
+//     return (
+//       <Fragment>
+//         <NavButtons panel={panel} onClick={this.onClick} />
+//         {panel === '1' ? <SetHalidom /> : <SelectStats />}
+//       </Fragment>
+//     );
+//   }
 
-  onClick = e => {
-    this.props.selectPanel(e.currentTarget.id);
-  };
-}
+//   onClick = e => {
+//     this.props.selectPanel(e.currentTarget.id);
+//   };
+// }
+
+const SetCol = props => {
+  const onClick = e => props.selectPanel(e.currentTarget.id);
+  const { panel } = props;
+
+  return (
+    <Fragment>
+      <NavButtons panel={panel} onClick={onClick} />
+      {panel === '1' ? <SetHalidom /> : <SelectStats />}
+    </Fragment>
+  );
+};
 
 const mapStateToProps = ({ panel }) => {
   return { panel };

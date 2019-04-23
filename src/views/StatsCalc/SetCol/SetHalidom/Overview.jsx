@@ -1,6 +1,6 @@
 //@flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { calcSection } from 'appRedux/actions';
 import { Image } from 'components';
@@ -12,19 +12,19 @@ class Overview extends React.Component {
     const value = calcSection(section);
     // TODO Memo
     return (
-      <tr>
+      <Fragment>
         {section ? (
-          <>
-            <td className="overview">
+          <tr>
+            <td>
               <Image size="sm" dir="icon" image={`${fKey}_${sKey}`} />
             </td>
-            <td className="overview">{value.HP}</td>
-            <td className="overview">{value.STR}</td>
-          </>
+            <td>{value.HP}</td>
+            <td>{value.STR}</td>
+          </tr>
         ) : (
           undefined
         )}
-      </tr>
+      </Fragment>
     );
   }
 }

@@ -1,4 +1,3 @@
-//@flow
 import React, { Fragment } from 'react';
 import DetailCol from './DetailCol';
 import SetStats from './SetStats';
@@ -13,7 +12,7 @@ const StatsCalc = () => {
       <div className="column">
         <SetStats />
       </div>
-      <div className="column flex">
+      <div className="column">
         <SetCol />
       </div>
     </Fragment>

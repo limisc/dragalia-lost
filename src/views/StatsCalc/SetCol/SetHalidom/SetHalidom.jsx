@@ -1,6 +1,6 @@
 //@flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getSelectKey } from 'appRedux/actions';
 import Controls from './Controls';
@@ -15,11 +15,11 @@ class SetHalidom extends React.Component {
   render() {
     const { fields } = this.state;
     return (
-      <>
+      <Fragment>
         <Controls />
         <table>
           <tbody>
-            {this.state.fields.map(fKey => {
+            {fields.map(fKey => {
               // fKey: field key
               const sKey = this.props[fKey];
               return (
@@ -41,7 +41,7 @@ class SetHalidom extends React.Component {
             );
           })}
         </div>
-      </>
+      </Fragment>
     );
   }
 }
@@ -50,14 +50,4 @@ const mapStateToProps = ({ stats }) => {
   return getSelectKey(stats);
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    // TODO clear
-    //: () => dispatch(),
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SetHalidom);
+export default connect(mapStateToProps)(SetHalidom);

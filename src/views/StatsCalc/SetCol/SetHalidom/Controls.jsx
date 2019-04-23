@@ -52,14 +52,11 @@ class Controls extends React.Component {
 }
 
 const mapStateToProps = ({ halidom }) => {
-  return {
-    halidom,
-  };
+  return { halidom };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    // TODO clear
     loadHalidom: variation => dispatch(loadHalidom(variation)),
   };
 };

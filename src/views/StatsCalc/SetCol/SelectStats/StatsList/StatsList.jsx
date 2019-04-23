@@ -1,6 +1,6 @@
 //@flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { FixedSizeList } from 'react-window';
 import { TextField } from '@material-ui/core';
@@ -67,18 +67,16 @@ class StatsList extends React.Component {
         });
     }
     return (
-      <>
-        <div className="gutter-top fluid">
-          <TextField
-            className="fluid"
-            variant="filled"
-            value={search}
-            label={translate('search', lang)}
-            onChange={this.onChange}
-          />
-        </div>
+      <Fragment>
+        <TextField
+          className="fluid"
+          variant="filled"
+          value={search}
+          label={translate('search', lang)}
+          onChange={this.onChange}
+        />
         <ListHeader fields={fields} />
-        <div className="stats-list">
+        <div id="stats-list">
           <AutoSizer>
             {({ height, width }) => (
               <FixedSizeList
@@ -96,7 +94,7 @@ class StatsList extends React.Component {
             )}
           </AutoSizer>
         </div>
-      </>
+      </Fragment>
     );
   }
 

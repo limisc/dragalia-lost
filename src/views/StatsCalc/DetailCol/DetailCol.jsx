@@ -1,6 +1,6 @@
 //@flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getDetails, getDamage } from 'appRedux/actions';
 import { Button } from '@material-ui/core';
@@ -51,7 +51,7 @@ class DetailCol extends React.Component {
     );
 
     return (
-      <>
+      <Fragment>
         <Settings />
         <StatsDetail
           cursor={cursor}
@@ -65,7 +65,7 @@ class DetailCol extends React.Component {
           Dungeon Info
         </Button>
         {!open && (
-          <>
+          <Fragment>
             <DungeonSelect dungeon={dungeon} onChange={this.onChange} />
             <DungeonSettings onChange={this.onChange} {...res} />
             <DamageBar max={max} min={min} HP={details.total.HP} />
@@ -77,9 +77,9 @@ class DetailCol extends React.Component {
               exHP={this.state.exHP}
               textArea={textArea}
             />
-          </>
+          </Fragment>
         )}
-      </>
+      </Fragment>
     );
   }
 

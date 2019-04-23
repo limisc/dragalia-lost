@@ -1,6 +1,6 @@
 //@flow
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { translate } from 'appRedux/actions';
 import { withTheme } from 'components';
 
@@ -15,7 +15,7 @@ class DamageDetail extends React.PureComponent {
             <th>Damage Detail</th>
           </tr>
           {min && (
-            <>
+            <Fragment>
               <tr>
                 <td>{translate('HP', lang)}</td>
                 <td>{translate('MIN', lang)}</td>
@@ -38,7 +38,7 @@ class DamageDetail extends React.PureComponent {
                   </tr>
                 );
               })}
-            </>
+            </Fragment>
           )}
         </tbody>
       </table>

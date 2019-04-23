@@ -17,7 +17,7 @@ class FilterStats extends React.Component {
   render() {
     const { lang, fields, filters } = this.props;
     return (
-      <div className="fluid flex gutter-top">
+      <div className="fluid flex gutter">
         {fields.map(field => (
           <div key={field} className="col-2-4">
             <Select
