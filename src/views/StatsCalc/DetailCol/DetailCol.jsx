@@ -12,13 +12,20 @@ import DungeonSettings from './DungeonSettings';
 import DamageBar from './DamageBar';
 import DamageDetail from './DamageDetail';
 
+import {
+  FilledInput,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+} from '@material-ui/core';
 class DetailCol extends React.Component {
   state = {
     exHP: '',
     exDef: '',
     HP: '',
     def: '',
-    open: false,
+    open: true,
     dungeon: 'hmc',
   };
 
@@ -52,18 +59,14 @@ class DetailCol extends React.Component {
 
     return (
       <Fragment>
-        <Settings />
+        <Settings open={open} toggle={this.toggle} />
         <StatsDetail
           cursor={cursor}
           open={open}
           title={title}
           details={details}
-          onClick={this.onClick}
         />
 
-        <Button variant="contained" className="fluid" onClick={this.onClick}>
-          Dungeon Info
-        </Button>
         {!open && (
           <Fragment>
             <DungeonSelect dungeon={dungeon} onChange={this.onChange} />
@@ -86,6 +89,8 @@ class DetailCol extends React.Component {
   onClick = () => {
     this.setState(state => ({ open: !state.open }));
   };
+
+  toggle = open => this.setState({ open });
 
   onChange = ({ target: { name, value } }) => this.setState({ [name]: value });
 }

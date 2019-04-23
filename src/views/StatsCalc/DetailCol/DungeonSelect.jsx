@@ -32,6 +32,7 @@ class DungeonSelect extends React.PureComponent {
     return (
       <Select
         label="dungeon"
+        classes="fluid"
         value={dungeon}
         options={this.state.dungeonOptions}
         onChange={onChange}

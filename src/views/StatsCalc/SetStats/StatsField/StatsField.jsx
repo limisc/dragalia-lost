@@ -18,8 +18,8 @@ class StatsField extends Component {
   }
 
   render() {
-    const { item, statsKey } = this.props;
     const { bond, level } = this.state;
+    const { item, statsKey } = this.props;
     const { id, ex, name, mana, unbind, rarity, curRarity } = item || {};
 
     let image = 'add';
@@ -40,12 +40,17 @@ class StatsField extends Component {
 
     const exDisabled = curRarity !== '5';
     return (
-      <div className="flex stats-field">
+      <div className="stats-field flex">
         <StatsAvatar image={image} name={name} statsKey={statsKey} />
 
         {item && (
           <div className="stats-field-setting flex">
-            <InputNumber label="level" value={level} onChange={this.onChange} />
+            <InputNumber
+              classes="col-2"
+              label="level"
+              value={level}
+              onChange={this.onChange}
+            />
 
             {statsKey === 'adventurer' && (
               <Fragment>
@@ -81,7 +86,12 @@ class StatsField extends Component {
             )}
 
             {statsKey === 'dragon' && (
-              <InputNumber label="bond" value={bond} onChange={this.onChange} />
+              <InputNumber
+                classes="col-2"
+                label="bond"
+                value={bond}
+                onChange={this.onChange}
+              />
             )}
           </div>
         )}

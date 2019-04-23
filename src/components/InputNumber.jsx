@@ -7,13 +7,12 @@ import withTheme from './Theme/withTheme';
 
 class InputNumber extends React.PureComponent {
   render() {
-    const { lang, label, value, disabled, onChange } = this.props;
-
+    const { classes, lang, label, value, disabled, onChange } = this.props;
     return (
       <TextField
-        className="col-2"
         type="number"
         variant="filled"
+        className={classes}
         value={value}
         disabled={disabled}
         label={translate(label, lang)}

@@ -5,66 +5,6 @@ body {
   background-color: #eed6ad;
 }
 
-button {
-  width: 100%;
-  height: 40px;
-}
-
-/* TODO keep one style */
-.col-2-4 button,
-button.col-2 {
-  height: 55px;
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.09);
-}
-
-.controls .col-2-4 button {
-  height: 40px;
-  background-color: #f5e8cb;
-}
-
-.controls .col-2-4 button:hover {
-  background-color: #eec2a2;
-}
-
-.col-2 button.active {
-  background-color: #eec2a2;
-}
-
-table,
-tbody {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-tr {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  box-sizing: border-box;
-  border-bottom: medium solid #eec2a2;
-}
-
-th,
-td {
-  flex: 1 1 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#stats-detail th:nth-child(1),
-#stats-detail td:nth-child(1) {
-  flex: 1 1 150%;
-}
-
-#damage-detail {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  overflow: auto;
-}
-
 #root {
   padding: 0 16px 0 16px;
 }
@@ -74,6 +14,7 @@ td {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex: initial;
 }
 
 .center {
@@ -86,144 +27,48 @@ td {
   width: 100%;
 }
 
-.ellipsis {
-  min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+div.MuiFormControl-root-1,
+button.MuiButtonBase-root-99 {
+  margin-right: 8px;
 }
 
-img.sm {
-  width: 32px;
-  height: 32px;
+button {
+  height: 40px;
 }
 
-img.md {
-  width: 64px;
-  width: 64px;
+button.MuiButton-root-73.active {
+  background-color: #abcdef;
 }
 
-img.lg {
-  width: 80px;
-  height: 80px;
+.select > button {
+  height: 55px;
+  border-radius: 0;
 }
 
-.avatar > img {
-  cursor: pointer;
+button.reset {
+  background-color: #eec2a2;
 }
 
-.avatar > .caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 24px;
-}
-
-.stats-field {
-  height: 120px;
-  width: 100%;
-}
-
-.avatar {
-  min-width: 80px;
-  width: 30%;
-  height: 100%;
-  flex-direction: column;
-}
-
-.stats-field-setting {
-  width: 70%;
-  align-items: center;
+.controls > button {
+  background-color: #f5e8cb;
 }
 
 .col-2 {
   width: calc((100% - 8px) / 2);
 }
 
-.col-2:nth-child(2n + 1) {
-  margin-right: 8px;
+.col-2:nth-child(2n) {
+  margin-right: 0;
 }
 
-.col-2:nth-child(n + 3),
-.gutter-top {
+.col-2:nth-child(n + 3) {
   margin-top: 8px;
-}
-
-.gutter {
-  margin: 8px 0 8px 0;
-}
-
-.col-3 {
-  width: calc((100% - 8px * 2) / 3);
-  margin-left: 8px;
-}
-
-.col-3:nth-child(3n + 1) {
-  margin-left: 0px;
-}
-
-#stats-list {
-  flex: 1;
-}
-
-.list-header {
-  height: 50px;
-  width: 100%;
-  border-bottom: medium solid #eec2a2;
-}
-
-[class^='list-item-'],
-[class^='facility-item-'] {
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.list-item {
-  box-sizing: border-box;
-  border-bottom: medium solid #eec2a2;
-}
-
-#stats-list .list-item:hover {
-  background-color: #eec2a2;
-  cursor: cell;
-}
-
-.list-item-image {
-  min-width: 64px;
-  width: 25%;
-}
-
-.list-item-name {
-  flex: 1 0 25%;
-  justify-content: flex-start;
-}
-
-.list-item-icon {
-  width: 15%;
-}
-
-.list-item-res {
-  width: 15%;
-  justify-content: flex-start;
-}
-
-.facility-item-icon img.sm {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 519px),
   screen and (min-width: 960px) and (max-width: 1279px) {
-  .col-2-4 {
-    width: calc((100% - 8px) / 2);
-  }
-  .col-2-4:nth-child(2n + 1) {
-    margin-right: 8px;
-  }
-  .col-2-4:nth-child(n + 3) {
-    margin-top: 8px;
+  button.col-2.section:nth-child(n + 3) {
+    height: 40px;
   }
   .facility-item-image {
     width: 25%;
@@ -242,23 +87,19 @@ img.lg {
   }
 }
 
-/* TODO Third column mobile view */
-
-.halidom {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  overflow: auto;
-}
-
 @media screen and (min-width: 520px) and (max-width: 959px),
   screen and (min-width: 1280px) {
-  .col-2-4 {
+  .col-4 {
     width: calc((100% - 8px * 3) / 4);
+  }
+  .col-4:nth-child(2n) {
     margin-right: 8px;
   }
-  .col-2-4:nth-child(4n) {
+  .col-4:nth-child(4n) {
     margin-right: 0;
+  }
+  .col-4:nth-child(n + 3) {
+    margin-top: 0;
   }
   .facility-item-image {
     min-width: 80px;
@@ -304,6 +145,163 @@ img.lg {
   .column:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+/* .controls > button:hover {
+  background-color: #abcdef;
+} */
+
+table,
+tbody {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: medium solid #eec2a2;
+}
+
+th,
+td {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stats-detail th:nth-child(1),
+#stats-detail td:nth-child(1) {
+  flex: 1 1 150%;
+}
+
+#damage-detail {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+}
+
+.ellipsis {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img.sm {
+  width: 32px;
+  height: 32px;
+}
+
+img.md {
+  width: 64px;
+  width: 64px;
+}
+
+img.lg {
+  width: 80px;
+  height: 80px;
+}
+
+.stats-field {
+  height: 120px;
+  width: 100%;
+}
+
+.avatar {
+  min-width: 80px;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.avatar > img {
+  cursor: pointer;
+}
+
+.avatar > .caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+
+.stats-field-setting {
+  width: 70%;
+  align-items: center;
+}
+
+.gutter {
+  margin: 8px 0 8px 0;
+}
+
+.gutter-top {
+  margin-top: 8px;
+}
+
+#stats-list {
+  flex: 1;
+}
+
+.list-header {
+  height: 50px;
+  width: 100%;
+  border-bottom: medium solid #eec2a2;
+}
+
+[class^='list-item-'],
+[class^='facility-item-'] {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.list-item {
+  box-sizing: border-box;
+  border-bottom: medium solid #eec2a2;
+}
+
+#stats-list .list-item:hover {
+  background-color: #abcdef;
+  cursor: cell;
+}
+
+.list-item-image {
+  min-width: 64px;
+  width: 25%;
+}
+
+.list-item-name {
+  flex: 1 0 25%;
+  justify-content: flex-start;
+}
+
+.list-item-icon {
+  width: 15%;
+}
+
+.list-item-res {
+  width: 15%;
+  justify-content: flex-start;
+}
+
+.facility-item-icon img.sm {
+  cursor: pointer;
+}
+
+/* TODO Third column mobile view */
+
+.halidom {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
 }
 
 input[type='number']::-webkit-inner-spin-button,

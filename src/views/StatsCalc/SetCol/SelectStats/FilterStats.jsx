@@ -17,23 +17,21 @@ class FilterStats extends React.Component {
   render() {
     const { lang, fields, filters } = this.props;
     return (
-      <div className="fluid flex gutter">
+      <div className="select flex gutter">
         {fields.map(field => (
-          <div key={field} className="col-2-4">
-            <Select
-              label={field}
-              value={filters[field]}
-              options={this.state[field]}
-              onChange={this.onChange}
-            />
-          </div>
+          <Select
+            key={field}
+            classes="col-2 col-4"
+            label={field}
+            value={filters[field]}
+            options={this.state[field]}
+            onChange={this.onChange}
+          />
         ))}
 
-        <div className="col-2-4">
-          <Button variant="contained" onClick={this.onClick}>
-            {translate('reset', lang)}
-          </Button>
-        </div>
+        <Button className="col-2 col-4 reset" variant="contained" onClick={this.onClick}>
+          {translate('reset', lang)}
+        </Button>
       </div>
     );
   }
@@ -48,9 +46,7 @@ class FilterStats extends React.Component {
 }
 
 const mapStateToProps = ({ filters }) => {
-  return {
-    filters,
-  };
+  return { filters };
 };
 
 const mapDispatchToProps = dispatch => {

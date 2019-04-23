@@ -18,13 +18,13 @@ class StatsDetail extends React.PureComponent {
   };
 
   render() {
-    const { lang, open, cursor, title, details, onClick } = this.props;
+    const { lang, open, title, details } = this.props;
     const name = title ? title[lang] : '';
     // TODO name overflow hidden
     return (
       <table id="stats-detail">
         <tbody>
-          <tr style={{ cursor }} onClick={onClick}>
+          <tr>
             <th>{name}</th>
             <th>{translate('HP', lang)}</th>
             <th>{translate('STR', lang)}</th>

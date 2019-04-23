@@ -15,20 +15,46 @@ import {
 
 class Settings extends React.PureComponent {
   render() {
-    const { lang, reset } = this.props;
+    const { lang, open, reset, toggle } = this.props;
 
     return (
-      <div className="flex">
-        <FormControl className="col-2" variant="filled">
+      <div className="select flex">
+        <FormControl className="col-2 col-4" variant="filled">
           <InputLabel>{translate('language', lang)}</InputLabel>
           <Select value={lang} input={<FilledInput />} onChange={this.onChange}>
             <MenuItem value="en">English</MenuItem>
-            <MenuItem value="zh">简中</MenuItem>
             <MenuItem value="ja">日本語</MenuItem>
+            <MenuItem value="zh">简中</MenuItem>
           </Select>
         </FormControl>
-        <Button variant="contained" className="col-2" onClick={reset}>
+        <Button
+          className="col-2 col-4 reset"
+          variant="contained"
+          onClick={reset}
+        >
           {translate('reset', lang)}
+        </Button>
+
+        <Button
+          name="0"
+          className={
+            open ? 'col-2 col-4 section active' : 'col-2 col-4 section'
+          }
+          variant="contained"
+          onClick={this.onClick}
+        >
+          {translate('stats', lang)}
+        </Button>
+
+        <Button
+          name="1"
+          className={
+            open ? 'col-2 col-4 section' : 'col-2 col-4 section active'
+          }
+          variant="contained"
+          onClick={this.onClick}
+        >
+          {translate('dungeon', lang)}
         </Button>
       </div>
     );
@@ -37,6 +63,13 @@ class Settings extends React.PureComponent {
   onChange = ({ target: { value } }) => {
     if (this.props.lang !== value) {
       this.props.setLang(value);
+    }
+  };
+
+  onClick = e => {
+    const open = e.currentTarget.name === '0';
+    if (open !== this.props.open) {
+      this.props.toggle(open);
     }
   };
 }

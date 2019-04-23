@@ -10,28 +10,24 @@ class NavButtons extends React.PureComponent {
     const { lang, panel, onClick } = this.props;
 
     return (
-      <div className="fluid flex">
-        <div className="col-2">
-          <Button
-            id="0"
-            variant="contained"
-            className={panel === '0' ? 'active' : ''}
-            onClick={onClick}
-          >
-            {translate('stats', lang)}
-          </Button>
-        </div>
+      <div className="flex">
+        <Button
+          id="0"
+          variant="contained"
+          className={panel === '0' ? 'col-2 active' : 'col-2'}
+          onClick={onClick}
+        >
+          {translate('stats', lang)}
+        </Button>
 
-        <div className="col-2">
-          <Button
-            id="1"
-            variant="contained"
-            className={panel === '1' ? 'active' : ''}
-            onClick={onClick}
-          >
-            {translate('facility', lang)}
-          </Button>
-        </div>
+        <Button
+          id="1"
+          variant="contained"
+          className={panel === '1' ? 'col-2 active' : 'col-2'}
+          onClick={onClick}
+        >
+          {translate('facility', lang)}
+        </Button>
       </div>
     );
   }

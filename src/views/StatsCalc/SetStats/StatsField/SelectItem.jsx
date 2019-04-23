@@ -23,15 +23,14 @@ class SelectItem extends React.PureComponent {
 
     const options = this.getOptions(label, rarity);
     return (
-      <div className="col-2">
-        <Select
-          label={label}
-          value={value}
-          options={options}
-          disabled={disabled}
-          onChange={onChange}
-        />
-      </div>
+      <Select
+        classes="col-2"
+        label={label}
+        value={value}
+        options={options}
+        disabled={disabled}
+        onChange={onChange}
+      />
     );
   }
 

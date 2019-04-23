@@ -44,10 +44,10 @@ class SimpleSelect extends React.PureComponent {
   }
 
   render() {
-    const { disabled, label, lang, onChange, value } = this.props;
+    const { classes, disabled, label, lang, onChange, value } = this.props;
 
     return (
-      <FormControl className="fluid" variant="filled" disabled={disabled}>
+      <FormControl variant="filled" className={classes} disabled={disabled}>
         <InputLabel>{translate(label, lang)}</InputLabel>
         <Select
           value={value}

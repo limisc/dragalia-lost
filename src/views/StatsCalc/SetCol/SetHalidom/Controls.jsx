@@ -19,13 +19,17 @@ class Controls extends React.Component {
   render() {
     // TODO implement func
     return (
-      <div className="fluid flex gutter-top controls">
+      <div className="controls flex gutter-top">
         {this.state.btns.map(btn => (
-          <div key={btn} className="col-2-4">
-            <Button id={btn} variant="contained" onClick={this.onClick}>
-              {translate(btn, this.props.lang)}
-            </Button>
-          </div>
+          <Button
+            key={btn}
+            id={btn}
+            variant="contained"
+            className="col-2 col-4"
+            onClick={this.onClick}
+          >
+            {translate(btn, this.props.lang)}
+          </Button>
         ))}
       </div>
     );
