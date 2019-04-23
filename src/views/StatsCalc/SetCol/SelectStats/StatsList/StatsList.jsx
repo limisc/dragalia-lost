@@ -10,6 +10,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import dataList from 'data/dataList';
 import ListHeader from './ListHeader';
 import ListItem from './ListItem';
+import { refs } from 'appRedux/store';
 
 class StatsList extends React.Component {
   state = {
@@ -76,7 +77,7 @@ class StatsList extends React.Component {
           onChange={this.onChange}
         />
         <ListHeader fields={fields} />
-        <div id="stats-list">
+        <div id="stats-list" ref={refs.statsList}>
           <AutoSizer>
             {({ height, width }) => (
               <FixedSizeList

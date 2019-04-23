@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createSelector } from 'reselect';
-import { statsFields } from '../store';
+import { statsKeys } from '../store';
 import { dataDict, limit, values } from 'data';
 import locales from 'locales/default';
 
@@ -53,7 +53,7 @@ export const getDir = statsKey => {
 
 export const getSearch = stats => {
   const searchArray = [];
-  statsFields.forEach(k => {
+  statsKeys.forEach(k => {
     if (stats[k]) {
       searchArray.push(`${k}=${stats[k].id}`);
     }

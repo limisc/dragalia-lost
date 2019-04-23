@@ -3,7 +3,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 // import { withRouter } from 'react-router-dom';
-import { statsFields } from 'appRedux/store';
+import { statsKeys } from 'appRedux/store';
 import StatsField from './StatsField';
 
 class SetStats extends React.Component {
@@ -33,12 +33,11 @@ class SetStats extends React.Component {
 
   render() {
     const { stats } = this.props;
-
     return (
       <Fragment>
-        {statsFields.map(field => {
-          const id = stats[field] ? stats[field].id : field;
-          return <StatsField key={id} statsKey={field} />;
+        {statsKeys.map(statsKey => {
+          const id = stats[statsKey] ? stats[statsKey].id : statsKey;
+          return <StatsField key={id} statsKey={statsKey} />;
         })}
       </Fragment>
     );

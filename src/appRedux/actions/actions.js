@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import actionTypes from './actionTypes';
-import { history, store } from '../store';
+import { history, store, statsKeys, refs } from '../store';
 // import { getSearch } from "./selectors";
 
 const actionCreator = (type, ...argNames) => {
@@ -85,15 +85,17 @@ export const selectFocus = statsKey => dispatch => {
 //   replaceHistory(search);
 // }
 
-// export const selectStats = (statsKey, item) => dispatch => {
-//   const { stats: prevStats } = store.getState();
-//   dispatch({ type: actionTypes.SELECT_STATS, statsKey, item });
-//   const { stats } = store.getState();
-//   if (stats !== prevStats) {
-//     const search = getSearch(stats);
-//     history.push(search);
-//   }
-// };
+export const selectStats = (statsKey, item) => dispatch => {
+  // const { stats: prevStats } = store.getState();
+  dispatch({ type: actionTypes.SELECT_STATS, statsKey, item });
+  // const { stats } = store.getState();
+  // if (stats !== prevStats) {
+  //   const search = getSearch(stats);
+  //   history.push(search);
+  // }
+
+  window.scrollTo(0, refs.setStats.current.offsetTop);
+};
 
 export const reset = actionCreator(actionTypes.RESET);
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
@@ -101,7 +103,7 @@ export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
 export const selectPanel = actionCreator(actionTypes.SELECT_PANEL, 'panel');
 
-export const selectStats = actionCreator(actionTypes.SELECT_STATS, 'statsKey', 'item');
+// export const selectStats = actionCreator(actionTypes.SELECT_STATS, 'statsKey', 'item');
 export const updateStats = actionCreator(actionTypes.UPDATE_STATS, 'statsKey', 'updates');
 
 export const loadHalidom = actionCreator(actionTypes.LOAD_HALIDOM, 'variation');

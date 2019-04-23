@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
+import { refs } from 'appRedux/store';
 import { Image, withTheme } from 'components';
 import { getDir, selectFocus, translate } from 'appRedux/actions';
 
@@ -14,7 +15,7 @@ class StatsAvatar extends React.Component {
     const cn = focus ? 'avatar center list-item' : 'avatar center';
     // TODO caption
     return (
-      <div className={cn}>
+      <div className={cn} ref={refs[statsKey]}>
         <Image size="lg" dir={dir} image={image} onClick={this.onClick} />
         <span className="caption">{label}</span>
       </div>
@@ -23,6 +24,7 @@ class StatsAvatar extends React.Component {
 
   onClick = () => {
     const { statsKey, selectFocus } = this.props;
+    window.scrollTo(0, refs.statsList.current.offsetTop);
     selectFocus(statsKey);
   };
 }
