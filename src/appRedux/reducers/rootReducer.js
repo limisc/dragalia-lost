@@ -1,5 +1,6 @@
 import { state } from '../store';
-import { actionTypes, getDir } from '../actions';
+import { actionTypes, getDir, loadState } from '../actions';
+import { facilities } from 'data';
 import filterReducer from './filterReducer';
 import statsReducer from './statsReducer';
 import halidomReducer from './halidomReducer';
@@ -24,7 +25,8 @@ const panelReducer = (panel, action) => {
 
 const rootReducer = ({ focusKey, panel, filters, stats, halidom }, action) => {
   if (action.type === actionTypes.RESET) {
-    return state;
+    const halidom = loadState('calcHalidom') || facilities;
+    return { ...state, halidom };
   }
 
   const newFocusKey = focusReducer(focusKey, action);

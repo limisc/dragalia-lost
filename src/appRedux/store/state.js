@@ -15,7 +15,7 @@ const state = {
     wyrmprint2: null,
     dragon: null,
   },
-  halidom: halidom,
+  halidom,
   details: {
     adventurer: { HP: 0, STR: 0, might: 0 },
     weapon: { HP: 0, STR: 0, might: 0 },
