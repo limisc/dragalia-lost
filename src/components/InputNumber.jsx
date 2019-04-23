@@ -3,7 +3,7 @@
 import React from 'react';
 import { TextField } from '@material-ui/core';
 import { translate } from 'appRedux/actions';
-import withTheme from './ThemeContext/withTheme';
+import withTheme from './Theme/withTheme';
 
 class InputNumber extends React.PureComponent {
   render() {

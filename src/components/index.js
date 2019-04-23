@@ -1,7 +1,7 @@
 import Image from './Image';
 import InputNumber from './InputNumber';
 import Select from './Select';
-import ThemeProvider from './ThemeContext/ThemeProvider';
-import withTheme from './ThemeContext/withTheme';
+import ThemeProvider from './Theme/ThemeProvider';
+import withTheme from './Theme/withTheme';
 
 export { Image, InputNumber, Select, ThemeProvider, withTheme };

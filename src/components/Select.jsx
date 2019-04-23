@@ -8,12 +8,44 @@ import {
   Select,
 } from '@material-ui/core';
 import { translate } from 'appRedux/actions';
-import withTheme from './ThemeContext/withTheme';
+import ThemeContext from './Theme/context';
 
-class CustomSelect extends React.PureComponent {
+const withTheme = Component => {
+  return props => (
+    <ThemeContext.Consumer>
+      {contexts => <Component key={contexts.lang} {...props} {...contexts} />}
+    </ThemeContext.Consumer>
+  );
+};
+
+class SimpleSelect extends React.PureComponent {
+  state = {
+    selectOptions: [],
+  };
+
+  componentDidMount() {
+    const { lang, options } = this.props;
+    const selectOptions = options.map(opt => {
+      let label = opt;
+      if (opt === '') {
+        label = 'ALL';
+      } else if (isNaN(opt)) {
+        label = translate(opt, lang);
+      }
+
+      return (
+        <MenuItem key={opt} value={opt}>
+          {label}
+        </MenuItem>
+      );
+    });
+
+    this.setState({ selectOptions });
+  }
+
   render() {
-    const { disabled, label, lang, onChange, options, value } = this.props;
-    const selectOptions = this.buildOptions(options, lang);
+    const { disabled, label, lang, onChange, value } = this.props;
+
     return (
       <FormControl className="fluid" variant="filled" disabled={disabled}>
         <InputLabel>{translate(label, lang)}</InputLabel>
@@ -22,34 +54,11 @@ class CustomSelect extends React.PureComponent {
           onChange={onChange}
           input={<FilledInput name={label} />}
         >
-          {selectOptions}
+          {this.state.selectOptions}
         </Select>
       </FormControl>
     );
   }
-
-  // TODO memo buildOptions
-  buildOptions = (options, lang) => {
-    if (
-      Array.isArray(options) &&
-      (typeof options[0] === 'string' || options[0] instanceof String)
-    ) {
-      return options.map(option => {
-        let label = option;
-        if (option === '') {
-          label = 'All';
-        } else if (isNaN(option)) {
-          label = translate(option, lang);
-        }
-
-        return (
-          <MenuItem key={option} value={option}>
-            {label}
-          </MenuItem>
-        );
-      });
-    }
-  };
 }
 
-export default withTheme(CustomSelect);
+export default withTheme(SimpleSelect);
