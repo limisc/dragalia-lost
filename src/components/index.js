@@ -1,5 +1,5 @@
 import Context from './Context';
 import ThemeProvider from './ThemeProvider';
 import withTheme from './withTheme';
-
-export { Context, ThemeProvider, withTheme };
+import Select from './Select';
+export { Context, ThemeProvider, withTheme, Select };
