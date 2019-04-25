@@ -15,6 +15,48 @@ body {
   flex: initial;
 }
 
+.col-2 {
+  width: calc((100% - 8px) / 2);
+}
+
+.col-2:nth-child(2n) {
+  margin-left: 8px;
+}
+
+.col-2:nth-child(n + 3) {
+  margin-top: 8px;
+}
+
+@media (min-width: 520px) and (max-width: 959px), (min-width: 1280px) {
+  .col-4 {
+    width: calc((100% - 8px * 3) / 4);
+  }
+  .col-4:nth-child(n + 2) {
+    margin-left: 8px;
+  }
+  .col-4:nth-child(n + 3) {
+    margin-top: 0;
+  }
+  .col-4:nth-child(n + 5) {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 959px) {
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .column:nth-child(2) {
+    width: calc(100% + 16px);
+    margin: 8px 0 8px -16px;
+  }
+  .column:nth-child(3) {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 959px) {
   .column {
     width: 100%;
