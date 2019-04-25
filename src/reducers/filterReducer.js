@@ -26,10 +26,15 @@ const selectFocus = (_, action, stats) => {
 };
 
 const selectFilters = (filters, action) => {
-  return {
-    ...filters,
-    [action.key]: action.value,
-  };
+  const { key, value } = action;
+  if (filters[key] !== value) {
+    return {
+      ...filters,
+      [action.key]: action.value,
+    };
+  }
+
+  return filters;
 };
 
 const filterReducer = reducerCreator({
