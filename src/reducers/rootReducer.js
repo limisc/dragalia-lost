@@ -10,13 +10,24 @@ const focusReducer = (focusKey, action) => {
   return focusKey;
 };
 
-const rootReducer = ({ focusKey, filters, stats }, action) => {
+const panelReducer = (panel, action) => {
+  if (action.type === actionTypes.SELECT_FOCUS) {
+    return '0';
+  } else if (action.type === actionTypes.SELECT_PANEL) {
+    return action.panel;
+  }
+
+  return panel;
+};
+
+const rootReducer = ({ focusKey, panel, filters, stats }, action) => {
   const newFocus = focusReducer(focusKey, action);
   const newStats = statsReducer(stats, action);
   return {
     focusKey: newFocus,
     stats: newStats,
     field: getField(newFocus),
+    panel: panelReducer(panel, action),
     filters: filterReducer(filters, action, newStats),
   };
 };
