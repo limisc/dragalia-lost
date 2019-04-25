@@ -53,3 +53,4 @@ const actionCreator = (type, ...argNames) => {
 
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
+export const selectStats = actionCreator(actionTypes.SELECT_STATS, 'statsKey', 'item');
