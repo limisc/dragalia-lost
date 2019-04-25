@@ -23,8 +23,8 @@ class StatsAvatar extends React.Component {
 
   onClick = () => {
     const { highlight, statsKey, selectFocus, selectStats } = this.props;
-    selectFocus(statsKey);
     if (!highlight) selectStats(statsKey);
+    selectFocus(statsKey);
     window.scrollTo(0, refs.statsList.current.offsetTop);
   };
 }
