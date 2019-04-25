@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
+import { refs } from 'store';
 import { selectStats } from 'actions';
 import { Image, withTheme } from 'components';
 
@@ -65,6 +66,7 @@ class ListItem extends React.Component {
     } = this.props;
 
     selectStats(focusKey, item);
+    window.scrollTo(0, refs.statsField.current.offsetTop);
   };
 }
 
