@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { refs } from 'store';
-import { selectStats } from 'actions';
+import { selectStats, selectFilters } from 'actions';
 import { Image, withTheme } from 'components';
 
 class ListItem extends React.Component {
@@ -28,8 +28,8 @@ class ListItem extends React.Component {
     }
 
     return (
-      <div style={style} className="list-item flex" onClick={this.onClick}>
-        <div className="list-item-image">
+      <div style={style} className="list-item flex">
+        <div className="list-item-image" onClick={this.clickAvatar}>
           <Image field={field} image={image} />
         </div>
 
@@ -39,7 +39,13 @@ class ListItem extends React.Component {
           if (f === 'weapon' || f === 'element') {
             const icon = `${f}_${item[f]}`;
             return (
-              <div key={f} className="list-item-icon">
+              <div
+                key={f}
+                className="list-item-icon"
+                data-key={f}
+                data-value={item[f]}
+                onClick={this.clickIcon}
+              >
                 <Image size="sm" field="icon" image={icon} />
               </div>
             );
@@ -55,7 +61,7 @@ class ListItem extends React.Component {
     );
   }
 
-  onClick = () => {
+  clickAvatar = () => {
     const {
       index,
       focusKey,
@@ -68,6 +74,11 @@ class ListItem extends React.Component {
     selectStats(focusKey, item);
     window.scrollTo(0, refs.statsField.current.offsetTop);
   };
+
+  clickIcon = e => {
+    const { key, value } = e.currentTarget.dataset;
+    this.props.selectFilters(key, value);
+  };
 }
 
 const mapStateToProps = ({ focusKey, field }) => {
@@ -77,6 +88,7 @@ const mapStateToProps = ({ focusKey, field }) => {
 const mapDispatchToProps = dispatch => {
   return {
     selectStats: (statsKey, item) => dispatch(selectStats(statsKey, item)),
+    selectFilters: (key, value) => dispatch(selectFilters(key, value)),
   };
 };
 
