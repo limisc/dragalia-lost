@@ -56,8 +56,8 @@ const selectStats = (stats, action) => {
       }
 
       if (!wyrmprint1 && !wyrmprint2) {
-        updates.wyrmprint1 = buildItem('wyrmprint', getItem('wyrmprint', equipments.wyrmprint1));
-        updates.wyrmprint2 = buildItem('wyrmprint', getItem('wyrmprint', equipments.wyrmprint2));
+        updates.wyrmprint1 = buildItem('wyrmprint1', getItem('wyrmprint', equipments.wyrmprint1));
+        updates.wyrmprint2 = buildItem('wyrmprint2', getItem('wyrmprint', equipments.wyrmprint2));
       }
 
       if (!adventurer || element !== adventurer.element) {
