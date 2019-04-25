@@ -50,3 +50,6 @@ const actionCreator = (type, ...argNames) => {
     return action;
   };
 };
+
+export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
+export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
