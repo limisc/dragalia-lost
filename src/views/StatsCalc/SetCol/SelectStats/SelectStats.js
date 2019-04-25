@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import { refs } from 'store';
 import FilterStats from './FilterStats';
+import StatsList from './StatsList/StatsList';
 
 class SelectStats extends Component {
   state = {
@@ -17,6 +19,7 @@ class SelectStats extends Component {
     return (
       <Fragment>
         <FilterStats fields={fields} />
+        <StatsList ref={refs.searchBar} key={field} fields={fields} />
       </Fragment>
     );
   }
