@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
+import { refs } from 'store';
 import { translate, selectFilters, resetFilters } from 'actions';
 import { Button } from '@material-ui/core';
 import { Select, withTheme } from 'components';
@@ -25,7 +26,7 @@ class FilterStats extends React.Component {
   render() {
     const { lang, fields, filters } = this.props;
     return (
-      <div className="select flex gutter">
+      <div className="flex gutter">
         {fields.map(f => (
           <Select
             key={f}
@@ -54,6 +55,7 @@ class FilterStats extends React.Component {
   };
 
   onClick = () => {
+    refs.searchBar.current.clear();
     this.props.resetFilters();
   };
 }
