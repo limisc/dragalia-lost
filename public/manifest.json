@@ -1,0 +1,15 @@
+{
+  "short_name": "Dragalia Lost",
+  "name": "Dragalia Lost Stats Calculator",
+  "icons": [
+    {
+      "src": "%PUBLIC_URL%/images/adventurer/100001_01_r05.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#abcdef",
+  "background_color": "#eed6ad"
+}
