@@ -1,6 +1,9 @@
-import { actionTypes, getField } from '../actions';
+import { state } from '../store';
+import { facilities } from 'data';
+import { actionTypes, getField, loadState } from '../actions';
 import filterReducer from './filterReducer';
 import statsReducer from './statsReducer';
+import halidomReducer from './halidomReducer';
 
 const focusReducer = (focusKey, action) => {
   if (action.type === actionTypes.SELECT_FOCUS) {
@@ -20,7 +23,12 @@ const panelReducer = (panel, action) => {
   return panel;
 };
 
-const rootReducer = ({ focusKey, panel, filters, stats }, action) => {
+const rootReducer = ({ focusKey, panel, filters, stats, halidom }, action) => {
+  if (action.type === actionTypes.RESET) {
+    const halidom = loadState('calcHalidom') || facilities;
+    return { ...state, halidom };
+  }
+
   const newFocus = focusReducer(focusKey, action);
   const newStats = statsReducer(stats, action);
   return {
@@ -28,6 +36,7 @@ const rootReducer = ({ focusKey, panel, filters, stats }, action) => {
     stats: newStats,
     field: getField(newFocus),
     panel: panelReducer(panel, action),
+    halidom: halidomReducer(halidom, action),
     filters: filterReducer(filters, action, newStats),
   };
 };
