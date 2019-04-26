@@ -7,28 +7,45 @@ import {
   Select,
 } from '@material-ui/core';
 import { translate } from 'actions';
-import Context from './Context';
+import withTheme from './withTheme';
+
+const getOptions = (options, lang) => {
+  return options.map(opt => {
+    let label = opt;
+    if (opt === '') {
+      label = 'ALL';
+    } else if (isNaN(opt)) {
+      label = translate(opt, lang);
+    }
+
+    return (
+      <MenuItem key={opt} value={opt}>
+        {label}
+      </MenuItem>
+    );
+  });
+};
 
 class SimpleSelect extends React.PureComponent {
   constructor(props) {
     super(props);
     const { lang, options } = props;
-    const selectOptions = options.map(opt => {
-      let label = opt;
-      if (opt === '') {
-        label = 'ALL';
-      } else if (isNaN(opt)) {
-        label = translate(opt, lang);
-      }
+    const selectOptions = getOptions(options, lang);
+    this.state = { lang, options, selectOptions };
+  }
 
-      return (
-        <MenuItem key={opt} value={opt}>
-          {label}
-        </MenuItem>
-      );
-    });
+  static getDerivedStateFromProps(props, state) {
+    const { lang, options } = props;
+    if (lang !== state.lang || options !== state.options) {
+      const selectOptions = getOptions(options, lang);
+      return {
+        lang,
+        options,
+        selectOptions,
+      };
+    }
 
-    this.state = { selectOptions };
+    return null;
   }
 
   render() {
@@ -49,12 +66,4 @@ class SimpleSelect extends React.PureComponent {
   }
 }
 
-const withLang = Component => {
-  return props => (
-    <Context.Consumer>
-      {({ lang }) => <Component key={lang} lang={lang} {...props} />}
-    </Context.Consumer>
-  );
-};
-
-export default withLang(SimpleSelect);
+export default withTheme(SimpleSelect);
