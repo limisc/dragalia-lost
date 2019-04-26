@@ -43,3 +43,13 @@ export const getLimit = (key, rarity, unbind = 4) => {
       return 30;
   }
 };
+
+export const getHalidomSectionKey = stats => {
+  const { element, weapon } = stats.adventurer || {};
+  const { element: dragonEle } = stats.dragon || {};
+  return {
+    element,
+    weapon,
+    dragon: dragonEle,
+  };
+};

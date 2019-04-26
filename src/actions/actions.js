@@ -54,5 +54,9 @@ const actionCreator = (type, ...argNames) => {
 export const selectFocus = actionCreator(actionTypes.SELECT_FOCUS, 'statsKey');
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
+export const selectPanel = actionCreator(actionTypes.SELECT_PANEL, 'panel');
 export const selectStats = actionCreator(actionTypes.SELECT_STATS, 'statsKey', 'item');
 export const updateStats = actionCreator(actionTypes.UPDATE_STATS, 'statsKey', 'updates');
+
+export const loadHalidom = actionCreator(actionTypes.LOAD_HALIDOM, 'variant');
+export const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, 'field', 'section', 'itemKey', 'level');
