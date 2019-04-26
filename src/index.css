@@ -15,6 +15,144 @@ body {
   flex: initial;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.gutter {
+  margin: 8px 0 8px 0;
+}
+
+.gutter-top {
+  margin-top: 8px;
+}
+
+.highlight {
+  box-sizing: border-box;
+  border-bottom: medium solid #eec2a2;
+}
+
+.ellipsis {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img.sm {
+  width: 32px;
+  height: 32px;
+}
+
+img.md {
+  width: 64px;
+  height: 64px;
+}
+
+img.lg {
+  width: 80px;
+  height: 80px;
+}
+
+button.active {
+  background-color: #abcdef !important;
+}
+
+.stats-field {
+  height: 120px;
+}
+
+.avatar {
+  min-width: 80px;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.avatar > img {
+  cursor: pointer;
+}
+
+.caption {
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+}
+
+.stats-field-setting {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#stats-list,
+#halidom-list {
+  flex: 1;
+}
+
+#stats-list .list-item img {
+  cursor: pointer;
+}
+
+.list-header {
+  height: 50px;
+  width: 100%;
+}
+
+[class^='list-item-'],
+[class^='facility-'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item-image {
+  min-width: 64px;
+  width: 25%;
+}
+
+.list-item-name {
+  flex: 1 0 25%;
+  justify-content: flex-start;
+}
+
+.list-item-icon {
+  width: 15%;
+}
+
+.list-item-res {
+  width: 15%;
+  justify-content: flex-start;
+}
+
+.set-btns > button {
+  background-color: #f5e8cb;
+}
+
+.facility-image {
+  width: 25%;
+}
+
+.facility-name {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.facility-slider {
+  width: 50%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+.facility-icon {
+  width: 25%;
+}
+
 .col-2 {
   width: calc((100% - 8px) / 2);
 }
@@ -39,6 +177,22 @@ body {
   }
   .col-4:nth-child(n + 5) {
     margin-top: 8px;
+  }
+  #stats-list .list-item:hover {
+    background-color: #abcdef;
+  }
+  .facility-image {
+    min-width: 80px;
+    width: 20%;
+  }
+  .facility-name {
+    width: 24%;
+  }
+  .facility-slider {
+    width: 32%;
+  }
+  .facility-icon {
+    width: 8%;
   }
 }
 
@@ -83,4 +237,10 @@ body {
   .column:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
