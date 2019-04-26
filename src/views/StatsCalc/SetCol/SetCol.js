@@ -1,22 +1,31 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
-import SelectStats from './SelectStats';
+import { selectPanel } from 'actions';
+import NavPanel from './NavPanel';
 
-const SetCol = () => {
+import SelectStats from './SelectStats';
+import SetHalidom from './SetHalidom';
+
+const SetCol = ({ panel, selectPanel }) => {
+  const onClick = e => selectPanel(e.currentTarget.name);
+
   return (
     <div className="column">
-      <SelectStats />
+      <NavPanel panel={panel} onClick={onClick} />
+      {panel === '1' ? <SetHalidom /> : <SelectStats />}
     </div>
   );
 };
 
-const mapStateToProps = () => {
-  return {};
+const mapStateToProps = ({ panel }) => {
+  return { panel };
 };
 
 const mapDispatchToProps = dispatch => {
-  return {};
+  return {
+    selectPanel: panel => dispatch(selectPanel(panel)),
+  };
 };
 
 export default connect(
