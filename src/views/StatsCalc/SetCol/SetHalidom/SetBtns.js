@@ -3,8 +3,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
 import { withTheme } from 'components';
-import { translate, saveState, removeState, loadHalidom } from 'actions';
-
+import { saveState, removeState, loadHalidom } from 'actions';
+import {
+  CloudDownloadOutlined,
+  RefreshOutlined,
+  DeleteForeverOutlined,
+  SaveOutlined,
+} from '@material-ui/icons';
 class SetBtns extends React.PureComponent {
   state = {
     btns: ['sync', 'del', 'load', 'save'],
@@ -21,7 +26,7 @@ class SetBtns extends React.PureComponent {
             className="col-2 col-4"
             onClick={this.onClick}
           >
-            {translate(btn, this.props.lang)}
+            {this.getIcons(btn)}
           </Button>
         ))}
       </div>
@@ -43,6 +48,21 @@ class SetBtns extends React.PureComponent {
         break;
       default:
         break;
+    }
+  };
+
+  getIcons = btn => {
+    switch (btn) {
+      case 'sync':
+        return <CloudDownloadOutlined />;
+      case 'del':
+        return <DeleteForeverOutlined />;
+      case 'load':
+        return <RefreshOutlined />;
+      case 'save':
+        return <SaveOutlined />;
+      default:
+        return undefined;
     }
   };
 }
