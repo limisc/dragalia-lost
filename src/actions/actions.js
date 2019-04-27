@@ -51,6 +51,7 @@ const actionCreator = (type, ...argNames) => {
   };
 };
 
+export const resetAll = actionCreator(actionTypes.RESET);
 export const selectFocus = actionCreator(actionTypes.SELECT_FOCUS, 'statsKey');
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
 export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
