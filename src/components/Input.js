@@ -1,12 +1,20 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { TextField } from '@material-ui/core';
+import { TextField, InputAdornment } from '@material-ui/core';
 import { translate } from 'actions';
 import withTheme from './withTheme';
 
 class Input extends React.PureComponent {
   render() {
-    const { classes, lang, label, value, disabled, onChange } = this.props;
+    const {
+      classes,
+      lang,
+      label,
+      value,
+      adornment,
+      disabled,
+      onChange,
+    } = this.props;
     return (
       <TextField
         type="number"
@@ -16,9 +24,12 @@ class Input extends React.PureComponent {
         disabled={disabled}
         label={translate(label, lang)}
         onChange={onChange}
-        inputProps={{
+        InputProps={{
           name: label,
           onKeyPress: this.handleKeyPress,
+          endAdornment: adornment && (
+            <InputAdornment position="end">{adornment}</InputAdornment>
+          ),
         }}
       />
     );
