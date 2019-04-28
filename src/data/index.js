@@ -5,7 +5,9 @@ import facilities from './facilities';
 import dungeonInfo from './dungeonInfo';
 import elements from './elements';
 import equipments from './equipments';
-import exValue from './exValue';
+import exValues from './exValues';
+import mightDict from './mightDict';
+
 export default dataList;
 export {
   dataList,
@@ -14,7 +16,8 @@ export {
   facilities,
   elements,
   equipments,
-  exValue,
+  exValues,
   limit,
+  mightDict,
   values,
 };
