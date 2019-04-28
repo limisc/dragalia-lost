@@ -16,14 +16,10 @@ const dragon = {
     abilities12: 50,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 8,
-      STR: 8,
-    },
-    ability2: {
-      HP: 10,
-      STR: 10,
-    },
+    incHP1: 8,
+    incHP2: 10,
+    incSTR1: 8,
+    incSTR2: 10,
   },
   '210002_01': {
     id: '210002_01',
@@ -42,14 +38,10 @@ const dragon = {
     abilities12: 40,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 15,
-    },
-    ability2: {
-      HP: 0,
-      STR: 20,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 15,
+    incSTR2: 20,
   },
   '210003_01': {
     id: '210003_01',
@@ -68,14 +60,10 @@ const dragon = {
     abilities12: 40,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 15,
-      STR: 0,
-    },
-    ability2: {
-      HP: 20,
-      STR: 0,
-    },
+    incHP1: 15,
+    incHP2: 20,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210004_01': {
     id: '210004_01',
@@ -94,14 +82,10 @@ const dragon = {
     abilities12: 50,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 8,
-      STR: 8,
-    },
-    ability2: {
-      HP: 10,
-      STR: 10,
-    },
+    incHP1: 8,
+    incHP2: 10,
+    incSTR1: 8,
+    incSTR2: 10,
   },
   '210005_01': {
     id: '210005_01',
@@ -120,14 +104,10 @@ const dragon = {
     abilities12: 40,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 15,
-    },
-    ability2: {
-      HP: 0,
-      STR: 20,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 15,
+    incSTR2: 20,
   },
   '210006_01': {
     id: '210006_01',
@@ -146,14 +126,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 30,
-      STR: 0,
-    },
-    ability2: {
-      HP: 45,
-      STR: 0,
-    },
+    incHP1: 30,
+    incHP2: 45,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210007_01': {
     id: '210007_01',
@@ -172,14 +148,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210008_01': {
     id: '210008_01',
@@ -198,14 +170,10 @@ const dragon = {
     abilities12: 70,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 15,
-      STR: 15,
-    },
-    ability2: {
-      HP: 20,
-      STR: 20,
-    },
+    incHP1: 15,
+    incHP2: 20,
+    incSTR1: 15,
+    incSTR2: 20,
   },
   '210010_01': {
     id: '210010_01',
@@ -224,14 +192,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 20,
-      STR: 0,
-    },
-    ability2: {
-      HP: 30,
-      STR: 0,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210011_01': {
     id: '210011_01',
@@ -250,14 +214,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 30,
-      STR: 0,
-    },
-    ability2: {
-      HP: 45,
-      STR: 0,
-    },
+    incHP1: 30,
+    incHP2: 45,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210012_01': {
     id: '210012_01',
@@ -276,14 +236,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 30,
-      STR: 0,
-    },
-    ability2: {
-      HP: 45,
-      STR: 0,
-    },
+    incHP1: 30,
+    incHP2: 45,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210013_01': {
     id: '210013_01',
@@ -302,14 +258,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210014_01': {
     id: '210014_01',
@@ -328,14 +280,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210015_01': {
     id: '210015_01',
@@ -354,14 +302,10 @@ const dragon = {
     abilities12: 70,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 15,
-      STR: 15,
-    },
-    ability2: {
-      HP: 20,
-      STR: 20,
-    },
+    incHP1: 15,
+    incHP2: 20,
+    incSTR1: 15,
+    incSTR2: 20,
   },
   '210016_01': {
     id: '210016_01',
@@ -380,14 +324,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210017_01': {
     id: '210017_01',
@@ -406,14 +346,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210018_01': {
     id: '210018_01',
@@ -432,14 +368,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210019_01': {
     id: '210019_01',
@@ -458,14 +390,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210020_01': {
     id: '210020_01',
@@ -484,14 +412,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 40,
-      STR: 0,
-    },
-    ability2: {
-      HP: 60,
-      STR: 0,
-    },
+    incHP1: 40,
+    incHP2: 60,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210021_01': {
     id: '210021_01',
@@ -510,14 +434,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 10,
-    },
-    ability2: {
-      HP: 0,
-      STR: 15,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210022_01': {
     id: '210022_01',
@@ -536,14 +456,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 0,
-    },
-    ability2: {
-      HP: 15,
-      STR: 0,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210023_01': {
     id: '210023_01',
@@ -562,14 +478,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 5,
-      STR: 5,
-    },
-    ability2: {
-      HP: 8,
-      STR: 8,
-    },
+    incHP1: 5,
+    incHP2: 8,
+    incSTR1: 5,
+    incSTR2: 8,
   },
   '210024_01': {
     id: '210024_01',
@@ -588,14 +500,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210025_01': {
     id: '210025_01',
@@ -614,14 +522,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210026_01': {
     id: '210026_01',
@@ -640,14 +544,10 @@ const dragon = {
     abilities12: 85,
     abilities21: 5,
     abilities22: 15,
-    ability1: {
-      HP: 0,
-      STR: 35,
-    },
-    ability2: {
-      HP: 0,
-      STR: 50,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 35,
+    incSTR2: 50,
   },
   '210036_01': {
     id: '210036_01',
@@ -666,14 +566,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 40,
-      STR: 0,
-    },
-    ability2: {
-      HP: 60,
-      STR: 0,
-    },
+    incHP1: 40,
+    incHP2: 60,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210038_01': {
     id: '210038_01',
@@ -692,14 +588,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 80,
     abilities22: 100,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210039_01': {
     id: '210039_01',
@@ -718,14 +610,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 80,
     abilities22: 100,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210040_01': {
     id: '210040_01',
@@ -744,14 +632,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 80,
     abilities22: 100,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210043_01': {
     id: '210043_01',
@@ -770,14 +654,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 20,
-      STR: 20,
-    },
-    ability2: {
-      HP: 30,
-      STR: 30,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210045_01': {
     id: '210045_01',
@@ -796,14 +676,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 20,
-    },
-    ability2: {
-      HP: 0,
-      STR: 30,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210046_01': {
     id: '210046_01',
@@ -822,14 +698,10 @@ const dragon = {
     abilities12: 50,
     abilities21: 35,
     abilities22: 50,
-    ability1: {
-      HP: 0,
-      STR: 0,
-    },
-    ability2: {
-      HP: 0,
-      STR: 0,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 35,
+    incSTR2: 50,
   },
   '210048_01': {
     id: '210048_01',
@@ -848,17 +720,12 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 35,
-    },
-    ability2: {
-      HP: 0,
-      STR: 50,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 35,
+    incSTR2: 50,
     resEle: 'Shadow',
-    res1: 15,
-    res2: 15,
+    incRes: 15,
   },
   '210049_01': {
     id: '210049_01',
@@ -877,14 +744,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210050_01': {
     id: '210050_01',
@@ -903,14 +766,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210052_01': {
     id: '210052_01',
@@ -929,17 +788,12 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 35,
-    },
-    ability2: {
-      HP: 0,
-      STR: 50,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 35,
+    incSTR2: 50,
     resEle: 'Wind',
-    res1: 15,
-    res2: 15,
+    incRes: 15,
   },
   '210057_01': {
     id: '210057_01',
@@ -958,14 +812,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 20,
-    },
-    ability2: {
-      HP: 0,
-      STR: 30,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 20,
+    incSTR2: 30,
   },
   '210058_01': {
     id: '210058_01',
@@ -984,14 +834,10 @@ const dragon = {
     abilities12: 80,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210059_01': {
     id: '210059_01',
@@ -1010,14 +856,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 10,
-    },
-    ability2: {
-      HP: 0,
-      STR: 15,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210060_01': {
     id: '210060_01',
@@ -1036,14 +878,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 10,
-    },
-    ability2: {
-      HP: 0,
-      STR: 15,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210061_01': {
     id: '210061_01',
@@ -1062,14 +900,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 10,
-    },
-    ability2: {
-      HP: 0,
-      STR: 15,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210062_01': {
     id: '210062_01',
@@ -1088,14 +922,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 10,
-    },
-    ability2: {
-      HP: 0,
-      STR: 15,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210063_01': {
     id: '210063_01',
@@ -1114,14 +944,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 0,
-    },
-    ability2: {
-      HP: 15,
-      STR: 0,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210064_01': {
     id: '210064_01',
@@ -1140,14 +966,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 0,
-    },
-    ability2: {
-      HP: 15,
-      STR: 0,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210065_01': {
     id: '210065_01',
@@ -1166,14 +988,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 0,
-    },
-    ability2: {
-      HP: 15,
-      STR: 0,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210066_01': {
     id: '210066_01',
@@ -1192,14 +1010,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 0,
-    },
-    ability2: {
-      HP: 15,
-      STR: 0,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210067_01': {
     id: '210067_01',
@@ -1218,14 +1032,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 5,
-      STR: 5,
-    },
-    ability2: {
-      HP: 8,
-      STR: 8,
-    },
+    incHP1: 5,
+    incHP2: 8,
+    incSTR1: 5,
+    incSTR2: 8,
   },
   '210068_01': {
     id: '210068_01',
@@ -1244,14 +1054,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 5,
-      STR: 5,
-    },
-    ability2: {
-      HP: 8,
-      STR: 8,
-    },
+    incHP1: 5,
+    incHP2: 8,
+    incSTR1: 5,
+    incSTR2: 8,
   },
   '210069_01': {
     id: '210069_01',
@@ -1270,14 +1076,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 5,
-      STR: 5,
-    },
-    ability2: {
-      HP: 8,
-      STR: 8,
-    },
+    incHP1: 5,
+    incHP2: 8,
+    incSTR1: 5,
+    incSTR2: 8,
   },
   '210070_01': {
     id: '210070_01',
@@ -1296,14 +1098,10 @@ const dragon = {
     abilities12: 30,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 5,
-      STR: 5,
-    },
-    ability2: {
-      HP: 8,
-      STR: 8,
-    },
+    incHP1: 5,
+    incHP2: 8,
+    incSTR1: 5,
+    incSTR2: 8,
   },
   '210072_01': {
     id: '210072_01',
@@ -1322,14 +1120,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 10,
-      STR: 10,
-    },
-    ability2: {
-      HP: 15,
-      STR: 15,
-    },
+    incHP1: 10,
+    incHP2: 15,
+    incSTR1: 10,
+    incSTR2: 15,
   },
   '210075_01': {
     id: '210075_01',
@@ -1348,14 +1142,10 @@ const dragon = {
     abilities12: 70,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 15,
-      STR: 15,
-    },
-    ability2: {
-      HP: 20,
-      STR: 20,
-    },
+    incHP1: 15,
+    incHP2: 20,
+    incSTR1: 15,
+    incSTR2: 20,
   },
   '210076_01': {
     id: '210076_01',
@@ -1374,14 +1164,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210077_01': {
     id: '210077_01',
@@ -1400,14 +1186,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 40,
-    },
-    ability2: {
-      HP: 0,
-      STR: 60,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 40,
+    incSTR2: 60,
   },
   '210078_01': {
     id: '210078_01',
@@ -1426,14 +1208,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 0,
-    },
-    ability2: {
-      HP: 0,
-      STR: 0,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210079_01': {
     id: '210079_01',
@@ -1452,14 +1230,10 @@ const dragon = {
     abilities12: 60,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 20,
-      STR: 0,
-    },
-    ability2: {
-      HP: 30,
-      STR: 0,
-    },
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210080_01': {
     id: '210080_01',
@@ -1478,14 +1252,10 @@ const dragon = {
     abilities12: 100,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 30,
-    },
-    ability2: {
-      HP: 0,
-      STR: 45,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
   },
   '210081_01': {
     id: '210081_01',
@@ -1504,14 +1274,10 @@ const dragon = {
     abilities12: 70,
     abilities21: 5,
     abilities22: 15,
-    ability1: {
-      HP: 30,
-      STR: 0,
-    },
-    ability2: {
-      HP: 40,
-      STR: 0,
-    },
+    incHP1: 30,
+    incHP2: 40,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210089_01': {
     id: '210089_01',
@@ -1530,14 +1296,10 @@ const dragon = {
     abilities12: 0,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 0,
-    },
-    ability2: {
-      HP: 0,
-      STR: 0,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210090_01': {
     id: '210090_01',
@@ -1556,14 +1318,10 @@ const dragon = {
     abilities12: 0,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 0,
-    },
-    ability2: {
-      HP: 0,
-      STR: 0,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 0,
+    incSTR2: 0,
   },
   '210091_01': {
     id: '210091_01',
@@ -1582,14 +1340,10 @@ const dragon = {
     abilities12: 0,
     abilities21: 0,
     abilities22: 0,
-    ability1: {
-      HP: 0,
-      STR: 0,
-    },
-    ability2: {
-      HP: 0,
-      STR: 0,
-    },
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 0,
+    incSTR2: 0,
   },
 };
 export default dragon;
