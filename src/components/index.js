@@ -1,7 +1,8 @@
-import Image from './Image';
-import InputNumber from './InputNumber';
+import Context from './Context';
+import ThemeProvider from './ThemeProvider';
+import withTheme from './withTheme';
 import Select from './Select';
-import ThemeProvider from './Theme/ThemeProvider';
-import withTheme from './Theme/withTheme';
+import Image from './Image';
+import Input from './Input';
 
-export { Image, InputNumber, Select, ThemeProvider, withTheme };
+export { Context, ThemeProvider, withTheme, Select, Image, Input };

@@ -1,29 +1,29 @@
 import main
-const = 'weapon'
-FILE = 'weapon'
+
+FILE_NAME = 'weapon'
 
 
 def set_weapon():
     table = 'Weapons'
-    fields = 'Id,BaseId,FormId,WeaponName,Type,Rarity,ElementalType,CraftNodeId,' + \
+    fields = 'Id,BaseId,FormId,WeaponName,Type,Rarity,ElementalType,' + \
         'MinHp,MaxHp,MinAtk,MaxAtk,SkillName,Abilities11,Abilities21,IsPlayable'
     group = 'BaseId,FormId'
     parse_int = ['MinHp', 'MaxHp', 'MinAtk', 'MaxAtk']
 
     raw_data = main.get_data(table, fields, group)
 
-    names = main.load_name(FILE)
+    names = main.load_name(FILE_NAME)
     o_len = len(names)
 
-    list = []
-    dict = {}
-    new = []
+    data_list = []
+    data_dict = {}
+    data_new = []
     for i in raw_data:
         item = i['title']
         rarity = int(item['Rarity'])
         if item['IsPlayable'] == '1' and rarity >= 3:
             uid = '{}_01_{}'.format(item['BaseId'], item['FormId'])
-            name = main.set_name(names, item, new)
+            name = main.set_name(names, item, data_new)
 
             new_item = {
                 'id': uid,
@@ -31,37 +31,39 @@ def set_weapon():
                 'weapon': item['Type'],
                 'element': item['ElementalType'],
                 'rarity': item['Rarity'],
-                'CraftNodeId': item['CraftNodeId'],
             }
 
             for k in parse_int:
                 new_item[k] = int(item[k])
 
-            new_item['Skill'] = item['SkillName'] != ''
+            new_item['skill'] = item['SkillName'] != ''
 
             special = {}
             for a in ['Abilities11', 'Abilities21']:
                 ability = abilities.get(item[a], '')
                 if ability:
-                    new_item[a] = ability['Might']
+                    new_item[a.lower()] = ability['Might']
 
-                    if 'def' in ability:
-                        # TODO Change special key for new version
-                        special['DefEle'] = ability['defEle']
-                        special['Def'] = ability['def']
+                    if 'STR' in ability:
+                        special['reqEle'] = ability['reqEle']
+                        special['incSTR'] = ability['STR']
+                    elif 'def' in ability:
+                        special['reqEle'] = ability['reqEle']
+                        special['incDef'] = ability['def']
                 else:
-                    new_item[a] = 0
+                    new_item[a.lower()] = 0
             if len(special):
                 new_item.update(special)
 
-            dict[uid] = new_item
-            list.append(new_item)
-    main.save_file('dict', const, dict)
-    main.save_file('list', const, list)
+            data_list.append(new_item)
+            data_dict[uid] = new_item
+    main.save_file('list', FILE_NAME, data_list)
+    main.save_file('dict', FILE_NAME, data_dict)
 
     if len(names) != o_len:
-        main.save_file('locales', const, names)
-        main.download_images(const, new)
+        print(data_new)
+        main.save_file('locales', FILE_NAME, names)
+        main.download_images(FILE_NAME, data_new)
 
 
 if __name__ == '__main__':

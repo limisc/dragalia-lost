@@ -21,7 +21,7 @@ export default {
   exDef: { en: 'Co-Ability Def', ja: 'EX 防御', zh: 'EX 防御' },
   def: { en: 'Def', ja: '防御', zh: '防御' },
   res: { en: 'Resistance', ja: '属性耐性', zh: '属性抗性' },
-  reduceDamage: { en: 'Reduce Damage', ja: '真竜耐性', zh: '真龙抗性' },
+  counter: { en: 'Reduce Damage', ja: '真竜耐性', zh: '真龙抗性' },
   mult: { en: 'Multiplier', zh: '倍率', ja: '乗数' },
   level: { en: 'Level', ja: 'レベル', zh: '等级' },
   rarity: { en: 'Rarity', ja: 'レアリティ', zh: '稀有度' },
@@ -54,5 +54,5 @@ export default {
   //Dungeon
   hms: { en: 'High Midgardsormr', ja: '真ミドガルズオルム', zh: '真耶梦加得' },
   hbh: { en: 'High Brunhilda', ja: '真ブリュンヒルデ', zh: '真布伦希尔德' },
-  hmc: { en: 'High Mercury', zh: '真墨丘利', ja: '真マーキュリー' },
+  hmc: { en: 'High Mercury', ja: '真マーキュリー', zh: '真墨丘利' },
 };
