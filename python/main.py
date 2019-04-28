@@ -8,6 +8,13 @@ MAX = 500
 BASE_URL = 'https://dragalialost.gamepedia.com/api.php?action=cargoquery&format=json&limit={}'.format(
     MAX)
 
+ABBR_FIELDS = {
+    'HP': 'HP',
+    'strength': 'STR',
+    'strength and HP': 'Hybrid',
+    'defense': 'def'
+}
+
 
 def get_data(table, fields, group):
     def get_api_request(table, fields, group, offset):
@@ -33,80 +40,29 @@ def print_data(data):
 
 def regex(details):
     result = {}
-
-    result.update(regexDragon(details))
-    result.update(regexDef(details))
+    result.update(regex_HP_STR_Def_DragonRes(details))
     result.update(regexRes(details))
 
     return result
 
 
-def regexDef(details=''):
-    # test = [
-    #     "If the user is attuned to Flame:  increases defense by '''5%''' when HP is '''70%''' or above.",
-    #     "Increases defense by '''20%''' when HP is '''full'''",
-    # ]
-
-    # details = test[0]
+def regex_HP_STR_Def_DragonRes(details=''):
     r = re.search(
-        r'(?:attuned to (Flame|Water|Wind|Light|Shadow):.*)?' +
-        r'increases defense by \'\'\'(\d+)%\'\'\'', details, re.IGNORECASE
+        r'(Flame|Water|Wind|Light|Shadow)?:?\s*' +
+        r'increases (strength|HP|defense|strength and HP) by (?:\'\'\')?(\d+)%(?:\'\'\')?' +
+        r'(?:\.' +
+        r'| and adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance' +
+        r'| when HP is| and)', details, re.IGNORECASE
     )
 
     if r:
-        # print(r.groups())
-        defEle, v = r.groups()
-        v = int(v)
+        element, field, v, res, resEle = r.groups()
+        result = {}
+        result['reqEle'] = element or ''
+        result[ABBR_FIELDS[field]] = int(v)
 
-        return {
-            'defEle': defEle if defEle else '',
-            'def': v,
-        }
-
-    return {}
-
-
-def regexDragon(details=''):
-    # test = [
-    #     "If the user is attuned to Light: increases strength by '''35%''' and adds '''15%''' to shadow resistance.",
-    #     "If the user is attuned to Flame: increases strength by \'\'\'35%\'\'\' and adds \'\'\'15%\'\'\' to wind resistance.",
-    #     "If the user is attuned to Water: increases strength by \'\'\'3%\'\'\' for every five enemies defeated (up to five times per quest).",
-    #     "If the user is attuned to Wind: increases strength by \'\'\'30%\'\'\' and adds \'\'\'50%\'\'\' to the modifier applied to critical damage.",
-    #     "If the user is attuned to Water:  increases strength by '''30%''' and critical rate by '''15%'''.",
-    #     "If the user is attuned to Shadow: increases strength by '''35%''' when HP is '''30%''' or above.",
-    # ]
-
-    # details = test[0]
-    r = re.search(
-        r'(?:Flame|Water|Wind|Light|Shadow): ' +
-        r'increases (strength|HP|strength and HP) ' +
-        r'by \'\'\'(\d+)%\'\'\'' +
-        r'(?=\.| and (?:adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow))?)', details, re.IGNORECASE
-    )
-
-    if r:
-        # print(r.groups())
-        dragon_type, v, res, resEle = r.groups()
-        HP = STR = 0
-        v = int(v)
-        if dragon_type == 'strength':
-            STR = v
-        elif dragon_type == 'HP':
-            HP = v
-        elif dragon_type == 'strength and HP':
-            HP = STR = v
-
-        result = {
-            'ability': {
-                'HP': HP,
-                'STR': STR
-            }
-        }
-        if res:
-            result.update({
-                'res': int(res),
-                'resEle': resEle.capitalize(),
-            })
+        if resEle:
+            result.update({'resEle': resEle.capitalize(), 'res': int(res)})
 
         return result
 
@@ -128,7 +84,7 @@ def regexRes(details=''):
 
     if r:
         # print(r.groups())
-        resEle, counter, v = r.groups()
+        resEle, dungeon, v = r.groups()
         v = int(v)
 
         if resEle:
@@ -137,16 +93,16 @@ def regexRes(details=''):
                 'resEle': resEle,
                 'res': v,
             }
-        elif counter:
-            short = {
+        elif dungeon:
+            abbr = {
                 "High Midgardsormr": "hms",
                 "High Brunhilda": "hbh",
                 "High Mercury": "hmc"
             }
 
             return {
-                'counter': short[counter],
-                'reduce': v,
+                'dungeon': abbr[dungeon],
+                'counter': v,
             }
 
     return {}
@@ -167,47 +123,13 @@ def set_abilities():
         new_item = {
             'Name': item['Name'],
             'Details': details,
-            'Might': int(item['PartyPowerWeight']) if item['PartyPowerWeight'] else 0
+            'Might': int(item['PartyPowerWeight']) or 0
         }
 
         updates = regex(details)
 
         if len(updates):
             new_item.update(updates)
-
-        results[item['Id']] = new_item
-
-    return results
-
-
-def set_coAbilities():
-    table = 'CoAbilities'
-    fields = 'Id,Name,Details,PartyPowerWeight'
-    group = 'Id'
-
-    raw_data = get_data(table, fields, group)
-
-    results = {}
-    for i in raw_data:
-        item = i['title']
-        details = item['Details']
-
-        new_item = {
-            'Name': item['Name'],
-            'Details': details,
-            'Might': int(item['PartyPowerWeight']) if item['PartyPowerWeight'] else 0
-        }
-
-        r = re.search(r'Increases (HP|defense) by \'\'\'(\d+)%\'\'\'',
-                      item['Details'], re.IGNORECASE)
-
-        if r:
-            # print(r.groups())
-            c, v = r.groups()
-            c = 'def' if c == 'defense' else c
-            v = int(v)
-
-            new_item[c] = v
 
         results[item['Id']] = new_item
 
@@ -266,7 +188,10 @@ def save_file(f_type, file, data):
             'src/data/dataList/{}.js'.format(file)
     elif f_type == 'dict':
         path = Path(__file__).resolve().parent.parent / \
-            'src/data/dataLookup/{}.js'.format(file)
+            'src/data/dataDict/{}.js'.format(file)
+    elif f_type == 'facility':
+        path = Path(__file__).resolve().parent.parent / \
+            'src/locales/{}.js'.format(file)
 
     with open(path, 'w') as f:
         if f_type != 'locales':
@@ -328,7 +253,7 @@ def download_images(file_name, new_content=[]):
                         f_key, f_level = r.groups()
                         if f_level > f_max.get(f_key, ''):
                             f_max[f_key] = f_level
-                            download['TW02_{}.png'.format(f_key)] = i['url']
+                            download['{}.png'.format(f_key)] = i['url']
                     else:
                         download[name] = i['url']
 
@@ -344,7 +269,7 @@ def download_images(file_name, new_content=[]):
 
     for k, v in download.items():
         path = Path(__file__).resolve().parent.parent / \
-            'public/image/{}/{}'.format(file_name, k)
+            'public/images/{}/{}'.format(file_name, k)
         urllib.request.urlretrieve(v, path)
         print('download image: {}'.format(path))
 
@@ -359,4 +284,6 @@ def clear_dict(file):
 
 if __name__ == '__main__':
     print(__file__)
-    download_images('facility', ['101002'])
+    # download_images('facility', ['101002'])
+    # facility = load_name('facility')
+    # save_file('facility', 'facility', facility)

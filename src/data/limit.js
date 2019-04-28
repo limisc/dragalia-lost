@@ -1,12 +1,7 @@
 const limit = {
-  bond: 30,
-  altar: 30,
-  dojo: 30,
-  fafnir: 30,
-  event: 30,
   slime: 15,
+  mana: { '3': '30', '4': '40', '5': '50' },
   adventurer: { '3': 60, '4': 70, '5': 80 },
-  mana: { '3': 30, '4': 40, '5': 50 },
   weapon: {
     '3': [20, 25, 30, 35, 40],
     '4': [50, 55, 60, 65, 70],
@@ -25,6 +20,7 @@ const limit = {
   },
 };
 
+// facility values
 export const values = {
   altar: {
     '0': { HP: 0, STR: 0 },

@@ -1,5 +1,5 @@
 import main
-FILE = 'dragon'
+FILE_NAME = 'dragon'
 
 
 def set_dragon():
@@ -14,10 +14,10 @@ def set_dragon():
 
     raw_data = main.get_data(table, fields, group)
 
-    names = main.load_name(FILE)
+    names = main.load_name(FILE_NAME)
     o_len = len(names)
 
-    new_content = []
+    data_new = []
     data_list = []
     data_dict = {}
 
@@ -25,7 +25,7 @@ def set_dragon():
         item = i['title']
         if item['BaseId'] and item['IsPlayable'] == '1':
             uid = '{}_01'.format(item['BaseId'])
-            name = main.set_name(names, item, new_content)
+            name = main.set_name(names, item, data_new)
 
             new_item = {
                 'id': uid,
@@ -37,46 +37,43 @@ def set_dragon():
             for k in parse_int:
                 new_item[k] = int(item[k])
 
-            addition1 = {
-                'ability1': {
-                    'HP': 0,
-                    'STR': 0,
-                },
-                'ability2': {
-                    'HP': 0,
-                    'STR': 0,
-                }
-            }
-            addition2 = {}
+            HP_V = {'incHP1': 0, 'incHP2': 0}
+            STR_V = {'incSTR1': 0, 'incSTR2': 0}
+            res_V = {}
+
             for a in ['Abilities11', 'Abilities12', 'Abilities21', 'Abilities22']:
                 ability = abilities.get(item[a], '')
                 if ability:
-                    new_item[a] = ability['Might']
-
+                    new_item[a.lower()] = ability['Might']
                     level = a[-1]
-                    if 'ability' in ability:
-                        addition1['ability' + level] = ability['ability']
+                    if 'HP' in ability:
+                        HP_V['incHP' + level] = ability['HP']
+                    elif 'STR' in ability:
+                        STR_V['incSTR'+level] = ability['STR']
+                    elif 'Hybrid' in ability:
+                        HP_V['incHP' + level] = ability['Hybrid']
+                        STR_V['incSTR'+level] = ability['Hybrid']
 
                     if 'res' in ability:
-                        # TODO
-                        addition2['ResEle'] = ability['resEle']
-                        addition2['Res' + level] = ability['res']
+                        res_V['resEle'] = ability['resEle']
+                        res_V['incRes'] = ability['res']
                 else:
-                    new_item[a] = 0
+                    new_item[a.lower()] = 0
 
-            new_item.update(addition1)
-            if len(addition2):
-                new_item.update(addition2)
+            new_item.update(HP_V)
+            new_item.update(STR_V)
+            new_item.update(res_V)
 
             data_list.append(new_item)
             data_dict[uid] = new_item
 
-    main.save_file('list', FILE, data_list)
-    main.save_file('dict', FILE, data_dict)
+    main.save_file('list', FILE_NAME, data_list)
+    main.save_file('dict', FILE_NAME, data_dict)
 
     if len(names) != o_len:
-        main.save_file('locales', FILE, names)
-        main.download_images(FILE, new_content)
+        print(data_new)
+        main.save_file('locales', FILE_NAME, names)
+        main.download_images(FILE_NAME, data_new)
 
 
 if __name__ == '__main__':

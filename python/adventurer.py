@@ -1,7 +1,7 @@
 import main
-const = 'adventurer'
+FILE_NAME = 'adventurer'
 
-match_lv = {
+ABILITY_LEVEL = {
     '5': {
         'Abilities11': 10,
         'Abilities12': 30,
@@ -26,7 +26,6 @@ def set_adventurer():
         'MinHp3,MinHp4,MinHp5,MaxHp,PlusHp0,PlusHp1,PlusHp2,PlusHp3,PlusHp4,McFullBonusHp5,' + \
         'MinAtk3,MinAtk4,MinAtk5,MaxAtk,PlusAtk0,PlusAtk1,PlusAtk2,PlusAtk3,PlusAtk4,McFullBonusAtk5,' + \
         'Abilities11,Abilities12,Abilities21,Abilities22,Abilities31,Abilities32,' + \
-        'ExAbilityData1,ExAbilityData2,ExAbilityData3,ExAbilityData4,ExAbilityData5,' + \
         'DefCoef,IsPlayable'
     group = 'Id,VariationId'
     parse_int = [
@@ -37,74 +36,65 @@ def set_adventurer():
 
     raw_data = main.get_data(table, fields, group)
 
-    names = main.load_name(const)
+    names = main.load_name(FILE_NAME)
     o_len = len(names)
-    list = []
-    dict = {}
-    new = []
+    data_list = []
+    data_dict = {}
+    data_new = []
+
     for i in raw_data:
         item = i['title']
         if item['IsPlayable'] == '1':
-            uid = '{}_0{}_r0'.format(item['Id'], item['VariationId'])
-            name = main.set_name(names, item, new)
-
+            uid = '{}_0{}'.format(item['Id'], item['VariationId'])
+            name = main.set_name(names, item, data_new)
+            weapon = item['WeaponType']
+            rarity = item['Rarity']
             new_item = {
                 'id': uid,
                 'name': name,
-                'weapon': item['WeaponType'],
+                'weapon': weapon,
                 'element': item['ElementalType'],
-                'rarity': item['Rarity'],
+                'rarity': rarity,
             }
 
             for k in parse_int:
                 new_item[k] = int(item[k])
 
-            addition1 = {}
-            addition2 = {}
-            coAddition = {}
+            inc_LV = {}
+            inc_Value = {}
             for a in ['Abilities11', 'Abilities12', 'Abilities21', 'Abilities22', 'Abilities31', 'Abilities32']:
                 ability = abilities.get(item[a], '')
                 if ability:
-                    new_item[a] = ability['Might']
+                    new_item[a.lower()] = ability['Might']
 
                     level = a[-1]
 
+                    if 'STR' in ability:
+                        inc_LV['STRLV'+level] = ABILITY_LEVEL.get(
+                            rarity, ABILITY_LEVEL['res'])[a]
+                        inc_Value['incSTR' + level] = ability['STR']
+
                     if 'def' in ability:
-                        # TODO Change key name
-                        addition1['DefLV' + level] = match_lv.get(
-                            item['Rarity'], match_lv['res'])[a]
-                        addition2['Def' + level] = ability['def']
+                        inc_LV['defLV'+level] = ABILITY_LEVEL.get(
+                            rarity, ABILITY_LEVEL['res'])[a]
+                        inc_Value['incDef' + level] = ability['def']
 
-            for c in ['ExAbilityData1', 'ExAbilityData2', 'ExAbilityData3', 'ExAbilityData4', 'ExAbilityData5']:
-                coAbility = coAbilities.get(item[c], '')
-                level = str(int(c[-1]) - 1)
-                if coAbility:
-                    new_item['EX' + level] = coAbility['Might']
+            new_item.update(inc_LV)
+            new_item.update(inc_Value)
 
-                    if 'HP' in coAbility:
-                        coAddition['EXHP' + level] = coAbility['HP']
+            data_list.append(new_item)
+            data_dict[uid] = new_item
 
-                    if 'def' in coAbility:
-                        coAddition['EXDef' + level] = coAbility['def']
-
-            new_item.update(coAddition)
-            new_item.update(addition1)
-            new_item.update(addition2)
-
-            list.append(new_item)
-            dict[uid] = new_item
-
-    main.save_file('dict', const, dict)
-    main.save_file('list', const, list)
+    main.save_file('list', FILE_NAME, data_list)
+    main.save_file('dict', FILE_NAME, data_dict)
 
     if len(names) != o_len:
-        print(new)
-        main.save_file('locales', const, names)
-        main.download_images(const, new)
+        print(data_new)
+        main.save_file('locales', FILE_NAME, names)
+        main.download_images(FILE_NAME, data_new)
 
 
 if __name__ == '__main__':
     print(__file__)
     abilities = main.set_abilities()
-    coAbilities = main.set_coAbilities()
     set_adventurer()
