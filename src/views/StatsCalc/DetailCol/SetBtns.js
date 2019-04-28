@@ -4,20 +4,14 @@ import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
 import { withTheme } from 'components';
 import { translate, resetAll } from 'actions';
-import {
-  ExpandLess,
-  ExpandMore,
-  ChevronRight,
-  ChevronLeft,
-} from '@material-ui/icons';
+import { ExpandLess, ExpandMore, ChevronRight } from '@material-ui/icons';
+import NavDrawer from './NavDrawer';
 
 class SetBtns extends React.Component {
-  state = {
-    open: false,
-  };
+  state = { open: false };
 
   render() {
-    const { lang, expand, expandDisabled, toggle, resetAll } = this.props;
+    const { lang, expand, expandDisabled, toggleExpand, resetAll } = this.props;
 
     return (
       <div className="set-btns flex">
@@ -26,7 +20,7 @@ class SetBtns extends React.Component {
           variant="contained"
           onClick={this.toggleDrawer}
         >
-          {this.state.open ? <ChevronLeft /> : <ChevronRight />}
+          <ChevronRight />
         </Button>
 
         <Button className="col-2 col-4" variant="contained" disabled>
@@ -37,7 +31,7 @@ class SetBtns extends React.Component {
           className="col-2 col-4"
           variant="contained"
           disabled={expandDisabled}
-          onClick={toggle}
+          onClick={toggleExpand}
         >
           {expand ? <ExpandLess /> : <ExpandMore />}
         </Button>
@@ -45,6 +39,8 @@ class SetBtns extends React.Component {
         <Button className="col-2 col-4" variant="contained" onClick={resetAll}>
           {translate('reset', lang)}
         </Button>
+
+        <NavDrawer open={this.state.open} toggleDrawer={this.toggleDrawer} />
       </div>
     );
   }
