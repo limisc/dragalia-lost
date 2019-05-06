@@ -1,46 +1,38 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { memo, useContext } from 'react';
 import { TextField, InputAdornment } from '@material-ui/core';
 import { translate } from 'actions';
-import withTheme from './withTheme';
+import Context from './Context';
 
-class Input extends React.PureComponent {
-  render() {
-    const {
-      classes,
-      lang,
-      label,
-      value,
-      adornment,
-      disabled,
-      onChange,
-    } = this.props;
-    return (
-      <TextField
-        type="number"
-        variant="filled"
-        className={classes}
-        value={value}
-        disabled={disabled}
-        label={translate(label, lang)}
-        onChange={onChange}
-        InputProps={{
-          name: label,
-          onKeyPress: this.handleKeyPress,
-          endAdornment: adornment && (
-            <InputAdornment position="end">{adornment}</InputAdornment>
-          ),
-        }}
-      />
-    );
-  }
+const Input = memo(props => {
+  const { classes, label, value, adornment, disabled, onChange } = props;
+  const { lang } = useContext(Context);
 
-  handleKeyPress = e => {
+  const handleKeyPress = e => {
     //prevent user enter + - e in number input field.
     if (['+', '-', 'e', '.'].indexOf(e.key) !== -1) {
       e.preventDefault();
     }
   };
-}
 
-export default withTheme(Input);
+  return (
+    <TextField
+      type="number"
+      variant="filled"
+      label={translate(label, lang)}
+      value={value}
+      className={classes}
+      disabled={disabled}
+      onChange={onChange}
+      InputProps={{
+        name: label,
+        onKeyPress: handleKeyPress,
+        endAdornment: adornment && (
+          <InputAdornment position="end">{adornment}</InputAdornment>
+        ),
+      }}
+    />
+  );
+});
+
+export default Input;
