@@ -1,52 +1,35 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useContext } from 'react';
 import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
-import { withTheme } from 'components';
+import { Context } from 'components';
 import { translate, resetAll } from 'actions';
-import { ExpandLess, ExpandMore, ChevronRight } from '@material-ui/icons';
-import NavDrawer from './NavDrawer';
+import { ExpandLess, ExpandMore } from '@material-ui/icons';
 
-class SetBtns extends React.Component {
-  state = { open: false };
+const SetBtns = props => {
+  const { expand, expandDisabled, toggleExpand, resetAll } = props;
+  const { lang } = useContext(Context);
 
-  render() {
-    const { lang, expand, expandDisabled, toggleExpand, resetAll } = this.props;
+  return (
+    <div className="set-btns flex">
+      <Button className="col-3" variant="contained" disabled>
+        mode
+      </Button>
+      <Button
+        className="col-3"
+        variant="contained"
+        disabled={expandDisabled}
+        onClick={toggleExpand}
+      >
+        {expand ? <ExpandLess /> : <ExpandMore />}
+      </Button>
 
-    return (
-      <div className="set-btns flex">
-        <Button
-          className="col-2 col-4"
-          variant="contained"
-          onClick={this.toggleDrawer}
-        >
-          <ChevronRight />
-        </Button>
-
-        <Button className="col-2 col-4" variant="contained" disabled>
-          mode
-        </Button>
-
-        <Button
-          className="col-2 col-4"
-          variant="contained"
-          disabled={expandDisabled}
-          onClick={toggleExpand}
-        >
-          {expand ? <ExpandLess /> : <ExpandMore />}
-        </Button>
-
-        <Button className="col-2 col-4" variant="contained" onClick={resetAll}>
-          {translate('reset', lang)}
-        </Button>
-
-        <NavDrawer open={this.state.open} toggleDrawer={this.toggleDrawer} />
-      </div>
-    );
-  }
-
-  toggleDrawer = () => this.setState(state => ({ open: !state.open }));
-}
+      <Button className="col-3" variant="contained" onClick={resetAll}>
+        {translate('reset', lang)}
+      </Button>
+    </div>
+  );
+};
 
 const mapStateToProps = ({ stats: { adventurer } }) => {
   const expandDisabled = !adventurer;
@@ -59,9 +42,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default withTheme(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(SetBtns)
-);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SetBtns);

@@ -1,3 +1,4 @@
+import Header from './Header';
 import StatsCalc from './StatsCalc';
 
-export { StatsCalc };
+export { Header, StatsCalc };
