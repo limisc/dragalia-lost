@@ -4,5 +4,6 @@ import withTheme from './withTheme';
 import Select from './Select';
 import Image from './Image';
 import Input from './Input';
+import GitHubIcon from './GitHubIcon';
 
-export { Context, ThemeProvider, withTheme, Select, Image, Input };
+export { Context, ThemeProvider, withTheme, Select, Image, Input, GitHubIcon };
