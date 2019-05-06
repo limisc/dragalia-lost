@@ -2,8 +2,8 @@ import { StatsCalc } from 'views';
 
 const routers = [
   {
-    id: '0',
-    path: '/stats/:lang(en|ja|zh)?',
+    id: 1,
+    path: '/stats/:lang?',
     component: StatsCalc,
   },
   // {
