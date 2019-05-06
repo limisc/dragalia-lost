@@ -8,7 +8,54 @@ body {
 }
 
 #root {
-  padding: 0 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  width: 100%;
+  height: 40px;
+  z-index: 1100;
+  box-sizing: border-box;
+  padding: 0 16px;
+  background-color: #eed6ad;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  margin-right: 8px;
+  box-shadow: 0 0 6px -3px #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.header-icon:last-child {
+  margin-right: 0;
+}
+
+span.icon-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 45px;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 .flex {
@@ -205,11 +252,12 @@ div.active {
 
 ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
 .drawer li {
-  height: 46px;
+  height: 45px;
   display: flex;
   align-items: center;
   padding-left: 50px;
@@ -235,6 +283,14 @@ ul {
 
 .col-2:nth-child(n + 3) {
   margin-top: 8px;
+}
+
+.col-3 {
+  width: calc((100% - 8px * 2) / 3);
+}
+
+.col-3:not(:nth-child(3n + 1)) {
+  margin-left: 8px;
 }
 
 @media (min-width: 520px) and (max-width: 959px), (min-width: 1280px) {
@@ -283,26 +339,11 @@ ul {
   }
 }
 
-@media (max-width: 959px) {
-  .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .column:nth-child(2) {
-    width: calc(100% + 16px);
-    margin: 8px 0 8px -16px;
-  }
-  .column:nth-child(3) {
-    height: 100vh;
-  }
-}
-
 @media (min-width: 960px) {
   .column {
     width: calc((100% - 8px * 2) / 3);
     margin-right: 8px;
-    height: 100vh;
+    height: calc(100vh - 45px);
     display: flex;
     flex-direction: column;
   }
