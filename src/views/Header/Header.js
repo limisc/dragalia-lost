@@ -34,7 +34,7 @@ const Header = memo(() => {
 
         <div className="header-icon">
           <HomeOutlined />
-          <Link to={`/stats/${lang}`}>
+          <Link to={`/stats/${lang}`} title="HOME">
             <span className="icon-link" />
           </Link>
         </div>
@@ -45,7 +45,7 @@ const Header = memo(() => {
             src={`${process.env.PUBLIC_URL}/images/icon/donation.svg`}
             height="20"
           />
-          <Link to={`/donation/${lang}`}>
+          <Link to={`/donation/${lang}`} title="Donation">
             <span className="icon-link" />
           </Link>
         </div>

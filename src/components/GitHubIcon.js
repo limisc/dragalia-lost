@@ -11,6 +11,7 @@ const GitHubIcon = memo(() => {
 
       <a
         href="https://github.com/junlico/dragalia-lost"
+        title="GitHub Repository"
         rel="noopener noreferrer"
         target="_blank"
       >
