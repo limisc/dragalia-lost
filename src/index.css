@@ -246,6 +246,10 @@ div.active {
   width: 25%;
 }
 
+.facility-icon > img {
+  cursor: pointer;
+}
+
 .drawer {
   width: 200px;
 }
