@@ -1,21 +1,16 @@
-import { StatsCalc } from 'views';
+import { Donation, StatsCalc } from 'views';
 
 const routers = [
+  {
+    id: 0,
+    path: '/donation/:lang?',
+    component: Donation,
+  },
   {
     id: 1,
     path: '/stats/:lang?',
     component: StatsCalc,
   },
-  // {
-  //   id: '1',
-  //   path: '/weapon/:lang(en|ja|zh)?',
-  //   component: undefined,
-  // },
-  // {
-  //   id: '2',
-  //   path: '/facility/:lang(en|ja|zh)?',
-  //   component: undefined,
-  // },
 ];
 
 export default routers;
