@@ -12,14 +12,14 @@ import NavDrawer from './NavDrawer';
 const Header = memo(() => {
   const { lang } = useContext(Context);
   const [open, setOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
 
-  const handleWidth = () => setWidth(window.innerWidth);
   const openDrawer = () => setOpen(true);
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const handleWidth = () => setWidth(window.innerWidth);
   useEffect(() => {
     window.addEventListener('resize', handleWidth);
     return () => window.removeEventListener('resize', handleWidth);
@@ -32,23 +32,23 @@ const Header = memo(() => {
           <MenuOutlined />
         </div>
 
-        {/* <div className="header-icon">
+        <div className="header-icon">
           <HomeOutlined />
           <Link to={`/stats/${lang}`}>
             <span className="icon-link" />
           </Link>
-        </div> */}
+        </div>
 
-        {/* <div className="header-icon">
+        <div className="header-icon">
           <img
             alt="donation"
             src={`${process.env.PUBLIC_URL}/images/icon/donation.svg`}
-            height="24"
+            height="20"
           />
           <Link to={`/donation/${lang}`}>
             <span className="icon-link" />
           </Link>
-        </div> */}
+        </div>
       </Fragment>
       <div style={{ flex: '1' }} />
       {width < 960 ? (
