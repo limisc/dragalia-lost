@@ -14,19 +14,26 @@ const ThemeProvider = ({ children, history, match: { params, path } }) => {
   const preferred = useMemo(getPreferred, [getPreferred]);
 
   useEffect(() => {
-    const scrollToTop = () => {
-      window.scrollTo(0, 0);
-    };
-
     const replaceURL = lang => {
       const url = path.replace(':lang?', lang);
       history.replace(url);
     };
 
+    const setTitle = lang => {
+      const title = {
+        en: 'Dragalia Lost - Stats Calculator',
+        ja: 'ドラガリアロスト',
+        zh: '失落的龙约 - 人物属性计算器',
+      };
+      document.title = title[lang] || title.en;
+    };
+
     if (lang !== params.lang) {
-      scrollToTop();
+      window.scrollTo(0, 0);
+      setTitle(lang);
       replaceURL(lang);
     } else if (!lang || ['en', 'ja', 'zh'].indexOf(lang) === -1) {
+      setTitle(preferred);
       setLang(preferred);
       replaceURL(preferred);
     }
