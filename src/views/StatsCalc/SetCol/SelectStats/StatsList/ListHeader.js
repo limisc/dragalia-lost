@@ -1,31 +1,30 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { memo, useContext } from 'react';
 import { translate } from 'actions';
-import { withTheme } from 'components';
+import { Context } from 'components';
 
-class ListHeader extends React.PureComponent {
-  render() {
-    const { lang, fields } = this.props;
-    return (
-      <div className="list-header flex highlight">
-        <div className="list-item-image" />
+const ListHeader = memo(({ fields }) => {
+  const { lang } = useContext(Context);
 
-        <div className="list-item-name">{translate('name', lang)}</div>
+  return (
+    <div className="list-header flex highlight">
+      <div className="list-item-image" />
 
-        {fields.map(f => {
-          if (f === 'rarity') {
-            return (
-              <div key={f} className="list-item-res ellipsis">
-                {translate('rarity', lang)}
-              </div>
-            );
-          }
+      <div className="list-item-name">{translate('name', lang)}</div>
 
-          return <div key={f} className="list-item-icon" />;
-        })}
-      </div>
-    );
-  }
-}
+      {fields.map(f => {
+        if (f === 'rarity') {
+          return (
+            <div key={f} className="list-item-res ellipsis">
+              {translate('rarity', lang)}
+            </div>
+          );
+        }
 
-export default withTheme(ListHeader);
+        return <div key={f} className="list-item-icon" />;
+      })}
+    </div>
+  );
+});
+
+export default ListHeader;

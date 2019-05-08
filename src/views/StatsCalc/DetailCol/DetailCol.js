@@ -1,22 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import SetBtns from './SetBtns';
 import StatsDetail from './StatsDetail';
 
-class DetailCol extends React.Component {
-  state = { expand: true };
+const DetailCol = () => {
+  const [expand, setExpand] = useState(true);
 
-  render() {
-    const { expand } = this.state;
-    return (
-      <div className="column">
-        <SetBtns expand={expand} toggleExpand={this.toggleExpand} />
-        <StatsDetail expand={expand} />
-      </div>
-    );
-  }
-
-  toggleExpand = () => this.setState(state => ({ expand: !state.expand }));
-}
+  return (
+    <div className="column">
+      <SetBtns expand={expand} setExpand={setExpand} />
+      <StatsDetail expand={expand} />
+    </div>
+  );
+};
 
 export default DetailCol;
