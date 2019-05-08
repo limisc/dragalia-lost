@@ -1,9 +1,19 @@
 import Context from './Context';
-import ThemeProvider from './ThemeProvider';
-import withTheme from './withTheme';
-import Select from './Select';
+import GitHubIcon from './GitHubIcon';
 import Image from './Image';
 import Input from './Input';
-import GitHubIcon from './GitHubIcon';
+import Select from './Select';
+import SelectItem from './SelectItem';
+import ThemeProvider from './ThemeProvider';
+import withTheme from './withTheme';
 
-export { Context, ThemeProvider, withTheme, Select, Image, Input, GitHubIcon };
+export {
+  Context,
+  GitHubIcon,
+  Image,
+  Input,
+  Select,
+  SelectItem,
+  ThemeProvider,
+  withTheme,
+};

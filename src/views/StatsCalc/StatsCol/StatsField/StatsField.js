@@ -2,9 +2,8 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getLimit, updateStats } from 'actions';
-import { Input } from 'components';
+import { Input, SelectItem } from 'components';
 import StatsAvatar from './StatsAvatar';
-import SelectItem from './SelectItem';
 
 class StatsField extends Component {
   constructor(props) {
