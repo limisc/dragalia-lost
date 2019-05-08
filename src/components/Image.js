@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 
-const Image = memo(props => {
-  const { field, image, onClick, size = 'md' } = props;
+const Image = memo(({ field, image, onClick, size = 'md' }) => {
   return (
     <img
       className={size}
