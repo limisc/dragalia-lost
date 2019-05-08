@@ -5,11 +5,7 @@ const Donation = () => {
   return (
     <Fragment>
       <div
-        style={{
-          margin: '0 auto',
-          display: 'flex',
-          flexDirection: 'column',
-        }}
+        style={{ margin: '0 auto', display: 'flex', flexDirection: 'column' }}
       >
         <p>
           Dragalia Lost Stats Calculator is an open source project under MIT
@@ -38,6 +34,7 @@ const Donation = () => {
           alt="donation"
           src={`${process.env.PUBLIC_URL}/images/icon/donation.svg`}
           width="32"
+          style={{ marginRight: '8px' }}
         />
         made by{' '}
         <a
