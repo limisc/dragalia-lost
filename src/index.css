@@ -148,8 +148,7 @@ img.lg {
   height: 80px;
 }
 
-button.active,
-div.active {
+button.active {
   background-color: #abcdef !important;
 }
 
@@ -224,8 +223,7 @@ div.active {
   justify-content: flex-start;
 }
 
-.set-btns > button,
-.set-btns > div {
+.set-btns > button {
   background-color: #f5e8cb;
 }
 
@@ -460,82 +458,4 @@ input[type='range']:focus::-ms-fill-lower {
 
 input[type='range']:focus::-ms-fill-upper {
   background: #cce6d9;
-}
-
-/* toggle switch */
-.toggle {
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-.toggle-checkbox {
-  display: none;
-}
-
-.toggle-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #999999;
-  border-radius: 0;
-}
-
-.toggle-inner {
-  display: block;
-  width: 200%;
-  margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
-}
-
-.toggle-inner:before,
-.toggle-inner:after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 36px;
-  padding: 0;
-  line-height: 36px;
-  font-size: 14px;
-  color: white;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-
-.toggle-inner:before {
-  content: 'STATUS';
-  padding-left: 8px;
-  background-color: #34a7c1;
-  color: #ffffff;
-}
-
-.toggle-inner:after {
-  content: 'DUNGEON';
-  padding-right: 8px;
-  background-color: #eeeeee;
-  color: #999999;
-  text-align: right;
-}
-
-.toggle-switch {
-  display: block;
-  width: 30px;
-  margin: 3px;
-  background: #ffffff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: calc(100% - 40px);
-  border: 2px solid #999999;
-  border-radius: 8px;
-  transition: all 0.3s ease-in 0s;
-}
-
-.toggle-checkbox:checked + .toggle-label .toggle-inner {
-  margin-left: 0;
-}
-
-.toggle-checkbox:checked + .toggle-label .toggle-switch {
-  right: 0px;
 }
