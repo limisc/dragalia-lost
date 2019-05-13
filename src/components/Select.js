@@ -14,27 +14,33 @@ const CustomSelect = memo(
     const { lang } = useContext(Context);
 
     const selectOptions = useMemo(() => {
-      return options.map(opt => {
-        let label = opt;
-        if (opt === '') {
-          label = 'ALL';
-        } else if (isNaN(opt)) {
-          label = translate(opt, lang);
-        }
+      return Array.isArray(options)
+        ? options.map(opt => {
+            let label = opt;
+            if (opt === '') {
+              label = 'ALL';
+            } else if (isNaN(opt)) {
+              label = translate(opt, lang);
+            }
 
-        return (
-          <MenuItem key={opt} value={opt}>
-            {label}
-          </MenuItem>
-        );
-      });
+            return (
+              <MenuItem key={opt} value={opt}>
+                {label}
+              </MenuItem>
+            );
+          })
+        : undefined;
     }, [options, lang]);
 
     return (
-      <FormControl variant="filled" className={classes} disabled={disabled}>
+      <FormControl
+        variant="filled"
+        className={classes}
+        disabled={!options || disabled}
+      >
         <InputLabel>{translate(label, lang)}</InputLabel>
         <Select
-          value={value}
+          value={value || ''}
           onChange={onChange}
           input={<FilledInput name={label} />}
         >
