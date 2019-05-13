@@ -3,14 +3,28 @@ import React, { useContext } from 'react';
 import { connect } from 'react-redux';
 import { Button } from '@material-ui/core';
 import { Context, ToggleButton } from 'components';
-import { translate, resetAll } from 'actions';
+import { setSimc, resetAll, translate } from 'actions';
 
-const SetBtns = ({ expand, expandDisabled, setExpand, resetAll }) => {
+const SetBtns = ({
+  expand,
+  expandDisabled,
+  setExpand,
+  simc,
+  setSimc,
+  resetAll,
+}) => {
   const { lang } = useContext(Context);
 
   return (
     <div className="set-btns flex">
-      <span className="col-3" />
+      <ToggleButton
+        id="simc"
+        width="col-3"
+        labelOn="simc"
+        labelOff="calc"
+        checked={simc}
+        setChecked={setSimc}
+      />
 
       <ToggleButton
         id="stats"
@@ -29,13 +43,14 @@ const SetBtns = ({ expand, expandDisabled, setExpand, resetAll }) => {
   );
 };
 
-const mapStateToProps = ({ stats: { adventurer } }) => {
+const mapStateToProps = ({ simc, stats: { adventurer } }) => {
   const expandDisabled = !adventurer;
-  return { expandDisabled };
+  return { simc, expandDisabled };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
+    setSimc: simc => dispatch(setSimc(simc)),
     resetAll: () => dispatch(resetAll()),
   };
 };

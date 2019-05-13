@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import uuidv4 from 'uuid/v4';
 import { actionTypes, reducerCreator, loadState, saveState } from '../actions';
 import { facilities } from 'data';
 
@@ -33,18 +34,21 @@ const syncHalidom = key => {
   return halidom;
 };
 
-const loadHalidom = (halidom, action) => {
-  const key = 'calcHalidom';
+const loadHalidom = (halidom, action, simc) => {
+  const key = simc ? 'simcHalidom' : 'calcHalidom';
   const { variant } = action;
   if (variant === 'sync') {
-    console.log('sync')
+    console.log('sync');
     return syncHalidom(key);
   } else if (variant === 'load') {
-    return loadState(key) || halidom;
+    return loadState(key) || loadState('calcHalidom') || halidom;
   }
 
   return halidom;
 };
+
+const toggleHalidom = (halidom, action) =>
+  loadHalidom(halidom, { variant: 'load' }, action.simc);
 
 const updateHalidom = (halidom, action) => {
   const { field, section, itemKey, level } = action;
@@ -68,9 +72,45 @@ const updateHalidom = (halidom, action) => {
   return halidom;
 };
 
+const addHalidom = (halidom, action) => {
+  const { field, section, item } = action;
+
+  const itemKey = `simc_${uuidv4()}`;
+
+  return {
+    ...halidom,
+    [field]: {
+      ...halidom[field],
+      [section]: {
+        ...halidom[field][section],
+        [itemKey]: item,
+      },
+    },
+  };
+};
+
+const delHalidom = (halidom, action) => {
+  const { field, section, itemKey } = action;
+  let { [itemKey]: _, ...rest } = halidom[field][section];
+  if (!Object.keys(rest).length) {
+    rest = null;
+  }
+
+  return {
+    ...halidom,
+    [field]: {
+      ...halidom[field],
+      [section]: rest,
+    },
+  };
+};
+
 const halidomReducer = reducerCreator({
+  [actionTypes.SET_SIMC]: toggleHalidom,
   [actionTypes.LOAD_HALIDOM]: loadHalidom,
   [actionTypes.UPDATE_HALIDOM]: updateHalidom,
+  [actionTypes.ADD_HALIDOM]: addHalidom,
+  [actionTypes.DEL_HALIDOM]: delHalidom,
 });
 
 export default halidomReducer;

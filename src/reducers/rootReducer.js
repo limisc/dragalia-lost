@@ -13,6 +13,14 @@ const focusReducer = (focusKey, action) => {
   return focusKey;
 };
 
+const simcReducer = (simc, action) => {
+  if (action.type === actionTypes.SET_SIMC) {
+    return action.simc;
+  }
+
+  return simc;
+};
+
 const panelReducer = (panel, action) => {
   if (action.type === actionTypes.SELECT_FOCUS) {
     return '0';
@@ -23,7 +31,10 @@ const panelReducer = (panel, action) => {
   return panel;
 };
 
-const rootReducer = ({ focusKey, panel, filters, stats, halidom }, action) => {
+const rootReducer = (
+  { focusKey, panel, filters, simc, stats, halidom },
+  action
+) => {
   if (action.type === actionTypes.RESET) {
     const halidom = loadState('calcHalidom') || facilities;
     return { ...state, halidom };
@@ -35,8 +46,9 @@ const rootReducer = ({ focusKey, panel, filters, stats, halidom }, action) => {
     focusKey: newFocus,
     stats: newStats,
     field: getField(newFocus),
+    simc: simcReducer(simc, action),
     panel: panelReducer(panel, action),
-    halidom: halidomReducer(halidom, action),
+    halidom: halidomReducer(halidom, action, simc),
     filters: filterReducer(filters, action, newStats),
   };
 };

@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
-import { getLimit, updateHalidom } from 'actions';
+import { Clear } from '@material-ui/icons';
+import { getLimit, translate, updateHalidom, delHalidom } from 'actions';
 import { Image, withTheme } from 'components';
 import names from 'locales/facility';
 import Slider from './Slider';
@@ -16,14 +17,23 @@ class Item extends React.Component {
   render() {
     const {
       lang,
-      item: { id, level },
+      item: { id, type, level },
     } = this.props;
-    const name = names[id][lang] || names[id].en;
+    const name = names[id]
+      ? names[id][lang] || names[id].en
+      : translate(type, lang);
 
     return (
       <div className="highlight flex">
         <div className="facility-image">
-          <Image size="lg" field="facility" image={id} />
+          {id === 'SIMC' ? (
+            <Clear
+              style={{ fontSize: '80px', cursor: 'pointer' }}
+              onClick={this.onClick}
+            />
+          ) : (
+            <Image size="lg" field="facility" image={id} />
+          )}
         </div>
 
         <div className="facility-name ellipsis">{name}</div>
@@ -66,6 +76,11 @@ class Item extends React.Component {
     updateHalidom(fKey, sKey, iKey, value * 1);
   };
 
+  onClick = () => {
+    const { fKey, sKey, iKey, delHalidom } = this.props;
+    delHalidom(fKey, sKey, iKey);
+  };
+
   levelDecrement = () => {
     const {
       fKey,
@@ -95,17 +110,15 @@ class Item extends React.Component {
   };
 }
 
-const mapStateToProps = ({ sync, halidom }) => {
-  return {
-    sync,
-    halidom,
-  };
+const mapStateToProps = ({ halidom }) => {
+  return { halidom };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     updateHalidom: (fKey, sKey, iKey, level) =>
       dispatch(updateHalidom(fKey, sKey, iKey, level)),
+    delHalidom: (fKey, sKey, iKey) => dispatch(delHalidom(fKey, sKey, iKey)),
   };
 };
 

@@ -1,7 +1,9 @@
 import { facilities } from 'data';
 import { loadState } from '../actions';
 
-const halidom = loadState('calcHalidom') || facilities;
+const simc = loadState('simc') || false;
+const key = simc ? 'simcHalidom' : 'calcHalidom';
+const halidom = loadState(key) || loadState('calcHalidom') || facilities;
 
 const state = {
   panel: '0',
@@ -15,14 +17,8 @@ const state = {
     wyrmprint2: null,
     dragon: null,
   },
+  simc,
   halidom,
-  details: {
-    adventurer: { HP: 0, STR: 0, might: 0 },
-    weapon: { HP: 0, STR: 0, might: 0 },
-    wyrmprint1: { HP: 0, STR: 0, might: 0 },
-    wyrmprint2: { HP: 0, STR: 0, might: 0 },
-    dragon: { HP: 0, STR: 0, might: 0 },
-  },
 };
 
 export default state;

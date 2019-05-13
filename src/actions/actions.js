@@ -51,13 +51,49 @@ const actionCreator = (type, ...argNames) => {
   };
 };
 
+export const setSimc = simc => dispatch => {
+  dispatch({ type: actionTypes.SET_SIMC, simc });
+  saveState('simc', simc);
+};
+
 export const resetAll = actionCreator(actionTypes.RESET);
 export const selectFocus = actionCreator(actionTypes.SELECT_FOCUS, 'statsKey');
 export const resetFilters = actionCreator(actionTypes.RESET_FILTERS);
-export const selectFilters = actionCreator(actionTypes.SELECT_FILTERS, 'key', 'value');
+export const selectFilters = actionCreator(
+  actionTypes.SELECT_FILTERS,
+  'key',
+  'value'
+);
 export const selectPanel = actionCreator(actionTypes.SELECT_PANEL, 'panel');
-export const selectStats = actionCreator(actionTypes.SELECT_STATS, 'statsKey', 'item');
-export const updateStats = actionCreator(actionTypes.UPDATE_STATS, 'statsKey', 'updates');
+export const selectStats = actionCreator(
+  actionTypes.SELECT_STATS,
+  'statsKey',
+  'item'
+);
+export const updateStats = actionCreator(
+  actionTypes.UPDATE_STATS,
+  'statsKey',
+  'updates'
+);
 
+// export const setSimc = actionCreator(actionTypes.SET_SIMC, 'simc');
 export const loadHalidom = actionCreator(actionTypes.LOAD_HALIDOM, 'variant');
-export const updateHalidom = actionCreator(actionTypes.UPDATE_HALIDOM, 'field', 'section', 'itemKey', 'level');
+export const addHalidom = actionCreator(
+  actionTypes.ADD_HALIDOM,
+  'field',
+  'section',
+  'item'
+);
+export const delHalidom = actionCreator(
+  actionTypes.DEL_HALIDOM,
+  'field',
+  'section',
+  'itemKey'
+);
+export const updateHalidom = actionCreator(
+  actionTypes.UPDATE_HALIDOM,
+  'field',
+  'section',
+  'itemKey',
+  'level'
+);

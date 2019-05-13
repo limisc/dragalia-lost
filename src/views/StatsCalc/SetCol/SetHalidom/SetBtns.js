@@ -10,65 +10,54 @@ import {
   DeleteForeverOutlined,
   SaveOutlined,
 } from '@material-ui/icons';
-class SetBtns extends React.PureComponent {
-  state = {
-    btns: ['sync', 'del', 'load', 'save'],
-  };
 
-  render() {
-    return (
-      <div className="set-btns gutter-top flex">
-        {this.state.btns.map(btn => (
-          <Button
-            key={btn}
-            name={btn}
-            variant="contained"
-            className="col-2 col-4"
-            onClick={this.onClick}
-          >
-            {this.getIcons(btn)}
-          </Button>
-        ))}
-      </div>
-    );
-  }
-
-  onClick = e => {
-    const { name } = e.currentTarget;
+const SetBtns = ({ halidom, simc, loadHalidom }) => {
+  const btns = ['sync', 'del', 'load', 'save'];
+  const onClick = ({ currentTarget: { name } }) => {
+    const key = simc ? 'simcHalidom' : 'calcHalidom';
     switch (name) {
       case 'sync':
       case 'load':
-        this.props.loadHalidom(name);
+        loadHalidom(name);
         break;
       case 'del':
-        removeState('calcHalidom');
+        removeState(key);
         break;
       case 'save':
-        saveState('calcHalidom', this.props.halidom);
+        saveState(key, halidom);
         break;
       default:
         break;
     }
   };
 
-  getIcons = btn => {
-    switch (btn) {
-      case 'sync':
-        return <CloudDownloadOutlined />;
-      case 'del':
-        return <DeleteForeverOutlined />;
-      case 'load':
-        return <RefreshOutlined />;
-      case 'save':
-        return <SaveOutlined />;
-      default:
-        return undefined;
-    }
-  };
-}
+  const icon = btn =>
+    ({
+      sync: <CloudDownloadOutlined />,
+      del: <DeleteForeverOutlined />,
+      load: <RefreshOutlined />,
+      save: <SaveOutlined />,
+    }[btn]);
 
-const mapStateToProps = ({ halidom }) => {
-  return { halidom };
+  return (
+    <div className="set-btns gutter-top flex">
+      {btns.map(btn => (
+        <Button
+          key={btn}
+          name={btn}
+          variant="contained"
+          className="col-2 col-4"
+          onClick={onClick}
+        >
+          {icon(btn)}
+        </Button>
+      ))}
+    </div>
+  );
+};
+
+const mapStateToProps = ({ halidom, simc }) => {
+  return { halidom, simc };
 };
 
 const mapDispatchToProps = dispatch => {
