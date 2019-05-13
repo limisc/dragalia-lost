@@ -1,6 +1,8 @@
 export default {
   // UI
   language: { en: 'Language', ja: '言語', zh: '语言' },
+  simc: { en: 'Simc', ja: '模擬', zh: '模拟' },
+  calc: { en: 'Calc', ja: '計算', zh: '计算' },
   reset: { en: 'Reset', ja: 'リセット', zh: '重置' },
   search: { en: 'Search', ja: '検索', zh: '搜索' },
   stats: { en: 'Stats', ja: '状態', zh: '属性' },
@@ -45,6 +47,13 @@ export default {
   Bow: { en: 'Bow', ja: '弓', zh: '弓' },
   Wand: { en: 'Wand', ja: 'ロッド', zh: '魔杖' },
   Staff: { en: 'Staff', ja: '杖', zh: '法杖' },
+  //facility types
+  type: { en: 'Type', ja: '種類', zh: '类型' },
+  altar: { en: 'Altar', ja: '祭壇', zh: '祭坛' },
+  dojo: { en: 'Dojo', ja: '訓練場', zh: '训练场' },
+  event: { en: 'Event', ja: 'イベント', zh: '活动' },
+  slime: { en: 'Slime', ja: 'スライム像', zh: '史莱姆像' },
+  fafnir: { en: 'Fafnir', ja: 'ファフ二ール像', zh: '法夫纳像' },
   //element
   Flame: { en: 'Flame', ja: '火', zh: '火' },
   Water: { en: 'Water', ja: '水', zh: '水' },
