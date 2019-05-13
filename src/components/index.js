@@ -1,4 +1,5 @@
 import Context from './Context';
+import Dialog from './Dialog';
 import GitHubIcon from './GitHubIcon';
 import Image from './Image';
 import Input from './Input';
@@ -7,10 +8,10 @@ import SelectItem from './SelectItem';
 import ToggleButton from './ToggleButton';
 import ThemeProvider from './ThemeProvider';
 import withTheme from './withTheme';
-import './styles.css';
 
 export {
   Context,
+  Dialog,
   GitHubIcon,
   Image,
   Input,
