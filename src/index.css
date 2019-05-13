@@ -356,12 +356,80 @@ ul {
   }
 }
 
+div.dialog-flex {
+  flex: auto;
+}
+
+/* =============== Toggle Button =============== */
+.toggle-btn {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #999999;
+  background: #eeeeee;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.toggle-btn-checkbox {
+  display: none;
+}
+
+.toggle-btn-label {
+  display: block;
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+}
+
+.toggle-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 5px;
+  width: 200%;
+  height: 100%;
+  color: #4a5a6a;
+  margin-left: -100%;
+  transition: 0.3s;
+}
+
+.toggle-btn-switch {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.toggle-btn.active {
+  background: #34a7c1;
+}
+
+.toggle-btn-inner.active {
+  color: #ffffff;
+  margin-left: 0;
+}
+
+.toggle-btn-switch.active {
+  margin-left: calc(100% - 33px);
+}
+
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/* =============== Slider =============== */
 input[type='range'] {
   -webkit-appearance: none;
   width: 100%;
