@@ -772,6 +772,28 @@ const dragon = [
     incSTR2: 45,
   },
   {
+    id: '210051_01',
+    name: {
+      en: 'Takemikazuchi',
+      ja: 'タケミカヅチ',
+      zh: '建御雷',
+    },
+    element: 'Light',
+    rarity: '5',
+    MinHp: 37,
+    MaxHp: 371,
+    MinAtk: 12,
+    MaxAtk: 124,
+    abilities11: 60,
+    abilities12: 70,
+    abilities21: 5,
+    abilities22: 15,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 40,
+  },
+  {
     id: '210052_01',
     name: {
       en: 'Prometheus',
