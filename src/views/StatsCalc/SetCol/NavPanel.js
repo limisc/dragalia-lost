@@ -3,6 +3,7 @@ import React, { memo, useContext } from 'react';
 import { Button } from '@material-ui/core';
 import { translate } from 'actions';
 import { Context } from 'components';
+import { refs } from 'store';
 import classNames from 'classnames';
 
 const NavPanel = memo(({ panel, onClick }) => {
@@ -11,7 +12,7 @@ const NavPanel = memo(({ panel, onClick }) => {
   const btn2 = classNames('col-2', { active: panel === '1' });
 
   return (
-    <div className="flex">
+    <div className="flex" ref={refs.setCol}>
       <Button name="0" variant="contained" className={btn1} onClick={onClick}>
         {translate('stats', lang)}
       </Button>

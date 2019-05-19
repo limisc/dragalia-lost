@@ -3,7 +3,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { selectPanel } from 'actions';
 import NavPanel from './NavPanel';
-
 import SelectStats from './SelectStats';
 import SetHalidom from './SetHalidom';
 

@@ -72,7 +72,13 @@ class ListItem extends React.Component {
     } = this.props;
 
     selectStats(focusKey, item);
-    window.scrollTo(0, refs.statsField.current.offsetTop);
+    setTimeout(() => {
+      window.scrollTo({
+        top: refs.statsField.current.offsetTop - 48,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 0);
   };
 
   clickIcon = e => {

@@ -26,13 +26,13 @@ class StatsAvatar extends React.Component {
     if (!highlight) selectStats(statsKey);
     selectFocus(statsKey);
 
-    // hanlde delay.
-    let timerId = setInterval(() => {
-      if (refs.statsList.current) {
-        clearInterval(timerId);
-        window.scrollTo(0, refs.statsList.current.offsetTop);
-      }
-    }, 100);
+    setTimeout(() => {
+      window.scrollTo({
+        top: refs.setCol.current.offsetTop - 48,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 0);
   };
 }
 

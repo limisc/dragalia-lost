@@ -3,7 +3,6 @@ import React, { Fragment, forwardRef } from 'react';
 import { connect } from 'react-redux';
 import { FixedSizeList } from 'react-window';
 import { TextField } from '@material-ui/core';
-import { refs } from 'store';
 import { translate } from 'actions';
 import { Context } from 'components';
 import AutoSizer from 'react-virtualized-auto-sizer';
@@ -122,7 +121,7 @@ class StatsList extends React.Component {
           onChange={this.onChange}
         />
         <ListHeader fields={fields} />
-        <div id="stats-list" ref={refs.statsList}>
+        <div id="stats-list">
           {loading ? (
             <img
               alt="loading"
