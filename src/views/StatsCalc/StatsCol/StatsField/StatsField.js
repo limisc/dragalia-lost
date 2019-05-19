@@ -123,7 +123,7 @@ class StatsField extends Component {
   getUpdates = (key, value) => {
     let updates = { [key]: value };
     const { statsKey, item } = this.props;
-    const { ex, unbind, rarity, curRarity } = item;
+    const { unbind, rarity, curRarity } = item;
 
     switch (key) {
       case 'level':
@@ -141,13 +141,7 @@ class StatsField extends Component {
         };
         break;
       case 'mana':
-        let newEx = '0';
-        if (value === '50') {
-          newEx = '4';
-        } else if (value === '45') {
-          newEx = ex;
-        }
-        updates.ex = newEx;
+        updates.ex = value === '50' ? '4' : '0';
         break;
       case 'ex':
         updates.mana = '45';
