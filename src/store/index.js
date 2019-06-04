@@ -13,7 +13,7 @@ const statsKeys = [
 
 const refs = {
   statsField: createRef(),
-  setCol: createRef(),
+  bottom: createRef(),
   searchBar: createRef(),
 };
 
