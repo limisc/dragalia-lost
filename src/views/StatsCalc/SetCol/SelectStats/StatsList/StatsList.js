@@ -32,9 +32,73 @@ class StatsList extends React.Component {
     this.setState({ list, loading: false });
   }
 
+  compare = (item1, item2) => {
+    let { element, weapon } = this.state;
+
+    if (item1.rarity > item2.rarity) return -1;
+    if (item1.rarity < item2.rarity) return 1;
+
+    if (item1.element) {
+      const element1 = element.indexOf(item1.element);
+      const element2 = element.indexOf(item2.element);
+      if (element1 > element2) return 1;
+      if (element1 < element2) return -1;
+    }
+
+    if (item1.weapon) {
+      const weapon1 = weapon.indexOf(item1.weapon);
+      const weapon2 = weapon.indexOf(item2.weapon);
+      if (weapon1 > weapon2) return 1;
+      if (weapon1 < weapon2) return -1;
+    }
+
+    if (this.props.field === 'wyrmprint') {
+      if (item1.dungeon && !item2.dungeon) return -1;
+      if (!item1.dungeon && item2.dungeon) return 1;
+
+      if (
+        item1.MaxAtk +
+          item1.MaxHp +
+          item1.abilities13 +
+          item1.abilities23 +
+          item1.abilities33 >
+        item2.MaxAtk +
+          item2.MaxHp +
+          item2.abilities13 +
+          item2.abilities23 +
+          item2.abilities33
+      ) {
+        return -1;
+      }
+
+      if (
+        item1.MaxAtk +
+          item1.MaxHp +
+          item1.abilities13 +
+          item1.abilities23 +
+          item1.abilities33 <
+        item2.MaxAtk +
+          item2.MaxHp +
+          item2.abilities13 +
+          item2.abilities23 +
+          item2.abilities33
+      ) {
+        return 1;
+      }
+    } else {
+      if (item1.MaxAtk + item1.MaxHp > item2.MaxAtk + item2.MaxHp) return -1;
+      if (item1.MaxAtk + item1.MaxHp < item2.MaxAtk + item2.MaxHp) return 1;
+    }
+
+    if (item1.id > item2.id) return 1;
+    if (item1.id < item2.id) return -1;
+
+    return 0;
+  };
+
   render() {
-    let { list, loading, search, element, weapon } = this.state;
-    const { lang, field, fields, filters } = this.props;
+    let { list, loading, search } = this.state;
+    const { lang, fields, filters } = this.props;
 
     if (list) {
       list = list
@@ -49,66 +113,7 @@ class StatsList extends React.Component {
             item.name[lang].toUpperCase().indexOf(search.toUpperCase()) !== -1
           );
         })
-        .sort((item1, item2) => {
-          if (item1.rarity > item2.rarity) return -1;
-          if (item1.rarity < item2.rarity) return 1;
-
-          if (item1.element) {
-            const element1 = element.indexOf(item1.element);
-            const element2 = element.indexOf(item2.element);
-            if (element1 > element2) return 1;
-            if (element1 < element2) return -1;
-          }
-
-          if (item1.weapon) {
-            const weapon1 = weapon.indexOf(item1.weapon);
-            const weapon2 = weapon.indexOf(item2.weapon);
-            if (weapon1 > weapon2) return 1;
-            if (weapon1 < weapon2) return -1;
-          }
-
-          if (field === 'wyrmprint') {
-            if (
-              item1.MaxAtk +
-                item1.MaxHp +
-                item1.abilities12 +
-                item1.abilities22 +
-                item1.abilities32 >
-              item2.MaxAtk +
-                item2.MaxHp +
-                item2.abilities12 +
-                item2.abilities22 +
-                item2.abilities32
-            ) {
-              return -1;
-            }
-
-            if (
-              item1.MaxAtk +
-                item1.MaxHp +
-                item1.abilities12 +
-                item1.abilities22 +
-                item1.abilities32 <
-              item2.MaxAtk +
-                item2.MaxHp +
-                item2.abilities12 +
-                item2.abilities22 +
-                item2.abilities32
-            ) {
-              return 1;
-            }
-          } else {
-            if (item1.MaxAtk + item1.MaxHp > item2.MaxAtk + item2.MaxHp)
-              return -1;
-            if (item1.MaxAtk + item1.MaxHp < item2.MaxAtk + item2.MaxHp)
-              return 1;
-          }
-
-          if (item1.id > item2.id) return -1;
-          if (item1.id < item2.id) return 1;
-
-          return 0;
-        });
+        .sort(this.compare);
     }
 
     return (
@@ -121,7 +126,7 @@ class StatsList extends React.Component {
           onChange={this.onChange}
         />
         <ListHeader fields={fields} />
-        <div id="stats-list">
+        <div className="fill-remains">
           {loading ? (
             <img
               alt="loading"
@@ -155,6 +160,10 @@ class StatsList extends React.Component {
 
   clear = () => this.setState({ search: '' });
 }
+
+StatsList.defaultProps = {
+  lang: 'en',
+};
 
 const mapStateToProps = ({ field, filters }) => {
   return { field, filters };
