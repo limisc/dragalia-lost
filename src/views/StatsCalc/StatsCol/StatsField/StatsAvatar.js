@@ -4,7 +4,13 @@ import classNames from 'classnames';
 import { refs } from 'store';
 import { connect } from 'react-redux';
 import { Image, withTheme } from 'components';
-import { selectFocus, selectStats, translate, getField } from 'actions';
+import {
+  scrollToComponent,
+  selectFocus,
+  selectStats,
+  translate,
+  getField,
+} from 'actions';
 
 class StatsAvatar extends React.Component {
   render() {
@@ -25,14 +31,7 @@ class StatsAvatar extends React.Component {
     const { highlight, statsKey, selectFocus, selectStats } = this.props;
     if (!highlight) selectStats(statsKey);
     selectFocus(statsKey);
-
-    setTimeout(() => {
-      window.scrollTo({
-        top: refs.setCol.current.offsetTop - 48,
-        left: 0,
-        behavior: 'smooth',
-      });
-    }, 0);
+    scrollToComponent(refs.bottom);
   };
 }
 

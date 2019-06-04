@@ -40,6 +40,19 @@ export const removeState = key => {
   }
 };
 
+export const scrollToComponent = component => {
+  const { current } = component;
+  if (current) {
+    setTimeout(() => {
+      window.scrollTo({
+        top: current.offsetTop - 48,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 0);
+  }
+};
+
 const actionCreator = (type, ...argNames) => {
   return (...args) => {
     const action = { type };

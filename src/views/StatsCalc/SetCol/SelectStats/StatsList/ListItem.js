@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { refs } from 'store';
-import { selectStats, selectFilters } from 'actions';
+import { scrollToComponent, selectStats, selectFilters } from 'actions';
 import { Image, withTheme } from 'components';
 
 class ListItem extends React.Component {
@@ -72,13 +72,7 @@ class ListItem extends React.Component {
     } = this.props;
 
     selectStats(focusKey, item);
-    setTimeout(() => {
-      window.scrollTo({
-        top: refs.statsField.current.offsetTop - 48,
-        left: 0,
-        behavior: 'smooth',
-      });
-    }, 0);
+    scrollToComponent(refs.statsField);
   };
 
   clickIcon = e => {
@@ -86,6 +80,10 @@ class ListItem extends React.Component {
     this.props.selectFilters(key, value);
   };
 }
+
+ListItem.defaultProps = {
+  lang: 'en',
+};
 
 const mapStateToProps = ({ focusKey, field }) => {
   return { focusKey, field };
