@@ -1,3 +1,4 @@
+import BtnGroups from './BtnGroups';
 import Context from './Context';
 import Dialog from './Dialog';
 import GitHubIcon from './GitHubIcon';
@@ -10,6 +11,7 @@ import ThemeProvider from './ThemeProvider';
 import withTheme from './withTheme';
 
 export {
+  BtnGroups,
   Context,
   Dialog,
   GitHubIcon,
