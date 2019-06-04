@@ -1,15 +1,19 @@
 /* eslint-disable no-unused-vars */
-import React, { Fragment, memo, useState, useEffect, useContext } from 'react';
+import React, { Fragment, memo, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {
   MenuOutlined,
   HomeOutlined,
-  VerticalAlignTopOutlined,
+  VerticalAlignTop,
+  VerticalAlignBottom,
 } from '@material-ui/icons';
 import { Context, GitHubIcon } from 'components';
+import { refs } from 'store';
+import { scrollToComponent } from 'actions';
+import sizeMe from 'react-sizeme';
 import NavDrawer from './NavDrawer';
 
-const Header = memo(() => {
+const Header = memo(({ size: { width } }) => {
   const { lang } = useContext(Context);
   const [open, setOpen] = useState(false);
 
@@ -18,43 +22,44 @@ const Header = memo(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const handleWidth = () => setWidth(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener('resize', handleWidth);
-    return () => window.removeEventListener('resize', handleWidth);
-  }, [width]);
+  const scrollToBottom = () => scrollToComponent(refs.bottom);
 
   return (
     <div id="header">
-      <Fragment>
-        <div className="header-icon" onClick={openDrawer}>
-          <MenuOutlined />
-        </div>
+      <div className="header-icon" onClick={openDrawer}>
+        <MenuOutlined />
+      </div>
 
-        <div className="header-icon">
-          <HomeOutlined />
-          <Link to={`/stats/${lang}`} title="HOME">
-            <span className="icon-link" />
-          </Link>
-        </div>
+      <div className="header-icon">
+        <HomeOutlined />
+        <Link to={`/stats/${lang}`} title="HOME">
+          <span className="icon-link" />
+        </Link>
+      </div>
 
-        <div className="header-icon">
-          <img
-            alt="donation"
-            src={`${process.env.PUBLIC_URL}/images/icon/donation.svg`}
-            height="20"
-          />
-          <Link to={`/donation/${lang}`} title="Donation">
-            <span className="icon-link" />
-          </Link>
-        </div>
-      </Fragment>
-      <div style={{ flex: '1' }} />
+      <div className="header-icon">
+        <img
+          alt="donation"
+          src={`${process.env.PUBLIC_URL}/images/icon/donation.svg`}
+          height="20"
+        />
+        <Link to={`/donation/${lang}`} title="Donation">
+          <span className="icon-link" />
+        </Link>
+      </div>
+      <div className="fill-remains" />
+
       {width < 960 ? (
-        <div className="header-icon" onClick={scrollToTop}>
-          <VerticalAlignTopOutlined />
-        </div>
+        <Fragment>
+          {refs.bottom.current && (
+            <div className="header-icon" onClick={scrollToBottom}>
+              <VerticalAlignBottom />
+            </div>
+          )}
+          <div className="header-icon" onClick={scrollToTop}>
+            <VerticalAlignTop />
+          </div>
+        </Fragment>
       ) : (
         <div className="header-icon">
           <GitHubIcon />
@@ -65,4 +70,4 @@ const Header = memo(() => {
   );
 });
 
-export default Header;
+export default sizeMe()(Header);
