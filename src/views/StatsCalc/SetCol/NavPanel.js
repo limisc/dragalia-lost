@@ -12,7 +12,7 @@ const NavPanel = memo(({ panel, onClick }) => {
   const btn2 = classNames('col-2', { active: panel === '1' });
 
   return (
-    <div className="flex" ref={refs.setCol}>
+    <div className="flex" ref={refs.bottom}>
       <Button name="0" variant="contained" className={btn1} onClick={onClick}>
         {translate('stats', lang)}
       </Button>
