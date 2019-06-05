@@ -1,5 +1,6 @@
 const limit = {
   slime: 15,
+  dracolith: 20,
   mana: { '3': '30', '4': '40', '5': '50' },
   adventurer: { '3': 60, '4': 70, '5': 80 },
   weapon: {
