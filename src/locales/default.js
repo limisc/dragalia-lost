@@ -38,6 +38,8 @@ export default {
   del: { en: 'Del', ja: '', zh: '删除' },
   load: { en: 'Load', ja: '', zh: '加载' },
   save: { en: 'Save', ja: '保存', zh: '保存' },
+  create: { en: 'Create', ja: '生成', zh: '创建' },
+  cancel: { en: 'Cancel', ja: '取消', zh: '取消' },
   //weaponType
   Sword: { en: 'Sword', ja: '剣', zh: '剑' },
   Blade: { en: 'Blade', ja: '刀', zh: '刀' },
@@ -54,6 +56,7 @@ export default {
   event: { en: 'Event', ja: 'イベント', zh: '活动' },
   slime: { en: 'Slime', ja: 'スライム像', zh: '史莱姆像' },
   fafnir: { en: 'Fafnir', ja: 'ファフ二ール像', zh: '法夫纳像' },
+  dracolith: { en: 'Dracolith', ja: '竜哭碑', zh: '龙哭碑' },
   //element
   Flame: { en: 'Flame', ja: '火', zh: '火' },
   Water: { en: 'Water', ja: '水', zh: '水' },
