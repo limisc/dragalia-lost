@@ -2,6 +2,7 @@
 import { mightDict, dungeonInfo, elements, values } from 'data';
 import { getLimit, getHalidomSectionKey } from './selectors';
 
+const MAX_WYRMPRINT_HP = 8;
 const MAX_WYRMPRINT_STR = 20;
 const MAX_WYRMPRINT_DEF = 20;
 const MAX_WYRMPRINT_RES = 15;
@@ -13,8 +14,10 @@ export const getDetails = (stats, halidom) => {
 
   const { adventurer, wyrmprint1, wyrmprint2, dragon } = stats;
 
-  let HP, STR, might, totalHP, totalSTR, totalMight;
-  HP = STR = might = totalHP = totalSTR = totalMight = 0;
+  let HP, STR, might;
+  // base, sum of stats fields, excludes Halidom and Ability
+  let baseHP, baseSTR, baseMight;
+  HP = STR = might = baseHP = baseSTR = baseMight = 0;
 
   // calc adventurer, weapon, wyrmprint, dragon
   Object.keys(stats).forEach(statsKey => {
@@ -25,9 +28,9 @@ export const getDetails = (stats, halidom) => {
       adventurer.element === stats[statsKey].element;
 
     const value = calcDetails(statsKey, stats[statsKey], sameEle);
-    totalHP += value.HP;
-    totalSTR += value.STR;
-    totalMight += value.might;
+    baseHP += value.HP;
+    baseSTR += value.STR;
+    baseMight += value.might;
     details[statsKey] = value;
   });
 
@@ -47,10 +50,9 @@ export const getDetails = (stats, halidom) => {
     Math.ceil(fakeDragonValue.STR * fafnir.STR * 0.01);
   might = HP + STR;
   details.halidom = { HP, STR, might };
-
-  totalHP += HP;
-  totalSTR += STR;
-  totalMight += might;
+  let totalHP = baseHP + HP;
+  let totalSTR = baseSTR + STR;
+  let totalMight = baseMight + might;
 
   // calc real halidom values
   HP =
@@ -64,6 +66,7 @@ export const getDetails = (stats, halidom) => {
 
   // calc ability
   // Version 1.7.1, details calc item STR ability, shows in ability section
+  // Version 1.8.0, adds incHP wyrmprint
   let totalIncHP, totalIncSTR;
   totalIncHP = totalIncSTR = 0;
   // adventurer's STR ability
@@ -76,18 +79,24 @@ export const getDetails = (stats, halidom) => {
   }
 
   // weapon's STR ability
-  if (stats.weapon && stats.weapon.incSTR && adventurer.element.indexOf(stats.weapon.reqEle) !== -1) {
+  if (
+    stats.weapon &&
+    stats.weapon.incSTR &&
+    adventurer.element.indexOf(stats.weapon.reqEle) !== -1
+  ) {
     totalIncSTR += stats.weapon.incSTR;
   }
 
-  // wyrmprint's STR ability
+  // wyrmprint's ability
   // TODO: in game bug, when wear two MUB wyrmprints will exceed the MAX_WYRMPRINT_STR limit
-  let wSTR = 0;
+  let wHP, wSTR;
   let w1MUB, w2MUB;
+  wHP = wSTR = 0;
   w1MUB = w2MUB = false;
-  if (wyrmprint1 && wyrmprint1.incSTR1) {
-    let stage = 1;
+
+  if (wyrmprint1) {
     const unbind = wyrmprint1.unbind * 1;
+    let stage = 1;
     if (unbind === 4) {
       stage = 3;
       w1MUB = true;
@@ -95,12 +104,13 @@ export const getDetails = (stats, halidom) => {
       stage = 2;
     }
 
-    wSTR += wyrmprint1[`incSTR${stage}`];
+    wHP += wyrmprint1[`incHP${stage}`] || 0;
+    wSTR += wyrmprint1[`incSTR${stage}`] || 0;
   }
 
-  if (wyrmprint2 && wyrmprint2.incSTR1) {
-    let stage = 1;
+  if (wyrmprint2) {
     const unbind = wyrmprint2.unbind * 1;
+    let stage = 1;
     if (unbind === 4) {
       stage = 3;
       w2MUB = true;
@@ -108,13 +118,19 @@ export const getDetails = (stats, halidom) => {
       stage = 2;
     }
 
-    wSTR += wyrmprint2[`incSTR${stage}`];
+    wHP += wyrmprint2[`incHP${stage}`] || 0;
+    wSTR += wyrmprint2[`incSTR${stage}`] || 0;
   }
 
-  if ((!w1MUB || !w2MUB) && wSTR > MAX_WYRMPRINT_STR) {
+  if (wHP > MAX_WYRMPRINT_HP) {
+    wHP = MAX_WYRMPRINT_HP;
+  }
+
+  if (wSTR > MAX_WYRMPRINT_STR && !(w1MUB && w2MUB)) {
     wSTR = MAX_WYRMPRINT_STR;
   }
 
+  totalIncHP += wHP;
   totalIncSTR += wSTR;
 
   if (adventurer && dragon && adventurer.element === dragon.element) {
@@ -125,13 +141,18 @@ export const getDetails = (stats, halidom) => {
 
   HP = Math.ceil(totalHP * totalIncHP * 0.01);
   STR = Math.ceil(totalSTR * totalIncSTR * 0.01);
+  details.ability = { HP, STR, might: 0 };
+
   totalHP += HP;
   totalSTR += STR;
 
-  details.ability = { HP, STR, might: 0 };
-
   details.total = { HP: totalHP, STR: totalSTR, might: totalMight };
 
+  // true total HP
+  HP = baseHP + details.trueHalidom.HP;
+  STR = baseSTR + details.trueHalidom.STR;
+  HP += HP * totalIncHP * 0.01;
+  details.trueHP = HP;
   return details;
 };
 
@@ -161,13 +182,17 @@ export const getDamage = (stats, state) => {
   }
 
   // weapon Def
-  if (weapon && weapon.incDef && adventurer.element.indexOf(weapon.reqEle) !== -1) {
+  if (
+    weapon &&
+    weapon.incDef &&
+    adventurer.element.indexOf(weapon.reqEle) !== -1
+  ) {
     tDef += weapon.incDef;
     textArea.push(`weapon,def,${weapon.incDef}`);
   }
 
   const info = dungeonInfo[dungeon];
-  let wDef, wCounter, wRes, level;
+  let wDef, wCounter, wRes;
   wDef = wCounter = wRes = 0;
 
   if (wyrmprint1) {
@@ -178,6 +203,11 @@ export const getDamage = (stats, state) => {
       stage = 3;
     } else if (unbind >= 2) {
       stage = 2;
+    }
+
+    if (wyrmprint1.incHP1) {
+      temp = wyrmprint1[`incHP${stage}`] || wyrmprint1[`incHP${stage - 1}`];
+      textArea.push(`wyrmprint1,HP,${temp}`);
     }
 
     if (wyrmprint1.incDef1) {
@@ -209,12 +239,19 @@ export const getDamage = (stats, state) => {
       stage = 2;
     }
 
+    if (wyrmprint2.incHP1) {
+      temp = wyrmprint2[`incHP${stage}`] || wyrmprint2[`incHP${stage - 1}`];
+      textArea.push(`wyrmprint2,HP,${temp}`);
+    }
+
     if (wyrmprint2.incDef1) {
       temp = wyrmprint2[`incDef${stage}`] || wyrmprint2[`incDef${stage - 1}`];
       wDef += temp;
 
       if (wDef > MAX_WYRMPRINT_DEF) {
-        textArea.push(`wyrmprint2,def,${temp} -> ${MAX_WYRMPRINT_DEF - wDef + temp}`);
+        textArea.push(
+          `wyrmprint2,def,${temp} -> ${MAX_WYRMPRINT_DEF - wDef + temp}`
+        );
         wDef = MAX_WYRMPRINT_DEF;
       } else {
         textArea.push(`wyrmprint2,def,${temp}`);
@@ -226,7 +263,11 @@ export const getDamage = (stats, state) => {
       wCounter += temp;
 
       if (wCounter > MAX_WYRMPRINT_COUNTER) {
-        textArea.push(`wyrmprint2,counter,${temp} -> ${MAX_WYRMPRINT_COUNTER - wCounter + temp}`);
+        textArea.push(
+          `wyrmprint2,counter,${temp} -> ${MAX_WYRMPRINT_COUNTER -
+            wCounter +
+            temp}`
+        );
         wCounter = MAX_WYRMPRINT_COUNTER;
       } else {
         textArea.push(`wyrmprint2,counter,${temp}`);
@@ -237,7 +278,9 @@ export const getDamage = (stats, state) => {
       temp = wyrmprint2[`incRes${stage}`] || wyrmprint2[`incRes${stage - 1}`];
       wRes += temp;
       if (wRes > MAX_WYRMPRINT_RES) {
-        textArea.push(`wyrmprint2,res,${temp} -> ${MAX_WYRMPRINT_RES - wRes + temp}`);
+        textArea.push(
+          `wyrmprint2,res,${temp} -> ${MAX_WYRMPRINT_RES - wRes + temp}`
+        );
         wRes = MAX_WYRMPRINT_RES;
       } else {
         textArea.push(`wyrmprint2,res,${temp}`);
@@ -263,7 +306,12 @@ export const getDamage = (stats, state) => {
   }
 
   const base =
-    ((5 / 3) * info.STR * info.mult * eleModifier * (1 - tCounter * 0.01) * (1 - tRes * 0.01)) /
+    ((5 / 3) *
+      info.STR *
+      info.mult *
+      eleModifier *
+      (1 - tCounter * 0.01) *
+      (1 - tRes * 0.01)) /
     (adventurer.DefCoef * (1 + tDef * 0.01));
 
   const max = Math.floor(base * 1.05);
@@ -318,8 +366,12 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
         HP = base_HP;
         STR = base_STR;
       } else {
-        HP = base_HP + ((level - 1) / (MAX_LEVEL - 1)) * (item.MaxHp - item[stepHP]);
-        STR = base_STR + ((level - 1) / (MAX_LEVEL - 1)) * (item.MaxAtk - item[stepSTR]);
+        HP =
+          base_HP +
+          ((level - 1) / (MAX_LEVEL - 1)) * (item.MaxHp - item[stepHP]);
+        STR =
+          base_STR +
+          ((level - 1) / (MAX_LEVEL - 1)) * (item.MaxAtk - item[stepSTR]);
       }
     }
 
@@ -397,7 +449,9 @@ const getAdventurerMight = adventurer => {
     return acc;
   }, 0);
 
-  const fsMight = mana * 1 >= 40 ? mightDict.fs['40'] : mana * 1 >= 10 ? mightDict.fs['10'] : 0;
+  const intMana = mana * 1;
+  const fsMight =
+    intMana >= 40 ? mightDict.fs['40'] : intMana >= 10 ? mightDict.fs['10'] : 0;
   const exMight = mightDict.ex[rarity][ex];
 
   return skillMight + abilityMight + fsMight + exMight;
@@ -406,7 +460,11 @@ const getAdventurerMight = adventurer => {
 const getWeaponMight = weapon => {
   // unbind === 4, skill LV2, else skill LV1
   let skillMight = 0;
-  if (weapon.skill) skillMight = weapon.unbind === '4' ? mightDict.itemSkill['4'] : mightDict.itemSkill['0'];
+  if (weapon.skill)
+    skillMight =
+      weapon.unbind === '4'
+        ? mightDict.itemSkill['4']
+        : mightDict.itemSkill['0'];
   return weapon.abilities11 + weapon.abilities21 + skillMight;
 };
 
@@ -436,7 +494,17 @@ const getWyrmprintMight = wyrmprint => {
 const getDragonMight = dragon => {
   const bondBonus = dragon.bond * 10;
   if (dragon.unbind * 1 === 4) {
-    return dragon.abilities12 + dragon.abilities22 + bondBonus + mightDict.itemSkill['4'];
+    return (
+      dragon.abilities12 +
+      dragon.abilities22 +
+      bondBonus +
+      mightDict.itemSkill['4']
+    );
   }
-  return dragon.abilities11 + dragon.abilities21 + bondBonus + mightDict.itemSkill['0'];
+  return (
+    dragon.abilities11 +
+    dragon.abilities21 +
+    bondBonus +
+    mightDict.itemSkill['0']
+  );
 };
