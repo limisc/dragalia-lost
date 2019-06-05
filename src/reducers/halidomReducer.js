@@ -41,7 +41,7 @@ const loadHalidom = (halidom, action, simc) => {
     console.log('sync');
     return syncHalidom(key);
   } else if (variant === 'load') {
-    return loadState(key) || loadState('calcHalidom') || halidom;
+    return loadState(key) || loadState('calcHalidom') || facilities;
   }
 
   return halidom;
