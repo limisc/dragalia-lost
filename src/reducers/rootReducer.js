@@ -36,8 +36,9 @@ const rootReducer = (
   action
 ) => {
   if (action.type === actionTypes.RESET) {
-    const halidom = loadState('calcHalidom') || facilities;
-    return { ...state, halidom };
+    const key = simc ? 'simcHalidom' : 'calcHalidom';
+    const halidom = loadState(key) || loadState('calcHalidom') || facilities;
+    return { ...state, simc, halidom };
   }
 
   const newFocus = focusReducer(focusKey, action);
