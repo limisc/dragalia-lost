@@ -61,10 +61,10 @@ class StatsDetail extends React.Component {
     if (adventurer) {
       name = adventurer ? adventurer.name[lang] : '';
       details = getDetails(stats, halidom);
-      const trueBaseHP =
-        details.total.HP - details.halidom.HP + details.trueHalidom.HP;
       totalHP = Math.ceil(
-        trueBaseHP * (1 + this.state.HP * 0.01) * (1 + this.state.exHP * 0.01)
+        details.trueHP *
+          (1 + this.state.HP * 0.01) *
+          (1 + this.state.exHP * 0.01)
       );
       const damage = getDamage(stats, this.state);
       max = damage.max;
@@ -131,16 +131,4 @@ const mapStateToProps = ({ stats, halidom }) => {
   return { stats, halidom };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    // TODO clear
-    //: () => dispatch(),
-  };
-};
-
-export default withTheme(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(StatsDetail)
-);
+export default withTheme(connect(mapStateToProps)(StatsDetail));
