@@ -16,7 +16,7 @@ const SetBtns = ({
   const { lang } = useContext(Context);
 
   return (
-    <div className="set-btns flex">
+    <div className="flex">
       <ToggleButton
         id="simc"
         width="col-3"
