@@ -13,9 +13,9 @@ Support development through donation.
 
 <img src="public/images/adventurer/110027_01_r05.png" alt="Melody" width="80"/>
 
-| :smile: | :smile: |
-|---|---|
-| Jianning Tan | Mechafe |
+| :smile: | :smile: | :smile: |
+|---|---|---|
+| Jianning Tan | Mechafe | Pahlev Zaman
 
 
 <img src="public/images/adventurer/100001_01_r05.png" alt="Euden" width="80"/>
