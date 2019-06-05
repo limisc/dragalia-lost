@@ -1,4 +1,4 @@
-import { Donation, StatsCalc } from 'views';
+import { Donation, StatsCalc, Facility } from 'views';
 
 const routers = [
   {
@@ -10,6 +10,11 @@ const routers = [
     id: 1,
     path: '/stats/:lang?',
     component: StatsCalc,
+  },
+  {
+    id: 2,
+    path: '/facility/:lang?',
+    component: Facility,
   },
 ];
 
