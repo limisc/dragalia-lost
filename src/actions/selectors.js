@@ -29,6 +29,7 @@ export const getItem = (statsKey, id) => {
 export const getLimit = (key, rarity, unbind = 4) => {
   switch (key) {
     case 'slime':
+    case 'dracolith':
       return limit[key];
     case 'adventurer':
     case 'mana':
