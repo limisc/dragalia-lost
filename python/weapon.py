@@ -5,7 +5,7 @@ FILE_NAME = 'weapon'
 
 def set_weapon():
     table = 'Weapons'
-    fields = 'Id,BaseId,FormId,WeaponName,Type,Rarity,ElementalType,' + \
+    fields = 'Id,BaseId,FormId,WeaponName,WeaponNameJP,Type,Rarity,ElementalType,' + \
         'MinHp,MaxHp,MinAtk,MaxAtk,SkillName,Abilities11,Abilities21,IsPlayable'
     group = 'BaseId,FormId'
     parse_int = ['MinHp', 'MaxHp', 'MinAtk', 'MaxAtk']
@@ -13,17 +13,18 @@ def set_weapon():
     raw_data = main.get_data(table, fields, group)
 
     names = main.load_name(FILE_NAME)
-    o_len = len(names)
 
     data_list = []
     data_dict = {}
     data_new = []
+    data_updates = [False]
+
     for i in raw_data:
         item = i['title']
         rarity = int(item['Rarity'])
         if item['IsPlayable'] == '1' and rarity >= 3:
             uid = '{}_01_{}'.format(item['BaseId'], item['FormId'])
-            name = main.set_name(names, item, data_new)
+            name = main.set_name(names, item, data_new, data_updates)
 
             new_item = {
                 'id': uid,
@@ -60,9 +61,11 @@ def set_weapon():
     main.save_file('list', FILE_NAME, data_list)
     main.save_file('dict', FILE_NAME, data_dict)
 
-    if len(names) != o_len:
-        print(data_new)
+    if data_updates[0]:
         main.save_file('locales', FILE_NAME, names)
+
+    if data_new:
+        print(data_new)
         main.download_images(FILE_NAME, data_new)
 
 

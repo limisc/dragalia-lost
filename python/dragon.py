@@ -15,17 +15,17 @@ def set_dragon():
     raw_data = main.get_data(table, fields, group)
 
     names = main.load_name(FILE_NAME)
-    o_len = len(names)
 
     data_new = []
     data_list = []
     data_dict = {}
+    data_updates = [False]
 
     for i in raw_data:
         item = i['title']
         if item['BaseId'] and item['IsPlayable'] == '1':
             uid = '{}_01'.format(item['BaseId'])
-            name = main.set_name(names, item, data_new)
+            name = main.set_name(names, item, data_new, data_updates)
 
             new_item = {
                 'id': uid,
@@ -70,9 +70,11 @@ def set_dragon():
     main.save_file('list', FILE_NAME, data_list)
     main.save_file('dict', FILE_NAME, data_dict)
 
-    if len(names) != o_len:
-        print(data_new)
+    if data_updates[0]:
         main.save_file('locales', FILE_NAME, names)
+
+    if data_new:
+        print(data_new)
         main.download_images(FILE_NAME, data_new)
 
 
