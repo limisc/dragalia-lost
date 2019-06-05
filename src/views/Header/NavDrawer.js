@@ -2,37 +2,33 @@
 import React, { memo, useContext } from 'react';
 import { Drawer } from '@material-ui/core';
 import { Context, GitHubIcon } from 'components';
+import { translate } from 'actions';
+import { history } from 'store';
 
 const NavDrawer = memo(({ open, setOpen }) => {
-  const { setLang } = useContext(Context);
+  const { lang, setLang } = useContext(Context);
 
-  const onClick = e => {
-    const { lang } = e.target.dataset;
+  const changeLang = lang => () => {
     setLang(lang);
     setOpen(false);
   };
 
+  const toPage = page => () => history.push(`/${page}/${lang}`);
+
   return (
     <Drawer
-      anchor="left"
-      variant="temporary"
       open={open}
-      onClose={() => setOpen(open => !open)}
+      onClose={() => setOpen(false)}
       classes={{ paper: 'drawer' }}
     >
       <ul>
         <li style={{ position: 'relative' }}>
           <GitHubIcon />
         </li>
-        <li data-lang="en" onClick={onClick}>
-          English
-        </li>
-        <li data-lang="ja" onClick={onClick}>
-          日本語
-        </li>
-        <li data-lang="zh" onClick={onClick}>
-          简体中文
-        </li>
+        <li onClick={toPage('facility')}>{translate('facility', lang)}</li>
+        <li onClick={changeLang('en')}>English</li>
+        <li onClick={changeLang('ja')}>日本語</li>
+        <li onClick={changeLang('zh')}>简体中文</li>
       </ul>
     </Drawer>
   );
