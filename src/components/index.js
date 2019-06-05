@@ -6,6 +6,7 @@ import Image from './Image';
 import Input from './Input';
 import Select from './Select';
 import SelectItem from './SelectItem';
+import Slider from './Slider';
 import ToggleButton from './ToggleButton';
 import ThemeProvider from './ThemeProvider';
 import withTheme from './withTheme';
@@ -19,6 +20,7 @@ export {
   Input,
   Select,
   SelectItem,
+  Slider,
   ToggleButton,
   ThemeProvider,
   withTheme,
