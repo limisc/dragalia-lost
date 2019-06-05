@@ -1,5 +1,5 @@
 
-Dragalia Lost Stats Calculator is an open source project under MIT License.  
+Dragalia Lost Stats Calculator is an open source project under MIT License.
 Support development through donation.
 
 <a href="https://www.patreon.com/junlico">
@@ -15,7 +15,7 @@ Support development through donation.
 
 | :smile: | :smile: |
 |---|---|
-| Jianning Tan | Mechafe | 
+| Jianning Tan | Mechafe |
 
 
 <img src="public/images/adventurer/100001_01_r05.png" alt="Euden" width="80"/>
@@ -23,3 +23,4 @@ Support development through donation.
 | :blush: | :blush: | :blush: | :blush: | :blush: |
 |---|---|---|---|---|
 | YunX | Oppressed | Shouchuang Zhu | 豊 山下 | Jacob Brodt |
+| Joey |
