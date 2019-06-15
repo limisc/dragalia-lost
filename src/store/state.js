@@ -1,11 +1,13 @@
-import { facilities } from 'data';
 import { loadState } from '../actions';
+import { syncHalidom } from '../reducers/halidomReducer';
 
 const simc = loadState('simc') || false;
 const key = simc ? 'simcHalidom' : 'calcHalidom';
-const halidom = loadState(key) || loadState('calcHalidom') || facilities;
+const halidom = syncHalidom(key);
 
 const state = {
+  simc,
+  halidom,
   panel: '0',
   field: 'adventurer',
   focusKey: 'adventurer',
@@ -17,8 +19,6 @@ const state = {
     wyrmprint2: null,
     dragon: null,
   },
-  simc,
-  halidom,
 };
 
 export default state;

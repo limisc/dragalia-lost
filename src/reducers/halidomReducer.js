@@ -3,7 +3,7 @@ import uuidv4 from 'uuid/v4';
 import { actionTypes, reducerCreator, loadState, saveState } from '../actions';
 import { facilities } from 'data';
 
-const syncHalidom = key => {
+export const syncHalidom = key => {
   const facility = loadState(key);
   let halidom = facilities;
   if (facility) {
