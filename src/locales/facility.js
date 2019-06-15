@@ -23,6 +23,7 @@ const facility = {
   '101801': { en: 'Dragoñata', ja: 'ドラゴンパピエ', zh: '彩偶龙' },
   '101901': { en: 'Magma Slime Statue', ja: 'マグマスライム像', zh: '岩浆史莱姆像' },
   '101902': { en: 'Aqua Slime Statue', ja: 'アクアスライム像', zh: '水史莱姆像' },
+  '101903': { en: 'Aero Slime Statue', ja: 'スライム像', zh: '史莱姆像' },
 };
 
 export default facility;
