@@ -1346,6 +1346,28 @@ const dragon = [
     incSTR2: 20,
   },
   {
+    id: '210084_01',
+    name: {
+      en: 'Freyja',
+      ja: 'フレイヤ',
+      zh: '芙蕾雅',
+    },
+    element: 'Wind',
+    rarity: '5',
+    MinHp: 37,
+    MaxHp: 375,
+    MinAtk: 12,
+    MaxAtk: 120,
+    abilities11: 40,
+    abilities12: 60,
+    abilities21: 50,
+    abilities22: 70,
+    incHP1: 20,
+    incHP2: 30,
+    incSTR1: 0,
+    incSTR2: 0,
+  },
+  {
     id: '210089_01',
     name: {
       en: 'Bronze Fafnir',

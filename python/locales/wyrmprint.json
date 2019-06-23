@@ -394,6 +394,11 @@
     "ja": "旅のエスコート",
     "zh": "旅途的护卫"
   },
+  "400096": {
+    "en": "The Bridal Dragon",
+    "ja": "花嫁はドラゴン",
+    "zh": "新娘是头龙"
+  },
   "400099": {
     "en": "Jewels of the Sun",
     "ja": "宝石と剣",
@@ -698,6 +703,11 @@
     "en": "Bonds Between Worlds",
     "ja": "時空を超える友情",
     "zh": "连接世界间的纽带"
+  },
+  "400282": {
+    "en": "Halidom Grooms",
+    "ja": "聖城の花婿たち",
+    "zh": "圣城的新郎们"
   },
   "400293": {
     "en": "A Brief Repose",
