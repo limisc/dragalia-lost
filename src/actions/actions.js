@@ -20,7 +20,7 @@ export const loadState = key => {
     console.log(error);
   }
 
-  return undefined;
+  return null;
 };
 
 export const saveState = (key, data) => {
