@@ -2,7 +2,6 @@
 import React from 'react';
 import {
   Add,
-  CloudDownloadOutlined,
   RefreshOutlined,
   DeleteForeverOutlined,
   SaveOutlined,
@@ -11,7 +10,6 @@ import { Button } from '@material-ui/core';
 
 class BtnGroups extends React.PureComponent {
   state = {
-    sync: <CloudDownloadOutlined />,
     load: <RefreshOutlined />,
     del: <DeleteForeverOutlined />,
     save: <SaveOutlined />,
@@ -22,7 +20,7 @@ class BtnGroups extends React.PureComponent {
     const { className, btns, onClick } = this.props;
 
     return (
-      <div className="btn-groups gutter-top flex">
+      <div className="flex btn-groups gutter-top">
         {btns.map(name => (
           <Button
             key={name}

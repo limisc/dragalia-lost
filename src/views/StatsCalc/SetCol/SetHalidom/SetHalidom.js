@@ -16,7 +16,7 @@ class SetHalidom extends React.Component {
   state = {
     open: false,
     fields: ['element', 'weapon', 'dragon'],
-    btns: ['sync', 'del', 'load', 'save'],
+    btns: ['load', 'del', 'save'],
   };
 
   handleClose = () => this.setState({ open: false });
