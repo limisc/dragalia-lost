@@ -66,9 +66,23 @@ main {
   flex: initial;
 }
 
+.fill-remains {
+  flex: 1;
+}
+
 .center {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.center-h {
+  display: flex;
   justify-content: center;
 }
 
@@ -82,6 +96,10 @@ main {
 
 .gutter-top {
   margin-top: 8px;
+}
+
+.gutter-bottom {
+  margin-bottom: 12px;
 }
 
 .highlight {
@@ -155,7 +173,7 @@ button.active {
 }
 
 .stats-field {
-  height: 120px;
+  min-height: 120px;
 }
 
 .avatar {
@@ -165,7 +183,10 @@ button.active {
   flex-direction: column;
 }
 
-.avatar > img {
+.drawer li,
+.avatar > img,
+.list-item-image > img,
+.list-item-icon > img {
   cursor: pointer;
 }
 
@@ -174,23 +195,8 @@ button.active {
   text-align: center;
 }
 
-.stats-field-setting {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.fill-remains {
-  flex: 1;
-}
-
 .halidom-list {
   overflow: auto;
-}
-
-.list-item-image > img,
-.list-item-icon > img {
-  cursor: pointer;
 }
 
 .list-header {
@@ -267,7 +273,6 @@ ul {
   align-items: center;
   padding-left: 50px;
   border-bottom: medium groove #eec2a2;
-  cursor: pointer;
 }
 
 .drawer li:active {
@@ -370,7 +375,8 @@ div.dialog-flex {
   box-sizing: border-box;
   border: 2px solid #999999;
   background: #eeeeee;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
 .toggle-btn-checkbox {

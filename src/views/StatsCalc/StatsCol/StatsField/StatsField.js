@@ -33,11 +33,11 @@ class StatsField extends Component {
     }
 
     return (
-      <div className="stats-field flex">
+      <div className="flex stats-field">
         <StatsAvatar statsKey={statsKey} image={image} name={name} />
 
         {item && (
-          <div className="stats-field-setting flex">
+          <div className="flex fill-remains center-v">
             <Input
               classes="col-2"
               label="level"
