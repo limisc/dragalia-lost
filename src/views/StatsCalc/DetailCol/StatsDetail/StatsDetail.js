@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { exValues } from 'data';
-import { translate, getDetails, getDamage } from 'actions';
+import { calcVal, translate, getDetails, getDamage } from 'actions';
 import { withTheme } from 'components';
 import DungeonSelect from './DungeonSelect';
 import DungeonSettings from './DungeonSettings';
@@ -61,11 +61,12 @@ class StatsDetail extends React.Component {
     if (adventurer) {
       name = adventurer ? adventurer.name[lang] : '';
       details = getDetails(stats, halidom);
-      totalHP = Math.ceil(
-        details.trueHP *
+      totalHP = calcVal(
+        details.total.HP *
           (1 + this.state.HP * 0.01) *
           (1 + this.state.exHP * 0.01)
       );
+
       const damage = getDamage(stats, this.state);
       max = damage.max;
       min = damage.min;
@@ -99,8 +100,8 @@ class StatsDetail extends React.Component {
 
                 <tr>
                   <td>{translate('total', lang)}</td>
-                  <td>{details.total.HP}</td>
-                  <td>{details.total.STR}</td>
+                  <td>{calcVal(details.total.HP)}</td>
+                  <td>{calcVal(details.total.STR)}</td>
                   <td>{details.total.might}</td>
                 </tr>
               </tbody>

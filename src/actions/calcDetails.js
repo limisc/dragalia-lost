@@ -8,6 +8,16 @@ const MAX_WYRMPRINT_DEF = 20;
 const MAX_WYRMPRINT_RES = 15;
 const MAX_WYRMPRINT_COUNTER = 25;
 
+export const calcVal = value => {
+  const tolerance = 0.00001;
+  const round = Math.round(value);
+  if (Math.abs(value - round) < tolerance) {
+    return round;
+  }
+
+  return Math.ceil(value);
+};
+
 export const getDetails = (stats, halidom) => {
   // getDetails uses with stats.adventurer exists, so no need recheck here.
   const details = {};
@@ -23,7 +33,6 @@ export const getDetails = (stats, halidom) => {
   Object.keys(stats).forEach(statsKey => {
     const sameEle =
       (statsKey === 'weapon' || statsKey === 'dragon') &&
-      // adventurer &&
       stats[statsKey] &&
       adventurer.element === stats[statsKey].element;
 
@@ -36,33 +45,25 @@ export const getDetails = (stats, halidom) => {
 
   // calc halidom
   const keys = getHalidomSectionKey(stats);
+
+  // calc facility bonus percent
   const element = calcSection(halidom.element[keys.element]);
   const weapon = calcSection(halidom.weapon[keys.weapon]);
   const fafnir = calcSection(halidom.dragon[keys.dragon]);
 
-  // TODO due to in game bug, fafnir statue bonus doesn't calc correctly, so keep the same as in game with wrong value.
-  const fakeDragonValue = calcDetails('dragon', stats.dragon);
+  // V1.9 fixed fafnir bug
   HP =
-    Math.ceil(details.adventurer.HP * (element.HP + weapon.HP) * 0.01) +
-    Math.ceil(fakeDragonValue.HP * fafnir.HP * 0.01);
+    calcVal(details.adventurer.HP * (element.HP + weapon.HP) * 0.01) +
+    calcVal(details.dragon.HP * fafnir.HP * 0.01);
   STR =
-    Math.ceil(details.adventurer.STR * (element.STR + weapon.STR) * 0.01) +
-    Math.ceil(fakeDragonValue.STR * fafnir.STR * 0.01);
+    calcVal(details.adventurer.STR * (element.STR + weapon.STR) * 0.01) +
+    calcVal(details.dragon.STR * fafnir.STR * 0.01);
+
   might = HP + STR;
   details.halidom = { HP, STR, might };
   let totalHP = baseHP + HP;
   let totalSTR = baseSTR + STR;
   let totalMight = baseMight + might;
-
-  // calc real halidom values
-  HP =
-    Math.ceil(details.adventurer.HP * (element.HP + weapon.HP) * 0.01) +
-    Math.ceil(details.dragon.HP * fafnir.HP * 0.01);
-  STR =
-    Math.ceil(details.adventurer.STR * (element.STR + weapon.STR) * 0.01) +
-    Math.ceil(details.dragon.STR * fafnir.STR * 0.01);
-  might = HP + STR;
-  details.trueHalidom = { HP, STR, might };
 
   // calc ability
   // Version 1.7.1, details calc item STR ability, shows in ability section
@@ -139,20 +140,23 @@ export const getDetails = (stats, halidom) => {
     totalIncSTR += dragon[`incSTR${aLV}`];
   }
 
-  HP = Math.ceil(totalHP * totalIncHP * 0.01);
-  STR = Math.ceil(totalSTR * totalIncSTR * 0.01);
-  details.ability = { HP, STR, might: 0 };
+  // ability total detail value
+  HP = totalHP * totalIncHP * 0.01;
+  STR = totalSTR * totalIncSTR * 0.01;
+  details.ability = {
+    HP: calcVal(HP),
+    STR: calcVal(STR),
+    might: 0,
+  };
 
   totalHP += HP;
   totalSTR += STR;
 
-  details.total = { HP: totalHP, STR: totalSTR, might: totalMight };
-
-  // true total HP
-  HP = baseHP + details.trueHalidom.HP;
-  STR = baseSTR + details.trueHalidom.STR;
-  HP += HP * totalIncHP * 0.01;
-  details.trueHP = HP;
+  details.total = {
+    HP: totalHP,
+    STR: totalSTR,
+    might: totalMight,
+  };
   return details;
 };
 
@@ -380,13 +384,13 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
       STR += getMCBonus(item, 'Atk', mana);
     }
 
-    HP = Math.ceil(HP);
-    STR = Math.ceil(STR);
+    HP = calcVal(HP);
+    STR = calcVal(STR);
 
     if (sameEle) {
       // adventurer equipt same element weapon || dragon has 1.5 bonus
-      HP = Math.ceil(HP * 1.5);
-      STR = Math.ceil(STR * 1.5);
+      HP = calcVal(HP * 1.5);
+      STR = calcVal(STR * 1.5);
     }
 
     might = HP + STR + getMight(statsKey, item);
