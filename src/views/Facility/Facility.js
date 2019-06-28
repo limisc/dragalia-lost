@@ -9,10 +9,24 @@ import { FixedSizeGrid } from 'react-window';
 import MaterialItem from './MaterialItem';
 import FacilityItem from './FacilityItem';
 
+const syncFacility = () => {
+  const facility = loadState('facility');
+
+  if (facility) {
+    facility.forEach(f => {
+      f.max = getLimit(f.type);
+    });
+
+    saveState('facility', facility);
+  }
+
+  return facility || [];
+};
+
 class Facility extends React.Component {
   state = {
     open: false,
-    facility: loadState('facility') || [],
+    facility: syncFacility(),
     btns: ['load', 'del', 'save', 'add'],
   };
 
