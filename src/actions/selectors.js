@@ -30,6 +30,8 @@ export const getLimit = (key, rarity, unbind = 4) => {
   switch (key) {
     case 'slime':
     case 'dracolith':
+    case 'altar':
+    case 'dojo':
       return limit[key];
     case 'adventurer':
     case 'mana':

@@ -1,6 +1,8 @@
 const limit = {
   slime: 15,
   dracolith: 20,
+  altar: 35,
+  dojo: 35,
   mana: { '3': '30', '4': '40', '5': '50' },
   adventurer: { '3': 60, '4': 70, '5': 80 },
   weapon: {
@@ -55,6 +57,11 @@ export const values = {
     '28': { HP: 7.5, STR: 7 },
     '29': { HP: 7.5, STR: 7.5 },
     '30': { HP: 8, STR: 7.5 },
+    '31': { HP: 8, STR: 8 },
+    '32': { HP: 8.5, STR: 8 },
+    '33': { HP: 8.5, STR: 8.5 },
+    '34': { HP: 9, STR: 8.5 },
+    '35': { HP: 9, STR: 9 },
   },
   dojo: {
     '0': { HP: 0, STR: 0 },
@@ -88,6 +95,11 @@ export const values = {
     '28': { HP: 11, STR: 11 },
     '29': { HP: 11, STR: 11.5 },
     '30': { HP: 11.5, STR: 11.5 },
+    '31': { HP: 14, STR: 14 },
+    '32': { HP: 14.5, STR: 14 },
+    '33': { HP: 14.5, STR: 14.5 },
+    '34': { HP: 15, STR: 14.5 },
+    '35': { HP: 15, STR: 15 },
   },
   fafnir: {
     '0': { HP: 0, STR: 0 },
