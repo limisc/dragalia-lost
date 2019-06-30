@@ -1367,6 +1367,28 @@ const dragon = {
     incSTR1: 0,
     incSTR2: 0,
   },
+  '210087_01': {
+    id: '210087_01',
+    name: {
+      en: 'Shinobi',
+      ja: 'シノビ',
+      zh: '忍',
+    },
+    element: 'Shadow',
+    rarity: '5',
+    MinHp: 36,
+    MaxHp: 368,
+    MinAtk: 12,
+    MaxAtk: 128,
+    abilities11: 20,
+    abilities12: 40,
+    abilities21: 60,
+    abilities22: 70,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 20,
+  },
   '210089_01': {
     id: '210089_01',
     name: {
