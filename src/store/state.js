@@ -11,7 +11,7 @@ const state = {
   panel: '0',
   field: 'adventurer',
   focusKey: 'adventurer',
-  filters: { weapon: '', element: '', rarity: '' },
+  filters: { weapon: '', element: '', rarity: '', type: '' },
   stats: {
     adventurer: null,
     weapon: null,

@@ -10,6 +10,7 @@ class FilterStats extends React.Component {
   state = {
     rarity: ['', '5', '4', '3'],
     element: ['', 'Flame', 'Water', 'Wind', 'Light', 'Shadow'],
+    type: ['', 'Core', 'Void', 'Limited'],
     weapon: [
       '',
       'Sword',

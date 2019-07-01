@@ -8,7 +8,7 @@ import StatsList from './StatsList/StatsList';
 class SelectStats extends Component {
   state = {
     adventurer: ['weapon', 'element', 'rarity'],
-    weapon: ['weapon', 'element', 'rarity'],
+    weapon: ['weapon', 'element', 'type'],
     wyrmprint: ['rarity'],
     dragon: ['element', 'rarity'],
   };

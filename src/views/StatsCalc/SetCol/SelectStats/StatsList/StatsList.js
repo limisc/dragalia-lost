@@ -12,7 +12,6 @@ import ListItem from './ListItem';
 
 class StatsList extends React.Component {
   state = {
-    loading: true,
     search: '',
     element: ['Flame', 'Water', 'Wind', 'Light', 'Shadow', 'None'],
     weapon: [
@@ -26,11 +25,6 @@ class StatsList extends React.Component {
       'Staff',
     ],
   };
-
-  componentDidMount() {
-    const list = dataList[this.props.field];
-    this.setState({ list, loading: false });
-  }
 
   compare = (item1, item2) => {
     let { element, weapon } = this.state;
@@ -97,8 +91,9 @@ class StatsList extends React.Component {
   };
 
   render() {
-    let { list, loading, search } = this.state;
-    const { lang, fields, filters } = this.props;
+    const { search } = this.state;
+    let { lang, field, fields, filters } = this.props;
+    let list = dataList[field];
 
     if (list) {
       list = list
@@ -116,6 +111,10 @@ class StatsList extends React.Component {
         .sort(this.compare);
     }
 
+    if (field === 'weapon') {
+      fields = ['weapon', 'element', 'rarity'];
+    }
+
     return (
       <Fragment>
         <TextField
@@ -127,30 +126,22 @@ class StatsList extends React.Component {
         />
         <ListHeader fields={fields} />
         <div className="fill-remains">
-          {loading ? (
-            <img
-              alt="loading"
-              className="lg"
-              src={`${process.env.PUBLIC_URL}/images/icon/loading.svg`}
-            />
-          ) : (
-            <AutoSizer>
-              {({ height, width }) => (
-                <FixedSizeList
-                  height={height}
-                  width={width}
-                  itemSize={80}
-                  itemCount={list.length}
-                  itemData={{
-                    list,
-                    fields,
-                  }}
-                >
-                  {ListItem}
-                </FixedSizeList>
-              )}
-            </AutoSizer>
-          )}
+          <AutoSizer>
+            {({ height, width }) => (
+              <FixedSizeList
+                height={height}
+                width={width}
+                itemSize={80}
+                itemCount={list.length}
+                itemData={{
+                  list,
+                  fields,
+                }}
+              >
+                {ListItem}
+              </FixedSizeList>
+            )}
+          </AutoSizer>
         </div>
       </Fragment>
     );
