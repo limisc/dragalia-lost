@@ -1,30 +1,46 @@
 /* eslint-disable no-unused-vars */
-import React, { Fragment, forwardRef } from 'react';
+import React, { Fragment, createRef } from 'react';
 import { connect } from 'react-redux';
 import { FixedSizeList } from 'react-window';
-import { TextField } from '@material-ui/core';
-import { translate } from 'actions';
-import { Context } from 'components';
+import { withTheme } from 'components';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import dataList from 'data';
 import ListHeader from './ListHeader';
 import ListItem from './ListItem';
 
 class StatsList extends React.Component {
-  state = {
-    search: '',
-    element: ['Flame', 'Water', 'Wind', 'Light', 'Shadow', 'None'],
-    weapon: [
-      'Sword',
-      'Blade',
-      'Dagger',
-      'Axe',
-      'Lance',
-      'Bow',
-      'Wand',
-      'Staff',
-    ],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      element: ['Flame', 'Water', 'Wind', 'Light', 'Shadow', 'None'],
+      weapon: [
+        'Sword',
+        'Blade',
+        'Dagger',
+        'Axe',
+        'Lance',
+        'Bow',
+        'Wand',
+        'Staff',
+      ],
+      scroll: false,
+      listRef: createRef(),
+    };
+  }
+
+  getSnapshotBeforeUpdate(prevProps) {
+    if (prevProps !== this.props) {
+      return true;
+    }
+
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (snapshot) {
+      this.state.listRef.current.scrollToItem(0);
+    }
+  }
 
   compare = (item1, item2) => {
     let { element, weapon } = this.state;
@@ -91,8 +107,7 @@ class StatsList extends React.Component {
   };
 
   render() {
-    const { search } = this.state;
-    let { lang, field, fields, filters } = this.props;
+    let { lang, field, fields, filters, search } = this.props;
     let list = dataList[field];
 
     if (list) {
@@ -117,18 +132,12 @@ class StatsList extends React.Component {
 
     return (
       <Fragment>
-        <TextField
-          className="fluid"
-          variant="filled"
-          value={search}
-          label={translate('search', lang)}
-          onChange={this.onChange}
-        />
         <ListHeader fields={fields} />
         <div className="fill-remains">
           <AutoSizer>
             {({ height, width }) => (
               <FixedSizeList
+                ref={this.state.listRef}
                 height={height}
                 width={width}
                 itemSize={80}
@@ -146,10 +155,6 @@ class StatsList extends React.Component {
       </Fragment>
     );
   }
-
-  onChange = e => this.setState({ search: e.target.value });
-
-  clear = () => this.setState({ search: '' });
 }
 
 StatsList.defaultProps = {
@@ -160,19 +165,4 @@ const mapStateToProps = ({ field, filters }) => {
   return { field, filters };
 };
 
-const wrapper = Component => {
-  return forwardRef((props, ref) => (
-    <Context.Consumer>
-      {({ lang }) => <Component ref={ref} lang={lang} {...props} />}
-    </Context.Consumer>
-  ));
-};
-
-export default wrapper(
-  connect(
-    mapStateToProps,
-    null,
-    null,
-    { forwardRef: true }
-  )(StatsList)
-);
+export default withTheme(connect(mapStateToProps)(StatsList));
