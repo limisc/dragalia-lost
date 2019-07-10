@@ -48,11 +48,8 @@ def regex(details):
 
 def regex_HP_STR_Def_DragonRes(details=''):
     r = re.search(
-        r'(Flame|Water|Wind|Light|Shadow)?:?\s*' +
-        r'increases (strength|HP|defense|strength and HP) by (?:\'\'\')?(\d+)%(?:\'\'\')?' +
-        r'(?:\.' +
-        r'| and adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance' +
-        r'| when HP is| and)', details, re.IGNORECASE
+        r'(Flame|Water|Wind|Light|Shadow)?:?\s*increases (strength|HP|defense|strength and HP) by \'\'\'(\d+)%\'\'\'' +
+        r'(?:\.| (?:and|when HP is) (?:adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance|(?!below).)*$)', details, re.IGNORECASE
     )
 
     if r:
@@ -297,6 +294,4 @@ def clear_dict(file):
 
 if __name__ == '__main__':
     print(__file__)
-    download_images('adventurer', ['110029'])
-    # facility = load_name('facility')
-    # save_file('facility', 'facility', facility)
+    # download_images('facility', ['110029'])
