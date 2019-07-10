@@ -23,7 +23,7 @@ def set_dragon():
 
     for i in raw_data:
         item = i['title']
-        if item['BaseId'] and item['IsPlayable'] == '1':
+        if item['BaseId'] and item['IsPlayable'] == '1' and item['BaseId'] != '210091':
             uid = '{}_01'.format(item['BaseId'])
             name = main.set_name(names, item, data_new, data_updates)
 
