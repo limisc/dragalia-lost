@@ -33,6 +33,8 @@ export default {
   unbind: { en: 'Unbind', ja: '上限解放', zh: '上限解锁' },
   bond: { en: 'Bond', ja: '信赖度', zh: '信赖度' },
   element: { en: 'Element', ja: '属性', zh: '属性' },
+  augHP: { en: 'HP UP', ja: '', zh: '' },
+  augSTR: { en: 'STR UP', ja: '', zh: '' },
   name: { en: 'Name', ja: '名称', zh: '名称' },
   Core: { en: 'Core', ja: '', zh: '初始' },
   Void: { en: 'Void', ja: 'ヴォイド', zh: '虚空' },
