@@ -14,11 +14,11 @@ import {
 
 class StatsAvatar extends React.Component {
   render() {
-    let { lang, image, name, statsKey, highlight } = this.props;
+    let { lang, image, name, statsKey, scale } = this.props;
 
     const field = getField(statsKey);
     const label = name ? name[lang] : translate(statsKey, lang);
-    const cn = classNames('avatar center', { highlight });
+    const cn = classNames('avatar center', { scale });
     return (
       <div className={cn}>
         <Image field={field} image={image} size="lg" onClick={this.onClick} />
@@ -28,15 +28,15 @@ class StatsAvatar extends React.Component {
   }
 
   onClick = () => {
-    const { highlight, statsKey, selectFocus, selectStats } = this.props;
-    if (!highlight) selectStats(statsKey);
+    const { scale, statsKey, selectFocus, selectStats } = this.props;
+    if (!scale) selectStats(statsKey);
     selectFocus(statsKey);
     scrollToComponent(refs.bottom);
   };
 }
 
 const mapStateToProps = ({ focusKey, stats }, { statsKey }) => {
-  return { highlight: focusKey === statsKey && !stats[focusKey] };
+  return { scale: focusKey === statsKey && !stats[focusKey] };
 };
 
 const mapDispatchToProps = dispatch => {
