@@ -4611,10 +4611,6 @@ const adventurer = [
     abilities22: 100,
     abilities31: 80,
     abilities32: 100,
-    STRLV1: 20,
-    STRLV2: 45,
-    incSTR1: 15,
-    incSTR2: 20,
   },
   {
     id: '110327_01',

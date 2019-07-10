@@ -3,6 +3,7 @@ const limit = {
   dracolith: 20,
   altar: 35,
   dojo: 35,
+  augments: 50,
   mana: { '3': '30', '4': '40', '5': '50' },
   adventurer: { '3': 60, '4': 70, '5': 80 },
   weapon: {
