@@ -163,6 +163,11 @@ img.md {
   height: 64px;
 }
 
+.list-item-image > img.md:hover,
+.scale {
+  transform: scale(1.1);
+}
+
 img.lg {
   width: 80px;
   height: 80px;
@@ -174,6 +179,14 @@ button.active {
 
 .stats-field {
   min-height: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19);
+  /* , 0 2px 5px rgba(0, 0, 0, 0.23); */
+  padding: 8px 8px 8px 0;
+}
+
+.stats-field:hover,
+.stats-field:focus-within {
+  transform: scale(1.01);
 }
 
 .avatar {
