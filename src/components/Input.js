@@ -36,4 +36,8 @@ const Input = memo(
   }
 );
 
+Input.defaultProps = {
+  classes: 'col-2',
+};
+
 export default Input;

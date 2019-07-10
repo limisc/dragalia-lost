@@ -12,11 +12,13 @@ class StatsField extends Component {
     this.state = {
       bond,
       level,
+      augHP: '',
+      augSTR: '',
     };
   }
 
   render() {
-    const { bond, level } = this.state;
+    const { augHP, augSTR, bond, level } = this.state;
     const { item, statsKey } = this.props;
     const { id, ex, name, mana, unbind, rarity, curRarity } = item || {};
     const exDisabled = curRarity !== '5';
@@ -33,27 +35,20 @@ class StatsField extends Component {
     }
 
     return (
-      <div className="flex stats-field">
+      <div className="flex stats-field gutter-bottom">
         <StatsAvatar statsKey={statsKey} image={image} name={name} />
 
         {item && (
           <div className="flex fill-remains center-v">
-            <Input
-              classes="col-2"
-              label="level"
-              value={level}
-              onChange={this.onChange}
-            />
-
-            {statsKey === 'adventurer' && (
+            {statsKey === 'adventurer' ? (
               <Fragment>
+                {/* <Input label="level" value={level} onChange={this.onChange} />
                 <SelectItem
                   label="curRarity"
                   value={curRarity}
                   rarity={rarity}
                   onChange={this.onChange}
-                />
-
+                /> */}
                 <SelectItem
                   label="mana"
                   value={mana}
@@ -68,24 +63,23 @@ class StatsField extends Component {
                   onChange={this.onChange}
                 />
               </Fragment>
+            ) : (
+              <Fragment>
+                <Input label="level" value={level} onChange={this.onChange} />
+                <SelectItem
+                  label="unbind"
+                  value={unbind}
+                  onChange={this.onChange}
+                />
+              </Fragment>
             )}
 
-            {statsKey !== 'adventurer' && (
-              <SelectItem
-                label="unbind"
-                value={unbind}
-                onChange={this.onChange}
-              />
-            )}
+            <Input label="augHP" value={augHP} onChange={this.onChange} />
+            <Input label="augSTR" value={augSTR} onChange={this.onChange} />
 
-            {statsKey === 'dragon' && (
-              <Input
-                classes="col-2"
-                label="bond"
-                value={bond}
-                onChange={this.onChange}
-              />
-            )}
+            {/* {statsKey === 'dragon' && (
+              <Input label="bond" value={bond} onChange={this.onChange} />
+            )} */}
           </div>
         )}
       </div>
@@ -95,12 +89,13 @@ class StatsField extends Component {
   onChange = ({ target: { name, value } }) => {
     const updates = this.getUpdates(name, value);
     const { statsKey, updateStats } = this.props;
-    if (name === 'level' || name === 'bond') {
-      let { timerId } = this.state;
+
+    if (this.state.hasOwnProperty(name)) {
+      let { [`${name}Id`]: timerId } = this.state;
       clearTimeout(timerId);
       timerId = setTimeout(() => {
         // if level and bond is '', set min value 1.
-        if (updates[name] === '') {
+        if ((name === 'level' || name === 'bond') && updates[name] === '') {
           updates[name] = 1;
           this.setState({ [name]: 1 });
         }
@@ -108,7 +103,7 @@ class StatsField extends Component {
       }, 1000);
 
       this.setState({
-        timerId,
+        [`${name}Id`]: timerId,
         [name]: updates[name],
       });
     } else {
@@ -126,6 +121,12 @@ class StatsField extends Component {
     const { unbind, rarity, curRarity } = item;
 
     switch (key) {
+      case 'augHP':
+      case 'augSTR':
+        const augLimit = getLimit('augments');
+        const intAug = value * 1 || '';
+        updates[key] = intAug > augLimit ? augLimit : intAug;
+        break;
       case 'level':
         const temp = statsKey === 'adventurer' ? curRarity : rarity;
         const intLevel = value * 1 || '';
@@ -161,11 +162,6 @@ class StatsField extends Component {
   };
 }
 
-const mapStateToProps = ({ stats }, { statsKey }) => {
-  const item = stats[statsKey];
-  return { item };
-};
-
 const mapDispatchToProps = dispatch => {
   return {
     updateStats: (statsKey, updates) =>
@@ -174,6 +170,6 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(StatsField);

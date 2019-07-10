@@ -1433,27 +1433,5 @@ const dragon = {
     incSTR1: 0,
     incSTR2: 0,
   },
-  '210091_01': {
-    id: '210091_01',
-    name: {
-      en: 'Gold Fafnir',
-      ja: 'ゴールドファフニール',
-      zh: '金法夫纳',
-    },
-    element: 'Shadow',
-    rarity: '5',
-    MinHp: 22,
-    MaxHp: 229,
-    MinAtk: 6,
-    MaxAtk: 69,
-    abilities11: 0,
-    abilities12: 0,
-    abilities21: 0,
-    abilities22: 0,
-    incHP1: 0,
-    incHP2: 0,
-    incSTR1: 0,
-    incSTR2: 0,
-  },
 };
 export default dragon;

@@ -14,7 +14,6 @@ const statsKeys = [
 const refs = {
   statsField: createRef(),
   bottom: createRef(),
-  searchBar: createRef(),
 };
 
 export { history, statsKeys, refs, state, store };

@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { refs } from 'store';
 import { translate, selectFilters, resetFilters } from 'actions';
-import { Button } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 import { Select, withTheme } from 'components';
 
 class FilterStats extends React.Component {
   state = {
     rarity: ['', '5', '4', '3'],
     element: ['', 'Flame', 'Water', 'Wind', 'Light', 'Shadow'],
+    type: ['', 'Core', 'Void', 'Limited'],
     weapon: [
       '',
       'Sword',
@@ -24,29 +24,41 @@ class FilterStats extends React.Component {
   };
 
   render() {
-    const { lang, fields, filters } = this.props;
+    const { lang, fields, filters, search } = this.props;
     return (
-      <div className="flex gutter">
-        {fields.map(f => (
-          <Select
-            key={f}
-            label={f}
-            value={filters[f]}
-            classes="col-2 col-4"
-            options={this.state[f]}
-            onChange={this.onChange}
-          />
-        ))}
+      <Fragment>
+        <div className="flex gutter">
+          {fields.map(f => (
+            <Select
+              key={f}
+              label={f}
+              value={filters[f]}
+              classes="col-2 col-4"
+              options={this.state[f]}
+              onChange={this.onChange}
+            />
+          ))}
+        </div>
 
-        <Button
-          className="col-2 col-4"
-          color="secondary"
-          variant="contained"
-          onClick={this.onClick}
-        >
-          {translate('reset', lang)}
-        </Button>
-      </div>
+        <div className="flex">
+          <TextField
+            className="fill-remains"
+            variant="filled"
+            value={search}
+            label={translate('search', lang)}
+            onChange={this.props.onChange}
+          />
+
+          <Button
+            className="col-2 col-4"
+            color="secondary"
+            variant="contained"
+            onClick={this.onClick}
+          >
+            REST
+          </Button>
+        </div>
+      </Fragment>
     );
   }
 
@@ -55,7 +67,7 @@ class FilterStats extends React.Component {
   };
 
   onClick = () => {
-    refs.searchBar.current.clear();
+    this.props.clear();
     this.props.resetFilters();
   };
 }

@@ -345,7 +345,7 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
   let HP, STR, might;
   HP = STR = might = 0;
   if (item) {
-    const { level, mana, rarity, curRarity } = item;
+    const { level, mana, rarity, curRarity, augHP = 0, augSTR = 0 } = item;
     const temp = statsKey === 'adventurer' ? '5' : rarity;
     const MAX_LEVEL = getLimit(statsKey, temp);
 
@@ -384,8 +384,8 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
       STR += getMCBonus(item, 'Atk', mana);
     }
 
-    HP = calcVal(HP);
-    STR = calcVal(STR);
+    HP = calcVal(HP + augHP);
+    STR = calcVal(STR + augSTR);
 
     if (sameEle) {
       // adventurer equipt same element weapon || dragon has 1.5 bonus

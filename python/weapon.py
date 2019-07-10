@@ -6,7 +6,7 @@ FILE_NAME = 'weapon'
 def set_weapon():
     table = 'Weapons'
     fields = 'Id,BaseId,FormId,WeaponName,WeaponNameJP,Type,Rarity,ElementalType,' + \
-        'MinHp,MaxHp,MinAtk,MaxAtk,SkillName,Abilities11,Abilities21,IsPlayable'
+        'MinHp,MaxHp,MinAtk,MaxAtk,SkillName,Abilities11,Abilities21,IsPlayable,Availability'
     group = 'BaseId,FormId'
     parse_int = ['MinHp', 'MaxHp', 'MinAtk', 'MaxAtk']
 
@@ -31,6 +31,7 @@ def set_weapon():
                 'name': name,
                 'weapon': item['Type'],
                 'element': item['ElementalType'],
+                'type': item['Availability'],
                 'rarity': item['Rarity'],
             }
 
