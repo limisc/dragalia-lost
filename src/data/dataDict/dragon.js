@@ -549,6 +549,28 @@ const dragon = {
     incSTR1: 35,
     incSTR2: 50,
   },
+  '210030_01': {
+    id: '210030_01',
+    name: {
+      en: 'Arctos',
+      ja: 'アルクトス',
+      zh: '阿尔库斯特',
+    },
+    element: 'Flame',
+    rarity: '5',
+    MinHp: 37,
+    MaxHp: 374,
+    MinAtk: 12,
+    MaxAtk: 121,
+    abilities11: 70,
+    abilities12: 100,
+    abilities21: 0,
+    abilities22: 0,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 30,
+    incSTR2: 45,
+  },
   '210036_01': {
     id: '210036_01',
     name: {

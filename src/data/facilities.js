@@ -3,6 +3,7 @@ const facilities = {
     Flame: {
       a_0: { id: '100401', type: 'altar', level: 30 },
       a_1: { id: '100401', type: 'altar', level: 30 },
+      e_0: { id: '102001', type: 'event', level: 30 },
       s_0: { id: '101901', type: 'slime', level: 15 },
     },
     Water: {

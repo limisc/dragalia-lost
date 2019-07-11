@@ -136,7 +136,7 @@ def set_abilities():
 
 def load_name(file):
     path = Path(__file__).resolve().parent / 'locales/{}.json'.format(file)
-    with open(path) as f:
+    with open(path, encoding="utf8") as f:
         data = json.load(f)
 
     return data
@@ -200,7 +200,7 @@ def save_file(f_type, file, data):
         path = Path(__file__).resolve().parent.parent / \
             'src/locales/{}.js'.format(file)
 
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding="utf-8") as f:
         if f_type != 'locales':
             f.write('const {} =\n '.format(file))
         json.dump(data, f, sort_keys=f_type == 'locales',
