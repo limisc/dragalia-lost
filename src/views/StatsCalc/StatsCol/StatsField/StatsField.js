@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getLimit, updateStats } from 'actions';
 import { Input, SelectItem } from 'components';
+import { ArrowDropDownRounded } from '@material-ui/icons';
 import StatsAvatar from './StatsAvatar';
 
 class StatsField extends Component {
@@ -14,11 +15,12 @@ class StatsField extends Component {
       level,
       augHP: '',
       augSTR: '',
+      open: false,
     };
   }
 
   render() {
-    const { augHP, augSTR, bond, level } = this.state;
+    const { augHP, augSTR, bond, level, open } = this.state;
     const { item, statsKey } = this.props;
     const { id, ex, name, mana, unbind, rarity, curRarity } = item || {};
     const exDisabled = curRarity !== '5';
@@ -42,13 +44,22 @@ class StatsField extends Component {
           <div className="flex fill-remains center-v">
             {statsKey === 'adventurer' ? (
               <Fragment>
-                {/* <Input label="level" value={level} onChange={this.onChange} />
-                <SelectItem
-                  label="curRarity"
-                  value={curRarity}
-                  rarity={rarity}
-                  onChange={this.onChange}
-                /> */}
+                {open && (
+                  <Fragment>
+                    <Input
+                      label="level"
+                      value={level}
+                      onChange={this.onChange}
+                    />
+                    <SelectItem
+                      label="curRarity"
+                      value={curRarity}
+                      rarity={rarity}
+                      onChange={this.onChange}
+                    />
+                  </Fragment>
+                )}
+
                 <SelectItem
                   label="mana"
                   value={mana}
@@ -76,15 +87,21 @@ class StatsField extends Component {
 
             <Input label="augHP" value={augHP} onChange={this.onChange} />
             <Input label="augSTR" value={augSTR} onChange={this.onChange} />
-
-            {/* {statsKey === 'dragon' && (
+            {(statsKey === 'adventurer' || statsKey === 'dragon') && !open && (
+              <div className="fluid center-h" onClick={this.onClick}>
+                <ArrowDropDownRounded />
+              </div>
+            )}
+            {statsKey === 'dragon' && open && (
               <Input label="bond" value={bond} onChange={this.onChange} />
-            )} */}
+            )}
           </div>
         )}
       </div>
     );
   }
+
+  onClick = () => this.setState({ open: true });
 
   onChange = ({ target: { name, value } }) => {
     const updates = this.getUpdates(name, value);
