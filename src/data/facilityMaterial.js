@@ -802,5 +802,6 @@ export const imageMap = {
     Flame: '100601',
     Water: '100602',
     Wind: '100603',
+    Light: '100604',
   },
 };
