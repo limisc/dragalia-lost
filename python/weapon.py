@@ -30,7 +30,7 @@ def set_weapon():
                 'id': uid,
                 'name': name,
                 'weapon': item['Type'],
-                'element': item['ElementalType'],
+                'element': item['ElementalType'] or 'None',
                 'type': item['Availability'],
                 'rarity': item['Rarity'],
             }
