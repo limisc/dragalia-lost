@@ -29,6 +29,7 @@ const facilities = {
       a_0: { id: '100405', type: 'altar', level: 30 },
       a_1: { id: '100405', type: 'altar', level: 30 },
       e_0: { id: '101701', type: 'event', level: 30 },
+      s_0: { id: '101905', type: 'slime', level: 15 },
     },
   },
   weapon: {
