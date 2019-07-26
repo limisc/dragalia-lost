@@ -4,7 +4,7 @@ import SetBtns from './SetBtns';
 import StatsDetail from './StatsDetail';
 
 const DetailCol = () => {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(true);
 
   return (
     <div className="column">

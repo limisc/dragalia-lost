@@ -58,7 +58,7 @@ const equipments = {
     },
   },
   wyrmprint1: '400110',
-  wyrmprint2: '400280',
+  wyrmprint2: '400070',
   dragon: {
     Flame: '210024_01',
     Water: '210017_01',

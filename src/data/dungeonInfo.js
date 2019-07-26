@@ -16,7 +16,7 @@ const dungeonInfo = {
   },
   hjp: {
     STR: 7230,
-    mult: 4,
+    mult: 4.4,
     element: 'Light',
   },
 };

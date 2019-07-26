@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { exValues, dungeonInfo } from 'data';
+import { statsKeys } from 'store';
 import { calcVal, translate, getDetails, getDamage } from 'actions';
 import { withTheme } from 'components';
 import DungeonSelect from './DungeonSelect';
@@ -16,6 +17,7 @@ class StatsDetail extends React.Component {
       'wyrmprint1',
       'wyrmprint2',
       'dragon',
+      'augments',
       'ability',
       'halidom',
     ],

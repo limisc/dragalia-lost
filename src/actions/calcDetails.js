@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { statsKeys } from 'store';
 import { mightDict, dungeonInfo, elements, values } from 'data';
 import { getLimit, getHalidomSectionKey } from './selectors';
 
@@ -27,22 +28,27 @@ export const getDetails = (stats, halidom) => {
   let HP, STR, might;
   // base, sum of stats fields, excludes Halidom and Ability
   let baseHP, baseSTR, baseMight;
+  let augHP = 0;
+  let augSTR = 0;
   HP = STR = might = baseHP = baseSTR = baseMight = 0;
 
   // calc adventurer, weapon, wyrmprint, dragon
-  Object.keys(stats).forEach(statsKey => {
+  statsKeys.forEach(statsKey => {
     const sameEle =
       (statsKey === 'weapon' || statsKey === 'dragon') &&
       stats[statsKey] &&
       adventurer.element === stats[statsKey].element;
 
     const value = calcDetails(statsKey, stats[statsKey], sameEle);
+    augHP += value.augHP;
+    augSTR += value.augSTR;
+
     baseHP += value.HP;
     baseSTR += value.STR;
     baseMight += value.might;
     details[statsKey] = value;
   });
-
+  details.augments = { HP: augHP, STR: augSTR, might: augHP + augSTR };
   // calc halidom
   const keys = getHalidomSectionKey(stats);
 
@@ -52,18 +58,28 @@ export const getDetails = (stats, halidom) => {
   const fafnir = calcSection(halidom.dragon[keys.dragon]);
 
   // V1.9 fixed fafnir bug
+  const adventurerAugHP = adventurer.augHP || 0;
+  const adventurerAugSTR = adventurer.augSTR || 0;
+  const dragonAugHP = dragon.augHP || 0;
+  const dragonAugSTR = dragon.augSTR || 0;
   HP =
-    calcVal(details.adventurer.HP * (element.HP + weapon.HP) * 0.01) +
-    calcVal(details.dragon.HP * fafnir.HP * 0.01);
+    calcVal(
+      (details.adventurer.HP + adventurerAugHP) *
+        (element.HP + weapon.HP) *
+        0.01
+    ) + calcVal((details.dragon.HP + dragonAugHP) * fafnir.HP * 0.01);
   STR =
-    calcVal(details.adventurer.STR * (element.STR + weapon.STR) * 0.01) +
-    calcVal(details.dragon.STR * fafnir.STR * 0.01);
+    calcVal(
+      (details.adventurer.STR + adventurerAugSTR) *
+        (element.STR + weapon.STR) *
+        0.01
+    ) + calcVal((details.dragon.STR + dragonAugSTR) * fafnir.STR * 0.01);
 
   might = HP + STR;
   details.halidom = { HP, STR, might };
-  let totalHP = baseHP + HP;
-  let totalSTR = baseSTR + STR;
-  let totalMight = baseMight + might;
+  let totalHP = baseHP + HP + augHP;
+  let totalSTR = baseSTR + STR + augSTR;
+  let totalMight = baseMight + might + details.augments.might;
 
   // calc ability
   // Version 1.7.1, details calc item STR ability, shows in ability section
@@ -344,8 +360,12 @@ export const calcSection = section => {
 export const calcDetails = (statsKey, item, sameEle = false) => {
   let HP, STR, might;
   HP = STR = might = 0;
+  let augHP = 0;
+  let augSTR = 0;
   if (item) {
-    const { level, mana, rarity, curRarity, augHP = 0, augSTR = 0 } = item;
+    const { level, mana, rarity, curRarity } = item;
+    augHP = item.augHP || 0;
+    augSTR = item.augSTR || 0;
     const temp = statsKey === 'adventurer' ? '5' : rarity;
     const MAX_LEVEL = getLimit(statsKey, temp);
 
@@ -393,6 +413,8 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
       STR = calcVal(STR * 1.5);
     }
 
+    HP -= augHP;
+    STR -= augSTR;
     might = HP + STR + getMight(statsKey, item);
   }
 
@@ -400,6 +422,8 @@ export const calcDetails = (statsKey, item, sameEle = false) => {
     HP,
     STR,
     might,
+    augHP,
+    augSTR,
   };
 };
 
