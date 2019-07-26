@@ -1,26 +1,46 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { Fragment, memo, useContext } from 'react';
+import { TextField } from '@material-ui/core';
 import { dungeonInfo } from 'data';
-import { Select } from 'components';
+import { Select, Input, Context } from 'components';
+import { translate } from 'actions';
+/* eslint-disable no-unused-vars */
 
-class DungeonSelect extends React.PureComponent {
-  state = {
-    dungeonOptions: Object.keys(dungeonInfo),
+const DungeonSelect = memo(({ dungeon, mult, onChange }) => {
+  const dungeonOptions = Object.keys(dungeonInfo);
+  const { lang } = useContext(Context);
+
+  const handleKeyPress = e => {
+    // prevent user enter + - e in number input field.
+    if (['+', '-', 'e'].indexOf(e.key) !== -1) {
+      e.preventDefault();
+    }
   };
 
-  render() {
-    const { dungeon, onChange } = this.props;
-
-    return (
+  return (
+    <Fragment>
       <Select
         label="dungeon"
         classes="fluid"
         value={dungeon}
-        options={this.state.dungeonOptions}
+        options={dungeonOptions}
         onChange={onChange}
       />
-    );
-  }
-}
+
+      <TextField
+        type="number"
+        variant="filled"
+        label={translate('mult', lang)}
+        value={mult}
+        className="fluid gutter-top"
+        onChange={onChange}
+        InputProps={{
+          name: 'mult',
+          onKeyPress: handleKeyPress,
+        }}
+      />
+    </Fragment>
+  );
+});
 
 export default DungeonSelect;

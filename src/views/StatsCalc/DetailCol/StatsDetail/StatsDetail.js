@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { exValues } from 'data';
+import { exValues, dungeonInfo } from 'data';
 import { calcVal, translate, getDetails, getDamage } from 'actions';
 import { withTheme } from 'components';
 import DungeonSelect from './DungeonSelect';
@@ -19,7 +19,8 @@ class StatsDetail extends React.Component {
       'ability',
       'halidom',
     ],
-    dungeon: 'hmc',
+    dungeon: 'hjp',
+    mult: dungeonInfo.hjp.mult,
     exHP: '',
     exDef: '',
     HP: '',
@@ -52,8 +53,17 @@ class StatsDetail extends React.Component {
     return null;
   }
 
+  onChange = ({ target: { name, value } }) => {
+    if (name === 'dungeon') {
+      const mult = dungeonInfo[value].mult;
+      this.setState({ mult, [name]: value });
+    } else {
+      this.setState({ [name]: value });
+    }
+  };
+
   render() {
-    const { rows, dungeon, ...res } = this.state;
+    const { rows, dungeon, mult, ...res } = this.state;
     const { lang, expand, stats, halidom } = this.props;
     const { adventurer } = stats;
     let name, details;
@@ -109,7 +119,11 @@ class StatsDetail extends React.Component {
 
             {!expand && (
               <Fragment>
-                <DungeonSelect dungeon={dungeon} onChange={this.onChange} />
+                <DungeonSelect
+                  dungeon={dungeon}
+                  mult={mult}
+                  onChange={this.onChange}
+                />
                 <DungeonSettings onChange={this.onChange} {...res} />
                 <DungeonDamage
                   min={min}
@@ -124,8 +138,6 @@ class StatsDetail extends React.Component {
       </Fragment>
     );
   }
-
-  onChange = ({ target: { name, value } }) => this.setState({ [name]: value });
 }
 
 const mapStateToProps = ({ stats, halidom }) => {

@@ -14,6 +14,11 @@ const dungeonInfo = {
     mult: 2.75,
     element: 'Water',
   },
+  hjp: {
+    STR: 7230,
+    mult: 4,
+    element: 'Light',
+  },
 };
 
 export default dungeonInfo;

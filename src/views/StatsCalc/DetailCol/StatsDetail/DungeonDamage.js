@@ -4,7 +4,7 @@ import { withTheme } from 'components';
 import { translate } from 'actions';
 
 class DungeonDamage extends React.PureComponent {
-  state = { collapse: true };
+  state = { collapse: false };
 
   render() {
     const { lang, min, max, HP, textArea } = this.props;

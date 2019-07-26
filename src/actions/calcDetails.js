@@ -165,7 +165,7 @@ export const getDamage = (stats, state) => {
   const { adventurer, weapon, wyrmprint1, wyrmprint2, dragon } = stats;
   const textArea = [];
 
-  const { dungeon, exDef, def } = state;
+  const { dungeon, mult, exDef, def } = state;
   let temp;
   let tRes = 0;
   let tCounter = 0;
@@ -312,7 +312,7 @@ export const getDamage = (stats, state) => {
   const base =
     ((5 / 3) *
       info.STR *
-      info.mult *
+      mult *
       eleModifier *
       (1 - tCounter * 0.01) *
       (1 - tRes * 0.01)) /
