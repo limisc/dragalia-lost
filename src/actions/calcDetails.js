@@ -58,10 +58,17 @@ export const getDetails = (stats, halidom) => {
   const fafnir = calcSection(halidom.dragon[keys.dragon]);
 
   // V1.9 fixed fafnir bug
+
   const adventurerAugHP = adventurer.augHP || 0;
   const adventurerAugSTR = adventurer.augSTR || 0;
-  const dragonAugHP = dragon.augHP || 0;
-  const dragonAugSTR = dragon.augSTR || 0;
+  let dragonAugHP, dragonAugSTR;
+  dragonAugHP = dragonAugSTR = 0;
+
+  if (dragon) {
+    dragonAugHP = dragon.augHP || 0;
+    dragonAugSTR = dragon.augSTR || 0;
+  }
+
   HP =
     calcVal(
       (details.adventurer.HP + adventurerAugHP) *

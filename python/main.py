@@ -75,7 +75,7 @@ def regexRes(details=''):
 
     r = re.search(
         r'Reduces (?:(Flame|Water|Wind|Light|Shadow) )?damage taken ' +
-        r'(?:from (High Midgardsormr|High Brunhilda|High Mercury)\s+)?' +
+        r'(?:from (High Midgardsormr|High Brunhilda|High Mercury|High Jupiter)\s+)?' +
         r'by \'\'\'(\d+)%\'\'\'', details, re.IGNORECASE
     )
 
@@ -94,7 +94,8 @@ def regexRes(details=''):
             abbr = {
                 "High Midgardsormr": "hms",
                 "High Brunhilda": "hbh",
-                "High Mercury": "hmc"
+                "High Mercury": "hmc",
+                "High Jupiter": "hjp"
             }
 
             return {
@@ -214,7 +215,7 @@ def save_file(f_type, file, data):
 
 def download_images(file_name, new_content=[]):
     pattern = {
-        'adventurer': r'\d{6}_0\d_r0[345].png',
+        'adventurer': r'\d{6}_\d{2,3}_r0[345].png',
         'dragon': r'\d{6}_01.png',
         'weapon': r'\d{6}_01_\d{5}.png',
         'wyrmprint': r'\d{6}_0[12].png',
