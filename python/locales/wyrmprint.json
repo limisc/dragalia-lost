@@ -404,6 +404,11 @@
     "ja": "花嫁はドラゴン",
     "zh": "新娘是头龙"
   },
+  "400098": {
+    "en": "Summer Paladyns",
+    "ja": "真夏の聖騎士",
+    "zh": "盛夏的圣骑士"
+  },
   "400099": {
     "en": "Jewels of the Sun",
     "ja": "宝石と剣",
@@ -743,6 +748,16 @@
     "en": "Taiko Tandem",
     "ja": "太鼓を打ち鳴らせ！",
     "zh": "敲起太鼓来！"
+  },
+  "400336": {
+    "en": "Beach Battle",
+    "ja": "渚のビーチフラッグ",
+    "zh": "沙滩夺旗战"
+  },
+  "400337": {
+    "en": "Preacher's Vacation",
+    "ja": "説教師のバカンス",
+    "zh": "传教士的假日"
   },
   "wyrmprint": {
     "en": "Wyrmprint",
