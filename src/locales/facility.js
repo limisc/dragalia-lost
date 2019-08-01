@@ -16,6 +16,7 @@ const facility = {
   '101001': { en: 'Fafnir Statue (Flame)', ja: '火のファフ二ール像', zh: '火之法夫纳像' },
   '101002': { en: 'Fafnir Statue (Water)', ja: '水のファフニール像', zh: '水之法夫纳像' },
   '101003': { en: 'Fafnir Statue (Wind)', ja: '風のファフ二ール像', zh: '风之法夫纳像' },
+  '101004': { en: 'Fafnir Statue (Light)', ja: '光のファフ二ール像', zh: '光之法夫纳像' },
   '101101': { en: 'Wind Shrine', ja: '風の祠', zh: '风之神龛' },
   '101501': { en: 'Sweet Retreat', ja: 'お菓子の家', zh: '点心之家' },
   '101601': { en: 'Yuletree', ja: '星竜樹', zh: '星龙树' },

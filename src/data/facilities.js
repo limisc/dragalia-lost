@@ -76,7 +76,9 @@ const facilities = {
     Wind: {
       f_0: { id: '101003', type: 'fafnir', level: 0 },
     },
-    Light: null,
+    Light: {
+      f_0: { id: '101004', type: 'fafnir', level: 0 },
+    },
     Shadow: null,
   },
 };

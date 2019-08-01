@@ -828,6 +828,7 @@ export const imageMap = {
     Flame: '101001',
     Water: '101002',
     Wind: '101003',
+    Light: '101004',
   },
   dracolith: {
     Flame: '100601',
