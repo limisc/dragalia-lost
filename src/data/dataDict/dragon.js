@@ -1565,5 +1565,27 @@ const dragon = {
     incSTR1: 10,
     incSTR2: 20,
   },
+  '210103_01': {
+    id: '210103_01',
+    name: {
+      en: 'Apollo',
+      ja: 'Apollo',
+      zh: 'Apollo',
+    },
+    element: 'Flame',
+    rarity: '5',
+    MinHp: 36,
+    MaxHp: 369,
+    MinAtk: 12,
+    MaxAtk: 127,
+    abilities11: 65,
+    abilities12: 85,
+    abilities21: 5,
+    abilities22: 15,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 35,
+    incSTR2: 50,
+  },
 };
 export default dragon;

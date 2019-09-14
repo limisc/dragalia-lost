@@ -769,36 +769,42 @@ export const imageMap = {
     Flame: '202003001',
     Water: '202001001',
     Wind: '202002001',
+    Light: '202001001',
     Shadow: '202001001',
   },
   wm2: {
     Flame: '202003002',
     Water: '202001002',
     Wind: '202002002',
+    Light: '202001002',
     Shadow: '202001002',
   },
   wm3: {
     Flame: '202003003',
     Water: '202001003',
     Wind: '202002003',
+    Light: '202001003',
     Shadow: '202001003',
   },
   vm1: {
     Flame: '204001001',
     Water: '204006001',
     Wind: '204001001',
+    Light: '204001001',
     Shadow: '204001001',
   },
   vm2: {
     Flame: '204003001',
     Water: '204002001',
     Wind: '204002001',
+    Light: '204002001',
     Shadow: '204006001',
   },
   vm3: {
     Flame: '204004001',
     Water: '204008001',
     Wind: '204012001',
+    Light: '204018001',
     Shadow: '204013001',
   },
   altar: {
@@ -822,6 +828,7 @@ export const imageMap = {
     Flame: '101901',
     Water: '101902',
     Wind: '101903',
+    Light: '101904',
     Shadow: '101905',
   },
   fafnir: {
@@ -835,5 +842,6 @@ export const imageMap = {
     Water: '100602',
     Wind: '100603',
     Light: '100604',
+    Shadow: '100605',
   },
 };
