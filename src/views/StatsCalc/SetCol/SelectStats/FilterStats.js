@@ -55,7 +55,7 @@ class FilterStats extends React.Component {
             variant="contained"
             onClick={this.onClick}
           >
-            REST
+            RESET
           </Button>
         </div>
       </Fragment>
