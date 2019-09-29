@@ -17,7 +17,7 @@ def set_wyrmprint():
     names = main.load_name(FILE_NAME)
 
     data_new = []
-    data_list = []
+    # data_list = []
     data_dict = {}
     data_updates = [False]
 
@@ -42,6 +42,7 @@ def set_wyrmprint():
                       'Abilities21', 'Abilities22', 'Abilities23',
                       'Abilities31', 'Abilities32', 'Abilities33']:
                 ability = abilities.get(item[a], '')
+
                 if ability:
                     new_item[a.lower()] = ability['Might']
 
@@ -62,17 +63,17 @@ def set_wyrmprint():
 
                     if 'dungeon' in ability:
                         addition1['dungeon'] = ability['dungeon']
-                        addition1['counter' + level] = ability['counter']
+                        addition1['reduce' + level] = ability['reduce']
                 else:
                     new_item[a.lower()] = 0
 
             if len(addition1):
                 new_item.update(addition1)
 
-            data_list.append(new_item)
+            # data_list.append(new_item)
             data_dict[uid] = new_item
 
-    main.save_file('list', FILE_NAME, data_list)
+    # main.save_file('list', FILE_NAME, data_list)
     main.save_file('dict', FILE_NAME, data_dict)
 
     if data_updates[0]:

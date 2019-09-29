@@ -1,5 +1,4 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -7,24 +6,38 @@
     "jest": true,
     "node": true
   },
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "parser": "babel-eslint",
   "rules": {
-    "react/prop-types": 0,
-    "jsx-a11y/href-no-hash": ["off"],
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "max-len": [
-      "warn",
-      {
-        "code": 80,
-        "tabWidth": 2,
-        "comments": 80,
-        "ignoreComments": false,
-        "ignoreTrailingComments": true,
-        "ignoreUrls": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreRegExpLiterals": true
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/label-has-associated-control": [2, {
+      "controlComponents": ["CustomInput"],
+      "depth": 3,
+      "labelAttributes": ["label"],
+      "labelComponents": ["CustomInputLabel"]
+    }],
+    "jsx-a11y/label-has-for": [2, {
+      "allowChildren": false,
+      "components": ["Label"],
+      "required": {
+        "some": ["nesting", "id"]
       }
-    ]
+    }],
+    "max-len": [1, {
+      "code": 80,
+      "comments": 80,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "tabWidth": 2
+    }],
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "react/prop-types": 0
   },
   "settings": {
     "import/resolver": { "node": { "paths": ["src"] } }

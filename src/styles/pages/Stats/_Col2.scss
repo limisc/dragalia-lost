@@ -1,0 +1,51 @@
+.stats-field {
+  @extend %not-select;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  min-height: $height-inputs-2;
+  width: 100%;
+
+  > div:first-child {
+    display: grid;
+    grid-template-rows: 1fr 24px;
+
+    align-items: center;
+    justify-items: center;
+
+    > img {
+      cursor: pointer;
+    }
+
+    > div {
+      @extend %ellipsis;
+    }
+  }
+
+  > div:nth-child(2) {
+    @include grid-columns(2, 1fr);
+    box-sizing: border-box;
+    padding: $gap 0;
+    padding-right: $gap;
+  }
+}
+
+@mixin stats-field-md {
+  .stats-field {
+    &:first-child,
+    &:last-child {
+      > div:nth-child(2) {
+        max-height: $height-inputs-2;
+        overflow: hidden;
+        transition: max-height 0.15s ease-in;
+
+        &:hover,
+        &:focus-within {
+          max-height: $height-inputs-3;
+          transition: max-height 0.25s cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,46 +1,25 @@
-import { actionTypes, reducerCreator } from '../actions';
-import state from '../store/state';
+import { actionTypes } from 'actions';
+import reducerCreator from 'utils/reducerCreator';
+import initState from '../store/state';
 
-const INIT_FILTERS = state.filters;
+const reset = () => initState.filters;
 
-const resetFilters = () => INIT_FILTERS;
-
-const selectFocus = (_, action, stats) => {
-  const { statsKey } = action;
-  const { adventurer, weapon } = stats;
-  if (adventurer) {
-    return {
-      ...INIT_FILTERS,
-      weapon: adventurer.weapon,
-      element: adventurer.element,
-    };
-  } else if (statsKey === 'adventurer' && weapon) {
-    return {
-      ...INIT_FILTERS,
-      weapon: weapon.weapon,
-      element: weapon.element,
-    };
-  }
-
-  return INIT_FILTERS;
+const select = (filters, { checked, name, value }) => {
+  return {
+    ...filters,
+    [name]: filters[name].map(item =>
+      item.label === value ? { ...item, checked } : item
+    ),
+  };
 };
 
-const selectFilters = (filters, action) => {
-  const { key, value } = action;
-  if (filters[key] !== value) {
-    return {
-      ...filters,
-      [action.key]: action.value,
-    };
-  }
-
-  return filters;
-};
-
+/**
+ * (state, action: { checked, name, value }
+ */
 const filterReducer = reducerCreator({
-  [actionTypes.RESET_FILTERS]: resetFilters,
-  [actionTypes.SELECT_FOCUS]: selectFocus,
-  [actionTypes.SELECT_FILTERS]: selectFilters,
+  [actionTypes.RESET_FILTERS]: reset,
+  [actionTypes.RESET_STATS]: reset,
+  [actionTypes.SELECT_FILTER]: select,
 });
 
 export default filterReducer;

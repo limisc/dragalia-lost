@@ -17,7 +17,7 @@ def set_dragon():
     names = main.load_name(FILE_NAME)
 
     data_new = []
-    data_list = []
+    # data_list = []
     data_dict = {}
     data_updates = [False]
 
@@ -43,9 +43,16 @@ def set_dragon():
 
             for a in ['Abilities11', 'Abilities12', 'Abilities21', 'Abilities22']:
                 ability = abilities.get(item[a], '')
+                if uid == '210111_01':
+                    print(ability)
+
                 if ability:
                     new_item[a.lower()] = ability['Might']
                     level = a[-1]
+
+                    if 'reqEle' in ability:
+                        new_item['reqEle'] = ability['reqEle']
+
                     if 'HP' in ability:
                         HP_V['incHP' + level] = ability['HP']
                     elif 'STR' in ability:
@@ -64,10 +71,10 @@ def set_dragon():
             new_item.update(STR_V)
             new_item.update(res_V)
 
-            data_list.append(new_item)
+            # data_list.append(new_item)
             data_dict[uid] = new_item
 
-    main.save_file('list', FILE_NAME, data_list)
+    # main.save_file('list', FILE_NAME, data_list)
     main.save_file('dict', FILE_NAME, data_dict)
 
     if data_updates[0]:
