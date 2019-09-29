@@ -1,0 +1,17 @@
+@mixin grid-columns($n, $width) {
+  display: grid;
+  grid-template-columns: repeat($n, $width);
+  grid-gap: $gap;
+}
+
+@mixin grid-rows($n, $height) {
+  display: grid;
+  grid-template-rows: repeat($n, $height);
+  grid-gap: $gap;
+}
+
+@mixin grid-auto-fit($width) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+  grid-gap: $gap;
+}

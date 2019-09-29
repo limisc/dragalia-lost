@@ -1,0 +1,30 @@
+input[type='checkbox'].check-box {
+  display: none;
+
+  &:checked + label {
+    background-color: $blue0;
+  }
+
+  &:disabled + label {
+    background-color: $black3;
+  }
+
+  & + label {
+    @extend %not-select;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid $black0;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    svg {
+      width: $img-xs;
+      height: $img-xs;
+    }
+
+    & ~ label {
+      border-left: 0;
+    }
+  }
+}

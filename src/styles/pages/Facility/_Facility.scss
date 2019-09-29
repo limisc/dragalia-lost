@@ -1,0 +1,21 @@
+@import './Slider';
+
+main#facility > div:nth-child(2) {
+  height: $height-page;
+}
+
+.material-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: $gap;
+  justify-items: center;
+  align-items: center;
+}
+
+.facility-item {
+  @extend .material-item;
+
+  & + .facility-item {
+    margin-top: $gap;
+  }
+}

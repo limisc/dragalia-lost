@@ -1,56 +1,33 @@
-import { state } from '../store';
-import { facilities } from 'data';
-import { actionTypes, getField, loadState } from '../actions';
+import { actionTypes } from '../actions';
 import filterReducer from './filterReducer';
 import statsReducer from './statsReducer';
 import halidomReducer from './halidomReducer';
 
-const focusReducer = (focusKey, action) => {
-  if (action.type === actionTypes.SELECT_FOCUS) {
-    return action.statsKey;
+/**
+ * @param {Object} action
+ * @param {string} action.type
+ * @param {string} action.payload focused statsKey
+ * @param {string} focused
+ * @returns {string}
+ */
+const focusReducer = ({ type, payload }, focused) => {
+  switch (type) {
+    case actionTypes.RESET_STATS:
+      return 'adventurer';
+    case actionTypes.SELECT_FOCUS:
+      return payload;
+    default:
+      return focused;
   }
-
-  return focusKey;
 };
 
-const simcReducer = (simc, action) => {
-  if (action.type === actionTypes.SET_SIMC) {
-    return action.simc;
-  }
-
-  return simc;
-};
-
-const panelReducer = (panel, action) => {
-  if (action.type === actionTypes.SELECT_FOCUS) {
-    return '0';
-  } else if (action.type === actionTypes.SELECT_PANEL) {
-    return action.panel;
-  }
-
-  return panel;
-};
-
-const rootReducer = (
-  { focusKey, panel, filters, simc, stats, halidom },
-  action
-) => {
-  if (action.type === actionTypes.RESET) {
-    const key = simc ? 'simcHalidom' : 'calcHalidom';
-    const halidom = loadState(key) || loadState('calcHalidom') || facilities;
-    return { ...state, simc, halidom };
-  }
-
-  const newFocus = focusReducer(focusKey, action);
-  const newStats = statsReducer(stats, action);
+const rootReducer = ({ focused, filters, stats, halidom }, action) => {
+  const newStats = statsReducer(action, stats);
   return {
-    focusKey: newFocus,
+    filters: filterReducer(filters, action),
+    focused: focusReducer(action, focused),
+    halidom: halidomReducer(action, halidom),
     stats: newStats,
-    field: getField(newFocus),
-    simc: simcReducer(simc, action),
-    panel: panelReducer(panel, action),
-    halidom: halidomReducer(halidom, action, simc),
-    filters: filterReducer(filters, action, newStats),
   };
 };
 

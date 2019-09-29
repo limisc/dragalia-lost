@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: $base0;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: $black0;
+}
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: $margin-content;
+  padding: 0 $gap * 2;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+label {
+  height: 36px;
+}
+
+.auto-fit {
+  @include grid-auto-fit(20%);
+}
+
+@for $i from 2 to 9 {
+  .col-#{$i} {
+    @include grid-columns($i, 1fr);
+  }
+}
+
+.active {
+  background-color: $blue0;
+}
+
+.hide {
+  display: none;
+}
+
+.gutter-bottom {
+  margin-bottom: $gap;
+}
+
+.animated-collapse {
+  @extend %transition-collapse;
+}
+
+.center {
+  @extend %center;
+}
+
+.name {
+  @extend %ellipsis;
+  justify-self: start;
+}
+
+.dialog-flex {
+  flex: auto;
+}

@@ -1,96 +1,129 @@
-import { equipments } from 'data';
-import { actionTypes, reducerCreator, getItem, getLimit } from '../actions';
+import { actionTypes } from 'actions';
+import content, { defaultEquipments, STATS_KEYS } from 'data';
+import { getLimit, getField, reducerCreator } from 'utils';
+import initState from '../store/state';
 
-const buildItem = (statsKey, item) => {
-  if (item) {
-    const rarity = statsKey === 'adventurer' ? '5' : item.rarity;
-    let updates = {};
-    const level = getLimit(statsKey, rarity);
+/**
+ * @param {string} key
+ * @param {Object} item
+ */
+const buildItem = (key, item) => {
+  if (!item) return null;
 
-    switch (statsKey) {
-      case 'adventurer':
-        updates = {
-          curRarity: rarity,
-          mana: '50',
-          ex: '4',
-        };
-        break;
-      case 'dragon':
-        updates = {
-          bond: '30',
-          unbind: '4',
-        };
-        break;
-      default:
-        updates.unbind = '4';
-        break;
+  const rarity = key === 'adventurer' ? '5' : item.rarity;
+  const field = getField(key);
+  const level = getLimit(`${field}_${rarity}`);
+
+  let updates = {};
+  switch (field) {
+    case 'adventurer': {
+      updates = {
+        curRarity: rarity,
+        mana: '50',
+        ex: '4',
+      };
+      break;
     }
-
-    return {
-      ...item,
-      ...updates,
-      level,
-    };
+    case 'dragon': {
+      updates = {
+        bond: '30',
+        unbind: '4',
+      };
+      break;
+    }
+    default: {
+      updates.unbind = '4';
+    }
   }
 
-  return item;
+  return { ...item, ...updates, level };
 };
 
-const selectStats = (stats, action) => {
-  const { statsKey, item } = action;
+/**
+ * @param {Object} stats
+ */
+const resetStats = (_, stats) => {
+  if (STATS_KEYS.some(el => stats[el] !== null)) {
+    return initState.stats;
+  }
+
+  return stats;
+};
+
+/**
+ * @param {Object} action
+ * @param {string} [action.statsKey]
+ * @param {string} [action.payload]
+ * @param {Object} [action.item]
+ * @param {Object} stats
+ */
+const selectItem = ({ payload, statsKey, item }, stats) => {
+  if (payload) return { ...stats, [payload]: null };
+  if (!item) return { ...stats, [statsKey]: null };
+
+  if (statsKey === 'team') {
+    return item;
+  }
 
   if (stats[statsKey] && item && stats[statsKey].id === item.id) {
     return stats;
   }
 
   const updates = {};
-  if (item) {
-    const { adventurer, wyrmprint1, wyrmprint2 } = stats;
 
-    if (statsKey === 'adventurer') {
-      const { weapon, element } = item;
+  const { adventurer, wyrmprint1, wyrmprint2 } = stats;
 
-      if (!adventurer || weapon !== adventurer.weapon || element !== adventurer.element) {
-        const weaponId = equipments.weapon[weapon][element];
-        updates.weapon = buildItem('weapon', getItem('weapon', weaponId));
-      }
+  // if select adventurer, auto equip weapon, wyrmprint and dragon
+  if (statsKey === 'adventurer') {
+    const { element, weapon } = item;
 
-      if (!wyrmprint1 && !wyrmprint2) {
-        updates.wyrmprint1 = buildItem('wyrmprint1', getItem('wyrmprint', equipments.wyrmprint1));
-        updates.wyrmprint2 = buildItem('wyrmprint2', getItem('wyrmprint', equipments.wyrmprint2));
-      }
+    // get default weapon & dragon
+    if (
+      !adventurer ||
+      element !== adventurer.element ||
+      weapon !== adventurer.weapon
+    ) {
+      const weaponId = defaultEquipments[`${weapon}_${element}`];
+      const dragonId = defaultEquipments[`dragon_${element}`];
 
-      if (!adventurer || element !== adventurer.element) {
-        const dragonId = equipments.dragon[element];
-        updates.dragon = buildItem('dragon', getItem('dragon', dragonId));
-      }
-    } else if (statsKey === 'weapon' && adventurer && adventurer.weapon !== item.weapon) {
-      updates.adventurer = null;
-    } else if (statsKey === 'wyrmprint1' || statsKey === 'wyrmprint2') {
-      //can't equipt the same wyrmprint.
-      const complement = {
-        wyrmprint1: 'wyrmprint2',
-        wyrmprint2: 'wyrmprint1',
-      };
+      updates.weapon = buildItem('weapon', content.weapon[weaponId]);
+      updates.dragon = buildItem('dragon', content.dragon[dragonId]);
+    }
 
-      const key = complement[statsKey];
-      const wyrmprint = stats[key];
-      if (wyrmprint && wyrmprint.id === item.id) {
-        updates[key] = null;
-      }
+    // get default wyrmprint
+    if (!wyrmprint1 && !wyrmprint2) {
+      const w1Id = defaultEquipments.wyrmprint1;
+      const w2Id = defaultEquipments.wyrmprint2;
+
+      updates.wyrmprint1 = buildItem('wyrmprint', content.wyrmprint[w1Id]);
+      updates.wyrmprint2 = buildItem('wyrmprint', content.wyrmprint[w2Id]);
+    }
+  } else if (
+    // if weapon.weapon !== advanturer.weapon, remove adventurer
+    statsKey === 'weapon' &&
+    adventurer &&
+    adventurer.weapon !== item.weapon
+  ) {
+    updates.adventurer = null;
+  } else if (statsKey === 'wyrmprint1' || statsKey === 'wyrmprint2') {
+    // can't equipt the same wyrmprint.
+    const complement = {
+      wyrmprint1: 'wyrmprint2',
+      wyrmprint2: 'wyrmprint1',
+    };
+
+    const key = complement[statsKey];
+    const wyrmprint = stats[key];
+    if (wyrmprint && wyrmprint.id === item.id) {
+      updates[key] = null;
     }
   }
 
-  return {
-    ...stats,
-    ...updates,
-    [statsKey]: buildItem(statsKey, item),
-  };
+  const newItem = buildItem(statsKey, item);
+  return { ...stats, ...updates, [statsKey]: newItem };
 };
 
-const updateStats = (stats, action) => {
-  const { statsKey, updates } = action;
-
+const checkItem = ({ statsKey, updates }, stats) => {
   return {
     ...stats,
     [statsKey]: {
@@ -101,8 +134,9 @@ const updateStats = (stats, action) => {
 };
 
 const statsReducer = reducerCreator({
-  [actionTypes.SELECT_STATS]: selectStats,
-  [actionTypes.UPDATE_STATS]: updateStats,
+  [actionTypes.RESET_STATS]: resetStats,
+  [actionTypes.SELECT_ITEM]: selectItem,
+  [actionTypes.UPDATE_ITEM]: checkItem,
 });
 
 export default statsReducer;

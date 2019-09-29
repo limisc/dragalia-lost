@@ -14,7 +14,7 @@ def set_weapon():
 
     names = main.load_name(FILE_NAME)
 
-    data_list = []
+    # data_list = []
     data_dict = {}
     data_new = []
     data_updates = [False]
@@ -57,9 +57,9 @@ def set_weapon():
             if len(special):
                 new_item.update(special)
 
-            data_list.append(new_item)
+            # data_list.append(new_item)
             data_dict[uid] = new_item
-    main.save_file('list', FILE_NAME, data_list)
+    # main.save_file('list', FILE_NAME, data_list)
     main.save_file('dict', FILE_NAME, data_dict)
 
     if data_updates[0]:

@@ -1,23 +1,20 @@
-import { loadState } from '../actions';
-import { syncHalidom } from '../reducers/halidomReducer';
-
-const simc = loadState('simc') || false;
-const key = simc ? 'simcHalidom' : 'calcHalidom';
-const halidom = syncHalidom(key);
+import { initHalidom } from 'data';
+import { makeCheckedArr } from 'utils/filters';
 
 const state = {
-  simc,
-  halidom,
-  panel: '0',
-  field: 'adventurer',
-  focusKey: 'adventurer',
-  filters: { weapon: '', element: 'Shadow', rarity: '', type: '' },
+  halidom: initHalidom,
+  filters: {
+    rarity: makeCheckedArr('rarity'),
+    element: makeCheckedArr('element', ['Light']),
+    weapon: makeCheckedArr('weapon'),
+  },
+  focused: 'adventurer',
   stats: {
     adventurer: null,
+    dragon: null,
     weapon: null,
     wyrmprint1: null,
     wyrmprint2: null,
-    dragon: null,
   },
 };
 

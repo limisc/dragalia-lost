@@ -1,0 +1,31 @@
+main#halidom {
+  > div {
+    box-sizing: border-box;
+
+    & + div {
+      margin-top: $gap;
+    }
+
+    &:first-child {
+      > div + div {
+        margin-top: $gap;
+      }
+    }
+
+    &:last-child {
+      height: $height-page;
+    }
+  }
+}
+
+@mixin halidom-md {
+  main#halidom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $gap;
+
+    > div + div {
+      margin-top: 0;
+    }
+  }
+}

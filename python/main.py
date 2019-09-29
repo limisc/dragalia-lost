@@ -48,7 +48,7 @@ def regex(details):
 
 def regex_HP_STR_Def_DragonRes(details=''):
     r = re.search(
-        r'(Flame|Water|Wind|Light|Shadow)?:?\s*increases (strength|HP|defense|strength and HP) by \'\'\'(\d+)%\'\'\'' +
+        r'(Flame|Water|Wind|Light|Shadow)?:?\s*increases (strength|HP|defense|strength and HP) by \'*(\d+)%\'*' +
         r'(?:\.| (?:and|when HP is) (?:adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance|(?!below).)*$)', details, re.IGNORECASE
     )
 
@@ -75,7 +75,7 @@ def regexRes(details=''):
 
     r = re.search(
         r'Reduces (?:(Flame|Water|Wind|Light|Shadow) )?damage taken ' +
-        r'(?:from (High Midgardsormr|High Brunhilda|High Mercury|High Jupiter)\s+)?' +
+        r'(?:from (?:\[\[)?(High Midgardsormr|High Brunhilda|High Mercury|High Jupiter|High Zodiark).*)?' +
         r'by \'\'\'(\d+)%\'\'\'', details, re.IGNORECASE
     )
 
@@ -95,12 +95,13 @@ def regexRes(details=''):
                 "High Midgardsormr": "hms",
                 "High Brunhilda": "hbh",
                 "High Mercury": "hmc",
-                "High Jupiter": "hjp"
+                "High Jupiter": "hjp",
+                'High Zodiark': "hzd",
             }
 
             return {
                 'dungeon': abbr[dungeon],
-                'counter': v,
+                'reduce': v,
             }
 
     return {}
@@ -196,7 +197,7 @@ def save_file(f_type, file, data):
             'src/data/dataList/{}.js'.format(file)
     elif f_type == 'dict':
         path = Path(__file__).resolve().parent.parent / \
-            'src/data/dataDict/{}.js'.format(file)
+            'src/data/content/{}.js'.format(file)
     elif f_type == 'facility':
         path = Path(__file__).resolve().parent.parent / \
             'src/locales/{}.js'.format(file)
@@ -295,4 +296,5 @@ def clear_dict(file):
 
 if __name__ == '__main__':
     print(__file__)
-    # download_images('facility', ['110029'])
+    # download_images('material', ['201002052'])
+    download_images('facility', ['101005'])
