@@ -24,6 +24,7 @@ const facilities = {
       a_1: { id: '100404', type: 'altar', level: 30 },
       e_0: { id: '100901', type: 'event', level: 30 },
       e_1: { id: '101501', type: 'event', level: 30 },
+      s_0: { id: '101904', type: 'slime', level: 15 },
     },
     Shadow: {
       a_0: { id: '100405', type: 'altar', level: 30 },
@@ -44,6 +45,7 @@ const facilities = {
     Dagger: {
       d_0: { id: '100503', type: 'dojo', level: 16 },
       d_1: { id: '100503', type: 'dojo', level: 16 },
+      e_0: { id: '101301', type: 'event_w', level: 30 },
     },
     Axe: {
       d_0: { id: '100504', type: 'dojo', level: 16 },
@@ -56,6 +58,7 @@ const facilities = {
     Bow: {
       d_0: { id: '100506', type: 'dojo', level: 16 },
       d_1: { id: '100506', type: 'dojo', level: 16 },
+      e_0: { id: '101301', type: 'event_w', level: 30 },
     },
     Wand: {
       d_0: { id: '100507', type: 'dojo', level: 16 },

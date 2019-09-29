@@ -404,6 +404,11 @@
     "ja": "花嫁はドラゴン",
     "zh": "新娘是头龙"
   },
+  "400097": {
+    "en": "Twinfold Bonds",
+    "ja": "ふたりの絆",
+    "zh": ""
+  },
   "400098": {
     "en": "Summer Paladyns",
     "ja": "真夏の聖騎士",
@@ -758,6 +763,36 @@
     "en": "Preacher's Vacation",
     "ja": "説教師のバカンス",
     "zh": "传教士的假日"
+  },
+  "400338": {
+    "en": "Seaside Princess",
+    "ja": "シーサイド・プリンセス",
+    "zh": ""
+  },
+  "400339": {
+    "en": "The Bustling Hut",
+    "ja": "海の家のにぎわい",
+    "zh": ""
+  },
+  "400340": {
+    "en": "Surfing Siblings",
+    "ja": "波乗り兄妹",
+    "zh": ""
+  },
+  "400379": {
+    "en": "Hastened Squall",
+    "ja": "吹き荒れる暴風",
+    "zh": ""
+  },
+  "400380": {
+    "en": "Castle Cheer Corps",
+    "ja": "我ら、キャッスル応援団！",
+    "zh": ""
+  },
+  "400381": {
+    "en": "Beautiful Nothingness",
+    "ja": "幽美なる虚無",
+    "zh": ""
   },
   "wyrmprint": {
     "en": "Wyrmprint",

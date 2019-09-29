@@ -25,8 +25,10 @@ const facility = {
   '101901': { en: 'Magma Slime Statue', ja: 'マグマスライム像', zh: '岩浆史莱姆像' },
   '101902': { en: 'Aqua Slime Statue', ja: 'アクアスライム像', zh: '水史莱姆像' },
   '101903': { en: 'Aero Slime Statue', ja: 'スライム像', zh: '史莱姆像' },
-  '101905': { en:'Poison Slime Statue', ja: '', zh: '毒史莱姆像'},
-  '102001': { en: 'Arctos Monument', ja: 'アルクトスの像', zh:'阿尔库斯特之像' }
+  '101904': { en: 'Twinkling Slime Statue', ja: '', zh: '' },
+  '101905': { en: 'Poison Slime Statue', ja: '', zh: '毒史莱姆像' },
+  '102001': { en: 'Arctos Monument', ja: 'アルクトスの像', zh: '阿尔库斯特之像' },
+  '101301': { en: 'Seabed Stage', ja: 'Seabed Stage', zh: '夏日舞台' }
 };
 
 export default facility;
