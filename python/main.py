@@ -49,7 +49,7 @@ def regex(details):
 def regex_HP_STR_Def_DragonRes(details=''):
     r = re.search(
         r'(Flame|Water|Wind|Light|Shadow)?:?\s*increases (strength|HP|defense|strength and HP) by \'*(\d+)%\'*' +
-        r'(?:\.| (?:and|when HP is) (?:adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance|(?!below).)*$)', details, re.IGNORECASE
+        r'(?:\,|\.| (?:and|when HP is) (?:adds \'\'\'(\d+)%\'\'\' to (Flame|Water|Wind|Light|Shadow) resistance|(?!below).)*$)', details, re.IGNORECASE
     )
 
     if r:
@@ -209,7 +209,7 @@ def save_file(f_type, file, data):
                   indent=2, ensure_ascii=False)
 
         if f_type != 'locales':
-            f.write(';\nexport default {};'.format(file))
+            f.write(';\n\nexport default {};\n'.format(file))
     f.close()
     print('save file: {}'.format(path))
 

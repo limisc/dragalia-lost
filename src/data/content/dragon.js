@@ -1,4 +1,27 @@
 const dragon = {
+  '200010_01': {
+    id: '200010_01',
+    name: {
+      en: 'Chthonius',
+      ja: 'プルートー',
+      zh: '普鲁托',
+    },
+    element: 'Shadow',
+    rarity: '5',
+    MinHp: 36,
+    MaxHp: 368,
+    MinAtk: 12,
+    MaxAtk: 128,
+    abilities11: 70,
+    reqEle: 'Shadow',
+    abilities12: 100,
+    abilities21: 0,
+    abilities22: 0,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 45,
+    incSTR2: 55,
+  },
   '210001_01': {
     id: '210001_01',
     name: {
@@ -1633,6 +1656,29 @@ const dragon = {
     incSTR1: 30,
     incSTR2: 40,
   },
+  '210095_01': {
+    id: '210095_01',
+    name: {
+      en: 'Zodiark',
+      ja: '異天ゾディアーク',
+      zh: '异天佐迪亚克',
+    },
+    element: 'Shadow',
+    rarity: '5',
+    MinHp: 22,
+    MaxHp: 221,
+    MinAtk: 7,
+    MaxAtk: 77,
+    abilities11: 20,
+    abilities12: 30,
+    abilities21: 20,
+    reqEle: 'Shadow',
+    abilities22: 40,
+    incHP1: 0,
+    incHP2: 0,
+    incSTR1: 10,
+    incSTR2: 20,
+  },
   '210098_01': {
     id: '210098_01',
     name: {
@@ -1682,7 +1728,7 @@ const dragon = {
   '210111_01': {
     id: '210111_01',
     name: {
-      en: 'Midgardsormr',
+      en: 'Mini Mids',
       ja: 'ミドガルズオルム',
       zh: '耶梦加得',
     },
@@ -1703,4 +1749,5 @@ const dragon = {
     incSTR2: 30,
   },
 };
+
 export default dragon;

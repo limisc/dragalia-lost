@@ -329,6 +329,11 @@
     "ja": "テンペストグローリー",
     "zh": "暴风的荣耀"
   },
+  "400073": {
+    "en": "United by One Vision",
+    "ja": "",
+    "zh": "志同道合的伙伴们"
+  },
   "400074": {
     "en": "Cleo's Ruse",
     "ja": "クラウの策略",
@@ -363,6 +368,11 @@
     "en": "After an Eternity",
     "ja": "悠久の時を経て",
     "zh": "历经悠久岁月"
+  },
+  "400084": {
+    "en": "An Ancient Oath",
+    "ja": "古の盟約",
+    "zh": "古老的盟约"
   },
   "400085": {
     "en": "Beauty's Secret",
@@ -798,6 +808,21 @@
     "en": "Ruler of Darkness",
     "ja": "ダークネスルーラー",
     "zh": "黑暗统御者"
+  },
+  "400384": {
+    "en": "Endless Waltz",
+    "ja": "エンドレスワルツ",
+    "zh": "无尽的华尔兹"
+  },
+  "400385": {
+    "en": "Odd Sparrows",
+    "ja": "白燕騎士団のデコボココンビ",
+    "zh": "白燕骑士团的互补搭档"
+  },
+  "400387": {
+    "en": "The Bewitching Magician",
+    "ja": "妖艶なる宮廷魔術師",
+    "zh": "妖艳的宫廷魔法师"
   },
   "wyrmprint": {
     "en": "Wyrmprint",

@@ -43,8 +43,6 @@ def set_dragon():
 
             for a in ['Abilities11', 'Abilities12', 'Abilities21', 'Abilities22']:
                 ability = abilities.get(item[a], '')
-                if uid == '210111_01':
-                    print(ability)
 
                 if ability:
                     new_item[a.lower()] = ability['Might']
