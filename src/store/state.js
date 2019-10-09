@@ -5,7 +5,7 @@ const state = {
   halidom: initHalidom,
   filters: {
     rarity: makeCheckedArr('rarity'),
-    element: makeCheckedArr('element', ['Light']),
+    element: makeCheckedArr('element'),
     weapon: makeCheckedArr('weapon'),
   },
   focused: 'adventurer',

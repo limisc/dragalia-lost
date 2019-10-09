@@ -30,17 +30,13 @@ export const makeCheckedArr = (name, checked) => {
   return null;
 };
 
-export const makeFilters = ({ arr, name, disabled = false }) => {
+export const makeFilters = (arr, disabled = false) => {
   if (disabled || !arr || !Array.isArray(arr)) return [];
 
-  let ret = arr.reduce(
+  return arr.reduce(
     (prev, curr) => (curr.checked ? [...prev, curr.label] : prev),
     []
   );
-
-  if (ret.length === 0) ret = getArr(name);
-
-  return ret;
 };
 
 export const clearCheckedArr = arr => {

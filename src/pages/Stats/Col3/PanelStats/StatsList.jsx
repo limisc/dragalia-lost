@@ -84,14 +84,16 @@ function StatsList({ field, fields, filters, search }) {
 
     const filtersDerived = {};
     fields.forEach(name => {
-      filtersDerived[name] = makeFilters({ arr: filters[name], name });
+      filtersDerived[name] = makeFilters(filters[name]);
     });
 
     const arr = Object.values(content[field])
       .filter(item => {
         return (
-          fields.every(f => filtersDerived[f].includes(item[f])) &&
-          item.name[lang].toUpperCase().includes(search.toUpperCase())
+          fields.every(f => {
+            if (filtersDerived[f].length === 0) return true;
+            return filtersDerived[f].includes(item[f]);
+          }) && item.name[lang].toUpperCase().includes(search.toUpperCase())
         );
       })
       .sort(compare);

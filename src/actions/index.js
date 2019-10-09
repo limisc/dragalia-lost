@@ -38,7 +38,33 @@ export const selectFlag = actionCreator(actionTypes.SELECT_FLAG);
 /**
  * params: focused
  */
-export const selectFocus = actionCreator(actionTypes.SELECT_FOCUS);
+// export const selectFocus = actionCreator(actionTypes.SELECT_FOCUS);
+export const selectFocus = statsKey => (dispatch, getState) => {
+  dispatch(actionCreator(actionTypes.SELECT_FOCUS)(statsKey));
+  const { adventurer } = getState().stats;
+
+  if (adventurer) {
+    const fits = name => {
+      return actionCreator(actionTypes.LIGHT_OPTION)({
+        name,
+        value: adventurer[name],
+      });
+    };
+
+    switch (statsKey) {
+      case 'weapon': {
+        dispatch(fits('element'));
+        dispatch(fits('weapon'));
+        break;
+      }
+      case 'dragon':
+        dispatch(fits('element'));
+        break;
+      default:
+        break;
+    }
+  }
+};
 
 /**
  * params: { halidomKey: string, level: number }
