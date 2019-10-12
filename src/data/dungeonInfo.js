@@ -1,4 +1,4 @@
-const dungeonInfo = {
+export const dungeonInfo = {
   hms: {
     element: 'Wind',
     multiplier: 3.6,
@@ -26,4 +26,10 @@ const dungeonInfo = {
   },
 };
 
-export default dungeonInfo;
+export const advantagedDungeon = {
+  Wind: 'hmc',
+  Flame: 'hms',
+  Water: 'hbh',
+  Light: 'hzd',
+  Shadow: 'hjp'
+}

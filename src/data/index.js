@@ -1,4 +1,4 @@
-import dungeonInfo from './dungeonInfo';
+import { dungeonInfo, advantagedDungeon } from './dungeonInfo';
 import initHalidom, {
   HALIDOM_LIST,
   HALIDOM_TYPES,
@@ -13,6 +13,7 @@ export * from './constants';
 export {
   defaultEquipments,
   dungeonInfo,
+  advantagedDungeon,
   HALIDOM_LIST,
   HALIDOM_TYPES,
   HALIDOM_VALUES,

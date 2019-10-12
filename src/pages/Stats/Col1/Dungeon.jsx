@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { FormControlLabel, Checkbox } from '@material-ui/core';
 import clsx from 'clsx';
 import { Input, Select } from 'components';
-import { dungeonInfo, COABILITY_DICT } from 'data';
+import { dungeonInfo, advantagedDungeon, COABILITY_DICT } from 'data';
 import { calcDamage } from 'utils/calcStats';
 import { calcVal } from 'utils';
 import DamageBar from './DamageBar';
@@ -51,6 +51,7 @@ function Dungeon({ stats, totalHp }) {
     exDef: '',
     hp: '',
     def: '',
+    element: '',
   });
 
   const onChange = ({ target: { name, value } }) => {
@@ -60,7 +61,14 @@ function Dungeon({ stats, totalHp }) {
   useEffect(() => {
     if (!stats.adventurer) return;
 
-    const { ex, rarity, weapon } = stats.adventurer;
+    const { ex, rarity, weapon, element } = stats.adventurer;
+    if (state.element !== element) {
+      setState(prev => ({
+        ...prev,
+        element: element
+      }));
+      setDungeon(advantagedDungeon[element]);
+    }
 
     if (weapon === 'Axe' || weapon === 'Lance') {
       let key;
