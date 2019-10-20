@@ -11,9 +11,9 @@ import content from './content';
 export default content;
 export * from './constants';
 export {
+  advantagedDungeon,
   defaultEquipments,
   dungeonInfo,
-  advantagedDungeon,
   HALIDOM_LIST,
   HALIDOM_TYPES,
   HALIDOM_VALUES,

@@ -1,159 +1,146 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
-import { FormControlLabel, Checkbox } from '@material-ui/core';
-import clsx from 'clsx';
+import React, { useEffect, useRef, useState } from 'react';
+import { connect } from 'react-redux';
+// import clsx from 'clsx';
 import { Input, Select } from 'components';
 import { dungeonInfo, advantagedDungeon, COABILITY_DICT } from 'data';
 import { calcDamage } from 'utils/calcStats';
 import { calcVal } from 'utils';
 import DamageBar from './DamageBar';
 
-const dungeonArr = Object.keys(dungeonInfo);
-const settingsArr = ['exHp', 'exDef', 'hp', 'def'];
+const dungeonOptions = Object.keys(dungeonInfo);
+const difficultyOptions = ['N', 'H', 'VH', 'EX'];
+const fieldArray = ['str', 'multiplier', 'exHp', 'exDef', 'hp', 'def'];
 
 function Dungeon({ stats, totalHp }) {
-  const [hide, setHide] = useState('hide');
-  useEffect(() => {
-    setTimeout(() => {
-      setHide(null);
-    }, 250);
-  }, []);
-
-  const [dungeon, setDungeon] = useState('hzd');
-  const [collapse, setCollapse] = useState(false);
-  const [str, setStr] = useState('');
-  const [multiplier, setMultiplier] = useState('');
-
-  const handleCollapse = e => {
-    setCollapse(e.target.checked);
-  };
-
-  useEffect(() => {
-    const info = dungeonInfo[dungeon];
-    setStr(info.str);
-    setMultiplier(info.multiplier);
-  }, [dungeon]);
-
-  const handleDungeon = ({ target: { value } }) => {
-    setDungeon(value);
-  };
-
-  const handleStr = e => {
-    setStr(e.target.value);
-  };
-
-  const handleMultiplier = e => {
-    setMultiplier(e.target.value);
-  };
-
-  const [state, setState] = useState({
-    exHp: '',
-    exDef: '',
-    hp: '',
-    def: '',
-    element: '',
+  const [settings, setSettings] = useState(() => {
+    // default VH - Expert difficulty
+    const difficulty = 'VH';
+    // auto set dungeon by adventurer's advantage element
+    const dungeon = advantagedDungeon[stats.adventurer.element];
+    const {
+      [difficulty]: [str, multiplier],
+    } = dungeonInfo[dungeon];
+    return {
+      dungeon,
+      str,
+      multiplier,
+      difficulty,
+      exHp: '',
+      exDef: '',
+      hp: '',
+      def: '',
+    };
   });
 
-  const onChange = ({ target: { name, value } }) => {
-    setState(prev => ({ ...prev, [name]: value }));
+  const handleChange = e => {
+    const { name, value } = e.target;
+
+    if (value !== settings[name]) {
+      setSettings(prevState => ({
+        ...prevState,
+        [name]: value,
+      }));
+    }
   };
+
+  const isMountRef = useRef(false);
+
+  useEffect(() => {
+    if (isMountRef.current) {
+      const {
+        [settings.dungeon]: {
+          [settings.difficulty]: [str, multiplier],
+        },
+      } = dungeonInfo;
+
+      setSettings(prevState => ({
+        ...prevState,
+        str,
+        multiplier,
+      }));
+    } else {
+      isMountRef.current = true;
+    }
+  }, [settings.dungeon, settings.difficulty, setSettings]);
 
   useEffect(() => {
     if (!stats.adventurer) return;
 
     const { ex, rarity, weapon, element } = stats.adventurer;
-    if (state.element !== element) {
-      setState(prev => ({
-        ...prev,
-        element: element
-      }));
-      setDungeon(advantagedDungeon[element]);
+
+    // auto set dungeon by adventurer's advantage element
+    const dungeon = advantagedDungeon[element];
+    if (dungeon !== settings.dungeon) {
+      setSettings(prevState => ({ ...prevState, dungeon }));
     }
 
     if (weapon === 'Axe' || weapon === 'Lance') {
-      let key;
+      let exHp = '';
+      let exDef = '';
+
+      const value = COABILITY_DICT[`${weapon}_${rarity}`][ex];
+
       if (weapon === 'Axe') {
-        key = 'exDef';
+        exDef = value;
       } else if (weapon === 'Lance') {
-        key = 'exHp';
+        exHp = value;
       }
 
-      const temp = COABILITY_DICT[`${weapon}_${rarity}`][ex];
-      if (temp === state[key]) return;
-
-      setState(prev => ({
-        ...prev,
-        [key]: temp,
+      setSettings(prevState => ({
+        ...prevState,
+        exHp,
+        exDef,
       }));
     }
     // eslint-disable-next-line
   }, [stats.adventurer]);
 
   const damageState = React.useMemo(() => {
-    const { exHp, exDef, def } = state;
-    const damageDetails = calcDamage(stats, {
-      dungeon,
-      str,
-      multiplier,
-      def,
-      exDef,
-    });
+    const damageDetails = calcDamage(stats, settings);
 
-    const hp = calcVal(totalHp * (1 + 0.01 * state.hp) * (1 + 0.01 * exHp));
+    const hp = calcVal(
+      totalHp * (1 + 0.01 * settings.hp) * (1 + 0.01 * settings.exHp)
+    );
 
     return { hp, ...damageDetails };
-  }, [stats, totalHp, dungeon, str, multiplier, state]);
-
-  const cn = clsx('col-2', 'animated-collapse', { collapse: !collapse });
+  }, [stats, totalHp, settings]);
 
   return (
-    <div className={hide}>
+    <>
       <div className="col-2">
         <Select
-          options={dungeonArr}
           label="dungeon"
-          value={dungeon}
-          onChange={handleDungeon}
+          options={dungeonOptions}
+          value={settings.dungeon}
+          onChange={handleChange}
         />
 
-        <FormControlLabel
-          control={
-            <Checkbox
-              color="primary"
-              checked={collapse}
-              onChange={handleCollapse}
-            />
-          }
-          label="setting"
+        <Select
+          label="difficulty"
+          options={difficultyOptions}
+          value={settings.difficulty}
+          onChange={handleChange}
         />
-      </div>
 
-      <div className={cn}>
-        <Input label="str" value={str} onChange={handleStr} />
-
-        <Input
-          label="multiplier"
-          value={multiplier}
-          type="float"
-          onChange={handleMultiplier}
-        />
-      </div>
-
-      <div className="col-2">
-        {settingsArr.map(el => (
+        {fieldArray.map(key => (
           <Input
-            key={el}
-            adornment="%"
-            label={el}
-            value={state[el]}
-            onChange={onChange}
+            key={key}
+            label={key}
+            value={settings[key]}
+            onChange={handleChange}
           />
         ))}
       </div>
 
       <DamageBar damageState={damageState} />
-    </div>
+    </>
   );
 }
 
-export default React.memo(Dungeon);
+const mapStateToProps = ({ stats }) => {
+  return {
+    stats,
+  };
+};
+
+export default connect(mapStateToProps)(Dungeon);
