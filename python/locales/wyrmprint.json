@@ -574,6 +574,11 @@
     "ja": "ワンダフルトリック",
     "zh": "绝妙戏法"
   },
+  "400135": {
+    "en": "Candy Couriers",
+    "ja": "トゥインクルナイトウィッチーズ",
+    "zh": ""
+  },
   "400136": {
     "en": "Lunar Festivities",
     "ja": "春節のお祭り",
@@ -823,6 +828,11 @@
     "en": "The Bewitching Magician",
     "ja": "妖艶なる宮廷魔術師",
     "zh": "妖艳的宫廷魔法师"
+  },
+  "400388": {
+    "en": "Masquerade Mission",
+    "ja": "マスカレード・オペラ",
+    "zh": ""
   },
   "wyrmprint": {
     "en": "Wyrmprint",
