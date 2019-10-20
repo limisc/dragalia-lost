@@ -7,7 +7,7 @@ import {
   STATS_KEYS,
   dungeonInfo,
 } from 'data';
-import { calcVal, getField, getLimit } from './index';
+import { calcVal, getLimit } from './index';
 
 const WYRMPRINT_MAX_HP = 8;
 const WYRMPRINT_MAX_STR = 20;
@@ -157,8 +157,7 @@ const calcItem = (statsKey, item, sameEle = false) => {
   augStr = Number(augStr);
 
   if (statsKey === 'adventurer') rarity = 5;
-  const field = getField(statsKey);
-  const MAX_LEVEL = getLimit(`${field}_${rarity}`);
+  const MAX_LEVEL = getLimit(statsKey, rarity);
 
   let hp = 0;
   let str = 0;

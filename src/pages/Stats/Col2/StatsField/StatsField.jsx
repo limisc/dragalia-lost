@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { updateItem } from 'actions';
-import { getImage, getField, getLimit, refs } from 'utils';
+import { getImage, getLimit, refs } from 'utils';
 import { Input } from 'components';
 import SelectItem from './SelectItem';
 import StatsAvatar from './StatsAvatar';
@@ -35,25 +35,22 @@ function StatsField({ statsKey, item, setPanel, updateItem }) {
     if (!state[key] && value === item[key]) return null;
 
     let updates = { [key]: value };
-    let limit;
     switch (key) {
       case 'augHp':
-      case 'augStr': {
-        limit = getLimit('augments');
-        updates[key] = value > limit ? limit : value;
-        break;
-      }
+      case 'augStr':
+      case 'bond':
       case 'level': {
-        const r = statsKey === 'adventurer' ? curRarity : rarity;
-        limit = getLimit(`adventurer_${r}`, unbind);
-        updates.level = value > limit ? limit : value;
+        const newKey = key === 'level' ? statsKey : key;
+        const newRarity = statsKey === 'adventurer' ? curRarity : rarity;
+        const limit = getLimit(newKey, newRarity, unbind);
+        updates[key] = value > limit ? limit : value;
         break;
       }
       case 'curRarity':
         updates = {
           ...updates,
-          level: getLimit(`adventurer_${value}`),
-          mana: getLimit(`mana${value}`),
+          level: getLimit(statsKey, value),
+          mana: getLimit('mana', value),
           ex: value === '5' ? '4' : '0',
         };
         break;
@@ -64,13 +61,7 @@ function StatsField({ statsKey, item, setPanel, updateItem }) {
         updates.mana = '45';
         break;
       case 'unbind': {
-        const field = getField(statsKey);
-        updates.level = getLimit(`${field}_${rarity}`, value);
-        break;
-      }
-      case 'bond': {
-        limit = getLimit('bond');
-        updates.bond = value > limit ? limit : value;
+        updates.level = getLimit(statsKey, rarity, value);
         break;
       }
       default:

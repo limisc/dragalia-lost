@@ -1,10 +1,10 @@
 import React from 'react';
-import { LIMIT } from 'data';
 import { offset } from 'styles/styles.scss';
 import locales from 'locales';
 import refs from './refs';
+import getLimit from './getLimit';
 
-export { refs };
+export { getLimit, refs };
 
 export const loadState = key => {
   try {
@@ -77,30 +77,15 @@ export const getImage = (item, key) => {
       const r = item.curRarity || item.rarity;
       return `${id}_r0${r}`;
     }
-    case 'wyrmprint': {
-      const stage = item.unbind >= 2 ? '2' : '1';
+    case 'wyrmprint':
+    case 'wyrmprint1':
+    case 'wyrmprint2': {
+      const stage = item.unbind < 2 ? 1 : 2;
       return `${id}_0${stage}`;
     }
     default:
       return id;
   }
-};
-
-/**
- * @param {string} key
- * @param {number} unbind
- * @returns {number}
- */
-export const getLimit = (key, unbind = 4) => {
-  if (/^weapon|wyrmprint|dragon/.test(key)) {
-    if (LIMIT[key]) {
-      return LIMIT[key][unbind];
-    }
-
-    return '';
-  }
-
-  return LIMIT[key] || 30;
 };
 
 export const reducerCreator = handler => (action, state, ...args) => {

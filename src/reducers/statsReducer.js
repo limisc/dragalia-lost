@@ -1,6 +1,6 @@
 import { actionTypes } from 'actions';
 import content, { defaultEquipments, STATS_KEYS } from 'data';
-import { getLimit, getField, reducerCreator } from 'utils';
+import { getLimit, reducerCreator } from 'utils';
 import initState from '../store/state';
 
 /**
@@ -11,11 +11,10 @@ const buildItem = (key, item) => {
   if (!item) return null;
 
   const rarity = key === 'adventurer' ? '5' : item.rarity;
-  const field = getField(key);
-  const level = getLimit(`${field}_${rarity}`);
+  const level = getLimit(key, rarity);
 
   let updates = {};
-  switch (field) {
+  switch (key) {
     case 'adventurer': {
       updates = {
         curRarity: rarity,
@@ -95,8 +94,8 @@ const selectItem = ({ payload, statsKey, item }, stats) => {
       const w1Id = defaultEquipments.wyrmprint1;
       const w2Id = defaultEquipments.wyrmprint2;
 
-      updates.wyrmprint1 = buildItem('wyrmprint', content.wyrmprint[w1Id]);
-      updates.wyrmprint2 = buildItem('wyrmprint', content.wyrmprint[w2Id]);
+      updates.wyrmprint1 = buildItem('wyrmprint1', content.wyrmprint[w1Id]);
+      updates.wyrmprint2 = buildItem('wyrmprint2', content.wyrmprint[w2Id]);
     }
   } else if (
     // if weapon.weapon !== advanturer.weapon, remove adventurer
