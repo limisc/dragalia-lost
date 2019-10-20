@@ -61,6 +61,7 @@ export const LIMIT = {
   augHp: 100,
   augStr: 100,
   dojo: 35,
+  event: 35, // facility page
   eventE: 35,
   dracolith: 20,
   dragon: {
