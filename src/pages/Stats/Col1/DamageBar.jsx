@@ -2,50 +2,33 @@ import React from 'react';
 import { Context } from 'components';
 import { translate } from 'utils';
 
-const defaultProps = {
-  arr: [],
-  hp: 0,
-  max: 0,
-  min: 0,
-};
-
 function DamageBar({ damageState: { arr, hp, max, min } }) {
   const { lang } = React.useContext(Context);
 
-  const pct = React.useMemo(() => {
-    if (hp > max) return 100;
+  let pct;
 
-    if (hp <= min) return 0;
+  if (hp > max) {
+    pct = 100;
+  } else if (hp <= min) {
+    pct = 0;
+  } else {
+    pct = (100 * (hp - 1 - min)) / (max - min);
+  }
 
-    return (100 * (hp - 1 - min)) / (max - min);
-  }, [hp, min, max]);
+  const background =
+    `linear-gradient(120deg, green, #4ba946 ` +
+    `${pct}%, #deb887 ${pct + 5}%, #be3223 , #800000)`;
 
   return (
     <>
-      <div
-        id="damage-bar"
-        style={{
-          background: `linear-gradient(120deg, green, #4ba946 ${pct}%, #deb887 ${pct +
-            5}%, #be3223 , #800000)`,
-        }}
-      >
-        {`${pct.toFixed(2)}%`}
+      <div id="damage-bar" style={{ background }}>
+        <span>{min}</span>
+        <span style={{ fontSize: '20px' }}>{`${hp} (${pct.toFixed(2)}%)`}</span>
+        <span>{max}</span>
       </div>
 
       <table>
         <tbody>
-          <tr style={{ fontWeight: 'bold' }}>
-            <td>HP </td>
-            <td>MIN</td>
-            <td>MAX</td>
-          </tr>
-
-          <tr>
-            <td>{hp}</td>
-            <td>{min}</td>
-            <td>{max}</td>
-          </tr>
-
           {arr.map(t => {
             const content = t.split(',');
             return (
@@ -61,7 +44,5 @@ function DamageBar({ damageState: { arr, hp, max, min } }) {
     </>
   );
 }
-
-DamageBar.defaultProps = defaultProps;
 
 export default React.memo(DamageBar);
