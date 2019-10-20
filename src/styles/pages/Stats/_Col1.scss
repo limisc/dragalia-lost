@@ -51,9 +51,11 @@ div#col1 {
 }
 
 #damage-bar {
-  @extend %center;
-  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   border-radius: 8px;
+  height: 56px;
   color: white;
   font-weight: bold;
 }
