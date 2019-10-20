@@ -56,6 +56,7 @@ export const LIMIT = {
   adventurer_4: 70,
   adventurer_5: 80,
   altar: 35,
+  eventE: 35,
   augments: 100,
   dojo: 35,
   dracolith: 20,

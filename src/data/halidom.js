@@ -15,7 +15,7 @@ const halidom = {
   adventurer_Light_altar_0: { id: '100404', type: 'altar', level: 35 },
   adventurer_Light_altar_1: { id: '100404', type: 'altar', level: 35 },
   adventurer_Light_eventE_0: { id: '100901', type: 'eventE', level: 30 },
-  adventurer_Light_eventE_1: { id: '101501', type: 'eventE', level: 30 },
+  adventurer_Light_eventE_1: { id: '101501', type: 'eventE', level: 35 },
   adventurer_Light_slime_0: { id: '101904', type: 'slime', level: 15 },
   adventurer_Shadow_altar_0: { id: '100405', type: 'altar', level: 35 },
   adventurer_Shadow_altar_1: { id: '100405', type: 'altar', level: 35 },
@@ -168,6 +168,11 @@ export const HALIDOM_VALUES = {
     [8, 6.5],
     [8, 7],
     [8.5, 7],
+    [8.5, 7.5],
+    [9, 7.5],
+    [9, 8],
+    [9.5, 8],
+    [9.5, 8.5]
   ],
   eventW: [
     [0, 0],
