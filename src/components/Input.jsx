@@ -18,25 +18,9 @@ const defaultProps = {
  * @param {boolean} [props.disabled]
  * @param {string} [props.type]
  */
-function Input({ adornment, disabled, label, type, value, onChange }) {
+function Input({ adornment, disabled, label, value, onChange }) {
   const { lang } = React.useContext(Context);
   const l = React.useMemo(() => translate(label, lang), [label, lang]);
-
-  const handleKeyPress = e => {
-    if (type !== 'int' && type !== 'float') return;
-    // prevent user enter + - e in number input field.
-    // TODO use Regex
-    let arr;
-    if (type === 'int') {
-      arr = ['+', '-', 'e', '.'];
-    } else if (type === 'float') {
-      arr = ['+', '-', 'e'];
-    }
-
-    if (arr.includes(e.key)) {
-      e.preventDefault();
-    }
-  };
 
   return (
     <TextField
@@ -48,7 +32,6 @@ function Input({ adornment, disabled, label, type, value, onChange }) {
       onChange={onChange}
       InputProps={{
         name: label,
-        onKeyPress: handleKeyPress,
         endAdornment: adornment && (
           <InputAdornment position="end">{adornment}</InputAdornment>
         ),
