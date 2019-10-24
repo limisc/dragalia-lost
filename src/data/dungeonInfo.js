@@ -5,7 +5,7 @@ export const dungeonInfo = {
     N: [3253, 2.3],
     H: [7230, 3.6],
     VH: [9000, 3.7],
-    EX: [13000, 3.5],
+    EX: [13000, 3.4],
   },
   hbh: {
     element: 'Flame',
