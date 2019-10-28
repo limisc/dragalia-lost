@@ -26,7 +26,7 @@ export const dungeonInfo = {
     N: [7230, 0.7],
     H: [7230, 4.4],
     VH: [9000, 4.2],
-    EX: [13000, 2.6],
+    EX: [13000, 4.6],
   },
   hzd: {
     element: 'Shadow',
