@@ -19,7 +19,7 @@ export const dungeonInfo = {
     N: [7230, 1.1],
     H: [7230, 2.75],
     VH: [9000, 3.2],
-    EX: [13000, 2.4],
+    EX: [13000, 3.1],
   },
   hjp: {
     element: 'Light',
