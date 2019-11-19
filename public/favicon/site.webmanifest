@@ -1,0 +1,15 @@
+{
+  "short_name": "Dragalia Lost",
+  "name": "Dragalia Lost",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#abcdef",
+  "background_color": "#eed6ad"
+}
