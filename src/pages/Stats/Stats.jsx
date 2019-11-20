@@ -1,11 +1,12 @@
 import React from 'react';
+import Col3 from './Col3';
 
 function Stats() {
   return (
     <main id="stats">
       <div />
       <div />
-      <div />
+      <Col3 />
     </main>
   );
 }
