@@ -4,10 +4,22 @@
   }
 }
 
+#stats-col3 {
+  display: flex;
+  flex-direction: column;
+  height: $page-height;
+}
+
 .options {
   height: 124px;
 
   > div + div {
     margin-top: $unit1;
   }
+}
+
+.item {
+  @include grid('minmax(64px, 20%) 1fr repeat(3, 40px)');
+  align-items: center;
+  justify-items: center;
 }
