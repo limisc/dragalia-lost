@@ -18,7 +18,6 @@ const ui = {
   hp: { en: 'HP', ja: 'HP', zh: 'HP' },
   language: { en: 'Language', ja: '言語', zh: '语言' },
   level: { en: 'Level', ja: 'レベル', zh: '等级' },
-  load: { en: 'Load', ja: '', zh: '加载' },
   mana: { en: 'Mana Circle', ja: 'マナサークル', zh: '魔法圆环' },
   might: { en: 'Might', ja: '戦力', zh: '战力' },
   multiplier: { en: 'Multiplier', ja: '乗数', zh: '倍率' },
@@ -70,11 +69,11 @@ const ui = {
   hjp: { en: 'High Jupiter', ja: '真ユピテル', zh: '真朱庇特' },
   hzd: { en: 'High Zodiark', ja: '真ゾディアーク', zh: '真佐迪亚克' },
 
-  difficulty: { en: 'Difficulty', ja: '', zh: '难度' },
+  difficulty: { en: 'Difficulty', ja: '難易度', zh: '难度' },
   N: { en: 'Prelude', ja: '入門', zh: '入门' },
-  H: { en: 'Standard', ja: '', zh: '中级' },
-  VH: { en: 'Expert', ja: '', zh: '高级' },
-  EX: { en: 'Master', ja: '', zh: '超级' },
+  H: { en: 'Standard', ja: '中級', zh: '中级' },
+  VH: { en: 'Expert', ja: '上級', zh: '高级' },
+  EX: { en: 'Master', ja: '超級', zh: '超级' },
 };
 
 export default ui;
