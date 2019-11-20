@@ -1,0 +1,35 @@
+button {
+  @extend %not-select;
+  display: inline-block;
+
+  box-sizing: border-box;
+
+  border: 2px solid transparent;
+
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: aliceblue;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $blue1;
+  }
+
+  &:hover {
+    border-color: #90a4ae;
+  }
+
+  &:active {
+    border-color: #546e7a;
+    color: #cfd8dc;
+    background: #546e7a;
+  }
+}
+
+.input-btn {
+  width: 20%;
+  margin-left: 2px;
+}

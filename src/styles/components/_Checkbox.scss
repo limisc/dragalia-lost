@@ -16,7 +16,7 @@
     justify-content: center;
 
     border: 1px solid $black1;
-
+    box-sizing: border-box;
     height: 36px;
 
     cursor: pointer;
@@ -25,8 +25,8 @@
       width: 36px;
 
       > img {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
       }
     }
 

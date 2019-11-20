@@ -8,17 +8,18 @@ body {
   color: $black0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 main {
+  box-sizing: border-box;
   margin-top: $main-margin-top;
-  padding: 0 $unit2;
+  padding: 0 1rem;
 
   > div {
     > div + div {
       margin-top: $unit1;
     }
   }
+}
+
+.flex {
+  display: flex;
 }
