@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { connect } from 'react-redux';
-import { selectOption } from 'actions';
+import { selectOption, resetOptions } from 'actions';
 import { getFilterFields, useEvent } from 'utils';
-import { CheckSet } from 'components';
+import { CheckSet, Input } from 'components';
 
 function Filter(props) {
-  const { fields, options, selectOption } = props;
+  const { fields, options, selectOption, resetOptions } = props;
+
+  const ref = useRef();
 
   const handleChange = useEvent(e => {
     const { checked, name, value } = e.target;
     selectOption({ checked, name, value });
   });
+
+  const onClick = () => {
+    resetOptions();
+    ref.current.setValue('');
+  };
 
   return (
     <>
@@ -25,6 +32,13 @@ function Filter(props) {
           />
         ))}
       </div>
+
+      <div className="flex">
+        <Input ref={ref} type="text" placeholder="Search" />
+        <button type="button" className="input-btn" onClick={onClick}>
+          Clear
+        </button>
+      </div>
     </>
   );
 }
@@ -38,6 +52,7 @@ const mapStateToProps = state => {
 
 const actionCreators = {
   selectOption,
+  resetOptions,
 };
 
 export default connect(mapStateToProps, actionCreators)(Filter);
