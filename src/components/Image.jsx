@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 
 const Image = memo(function Image(props) {
-  const { image, size, title, tabIndex, onClick } = props;
+  const { image, name, size, title, tabIndex, onClick } = props;
 
   const src = `${process.env.PUBLIC_URL}/images/${image}.png`;
 
@@ -10,6 +10,7 @@ const Image = memo(function Image(props) {
       <input
         alt={image}
         className={size}
+        name={name}
         src={src}
         type="image"
         tabIndex={tabIndex}
