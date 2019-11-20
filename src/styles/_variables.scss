@@ -1,0 +1,20 @@
+$img-size: (
+  xs: 24px,
+  sm: 32px,
+  md: 64px,
+  lg: 80px,
+);
+
+$unit0: 4px;
+$unit1: $unit0 * 2; // 8px
+$unit2: $unit1 * 2; // 16px
+
+$header-height: 40px;
+$text-field-height: 36px;
+
+$main-margin-top: $header-height + $unit1;
+$page-height: calc(100vh - #{$main-margin-top});
+
+$mobile: 320px;
+$tablet: 768px;
+$laptop: 1024px;

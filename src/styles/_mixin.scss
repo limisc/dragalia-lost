@@ -1,0 +1,9 @@
+@mixin grid($n) {
+  display: grid;
+  grid-gap: $unit1;
+  grid-template-columns: if(
+    type-of($n) == number,
+    repeat($n, minmax(0, 1fr)),
+    #{$n}
+  );
+}

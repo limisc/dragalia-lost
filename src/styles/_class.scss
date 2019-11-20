@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background: $base0;
+
+  font-family: 'Roboto', sans-serif;
+  color: $black0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: $main-margin-top;
+  padding: 0 $unit2;
+
+  > div {
+    > div + div {
+      margin-top: $unit1;
+    }
+  }
+}

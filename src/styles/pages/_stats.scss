@@ -1,0 +1,5 @@
+@mixin stats-laptop {
+  main#stats {
+    @include grid(3);
+  }
+}
