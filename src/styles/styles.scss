@@ -3,6 +3,8 @@
 @import './mixin';
 @import './class';
 
+@import './components/image';
+@import './components/Checkbox';
 @import './pages/stats';
 
 @media screen and (min-width: $laptop) {

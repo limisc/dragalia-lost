@@ -1,0 +1,37 @@
+.checkbox {
+  display: none;
+
+  &:checked + label {
+    background-color: $blue0;
+  }
+
+  &:disabled + label {
+    background-color: $black3;
+  }
+
+  & + label {
+    @extend %not-select;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $black1;
+
+    height: 36px;
+
+    cursor: pointer;
+
+    &.icon {
+      width: 36px;
+
+      > img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    & ~ label {
+      border-left: 0;
+    }
+  }
+}

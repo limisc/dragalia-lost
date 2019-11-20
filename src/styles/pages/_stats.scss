@@ -3,3 +3,11 @@
     @include grid(3);
   }
 }
+
+.options {
+  height: 124px;
+
+  > div + div {
+    margin-top: $unit1;
+  }
+}
