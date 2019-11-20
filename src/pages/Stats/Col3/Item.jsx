@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import { selectItem } from 'actions';
+import { selectItem } from 'actions';
 import { getImage, useEvent } from 'utils';
 import { Image } from 'components';
 
-function Item({ data, focused, index, style }) {
+function Item({ data, focused, index, style, selectItem }) {
   const { lang = 'en' } = useParams();
   const item = data[index];
   const {
@@ -13,11 +13,10 @@ function Item({ data, focused, index, style }) {
     icon,
     name: { [lang]: name },
   } = item;
-  // const name = item.name[lang];
   const image = getImage(item, focused);
 
   const handleClick = useEvent(() => {
-    // selectItem(focused, item);
+    selectItem(focused, item);
   });
 
   return (
@@ -55,7 +54,7 @@ const mapStateToProps = ({ focused }) => {
 };
 
 const actionCreators = {
-  // selectItem,
+  selectItem,
 };
 
 export default connect(mapStateToProps, actionCreators)(Item);
