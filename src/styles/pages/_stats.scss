@@ -4,6 +4,16 @@
   }
 }
 
+.item-container {
+  @include grid(3);
+  justify-items: center;
+
+  > .adventurer {
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
+
 #stats-col3 {
   display: flex;
   flex-direction: column;
