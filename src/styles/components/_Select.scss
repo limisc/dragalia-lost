@@ -1,0 +1,65 @@
+.select {
+  @extend %not-select;
+  position: relative;
+}
+
+.select-header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid $black1;
+  box-sizing: border-box;
+  padding-left: $unit1;
+
+  height: $text-field-height;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:focus {
+    outline: 2px solid $blue1;
+    outline-offset: -2px;
+  }
+
+  .arrow {
+    right: 15px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.select-list {
+  position: absolute;
+  z-index: 10;
+
+  margin: 0;
+  margin-top: $unit1;
+  padding: 0;
+
+  border: 1px solid $blue0;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+
+  background-color: #fff;
+}
+
+.select-option {
+  box-sizing: border-box;
+  padding: $unit1;
+
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &.focus {
+    color: #fff;
+    background-color: $blue1;
+  }
+}

@@ -6,7 +6,11 @@
 @import './components/image';
 @import './components/input';
 @import './components/button';
+@import './components/arrow';
+
 @import './components/Checkbox';
+@import './components/Select';
+
 @import './pages/stats';
 
 @media screen and (min-width: $laptop) {

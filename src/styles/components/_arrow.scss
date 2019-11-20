@@ -1,0 +1,67 @@
+$transit: $unit2 - $unit0;
+@mixin rotate($deg) {
+  // IE 9
+  -ms-transform: rotate($deg);
+  // Safari and Chrome
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+.arrow {
+  position: absolute;
+  width: $unit2;
+  height: $unit2;
+
+  transition: 0.4s ease;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $black2;
+
+    transition: 0.4s ease;
+  }
+
+  &::before {
+    width: $unit2;
+    height: $unit0;
+  }
+
+  &::after {
+    width: $unit0;
+    height: $unit2;
+  }
+
+  &.up,
+  &.down,
+  &.cross {
+    @include rotate(45deg);
+  }
+
+  &.right,
+  &.left {
+    @include rotate(-45deg);
+  }
+
+  &.down,
+  &.right {
+    &::before {
+      transform: translate(0, $transit);
+    }
+
+    &::after {
+      transform: translate($transit, 0);
+    }
+  }
+
+  &.cross {
+    &::before {
+      transform: translate(0, $transit / 2);
+    }
+
+    &::after {
+      transform: translate($transit / 2, 0);
+    }
+  }
+}
