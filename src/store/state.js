@@ -19,12 +19,19 @@ const createOption = group => {
 };
 
 const state = {
-  focused: 'wyrmprint',
+  focused: 'adventurer',
   options: {
     element: createOption('element'),
     rarity: createOption('rarity'),
     weapon: createOption('weapon'),
     type: createOption('type'),
+  },
+  items: {
+    adventurer: null,
+    weapon: null,
+    dragon: null,
+    wyrmprint1: null,
+    wyrmprint2: null,
   },
 };
 
