@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { forwardRef } from 'react';
 import { connect } from 'react-redux';
 import { selectOption, resetOptions } from 'actions';
 import { getFilterFields, useEvent } from 'utils';
 import { CheckSet, Input } from 'components';
 
-function Filter(props) {
+const Filter = forwardRef(function Filter(props, ref) {
   const {
     fields,
     options,
@@ -13,8 +13,6 @@ function Filter(props) {
     selectOption,
     setSearch,
   } = props;
-
-  const ref = useRef();
 
   const handleChange = useEvent(e => {
     const { checked, name, value } = e.target;
@@ -59,7 +57,7 @@ function Filter(props) {
       </div>
     </>
   );
-}
+});
 
 const mapStateToProps = state => {
   return {
@@ -73,4 +71,6 @@ const actionCreators = {
   resetOptions,
 };
 
-export default connect(mapStateToProps, actionCreators)(Filter);
+export default connect(mapStateToProps, actionCreators, null, {
+  forwardRef: true,
+})(Filter);
