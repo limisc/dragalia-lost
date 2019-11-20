@@ -25,6 +25,7 @@ const Filter = forwardRef(function Filter(props, ref) {
 
   const onClick = () => {
     resetOptions();
+    setSearch('');
     ref.current.setValue('');
   };
 
