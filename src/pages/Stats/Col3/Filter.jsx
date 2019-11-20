@@ -5,13 +5,24 @@ import { getFilterFields, useEvent } from 'utils';
 import { CheckSet, Input } from 'components';
 
 function Filter(props) {
-  const { fields, options, selectOption, resetOptions } = props;
+  const {
+    fields,
+    options,
+    search,
+    resetOptions,
+    selectOption,
+    setSearch,
+  } = props;
 
   const ref = useRef();
 
   const handleChange = useEvent(e => {
     const { checked, name, value } = e.target;
     selectOption({ checked, name, value });
+  });
+
+  const handleSearch = useEvent(({ value }) => {
+    setSearch(value);
   });
 
   const onClick = () => {
@@ -34,7 +45,14 @@ function Filter(props) {
       </div>
 
       <div className="flex">
-        <Input ref={ref} type="text" placeholder="Search" />
+        <Input
+          ref={ref}
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={handleSearch}
+        />
+
         <button type="button" className="input-btn" onClick={onClick}>
           Clear
         </button>
