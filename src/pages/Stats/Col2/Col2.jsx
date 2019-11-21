@@ -3,18 +3,22 @@ import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import clsx from 'clsx';
 import locales from 'locales';
-import { selectFocus } from 'actions';
+import { maxItem, selectFocus } from 'actions';
 import { getImage, useEvent } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import Item from './Item';
 
-function Col2({ focused, items, selectFocus }) {
+function Col2({ focused, items, maxItem, selectFocus }) {
   const { lang = 'en' } = useParams();
 
   const onClick = useEvent(e => {
     selectFocus(e.target.name);
   });
+
+  const setMax = e => {
+    maxItem(e.target.name);
+  };
 
   return (
     <div id="stats-col2">
@@ -36,7 +40,7 @@ function Col2({ focused, items, selectFocus }) {
                 onClick={onClick}
               />
 
-              <button type="button" name={key}>
+              <button type="button" name={key} onClick={setMax}>
                 MAX
               </button>
             </div>
@@ -54,6 +58,7 @@ const mapStateToProps = ({ focused, items }) => {
 };
 
 const actionCreators = {
+  maxItem,
   selectFocus,
 };
 

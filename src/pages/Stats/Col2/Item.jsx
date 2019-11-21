@@ -65,6 +65,12 @@ function Item({ focused, fields, item, updateItem }) {
     updateItem({ itemKey: focused, updates });
   });
 
+  const onClick = e => {
+    const { name } = e.target;
+    const max = getLimit(name);
+    updateItem({ itemKey: focused, updates: { [name]: max } });
+  };
+
   useEffect(() => {
     clearTimeout(timeRef.current);
     let key;
@@ -126,7 +132,12 @@ function Item({ focused, fields, item, updateItem }) {
                 onChange={changeInput}
               />
               {(key === 'augHp' || key === 'augStr') && (
-                <button type="button" className="input-btn" name={key}>
+                <button
+                  type="button"
+                  className="input-btn"
+                  name={key}
+                  onClick={onClick}
+                >
                   max
                 </button>
               )}

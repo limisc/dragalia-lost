@@ -1,3 +1,4 @@
+import { getLimit } from 'utils';
 import actionTypes from './actionTypes';
 import { buildItems, modifyNewItem } from './itemUtils';
 
@@ -67,3 +68,16 @@ export const selectItem = (itemKey, item) => (dispatch, getState) => {
 };
 
 export const updateItem = createAction(actionTypes.UPDATE_ITEM);
+
+export const maxItem = itemKey => (dispatch, getState) => {
+  const {
+    items: { [itemKey]: item },
+  } = getState();
+  if (item === null) return;
+
+  const updates = modifyNewItem(itemKey, item);
+  const max = getLimit('augments');
+  updates.augHp = max;
+  updates.augStr = max;
+  dispatch(updateItem({ itemKey, updates }));
+};
