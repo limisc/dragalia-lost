@@ -1,12 +1,30 @@
-import React, { memo } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { Checkbox } from 'components';
 import ItemPanel from './ItemPanel';
 
-const Col3 = memo(function Col3() {
+function Col3({ adventurer, lang, panel, setPanel }) {
+  const disabled = adventurer === null;
   return (
     <div id="stats-col3">
-      <ItemPanel />
+      <div>
+        <Checkbox
+          disabled={disabled}
+          checked={panel}
+          lang={lang}
+          value="halidom"
+          setChecked={setPanel}
+        />
+      </div>
+      <ItemPanel lang={lang} panel={panel} setPanel={setPanel} />
     </div>
   );
-});
+}
 
-export default Col3;
+const mapStateToProps = state => {
+  return {
+    adventurer: state.items.adventurer,
+  };
+};
+
+export default connect(mapStateToProps)(Col3);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import clsx from 'clsx';
 import locales from 'locales';
 import { maxItem, selectFocus } from 'actions';
@@ -9,9 +8,7 @@ import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import Item from './Item';
 
-function Col2({ focused, items, maxItem, selectFocus }) {
-  const { lang = 'en' } = useParams();
-
+function Col2({ focused, items, lang, maxItem, selectFocus }) {
   const onClick = useEvent(e => {
     selectFocus(e.target.name);
   });
@@ -27,7 +24,10 @@ function Col2({ focused, items, maxItem, selectFocus }) {
           const className = clsx({ scale: key === focused }, key);
 
           const { [key]: item } = items;
-          const title = item === null ? locales(key, lang) : item.name[lang];
+          const title =
+            item === null
+              ? locales(key, lang)
+              : item.name[lang] || item.name.en;
           const image = getImage(item, key);
 
           return (

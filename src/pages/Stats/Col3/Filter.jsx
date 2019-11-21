@@ -7,6 +7,7 @@ import { CheckSet } from 'components';
 function Filter(props) {
   const {
     fields,
+    lang,
     options,
     search,
     resetOptions,
@@ -36,6 +37,7 @@ function Filter(props) {
             icon
             key={key}
             group={key}
+            lang={lang}
             options={options[key]}
             onChange={handleChange}
           />

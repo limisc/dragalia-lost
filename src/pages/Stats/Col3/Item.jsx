@@ -11,7 +11,7 @@ function Item({ data, focused, index, style, selectItem }) {
   const {
     skill,
     icon,
-    name: { [lang]: name },
+    name: { [lang]: name, en },
   } = item;
   const image = getImage(item, focused);
 
@@ -22,7 +22,7 @@ function Item({ data, focused, index, style, selectItem }) {
   return (
     <div className="item" style={style}>
       <Image image={image} size="md" onClick={handleClick} />
-      <span className="name">{name}</span>
+      <span className="name">{name || en}</span>
 
       {focused === 'weapon' &&
         (skill ? (
