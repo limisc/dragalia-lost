@@ -94,8 +94,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '301061_01_30201',
@@ -550,6 +550,57 @@ const weapon = {
     rarity: '4',
     weapon: 'Sword',
   },
+  '30140110': {
+    Id: '30140110',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '301079_01_40101',
+    max: [71, 278],
+    might: 80,
+    min: [21, 83],
+    name: {
+      en: 'Searing Savagetail',
+      ja: 'ヒートサベージテイル',
+      zh: '灼热残暴之尾',
+    },
+    rarity: '4',
+    weapon: 'Sword',
+  },
+  '30140111': {
+    Id: '30140111',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +5%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '301108_01_40101',
+    incSTR: 5,
+    max: [71, 278],
+    might: 90,
+    min: [21, 83],
+    name: {
+      en: 'Sword of Dancing Sparks',
+      ja: '炎舞の邪剣',
+      zh: '炎舞邪剑',
+    },
+    rarity: '4',
+    weapon: 'Sword',
+  },
   '30140201': {
     Id: '30140201',
     element: 'Water',
@@ -577,8 +628,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '301061_01_40201',
@@ -665,6 +716,32 @@ const weapon = {
       en: 'Cold Absolution',
       ja: '氷剣アブソリュート',
       zh: '绝对冰剑',
+    },
+    rarity: '4',
+    weapon: 'Sword',
+  },
+  '30140207': {
+    Id: '30140207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +3%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '301073_01_40201',
+    incSTR: 5,
+    max: [71, 278],
+    might: 80,
+    min: [21, 83],
+    name: {
+      en: 'Angry Aquatail',
+      ja: 'マッドアクアテイル',
+      zh: '愤怒大洋之尾',
     },
     rarity: '4',
     weapon: 'Sword',
@@ -783,6 +860,31 @@ const weapon = {
       en: 'Barren Weald',
       ja: '疾剣ウィールド',
       zh: '疾剑威尔德',
+    },
+    rarity: '4',
+    weapon: 'Sword',
+  },
+  '30140306': {
+    Id: '30140306',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +3%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '301084_01_40301',
+    max: [75, 270],
+    might: 80,
+    min: [22, 81],
+    name: {
+      en: 'Slicing Stormtail',
+      ja: 'グリムブロウテイル',
+      zh: '无情狂风之尾',
     },
     rarity: '4',
     weapon: 'Sword',
@@ -1259,6 +1361,27 @@ const weapon = {
     rarity: '4',
     weapon: 'Sword',
   },
+  '30149910': {
+    Id: '30149910',
+    element: '0',
+    icon: [
+      {
+        image: '1020002',
+        title: "Slayer's Strength +3%",
+      },
+    ],
+    image: '301072_01_49901',
+    max: [55, 214],
+    might: 40,
+    min: [16, 64],
+    name: {
+      en: 'Fiercetail',
+      ja: 'フィアステイル',
+      zh: '凶残之尾',
+    },
+    rarity: '4',
+    weapon: 'Sword',
+  },
   '30150101': {
     Id: '30150101',
     element: 'Flame',
@@ -1369,6 +1492,57 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Infinite Crimson',
     },
+    weapon: 'Sword',
+  },
+  '30150109': {
+    Id: '30150109',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '301079_01_50101',
+    max: [92, 362],
+    might: 100,
+    min: [27, 108],
+    name: {
+      en: 'Flaming Savagetail',
+      ja: 'フレイムサベージテイル',
+      zh: '烈焰残暴之尾',
+    },
+    rarity: '5',
+    weapon: 'Sword',
+  },
+  '30150110': {
+    Id: '30150110',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +8%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '301108_01_50101',
+    incSTR: 8,
+    max: [92, 362],
+    might: 110,
+    min: [27, 108],
+    name: {
+      en: 'Sword of Surging Flame',
+      ja: '狂翔炎舞の邪剣',
+      zh: '狂翔炎舞邪剑',
+    },
+    rarity: '5',
     weapon: 'Sword',
   },
   '30150202': {
@@ -1483,6 +1657,32 @@ const weapon = {
     },
     weapon: 'Sword',
   },
+  '30150210': {
+    Id: '30150210',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +4%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '301073_01_50201',
+    incSTR: 5,
+    max: [92, 362],
+    might: 100,
+    min: [27, 108],
+    name: {
+      en: 'Raging Aquatail',
+      ja: 'レイジングアクアテイル',
+      zh: '暴怒大洋之尾',
+    },
+    rarity: '5',
+    weapon: 'Sword',
+  },
   '30150301': {
     Id: '30150301',
     element: 'Wind',
@@ -1592,6 +1792,31 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Infinite Tempest',
     },
+    weapon: 'Sword',
+  },
+  '30150309': {
+    Id: '30150309',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +4%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '301084_01_50301',
+    max: [97, 351],
+    might: 100,
+    min: [29, 105],
+    name: {
+      en: 'Slaughtering Stormtail',
+      ja: 'クルーエルブロウテイル',
+      zh: '残暴狂风之尾',
+    },
+    rarity: '5',
     weapon: 'Sword',
   },
   '30150401': {
@@ -2107,8 +2332,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '302069_01_30201',
@@ -2660,6 +2885,57 @@ const weapon = {
     rarity: '4',
     weapon: 'Blade',
   },
+  '30240108': {
+    Id: '30240108',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '302076_01_40101',
+    max: [62, 295],
+    might: 80,
+    min: [18, 88],
+    name: {
+      en: 'Direblade Kagachi',
+      ja: 'マガツカガチ',
+      zh: '灾祸之蛇',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
+  '30240109': {
+    Id: '30240109',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +5%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '302099_01_40101',
+    incSTR: 5,
+    max: [62, 295],
+    might: 90,
+    min: [18, 88],
+    name: {
+      en: 'Burning Blade',
+      ja: 'バーニングブレード',
+      zh: '灼烧之刃',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
   '30240202': {
     Id: '30240202',
     element: 'Water',
@@ -2738,8 +3014,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '302069_01_40201',
@@ -2800,6 +3076,32 @@ const weapon = {
       en: 'Crystalline Quietude',
       ja: '妖氷刀・絶晶白雪',
       zh: '妖冰刀·绝晶白雪',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
+  '30240209': {
+    Id: '30240209',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +3%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '302067_01_40201',
+    incSTR: 5,
+    max: [69, 278],
+    might: 80,
+    min: [20, 83],
+    name: {
+      en: 'Direblade Mizuha',
+      ja: 'マガツミズハ',
+      zh: '灾祸罔象',
     },
     rarity: '4',
     weapon: 'Blade',
@@ -2943,6 +3245,31 @@ const weapon = {
       en: 'Galeflash',
       ja: '風陣一閃',
       zh: '风阵一闪',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
+  '30240307': {
+    Id: '30240307',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +3%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '302079_01_40301',
+    max: [66, 286],
+    might: 80,
+    min: [19, 85],
+    name: {
+      en: 'Direblade Hayate',
+      ja: 'マガツハヤテ',
+      zh: '灾祸疾风',
     },
     rarity: '4',
     weapon: 'Blade',
@@ -3444,6 +3771,27 @@ const weapon = {
     rarity: '4',
     weapon: 'Blade',
   },
+  '30249910': {
+    Id: '30249910',
+    element: '0',
+    icon: [
+      {
+        image: '1020002',
+        title: "Slayer's Strength +3%",
+      },
+    ],
+    image: '302066_01_49901',
+    max: [48, 227],
+    might: 40,
+    min: [14, 68],
+    name: {
+      en: 'Direblade Mugatachi',
+      ja: 'マガツムガタチ',
+      zh: '灾祸无形',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
   '30250101': {
     Id: '30250101',
     element: 'Flame',
@@ -3554,6 +3902,57 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Blinding Blade',
     },
+    weapon: 'Blade',
+  },
+  '30250106': {
+    Id: '30250106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '302076_01_50101',
+    max: [81, 383],
+    might: 100,
+    min: [24, 114],
+    name: {
+      en: 'Great Direblade Kagachi',
+      ja: 'マガツナガカガチ',
+      zh: '灾祸长蛇',
+    },
+    rarity: '5',
+    weapon: 'Blade',
+  },
+  '30250107': {
+    Id: '30250107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +8%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '302099_01_50101',
+    incSTR: 8,
+    max: [81, 383],
+    might: 110,
+    min: [24, 114],
+    name: {
+      en: 'Liquefaction Blade',
+      ja: 'アーデントブレード',
+      zh: '炽热之刃',
+    },
+    rarity: '5',
     weapon: 'Blade',
   },
   '30250201': {
@@ -3668,6 +4067,32 @@ const weapon = {
     },
     weapon: 'Blade',
   },
+  '30250206': {
+    Id: '30250206',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +4%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '302067_01_50201',
+    incSTR: 5,
+    max: [90, 361],
+    might: 100,
+    min: [27, 108],
+    name: {
+      en: 'Dark Direblade Mizuha',
+      ja: 'マガツクラミズハ',
+      zh: '灾祸暗罔象',
+    },
+    rarity: '5',
+    weapon: 'Blade',
+  },
   '30250301': {
     Id: '30250301',
     element: 'Wind',
@@ -3777,6 +4202,31 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Endless Blade',
     },
+    weapon: 'Blade',
+  },
+  '30250306': {
+    Id: '30250306',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +4%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '302079_01_50301',
+    max: [85, 372],
+    might: 100,
+    min: [25, 111],
+    name: {
+      en: 'Swift Direblade Hayate',
+      ja: 'マガツハヤツムジ',
+      zh: '灾祸飓风',
+    },
+    rarity: '5',
     weapon: 'Blade',
   },
   '30250401': {
@@ -4152,8 +4602,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +10%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '303042_01_30101',
@@ -4295,8 +4745,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '303069_01_30201',
@@ -4730,8 +5180,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +15%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '303042_01_40101',
@@ -4843,6 +5293,31 @@ const weapon = {
       en: 'Conflagrant Ruby Dagger',
       ja: '緋炎石のナイフ',
       zh: '绯炎石之刃',
+    },
+    rarity: '4',
+    weapon: 'Dagger',
+  },
+  '30340107': {
+    Id: '30340107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '303082_01_40101',
+    max: [79, 257],
+    might: 80,
+    min: [23, 77],
+    name: {
+      en: 'Flamesin',
+      ja: '原罪抱く狂牙',
+      zh: '原罪狂牙',
     },
     rarity: '4',
     weapon: 'Dagger',
@@ -4976,8 +5451,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '303069_01_40201',
@@ -5767,6 +6242,31 @@ const weapon = {
     },
     weapon: 'Dagger',
   },
+  '30350107': {
+    Id: '30350107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '303082_01_50101',
+    max: [103, 334],
+    might: 100,
+    min: [30, 100],
+    name: {
+      en: 'Blazesin',
+      ja: '大罪纏う狂牙',
+      zh: '重罪狂牙',
+    },
+    rarity: '5',
+    weapon: 'Dagger',
+  },
   '30350201': {
     Id: '30350201',
     element: 'Water',
@@ -6413,8 +6913,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '304052_01_30201',
@@ -6869,6 +7369,57 @@ const weapon = {
     rarity: '4',
     weapon: 'Axe',
   },
+  '30440108': {
+    Id: '30440108',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '304081_01_40101',
+    max: [73, 292],
+    might: 80,
+    min: [21, 87],
+    name: {
+      en: 'Brutality Crux',
+      ja: '惨忍の戦斧',
+      zh: '残忍战斧',
+    },
+    rarity: '4',
+    weapon: 'Axe',
+  },
+  '30440109': {
+    Id: '30440109',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +5%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '304097_01_40101',
+    incSTR: 5,
+    max: [73, 292],
+    might: 90,
+    min: [21, 87],
+    name: {
+      en: 'Sun Ray Destroyer',
+      ja: 'サンフレアデストロイヤー',
+      zh: '日炎破坏者',
+    },
+    rarity: '4',
+    weapon: 'Axe',
+  },
   '30440201': {
     Id: '30440201',
     element: 'Water',
@@ -6922,8 +7473,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '304052_01_40201',
@@ -7010,6 +7561,31 @@ const weapon = {
       en: 'Frozen Arms',
       ja: 'ダイヤフロストアームズ',
       zh: '霜钻钢臂',
+    },
+    rarity: '4',
+    weapon: 'Axe',
+  },
+  '30440208': {
+    Id: '30440208',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +20%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '304115_01_40201',
+    max: [81, 275],
+    might: 90,
+    min: [24, 82],
+    name: {
+      en: 'Crusher of the Shallows',
+      ja: 'スラッジクラッシュ',
+      zh: '污秽破坏斧',
     },
     rarity: '4',
     weapon: 'Axe',
@@ -7650,6 +8226,27 @@ const weapon = {
     rarity: '4',
     weapon: 'Axe',
   },
+  '30449911': {
+    Id: '30449911',
+    element: '0',
+    icon: [
+      {
+        image: '1060004',
+        title: "Therion's Bane +15%",
+      },
+    ],
+    image: '304113_01_49901',
+    max: [62, 212],
+    might: 40,
+    min: [18, 63],
+    name: {
+      en: 'Soul Crusher',
+      ja: 'ソウルクラッシュ',
+      zh: '灵魂破坏斧',
+    },
+    rarity: '4',
+    weapon: 'Axe',
+  },
   '30450101': {
     Id: '30450101',
     element: 'Flame',
@@ -7760,6 +8357,57 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Royal Crimson Passion',
     },
+    weapon: 'Axe',
+  },
+  '30450106': {
+    Id: '30450106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '304081_01_50101',
+    max: [95, 380],
+    might: 100,
+    min: [28, 114],
+    name: {
+      en: 'Atrocity Crux',
+      ja: '残虐無慚の戦斧',
+      zh: '残虐无情战斧',
+    },
+    rarity: '5',
+    weapon: 'Axe',
+  },
+  '30450107': {
+    Id: '30450107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +8%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '304097_01_50101',
+    incSTR: 8,
+    max: [95, 380],
+    might: 110,
+    min: [28, 114],
+    name: {
+      en: 'Sun Flare Destroyer',
+      ja: 'コンバストデストロイヤー',
+      zh: '焦灼破坏者',
+    },
+    rarity: '5',
     weapon: 'Axe',
   },
   '30450201': {
@@ -7898,6 +8546,31 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Mercy's Azure Embrace",
     },
+    weapon: 'Axe',
+  },
+  '30450207': {
+    Id: '30450207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +30%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '304115_01_50201',
+    max: [63, 357],
+    might: 110,
+    min: [18, 107],
+    name: {
+      en: 'Crusher of the Depths',
+      ja: 'ディープボトムクラッシュ',
+      zh: '深渊破坏斧',
+    },
+    rarity: '5',
     weapon: 'Axe',
   },
   '30450301': {
@@ -8391,8 +9064,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +10%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '305047_01_30101',
@@ -8510,8 +9183,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '305060_01_30201',
@@ -8963,8 +9636,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +15%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '305047_01_40101',
@@ -9081,6 +9754,57 @@ const weapon = {
     rarity: '4',
     weapon: 'Lance',
   },
+  '30540108': {
+    Id: '30540108',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '305088_01_40101',
+    max: [76, 276],
+    might: 80,
+    min: [22, 82],
+    name: {
+      en: 'Cinder Beast',
+      ja: 'アッシュビースト',
+      zh: '灰烬凶兽之枪',
+    },
+    rarity: '4',
+    weapon: 'Lance',
+  },
+  '30540109': {
+    Id: '30540109',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +5%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '305104_01_40101',
+    incSTR: 5,
+    max: [80, 267],
+    might: 90,
+    min: [24, 80],
+    name: {
+      en: 'Ignition Flamelance',
+      ja: '火槍・イグニシオ',
+      zh: '火枪·伊格尼希欧',
+    },
+    rarity: '4',
+    weapon: 'Lance',
+  },
   '30540201': {
     Id: '30540201',
     element: 'Water',
@@ -9159,8 +9883,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '305060_01_40201',
@@ -9247,6 +9971,31 @@ const weapon = {
       en: 'Gelid Grace',
       ja: 'ブリザードグレイススピア',
       zh: '冰雅之枪',
+    },
+    rarity: '4',
+    weapon: 'Lance',
+  },
+  '30540208': {
+    Id: '30540208',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +20%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '305122_01_40201',
+    max: [76, 276],
+    might: 90,
+    min: [22, 82],
+    name: {
+      en: 'Lance of Dark Depths',
+      ja: '冥河の幽槍',
+      zh: '冥河幽枪',
     },
     rarity: '4',
     weapon: 'Lance',
@@ -9912,6 +10661,27 @@ const weapon = {
     rarity: '4',
     weapon: 'Lance',
   },
+  '30549911': {
+    Id: '30549911',
+    element: '0',
+    icon: [
+      {
+        image: '1060004',
+        title: "Therion's Bane +15%",
+      },
+    ],
+    image: '305120_01_49901',
+    max: [59, 212],
+    might: 40,
+    min: [17, 63],
+    name: {
+      en: 'Lance of Lamentation',
+      ja: '悲嘆の幽槍',
+      zh: '悲叹幽枪',
+    },
+    rarity: '4',
+    weapon: 'Lance',
+  },
   '30550101': {
     Id: '30550101',
     element: 'Flame',
@@ -10022,6 +10792,57 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Crimson Wildfire',
     },
+    weapon: 'Lance',
+  },
+  '30550106': {
+    Id: '30550106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '305088_01_50101',
+    max: [99, 358],
+    might: 100,
+    min: [29, 107],
+    name: {
+      en: 'Ashen Beast',
+      ja: 'バーンナウトビースト',
+      zh: '焦土凶兽之枪',
+    },
+    rarity: '5',
+    weapon: 'Lance',
+  },
+  '30550107': {
+    Id: '30550107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) HP 70% = Strength +8%',
+      },
+      {
+        image: '1140004',
+        title: '(Flame) Spectral Shield Penetrator',
+      },
+    ],
+    image: '305104_01_50101',
+    incSTR: 8,
+    max: [104, 347],
+    might: 110,
+    min: [31, 104],
+    name: {
+      en: 'Combustion Flamelance',
+      ja: '炎槍・フレイムアウト',
+      zh: '炎枪·弗雷姆奥托',
+    },
+    rarity: '5',
     weapon: 'Lance',
   },
   '30550201': {
@@ -10160,6 +10981,31 @@ const weapon = {
       image: 'Icon_Skill_022',
       title: 'Limpid Shore',
     },
+    weapon: 'Lance',
+  },
+  '30550207': {
+    Id: '30550207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +30%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '305122_01_50201',
+    max: [59, 358],
+    might: 110,
+    min: [17, 107],
+    name: {
+      en: 'Lance of Frozen Depths',
+      ja: '氷獄凍者の幽冥槍',
+      zh: '冰狱冻者幽冥枪',
+    },
+    rarity: '5',
     weapon: 'Lance',
   },
   '30550301': {
@@ -10628,8 +11474,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +10%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '306041_01_30101',
@@ -10747,8 +11593,8 @@ const weapon = {
         title: "(Water) Undead's Bane +10%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '306050_01_30201',
@@ -11182,8 +12028,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +15%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '306041_01_40101',
@@ -11300,6 +12146,31 @@ const weapon = {
     rarity: '4',
     weapon: 'Bow',
   },
+  '30640109': {
+    Id: '30640109',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '306072_01_40101',
+    max: [70, 267],
+    might: 80,
+    min: [21, 80],
+    name: {
+      en: 'Flameburst Dreadbow',
+      ja: '猛火を呑む破弓',
+      zh: '猛火破甲弓',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
   '30640201': {
     Id: '30640201',
     element: 'Water',
@@ -11352,8 +12223,8 @@ const weapon = {
         title: "(Water) Undead's Bane +15%",
       },
       {
-        image: '1140002',
-        title: '(Water) Skill Resistance Penetrator',
+        image: '1140005',
+        title: '(Water) Skill Resistance & Fury Penetrator',
       },
     ],
     image: '306050_01_40201',
@@ -11440,6 +12311,57 @@ const weapon = {
       en: 'Wavefury Bow',
       ja: '怒り猛る濤声の弓',
       zh: '狂怒涛声之弓',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
+  '30640207': {
+    Id: '30640207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +3%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '306065_01_40201',
+    incSTR: 5,
+    max: [70, 267],
+    might: 80,
+    min: [21, 80],
+    name: {
+      en: 'Wavedrinker Bow',
+      ja: '逆浪を食む怒弓',
+      zh: '逆浪怒火弓',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
+  '30640208': {
+    Id: '30640208',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +20%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '306115_01_40201',
+    max: [70, 267],
+    might: 90,
+    min: [21, 80],
+    name: {
+      en: 'Despair Bringer',
+      ja: '霊水弓ディスペアシンカー',
+      zh: '灵水弓湮冀者',
     },
     rarity: '4',
     weapon: 'Bow',
@@ -11583,6 +12505,31 @@ const weapon = {
       en: 'Windsail Bow',
       ja: '逆風を貫く弓',
       zh: '破风之弓',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
+  '30640308': {
+    Id: '30640308',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +3%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '306076_01_40301',
+    max: [77, 252],
+    might: 80,
+    min: [23, 75],
+    name: {
+      en: 'Ill-Wind Whipper',
+      ja: '颯を呼ぶ剛弓',
+      zh: '唤风刚弓',
     },
     rarity: '4',
     weapon: 'Bow',
@@ -12011,6 +12958,48 @@ const weapon = {
     rarity: '4',
     weapon: 'Bow',
   },
+  '30649909': {
+    Id: '30649909',
+    element: '0',
+    icon: [
+      {
+        image: '1020002',
+        title: "Slayer's Strength +3%",
+      },
+    ],
+    image: '306064_01_49901',
+    max: [56, 200],
+    might: 40,
+    min: [16, 60],
+    name: {
+      en: 'Ragebow',
+      ja: '激昂の弓',
+      zh: '暴怒之弓',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
+  '30649910': {
+    Id: '30649910',
+    element: '0',
+    icon: [
+      {
+        image: '1060004',
+        title: "Therion's Bane +15%",
+      },
+    ],
+    image: '306113_01_49901',
+    max: [54, 206],
+    might: 40,
+    min: [16, 61],
+    name: {
+      en: 'Hollow Scream',
+      ja: '霊弓ホロウスクリーム',
+      zh: '灵弓虚嚎者',
+    },
+    rarity: '4',
+    weapon: 'Bow',
+  },
   '30650101': {
     Id: '30650101',
     element: 'Flame',
@@ -12121,6 +13110,31 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Valkyrie's Heroic Raid",
     },
+    weapon: 'Bow',
+  },
+  '30650106': {
+    Id: '30650106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '306072_01_50101',
+    max: [90, 347],
+    might: 100,
+    min: [27, 104],
+    name: {
+      en: 'Detonation Dreadbow',
+      ja: '爆燃を統べる破弓',
+      zh: '爆炎破甲弓',
+    },
+    rarity: '5',
     weapon: 'Bow',
   },
   '30650201': {
@@ -12235,6 +13249,57 @@ const weapon = {
     },
     weapon: 'Bow',
   },
+  '30650206': {
+    Id: '30650206',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +4%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '306065_01_50201',
+    incSTR: 5,
+    max: [90, 347],
+    might: 100,
+    min: [27, 104],
+    name: {
+      en: 'Streamgorger Bow',
+      ja: '激流を貪る怒弓',
+      zh: '激流怒火弓',
+    },
+    rarity: '5',
+    weapon: 'Bow',
+  },
+  '30650207': {
+    Id: '30650207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +30%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '306115_01_50201',
+    max: [90, 347],
+    might: 110,
+    min: [27, 104],
+    name: {
+      en: 'Despair Spiral',
+      ja: '霊流弩ディスペアジャイロ',
+      zh: '灵流驽覆冀者',
+    },
+    rarity: '5',
+    weapon: 'Bow',
+  },
   '30650302': {
     Id: '30650302',
     element: 'Wind',
@@ -12344,6 +13409,31 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Jormungand's Boundless World",
     },
+    weapon: 'Bow',
+  },
+  '30650307': {
+    Id: '30650307',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +4%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '306076_01_50301',
+    max: [100, 327],
+    might: 100,
+    min: [30, 98],
+    name: {
+      en: 'Deathwind Caller',
+      ja: '魔風をいざなう剛弓',
+      zh: '唤魔风刚弓',
+    },
+    rarity: '5',
     weapon: 'Bow',
   },
   '30650402': {
@@ -12668,8 +13758,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +10%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '307049_01_30101',
@@ -13222,8 +14312,8 @@ const weapon = {
         title: "(Flame) Thaumian's Bane +15%",
       },
       {
-        image: '1030014',
-        title: '(Flame) Dragon Delay Res',
+        image: '1030025',
+        title: '(Flame) Dragon Delay & Soul Eater Res',
       },
     ],
     image: '307049_01_40101',
@@ -13336,6 +14426,31 @@ const weapon = {
       en: 'Blaze Shepherd',
       ja: 'バーニングコントロール',
       zh: '灼热魔杖',
+    },
+    rarity: '4',
+    weapon: 'Wand',
+  },
+  '30740107': {
+    Id: '30740107',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '307089_01_40101',
+    max: [70, 278],
+    might: 80,
+    min: [21, 83],
+    name: {
+      en: 'Blazewing',
+      ja: '焔獣の翼',
+      zh: '焰兽之翼',
     },
     rarity: '4',
     weapon: 'Wand',
@@ -14233,6 +15348,31 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Adoring Flames',
     },
+    weapon: 'Wand',
+  },
+  '30750106': {
+    Id: '30750106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '307089_01_50101',
+    max: [91, 362],
+    might: 100,
+    min: [27, 108],
+    name: {
+      en: 'Hellwing',
+      ja: '紅炎獣の翼',
+      zh: '红炎兽之翼',
+    },
+    rarity: '5',
     weapon: 'Wand',
   },
   '30750202': {
@@ -15191,6 +16331,31 @@ const weapon = {
     rarity: '4',
     weapon: 'Staff',
   },
+  '30840106': {
+    Id: '30840106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +3%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '308072_01_40101',
+    max: [89, 244],
+    might: 80,
+    min: [26, 73],
+    name: {
+      en: 'Combustion Staff',
+      ja: 'コンバスションスタッフ',
+      zh: '御火法杖',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
   '30840201': {
     Id: '30840201',
     element: 'Water',
@@ -15286,6 +16451,57 @@ const weapon = {
     rarity: '4',
     weapon: 'Staff',
   },
+  '30840207': {
+    Id: '30840207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +3%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '308064_01_40201',
+    incSTR: 5,
+    max: [89, 244],
+    might: 80,
+    min: [26, 73],
+    name: {
+      en: 'Tideway Staff',
+      ja: 'リップカレントスタッフ',
+      zh: '裂流法杖',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
+  '30840208': {
+    Id: '30840208',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +20%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '308116_01_40201',
+    max: [89, 244],
+    might: 90,
+    min: [26, 73],
+    name: {
+      en: 'Air Fouler',
+      ja: 'マッドサージグラッジ',
+      zh: '怨念狂浪',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
   '30840301': {
     Id: '30840301',
     element: 'Wind',
@@ -15376,6 +16592,31 @@ const weapon = {
       en: 'Heavenshaker',
       ja: '空を震わす杖',
       zh: '慑空之杖',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
+  '30840305': {
+    Id: '30840305',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +3%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '308075_01_40301',
+    max: [89, 244],
+    might: 80,
+    min: [26, 73],
+    name: {
+      en: 'Gust Staff',
+      ja: 'ガストスタッフ',
+      zh: '狂风法杖',
     },
     rarity: '4',
     weapon: 'Staff',
@@ -15750,6 +16991,48 @@ const weapon = {
     rarity: '4',
     weapon: 'Staff',
   },
+  '30849909': {
+    Id: '30849909',
+    element: '0',
+    icon: [
+      {
+        image: '1020002',
+        title: "Slayer's Strength +3%",
+      },
+    ],
+    image: '308063_01_49901',
+    max: [68, 188],
+    might: 40,
+    min: [20, 56],
+    name: {
+      en: 'Iratus Staff',
+      ja: 'アイレイトスタッフ',
+      zh: '暴怒法杖',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
+  '30849910': {
+    Id: '30849910',
+    element: '0',
+    icon: [
+      {
+        image: '1060004',
+        title: "Therion's Bane +15%",
+      },
+    ],
+    image: '308114_01_49901',
+    max: [68, 188],
+    might: 40,
+    min: [20, 56],
+    name: {
+      en: 'Rancor Staff',
+      ja: 'スピリットグラッジ',
+      zh: '幽魂怨念',
+    },
+    rarity: '4',
+    weapon: 'Staff',
+  },
   '30850101': {
     Id: '30850101',
     element: 'Flame',
@@ -15860,6 +17143,31 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Gambolling Flames',
     },
+    weapon: 'Staff',
+  },
+  '30850106': {
+    Id: '30850106',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Flame) Slayer's Strength +4%",
+      },
+      {
+        image: '1020004',
+        title: '(Flame) Skill Haste +4%',
+      },
+    ],
+    image: '308072_01_50101',
+    max: [115, 317],
+    might: 100,
+    min: [34, 95],
+    name: {
+      en: 'Fangflame Staff',
+      ja: 'ブレイズフレアスタッフ',
+      zh: '爆炎法杖',
+    },
+    rarity: '5',
     weapon: 'Staff',
   },
   '30850201': {
@@ -15974,6 +17282,57 @@ const weapon = {
     },
     weapon: 'Staff',
   },
+  '30850206': {
+    Id: '30850206',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Water) Slayer's Strength +4%",
+      },
+      {
+        image: '1020002',
+        title: '(Water) HP 70% = Strength +5%',
+      },
+    ],
+    image: '308064_01_50201',
+    incSTR: 5,
+    max: [69, 317],
+    might: 100,
+    min: [20, 95],
+    name: {
+      en: 'Riptide Staff',
+      ja: 'リップタイドスタッフ',
+      zh: '裂潮法杖',
+    },
+    rarity: '5',
+    weapon: 'Staff',
+  },
+  '30850207': {
+    Id: '30850207',
+    element: 'Water',
+    icon: [
+      {
+        image: '1100001',
+        title: "(Water) Volcanic Chimera's Bane +30%",
+      },
+      {
+        image: '1030024',
+        title: '(Water) Frenzy Res',
+      },
+    ],
+    image: '308116_01_50201',
+    max: [69, 317],
+    might: 110,
+    min: [20, 95],
+    name: {
+      en: 'Breath Snuffer',
+      ja: 'マッドミアズマグラッジ',
+      zh: '怨念狂瘴',
+    },
+    rarity: '5',
+    weapon: 'Staff',
+  },
   '30850301': {
     Id: '30850301',
     element: 'Wind',
@@ -16076,13 +17435,38 @@ const weapon = {
     name: {
       en: 'Stormruler',
       ja: '嵐を導くもの',
-      zh: '呼风唤雨',
+      zh: '号令风暴',
     },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
       title: 'Guiding Gust',
     },
+    weapon: 'Staff',
+  },
+  '30850306': {
+    Id: '30850306',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: "(Wind) Slayer's Strength +4%",
+      },
+      {
+        image: '1060004',
+        title: "(Wind) Therion's Bane +15%",
+      },
+    ],
+    image: '308075_01_50301',
+    max: [115, 317],
+    might: 100,
+    min: [34, 95],
+    name: {
+      en: 'Whirlwind Staff',
+      ja: 'ワールウインドスタッフ',
+      zh: '旋风法杖',
+    },
+    rarity: '5',
     weapon: 'Staff',
   },
   '30850401': {

@@ -2102,7 +2102,7 @@ const wyrmprint = {
     name: {
       en: 'Odd Sparrows',
       ja: '白燕騎士団のデコボココンビ',
-      zh: '白燕骑士団的互补搭档',
+      zh: '白燕骑士团的互补搭档',
     },
     rarity: '4',
   },
