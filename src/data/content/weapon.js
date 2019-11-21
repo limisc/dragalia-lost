@@ -1,7 +1,7 @@
 const weapon = {
   '30130102': {
     Id: '30130102',
-    element: '1',
+    element: 'Flame',
     image: '301013_01_30101',
     max: [57, 222],
     min: [17, 66],
@@ -15,11 +15,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Blazing Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130103': {
     Id: '30130103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -40,11 +40,11 @@ const weapon = {
       zh: '烈焰铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130105': {
     Id: '30130105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -65,11 +65,11 @@ const weapon = {
       zh: '烈火魔剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130201': {
     Id: '30130201',
-    element: '2',
+    element: 'Water',
     image: '301006_01_30201',
     max: [57, 222],
     min: [17, 66],
@@ -83,11 +83,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Rain Slicer',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130202': {
     Id: '30130202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -108,11 +108,11 @@ const weapon = {
       zh: '冰雪魔剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130203': {
     Id: '30130203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -133,11 +133,11 @@ const weapon = {
       zh: '冰霜铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130302': {
     Id: '30130302',
-    element: '3',
+    element: 'Wind',
     image: '301035_01_30301',
     max: [57, 222],
     min: [17, 66],
@@ -151,11 +151,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Grass Slash',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130303': {
     Id: '30130303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -176,11 +176,11 @@ const weapon = {
       zh: '旋风魔剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130304': {
     Id: '30130304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -201,11 +201,11 @@ const weapon = {
       zh: '疾风铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130401': {
     Id: '30130401',
-    element: '4',
+    element: 'Light',
     image: '301007_01_30401',
     max: [57, 222],
     min: [17, 66],
@@ -219,11 +219,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Merciless Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130402': {
     Id: '30130402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -244,11 +244,11 @@ const weapon = {
       zh: '雷霆铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130403': {
     Id: '30130403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -269,11 +269,11 @@ const weapon = {
       zh: '电闪魔剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130501': {
     Id: '30130501',
-    element: '5',
+    element: 'Shadow',
     image: '301008_01_30501',
     max: [57, 222],
     min: [17, 66],
@@ -287,11 +287,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Bloody Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130502': {
     Id: '30130502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -312,11 +312,11 @@ const weapon = {
       zh: '诅咒魔剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30130503': {
     Id: '30130503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -337,7 +337,7 @@ const weapon = {
       zh: '暗影铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30139901': {
     Id: '30139901',
@@ -351,7 +351,7 @@ const weapon = {
       zh: '骑士剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30139902': {
     Id: '30139902',
@@ -369,7 +369,7 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Ensorcelled Slash',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30139903': {
     Id: '30139903',
@@ -387,7 +387,7 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Broad Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30139904': {
     Id: '30139904',
@@ -408,7 +408,7 @@ const weapon = {
       zh: '退魔之剑',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30139905': {
     Id: '30139905',
@@ -429,11 +429,11 @@ const weapon = {
       zh: '沉重铸铁',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140104': {
     Id: '30140104',
-    element: '1',
+    element: 'Flame',
     image: '301014_01_40101',
     max: [92, 362],
     min: [27, 108],
@@ -447,11 +447,11 @@ const weapon = {
       image: 'Icon_Skill_006',
       title: 'Crimson Wave',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140105': {
     Id: '30140105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -472,11 +472,11 @@ const weapon = {
       zh: '火山铸铁',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140106': {
     Id: '30140106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -497,11 +497,11 @@ const weapon = {
       zh: '无上烈焰',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140108': {
     Id: '30140108',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -523,11 +523,11 @@ const weapon = {
       zh: '火之审判',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140109': {
     Id: '30140109',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -548,11 +548,11 @@ const weapon = {
       zh: '红莲魔剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140201': {
     Id: '30140201',
-    element: '2',
+    element: 'Water',
     image: '301009_01_40201',
     max: [105, 333],
     min: [31, 99],
@@ -566,11 +566,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Mercurial Recovery',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140202': {
     Id: '30140202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -591,11 +591,11 @@ const weapon = {
       zh: '暴雪魔剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140203': {
     Id: '30140203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -616,11 +616,11 @@ const weapon = {
       zh: '雪崩铸铁',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140205': {
     Id: '30140205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -642,11 +642,11 @@ const weapon = {
       zh: '波涛裁决',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140206': {
     Id: '30140206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -667,11 +667,11 @@ const weapon = {
       zh: '绝对冰剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140301': {
     Id: '30140301',
-    element: '3',
+    element: 'Wind',
     image: '301034_01_40301',
     max: [105, 333],
     min: [31, 99],
@@ -685,11 +685,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Winged Recovery',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140302': {
     Id: '30140302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -710,11 +710,11 @@ const weapon = {
       zh: '狂岚魔剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140303': {
     Id: '30140303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -735,11 +735,11 @@ const weapon = {
       zh: '无上烈风',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140304': {
     Id: '30140304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -760,11 +760,11 @@ const weapon = {
       zh: '龙卷铸铁',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140305': {
     Id: '30140305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -785,11 +785,11 @@ const weapon = {
       zh: '疾剑威尔德',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140401': {
     Id: '30140401',
-    element: '4',
+    element: 'Light',
     image: '301036_01_40401',
     max: [105, 333],
     min: [31, 99],
@@ -803,11 +803,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Astral Radiance',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140402': {
     Id: '30140402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -828,11 +828,11 @@ const weapon = {
       zh: '无上光辉',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140403': {
     Id: '30140403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -853,11 +853,11 @@ const weapon = {
       zh: '电浆铸铁',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140404': {
     Id: '30140404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -878,11 +878,11 @@ const weapon = {
       zh: '轰雷魔剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140405': {
     Id: '30140405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -905,11 +905,11 @@ const weapon = {
       zh: '光明使者',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140406': {
     Id: '30140406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -931,11 +931,11 @@ const weapon = {
       zh: '光辉邪剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140407': {
     Id: '30140407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -957,11 +957,11 @@ const weapon = {
       zh: '绝命之刹',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140501': {
     Id: '30140501',
-    element: '5',
+    element: 'Shadow',
     image: '301011_01_40501',
     max: [92, 362],
     min: [27, 108],
@@ -975,11 +975,11 @@ const weapon = {
       image: 'Icon_Skill_006',
       title: 'Dark Wave',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140502': {
     Id: '30140502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -1000,11 +1000,11 @@ const weapon = {
       zh: '咒灭魔剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140503': {
     Id: '30140503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -1025,11 +1025,11 @@ const weapon = {
       zh: '黑暗铸铁',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140504': {
     Id: '30140504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -1051,11 +1051,11 @@ const weapon = {
       zh: '黑暗使者',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30140505': {
     Id: '30140505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -1077,7 +1077,7 @@ const weapon = {
       zh: '恶贯满盈',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149901': {
     Id: '30149901',
@@ -1091,7 +1091,7 @@ const weapon = {
       zh: '骑士长丽剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149902': {
     Id: '30149902',
@@ -1109,7 +1109,7 @@ const weapon = {
       image: 'Icon_Skill_006',
       title: 'Glorious Wave',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149903': {
     Id: '30149903',
@@ -1127,7 +1127,7 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Gildan Recovery',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149904': {
     Id: '30149904',
@@ -1148,7 +1148,7 @@ const weapon = {
       zh: '无上锐翼',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149905': {
     Id: '30149905',
@@ -1170,7 +1170,7 @@ const weapon = {
       zh: '夺魂裁决',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149906': {
     Id: '30149906',
@@ -1191,7 +1191,7 @@ const weapon = {
       zh: '统剑斯凯尔',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149907': {
     Id: '30149907',
@@ -1213,7 +1213,7 @@ const weapon = {
       zh: '银灰使者',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149908': {
     Id: '30149908',
@@ -1235,7 +1235,7 @@ const weapon = {
       zh: '幻兽之剑',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30149909': {
     Id: '30149909',
@@ -1257,11 +1257,11 @@ const weapon = {
       zh: '收割之嘲',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150101': {
     Id: '30150101',
-    element: '1',
+    element: 'Flame',
     image: '301032_01_50101',
     max: [143, 556],
     min: [42, 166],
@@ -1275,11 +1275,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Calamitous Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150102': {
     Id: '30150102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -1300,11 +1300,11 @@ const weapon = {
       zh: '无上业火',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150103': {
     Id: '30150103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -1326,11 +1326,11 @@ const weapon = {
       zh: '地狱火之审判',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150107': {
     Id: '30150107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -1351,11 +1351,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Crimson Storm',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150108': {
     Id: '30150108',
-    element: '1',
+    element: 'Flame',
     image: '301122_01_50102',
     max: [235, 1530],
     min: [70, 459],
@@ -1369,11 +1369,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Infinite Crimson',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150202': {
     Id: '30150202',
-    element: '2',
+    element: 'Water',
     image: '301010_01_50201',
     max: [143, 556],
     min: [42, 166],
@@ -1387,11 +1387,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Eoantide Cleaver',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150203': {
     Id: '30150203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -1413,11 +1413,11 @@ const weapon = {
       zh: '大洋裁决',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150204': {
     Id: '30150204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -1438,11 +1438,11 @@ const weapon = {
       zh: '绝对寒冰剑',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150208': {
     Id: '30150208',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -1463,11 +1463,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Aqua Storm',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150209': {
     Id: '30150209',
-    element: '2',
+    element: 'Water',
     image: '301120_01_50202',
     max: [235, 1530],
     min: [70, 459],
@@ -1481,11 +1481,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Infinite Aqua',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150301': {
     Id: '30150301',
-    element: '3',
+    element: 'Wind',
     image: '301033_01_50301',
     max: [158, 524],
     min: [47, 157],
@@ -1499,11 +1499,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Heroic Epic',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150302': {
     Id: '30150302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -1524,11 +1524,11 @@ const weapon = {
       zh: '无上飓风',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150303': {
     Id: '30150303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -1549,11 +1549,11 @@ const weapon = {
       zh: '轰疾迅剑威尔德',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150307': {
     Id: '30150307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -1574,11 +1574,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Tempest Storm',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150308': {
     Id: '30150308',
-    element: '3',
+    element: 'Wind',
     image: '301119_01_50302',
     max: [267, 1411],
     min: [80, 423],
@@ -1592,11 +1592,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Infinite Tempest',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150401': {
     Id: '30150401',
-    element: '4',
+    element: 'Light',
     image: '301015_01_50401',
     max: [143, 556],
     min: [42, 166],
@@ -1610,11 +1610,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Zex's Waltz",
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150402': {
     Id: '30150402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -1635,11 +1635,11 @@ const weapon = {
       zh: '无上圣耀',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150403': {
     Id: '30150403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1656,11 +1656,11 @@ const weapon = {
       zh: '弗尔克范格',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150404': {
     Id: '30150404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -1683,11 +1683,11 @@ const weapon = {
       zh: '光耀使者',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150407': {
     Id: '30150407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1709,11 +1709,11 @@ const weapon = {
       zh: '霸极光辉邪剑',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150408': {
     Id: '30150408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -1735,11 +1735,11 @@ const weapon = {
       zh: '永劫之极',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150410': {
     Id: '30150410',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -1760,11 +1760,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Lightning Storm',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150411': {
     Id: '30150411',
-    element: '4',
+    element: 'Light',
     image: '301121_01_50402',
     max: [247, 1485],
     min: [74, 445],
@@ -1778,11 +1778,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Infinite Lightning',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150501': {
     Id: '30150501',
-    element: '5',
+    element: 'Shadow',
     image: '301037_01_50501',
     max: [158, 524],
     min: [47, 157],
@@ -1796,11 +1796,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Eternal Strife',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150502': {
     Id: '30150502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -1822,11 +1822,11 @@ const weapon = {
       zh: '深渊使者',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150503': {
     Id: '30150503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -1847,11 +1847,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Hexing Storm',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150504': {
     Id: '30150504',
-    element: '5',
+    element: 'Shadow',
     image: '301123_01_50502',
     max: [247, 1485],
     min: [74, 445],
@@ -1865,11 +1865,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Infinite Hexes',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30150508': {
     Id: '30150508',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -1891,7 +1891,7 @@ const weapon = {
       zh: '堕入邪恶',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30159901': {
     Id: '30159901',
@@ -1905,7 +1905,7 @@ const weapon = {
       zh: '英雄之剑',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30159902': {
     Id: '30159902',
@@ -1923,7 +1923,7 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Noble Flash',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30159903': {
     Id: '30159903',
@@ -1941,7 +1941,7 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Rage and Retribution',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30159904': {
     Id: '30159904',
@@ -1959,11 +1959,11 @@ const weapon = {
       image: 'Icon_Skill_014',
       title: 'Happiness Spike',
     },
-    weapon: '1',
+    weapon: 'Sword',
   },
   '30230101': {
     Id: '30230101',
-    element: '1',
+    element: 'Flame',
     image: '302006_01_30101',
     max: [53, 229],
     min: [15, 68],
@@ -1977,11 +1977,11 @@ const weapon = {
       image: 'Icon_Skill_008',
       title: 'Valkan Wave',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230102': {
     Id: '30230102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -2002,11 +2002,11 @@ const weapon = {
       zh: '朱钢丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230104': {
     Id: '30230104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -2028,11 +2028,11 @@ const weapon = {
       zh: '妖焰刀·燎火',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230105': {
     Id: '30230105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -2053,11 +2053,11 @@ const weapon = {
       zh: '火烈刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230201': {
     Id: '30230201',
-    element: '2',
+    element: 'Water',
     image: '302007_01_30201',
     max: [53, 229],
     min: [15, 68],
@@ -2071,11 +2071,11 @@ const weapon = {
       image: 'Icon_Skill_008',
       title: 'Butterfly Strike',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230202': {
     Id: '30230202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -2096,11 +2096,11 @@ const weapon = {
       zh: '苍曜丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230204': {
     Id: '30230204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -2121,11 +2121,11 @@ const weapon = {
       zh: '斩浪刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230205': {
     Id: '30230205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -2146,11 +2146,11 @@ const weapon = {
       zh: '妖冰刀·白雪',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230302': {
     Id: '30230302',
-    element: '3',
+    element: 'Wind',
     image: '302024_01_30301',
     max: [50, 236],
     min: [15, 70],
@@ -2164,11 +2164,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Commander's Blitz",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230303': {
     Id: '30230303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -2189,11 +2189,11 @@ const weapon = {
       zh: '翠琥丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230304': {
     Id: '30230304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -2214,11 +2214,11 @@ const weapon = {
       zh: '踏风刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230305': {
     Id: '30230305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -2239,11 +2239,11 @@ const weapon = {
       zh: '妖旋刀·风云',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230401': {
     Id: '30230401',
-    element: '4',
+    element: 'Light',
     image: '302027_01_30401',
     max: [50, 236],
     min: [15, 70],
@@ -2257,11 +2257,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Chanzelian Strike',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230402': {
     Id: '30230402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -2282,11 +2282,11 @@ const weapon = {
       zh: '白曜丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230403': {
     Id: '30230403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -2307,11 +2307,11 @@ const weapon = {
       zh: '驰光刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230501': {
     Id: '30230501',
-    element: '5',
+    element: 'Shadow',
     image: '302009_01_30501',
     max: [50, 236],
     min: [15, 70],
@@ -2325,11 +2325,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Sanguine Blitz',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230502': {
     Id: '30230502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -2350,11 +2350,11 @@ const weapon = {
       zh: '妖魔刀·怨嗟',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230503': {
     Id: '30230503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -2375,11 +2375,11 @@ const weapon = {
       zh: '斩影刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30230504': {
     Id: '30230504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -2400,7 +2400,7 @@ const weapon = {
       zh: '涅曜丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239901': {
     Id: '30239901',
@@ -2414,7 +2414,7 @@ const weapon = {
       zh: '讨伐刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239902': {
     Id: '30239902',
@@ -2432,7 +2432,7 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Shamshir Strike',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239903': {
     Id: '30239903',
@@ -2450,7 +2450,7 @@ const weapon = {
       image: 'Icon_Skill_008',
       title: 'Fusion Wave',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239904': {
     Id: '30239904',
@@ -2471,7 +2471,7 @@ const weapon = {
       zh: '钢丸',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239905': {
     Id: '30239905',
@@ -2492,7 +2492,7 @@ const weapon = {
       zh: '妖刀·幽',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30239907': {
     Id: '30239907',
@@ -2513,11 +2513,11 @@ const weapon = {
       zh: '反曲刀',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240101': {
     Id: '30240101',
-    element: '1',
+    element: 'Flame',
     image: '302015_01_40101',
     max: [90, 361],
     min: [27, 108],
@@ -2531,11 +2531,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Flame's Protection ",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240102': {
     Id: '30240102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -2556,11 +2556,11 @@ const weapon = {
       zh: '终极·红焰钢丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240103': {
     Id: '30240103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -2581,11 +2581,11 @@ const weapon = {
       zh: '烈斩刀·劫火',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240105': {
     Id: '30240105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -2607,11 +2607,11 @@ const weapon = {
       zh: '火刃·狱炎丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240106': {
     Id: '30240106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -2633,11 +2633,11 @@ const weapon = {
       zh: '妖焰刀·燎火灯明',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240107': {
     Id: '30240107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -2658,11 +2658,11 @@ const weapon = {
       zh: '炎烈刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240202': {
     Id: '30240202',
-    element: '2',
+    element: 'Water',
     image: '302022_01_40201',
     max: [81, 383],
     min: [24, 114],
@@ -2676,11 +2676,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Whirlpool',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240203': {
     Id: '30240203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -2701,11 +2701,11 @@ const weapon = {
       zh: '终极·瀑流曜丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240204': {
     Id: '30240204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -2727,11 +2727,11 @@ const weapon = {
       zh: '水刃·波涛丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240206': {
     Id: '30240206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -2752,11 +2752,11 @@ const weapon = {
       zh: '波涛斩浪刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240207': {
     Id: '30240207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -2777,11 +2777,11 @@ const weapon = {
       zh: '水华一闪',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240208': {
     Id: '30240208',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -2802,11 +2802,11 @@ const weapon = {
       zh: '妖冰刀·绝晶白雪',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240301': {
     Id: '30240301',
-    element: '3',
+    element: 'Wind',
     image: '302011_01_40301',
     max: [90, 361],
     min: [27, 108],
@@ -2820,11 +2820,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Tempest's Protection",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240302': {
     Id: '30240302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -2845,11 +2845,11 @@ const weapon = {
       zh: '烈斩刀·飓风',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240303': {
     Id: '30240303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -2870,11 +2870,11 @@ const weapon = {
       zh: '终极·翠岚琥丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240304': {
     Id: '30240304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -2895,11 +2895,11 @@ const weapon = {
       zh: '晴空踏风刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240305': {
     Id: '30240305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -2920,11 +2920,11 @@ const weapon = {
       zh: '妖旋刀·云龙风虎',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240306': {
     Id: '30240306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -2945,11 +2945,11 @@ const weapon = {
       zh: '风阵一闪',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240402': {
     Id: '30240402',
-    element: '4',
+    element: 'Light',
     image: '302026_01_40401',
     max: [81, 383],
     min: [24, 114],
@@ -2963,11 +2963,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Thunderstorm',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240403': {
     Id: '30240403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -2988,11 +2988,11 @@ const weapon = {
       zh: '烈斩刀·轰雷',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240404': {
     Id: '30240404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -3013,11 +3013,11 @@ const weapon = {
       zh: '终极·天光曜丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240405': {
     Id: '30240405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -3038,11 +3038,11 @@ const weapon = {
       zh: '御天驰光刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240406': {
     Id: '30240406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -3065,11 +3065,11 @@ const weapon = {
       zh: '明刀·光辉',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240407': {
     Id: '30240407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -3091,11 +3091,11 @@ const weapon = {
       zh: '闪耀之刃',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240408': {
     Id: '30240408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -3117,11 +3117,11 @@ const weapon = {
       zh: '虚无之光',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240501': {
     Id: '30240501',
-    element: '5',
+    element: 'Shadow',
     image: '302029_01_40501',
     max: [90, 361],
     min: [27, 108],
@@ -3135,11 +3135,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Darkness's Protection",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240502': {
     Id: '30240502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -3160,11 +3160,11 @@ const weapon = {
       zh: '妖魔刀·怨憎会苦',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240503': {
     Id: '30240503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -3185,11 +3185,11 @@ const weapon = {
       zh: '暗黑斩影刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240504': {
     Id: '30240504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -3210,11 +3210,11 @@ const weapon = {
       zh: '终极·地祸曜丸',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240505': {
     Id: '30240505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -3236,11 +3236,11 @@ const weapon = {
       zh: '暗刀·宵暗',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30240506': {
     Id: '30240506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -3262,7 +3262,7 @@ const weapon = {
       zh: '虚无暮光',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249901': {
     Id: '30249901',
@@ -3276,7 +3276,7 @@ const weapon = {
       zh: '镇守刀',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249902': {
     Id: '30249902',
@@ -3294,7 +3294,7 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Iron's Protection",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249903': {
     Id: '30249903',
@@ -3312,7 +3312,7 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: "Masamura's Slash",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249904': {
     Id: '30249904',
@@ -3333,7 +3333,7 @@ const weapon = {
       zh: '斩刀·虚',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249905': {
     Id: '30249905',
@@ -3355,7 +3355,7 @@ const weapon = {
       zh: '荒刃·胧',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249906': {
     Id: '30249906',
@@ -3376,7 +3376,7 @@ const weapon = {
       zh: '虚一闪',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249907': {
     Id: '30249907',
@@ -3398,7 +3398,7 @@ const weapon = {
       zh: '丽刀·霞',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249908': {
     Id: '30249908',
@@ -3420,7 +3420,7 @@ const weapon = {
       zh: '维度之刃',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30249909': {
     Id: '30249909',
@@ -3442,11 +3442,11 @@ const weapon = {
       zh: '虚无之始',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250101': {
     Id: '30250101',
-    element: '1',
+    element: 'Flame',
     image: '302013_01_50101',
     max: [132, 572],
     min: [39, 171],
@@ -3460,11 +3460,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: "Heaven's Flames",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250102': {
     Id: '30250102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -3485,11 +3485,11 @@ const weapon = {
       zh: '烈斩刀·天变劫火',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250103': {
     Id: '30250103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -3511,11 +3511,11 @@ const weapon = {
       zh: '焰刃·鬼切狱炎',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250104': {
     Id: '30250104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -3536,11 +3536,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Conflagration Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250105': {
     Id: '30250105',
-    element: '1',
+    element: 'Flame',
     image: '302113_01_50102',
     max: [207, 1621],
     min: [62, 486],
@@ -3554,11 +3554,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Blinding Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250201': {
     Id: '30250201',
-    element: '2',
+    element: 'Water',
     image: '302010_01_50201',
     max: [143, 544],
     min: [42, 163],
@@ -3572,11 +3572,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Maar's Recovery",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250202': {
     Id: '30250202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -3598,11 +3598,11 @@ const weapon = {
       zh: '浪刃·波涛一文字',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250203': {
     Id: '30250203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -3623,11 +3623,11 @@ const weapon = {
       zh: '豪流·水华一闪',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250204': {
     Id: '30250204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -3648,11 +3648,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Torrent Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250205': {
     Id: '30250205',
-    element: '2',
+    element: 'Water',
     image: '302111_01_50202',
     max: [228, 1527],
     min: [68, 458],
@@ -3666,11 +3666,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Surging Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250301': {
     Id: '30250301',
-    element: '3',
+    element: 'Wind',
     image: '302023_01_50301',
     max: [132, 572],
     min: [39, 171],
@@ -3684,11 +3684,11 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: 'Verdant Wave',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250302': {
     Id: '30250302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -3709,11 +3709,11 @@ const weapon = {
       zh: '烈斩刀·飓风断空',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250303': {
     Id: '30250303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -3734,11 +3734,11 @@ const weapon = {
       zh: '大飒·风阵一闪',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250304': {
     Id: '30250304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -3759,11 +3759,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Horizon Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250305': {
     Id: '30250305',
-    element: '3',
+    element: 'Wind',
     image: '302110_01_50302',
     max: [218, 1574],
     min: [65, 472],
@@ -3777,11 +3777,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Endless Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250401': {
     Id: '30250401',
-    element: '4',
+    element: 'Light',
     image: '302025_01_50401',
     max: [143, 544],
     min: [42, 163],
@@ -3795,11 +3795,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Winged Blessing',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250402': {
     Id: '30250402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -3820,11 +3820,11 @@ const weapon = {
       zh: '烈斩刀·轰雷创世',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250403': {
     Id: '30250403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -3847,11 +3847,11 @@ const weapon = {
       zh: '煌刀·明白天',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250404': {
     Id: '30250404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -3872,11 +3872,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Flashing Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250405': {
     Id: '30250405',
-    element: '4',
+    element: 'Light',
     image: '302112_01_50402',
     max: [235, 1495],
     min: [70, 448],
@@ -3890,11 +3890,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Brilliant Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250406': {
     Id: '30250406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -3916,11 +3916,11 @@ const weapon = {
       zh: '光辉之刃',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250407': {
     Id: '30250407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -3942,11 +3942,11 @@ const weapon = {
       zh: '虚无之闪',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250501': {
     Id: '30250501',
-    element: '5',
+    element: 'Shadow',
     image: '302028_01_50501',
     max: [125, 590],
     min: [37, 177],
@@ -3960,11 +3960,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Black Dance',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250502': {
     Id: '30250502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -3986,11 +3986,11 @@ const weapon = {
       zh: '冥刀·夜黑天',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250503': {
     Id: '30250503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -4011,11 +4011,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Enigmatic Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250504': {
     Id: '30250504',
-    element: '5',
+    element: 'Shadow',
     image: '302114_01_50502',
     max: [207, 1621],
     min: [62, 486],
@@ -4029,11 +4029,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Hellish Blade',
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30250505': {
     Id: '30250505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -4055,7 +4055,7 @@ const weapon = {
       zh: '虚无梦魇',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30259901': {
     Id: '30259901',
@@ -4069,7 +4069,7 @@ const weapon = {
       zh: '霸王号',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30259902': {
     Id: '30259902',
@@ -4087,7 +4087,7 @@ const weapon = {
       image: 'Icon_Skill_010',
       title: "Shade's Flight",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30259903': {
     Id: '30259903',
@@ -4105,7 +4105,7 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Souleater's Feast",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30259904': {
     Id: '30259904',
@@ -4123,11 +4123,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Swordsmith's Recovery",
     },
-    weapon: '2',
+    weapon: 'Blade',
   },
   '30330101': {
     Id: '30330101',
-    element: '1',
+    element: 'Flame',
     image: '303027_01_30101',
     max: [64, 205],
     min: [19, 61],
@@ -4141,11 +4141,11 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Cruel Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330102': {
     Id: '30330102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -4166,11 +4166,11 @@ const weapon = {
       zh: '灼热蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330103': {
     Id: '30330103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -4191,11 +4191,11 @@ const weapon = {
       zh: '火焰重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330104': {
     Id: '30330104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -4216,11 +4216,11 @@ const weapon = {
       zh: '炎石之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330201': {
     Id: '30330201',
-    element: '2',
+    element: 'Water',
     image: '303021_01_30201',
     max: [61, 212],
     min: [18, 63],
@@ -4234,11 +4234,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Water Chain',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330202': {
     Id: '30330202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -4259,11 +4259,11 @@ const weapon = {
       zh: '冰冷蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330203': {
     Id: '30330203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -4284,11 +4284,11 @@ const weapon = {
       zh: '水之重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330204': {
     Id: '30330204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -4309,11 +4309,11 @@ const weapon = {
       zh: '海石之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330301': {
     Id: '30330301',
-    element: '3',
+    element: 'Wind',
     image: '303007_01_30301',
     max: [61, 212],
     min: [18, 63],
@@ -4327,11 +4327,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Storm Chain',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330302': {
     Id: '30330302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -4352,11 +4352,11 @@ const weapon = {
       zh: '呼啸蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330303': {
     Id: '30330303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -4377,11 +4377,11 @@ const weapon = {
       zh: '烈风重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330304': {
     Id: '30330304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -4402,11 +4402,11 @@ const weapon = {
       zh: '风石之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330401': {
     Id: '30330401',
-    element: '4',
+    element: 'Light',
     image: '303008_01_30401',
     max: [64, 205],
     min: [19, 61],
@@ -4420,11 +4420,11 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Royal Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330402': {
     Id: '30330402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -4445,11 +4445,11 @@ const weapon = {
       zh: '星光重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330403': {
     Id: '30330403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -4470,11 +4470,11 @@ const weapon = {
       zh: '耀眼蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330404': {
     Id: '30330404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -4495,11 +4495,11 @@ const weapon = {
       zh: '辉石之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330501': {
     Id: '30330501',
-    element: '5',
+    element: 'Shadow',
     image: '303009_01_30501',
     max: [61, 212],
     min: [18, 63],
@@ -4513,11 +4513,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Assassin Strike',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330502': {
     Id: '30330502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -4538,11 +4538,11 @@ const weapon = {
       zh: '昏玉之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330503': {
     Id: '30330503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -4563,11 +4563,11 @@ const weapon = {
       zh: '夜想曲重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30330504': {
     Id: '30330504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -4588,7 +4588,7 @@ const weapon = {
       zh: '疼痛蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339901': {
     Id: '30339901',
@@ -4602,7 +4602,7 @@ const weapon = {
       zh: '宝饰短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339902': {
     Id: '30339902',
@@ -4620,7 +4620,7 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Ancient Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339903': {
     Id: '30339903',
@@ -4638,7 +4638,7 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Lover's Strike",
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339904': {
     Id: '30339904',
@@ -4659,7 +4659,7 @@ const weapon = {
       zh: '蘑菇短剑',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339905': {
     Id: '30339905',
@@ -4680,7 +4680,7 @@ const weapon = {
       zh: '重刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30339906': {
     Id: '30339906',
@@ -4701,11 +4701,11 @@ const weapon = {
       zh: '原石之刃',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340101': {
     Id: '30340101',
-    element: '1',
+    element: 'Flame',
     image: '303015_01_40101',
     max: [93, 354],
     min: [27, 106],
@@ -4719,11 +4719,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Scarlet Spiral',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340102': {
     Id: '30340102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -4744,11 +4744,11 @@ const weapon = {
       zh: '炽热蘑菇短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340103': {
     Id: '30340103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -4769,11 +4769,11 @@ const weapon = {
       zh: '正义重刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340104': {
     Id: '30340104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -4794,11 +4794,11 @@ const weapon = {
       zh: '猩红之痛',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340105': {
     Id: '30340105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -4820,11 +4820,11 @@ const weapon = {
       zh: '爆裂之刺',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340106': {
     Id: '30340106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -4845,11 +4845,11 @@ const weapon = {
       zh: '绯炎石之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340201': {
     Id: '30340201',
-    element: '2',
+    element: 'Water',
     image: '303018_01_40201',
     max: [93, 354],
     min: [27, 106],
@@ -4863,11 +4863,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Ultramarine Spin',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340202': {
     Id: '30340202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -4888,11 +4888,11 @@ const weapon = {
       zh: '冰冻蘑菇短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340203': {
     Id: '30340203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -4914,11 +4914,11 @@ const weapon = {
       zh: '嗜血狂牙',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340204': {
     Id: '30340204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -4939,11 +4939,11 @@ const weapon = {
       zh: '水花重刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340205': {
     Id: '30340205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -4965,11 +4965,11 @@ const weapon = {
       zh: '冰霜之刺',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340206': {
     Id: '30340206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -4990,11 +4990,11 @@ const weapon = {
       zh: '苍海石之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340207': {
     Id: '30340207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -5015,11 +5015,11 @@ const weapon = {
       zh: '水之利刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340301': {
     Id: '30340301',
-    element: '3',
+    element: 'Wind',
     image: '303029_01_40301',
     max: [106, 327],
     min: [31, 98],
@@ -5033,11 +5033,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Queen's Recovery",
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340302': {
     Id: '30340302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -5058,11 +5058,11 @@ const weapon = {
       zh: '暴风蘑菇短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340303': {
     Id: '30340303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -5083,11 +5083,11 @@ const weapon = {
       zh: '穹风重刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340304': {
     Id: '30340304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -5108,11 +5108,11 @@ const weapon = {
       zh: '真空之痛',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340305': {
     Id: '30340305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -5133,11 +5133,11 @@ const weapon = {
       zh: '翠风石之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340306': {
     Id: '30340306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -5158,11 +5158,11 @@ const weapon = {
       zh: '风斩之刃·屠脍者',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340307': {
     Id: '30340307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -5183,11 +5183,11 @@ const weapon = {
       zh: '诅咒狂牙',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340401': {
     Id: '30340401',
-    element: '4',
+    element: 'Light',
     image: '303017_01_40401',
     max: [93, 354],
     min: [27, 106],
@@ -5201,11 +5201,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Night Spiral',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340402': {
     Id: '30340402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -5226,11 +5226,11 @@ const weapon = {
       zh: '流星重刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340404': {
     Id: '30340404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -5251,11 +5251,11 @@ const weapon = {
       zh: '闪耀蘑菇短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340405': {
     Id: '30340405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -5276,11 +5276,11 @@ const weapon = {
       zh: '天辉石之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340406': {
     Id: '30340406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -5303,11 +5303,11 @@ const weapon = {
       zh: '三角轻羽刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340407': {
     Id: '30340407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -5329,11 +5329,11 @@ const weapon = {
       zh: '安详之爪',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340502': {
     Id: '30340502',
-    element: '5',
+    element: 'Shadow',
     image: '303011_01_40501',
     max: [106, 327],
     min: [31, 98],
@@ -5347,11 +5347,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Avaricious Healing',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340504': {
     Id: '30340504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -5372,11 +5372,11 @@ const weapon = {
       zh: '黒昏玉之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340505': {
     Id: '30340505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -5397,11 +5397,11 @@ const weapon = {
       zh: '镇魂曲重刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340506': {
     Id: '30340506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -5423,11 +5423,11 @@ const weapon = {
       zh: '三角阴郁刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340507': {
     Id: '30340507',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -5448,11 +5448,11 @@ const weapon = {
       zh: '剧痛蘑菇短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30340508': {
     Id: '30340508',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -5474,7 +5474,7 @@ const weapon = {
       zh: '恐怖利爪',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349901': {
     Id: '30349901',
@@ -5488,7 +5488,7 @@ const weapon = {
       zh: '破坏短剑',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349902': {
     Id: '30349902',
@@ -5506,7 +5506,7 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Fanged Recovery',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349903': {
     Id: '30349903',
@@ -5524,7 +5524,7 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: "Dreamer's Spiral",
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349904': {
     Id: '30349904',
@@ -5545,7 +5545,7 @@ const weapon = {
       zh: '屠仇狂牙',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349905': {
     Id: '30349905',
@@ -5567,7 +5567,7 @@ const weapon = {
       zh: '地狱之刺',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349906': {
     Id: '30349906',
@@ -5588,7 +5588,7 @@ const weapon = {
       zh: '迅捷之痛',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349907': {
     Id: '30349907',
@@ -5609,7 +5609,7 @@ const weapon = {
       zh: '利爪之刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349908': {
     Id: '30349908',
@@ -5631,7 +5631,7 @@ const weapon = {
       zh: '三角欢悦刃',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30349909': {
     Id: '30349909',
@@ -5653,11 +5653,11 @@ const weapon = {
       zh: '灵魂之爪',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350102': {
     Id: '30350102',
-    element: '1',
+    element: 'Flame',
     image: '303013_01_50101',
     max: [144, 545],
     min: [43, 163],
@@ -5671,11 +5671,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Aeternal Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350103': {
     Id: '30350103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -5696,11 +5696,11 @@ const weapon = {
       zh: '朱红之痛',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350104': {
     Id: '30350104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -5722,11 +5722,11 @@ const weapon = {
       zh: '绯红之刺',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350105': {
     Id: '30350105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -5747,11 +5747,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Savage Crimson',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350106': {
     Id: '30350106',
-    element: '1',
+    element: 'Flame',
     image: '303112_01_50102',
     max: [250, 1455],
     min: [75, 436],
@@ -5765,11 +5765,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Savage Flameruler',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350201': {
     Id: '30350201',
-    element: '2',
+    element: 'Water',
     image: '303020_01_50201',
     max: [152, 529],
     min: [45, 158],
@@ -5783,11 +5783,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: 'Cobalt Strength',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350202': {
     Id: '30350202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -5809,11 +5809,11 @@ const weapon = {
       zh: '浴血狂牙',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350203': {
     Id: '30350203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -5835,11 +5835,11 @@ const weapon = {
       zh: '冰冻之刺',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350204': {
     Id: '30350204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -5860,11 +5860,11 @@ const weapon = {
       zh: '水之击刃',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350205': {
     Id: '30350205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -5885,11 +5885,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Vicious Tides',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350206': {
     Id: '30350206',
-    element: '2',
+    element: 'Water',
     image: '303110_01_50202',
     max: [250, 1455],
     min: [75, 436],
@@ -5903,11 +5903,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Vicious Tideruler',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350301': {
     Id: '30350301',
-    element: '3',
+    element: 'Wind',
     image: '303028_01_50301',
     max: [144, 545],
     min: [43, 163],
@@ -5921,11 +5921,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Saga of the Soul',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350302': {
     Id: '30350302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -5946,11 +5946,11 @@ const weapon = {
       zh: '气流之痛',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350303': {
     Id: '30350303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -5971,11 +5971,11 @@ const weapon = {
       zh: '风斩之刃·粉碎者',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350304': {
     Id: '30350304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -5996,11 +5996,11 @@ const weapon = {
       zh: '咒怨狂牙',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350305': {
     Id: '30350305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -6021,11 +6021,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Merciless Galestorm',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350306': {
     Id: '30350306',
-    element: '3',
+    element: 'Wind',
     image: '303109_01_50302',
     max: [270, 1383],
     min: [81, 414],
@@ -6039,11 +6039,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Merciless Windruler',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350401': {
     Id: '30350401',
-    element: '4',
+    element: 'Light',
     image: '303030_01_50401',
     max: [152, 529],
     min: [45, 158],
@@ -6057,11 +6057,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: "Sugaar's Strength",
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350403': {
     Id: '30350403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -6084,11 +6084,11 @@ const weapon = {
       zh: '三角翱翔刃',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350404': {
     Id: '30350404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -6109,11 +6109,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Ferocious Lightning',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350405': {
     Id: '30350405',
-    element: '4',
+    element: 'Light',
     image: '303111_01_50402',
     max: [262, 1412],
     min: [78, 423],
@@ -6127,11 +6127,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Ferocious Fulminator',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350406': {
     Id: '30350406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -6153,11 +6153,11 @@ const weapon = {
       zh: '仁慈之爪',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350501': {
     Id: '30350501',
-    element: '5',
+    element: 'Shadow',
     image: '303031_01_50501',
     max: [144, 545],
     min: [43, 163],
@@ -6171,11 +6171,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Unwavering Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350503': {
     Id: '30350503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -6197,11 +6197,11 @@ const weapon = {
       zh: '三角活祭刃',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350504': {
     Id: '30350504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -6222,11 +6222,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Bloodstarved Darkness',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350505': {
     Id: '30350505',
-    element: '5',
+    element: 'Shadow',
     image: '303113_01_50502',
     max: [262, 1412],
     min: [78, 423],
@@ -6240,11 +6240,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Bloodstarved Shadowruler',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30350506': {
     Id: '30350506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -6266,7 +6266,7 @@ const weapon = {
       zh: '永惧利爪',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30359901': {
     Id: '30359901',
@@ -6280,7 +6280,7 @@ const weapon = {
       zh: '马来克力士剑',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30359902': {
     Id: '30359902',
@@ -6298,7 +6298,7 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: 'Thorned Assault',
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30359903': {
     Id: '30359903',
@@ -6316,11 +6316,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: "Hedgehog's Strength",
     },
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '30430101': {
     Id: '30430101',
-    element: '1',
+    element: 'Flame',
     image: '304018_01_30101',
     max: [59, 234],
     min: [17, 70],
@@ -6334,11 +6334,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Argent Impact',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430103': {
     Id: '30430103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -6359,11 +6359,11 @@ const weapon = {
       zh: '赤热钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430104': {
     Id: '30430104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -6384,11 +6384,11 @@ const weapon = {
       zh: '火焰遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430201': {
     Id: '30430201',
-    element: '2',
+    element: 'Water',
     image: '304006_01_30201',
     max: [59, 234],
     min: [17, 70],
@@ -6402,11 +6402,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Torrential Impact',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430202': {
     Id: '30430202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -6427,11 +6427,11 @@ const weapon = {
       zh: '冰雪遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430204': {
     Id: '30430204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -6452,11 +6452,11 @@ const weapon = {
       zh: '冰尘钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430301': {
     Id: '30430301',
-    element: '3',
+    element: 'Wind',
     image: '304007_01_30301',
     max: [65, 220],
     min: [19, 66],
@@ -6470,11 +6470,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Cyclonic Swing',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430302': {
     Id: '30430302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -6495,11 +6495,11 @@ const weapon = {
       zh: '狂风遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430303': {
     Id: '30430303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -6520,11 +6520,11 @@ const weapon = {
       zh: '驭风钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430401': {
     Id: '30430401',
-    element: '4',
+    element: 'Light',
     image: '304008_01_30401',
     max: [65, 220],
     min: [19, 66],
@@ -6538,11 +6538,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Flash Swing',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430402': {
     Id: '30430402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -6563,11 +6563,11 @@ const weapon = {
       zh: '闪耀遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430403': {
     Id: '30430403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -6588,11 +6588,11 @@ const weapon = {
       zh: '雷霆钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430501': {
     Id: '30430501',
-    element: '5',
+    element: 'Shadow',
     image: '304009_01_30501',
     max: [65, 220],
     min: [19, 66],
@@ -6606,11 +6606,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Reaving Swing',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430502': {
     Id: '30430502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -6631,11 +6631,11 @@ const weapon = {
       zh: '黑暗遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30430503': {
     Id: '30430503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -6656,7 +6656,7 @@ const weapon = {
       zh: '暴力钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30439901': {
     Id: '30439901',
@@ -6670,7 +6670,7 @@ const weapon = {
       zh: '战士之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30439902': {
     Id: '30439902',
@@ -6688,7 +6688,7 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Ennobled Impact',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30439903': {
     Id: '30439903',
@@ -6706,7 +6706,7 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: "Juggernaut's Swing",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30439904': {
     Id: '30439904',
@@ -6727,7 +6727,7 @@ const weapon = {
       zh: '遗物之斧',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30439906': {
     Id: '30439906',
@@ -6748,11 +6748,11 @@ const weapon = {
       zh: '魁梧钢臂',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440102': {
     Id: '30440102',
-    element: '1',
+    element: 'Flame',
     image: '304010_01_40101',
     max: [95, 380],
     min: [28, 114],
@@ -6766,11 +6766,11 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Crimson Swing',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440103': {
     Id: '30440103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -6791,11 +6791,11 @@ const weapon = {
       zh: '天火奇观之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440105': {
     Id: '30440105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -6816,11 +6816,11 @@ const weapon = {
       zh: '绯焰钢臂',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440106': {
     Id: '30440106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -6842,11 +6842,11 @@ const weapon = {
       zh: '火焰破坏斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440107': {
     Id: '30440107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -6867,11 +6867,11 @@ const weapon = {
       zh: '日珥遗物之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440201': {
     Id: '30440201',
-    element: '2',
+    element: 'Water',
     image: '304011_01_40201',
     max: [105, 357],
     min: [31, 107],
@@ -6885,11 +6885,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Aqua Protection',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440202': {
     Id: '30440202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -6911,11 +6911,11 @@ const weapon = {
       zh: '怒涛战斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440203': {
     Id: '30440203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -6936,11 +6936,11 @@ const weapon = {
       zh: '暴雪遗物之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440205': {
     Id: '30440205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -6962,11 +6962,11 @@ const weapon = {
       zh: '冰霜破坏斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440206': {
     Id: '30440206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -6987,11 +6987,11 @@ const weapon = {
       zh: '暴雨锯齿斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440207': {
     Id: '30440207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -7012,11 +7012,11 @@ const weapon = {
       zh: '霜钻钢臂',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440301': {
     Id: '30440301',
-    element: '3',
+    element: 'Wind',
     image: '304016_01_40301',
     max: [105, 357],
     min: [31, 107],
@@ -7030,11 +7030,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Winged Protection',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440302': {
     Id: '30440302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -7055,11 +7055,11 @@ const weapon = {
       zh: '风暴遗物之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440303': {
     Id: '30440303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -7080,11 +7080,11 @@ const weapon = {
       zh: '翠岚奇观之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440304': {
     Id: '30440304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -7105,11 +7105,11 @@ const weapon = {
       zh: '风颤锯齿斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440305': {
     Id: '30440305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -7130,11 +7130,11 @@ const weapon = {
       zh: '猜忌战斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440306': {
     Id: '30440306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -7155,11 +7155,11 @@ const weapon = {
       zh: '冲击波钢臂',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440401': {
     Id: '30440401',
-    element: '4',
+    element: 'Light',
     image: '304015_01_40401',
     max: [105, 357],
     min: [31, 107],
@@ -7173,11 +7173,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Lightning's Protection",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440402': {
     Id: '30440402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -7198,11 +7198,11 @@ const weapon = {
       zh: '星煌奇观之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440403': {
     Id: '30440403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -7223,11 +7223,11 @@ const weapon = {
       zh: '绝灭遗物之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440404': {
     Id: '30440404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -7248,11 +7248,11 @@ const weapon = {
       zh: '电光钢臂',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440405': {
     Id: '30440405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -7275,11 +7275,11 @@ const weapon = {
       zh: '欲望巨斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440406': {
     Id: '30440406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -7301,11 +7301,11 @@ const weapon = {
       zh: '闪光破坏者',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440407': {
     Id: '30440407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -7327,11 +7327,11 @@ const weapon = {
       zh: '雷斧光牙',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440501': {
     Id: '30440501',
-    element: '5',
+    element: 'Shadow',
     image: '304030_01_40501',
     max: [95, 380],
     min: [28, 114],
@@ -7345,11 +7345,11 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Traitor Smiter',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440502': {
     Id: '30440502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -7370,11 +7370,11 @@ const weapon = {
       zh: '悔恨遗物之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440504': {
     Id: '30440504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -7396,11 +7396,11 @@ const weapon = {
       zh: '夺命巨斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440505': {
     Id: '30440505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -7421,11 +7421,11 @@ const weapon = {
       zh: '断头台钢臂',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30440506': {
     Id: '30440506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -7447,7 +7447,7 @@ const weapon = {
       zh: '影斧黑牙',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449901': {
     Id: '30449901',
@@ -7461,7 +7461,7 @@ const weapon = {
       zh: '平凡之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449902': {
     Id: '30449902',
@@ -7479,7 +7479,7 @@ const weapon = {
       image: 'Icon_Skill_002',
       title: 'Tyrant Swing',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449903': {
     Id: '30449903',
@@ -7497,7 +7497,7 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Memento's Protection",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449904': {
     Id: '30449904',
@@ -7518,7 +7518,7 @@ const weapon = {
       zh: '奇观之斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449905': {
     Id: '30449905',
@@ -7539,7 +7539,7 @@ const weapon = {
       zh: '怒号战斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449906': {
     Id: '30449906',
@@ -7561,7 +7561,7 @@ const weapon = {
       zh: '强力破坏斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449907': {
     Id: '30449907',
@@ -7582,7 +7582,7 @@ const weapon = {
       zh: '怒涛锯齿斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449908': {
     Id: '30449908',
@@ -7604,7 +7604,7 @@ const weapon = {
       zh: '破坏巨斧',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449909': {
     Id: '30449909',
@@ -7626,7 +7626,7 @@ const weapon = {
       zh: '巨型破坏者',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30449910': {
     Id: '30449910',
@@ -7648,11 +7648,11 @@ const weapon = {
       zh: '魁斧坚牙',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450101': {
     Id: '30450101',
-    element: '1',
+    element: 'Flame',
     image: '304027_01_50101',
     max: [155, 567],
     min: [46, 170],
@@ -7666,11 +7666,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Blazing Boost',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450102': {
     Id: '30450102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -7691,11 +7691,11 @@ const weapon = {
       zh: '天火奇观·震怒',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450103': {
     Id: '30450103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -7717,11 +7717,11 @@ const weapon = {
       zh: '赤炎破坏斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450104': {
     Id: '30450104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -7742,11 +7742,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Crimson Passion',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450105': {
     Id: '30450105',
-    element: '1',
+    element: 'Flame',
     image: '304111_01_50102',
     max: [255, 1559],
     min: [76, 467],
@@ -7760,11 +7760,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Royal Crimson Passion',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450201': {
     Id: '30450201',
-    element: '2',
+    element: 'Water',
     image: '304028_01_50201',
     max: [147, 584],
     min: [44, 175],
@@ -7778,11 +7778,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Seadragon's Impact",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450202': {
     Id: '30450202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -7804,11 +7804,11 @@ const weapon = {
       zh: '狂澜怒涛战斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450203': {
     Id: '30450203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -7830,11 +7830,11 @@ const weapon = {
       zh: '永冻破坏斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450204': {
     Id: '30450204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -7855,11 +7855,11 @@ const weapon = {
       zh: '暴风雨锯齿斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450205': {
     Id: '30450205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -7880,11 +7880,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Mercy's Embrace",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450206': {
     Id: '30450206',
-    element: '2',
+    element: 'Water',
     image: '304109_01_50202',
     max: [267, 1512],
     min: [80, 453],
@@ -7898,11 +7898,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Mercy's Azure Embrace",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450301': {
     Id: '30450301',
-    element: '3',
+    element: 'Wind',
     image: '304029_01_50301',
     max: [147, 584],
     min: [44, 175],
@@ -7916,11 +7916,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: 'Southern Impact',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450302': {
     Id: '30450302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -7941,11 +7941,11 @@ const weapon = {
       zh: '翠岚奇观之斧·恶意',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450303': {
     Id: '30450303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -7966,11 +7966,11 @@ const weapon = {
       zh: '暴流锯齿斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450304': {
     Id: '30450304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -7991,11 +7991,11 @@ const weapon = {
       zh: '堕忌暴岚战斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450305': {
     Id: '30450305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -8016,11 +8016,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Storm's Wisdom",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450306': {
     Id: '30450306',
-    element: '3',
+    element: 'Wind',
     image: '304108_01_50302',
     max: [267, 1512],
     min: [80, 453],
@@ -8034,11 +8034,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Glorystorm's Wisdom",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450401': {
     Id: '30450401',
-    element: '4',
+    element: 'Light',
     image: '304013_01_50401',
     max: [147, 584],
     min: [44, 175],
@@ -8052,11 +8052,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Radiant Boost',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450402': {
     Id: '30450402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -8077,11 +8077,11 @@ const weapon = {
       zh: '星煌奇观·愤怒',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450403': {
     Id: '30450403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -8104,11 +8104,11 @@ const weapon = {
       zh: '绝望巨斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450404': {
     Id: '30450404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -8129,11 +8129,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Thunder's Delight",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450405': {
     Id: '30450405',
-    element: '4',
+    element: 'Light',
     image: '304110_01_50402',
     max: [242, 1606],
     min: [72, 481],
@@ -8147,11 +8147,11 @@ const weapon = {
       image: 'Icon_Skill_003',
       title: "Mighty Thunder's Delight",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450406': {
     Id: '30450406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -8173,11 +8173,11 @@ const weapon = {
       zh: '电浆破坏者',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450407': {
     Id: '30450407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -8199,11 +8199,11 @@ const weapon = {
       zh: '轰雷斧雷牙',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450501': {
     Id: '30450501',
-    element: '5',
+    element: 'Shadow',
     image: '304014_01_50501',
     max: [155, 567],
     min: [46, 170],
@@ -8217,11 +8217,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Primordial Boost',
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450503': {
     Id: '30450503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -8243,11 +8243,11 @@ const weapon = {
       zh: '杀戮巨斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450504': {
     Id: '30450504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -8268,11 +8268,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Darkbite's Curse",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450505': {
     Id: '30450505',
-    element: '5',
+    element: 'Shadow',
     image: '304112_01_50502',
     max: [242, 1606],
     min: [72, 481],
@@ -8286,11 +8286,11 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Shadowy Darkbite's Curse",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30450506': {
     Id: '30450506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -8312,7 +8312,7 @@ const weapon = {
       zh: '闪影斧暗牙',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30459901': {
     Id: '30459901',
@@ -8326,7 +8326,7 @@ const weapon = {
       zh: '胜利之斧',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30459902': {
     Id: '30459902',
@@ -8344,7 +8344,7 @@ const weapon = {
       image: 'Icon_Skill_011',
       title: "Executioner's Impact",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30459903': {
     Id: '30459903',
@@ -8362,11 +8362,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Halfling's Focus",
     },
-    weapon: '4',
+    weapon: 'Axe',
   },
   '30530101': {
     Id: '30530101',
-    element: '1',
+    element: 'Flame',
     image: '305006_01_30101',
     max: [58, 227],
     min: [17, 68],
@@ -8380,11 +8380,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: "Hero's Descent",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530102': {
     Id: '30530102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -8405,11 +8405,11 @@ const weapon = {
       zh: '喷火阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530104': {
     Id: '30530104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -8431,11 +8431,11 @@ const weapon = {
       zh: '魂火之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530105': {
     Id: '30530105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -8456,11 +8456,11 @@ const weapon = {
       zh: '激昂之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530201': {
     Id: '30530201',
-    element: '2',
+    element: 'Water',
     image: '305007_01_30201',
     max: [61, 220],
     min: [18, 66],
@@ -8474,11 +8474,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Azure Whirlwind',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530202': {
     Id: '30530202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -8499,11 +8499,11 @@ const weapon = {
       zh: '泡沫阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530203': {
     Id: '30530203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -8524,11 +8524,11 @@ const weapon = {
       zh: '战栗之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530204': {
     Id: '30530204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -8549,11 +8549,11 @@ const weapon = {
       zh: '寒雅之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530301': {
     Id: '30530301',
-    element: '3',
+    element: 'Wind',
     image: '305017_01_30301',
     max: [58, 227],
     min: [17, 68],
@@ -8567,11 +8567,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: "Gale's Descent",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530302': {
     Id: '30530302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -8592,11 +8592,11 @@ const weapon = {
       zh: '追忆之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530303': {
     Id: '30530303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -8617,11 +8617,11 @@ const weapon = {
       zh: '激流阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530304': {
     Id: '30530304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -8642,11 +8642,11 @@ const weapon = {
       zh: '恶魔风枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530401': {
     Id: '30530401',
-    element: '4',
+    element: 'Light',
     image: '305008_01_30401',
     max: [61, 220],
     min: [18, 66],
@@ -8660,11 +8660,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Lunar Whirlwind',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530402': {
     Id: '30530402',
-    element: '4',
+    element: 'Light',
     image: '305028_01_30401',
     max: [55, 198],
     min: [16, 59],
@@ -8678,11 +8678,11 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: 'Pumpkin Barrage',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530403': {
     Id: '30530403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -8703,11 +8703,11 @@ const weapon = {
       zh: '祈愿之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530404': {
     Id: '30530404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -8728,11 +8728,11 @@ const weapon = {
       zh: '闪光阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530501': {
     Id: '30530501',
-    element: '5',
+    element: 'Shadow',
     image: '305034_01_30501',
     max: [61, 220],
     min: [18, 66],
@@ -8746,11 +8746,11 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Dark Whirlwind',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530502': {
     Id: '30530502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -8771,11 +8771,11 @@ const weapon = {
       zh: '妄念之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530503': {
     Id: '30530503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -8796,11 +8796,11 @@ const weapon = {
       zh: '鲜血之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30530504': {
     Id: '30530504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -8821,7 +8821,7 @@ const weapon = {
       zh: '感染阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539901': {
     Id: '30539901',
@@ -8835,7 +8835,7 @@ const weapon = {
       zh: '三叉戟',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539902': {
     Id: '30539902',
@@ -8853,7 +8853,7 @@ const weapon = {
       image: 'Icon_Skill_004',
       title: 'Shattering Whirlwind',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539903': {
     Id: '30539903',
@@ -8871,7 +8871,7 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Spiralling Descent',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539904': {
     Id: '30539904',
@@ -8892,7 +8892,7 @@ const weapon = {
       zh: '尖枪阳伞',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539905': {
     Id: '30539905',
@@ -8913,7 +8913,7 @@ const weapon = {
       zh: '怨念之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30539906': {
     Id: '30539906',
@@ -8934,11 +8934,11 @@ const weapon = {
       zh: '恐怖之枪',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540101': {
     Id: '30540101',
-    element: '1',
+    element: 'Flame',
     image: '305031_01_40101',
     max: [99, 358],
     min: [29, 107],
@@ -8952,11 +8952,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Way of the Serpent',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540102': {
     Id: '30540102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -8977,11 +8977,11 @@ const weapon = {
       zh: '焚身阳伞',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540104': {
     Id: '30540104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -9002,11 +9002,11 @@ const weapon = {
       zh: '烈焰之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540105': {
     Id: '30540105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -9028,11 +9028,11 @@ const weapon = {
       zh: '红炎枪莱泽尔',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540106': {
     Id: '30540106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -9054,11 +9054,11 @@ const weapon = {
       zh: '灵焰之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540107': {
     Id: '30540107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -9079,11 +9079,11 @@ const weapon = {
       zh: '激昂与业火之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540201': {
     Id: '30540201',
-    element: '2',
+    element: 'Water',
     image: '305016_01_40201',
     max: [94, 369],
     min: [28, 110],
@@ -9097,11 +9097,11 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: 'Abyssal Barrage',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540202': {
     Id: '30540202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -9122,11 +9122,11 @@ const weapon = {
       zh: '喷溅阳伞',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540203': {
     Id: '30540203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -9148,11 +9148,11 @@ const weapon = {
       zh: '波澜凶兽之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540204': {
     Id: '30540204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -9173,11 +9173,11 @@ const weapon = {
       zh: '战栗与冷酷之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540205': {
     Id: '30540205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -9199,11 +9199,11 @@ const weapon = {
       zh: '海涡枪斯托罗姆',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540206': {
     Id: '30540206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -9224,11 +9224,11 @@ const weapon = {
       zh: '律冰三叉戟',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540207': {
     Id: '30540207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -9249,11 +9249,11 @@ const weapon = {
       zh: '冰雅之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540302': {
     Id: '30540302',
-    element: '3',
+    element: 'Wind',
     image: '305011_01_40301',
     max: [94, 369],
     min: [28, 110],
@@ -9267,11 +9267,11 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: 'Tempest Barrage',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540303': {
     Id: '30540303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -9292,11 +9292,11 @@ const weapon = {
       zh: '追忆与晴岚之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540304': {
     Id: '30540304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -9317,11 +9317,11 @@ const weapon = {
       zh: '龙卷阳伞',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540305': {
     Id: '30540305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -9342,11 +9342,11 @@ const weapon = {
       zh: '震岚之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540306': {
     Id: '30540306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -9367,11 +9367,11 @@ const weapon = {
       zh: '不灭风枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540307': {
     Id: '30540307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -9392,11 +9392,11 @@ const weapon = {
       zh: '御风三叉戟',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540308': {
     Id: '30540308',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -9417,11 +9417,11 @@ const weapon = {
       zh: '悬浮凶兽之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540402': {
     Id: '30540402',
-    element: '4',
+    element: 'Light',
     image: '305012_01_40401',
     max: [99, 358],
     min: [29, 107],
@@ -9435,11 +9435,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Thunder's Focus",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540403': {
     Id: '30540403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -9460,11 +9460,11 @@ const weapon = {
       zh: '祈愿与奇迹之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540405': {
     Id: '30540405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -9485,11 +9485,11 @@ const weapon = {
       zh: '闪耀阳伞',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540406': {
     Id: '30540406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -9512,11 +9512,11 @@ const weapon = {
       zh: '圣枪暮光',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540407': {
     Id: '30540407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -9538,11 +9538,11 @@ const weapon = {
       zh: '光枪·突刺',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540408': {
     Id: '30540408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -9564,11 +9564,11 @@ const weapon = {
       zh: '裂光锐锋',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540501': {
     Id: '30540501',
-    element: '5',
+    element: 'Shadow',
     image: '305035_01_40501',
     max: [99, 358],
     min: [29, 107],
@@ -9582,11 +9582,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Hellish Focus',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540502': {
     Id: '30540502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -9607,11 +9607,11 @@ const weapon = {
       zh: '噩梦与妄念之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540504': {
     Id: '30540504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -9632,11 +9632,11 @@ const weapon = {
       zh: '末路之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540505': {
     Id: '30540505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -9658,11 +9658,11 @@ const weapon = {
       zh: '邪枪日食',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540506': {
     Id: '30540506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -9683,11 +9683,11 @@ const weapon = {
       zh: '瘟疫阳伞',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30540507': {
     Id: '30540507',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -9709,7 +9709,7 @@ const weapon = {
       zh: '忌咒锐锋',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549901': {
     Id: '30549901',
@@ -9723,7 +9723,7 @@ const weapon = {
       zh: '强者之戟',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549902': {
     Id: '30549902',
@@ -9741,7 +9741,7 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Sharp Focus',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549903': {
     Id: '30549903',
@@ -9759,7 +9759,7 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: "Ironsides's Barrage",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549904': {
     Id: '30549904',
@@ -9780,7 +9780,7 @@ const weapon = {
       zh: '狂野凶兽之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549905': {
     Id: '30549905',
@@ -9802,7 +9802,7 @@ const weapon = {
       zh: '击枪安格里夫',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549906': {
     Id: '30549906',
@@ -9823,7 +9823,7 @@ const weapon = {
       zh: '巨鹫之枪',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549907': {
     Id: '30549907',
@@ -9844,7 +9844,7 @@ const weapon = {
       zh: '统治者三叉戟',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549908': {
     Id: '30549908',
@@ -9866,7 +9866,7 @@ const weapon = {
       zh: '彩枪铁线莲',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549909': {
     Id: '30549909',
@@ -9888,7 +9888,7 @@ const weapon = {
       zh: '真枪·幻影',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30549910': {
     Id: '30549910',
@@ -9910,11 +9910,11 @@ const weapon = {
       zh: '无门锐锋',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550101': {
     Id: '30550101',
-    element: '1',
+    element: 'Flame',
     image: '305030_01_50101',
     max: [145, 567],
     min: [43, 170],
@@ -9928,11 +9928,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Calamitous Descent',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550102': {
     Id: '30550102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -9953,11 +9953,11 @@ const weapon = {
       zh: '炎轰乱舞之枪',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550103': {
     Id: '30550103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -9979,11 +9979,11 @@ const weapon = {
       zh: '红炎枪莱泽菲尔德',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550104': {
     Id: '30550104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -10004,11 +10004,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Crimson Beacon',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550105': {
     Id: '30550105',
-    element: '1',
+    element: 'Flame',
     image: '305118_01_50102',
     max: [240, 1560],
     min: [72, 468],
@@ -10022,11 +10022,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Crimson Wildfire',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550201': {
     Id: '30550201',
-    element: '2',
+    element: 'Water',
     image: '305014_01_50201',
     max: [165, 523],
     min: [49, 156],
@@ -10040,11 +10040,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Ocean's Healing",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550202': {
     Id: '30550202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -10066,11 +10066,11 @@ const weapon = {
       zh: '旋涡之枪',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550203': {
     Id: '30550203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -10092,11 +10092,11 @@ const weapon = {
       zh: '海涡枪斯托罗姆玛雷',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550204': {
     Id: '30550204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -10117,11 +10117,11 @@ const weapon = {
       zh: '御冰三叉戟',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550205': {
     Id: '30550205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -10142,11 +10142,11 @@ const weapon = {
       image: 'Icon_Skill_022',
       title: 'Limpid Petals',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550206': {
     Id: '30550206',
-    element: '2',
+    element: 'Water',
     image: '305116_01_50202',
     max: [240, 1560],
     min: [72, 468],
@@ -10160,11 +10160,11 @@ const weapon = {
       image: 'Icon_Skill_022',
       title: 'Limpid Shore',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550301': {
     Id: '30550301',
-    element: '3',
+    element: 'Wind',
     image: '305032_01_50301',
     max: [165, 523],
     min: [49, 156],
@@ -10178,11 +10178,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Northern Healing',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550302': {
     Id: '30550302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -10203,11 +10203,11 @@ const weapon = {
       zh: '狂风巨岚之枪',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550303': {
     Id: '30550303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -10228,11 +10228,11 @@ const weapon = {
       zh: '御岚三叉戟',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550304': {
     Id: '30550304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -10253,11 +10253,11 @@ const weapon = {
       zh: '飞空凶兽之枪',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550305': {
     Id: '30550305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -10278,11 +10278,11 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: 'Sworn Gale',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550306': {
     Id: '30550306',
-    element: '3',
+    element: 'Wind',
     image: '305115_01_50302',
     max: [252, 1515],
     min: [75, 454],
@@ -10296,11 +10296,11 @@ const weapon = {
       image: 'Icon_Skill_012',
       title: 'Glorious Gale',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550402': {
     Id: '30550402',
-    element: '4',
+    element: 'Light',
     image: '305033_01_50401',
     max: [145, 567],
     min: [43, 170],
@@ -10314,11 +10314,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: "Thunder's Descent",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550404': {
     Id: '30550404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -10341,11 +10341,11 @@ const weapon = {
       zh: '圣枪失落暮光',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550405': {
     Id: '30550405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -10366,11 +10366,11 @@ const weapon = {
       image: 'Icon_Skill_022',
       title: 'Flashing Thunder',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550406': {
     Id: '30550406',
-    element: '4',
+    element: 'Light',
     image: '305117_01_50402',
     max: [240, 1560],
     min: [72, 468],
@@ -10384,11 +10384,11 @@ const weapon = {
       image: 'Icon_Skill_022',
       title: 'Brilliant Thunder',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550407': {
     Id: '30550407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -10410,11 +10410,11 @@ const weapon = {
       zh: '光枪·洞穿',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550408': {
     Id: '30550408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -10436,11 +10436,11 @@ const weapon = {
       zh: '极煌锐锋',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550501': {
     Id: '30550501',
-    element: '5',
+    element: 'Shadow',
     image: '305036_01_50501',
     max: [145, 567],
     min: [43, 170],
@@ -10454,11 +10454,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: "Heaven's Mistletoe",
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550503': {
     Id: '30550503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -10480,11 +10480,11 @@ const weapon = {
       zh: '邪枪恶魔日食',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550504': {
     Id: '30550504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -10505,11 +10505,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Hazy Hex',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550505': {
     Id: '30550505',
-    element: '5',
+    element: 'Shadow',
     image: '305119_01_50502',
     max: [272, 1439],
     min: [81, 431],
@@ -10523,11 +10523,11 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Shadowy Hex',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30550506': {
     Id: '30550506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -10549,7 +10549,7 @@ const weapon = {
       zh: '灾祸锐锋',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30559901': {
     Id: '30559901',
@@ -10563,7 +10563,7 @@ const weapon = {
       zh: '护法之枪',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30559902': {
     Id: '30559902',
@@ -10581,7 +10581,7 @@ const weapon = {
       image: 'Icon_Skill_019',
       title: 'Explosive Descent',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30559903': {
     Id: '30559903',
@@ -10599,11 +10599,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Accursed Healing',
     },
-    weapon: '5',
+    weapon: 'Lance',
   },
   '30630101': {
     Id: '30630101',
-    element: '1',
+    element: 'Flame',
     image: '306006_01_30101',
     max: [56, 214],
     min: [16, 64],
@@ -10617,11 +10617,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Flare Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630102': {
     Id: '30630102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -10642,11 +10642,11 @@ const weapon = {
       zh: '火蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630104': {
     Id: '30630104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -10668,11 +10668,11 @@ const weapon = {
       zh: '摇曳灯火之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630105': {
     Id: '30630105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -10693,11 +10693,11 @@ const weapon = {
       zh: '阳炎之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630201': {
     Id: '30630201',
-    element: '2',
+    element: 'Water',
     image: '306007_01_30201',
     max: [59, 207],
     min: [17, 62],
@@ -10711,11 +10711,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: 'Tidal Strength',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630202': {
     Id: '30630202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -10736,11 +10736,11 @@ const weapon = {
       zh: '冰蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630203': {
     Id: '30630203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -10761,11 +10761,11 @@ const weapon = {
       zh: '霜雪之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630204': {
     Id: '30630204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -10786,11 +10786,11 @@ const weapon = {
       zh: '喧嚣海鸣之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630302': {
     Id: '30630302',
-    element: '3',
+    element: 'Wind',
     image: '306003_01_30301',
     max: [56, 214],
     min: [16, 64],
@@ -10804,11 +10804,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Wind Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630303': {
     Id: '30630303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -10829,11 +10829,11 @@ const weapon = {
       zh: '风歌之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630304': {
     Id: '30630304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -10854,11 +10854,11 @@ const weapon = {
       zh: '风蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630305': {
     Id: '30630305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -10879,11 +10879,11 @@ const weapon = {
       zh: '低吟之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630401': {
     Id: '30630401',
-    element: '4',
+    element: 'Light',
     image: '306009_01_30401',
     max: [56, 214],
     min: [16, 64],
@@ -10897,11 +10897,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Galvanic Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630402': {
     Id: '30630402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -10922,11 +10922,11 @@ const weapon = {
       zh: '清香之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630403': {
     Id: '30630403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -10947,11 +10947,11 @@ const weapon = {
       zh: '雷光蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630501': {
     Id: '30630501',
-    element: '5',
+    element: 'Shadow',
     image: '306018_01_30501',
     max: [59, 207],
     min: [17, 62],
@@ -10965,11 +10965,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: 'Cimmerian Strength',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630502': {
     Id: '30630502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -10990,11 +10990,11 @@ const weapon = {
       zh: '幽香之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630503': {
     Id: '30630503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -11015,11 +11015,11 @@ const weapon = {
       zh: '暗黑疯笑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30630504': {
     Id: '30630504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -11040,7 +11040,7 @@ const weapon = {
       zh: '死亡蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639901': {
     Id: '30639901',
@@ -11054,7 +11054,7 @@ const weapon = {
       zh: '复合弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639902': {
     Id: '30639902',
@@ -11072,7 +11072,7 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Mechanical Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639903': {
     Id: '30639903',
@@ -11090,7 +11090,7 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: "Hunter's Strength",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639904': {
     Id: '30639904',
@@ -11111,7 +11111,7 @@ const weapon = {
       zh: '蘑弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639905': {
     Id: '30639905',
@@ -11132,7 +11132,7 @@ const weapon = {
       zh: '芳香之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30639906': {
     Id: '30639906',
@@ -11153,11 +11153,11 @@ const weapon = {
       zh: '嘲弄之弓',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640102': {
     Id: '30640102',
-    element: '1',
+    element: 'Flame',
     image: '306028_01_40101',
     max: [90, 347],
     min: [27, 104],
@@ -11171,11 +11171,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Infernal Smash',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640103': {
     Id: '30640103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -11196,11 +11196,11 @@ const weapon = {
       zh: '日珥蘑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640105': {
     Id: '30640105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -11221,11 +11221,11 @@ const weapon = {
       zh: '红莲弓·火山',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640106': {
     Id: '30640106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -11247,11 +11247,11 @@ const weapon = {
       zh: '燃灼鬼火之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640107': {
     Id: '30640107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -11273,11 +11273,11 @@ const weapon = {
       zh: '炎狱之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640108': {
     Id: '30640108',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060005',
@@ -11298,11 +11298,11 @@ const weapon = {
       zh: '红焰之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640201': {
     Id: '30640201',
-    element: '2',
+    element: 'Water',
     image: '306010_01_40201',
     max: [90, 347],
     min: [27, 104],
@@ -11316,11 +11316,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Frost Smash',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640202': {
     Id: '30640202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -11341,11 +11341,11 @@ const weapon = {
       zh: '冰川蘑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640203': {
     Id: '30640203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060005',
@@ -11366,11 +11366,11 @@ const weapon = {
       zh: '霜涛之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640204': {
     Id: '30640204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -11392,11 +11392,11 @@ const weapon = {
       zh: '冰狱之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640205': {
     Id: '30640205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -11417,11 +11417,11 @@ const weapon = {
       zh: '贯穿冰壁之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640206': {
     Id: '30640206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -11442,11 +11442,11 @@ const weapon = {
       zh: '狂怒涛声之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640302': {
     Id: '30640302',
-    element: '3',
+    element: 'Wind',
     image: '306008_01_40301',
     max: [90, 347],
     min: [27, 104],
@@ -11460,11 +11460,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Gale Smash',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640303': {
     Id: '30640303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060005',
@@ -11485,11 +11485,11 @@ const weapon = {
       zh: '岚震之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640304': {
     Id: '30640304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -11510,11 +11510,11 @@ const weapon = {
       zh: '风暴蘑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640305': {
     Id: '30640305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -11535,11 +11535,11 @@ const weapon = {
       zh: '风尘弓·温特',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640306': {
     Id: '30640306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -11560,11 +11560,11 @@ const weapon = {
       zh: '尖笑之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640307': {
     Id: '30640307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -11585,11 +11585,11 @@ const weapon = {
       zh: '破风之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640403': {
     Id: '30640403',
-    element: '4',
+    element: 'Light',
     image: '306037_01_40401',
     max: [103, 320],
     min: [30, 96],
@@ -11603,11 +11603,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Holy Energy',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640404': {
     Id: '30640404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060005',
@@ -11628,11 +11628,11 @@ const weapon = {
       zh: '天薰之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640406': {
     Id: '30640406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -11653,11 +11653,11 @@ const weapon = {
       zh: '雷霆蘑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640407': {
     Id: '30640407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -11680,11 +11680,11 @@ const weapon = {
       zh: '绚烂弓姬百合',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640408': {
     Id: '30640408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -11706,11 +11706,11 @@ const weapon = {
       zh: '闪烁之新星',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640501': {
     Id: '30640501',
-    element: '5',
+    element: 'Shadow',
     image: '306016_01_40501',
     max: [103, 320],
     min: [30, 96],
@@ -11724,11 +11724,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Macabre Energy',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640502': {
     Id: '30640502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060005',
@@ -11749,11 +11749,11 @@ const weapon = {
       zh: '冥薰之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640503': {
     Id: '30640503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -11774,11 +11774,11 @@ const weapon = {
       zh: '暗夜狂笑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640504': {
     Id: '30640504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -11800,11 +11800,11 @@ const weapon = {
       zh: '妖华弓大丽花',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640505': {
     Id: '30640505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -11825,11 +11825,11 @@ const weapon = {
       zh: '墓穴蘑弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30640506': {
     Id: '30640506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -11851,7 +11851,7 @@ const weapon = {
       zh: '灾厄之新星',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649901': {
     Id: '30649901',
@@ -11865,7 +11865,7 @@ const weapon = {
       zh: '执行者之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649902': {
     Id: '30649902',
@@ -11883,7 +11883,7 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Faerie Smash',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649903': {
     Id: '30649903',
@@ -11901,7 +11901,7 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Duskhawk's Energy",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649904': {
     Id: '30649904',
@@ -11922,7 +11922,7 @@ const weapon = {
       zh: '刚弓·飞鹰',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649905': {
     Id: '30649905',
@@ -11944,7 +11944,7 @@ const weapon = {
       zh: '贯穿之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649906': {
     Id: '30649906',
@@ -11965,7 +11965,7 @@ const weapon = {
       zh: '不倚之弓',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649907': {
     Id: '30649907',
@@ -11987,7 +11987,7 @@ const weapon = {
       zh: '硬弓小苍兰',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30649908': {
     Id: '30649908',
@@ -12009,11 +12009,11 @@ const weapon = {
       zh: '虚无之新星',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650101': {
     Id: '30650101',
-    element: '1',
+    element: 'Flame',
     image: '306027_01_50101',
     max: [147, 518],
     min: [44, 155],
@@ -12027,11 +12027,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Lupine Vision',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650102': {
     Id: '30650102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -12052,11 +12052,11 @@ const weapon = {
       zh: '红莲弓·火山之怒',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650103': {
     Id: '30650103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -12078,11 +12078,11 @@ const weapon = {
       zh: '焦热炎极之弓',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650104': {
     Id: '30650104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -12103,11 +12103,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Valkyrie's Raid",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650105': {
     Id: '30650105',
-    element: '1',
+    element: 'Flame',
     image: '306111_01_50102',
     max: [230, 1468],
     min: [69, 440],
@@ -12121,11 +12121,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Valkyrie's Heroic Raid",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650201': {
     Id: '30650201',
-    element: '2',
+    element: 'Water',
     image: '306029_01_50201',
     max: [147, 518],
     min: [44, 155],
@@ -12139,11 +12139,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Peacock Shot',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650202': {
     Id: '30650202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -12165,11 +12165,11 @@ const weapon = {
       zh: '久远冰绝之弓',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650203': {
     Id: '30650203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -12190,11 +12190,11 @@ const weapon = {
       zh: '穿凿冰狱之弓',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650204': {
     Id: '30650204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -12215,11 +12215,11 @@ const weapon = {
       image: 'Icon_Skill_015',
       title: "Mercurius's Knowledge",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650205': {
     Id: '30650205',
-    element: '2',
+    element: 'Water',
     image: '306109_01_50202',
     max: [242, 1426],
     min: [72, 427],
@@ -12233,11 +12233,11 @@ const weapon = {
       image: 'Icon_Skill_015',
       title: "Mercurius's Transcendant Knowledge",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650302': {
     Id: '30650302',
-    element: '3',
+    element: 'Wind',
     image: '306030_01_50301',
     max: [147, 518],
     min: [44, 155],
@@ -12251,11 +12251,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Pegasus Shot',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650303': {
     Id: '30650303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -12276,11 +12276,11 @@ const weapon = {
       zh: '风尘弓·温特霍泽',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650304': {
     Id: '30650304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -12301,11 +12301,11 @@ const weapon = {
       zh: '破空之弓',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650305': {
     Id: '30650305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -12326,11 +12326,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Jormungand's World",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650306': {
     Id: '30650306',
-    element: '3',
+    element: 'Wind',
     image: '306108_01_50302',
     max: [242, 1426],
     min: [72, 427],
@@ -12344,11 +12344,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: "Jormungand's Boundless World",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650402': {
     Id: '30650402',
-    element: '4',
+    element: 'Light',
     image: '306031_01_50401',
     max: [140, 534],
     min: [42, 160],
@@ -12362,11 +12362,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Divine Thunder',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650404': {
     Id: '30650404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -12389,11 +12389,11 @@ const weapon = {
       zh: '绚烂弓鬼百合',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650405': {
     Id: '30650405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -12414,11 +12414,11 @@ const weapon = {
       image: 'Icon_Skill_015',
       title: "Jupiter's Protection",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650406': {
     Id: '30650406',
-    element: '4',
+    element: 'Light',
     image: '306110_01_50402',
     max: [262, 1354],
     min: [78, 406],
@@ -12432,11 +12432,11 @@ const weapon = {
       image: 'Icon_Skill_015',
       title: "Jupiter's Celestial Protection",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650407': {
     Id: '30650407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -12458,11 +12458,11 @@ const weapon = {
       zh: '天响之新星',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650501': {
     Id: '30650501',
-    element: '5',
+    element: 'Shadow',
     image: '306014_01_50501',
     max: [140, 534],
     min: [42, 160],
@@ -12476,11 +12476,11 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Necro Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650502': {
     Id: '30650502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -12502,11 +12502,11 @@ const weapon = {
       zh: '妖华弓玫瑰大丽花',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650503': {
     Id: '30650503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -12527,11 +12527,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: "Prophecy's Guidance",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650504': {
     Id: '30650504',
-    element: '5',
+    element: 'Shadow',
     image: '306112_01_50502',
     max: [242, 1426],
     min: [72, 427],
@@ -12545,11 +12545,11 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: "Prophecy's Immaculate Guidance",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30650505': {
     Id: '30650505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -12571,7 +12571,7 @@ const weapon = {
       zh: '无情之新星',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30659901': {
     Id: '30659901',
@@ -12585,7 +12585,7 @@ const weapon = {
       zh: '琴弓尼托拉里卡',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30659902': {
     Id: '30659902',
@@ -12603,7 +12603,7 @@ const weapon = {
       image: 'Icon_Skill_028',
       title: 'Midair Buster',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30659903': {
     Id: '30659903',
@@ -12621,7 +12621,7 @@ const weapon = {
       image: 'Icon_Skill_017',
       title: 'Star Volley',
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30659904': {
     Id: '30659904',
@@ -12639,11 +12639,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Chimera's Boost",
     },
-    weapon: '6',
+    weapon: 'Bow',
   },
   '30730101': {
     Id: '30730101',
-    element: '1',
+    element: 'Flame',
     image: '307006_01_30101',
     max: [56, 222],
     min: [16, 66],
@@ -12657,11 +12657,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Sunrise Blast',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730102': {
     Id: '30730102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -12682,11 +12682,11 @@ const weapon = {
       zh: '灼热之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730103': {
     Id: '30730103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -12707,11 +12707,11 @@ const weapon = {
       zh: '熔岩之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730104': {
     Id: '30730104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -12733,11 +12733,11 @@ const weapon = {
       zh: '阳炎魔杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730201': {
     Id: '30730201',
-    element: '2',
+    element: 'Water',
     image: '307033_01_30201',
     max: [56, 222],
     min: [16, 66],
@@ -12751,11 +12751,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Ocean Blast',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730202': {
     Id: '30730202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -12776,11 +12776,11 @@ const weapon = {
       zh: '哀嚎之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730203': {
     Id: '30730203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -12801,11 +12801,11 @@ const weapon = {
       zh: '冰冷之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730204': {
     Id: '30730204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -12826,11 +12826,11 @@ const weapon = {
       zh: '水镜魔杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730301': {
     Id: '30730301',
-    element: '3',
+    element: 'Wind',
     image: '307007_01_30301',
     max: [54, 229],
     min: [16, 68],
@@ -12844,11 +12844,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Storm Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730302': {
     Id: '30730302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -12869,11 +12869,11 @@ const weapon = {
       zh: '噪声之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730303': {
     Id: '30730303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -12894,11 +12894,11 @@ const weapon = {
       zh: '阵风魔杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730304': {
     Id: '30730304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -12919,11 +12919,11 @@ const weapon = {
       zh: '冻结之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730401': {
     Id: '30730401',
-    element: '4',
+    element: 'Light',
     image: '307021_01_30401',
     max: [54, 229],
     min: [16, 68],
@@ -12937,11 +12937,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Electrical Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730402': {
     Id: '30730402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -12962,11 +12962,11 @@ const weapon = {
       zh: '惊恐之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730403': {
     Id: '30730403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -12987,11 +12987,11 @@ const weapon = {
       zh: '棱镜之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730501': {
     Id: '30730501',
-    element: '5',
+    element: 'Shadow',
     image: '307008_01_30501',
     max: [56, 222],
     min: [16, 66],
@@ -13005,11 +13005,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Dark Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730502': {
     Id: '30730502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -13030,11 +13030,11 @@ const weapon = {
       zh: '邪念魔杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730503': {
     Id: '30730503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -13055,11 +13055,11 @@ const weapon = {
       zh: '深邃之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30730504': {
     Id: '30730504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -13080,7 +13080,7 @@ const weapon = {
       zh: '呜咽之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739901': {
     Id: '30739901',
@@ -13094,7 +13094,7 @@ const weapon = {
       zh: '魔法师之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739902': {
     Id: '30739902',
@@ -13112,7 +13112,7 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: "Sorcerer's Blast",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739903': {
     Id: '30739903',
@@ -13130,7 +13130,7 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Conchoidal Blast',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739904': {
     Id: '30739904',
@@ -13151,7 +13151,7 @@ const weapon = {
       zh: '芳香之首',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739905': {
     Id: '30739905',
@@ -13172,7 +13172,7 @@ const weapon = {
       zh: '烦扰魔杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30739906': {
     Id: '30739906',
@@ -13193,11 +13193,11 @@ const weapon = {
       zh: '沉重之杖',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740101': {
     Id: '30740101',
-    element: '1',
+    element: 'Flame',
     image: '307016_01_40101',
     max: [87, 372],
     min: [26, 111],
@@ -13211,11 +13211,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: "Firefiend's Discharge",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740102': {
     Id: '30740102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060001',
@@ -13236,11 +13236,11 @@ const weapon = {
       zh: '焚化之首',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740103': {
     Id: '30740103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -13261,11 +13261,11 @@ const weapon = {
       zh: '火山之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740104': {
     Id: '30740104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -13286,11 +13286,11 @@ const weapon = {
       zh: '妖火宝笏',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740105': {
     Id: '30740105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1070005',
@@ -13312,11 +13312,11 @@ const weapon = {
       zh: '迷幻阳炎魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740106': {
     Id: '30740106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -13338,11 +13338,11 @@ const weapon = {
       zh: '灼热魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740201': {
     Id: '30740201',
-    element: '2',
+    element: 'Water',
     image: '307036_01_40201',
     max: [96, 351],
     min: [28, 105],
@@ -13356,11 +13356,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Lachrymal Protection',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740202': {
     Id: '30740202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -13381,11 +13381,11 @@ const weapon = {
       zh: '悲鸣之首',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740203': {
     Id: '30740203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -13407,11 +13407,11 @@ const weapon = {
       zh: '波兽之翼',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740204': {
     Id: '30740204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -13433,11 +13433,11 @@ const weapon = {
       zh: '驭影魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740205': {
     Id: '30740205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060002',
@@ -13458,11 +13458,11 @@ const weapon = {
       zh: '冰霜之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740206': {
     Id: '30740206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -13483,11 +13483,11 @@ const weapon = {
       zh: '海流支配者',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740207': {
     Id: '30740207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -13508,11 +13508,11 @@ const weapon = {
       zh: '幽境魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740301': {
     Id: '30740301',
-    element: '3',
+    element: 'Wind',
     image: '307018_01_40301',
     max: [87, 372],
     min: [26, 111],
@@ -13526,11 +13526,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Tempestuous Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740302': {
     Id: '30740302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060001',
@@ -13551,11 +13551,11 @@ const weapon = {
       zh: '狂怒之首',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740303': {
     Id: '30740303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -13576,11 +13576,11 @@ const weapon = {
       zh: '烈风宝笏',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740304': {
     Id: '30740304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1070005',
@@ -13601,11 +13601,11 @@ const weapon = {
       zh: '妖风魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740305': {
     Id: '30740305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -13626,11 +13626,11 @@ const weapon = {
       zh: '风暴支配者',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740306': {
     Id: '30740306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060002',
@@ -13651,11 +13651,11 @@ const weapon = {
       zh: '暴风之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740307': {
     Id: '30740307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -13676,11 +13676,11 @@ const weapon = {
       zh: '风兽之翼',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740402': {
     Id: '30740402',
-    element: '4',
+    element: 'Light',
     image: '307010_01_40401',
     max: [96, 351],
     min: [28, 105],
@@ -13694,11 +13694,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Conductive Protection',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740404': {
     Id: '30740404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060001',
@@ -13719,11 +13719,11 @@ const weapon = {
       zh: '疯狂之首',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740405': {
     Id: '30740405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060002',
@@ -13744,11 +13744,11 @@ const weapon = {
       zh: '彩虹之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740406': {
     Id: '30740406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -13771,11 +13771,11 @@ const weapon = {
       zh: '圣徒安魂曲',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740407': {
     Id: '30740407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -13797,11 +13797,11 @@ const weapon = {
       zh: '撼天之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740501': {
     Id: '30740501',
-    element: '5',
+    element: 'Shadow',
     image: '307011_01_40501',
     max: [87, 372],
     min: [26, 111],
@@ -13815,11 +13815,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Accursed Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740503': {
     Id: '30740503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1070005',
@@ -13840,11 +13840,11 @@ const weapon = {
       zh: '不祥邪念魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740504': {
     Id: '30740504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060002',
@@ -13865,11 +13865,11 @@ const weapon = {
       zh: '深渊之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740505': {
     Id: '30740505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -13891,11 +13891,11 @@ const weapon = {
       zh: '哀怨安魂曲',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740506': {
     Id: '30740506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -13916,11 +13916,11 @@ const weapon = {
       zh: '哀怨之首',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30740507': {
     Id: '30740507',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -13942,7 +13942,7 @@ const weapon = {
       zh: '撼沌之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749901': {
     Id: '30749901',
@@ -13956,7 +13956,7 @@ const weapon = {
       zh: '匙之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749902': {
     Id: '30749902',
@@ -13974,7 +13974,7 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Alchemic Discharge',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749903': {
     Id: '30749903',
@@ -13992,7 +13992,7 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Moonlight's Protection",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749904': {
     Id: '30749904',
@@ -14013,7 +14013,7 @@ const weapon = {
       zh: '兽之翼',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749905': {
     Id: '30749905',
@@ -14034,7 +14034,7 @@ const weapon = {
       zh: '灵魂宝笏',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749906': {
     Id: '30749906',
@@ -14056,7 +14056,7 @@ const weapon = {
       zh: '驭火魔杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749907': {
     Id: '30749907',
@@ -14077,7 +14077,7 @@ const weapon = {
       zh: '远古支配者',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749908': {
     Id: '30749908',
@@ -14099,7 +14099,7 @@ const weapon = {
       zh: '慰藉安魂曲',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30749909': {
     Id: '30749909',
@@ -14121,11 +14121,11 @@ const weapon = {
       zh: '撼地之杖',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750101': {
     Id: '30750101',
-    element: '1',
+    element: 'Flame',
     image: '307015_01_50101',
     max: [152, 528],
     min: [45, 158],
@@ -14139,11 +14139,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Grand Healing',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750102': {
     Id: '30750102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -14164,11 +14164,11 @@ const weapon = {
       zh: '无尽焰宝笏',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750103': {
     Id: '30750103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -14190,11 +14190,11 @@ const weapon = {
       zh: '炽热魔杖',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750104': {
     Id: '30750104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -14215,11 +14215,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Crimson Flames',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750105': {
     Id: '30750105',
-    element: '1',
+    element: 'Flame',
     image: '307119_01_50102',
     max: [251, 1453],
     min: [75, 435],
@@ -14233,11 +14233,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Adoring Flames',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750202': {
     Id: '30750202',
-    element: '2',
+    element: 'Water',
     image: '307032_01_50201',
     max: [134, 573],
     min: [40, 171],
@@ -14251,11 +14251,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: "Monarch's Blast",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750203': {
     Id: '30750203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -14277,11 +14277,11 @@ const weapon = {
       zh: '海啸兽之翼',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750204': {
     Id: '30750204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -14303,11 +14303,11 @@ const weapon = {
       zh: '驭魂魔杖',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750205': {
     Id: '30750205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -14328,11 +14328,11 @@ const weapon = {
       zh: '大洋支配者',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750206': {
     Id: '30750206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -14353,11 +14353,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Flowing Waves',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750207': {
     Id: '30750207',
-    element: '2',
+    element: 'Water',
     image: '307117_01_50202',
     max: [251, 1453],
     min: [75, 435],
@@ -14371,11 +14371,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Cascading Waves',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750301': {
     Id: '30750301',
-    element: '3',
+    element: 'Wind',
     image: '307014_01_50301',
     max: [152, 528],
     min: [45, 158],
@@ -14389,11 +14389,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Phytalmios's Healing",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750302': {
     Id: '30750302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -14414,11 +14414,11 @@ const weapon = {
       zh: '碧岚迅宝笏',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750303': {
     Id: '30750303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -14439,11 +14439,11 @@ const weapon = {
       zh: '台风支配者',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750304': {
     Id: '30750304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -14464,11 +14464,11 @@ const weapon = {
       zh: '暴风兽之翼',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750305': {
     Id: '30750305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -14489,11 +14489,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Primal Cyclone',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750306': {
     Id: '30750306',
-    element: '3',
+    element: 'Wind',
     image: '307116_01_50302',
     max: [221, 1575],
     min: [66, 472],
@@ -14507,11 +14507,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Raging Cyclone',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750401': {
     Id: '30750401',
-    element: '4',
+    element: 'Light',
     image: '307034_01_50401',
     max: [134, 573],
     min: [40, 171],
@@ -14525,11 +14525,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Twilight Blast',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750403': {
     Id: '30750403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -14552,11 +14552,11 @@ const weapon = {
       zh: '神圣安魂曲',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750404': {
     Id: '30750404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -14577,11 +14577,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Mirthful Lightning',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750405': {
     Id: '30750405',
-    element: '4',
+    element: 'Light',
     image: '307118_01_50402',
     max: [232, 1530],
     min: [69, 459],
@@ -14595,11 +14595,11 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Ecstatic Lightning',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750406': {
     Id: '30750406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -14621,11 +14621,11 @@ const weapon = {
       zh: '撼世之杖',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750501': {
     Id: '30750501',
-    element: '5',
+    element: 'Shadow',
     image: '307035_01_50501',
     max: [152, 528],
     min: [45, 158],
@@ -14639,11 +14639,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Persephone's Healing",
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750503': {
     Id: '30750503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -14665,11 +14665,11 @@ const weapon = {
       zh: '绝望安魂曲',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750504': {
     Id: '30750504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -14690,11 +14690,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Enveloping Darkness',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750505': {
     Id: '30750505',
-    element: '5',
+    element: 'Shadow',
     image: '307120_01_50502',
     max: [244, 1484],
     min: [73, 445],
@@ -14708,11 +14708,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Binding Darkness',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30750506': {
     Id: '30750506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -14734,7 +14734,7 @@ const weapon = {
       zh: '撼运之杖',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30759901': {
     Id: '30759901',
@@ -14748,7 +14748,7 @@ const weapon = {
       zh: '乱流魔杖',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30759902': {
     Id: '30759902',
@@ -14766,7 +14766,7 @@ const weapon = {
       image: 'Icon_Skill_020',
       title: 'Welkin Blast',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30759903': {
     Id: '30759903',
@@ -14784,11 +14784,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Chaotic Healing',
     },
-    weapon: '7',
+    weapon: 'Wand',
   },
   '30830101': {
     Id: '30830101',
-    element: '1',
+    element: 'Flame',
     image: '308006_01_30101',
     max: [66, 205],
     min: [19, 61],
@@ -14802,11 +14802,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Flame Circle',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830102': {
     Id: '30830102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -14828,11 +14828,11 @@ const weapon = {
       zh: '火焰唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830201': {
     Id: '30830201',
-    element: '2',
+    element: 'Water',
     image: '308007_01_30201',
     max: [66, 205],
     min: [19, 61],
@@ -14846,11 +14846,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Tidal Circle',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830202': {
     Id: '30830202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -14872,11 +14872,11 @@ const weapon = {
       zh: '融水唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830301': {
     Id: '30830301',
-    element: '3',
+    element: 'Wind',
     image: '308008_01_30301',
     max: [69, 199],
     min: [20, 59],
@@ -14890,11 +14890,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Wind's Protection",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830302': {
     Id: '30830302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020003',
@@ -14916,11 +14916,11 @@ const weapon = {
       zh: '风卷唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830401': {
     Id: '30830401',
-    element: '4',
+    element: 'Light',
     image: '308009_01_30401',
     max: [69, 199],
     min: [20, 59],
@@ -14934,11 +14934,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: 'Astro Protection',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830402': {
     Id: '30830402',
-    element: '4',
+    element: 'Light',
     image: '308026_01_30401',
     max: [59, 185],
     min: [17, 55],
@@ -14952,11 +14952,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: "Vampire's Treat",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830403': {
     Id: '30830403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -14978,11 +14978,11 @@ const weapon = {
       zh: '白光唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830501': {
     Id: '30830501',
-    element: '5',
+    element: 'Shadow',
     image: '308020_01_30501',
     max: [69, 199],
     min: [20, 59],
@@ -14996,11 +14996,11 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Meggidoth's Protection",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30830502': {
     Id: '30830502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -15022,7 +15022,7 @@ const weapon = {
       zh: '暮光唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30839901': {
     Id: '30839901',
@@ -15036,7 +15036,7 @@ const weapon = {
       zh: '恩惠之杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30839902': {
     Id: '30839902',
@@ -15054,7 +15054,7 @@ const weapon = {
       image: 'Icon_Skill_031',
       title: "Ankh's Protection",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30839903': {
     Id: '30839903',
@@ -15072,7 +15072,7 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Horned Circle',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30839904': {
     Id: '30839904',
@@ -15094,11 +15094,11 @@ const weapon = {
       zh: '简易唤魔法杖',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840101': {
     Id: '30840101',
-    element: '1',
+    element: 'Flame',
     image: '308021_01_40101',
     max: [115, 317],
     min: [34, 95],
@@ -15112,11 +15112,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Ark Healing',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840102': {
     Id: '30840102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -15138,11 +15138,11 @@ const weapon = {
       zh: '烈焰唤魔法杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840103': {
     Id: '30840103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -15163,11 +15163,11 @@ const weapon = {
       zh: '黄昏宣告',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840105': {
     Id: '30840105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -15189,11 +15189,11 @@ const weapon = {
       zh: '火焰之核',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840201': {
     Id: '30840201',
-    element: '2',
+    element: 'Water',
     image: '308022_01_40201',
     max: [115, 317],
     min: [34, 95],
@@ -15207,11 +15207,11 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Marine Healing',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840203': {
     Id: '30840203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -15233,11 +15233,11 @@ const weapon = {
       zh: '驭水唤魔法杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840204': {
     Id: '30840204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -15259,11 +15259,11 @@ const weapon = {
       zh: '大洋之核',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840206': {
     Id: '30840206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -15284,11 +15284,11 @@ const weapon = {
       zh: '塑水之杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840301': {
     Id: '30840301',
-    element: '3',
+    element: 'Wind',
     image: '308033_01_40301',
     max: [107, 333],
     min: [32, 99],
@@ -15302,11 +15302,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: "Windeater's Strength",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840302': {
     Id: '30840302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -15327,11 +15327,11 @@ const weapon = {
       zh: '呼风唤雨',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840303': {
     Id: '30840303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020003',
@@ -15353,11 +15353,11 @@ const weapon = {
       zh: '飓涡唤魔法杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840304': {
     Id: '30840304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -15378,11 +15378,11 @@ const weapon = {
       zh: '慑空之杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840401': {
     Id: '30840401',
-    element: '4',
+    element: 'Light',
     image: '308018_01_40401',
     max: [107, 333],
     min: [32, 99],
@@ -15396,11 +15396,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: "Tonitrus's Strength",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840402': {
     Id: '30840402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -15421,11 +15421,11 @@ const weapon = {
       zh: '拂晓将至',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840403': {
     Id: '30840403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -15447,11 +15447,11 @@ const weapon = {
       zh: '闪耀唤魔法杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840404': {
     Id: '30840404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -15473,11 +15473,11 @@ const weapon = {
       zh: '英雄之咏叹',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840405': {
     Id: '30840405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -15498,11 +15498,11 @@ const weapon = {
       zh: '虚空支配者',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840501': {
     Id: '30840501',
-    element: '5',
+    element: 'Shadow',
     image: '308019_01_40501',
     max: [107, 333],
     min: [32, 99],
@@ -15516,11 +15516,11 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: 'Force of Insanity',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840502': {
     Id: '30840502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -15542,11 +15542,11 @@ const weapon = {
       zh: '午夜唤魔法杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840503': {
     Id: '30840503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -15567,11 +15567,11 @@ const weapon = {
       zh: '懊悔之咏叹',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30840504': {
     Id: '30840504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -15592,7 +15592,7 @@ const weapon = {
       zh: '黑暗支配者',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849901': {
     Id: '30849901',
@@ -15606,7 +15606,7 @@ const weapon = {
       zh: '养生杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849902': {
     Id: '30849902',
@@ -15624,7 +15624,7 @@ const weapon = {
       image: 'Icon_Skill_030',
       title: 'Fortuitous Strength',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849903': {
     Id: '30849903',
@@ -15642,7 +15642,7 @@ const weapon = {
       image: 'Icon_Skill_029',
       title: 'Beautiful Healing',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849904': {
     Id: '30849904',
@@ -15663,7 +15663,7 @@ const weapon = {
       zh: '祈愿苍穹',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849905': {
     Id: '30849905',
@@ -15685,7 +15685,7 @@ const weapon = {
       zh: '灵魂之核',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849906': {
     Id: '30849906',
@@ -15706,7 +15706,7 @@ const weapon = {
       zh: '擎世之杖',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849907': {
     Id: '30849907',
@@ -15727,7 +15727,7 @@ const weapon = {
       zh: '真实之咏叹',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30849908': {
     Id: '30849908',
@@ -15748,11 +15748,11 @@ const weapon = {
       zh: '地狱支配者',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850101': {
     Id: '30850101',
-    element: '1',
+    element: 'Flame',
     image: '308031_01_50101',
     max: [178, 487],
     min: [53, 146],
@@ -15766,11 +15766,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Red Emperor's Spirit",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850102': {
     Id: '30850102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -15791,11 +15791,11 @@ const weapon = {
       zh: '末日终焉',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850103': {
     Id: '30850103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -15817,11 +15817,11 @@ const weapon = {
       zh: '烈焰之核',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850104': {
     Id: '30850104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1100001',
@@ -15842,11 +15842,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Bright Flames',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850105': {
     Id: '30850105',
-    element: '1',
+    element: 'Flame',
     image: '308112_01_50102',
     max: [286, 1368],
     min: [85, 410],
@@ -15860,11 +15860,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Gambolling Flames',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850201': {
     Id: '30850201',
-    element: '2',
+    element: 'Water',
     image: '308011_01_50201',
     max: [178, 487],
     min: [53, 146],
@@ -15878,11 +15878,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Bracing Spirit',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850202': {
     Id: '30850202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -15904,11 +15904,11 @@ const weapon = {
       zh: '蓝渊之核',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850203': {
     Id: '30850203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -15929,11 +15929,11 @@ const weapon = {
       zh: '创海之杖',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850204': {
     Id: '30850204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1100001',
@@ -15954,11 +15954,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Unceasing Stream',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850205': {
     Id: '30850205',
-    element: '2',
+    element: 'Water',
     image: '308110_01_50202',
     max: [294, 1340],
     min: [88, 402],
@@ -15972,11 +15972,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Embracing Stream',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850301': {
     Id: '30850301',
-    element: '3',
+    element: 'Wind',
     image: '308032_01_50301',
     max: [178, 487],
     min: [53, 146],
@@ -15990,11 +15990,11 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: "Ancient Mage's Spirit",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850302': {
     Id: '30850302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -16015,11 +16015,11 @@ const weapon = {
       zh: '亦兴亦亡',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850303': {
     Id: '30850303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -16040,11 +16040,11 @@ const weapon = {
       zh: '虹穹之杖',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850304': {
     Id: '30850304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1100001',
@@ -16065,11 +16065,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Bowing Gust',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850305': {
     Id: '30850305',
-    element: '3',
+    element: 'Wind',
     image: '308109_01_50302',
     max: [294, 1340],
     min: [88, 402],
@@ -16083,11 +16083,11 @@ const weapon = {
       image: 'Icon_Skill_025',
       title: 'Guiding Gust',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850401': {
     Id: '30850401',
-    element: '4',
+    element: 'Light',
     image: '308014_01_50401',
     max: [165, 513],
     min: [49, 153],
@@ -16101,11 +16101,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Judgment Circle',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850402': {
     Id: '30850402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -16126,11 +16126,11 @@ const weapon = {
       zh: '天地伊始',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850403': {
     Id: '30850403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -16152,11 +16152,11 @@ const weapon = {
       zh: '庄严之咏叹',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850404': {
     Id: '30850404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1100001',
@@ -16177,11 +16177,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Illuminating Sneer',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850405': {
     Id: '30850405',
-    element: '4',
+    element: 'Light',
     image: '308111_01_50402',
     max: [294, 1340],
     min: [88, 402],
@@ -16195,11 +16195,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: "Trickster's Sneer",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850406': {
     Id: '30850406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -16220,11 +16220,11 @@ const weapon = {
       zh: '无穷支配者',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850501': {
     Id: '30850501',
-    element: '5',
+    element: 'Shadow',
     image: '308015_01_50501',
     max: [165, 513],
     min: [49, 153],
@@ -16238,11 +16238,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: "Herald's Circle",
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850502': {
     Id: '30850502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -16263,11 +16263,11 @@ const weapon = {
       zh: '哀伤之咏叹',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850503': {
     Id: '30850503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1100001',
@@ -16288,11 +16288,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Night Devourer',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850504': {
     Id: '30850504',
-    element: '5',
+    element: 'Shadow',
     image: '308113_01_50502',
     max: [294, 1340],
     min: [88, 402],
@@ -16306,11 +16306,11 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Despair Devourer',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30850505': {
     Id: '30850505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -16331,7 +16331,7 @@ const weapon = {
       zh: '无明支配者',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30859901': {
     Id: '30859901',
@@ -16345,7 +16345,7 @@ const weapon = {
       zh: '镇魂之杖',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30859902': {
     Id: '30859902',
@@ -16363,7 +16363,7 @@ const weapon = {
       image: 'Icon_Skill_032',
       title: 'Rainbow Spirit',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
   '30859903': {
     Id: '30859903',
@@ -16381,7 +16381,7 @@ const weapon = {
       image: 'Icon_Skill_018',
       title: 'Ethereal Circle',
     },
-    weapon: '8',
+    weapon: 'Staff',
   },
 };
 

@@ -824,7 +824,7 @@ const wyrmprint = {
       zh: '雨天的回忆',
     },
     rarity: '4',
-    resEle: '2',
+    resEle: 'Water',
   },
   '40040005': {
     Id: '40040005',
@@ -849,7 +849,7 @@ const wyrmprint = {
       zh: '火热女子会',
     },
     rarity: '4',
-    resEle: '1',
+    resEle: 'Flame',
   },
   '40040006': {
     Id: '40040006',
@@ -874,7 +874,7 @@ const wyrmprint = {
       zh: '我们是智多星',
     },
     rarity: '4',
-    resEle: '3',
+    resEle: 'Wind',
   },
   '40040007': {
     Id: '40040007',
@@ -899,7 +899,7 @@ const wyrmprint = {
       zh: '荒岛求生',
     },
     rarity: '4',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40040008': {
     Id: '40040008',
@@ -924,7 +924,7 @@ const wyrmprint = {
       zh: '天空的霸主',
     },
     rarity: '4',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40040009': {
     Id: '40040009',
@@ -972,7 +972,7 @@ const wyrmprint = {
       zh: '探求未知',
     },
     rarity: '4',
-    resEle: '2',
+    resEle: 'Water',
   },
   '40040011': {
     Id: '40040011',
@@ -1159,7 +1159,7 @@ const wyrmprint = {
       zh: '舞林大会！',
     },
     rarity: '4',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40040019': {
     Id: '40040019',
@@ -1276,7 +1276,7 @@ const wyrmprint = {
       zh: '五龙之咆哮：耶梦加得',
     },
     rarity: '4',
-    resEle: '3',
+    resEle: 'Wind',
   },
   '40040024': {
     Id: '40040024',
@@ -1301,7 +1301,7 @@ const wyrmprint = {
       zh: '五龙之咆哮：墨丘利',
     },
     rarity: '4',
-    resEle: '2',
+    resEle: 'Water',
   },
   '40040025': {
     Id: '40040025',
@@ -1326,7 +1326,7 @@ const wyrmprint = {
       zh: '五龙之咆哮：布伦希尔德',
     },
     rarity: '4',
-    resEle: '1',
+    resEle: 'Flame',
   },
   '40040026': {
     Id: '40040026',
@@ -1351,7 +1351,7 @@ const wyrmprint = {
       zh: '五龙之咆哮：朱庇特',
     },
     rarity: '4',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40040027': {
     Id: '40040027',
@@ -1376,7 +1376,7 @@ const wyrmprint = {
       zh: '五龙之咆哮：佐迪亚克',
     },
     rarity: '4',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40040028': {
     Id: '40040028',
@@ -1545,7 +1545,7 @@ const wyrmprint = {
       zh: '某一天的阳光下',
     },
     rarity: '4',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40040035': {
     Id: '40040035',
@@ -1670,7 +1670,7 @@ const wyrmprint = {
       zh: '不起眼的工作',
     },
     rarity: '4',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40040040': {
     Id: '40040040',
@@ -1886,7 +1886,7 @@ const wyrmprint = {
       zh: '师父的棒喝',
     },
     rarity: '4',
-    resEle: '3',
+    resEle: 'Wind',
   },
   '40040051': {
     Id: '40040051',
@@ -2007,7 +2007,7 @@ const wyrmprint = {
       zh: '传教士的假日',
     },
     rarity: '4',
-    resEle: '1',
+    resEle: 'Flame',
   },
   '40040056': {
     Id: '40040056',
@@ -2129,7 +2129,7 @@ const wyrmprint = {
       zh: '假面舞会·歌剧',
     },
     rarity: '4',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40040061': {
     Id: '40040061',
@@ -2154,7 +2154,7 @@ const wyrmprint = {
       zh: '妖艳的宫廷魔法师',
     },
     rarity: '4',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40040062': {
     Id: '40040062',
@@ -2248,7 +2248,7 @@ const wyrmprint = {
       zh: '天才的灵感',
     },
     rarity: '5',
-    resEle: '3',
+    resEle: 'Wind',
   },
   '40050003': {
     Id: '40050003',
@@ -2343,7 +2343,7 @@ const wyrmprint = {
       zh: '龙之血一族',
     },
     rarity: '5',
-    resEle: '1',
+    resEle: 'Flame',
   },
   '40050007': {
     Id: '40050007',
@@ -2368,7 +2368,7 @@ const wyrmprint = {
       zh: '卢卡的恶作剧',
     },
     rarity: '5',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40050008': {
     Id: '40050008',
@@ -2468,7 +2468,7 @@ const wyrmprint = {
       zh: '暴风的荣耀',
     },
     rarity: '5',
-    resEle: '3',
+    resEle: 'Wind',
     target: 'hms',
   },
   '40050012': {
@@ -2565,7 +2565,7 @@ const wyrmprint = {
       zh: '冰晶之国的少女',
     },
     rarity: '5',
-    resEle: '1',
+    resEle: 'Flame',
   },
   '40050016': {
     Id: '40050016',
@@ -2621,7 +2621,7 @@ const wyrmprint = {
       zh: '不给糖就捣蛋',
     },
     rarity: '5',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40050018': {
     Id: '40050018',
@@ -2807,7 +2807,7 @@ const wyrmprint = {
       zh: '烈焰女王',
     },
     rarity: '5',
-    resEle: '1',
+    resEle: 'Flame',
     target: 'hbh',
   },
   '40050026': {
@@ -2980,7 +2980,7 @@ const wyrmprint = {
       zh: '恭贺新年',
     },
     rarity: '5',
-    resEle: '4',
+    resEle: 'Light',
   },
   '40050033': {
     Id: '40050033',
@@ -3032,7 +3032,7 @@ const wyrmprint = {
       zh: '驯龙马戏团',
     },
     rarity: '5',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40050035': {
     Id: '40050035',
@@ -3242,7 +3242,7 @@ const wyrmprint = {
       zh: '暗之光芒',
     },
     rarity: '5',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '40050044': {
     Id: '40050044',
@@ -3517,7 +3517,7 @@ const wyrmprint = {
       zh: '沧海女王',
     },
     rarity: '5',
-    resEle: '2',
+    resEle: 'Water',
     target: 'hmc',
   },
   '40050057': {
@@ -3747,7 +3747,7 @@ const wyrmprint = {
       zh: '万雷之王',
     },
     rarity: '5',
-    resEle: '4',
+    resEle: 'Light',
     target: 'hjp',
   },
   '40050066': {
@@ -3902,7 +3902,7 @@ const wyrmprint = {
       zh: '黑暗统御者',
     },
     rarity: '5',
-    resEle: '5',
+    resEle: 'Shadow',
     target: 'hzd',
   },
   '40050072': {

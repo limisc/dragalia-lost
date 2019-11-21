@@ -1,30 +1,16 @@
-const OPTIONS = {
-  element: ['1', '2', '3', '4', '5'],
-  rarity: ['3', '4', '5'],
-  weapon: ['1', '2', '3', '4', '5', '6', '7', '8'],
-  type: [
-    '1020001',
-    '1020002',
-    '1020003',
-    '1010002',
-    '1020010',
-    '1020011',
-    '1010001',
-    '1010007',
-  ],
-};
+import { ABILITY_TYPES, ELEMENT_TYPES, RARITY_TYPES, WEAPON_TYPES } from 'data';
 
-const createOption = group => {
-  return OPTIONS[group].map(value => ({ value, checked: false }));
+const createOption = types => {
+  return types.map(value => ({ value, checked: false }));
 };
 
 const state = {
   focused: 'adventurer',
   options: {
-    element: createOption('element'),
-    rarity: createOption('rarity'),
-    weapon: createOption('weapon'),
-    type: createOption('type'),
+    element: createOption(ELEMENT_TYPES),
+    rarity: createOption(RARITY_TYPES),
+    weapon: createOption(WEAPON_TYPES),
+    type: createOption(ABILITY_TYPES),
   },
   items: {
     adventurer: null,

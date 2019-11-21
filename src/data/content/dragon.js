@@ -1,7 +1,7 @@
 const dragon = {
   '20030101': {
     Id: '20030101',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -22,7 +22,7 @@ const dragon = {
   },
   '20030102': {
     Id: '20030102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020001',
@@ -43,7 +43,7 @@ const dragon = {
   },
   '20030103': {
     Id: '20030103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020006',
@@ -65,7 +65,7 @@ const dragon = {
   },
   '20030201': {
     Id: '20030201',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -86,7 +86,7 @@ const dragon = {
   },
   '20030202': {
     Id: '20030202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020001',
@@ -107,7 +107,7 @@ const dragon = {
   },
   '20030203': {
     Id: '20030203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020006',
@@ -129,7 +129,7 @@ const dragon = {
   },
   '20030301': {
     Id: '20030301',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -150,7 +150,7 @@ const dragon = {
   },
   '20030302': {
     Id: '20030302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020001',
@@ -171,7 +171,7 @@ const dragon = {
   },
   '20030303': {
     Id: '20030303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020006',
@@ -193,7 +193,7 @@ const dragon = {
   },
   '20030401': {
     Id: '20030401',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -214,7 +214,7 @@ const dragon = {
   },
   '20030402': {
     Id: '20030402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020001',
@@ -235,7 +235,7 @@ const dragon = {
   },
   '20030403': {
     Id: '20030403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020006',
@@ -257,7 +257,7 @@ const dragon = {
   },
   '20030501': {
     Id: '20030501',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -278,7 +278,7 @@ const dragon = {
   },
   '20030502': {
     Id: '20030502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020001',
@@ -299,7 +299,7 @@ const dragon = {
   },
   '20030503': {
     Id: '20030503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020006',
@@ -321,7 +321,7 @@ const dragon = {
   },
   '20040101': {
     Id: '20040101',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -342,7 +342,7 @@ const dragon = {
   },
   '20040102': {
     Id: '20040102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020001',
@@ -363,7 +363,7 @@ const dragon = {
   },
   '20040103': {
     Id: '20040103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -384,7 +384,7 @@ const dragon = {
   },
   '20040201': {
     Id: '20040201',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020001',
@@ -405,7 +405,7 @@ const dragon = {
   },
   '20040202': {
     Id: '20040202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020006',
@@ -427,7 +427,7 @@ const dragon = {
   },
   '20040203': {
     Id: '20040203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -448,7 +448,7 @@ const dragon = {
   },
   '20040301': {
     Id: '20040301',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020006',
@@ -470,7 +470,7 @@ const dragon = {
   },
   '20040302': {
     Id: '20040302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -491,7 +491,7 @@ const dragon = {
   },
   '20040303': {
     Id: '20040303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020001',
@@ -512,7 +512,7 @@ const dragon = {
   },
   '20040401': {
     Id: '20040401',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020006',
@@ -534,7 +534,7 @@ const dragon = {
   },
   '20040402': {
     Id: '20040402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020001',
@@ -555,7 +555,7 @@ const dragon = {
   },
   '20040403': {
     Id: '20040403',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -576,7 +576,7 @@ const dragon = {
   },
   '20040405': {
     Id: '20040405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020006',
@@ -598,7 +598,7 @@ const dragon = {
   },
   '20040501': {
     Id: '20040501',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -619,7 +619,7 @@ const dragon = {
   },
   '20040502': {
     Id: '20040502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -640,7 +640,7 @@ const dragon = {
   },
   '20040503': {
     Id: '20040503',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020006',
@@ -662,7 +662,7 @@ const dragon = {
   },
   '20040504': {
     Id: '20040504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010003',
@@ -682,7 +682,7 @@ const dragon = {
   },
   '20040505': {
     Id: '20040505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010003',
@@ -702,7 +702,7 @@ const dragon = {
   },
   '20050101': {
     Id: '20050101',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -723,7 +723,7 @@ const dragon = {
   },
   '20050102': {
     Id: '20050102',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020006',
@@ -749,7 +749,7 @@ const dragon = {
   },
   '20050103': {
     Id: '20050103',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -770,7 +770,7 @@ const dragon = {
   },
   '20050104': {
     Id: '20050104',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -791,7 +791,7 @@ const dragon = {
   },
   '20050105': {
     Id: '20050105',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -812,7 +812,7 @@ const dragon = {
   },
   '20050106': {
     Id: '20050106',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020023',
@@ -831,11 +831,11 @@ const dragon = {
       zh: '普罗米修斯',
     },
     rarity: '5',
-    resEle: '3',
+    resEle: 'Wind',
   },
   '20050107': {
     Id: '20050107',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -860,7 +860,7 @@ const dragon = {
   },
   '20050108': {
     Id: '20050108',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -881,7 +881,7 @@ const dragon = {
   },
   '20050109': {
     Id: '20050109',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -906,7 +906,7 @@ const dragon = {
   },
   '20050110': {
     Id: '20050110',
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -931,7 +931,7 @@ const dragon = {
   },
   '20050201': {
     Id: '20050201',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020006',
@@ -953,7 +953,7 @@ const dragon = {
   },
   '20050202': {
     Id: '20050202',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020006',
@@ -979,7 +979,7 @@ const dragon = {
   },
   '20050203': {
     Id: '20050203',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -1000,7 +1000,7 @@ const dragon = {
   },
   '20050204': {
     Id: '20050204',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -1025,7 +1025,7 @@ const dragon = {
   },
   '20050205': {
     Id: '20050205',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020029',
@@ -1046,7 +1046,7 @@ const dragon = {
   },
   '20050206': {
     Id: '20050206',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020001',
@@ -1067,7 +1067,7 @@ const dragon = {
   },
   '20050207': {
     Id: '20050207',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020001',
@@ -1092,7 +1092,7 @@ const dragon = {
   },
   '20050208': {
     Id: '20050208',
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020001',
@@ -1117,7 +1117,7 @@ const dragon = {
   },
   '20050301': {
     Id: '20050301',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1138,7 +1138,7 @@ const dragon = {
   },
   '20050302': {
     Id: '20050302',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020006',
@@ -1164,7 +1164,7 @@ const dragon = {
   },
   '20050303': {
     Id: '20050303',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020001',
@@ -1185,7 +1185,7 @@ const dragon = {
   },
   '20050304': {
     Id: '20050304',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020001',
@@ -1206,7 +1206,7 @@ const dragon = {
   },
   '20050305': {
     Id: '20050305',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1227,7 +1227,7 @@ const dragon = {
   },
   '20050306': {
     Id: '20050306',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1252,7 +1252,7 @@ const dragon = {
   },
   '20050307': {
     Id: '20050307',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1273,7 +1273,7 @@ const dragon = {
   },
   '20050308': {
     Id: '20050308',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020001',
@@ -1298,7 +1298,7 @@ const dragon = {
   },
   '20050309': {
     Id: '20050309',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1323,7 +1323,7 @@ const dragon = {
   },
   '20050310': {
     Id: '20050310',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020006',
@@ -1345,7 +1345,7 @@ const dragon = {
   },
   '20050311': {
     Id: '20050311',
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1370,7 +1370,7 @@ const dragon = {
   },
   '20050401': {
     Id: '20050401',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020001',
@@ -1391,7 +1391,7 @@ const dragon = {
   },
   '20050402': {
     Id: '20050402',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020006',
@@ -1417,7 +1417,7 @@ const dragon = {
   },
   '20050404': {
     Id: '20050404',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020023',
@@ -1436,11 +1436,11 @@ const dragon = {
       zh: '吉尔伽美什',
     },
     rarity: '5',
-    resEle: '5',
+    resEle: 'Shadow',
   },
   '20050405': {
     Id: '20050405',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1461,7 +1461,7 @@ const dragon = {
   },
   '20050406': {
     Id: '20050406',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020011',
@@ -1481,7 +1481,7 @@ const dragon = {
   },
   '20050407': {
     Id: '20050407',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020006',
@@ -1503,7 +1503,7 @@ const dragon = {
   },
   '20050408': {
     Id: '20050408',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1528,7 +1528,7 @@ const dragon = {
   },
   '20050409': {
     Id: '20050409',
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1553,7 +1553,7 @@ const dragon = {
   },
   '20050501': {
     Id: '20050501',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020006',
@@ -1575,7 +1575,7 @@ const dragon = {
   },
   '20050502': {
     Id: '20050502',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020006',
@@ -1601,7 +1601,7 @@ const dragon = {
   },
   '20050504': {
     Id: '20050504',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -1622,7 +1622,7 @@ const dragon = {
   },
   '20050505': {
     Id: '20050505',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020006',
@@ -1644,7 +1644,7 @@ const dragon = {
   },
   '20050506': {
     Id: '20050506',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -1665,7 +1665,7 @@ const dragon = {
   },
   '20050508': {
     Id: '20050508',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -1690,7 +1690,7 @@ const dragon = {
   },
   '20050509': {
     Id: '20050509',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -1715,7 +1715,7 @@ const dragon = {
   },
   '20050510': {
     Id: '20050510',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -1736,7 +1736,7 @@ const dragon = {
   },
   '20050511': {
     Id: '20050511',
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020011',

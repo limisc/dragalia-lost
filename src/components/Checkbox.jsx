@@ -16,7 +16,7 @@ const Checkbox = memo(function Checkbox(props) {
     value,
   } = props;
 
-  const title = locales(titleProp || `${group}_${value}`, lang);
+  const title = locales(titleProp || value, lang);
 
   const { current: id } = useRef(
     group && value ? `check_${group}_${value}` : uuid()

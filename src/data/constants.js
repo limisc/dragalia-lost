@@ -1,18 +1,15 @@
 export const COABILITY_VALUE = {
-  // Axe
-  '4': {
+  Axe: {
     '3': [5, 7, 9, 11, 15],
     '4': [7, 8, 9, 11, 15],
     '5': [9, 10, 11, 12, 15],
   },
-  // Lance
-  '5': {
+  Lance: {
     '3': [5, 7, 9, 12, 15],
     '4': [7, 8, 9, 12, 15],
     '5': [9, 10, 12, 13, 15],
   },
-  // Staff
-  '8': {
+  Staff: {
     '3': [2, 6, 10, 14, 20],
     '4': [6, 8, 10, 14, 20],
     '5': [10, 12, 14, 16, 20],
@@ -43,25 +40,25 @@ export const MIGHT_DICT = {
 
 export const ELEMENTS_MODIFIER = {
   // advantage: adv, disadvantage: dis
-  '1': {
-    adv: '3',
-    dis: '2',
+  Flame: {
+    adv: 'Wind',
+    dis: 'Water',
   },
-  '2': {
-    adv: '1',
-    dis: '3',
+  Water: {
+    adv: 'Flame',
+    dis: 'Wind',
   },
-  '3': {
-    adv: '2',
-    dis: '1',
+  Wind: {
+    adv: 'Water',
+    dis: 'Flame',
   },
-  '4': {
-    adv: '5',
-    dis: '5',
+  Light: {
+    adv: 'Shadow',
+    dis: 'Shadow',
   },
-  '5': {
-    adv: '4',
-    dis: '4',
+  Shadow: {
+    adv: 'Light',
+    dis: 'Light',
   },
 };
 
@@ -72,3 +69,29 @@ export const ITEM_KEYS = [
   'wyrmprint1',
   'wyrmprint2',
 ];
+
+export const ELEMENT_TYPES = ['Flame', 'Water', 'Wind', 'Light', 'Shadow'];
+
+export const WEAPON_TYPES = [
+  'Sword',
+  'Blade',
+  'Dagger',
+  'Axe',
+  'Lance',
+  'Bow',
+  'Wand',
+  'Staff',
+];
+
+export const ABILITY_TYPES = [
+  '1020001',
+  '1020002',
+  '1020003',
+  '1010002',
+  '1020010',
+  '1020011',
+  '1010001',
+  '1010007',
+];
+
+export const RARITY_TYPES = ['3', '4', '5'];

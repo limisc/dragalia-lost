@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import content from 'data';
+import content, { ELEMENT_TYPES, WEAPON_TYPES } from 'data';
 import getField from './getField';
 import includes from './includes';
 
@@ -74,13 +74,17 @@ export const getItemList = createSelector(
         if (item1.rarity < item2.rarity) return 1;
 
         if (item1.element) {
-          if (item1.element < item2.element) return -1;
-          if (item1.element > item2.element) return 1;
+          const element1 = ELEMENT_TYPES.indexOf(item1.element);
+          const element2 = ELEMENT_TYPES.indexOf(item2.element);
+          if (element1 < element2) return -1;
+          if (element1 > element2) return 1;
         }
 
         if (item1.weapon) {
-          if (item1.weapon < item2.weapon) return -1;
-          if (item1.weapon > item2.weapon) return 1;
+          const weapon1 = WEAPON_TYPES.indexOf(item1.weapon);
+          const weapon2 = WEAPON_TYPES.indexOf(item2.weapon);
+          if (weapon1 < weapon2) return -1;
+          if (weapon1 > weapon2) return 1;
         }
 
         if (item1.max[0] + item1.max[1] > item2.max[0] + item2.max[1]) {

@@ -2,7 +2,7 @@ const adventurer = {
   '10130102': {
     Id: '10130102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020004',
@@ -39,12 +39,12 @@ const adventurer = {
       zh: '马蒂',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10130201': {
     Id: '10130201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -91,12 +91,12 @@ const adventurer = {
       zh: '夏迪',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10130401': {
     Id: '10130401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -133,12 +133,12 @@ const adventurer = {
       zh: '莱蒙德',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10130501': {
     Id: '10130501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -185,12 +185,12 @@ const adventurer = {
       zh: '罗德里戈',
     },
     rarity: '3',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140101': {
     Id: '10140101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -227,12 +227,12 @@ const adventurer = {
       zh: '尤蒂尔',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140102': {
     Id: '10140102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -275,12 +275,12 @@ const adventurer = {
       zh: '卡尔',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140103': {
     Id: '10140103',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020011',
@@ -317,12 +317,12 @@ const adventurer = {
       zh: '塞蕾娜',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140201': {
     Id: '10140201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -359,12 +359,12 @@ const adventurer = {
       zh: '欧蒂塔',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140301': {
     Id: '10140301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020011',
@@ -401,12 +401,12 @@ const adventurer = {
       zh: '苦海',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140501': {
     Id: '10140501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010002',
@@ -443,12 +443,12 @@ const adventurer = {
       zh: '贝尔扎克',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10140503': {
     Id: '10140503',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010008',
@@ -485,12 +485,12 @@ const adventurer = {
       zh: '亚斯拉姆',
     },
     rarity: '4',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150101': {
     Id: '10150101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -527,12 +527,12 @@ const adventurer = {
       zh: '纳杰夫',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150102': {
     Id: '10150102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020026',
@@ -569,12 +569,12 @@ const adventurer = {
       zh: '马尔斯',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150103': {
     Id: '10150103',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010001',
@@ -611,12 +611,12 @@ const adventurer = {
       zh: '丽雅',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150201': {
     Id: '10150201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -653,12 +653,12 @@ const adventurer = {
       zh: '阿莱克西斯',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150202': {
     Id: '10150202',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -695,12 +695,12 @@ const adventurer = {
       zh: '赛丽艾拉',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150301': {
     Id: '10150301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010013',
@@ -737,12 +737,12 @@ const adventurer = {
       zh: '兰扎卜',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150302': {
     Id: '10150302',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020004',
@@ -779,12 +779,12 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150401': {
     Id: '10150401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010001',
@@ -821,12 +821,12 @@ const adventurer = {
       zh: '阿尔贝尔',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150402': {
     Id: '10150402',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020025',
@@ -863,12 +863,12 @@ const adventurer = {
       zh: '阿尔冯斯',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150403': {
     Id: '10150403',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020031',
@@ -905,12 +905,12 @@ const adventurer = {
       zh: '尤蒂尔',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10150501': {
     Id: '10150501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020029',
@@ -947,12 +947,12 @@ const adventurer = {
       zh: '夜天',
     },
     rarity: '5',
-    weapon: '1',
+    weapon: 'Sword',
   },
   '10230101': {
     Id: '10230101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010010',
@@ -989,12 +989,12 @@ const adventurer = {
       zh: '葵',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10230201': {
     Id: '10230201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010009',
@@ -1031,12 +1031,12 @@ const adventurer = {
       zh: '十郎太',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10230301': {
     Id: '10230301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020010',
@@ -1073,12 +1073,12 @@ const adventurer = {
       zh: '米罗蒂',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10230401': {
     Id: '10230401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1125,12 +1125,12 @@ const adventurer = {
       zh: '爱德华',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10230501': {
     Id: '10230501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020003',
@@ -1167,12 +1167,12 @@ const adventurer = {
       zh: '太郎',
     },
     rarity: '3',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10240201': {
     Id: '10240201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060001',
@@ -1215,12 +1215,12 @@ const adventurer = {
       zh: '赛丽艾拉',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10240202': {
     Id: '10240202',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -1257,12 +1257,12 @@ const adventurer = {
       zh: '兰扎卜',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10240301': {
     Id: '10240301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1299,12 +1299,12 @@ const adventurer = {
       zh: '武藏',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10240302': {
     Id: '10240302',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1130001',
@@ -1341,12 +1341,12 @@ const adventurer = {
       zh: '阿迪斯',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10240401': {
     Id: '10240401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1383,12 +1383,12 @@ const adventurer = {
       zh: '八千代',
     },
     rarity: '4',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250101': {
     Id: '10250101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020010',
@@ -1425,12 +1425,12 @@ const adventurer = {
       zh: '米科特',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250102': {
     Id: '10250102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -1467,12 +1467,12 @@ const adventurer = {
       zh: '雷吉娜',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250301': {
     Id: '10250301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -1519,12 +1519,12 @@ const adventurer = {
       zh: '维克托',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250401': {
     Id: '10250401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010012',
@@ -1561,12 +1561,12 @@ const adventurer = {
       zh: '夏迪',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250501': {
     Id: '10250501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020010',
@@ -1603,12 +1603,12 @@ const adventurer = {
       zh: '家康',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10250502': {
     Id: '10250502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010012',
@@ -1645,12 +1645,12 @@ const adventurer = {
       zh: '娜茨',
     },
     rarity: '5',
-    weapon: '2',
+    weapon: 'Blade',
   },
   '10330101': {
     Id: '10330101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020010',
@@ -1687,12 +1687,12 @@ const adventurer = {
       zh: '拉辛',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10330301': {
     Id: '10330301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010001',
@@ -1729,12 +1729,12 @@ const adventurer = {
       zh: '弗兰切斯卡',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10330401': {
     Id: '10330401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -1771,12 +1771,12 @@ const adventurer = {
       zh: '伊尔凡',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10330501': {
     Id: '10330501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010009',
@@ -1813,12 +1813,12 @@ const adventurer = {
       zh: '华兹',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10330502': {
     Id: '10330502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010001',
@@ -1855,12 +1855,12 @@ const adventurer = {
       zh: '维特',
     },
     rarity: '3',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340101': {
     Id: '10340101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060002',
@@ -1897,12 +1897,12 @@ const adventurer = {
       zh: '梅露莎',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340102': {
     Id: '10340102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010025',
@@ -1949,12 +1949,12 @@ const adventurer = {
       zh: '勇也',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340201': {
     Id: '10340201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020010',
@@ -1991,12 +1991,12 @@ const adventurer = {
       zh: '卢塔',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340202': {
     Id: '10340202',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020010',
@@ -2033,12 +2033,12 @@ const adventurer = {
       zh: '奥尔森',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340203': {
     Id: '10340203',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020010',
@@ -2075,12 +2075,12 @@ const adventurer = {
       zh: '卢吉娜',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340301': {
     Id: '10340301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1060004',
@@ -2117,12 +2117,12 @@ const adventurer = {
       zh: '苏方',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340401': {
     Id: '10340401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010002',
@@ -2159,12 +2159,12 @@ const adventurer = {
       zh: '弗里茨',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340402': {
     Id: '10340402',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020004',
@@ -2201,12 +2201,12 @@ const adventurer = {
       zh: '芙露露',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340501': {
     Id: '10340501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020010',
@@ -2243,12 +2243,12 @@ const adventurer = {
       zh: '俄里翁',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10340502': {
     Id: '10340502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010002',
@@ -2285,12 +2285,12 @@ const adventurer = {
       zh: '沙音',
     },
     rarity: '4',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10350101': {
     Id: '10350101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -2327,12 +2327,12 @@ const adventurer = {
       zh: '艾赛莉特',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10350201': {
     Id: '10350201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -2379,12 +2379,12 @@ const adventurer = {
       zh: '库菈乌',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10350301': {
     Id: '10350301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -2421,12 +2421,12 @@ const adventurer = {
       zh: '葵',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10350502': {
     Id: '10350502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010020',
@@ -2473,12 +2473,12 @@ const adventurer = {
       zh: '德尔菲',
     },
     rarity: '5',
-    weapon: '3',
+    weapon: 'Dagger',
   },
   '10430201': {
     Id: '10430201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020013',
@@ -2515,12 +2515,12 @@ const adventurer = {
       zh: '雷克斯',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10430202': {
     Id: '10430202',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020011',
@@ -2557,12 +2557,12 @@ const adventurer = {
       zh: '皮多特',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10430301': {
     Id: '10430301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -2599,12 +2599,12 @@ const adventurer = {
       zh: '伊汉娜',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10430401': {
     Id: '10430401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -2651,12 +2651,12 @@ const adventurer = {
       zh: '莱纳斯',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10430501': {
     Id: '10430501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010001',
@@ -2693,12 +2693,12 @@ const adventurer = {
       zh: '埃里克',
     },
     rarity: '3',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440101': {
     Id: '10440101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010001',
@@ -2735,12 +2735,12 @@ const adventurer = {
       zh: '凡妮莎',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440102': {
     Id: '10440102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -2777,12 +2777,12 @@ const adventurer = {
       zh: '悦',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440201': {
     Id: '10440201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010011',
@@ -2819,12 +2819,12 @@ const adventurer = {
       zh: '卡丽娜',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440301': {
     Id: '10440301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -2861,12 +2861,12 @@ const adventurer = {
       zh: '兰扎卜',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440401': {
     Id: '10440401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -2913,12 +2913,12 @@ const adventurer = {
       zh: '卢卡',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10440501': {
     Id: '10440501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020013',
@@ -2955,12 +2955,12 @@ const adventurer = {
       zh: '山茶花',
     },
     rarity: '4',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450101': {
     Id: '10450101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -2997,12 +2997,12 @@ const adventurer = {
       zh: '罗吉娜',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450102': {
     Id: '10450102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010022',
@@ -3039,12 +3039,12 @@ const adventurer = {
       zh: '穆穆',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450201': {
     Id: '10450201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -3081,12 +3081,12 @@ const adventurer = {
       zh: '朱丽叶',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450301': {
     Id: '10450301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020010',
@@ -3123,12 +3123,12 @@ const adventurer = {
       zh: '林佑',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450401': {
     Id: '10450401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -3165,12 +3165,12 @@ const adventurer = {
       zh: '朱丽叶',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10450501': {
     Id: '10450501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010010',
@@ -3207,12 +3207,12 @@ const adventurer = {
       zh: '库格尔',
     },
     rarity: '5',
-    weapon: '4',
+    weapon: 'Axe',
   },
   '10530101': {
     Id: '10530101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020003',
@@ -3249,12 +3249,12 @@ const adventurer = {
       zh: '阿兰',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10530201': {
     Id: '10530201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010011',
@@ -3291,12 +3291,12 @@ const adventurer = {
       zh: '休贝尔',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10530202': {
     Id: '10530202',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -3333,12 +3333,12 @@ const adventurer = {
       zh: '让',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10530401': {
     Id: '10530401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020003',
@@ -3385,12 +3385,12 @@ const adventurer = {
       zh: '马尔卡',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10530501': {
     Id: '10530501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010002',
@@ -3427,12 +3427,12 @@ const adventurer = {
       zh: '吉斯',
     },
     rarity: '3',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540102': {
     Id: '10540102',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1060003',
@@ -3469,12 +3469,12 @@ const adventurer = {
       zh: '三藏',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540103': {
     Id: '10540103',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010006',
@@ -3511,12 +3511,12 @@ const adventurer = {
       zh: '艾玛',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540201': {
     Id: '10540201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010006',
@@ -3553,12 +3553,12 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540301': {
     Id: '10540301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010006',
@@ -3595,12 +3595,12 @@ const adventurer = {
       zh: '艾露',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540302': {
     Id: '10540302',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020003',
@@ -3647,12 +3647,12 @@ const adventurer = {
       zh: '皮雅茜',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540401': {
     Id: '10540401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010011',
@@ -3689,12 +3689,12 @@ const adventurer = {
       zh: '梁泉',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540501': {
     Id: '10540501',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1060001',
@@ -3731,12 +3731,12 @@ const adventurer = {
       zh: '牡丹',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10540502': {
     Id: '10540502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010006',
@@ -3773,12 +3773,12 @@ const adventurer = {
       zh: '帕蒂亚',
     },
     rarity: '4',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550101': {
     Id: '10550101',
     defCoef: 10,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010014',
@@ -3815,12 +3815,12 @@ const adventurer = {
       zh: '穆穆',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550201': {
     Id: '10550201',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -3857,12 +3857,12 @@ const adventurer = {
       zh: '扎因弗拉德',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550203': {
     Id: '10550203',
     defCoef: 10,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020027',
@@ -3899,12 +3899,12 @@ const adventurer = {
       zh: '菲约尔姆',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550301': {
     Id: '10550301',
     defCoef: 10,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010011',
@@ -3951,12 +3951,12 @@ const adventurer = {
       zh: '加斯特',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550401': {
     Id: '10550401',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010002',
@@ -3993,12 +3993,12 @@ const adventurer = {
       zh: '安妮利艾',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550402': {
     Id: '10550402',
     defCoef: 10,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010002',
@@ -4035,12 +4035,12 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10550502': {
     Id: '10550502',
     defCoef: 10,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010023',
@@ -4077,12 +4077,12 @@ const adventurer = {
       zh: '拉托妮',
     },
     rarity: '5',
-    weapon: '5',
+    weapon: 'Lance',
   },
   '10630101': {
     Id: '10630101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1040002',
@@ -4119,12 +4119,12 @@ const adventurer = {
       zh: '乔',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10630201': {
     Id: '10630201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1040009',
@@ -4161,12 +4161,12 @@ const adventurer = {
       zh: '威克',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10630301': {
     Id: '10630301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020002',
@@ -4213,12 +4213,12 @@ const adventurer = {
       zh: '菲丽雅',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10630401': {
     Id: '10630401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010009',
@@ -4255,12 +4255,12 @@ const adventurer = {
       zh: '马萝拉',
     },
     rarity: '3',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640101': {
     Id: '10640101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010012',
@@ -4297,12 +4297,12 @@ const adventurer = {
       zh: '艾赛莉特',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640202': {
     Id: '10640202',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010002',
@@ -4339,12 +4339,12 @@ const adventurer = {
       zh: '奈法利耶',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640301': {
     Id: '10640301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1040001',
@@ -4381,12 +4381,12 @@ const adventurer = {
       zh: '艾蕾欧诺拉',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640401': {
     Id: '10640401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -4433,12 +4433,12 @@ const adventurer = {
       zh: '卢卡',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640402': {
     Id: '10640402',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -4475,12 +4475,12 @@ const adventurer = {
       zh: '乌尔嘉',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640403': {
     Id: '10640403',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1060006',
@@ -4517,12 +4517,12 @@ const adventurer = {
       zh: '埃利亚斯',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10640501': {
     Id: '10640501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020002',
@@ -4559,12 +4559,12 @@ const adventurer = {
       zh: '诺斯通',
     },
     rarity: '4',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650101': {
     Id: '10650101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010013',
@@ -4601,12 +4601,12 @@ const adventurer = {
       zh: '希里丝',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650102': {
     Id: '10650102',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020030',
@@ -4643,12 +4643,12 @@ const adventurer = {
       zh: '切尔茜',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650201': {
     Id: '10650201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020011',
@@ -4685,12 +4685,12 @@ const adventurer = {
       zh: '拉拉诺亚',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650301': {
     Id: '10650301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010010',
@@ -4727,12 +4727,12 @@ const adventurer = {
       zh: '洛依泽',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650302': {
     Id: '10650302',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1040006',
@@ -4769,12 +4769,12 @@ const adventurer = {
       zh: '霍克',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650401': {
     Id: '10650401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020004',
@@ -4811,12 +4811,12 @@ const adventurer = {
       zh: '库菈乌',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10650501': {
     Id: '10650501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1040005',
@@ -4853,12 +4853,12 @@ const adventurer = {
       zh: '奈法利耶',
     },
     rarity: '5',
-    weapon: '6',
+    weapon: 'Bow',
   },
   '10730101': {
     Id: '10730101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010002',
@@ -4895,12 +4895,12 @@ const adventurer = {
       zh: '桑妮雅',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10730301': {
     Id: '10730301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010011',
@@ -4937,12 +4937,12 @@ const adventurer = {
       zh: '尼古拉',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10730401': {
     Id: '10730401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010002',
@@ -4979,12 +4979,12 @@ const adventurer = {
       zh: '小蕾',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10730501': {
     Id: '10730501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010002',
@@ -5021,12 +5021,12 @@ const adventurer = {
       zh: '伊露缇米娅',
     },
     rarity: '3',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740101': {
     Id: '10740101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020002',
@@ -5073,12 +5073,12 @@ const adventurer = {
       zh: '希诺亚',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740201': {
     Id: '10740201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010012',
@@ -5115,12 +5115,12 @@ const adventurer = {
       zh: '阿莱克西斯',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740202': {
     Id: '10740202',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1060003',
@@ -5157,12 +5157,12 @@ const adventurer = {
       zh: '艾丝蒂尔',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740301': {
     Id: '10740301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010006',
@@ -5199,12 +5199,12 @@ const adventurer = {
       zh: '诺艾尔',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740401': {
     Id: '10740401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -5241,12 +5241,12 @@ const adventurer = {
       zh: '天音',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10740501': {
     Id: '10740501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010001',
@@ -5283,12 +5283,12 @@ const adventurer = {
       zh: '克雷伊曼',
     },
     rarity: '4',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750101': {
     Id: '10750101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010002',
@@ -5325,12 +5325,12 @@ const adventurer = {
       zh: '梅莉贝尔',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750201': {
     Id: '10750201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020002',
@@ -5377,12 +5377,12 @@ const adventurer = {
       zh: '莉莉',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750301': {
     Id: '10750301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010002',
@@ -5419,12 +5419,12 @@ const adventurer = {
       zh: '梅莉贝尔',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750401': {
     Id: '10750401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020002',
@@ -5461,12 +5461,12 @@ const adventurer = {
       zh: '卢克雷齐娅',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750501': {
     Id: '10750501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020028',
@@ -5503,12 +5503,12 @@ const adventurer = {
       zh: '维洛妮卡',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750502': {
     Id: '10750502',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010015',
@@ -5545,12 +5545,12 @@ const adventurer = {
       zh: '库菈乌',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10750503': {
     Id: '10750503',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010007',
@@ -5587,12 +5587,12 @@ const adventurer = {
       zh: '卡珊德拉',
     },
     rarity: '5',
-    weapon: '7',
+    weapon: 'Wand',
   },
   '10830101': {
     Id: '10830101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010002',
@@ -5629,12 +5629,12 @@ const adventurer = {
       zh: '欧雷因',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10830201': {
     Id: '10830201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020003',
@@ -5681,12 +5681,12 @@ const adventurer = {
       zh: '里卡多',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10830301': {
     Id: '10830301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020009',
@@ -5723,12 +5723,12 @@ const adventurer = {
       zh: '索菲',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10830401': {
     Id: '10830401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -5765,12 +5765,12 @@ const adventurer = {
       zh: '霍普',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10830402': {
     Id: '10830402',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010001',
@@ -5807,12 +5807,12 @@ const adventurer = {
       zh: '艾丝蒂尔',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10830501': {
     Id: '10830501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -5849,12 +5849,12 @@ const adventurer = {
       zh: '爱德华',
     },
     rarity: '3',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840101': {
     Id: '10840101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1020009',
@@ -5891,12 +5891,12 @@ const adventurer = {
       zh: '维尔莎拉',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840102': {
     Id: '10840102',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1010007',
@@ -5933,12 +5933,12 @@ const adventurer = {
       zh: '卢恩',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840201': {
     Id: '10840201',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1020013',
@@ -5975,12 +5975,12 @@ const adventurer = {
       zh: '塞纳',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840202': {
     Id: '10840202',
     defCoef: 8,
-    element: '2',
+    element: 'Water',
     icon: [
       {
         image: '1010007',
@@ -6017,12 +6017,12 @@ const adventurer = {
       zh: '艾露',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840301': {
     Id: '10840301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -6059,12 +6059,12 @@ const adventurer = {
       zh: '卢恩',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840302': {
     Id: '10840302',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1020009',
@@ -6101,12 +6101,12 @@ const adventurer = {
       zh: '桑妮雅',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840401': {
     Id: '10840401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -6149,12 +6149,12 @@ const adventurer = {
       zh: '伊露缇米娅',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840402': {
     Id: '10840402',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1020009',
@@ -6191,12 +6191,12 @@ const adventurer = {
       zh: '维克塞尔',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840403': {
     Id: '10840403',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1050005',
@@ -6233,12 +6233,12 @@ const adventurer = {
       zh: '菲丽嘉',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10840501': {
     Id: '10840501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010007',
@@ -6281,12 +6281,12 @@ const adventurer = {
       zh: '库菈乌',
     },
     rarity: '4',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10850101': {
     Id: '10850101',
     defCoef: 8,
-    element: '1',
+    element: 'Flame',
     icon: [
       {
         image: '1040011',
@@ -6323,12 +6323,12 @@ const adventurer = {
       zh: '希尔德加德',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10850301': {
     Id: '10850301',
     defCoef: 8,
-    element: '3',
+    element: 'Wind',
     icon: [
       {
         image: '1010007',
@@ -6365,12 +6365,12 @@ const adventurer = {
       zh: '阿加莎',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10850401': {
     Id: '10850401',
     defCoef: 8,
-    element: '4',
+    element: 'Light',
     icon: [
       {
         image: '1010007',
@@ -6407,12 +6407,12 @@ const adventurer = {
       zh: '希尔德加德',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10850501': {
     Id: '10850501',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1010002',
@@ -6449,12 +6449,12 @@ const adventurer = {
       zh: '海因瓦尔德',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
   '10850502': {
     Id: '10850502',
     defCoef: 8,
-    element: '5',
+    element: 'Shadow',
     icon: [
       {
         image: '1020009',
@@ -6491,7 +6491,7 @@ const adventurer = {
       zh: '维尔莎拉',
     },
     rarity: '5',
-    weapon: '8',
+    weapon: 'Staff',
   },
 };
 
