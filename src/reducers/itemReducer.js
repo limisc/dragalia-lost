@@ -41,8 +41,19 @@ const select = (items, { itemKey, item }) => {
   };
 };
 
+const update = (items, { itemKey, updates }) => {
+  return {
+    ...items,
+    [itemKey]: {
+      ...items[itemKey],
+      ...updates,
+    },
+  };
+};
+
 const itemReducer = createReducer({
   [actionTypes.SELECT_ITEM]: select,
+  [actionTypes.UPDATE_ITEM]: update,
 });
 
 export default itemReducer;

@@ -65,3 +65,5 @@ export const selectItem = (itemKey, item) => (dispatch, getState) => {
     item: newItem,
   });
 };
+
+export const updateItem = createAction(actionTypes.UPDATE_ITEM);
