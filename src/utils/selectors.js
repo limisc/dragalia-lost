@@ -94,3 +94,18 @@ export const getItemList = createSelector(
       });
   }
 );
+
+export const getItemFields = createSelector(
+  state => state.focused,
+  focused => {
+    if (focused === 'adventurer') {
+      return ['level', 'curRarity', 'augHp', 'augStr', 'mana', 'ex'];
+    }
+
+    if (focused === 'dragon') {
+      return ['level', 'unbind', 'augHp', 'augStr', 'bond'];
+    }
+
+    return ['level', 'unbind', 'augHp', 'augStr'];
+  }
+);
