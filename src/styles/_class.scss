@@ -24,6 +24,10 @@ main {
   .grid-#{$i} {
     @include grid($i);
   }
+
+  .col-1-#{$i} {
+    width: 100% / $i;
+  }
 }
 
 .flex {
@@ -44,9 +48,4 @@ main {
   white-space: nowrap;
   overflow: hidden;
   justify-self: start;
-}
-
-.pad-1 {
-  box-sizing: border-box;
-  padding: 0 $unit1;
 }
