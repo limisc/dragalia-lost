@@ -20,6 +20,12 @@ main {
   }
 }
 
+@for $i from 2 to 5 {
+  .grid-#{$i} {
+    @include grid($i);
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -28,11 +34,19 @@ main {
   flex: 1;
 }
 
+.scale {
+  transform: scale(1.1);
+}
+
 .name {
   min-width: 0;
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  // text-overflow: ellipsis;
   justify-self: start;
+}
+
+.pad-1 {
+  box-sizing: border-box;
+  padding: 0 $unit1;
 }
