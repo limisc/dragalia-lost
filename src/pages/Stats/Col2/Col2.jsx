@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
@@ -28,7 +27,9 @@ function Col2({ focused, items, selectFocus }) {
                 onClick={onClick}
               />
 
-              <button type="button">MAX</button>
+              <button type="button" name={key}>
+                MAX
+              </button>
             </div>
           );
         })}
@@ -43,6 +44,8 @@ const mapStateToProps = ({ focused, items }) => {
   return { focused, items };
 };
 
-const actionCreators = { selectFocus };
+const actionCreators = {
+  selectFocus,
+};
 
 export default connect(mapStateToProps, actionCreators)(Col2);

@@ -1,18 +1,24 @@
-import React, { createRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { updateItem } from 'actions';
 import { getItemFields, getLimit, useEvent } from 'utils';
-import { Input } from 'components';
 import SelectItem from './SelectItem';
 
-const fieldRef = {
-  level: createRef(),
-  augHp: createRef(),
-  augStr: createRef(),
-};
-
 function Item({ focused, fields, item, updateItem }) {
-  const { level, curRarity, rarity, unbind } = item || {};
+  const { level, bond, curRarity, rarity, unbind } = item || {};
+
+  const timeRef = useRef();
+
+  const changeInput = e => {
+    const { name, value } = e.target;
+    const key1 = name === 'level' ? focused : name;
+    const r = focused === 'adventurer' ? curRarity : rarity;
+
+    const max = getLimit(key1, r, unbind);
+    const val = value > max ? max : value;
+    if (item[name] === val) return;
+    updateItem({ itemKey: focused, updates: { [name]: val } });
+  };
 
   const getUpdates = (key, value) => {
     if (item[key] === value) return null;
@@ -28,7 +34,6 @@ function Item({ focused, fields, item, updateItem }) {
           ex: value === '5' ? '4' : '0',
         };
 
-        fieldRef.level.current.setValue(level);
         break;
       }
       case 'mana':
@@ -45,7 +50,6 @@ function Item({ focused, fields, item, updateItem }) {
       case 'unbind': {
         const level = getLimit(focused, rarity, value);
         updates.level = level;
-        fieldRef.level.current.setValue(level);
         break;
       }
       default:
@@ -61,18 +65,21 @@ function Item({ focused, fields, item, updateItem }) {
     updateItem({ itemKey: focused, updates });
   });
 
-  const onClick = e => {
-    const { name } = e.target;
-    const max = getLimit(name);
-    fieldRef[name].current.setValue(max);
-  };
-
   useEffect(() => {
+    clearTimeout(timeRef.current);
+    let key;
     if (level === '') {
-      fieldRef.level.current.setValue(1);
-      updateItem({ itemKey: focused, updates: { level: 1 } });
+      key = 'level';
+    } else if (bond === '') {
+      key = 'bond';
     }
-  }, [level, focused, updateItem]);
+
+    if (key !== undefined) {
+      timeRef.current = setTimeout(() => {
+        updateItem({ itemKey: focused, updates: { [key]: 1 } });
+      }, 1000);
+    }
+  }, [level, bond, focused, updateItem]);
 
   if (item === null) return null;
 
@@ -108,27 +115,18 @@ function Item({ focused, fields, item, updateItem }) {
           );
         }
 
-        const newKey = key === 'level' ? focused : key;
-        const newRarity = focused === 'adventurer' ? curRarity : rarity;
-        const max = getLimit(newKey, newRarity, unbind);
         return (
           <div key={key}>
             {key}
             <div className="flex">
-              <Input
-                ref={fieldRef[key]}
+              <input
+                type="number"
                 value={value}
                 name={key}
-                max={max}
-                onChange={handleChange}
+                onChange={changeInput}
               />
               {(key === 'augHp' || key === 'augStr') && (
-                <button
-                  type="button"
-                  className="input-btn"
-                  name={key}
-                  onClick={onClick}
-                >
+                <button type="button" className="input-btn" name={key}>
                   max
                 </button>
               )}

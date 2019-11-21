@@ -1,10 +1,10 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { selectOption, resetOptions } from 'actions';
 import { getFilterFields, useEvent } from 'utils';
-import { CheckSet, Input } from 'components';
+import { CheckSet } from 'components';
 
-const Filter = forwardRef(function Filter(props, ref) {
+function Filter(props) {
   const {
     fields,
     options,
@@ -19,14 +19,13 @@ const Filter = forwardRef(function Filter(props, ref) {
     selectOption({ checked, name, value });
   });
 
-  const handleSearch = useEvent(({ value }) => {
-    setSearch(value);
-  });
+  const handleSearch = e => {
+    setSearch(e.target.value);
+  };
 
   const onClick = () => {
     resetOptions();
     setSearch('');
-    ref.current.setValue('');
   };
 
   return (
@@ -44,11 +43,11 @@ const Filter = forwardRef(function Filter(props, ref) {
       </div>
 
       <div className="flex">
-        <Input
-          ref={ref}
+        <input
           type="text"
-          placeholder="Search"
           value={search}
+          placeholder="Search"
+          spellCheck={false}
           onChange={handleSearch}
         />
 
@@ -58,7 +57,7 @@ const Filter = forwardRef(function Filter(props, ref) {
       </div>
     </>
   );
-});
+}
 
 const mapStateToProps = state => {
   return {
@@ -72,6 +71,4 @@ const actionCreators = {
   resetOptions,
 };
 
-export default connect(mapStateToProps, actionCreators, null, {
-  forwardRef: true,
-})(Filter);
+export default connect(mapStateToProps, actionCreators)(Filter);
