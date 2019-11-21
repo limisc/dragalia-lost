@@ -48,7 +48,7 @@ function Col2({ focused, items, maxItem, selectFocus }) {
         })}
       </div>
 
-      <Item />
+      <Item lang={lang} />
     </div>
   );
 }

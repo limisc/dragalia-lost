@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
+import locales from 'locales';
 import { updateItem } from 'actions';
 import { getItemFields, getLimit, useEvent } from 'utils';
 import SelectItem from './SelectItem';
 
-function Item({ focused, fields, item, updateItem }) {
+function Item({ focused, fields, item, lang, updateItem }) {
   const { level, bond, curRarity, rarity, unbind } = item || {};
 
   const timeRef = useRef();
@@ -109,7 +110,7 @@ function Item({ focused, fields, item, updateItem }) {
 
           return (
             <div key={key}>
-              {key}
+              {locales(key, lang)}
               <SelectItem
                 key={key}
                 name={key}
@@ -123,7 +124,7 @@ function Item({ focused, fields, item, updateItem }) {
 
         return (
           <div key={key}>
-            {key}
+            {locales(key, lang)}
             <div className="flex">
               <input
                 type="number"
