@@ -13,6 +13,7 @@ const Image = memo(function Image(props) {
         name={name}
         src={src}
         type="image"
+        title={title}
         tabIndex={tabIndex}
         onClick={onClick}
       />
