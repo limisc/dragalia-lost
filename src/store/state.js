@@ -1,4 +1,10 @@
-import { ABILITY_TYPES, ELEMENT_TYPES, RARITY_TYPES, WEAPON_TYPES } from 'data';
+import {
+  ABILITY_TYPES,
+  ELEMENT_TYPES,
+  RARITY_TYPES,
+  WEAPON_TYPES,
+  initHalidom,
+} from 'data';
 
 const createOption = types => {
   return types.map(value => ({ value, checked: false }));
@@ -6,18 +12,19 @@ const createOption = types => {
 
 const state = {
   focused: 'adventurer',
-  options: {
-    element: createOption(ELEMENT_TYPES),
-    rarity: createOption(RARITY_TYPES),
-    weapon: createOption(WEAPON_TYPES),
-    type: createOption(ABILITY_TYPES),
-  },
+  halidom: initHalidom,
   items: {
     adventurer: null,
     weapon: null,
     dragon: null,
     wyrmprint1: null,
     wyrmprint2: null,
+  },
+  options: {
+    element: createOption(ELEMENT_TYPES),
+    rarity: createOption(RARITY_TYPES),
+    type: createOption(ABILITY_TYPES),
+    weapon: createOption(WEAPON_TYPES),
   },
 };
 

@@ -43,3 +43,10 @@
   align-items: center;
   justify-items: center;
 }
+
+.halidom-item {
+  display: grid;
+  grid-template-columns: 80px 80px 1fr;
+  align-items: center;
+  border-bottom: 2px solid $blue0;
+}

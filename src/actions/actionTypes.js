@@ -5,6 +5,7 @@ const actionTypes = {
   SELECT_FOCUS: 'SELECT_FOCUS',
   SELECT_ITEM: 'SELECT_ITEM',
   UPDATE_ITEM: 'UPDATE_ITEM',
+  UPDATE_HALIDOM: 'UPDATE_HALIDOM',
 };
 
 export default actionTypes;

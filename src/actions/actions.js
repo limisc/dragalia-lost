@@ -81,3 +81,5 @@ export const maxItem = itemKey => (dispatch, getState) => {
   updates.augStr = max;
   dispatch(updateItem({ itemKey, updates }));
 };
+
+export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
