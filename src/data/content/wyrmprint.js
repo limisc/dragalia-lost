@@ -2442,6 +2442,7 @@ const wyrmprint = {
   },
   '40050011': {
     Id: '40050011',
+    enemy: 'hms',
     icon: [
       {
         image: '1100002',
@@ -2469,7 +2470,6 @@ const wyrmprint = {
     },
     rarity: '5',
     resEle: 'Wind',
-    target: 'hms',
   },
   '40050012': {
     Id: '40050012',
@@ -2781,6 +2781,7 @@ const wyrmprint = {
   },
   '40050024': {
     Id: '40050024',
+    enemy: 'hbh',
     icon: [
       {
         image: '1100002',
@@ -2808,7 +2809,6 @@ const wyrmprint = {
     },
     rarity: '5',
     resEle: 'Flame',
-    target: 'hbh',
   },
   '40050026': {
     Id: '40050026',
@@ -3491,6 +3491,7 @@ const wyrmprint = {
   },
   '40050056': {
     Id: '40050056',
+    enemy: 'hmc',
     icon: [
       {
         image: '1100002',
@@ -3518,7 +3519,6 @@ const wyrmprint = {
     },
     rarity: '5',
     resEle: 'Water',
-    target: 'hmc',
   },
   '40050057': {
     Id: '40050057',
@@ -3721,6 +3721,7 @@ const wyrmprint = {
   },
   '40050065': {
     Id: '40050065',
+    enemy: 'hjp',
     icon: [
       {
         image: '1100002',
@@ -3748,7 +3749,6 @@ const wyrmprint = {
     },
     rarity: '5',
     resEle: 'Light',
-    target: 'hjp',
   },
   '40050066': {
     Id: '40050066',
@@ -3876,6 +3876,7 @@ const wyrmprint = {
   },
   '40050071': {
     Id: '40050071',
+    enemy: 'hzd',
     icon: [
       {
         image: '1100002',
@@ -3903,7 +3904,6 @@ const wyrmprint = {
     },
     rarity: '5',
     resEle: 'Shadow',
-    target: 'hzd',
   },
   '40050072': {
     Id: '40050072',
