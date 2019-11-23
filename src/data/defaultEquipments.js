@@ -15,7 +15,7 @@ const defaultEquipments = {
     Light: '30250404',
     Shadow: '30250503',
     wyrmprint1: '40050026',
-    wyrmprint2: '40050058',
+    wyrmprint2: '40050020',
   },
   Dagger: {
     Flame: '30350105',
@@ -42,7 +42,7 @@ const defaultEquipments = {
     Light: '30550405',
     Shadow: '30550504',
     wyrmprint1: '40050026',
-    wyrmprint2: '40050058',
+    wyrmprint2: '40050020',
   },
   Bow: {
     Flame: '30650104',
