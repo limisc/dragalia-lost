@@ -37,7 +37,6 @@ const calcWeaponMight = weapon => {
 
 const calcDragonMight = dragon => {
   const { bond = '30', might, unbind = '4' } = dragon;
-  console.log(unbind === '4');
   const stage = unbind === '4' ? 0 : 1;
   return MIGHT_DICT.itemSkill[stage] + might[stage] + bond * 10;
 };
