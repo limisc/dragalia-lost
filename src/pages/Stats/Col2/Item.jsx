@@ -27,10 +27,8 @@ function Item({ focused, fields, item, lang, updateItem }) {
 
     switch (key) {
       case 'curRarity': {
-        const level = getLimit(focused, value);
         updates = {
           ...updates,
-          level,
           mana: getLimit('mana', value),
           ex: value === '5' ? '4' : '0',
         };
@@ -45,7 +43,6 @@ function Item({ focused, fields, item, lang, updateItem }) {
           ...updates,
           curRarity: '5',
           mana: '45',
-          level: getLimit(focused, '5'),
         };
         break;
       case 'unbind': {
