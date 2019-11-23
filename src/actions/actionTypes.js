@@ -6,6 +6,7 @@ const actionTypes = {
   SELECT_ITEM: 'SELECT_ITEM',
   UPDATE_ITEM: 'UPDATE_ITEM',
   UPDATE_HALIDOM: 'UPDATE_HALIDOM',
+  SET_PANEL: 'SET_PANEL',
 };
 
 export default actionTypes;

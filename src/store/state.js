@@ -13,6 +13,7 @@ const createOption = types => {
 const state = {
   focused: 'adventurer',
   halidom: initHalidom,
+  panel: false,
   items: {
     adventurer: null,
     weapon: null,

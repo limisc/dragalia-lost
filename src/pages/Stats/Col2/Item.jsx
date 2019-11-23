@@ -72,9 +72,9 @@ function Item({ focused, fields, item, lang, updateItem }) {
   useEffect(() => {
     clearTimeout(timeRef.current);
     let key;
-    if (level === '') {
+    if (level === '' || level === '0') {
       key = 'level';
-    } else if (bond === '') {
+    } else if (bond === '' || bond === '0') {
       key = 'bond';
     }
 

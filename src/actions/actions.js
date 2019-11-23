@@ -83,3 +83,5 @@ export const maxItem = itemKey => (dispatch, getState) => {
 };
 
 export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
+
+export const setPanel = createAction(actionTypes.SET_PANEL);

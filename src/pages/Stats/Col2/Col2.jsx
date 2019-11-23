@@ -2,14 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
-import { maxItem, selectFocus } from 'actions';
+import { maxItem, selectFocus, setPanel } from 'actions';
 import { getImage, useEvent } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import Item from './Item';
 
-function Col2({ focused, items, lang, maxItem, selectFocus }) {
+function Col2({ focused, items, lang, maxItem, selectFocus, setPanel }) {
   const onClick = useEvent(e => {
+    setPanel(false);
     selectFocus(e.target.name);
   });
 
@@ -60,6 +61,7 @@ const mapStateToProps = ({ focused, items }) => {
 const actionCreators = {
   maxItem,
   selectFocus,
+  setPanel,
 };
 
 export default connect(mapStateToProps, actionCreators)(Col2);

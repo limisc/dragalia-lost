@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { setPanel } from 'actions';
 import { Checkbox } from 'components';
 import ItemPanel from './ItemPanel';
 import HalidomPanel from './HalidomPanel';
 
 function Col3({ adventurer, lang, panel, setPanel }) {
   const disabled = adventurer === null;
+
   return (
     <div id="stats-col3">
       <div>
@@ -18,19 +20,20 @@ function Col3({ adventurer, lang, panel, setPanel }) {
         />
       </div>
 
-      {panel ? (
-        <HalidomPanel />
-      ) : (
-        <ItemPanel lang={lang} panel={panel} setPanel={setPanel} />
-      )}
+      {panel ? <HalidomPanel /> : <ItemPanel lang={lang} />}
     </div>
   );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ items, panel }) => {
   return {
-    adventurer: state.items.adventurer,
+    panel,
+    adventurer: items.adventurer,
   };
 };
 
-export default connect(mapStateToProps)(Col3);
+const actionCreators = {
+  setPanel,
+};
+
+export default connect(mapStateToProps, actionCreators)(Col3);
