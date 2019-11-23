@@ -1,5 +1,10 @@
 import { actionTypes } from 'actions';
+import initState from 'store/state';
 import createReducer from './createReducer';
+
+const reset = () => {
+  return initState.items;
+};
 
 const select = (items, { itemKey, item }) => {
   if (item == null) {
@@ -52,6 +57,7 @@ const update = (items, { itemKey, updates }) => {
 };
 
 const itemReducer = createReducer({
+  [actionTypes.RESET_ITEMS]: reset,
   [actionTypes.SELECT_ITEM]: select,
   [actionTypes.UPDATE_ITEM]: update,
 });

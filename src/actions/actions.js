@@ -16,11 +16,16 @@ export const resetOptions = createAction(actionTypes.RESET_OPTIONS);
 
 export const selectOption = createAction(actionTypes.SELECT_OPTION);
 
+export const setPanel = createAction(actionTypes.SET_PANEL);
+
+export const updateItem = createAction(actionTypes.UPDATE_ITEM);
+
+export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
+
 export const selectFocus = itemKey => (dispatch, getState) => {
-  dispatch({
-    itemKey,
-    type: actionTypes.SELECT_FOCUS,
-  });
+  dispatch(setPanel(false));
+
+  dispatch({ itemKey, type: actionTypes.SELECT_FOCUS });
 
   const { adventurer } = getState().items;
 
@@ -48,6 +53,12 @@ export const selectFocus = itemKey => (dispatch, getState) => {
   }
 };
 
+export const resetItems = () => dispatch => {
+  dispatch(setPanel(false));
+  dispatch(selectFocus('adventurer'));
+  dispatch({ type: actionTypes.RESET_ITEMS });
+};
+
 export const selectItem = (itemKey, item) => (dispatch, getState) => {
   if (item == null) return;
 
@@ -67,8 +78,6 @@ export const selectItem = (itemKey, item) => (dispatch, getState) => {
   });
 };
 
-export const updateItem = createAction(actionTypes.UPDATE_ITEM);
-
 export const maxItem = itemKey => (dispatch, getState) => {
   const {
     items: { [itemKey]: item },
@@ -81,7 +90,3 @@ export const maxItem = itemKey => (dispatch, getState) => {
   updates.augStr = max;
   dispatch(updateItem({ itemKey, updates }));
 };
-
-export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
-
-export const setPanel = createAction(actionTypes.SET_PANEL);
