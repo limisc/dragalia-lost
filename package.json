@@ -1,6 +1,5 @@
 {
   "name": "dragalia-lost",
-  "homepage": "http://junlico.github.io/dragalia-lost",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
