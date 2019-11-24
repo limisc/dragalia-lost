@@ -9,6 +9,7 @@ const ui = {
   curRarity: { en: 'Rarity', ja: 'レアリティ', zh: '稀有度' },
   def: { en: 'Def', ja: '防御', zh: '防御' },
   dragon: { en: 'Dragon', ja: 'ドラゴン', zh: '龙' },
+  dcrStr: { en: 'Decrease Strength', ja: '攻撃力ダウンする', zh: '降低攻击' },
   element: { en: 'Element', ja: '属性', zh: '属性' },
   ex: { en: 'Co-Ability', ja: 'EXアビリティ', zh: 'EX' },
   exDef: { en: 'Co-Ability Def', ja: 'EX 防御', zh: 'EX 防御' },

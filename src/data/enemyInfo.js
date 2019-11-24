@@ -1,49 +1,90 @@
 export const ENEMY_INFO = {
   hms: {
     element: 'Wind',
-    info: [
-      { str: 3253, multiplier: 2.3 },
-      { str: 7230, multiplier: 3.6 },
-      { str: 9000, multiplier: 3.7 },
-      { str: 13000, multiplier: 3.4 },
-    ],
+    adv: 'Water',
+    dis: 'Flame',
+    info: {
+      N: { str: 3253, multiplier: 2.3 },
+      H: { str: 7230, multiplier: 3.6 },
+      VH: { str: 9000, multiplier: 3.7 },
+      EX: { str: 13000, multiplier: 3.4 },
+    },
   },
   hbh: {
     element: 'Flame',
-    info: [
-      { str: 3253, multiplier: 2 },
-      { str: 7230, multiplier: 4.8 },
-      { str: 9000, multiplier: 4.75 },
-      { str: 13000, multiplier: 3.5 },
-    ],
+    adv: 'Wind',
+    dis: 'Water',
+    info: {
+      N: { str: 3253, multiplier: 2 },
+      H: { str: 7230, multiplier: 4.8 },
+      VH: { str: 9000, multiplier: 4.75 },
+      EX: { str: 13000, multiplier: 3.5 },
+    },
   },
   hmc: {
     element: 'Water',
-    info: [
-      { str: 7230, multiplier: 1.1 },
-      { str: 7230, multiplier: 2.75 },
-      { str: 9000, multiplier: 3.2 },
-      { str: 13000, multiplier: 2.4 },
-    ],
+    info: {
+      N: { str: 7230, multiplier: 1.1 },
+      H: { str: 7230, multiplier: 2.75 },
+      VH: { str: 9000, multiplier: 3.2 },
+      EX: { str: 13000, multiplier: 2.4 },
+    },
   },
   hjp: {
     element: 'Light',
-    info: [
-      { str: 7230, multiplier: 0.7 },
-      { str: 7230, multiplier: 4.4 },
-      { str: 9000, multiplier: 4.2 },
-      { str: 13000, multiplier: 2.6 },
-    ],
+    info: {
+      N: { str: 7230, multiplier: 0.7 },
+      H: { str: 7230, multiplier: 4.4 },
+      VH: { str: 9000, multiplier: 4.2 },
+      EX: { str: 13000, multiplier: 2.6 },
+    },
   },
   hzd: {
     element: 'Shadow',
-    info: [
-      { str: 7996, multiplier: 0.7 },
-      { str: 7996, multiplier: 4.4 },
-      { str: 8386, multiplier: 4.4 },
-      { str: 9000, multiplier: 4 },
-    ],
+    info: {
+      N: { str: 7996, multiplier: 0.7 },
+      H: { str: 7996, multiplier: 4.4 },
+      VH: { str: 8386, multiplier: 4.4 },
+      EX: { str: 9000, multiplier: 4 },
+    },
   },
+};
+
+const ELEMENTS_MODIFIER = {
+  // advantage: adv, disadvantage: dis
+  Flame: {
+    adv: 'Wind',
+    dis: 'Water',
+  },
+  Water: {
+    adv: 'Flame',
+    dis: 'Wind',
+  },
+  Wind: {
+    adv: 'Water',
+    dis: 'Flame',
+  },
+  Light: {
+    adv: 'Shadow',
+    dis: 'Shadow',
+  },
+  Shadow: {
+    adv: 'Light',
+    dis: 'Light',
+  },
+};
+
+export const getModifier = (enemyEle, element) => {
+  const { adv, dis } = ELEMENTS_MODIFIER[enemyEle] || {};
+  if (dis === element) {
+    return 0.5;
+  }
+
+  if (adv === element) {
+    return 1.5;
+  }
+
+  return 1;
 };
 
 export const ELEMENT_ADV_TO_ENEMY = {

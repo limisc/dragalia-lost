@@ -59,30 +59,6 @@ export const MIGHT_DICT = {
   itemSkill: [100, 50],
 };
 
-export const ELEMENTS_MODIFIER = {
-  // advantage: adv, disadvantage: dis
-  Flame: {
-    adv: 'Wind',
-    dis: 'Water',
-  },
-  Water: {
-    adv: 'Flame',
-    dis: 'Wind',
-  },
-  Wind: {
-    adv: 'Water',
-    dis: 'Flame',
-  },
-  Light: {
-    adv: 'Shadow',
-    dis: 'Shadow',
-  },
-  Shadow: {
-    adv: 'Light',
-    dis: 'Light',
-  },
-};
-
 export const ITEM_KEYS = [
   'adventurer',
   'weapon',
