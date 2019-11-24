@@ -11,7 +11,7 @@ export const getFilterFields = createSelector(
       case 'weapon':
         return ['rarity', 'element', 'weapon'];
       case 'dragon':
-        return ['rarity', 'element'];
+        return ['rarity', 'element', 'type'];
       default:
         return ['rarity', 'type'];
     }
@@ -42,6 +42,13 @@ export const getFilters = createSelector(
 );
 
 const selectProp = key => (_, props) => props[key];
+const sumArray = array => {
+  if (Array.isArray(array)) {
+    return array.reduce((acc, cur) => acc + cur, 0);
+  }
+
+  return 0;
+};
 
 export const getItemList = createSelector(
   [
@@ -87,10 +94,22 @@ export const getItemList = createSelector(
           if (weapon1 > weapon2) return 1;
         }
 
-        if (item1.max[0] + item1.max[1] > item2.max[0] + item2.max[1]) {
+        if (dataField === 'wyrmprint') {
+          if (item1.enemy && !item2.enemy) return -1;
+          if (!item1.enemey && item2.enemy) return 1;
+        }
+
+        if (
+          sumArray(item1.max) + sumArray(item1.might) >
+          sumArray(item2.max) + sumArray(item2.might)
+        ) {
           return -1;
         }
-        if (item1.max[0] + item1.max[1] < item2.max[0] + item2.max[1]) {
+
+        if (
+          sumArray(item1.max) + sumArray(item1.might) <
+          sumArray(item2.max) + sumArray(item2.might)
+        ) {
           return 1;
         }
 

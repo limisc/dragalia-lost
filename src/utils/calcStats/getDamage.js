@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { createSelector } from 'reselect';
-import { ENEMY_INFO, ELEMENTS_MODIFIER, ITEM_KEYS } from 'data';
+import { ENEMY_INFO, getModifier, ITEM_KEYS } from 'data';
 import calcVal from '../calcVal';
 import getDetails from './getDetails';
 
@@ -24,26 +25,22 @@ const getDamage = createSelector(
   (details, settings) => {
     if (details === null) return null;
     const { defCoef, element } = details.adventurer;
-    const { def, exDef, exHp, hp, enemy, str, multiplier } = settings;
-    const { element: enemyEle } = ENEMY_INFO[enemy];
+    const { def, exHp, hp, enemy, dcrStr, multiplier, difficulty } = settings;
 
-    let modifier = 1;
-    switch (element) {
-      case ELEMENTS_MODIFIER[enemyEle].dis:
-        modifier = 0.5;
-        break;
-      case ELEMENTS_MODIFIER[enemyEle].adv:
-        modifier = 1.5;
-        break;
-      default:
-        break;
+    const { element: enemyEle, info } = ENEMY_INFO[enemy] || {};
+
+    let str = 0;
+    if (info) {
+      str = info[difficulty].str;
     }
+
+    const modifier = getModifier(enemyEle, element);
 
     let printDef = 0;
     let printRes = 0;
     let printReduce = 0;
 
-    let totalDef = Number(def) + Number(exDef);
+    let totalDef = Number(def);
     let totalRes = 0;
 
     ITEM_KEYS.forEach(key => {
@@ -83,6 +80,7 @@ const getDamage = createSelector(
     const base =
       ((5 / 3) *
         str *
+        (1 - dcrStr * 0.01) *
         multiplier *
         modifier *
         (1 - printReduce * 0.01) *
