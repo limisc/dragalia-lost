@@ -97,7 +97,7 @@ const Select = memo(function Select(props) {
         onClick={toggleSelect}
         onKeyDown={handleKeyDown}
       >
-        {value}
+        {locales(value, lang)}
         {!disabled && <span className={arrowClassName} />}
       </div>
       <input type="hidden" name={name} value={value} />
