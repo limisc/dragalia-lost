@@ -34,7 +34,7 @@
     }
 
     > span {
-      padding: 4px 0;
+      padding: $unit0 0;
     }
   }
 }
@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 8px;
+  border-radius: $unit0;
   height: 56px;
   color: white;
   font-weight: bold;
@@ -70,7 +70,7 @@
   }
 
   button {
-    margin-top: 8px;
+    margin-top: $unit1;
     height: 30px;
   }
 }

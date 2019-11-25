@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import Header from './Header';
 
 const pages = {
   stats: lazy(() => import('./pages/Stats')),
@@ -10,6 +11,7 @@ const getRoute = page => {
   const Component = pages[page];
   return (
     <Route path={path}>
+      <Header />
       <Component />
     </Route>
   );

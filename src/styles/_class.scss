@@ -8,6 +8,38 @@ body {
   color: $black0;
 }
 
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+
+  display: flex;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: $header-height;
+  padding: 0 $unit2;
+
+  background: $base0;
+
+  > div {
+    @extend %not-select;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 1 60px;
+    border-radius: $unit0;
+    background: aliceblue;
+    cursor: pointer;
+
+    & + div {
+      margin-left: $unit1;
+    }
+  }
+}
+
 main {
   box-sizing: border-box;
   margin-top: $main-margin-top;
