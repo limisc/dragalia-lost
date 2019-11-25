@@ -1,8 +1,6 @@
 export const ENEMY_INFO = {
   hms: {
     element: 'Wind',
-    adv: 'Water',
-    dis: 'Flame',
     info: {
       N: { str: 3253, multiplier: 2.3 },
       H: { str: 7230, multiplier: 3.6 },
@@ -12,8 +10,6 @@ export const ENEMY_INFO = {
   },
   hbh: {
     element: 'Flame',
-    adv: 'Wind',
-    dis: 'Water',
     info: {
       N: { str: 3253, multiplier: 2 },
       H: { str: 7230, multiplier: 4.8 },
