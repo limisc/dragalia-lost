@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Filter from './Filter';
 import ItemList from './ItemList';
 
-function ItemPanel({ focused, lang }) {
+function Items({ focused, lang }) {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -24,4 +24,4 @@ const mapStateToProps = ({ focused }) => {
   };
 };
 
-export default connect(mapStateToProps)(ItemPanel);
+export default connect(mapStateToProps)(Items);

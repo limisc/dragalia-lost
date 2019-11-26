@@ -48,9 +48,7 @@ function Item({ data, focused, index, style, selectItem }) {
 }
 
 const mapStateToProps = ({ focused }) => {
-  return {
-    focused,
-  };
+  return { focused };
 };
 
 const actionCreators = {

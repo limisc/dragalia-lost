@@ -11,17 +11,16 @@ function HalidomItem({ halidomKey, item, style, updateHalidom }) {
   const { lang } = useParams();
   const { id, type, level } = item;
   const image = `facility/${id}`;
-  const name = locales(id, lang, 'halidom');
+  const title = locales(id, lang, 'halidom');
 
-  const max = id === '100901' ? 35 : getLimit(type);
+  const max = id === '101501' ? 35 : getLimit(type);
   const setLevel = useEvent(val => {
     updateHalidom({ halidomKey, level: val });
   });
 
   return (
     <div style={style} className="halidom-item">
-      <Image image={image} size="lg" />
-      <span className="name">{name}</span>
+      <Image image={image} size="lg" title={title} />
       <Slider value={level} max={max} setValue={setLevel} />
     </div>
   );

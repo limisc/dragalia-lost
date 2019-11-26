@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setPanel } from 'actions';
 import { Checkbox } from 'components';
-import ItemPanel from './ItemPanel';
-import HalidomPanel from './HalidomPanel';
+import Items from './Items';
+import Halidom from './Halidom';
 
 function Col3({ adventurer, lang, panel, setPanel }) {
   const disabled = adventurer === null;
@@ -20,7 +20,7 @@ function Col3({ adventurer, lang, panel, setPanel }) {
         />
       </div>
 
-      {panel ? <HalidomPanel /> : <ItemPanel lang={lang} />}
+      {panel ? <Halidom /> : <Items lang={lang} />}
     </div>
   );
 }

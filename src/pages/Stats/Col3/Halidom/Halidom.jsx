@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { HALIDOM_LIST } from 'data';
 import HalidomItem from './HalidomItem';
+import HalidomPanel from './HalidomPanel';
 
-function HalidomPanel({ element, weapon, dragonEle }) {
+function Halidom({ element, weapon, dragonEle }) {
   if (!element) return null;
 
   let filters;
@@ -19,8 +20,8 @@ function HalidomPanel({ element, weapon, dragonEle }) {
 
   return (
     <>
-      {/* <HalidomSetting /> */}
-      <div>
+      <HalidomPanel btns={['del', 'refresh', 'save']} />
+      <div className="list">
         {arr.map(key => (
           <HalidomItem key={key} halidomKey={key} />
         ))}
@@ -34,6 +35,6 @@ const mapStateToProps = ({ items: { adventurer, dragon } }) => {
   return { element, weapon, dragonEle };
 };
 
-const actionCreators = {};
+const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, actionCreators)(HalidomPanel);
+export default connect(mapStateToProps, mapDispatchToProps)(Halidom);

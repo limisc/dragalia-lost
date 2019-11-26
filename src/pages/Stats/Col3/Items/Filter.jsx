@@ -15,7 +15,7 @@ function Filter(props) {
     setSearch,
   } = props;
 
-  const handleChange = useEvent(e => {
+  const handleFilter = useEvent(e => {
     const { checked, name, value } = e.target;
     selectOption({ checked, name, value });
   });
@@ -24,7 +24,7 @@ function Filter(props) {
     setSearch(e.target.value);
   };
 
-  const onClick = () => {
+  const resetFilters = () => {
     resetOptions();
     setSearch('');
   };
@@ -39,7 +39,7 @@ function Filter(props) {
             group={key}
             lang={lang}
             options={options[key]}
-            onChange={handleChange}
+            onChange={handleFilter}
           />
         ))}
       </div>
@@ -53,7 +53,7 @@ function Filter(props) {
           onChange={handleSearch}
         />
 
-        <button type="button" className="input-btn" onClick={onClick}>
+        <button type="button" className="input-btn" onClick={resetFilters}>
           Clear
         </button>
       </div>
