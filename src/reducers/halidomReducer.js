@@ -2,6 +2,10 @@ import { actionTypes } from 'actions';
 import { includes } from 'utils';
 import createReducer from './createReducer';
 
+const load = (_, { backup }) => {
+  return backup;
+};
+
 const update = (halidom, { halidomKey, level }) => {
   if (includes(halidom, halidomKey) && halidom[halidomKey].level !== level) {
     return {
@@ -17,6 +21,7 @@ const update = (halidom, { halidomKey, level }) => {
 };
 
 const halidomReducer = createReducer({
+  [actionTypes.LOAD_HALIDOM]: load,
   [actionTypes.UPDATE_HALIDOM]: update,
 });
 

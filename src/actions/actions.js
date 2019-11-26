@@ -1,4 +1,6 @@
-import { getLimit } from 'utils';
+import deepmerge from 'deepmerge';
+import { getLimit, loadState } from 'utils';
+import { initHalidom } from 'data';
 import actionTypes from './actionTypes';
 import { buildItems, modifyNewItem } from './itemUtils';
 
@@ -89,4 +91,19 @@ export const maxItem = itemKey => (dispatch, getState) => {
   updates.augHp = max;
   updates.augStr = max;
   dispatch(updateItem({ itemKey, updates }));
+};
+
+export const loadHalidom = () => async (dispatch, getState) => {
+  let backup = await loadState('halidom');
+  if (backup === null) return;
+
+  if (Object.keys(backup).length !== Object.keys(initHalidom).length) {
+    const { halidom } = getState();
+    backup = deepmerge(halidom, initHalidom);
+  }
+
+  dispatch({
+    backup,
+    type: actionTypes.LOAD_HALIDOM,
+  });
 };
