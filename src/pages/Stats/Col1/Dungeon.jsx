@@ -4,6 +4,7 @@ import { COABILITY_VALUE, ELEMENT_ADV_TO_ENEMY, ENEMY_INFO } from 'data';
 import { Select } from 'components';
 import { useEvent } from 'utils';
 import locales from 'locales';
+import SelectEnemy from './SelectEnemy';
 import DamageBar from './DamageBar';
 
 function Dungeon({ adventurer, lang }) {
@@ -20,13 +21,6 @@ function Dungeon({ adventurer, lang }) {
   });
 
   const eleRef = useRef();
-
-  const enemyOptions = useMemo(() => {
-    return Object.keys(ENEMY_INFO).map(value => ({
-      value,
-      label: locales(value, lang),
-    }));
-  }, [lang]);
 
   const difficultyOptions = useMemo(() => {
     return ['EX', 'VH', 'H', 'N'].map(value => ({
@@ -92,10 +86,8 @@ function Dungeon({ adventurer, lang }) {
 
   return (
     <>
-      <Select
+      <SelectEnemy
         name="enemy"
-        options={enemyOptions}
-        label={locales(settings.enemy, lang)}
         value={settings.enemy}
         onChange={handleSelect}
       />

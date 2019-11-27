@@ -17,6 +17,8 @@ button {
   background: aliceblue;
   cursor: pointer;
 
+  outline: 0;
+
   &:hover {
     border-color: #90a4ae;
   }

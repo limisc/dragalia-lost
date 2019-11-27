@@ -14,8 +14,7 @@
   border-radius: $unit0;
 
   width: 100%;
-  height: $text-field-height;
-  padding-left: $unit1;
+  min-height: $text-field-height;
 
   &.disabled {
     border: 2px solid $disabled;
@@ -35,6 +34,14 @@
       border-color: #8bbafe;
       box-shadow: 0 0 0 0.1rem $blue1;
     }
+  }
+
+  > div {
+    margin-left: $unit1;
+  }
+
+  img {
+    width: 100%;
   }
 
   .arrow {
@@ -58,7 +65,7 @@ ul {
   box-sizing: border-box;
   border-radius: $unit0;
   width: 100%;
-  max-height: 500px;
+  max-height: 300px;
   overflow-y: auto;
 
   background-color: #fff;
@@ -80,5 +87,9 @@ ul {
     color: #fff;
     font-weight: 500;
     background-color: $blue1;
+  }
+
+  img {
+    width: 100%;
   }
 }
