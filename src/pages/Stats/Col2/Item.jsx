@@ -29,10 +29,10 @@ function Item({ focused, fields, item, lang, updateItem }) {
       case 'curRarity': {
         updates = {
           ...updates,
+          level: getLimit(focused, value),
           mana: getLimit('mana', value),
           ex: value === '5' ? '4' : '0',
         };
-
         break;
       }
       case 'mana':
