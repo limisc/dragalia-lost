@@ -32,27 +32,23 @@ const LIMIT = {
   },
 };
 
-const getLimit = (...keys) => {
-  let [key] = keys;
-  if (key === 'augHp' || key === 'augStr') {
-    key = 'augments';
-  } else if (key === 'wyrmprint1' || key === 'wyrmprint2') {
-    key = 'wyrmprint';
+const getLimit = (key, rarity, unbind = 4) => {
+  switch (key) {
+    case 'augHp':
+    case 'augStr':
+      return LIMIT.augments;
+    case 'wyrmprint1':
+    case 'wyrmprint2':
+      return LIMIT.wyrmprint[rarity][unbind];
+    case 'dragon':
+    case 'weapon':
+      return LIMIT[key][rarity][unbind];
+    case 'adventurer':
+    case 'mana':
+      return LIMIT[key][rarity];
+    default:
+      return LIMIT[key] || 30;
   }
-
-  let ret = LIMIT;
-  for (let i = 0; i < keys.length; i += 1) {
-    ret = ret[key];
-    key = keys[i + 1];
-    if (ret === undefined) break;
-    if (typeof ret === 'number') return ret;
-  }
-
-  if (Array.isArray(ret)) {
-    return ret[ret.length - 1];
-  }
-
-  return 30;
 };
 
 export default getLimit;
