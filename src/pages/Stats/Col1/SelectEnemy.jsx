@@ -6,14 +6,14 @@ import { Image } from 'components';
 const enemyOptions = Object.keys(ENEMY_INFO);
 
 const SelectEnemy = memo(function SelectEnemy(props) {
-  const { disabled, name, value, onChange = () => {} } = props;
+  const { name, value, onChange = () => {} } = props;
   const ref = useRef();
   const [expand, setExpand] = useState(false);
 
   const arrow = clsx('arrow', expand ? 'up' : 'down');
+  const imageURL = `${process.env.PUBLIC_URL}/images/dungeon/${value}.png`;
 
   const toggleSelect = () => {
-    if (disabled) return;
     setExpand(prevExpand => !prevExpand);
   };
 
@@ -48,13 +48,17 @@ const SelectEnemy = memo(function SelectEnemy(props) {
     <div className="select">
       <div
         ref={ref}
-        className={clsx('select-control', 'white', { disabled })}
+        className={clsx('select-control', 'white')}
+        style={{
+          height: '70px',
+          backgroundImage: `url(${imageURL})`,
+          backgroundPosition: '45% 45%',
+        }}
         role="button"
         tabIndex="0"
         onClick={toggleSelect}
         onKeyDown={null}
       >
-        <Image image={`dungeon/${value}`} />
         <span className={arrow} />
       </div>
 

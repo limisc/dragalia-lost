@@ -23,13 +23,15 @@
     }
 
     &#body {
-      overflow: hidden;
-      max-height: 0;
-      transition: 0.25s ease-out;
+      display: none;
+      // overflow: hidden;
+      // max-height: 0;
+      // transition: 0.25s ease-out;
 
       &.expend {
-        max-height: 300px;
-        transition: 0.25s ease-in;
+        display: grid;
+        // max-height: 300px;
+        // transition: 0.25s ease-in;
       }
     }
 

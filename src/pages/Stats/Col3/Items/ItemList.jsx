@@ -22,7 +22,7 @@ function ItemList({ options, focused, list }) {
             ref={listRef}
             height={height}
             width={width}
-            itemSize={80}
+            itemSize={65}
             itemCount={list.length}
             itemData={list}
           >
