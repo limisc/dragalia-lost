@@ -27,9 +27,9 @@ function Stats({ loadHalidom, selectItem }) {
   );
 }
 
-const actionCreators = {
+const mapDispatchToProps = {
   loadHalidom,
   selectItem,
 };
 
-export default connect(null, actionCreators)(Stats);
+export default connect(null, mapDispatchToProps)(Stats);

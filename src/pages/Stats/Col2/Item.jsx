@@ -168,8 +168,8 @@ const mapStateToProps = state => {
   };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   updateItem,
 };
 
-export default connect(mapStateToProps, actionCreators)(Item);
+export default connect(mapStateToProps, mapDispatchToProps)(Item);

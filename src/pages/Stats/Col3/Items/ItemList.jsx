@@ -43,6 +43,4 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-const actionCreators = {};
-
-export default connect(mapStateToProps, actionCreators)(ItemList);
+export default connect(mapStateToProps)(ItemList);

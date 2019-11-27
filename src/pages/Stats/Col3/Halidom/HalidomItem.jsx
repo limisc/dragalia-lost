@@ -52,6 +52,6 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-const actionCreators = { updateHalidom };
+const mapDispatchToProps = { updateHalidom };
 
-export default connect(mapStateToProps, actionCreators)(HalidomItem);
+export default connect(mapStateToProps, mapDispatchToProps)(HalidomItem);

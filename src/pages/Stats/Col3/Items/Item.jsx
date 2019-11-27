@@ -51,8 +51,8 @@ const mapStateToProps = ({ focused }) => {
   return { focused };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   selectItem,
 };
 
-export default connect(mapStateToProps, actionCreators)(Item);
+export default connect(mapStateToProps, mapDispatchToProps)(Item);

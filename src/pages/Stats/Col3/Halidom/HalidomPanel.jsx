@@ -50,6 +50,6 @@ const mapStateToProps = ({ halidom }) => {
   return { halidom };
 };
 
-const actionCreators = { loadHalidom };
+const mapDispatchToProps = { loadHalidom };
 
-export default connect(mapStateToProps, actionCreators)(HalidomPanel);
+export default connect(mapStateToProps, mapDispatchToProps)(HalidomPanel);

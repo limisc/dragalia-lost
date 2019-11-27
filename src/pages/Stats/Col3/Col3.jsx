@@ -32,8 +32,8 @@ const mapStateToProps = ({ items, panel }) => {
   };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   setPanel,
 };
 
-export default connect(mapStateToProps, actionCreators)(Col3);
+export default connect(mapStateToProps, mapDispatchToProps)(Col3);

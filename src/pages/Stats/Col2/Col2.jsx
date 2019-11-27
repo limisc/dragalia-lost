@@ -61,9 +61,9 @@ const mapStateToProps = ({ focused, items }) => {
   return { focused, items };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   maxItem,
   selectFocus,
 };
 
-export default connect(mapStateToProps, actionCreators)(Col2);
+export default connect(mapStateToProps, mapDispatchToProps)(Col2);

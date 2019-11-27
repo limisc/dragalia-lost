@@ -57,6 +57,4 @@ const mapStateToProps = state => {
   };
 };
 
-const actionCreators = {};
-
-export default connect(mapStateToProps, actionCreators)(StatsTable);
+export default connect(mapStateToProps)(StatsTable);

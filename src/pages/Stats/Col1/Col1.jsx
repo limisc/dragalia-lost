@@ -39,8 +39,8 @@ const mapStateToProps = state => {
   return { adventurer };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   resetItems,
 };
 
-export default connect(mapStateToProps, actionCreators)(Col1);
+export default connect(mapStateToProps, mapDispatchToProps)(Col1);

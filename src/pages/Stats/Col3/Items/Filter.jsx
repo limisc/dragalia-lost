@@ -72,9 +72,9 @@ const mapStateToProps = ({ focused, options }) => {
   };
 };
 
-const actionCreators = {
+const mapDispatchToProps = {
   selectOption,
   resetOptions,
 };
 
-export default connect(mapStateToProps, actionCreators)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);
