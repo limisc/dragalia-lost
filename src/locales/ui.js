@@ -24,7 +24,7 @@ const ui = {
   multiplier: { en: 'Multiplier', ja: '乗数', zh: '倍率' },
   name: { en: 'Name', ja: '名称', zh: '名称' },
   rarity: { en: 'Rarity', ja: 'レアリティ', zh: '稀有度' },
-  reduce: { en: 'Reduce Damage', ja: '真竜耐性', zh: '真龙抗性' },
+  reduce: { en: 'Reduce Damage', ja: '真竜耐性', zh: '减伤' },
   res: { en: 'Resistance', ja: '属性耐性', zh: '属性抗性' },
   reset: { en: 'Reset', ja: 'リセット', zh: '重置' },
   search: { en: 'Search', ja: '検索', zh: '搜索' },

@@ -25,7 +25,17 @@ const getDamage = createSelector(
   (details, settings) => {
     if (details === null) return null;
     const { defCoef, element } = details.adventurer;
-    const { def, exHp, hp, enemy, dcrStr, multiplier, difficulty } = settings;
+    const {
+      dcrStr,
+      def,
+      difficulty,
+      enemy,
+      exHp,
+      hp,
+      multiplier,
+      reduce,
+      res,
+    } = settings;
 
     const { element: enemyEle, info } = ENEMY_INFO[enemy] || {};
 
@@ -41,7 +51,8 @@ const getDamage = createSelector(
     let printReduce = 0;
 
     let totalDef = Number(def);
-    let totalRes = 0;
+    let totalReduce = Number(reduce);
+    let totalRes = Number(res);
 
     ITEM_KEYS.forEach(key => {
       const item = details[key];
@@ -55,6 +66,7 @@ const getDamage = createSelector(
         if (key === 'wyrmprint1' || key === 'wyrmprint2') {
           printDef += incDEF;
           if (item.enemy === enemy) {
+            totalReduce += item.incDIS;
             printReduce += item.incDIS;
           }
 
@@ -74,7 +86,7 @@ const getDamage = createSelector(
     }
 
     if (printReduce > WYRMPRINT_MAX_REDUCE) {
-      printReduce = WYRMPRINT_MAX_REDUCE;
+      totalReduce += WYRMPRINT_MAX_REDUCE - printReduce;
     }
 
     const base =
@@ -83,7 +95,7 @@ const getDamage = createSelector(
         (1 - dcrStr * 0.01) *
         multiplier *
         modifier *
-        (1 - printReduce * 0.01) *
+        (1 - totalReduce * 0.01) *
         (1 - totalRes * 0.01)) /
       (defCoef * (1 + totalDef * 0.01));
 

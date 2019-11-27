@@ -6,11 +6,6 @@ import { useEvent } from 'utils';
 import locales from 'locales';
 import DamageBar from './DamageBar';
 
-// const enemyOptions = Object.keys(ENEMY_INFO);
-
-// TODO: use filter for each enemy
-// const difficultyOptions = ['N', 'H', 'VH', 'EX'];
-
 function Dungeon({ adventurer, lang }) {
   const [settings, setSettings] = useState({
     dcrStr: '',
@@ -20,6 +15,8 @@ function Dungeon({ adventurer, lang }) {
     exHp: '',
     hp: '',
     multiplier: '',
+    reduce: '',
+    res: '',
   });
 
   const eleRef = useRef();
@@ -114,19 +111,21 @@ function Dungeon({ adventurer, lang }) {
             onChange={handleSelect}
           />
         </div>
-        {['multiplier', 'dcrStr', 'def', 'exHp', 'hp'].map(key => {
-          return (
-            <div key={key}>
-              {locales(key, lang)}
-              <input
-                type="number"
-                name={key}
-                value={settings[key]}
-                onChange={handleInput}
-              />
-            </div>
-          );
-        })}
+        {['multiplier', 'exHp', 'hp', 'def', 'res', 'dcrStr', 'reduce'].map(
+          key => {
+            return (
+              <div key={key}>
+                {locales(key, lang)}
+                <input
+                  type="number"
+                  name={key}
+                  value={settings[key]}
+                  onChange={handleInput}
+                />
+              </div>
+            );
+          }
+        )}
       </div>
 
       {adventurer && <DamageBar settings={settings} />}
