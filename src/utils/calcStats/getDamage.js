@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createSelector } from 'reselect';
 import { ENEMY_INFO, getModifier, ITEM_KEYS } from 'data';
 import calcVal from '../calcVal';
