@@ -33,7 +33,11 @@ export const selectFocus = itemKey => (dispatch, getState) => {
 
   if (itemKey === 'adventurer') {
     dispatch(resetOptions());
-  } else if (itemKey === 'wyrmprint1' || itemKey === 'wyrmprint2') {
+  } else if (
+    itemKey === 'dragon' ||
+    itemKey === 'wyrmprint1' ||
+    itemKey === 'wyrmprint2'
+  ) {
     dispatch(resetOptions('type'));
   }
 
