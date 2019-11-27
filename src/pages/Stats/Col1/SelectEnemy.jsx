@@ -48,7 +48,7 @@ const SelectEnemy = memo(function SelectEnemy(props) {
     <div className="select">
       <div
         ref={ref}
-        className={clsx('select-control', { disabled })}
+        className={clsx('select-control', 'white', { disabled })}
         role="button"
         tabIndex="0"
         onClick={toggleSelect}
@@ -56,7 +56,6 @@ const SelectEnemy = memo(function SelectEnemy(props) {
       >
         <Image image={`dungeon/${value}`} />
         <span className={arrow} />
-        <input type="hidden" name={name} value={value} />
       </div>
 
       {expand && (

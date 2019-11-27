@@ -18,13 +18,6 @@
 
   &.disabled {
     border: 2px solid $disabled;
-
-    > .arrow {
-      &::before,
-      &::after {
-        background-color: $disabled;
-      }
-    }
   }
 
   &:focus {

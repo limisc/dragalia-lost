@@ -23,6 +23,14 @@ $transit: $arrow-width - $arrow-height;
     background-color: $black2;
 
     transition: 0.4s ease;
+
+    .white & {
+      background-color: white;
+    }
+
+    .disabled & {
+      background-color: $disabled;
+    }
   }
 
   &::before {
@@ -67,3 +75,10 @@ $transit: $arrow-width - $arrow-height;
     }
   }
 }
+
+// .white.arrow {
+//   &::before,
+//   &::after {
+//     background-color: white;
+//   }
+// }
