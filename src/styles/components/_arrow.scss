@@ -1,4 +1,6 @@
-$transit: $unit2 - $unit0;
+$arrow-width: 10px;
+$arrow-height: 3px;
+$transit: $arrow-width - $arrow-height;
 @mixin rotate($deg) {
   // IE 9
   -ms-transform: rotate($deg);
@@ -9,8 +11,8 @@ $transit: $unit2 - $unit0;
 
 .arrow {
   position: absolute;
-  width: $unit2;
-  height: $unit2;
+  width: $arrow-width;
+  height: $arrow-width;
 
   transition: 0.4s ease;
 
@@ -24,13 +26,13 @@ $transit: $unit2 - $unit0;
   }
 
   &::before {
-    width: $unit2;
-    height: $unit0;
+    width: $arrow-width;
+    height: $arrow-height;
   }
 
   &::after {
-    width: $unit0;
-    height: $unit2;
+    width: $arrow-height;
+    height: $arrow-width;
   }
 
   &.up,

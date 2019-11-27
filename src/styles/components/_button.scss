@@ -12,13 +12,10 @@ button {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
 
   background: aliceblue;
   cursor: pointer;
-
-  &:focus {
-    outline: 2px solid $blue1;
-  }
 
   &:hover {
     border-color: #90a4ae;

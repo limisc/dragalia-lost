@@ -6,7 +6,7 @@
   }
 
   &:disabled + label {
-    background-color: $black3;
+    background-color: $disabled;
   }
 
   & + label {
