@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { connect } from 'react-redux';
 import { COABILITY_VALUE, ELEMENT_ADV_TO_ENEMY, ENEMY_INFO } from 'data';
 import { Select } from 'components';
@@ -6,10 +6,10 @@ import { useEvent } from 'utils';
 import locales from 'locales';
 import DamageBar from './DamageBar';
 
-const enemyOptions = Object.keys(ENEMY_INFO);
+// const enemyOptions = Object.keys(ENEMY_INFO);
 
 // TODO: use filter for each enemy
-const difficultyOptions = ['N', 'H', 'VH', 'EX'];
+// const difficultyOptions = ['N', 'H', 'VH', 'EX'];
 
 function Dungeon({ adventurer, lang }) {
   const [settings, setSettings] = useState({
@@ -23,6 +23,20 @@ function Dungeon({ adventurer, lang }) {
   });
 
   const eleRef = useRef();
+
+  const enemyOptions = useMemo(() => {
+    return Object.keys(ENEMY_INFO).map(value => ({
+      value,
+      label: locales(value, lang),
+    }));
+  }, [lang]);
+
+  const difficultyOptions = useMemo(() => {
+    return ['EX', 'VH', 'H', 'N'].map(value => ({
+      value,
+      label: locales(value, lang),
+    }));
+  }, [lang]);
 
   const handleSelect = useEvent(({ name, value }) => {
     setSettings(prevSettings => ({ ...prevSettings, [name]: value }));
@@ -83,8 +97,8 @@ function Dungeon({ adventurer, lang }) {
     <>
       <Select
         name="enemy"
-        lang={lang}
         options={enemyOptions}
+        label={locales(settings.enemy, lang)}
         value={settings.enemy}
         onChange={handleSelect}
       />
@@ -94,8 +108,8 @@ function Dungeon({ adventurer, lang }) {
           {locales('difficulty', lang)}
           <Select
             name="difficulty"
-            lang={lang}
             options={difficultyOptions}
+            label={locales(settings.difficulty, lang)}
             value={settings.difficulty}
             onChange={handleSelect}
           />

@@ -1,14 +1,12 @@
 import React, { memo, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
-import locales from 'locales';
 
 const Select = memo(function Select(props) {
-  const { disabled, name, lang, options, value, onChange, setSelect } = props;
-  const focusRef = useRef();
+  const { disabled, name, options, label, value, onChange = () => {} } = props;
+  const ref = useRef();
   const [expand, setExpand] = useState(false);
-  const [cursor, setCursor] = useState();
 
-  const arrowClassName = clsx('arrow', expand ? 'up' : 'down');
+  const arrow = clsx('arrow', expand ? 'up' : 'down');
 
   const toggleSelect = () => {
     if (disabled) return;
@@ -17,57 +15,12 @@ const Select = memo(function Select(props) {
 
   const handleChange = e => {
     const val = e.target.getAttribute('value');
-    if (onChange) {
-      onChange({ name, value: val });
-    } else if (setSelect) {
-      setSelect(val);
-    }
+    onChange({ name, value: val });
 
-    if (focusRef.current) {
-      focusRef.current.focus();
+    if (ref.current) {
+      ref.current.focus();
     }
   };
-
-  const handleKeyDown = e => {
-    const len = options.length;
-    switch (e.key) {
-      case 'Escape':
-      case 'Tab':
-        setExpand(false);
-        break;
-      case 'Enter':
-        if (expand && value !== options[cursor]) {
-          if (onChange) {
-            onChange({ name, value: options[cursor] });
-          } else if (setSelect) {
-            setSelect(options[cursor]);
-          }
-        }
-        toggleSelect();
-        break;
-      case 'ArrowUp':
-        if (expand) {
-          setCursor(prevCursor => {
-            return !prevCursor ? len - 1 : prevCursor - 1;
-          });
-        }
-        break;
-      case 'ArrowDown':
-        if (expand) {
-          setCursor(prevCursor => (prevCursor + 1) % len);
-        }
-        break;
-      default:
-        break;
-    }
-  };
-
-  useEffect(() => {
-    if (Array.isArray(options)) {
-      const newCursor = options.findIndex(v => v === value);
-      setCursor(newCursor);
-    }
-  }, [options, value]);
 
   useEffect(() => {
     const closeOptions = () => {
@@ -90,34 +43,35 @@ const Select = memo(function Select(props) {
   return (
     <div className="select">
       <div
-        className="select-header"
-        ref={focusRef}
+        ref={ref}
+        className={clsx('select-control', { disabled })}
         role="button"
         tabIndex="0"
         onClick={toggleSelect}
-        onKeyDown={handleKeyDown}
+        onKeyDown={null}
       >
-        {locales(value, lang)}
-        {!disabled && <span className={arrowClassName} />}
+        <div>{label || value}</div>
+        <span className={arrow} />
+        <input type="hidden" name={name} value={value} />
       </div>
-      <input type="hidden" name={name} value={value} />
 
       {expand && (
         <ul className="select-list">
-          {options.map((opt, i) => {
-            const optClassName = clsx('select-option', { focus: cursor === i });
-            const text = locales(opt, lang);
+          {options.map(opt => {
+            const optClass = clsx('select-option', {
+              focus: opt.value === value,
+            });
             return (
               <li
-                key={opt}
+                key={opt.value}
                 role="option"
-                aria-selected={opt === value}
-                className={optClassName}
-                value={opt}
-                onKeyDown={null}
+                aria-selected={opt.value === value}
+                className={optClass}
+                value={opt.value}
                 onClick={handleChange}
+                onKeyDown={null}
               >
-                {text}
+                {opt.label}
               </li>
             );
           })}

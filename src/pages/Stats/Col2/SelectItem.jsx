@@ -16,22 +16,27 @@ const SELECT_OPTIONS = {
 };
 
 const SelectItem = memo(function SelectItem(props) {
-  const { name, value, rarity, disabled: disabledProp, onChange } = props;
+  const { name, value, rarity, onChange } = props;
 
   const options = useMemo(() => {
+    let options = [];
     switch (name) {
       case 'curRarity':
       case 'mana':
-        return SELECT_OPTIONS[name][rarity];
+        options = SELECT_OPTIONS[name][rarity];
+        break;
       case 'ex':
       case 'unbind':
-        return SELECT_OPTIONS.default;
+        options = SELECT_OPTIONS.default;
+        break;
       default:
-        return [];
+        break;
     }
+
+    return options.map(val => ({ value: val, label: val }));
   }, [name, rarity]);
 
-  const disabled = disabledProp || options.length < 2;
+  const disabled = options.length < 2;
 
   return (
     <Select
