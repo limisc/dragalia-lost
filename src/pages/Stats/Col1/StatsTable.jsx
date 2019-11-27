@@ -29,7 +29,7 @@ function StatsTable({ details, expend, lang }) {
 
       <div id="body" className={className}>
         {ROWS.map(key => {
-          const { hp, str, might } = details[key];
+          const { hp = '0', str = '0', might = '0' } = details[key] || {};
           return (
             <Fragment key={key}>
               <span>{locales(key, lang)}</span>
