@@ -38,11 +38,11 @@ const halidom = {
   Staff_dojo_0: { id: '100508', type: 'dojo', level: 35 },
   Staff_dojo_1: { id: '100508', type: 'dojo', level: 35 },
   Dagger_Bow_eventW_0: { id: '101301', type: 'eventW', level: 30 },
-  dragon_Flame_fafnir_0: { id: '101001', type: 'fafnir', level: 0 },
-  dragon_Water_fafnir_0: { id: '101002', type: 'fafnir', level: 0 },
-  dragon_Wind_fafnir_0: { id: '101003', type: 'fafnir', level: 0 },
-  dragon_Light_fafnir_0: { id: '101004', type: 'fafnir', level: 0 },
-  dragon_Shadow_fafnir_0: { id: '101005', type: 'fafnir', level: 0 },
+  dragon_Flame_fafnir_0: { id: '101001', type: 'fafnir', level: 30 },
+  dragon_Water_fafnir_0: { id: '101002', type: 'fafnir', level: 30 },
+  dragon_Wind_fafnir_0: { id: '101003', type: 'fafnir', level: 30 },
+  dragon_Light_fafnir_0: { id: '101004', type: 'fafnir', level: 30 },
+  dragon_Shadow_fafnir_0: { id: '101005', type: 'fafnir', level: 30 },
 };
 
 export const HALIDOM_LIST = Object.keys(halidom);
