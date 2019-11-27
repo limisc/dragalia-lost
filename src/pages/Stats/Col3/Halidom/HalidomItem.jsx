@@ -1,10 +1,9 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useCallback } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import locales from 'locales';
 import { updateHalidom } from 'actions';
-import { getLimit, useEvent } from 'utils';
+import { getLimit } from 'utils';
 import { Image, Slider } from 'components';
 
 function HalidomItem({ halidomKey, item, style, updateHalidom }) {
@@ -14,14 +13,23 @@ function HalidomItem({ halidomKey, item, style, updateHalidom }) {
   const title = locales(id, lang, 'halidom');
 
   const max = id === '101501' ? 35 : getLimit(type);
-  const setLevel = useEvent(val => {
-    updateHalidom({ halidomKey, level: val });
-  });
+
+  const handleChange = useCallback(
+    ({ name, value }) => {
+      updateHalidom({ halidomKey: name, level: value });
+    },
+    [updateHalidom]
+  );
 
   return (
     <div style={style} className="halidom-item">
       <Image image={image} size="lg" title={title} />
-      <Slider value={level} max={max} setValue={setLevel} />
+      <Slider
+        name={halidomKey}
+        value={level}
+        max={max}
+        onChange={handleChange}
+      />
     </div>
   );
 }

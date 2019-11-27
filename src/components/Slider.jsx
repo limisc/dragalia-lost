@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import React, { memo, useRef, useState, useEffect } from 'react';
+import React, { memo, useRef, useState, useEffect, useCallback } from 'react';
 import { useEvent } from 'utils';
 import SliderBtn from './SliderBtn';
 
@@ -21,19 +21,19 @@ const getPos = (e, touchRef) => {
 };
 
 const Slider = memo(function Slider(props) {
-  const { min = 0, max = 30, value, setValue = () => {} } = props;
+  const { min = 0, max = 30, name, value, onChange = () => {} } = props;
   const ref = useRef();
   const activeRef = useRef(0);
   const touchRef = useRef();
 
   const [dimension, setDimension] = useState({ left: 0, width: 0 });
 
-  const handleWidth = useEvent(() => {
+  const handleWidth = useCallback(() => {
     if (ref.current) {
       const { left, width } = ref.current.getBoundingClientRect();
       setDimension({ left, width });
     }
-  });
+  }, []);
 
   useEffect(() => {
     handleWidth();
@@ -73,10 +73,14 @@ const Slider = memo(function Slider(props) {
     return `${pct}%`;
   };
 
+  const handleChange = val => {
+    onChange({ name, value: val });
+  };
+
   const handleMove = useEvent(e => {
     const pos = getPos(e, touchRef);
     const val = getValue(pos);
-    setValue(val);
+    handleChange(val);
   });
 
   const handleEnd = useEvent(() => {
@@ -110,7 +114,7 @@ const Slider = memo(function Slider(props) {
     activeRef.current = active;
     const pos = getPos(e, touchRef);
     const val = getValue(pos);
-    setValue(val);
+    handleChange(val);
     document.body.addEventListener('mousemove', handleMove);
     document.body.addEventListener('mouseup', handleEnd);
   });
@@ -134,7 +138,7 @@ const Slider = memo(function Slider(props) {
     activeRef.current = 0;
     const val = values[0] - 1;
     if (val >= min) {
-      setValue(setRangeValues(val));
+      handleChange(setRangeValues(val));
     }
   });
 
@@ -144,28 +148,17 @@ const Slider = memo(function Slider(props) {
     const val = values[0] + 1;
 
     if (val <= upperBound) {
-      setValue(setRangeValues(val));
-    }
-  });
-
-  const setBoundary = useEvent(e => {
-    const { name } = e.target;
-    activeRef.current = 0;
-    if (name === 'max') {
-      setValue(setRangeValues(max));
-    } else if (name === 'min') {
-      setValue(setRangeValues(min));
+      handleChange(setRangeValues(val));
     }
   });
 
   return (
     <div
       className="slider"
-      // onContextMenu={e => {
-      //   e.preventDefault();
-      // }}
+      onContextMenu={e => {
+        e.preventDefault();
+      }}
     >
-      {!range && <SliderBtn name="min" onClick={setBoundary} />}
       <SliderBtn name="minus" onClick={handleDecrement} />
       <div
         ref={ref}
@@ -207,7 +200,6 @@ const Slider = memo(function Slider(props) {
         })}
       </div>
       <SliderBtn name="plus" onClick={handleIncrement} />
-      {!range && <SliderBtn name="max" onClick={setBoundary} />}
     </div>
   );
 });
