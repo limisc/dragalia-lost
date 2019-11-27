@@ -2,13 +2,26 @@ import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import locales from 'locales';
 import { updateItem } from 'actions';
-import { getItemFields, getLimit, useEvent } from 'utils';
+import { getLimit, useEvent } from 'utils';
 import SelectItem from './SelectItem';
 
-function Item({ focused, fields, item, lang, updateItem }) {
+const getItemFields = key => {
+  if (key === 'adventurer') {
+    return ['level', 'curRarity', 'augHp', 'augStr', 'mana', 'ex'];
+  }
+
+  if (key === 'dragon') {
+    return ['level', 'unbind', 'augHp', 'augStr', 'bond'];
+  }
+
+  return ['level', 'unbind', 'augHp', 'augStr'];
+};
+
+function Item({ focused, item, lang, updateItem }) {
   const { level, bond, curRarity, rarity, unbind } = item || {};
 
   const timeRef = useRef();
+  const fields = getItemFields(focused);
 
   const changeInput = e => {
     const { name, value } = e.target;
@@ -151,7 +164,6 @@ const mapStateToProps = state => {
   const { focused, items } = state;
   return {
     focused,
-    fields: getItemFields(state),
     item: items[focused],
   };
 };

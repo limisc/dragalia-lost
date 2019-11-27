@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { connect } from 'react-redux';
 import { selectOption, resetOptions } from 'actions';
-import { getFilterFields, useEvent } from 'utils';
+import { getFilterFields } from 'utils';
 import { CheckSet } from 'components';
 
 function Filter(props) {
@@ -15,10 +15,13 @@ function Filter(props) {
     setSearch,
   } = props;
 
-  const handleFilter = useEvent(e => {
-    const { checked, name, value } = e.target;
-    selectOption({ checked, name, value });
-  });
+  const handleFilter = useCallback(
+    e => {
+      const { checked, name, value } = e.target;
+      selectOption({ checked, name, value });
+    },
+    [selectOption]
+  );
 
   const handleSearch = e => {
     setSearch(e.target.value);
@@ -61,10 +64,11 @@ function Filter(props) {
   );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ focused, options }) => {
+  const fields = getFilterFields(focused);
   return {
-    options: state.options,
-    fields: getFilterFields(state),
+    fields,
+    options,
   };
 };
 

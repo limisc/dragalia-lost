@@ -2,17 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { FixedSizeList } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { getFilters, getItemList } from 'utils';
+import { getItemList } from 'utils';
 import Item from './Item';
 
-function ItemList({ filters, focused, list }) {
+function ItemList({ options, focused, list }) {
   const listRef = useRef();
 
   useEffect(() => {
     if (listRef.current) {
       listRef.current.scrollToItem(0);
     }
-  }, [focused, filters]);
+  }, [focused, options]);
 
   return (
     <div className="list">
@@ -35,10 +35,10 @@ function ItemList({ filters, focused, list }) {
 }
 
 const mapStateToProps = (state, props) => {
-  const { focused } = state;
+  const { focused, options } = state;
   return {
     focused,
-    filters: getFilters(state),
+    options,
     list: getItemList(state, props),
   };
 };

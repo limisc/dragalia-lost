@@ -41,7 +41,7 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
                   title={title}
                   onClick={onClick}
                 />
-                {augments !== 0 && <span>{`+ ${augments}`}</span>}
+                {augments !== 0 && <span>{augments}</span>}
               </div>
 
               <button type="button" name={key} onClick={setMax}>

@@ -1,73 +1,59 @@
-import { createSelector } from 'reselect';
+import createCachedSelector from 're-reselect';
 import content, { ELEMENT_TYPES, WEAPON_TYPES } from 'data';
 import getField from './getField';
-import includes from './includes';
 
-export const getFilterFields = createSelector(
-  state => state.focused,
-  focused => {
-    switch (focused) {
-      case 'adventurer':
-      case 'weapon':
-        return ['rarity', 'element', 'weapon'];
-      case 'dragon':
-        return ['rarity', 'element', 'type'];
-      default:
-        return ['rarity', 'type'];
+export const getFilterFields = key => {
+  switch (key) {
+    case 'adventurer':
+    case 'weapon':
+      return ['rarity', 'element', 'weapon'];
+    case 'dragon':
+      return ['rarity', 'element', 'type'];
+    default:
+      return ['rarity', 'type'];
+  }
+};
+
+const sumProps = (...arrays) => {
+  let sum = 0;
+
+  arrays.forEach(array => {
+    if (Array.isArray(array)) {
+      sum += array.reduce((acc, cur) => acc + cur, 0);
     }
-  }
-);
+  });
 
-const createFilterArray = option => {
-  return option.reduce(
-    (acc, { value, checked }) => (checked ? [...acc, value] : acc),
-    []
-  );
+  return sum;
 };
 
-export const getFilters = createSelector(
+export const getItemList = createCachedSelector(
+  state => getField(state.focused),
   state => state.options,
-  getFilterFields,
-  (options, fields) => {
-    const filters = {};
+  (_, props) => props.search,
+  (_, props) => props.lang,
+  (field, options, search, lang = 'en') => {
+    const fields = getFilterFields(field);
 
-    fields.forEach(field => {
-      if (includes(options, field)) {
-        filters[field] = createFilterArray(options[field]);
-      }
-    });
-
-    return filters;
-  }
-);
-
-const selectProp = key => (_, props) => props[key];
-const sumArray = array => {
-  if (Array.isArray(array)) {
-    return array.reduce((acc, cur) => acc + cur, 0);
-  }
-
-  return 0;
-};
-
-export const getItemList = createSelector(
-  [
-    state => getField(state.focused),
-    state => getFilters(state),
-    selectProp('search'),
-    selectProp('lang'),
-  ],
-  (dataField, filters, search, lang = 'en') => {
-    return Object.values(content[dataField])
+    return Object.values(content[field])
       .filter(item => {
-        const filterResult = Object.entries(filters).every(([key, value]) => {
-          if (value.length === 0) return true;
+        const filterResult = fields.every(key => {
+          let noChecked = true;
 
-          if (key === 'type') {
-            return item.icon.some(icon => value.includes(icon.image));
-          }
+          const ret = options[key].some(opt => {
+            if (opt.checked) {
+              noChecked = false;
 
-          return value.includes(item[key]);
+              if (key === 'type') {
+                return item.icon.some(({ image }) => image === opt.value);
+              }
+
+              return opt.value === item[key];
+            }
+
+            return false;
+          });
+
+          return ret || noChecked;
         });
 
         const searchResult = item.name[lang]
@@ -94,21 +80,19 @@ export const getItemList = createSelector(
           if (weapon1 > weapon2) return 1;
         }
 
-        if (dataField === 'wyrmprint') {
+        if (field === 'wyrmprint') {
           if (item1.enemy && !item2.enemy) return -1;
           if (!item1.enemey && item2.enemy) return 1;
         }
 
         if (
-          sumArray(item1.max) + sumArray(item1.might) >
-          sumArray(item2.max) + sumArray(item2.might)
+          sumProps(item1.max, item1.might) > sumProps(item2.max, item2.might)
         ) {
           return -1;
         }
 
         if (
-          sumArray(item1.max) + sumArray(item1.might) <
-          sumArray(item2.max) + sumArray(item2.might)
+          sumProps(item1.max, item1.might) < sumProps(item2.max, item2.might)
         ) {
           return 1;
         }
@@ -116,19 +100,18 @@ export const getItemList = createSelector(
         return 0;
       });
   }
-);
+)(state => {
+  const field = getField(state.focused);
+  const fields = getFilterFields(field);
 
-export const getItemFields = createSelector(
-  state => state.focused,
-  focused => {
-    if (focused === 'adventurer') {
-      return ['level', 'curRarity', 'augHp', 'augStr', 'mana', 'ex'];
-    }
+  const array = [field];
 
-    if (focused === 'dragon') {
-      return ['level', 'unbind', 'augHp', 'augStr', 'bond'];
-    }
-
-    return ['level', 'unbind', 'augHp', 'augStr'];
-  }
-);
+  fields.forEach(key => {
+    state.options[key].forEach(opt => {
+      if (opt.checked) {
+        array.push(opt.value);
+      }
+    });
+  });
+  return array.join('_');
+});
