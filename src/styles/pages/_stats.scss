@@ -56,7 +56,7 @@
 .avatar-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 8px;
+  gap: $unit1;
   justify-items: center;
 
   > div {
@@ -65,13 +65,26 @@
     flex-direction: column;
   }
 
-  [type='image'] {
-    width: calc(100% - 4px);
+  button {
+    height: 30px;
+  }
+}
+
+.avatar {
+  position: relative;
+  input[type='image'] {
+    width: 100%;
   }
 
-  button {
-    margin-top: $unit1;
-    height: 30px;
+  span {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    color: #fdd12c;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
   }
 }
 

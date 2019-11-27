@@ -21,7 +21,7 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
     <div id="stats-col2">
       <div className="avatar-list">
         {ITEM_KEYS.map(key => {
-          const className = clsx({ scale: key === focused }, key);
+          const className = clsx('avatar', { scale: key === focused });
 
           const { [key]: item } = items;
           const title =
@@ -29,16 +29,20 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
               ? locales(key, lang)
               : item.name[lang] || item.name.en;
           const image = getImage(item, key);
+          const { augHp = '', augStr = '' } = item || {};
+          const augments = Number(augHp) + Number(augStr);
 
           return (
             <div key={key}>
-              <Image
-                name={key}
-                size={className}
-                image={image}
-                title={title}
-                onClick={onClick}
-              />
+              <div className={className}>
+                <Image
+                  name={key}
+                  image={image}
+                  title={title}
+                  onClick={onClick}
+                />
+                {augments !== 0 && <span>{`+ ${augments}`}</span>}
+              </div>
 
               <button type="button" name={key} onClick={setMax}>
                 MAX
