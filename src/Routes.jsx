@@ -4,6 +4,7 @@ import Header from './Header';
 
 const pages = {
   stats: lazy(() => import('./pages/Stats')),
+  facility: lazy(() => import('./pages/Facility')),
 };
 
 const getRoute = page => {
@@ -22,6 +23,7 @@ function Routes() {
     <Suspense fallback={<div>Loading</div>}>
       <Switch>
         {getRoute('stats')}
+        {getRoute('facility')}
         <Redirect to="/stats/:lang?" />
       </Switch>
     </Suspense>
