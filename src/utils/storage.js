@@ -1,8 +1,10 @@
+import LZString from 'lz-string';
+
 export const loadState = key => {
   try {
     const data = localStorage.getItem(key);
     if (data) {
-      return JSON.parse(data);
+      return JSON.parse(LZString.decompress(data));
     }
   } catch (error) {
     // ignore error
@@ -13,8 +15,7 @@ export const loadState = key => {
 
 export const saveState = (key, data) => {
   try {
-    const state = JSON.stringify(data);
-
+    const state = LZString.compress(JSON.stringify(data));
     localStorage.setItem(key, state);
   } catch (error) {
     // ignore error
