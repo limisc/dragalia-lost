@@ -13,18 +13,14 @@
 @import './components/BtnPanel';
 
 @import './pages/stats';
+@import './pages/facility';
 
 @media screen and (min-width: $laptop) {
+  @include facility--laptop;
   main {
     &#stats,
     &#facility {
       @include grid(3);
-    }
-
-    &#facility > div:first-child {
-      display: flex;
-      flex-direction: column;
-      height: $page-height;
     }
   }
 }

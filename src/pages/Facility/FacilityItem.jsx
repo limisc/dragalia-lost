@@ -26,7 +26,7 @@ const FacilityItem = memo(function FacilityItem(props) {
 
   return (
     <div className="facility-item">
-      <Image image={image} size="md" title={title} onClick={removeItem} />
+      <Image image={image} size="lg" title={title} onClick={removeItem} />
       <Slider max={max} value={value} onChange={onChange} />
     </div>
   );

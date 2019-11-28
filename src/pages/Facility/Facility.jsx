@@ -182,7 +182,7 @@ function Facility() {
 
   return (
     <main id="facility">
-      <div>
+      <div id="facility-col1">
         <BtnPanel btns={btns} onClick={onClick} />
         <div className="grid-2">
           <Select
@@ -217,7 +217,7 @@ function Facility() {
         </div>
       </div>
 
-      <div className="list">
+      <div id="facility-col2" className="list">
         <AutoSizer>
           {({ height, width }) => (
             <FixedSizeGrid
