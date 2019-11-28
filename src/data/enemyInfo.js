@@ -23,7 +23,7 @@ export const ENEMY_INFO = {
       N: { str: 7230, multiplier: 1.1 },
       H: { str: 7230, multiplier: 2.75 },
       VH: { str: 9000, multiplier: 3.2 },
-      EX: { str: 13000, multiplier: 2.4 },
+      EX: { str: 13000, multiplier: 3.1 },
     },
   },
   hjp: {
@@ -32,7 +32,7 @@ export const ENEMY_INFO = {
       N: { str: 7230, multiplier: 0.7 },
       H: { str: 7230, multiplier: 4.4 },
       VH: { str: 9000, multiplier: 4.2 },
-      EX: { str: 13000, multiplier: 2.6 },
+      EX: { str: 13000, multiplier: 4.6 },
     },
   },
   hzd: {
