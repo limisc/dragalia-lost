@@ -5,6 +5,7 @@
   "dependencies": {
     "clsx": "^1.0.4",
     "deepmerge": "^4.2.2",
+    "lz-string": "^1.4.4",
     "node-sass": "^4.13.0",
     "re-reselect": "^3.4.0",
     "react": "^16.12.0",
