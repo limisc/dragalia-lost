@@ -9,6 +9,9 @@ const actionTypes = {
   LOAD_HALIDOM: 'LOAD_HALIDOM',
   UPDATE_HALIDOM: 'UPDATE_HALIDOM',
   SET_PANEL: 'SET_PANEL',
+  SAVE_BUILD: 'SAVE_BUILD',
+  DEL_BUILD: 'DEL_BUILD',
+  LOAD_BUILDS: 'LOAD_BUILDS',
 };
 
 export default actionTypes;

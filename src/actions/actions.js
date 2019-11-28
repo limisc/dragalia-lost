@@ -1,8 +1,8 @@
 import deepmerge from 'deepmerge';
-import { getLimit, loadState } from 'utils';
+import { extractSaveInfo, getLimit, loadState, saveState } from 'utils';
 import { initHalidom } from 'data';
 import actionTypes from './actionTypes';
-import { buildItems, modifyNewItem } from './itemUtils';
+import { buildItems, loadItems, modifyNewItem, randomBuild } from './itemUtils';
 
 const createAction = type => params => {
   if (params == null) return { type };
@@ -78,9 +78,9 @@ export const selectItem = (itemKey, item) => (dispatch, getState) => {
   }
 
   dispatch({
-    type: actionTypes.SELECT_ITEM,
-    itemKey: key,
     item: newItem,
+    itemKey: key,
+    type: actionTypes.SELECT_ITEM,
   });
 };
 
@@ -110,4 +110,66 @@ export const loadHalidom = () => async (dispatch, getState) => {
     backup,
     type: actionTypes.LOAD_HALIDOM,
   });
+};
+
+export const saveBuild = () => (dispatch, getState) => {
+  const { items } = getState();
+  if (items.adventurer === null) return;
+
+  const build = extractSaveInfo(items);
+
+  dispatch({
+    build,
+    type: actionTypes.SAVE_BUILD,
+  });
+
+  saveState('dragalialost-build-id', build.adventurer.Id);
+
+  const { builds } = getState();
+  saveState('dragalialost-builds', builds);
+};
+
+export const delBuild = id => (dispatch, getState) => {
+  dispatch({
+    id,
+    type: actionTypes.DEL_BUILD,
+  });
+
+  const { builds } = getState();
+
+  if (builds !== null) {
+    const keys = Object.keys(builds);
+    const index = Math.floor(keys.length * Math.random());
+    saveState('dragalialost-build-id', keys[index]);
+  }
+
+  saveState('dragalialost-builds', builds);
+};
+
+export const loadBuild = build => dispatch => {
+  const items = loadItems(build);
+  dispatch({
+    item: items,
+    itemKey: 'build',
+    type: actionTypes.SELECT_ITEM,
+  });
+};
+
+export const loadBuilds = () => async dispatch => {
+  const builds = await loadState('dragalialost-builds');
+  if (builds === null) {
+    const item = randomBuild();
+    dispatch(selectItem('adventurer', item));
+  } else {
+    dispatch({
+      builds,
+      type: actionTypes.LOAD_BUILDS,
+    });
+
+    const id = loadState('dragalialost-build-id');
+    if (id !== null) {
+      const build = builds[id];
+      dispatch(loadBuild(build));
+    }
+  }
 };

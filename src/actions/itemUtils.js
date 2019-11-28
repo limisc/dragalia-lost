@@ -1,5 +1,5 @@
-import content, { defaultEquipments } from 'data';
-import { getLimit, includes } from '../utils';
+import content, { defaultEquipments, ITEM_KEYS } from 'data';
+import { getField, getLimit, includes } from '../utils';
 
 export const modifyNewItem = (itemKey, item) => {
   if (item == null) return null;
@@ -88,6 +88,32 @@ export const buildItems = (items, adventurer) => {
   if (!dragon || dragon.element !== element) {
     ret.dragon = equip('dragon', adventurer);
   }
+
+  return ret;
+};
+
+export const randomBuild = () => {
+  const keys = Object.keys(content.adventurer);
+  const index = Math.floor(keys.length * Math.random());
+  return content.adventurer[keys[index]];
+};
+
+export const loadItems = build => {
+  const ret = {};
+
+  ITEM_KEYS.forEach(key => {
+    const item = build[key];
+    if (item) {
+      const { Id } = item;
+      const field = getField(key);
+      const itemInfo = content[field][Id];
+      if (itemInfo) {
+        ret[key] = { ...itemInfo, ...item };
+      }
+    } else {
+      ret[key] = null;
+    }
+  });
 
   return ret;
 };

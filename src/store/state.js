@@ -11,13 +11,13 @@ const createOption = types => {
 };
 
 const state = {
+  builds: null,
   focused: 'adventurer',
   halidom: initHalidom,
-  panel: false,
   items: {
     adventurer: null,
-    weapon: null,
     dragon: null,
+    weapon: null,
     wyrmprint1: null,
     wyrmprint2: null,
   },
@@ -27,6 +27,7 @@ const state = {
     type: createOption(ABILITY_TYPES),
     weapon: createOption(WEAPON_TYPES),
   },
+  panel: false,
 };
 
 export default state;

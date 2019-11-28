@@ -1,4 +1,5 @@
 import { getDamage, getDetails } from './calcStats';
+import extractSaveInfo from './extractSaveInfo';
 import calcVal from './calcVal';
 import getField from './getField';
 import getImage from './getImage';
@@ -10,6 +11,7 @@ export * from './selectors';
 export * from './storage';
 export {
   calcVal,
+  extractSaveInfo,
   getDamage,
   getDetails,
   getField,
