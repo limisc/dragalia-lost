@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useHistory, useLocation, useParams, Link } from 'react-router-dom';
+import locales from 'locales';
 import { Image } from 'components';
 
 function Header() {
@@ -27,8 +28,15 @@ function Header() {
   return (
     <header>
       <div>
+        <Image image="icon/stats" />
+        <Link to={`/stats/${lang}`} title={locales('stats', lang)}>
+          <span />
+        </Link>
+      </div>
+
+      <div>
         <Image image="icon/home" />
-        <Link to={`/stats/${lang}`} title="HOME">
+        <Link to={`/facility/${lang}`} title={locales('facility', lang)}>
           <span />
         </Link>
       </div>
