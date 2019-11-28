@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { resetItems } from 'actions';
 import StatsTable from './StatsTable';
 import Dungeon from './Dungeon';
 
-function Col1({ adventurer, lang, resetItems }) {
+function Col1({ adventurer, lang }) {
   const [expend, setExpend] = useState(false);
+
   return (
     <div>
-      <div className="grid-2">
-        <button type="button" onClick={resetItems}>
-          save
-        </button>
-        <button type="button" onClick={resetItems}>
-          reset
-        </button>
-      </div>
       {adventurer && (
         <>
           <StatsTable
@@ -36,8 +28,4 @@ const mapStateToProps = state => {
   return { adventurer };
 };
 
-const mapDispatchToProps = {
-  resetItems,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Col1);
+export default connect(mapStateToProps)(Col1);

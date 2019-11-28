@@ -45,12 +45,11 @@ const SelectEnemy = memo(function SelectEnemy(props) {
   }, [expand]);
 
   return (
-    <div className="select">
+    <div className="select select-enemy">
       <div
         ref={ref}
-        className={clsx('select-control', 'white')}
+        className="select-control white"
         style={{
-          height: '70px',
           backgroundImage: `url(${imageURL})`,
           backgroundPosition: '45% 45%',
         }}

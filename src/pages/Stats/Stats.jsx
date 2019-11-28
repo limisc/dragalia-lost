@@ -1,22 +1,19 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { loadHalidom, selectItem } from 'actions';
-import content from 'data';
+import { loadHalidom, loadBuilds } from 'actions';
 import Col1 from './Col1';
 import Col2 from './Col2';
 import Col3 from './Col3';
 
-function Stats({ loadHalidom, selectItem }) {
+function Stats({ loadBuilds, loadHalidom }) {
   const { lang = 'en' } = useParams();
 
   useEffect(() => {
     loadHalidom();
-    const keys = Object.keys(content.adventurer);
-    const key = Math.floor(keys.length * Math.random());
-    const item = content.adventurer[keys[key]];
-    selectItem('adventurer', item);
-  }, [loadHalidom, selectItem]);
+    loadBuilds();
+  }, [loadBuilds, loadHalidom]);
 
   return (
     <main id="stats">
@@ -29,7 +26,7 @@ function Stats({ loadHalidom, selectItem }) {
 
 const mapDispatchToProps = {
   loadHalidom,
-  selectItem,
+  loadBuilds,
 };
 
 export default connect(null, mapDispatchToProps)(Stats);

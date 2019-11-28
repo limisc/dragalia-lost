@@ -2,13 +2,22 @@ import React from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
-import { maxItem, selectFocus } from 'actions';
+import { maxItem, resetItems, saveBuild, selectFocus } from 'actions';
 import { getImage, useEvent } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
+import SplitBtn from './SplitBtn';
 import Item from './Item';
 
-function Col2({ focused, items, lang, maxItem, selectFocus }) {
+function Col2({
+  focused,
+  items,
+  lang,
+  maxItem,
+  resetItems,
+  saveBuild,
+  selectFocus,
+}) {
   const onClick = useEvent(e => {
     selectFocus(e.target.name);
   });
@@ -19,6 +28,12 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
 
   return (
     <div id="stats-col2">
+      <div className="grid-2">
+        <SplitBtn onClick1={saveBuild} />
+        <button type="button" onClick={resetItems}>
+          reset
+        </button>
+      </div>
       <div className="avatar-list">
         {ITEM_KEYS.map(key => {
           const className = clsx('avatar', { scale: key === focused });
@@ -33,7 +48,7 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
           const augments = Number(augHp) + Number(augStr);
 
           return (
-            <div key={key}>
+            <div key={key} className="avatar-item">
               <div className={className}>
                 <Image
                   name={key}
@@ -44,9 +59,11 @@ function Col2({ focused, items, lang, maxItem, selectFocus }) {
                 {augments !== 0 && <span>{`+${augments}`}</span>}
               </div>
 
-              <button type="button" name={key} onClick={setMax}>
-                MAX
-              </button>
+              {item !== null && (
+                <button type="button" name={key} onClick={setMax}>
+                  MAX
+                </button>
+              )}
             </div>
           );
         })}
@@ -63,6 +80,8 @@ const mapStateToProps = ({ focused, items }) => {
 
 const mapDispatchToProps = {
   maxItem,
+  resetItems,
+  saveBuild,
   selectFocus,
 };
 
