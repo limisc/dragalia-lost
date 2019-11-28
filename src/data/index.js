@@ -5,5 +5,6 @@ import initHalidom from './halidom';
 export default content;
 export * from './constants';
 export * from './halidom';
+export * from './facility';
 export * from './enemyInfo';
 export { defaultEquipments, initHalidom };
