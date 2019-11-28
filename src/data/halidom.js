@@ -1,4 +1,4 @@
-const halidom = {
+const initHalidom = {
   adventurer_Flame_altar_0: { id: '100401', type: 'altar', level: 35 },
   adventurer_Flame_altar_1: { id: '100401', type: 'altar', level: 35 },
   adventurer_Flame_eventE_0: { id: '102001', type: 'eventE', level: 30 },
@@ -45,17 +45,9 @@ const halidom = {
   dragon_Shadow_fafnir_0: { id: '101005', type: 'fafnir', level: 30 },
 };
 
-export const HALIDOM_LIST = Object.keys(halidom);
-
-const initHalidom = {
-  ...halidom,
-  smithy: 9,
-  dragontree: 27,
-  dracolith: 100,
-  rupie: 120,
-};
-
 export default initHalidom;
+
+export const HALIDOM_LIST = Object.keys(initHalidom);
 
 export const HALIDOM_TYPES = ['altar', 'slime', 'event', 'fafnir', 'dojo'];
 
