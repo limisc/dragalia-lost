@@ -39,6 +39,11 @@
   > .select-control {
     height: 70px;
 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     > img {
       width: 100%;
     }

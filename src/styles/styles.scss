@@ -16,6 +16,38 @@
 @import './pages/stats';
 @import './pages/facility';
 
+@media screen and (max-width: 425px) {
+  main {
+    > div + div {
+      margin-top: $unit1;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: $laptop - 1px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $unit1;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'col1 col2'
+      'col3 col3';
+
+    #stats-col1 {
+      grid-area: col1;
+    }
+
+    #stats-col2 {
+      grid-area: col2;
+    }
+
+    #stats-col3 {
+      grid-area: col3;
+    }
+  }
+}
+
 @media screen and (min-width: $laptop) {
   @include facility--laptop;
   main {

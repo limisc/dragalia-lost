@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 $unit2;
 
   background: $base0;
 
@@ -18,7 +18,6 @@ header {
   box-sizing: border-box;
   width: 100%;
   height: $header-height;
-  padding: 0 $unit1;
 
   background: $base0;
 
@@ -52,11 +51,14 @@ header {
 main {
   box-sizing: border-box;
   margin-top: $main-margin-top;
-  padding: 0 $unit1;
 
-  > div:not(.list) {
-    > div + div {
-      margin-top: $unit1;
+  > div {
+    box-sizing: border-box;
+
+    &:not(.list) {
+      > div + div {
+        margin-top: $unit1;
+      }
     }
   }
 }

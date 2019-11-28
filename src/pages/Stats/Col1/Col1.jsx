@@ -7,7 +7,7 @@ function Col1({ adventurer, lang }) {
   const [expend, setExpend] = useState(false);
 
   return (
-    <div>
+    <div id="stats-col1">
       {adventurer && (
         <>
           <StatsTable

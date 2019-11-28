@@ -51,7 +51,6 @@ const SelectEnemy = memo(function SelectEnemy(props) {
         className="select-control white"
         style={{
           backgroundImage: `url(${imageURL})`,
-          backgroundPosition: '45% 45%',
         }}
         role="button"
         tabIndex="0"
