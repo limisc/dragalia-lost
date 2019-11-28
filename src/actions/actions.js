@@ -1,5 +1,11 @@
 import deepmerge from 'deepmerge';
-import { extractSaveInfo, getLimit, loadState, saveState } from 'utils';
+import {
+  extractSaveInfo,
+  getLimit,
+  loadState,
+  saveState,
+  removeState,
+} from 'utils';
 import { initHalidom } from 'data';
 import actionTypes from './actionTypes';
 import { buildItems, loadItems, modifyNewItem, randomBuild } from './itemUtils';
@@ -98,7 +104,7 @@ export const maxItem = itemKey => (dispatch, getState) => {
 };
 
 export const loadHalidom = () => async (dispatch, getState) => {
-  let backup = await loadState('halidom');
+  let backup = await loadState('dragalialost-halidom');
   if (backup === null) return;
 
   if (Object.keys(backup).length !== Object.keys(initHalidom).length) {
@@ -141,9 +147,11 @@ export const delBuild = id => (dispatch, getState) => {
     const keys = Object.keys(builds);
     const index = Math.floor(keys.length * Math.random());
     saveState('dragalialost-build-id', keys[index]);
+    saveState('dragalialost-builds', builds);
+  } else {
+    removeState('dragalialost-build-id');
+    removeState('dragalialost-builds');
   }
-
-  saveState('dragalialost-builds', builds);
 };
 
 export const loadBuild = build => dispatch => {

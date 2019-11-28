@@ -92,14 +92,14 @@ function Facility() {
         break;
       }
       case 'del':
-        removeState('facility');
+        removeState('dragalialost-facility');
         setFacility([]);
         break;
       case 'save':
-        saveState('facility', facility);
+        saveState('dragalialost-facility', facility);
         break;
       case 'refresh': {
-        const backup = loadState('facility');
+        const backup = loadState('dragalialost-facility');
         if (backup === null) return;
         setFacility(backup);
         break;
@@ -115,14 +115,14 @@ function Facility() {
 
   useEffect(() => {
     // auto detect local facility or halidom records
-    const localFacility = loadState('facility');
+    const localFacility = loadState('dragalialost-facility');
 
     if (localFacility !== null) {
       setFacility(localFacility);
       return;
     }
 
-    const localHalidom = loadState('halidom');
+    const localHalidom = loadState('dragalialost-halidom');
     if (localHalidom === null) return;
 
     const tempArray = [];
@@ -151,7 +151,7 @@ function Facility() {
 
     if (tempArray.length !== 0) {
       setFacility(tempArray);
-      saveState('facility', tempArray);
+      saveState('dragalialost-facility', tempArray);
     }
   }, []);
 

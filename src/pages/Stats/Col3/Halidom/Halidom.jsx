@@ -11,13 +11,13 @@ function Halidom({ halidom, keyList, loadHalidom }) {
   const onClick = useEvent(e => {
     switch (e.currentTarget.name) {
       case 'del':
-        removeState('halidom');
+        removeState('dragalialost-halidom');
         break;
       case 'refresh':
         loadHalidom();
         break;
       case 'save':
-        saveState('halidom', halidom);
+        saveState('dragalialost-halidom', halidom);
         break;
       default:
         break;
