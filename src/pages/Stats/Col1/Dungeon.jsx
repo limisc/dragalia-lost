@@ -7,6 +7,8 @@ import locales from 'locales';
 import SelectEnemy from './SelectEnemy';
 import DamageBar from './DamageBar';
 
+const fields = ['multiplier', 'exHp', 'hp', 'def', 'res', 'dcrStr'];
+
 function Dungeon({ adventurer, lang }) {
   const [settings, setSettings] = useState({
     dcrStr: '',
@@ -16,7 +18,6 @@ function Dungeon({ adventurer, lang }) {
     exHp: '',
     hp: '',
     multiplier: '',
-    reduce: '',
     res: '',
   });
 
@@ -103,21 +104,19 @@ function Dungeon({ adventurer, lang }) {
             onChange={handleSelect}
           />
         </div>
-        {['multiplier', 'exHp', 'hp', 'def', 'res', 'dcrStr', 'reduce'].map(
-          key => {
-            return (
-              <div key={key}>
-                {locales(key, lang)}
-                <input
-                  type="number"
-                  name={key}
-                  value={settings[key]}
-                  onChange={handleInput}
-                />
-              </div>
-            );
-          }
-        )}
+        {fields.map(key => {
+          return (
+            <div key={key}>
+              {locales(key, lang)}
+              <input
+                type="number"
+                name={key}
+                value={settings[key]}
+                onChange={handleInput}
+              />
+            </div>
+          );
+        })}
       </div>
 
       {adventurer && <DamageBar settings={settings} />}

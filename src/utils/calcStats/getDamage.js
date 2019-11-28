@@ -32,7 +32,6 @@ const getDamage = createSelector(
       exHp,
       hp,
       multiplier,
-      reduce,
       res,
     } = settings;
 
@@ -50,7 +49,7 @@ const getDamage = createSelector(
     let printReduce = 0;
 
     let totalDef = Number(def);
-    let totalReduce = Number(reduce);
+    let totalReduce = Number(0);
     let totalRes = Number(res);
 
     ITEM_KEYS.forEach(key => {
