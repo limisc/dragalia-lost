@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
+import { Checkbox } from 'components';
 import { calcVal, getDetails } from 'utils';
 
 const ROWS = [
@@ -15,13 +16,19 @@ const ROWS = [
   'halidom',
 ];
 
-function StatsTable({ details, expend, lang }) {
+function StatsTable({ disabled, details, expend, lang, setExpend }) {
   const className = clsx({ expend });
 
   return (
     <div id="stats-table">
       <div id="header">
-        <span />
+        <Checkbox
+          lang={lang}
+          disabled={disabled}
+          title={locales('details', lang)}
+          checked={expend}
+          setChecked={setExpend}
+        />
         <span>HP</span>
         <span>{locales('str', lang)}</span>
         <span>{locales('might', lang)}</span>
