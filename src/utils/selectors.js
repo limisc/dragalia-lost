@@ -1,5 +1,5 @@
 import createCachedSelector from 're-reselect';
-import content, { ELEMENT_TYPES, WEAPON_TYPES } from 'data';
+import content, { ELEMENT_TYPES, HALIDOM_LIST, WEAPON_TYPES } from 'data';
 import getField from './getField';
 
 export const getFilterFields = key => {
@@ -114,4 +114,32 @@ export const getItemList = createCachedSelector(
     });
   });
   return array.join('_');
+});
+
+export const getFilteredHalidomKey = createCachedSelector(
+  state => state.items,
+  items => {
+    const { adventurer, dragon } = items;
+    if (adventurer === null) return null;
+    const { element, weapon } = adventurer;
+    const { element: dragonEle } = dragon || {};
+
+    let filters;
+
+    if (element === dragonEle) {
+      filters = [element, weapon];
+    } else if (!dragonEle) {
+      filters = [`adventurer_${element}`, weapon];
+    } else {
+      filters = [`adventurer_${element}`, weapon, `dragon_${dragonEle}`];
+    }
+
+    return HALIDOM_LIST.filter(key => filters.some(f => key.includes(f)));
+  }
+)(state => {
+  const { adventurer, dragon } = state.items;
+  if (adventurer === null) return 'NONE';
+  const { element, weapon } = adventurer;
+  const { element: dragonEle } = dragon || {};
+  return `${element}_${weapon}_${dragonEle}`;
 });

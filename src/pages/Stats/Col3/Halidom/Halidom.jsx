@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { HALIDOM_LIST } from 'data';
 import { loadHalidom } from 'actions';
-import { saveState, removeState, useEvent } from 'utils';
+import { getFilteredHalidomKey, removeState, saveState, useEvent } from 'utils';
 import { BtnPanel } from 'components';
 import HalidomItem from './HalidomItem';
 
 const btns = ['del', 'refresh', 'save'];
 
-function Halidom({ halidom, element, weapon, dragonEle, loadHalidom }) {
+function Halidom({ halidom, keyList, loadHalidom }) {
   const onClick = useEvent(e => {
     switch (e.currentTarget.name) {
       case 'del':
@@ -25,34 +24,25 @@ function Halidom({ halidom, element, weapon, dragonEle, loadHalidom }) {
     }
   });
 
-  if (!element) return null;
-
-  let filters;
-  if (element === dragonEle) {
-    filters = [element, weapon];
-  } else if (!dragonEle) {
-    filters = [`adventurer_${element}`, weapon];
-  } else {
-    filters = [`adventurer_${element}`, weapon, `dragon_${dragonEle}`];
-  }
-
-  const arr = HALIDOM_LIST.filter(key => filters.some(f => key.includes(f)));
+  if (keyList === null) return null;
 
   return (
     <>
       <BtnPanel btns={btns} onClick={onClick} />
       <div className="list">
-        {arr.map(key => (
+        {keyList.map(key => (
           <HalidomItem key={key} halidomKey={key} />
         ))}
       </div>
     </>
   );
 }
-const mapStateToProps = ({ halidom, items: { adventurer, dragon } }) => {
-  const { element, weapon } = adventurer || {};
-  const { element: dragonEle } = dragon || {};
-  return { halidom, element, weapon, dragonEle };
+
+const mapStateToProps = state => {
+  return {
+    halidom: state.halidom,
+    keyList: getFilteredHalidomKey(state),
+  };
 };
 
 const mapDispatchToProps = { loadHalidom };
