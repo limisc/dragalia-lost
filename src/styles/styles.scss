@@ -15,5 +15,16 @@
 @import './pages/stats';
 
 @media screen and (min-width: $laptop) {
-  @include stats-laptop;
+  main {
+    &#stats,
+    &#facility {
+      @include grid(3);
+    }
+
+    &#facility > div:first-child {
+      display: flex;
+      flex-direction: column;
+      height: $page-height;
+    }
+  }
 }

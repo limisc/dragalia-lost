@@ -1,9 +1,3 @@
-@mixin stats-laptop {
-  main#stats {
-    @include grid(3);
-  }
-}
-
 #stats-table {
   box-sizing: border-box;
   line-height: 24px;
@@ -109,7 +103,8 @@
   justify-items: center;
 }
 
-.halidom-item {
+.halidom-item,
+.facility-item {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;

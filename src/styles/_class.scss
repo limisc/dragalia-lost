@@ -37,6 +37,15 @@ header {
     & + div {
       margin-left: $unit1;
     }
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   }
 }
 
@@ -45,7 +54,7 @@ main {
   margin-top: $main-margin-top;
   padding: 0 $unit1;
 
-  > div {
+  > div:not(.list) {
     > div + div {
       margin-top: $unit1;
     }
@@ -64,6 +73,14 @@ main {
 
 .flex {
   display: flex;
+}
+
+.center-v {
+  align-items: center;
+}
+
+.center-h {
+  justify-content: center;
 }
 
 .list {
