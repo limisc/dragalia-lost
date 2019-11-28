@@ -1,17 +1,20 @@
 button {
   @extend %not-select;
-  display: inline-block;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   box-sizing: border-box;
 
   border: 2px solid transparent;
   border-radius: $unit0;
-  min-width: 40px;
+  min-width: 50px;
   min-height: $text-field-height;
   padding: 0;
 
   vertical-align: middle;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;

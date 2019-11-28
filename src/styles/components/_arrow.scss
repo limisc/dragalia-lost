@@ -1,13 +1,6 @@
 $arrow-width: 10px;
 $arrow-height: 3px;
 $transit: $arrow-width - $arrow-height;
-@mixin rotate($deg) {
-  // IE 9
-  -ms-transform: rotate($deg);
-  // Safari and Chrome
-  -webkit-transform: rotate($deg);
-  transform: rotate($deg);
-}
 
 .arrow {
   position: absolute;
@@ -20,12 +13,12 @@ $transit: $arrow-width - $arrow-height;
   &::after {
     content: '';
     position: absolute;
-    background-color: $black2;
 
+    background-color: $black2;
     transition: 0.4s ease;
 
     .white & {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .disabled & {
@@ -44,8 +37,7 @@ $transit: $arrow-width - $arrow-height;
   }
 
   &.up,
-  &.down,
-  &.cross {
+  &.down {
     @include rotate(45deg);
   }
 
@@ -64,21 +56,4 @@ $transit: $arrow-width - $arrow-height;
       transform: translate($transit, 0);
     }
   }
-
-  &.cross {
-    &::before {
-      transform: translate(0, $transit / 2);
-    }
-
-    &::after {
-      transform: translate($transit / 2, 0);
-    }
-  }
 }
-
-// .white.arrow {
-//   &::before,
-//   &::after {
-//     background-color: white;
-//   }
-// }

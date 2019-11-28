@@ -33,10 +33,6 @@
     margin-left: $unit1;
   }
 
-  img {
-    width: 100%;
-  }
-
   .arrow {
     right: 10%;
   }
@@ -49,6 +45,8 @@ ul {
 .select-list {
   position: absolute;
   z-index: 10;
+
+  top: 100%;
 
   margin: 0;
   margin-top: $unit1;
@@ -65,6 +63,8 @@ ul {
 }
 
 .select-option {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   padding: $unit1;
 
@@ -80,9 +80,5 @@ ul {
     color: #fff;
     font-weight: 500;
     background-color: $blue1;
-  }
-
-  img {
-    width: 100%;
   }
 }

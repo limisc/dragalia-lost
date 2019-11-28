@@ -35,6 +35,24 @@
   }
 }
 
+.select-enemy {
+  > .select-control {
+    height: 70px;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  > .select-list {
+    overflow-y: scroll;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 #damage-bar {
   display: flex;
   align-items: center;

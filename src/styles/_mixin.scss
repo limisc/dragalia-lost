@@ -8,6 +8,14 @@
   );
 }
 
+@mixin rotate($deg) {
+  // IE 9
+  -ms-transform: rotate($deg);
+  // Safari and Chrome
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
 %not-select {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

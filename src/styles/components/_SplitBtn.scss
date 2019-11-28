@@ -1,0 +1,51 @@
+.split-btn {
+  position: relative;
+
+  display: inline-flex;
+
+  > button {
+    flex: 1 1 auto;
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .select-option {
+    justify-content: space-around;
+
+    button:hover {
+      border-color: red;
+    }
+
+    img {
+      pointer-events: none;
+    }
+  }
+}
+
+button.toggle-split {
+  flex: 0 1 50px;
+
+  &:hover {
+    background-color: $blue0;
+  }
+
+  &.disabled > span {
+    border-color: $disabled;
+  }
+
+  > span {
+    @include rotate(45deg);
+    border: solid $black2;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+}
