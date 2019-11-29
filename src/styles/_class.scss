@@ -16,18 +16,18 @@ header {
   display: flex;
 
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - #{$unit2 * 2});
   height: $header-height;
 
   background: $base0;
 
   > div {
     @extend %not-select;
+    position: relative;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     flex: 0 1 60px;
     border-radius: $unit0;
     background: aliceblue;
@@ -35,6 +35,10 @@ header {
 
     & + div {
       margin-left: $unit1;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
     }
 
     span {
