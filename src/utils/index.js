@@ -5,6 +5,7 @@ import getField from './getField';
 import getImage from './getImage';
 import getLimit from './getLimit';
 import includes from './includes';
+import { refs, scrollTo } from './scrollTo';
 import useEvent from './useEvent';
 
 export * from './selectors';
@@ -18,5 +19,7 @@ export {
   getImage,
   getLimit,
   includes,
+  refs,
+  scrollTo,
   useEvent,
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setPanel } from 'actions';
+import { refs } from 'utils';
 import { Checkbox } from 'components';
 import Items from './Items';
 import Halidom from './Halidom';
@@ -9,7 +10,7 @@ function Col3({ adventurer, lang, panel, setPanel }) {
   const disabled = adventurer === null;
 
   return (
-    <div id="stats-col3">
+    <div id="stats-col3" ref={refs.col3}>
       <div>
         <Checkbox
           disabled={disabled}

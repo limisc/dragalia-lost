@@ -1,12 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation, useParams, Link } from 'react-router-dom';
 import locales from 'locales';
+import { scrollTo } from 'utils';
 import { Image } from 'components';
 
 function Header() {
   const { lang } = useParams();
   const { pathname } = useLocation();
   const history = useHistory();
+
+  const [isMobile, setDevice] = useState(false);
+
+  const scrollTop = () => {
+    scrollTo();
+  };
 
   useEffect(() => {
     if (lang === 'en' || lang === 'ja' || lang === 'zh') return;
@@ -25,6 +32,18 @@ function Header() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  useEffect(() => {
+    const handleDevice = () => {
+      setDevice(window.innerWidth <= 524);
+    };
+
+    window.addEventListener('resize', handleDevice);
+
+    return () => {
+      window.removeEventListener('resize', handleDevice);
+    };
+  }, []);
+
   return (
     <header>
       <div>
@@ -40,6 +59,12 @@ function Header() {
           <span />
         </Link>
       </div>
+
+      {isMobile && (
+        <div role="button" tabIndex="0" onKeyDown={null} onClick={scrollTop}>
+          <Image image="icon/top" />
+        </div>
+      )}
     </header>
   );
 }

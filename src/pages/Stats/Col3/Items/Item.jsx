@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { selectItem } from 'actions';
-import { getImage, useEvent } from 'utils';
+import { getImage, refs, scrollTo, useEvent } from 'utils';
 import { Image } from 'components';
 
 function Item({ data, focused, index, style, selectItem }) {
@@ -17,6 +17,7 @@ function Item({ data, focused, index, style, selectItem }) {
 
   const handleClick = useEvent(() => {
     selectItem(focused, item);
+    scrollTo(refs.col2);
   });
 
   return (

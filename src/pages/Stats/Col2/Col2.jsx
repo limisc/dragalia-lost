@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
 import { maxItem, resetItems, saveBuild, selectFocus } from 'actions';
-import { getImage, useEvent } from 'utils';
+import { getImage, refs, scrollTo, useEvent } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import SplitBtn from './SplitBtn';
@@ -20,6 +20,7 @@ function Col2({
 }) {
   const onClick = useEvent(e => {
     selectFocus(e.target.name);
+    scrollTo(refs.col3);
   });
 
   const setMax = e => {
@@ -27,7 +28,7 @@ function Col2({
   };
 
   return (
-    <div id="stats-col2">
+    <div id="stats-col2" ref={refs.col2}>
       <div className="grid-2">
         <SplitBtn onClick1={saveBuild} />
         <button type="button" onClick={resetItems}>
