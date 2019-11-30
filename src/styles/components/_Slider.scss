@@ -4,27 +4,19 @@ $thumb-width: 30px;
 $thumb-height: $slider-height - 2 * $border-width - 2;
 
 .slider {
-  @extend %not-select;
-  // display: grid;
-  // grid-template-columns: 50px 50px 1fr 50px 50px;
-  // align-items: center;
-  // justify-items: center;
-
-  display: flex;
-
+  @include user-select-none;
+  @include flex;
   width: 100%;
 }
 
 .slider-main {
-  display: flex;
-  flex: 1;
-  align-items: center;
-
+  @include flex-v;
+  @include flex-rest;
+  @include border-box;
   position: relative;
 
   border: $border-width solid $black2;
-  border-radius: 4px;
-  box-sizing: border-box;
+  border-radius: $unit0;
 
   width: 100%;
   height: $slider-height;

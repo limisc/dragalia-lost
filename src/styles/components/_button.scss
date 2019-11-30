@@ -1,22 +1,16 @@
 button {
-  @extend %not-select;
+  @include flex-c;
+  @include border-box;
+
   position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
 
   border: 2px solid transparent;
   border-radius: $unit0;
-  min-width: 50px;
-  min-height: $text-field-height;
+  min-width: 30px;
+  height: $text-field-height;
   padding: 0;
 
-  vertical-align: middle;
   text-transform: uppercase;
-  text-decoration: none;
   font-weight: bold;
 
   background-color: rgba(255, 255, 255, 0.6);
@@ -27,9 +21,4 @@ button {
   &:hover {
     border-color: #90a4ae;
   }
-}
-
-.input-btn {
-  width: 25%;
-  margin-left: 2px;
 }

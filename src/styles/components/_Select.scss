@@ -1,5 +1,5 @@
 .select {
-  @extend %not-select;
+  @include user-select-none;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   border-radius: $unit0;
 
   width: 100%;
-  min-height: $text-field-height;
+  height: $text-field-height;
 
   &.disabled {
     border: 2px solid $disabled;

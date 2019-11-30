@@ -11,7 +11,7 @@ const MaterialItem = memo(function MaterialItem(props) {
   const [id, value] = item;
   const image = `material/${id}`;
   return (
-    <div style={style} className="flex center-v">
+    <div style={style} className="flex-v">
       <Image image={image} size="md" />
       <div style={{ flex: '1', textAlign: 'center' }}>{value}</div>
     </div>

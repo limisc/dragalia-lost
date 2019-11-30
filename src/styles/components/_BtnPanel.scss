@@ -1,6 +1,7 @@
 .btn-panel {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-  grid-gap: $unit1;
+  gap: $unit1;
   height: $text-field-height;
 }

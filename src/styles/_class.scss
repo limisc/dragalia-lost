@@ -9,25 +9,21 @@ body {
 }
 
 header {
+  @include flex;
+  @include border-box;
   position: fixed;
   z-index: 100;
   top: 0;
 
-  display: flex;
-
-  box-sizing: border-box;
   width: calc(100% - #{$unit2 * 2});
   height: $header-height;
 
   background: $base0;
 
   > div {
-    @extend %not-select;
+    @include flex-c;
     position: relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 0 1 60px;
     border-radius: $unit0;
     background: aliceblue;
@@ -53,11 +49,11 @@ header {
 }
 
 main {
-  box-sizing: border-box;
+  @include border-box;
   margin-top: $main-margin-top;
 
   > div {
-    box-sizing: border-box;
+    @include border-box;
 
     &:not(.list) {
       > div + div {
@@ -65,6 +61,10 @@ main {
       }
     }
   }
+}
+
+input {
+  min-width: 0;
 }
 
 @for $i from 2 to 5 {
@@ -78,24 +78,25 @@ main {
 }
 
 .flex {
-  display: flex;
+  @include flex;
 }
 
-.center-v {
-  align-items: center;
-}
-
-.center-h {
-  justify-content: center;
+.flex-v {
+  @include flex-v;
 }
 
 .list {
-  flex: 1;
+  @include flex-rest;
   overflow-y: auto;
 }
 
 .scale {
-  transform: scale(1.1);
+  @include scale(1.1);
+}
+
+.input-btn {
+  @include grid-columns(3fr 1fr);
+  gap: $unit0;
 }
 
 .name {
@@ -103,5 +104,6 @@ main {
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  -ms-grid-column-align: start;
   justify-self: start;
 }

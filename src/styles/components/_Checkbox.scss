@@ -10,20 +10,20 @@
   }
 
   & + label {
-    @extend %not-select;
+    @include user-select-none;
+    @include border-box;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     border: 1px solid $black1;
-    box-sizing: border-box;
-    height: 36px;
+    height: $text-field-height;
     padding: 3px;
 
     cursor: pointer;
 
     &.icon {
-      width: 36px;
+      width: $text-field-height;
 
       > img {
         width: 28px;

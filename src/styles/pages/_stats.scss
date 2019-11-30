@@ -1,5 +1,5 @@
 #stats-table {
-  box-sizing: border-box;
+  @include border-box;
   line-height: 24px;
   > div {
     display: grid;
@@ -38,10 +38,6 @@
 .select-enemy {
   > .select-control {
     height: 70px;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     > img {
@@ -59,9 +55,10 @@
 }
 
 #damage-bar {
-  display: flex;
-  align-items: center;
+  @include flex-v;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+
   border-radius: $unit0;
   height: 56px;
   color: white;
@@ -73,15 +70,13 @@
 }
 
 .avatar-list {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  @include grid(5);
   gap: $unit1;
   justify-items: center;
 
   > div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex-v;
+    @include flex-column;
   }
 
   button {
@@ -108,8 +103,8 @@
 }
 
 #stats-col3 {
-  display: flex;
-  flex-direction: column;
+  @include flex;
+  @include flex-column;
   height: $page-height;
 }
 
@@ -121,15 +116,18 @@
 }
 
 .item {
-  @include grid('minmax(64px, 20%) 1fr repeat(3, 40px)');
-  align-items: center;
+  @include grid;
+  @include align-items;
+  gap: $unit1;
+  -ms-grid-columns: minmax(64px, 20%) $unit1 1fr $unit1 40px $unit1 40px $unit1
+    40px;
+  grid-template-columns: minmax(64px, 20%) 1fr repeat(3, 40px);
   justify-items: center;
 }
 
 .halidom-item,
 .facility-item {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  align-items: center;
+  @include grid-columns(80px 1fr);
+  @include align-items;
   border-bottom: 2px solid $blue0;
 }

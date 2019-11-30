@@ -47,7 +47,7 @@ function Filter(props) {
         ))}
       </div>
 
-      <div className="flex">
+      <div className="input-btn">
         <input
           type="text"
           value={search}
@@ -56,7 +56,7 @@ function Filter(props) {
           onChange={handleSearch}
         />
 
-        <button type="button" className="input-btn" onClick={resetFilters}>
+        <button type="button" onClick={resetFilters}>
           Clear
         </button>
       </div>

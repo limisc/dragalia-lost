@@ -1,6 +1,6 @@
 img,
 input[type='image'] {
-  @extend %not-select;
+  @include user-select-none;
 
   @each $name, $size in $img-size {
     &.#{$name} {
@@ -14,7 +14,7 @@ input[type='image'] {
   cursor: pointer;
 
   &.md:hover {
-    transform: scale(1.1);
+    @include scale(1.1);
   }
 
   &:active,

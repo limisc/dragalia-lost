@@ -9,7 +9,6 @@ input[type='number'] {
 }
 
 input {
-  @extend %not-select;
   &[type='number'],
   &[type='text'] {
     box-sizing: border-box;
@@ -33,9 +32,5 @@ input {
     &::placeholder {
       opacity: 1;
     }
-  }
-
-  &[readonly] {
-    cursor: default;
   }
 }

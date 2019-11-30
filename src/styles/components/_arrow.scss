@@ -49,11 +49,11 @@ $transit: $arrow-width - $arrow-height;
   &.down,
   &.right {
     &::before {
-      transform: translate(0, $transit);
+      @include transform(translate(0, $transit));
     }
 
     &::after {
-      transform: translate($transit, 0);
+      @include transform(translate($transit, 0));
     }
   }
 }

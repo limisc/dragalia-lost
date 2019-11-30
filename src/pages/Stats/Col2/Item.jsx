@@ -132,27 +132,35 @@ function Item({ focused, item, lang, updateItem }) {
           );
         }
 
+        if (key === 'augHp' || key === 'augStr') {
+          return (
+            <div key={key}>
+              {locales(key, lang)}
+              <div className="input-btn">
+                <input
+                  type="number"
+                  value={value}
+                  name={key}
+                  onChange={changeInput}
+                />
+
+                <button type="button" name={key} onClick={onClick}>
+                  max
+                </button>
+              </div>
+            </div>
+          );
+        }
+
         return (
           <div key={key}>
             {locales(key, lang)}
-            <div className="flex">
-              <input
-                type="number"
-                value={value}
-                name={key}
-                onChange={changeInput}
-              />
-              {(key === 'augHp' || key === 'augStr') && (
-                <button
-                  type="button"
-                  className="input-btn"
-                  name={key}
-                  onClick={onClick}
-                >
-                  max
-                </button>
-              )}
-            </div>
+            <input
+              type="number"
+              value={value}
+              name={key}
+              onChange={changeInput}
+            />
           </div>
         );
       })}
