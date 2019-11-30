@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
@@ -14,6 +13,16 @@ function SplitBtn({ adventurer, builds, delBuild, loadBuild, saveBuild }) {
 
   const toggleExpand = () => {
     setExpand(prevState => !prevState);
+  };
+
+  const handleSelect = e => {
+    const { value } = e.currentTarget;
+    if (e.target.name === 'del') {
+      delBuild(value);
+    } else {
+      const build = builds[value];
+      loadBuild(build);
+    }
   };
 
   useEffect(() => {
@@ -33,16 +42,6 @@ function SplitBtn({ adventurer, builds, delBuild, loadBuild, saveBuild }) {
       window.removeEventListener('click', closeOptions);
     };
   }, [expand]);
-
-  const onClick = e => {
-    const { value } = e.currentTarget;
-    if (e.target.name === 'del') {
-      delBuild(value);
-    } else {
-      const build = builds[value];
-      loadBuild(build);
-    }
-  };
 
   return (
     <div className="split-btn">
@@ -70,7 +69,7 @@ function SplitBtn({ adventurer, builds, delBuild, loadBuild, saveBuild }) {
                 aria-selected={false}
                 className="select-option"
                 value={key}
-                onClick={onClick}
+                onClick={handleSelect}
                 onKeyDown={null}
               >
                 <Image image={image} size="md" />
