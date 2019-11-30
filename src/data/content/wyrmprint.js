@@ -2202,6 +2202,25 @@ const wyrmprint = {
     },
     rarity: '4',
   },
+  '40040064': {
+    Id: '40040064',
+    icon: [
+      {
+        image: '1030003',
+        title: 'Freeze Res +75%',
+      },
+    ],
+    image: '400396',
+    max: [151, 41],
+    might: [80, 60, 50],
+    min: [22, 6],
+    name: {
+      en: 'Fluff Aplenty',
+      ja: 'もふもふわんだーらんど',
+      zh: '毛绒绒乐园',
+    },
+    rarity: '4',
+  },
   '40050001': {
     Id: '40050001',
     icon: [
@@ -4014,6 +4033,190 @@ const wyrmprint = {
       en: 'Dear Diary',
       ja: 'あたしだけのリュカきゅん☆☆☆',
       zh: '只属于我的卢卡亲☆☆☆',
+    },
+    rarity: '5',
+  },
+  '40050077': {
+    Id: '40050077',
+    icon: [
+      {
+        image: '1020002',
+        title: 'HP 70% = Strength +13%',
+      },
+      {
+        image: '1020013',
+        title: 'Gauge Accelerator +30%',
+      },
+      {
+        image: '1100001',
+        title: "Brainwashed Zodiark's Bane +60%",
+      },
+    ],
+    image: '400398',
+    incSTR: [13, 10, 8],
+    max: [150, 54],
+    might: [180, 140, 100],
+    min: [22, 8],
+    name: {
+      en: 'Wily Warriors: Bubble & Wood',
+      ja: 'Dr.ワイリーの刺客たち・Ｂ＆Ｗ',
+      zh: '威利博士的刺客们·B&W',
+    },
+    rarity: '5',
+  },
+  '40050078': {
+    Id: '40050078',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Flurry Strength +20%',
+      },
+      {
+        image: '1080004',
+        title: 'Light Res +10%',
+      },
+      {
+        image: '1100001',
+        title: "Brainwashed Jupiter's Bane +60%",
+      },
+    ],
+    image: '400399',
+    incRES: [10, 8, 5],
+    max: [155, 49],
+    might: [180, 140, 100],
+    min: [23, 7],
+    name: {
+      en: 'Wily Warriors: Air & Crash',
+      ja: 'Dr.ワイリーの刺客たち・Ａ＆Ｃ',
+      zh: '威利博士的刺客们·A&C',
+    },
+    rarity: '5',
+    resEle: 'Light',
+  },
+  '40050079': {
+    Id: '40050079',
+    icon: [
+      {
+        image: '1020011',
+        title: 'HP 70% = Critical Damage +22%',
+      },
+      {
+        image: '1020002',
+        title: "Striker's Strength +6%",
+      },
+      {
+        image: '1100001',
+        title: "Brainwashed Mercury's Bane +60%",
+      },
+    ],
+    image: '400400',
+    max: [149, 55],
+    might: [180, 150, 120],
+    min: [22, 8],
+    name: {
+      en: 'Wily Warriors: Metal & Quick',
+      ja: 'Dr.ワイリーの刺客たち・Ｍ＆Ｑ',
+      zh: '威利博士的刺客们·M&Q',
+    },
+    rarity: '5',
+  },
+  '40050080': {
+    Id: '40050080',
+    icon: [
+      {
+        image: '1020004',
+        title: 'Skill Haste +8%',
+      },
+      {
+        image: '1020004',
+        title: 'Striking Haste +12%',
+      },
+      {
+        image: '1100001',
+        title: "Brainwashed Brunhilda's Bane +60%",
+      },
+    ],
+    image: '400401',
+    max: [151, 53],
+    might: [175, 150, 125],
+    min: [22, 7],
+    name: {
+      en: 'Wily Warriors: Flash & Heat',
+      ja: 'Dr.ワイリーの刺客たち・Ｆ＆Ｈ',
+      zh: '威利博士的刺客们·F&H',
+    },
+    rarity: '5',
+  },
+  '40050081': {
+    Id: '40050081',
+    icon: [
+      {
+        image: '1020009',
+        title: 'Recovery Potency +13%',
+      },
+      {
+        image: '1010011',
+        title: 'Last Recovery ',
+      },
+    ],
+    image: '400412',
+    max: [151, 53],
+    might: [180, 140, 100],
+    min: [22, 7],
+    name: {
+      en: 'Roll On',
+      ja: 'ロックンロールトリップ',
+      zh: '洛克萝露大冒险',
+    },
+    rarity: '5',
+  },
+  '40050082': {
+    Id: '40050082',
+    icon: [
+      {
+        image: '1010002',
+        title: 'Skill Damage +30%',
+      },
+      {
+        image: '1010001',
+        title: 'Force Strike +40%',
+      },
+      {
+        image: '1100001',
+        title: "Wily Machine's Bane +60%",
+      },
+    ],
+    image: '400397',
+    max: [149, 55],
+    might: [180, 140, 100],
+    min: [22, 8],
+    name: {
+      en: 'Mega Friends',
+      ja: '共鳴する勇気',
+      zh: '共鸣的勇气',
+    },
+    rarity: '5',
+  },
+  '40050083': {
+    Id: '40050083',
+    icon: [
+      {
+        image: '1020011',
+        title: 'Critical Damage +20%',
+      },
+      {
+        image: '1020010',
+        title: '(Shadow) Flurry Devastation +12%',
+      },
+    ],
+    image: '400395',
+    max: [176, 65],
+    might: [170, 140, 100],
+    min: [26, 9],
+    name: {
+      en: 'Howling to the Heavens',
+      ja: '天に吠ゆる夜狼',
+      zh: '哮天夜狼',
     },
     rarity: '5',
   },

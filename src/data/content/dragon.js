@@ -1115,6 +1115,31 @@ const dragon = {
     },
     rarity: '5',
   },
+  '20050209': {
+    Id: '20050209',
+    element: 'Water',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Water) Strength +45%',
+      },
+      {
+        image: '1020002',
+        title: '(Water) Primed Strength +15%',
+      },
+    ],
+    image: '210109_01',
+    incSTR: [45, 35],
+    max: [370, 125],
+    might: [95, 75],
+    min: [37, 12],
+    name: {
+      en: 'Kamuy',
+      ja: 'カムイ',
+      zh: '神威',
+    },
+    rarity: '5',
+  },
   '20050301': {
     Id: '20050301',
     element: 'Wind',

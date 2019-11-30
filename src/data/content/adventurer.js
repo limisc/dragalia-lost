@@ -1385,6 +1385,58 @@ const adventurer = {
     rarity: '4',
     weapon: 'Blade',
   },
+  '10240502': {
+    Id: '10240502',
+    defCoef: 10,
+    element: 'Shadow',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Full HP = Strength +13%',
+      },
+      {
+        image: '1030004',
+        title: 'Paralysis Res +100%',
+      },
+      {
+        image: '1020011',
+        title: 'Full HP = Critical Damage +17%',
+      },
+    ],
+    image: '110343_01',
+    incSTR: [
+      {
+        mc: 30,
+        value: 13,
+      },
+      {
+        mc: 10,
+        value: 10,
+      },
+    ],
+    max: [428, 302],
+    mcBonus: [
+      [50, 35],
+      [108, 76],
+      [176, 124],
+      [234, 165],
+      [263, 185],
+      [288, 203],
+    ],
+    might: [120, 120, 140, 180, 230, 230],
+    min: [
+      [42, 29],
+      [52, 36],
+      [60, 42],
+    ],
+    name: {
+      en: 'Durant',
+      ja: 'デュラルド',
+      zh: '杜拉尔德',
+    },
+    rarity: '4',
+    weapon: 'Blade',
+  },
   '10250101': {
     Id: '10250101',
     defCoef: 10,
@@ -3079,6 +3131,48 @@ const adventurer = {
       en: 'Julietta',
       ja: 'ジュリエッタ',
       zh: '朱丽叶',
+    },
+    rarity: '5',
+    weapon: 'Axe',
+  },
+  '10450202': {
+    Id: '10450202',
+    defCoef: 10,
+    element: 'Water',
+    icon: [
+      {
+        image: '1010026',
+        title: 'Divine Oath II',
+      },
+      {
+        image: '1030023',
+        title: "Heaven's Shield II",
+      },
+      {
+        image: '1020002',
+        title: 'Primed Strength +10%',
+      },
+    ],
+    image: '100002_13',
+    max: [446, 308],
+    mcBonus: [
+      [52, 36],
+      [112, 78],
+      [183, 127],
+      [243, 169],
+      [273, 190],
+      [299, 208],
+    ],
+    might: [160, 240, 260, 280, 300, 300],
+    min: [
+      [43, 30],
+      [54, 37],
+      [63, 43],
+    ],
+    name: {
+      en: 'Elisanne',
+      ja: 'エルフィリス',
+      zh: '埃尔菲莉丝',
     },
     rarity: '5',
     weapon: 'Axe',
@@ -5327,6 +5421,48 @@ const adventurer = {
     rarity: '5',
     weapon: 'Wand',
   },
+  '10750102': {
+    Id: '10750102',
+    defCoef: 8,
+    element: 'Flame',
+    icon: [
+      {
+        image: '1010027',
+        title: 'L.S. Reactor II',
+      },
+      {
+        image: '1030006',
+        title: 'Stun Res +100%',
+      },
+      {
+        image: '1020013',
+        title: 'Gauge Accelerator +35%',
+      },
+    ],
+    image: '110354_01',
+    max: [412, 283],
+    mcBonus: [
+      [48, 33],
+      [104, 71],
+      [170, 116],
+      [226, 154],
+      [254, 173],
+      [276, 189],
+    ],
+    might: [190, 270, 340, 380, 400, 400],
+    min: [
+      [40, 27],
+      [40, 27],
+      [58, 40],
+    ],
+    name: {
+      en: 'Mega Man',
+      ja: 'ロックマン',
+      zh: '洛克人',
+    },
+    rarity: '5',
+    weapon: 'Wand',
+  },
   '10750201': {
     Id: '10750201',
     defCoef: 8,
@@ -6321,6 +6457,48 @@ const adventurer = {
       en: 'Hildegarde',
       ja: 'ヒルデガルド',
       zh: '希尔德加德',
+    },
+    rarity: '5',
+    weapon: 'Staff',
+  },
+  '10850201': {
+    Id: '10850201',
+    defCoef: 8,
+    element: 'Water',
+    icon: [
+      {
+        image: '1010007',
+        title: 'Skill Prep +100%',
+      },
+      {
+        image: '1030002',
+        title: 'Burn Res +100%',
+      },
+      {
+        image: '1020009',
+        title: 'HP 70% = Healing +15%',
+      },
+    ],
+    image: '110351_01',
+    max: [484, 279],
+    mcBonus: [
+      [56, 32],
+      [121, 70],
+      [198, 114],
+      [263, 152],
+      [295, 171],
+      [325, 188],
+    ],
+    might: [140, 220, 240, 280, 300, 300],
+    min: [
+      [47, 27],
+      [59, 34],
+      [68, 39],
+    ],
+    name: {
+      en: 'Jiang Ziya',
+      ja: 'タイコウボウ',
+      zh: '太公望',
     },
     rarity: '5',
     weapon: 'Staff',
