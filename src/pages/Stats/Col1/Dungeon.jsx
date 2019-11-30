@@ -105,12 +105,14 @@ function Dungeon({ adventurer, lang }) {
           />
         </div>
         {fields.map(key => {
+          const step = key === 'multiplier' ? '0.01' : '1';
           return (
             <div key={key}>
               {locales(key, lang)}
               <input
                 type="number"
                 name={key}
+                step={step}
                 value={settings[key]}
                 onChange={handleInput}
               />
