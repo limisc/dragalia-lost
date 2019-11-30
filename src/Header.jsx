@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation, useParams, Link } from 'react-router-dom';
 import locales from 'locales';
-import { scrollTo } from 'utils';
+import { refs, scrollTo } from 'utils';
 import { Image } from 'components';
 
 function Header() {
@@ -13,6 +13,10 @@ function Header() {
 
   const scrollTop = () => {
     scrollTo();
+  };
+
+  const scrollDown = () => {
+    scrollTo(refs.col3);
   };
 
   useEffect(() => {
@@ -37,6 +41,8 @@ function Header() {
       setDevice(window.innerWidth <= 524);
     };
 
+    handleDevice();
+
     window.addEventListener('resize', handleDevice);
 
     return () => {
@@ -49,21 +55,26 @@ function Header() {
       <div>
         <Image image="icon/stats" />
         <Link to={`/stats/${lang}`} title={locales('stats', lang)}>
-          <span />
+          <span className="cover" />
         </Link>
       </div>
 
       <div>
         <Image image="icon/home" />
         <Link to={`/facility/${lang}`} title={locales('facility', lang)}>
-          <span />
+          <span className="cover" />
         </Link>
       </div>
 
       {isMobile && (
-        <div role="button" tabIndex="0" onKeyDown={null} onClick={scrollTop}>
-          <Image image="icon/top" />
-        </div>
+        <>
+          <div role="button" tabIndex="0" onKeyDown={null} onClick={scrollTop}>
+            <span className="arrow up" />
+          </div>
+          <div role="button" tabIndex="0" onKeyDown={null} onClick={scrollDown}>
+            <span className="arrow down" />
+          </div>
+        </>
       )}
     </header>
   );

@@ -10,7 +10,7 @@ export const scrollTo = ref => {
   setTimeout(() => {
     let top = 0;
     if (ref && ref.current) {
-      top = ref.current.offsetTop;
+      top = ref.current.offsetTop - 48;
     }
 
     window.scrollTo({ top, behavior: 'smooth' });

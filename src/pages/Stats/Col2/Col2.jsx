@@ -1,27 +1,26 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
 import { maxItem, resetItems, saveBuild, selectFocus } from 'actions';
-import { getImage, refs, scrollTo, useEvent } from 'utils';
+import { getImage, refs } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import SplitBtn from './SplitBtn';
 import Item from './Item';
 
-function Col2({
-  focused,
-  items,
-  lang,
-  maxItem,
-  resetItems,
-  saveBuild,
-  selectFocus,
-}) {
-  const onClick = useEvent(e => {
-    selectFocus(e.target.name);
-    scrollTo(refs.col3);
-  });
+function Col2({ focused, items, lang, maxItem, resetItems, selectFocus }) {
+  const handleFocus = useCallback(
+    e => {
+      selectFocus(e.target.name);
+    },
+    [selectFocus]
+  );
+
+  const handleReset = () => {
+    resetItems();
+    window.scroll(refs.col2.current.offsetTop - 48, 0);
+  };
 
   const setMax = e => {
     maxItem(e.target.name);
@@ -30,8 +29,8 @@ function Col2({
   return (
     <div id="stats-col2" ref={refs.col2}>
       <div className="grid-2">
-        <SplitBtn onClick1={saveBuild} />
-        <button type="button" onClick={resetItems}>
+        <SplitBtn />
+        <button type="button" onClick={handleReset}>
           reset
         </button>
       </div>
@@ -55,7 +54,7 @@ function Col2({
                   name={key}
                   image={image}
                   title={title}
-                  onClick={onClick}
+                  onClick={handleFocus}
                 />
                 {augments !== 0 && <span>{`+${augments}`}</span>}
               </div>
