@@ -39,16 +39,4 @@ button.toggle-split {
   &:hover {
     background-color: $blue0;
   }
-
-  &.disabled > span {
-    border-color: $disabled;
-  }
-
-  > span {
-    @include rotate(45deg);
-    border: solid $black2;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 4px;
-  }
 }

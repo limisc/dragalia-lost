@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
+import clsx from 'clsx';
 import locales from 'locales';
 import { updateItem } from 'actions';
 import { getLimit, useEvent } from 'utils';
@@ -79,7 +80,8 @@ function Item({ focused, item, lang, updateItem }) {
   const onClick = e => {
     const { name } = e.target;
     const max = getLimit(name);
-    updateItem({ itemKey: focused, updates: { [name]: max } });
+    const value = Number(item[name]) === max ? '' : max;
+    updateItem({ itemKey: focused, updates: { [name]: value } });
   };
 
   useEffect(() => {
@@ -133,6 +135,11 @@ function Item({ focused, item, lang, updateItem }) {
         }
 
         if (key === 'augHp' || key === 'augStr') {
+          const max = getLimit(key);
+          const arrowClassName = clsx(
+            'arrow',
+            Number(value) === max ? 'left' : 'right'
+          );
           return (
             <div key={key}>
               {locales(key, lang)}
@@ -145,7 +152,7 @@ function Item({ focused, item, lang, updateItem }) {
                 />
 
                 <button type="button" name={key} onClick={onClick}>
-                  max
+                  <span className={arrowClassName} />
                 </button>
               </div>
             </div>

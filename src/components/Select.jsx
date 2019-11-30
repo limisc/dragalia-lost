@@ -6,7 +6,7 @@ const Select = memo(function Select(props) {
   const ref = useRef();
   const [expand, setExpand] = useState(false);
 
-  const arrow = clsx('arrow', expand ? 'up' : 'down');
+  const arrow = clsx('animated-arrow', expand ? 'up' : 'down');
 
   const toggleSelect = () => {
     if (disabled) return;

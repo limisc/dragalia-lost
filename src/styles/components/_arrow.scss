@@ -3,6 +3,34 @@ $arrow-height: 3px;
 $transit: $arrow-width - $arrow-height;
 
 .arrow {
+  display: inline-block;
+  border: solid $black2;
+  border-width: 0 $arrow-height $arrow-height 0;
+
+  padding: $arrow-width - $arrow-height * 2;
+
+  .disabled & {
+    border-color: $disabled;
+  }
+
+  &.down {
+    @include rotate(45deg);
+  }
+
+  &.up {
+    @include rotate(-135deg);
+  }
+
+  &.right {
+    @include rotate(-45deg);
+  }
+
+  &.left {
+    @include rotate(135deg);
+  }
+}
+
+.animated-arrow {
   position: absolute;
   width: $arrow-width;
   height: $arrow-width;

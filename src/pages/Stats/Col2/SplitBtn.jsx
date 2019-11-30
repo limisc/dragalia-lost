@@ -10,6 +10,7 @@ import { getImage } from 'utils';
 function SplitBtn({ adventurer, builds, delBuild, loadBuild, saveBuild }) {
   const [expand, setExpand] = useState(false);
   const disabled = builds === null;
+  const arrowClassName = clsx('arrow', expand ? 'up' : 'down', { disabled });
 
   const toggleExpand = () => {
     setExpand(prevState => !prevState);
@@ -54,7 +55,7 @@ function SplitBtn({ adventurer, builds, delBuild, loadBuild, saveBuild }) {
         disabled={disabled}
         onClick={toggleExpand}
       >
-        <span />
+        <span className={arrowClassName} />
       </button>
 
       {expand && builds && (

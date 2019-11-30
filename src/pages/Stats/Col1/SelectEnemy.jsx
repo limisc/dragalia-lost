@@ -10,7 +10,7 @@ const SelectEnemy = memo(function SelectEnemy(props) {
   const ref = useRef();
   const [expand, setExpand] = useState(false);
 
-  const arrow = clsx('arrow', expand ? 'up' : 'down');
+  const arrow = clsx('animated-arrow', expand ? 'up' : 'down');
   const imageURL = `${process.env.PUBLIC_URL}/images/dungeon/${value}.png`;
 
   const toggleSelect = () => {
