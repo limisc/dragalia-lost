@@ -9,6 +9,8 @@ $transit: $arrow-width - $arrow-height;
 
   padding: $arrow-width - $arrow-height * 2;
 
+  transition: 0.4s ease;
+
   pointer-events: none;
 
   .disabled & {
