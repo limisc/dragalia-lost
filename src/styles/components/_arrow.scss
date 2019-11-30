@@ -9,6 +9,8 @@ $transit: $arrow-width - $arrow-height;
 
   padding: $arrow-width - $arrow-height * 2;
 
+  pointer-events: none;
+
   .disabled & {
     border-color: $disabled;
   }
@@ -36,6 +38,8 @@ $transit: $arrow-width - $arrow-height;
   height: $arrow-width;
 
   transition: 0.4s ease;
+
+  pointer-events: none;
 
   &::before,
   &::after {
