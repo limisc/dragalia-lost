@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { loadHalidom, loadBuilds } from 'actions';
+import { loadHalidom, loadBuilds, selectFocus } from 'actions';
 import Col1 from './Col1';
 import Col2 from './Col2';
 import Col3 from './Col3';
 
-function Stats({ loadBuilds, loadHalidom }) {
+function Stats({ loadBuilds, loadHalidom, selectFocus }) {
   const { lang = 'en' } = useParams();
 
   useEffect(() => {
     loadHalidom();
     loadBuilds();
-  }, [loadBuilds, loadHalidom]);
+    selectFocus('adventurer');
+  }, [loadBuilds, loadHalidom, selectFocus]);
 
   return (
     <main id="stats">
@@ -26,6 +27,7 @@ function Stats({ loadBuilds, loadHalidom }) {
 const mapDispatchToProps = {
   loadHalidom,
   loadBuilds,
+  selectFocus,
 };
 
 export default connect(null, mapDispatchToProps)(Stats);
