@@ -151,7 +151,12 @@ function Item({ focused, item, lang, updateItem }) {
                   onChange={changeInput}
                 />
 
-                <button type="button" name={key} onClick={onClick}>
+                <button
+                  type="button"
+                  tabIndex="-1"
+                  name={key}
+                  onClick={onClick}
+                >
                   <span className={arrowClassName} />
                 </button>
               </div>
