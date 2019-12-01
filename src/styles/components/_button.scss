@@ -1,6 +1,7 @@
 button {
   @include flex-c;
   @include border-box;
+  @include user-select-none;
 
   position: relative;
 
