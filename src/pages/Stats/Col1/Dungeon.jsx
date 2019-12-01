@@ -7,7 +7,7 @@ import locales from 'locales';
 import SelectEnemy from './SelectEnemy';
 import DamageBar from './DamageBar';
 
-const fields = ['multiplier', 'exHp', 'hp', 'def', 'res', 'dcrStr'];
+const fields = ['multiplier', 'exHp', 'hp', 'exDef', 'def', 'res', 'dcrStr'];
 
 function Dungeon({ adventurer, lang }) {
   const [settings, setSettings] = useState({
@@ -16,6 +16,7 @@ function Dungeon({ adventurer, lang }) {
     difficulty: 'VH',
     enemy: '',
     exHp: '',
+    exDef: '',
     hp: '',
     multiplier: '',
     res: '',
@@ -63,15 +64,15 @@ function Dungeon({ adventurer, lang }) {
 
     if (weapon === 'Axe' || weapon === 'Lance') {
       let exHp = '';
-      let def = '';
+      let exDef = '';
 
       const value = COABILITY_VALUE[weapon][rarity][ex];
 
       if (weapon === 'Axe') {
-        def = value;
+        exDef = value;
 
         if (Id === '10450102') {
-          def = '';
+          exDef = '';
         }
       } else if (weapon === 'Lance') {
         exHp = value;
@@ -80,7 +81,7 @@ function Dungeon({ adventurer, lang }) {
       setSettings(prevSettings => ({
         ...prevSettings,
         exHp,
-        def,
+        exDef,
       }));
     }
   }, [adventurer]);

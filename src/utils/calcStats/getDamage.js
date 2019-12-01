@@ -29,6 +29,7 @@ const getDamage = createSelector(
       def,
       difficulty,
       enemy,
+      exDef,
       exHp,
       hp,
       multiplier,
@@ -48,7 +49,7 @@ const getDamage = createSelector(
     let printRes = 0;
     let printReduce = 0;
 
-    let totalDef = Number(def);
+    let totalDef = Number(def) + Number(exDef);
     let totalReduce = Number(0);
     let totalRes = Number(res);
 
