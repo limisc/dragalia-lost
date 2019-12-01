@@ -5,6 +5,7 @@ const Select = memo(function Select(props) {
   const { disabled, name, options, label, value, onChange = () => {} } = props;
   const ref = useRef();
   const [expand, setExpand] = useState(false);
+  const [cursor, setCursor] = useState(0);
 
   const arrow = clsx('animated-arrow', expand ? 'up' : 'down');
 
@@ -19,6 +20,38 @@ const Select = memo(function Select(props) {
 
     if (ref.current) {
       ref.current.focus();
+    }
+  };
+
+  const handleKeyDown = e => {
+    const len = options.length;
+    switch (e.key) {
+      case 'Escape':
+      case 'Tab':
+        setCursor(0);
+        setExpand(false);
+        break;
+      case 'Enter':
+        if (expand && value !== options[cursor].value) {
+          onChange({ name, value: options[cursor].value });
+        }
+        setCursor(0);
+        toggleSelect();
+        break;
+      case 'ArrowUp':
+        if (expand) {
+          setCursor(prevCursor => {
+            return !prevCursor ? len - 1 : prevCursor - 1;
+          });
+        }
+        break;
+      case 'ArrowDown':
+        if (expand) {
+          setCursor(prevCursor => (prevCursor + 1) % len);
+        }
+        break;
+      default:
+        break;
     }
   };
 
@@ -46,9 +79,9 @@ const Select = memo(function Select(props) {
         ref={ref}
         className={clsx('select-control', { disabled })}
         role="button"
-        tabIndex="0"
+        tabIndex={disabled ? '-1' : '0'}
         onClick={toggleSelect}
-        onKeyDown={null}
+        onKeyDown={handleKeyDown}
       >
         <div>{label || value}</div>
         <span className={arrow} />
@@ -57,10 +90,12 @@ const Select = memo(function Select(props) {
 
       {expand && (
         <ul className="select-list">
-          {options.map(opt => {
-            const optClass = clsx('select-option', {
-              focus: opt.value === value,
-            });
+          {options.map((opt, i) => {
+            const optClass = clsx(
+              'select-option',
+              { hover: cursor === i },
+              { focus: opt.value === value }
+            );
             return (
               <li
                 key={opt.value}

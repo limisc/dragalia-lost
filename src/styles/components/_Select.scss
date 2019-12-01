@@ -72,7 +72,8 @@ ul {
   white-space: nowrap;
   text-overflow: ellipsis;
 
-  &:hover {
+  &:hover,
+  &.hover {
     background-color: $blue0;
   }
 
