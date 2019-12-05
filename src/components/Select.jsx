@@ -5,9 +5,9 @@ const Select = memo(function Select(props) {
   const { disabled, name, options, label, value, onChange = () => {} } = props;
   const ref = useRef();
   const [expand, setExpand] = useState(false);
-  const [cursor, setCursor] = useState(0);
+  const [cursor, setCursor] = useState(undefined);
 
-  const arrow = clsx('animated-arrow', expand ? 'up' : 'down');
+  const arrow = clsx('arrow', expand ? 'up' : 'down');
 
   const toggleSelect = () => {
     if (disabled) return;
@@ -17,7 +17,7 @@ const Select = memo(function Select(props) {
   const handleChange = e => {
     const val = e.target.getAttribute('value');
     onChange({ name, value: val });
-
+    setCursor(undefined);
     if (ref.current) {
       ref.current.focus();
     }
@@ -28,14 +28,14 @@ const Select = memo(function Select(props) {
     switch (e.key) {
       case 'Escape':
       case 'Tab':
-        setCursor(0);
+        setCursor(undefined);
         setExpand(false);
         break;
       case 'Enter':
-        if (expand && value !== options[cursor].value) {
+        if (expand && cursor !== undefined && value !== options[cursor].value) {
           onChange({ name, value: options[cursor].value });
         }
-        setCursor(0);
+        setCursor(undefined);
         toggleSelect();
         break;
       case 'ArrowUp':
@@ -47,7 +47,11 @@ const Select = memo(function Select(props) {
         break;
       case 'ArrowDown':
         if (expand) {
-          setCursor(prevCursor => (prevCursor + 1) % len);
+          setCursor(prevCursor => {
+            if (prevCursor === undefined) return 0;
+
+            return (prevCursor + 1) % len;
+          });
         }
         break;
       default:

@@ -3,6 +3,8 @@ $arrow-height: 3px;
 $transit: $arrow-width - $arrow-height;
 
 .arrow {
+  position: absolute;
+
   display: inline-block;
   border: solid $black2;
   border-width: 0 $arrow-height $arrow-height 0;
@@ -15,6 +17,10 @@ $transit: $arrow-width - $arrow-height;
 
   .disabled & {
     border-color: $disabled;
+  }
+
+  .white & {
+    border-color: rgba(255, 255, 255, 0.8);
   }
 
   &.down {
