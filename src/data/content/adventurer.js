@@ -1,6 +1,12 @@
 const adventurer = {
   '10130102': {
     Id: '10130102',
+    Name: {
+      en: 'Marty',
+      ja: 'マーティ',
+      zh: '马蒂',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -33,16 +39,60 @@ const adventurer = {
       [57, 31],
       [67, 36],
     ],
-    name: {
-      en: 'Marty',
-      ja: 'マーティ',
-      zh: '马蒂',
+    rarity: '3',
+    weapon: 'Sword',
+  },
+  '10130103': {
+    Id: '10130103',
+    Name: {
+      en: 'Orion',
+      ja: 'オリオン',
+      zh: '俄里翁',
     },
+    abbr: 'o',
+    defCoef: 10,
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Strength Doublebuff +8%',
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +50%',
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +25%',
+      },
+    ],
+    image: '110052_03',
+    max: [466, 282],
+    mcBonus: [
+      [54, 33],
+      [117, 71],
+      [191, 116],
+      [254, 154],
+      [285, 173],
+      [312, 189],
+    ],
+    might: [80, 80, 100, 120, 160, 160],
+    min: [
+      [45, 27],
+      [56, 34],
+      [66, 40],
+    ],
     rarity: '3',
     weapon: 'Sword',
   },
   '10130201': {
     Id: '10130201',
+    Name: {
+      en: 'Zardin',
+      ja: 'シャーディ',
+      zh: '夏迪',
+    },
+    abbr: 'z',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -85,16 +135,17 @@ const adventurer = {
       [57, 31],
       [67, 36],
     ],
-    name: {
-      en: 'Zardin',
-      ja: 'シャーディ',
-      zh: '夏迪',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '10130401': {
     Id: '10130401',
+    Name: {
+      en: 'Raemond',
+      ja: 'ライムンド',
+      zh: '莱蒙德',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -127,16 +178,17 @@ const adventurer = {
       [52, 34],
       [61, 40],
     ],
-    name: {
-      en: 'Raemond',
-      ja: 'ライムンド',
-      zh: '莱蒙德',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '10130501': {
     Id: '10130501',
+    Name: {
+      en: 'Rodrigo',
+      ja: 'ロドリゴ',
+      zh: '罗德里戈',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -179,16 +231,17 @@ const adventurer = {
       [52, 35],
       [60, 40],
     ],
-    name: {
-      en: 'Rodrigo',
-      ja: 'ロドリゴ',
-      zh: '罗德里戈',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '10140101': {
     Id: '10140101',
+    Name: {
+      en: 'Euden',
+      ja: 'ユーディル',
+      zh: '尤蒂尔',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -221,16 +274,17 @@ const adventurer = {
       [60, 40],
       [68, 46],
     ],
-    name: {
-      en: 'Euden',
-      ja: 'ユーディル',
-      zh: '尤蒂尔',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10140102': {
     Id: '10140102',
+    Name: {
+      en: 'Karl',
+      ja: 'カール',
+      zh: '卡尔',
+    },
+    abbr: 'k',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -269,16 +323,17 @@ const adventurer = {
       [56, 34],
       [65, 39],
     ],
-    name: {
-      en: 'Karl',
-      ja: 'カール',
-      zh: '卡尔',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10140103': {
     Id: '10140103',
+    Name: {
+      en: 'Serena',
+      ja: 'セレナ',
+      zh: '塞蕾娜',
+    },
+    abbr: 's',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -311,16 +366,17 @@ const adventurer = {
       [58, 32],
       [68, 37],
     ],
-    name: {
-      en: 'Serena',
-      ja: 'セレナ',
-      zh: '塞蕾娜',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10140201': {
     Id: '10140201',
+    Name: {
+      en: 'Odetta',
+      ja: 'オデッタ',
+      zh: '欧蒂塔',
+    },
+    abbr: 'o',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -353,16 +409,17 @@ const adventurer = {
       [56, 33],
       [65, 39],
     ],
-    name: {
-      en: 'Odetta',
-      ja: 'オデッタ',
-      zh: '欧蒂塔',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10140301': {
     Id: '10140301',
+    Name: {
+      en: 'Ku Hai',
+      ja: 'クガイ',
+      zh: '苦海',
+    },
+    abbr: 'kh',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -395,16 +452,70 @@ const adventurer = {
       [53, 35],
       [62, 41],
     ],
-    name: {
-      en: 'Ku Hai',
-      ja: 'クガイ',
-      zh: '苦海',
+    rarity: '4',
+    weapon: 'Sword',
+  },
+  '10140401': {
+    Id: '10140401',
+    Name: {
+      en: 'Odetta',
+      ja: 'オデッタ',
+      zh: '欧蒂塔',
     },
+    abbr: 'o',
+    defCoef: 10,
+    element: 'Light',
+    icon: [
+      {
+        image: '1020002',
+        title: 'HP 70% = Strength +10%',
+      },
+      {
+        image: '1030001',
+        title: 'Poison Res +100%',
+      },
+      {
+        image: '1010006',
+        title: 'Buff Time +20%',
+      },
+    ],
+    image: '110301_01',
+    incSTR: [
+      {
+        mc: 30,
+        value: 10,
+      },
+      {
+        mc: 10,
+        value: 8,
+      },
+    ],
+    max: [440, 291],
+    mcBonus: [
+      [51, 34],
+      [110, 73],
+      [180, 119],
+      [239, 158],
+      [268, 177],
+      [295, 195],
+    ],
+    might: [120, 120, 140, 180, 240, 240],
+    min: [
+      [43, 28],
+      [53, 35],
+      [62, 41],
+    ],
     rarity: '4',
     weapon: 'Sword',
   },
   '10140501': {
     Id: '10140501',
+    Name: {
+      en: 'Berserker',
+      ja: 'ベルザーク',
+      zh: '贝尔扎克',
+    },
+    abbr: 'b',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -437,16 +548,17 @@ const adventurer = {
       [58, 32],
       [68, 37],
     ],
-    name: {
-      en: 'Berserker',
-      ja: 'ベルザーク',
-      zh: '贝尔扎克',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10140503': {
     Id: '10140503',
+    Name: {
+      en: 'Audric',
+      ja: 'アスラム',
+      zh: '亚斯拉姆',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -479,16 +591,17 @@ const adventurer = {
       [42, 28],
       [60, 40],
     ],
-    name: {
-      en: 'Audric',
-      ja: 'アスラム',
-      zh: '亚斯拉姆',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '10150101': {
     Id: '10150101',
+    Name: {
+      en: 'Naveed',
+      ja: 'ナジャーフ',
+      zh: '纳杰夫',
+    },
+    abbr: 'n',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -521,16 +634,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Naveed',
-      ja: 'ナジャーフ',
-      zh: '纳杰夫',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150102': {
     Id: '10150102',
+    Name: {
+      en: 'Marth',
+      ja: 'マルス',
+      zh: '马尔斯',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -563,16 +677,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Marth',
-      ja: 'マルス',
-      zh: '马尔斯',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150103': {
     Id: '10150103',
+    Name: {
+      en: 'Lea',
+      ja: 'リア',
+      zh: '丽雅',
+    },
+    abbr: 'l',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -605,16 +720,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Lea',
-      ja: 'リア',
-      zh: '丽雅',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150201': {
     Id: '10150201',
+    Name: {
+      en: 'Xander',
+      ja: 'アレクシス',
+      zh: '阿莱克西斯',
+    },
+    abbr: 'x',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -647,16 +763,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Xander',
-      ja: 'アレクシス',
-      zh: '阿莱克西斯',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150202': {
     Id: '10150202',
+    Name: {
+      en: 'Celliera',
+      ja: 'セリエラ',
+      zh: '赛丽艾拉',
+    },
+    abbr: 'c',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -689,16 +806,17 @@ const adventurer = {
       [58, 34],
       [67, 40],
     ],
-    name: {
-      en: 'Celliera',
-      ja: 'セリエラ',
-      zh: '赛丽艾拉',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150301': {
     Id: '10150301',
+    Name: {
+      en: 'Ranzal',
+      ja: 'ランザーヴ',
+      zh: '兰扎卜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -731,16 +849,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Ranzal',
-      ja: 'ランザーヴ',
-      zh: '兰扎卜',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150302': {
     Id: '10150302',
+    Name: {
+      en: 'Elisanne',
+      ja: 'エルフィリス',
+      zh: '埃尔菲莉丝',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -773,16 +892,17 @@ const adventurer = {
       [58, 35],
       [67, 40],
     ],
-    name: {
-      en: 'Elisanne',
-      ja: 'エルフィリス',
-      zh: '埃尔菲莉丝',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150401': {
     Id: '10150401',
+    Name: {
+      en: 'Albert',
+      ja: 'アルベール',
+      zh: '阿尔贝尔',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -815,16 +935,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Albert',
-      ja: 'アルベール',
-      zh: '阿尔贝尔',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150402': {
     Id: '10150402',
+    Name: {
+      en: 'Alfonse',
+      ja: 'アルフォンス',
+      zh: '阿尔冯斯',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -857,16 +978,17 @@ const adventurer = {
       [43, 28],
       [62, 41],
     ],
-    name: {
-      en: 'Alfonse',
-      ja: 'アルフォンス',
-      zh: '阿尔冯斯',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150403': {
     Id: '10150403',
+    Name: {
+      en: 'Euden',
+      ja: 'ユーディル',
+      zh: '尤蒂尔',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -899,16 +1021,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Euden',
-      ja: 'ユーディル',
-      zh: '尤蒂尔',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10150501': {
     Id: '10150501',
+    Name: {
+      en: 'Yaten',
+      ja: 'ヤテン',
+      zh: '夜天',
+    },
+    abbr: 'y',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -941,16 +1064,17 @@ const adventurer = {
       [54, 36],
       [63, 43],
     ],
-    name: {
-      en: 'Yaten',
-      ja: 'ヤテン',
-      zh: '夜天',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '10230101': {
     Id: '10230101',
+    Name: {
+      en: 'Aoi',
+      ja: 'アオイ',
+      zh: '葵',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -983,16 +1107,17 @@ const adventurer = {
       [51, 36],
       [59, 41],
     ],
-    name: {
-      en: 'Aoi',
-      ja: 'アオイ',
-      zh: '葵',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '10230201': {
     Id: '10230201',
+    Name: {
+      en: 'Jurota',
+      ja: 'ジュウロウタ',
+      zh: '十郎太',
+    },
+    abbr: 'j',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1025,16 +1150,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Jurota',
-      ja: 'ジュウロウタ',
-      zh: '十郎太',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '10230301': {
     Id: '10230301',
+    Name: {
+      en: 'Melody',
+      ja: 'メロディ',
+      zh: '米罗蒂',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1067,16 +1193,17 @@ const adventurer = {
       [54, 34],
       [62, 39],
     ],
-    name: {
-      en: 'Melody',
-      ja: 'メロディ',
-      zh: '米罗蒂',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '10230401': {
     Id: '10230401',
+    Name: {
+      en: 'Edward',
+      ja: 'エドワード',
+      zh: '爱德华',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1119,16 +1246,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Edward',
-      ja: 'エドワード',
-      zh: '爱德华',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '10230501': {
     Id: '10230501',
+    Name: {
+      en: 'Taro',
+      ja: 'タロウ',
+      zh: '太郎',
+    },
+    abbr: 't',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1161,16 +1289,17 @@ const adventurer = {
       [51, 36],
       [59, 42],
     ],
-    name: {
-      en: 'Taro',
-      ja: 'タロウ',
-      zh: '太郎',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '10240201': {
     Id: '10240201',
+    Name: {
+      en: 'Celliera',
+      ja: 'セリエラ',
+      zh: '赛丽艾拉',
+    },
+    abbr: 'c',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1209,16 +1338,17 @@ const adventurer = {
       [41, 29],
       [60, 41],
     ],
-    name: {
-      en: 'Celliera',
-      ja: 'セリエラ',
-      zh: '赛丽艾拉',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10240202': {
     Id: '10240202',
+    Name: {
+      en: 'Ranzal',
+      ja: 'ランザーヴ',
+      zh: '兰扎卜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1251,16 +1381,17 @@ const adventurer = {
       [58, 33],
       [67, 38],
     ],
-    name: {
-      en: 'Ranzal',
-      ja: 'ランザーヴ',
-      zh: '兰扎卜',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10240301': {
     Id: '10240301',
+    Name: {
+      en: 'Musashi',
+      ja: 'ムサシ',
+      zh: '武藏',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1293,16 +1424,17 @@ const adventurer = {
       [52, 36],
       [61, 42],
     ],
-    name: {
-      en: 'Musashi',
-      ja: 'ムサシ',
-      zh: '武藏',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10240302': {
     Id: '10240302',
+    Name: {
+      en: 'Addis',
+      ja: 'アディス',
+      zh: '阿迪斯',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1335,16 +1467,17 @@ const adventurer = {
       [53, 37],
       [61, 43],
     ],
-    name: {
-      en: 'Addis',
-      ja: 'アディス',
-      zh: '阿迪斯',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10240401': {
     Id: '10240401',
+    Name: {
+      en: 'Yachiyo',
+      ja: 'ヤチヨ',
+      zh: '八千代',
+    },
+    abbr: 'y',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1377,16 +1510,17 @@ const adventurer = {
       [52, 36],
       [61, 42],
     ],
-    name: {
-      en: 'Yachiyo',
-      ja: 'ヤチヨ',
-      zh: '八千代',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10240502': {
     Id: '10240502',
+    Name: {
+      en: 'Durant',
+      ja: 'デュラルド',
+      zh: '杜拉尔德',
+    },
+    abbr: 'd',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1429,16 +1563,17 @@ const adventurer = {
       [52, 36],
       [60, 42],
     ],
-    name: {
-      en: 'Durant',
-      ja: 'デュラルド',
-      zh: '杜拉尔德',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '10250101': {
     Id: '10250101',
+    Name: {
+      en: 'Mikoto',
+      ja: 'ミコト',
+      zh: '米科特',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1471,16 +1606,17 @@ const adventurer = {
       [54, 37],
       [62, 44],
     ],
-    name: {
-      en: 'Mikoto',
-      ja: 'ミコト',
-      zh: '米科特',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10250102': {
     Id: '10250102',
+    Name: {
+      en: 'Rena',
+      ja: 'レジィナ',
+      zh: '雷吉娜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1513,16 +1649,17 @@ const adventurer = {
       [59, 34],
       [69, 40],
     ],
-    name: {
-      en: 'Rena',
-      ja: 'レジィナ',
-      zh: '雷吉娜',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10250301': {
     Id: '10250301',
+    Name: {
+      en: 'Victor',
+      ja: 'ヴィクター',
+      zh: '维克托',
+    },
+    abbr: 'v',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1565,16 +1702,17 @@ const adventurer = {
       [57, 36],
       [66, 41],
     ],
-    name: {
-      en: 'Victor',
-      ja: 'ヴィクター',
-      zh: '维克托',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10250401': {
     Id: '10250401',
+    Name: {
+      en: 'Zardin',
+      ja: 'シャーディ',
+      zh: '夏迪',
+    },
+    abbr: 'z',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1607,16 +1745,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Zardin',
-      ja: 'シャーディ',
-      zh: '夏迪',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10250501': {
     Id: '10250501',
+    Name: {
+      en: 'Ieyasu',
+      ja: 'イエヤス',
+      zh: '家康',
+    },
+    abbr: 'i',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1649,16 +1788,17 @@ const adventurer = {
       [53, 38],
       [62, 44],
     ],
-    name: {
-      en: 'Ieyasu',
-      ja: 'イエヤス',
-      zh: '家康',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10250502': {
     Id: '10250502',
+    Name: {
+      en: 'Natalie',
+      ja: 'ナッツ',
+      zh: '娜茨',
+    },
+    abbr: 'n',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1691,16 +1831,17 @@ const adventurer = {
       [53, 38],
       [62, 44],
     ],
-    name: {
-      en: 'Natalie',
-      ja: 'ナッツ',
-      zh: '娜茨',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '10330101': {
     Id: '10330101',
+    Name: {
+      en: 'Renelle',
+      ja: 'ラシーヌ',
+      zh: '拉辛',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1733,16 +1874,17 @@ const adventurer = {
       [55, 32],
       [64, 38],
     ],
-    name: {
-      en: 'Renelle',
-      ja: 'ラシーヌ',
-      zh: '拉辛',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '10330301': {
     Id: '10330301',
+    Name: {
+      en: 'Francesca',
+      ja: 'フランチェスカ',
+      zh: '弗兰切斯卡',
+    },
+    abbr: 'f',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1775,16 +1917,17 @@ const adventurer = {
       [55, 32],
       [64, 38],
     ],
-    name: {
-      en: 'Francesca',
-      ja: 'フランチェスカ',
-      zh: '弗兰切斯卡',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '10330401': {
     Id: '10330401',
+    Name: {
+      en: 'Irfan',
+      ja: 'イルファン',
+      zh: '伊尔凡',
+    },
+    abbr: 'i',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1817,16 +1960,17 @@ const adventurer = {
       [55, 32],
       [64, 38],
     ],
-    name: {
-      en: 'Irfan',
-      ja: 'イルファン',
-      zh: '伊尔凡',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '10330501': {
     Id: '10330501',
+    Name: {
+      en: 'Vice',
+      ja: 'ワイス',
+      zh: '华兹',
+    },
+    abbr: 'v',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1859,16 +2003,17 @@ const adventurer = {
       [55, 33],
       [64, 38],
     ],
-    name: {
-      en: 'Vice',
-      ja: 'ワイス',
-      zh: '华兹',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '10330502': {
     Id: '10330502',
+    Name: {
+      en: 'Vida',
+      ja: 'ヴィッテ',
+      zh: '维特',
+    },
+    abbr: 'v',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1901,16 +2046,17 @@ const adventurer = {
       [55, 33],
       [64, 38],
     ],
-    name: {
-      en: 'Vida',
-      ja: 'ヴィッテ',
-      zh: '维特',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '10340101': {
     Id: '10340101',
+    Name: {
+      en: 'Melsa',
+      ja: 'メルサ',
+      zh: '梅露莎',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1943,16 +2089,17 @@ const adventurer = {
       [44, 26],
       [64, 38],
     ],
-    name: {
-      en: 'Melsa',
-      ja: 'メルサ',
-      zh: '梅露莎',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340102': {
     Id: '10340102',
+    Name: {
+      en: 'Yuya',
+      ja: 'ユーヤ',
+      zh: '勇也',
+    },
+    abbr: 'y',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1995,16 +2142,17 @@ const adventurer = {
       [56, 33],
       [65, 39],
     ],
-    name: {
-      en: 'Yuya',
-      ja: 'ユーヤ',
-      zh: '勇也',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340201': {
     Id: '10340201',
+    Name: {
+      en: 'Luther',
+      ja: 'ルタ',
+      zh: '卢塔',
+    },
+    abbr: 'l',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2037,16 +2185,17 @@ const adventurer = {
       [56, 33],
       [66, 39],
     ],
-    name: {
-      en: 'Luther',
-      ja: 'ルタ',
-      zh: '卢塔',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340202': {
     Id: '10340202',
+    Name: {
+      en: 'Orsem',
+      ja: 'オルセム',
+      zh: '奥尔森',
+    },
+    abbr: 'o',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2079,16 +2228,17 @@ const adventurer = {
       [53, 35],
       [62, 40],
     ],
-    name: {
-      en: 'Orsem',
-      ja: 'オルセム',
-      zh: '奥尔森',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340203': {
     Id: '10340203',
+    Name: {
+      en: 'Renee',
+      ja: 'ルジィナ',
+      zh: '卢吉娜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2121,16 +2271,17 @@ const adventurer = {
       [56, 33],
       [66, 39],
     ],
-    name: {
-      en: 'Renee',
-      ja: 'ルジィナ',
-      zh: '卢吉娜',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340301': {
     Id: '10340301',
+    Name: {
+      en: 'Su Fang',
+      ja: 'スオウ',
+      zh: '苏方',
+    },
+    abbr: 'sf',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2163,16 +2314,17 @@ const adventurer = {
       [42, 27],
       [61, 40],
     ],
-    name: {
-      en: 'Su Fang',
-      ja: 'スオウ',
-      zh: '苏方',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340401': {
     Id: '10340401',
+    Name: {
+      en: 'Fritz',
+      ja: 'フリッツ',
+      zh: '弗里茨',
+    },
+    abbr: 'f',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2205,16 +2357,17 @@ const adventurer = {
       [56, 33],
       [66, 39],
     ],
-    name: {
-      en: 'Fritz',
-      ja: 'フリッツ',
-      zh: '弗里茨',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340402': {
     Id: '10340402',
+    Name: {
+      en: 'Fleur',
+      ja: 'フルル',
+      zh: '芙露露',
+    },
+    abbr: 'f',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2247,16 +2400,17 @@ const adventurer = {
       [54, 35],
       [62, 40],
     ],
-    name: {
-      en: 'Fleur',
-      ja: 'フルル',
-      zh: '芙露露',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340501': {
     Id: '10340501',
+    Name: {
+      en: 'Orion',
+      ja: 'オリオン',
+      zh: '俄里翁',
+    },
+    abbr: 'o',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2289,16 +2443,17 @@ const adventurer = {
       [56, 33],
       [65, 39],
     ],
-    name: {
-      en: 'Orion',
-      ja: 'オリオン',
-      zh: '俄里翁',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10340502': {
     Id: '10340502',
+    Name: {
+      en: 'Alex',
+      ja: 'シャノン',
+      zh: '沙音',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2331,16 +2486,17 @@ const adventurer = {
       [52, 34],
       [61, 40],
     ],
-    name: {
-      en: 'Alex',
-      ja: 'シャノン',
-      zh: '沙音',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '10350101': {
     Id: '10350101',
+    Name: {
+      en: 'Ezelith',
+      ja: 'エゼリット',
+      zh: '艾赛莉特',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -2373,16 +2529,17 @@ const adventurer = {
       [58, 34],
       [67, 40],
     ],
-    name: {
-      en: 'Ezelith',
-      ja: 'エゼリット',
-      zh: '艾赛莉特',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '10350201': {
     Id: '10350201',
+    Name: {
+      en: 'Cleo',
+      ja: 'クラウ',
+      zh: '库菈乌',
+    },
+    abbr: 'c',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2425,16 +2582,17 @@ const adventurer = {
       [58, 34],
       [68, 40],
     ],
-    name: {
-      en: 'Cleo',
-      ja: 'クラウ',
-      zh: '库菈乌',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '10350301': {
     Id: '10350301',
+    Name: {
+      en: 'Aoi',
+      ja: 'アオイ',
+      zh: '葵',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2467,16 +2625,17 @@ const adventurer = {
       [58, 34],
       [68, 40],
     ],
-    name: {
-      en: 'Aoi',
-      ja: 'アオイ',
-      zh: '葵',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '10350502': {
     Id: '10350502',
+    Name: {
+      en: 'Delphi',
+      ja: 'デルフィ',
+      zh: '德尔菲',
+    },
+    abbr: 'd',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2519,16 +2678,17 @@ const adventurer = {
       [58, 34],
       [67, 40],
     ],
-    name: {
-      en: 'Delphi',
-      ja: 'デルフィ',
-      zh: '德尔菲',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '10430201': {
     Id: '10430201',
+    Name: {
+      en: 'Rex',
+      ja: 'レックス',
+      zh: '雷克斯',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2561,16 +2721,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Rex',
-      ja: 'レックス',
-      zh: '雷克斯',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '10430202': {
     Id: '10430202',
+    Name: {
+      en: 'Pietro',
+      ja: 'ピドット',
+      zh: '皮多特',
+    },
+    abbr: 'p',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2603,16 +2764,17 @@ const adventurer = {
       [57, 32],
       [66, 37],
     ],
-    name: {
-      en: 'Pietro',
-      ja: 'ピドット',
-      zh: '皮多特',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '10430301': {
     Id: '10430301',
+    Name: {
+      en: 'Johanna',
+      ja: 'イハンナ',
+      zh: '伊汉娜',
+    },
+    abbr: 'j',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2645,16 +2807,17 @@ const adventurer = {
       [57, 32],
       [66, 37],
     ],
-    name: {
-      en: 'Johanna',
-      ja: 'イハンナ',
-      zh: '伊汉娜',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '10430401': {
     Id: '10430401',
+    Name: {
+      en: 'Linus',
+      ja: 'ライナス',
+      zh: '莱纳斯',
+    },
+    abbr: 'l',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2697,16 +2860,17 @@ const adventurer = {
       [57, 32],
       [66, 37],
     ],
-    name: {
-      en: 'Linus',
-      ja: 'ライナス',
-      zh: '莱纳斯',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '10430501': {
     Id: '10430501',
+    Name: {
+      en: 'Erik',
+      ja: 'エリック',
+      zh: '埃里克',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2739,16 +2903,17 @@ const adventurer = {
       [51, 35],
       [59, 41],
     ],
-    name: {
-      en: 'Erik',
-      ja: 'エリック',
-      zh: '埃里克',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '10440101': {
     Id: '10440101',
+    Name: {
+      en: 'Vanessa',
+      ja: 'ヴァネッサ',
+      zh: '凡妮莎',
+    },
+    abbr: 'v',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -2781,16 +2946,17 @@ const adventurer = {
       [52, 36],
       [61, 42],
     ],
-    name: {
-      en: 'Vanessa',
-      ja: 'ヴァネッサ',
-      zh: '凡妮莎',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10440102': {
     Id: '10440102',
+    Name: {
+      en: 'Yue',
+      ja: 'ユエ',
+      zh: '悦',
+    },
+    abbr: 'y',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -2823,16 +2989,17 @@ const adventurer = {
       [58, 33],
       [67, 38],
     ],
-    name: {
-      en: 'Yue',
-      ja: 'ユエ',
-      zh: '悦',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10440201': {
     Id: '10440201',
+    Name: {
+      en: 'Karina',
+      ja: 'カーリナ',
+      zh: '卡丽娜',
+    },
+    abbr: 'k',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2865,16 +3032,17 @@ const adventurer = {
       [58, 32],
       [67, 38],
     ],
-    name: {
-      en: 'Karina',
-      ja: 'カーリナ',
-      zh: '卡丽娜',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10440301': {
     Id: '10440301',
+    Name: {
+      en: 'Ranzal',
+      ja: 'ランザーヴ',
+      zh: '兰扎卜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2907,16 +3075,17 @@ const adventurer = {
       [57, 32],
       [66, 37],
     ],
-    name: {
-      en: 'Ranzal',
-      ja: 'ランザーヴ',
-      zh: '兰扎卜',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10440401': {
     Id: '10440401',
+    Name: {
+      en: 'Luca',
+      ja: 'リュカ',
+      zh: '卢卡',
+    },
+    abbr: 'l',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2959,16 +3128,17 @@ const adventurer = {
       [52, 36],
       [61, 42],
     ],
-    name: {
-      en: 'Luca',
-      ja: 'リュカ',
-      zh: '卢卡',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10440501': {
     Id: '10440501',
+    Name: {
+      en: 'Sazanka',
+      ja: 'サザンカ',
+      zh: '山茶花',
+    },
+    abbr: 's',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3001,16 +3171,17 @@ const adventurer = {
       [58, 33],
       [68, 39],
     ],
-    name: {
-      en: 'Sazanka',
-      ja: 'サザンカ',
-      zh: '山茶花',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '10450101': {
     Id: '10450101',
+    Name: {
+      en: 'Ramona',
+      ja: 'ロジィナ',
+      zh: '罗吉娜',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3043,16 +3214,17 @@ const adventurer = {
       [54, 37],
       [63, 44],
     ],
-    name: {
-      en: 'Ramona',
-      ja: 'ロジィナ',
-      zh: '罗吉娜',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450102': {
     Id: '10450102',
+    Name: {
+      en: 'Mym',
+      ja: 'ムム',
+      zh: '穆穆',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3085,16 +3257,17 @@ const adventurer = {
       [57, 35],
       [66, 41],
     ],
-    name: {
-      en: 'Mym',
-      ja: 'ムム',
-      zh: '穆穆',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450201': {
     Id: '10450201',
+    Name: {
+      en: 'Julietta',
+      ja: 'ジュリエッタ',
+      zh: '朱丽叶',
+    },
+    abbr: 'j',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3127,16 +3300,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Julietta',
-      ja: 'ジュリエッタ',
-      zh: '朱丽叶',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450202': {
     Id: '10450202',
+    Name: {
+      en: 'Elisanne',
+      ja: 'エルフィリス',
+      zh: '埃尔菲莉丝',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3169,16 +3343,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Elisanne',
-      ja: 'エルフィリス',
-      zh: '埃尔菲莉丝',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450301': {
     Id: '10450301',
+    Name: {
+      en: 'Lin You',
+      ja: 'リンユー',
+      zh: '林佑',
+    },
+    abbr: 'ly',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3211,16 +3386,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Lin You',
-      ja: 'リンユー',
-      zh: '林佑',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450401': {
     Id: '10450401',
+    Name: {
+      en: 'Julietta',
+      ja: 'ジュリエッタ',
+      zh: '朱丽叶',
+    },
+    abbr: 'j',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3253,16 +3429,17 @@ const adventurer = {
       [60, 34],
       [70, 39],
     ],
-    name: {
-      en: 'Julietta',
-      ja: 'ジュリエッタ',
-      zh: '朱丽叶',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10450501': {
     Id: '10450501',
+    Name: {
+      en: 'Curran',
+      ja: 'クーガー',
+      zh: '库格尔',
+    },
+    abbr: 'c',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3295,16 +3472,17 @@ const adventurer = {
       [54, 37],
       [62, 44],
     ],
-    name: {
-      en: 'Curran',
-      ja: 'クーガー',
-      zh: '库格尔',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '10530101': {
     Id: '10530101',
+    Name: {
+      en: 'Alain',
+      ja: 'アラン',
+      zh: '阿兰',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3337,16 +3515,17 @@ const adventurer = {
       [57, 31],
       [66, 37],
     ],
-    name: {
-      en: 'Alain',
-      ja: 'アラン',
-      zh: '阿兰',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '10530201': {
     Id: '10530201',
+    Name: {
+      en: 'Cibella',
+      ja: 'シュベール',
+      zh: '休贝尔',
+    },
+    abbr: 'c',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3379,16 +3558,17 @@ const adventurer = {
       [57, 31],
       [67, 37],
     ],
-    name: {
-      en: 'Cibella',
-      ja: 'シュベール',
-      zh: '休贝尔',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '10530202': {
     Id: '10530202',
+    Name: {
+      en: 'Jakob',
+      ja: 'ジャン',
+      zh: '让',
+    },
+    abbr: 'j',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3421,16 +3601,17 @@ const adventurer = {
       [57, 31],
       [67, 37],
     ],
-    name: {
-      en: 'Jakob',
-      ja: 'ジャン',
-      zh: '让',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '10530401': {
     Id: '10530401',
+    Name: {
+      en: 'Malka',
+      ja: 'マルカ',
+      zh: '马尔卡',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3473,16 +3654,17 @@ const adventurer = {
       [54, 33],
       [64, 39],
     ],
-    name: {
-      en: 'Malka',
-      ja: 'マルカ',
-      zh: '马尔卡',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '10530501': {
     Id: '10530501',
+    Name: {
+      en: 'Zace',
+      ja: 'ジーズ',
+      zh: '吉斯',
+    },
+    abbr: 'z',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3515,16 +3697,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Zace',
-      ja: 'ジーズ',
-      zh: '吉斯',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '10540102': {
     Id: '10540102',
+    Name: {
+      en: 'Xuan Zang',
+      ja: 'サンゾウ',
+      zh: '三藏',
+    },
+    abbr: 'xz',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3557,16 +3740,17 @@ const adventurer = {
       [44, 27],
       [63, 39],
     ],
-    name: {
-      en: 'Xuan Zang',
-      ja: 'サンゾウ',
-      zh: '三藏',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540103': {
     Id: '10540103',
+    Name: {
+      en: 'Emma',
+      ja: 'エマ',
+      zh: '艾玛',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3599,16 +3783,17 @@ const adventurer = {
       [55, 34],
       [65, 40],
     ],
-    name: {
-      en: 'Emma',
-      ja: 'エマ',
-      zh: '艾玛',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540201': {
     Id: '10540201',
+    Name: {
+      en: 'Elisanne',
+      ja: 'エルフィリス',
+      zh: '埃尔菲莉丝',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3641,16 +3826,17 @@ const adventurer = {
       [63, 38],
       [72, 44],
     ],
-    name: {
-      en: 'Elisanne',
-      ja: 'エルフィリス',
-      zh: '埃尔菲莉丝',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540301': {
     Id: '10540301',
+    Name: {
+      en: 'Aeleen',
+      ja: 'エイル',
+      zh: '艾露',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3683,16 +3869,17 @@ const adventurer = {
       [55, 34],
       [65, 39],
     ],
-    name: {
-      en: 'Aeleen',
-      ja: 'エイル',
-      zh: '艾露',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540302': {
     Id: '10540302',
+    Name: {
+      en: 'Pia',
+      ja: 'ピアチェ',
+      zh: '皮雅茜',
+    },
+    abbr: 'p',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3735,16 +3922,17 @@ const adventurer = {
       [58, 32],
       [68, 37],
     ],
-    name: {
-      en: 'Pia',
-      ja: 'ピアチェ',
-      zh: '皮雅茜',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540401': {
     Id: '10540401',
+    Name: {
+      en: 'Ryozen',
+      ja: 'リョウゼン',
+      zh: '梁泉',
+    },
+    abbr: 'r',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3777,16 +3965,17 @@ const adventurer = {
       [58, 32],
       [68, 37],
     ],
-    name: {
-      en: 'Ryozen',
-      ja: 'リョウゼン',
-      zh: '梁泉',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540501': {
     Id: '10540501',
+    Name: {
+      en: 'Botan',
+      ja: 'ボタン',
+      zh: '牡丹',
+    },
+    abbr: 'b',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3819,16 +4008,17 @@ const adventurer = {
       [46, 25],
       [66, 37],
     ],
-    name: {
-      en: 'Botan',
-      ja: 'ボタン',
-      zh: '牡丹',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10540502': {
     Id: '10540502',
+    Name: {
+      en: 'Patia',
+      ja: 'パティア',
+      zh: '帕蒂亚',
+    },
+    abbr: 'p',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3861,16 +4051,17 @@ const adventurer = {
       [58, 32],
       [68, 38],
     ],
-    name: {
-      en: 'Patia',
-      ja: 'パティア',
-      zh: '帕蒂亚',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '10550101': {
     Id: '10550101',
+    Name: {
+      en: 'Mym',
+      ja: 'ムム',
+      zh: '穆穆',
+    },
+    abbr: 'm',
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3903,16 +4094,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Mym',
-      ja: 'ムム',
-      zh: '穆穆',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550201': {
     Id: '10550201',
+    Name: {
+      en: 'Xainfried',
+      ja: 'ザインフラッド',
+      zh: '扎因弗拉德',
+    },
+    abbr: 'x',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3945,16 +4137,17 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    name: {
-      en: 'Xainfried',
-      ja: 'ザインフラッド',
-      zh: '扎因弗拉德',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550203': {
     Id: '10550203',
+    Name: {
+      en: 'Fjorm',
+      ja: 'フィヨルム',
+      zh: '菲约尔姆',
+    },
+    abbr: 'f',
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3987,16 +4180,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Fjorm',
-      ja: 'フィヨルム',
-      zh: '菲约尔姆',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550301': {
     Id: '10550301',
+    Name: {
+      en: 'Sylas',
+      ja: 'シャスト',
+      zh: '加斯特',
+    },
+    abbr: 's',
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -4039,16 +4233,17 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    name: {
-      en: 'Sylas',
-      ja: 'シャスト',
-      zh: '加斯特',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550401': {
     Id: '10550401',
+    Name: {
+      en: 'Annelie',
+      ja: 'アンネリーエ',
+      zh: '安妮利艾',
+    },
+    abbr: 'a',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -4081,16 +4276,17 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    name: {
-      en: 'Annelie',
-      ja: 'アンネリーエ',
-      zh: '安妮利艾',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550402': {
     Id: '10550402',
+    Name: {
+      en: 'Elisanne',
+      ja: 'エルフィリス',
+      zh: '埃尔菲莉丝',
+    },
+    abbr: 'e',
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -4123,16 +4319,17 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    name: {
-      en: 'Elisanne',
-      ja: 'エルフィリス',
-      zh: '埃尔菲莉丝',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10550502': {
     Id: '10550502',
+    Name: {
+      en: 'Lathna',
+      ja: 'ラトニー',
+      zh: '拉托妮',
+    },
+    abbr: 'l',
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -4165,16 +4362,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Lathna',
-      ja: 'ラトニー',
-      zh: '拉托妮',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '10630101': {
     Id: '10630101',
+    Name: {
+      en: 'Joe',
+      ja: 'ジョー',
+      zh: '乔',
+    },
+    abbr: 'j',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4207,16 +4405,17 @@ const adventurer = {
       [52, 34],
       [61, 39],
     ],
-    name: {
-      en: 'Joe',
-      ja: 'ジョー',
-      zh: '乔',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '10630201': {
     Id: '10630201',
+    Name: {
+      en: 'Waike',
+      ja: 'ウェイク',
+      zh: '威克',
+    },
+    abbr: 'w',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -4249,16 +4448,17 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Waike',
-      ja: 'ウェイク',
-      zh: '威克',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '10630301': {
     Id: '10630301',
+    Name: {
+      en: 'Philia',
+      ja: 'フィリア',
+      zh: '菲丽雅',
+    },
+    abbr: 'p',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4301,16 +4501,17 @@ const adventurer = {
       [52, 34],
       [61, 39],
     ],
-    name: {
-      en: 'Philia',
-      ja: 'フィリア',
-      zh: '菲丽雅',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '10630401': {
     Id: '10630401',
+    Name: {
+      en: 'Malora',
+      ja: 'マローラ',
+      zh: '马萝拉',
+    },
+    abbr: 'm',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4343,16 +4544,17 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Malora',
-      ja: 'マローラ',
-      zh: '马萝拉',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '10640101': {
     Id: '10640101',
+    Name: {
+      en: 'Ezelith',
+      ja: 'エゼリット',
+      zh: '艾赛莉特',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4385,16 +4587,17 @@ const adventurer = {
       [57, 33],
       [66, 39],
     ],
-    name: {
-      en: 'Ezelith',
-      ja: 'エゼリット',
-      zh: '艾赛莉特',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640202': {
     Id: '10640202',
+    Name: {
+      en: 'Nefaria',
+      ja: 'ネファリエ',
+      zh: '奈法利耶',
+    },
+    abbr: 'n',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -4427,16 +4630,17 @@ const adventurer = {
       [67, 39],
       [103, 60],
     ],
-    name: {
-      en: 'Nefaria',
-      ja: 'ネファリエ',
-      zh: '奈法利耶',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640301': {
     Id: '10640301',
+    Name: {
+      en: 'Eleonora',
+      ja: 'エレオノーラ',
+      zh: '艾蕾欧诺拉',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4469,16 +4673,17 @@ const adventurer = {
       [54, 34],
       [62, 40],
     ],
-    name: {
-      en: 'Eleonora',
-      ja: 'エレオノーラ',
-      zh: '艾蕾欧诺拉',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640401': {
     Id: '10640401',
+    Name: {
+      en: 'Luca',
+      ja: 'リュカ',
+      zh: '卢卡',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4521,16 +4726,17 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Luca',
-      ja: 'リュカ',
-      zh: '卢卡',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640402': {
     Id: '10640402',
+    Name: {
+      en: 'Rawn',
+      ja: 'ウルガ',
+      zh: '乌尔嘉',
+    },
+    abbr: 'r',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4563,16 +4769,17 @@ const adventurer = {
       [57, 33],
       [66, 38],
     ],
-    name: {
-      en: 'Rawn',
-      ja: 'ウルガ',
-      zh: '乌尔嘉',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640403': {
     Id: '10640403',
+    Name: {
+      en: 'Elias',
+      ja: 'エリアス',
+      zh: '埃利亚斯',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4605,16 +4812,17 @@ const adventurer = {
       [47, 24],
       [68, 35],
     ],
-    name: {
-      en: 'Elias',
-      ja: 'エリアス',
-      zh: '埃利亚斯',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10640501': {
     Id: '10640501',
+    Name: {
+      en: 'Norwin',
+      ja: 'ノーストン',
+      zh: '诺斯通',
+    },
+    abbr: 'n',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -4647,16 +4855,17 @@ const adventurer = {
       [53, 35],
       [62, 40],
     ],
-    name: {
-      en: 'Norwin',
-      ja: 'ノーストン',
-      zh: '诺斯通',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '10650101': {
     Id: '10650101',
+    Name: {
+      en: 'Sarisse',
+      ja: 'シーリス',
+      zh: '希里丝',
+    },
+    abbr: 's',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4689,16 +4898,17 @@ const adventurer = {
       [61, 35],
       [71, 41],
     ],
-    name: {
-      en: 'Sarisse',
-      ja: 'シーリス',
-      zh: '希里丝',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650102': {
     Id: '10650102',
+    Name: {
+      en: 'Chelsea',
+      ja: 'チェルシー',
+      zh: '切尔茜',
+    },
+    abbr: 'c',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4731,16 +4941,17 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    name: {
-      en: 'Chelsea',
-      ja: 'チェルシー',
-      zh: '切尔茜',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650201': {
     Id: '10650201',
+    Name: {
+      en: 'Laranoa',
+      ja: 'ララノア',
+      zh: '拉拉诺亚',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -4773,16 +4984,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Laranoa',
-      ja: 'ララノア',
-      zh: '拉拉诺亚',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650301': {
     Id: '10650301',
+    Name: {
+      en: 'Louise',
+      ja: 'ルイーゼ',
+      zh: '洛依泽',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4815,16 +5027,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Louise',
-      ja: 'ルイーゼ',
-      zh: '洛依泽',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650302': {
     Id: '10650302',
+    Name: {
+      en: 'Hawk',
+      ja: 'ホーク',
+      zh: '霍克',
+    },
+    abbr: 'h',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4857,16 +5070,17 @@ const adventurer = {
       [55, 36],
       [64, 41],
     ],
-    name: {
-      en: 'Hawk',
-      ja: 'ホーク',
-      zh: '霍克',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650401': {
     Id: '10650401',
+    Name: {
+      en: 'Cleo',
+      ja: 'クラウ',
+      zh: '库菈乌',
+    },
+    abbr: 'c',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4899,16 +5113,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Cleo',
-      ja: 'クラウ',
-      zh: '库菈乌',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10650501': {
     Id: '10650501',
+    Name: {
+      en: 'Nefaria',
+      ja: 'ネファリエ',
+      zh: '奈法利耶',
+    },
+    abbr: 'n',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -4941,16 +5156,17 @@ const adventurer = {
       [58, 34],
       [68, 40],
     ],
-    name: {
-      en: 'Nefaria',
-      ja: 'ネファリエ',
-      zh: '奈法利耶',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '10730101': {
     Id: '10730101',
+    Name: {
+      en: 'Xania',
+      ja: 'サニア',
+      zh: '桑妮雅',
+    },
+    abbr: 'x',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4983,16 +5199,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Xania',
-      ja: 'サニア',
-      zh: '桑妮雅',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '10730301': {
     Id: '10730301',
+    Name: {
+      en: 'Nicolas',
+      ja: 'ニコラ',
+      zh: '尼古拉',
+    },
+    abbr: 'n',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5025,16 +5242,17 @@ const adventurer = {
       [51, 35],
       [60, 41],
     ],
-    name: {
-      en: 'Nicolas',
-      ja: 'ニコラ',
-      zh: '尼古拉',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '10730401': {
     Id: '10730401',
+    Name: {
+      en: 'Xiao Lei',
+      ja: 'シャオレイ',
+      zh: '小蕾',
+    },
+    abbr: 'xl',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5067,16 +5285,17 @@ const adventurer = {
       [54, 33],
       [63, 39],
     ],
-    name: {
-      en: 'Xiao Lei',
-      ja: 'シャオレイ',
-      zh: '小蕾',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '10730501': {
     Id: '10730501',
+    Name: {
+      en: 'Althemia',
+      ja: 'イルテミア',
+      zh: '伊露缇米娅',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5109,16 +5328,17 @@ const adventurer = {
       [54, 33],
       [63, 39],
     ],
-    name: {
-      en: 'Althemia',
-      ja: 'イルテミア',
-      zh: '伊露缇米娅',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '10740101': {
     Id: '10740101',
+    Name: {
+      en: 'Sinoa',
+      ja: 'シノア',
+      zh: '希诺亚',
+    },
+    abbr: 's',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5161,16 +5381,17 @@ const adventurer = {
       [55, 34],
       [64, 40],
     ],
-    name: {
-      en: 'Sinoa',
-      ja: 'シノア',
-      zh: '希诺亚',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10740201': {
     Id: '10740201',
+    Name: {
+      en: 'Xander',
+      ja: 'アレクシス',
+      zh: '阿莱克西斯',
+    },
+    abbr: 'x',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5203,16 +5424,17 @@ const adventurer = {
       [63, 42],
       [96, 65],
     ],
-    name: {
-      en: 'Xander',
-      ja: 'アレクシス',
-      zh: '阿莱克西斯',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10740202': {
     Id: '10740202',
+    Name: {
+      en: 'Estelle',
+      ja: 'エステル',
+      zh: '艾丝蒂尔',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5245,16 +5467,17 @@ const adventurer = {
       [55, 34],
       [65, 40],
     ],
-    name: {
-      en: 'Estelle',
-      ja: 'エステル',
-      zh: '艾丝蒂尔',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10740301': {
     Id: '10740301',
+    Name: {
+      en: 'Noelle',
+      ja: 'ノエル',
+      zh: '诺艾尔',
+    },
+    abbr: 'n',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5287,16 +5510,17 @@ const adventurer = {
       [55, 34],
       [64, 40],
     ],
-    name: {
-      en: 'Noelle',
-      ja: 'ノエル',
-      zh: '诺艾尔',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10740401': {
     Id: '10740401',
+    Name: {
+      en: 'Amane',
+      ja: 'アマネ',
+      zh: '天音',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5329,16 +5553,17 @@ const adventurer = {
       [53, 36],
       [61, 41],
     ],
-    name: {
-      en: 'Amane',
-      ja: 'アマネ',
-      zh: '天音',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10740501': {
     Id: '10740501',
+    Name: {
+      en: 'Kleimann',
+      ja: 'クレイマン',
+      zh: '克雷伊曼',
+    },
+    abbr: 'k',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5371,16 +5596,17 @@ const adventurer = {
       [55, 34],
       [64, 40],
     ],
-    name: {
-      en: 'Kleimann',
-      ja: 'クレイマン',
-      zh: '克雷伊曼',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '10750101': {
     Id: '10750101',
+    Name: {
+      en: 'Maribelle',
+      ja: 'メリィベル',
+      zh: '梅莉贝尔',
+    },
+    abbr: 'm',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5413,16 +5639,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Maribelle',
-      ja: 'メリィベル',
-      zh: '梅莉贝尔',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750102': {
     Id: '10750102',
+    Name: {
+      en: 'Mega Man',
+      ja: 'ロックマン',
+      zh: '洛克人',
+    },
+    abbr: 'mm',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5455,16 +5682,17 @@ const adventurer = {
       [40, 27],
       [58, 40],
     ],
-    name: {
-      en: 'Mega Man',
-      ja: 'ロックマン',
-      zh: '洛克人',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750201': {
     Id: '10750201',
+    Name: {
+      en: 'Lily',
+      ja: 'リリィ',
+      zh: '莉莉',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5507,16 +5735,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Lily',
-      ja: 'リリィ',
-      zh: '莉莉',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750301': {
     Id: '10750301',
+    Name: {
+      en: 'Maribelle',
+      ja: 'メリィベル',
+      zh: '梅莉贝尔',
+    },
+    abbr: 'm',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5549,16 +5778,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Maribelle',
-      ja: 'メリィベル',
-      zh: '梅莉贝尔',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750401': {
     Id: '10750401',
+    Name: {
+      en: 'Lucretia',
+      ja: 'ルクレツィア',
+      zh: '卢克雷齐娅',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5591,16 +5821,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Lucretia',
-      ja: 'ルクレツィア',
-      zh: '卢克雷齐娅',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750501': {
     Id: '10750501',
+    Name: {
+      en: 'Veronica',
+      ja: 'ヴェロニカ',
+      zh: '维洛妮卡',
+    },
+    abbr: 'v',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5633,16 +5864,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Veronica',
-      ja: 'ヴェロニカ',
-      zh: '维洛妮卡',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750502': {
     Id: '10750502',
+    Name: {
+      en: 'Cleo',
+      ja: 'クラウ',
+      zh: '库菈乌',
+    },
+    abbr: 'c',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5675,16 +5907,17 @@ const adventurer = {
       [57, 35],
       [66, 41],
     ],
-    name: {
-      en: 'Cleo',
-      ja: 'クラウ',
-      zh: '库菈乌',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10750503': {
     Id: '10750503',
+    Name: {
+      en: 'Cassandra',
+      ja: 'カサンドラ',
+      zh: '卡珊德拉',
+    },
+    abbr: 'c',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5717,16 +5950,17 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    name: {
-      en: 'Cassandra',
-      ja: 'カサンドラ',
-      zh: '卡珊德拉',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '10830101': {
     Id: '10830101',
+    Name: {
+      en: 'Aurien',
+      ja: 'オーレイン',
+      zh: '欧雷因',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5759,16 +5993,17 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Aurien',
-      ja: 'オーレイン',
-      zh: '欧雷因',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10830201': {
     Id: '10830201',
+    Name: {
+      en: 'Ricardt',
+      ja: 'リカート',
+      zh: '里卡多',
+    },
+    abbr: 'r',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5811,16 +6046,17 @@ const adventurer = {
       [56, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Ricardt',
-      ja: 'リカート',
-      zh: '里卡多',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10830301': {
     Id: '10830301',
+    Name: {
+      en: 'Sophie',
+      ja: 'ソフィ',
+      zh: '索菲',
+    },
+    abbr: 's',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5853,16 +6089,17 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Sophie',
-      ja: 'ソフィ',
-      zh: '索菲',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10830401': {
     Id: '10830401',
+    Name: {
+      en: 'Hope',
+      ja: 'ホープ',
+      zh: '霍普',
+    },
+    abbr: 'h',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5895,16 +6132,17 @@ const adventurer = {
       [56, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Hope',
-      ja: 'ホープ',
-      zh: '霍普',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10830402': {
     Id: '10830402',
+    Name: {
+      en: 'Estelle',
+      ja: 'エステル',
+      zh: '艾丝蒂尔',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5937,16 +6175,17 @@ const adventurer = {
       [56, 32],
       [65, 37],
     ],
-    name: {
-      en: 'Estelle',
-      ja: 'エステル',
-      zh: '艾丝蒂尔',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10830501': {
     Id: '10830501',
+    Name: {
+      en: 'Edward',
+      ja: 'エドワード',
+      zh: '爱德华',
+    },
+    abbr: 'e',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5979,16 +6218,17 @@ const adventurer = {
       [55, 32],
       [64, 37],
     ],
-    name: {
-      en: 'Edward',
-      ja: 'エドワード',
-      zh: '爱德华',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '10840101': {
     Id: '10840101',
+    Name: {
+      en: 'Verica',
+      ja: 'ウェルシェラ',
+      zh: '维尔莎拉',
+    },
+    abbr: 'v',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6021,16 +6261,17 @@ const adventurer = {
       [57, 33],
       [66, 38],
     ],
-    name: {
-      en: 'Verica',
-      ja: 'ウェルシェラ',
-      zh: '维尔莎拉',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840102': {
     Id: '10840102',
+    Name: {
+      en: 'Lowen',
+      ja: 'ルーエン',
+      zh: '卢恩',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6063,16 +6304,17 @@ const adventurer = {
       [57, 33],
       [66, 38],
     ],
-    name: {
-      en: 'Lowen',
-      ja: 'ルーエン',
-      zh: '卢恩',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840201': {
     Id: '10840201',
+    Name: {
+      en: 'Thaniel',
+      ja: 'セイナー',
+      zh: '塞纳',
+    },
+    abbr: 't',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6105,16 +6347,17 @@ const adventurer = {
       [57, 32],
       [66, 38],
     ],
-    name: {
-      en: 'Thaniel',
-      ja: 'セイナー',
-      zh: '塞纳',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840202': {
     Id: '10840202',
+    Name: {
+      en: 'Aeleen',
+      ja: 'エイル',
+      zh: '艾露',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6147,16 +6390,17 @@ const adventurer = {
       [57, 32],
       [66, 38],
     ],
-    name: {
-      en: 'Aeleen',
-      ja: 'エイル',
-      zh: '艾露',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840301': {
     Id: '10840301',
+    Name: {
+      en: 'Lowen',
+      ja: 'ルーエン',
+      zh: '卢恩',
+    },
+    abbr: 'l',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6189,16 +6433,17 @@ const adventurer = {
       [57, 33],
       [66, 38],
     ],
-    name: {
-      en: 'Lowen',
-      ja: 'ルーエン',
-      zh: '卢恩',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840302': {
     Id: '10840302',
+    Name: {
+      en: 'Xania',
+      ja: 'サニア',
+      zh: '桑妮雅',
+    },
+    abbr: 'x',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6231,16 +6476,17 @@ const adventurer = {
       [57, 33],
       [66, 38],
     ],
-    name: {
-      en: 'Xania',
-      ja: 'サニア',
-      zh: '桑妮雅',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840401': {
     Id: '10840401',
+    Name: {
+      en: 'Althemia',
+      ja: 'イルテミア',
+      zh: '伊露缇米娅',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6279,16 +6525,17 @@ const adventurer = {
       [57, 32],
       [66, 38],
     ],
-    name: {
-      en: 'Althemia',
-      ja: 'イルテミア',
-      zh: '伊露缇米娅',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840402': {
     Id: '10840402',
+    Name: {
+      en: 'Vixel',
+      ja: 'ヴィクセル',
+      zh: '维克塞尔',
+    },
+    abbr: 'v',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6321,16 +6568,17 @@ const adventurer = {
       [57, 32],
       [66, 38],
     ],
-    name: {
-      en: 'Vixel',
-      ja: 'ヴィクセル',
-      zh: '维克塞尔',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840403': {
     Id: '10840403',
+    Name: {
+      en: 'Felicia',
+      ja: 'フェリーチャ',
+      zh: '菲丽嘉',
+    },
+    abbr: 'f',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6363,16 +6611,17 @@ const adventurer = {
       [45, 26],
       [65, 37],
     ],
-    name: {
-      en: 'Felicia',
-      ja: 'フェリーチャ',
-      zh: '菲丽嘉',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10840501': {
     Id: '10840501',
+    Name: {
+      en: 'Cleo',
+      ja: 'クラウ',
+      zh: '库菈乌',
+    },
+    abbr: 'c',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6411,16 +6660,17 @@ const adventurer = {
       [55, 32],
       [64, 37],
     ],
-    name: {
-      en: 'Cleo',
-      ja: 'クラウ',
-      zh: '库菈乌',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '10850101': {
     Id: '10850101',
+    Name: {
+      en: 'Hildegarde',
+      ja: 'ヒルデガルド',
+      zh: '希尔德加德',
+    },
+    abbr: 'h',
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6453,16 +6703,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Hildegarde',
-      ja: 'ヒルデガルド',
-      zh: '希尔德加德',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '10850201': {
     Id: '10850201',
+    Name: {
+      en: 'Jiang Ziya',
+      ja: 'タイコウボウ',
+      zh: '太公望',
+    },
+    abbr: 'jz',
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6495,16 +6746,17 @@ const adventurer = {
       [59, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Jiang Ziya',
-      ja: 'タイコウボウ',
-      zh: '太公望',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '10850301': {
     Id: '10850301',
+    Name: {
+      en: 'Akasha',
+      ja: 'アカーシャ',
+      zh: '阿加莎',
+    },
+    abbr: 'a',
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6537,16 +6789,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Akasha',
-      ja: 'アカーシャ',
-      zh: '阿加莎',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '10850401': {
     Id: '10850401',
+    Name: {
+      en: 'Hildegarde',
+      ja: 'ヒルデガルド',
+      zh: '希尔德加德',
+    },
+    abbr: 'h',
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6579,16 +6832,17 @@ const adventurer = {
       [59, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Hildegarde',
-      ja: 'ヒルデガルド',
-      zh: '希尔德加德',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '10850501': {
     Id: '10850501',
+    Name: {
+      en: 'Heinwald',
+      ja: 'ハインヴァルト',
+      zh: '海因瓦尔德',
+    },
+    abbr: 'h',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6621,16 +6875,17 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Heinwald',
-      ja: 'ハインヴァルト',
-      zh: '海因瓦尔德',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '10850502': {
     Id: '10850502',
+    Name: {
+      en: 'Verica',
+      ja: 'ウェルシェラ',
+      zh: '维尔莎拉',
+    },
+    abbr: 'v',
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6663,11 +6918,6 @@ const adventurer = {
       [58, 34],
       [68, 39],
     ],
-    name: {
-      en: 'Verica',
-      ja: 'ウェルシェラ',
-      zh: '维尔莎拉',
-    },
     rarity: '5',
     weapon: 'Staff',
   },

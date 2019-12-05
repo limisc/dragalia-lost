@@ -11,7 +11,7 @@ function Item({ data, focused, index, style, selectItem }) {
   const {
     skill,
     icon,
-    name: { [lang]: name, en },
+    Name: { [lang]: name, en },
   } = item;
   const image = getImage(item, focused);
 

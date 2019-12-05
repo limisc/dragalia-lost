@@ -1,15 +1,16 @@
 const weapon = {
   '30130102': {
     Id: '30130102',
-    element: 'Flame',
-    image: '301013_01_30101',
-    max: [57, 222],
-    min: [17, 66],
-    name: {
+    Name: {
       en: 'Blazing Edge',
       ja: 'ハードヒートソード',
       zh: '灼热之剑',
     },
+    abbr: 'be',
+    element: 'Flame',
+    image: '301013_01_30101',
+    max: [57, 222],
+    min: [17, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -19,6 +20,12 @@ const weapon = {
   },
   '30130103': {
     Id: '30130103',
+    Name: {
+      en: 'Blazing Ingot',
+      ja: 'ブレイズインゴット',
+      zh: '烈焰铸铁',
+    },
+    abbr: 'bi',
     element: 'Flame',
     icon: [
       {
@@ -34,16 +41,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Blazing Ingot',
-      ja: 'ブレイズインゴット',
-      zh: '烈焰铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130105': {
     Id: '30130105',
+    Name: {
+      en: 'Wildfire',
+      ja: '猛火の魔剣',
+      zh: '烈火魔剑',
+    },
+    abbr: 'w',
     element: 'Flame',
     icon: [
       {
@@ -59,25 +67,21 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Wildfire',
-      ja: '猛火の魔剣',
-      zh: '烈火魔剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130201': {
     Id: '30130201',
-    element: 'Water',
-    image: '301006_01_30201',
-    max: [57, 222],
-    min: [17, 66],
-    name: {
+    Name: {
       en: 'Rainbreaker',
       ja: 'レインブレイカー',
       zh: '裂雨剑',
     },
+    abbr: 'r',
+    element: 'Water',
+    image: '301006_01_30201',
+    max: [57, 222],
+    min: [17, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -87,6 +91,12 @@ const weapon = {
   },
   '30130202': {
     Id: '30130202',
+    Name: {
+      en: 'Furious Frost',
+      ja: '氷雪の魔剣',
+      zh: '冰雪魔剑',
+    },
+    abbr: 'ff',
     element: 'Water',
     icon: [
       {
@@ -102,16 +112,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Furious Frost',
-      ja: '氷雪の魔剣',
-      zh: '冰雪魔剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130203': {
     Id: '30130203',
+    Name: {
+      en: 'Icy Ingot',
+      ja: 'アイスインゴット',
+      zh: '冰霜铸铁',
+    },
+    abbr: 'ii',
     element: 'Water',
     icon: [
       {
@@ -127,25 +138,21 @@ const weapon = {
     max: [38, 136],
     might: 70,
     min: [11, 40],
-    name: {
-      en: 'Icy Ingot',
-      ja: 'アイスインゴット',
-      zh: '冰霜铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130302': {
     Id: '30130302',
-    element: 'Wind',
-    image: '301035_01_30301',
-    max: [57, 222],
-    min: [17, 66],
-    name: {
+    Name: {
       en: 'Grassrunner',
       ja: 'グラスランナー',
       zh: '草上飞',
     },
+    abbr: 'g',
+    element: 'Wind',
+    image: '301035_01_30301',
+    max: [57, 222],
+    min: [17, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -155,6 +162,12 @@ const weapon = {
   },
   '30130303': {
     Id: '30130303',
+    Name: {
+      en: 'Whirlfang',
+      ja: '旋風の魔剣',
+      zh: '旋风魔剑',
+    },
+    abbr: 'w',
     element: 'Wind',
     icon: [
       {
@@ -170,16 +183,17 @@ const weapon = {
     max: [40, 132],
     might: 70,
     min: [12, 39],
-    name: {
-      en: 'Whirlfang',
-      ja: '旋風の魔剣',
-      zh: '旋风魔剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130304': {
     Id: '30130304',
+    Name: {
+      en: 'Wind Ingot',
+      ja: 'ウィンドインゴット',
+      zh: '疾风铸铁',
+    },
+    abbr: 'wi',
     element: 'Wind',
     icon: [
       {
@@ -195,25 +209,21 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Wind Ingot',
-      ja: 'ウィンドインゴット',
-      zh: '疾风铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130401': {
     Id: '30130401',
-    element: 'Light',
-    image: '301007_01_30401',
-    max: [57, 222],
-    min: [17, 66],
-    name: {
+    Name: {
       en: 'Featherblade',
       ja: 'フェザーソード',
       zh: '轻羽剑',
     },
+    abbr: 'f',
+    element: 'Light',
+    image: '301007_01_30401',
+    max: [57, 222],
+    min: [17, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -223,6 +233,12 @@ const weapon = {
   },
   '30130402': {
     Id: '30130402',
+    Name: {
+      en: 'Thunder Ingot',
+      ja: 'サンダーインゴット',
+      zh: '雷霆铸铁',
+    },
+    abbr: 'ti',
     element: 'Light',
     icon: [
       {
@@ -238,16 +254,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Thunder Ingot',
-      ja: 'サンダーインゴット',
-      zh: '雷霆铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130403': {
     Id: '30130403',
+    Name: {
+      en: 'Empty Flash',
+      ja: '稲妻の魔剣',
+      zh: '电闪魔剑',
+    },
+    abbr: 'ef',
     element: 'Light',
     icon: [
       {
@@ -263,25 +280,21 @@ const weapon = {
     max: [38, 136],
     might: 70,
     min: [11, 40],
-    name: {
-      en: 'Empty Flash',
-      ja: '稲妻の魔剣',
-      zh: '电闪魔剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130501': {
     Id: '30130501',
-    element: 'Shadow',
-    image: '301008_01_30501',
-    max: [57, 222],
-    min: [17, 66],
-    name: {
+    Name: {
       en: 'Blood Price',
       ja: 'ブラッドデュエル',
       zh: '鲜血决斗',
     },
+    abbr: 'bp',
+    element: 'Shadow',
+    image: '301008_01_30501',
+    max: [57, 222],
+    min: [17, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -291,6 +304,12 @@ const weapon = {
   },
   '30130502': {
     Id: '30130502',
+    Name: {
+      en: 'Cursefang',
+      ja: '呪詛の魔剣',
+      zh: '诅咒魔剑',
+    },
+    abbr: 'c',
     element: 'Shadow',
     icon: [
       {
@@ -306,16 +325,17 @@ const weapon = {
     max: [40, 132],
     might: 70,
     min: [12, 39],
-    name: {
-      en: 'Cursefang',
-      ja: '呪詛の魔剣',
-      zh: '诅咒魔剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30130503': {
     Id: '30130503',
+    Name: {
+      en: 'Shadow Ingot',
+      ja: 'シャドウインゴット',
+      zh: '暗影铸铁',
+    },
+    abbr: 'si',
     element: 'Shadow',
     icon: [
       {
@@ -331,39 +351,36 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Shadow Ingot',
-      ja: 'シャドウインゴット',
-      zh: '暗影铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30139901': {
     Id: '30139901',
-    element: '0',
-    image: '301030_01_39901',
-    max: [24, 86],
-    min: [7, 25],
-    name: {
+    Name: {
       en: "Knight's Sword",
       ja: 'ナイツソード',
       zh: '骑士剑',
     },
+    abbr: 'ks',
+    element: '0',
+    image: '301030_01_39901',
+    max: [24, 86],
+    min: [7, 25],
     rarity: '3',
     weapon: 'Sword',
   },
   '30139902': {
     Id: '30139902',
-    element: '0',
-    image: '301038_01_39901',
-    max: [36, 140],
-    min: [10, 42],
-    name: {
+    Name: {
       en: 'Ensorcelled Sword',
       ja: 'エンチャントソード',
       zh: '附魔剑',
     },
+    abbr: 'es',
+    element: '0',
+    image: '301038_01_39901',
+    max: [36, 140],
+    min: [10, 42],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -373,15 +390,16 @@ const weapon = {
   },
   '30139903': {
     Id: '30139903',
-    element: '0',
-    image: '301039_01_39901',
-    max: [36, 140],
-    min: [10, 42],
-    name: {
+    Name: {
       en: 'Broadedge',
       ja: 'ワイドソード',
       zh: '狂野之剑',
     },
+    abbr: 'b',
+    element: '0',
+    image: '301039_01_39901',
+    max: [36, 140],
+    min: [10, 42],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -391,6 +409,12 @@ const weapon = {
   },
   '30139904': {
     Id: '30139904',
+    Name: {
+      en: 'Lonely Ward',
+      ja: '退魔の剣',
+      zh: '退魔之剑',
+    },
+    abbr: 'lw',
     element: '0',
     icon: [
       {
@@ -402,16 +426,17 @@ const weapon = {
     max: [24, 86],
     might: 20,
     min: [7, 25],
-    name: {
-      en: 'Lonely Ward',
-      ja: '退魔の剣',
-      zh: '退魔之剑',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30139905': {
     Id: '30139905',
+    Name: {
+      en: 'Hefty Ingot',
+      ja: 'ヘヴィインゴット',
+      zh: '沉重铸铁',
+    },
+    abbr: 'hi',
     element: '0',
     icon: [
       {
@@ -423,25 +448,21 @@ const weapon = {
     max: [23, 88],
     might: 20,
     min: [6, 26],
-    name: {
-      en: 'Hefty Ingot',
-      ja: 'ヘヴィインゴット',
-      zh: '沉重铸铁',
-    },
     rarity: '3',
     weapon: 'Sword',
   },
   '30140104': {
     Id: '30140104',
-    element: 'Flame',
-    image: '301014_01_40101',
-    max: [92, 362],
-    min: [27, 108],
-    name: {
+    Name: {
       en: 'Crimson Cry',
       ja: 'クリムゾンソード',
       zh: '绯红剑',
     },
+    abbr: 'cc',
+    element: 'Flame',
+    image: '301014_01_40101',
+    max: [92, 362],
+    min: [27, 108],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_006',
@@ -451,6 +472,12 @@ const weapon = {
   },
   '30140105': {
     Id: '30140105',
+    Name: {
+      en: 'Molten Ingot',
+      ja: 'ヴォルカノインゴット',
+      zh: '火山铸铁',
+    },
+    abbr: 'mi',
     element: 'Flame',
     icon: [
       {
@@ -466,16 +493,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Molten Ingot',
-      ja: 'ヴォルカノインゴット',
-      zh: '火山铸铁',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140106': {
     Id: '30140106',
+    Name: {
+      en: 'Flame Apogee',
+      ja: 'グレイテストフレイム',
+      zh: '无上烈焰',
+    },
+    abbr: 'fa',
     element: 'Flame',
     icon: [
       {
@@ -491,16 +519,17 @@ const weapon = {
     max: [71, 278],
     might: 140,
     min: [21, 83],
-    name: {
-      en: 'Flame Apogee',
-      ja: 'グレイテストフレイム',
-      zh: '无上烈焰',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140108': {
     Id: '30140108',
+    Name: {
+      en: 'Burning Judgment',
+      ja: 'ジャッジオブファイア',
+      zh: '火之审判',
+    },
+    abbr: 'bj',
     element: 'Flame',
     icon: [
       {
@@ -517,16 +546,17 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Burning Judgment',
-      ja: 'ジャッジオブファイア',
-      zh: '火之审判',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140109': {
     Id: '30140109',
+    Name: {
+      en: 'Crimson Pyre',
+      ja: '紅蓮の魔剣',
+      zh: '红莲魔剑',
+    },
+    abbr: 'cp',
     element: 'Flame',
     icon: [
       {
@@ -542,16 +572,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Crimson Pyre',
-      ja: '紅蓮の魔剣',
-      zh: '红莲魔剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140110': {
     Id: '30140110',
+    Name: {
+      en: 'Searing Savagetail',
+      ja: 'ヒートサベージテイル',
+      zh: '灼热残暴之尾',
+    },
+    abbr: 'ss',
     element: 'Flame',
     icon: [
       {
@@ -567,16 +598,17 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Searing Savagetail',
-      ja: 'ヒートサベージテイル',
-      zh: '灼热残暴之尾',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140111': {
     Id: '30140111',
+    Name: {
+      en: 'Sword of Dancing Sparks',
+      ja: '炎舞の邪剣',
+      zh: '炎舞邪剑',
+    },
+    abbr: 'sods',
     element: 'Flame',
     icon: [
       {
@@ -593,25 +625,21 @@ const weapon = {
     max: [71, 278],
     might: 90,
     min: [21, 83],
-    name: {
-      en: 'Sword of Dancing Sparks',
-      ja: '炎舞の邪剣',
-      zh: '炎舞邪剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140201': {
     Id: '30140201',
-    element: 'Water',
-    image: '301009_01_40201',
-    max: [105, 333],
-    min: [31, 99],
-    name: {
+    Name: {
       en: 'Mercurius',
       ja: 'メルクリウスソード',
       zh: '墨丘利之剑',
     },
+    abbr: 'm',
+    element: 'Water',
+    image: '301009_01_40201',
+    max: [105, 333],
+    min: [31, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -621,6 +649,12 @@ const weapon = {
   },
   '30140202': {
     Id: '30140202',
+    Name: {
+      en: 'Fervent Frost',
+      ja: '猛雪の魔剣',
+      zh: '暴雪魔剑',
+    },
+    abbr: 'ff',
     element: 'Water',
     icon: [
       {
@@ -636,16 +670,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Fervent Frost',
-      ja: '猛雪の魔剣',
-      zh: '暴雪魔剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140203': {
     Id: '30140203',
+    Name: {
+      en: 'Blizzard Ingot',
+      ja: 'ブリザードインゴット',
+      zh: '雪崩铸铁',
+    },
+    abbr: 'bi',
     element: 'Water',
     icon: [
       {
@@ -661,16 +696,17 @@ const weapon = {
     max: [60, 216],
     might: 90,
     min: [18, 64],
-    name: {
-      en: 'Blizzard Ingot',
-      ja: 'ブリザードインゴット',
-      zh: '雪崩铸铁',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140205': {
     Id: '30140205',
+    Name: {
+      en: 'Judge of Seas',
+      ja: 'ジャッジオブウェーブ',
+      zh: '波涛裁决',
+    },
+    abbr: 'jos',
     element: 'Water',
     icon: [
       {
@@ -687,16 +723,17 @@ const weapon = {
     max: [71, 278],
     might: 140,
     min: [21, 83],
-    name: {
-      en: 'Judge of Seas',
-      ja: 'ジャッジオブウェーブ',
-      zh: '波涛裁决',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140206': {
     Id: '30140206',
+    Name: {
+      en: 'Cold Absolution',
+      ja: '氷剣アブソリュート',
+      zh: '绝对冰剑',
+    },
+    abbr: 'ca',
     element: 'Water',
     icon: [
       {
@@ -712,16 +749,17 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Cold Absolution',
-      ja: '氷剣アブソリュート',
-      zh: '绝对冰剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140207': {
     Id: '30140207',
+    Name: {
+      en: 'Angry Aquatail',
+      ja: 'マッドアクアテイル',
+      zh: '愤怒大洋之尾',
+    },
+    abbr: 'aa',
     element: 'Water',
     icon: [
       {
@@ -738,25 +776,21 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Angry Aquatail',
-      ja: 'マッドアクアテイル',
-      zh: '愤怒大洋之尾',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140301': {
     Id: '30140301',
-    element: 'Wind',
-    image: '301034_01_40301',
-    max: [105, 333],
-    min: [31, 99],
-    name: {
+    Name: {
       en: 'Wingblade',
       ja: 'ウイングソード',
       zh: '灵翼剑',
     },
+    abbr: 'w',
+    element: 'Wind',
+    image: '301034_01_40301',
+    max: [105, 333],
+    min: [31, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -766,6 +800,12 @@ const weapon = {
   },
   '30140302': {
     Id: '30140302',
+    Name: {
+      en: 'Tempest Ravager',
+      ja: '狂嵐の魔剣',
+      zh: '狂岚魔剑',
+    },
+    abbr: 'tr',
     element: 'Wind',
     icon: [
       {
@@ -781,16 +821,17 @@ const weapon = {
     max: [63, 210],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Tempest Ravager',
-      ja: '狂嵐の魔剣',
-      zh: '狂岚魔剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140303': {
     Id: '30140303',
+    Name: {
+      en: 'Gale Apogee',
+      ja: 'グレイテストゲイル',
+      zh: '无上烈风',
+    },
+    abbr: 'ga',
     element: 'Wind',
     icon: [
       {
@@ -806,16 +847,17 @@ const weapon = {
     max: [71, 278],
     might: 60,
     min: [21, 83],
-    name: {
-      en: 'Gale Apogee',
-      ja: 'グレイテストゲイル',
-      zh: '无上烈风',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140304': {
     Id: '30140304',
+    Name: {
+      en: 'Tornado Ingot',
+      ja: 'トルネードインゴット',
+      zh: '龙卷铸铁',
+    },
+    abbr: 'ti',
     element: 'Wind',
     icon: [
       {
@@ -831,16 +873,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Tornado Ingot',
-      ja: 'トルネードインゴット',
-      zh: '龙卷铸铁',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140305': {
     Id: '30140305',
+    Name: {
+      en: 'Barren Weald',
+      ja: '疾剣ウィールド',
+      zh: '疾剑威尔德',
+    },
+    abbr: 'bw',
     element: 'Wind',
     icon: [
       {
@@ -856,16 +899,17 @@ const weapon = {
     max: [81, 257],
     might: 140,
     min: [24, 77],
-    name: {
-      en: 'Barren Weald',
-      ja: '疾剣ウィールド',
-      zh: '疾剑威尔德',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140306': {
     Id: '30140306',
+    Name: {
+      en: 'Slicing Stormtail',
+      ja: 'グリムブロウテイル',
+      zh: '无情狂风之尾',
+    },
+    abbr: 'ss',
     element: 'Wind',
     icon: [
       {
@@ -881,25 +925,21 @@ const weapon = {
     max: [75, 270],
     might: 80,
     min: [22, 81],
-    name: {
-      en: 'Slicing Stormtail',
-      ja: 'グリムブロウテイル',
-      zh: '无情狂风之尾',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140401': {
     Id: '30140401',
-    element: 'Light',
-    image: '301036_01_40401',
-    max: [105, 333],
-    min: [31, 99],
-    name: {
+    Name: {
       en: 'Astral Edge',
       ja: '七星剣',
       zh: '七星剑',
     },
+    abbr: 'ae',
+    element: 'Light',
+    image: '301036_01_40401',
+    max: [105, 333],
+    min: [31, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -909,6 +949,12 @@ const weapon = {
   },
   '30140402': {
     Id: '30140402',
+    Name: {
+      en: 'Luster Apogee',
+      ja: 'グレイテストブライト',
+      zh: '无上光辉',
+    },
+    abbr: 'la',
     element: 'Light',
     icon: [
       {
@@ -924,16 +970,17 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Luster Apogee',
-      ja: 'グレイテストブライト',
-      zh: '无上光辉',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140403': {
     Id: '30140403',
+    Name: {
+      en: 'Plasma Ingot',
+      ja: 'プラズマインゴット',
+      zh: '电浆铸铁',
+    },
+    abbr: 'pi',
     element: 'Light',
     icon: [
       {
@@ -949,16 +996,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Plasma Ingot',
-      ja: 'プラズマインゴット',
-      zh: '电浆铸铁',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140404': {
     Id: '30140404',
+    Name: {
+      en: 'Abandoned Roar',
+      ja: '轟雷の魔剣',
+      zh: '轰雷魔剑',
+    },
+    abbr: 'ar',
     element: 'Light',
     icon: [
       {
@@ -974,16 +1022,17 @@ const weapon = {
     max: [60, 216],
     might: 90,
     min: [18, 64],
-    name: {
-      en: 'Abandoned Roar',
-      ja: '轟雷の魔剣',
-      zh: '轰雷魔剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140405': {
     Id: '30140405',
+    Name: {
+      en: 'Lightbringer',
+      ja: 'ライトブリンガー',
+      zh: '光明使者',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -1001,16 +1050,17 @@ const weapon = {
     max: [71, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Lightbringer',
-      ja: 'ライトブリンガー',
-      zh: '光明使者',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140406': {
     Id: '30140406',
+    Name: {
+      en: 'Radiant Subjugation',
+      ja: '光輝の邪剣',
+      zh: '光辉邪剑',
+    },
+    abbr: 'rs',
     element: 'Light',
     icon: [
       {
@@ -1027,16 +1077,17 @@ const weapon = {
     max: [75, 270],
     might: 90,
     min: [22, 81],
-    name: {
-      en: 'Radiant Subjugation',
-      ja: '光輝の邪剣',
-      zh: '光辉邪剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140407': {
     Id: '30140407',
+    Name: {
+      en: 'Death Flash',
+      ja: '刹那に屠るもの',
+      zh: '绝命之刹',
+    },
+    abbr: 'df',
     element: 'Light',
     icon: [
       {
@@ -1053,25 +1104,21 @@ const weapon = {
     max: [71, 278],
     might: 140,
     min: [21, 83],
-    name: {
-      en: 'Death Flash',
-      ja: '刹那に屠るもの',
-      zh: '绝命之刹',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140501': {
     Id: '30140501',
-    element: 'Shadow',
-    image: '301011_01_40501',
-    max: [92, 362],
-    min: [27, 108],
-    name: {
+    Name: {
       en: 'Dark Dementia',
       ja: '狂乱の黒剣',
       zh: '狂乱黑剑',
     },
+    abbr: 'dd',
+    element: 'Shadow',
+    image: '301011_01_40501',
+    max: [92, 362],
+    min: [27, 108],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_006',
@@ -1081,6 +1128,12 @@ const weapon = {
   },
   '30140502': {
     Id: '30140502',
+    Name: {
+      en: 'Doomfang',
+      ja: '呪滅の魔剣',
+      zh: '咒灭魔剑',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -1096,16 +1149,17 @@ const weapon = {
     max: [63, 210],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Doomfang',
-      ja: '呪滅の魔剣',
-      zh: '咒灭魔剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140503': {
     Id: '30140503',
+    Name: {
+      en: 'Darkness Ingot',
+      ja: 'ダークネスインゴット',
+      zh: '黑暗铸铁',
+    },
+    abbr: 'di',
     element: 'Shadow',
     icon: [
       {
@@ -1121,16 +1175,17 @@ const weapon = {
     max: [57, 222],
     might: 90,
     min: [17, 66],
-    name: {
-      en: 'Darkness Ingot',
-      ja: 'ダークネスインゴット',
-      zh: '黑暗铸铁',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140504': {
     Id: '30140504',
+    Name: {
+      en: 'Darkbringer',
+      ja: 'ダークブリンガー',
+      zh: '黑暗使者',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -1147,16 +1202,17 @@ const weapon = {
     max: [75, 270],
     might: 140,
     min: [22, 81],
-    name: {
-      en: 'Darkbringer',
-      ja: 'ダークブリンガー',
-      zh: '黑暗使者',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30140505': {
     Id: '30140505',
+    Name: {
+      en: 'Prevailing Malice',
+      ja: '悪意に満ちるもの',
+      zh: '恶贯满盈',
+    },
+    abbr: 'pm',
     element: 'Shadow',
     icon: [
       {
@@ -1173,39 +1229,36 @@ const weapon = {
     max: [75, 270],
     might: 80,
     min: [22, 81],
-    name: {
-      en: 'Prevailing Malice',
-      ja: '悪意に満ちるもの',
-      zh: '恶贯满盈',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149901': {
     Id: '30149901',
-    element: '0',
-    image: '301040_01_49901',
-    max: [58, 208],
-    min: [17, 62],
-    name: {
+    Name: {
       en: "Knights' Grace",
       ja: '騎士長の麗剣',
       zh: '骑士长丽剑',
     },
+    abbr: 'kg',
+    element: '0',
+    image: '301040_01_49901',
+    max: [58, 208],
+    min: [17, 62],
     rarity: '4',
     weapon: 'Sword',
   },
   '30149902': {
     Id: '30149902',
-    element: '0',
-    image: '301031_01_49901',
-    max: [71, 278],
-    min: [21, 83],
-    name: {
+    Name: {
       en: 'Blade of Glory',
       ja: 'グロリアスソード',
       zh: '荣耀之剑',
     },
+    abbr: 'bog',
+    element: '0',
+    image: '301031_01_49901',
+    max: [71, 278],
+    min: [21, 83],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_006',
@@ -1215,15 +1268,16 @@ const weapon = {
   },
   '30149903': {
     Id: '30149903',
-    element: '0',
-    image: '301012_01_49901',
-    max: [81, 257],
-    min: [24, 77],
-    name: {
+    Name: {
       en: 'Gilda Sword',
       ja: 'ギルダソード',
       zh: '吉尔达之剑',
     },
+    abbr: 'gs',
+    element: '0',
+    image: '301012_01_49901',
+    max: [81, 257],
+    min: [24, 77],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -1233,6 +1287,12 @@ const weapon = {
   },
   '30149904': {
     Id: '30149904',
+    Name: {
+      en: 'Wind Apogee',
+      ja: 'グレイテストウイング',
+      zh: '无上锐翼',
+    },
+    abbr: 'wa',
     element: '0',
     icon: [
       {
@@ -1244,16 +1304,17 @@ const weapon = {
     max: [55, 214],
     might: 40,
     min: [16, 64],
-    name: {
-      en: 'Wind Apogee',
-      ja: 'グレイテストウイング',
-      zh: '无上锐翼',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149905': {
     Id: '30149905',
+    Name: {
+      en: 'Judge of Souls',
+      ja: 'ジャッジオブソウル',
+      zh: '夺魂裁决',
+    },
+    abbr: 'jos',
     element: '0',
     icon: [
       {
@@ -1266,16 +1327,17 @@ const weapon = {
     max: [60, 202],
     might: 40,
     min: [18, 60],
-    name: {
-      en: 'Judge of Souls',
-      ja: 'ジャッジオブソウル',
-      zh: '夺魂裁决',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149906': {
     Id: '30149906',
+    Name: {
+      en: 'Seascale',
+      ja: '統剣スケイル',
+      zh: '统剑斯凯尔',
+    },
+    abbr: 's',
     element: '0',
     icon: [
       {
@@ -1287,16 +1349,17 @@ const weapon = {
     max: [58, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Seascale',
-      ja: '統剣スケイル',
-      zh: '统剑斯凯尔',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149907': {
     Id: '30149907',
+    Name: {
+      en: 'Gracebringer',
+      ja: 'クロムブリンガー',
+      zh: '银灰使者',
+    },
+    abbr: 'g',
     element: '0',
     icon: [
       {
@@ -1309,16 +1372,17 @@ const weapon = {
     max: [58, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Gracebringer',
-      ja: 'クロムブリンガー',
-      zh: '银灰使者',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149908': {
     Id: '30149908',
+    Name: {
+      en: 'Cryptid Sword',
+      ja: '幻獣の剣',
+      zh: '幻兽之剑',
+    },
+    abbr: 'cs',
     element: '0',
     icon: [
       {
@@ -1331,16 +1395,17 @@ const weapon = {
     max: [58, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Cryptid Sword',
-      ja: '幻獣の剣',
-      zh: '幻兽之剑',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149909': {
     Id: '30149909',
+    Name: {
+      en: 'Scorn Bringer',
+      ja: '嘲り刈るもの',
+      zh: '收割之嘲',
+    },
+    abbr: 'sb',
     element: '0',
     icon: [
       {
@@ -1353,16 +1418,17 @@ const weapon = {
     max: [55, 214],
     might: 40,
     min: [16, 64],
-    name: {
-      en: 'Scorn Bringer',
-      ja: '嘲り刈るもの',
-      zh: '收割之嘲',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30149910': {
     Id: '30149910',
+    Name: {
+      en: 'Fiercetail',
+      ja: 'フィアステイル',
+      zh: '凶残之尾',
+    },
+    abbr: 'f',
     element: '0',
     icon: [
       {
@@ -1374,25 +1440,21 @@ const weapon = {
     max: [55, 214],
     might: 40,
     min: [16, 64],
-    name: {
-      en: 'Fiercetail',
-      ja: 'フィアステイル',
-      zh: '凶残之尾',
-    },
     rarity: '4',
     weapon: 'Sword',
   },
   '30150101': {
     Id: '30150101',
-    element: 'Flame',
-    image: '301032_01_50101',
-    max: [143, 556],
-    min: [42, 166],
-    name: {
+    Name: {
       en: 'Levatein',
       ja: 'レーヴァテイン',
       zh: '雷瓦汀',
     },
+    abbr: 'l',
+    element: 'Flame',
+    image: '301032_01_50101',
+    max: [143, 556],
+    min: [42, 166],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -1402,6 +1464,12 @@ const weapon = {
   },
   '30150102': {
     Id: '30150102',
+    Name: {
+      en: 'Inferno Apogee',
+      ja: 'グレイテストインフェルノ',
+      zh: '无上业火',
+    },
+    abbr: 'ia',
     element: 'Flame',
     icon: [
       {
@@ -1417,16 +1485,17 @@ const weapon = {
     max: [92, 362],
     might: 150,
     min: [27, 108],
-    name: {
-      en: 'Inferno Apogee',
-      ja: 'グレイテストインフェルノ',
-      zh: '无上业火',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150103': {
     Id: '30150103',
+    Name: {
+      en: 'Blazing Judgment',
+      ja: 'ジャッジオブヘルフレア',
+      zh: '地狱火之审判',
+    },
+    abbr: 'bj',
     element: 'Flame',
     icon: [
       {
@@ -1443,16 +1512,17 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Blazing Judgment',
-      ja: 'ジャッジオブヘルフレア',
-      zh: '地狱火之审判',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150107': {
     Id: '30150107',
+    Name: {
+      en: 'Crimson',
+      ja: '緋竜剣クリムゾン',
+      zh: '绯龙剑绯红',
+    },
+    abbr: 'c',
     element: 'Flame',
     icon: [
       {
@@ -1464,11 +1534,6 @@ const weapon = {
     max: [196, 765],
     might: 100,
     min: [58, 229],
-    name: {
-      en: 'Crimson',
-      ja: '緋竜剣クリムゾン',
-      zh: '绯龙剑绯红',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -1478,15 +1543,16 @@ const weapon = {
   },
   '30150108': {
     Id: '30150108',
-    element: 'Flame',
-    image: '301122_01_50102',
-    max: [235, 1530],
-    min: [70, 459],
-    name: {
+    Name: {
       en: 'Absolute Crimson',
       ja: '緋竜剣クリムゾン・ゼロ',
       zh: '绯龙剑绯红·零',
     },
+    abbr: 'ac',
+    element: 'Flame',
+    image: '301122_01_50102',
+    max: [235, 1530],
+    min: [70, 459],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -1496,6 +1562,12 @@ const weapon = {
   },
   '30150109': {
     Id: '30150109',
+    Name: {
+      en: 'Flaming Savagetail',
+      ja: 'フレイムサベージテイル',
+      zh: '烈焰残暴之尾',
+    },
+    abbr: 'fs',
     element: 'Flame',
     icon: [
       {
@@ -1511,16 +1583,17 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Flaming Savagetail',
-      ja: 'フレイムサベージテイル',
-      zh: '烈焰残暴之尾',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150110': {
     Id: '30150110',
+    Name: {
+      en: 'Sword of Surging Flame',
+      ja: '狂翔炎舞の邪剣',
+      zh: '狂翔炎舞邪剑',
+    },
+    abbr: 'sosf',
     element: 'Flame',
     icon: [
       {
@@ -1537,25 +1610,21 @@ const weapon = {
     max: [92, 362],
     might: 110,
     min: [27, 108],
-    name: {
-      en: 'Sword of Surging Flame',
-      ja: '狂翔炎舞の邪剣',
-      zh: '狂翔炎舞邪剑',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150202': {
     Id: '30150202',
-    element: 'Water',
-    image: '301010_01_50201',
-    max: [143, 556],
-    min: [42, 166],
-    name: {
+    Name: {
       en: 'Eoantide',
       ja: '原初の白波',
       zh: '原初白浪',
     },
+    abbr: 'e',
+    element: 'Water',
+    image: '301010_01_50201',
+    max: [143, 556],
+    min: [42, 166],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -1565,6 +1634,12 @@ const weapon = {
   },
   '30150203': {
     Id: '30150203',
+    Name: {
+      en: 'Judge of Oceans',
+      ja: 'ジャッジオブオーシャン',
+      zh: '大洋裁决',
+    },
+    abbr: 'joo',
     element: 'Water',
     icon: [
       {
@@ -1581,16 +1656,17 @@ const weapon = {
     max: [92, 362],
     might: 160,
     min: [27, 108],
-    name: {
-      en: 'Judge of Oceans',
-      ja: 'ジャッジオブオーシャン',
-      zh: '大洋裁决',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150204': {
     Id: '30150204',
+    Name: {
+      en: 'Icy Absolution',
+      ja: '絶氷結剣アブソリュート',
+      zh: '绝对寒冰剑',
+    },
+    abbr: 'ia',
     element: 'Water',
     icon: [
       {
@@ -1606,16 +1682,17 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Icy Absolution',
-      ja: '絶氷結剣アブソリュート',
-      zh: '绝对寒冰剑',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150208': {
     Id: '30150208',
+    Name: {
+      en: 'Aqua',
+      ja: '青竜剣アクア',
+      zh: '青龙剑沧海',
+    },
+    abbr: 'a',
     element: 'Water',
     icon: [
       {
@@ -1627,11 +1704,6 @@ const weapon = {
     max: [196, 765],
     might: 100,
     min: [58, 229],
-    name: {
-      en: 'Aqua',
-      ja: '青竜剣アクア',
-      zh: '青龙剑沧海',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -1641,15 +1713,16 @@ const weapon = {
   },
   '30150209': {
     Id: '30150209',
-    element: 'Water',
-    image: '301120_01_50202',
-    max: [235, 1530],
-    min: [70, 459],
-    name: {
+    Name: {
       en: 'Absolute Aqua',
       ja: '青竜剣アクア・ゼロ',
       zh: '青龙剑沧海·零',
     },
+    abbr: 'aa',
+    element: 'Water',
+    image: '301120_01_50202',
+    max: [235, 1530],
+    min: [70, 459],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -1659,6 +1732,12 @@ const weapon = {
   },
   '30150210': {
     Id: '30150210',
+    Name: {
+      en: 'Raging Aquatail',
+      ja: 'レイジングアクアテイル',
+      zh: '暴怒大洋之尾',
+    },
+    abbr: 'ra',
     element: 'Water',
     icon: [
       {
@@ -1675,25 +1754,21 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Raging Aquatail',
-      ja: 'レイジングアクアテイル',
-      zh: '暴怒大洋之尾',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150301': {
     Id: '30150301',
-    element: 'Wind',
-    image: '301033_01_50301',
-    max: [158, 524],
-    min: [47, 157],
-    name: {
+    Name: {
       en: 'Durandal',
       ja: 'デュランダル',
       zh: '杜朗达尔',
     },
+    abbr: 'd',
+    element: 'Wind',
+    image: '301033_01_50301',
+    max: [158, 524],
+    min: [47, 157],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_031',
@@ -1703,6 +1778,12 @@ const weapon = {
   },
   '30150302': {
     Id: '30150302',
+    Name: {
+      en: 'Hurricane Apogee',
+      ja: 'グレイテストハリケーン',
+      zh: '无上飓风',
+    },
+    abbr: 'ha',
     element: 'Wind',
     icon: [
       {
@@ -1718,16 +1799,17 @@ const weapon = {
     max: [92, 362],
     might: 80,
     min: [27, 108],
-    name: {
-      en: 'Hurricane Apogee',
-      ja: 'グレイテストハリケーン',
-      zh: '无上飓风',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150303': {
     Id: '30150303',
+    Name: {
+      en: 'Roaring Weald',
+      ja: '轟疾迅剣ウィールド',
+      zh: '轰疾迅剑威尔德',
+    },
+    abbr: 'rw',
     element: 'Wind',
     icon: [
       {
@@ -1743,16 +1825,17 @@ const weapon = {
     max: [105, 333],
     might: 160,
     min: [31, 99],
-    name: {
-      en: 'Roaring Weald',
-      ja: '轟疾迅剣ウィールド',
-      zh: '轰疾迅剑威尔德',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150307': {
     Id: '30150307',
+    Name: {
+      en: 'Tempest',
+      ja: '碧竜剣テンペスト',
+      zh: '碧龙剑风暴',
+    },
+    abbr: 't',
     element: 'Wind',
     icon: [
       {
@@ -1764,11 +1847,6 @@ const weapon = {
     max: [222, 705],
     might: 100,
     min: [66, 211],
-    name: {
-      en: 'Tempest',
-      ja: '碧竜剣テンペスト',
-      zh: '碧龙剑风暴',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -1778,15 +1856,16 @@ const weapon = {
   },
   '30150308': {
     Id: '30150308',
-    element: 'Wind',
-    image: '301119_01_50302',
-    max: [267, 1411],
-    min: [80, 423],
-    name: {
+    Name: {
       en: 'Absolute Tempest',
       ja: '碧竜剣テンペスト・ゼロ',
       zh: '碧龙剑风暴·零',
     },
+    abbr: 'at',
+    element: 'Wind',
+    image: '301119_01_50302',
+    max: [267, 1411],
+    min: [80, 423],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -1796,6 +1875,12 @@ const weapon = {
   },
   '30150309': {
     Id: '30150309',
+    Name: {
+      en: 'Slaughtering Stormtail',
+      ja: 'クルーエルブロウテイル',
+      zh: '残暴狂风之尾',
+    },
+    abbr: 'ss',
     element: 'Wind',
     icon: [
       {
@@ -1811,25 +1896,21 @@ const weapon = {
     max: [97, 351],
     might: 100,
     min: [29, 105],
-    name: {
-      en: 'Slaughtering Stormtail',
-      ja: 'クルーエルブロウテイル',
-      zh: '残暴狂风之尾',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150401': {
     Id: '30150401',
-    element: 'Light',
-    image: '301015_01_50401',
-    max: [143, 556],
-    min: [42, 166],
-    name: {
+    Name: {
       en: "Zex's End",
       ja: 'エンド・オブ・ゼクス',
       zh: '赛克斯的终焉',
     },
+    abbr: 'ze',
+    element: 'Light',
+    image: '301015_01_50401',
+    max: [143, 556],
+    min: [42, 166],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -1839,6 +1920,12 @@ const weapon = {
   },
   '30150402': {
     Id: '30150402',
+    Name: {
+      en: 'Aureole Apogee',
+      ja: 'グレイテストオリオール',
+      zh: '无上圣耀',
+    },
+    abbr: 'aa',
     element: 'Light',
     icon: [
       {
@@ -1854,16 +1941,17 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Aureole Apogee',
-      ja: 'グレイテストオリオール',
-      zh: '无上圣耀',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150403': {
     Id: '30150403',
+    Name: {
+      en: 'Fólkvangr',
+      ja: 'フォルクヴァング',
+      zh: '弗尔克范格',
+    },
+    abbr: 'f',
     element: 'Light',
     icon: [
       {
@@ -1875,16 +1963,17 @@ const weapon = {
     max: [101, 362],
     might: 80,
     min: [30, 108],
-    name: {
-      en: 'Fólkvangr',
-      ja: 'フォルクヴァング',
-      zh: '弗尔克范格',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150404': {
     Id: '30150404',
+    Name: {
+      en: 'Glintbringer',
+      ja: 'グリントブリンガー',
+      zh: '光耀使者',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -1902,16 +1991,17 @@ const weapon = {
     max: [92, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Glintbringer',
-      ja: 'グリントブリンガー',
-      zh: '光耀使者',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150407': {
     Id: '30150407',
+    Name: {
+      en: 'Radiant Dominion',
+      ja: '覇極光輝の邪剣',
+      zh: '霸极光辉邪剑',
+    },
+    abbr: 'rd',
     element: 'Light',
     icon: [
       {
@@ -1928,16 +2018,17 @@ const weapon = {
     max: [97, 351],
     might: 110,
     min: [29, 105],
-    name: {
-      en: 'Radiant Dominion',
-      ja: '覇極光輝の邪剣',
-      zh: '霸极光辉邪剑',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150408': {
     Id: '30150408',
+    Name: {
+      en: 'Death Aeon',
+      ja: '永劫に果てるもの',
+      zh: '永劫之极',
+    },
+    abbr: 'da',
     element: 'Light',
     icon: [
       {
@@ -1954,16 +2045,17 @@ const weapon = {
     max: [92, 362],
     might: 160,
     min: [27, 108],
-    name: {
-      en: 'Death Aeon',
-      ja: '永劫に果てるもの',
-      zh: '永劫之极',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150410': {
     Id: '30150410',
+    Name: {
+      en: 'Lightning',
+      ja: '輝竜剣ライトニング',
+      zh: '辉龙剑雷霆',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -1975,11 +2067,6 @@ const weapon = {
     max: [206, 743],
     might: 100,
     min: [61, 222],
-    name: {
-      en: 'Lightning',
-      ja: '輝竜剣ライトニング',
-      zh: '辉龙剑雷霆',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -1989,15 +2076,16 @@ const weapon = {
   },
   '30150411': {
     Id: '30150411',
-    element: 'Light',
-    image: '301121_01_50402',
-    max: [247, 1485],
-    min: [74, 445],
-    name: {
+    Name: {
       en: 'Absolute Lightning',
       ja: '輝竜剣ライトニング・ゼロ',
       zh: '辉龙剑雷霆·零',
     },
+    abbr: 'al',
+    element: 'Light',
+    image: '301121_01_50402',
+    max: [247, 1485],
+    min: [74, 445],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -2007,15 +2095,16 @@ const weapon = {
   },
   '30150501': {
     Id: '30150501',
-    element: 'Shadow',
-    image: '301037_01_50501',
-    max: [158, 524],
-    min: [47, 157],
-    name: {
+    Name: {
       en: 'Dáinsleif',
       ja: 'ダインスレイブ',
       zh: '戴因斯莱夫',
     },
+    abbr: 'd',
+    element: 'Shadow',
+    image: '301037_01_50501',
+    max: [158, 524],
+    min: [47, 157],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_031',
@@ -2025,6 +2114,12 @@ const weapon = {
   },
   '30150502': {
     Id: '30150502',
+    Name: {
+      en: 'Abyssbringer',
+      ja: 'アビスブリンガー',
+      zh: '深渊使者',
+    },
+    abbr: 'a',
     element: 'Shadow',
     icon: [
       {
@@ -2041,16 +2136,17 @@ const weapon = {
     max: [97, 351],
     might: 160,
     min: [29, 105],
-    name: {
-      en: 'Abyssbringer',
-      ja: 'アビスブリンガー',
-      zh: '深渊使者',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30150503': {
     Id: '30150503',
+    Name: {
+      en: 'Hex',
+      ja: '闇竜剣カース',
+      zh: '暗龙剑诅咒',
+    },
+    abbr: 'h',
     element: 'Shadow',
     icon: [
       {
@@ -2062,11 +2158,6 @@ const weapon = {
     max: [206, 743],
     might: 100,
     min: [61, 222],
-    name: {
-      en: 'Hex',
-      ja: '闇竜剣カース',
-      zh: '暗龙剑诅咒',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -2076,15 +2167,16 @@ const weapon = {
   },
   '30150504': {
     Id: '30150504',
-    element: 'Shadow',
-    image: '301123_01_50502',
-    max: [247, 1485],
-    min: [74, 445],
-    name: {
+    Name: {
       en: 'Absolute Hex',
       ja: '闇竜剣カース・ゼロ',
       zh: '暗龙剑诅咒·零',
     },
+    abbr: 'ah',
+    element: 'Shadow',
+    image: '301123_01_50502',
+    max: [247, 1485],
+    min: [74, 445],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -2094,6 +2186,12 @@ const weapon = {
   },
   '30150508': {
     Id: '30150508',
+    Name: {
+      en: 'Prevailing Evil',
+      ja: '邪悪に堕とすもの',
+      zh: '堕入邪恶',
+    },
+    abbr: 'pe',
     element: 'Shadow',
     icon: [
       {
@@ -2110,39 +2208,36 @@ const weapon = {
     max: [97, 351],
     might: 100,
     min: [29, 105],
-    name: {
-      en: 'Prevailing Evil',
-      ja: '邪悪に堕とすもの',
-      zh: '堕入邪恶',
-    },
     rarity: '5',
     weapon: 'Sword',
   },
   '30159901': {
     Id: '30159901',
-    element: '0',
-    image: '301041_01_59901',
-    max: [101, 362],
-    min: [30, 108],
-    name: {
+    Name: {
       en: "Hero's Sword",
       ja: '英雄の剣',
       zh: '英雄之剑',
     },
+    abbr: 'hs',
+    element: '0',
+    image: '301041_01_59901',
+    max: [101, 362],
+    min: [30, 108],
     rarity: '5',
     weapon: 'Sword',
   },
   '30159902': {
     Id: '30159902',
-    element: '0',
-    image: '301042_01_59901',
-    max: [117, 456],
-    min: [35, 136],
-    name: {
+    Name: {
       en: 'Hauteclaire',
       ja: 'オートクレール',
       zh: '奥托克莱尔',
     },
+    abbr: 'h',
+    element: '0',
+    image: '301042_01_59901',
+    max: [117, 456],
+    min: [35, 136],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -2152,15 +2247,16 @@ const weapon = {
   },
   '30159903': {
     Id: '30159903',
-    element: '0',
-    image: '301043_01_59901',
-    max: [129, 430],
-    min: [38, 129],
-    name: {
+    Name: {
       en: 'Gram',
       ja: 'グラム',
       zh: '格拉墨',
     },
+    abbr: 'g',
+    element: '0',
+    image: '301043_01_59901',
+    max: [129, 430],
+    min: [38, 129],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_031',
@@ -2170,15 +2266,16 @@ const weapon = {
   },
   '30159904': {
     Id: '30159904',
-    element: '0',
-    image: '301046_01_59901',
-    max: [106, 351],
-    min: [31, 105],
-    name: {
+    Name: {
       en: 'Lucky Hanetsuki Paddle',
       ja: '福招きの羽子板',
       zh: '招福羽子板',
     },
+    abbr: 'lhp',
+    element: '0',
+    image: '301046_01_59901',
+    max: [106, 351],
+    min: [31, 105],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -2188,15 +2285,16 @@ const weapon = {
   },
   '30159905': {
     Id: '30159905',
-    element: '0',
-    image: '301130_01_59901',
-    max: [101, 362],
-    min: [30, 108],
-    name: {
+    Name: {
       en: 'Mega Sword',
       ja: 'ロックソード',
       zh: '洛克剑',
     },
+    abbr: 'ms',
+    element: '0',
+    image: '301130_01_59901',
+    max: [101, 362],
+    min: [30, 108],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -2206,15 +2304,16 @@ const weapon = {
   },
   '30230101': {
     Id: '30230101',
-    element: 'Flame',
-    image: '302006_01_30101',
-    max: [53, 229],
-    min: [15, 68],
-    name: {
+    Name: {
       en: 'Valkaheim Blade',
       ja: 'バルカブレード',
       zh: '巴尔加之刃',
     },
+    abbr: 'vb',
+    element: 'Flame',
+    image: '302006_01_30101',
+    max: [53, 229],
+    min: [15, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_008',
@@ -2224,6 +2323,12 @@ const weapon = {
   },
   '30230102': {
     Id: '30230102',
+    Name: {
+      en: 'Crimson Steel',
+      ja: '朱鋼丸',
+      zh: '朱钢丸',
+    },
+    abbr: 'cs',
     element: 'Flame',
     icon: [
       {
@@ -2239,16 +2344,17 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Crimson Steel',
-      ja: '朱鋼丸',
-      zh: '朱钢丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230104': {
     Id: '30230104',
+    Name: {
+      en: 'Balefire Blade',
+      ja: '妖焔刀・燎火',
+      zh: '妖焰刀·燎火',
+    },
+    abbr: 'bb',
     element: 'Flame',
     icon: [
       {
@@ -2265,16 +2371,17 @@ const weapon = {
     max: [32, 149],
     might: 60,
     min: [9, 44],
-    name: {
-      en: 'Balefire Blade',
-      ja: '妖焔刀・燎火',
-      zh: '妖焰刀·燎火',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230105': {
     Id: '30230105',
+    Name: {
+      en: 'Suncutter',
+      ja: 'ヒノキリ',
+      zh: '火烈刀',
+    },
+    abbr: 's',
     element: 'Flame',
     icon: [
       {
@@ -2290,25 +2397,21 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Suncutter',
-      ja: 'ヒノキリ',
-      zh: '火烈刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230201': {
     Id: '30230201',
-    element: 'Water',
-    image: '302007_01_30201',
-    max: [53, 229],
-    min: [15, 68],
-    name: {
+    Name: {
       en: 'Alighting Butterfly',
       ja: '花蝶村雨',
       zh: '花蝶村雨',
     },
+    abbr: 'ab',
+    element: 'Water',
+    image: '302007_01_30201',
+    max: [53, 229],
+    min: [15, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_008',
@@ -2318,6 +2421,12 @@ const weapon = {
   },
   '30230202': {
     Id: '30230202',
+    Name: {
+      en: 'Azure Obsidian',
+      ja: '蒼曜丸',
+      zh: '苍曜丸',
+    },
+    abbr: 'ao',
     element: 'Water',
     icon: [
       {
@@ -2333,16 +2442,17 @@ const weapon = {
     max: [35, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Azure Obsidian',
-      ja: '蒼曜丸',
-      zh: '苍曜丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230204': {
     Id: '30230204',
+    Name: {
+      en: 'Wavecutter',
+      ja: 'ナミキリ',
+      zh: '斩浪刀',
+    },
+    abbr: 'w',
     element: 'Water',
     icon: [
       {
@@ -2358,16 +2468,17 @@ const weapon = {
     max: [35, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Wavecutter',
-      ja: 'ナミキリ',
-      zh: '斩浪刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230205': {
     Id: '30230205',
+    Name: {
+      en: 'Quietude',
+      ja: '妖氷刀・白雪',
+      zh: '妖冰刀·白雪',
+    },
+    abbr: 'q',
     element: 'Water',
     icon: [
       {
@@ -2383,25 +2494,21 @@ const weapon = {
     max: [35, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Quietude',
-      ja: '妖氷刀・白雪',
-      zh: '妖冰刀·白雪',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230302': {
     Id: '30230302',
-    element: 'Wind',
-    image: '302024_01_30301',
-    max: [50, 236],
-    min: [15, 70],
-    name: {
+    Name: {
       en: 'Dragon Commander',
       ja: '竜将刀',
       zh: '龙将刀',
     },
+    abbr: 'dc',
+    element: 'Wind',
+    image: '302024_01_30301',
+    max: [50, 236],
+    min: [15, 70],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -2411,6 +2518,12 @@ const weapon = {
   },
   '30230303': {
     Id: '30230303',
+    Name: {
+      en: 'Verdantbreeze Cutter',
+      ja: '翠琥丸',
+      zh: '翠琥丸',
+    },
+    abbr: 'vc',
     element: 'Wind',
     icon: [
       {
@@ -2426,16 +2539,17 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Verdantbreeze Cutter',
-      ja: '翠琥丸',
-      zh: '翠琥丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230304': {
     Id: '30230304',
+    Name: {
+      en: 'Windcutter',
+      ja: 'カザキリ',
+      zh: '踏风刀',
+    },
+    abbr: 'w',
     element: 'Wind',
     icon: [
       {
@@ -2451,16 +2565,17 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Windcutter',
-      ja: 'カザキリ',
-      zh: '踏风刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230305': {
     Id: '30230305',
+    Name: {
+      en: 'Ignorant Sting',
+      ja: '妖旋刀・風雲',
+      zh: '妖旋刀·风云',
+    },
+    abbr: 'is',
     element: 'Wind',
     icon: [
       {
@@ -2476,25 +2591,21 @@ const weapon = {
     max: [36, 137],
     might: 70,
     min: [10, 41],
-    name: {
-      en: 'Ignorant Sting',
-      ja: '妖旋刀・風雲',
-      zh: '妖旋刀·风云',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230401': {
     Id: '30230401',
-    element: 'Light',
-    image: '302027_01_30401',
-    max: [50, 236],
-    min: [15, 70],
-    name: {
+    Name: {
       en: 'Chanzelian Blade',
       ja: 'シャンゼリアブレード',
       zh: '香榭利亚之刃',
     },
+    abbr: 'cb',
+    element: 'Light',
+    image: '302027_01_30401',
+    max: [50, 236],
+    min: [15, 70],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -2504,6 +2615,12 @@ const weapon = {
   },
   '30230402': {
     Id: '30230402',
+    Name: {
+      en: 'Obsidian Alabaster',
+      ja: '白曜丸',
+      zh: '白曜丸',
+    },
+    abbr: 'oa',
     element: 'Light',
     icon: [
       {
@@ -2519,16 +2636,17 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Obsidian Alabaster',
-      ja: '白曜丸',
-      zh: '白曜丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230403': {
     Id: '30230403',
+    Name: {
+      en: 'Glowcutter',
+      ja: 'ミツキリ',
+      zh: '驰光刀',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -2544,25 +2662,21 @@ const weapon = {
     max: [32, 149],
     might: 70,
     min: [9, 44],
-    name: {
-      en: 'Glowcutter',
-      ja: 'ミツキリ',
-      zh: '驰光刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230501': {
     Id: '30230501',
-    element: 'Shadow',
-    image: '302009_01_30501',
-    max: [50, 236],
-    min: [15, 70],
-    name: {
+    Name: {
       en: 'Sanguine Rain',
       ja: '妖刀血雨',
       zh: '妖刀血雨',
     },
+    abbr: 'sr',
+    element: 'Shadow',
+    image: '302009_01_30501',
+    max: [50, 236],
+    min: [15, 70],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -2572,6 +2686,12 @@ const weapon = {
   },
   '30230502': {
     Id: '30230502',
+    Name: {
+      en: 'Resentment',
+      ja: '妖魔刀・怨嗟',
+      zh: '妖魔刀·怨嗟',
+    },
+    abbr: 'r',
     element: 'Shadow',
     icon: [
       {
@@ -2587,16 +2707,17 @@ const weapon = {
     max: [35, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Resentment',
-      ja: '妖魔刀・怨嗟',
-      zh: '妖魔刀·怨嗟',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230503': {
     Id: '30230503',
+    Name: {
+      en: 'Shadowcutter',
+      ja: 'カゲキリ',
+      zh: '斩影刀',
+    },
+    abbr: 's',
     element: 'Shadow',
     icon: [
       {
@@ -2612,16 +2733,17 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Shadowcutter',
-      ja: 'カゲキリ',
-      zh: '斩影刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30230504': {
     Id: '30230504',
+    Name: {
+      en: 'Darkthirst',
+      ja: '涅曜丸',
+      zh: '涅曜丸',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -2637,39 +2759,36 @@ const weapon = {
     max: [33, 144],
     might: 70,
     min: [9, 43],
-    name: {
-      en: 'Darkthirst',
-      ja: '涅曜丸',
-      zh: '涅曜丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30239901': {
     Id: '30239901',
-    element: '0',
-    image: '302021_01_39901',
-    max: [20, 94],
-    min: [6, 28],
-    name: {
+    Name: {
       en: 'Subjugator',
       ja: '討伐刀',
       zh: '讨伐刀',
     },
+    abbr: 's',
+    element: '0',
+    image: '302021_01_39901',
+    max: [20, 94],
+    min: [6, 28],
     rarity: '3',
     weapon: 'Blade',
   },
   '30239902': {
     Id: '30239902',
-    element: '0',
-    image: '302030_01_39901',
-    max: [32, 149],
-    min: [9, 44],
-    name: {
+    Name: {
       en: 'High Shamshir',
       ja: 'ロードシャムシール',
       zh: '舍施尔弯刀',
     },
+    abbr: 'hs',
+    element: '0',
+    image: '302030_01_39901',
+    max: [32, 149],
+    min: [9, 44],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -2679,15 +2798,16 @@ const weapon = {
   },
   '30239903': {
     Id: '30239903',
-    element: '0',
-    image: '302008_01_39901',
-    max: [33, 144],
-    min: [9, 43],
-    name: {
+    Name: {
       en: 'Fusion Blade',
       ja: 'ネクストブレード',
       zh: '次世代之刃',
     },
+    abbr: 'fb',
+    element: '0',
+    image: '302008_01_39901',
+    max: [33, 144],
+    min: [9, 43],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_008',
@@ -2697,6 +2817,12 @@ const weapon = {
   },
   '30239904': {
     Id: '30239904',
+    Name: {
+      en: 'Goliath Splitter',
+      ja: '鋼丸',
+      zh: '钢丸',
+    },
+    abbr: 'gs',
     element: '0',
     icon: [
       {
@@ -2708,16 +2834,17 @@ const weapon = {
     max: [21, 91],
     might: 20,
     min: [6, 27],
-    name: {
-      en: 'Goliath Splitter',
-      ja: '鋼丸',
-      zh: '钢丸',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30239905': {
     Id: '30239905',
+    Name: {
+      en: 'Rest Eternal',
+      ja: '妖刀・幽',
+      zh: '妖刀·幽',
+    },
+    abbr: 're',
     element: '0',
     icon: [
       {
@@ -2729,16 +2856,17 @@ const weapon = {
     max: [22, 88],
     might: 20,
     min: [6, 26],
-    name: {
-      en: 'Rest Eternal',
-      ja: '妖刀・幽',
-      zh: '妖刀·幽',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30239907': {
     Id: '30239907',
+    Name: {
+      en: 'Fiendcutter',
+      ja: 'マガリキリ',
+      zh: '反曲刀',
+    },
+    abbr: 'f',
     element: '0',
     icon: [
       {
@@ -2750,25 +2878,21 @@ const weapon = {
     max: [23, 86],
     might: 20,
     min: [6, 25],
-    name: {
-      en: 'Fiendcutter',
-      ja: 'マガリキリ',
-      zh: '反曲刀',
-    },
     rarity: '3',
     weapon: 'Blade',
   },
   '30240101': {
     Id: '30240101',
-    element: 'Flame',
-    image: '302015_01_40101',
-    max: [90, 361],
-    min: [27, 108],
-    name: {
+    Name: {
       en: 'Flametongue',
       ja: '緋炎刀',
       zh: '绯炎刀',
     },
+    abbr: 'f',
+    element: 'Flame',
+    image: '302015_01_40101',
+    max: [90, 361],
+    min: [27, 108],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -2778,6 +2902,12 @@ const weapon = {
   },
   '30240102': {
     Id: '30240102',
+    Name: {
+      en: 'Blazing Steel',
+      ja: '真打・紅焔鋼丸',
+      zh: '终极·红焰钢丸',
+    },
+    abbr: 'bs',
     element: 'Flame',
     icon: [
       {
@@ -2793,16 +2923,17 @@ const weapon = {
     max: [50, 236],
     might: 90,
     min: [15, 70],
-    name: {
-      en: 'Blazing Steel',
-      ja: '真打・紅焔鋼丸',
-      zh: '终极·红焰钢丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240103': {
     Id: '30240103',
+    Name: {
+      en: 'Scorching Edge',
+      ja: '烈斬刀・劫火',
+      zh: '烈斩刀·劫火',
+    },
+    abbr: 'se',
     element: 'Flame',
     icon: [
       {
@@ -2818,16 +2949,17 @@ const weapon = {
     max: [62, 295],
     might: 140,
     min: [18, 88],
-    name: {
-      en: 'Scorching Edge',
-      ja: '烈斬刀・劫火',
-      zh: '烈斩刀·劫火',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240105': {
     Id: '30240105',
+    Name: {
+      en: 'Hellfire Judgment',
+      ja: '火刃・獄炎丸',
+      zh: '火刃·狱炎丸',
+    },
+    abbr: 'hj',
     element: 'Flame',
     icon: [
       {
@@ -2844,16 +2976,17 @@ const weapon = {
     max: [62, 295],
     might: 80,
     min: [18, 88],
-    name: {
-      en: 'Hellfire Judgment',
-      ja: '火刃・獄炎丸',
-      zh: '火刃·狱炎丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240106': {
     Id: '30240106',
+    Name: {
+      en: 'Balefire Votive',
+      ja: '妖焔刀・燎火燈明',
+      zh: '妖焰刀·燎火灯明',
+    },
+    abbr: 'bv',
     element: 'Flame',
     icon: [
       {
@@ -2870,16 +3003,17 @@ const weapon = {
     max: [50, 236],
     might: 80,
     min: [15, 70],
-    name: {
-      en: 'Balefire Votive',
-      ja: '妖焔刀・燎火燈明',
-      zh: '妖焰刀·燎火灯明',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240107': {
     Id: '30240107',
+    Name: {
+      en: 'Starcutter',
+      ja: 'エンノヒノキリ',
+      zh: '炎烈刀',
+    },
+    abbr: 's',
     element: 'Flame',
     icon: [
       {
@@ -2895,16 +3029,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Starcutter',
-      ja: 'エンノヒノキリ',
-      zh: '炎烈刀',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240108': {
     Id: '30240108',
+    Name: {
+      en: 'Direblade Kagachi',
+      ja: 'マガツカガチ',
+      zh: '灾祸之蛇',
+    },
+    abbr: 'dk',
     element: 'Flame',
     icon: [
       {
@@ -2920,16 +3055,17 @@ const weapon = {
     max: [62, 295],
     might: 80,
     min: [18, 88],
-    name: {
-      en: 'Direblade Kagachi',
-      ja: 'マガツカガチ',
-      zh: '灾祸之蛇',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240109': {
     Id: '30240109',
+    Name: {
+      en: 'Burning Blade',
+      ja: 'バーニングブレード',
+      zh: '灼烧之刃',
+    },
+    abbr: 'bb',
     element: 'Flame',
     icon: [
       {
@@ -2946,25 +3082,21 @@ const weapon = {
     max: [62, 295],
     might: 90,
     min: [18, 88],
-    name: {
-      en: 'Burning Blade',
-      ja: 'バーニングブレード',
-      zh: '灼烧之刃',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240202': {
     Id: '30240202',
-    element: 'Water',
-    image: '302022_01_40201',
-    max: [81, 383],
-    min: [24, 114],
-    name: {
+    Name: {
       en: 'Sousui',
       ja: '蒼水刀',
       zh: '苍水刀',
     },
+    abbr: 's',
+    element: 'Water',
+    image: '302022_01_40201',
+    max: [81, 383],
+    min: [24, 114],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -2974,6 +3106,12 @@ const weapon = {
   },
   '30240203': {
     Id: '30240203',
+    Name: {
+      en: 'Obsidian Waterfall',
+      ja: '真打・瀑流曜丸',
+      zh: '终极·瀑流曜丸',
+    },
+    abbr: 'ow',
     element: 'Water',
     icon: [
       {
@@ -2989,16 +3127,17 @@ const weapon = {
     max: [55, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Obsidian Waterfall',
-      ja: '真打・瀑流曜丸',
-      zh: '终极·瀑流曜丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240204': {
     Id: '30240204',
+    Name: {
+      en: 'Highwater Blade',
+      ja: '水刃・波濤丸',
+      zh: '水刃·波涛丸',
+    },
+    abbr: 'hb',
     element: 'Water',
     icon: [
       {
@@ -3015,16 +3154,17 @@ const weapon = {
     max: [69, 278],
     might: 140,
     min: [20, 83],
-    name: {
-      en: 'Highwater Blade',
-      ja: '水刃・波濤丸',
-      zh: '水刃·波涛丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240206': {
     Id: '30240206',
+    Name: {
+      en: 'Spumecutter',
+      ja: 'アワノナミキリ',
+      zh: '波涛斩浪刀',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -3040,16 +3180,17 @@ const weapon = {
     max: [55, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Spumecutter',
-      ja: 'アワノナミキリ',
-      zh: '波涛斩浪刀',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240207': {
     Id: '30240207',
+    Name: {
+      en: 'Seaspray Blade',
+      ja: '水華一閃',
+      zh: '水华一闪',
+    },
+    abbr: 'sb',
     element: 'Water',
     icon: [
       {
@@ -3065,16 +3206,17 @@ const weapon = {
     max: [69, 278],
     might: 80,
     min: [20, 83],
-    name: {
-      en: 'Seaspray Blade',
-      ja: '水華一閃',
-      zh: '水华一闪',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240208': {
     Id: '30240208',
+    Name: {
+      en: 'Crystalline Quietude',
+      ja: '妖氷刀・絶晶白雪',
+      zh: '妖冰刀·绝晶白雪',
+    },
+    abbr: 'cq',
     element: 'Water',
     icon: [
       {
@@ -3090,16 +3232,17 @@ const weapon = {
     max: [55, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Crystalline Quietude',
-      ja: '妖氷刀・絶晶白雪',
-      zh: '妖冰刀·绝晶白雪',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240209': {
     Id: '30240209',
+    Name: {
+      en: 'Direblade Mizuha',
+      ja: 'マガツミズハ',
+      zh: '灾祸罔象',
+    },
+    abbr: 'dm',
     element: 'Water',
     icon: [
       {
@@ -3116,25 +3259,21 @@ const weapon = {
     max: [69, 278],
     might: 80,
     min: [20, 83],
-    name: {
-      en: 'Direblade Mizuha',
-      ja: 'マガツミズハ',
-      zh: '灾祸罔象',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240301': {
     Id: '30240301',
-    element: 'Wind',
-    image: '302011_01_40301',
-    max: [90, 361],
-    min: [27, 108],
-    name: {
+    Name: {
       en: 'Tempest Blade',
       ja: 'テンペストブレード',
       zh: '暴风之刃',
     },
+    abbr: 'tb',
+    element: 'Wind',
+    image: '302011_01_40301',
+    max: [90, 361],
+    min: [27, 108],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -3144,6 +3283,12 @@ const weapon = {
   },
   '30240302': {
     Id: '30240302',
+    Name: {
+      en: 'Tempestrage',
+      ja: '烈斬刀・颶風',
+      zh: '烈斩刀·飓风',
+    },
+    abbr: 't',
     element: 'Wind',
     icon: [
       {
@@ -3159,16 +3304,17 @@ const weapon = {
     max: [66, 286],
     might: 60,
     min: [19, 85],
-    name: {
-      en: 'Tempestrage',
-      ja: '烈斬刀・颶風',
-      zh: '烈斩刀·飓风',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240303': {
     Id: '30240303',
+    Name: {
+      en: 'Verdurewind Cutter',
+      ja: '真打・翠嵐琥丸',
+      zh: '终极·翠岚琥丸',
+    },
+    abbr: 'vc',
     element: 'Wind',
     icon: [
       {
@@ -3184,16 +3330,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Verdurewind Cutter',
-      ja: '真打・翠嵐琥丸',
-      zh: '终极·翠岚琥丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240304': {
     Id: '30240304',
+    Name: {
+      en: 'Skycutter',
+      ja: 'ソラノカザキリ',
+      zh: '晴空踏风刀',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -3209,16 +3356,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Skycutter',
-      ja: 'ソラノカザキリ',
-      zh: '晴空踏风刀',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240305': {
     Id: '30240305',
+    Name: {
+      en: 'Ignorant Bite',
+      ja: '妖旋刀・雲竜風虎',
+      zh: '妖旋刀·云龙风虎',
+    },
+    abbr: 'ib',
     element: 'Wind',
     icon: [
       {
@@ -3234,16 +3382,17 @@ const weapon = {
     max: [57, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Ignorant Bite',
-      ja: '妖旋刀・雲竜風虎',
-      zh: '妖旋刀·云龙风虎',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240306': {
     Id: '30240306',
+    Name: {
+      en: 'Galeflash',
+      ja: '風陣一閃',
+      zh: '风阵一闪',
+    },
+    abbr: 'g',
     element: 'Wind',
     icon: [
       {
@@ -3259,16 +3408,17 @@ const weapon = {
     max: [66, 286],
     might: 140,
     min: [19, 85],
-    name: {
-      en: 'Galeflash',
-      ja: '風陣一閃',
-      zh: '风阵一闪',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240307': {
     Id: '30240307',
+    Name: {
+      en: 'Direblade Hayate',
+      ja: 'マガツハヤテ',
+      zh: '灾祸疾风',
+    },
+    abbr: 'dh',
     element: 'Wind',
     icon: [
       {
@@ -3284,25 +3434,21 @@ const weapon = {
     max: [66, 286],
     might: 80,
     min: [19, 85],
-    name: {
-      en: 'Direblade Hayate',
-      ja: 'マガツハヤテ',
-      zh: '灾祸疾风',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240402': {
     Id: '30240402',
-    element: 'Light',
-    image: '302026_01_40401',
-    max: [81, 383],
-    min: [24, 114],
-    name: {
+    Name: {
       en: 'Thunderfang',
       ja: '纏雷斬蛇刀',
       zh: '缠雷斩蛇刀',
     },
+    abbr: 't',
+    element: 'Light',
+    image: '302026_01_40401',
+    max: [81, 383],
+    min: [24, 114],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -3312,6 +3458,12 @@ const weapon = {
   },
   '30240403': {
     Id: '30240403',
+    Name: {
+      en: 'Thunderous Edge',
+      ja: '烈斬刀・轟雷',
+      zh: '烈斩刀·轰雷',
+    },
+    abbr: 'te',
     element: 'Light',
     icon: [
       {
@@ -3327,16 +3479,17 @@ const weapon = {
     max: [62, 295],
     might: 80,
     min: [18, 88],
-    name: {
-      en: 'Thunderous Edge',
-      ja: '烈斬刀・轟雷',
-      zh: '烈斩刀·轰雷',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240404': {
     Id: '30240404',
+    Name: {
+      en: 'Obsidian Scintillation',
+      ja: '真打・天光曜丸',
+      zh: '终极·天光曜丸',
+    },
+    abbr: 'os',
     element: 'Light',
     icon: [
       {
@@ -3352,16 +3505,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Obsidian Scintillation',
-      ja: '真打・天光曜丸',
-      zh: '终极·天光曜丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240405': {
     Id: '30240405',
+    Name: {
+      en: 'Glorycutter',
+      ja: 'アマノミツキリ',
+      zh: '御天驰光刀',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -3377,16 +3531,17 @@ const weapon = {
     max: [50, 236],
     might: 90,
     min: [15, 70],
-    name: {
-      en: 'Glorycutter',
-      ja: 'アマノミツキリ',
-      zh: '御天驰光刀',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240406': {
     Id: '30240406',
+    Name: {
+      en: 'Glamsheen',
+      ja: '明刀・光輝',
+      zh: '明刀·光辉',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -3404,16 +3559,17 @@ const weapon = {
     max: [62, 295],
     might: 80,
     min: [18, 88],
-    name: {
-      en: 'Glamsheen',
-      ja: '明刀・光輝',
-      zh: '明刀·光辉',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240407': {
     Id: '30240407',
+    Name: {
+      en: 'Luminous Blade',
+      ja: 'シャイニングブレード',
+      zh: '闪耀之刃',
+    },
+    abbr: 'lb',
     element: 'Light',
     icon: [
       {
@@ -3430,16 +3586,17 @@ const weapon = {
     max: [62, 295],
     might: 90,
     min: [18, 88],
-    name: {
-      en: 'Luminous Blade',
-      ja: 'シャイニングブレード',
-      zh: '闪耀之刃',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240408': {
     Id: '30240408',
+    Name: {
+      en: 'Hollow Creation',
+      ja: 'ホロウ・ザ・シャイニング',
+      zh: '虚无之光',
+    },
+    abbr: 'hc',
     element: 'Light',
     icon: [
       {
@@ -3456,25 +3613,21 @@ const weapon = {
     max: [62, 295],
     might: 140,
     min: [18, 88],
-    name: {
-      en: 'Hollow Creation',
-      ja: 'ホロウ・ザ・シャイニング',
-      zh: '虚无之光',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240501': {
     Id: '30240501',
-    element: 'Shadow',
-    image: '302029_01_40501',
-    max: [90, 361],
-    min: [27, 108],
-    name: {
+    Name: {
       en: "Ghizlam's Darkblade",
       ja: '闇刀ジズラム',
       zh: '暗刀齐兹拉姆',
     },
+    abbr: 'gd',
+    element: 'Shadow',
+    image: '302029_01_40501',
+    max: [90, 361],
+    min: [27, 108],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -3484,6 +3637,12 @@ const weapon = {
   },
   '30240502': {
     Id: '30240502',
+    Name: {
+      en: 'Unwelcome Meeting',
+      ja: '妖魔刀・怨憎会苦',
+      zh: '妖魔刀·怨憎会苦',
+    },
+    abbr: 'um',
     element: 'Shadow',
     icon: [
       {
@@ -3499,16 +3658,17 @@ const weapon = {
     max: [55, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Unwelcome Meeting',
-      ja: '妖魔刀・怨憎会苦',
-      zh: '妖魔刀·怨憎会苦',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240503': {
     Id: '30240503',
+    Name: {
+      en: 'Gloomcutter',
+      ja: 'ヤミノカゲキリ',
+      zh: '暗黑斩影刀',
+    },
+    abbr: 'g',
     element: 'Shadow',
     icon: [
       {
@@ -3524,16 +3684,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Gloomcutter',
-      ja: 'ヤミノカゲキリ',
-      zh: '暗黑斩影刀',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240504': {
     Id: '30240504',
+    Name: {
+      en: 'Dreadthirst',
+      ja: '真打・地禍曜丸',
+      zh: '终极·地祸曜丸',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -3549,16 +3710,17 @@ const weapon = {
     max: [53, 229],
     might: 90,
     min: [15, 68],
-    name: {
-      en: 'Dreadthirst',
-      ja: '真打・地禍曜丸',
-      zh: '终极·地祸曜丸',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240505': {
     Id: '30240505',
+    Name: {
+      en: 'Twilight Ripper',
+      ja: '暗刀・宵闇',
+      zh: '暗刀·宵暗',
+    },
+    abbr: 'tr',
     element: 'Shadow',
     icon: [
       {
@@ -3575,16 +3737,17 @@ const weapon = {
     max: [62, 295],
     might: 140,
     min: [18, 88],
-    name: {
-      en: 'Twilight Ripper',
-      ja: '暗刀・宵闇',
-      zh: '暗刀·宵暗',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30240506': {
     Id: '30240506',
+    Name: {
+      en: 'Hollow Twilight',
+      ja: 'ホロウ・ザ・トワイライト',
+      zh: '虚无暮光',
+    },
+    abbr: 'ht',
     element: 'Shadow',
     icon: [
       {
@@ -3601,39 +3764,36 @@ const weapon = {
     max: [62, 295],
     might: 80,
     min: [18, 88],
-    name: {
-      en: 'Hollow Twilight',
-      ja: 'ホロウ・ザ・トワイライト',
-      zh: '虚无暮光',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249901': {
     Id: '30249901',
-    element: '0',
-    image: '302012_01_49901',
-    max: [48, 227],
-    min: [14, 68],
-    name: {
+    Name: {
       en: 'Guardian Seal',
       ja: '鎮守刀',
       zh: '镇守刀',
     },
+    abbr: 'gs',
+    element: '0',
+    image: '302012_01_49901',
+    max: [48, 227],
+    min: [14, 68],
     rarity: '4',
     weapon: 'Blade',
   },
   '30249902': {
     Id: '30249902',
-    element: '0',
-    image: '302031_01_49901',
-    max: [69, 278],
-    min: [20, 83],
-    name: {
+    Name: {
       en: 'Iron Blade',
       ja: 'クロガネブレード',
       zh: '黑钢之刃',
     },
+    abbr: 'ib',
+    element: '0',
+    image: '302031_01_49901',
+    max: [69, 278],
+    min: [20, 83],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -3643,15 +3803,16 @@ const weapon = {
   },
   '30249903': {
     Id: '30249903',
-    element: '0',
-    image: '302032_01_49901',
-    max: [62, 295],
-    min: [18, 88],
-    name: {
+    Name: {
       en: "Masamura's Pride",
       ja: '機構刀サマラム',
       zh: '机械刀正村',
     },
+    abbr: 'mp',
+    element: '0',
+    image: '302032_01_49901',
+    max: [62, 295],
+    min: [18, 88],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -3661,6 +3822,12 @@ const weapon = {
   },
   '30249904': {
     Id: '30249904',
+    Name: {
+      en: 'Bladewing',
+      ja: '斬刀・虚',
+      zh: '斩刀·虚',
+    },
+    abbr: 'b',
     element: '0',
     icon: [
       {
@@ -3672,16 +3839,17 @@ const weapon = {
     max: [48, 227],
     might: 40,
     min: [14, 68],
-    name: {
-      en: 'Bladewing',
-      ja: '斬刀・虚',
-      zh: '斩刀·虚',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249905': {
     Id: '30249905',
+    Name: {
+      en: 'Wildhaze',
+      ja: '荒刃・朧',
+      zh: '荒刃·胧',
+    },
+    abbr: 'w',
     element: '0',
     icon: [
       {
@@ -3694,16 +3862,17 @@ const weapon = {
     max: [53, 214],
     might: 40,
     min: [15, 64],
-    name: {
-      en: 'Wildhaze',
-      ja: '荒刃・朧',
-      zh: '荒刃·胧',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249906': {
     Id: '30249906',
+    Name: {
+      en: 'Flash of the Hollow',
+      ja: '虚一閃',
+      zh: '虚一闪',
+    },
+    abbr: 'foth',
     element: '0',
     icon: [
       {
@@ -3715,16 +3884,17 @@ const weapon = {
     max: [55, 210],
     might: 40,
     min: [16, 63],
-    name: {
-      en: 'Flash of the Hollow',
-      ja: '虚一閃',
-      zh: '虚一闪',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249907': {
     Id: '30249907',
+    Name: {
+      en: 'Mist Blade',
+      ja: '麗刀・霞',
+      zh: '丽刀·霞',
+    },
+    abbr: 'mb',
     element: '0',
     icon: [
       {
@@ -3737,16 +3907,17 @@ const weapon = {
     max: [48, 227],
     might: 40,
     min: [14, 68],
-    name: {
-      en: 'Mist Blade',
-      ja: '麗刀・霞',
-      zh: '丽刀·霞',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249908': {
     Id: '30249908',
+    Name: {
+      en: 'Dimension Edge',
+      ja: 'ディメンションブレード',
+      zh: '维度之刃',
+    },
+    abbr: 'de',
     element: '0',
     icon: [
       {
@@ -3759,16 +3930,17 @@ const weapon = {
     max: [48, 227],
     might: 40,
     min: [14, 68],
-    name: {
-      en: 'Dimension Edge',
-      ja: 'ディメンションブレード',
-      zh: '维度之刃',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249909': {
     Id: '30249909',
+    Name: {
+      en: 'Hollow Beginning',
+      ja: 'ホロウ・ザ・ビギニング',
+      zh: '虚无之始',
+    },
+    abbr: 'hb',
     element: '0',
     icon: [
       {
@@ -3781,16 +3953,17 @@ const weapon = {
     max: [48, 227],
     might: 40,
     min: [14, 68],
-    name: {
-      en: 'Hollow Beginning',
-      ja: 'ホロウ・ザ・ビギニング',
-      zh: '虚无之始',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30249910': {
     Id: '30249910',
+    Name: {
+      en: 'Direblade Mugatachi',
+      ja: 'マガツムガタチ',
+      zh: '灾祸无形',
+    },
+    abbr: 'dm',
     element: '0',
     icon: [
       {
@@ -3802,25 +3975,21 @@ const weapon = {
     max: [48, 227],
     might: 40,
     min: [14, 68],
-    name: {
-      en: 'Direblade Mugatachi',
-      ja: 'マガツムガタチ',
-      zh: '灾祸无形',
-    },
     rarity: '4',
     weapon: 'Blade',
   },
   '30250101': {
     Id: '30250101',
-    element: 'Flame',
-    image: '302013_01_50101',
-    max: [132, 572],
-    min: [39, 171],
-    name: {
+    Name: {
       en: "Heaven's Acuity",
       ja: '天之尾羽張',
       zh: '天之尾羽张',
     },
+    abbr: 'ha',
+    element: 'Flame',
+    image: '302013_01_50101',
+    max: [132, 572],
+    min: [39, 171],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -3830,6 +3999,12 @@ const weapon = {
   },
   '30250102': {
     Id: '30250102',
+    Name: {
+      en: 'Skyrender',
+      ja: '烈斬刀・天変劫火',
+      zh: '烈斩刀·天变劫火',
+    },
+    abbr: 's',
     element: 'Flame',
     icon: [
       {
@@ -3845,16 +4020,17 @@ const weapon = {
     max: [92, 353],
     might: 150,
     min: [27, 105],
-    name: {
-      en: 'Skyrender',
-      ja: '烈斬刀・天変劫火',
-      zh: '烈斩刀·天变劫火',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250103': {
     Id: '30250103',
+    Name: {
+      en: 'Ogreslayer Judgment',
+      ja: '焔刃・鬼切獄炎',
+      zh: '焰刃·鬼切狱炎',
+    },
+    abbr: 'oj',
     element: 'Flame',
     icon: [
       {
@@ -3871,16 +4047,17 @@ const weapon = {
     max: [81, 383],
     might: 100,
     min: [24, 114],
-    name: {
-      en: 'Ogreslayer Judgment',
-      ja: '焔刃・鬼切獄炎',
-      zh: '焰刃·鬼切狱炎',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250104': {
     Id: '30250104',
+    Name: {
+      en: 'Conflagration',
+      ja: '緋刀・豪炎',
+      zh: '绯刀·豪炎',
+    },
+    abbr: 'c',
     element: 'Flame',
     icon: [
       {
@@ -3892,11 +4069,6 @@ const weapon = {
     max: [172, 811],
     might: 100,
     min: [51, 243],
-    name: {
-      en: 'Conflagration',
-      ja: '緋刀・豪炎',
-      zh: '绯刀·豪炎',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -3906,15 +4078,16 @@ const weapon = {
   },
   '30250105': {
     Id: '30250105',
-    element: 'Flame',
-    image: '302113_01_50102',
-    max: [207, 1621],
-    min: [62, 486],
-    name: {
+    Name: {
       en: 'Blinding Conflagration',
       ja: '緋刀・豪炎赫火',
       zh: '绯刀·豪炎赫火',
     },
+    abbr: 'bc',
+    element: 'Flame',
+    image: '302113_01_50102',
+    max: [207, 1621],
+    min: [62, 486],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -3924,6 +4097,12 @@ const weapon = {
   },
   '30250106': {
     Id: '30250106',
+    Name: {
+      en: 'Great Direblade Kagachi',
+      ja: 'マガツナガカガチ',
+      zh: '灾祸长蛇',
+    },
+    abbr: 'gdk',
     element: 'Flame',
     icon: [
       {
@@ -3939,16 +4118,17 @@ const weapon = {
     max: [81, 383],
     might: 100,
     min: [24, 114],
-    name: {
-      en: 'Great Direblade Kagachi',
-      ja: 'マガツナガカガチ',
-      zh: '灾祸长蛇',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250107': {
     Id: '30250107',
+    Name: {
+      en: 'Liquefaction Blade',
+      ja: 'アーデントブレード',
+      zh: '炽热之刃',
+    },
+    abbr: 'lb',
     element: 'Flame',
     icon: [
       {
@@ -3965,25 +4145,21 @@ const weapon = {
     max: [81, 383],
     might: 110,
     min: [24, 114],
-    name: {
-      en: 'Liquefaction Blade',
-      ja: 'アーデントブレード',
-      zh: '炽热之刃',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250201': {
     Id: '30250201',
-    element: 'Water',
-    image: '302010_01_50201',
-    max: [143, 544],
-    min: [42, 163],
-    name: {
+    Name: {
       en: 'Maar Oasis',
       ja: 'マールオアシス',
       zh: '火口绿洲',
     },
+    abbr: 'mo',
+    element: 'Water',
+    image: '302010_01_50201',
+    max: [143, 544],
+    min: [42, 163],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -3993,6 +4169,12 @@ const weapon = {
   },
   '30250202': {
     Id: '30250202',
+    Name: {
+      en: 'Highwater Slicer',
+      ja: '浪刃・波濤一文字',
+      zh: '浪刃·波涛一文字',
+    },
+    abbr: 'hs',
     element: 'Water',
     icon: [
       {
@@ -4009,16 +4191,17 @@ const weapon = {
     max: [90, 361],
     might: 160,
     min: [27, 108],
-    name: {
-      en: 'Highwater Slicer',
-      ja: '浪刃・波濤一文字',
-      zh: '浪刃·波涛一文字',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250203': {
     Id: '30250203',
+    Name: {
+      en: 'Seaspout Blade',
+      ja: '豪流・水華一閃',
+      zh: '豪流·水华一闪',
+    },
+    abbr: 'sb',
     element: 'Water',
     icon: [
       {
@@ -4034,16 +4217,17 @@ const weapon = {
     max: [90, 361],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Seaspout Blade',
-      ja: '豪流・水華一閃',
-      zh: '豪流·水华一闪',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250204': {
     Id: '30250204',
+    Name: {
+      en: 'Torrent',
+      ja: '青刀・怒涛',
+      zh: '青刀·怒涛',
+    },
+    abbr: 't',
     element: 'Water',
     icon: [
       {
@@ -4055,11 +4239,6 @@ const weapon = {
     max: [190, 763],
     might: 100,
     min: [57, 228],
-    name: {
-      en: 'Torrent',
-      ja: '青刀・怒涛',
-      zh: '青刀·怒涛',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -4069,15 +4248,16 @@ const weapon = {
   },
   '30250205': {
     Id: '30250205',
-    element: 'Water',
-    image: '302111_01_50202',
-    max: [228, 1527],
-    min: [68, 458],
-    name: {
+    Name: {
       en: 'Ruinous Torrent',
       ja: '青刀・怒涛奔流',
       zh: '青刀·怒涛奔流',
     },
+    abbr: 'rt',
+    element: 'Water',
+    image: '302111_01_50202',
+    max: [228, 1527],
+    min: [68, 458],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -4087,6 +4267,12 @@ const weapon = {
   },
   '30250206': {
     Id: '30250206',
+    Name: {
+      en: 'Dark Direblade Mizuha',
+      ja: 'マガツクラミズハ',
+      zh: '灾祸暗罔象',
+    },
+    abbr: 'ddm',
     element: 'Water',
     icon: [
       {
@@ -4103,25 +4289,21 @@ const weapon = {
     max: [90, 361],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Dark Direblade Mizuha',
-      ja: 'マガツクラミズハ',
-      zh: '灾祸暗罔象',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250301': {
     Id: '30250301',
-    element: 'Wind',
-    image: '302023_01_50301',
-    max: [132, 572],
-    min: [39, 171],
-    name: {
+    Name: {
       en: 'Anemone',
       ja: '淡紫刀アネモネ',
       zh: '淡紫刀银莲',
     },
+    abbr: 'a',
+    element: 'Wind',
+    image: '302023_01_50301',
+    max: [132, 572],
+    min: [39, 171],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -4131,6 +4313,12 @@ const weapon = {
   },
   '30250302': {
     Id: '30250302',
+    Name: {
+      en: 'Heavenrend',
+      ja: '烈斬刀・颶風断空',
+      zh: '烈斩刀·飓风断空',
+    },
+    abbr: 'h',
     element: 'Wind',
     icon: [
       {
@@ -4146,16 +4334,17 @@ const weapon = {
     max: [85, 372],
     might: 80,
     min: [25, 111],
-    name: {
-      en: 'Heavenrend',
-      ja: '烈斬刀・颶風断空',
-      zh: '烈斩刀·飓风断空',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250303': {
     Id: '30250303',
+    Name: {
+      en: 'Stormsquall Crash',
+      ja: '大颯・風陣一閃',
+      zh: '大飒·风阵一闪',
+    },
+    abbr: 'sc',
     element: 'Wind',
     icon: [
       {
@@ -4171,16 +4360,17 @@ const weapon = {
     max: [85, 372],
     might: 160,
     min: [25, 111],
-    name: {
-      en: 'Stormsquall Crash',
-      ja: '大颯・風陣一閃',
-      zh: '大飒·风阵一闪',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250304': {
     Id: '30250304',
+    Name: {
+      en: 'Horizon',
+      ja: '碧刀・天涯',
+      zh: '碧刀·天涯',
+    },
+    abbr: 'h',
     element: 'Wind',
     icon: [
       {
@@ -4192,11 +4382,6 @@ const weapon = {
     max: [181, 787],
     might: 100,
     min: [54, 236],
-    name: {
-      en: 'Horizon',
-      ja: '碧刀・天涯',
-      zh: '碧刀·天涯',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -4206,15 +4391,16 @@ const weapon = {
   },
   '30250305': {
     Id: '30250305',
-    element: 'Wind',
-    image: '302110_01_50302',
-    max: [218, 1574],
-    min: [65, 472],
-    name: {
+    Name: {
       en: 'Endless Horizon',
       ja: '碧刀・天涯無窮',
       zh: '碧刀·天涯无穷',
     },
+    abbr: 'eh',
+    element: 'Wind',
+    image: '302110_01_50302',
+    max: [218, 1574],
+    min: [65, 472],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -4224,6 +4410,12 @@ const weapon = {
   },
   '30250306': {
     Id: '30250306',
+    Name: {
+      en: 'Swift Direblade Hayate',
+      ja: 'マガツハヤツムジ',
+      zh: '灾祸飓风',
+    },
+    abbr: 'sdh',
     element: 'Wind',
     icon: [
       {
@@ -4239,25 +4431,21 @@ const weapon = {
     max: [85, 372],
     might: 100,
     min: [25, 111],
-    name: {
-      en: 'Swift Direblade Hayate',
-      ja: 'マガツハヤツムジ',
-      zh: '灾祸飓风',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250401': {
     Id: '30250401',
-    element: 'Light',
-    image: '302025_01_50401',
-    max: [143, 544],
-    min: [42, 163],
-    name: {
+    Name: {
       en: 'Heavenwing',
       ja: '天の翼刀',
       zh: '天翼之刀',
     },
+    abbr: 'h',
+    element: 'Light',
+    image: '302025_01_50401',
+    max: [143, 544],
+    min: [42, 163],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -4267,6 +4455,12 @@ const weapon = {
   },
   '30250402': {
     Id: '30250402',
+    Name: {
+      en: 'Primal Thunder',
+      ja: '烈斬刀・轟雷創世',
+      zh: '烈斩刀·轰雷创世',
+    },
+    abbr: 'pt',
     element: 'Light',
     icon: [
       {
@@ -4282,16 +4476,17 @@ const weapon = {
     max: [92, 353],
     might: 100,
     min: [27, 105],
-    name: {
-      en: 'Primal Thunder',
-      ja: '烈斬刀・轟雷創世',
-      zh: '烈斩刀·轰雷创世',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250403': {
     Id: '30250403',
+    Name: {
+      en: 'Brightsheen',
+      ja: '煌刀・明白天',
+      zh: '煌刀·明白天',
+    },
+    abbr: 'b',
     element: 'Light',
     icon: [
       {
@@ -4309,16 +4504,17 @@ const weapon = {
     max: [81, 383],
     might: 100,
     min: [24, 114],
-    name: {
-      en: 'Brightsheen',
-      ja: '煌刀・明白天',
-      zh: '煌刀·明白天',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250404': {
     Id: '30250404',
+    Name: {
+      en: 'Flash',
+      ja: '輝刀・閃光',
+      zh: '辉刀·闪光',
+    },
+    abbr: 'f',
     element: 'Light',
     icon: [
       {
@@ -4330,11 +4526,6 @@ const weapon = {
     max: [196, 748],
     might: 100,
     min: [58, 224],
-    name: {
-      en: 'Flash',
-      ja: '輝刀・閃光',
-      zh: '辉刀·闪光',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4344,15 +4535,16 @@ const weapon = {
   },
   '30250405': {
     Id: '30250405',
-    element: 'Light',
-    image: '302112_01_50402',
-    max: [235, 1495],
-    min: [70, 448],
-    name: {
+    Name: {
       en: 'Brilliant Flash',
       ja: '輝刀・閃光玲瓏',
       zh: '辉刀·闪光玲珑',
     },
+    abbr: 'bf',
+    element: 'Light',
+    image: '302112_01_50402',
+    max: [235, 1495],
+    min: [70, 448],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4362,6 +4554,12 @@ const weapon = {
   },
   '30250406': {
     Id: '30250406',
+    Name: {
+      en: 'Radiant Blade',
+      ja: 'レディアントブレード',
+      zh: '光辉之刃',
+    },
+    abbr: 'rb',
     element: 'Light',
     icon: [
       {
@@ -4378,16 +4576,17 @@ const weapon = {
     max: [81, 383],
     might: 110,
     min: [24, 114],
-    name: {
-      en: 'Radiant Blade',
-      ja: 'レディアントブレード',
-      zh: '光辉之刃',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250407': {
     Id: '30250407',
+    Name: {
+      en: 'Hollow Lightning',
+      ja: 'ホロウ・ザ・ライトニング',
+      zh: '虚无之闪',
+    },
+    abbr: 'hl',
     element: 'Light',
     icon: [
       {
@@ -4404,25 +4603,21 @@ const weapon = {
     max: [81, 383],
     might: 160,
     min: [24, 114],
-    name: {
-      en: 'Hollow Lightning',
-      ja: 'ホロウ・ザ・ライトニング',
-      zh: '虚无之闪',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250501': {
     Id: '30250501',
-    element: 'Shadow',
-    image: '302028_01_50501',
-    max: [125, 590],
-    min: [37, 177],
-    name: {
+    Name: {
       en: 'Blackwing',
       ja: '黒翼の呪刀',
       zh: '黑翼咒刃',
     },
+    abbr: 'b',
+    element: 'Shadow',
+    image: '302028_01_50501',
+    max: [125, 590],
+    min: [37, 177],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4432,6 +4627,12 @@ const weapon = {
   },
   '30250502': {
     Id: '30250502',
+    Name: {
+      en: 'Nightsky Ripper',
+      ja: '冥刀・夜黒天',
+      zh: '冥刀·夜黑天',
+    },
+    abbr: 'nr',
     element: 'Shadow',
     icon: [
       {
@@ -4448,16 +4649,17 @@ const weapon = {
     max: [81, 383],
     might: 160,
     min: [24, 114],
-    name: {
-      en: 'Nightsky Ripper',
-      ja: '冥刀・夜黒天',
-      zh: '冥刀·夜黑天',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30250503': {
     Id: '30250503',
+    Name: {
+      en: 'Abyss',
+      ja: '闇刀・無明',
+      zh: '暗刀·无明',
+    },
+    abbr: 'a',
     element: 'Shadow',
     icon: [
       {
@@ -4469,11 +4671,6 @@ const weapon = {
     max: [172, 811],
     might: 100,
     min: [51, 243],
-    name: {
-      en: 'Abyss',
-      ja: '闇刀・無明',
-      zh: '暗刀·无明',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4483,15 +4680,16 @@ const weapon = {
   },
   '30250504': {
     Id: '30250504',
-    element: 'Shadow',
-    image: '302114_01_50502',
-    max: [207, 1621],
-    min: [62, 486],
-    name: {
+    Name: {
       en: 'True Abyss',
       ja: '闇刀・無明奈落',
       zh: '暗刀·无明地狱',
     },
+    abbr: 'ta',
+    element: 'Shadow',
+    image: '302114_01_50502',
+    max: [207, 1621],
+    min: [62, 486],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4501,6 +4699,12 @@ const weapon = {
   },
   '30250505': {
     Id: '30250505',
+    Name: {
+      en: 'Hollow Nightmare',
+      ja: 'ホロウ・ザ・ナイトメア',
+      zh: '虚无梦魇',
+    },
+    abbr: 'hn',
     element: 'Shadow',
     icon: [
       {
@@ -4517,39 +4721,36 @@ const weapon = {
     max: [81, 383],
     might: 100,
     min: [24, 114],
-    name: {
-      en: 'Hollow Nightmare',
-      ja: 'ホロウ・ザ・ナイトメア',
-      zh: '虚无梦魇',
-    },
     rarity: '5',
     weapon: 'Blade',
   },
   '30259901': {
     Id: '30259901',
-    element: '0',
-    image: '302014_01_59901',
-    max: [84, 395],
-    min: [25, 118],
-    name: {
+    Name: {
       en: "Dane's Favor",
       ja: '覇王号',
       zh: '霸王号',
     },
+    abbr: 'df',
+    element: '0',
+    image: '302014_01_59901',
+    max: [84, 395],
+    min: [25, 118],
     rarity: '5',
     weapon: 'Blade',
   },
   '30259902': {
     Id: '30259902',
-    element: '0',
-    image: '302033_01_59901',
-    max: [108, 469],
-    min: [32, 140],
-    name: {
+    Name: {
       en: 'Crimson Shade',
       ja: '夜叉影光',
       zh: '夜叉影光',
     },
+    abbr: 'cs',
+    element: '0',
+    image: '302033_01_59901',
+    max: [108, 469],
+    min: [32, 140],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_010',
@@ -4559,15 +4760,16 @@ const weapon = {
   },
   '30259903': {
     Id: '30259903',
-    element: '0',
-    image: '302034_01_59901',
-    max: [103, 483],
-    min: [30, 144],
-    name: {
+    Name: {
       en: 'Souleater',
       ja: '魂喰虎鉄',
       zh: '魂喰虎铁',
     },
+    abbr: 's',
+    element: '0',
+    image: '302034_01_59901',
+    max: [103, 483],
+    min: [30, 144],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -4577,15 +4779,16 @@ const weapon = {
   },
   '30259904': {
     Id: '30259904',
-    element: '0',
-    image: '302035_01_59901',
-    max: [117, 446],
-    min: [35, 133],
-    name: {
+    Name: {
       en: 'Villagelight',
       ja: 'ヴィレッジライト',
       zh: '村正',
     },
+    abbr: 'v',
+    element: '0',
+    image: '302035_01_59901',
+    max: [117, 446],
+    min: [35, 133],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -4595,15 +4798,16 @@ const weapon = {
   },
   '30259905': {
     Id: '30259905',
-    element: '0',
-    image: '302121_01_59901',
-    max: [88, 384],
-    min: [26, 115],
-    name: {
+    Name: {
       en: 'Mega Blade',
       ja: 'ロックブレード',
       zh: '洛克刀',
     },
+    abbr: 'mb',
+    element: '0',
+    image: '302121_01_59901',
+    max: [88, 384],
+    min: [26, 115],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -4613,15 +4817,16 @@ const weapon = {
   },
   '30330101': {
     Id: '30330101',
-    element: 'Flame',
-    image: '303027_01_30101',
-    max: [64, 205],
-    min: [19, 61],
-    name: {
+    Name: {
       en: 'Cruel Kukri',
       ja: 'クルーエルククリ',
       zh: '无情反曲刀',
     },
+    abbr: 'ck',
+    element: 'Flame',
+    image: '303027_01_30101',
+    max: [64, 205],
+    min: [19, 61],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_002',
@@ -4631,6 +4836,12 @@ const weapon = {
   },
   '30330102': {
     Id: '30330102',
+    Name: {
+      en: 'Flaming Fungi Dagger',
+      ja: 'アチアチキノコの短剣',
+      zh: '灼热蘑菇短剑',
+    },
+    abbr: 'ffd',
     element: 'Flame',
     icon: [
       {
@@ -4646,16 +4857,17 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Flaming Fungi Dagger',
-      ja: 'アチアチキノコの短剣',
-      zh: '灼热蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330103': {
     Id: '30330103',
+    Name: {
+      en: 'Flaming Big Boy',
+      ja: 'フレイムへヴィ',
+      zh: '火焰重刃',
+    },
+    abbr: 'fbb',
     element: 'Flame',
     icon: [
       {
@@ -4671,16 +4883,17 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Flaming Big Boy',
-      ja: 'フレイムへヴィ',
-      zh: '火焰重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330104': {
     Id: '30330104',
+    Name: {
+      en: 'Ruby Dagger',
+      ja: '炎石のナイフ',
+      zh: '炎石之刃',
+    },
+    abbr: 'rd',
     element: 'Flame',
     icon: [
       {
@@ -4696,25 +4909,21 @@ const weapon = {
     max: [40, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Ruby Dagger',
-      ja: '炎石のナイフ',
-      zh: '炎石之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330201': {
     Id: '30330201',
-    element: 'Water',
-    image: '303021_01_30201',
-    max: [61, 212],
-    min: [18, 63],
-    name: {
+    Name: {
       en: 'Water Dagger',
       ja: 'ウォーターダガー',
       zh: '水之短剑',
     },
+    abbr: 'wd',
+    element: 'Water',
+    image: '303021_01_30201',
+    max: [61, 212],
+    min: [18, 63],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -4724,6 +4933,12 @@ const weapon = {
   },
   '30330202': {
     Id: '30330202',
+    Name: {
+      en: 'Chilly Crimini Dagger',
+      ja: 'ヒエヒエキノコの短剣',
+      zh: '冰冷蘑菇短剑',
+    },
+    abbr: 'ccd',
     element: 'Water',
     icon: [
       {
@@ -4739,16 +4954,17 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Chilly Crimini Dagger',
-      ja: 'ヒエヒエキノコの短剣',
-      zh: '冰冷蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330203': {
     Id: '30330203',
+    Name: {
+      en: 'Splashing Big Boy',
+      ja: 'アクアヘヴィ',
+      zh: '水之重刃',
+    },
+    abbr: 'sbb',
     element: 'Water',
     icon: [
       {
@@ -4764,16 +4980,17 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Splashing Big Boy',
-      ja: 'アクアヘヴィ',
-      zh: '水之重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330204': {
     Id: '30330204',
+    Name: {
+      en: 'Sapphire Dagger',
+      ja: '海石のナイフ',
+      zh: '海石之刃',
+    },
+    abbr: 'sd',
     element: 'Water',
     icon: [
       {
@@ -4789,25 +5006,21 @@ const weapon = {
     max: [36, 137],
     might: 70,
     min: [10, 41],
-    name: {
-      en: 'Sapphire Dagger',
-      ja: '海石のナイフ',
-      zh: '海石之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330301': {
     Id: '30330301',
-    element: 'Wind',
-    image: '303007_01_30301',
-    max: [61, 212],
-    min: [18, 63],
-    name: {
+    Name: {
       en: 'Stormspawn',
       ja: '嵐の落とし子',
       zh: '风暴之子',
     },
+    abbr: 's',
+    element: 'Wind',
+    image: '303007_01_30301',
+    max: [61, 212],
+    min: [18, 63],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -4817,6 +5030,12 @@ const weapon = {
   },
   '30330302': {
     Id: '30330302',
+    Name: {
+      en: 'Blustery Button Dagger',
+      ja: 'ビュウビュウキノコの短剣',
+      zh: '呼啸蘑菇短剑',
+    },
+    abbr: 'bbd',
     element: 'Wind',
     icon: [
       {
@@ -4832,16 +5051,17 @@ const weapon = {
     max: [36, 137],
     might: 70,
     min: [10, 41],
-    name: {
-      en: 'Blustery Button Dagger',
-      ja: 'ビュウビュウキノコの短剣',
-      zh: '呼啸蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330303': {
     Id: '30330303',
+    Name: {
+      en: 'Breezy Big Boy',
+      ja: 'ブラストヘヴィ',
+      zh: '烈风重刃',
+    },
+    abbr: 'bbb',
     element: 'Wind',
     icon: [
       {
@@ -4857,16 +5077,17 @@ const weapon = {
     max: [40, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Breezy Big Boy',
-      ja: 'ブラストヘヴィ',
-      zh: '烈风重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330304': {
     Id: '30330304',
+    Name: {
+      en: 'Emerald Dagger',
+      ja: '風石のナイフ',
+      zh: '风石之刃',
+    },
+    abbr: 'ed',
     element: 'Wind',
     icon: [
       {
@@ -4882,25 +5103,21 @@ const weapon = {
     max: [40, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Emerald Dagger',
-      ja: '風石のナイフ',
-      zh: '风石之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330401': {
     Id: '30330401',
-    element: 'Light',
-    image: '303008_01_30401',
-    max: [64, 205],
-    min: [19, 61],
-    name: {
+    Name: {
       en: 'Conscience',
       ja: '心ある懐剣',
       zh: '含心怀刀',
     },
+    abbr: 'c',
+    element: 'Light',
+    image: '303008_01_30401',
+    max: [64, 205],
+    min: [19, 61],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_002',
@@ -4910,6 +5127,12 @@ const weapon = {
   },
   '30330402': {
     Id: '30330402',
+    Name: {
+      en: 'Dazzling Big Boy',
+      ja: 'スターライトヘヴィ',
+      zh: '星光重刃',
+    },
+    abbr: 'dbb',
     element: 'Light',
     icon: [
       {
@@ -4925,16 +5148,17 @@ const weapon = {
     max: [40, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Dazzling Big Boy',
-      ja: 'スターライトヘヴィ',
-      zh: '星光重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330403': {
     Id: '30330403',
+    Name: {
+      en: 'Radiant Bolete Dagger',
+      ja: 'キラキラキノコの短剣',
+      zh: '耀眼蘑菇短剑',
+    },
+    abbr: 'rbd',
     element: 'Light',
     icon: [
       {
@@ -4950,16 +5174,17 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Radiant Bolete Dagger',
-      ja: 'キラキラキノコの短剣',
-      zh: '耀眼蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330404': {
     Id: '30330404',
+    Name: {
+      en: 'Opal Dagger',
+      ja: '輝石のナイフ',
+      zh: '辉石之刃',
+    },
+    abbr: 'od',
     element: 'Light',
     icon: [
       {
@@ -4975,25 +5200,21 @@ const weapon = {
     max: [41, 127],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Opal Dagger',
-      ja: '輝石のナイフ',
-      zh: '辉石之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330501': {
     Id: '30330501',
-    element: 'Shadow',
-    image: '303009_01_30501',
-    max: [61, 212],
-    min: [18, 63],
-    name: {
+    Name: {
       en: "Assassin's Knife",
       ja: 'アサシンナイフ',
       zh: '暗杀之刃',
     },
+    abbr: 'ak',
+    element: 'Shadow',
+    image: '303009_01_30501',
+    max: [61, 212],
+    min: [18, 63],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -5003,6 +5224,12 @@ const weapon = {
   },
   '30330502': {
     Id: '30330502',
+    Name: {
+      en: 'Jet Dagger',
+      ja: '昏石のナイフ',
+      zh: '昏玉之刃',
+    },
+    abbr: 'jd',
     element: 'Shadow',
     icon: [
       {
@@ -5018,16 +5245,17 @@ const weapon = {
     max: [36, 137],
     might: 70,
     min: [10, 41],
-    name: {
-      en: 'Jet Dagger',
-      ja: '昏石のナイフ',
-      zh: '昏玉之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330503': {
     Id: '30330503',
+    Name: {
+      en: 'Murky Big Boy',
+      ja: 'ノクターンへヴィ',
+      zh: '夜想曲重刃',
+    },
+    abbr: 'mbb',
     element: 'Shadow',
     icon: [
       {
@@ -5043,16 +5271,17 @@ const weapon = {
     max: [41, 127],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Murky Big Boy',
-      ja: 'ノクターンへヴィ',
-      zh: '夜想曲重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30330504': {
     Id: '30330504',
+    Name: {
+      en: 'Wicked Webcap Dagger',
+      ja: 'イタイタキノコの短剣',
+      zh: '疼痛蘑菇短剑',
+    },
+    abbr: 'wwd',
     element: 'Shadow',
     icon: [
       {
@@ -5068,39 +5297,36 @@ const weapon = {
     max: [40, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Wicked Webcap Dagger',
-      ja: 'イタイタキノコの短剣',
-      zh: '疼痛蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30339901': {
     Id: '30339901',
-    element: '0',
-    image: '303026_01_39901',
-    max: [24, 84],
-    min: [7, 25],
-    name: {
+    Name: {
       en: 'Bejeweled Dagger',
       ja: '宝飾の短剣',
       zh: '宝饰短剑',
     },
+    abbr: 'bd',
+    element: '0',
+    image: '303026_01_39901',
+    max: [24, 84],
+    min: [7, 25],
     rarity: '3',
     weapon: 'Dagger',
   },
   '30339902': {
     Id: '30339902',
-    element: '0',
-    image: '303032_01_39901',
-    max: [38, 133],
-    min: [11, 39],
-    name: {
+    Name: {
       en: 'Gear Knife',
       ja: 'ギアーズナイフ',
       zh: '齿轮短剑',
     },
+    abbr: 'gk',
+    element: '0',
+    image: '303032_01_39901',
+    max: [38, 133],
+    min: [11, 39],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_002',
@@ -5110,15 +5336,16 @@ const weapon = {
   },
   '30339903': {
     Id: '30339903',
-    element: '0',
-    image: '303003_01_39901',
-    max: [40, 129],
-    min: [12, 38],
-    name: {
+    Name: {
       en: "Lover's Ally",
       ja: 'ラブナイフ',
       zh: '爱之匕首',
     },
+    abbr: 'la',
+    element: '0',
+    image: '303003_01_39901',
+    max: [40, 129],
+    min: [12, 38],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_003',
@@ -5128,6 +5355,12 @@ const weapon = {
   },
   '30339904': {
     Id: '30339904',
+    Name: {
+      en: 'Mushroom Dagger',
+      ja: 'キノコの短剣',
+      zh: '蘑菇短剑',
+    },
+    abbr: 'md',
     element: '0',
     icon: [
       {
@@ -5139,16 +5372,17 @@ const weapon = {
     max: [24, 84],
     might: 20,
     min: [7, 25],
-    name: {
-      en: 'Mushroom Dagger',
-      ja: 'キノコの短剣',
-      zh: '蘑菇短剑',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30339905': {
     Id: '30339905',
+    Name: {
+      en: 'Big Boy',
+      ja: 'ベリーへヴィ',
+      zh: '重刃',
+    },
+    abbr: 'bb',
     element: '0',
     icon: [
       {
@@ -5160,16 +5394,17 @@ const weapon = {
     max: [24, 84],
     might: 20,
     min: [7, 25],
-    name: {
-      en: 'Big Boy',
-      ja: 'ベリーへヴィ',
-      zh: '重刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30339906': {
     Id: '30339906',
+    Name: {
+      en: 'Gemstone Dagger',
+      ja: '原石のナイフ',
+      zh: '原石之刃',
+    },
+    abbr: 'gd',
     element: '0',
     icon: [
       {
@@ -5181,25 +5416,21 @@ const weapon = {
     max: [24, 84],
     might: 20,
     min: [7, 25],
-    name: {
-      en: 'Gemstone Dagger',
-      ja: '原石のナイフ',
-      zh: '原石之刃',
-    },
     rarity: '3',
     weapon: 'Dagger',
   },
   '30340101': {
     Id: '30340101',
-    element: 'Flame',
-    image: '303015_01_40101',
-    max: [93, 354],
-    min: [27, 106],
-    name: {
+    Name: {
       en: 'Scarlet Talon',
       ja: '紅蓮の短剣',
       zh: '红莲短剑',
     },
+    abbr: 'st',
+    element: 'Flame',
+    image: '303015_01_40101',
+    max: [93, 354],
+    min: [27, 106],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -5209,6 +5440,12 @@ const weapon = {
   },
   '30340102': {
     Id: '30340102',
+    Name: {
+      en: 'Sizzling Enoki Dagger',
+      ja: 'ゲキアツキノコの短剣',
+      zh: '炽热蘑菇短剑',
+    },
+    abbr: 'sed',
     element: 'Flame',
     icon: [
       {
@@ -5224,16 +5461,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Sizzling Enoki Dagger',
-      ja: 'ゲキアツキノコの短剣',
-      zh: '炽热蘑菇短剑',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340103': {
     Id: '30340103',
+    Name: {
+      en: 'Big Boy of Justice',
+      ja: 'ジャスティスへヴィ',
+      zh: '正义重刃',
+    },
+    abbr: 'bboj',
     element: 'Flame',
     icon: [
       {
@@ -5249,16 +5487,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Big Boy of Justice',
-      ja: 'ジャスティスへヴィ',
-      zh: '正义重刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340104': {
     Id: '30340104',
+    Name: {
+      en: 'Scarlet Pain',
+      ja: 'スカーレットペイン',
+      zh: '猩红之痛',
+    },
+    abbr: 'sp',
     element: 'Flame',
     icon: [
       {
@@ -5274,16 +5513,17 @@ const weapon = {
     max: [72, 273],
     might: 140,
     min: [21, 81],
-    name: {
-      en: 'Scarlet Pain',
-      ja: 'スカーレットペイン',
-      zh: '猩红之痛',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340105': {
     Id: '30340105',
+    Name: {
+      en: 'Flame Sting',
+      ja: 'バーストスティンガー',
+      zh: '爆裂之刺',
+    },
+    abbr: 'fs',
     element: 'Flame',
     icon: [
       {
@@ -5300,16 +5540,17 @@ const weapon = {
     max: [75, 265],
     might: 80,
     min: [22, 79],
-    name: {
-      en: 'Flame Sting',
-      ja: 'バーストスティンガー',
-      zh: '爆裂之刺',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340106': {
     Id: '30340106',
+    Name: {
+      en: 'Conflagrant Ruby Dagger',
+      ja: '緋炎石のナイフ',
+      zh: '绯炎石之刃',
+    },
+    abbr: 'crd',
     element: 'Flame',
     icon: [
       {
@@ -5325,16 +5566,17 @@ const weapon = {
     max: [64, 205],
     might: 90,
     min: [19, 61],
-    name: {
-      en: 'Conflagrant Ruby Dagger',
-      ja: '緋炎石のナイフ',
-      zh: '绯炎石之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340107': {
     Id: '30340107',
+    Name: {
+      en: 'Flamesin',
+      ja: '原罪抱く狂牙',
+      zh: '原罪狂牙',
+    },
+    abbr: 'f',
     element: 'Flame',
     icon: [
       {
@@ -5350,25 +5592,21 @@ const weapon = {
     max: [79, 257],
     might: 80,
     min: [23, 77],
-    name: {
-      en: 'Flamesin',
-      ja: '原罪抱く狂牙',
-      zh: '原罪狂牙',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340201': {
     Id: '30340201',
-    element: 'Water',
-    image: '303018_01_40201',
-    max: [93, 354],
-    min: [27, 106],
-    name: {
+    Name: {
       en: 'Ultramarine Knife',
       ja: '蒼海の短剣',
       zh: '沧海短剑',
     },
+    abbr: 'uk',
+    element: 'Water',
+    image: '303018_01_40201',
+    max: [93, 354],
+    min: [27, 106],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -5378,6 +5616,12 @@ const weapon = {
   },
   '30340202': {
     Id: '30340202',
+    Name: {
+      en: 'Chilly Chanterelle Dagger',
+      ja: 'メチャヒエキノコの短剣',
+      zh: '冰冻蘑菇短剑',
+    },
+    abbr: 'ccd',
     element: 'Water',
     icon: [
       {
@@ -5393,16 +5637,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Chilly Chanterelle Dagger',
-      ja: 'メチャヒエキノコの短剣',
-      zh: '冰冻蘑菇短剑',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340203': {
     Id: '30340203',
+    Name: {
+      en: 'Bloodlust',
+      ja: '血潮啜る狂牙',
+      zh: '嗜血狂牙',
+    },
+    abbr: 'b',
     element: 'Water',
     icon: [
       {
@@ -5419,16 +5664,17 @@ const weapon = {
     max: [72, 273],
     might: 80,
     min: [21, 81],
-    name: {
-      en: 'Bloodlust',
-      ja: '血潮啜る狂牙',
-      zh: '嗜血狂牙',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340204': {
     Id: '30340204',
+    Name: {
+      en: 'Big Boy of Prudence',
+      ja: 'スプラッシュヘヴィ',
+      zh: '水花重刃',
+    },
+    abbr: 'bbop',
     element: 'Water',
     icon: [
       {
@@ -5444,16 +5690,17 @@ const weapon = {
     max: [61, 212],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Big Boy of Prudence',
-      ja: 'スプラッシュヘヴィ',
-      zh: '水花重刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340205': {
     Id: '30340205',
+    Name: {
+      en: 'Frost Sting',
+      ja: 'フロストスティンガー',
+      zh: '冰霜之刺',
+    },
+    abbr: 'fs',
     element: 'Water',
     icon: [
       {
@@ -5470,16 +5717,17 @@ const weapon = {
     max: [75, 265],
     might: 140,
     min: [22, 79],
-    name: {
-      en: 'Frost Sting',
-      ja: 'フロストスティンガー',
-      zh: '冰霜之刺',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340206': {
     Id: '30340206',
+    Name: {
+      en: 'Aqueous Sapphire Dagger',
+      ja: '蒼海石のナイフ',
+      zh: '苍海石之刃',
+    },
+    abbr: 'asd',
     element: 'Water',
     icon: [
       {
@@ -5495,16 +5743,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Aqueous Sapphire Dagger',
-      ja: '蒼海石のナイフ',
-      zh: '苍海石之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340207': {
     Id: '30340207',
+    Name: {
+      en: 'The Swell',
+      ja: 'アクア・ザ・スライサー',
+      zh: '水之利刃',
+    },
+    abbr: 'ts',
     element: 'Water',
     icon: [
       {
@@ -5520,25 +5769,21 @@ const weapon = {
     max: [75, 265],
     might: 80,
     min: [22, 79],
-    name: {
-      en: 'The Swell',
-      ja: 'アクア・ザ・スライサー',
-      zh: '水之利刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340301': {
     Id: '30340301',
-    element: 'Wind',
-    image: '303029_01_40301',
-    max: [106, 327],
-    min: [31, 98],
-    name: {
+    Name: {
       en: 'Queensflight',
       ja: '古妃の短剣',
       zh: '王妃短剑',
     },
+    abbr: 'q',
+    element: 'Wind',
+    image: '303029_01_40301',
+    max: [106, 327],
+    min: [31, 98],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -5548,6 +5793,12 @@ const weapon = {
   },
   '30340302': {
     Id: '30340302',
+    Name: {
+      en: 'Stormy Shiitake Dagger',
+      ja: 'ボウフウキノコの短剣',
+      zh: '暴风蘑菇短剑',
+    },
+    abbr: 'ssd',
     element: 'Wind',
     icon: [
       {
@@ -5563,16 +5814,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Stormy Shiitake Dagger',
-      ja: 'ボウフウキノコの短剣',
-      zh: '暴风蘑菇短剑',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340303': {
     Id: '30340303',
+    Name: {
+      en: 'Big Boy of Fortitude',
+      ja: 'エアロブリーズヘヴィ',
+      zh: '穹风重刃',
+    },
+    abbr: 'bbof',
     element: 'Wind',
     icon: [
       {
@@ -5588,16 +5840,17 @@ const weapon = {
     max: [64, 205],
     might: 90,
     min: [19, 61],
-    name: {
-      en: 'Big Boy of Fortitude',
-      ja: 'エアロブリーズヘヴィ',
-      zh: '穹风重刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340304': {
     Id: '30340304',
+    Name: {
+      en: 'Aero Agony',
+      ja: 'エアリアルペイン',
+      zh: '真空之痛',
+    },
+    abbr: 'aa',
     element: 'Wind',
     icon: [
       {
@@ -5613,16 +5866,17 @@ const weapon = {
     max: [72, 273],
     might: 60,
     min: [21, 81],
-    name: {
-      en: 'Aero Agony',
-      ja: 'エアリアルペイン',
-      zh: '真空之痛',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340305': {
     Id: '30340305',
+    Name: {
+      en: 'Zephyric Emerald Dagger',
+      ja: '翠風石のナイフ',
+      zh: '翠风石之刃',
+    },
+    abbr: 'zed',
     element: 'Wind',
     icon: [
       {
@@ -5638,16 +5892,17 @@ const weapon = {
     max: [64, 205],
     might: 90,
     min: [19, 61],
-    name: {
-      en: 'Zephyric Emerald Dagger',
-      ja: '翠風石のナイフ',
-      zh: '翠风石之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340306': {
     Id: '30340306',
+    Name: {
+      en: 'The Gust',
+      ja: 'ブロー・ザ・ハッシャー',
+      zh: '风斩之刃·屠脍者',
+    },
+    abbr: 'tg',
     element: 'Wind',
     icon: [
       {
@@ -5663,16 +5918,17 @@ const weapon = {
     max: [72, 273],
     might: 140,
     min: [21, 81],
-    name: {
-      en: 'The Gust',
-      ja: 'ブロー・ザ・ハッシャー',
-      zh: '风斩之刃·屠脍者',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340307': {
     Id: '30340307',
+    Name: {
+      en: 'Whisperfang',
+      ja: '呪詛囁く狂牙',
+      zh: '诅咒狂牙',
+    },
+    abbr: 'w',
     element: 'Wind',
     icon: [
       {
@@ -5688,25 +5944,21 @@ const weapon = {
     max: [81, 252],
     might: 80,
     min: [24, 75],
-    name: {
-      en: 'Whisperfang',
-      ja: '呪詛囁く狂牙',
-      zh: '诅咒狂牙',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340401': {
     Id: '30340401',
-    element: 'Light',
-    image: '303017_01_40401',
-    max: [93, 354],
-    min: [27, 106],
-    name: {
+    Name: {
       en: 'Nightbreaker',
       ja: 'ナイトメアブレイカー',
       zh: '噩梦短剑',
     },
+    abbr: 'n',
+    element: 'Light',
+    image: '303017_01_40401',
+    max: [93, 354],
+    min: [27, 106],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -5716,6 +5968,12 @@ const weapon = {
   },
   '30340402': {
     Id: '30340402',
+    Name: {
+      en: 'Big Boy of Temperance',
+      ja: 'メテオシャワーヘヴィ',
+      zh: '流星重刃',
+    },
+    abbr: 'bbot',
     element: 'Light',
     icon: [
       {
@@ -5731,16 +5989,17 @@ const weapon = {
     max: [64, 205],
     might: 90,
     min: [19, 61],
-    name: {
-      en: 'Big Boy of Temperance',
-      ja: 'メテオシャワーヘヴィ',
-      zh: '流星重刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340404': {
     Id: '30340404',
+    Name: {
+      en: 'Luminous Morel Dagger',
+      ja: 'ギンギラキノコの短剣',
+      zh: '闪耀蘑菇短剑',
+    },
+    abbr: 'lmd',
     element: 'Light',
     icon: [
       {
@@ -5756,16 +6015,17 @@ const weapon = {
     max: [61, 212],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Luminous Morel Dagger',
-      ja: 'ギンギラキノコの短剣',
-      zh: '闪耀蘑菇短剑',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340405': {
     Id: '30340405',
+    Name: {
+      en: 'Lucent Opal Dagger',
+      ja: '天輝石のナイフ',
+      zh: '天辉石之刃',
+    },
+    abbr: 'lod',
     element: 'Light',
     icon: [
       {
@@ -5781,16 +6041,17 @@ const weapon = {
     max: [65, 201],
     might: 90,
     min: [19, 60],
-    name: {
-      en: 'Lucent Opal Dagger',
-      ja: '天輝石のナイフ',
-      zh: '天辉石之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340406': {
     Id: '30340406',
+    Name: {
+      en: 'Faith Seeker',
+      ja: 'デルタフェザー',
+      zh: '三角轻羽刃',
+    },
+    abbr: 'fs',
     element: 'Light',
     icon: [
       {
@@ -5808,16 +6069,17 @@ const weapon = {
     max: [75, 265],
     might: 80,
     min: [22, 79],
-    name: {
-      en: 'Faith Seeker',
-      ja: 'デルタフェザー',
-      zh: '三角轻羽刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340407': {
     Id: '30340407',
+    Name: {
+      en: 'Restful Claw',
+      ja: 'レストフルクロウ',
+      zh: '安详之爪',
+    },
+    abbr: 'rc',
     element: 'Light',
     icon: [
       {
@@ -5834,25 +6096,21 @@ const weapon = {
     max: [81, 252],
     might: 140,
     min: [24, 75],
-    name: {
-      en: 'Restful Claw',
-      ja: 'レストフルクロウ',
-      zh: '安详之爪',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340502': {
     Id: '30340502',
-    element: 'Shadow',
-    image: '303011_01_40501',
-    max: [106, 327],
-    min: [31, 98],
-    name: {
+    Name: {
       en: 'Dark Sacrifice',
       ja: 'カースサクリファイス',
       zh: '诅咒献祭',
     },
+    abbr: 'ds',
+    element: 'Shadow',
+    image: '303011_01_40501',
+    max: [106, 327],
+    min: [31, 98],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -5862,6 +6120,12 @@ const weapon = {
   },
   '30340504': {
     Id: '30340504',
+    Name: {
+      en: 'Tenebrous Jet Dagger',
+      ja: '黒昏石のナイフ',
+      zh: '黒昏玉之刃',
+    },
+    abbr: 'tjd',
     element: 'Shadow',
     icon: [
       {
@@ -5877,16 +6141,17 @@ const weapon = {
     max: [58, 218],
     might: 90,
     min: [17, 65],
-    name: {
-      en: 'Tenebrous Jet Dagger',
-      ja: '黒昏石のナイフ',
-      zh: '黒昏玉之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340505': {
     Id: '30340505',
+    Name: {
+      en: 'Big Boy of Requiem',
+      ja: 'レクイエムへヴィ',
+      zh: '镇魂曲重刃',
+    },
+    abbr: 'bbor',
     element: 'Shadow',
     icon: [
       {
@@ -5902,16 +6167,17 @@ const weapon = {
     max: [65, 201],
     might: 90,
     min: [19, 60],
-    name: {
-      en: 'Big Boy of Requiem',
-      ja: 'レクイエムへヴィ',
-      zh: '镇魂曲重刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340506': {
     Id: '30340506',
+    Name: {
+      en: 'Gloom Seeker',
+      ja: 'デルタグルーム',
+      zh: '三角阴郁刃',
+    },
+    abbr: 'gs',
     element: 'Shadow',
     icon: [
       {
@@ -5928,16 +6194,17 @@ const weapon = {
     max: [79, 257],
     might: 140,
     min: [23, 77],
-    name: {
-      en: 'Gloom Seeker',
-      ja: 'デルタグルーム',
-      zh: '三角阴郁刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340507': {
     Id: '30340507',
+    Name: {
+      en: 'Sinister Skullcap Dagger',
+      ja: 'ズキズキキノコの短剣',
+      zh: '剧痛蘑菇短剑',
+    },
+    abbr: 'ssd',
     element: 'Shadow',
     icon: [
       {
@@ -5953,16 +6220,17 @@ const weapon = {
     max: [64, 205],
     might: 90,
     min: [19, 61],
-    name: {
-      en: 'Sinister Skullcap Dagger',
-      ja: 'ズキズキキノコの短剣',
-      zh: '剧痛蘑菇短剑',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30340508': {
     Id: '30340508',
+    Name: {
+      en: 'Frightening Claw',
+      ja: 'フィアークロウ',
+      zh: '恐怖利爪',
+    },
+    abbr: 'fc',
     element: 'Shadow',
     icon: [
       {
@@ -5979,39 +6247,36 @@ const weapon = {
     max: [79, 257],
     might: 80,
     min: [23, 77],
-    name: {
-      en: 'Frightening Claw',
-      ja: 'フィアークロウ',
-      zh: '恐怖利爪',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349901': {
     Id: '30349901',
-    element: '0',
-    image: '303033_01_49901',
-    max: [58, 204],
-    min: [17, 61],
-    name: {
+    Name: {
       en: 'Hardbreaker',
       ja: 'ハードブレイカー',
       zh: '破坏短剑',
     },
+    abbr: 'h',
+    element: '0',
+    image: '303033_01_49901',
+    max: [58, 204],
+    min: [17, 61],
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349902': {
     Id: '30349902',
-    element: '0',
-    image: '303012_01_49901',
-    max: [81, 252],
-    min: [24, 75],
-    name: {
+    Name: {
       en: 'Wyrmfang',
       ja: '竜牙の短剣',
       zh: '龙牙短剑',
     },
+    abbr: 'w',
+    element: '0',
+    image: '303012_01_49901',
+    max: [81, 252],
+    min: [24, 75],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -6021,15 +6286,16 @@ const weapon = {
   },
   '30349903': {
     Id: '30349903',
-    element: '0',
-    image: '303034_01_49901',
-    max: [72, 273],
-    min: [21, 81],
-    name: {
+    Name: {
       en: "The Dreamer's Greatsword",
       ja: '夢想の大剣',
       zh: '梦想大剑',
     },
+    abbr: 'tdg',
+    element: '0',
+    image: '303034_01_49901',
+    max: [72, 273],
+    min: [21, 81],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_004',
@@ -6039,6 +6305,12 @@ const weapon = {
   },
   '30349904': {
     Id: '30349904',
+    Name: {
+      en: 'Slaughterlust',
+      ja: '仇屠る狂牙',
+      zh: '屠仇狂牙',
+    },
+    abbr: 's',
     element: '0',
     icon: [
       {
@@ -6050,16 +6322,17 @@ const weapon = {
     max: [55, 210],
     might: 40,
     min: [16, 63],
-    name: {
-      en: 'Slaughterlust',
-      ja: '仇屠る狂牙',
-      zh: '屠仇狂牙',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349905': {
     Id: '30349905',
+    Name: {
+      en: 'Hellish Sting',
+      ja: 'ヘルスティンガー',
+      zh: '地狱之刺',
+    },
+    abbr: 'hs',
     element: '0',
     icon: [
       {
@@ -6072,16 +6345,17 @@ const weapon = {
     max: [58, 204],
     might: 40,
     min: [17, 61],
-    name: {
-      en: 'Hellish Sting',
-      ja: 'ヘルスティンガー',
-      zh: '地狱之刺',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349906': {
     Id: '30349906',
+    Name: {
+      en: 'Impact Thrust',
+      ja: 'スラストペイン',
+      zh: '迅捷之痛',
+    },
+    abbr: 'it',
     element: '0',
     icon: [
       {
@@ -6093,16 +6367,17 @@ const weapon = {
     max: [55, 210],
     might: 40,
     min: [16, 63],
-    name: {
-      en: 'Impact Thrust',
-      ja: 'スラストペイン',
-      zh: '迅捷之痛',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349907': {
     Id: '30349907',
+    Name: {
+      en: 'The Breeze',
+      ja: 'ネイル・ザ・リーパー',
+      zh: '利爪之刃',
+    },
+    abbr: 'tb',
     element: '0',
     icon: [
       {
@@ -6114,16 +6389,17 @@ const weapon = {
     max: [61, 198],
     might: 40,
     min: [18, 59],
-    name: {
-      en: 'The Breeze',
-      ja: 'ネイル・ザ・リーパー',
-      zh: '利爪之刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349908': {
     Id: '30349908',
+    Name: {
+      en: 'Rapture Seeker',
+      ja: 'デルタラプチャー',
+      zh: '三角欢悦刃',
+    },
+    abbr: 'rs',
     element: '0',
     icon: [
       {
@@ -6136,16 +6412,17 @@ const weapon = {
     max: [61, 198],
     might: 40,
     min: [18, 59],
-    name: {
-      en: 'Rapture Seeker',
-      ja: 'デルタラプチャー',
-      zh: '三角欢悦刃',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30349909': {
     Id: '30349909',
+    Name: {
+      en: 'Spirit Claw',
+      ja: 'スピリットクロウ',
+      zh: '灵魂之爪',
+    },
+    abbr: 'sc',
     element: '0',
     icon: [
       {
@@ -6158,25 +6435,21 @@ const weapon = {
     max: [63, 194],
     might: 40,
     min: [18, 58],
-    name: {
-      en: 'Spirit Claw',
-      ja: 'スピリットクロウ',
-      zh: '灵魂之爪',
-    },
     rarity: '4',
     weapon: 'Dagger',
   },
   '30350102': {
     Id: '30350102',
-    element: 'Flame',
-    image: '303013_01_50101',
-    max: [144, 545],
-    min: [43, 163],
-    name: {
+    Name: {
       en: 'Aeternal Flame',
       ja: '久遠の焔',
       zh: '久远之焰',
     },
+    abbr: 'af',
+    element: 'Flame',
+    image: '303013_01_50101',
+    max: [144, 545],
+    min: [43, 163],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6186,6 +6459,12 @@ const weapon = {
   },
   '30350103': {
     Id: '30350103',
+    Name: {
+      en: 'Vermillion Pain',
+      ja: 'ヴァーミリオンペイン',
+      zh: '朱红之痛',
+    },
+    abbr: 'vp',
     element: 'Flame',
     icon: [
       {
@@ -6201,16 +6480,17 @@ const weapon = {
     max: [93, 354],
     might: 150,
     min: [27, 106],
-    name: {
-      en: 'Vermillion Pain',
-      ja: 'ヴァーミリオンペイン',
-      zh: '朱红之痛',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350104': {
     Id: '30350104',
+    Name: {
+      en: 'Searing Stinger',
+      ja: 'クリムゾンスティンガー',
+      zh: '绯红之刺',
+    },
+    abbr: 'ss',
     element: 'Flame',
     icon: [
       {
@@ -6227,16 +6507,17 @@ const weapon = {
     max: [98, 344],
     might: 100,
     min: [29, 103],
-    name: {
-      en: 'Searing Stinger',
-      ja: 'クリムゾンスティンガー',
-      zh: '绯红之刺',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350105': {
     Id: '30350105',
+    Name: {
+      en: 'Crimson Fang',
+      ja: '紅蓮の牙',
+      zh: '红莲之爪',
+    },
+    abbr: 'cf',
     element: 'Flame',
     icon: [
       {
@@ -6248,11 +6529,6 @@ const weapon = {
     max: [208, 728],
     might: 100,
     min: [62, 218],
-    name: {
-      en: 'Crimson Fang',
-      ja: '紅蓮の牙',
-      zh: '红莲之爪',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6262,15 +6538,16 @@ const weapon = {
   },
   '30350106': {
     Id: '30350106',
-    element: 'Flame',
-    image: '303112_01_50102',
-    max: [250, 1455],
-    min: [75, 436],
-    name: {
+    Name: {
       en: "Flameruler's Maw",
       ja: '紅蓮を統べる爪牙',
       zh: '统御红莲之利爪',
     },
+    abbr: 'fm',
+    element: 'Flame',
+    image: '303112_01_50102',
+    max: [250, 1455],
+    min: [75, 436],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6280,6 +6557,12 @@ const weapon = {
   },
   '30350107': {
     Id: '30350107',
+    Name: {
+      en: 'Blazesin',
+      ja: '大罪纏う狂牙',
+      zh: '重罪狂牙',
+    },
+    abbr: 'b',
     element: 'Flame',
     icon: [
       {
@@ -6295,25 +6578,21 @@ const weapon = {
     max: [103, 334],
     might: 100,
     min: [30, 100],
-    name: {
-      en: 'Blazesin',
-      ja: '大罪纏う狂牙',
-      zh: '重罪狂牙',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350201': {
     Id: '30350201',
-    element: 'Water',
-    image: '303020_01_50201',
-    max: [152, 529],
-    min: [45, 158],
-    name: {
+    Name: {
       en: 'Lux Lamina',
       ja: 'ラクスラーミナ',
       zh: '湖光之刃',
     },
+    abbr: 'll',
+    element: 'Water',
+    image: '303020_01_50201',
+    max: [152, 529],
+    min: [45, 158],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_030',
@@ -6323,6 +6602,12 @@ const weapon = {
   },
   '30350202': {
     Id: '30350202',
+    Name: {
+      en: 'Gorelust',
+      ja: '鮮血浴びる狂牙',
+      zh: '浴血狂牙',
+    },
+    abbr: 'g',
     element: 'Water',
     icon: [
       {
@@ -6339,16 +6624,17 @@ const weapon = {
     max: [98, 344],
     might: 100,
     min: [29, 103],
-    name: {
-      en: 'Gorelust',
-      ja: '鮮血浴びる狂牙',
-      zh: '浴血狂牙',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350203': {
     Id: '30350203',
+    Name: {
+      en: 'Frigid Sting',
+      ja: 'フリジッドスティンガー',
+      zh: '冰冻之刺',
+    },
+    abbr: 'fs',
     element: 'Water',
     icon: [
       {
@@ -6365,16 +6651,17 @@ const weapon = {
     max: [98, 344],
     might: 160,
     min: [29, 103],
-    name: {
-      en: 'Frigid Sting',
-      ja: 'フリジッドスティンガー',
-      zh: '冰冻之刺',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350204': {
     Id: '30350204',
+    Name: {
+      en: 'The Surge',
+      ja: 'アクア・ザ・スラッシャー',
+      zh: '水之击刃',
+    },
+    abbr: 'ts',
     element: 'Water',
     icon: [
       {
@@ -6390,16 +6677,17 @@ const weapon = {
     max: [98, 344],
     might: 100,
     min: [29, 103],
-    name: {
-      en: 'The Surge',
-      ja: 'アクア・ザ・スラッシャー',
-      zh: '水之击刃',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350205': {
     Id: '30350205',
+    Name: {
+      en: 'Tidal Fang',
+      ja: '潮流の牙',
+      zh: '潮汐之爪',
+    },
+    abbr: 'tf',
     element: 'Water',
     icon: [
       {
@@ -6411,11 +6699,6 @@ const weapon = {
     max: [208, 728],
     might: 100,
     min: [62, 218],
-    name: {
-      en: 'Tidal Fang',
-      ja: '潮流の牙',
-      zh: '潮汐之爪',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6425,15 +6708,16 @@ const weapon = {
   },
   '30350206': {
     Id: '30350206',
-    element: 'Water',
-    image: '303110_01_50202',
-    max: [250, 1455],
-    min: [75, 436],
-    name: {
+    Name: {
       en: "Tideruler's Maw",
       ja: '潮流を統べる爪牙',
       zh: '统御潮汐之利爪',
     },
+    abbr: 'tm',
+    element: 'Water',
+    image: '303110_01_50202',
+    max: [250, 1455],
+    min: [75, 436],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6443,15 +6727,16 @@ const weapon = {
   },
   '30350301': {
     Id: '30350301',
-    element: 'Wind',
-    image: '303028_01_50301',
-    max: [144, 545],
-    min: [43, 163],
-    name: {
+    Name: {
       en: 'Karlsnautr',
       ja: 'カールスナウト',
       zh: '清风灵剑',
     },
+    abbr: 'k',
+    element: 'Wind',
+    image: '303028_01_50301',
+    max: [144, 545],
+    min: [43, 163],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6461,6 +6746,12 @@ const weapon = {
   },
   '30350302': {
     Id: '30350302',
+    Name: {
+      en: 'Turbulent Agony',
+      ja: 'タービュラントペイン',
+      zh: '气流之痛',
+    },
+    abbr: 'ta',
     element: 'Wind',
     icon: [
       {
@@ -6476,16 +6767,17 @@ const weapon = {
     max: [93, 354],
     might: 80,
     min: [27, 106],
-    name: {
-      en: 'Turbulent Agony',
-      ja: 'タービュラントペイン',
-      zh: '气流之痛',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350303': {
     Id: '30350303',
+    Name: {
+      en: 'The Gale',
+      ja: 'ブロー・ザ・ブラスター',
+      zh: '风斩之刃·粉碎者',
+    },
+    abbr: 'tg',
     element: 'Wind',
     icon: [
       {
@@ -6501,16 +6793,17 @@ const weapon = {
     max: [93, 354],
     might: 160,
     min: [27, 106],
-    name: {
-      en: 'The Gale',
-      ja: 'ブロー・ザ・ブラスター',
-      zh: '风斩之刃·粉碎者',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350304': {
     Id: '30350304',
+    Name: {
+      en: 'Mutterfang',
+      ja: '怨嗟謳う狂牙',
+      zh: '咒怨狂牙',
+    },
+    abbr: 'm',
     element: 'Wind',
     icon: [
       {
@@ -6526,16 +6819,17 @@ const weapon = {
     max: [106, 327],
     might: 100,
     min: [31, 98],
-    name: {
-      en: 'Mutterfang',
-      ja: '怨嗟謳う狂牙',
-      zh: '咒怨狂牙',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350305': {
     Id: '30350305',
+    Name: {
+      en: 'Galestorm Fang',
+      ja: '暴風の牙',
+      zh: '暴风之爪',
+    },
+    abbr: 'gf',
     element: 'Wind',
     icon: [
       {
@@ -6547,11 +6841,6 @@ const weapon = {
     max: [225, 691],
     might: 100,
     min: [67, 207],
-    name: {
-      en: 'Galestorm Fang',
-      ja: '暴風の牙',
-      zh: '暴风之爪',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6561,15 +6850,16 @@ const weapon = {
   },
   '30350306': {
     Id: '30350306',
-    element: 'Wind',
-    image: '303109_01_50302',
-    max: [270, 1383],
-    min: [81, 414],
-    name: {
+    Name: {
       en: "Windruler's Maw",
       ja: '暴風を統べる爪牙',
       zh: '统御暴风之利爪',
     },
+    abbr: 'wm',
+    element: 'Wind',
+    image: '303109_01_50302',
+    max: [270, 1383],
+    min: [81, 414],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6579,15 +6869,16 @@ const weapon = {
   },
   '30350401': {
     Id: '30350401',
-    element: 'Light',
-    image: '303030_01_50401',
-    max: [152, 529],
-    min: [45, 158],
-    name: {
+    Name: {
       en: 'Thunderblade Sugaar',
       ja: '雷刃シュガール',
       zh: '雷刃修伽尔',
     },
+    abbr: 'ts',
+    element: 'Light',
+    image: '303030_01_50401',
+    max: [152, 529],
+    min: [45, 158],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_030',
@@ -6597,6 +6888,12 @@ const weapon = {
   },
   '30350403': {
     Id: '30350403',
+    Name: {
+      en: 'Salvation Seeker',
+      ja: 'デルタソアリング',
+      zh: '三角翱翔刃',
+    },
+    abbr: 'ss',
     element: 'Light',
     icon: [
       {
@@ -6614,16 +6911,17 @@ const weapon = {
     max: [98, 344],
     might: 100,
     min: [29, 103],
-    name: {
-      en: 'Salvation Seeker',
-      ja: 'デルタソアリング',
-      zh: '三角翱翔刃',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350404': {
     Id: '30350404',
+    Name: {
+      en: 'Lightning Fang',
+      ja: '雷雲の牙',
+      zh: '雷云之爪',
+    },
+    abbr: 'lf',
     element: 'Light',
     icon: [
       {
@@ -6635,11 +6933,6 @@ const weapon = {
     max: [218, 706],
     might: 100,
     min: [65, 211],
-    name: {
-      en: 'Lightning Fang',
-      ja: '雷雲の牙',
-      zh: '雷云之爪',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6649,15 +6942,16 @@ const weapon = {
   },
   '30350405': {
     Id: '30350405',
-    element: 'Light',
-    image: '303111_01_50402',
-    max: [262, 1412],
-    min: [78, 423],
-    name: {
+    Name: {
       en: "Fulminator's Maw",
       ja: '雷雲を統べる爪牙',
       zh: '统御雷云之利爪',
     },
+    abbr: 'fm',
+    element: 'Light',
+    image: '303111_01_50402',
+    max: [262, 1412],
+    min: [78, 423],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6667,6 +6961,12 @@ const weapon = {
   },
   '30350406': {
     Id: '30350406',
+    Name: {
+      en: 'Merciful Claw',
+      ja: 'マーシフルクロウ',
+      zh: '仁慈之爪',
+    },
+    abbr: 'mc',
     element: 'Light',
     icon: [
       {
@@ -6683,25 +6983,21 @@ const weapon = {
     max: [106, 327],
     might: 160,
     min: [31, 98],
-    name: {
-      en: 'Merciful Claw',
-      ja: 'マーシフルクロウ',
-      zh: '仁慈之爪',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350501': {
     Id: '30350501',
-    element: 'Shadow',
-    image: '303031_01_50501',
-    max: [144, 545],
-    min: [43, 163],
-    name: {
+    Name: {
       en: 'Honor Edge',
       ja: '名誉の紫短剣',
       zh: '名誉紫短剑',
     },
+    abbr: 'he',
+    element: 'Shadow',
+    image: '303031_01_50501',
+    max: [144, 545],
+    min: [43, 163],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6711,6 +7007,12 @@ const weapon = {
   },
   '30350503': {
     Id: '30350503',
+    Name: {
+      en: 'Death Seeker',
+      ja: 'デルタサクリファイス',
+      zh: '三角活祭刃',
+    },
+    abbr: 'ds',
     element: 'Shadow',
     icon: [
       {
@@ -6727,16 +7029,17 @@ const weapon = {
     max: [103, 334],
     might: 160,
     min: [30, 100],
-    name: {
-      en: 'Death Seeker',
-      ja: 'デルタサクリファイス',
-      zh: '三角活祭刃',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30350504': {
     Id: '30350504',
+    Name: {
+      en: 'Darkened Fang',
+      ja: '暗黒の牙',
+      zh: '暗黑之爪',
+    },
+    abbr: 'df',
     element: 'Shadow',
     icon: [
       {
@@ -6748,11 +7051,6 @@ const weapon = {
     max: [218, 706],
     might: 100,
     min: [65, 211],
-    name: {
-      en: 'Darkened Fang',
-      ja: '暗黒の牙',
-      zh: '暗黑之爪',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -6762,15 +7060,16 @@ const weapon = {
   },
   '30350505': {
     Id: '30350505',
-    element: 'Shadow',
-    image: '303113_01_50502',
-    max: [262, 1412],
-    min: [78, 423],
-    name: {
+    Name: {
       en: "Shaderuler's Maw",
       ja: '暗黒を統べる爪牙',
       zh: '统御暗黑之利爪',
     },
+    abbr: 'sm',
+    element: 'Shadow',
+    image: '303113_01_50502',
+    max: [262, 1412],
+    min: [78, 423],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_004',
@@ -6780,6 +7079,12 @@ const weapon = {
   },
   '30350506': {
     Id: '30350506',
+    Name: {
+      en: 'Terrifying Claw',
+      ja: 'エターナルテラークロウ',
+      zh: '永惧利爪',
+    },
+    abbr: 'tc',
     element: 'Shadow',
     icon: [
       {
@@ -6796,39 +7101,36 @@ const weapon = {
     max: [103, 334],
     might: 100,
     min: [30, 100],
-    name: {
-      en: 'Terrifying Claw',
-      ja: 'エターナルテラークロウ',
-      zh: '永惧利爪',
-    },
     rarity: '5',
     weapon: 'Dagger',
   },
   '30359901': {
     Id: '30359901',
-    element: '0',
-    image: '303035_01_59901',
-    max: [102, 355],
-    min: [30, 106],
-    name: {
+    Name: {
       en: 'Kris Naga',
       ja: 'クリスナーガ',
       zh: '马来克力士剑',
     },
+    abbr: 'kn',
+    element: '0',
+    image: '303035_01_59901',
+    max: [102, 355],
+    min: [30, 106],
     rarity: '5',
     weapon: 'Dagger',
   },
   '30359902': {
     Id: '30359902',
-    element: '0',
-    image: '303014_01_59901',
-    max: [118, 447],
-    min: [35, 134],
-    name: {
+    Name: {
       en: 'Treasure of the Iron Rose',
       ja: '鉄薔薇摘みの宝剣',
       zh: '铁蔷薇采摘宝剑',
     },
+    abbr: 'totir',
+    element: '0',
+    image: '303014_01_59901',
+    max: [118, 447],
+    min: [35, 134],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -6838,15 +7140,16 @@ const weapon = {
   },
   '30359903': {
     Id: '30359903',
-    element: '0',
-    image: '303036_01_59901',
-    max: [124, 434],
-    min: [37, 130],
-    name: {
+    Name: {
       en: 'Hedgehog',
       ja: 'ヘッジホッグ',
       zh: '刺猬之刃',
     },
+    abbr: 'h',
+    element: '0',
+    image: '303036_01_59901',
+    max: [124, 434],
+    min: [37, 130],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_030',
@@ -6856,15 +7159,16 @@ const weapon = {
   },
   '30359904': {
     Id: '30359904',
-    element: '0',
-    image: '303120_01_59901',
-    max: [102, 355],
-    min: [30, 106],
-    name: {
+    Name: {
       en: 'Mega Dagger',
       ja: 'ロックダガー',
       zh: '洛克短剑',
     },
+    abbr: 'md',
+    element: '0',
+    image: '303120_01_59901',
+    max: [102, 355],
+    min: [30, 106],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -6874,15 +7178,16 @@ const weapon = {
   },
   '30430101': {
     Id: '30430101',
-    element: 'Flame',
-    image: '304018_01_30101',
-    max: [59, 234],
-    min: [17, 70],
-    name: {
+    Name: {
       en: 'Argent Battle-Axe',
       ja: '白銀の騎士斧',
       zh: '白银骑士之斧',
     },
+    abbr: 'ab',
+    element: 'Flame',
+    image: '304018_01_30101',
+    max: [59, 234],
+    min: [17, 70],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -6892,6 +7197,12 @@ const weapon = {
   },
   '30430103': {
     Id: '30430103',
+    Name: {
+      en: 'Thermal Arms',
+      ja: 'レッドホットアームズ',
+      zh: '赤热钢臂',
+    },
+    abbr: 'ta',
     element: 'Flame',
     icon: [
       {
@@ -6907,16 +7218,17 @@ const weapon = {
     max: [37, 147],
     might: 70,
     min: [11, 44],
-    name: {
-      en: 'Thermal Arms',
-      ja: 'レッドホットアームズ',
-      zh: '赤热钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430104': {
     Id: '30430104',
+    Name: {
+      en: 'Fire Relic',
+      ja: 'ファイアレリック',
+      zh: '火焰遗物之斧',
+    },
+    abbr: 'fr',
     element: 'Flame',
     icon: [
       {
@@ -6932,25 +7244,21 @@ const weapon = {
     max: [42, 136],
     might: 70,
     min: [12, 40],
-    name: {
-      en: 'Fire Relic',
-      ja: 'ファイアレリック',
-      zh: '火焰遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430201': {
     Id: '30430201',
-    element: 'Water',
-    image: '304006_01_30201',
-    max: [59, 234],
-    min: [17, 70],
-    name: {
+    Name: {
       en: 'Axe of the Waves',
       ja: 'カレントアックス',
       zh: '水流之斧',
     },
+    abbr: 'aotw',
+    element: 'Water',
+    image: '304006_01_30201',
+    max: [59, 234],
+    min: [17, 70],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -6960,6 +7268,12 @@ const weapon = {
   },
   '30430202': {
     Id: '30430202',
+    Name: {
+      en: 'Snowy Relic',
+      ja: 'スノーレリック',
+      zh: '冰雪遗物之斧',
+    },
+    abbr: 'sr',
     element: 'Water',
     icon: [
       {
@@ -6975,16 +7289,17 @@ const weapon = {
     max: [41, 139],
     might: 70,
     min: [12, 41],
-    name: {
-      en: 'Snowy Relic',
-      ja: 'スノーレリック',
-      zh: '冰雪遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430204': {
     Id: '30430204',
+    Name: {
+      en: 'Chilled Arms',
+      ja: 'アイスダストアームズ',
+      zh: '冰尘钢臂',
+    },
+    abbr: 'ca',
     element: 'Water',
     icon: [
       {
@@ -7000,25 +7315,21 @@ const weapon = {
     max: [42, 136],
     might: 70,
     min: [12, 40],
-    name: {
-      en: 'Chilled Arms',
-      ja: 'アイスダストアームズ',
-      zh: '冰尘钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430301': {
     Id: '30430301',
-    element: 'Wind',
-    image: '304007_01_30301',
-    max: [65, 220],
-    min: [19, 66],
-    name: {
+    Name: {
       en: 'Singing Cyclone',
       ja: 'サイクロンシンガー',
       zh: '飓风歌者',
     },
+    abbr: 'sc',
+    element: 'Wind',
+    image: '304007_01_30301',
+    max: [65, 220],
+    min: [19, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -7028,6 +7339,12 @@ const weapon = {
   },
   '30430302': {
     Id: '30430302',
+    Name: {
+      en: 'Storm Relic',
+      ja: 'ストームレリック',
+      zh: '狂风遗物之斧',
+    },
+    abbr: 'sr',
     element: 'Wind',
     icon: [
       {
@@ -7043,16 +7360,17 @@ const weapon = {
     max: [37, 147],
     might: 70,
     min: [11, 44],
-    name: {
-      en: 'Storm Relic',
-      ja: 'ストームレリック',
-      zh: '狂风遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430303': {
     Id: '30430303',
+    Name: {
+      en: 'Aerated Arms',
+      ja: 'エアービートアームズ',
+      zh: '驭风钢臂',
+    },
+    abbr: 'aa',
     element: 'Wind',
     icon: [
       {
@@ -7068,25 +7386,21 @@ const weapon = {
     max: [39, 143],
     might: 70,
     min: [11, 42],
-    name: {
-      en: 'Aerated Arms',
-      ja: 'エアービートアームズ',
-      zh: '驭风钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430401': {
     Id: '30430401',
-    element: 'Light',
-    image: '304008_01_30401',
-    max: [65, 220],
-    min: [19, 66],
-    name: {
+    Name: {
       en: 'Flash Axe',
       ja: 'フラッシュアックス',
       zh: '闪光战斧',
     },
+    abbr: 'fa',
+    element: 'Light',
+    image: '304008_01_30401',
+    max: [65, 220],
+    min: [19, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -7096,6 +7410,12 @@ const weapon = {
   },
   '30430402': {
     Id: '30430402',
+    Name: {
+      en: 'Abandoned Relic',
+      ja: 'シャインレリック',
+      zh: '闪耀遗物之斧',
+    },
+    abbr: 'ar',
     element: 'Light',
     icon: [
       {
@@ -7111,16 +7431,17 @@ const weapon = {
     max: [41, 139],
     might: 70,
     min: [12, 41],
-    name: {
-      en: 'Abandoned Relic',
-      ja: 'シャインレリック',
-      zh: '闪耀遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430403': {
     Id: '30430403',
+    Name: {
+      en: 'Electrified Arms',
+      ja: 'ライトニングアームズ',
+      zh: '雷霆钢臂',
+    },
+    abbr: 'ea',
     element: 'Light',
     icon: [
       {
@@ -7136,25 +7457,21 @@ const weapon = {
     max: [41, 139],
     might: 70,
     min: [12, 41],
-    name: {
-      en: 'Electrified Arms',
-      ja: 'ライトニングアームズ',
-      zh: '雷霆钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430501': {
     Id: '30430501',
-    element: 'Shadow',
-    image: '304009_01_30501',
-    max: [65, 220],
-    min: [19, 66],
-    name: {
+    Name: {
       en: 'Soulreaver',
       ja: 'ソウルリーパー',
       zh: '灵魂收割者',
     },
+    abbr: 's',
+    element: 'Shadow',
+    image: '304009_01_30501',
+    max: [65, 220],
+    min: [19, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -7164,6 +7481,12 @@ const weapon = {
   },
   '30430502': {
     Id: '30430502',
+    Name: {
+      en: 'Dark Relic',
+      ja: 'ダークレリック',
+      zh: '黑暗遗物之斧',
+    },
+    abbr: 'dr',
     element: 'Shadow',
     icon: [
       {
@@ -7179,16 +7502,17 @@ const weapon = {
     max: [39, 143],
     might: 70,
     min: [11, 42],
-    name: {
-      en: 'Dark Relic',
-      ja: 'ダークレリック',
-      zh: '黑暗遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30430503': {
     Id: '30430503',
+    Name: {
+      en: 'Destructive Arms',
+      ja: 'バイオレントアームズ',
+      zh: '暴力钢臂',
+    },
+    abbr: 'da',
     element: 'Shadow',
     icon: [
       {
@@ -7204,39 +7528,36 @@ const weapon = {
     max: [41, 139],
     might: 70,
     min: [12, 41],
-    name: {
-      en: 'Destructive Arms',
-      ja: 'バイオレントアームズ',
-      zh: '暴力钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30439901': {
     Id: '30439901',
-    element: '0',
-    image: '304025_01_39901',
-    max: [26, 87],
-    min: [7, 26],
-    name: {
+    Name: {
       en: "Warrior's Axe",
       ja: '戦士の斧',
       zh: '战士之斧',
     },
+    abbr: 'wa',
+    element: '0',
+    image: '304025_01_39901',
+    max: [26, 87],
+    min: [7, 26],
     rarity: '3',
     weapon: 'Axe',
   },
   '30439902': {
     Id: '30439902',
-    element: '0',
-    image: '304031_01_39901',
-    max: [37, 147],
-    min: [11, 44],
-    name: {
+    Name: {
       en: 'Ennobled Axe',
       ja: 'ノーブルアックス',
       zh: '高贵之斧',
     },
+    abbr: 'ea',
+    element: '0',
+    image: '304031_01_39901',
+    max: [37, 147],
+    min: [11, 44],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_011',
@@ -7246,15 +7567,16 @@ const weapon = {
   },
   '30439903': {
     Id: '30439903',
-    element: '0',
-    image: '304032_01_39901',
-    max: [41, 139],
-    min: [12, 41],
-    name: {
+    Name: {
       en: 'Juggernaut',
       ja: 'ウォールクラッシャー',
       zh: '城墙破坏者',
     },
+    abbr: 'j',
+    element: '0',
+    image: '304032_01_39901',
+    max: [41, 139],
+    min: [12, 41],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -7264,6 +7586,12 @@ const weapon = {
   },
   '30439904': {
     Id: '30439904',
+    Name: {
+      en: 'Reclusive Relic',
+      ja: 'レリックアックス',
+      zh: '遗物之斧',
+    },
+    abbr: 'rr',
     element: '0',
     icon: [
       {
@@ -7275,16 +7603,17 @@ const weapon = {
     max: [26, 87],
     might: 20,
     min: [7, 26],
-    name: {
-      en: 'Reclusive Relic',
-      ja: 'レリックアックス',
-      zh: '遗物之斧',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30439906': {
     Id: '30439906',
+    Name: {
+      en: 'Weighty Arms',
+      ja: 'マッシヴアームズ',
+      zh: '魁梧钢臂',
+    },
+    abbr: 'wa',
     element: '0',
     icon: [
       {
@@ -7296,25 +7625,21 @@ const weapon = {
     max: [23, 93],
     might: 20,
     min: [6, 27],
-    name: {
-      en: 'Weighty Arms',
-      ja: 'マッシヴアームズ',
-      zh: '魁梧钢臂',
-    },
     rarity: '3',
     weapon: 'Axe',
   },
   '30440102': {
     Id: '30440102',
-    element: 'Flame',
-    image: '304010_01_40101',
-    max: [95, 380],
-    min: [28, 114],
-    name: {
+    Name: {
       en: 'Crimsonclaw',
       ja: 'クリムゾンアックス',
       zh: '绯红战斧',
     },
+    abbr: 'c',
+    element: 'Flame',
+    image: '304010_01_40101',
+    max: [95, 380],
+    min: [28, 114],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_002',
@@ -7324,6 +7649,12 @@ const weapon = {
   },
   '30440103': {
     Id: '30440103',
+    Name: {
+      en: 'Heavenfire Gaze',
+      ja: '天炎グランサイト',
+      zh: '天火奇观之斧',
+    },
+    abbr: 'hg',
     element: 'Flame',
     icon: [
       {
@@ -7339,16 +7670,17 @@ const weapon = {
     max: [73, 292],
     might: 140,
     min: [21, 87],
-    name: {
-      en: 'Heavenfire Gaze',
-      ja: '天炎グランサイト',
-      zh: '天火奇观之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440105': {
     Id: '30440105',
+    Name: {
+      en: 'Inferno Arms',
+      ja: 'クリムゾンバーンアームズ',
+      zh: '绯焰钢臂',
+    },
+    abbr: 'ia',
     element: 'Flame',
     icon: [
       {
@@ -7364,16 +7696,17 @@ const weapon = {
     max: [59, 234],
     might: 90,
     min: [17, 70],
-    name: {
-      en: 'Inferno Arms',
-      ja: 'クリムゾンバーンアームズ',
-      zh: '绯焰钢臂',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440106': {
     Id: '30440106',
+    Name: {
+      en: 'Flame Crash',
+      ja: 'フレイムクラッシュ',
+      zh: '火焰破坏斧',
+    },
+    abbr: 'fc',
     element: 'Flame',
     icon: [
       {
@@ -7390,16 +7723,17 @@ const weapon = {
     max: [77, 284],
     might: 80,
     min: [23, 85],
-    name: {
-      en: 'Flame Crash',
-      ja: 'フレイムクラッシュ',
-      zh: '火焰破坏斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440107': {
     Id: '30440107',
+    Name: {
+      en: 'Immolation Relic',
+      ja: 'プロミネンスレリック',
+      zh: '日珥遗物之斧',
+    },
+    abbr: 'ir',
     element: 'Flame',
     icon: [
       {
@@ -7415,16 +7749,17 @@ const weapon = {
     max: [67, 215],
     might: 90,
     min: [20, 64],
-    name: {
-      en: 'Immolation Relic',
-      ja: 'プロミネンスレリック',
-      zh: '日珥遗物之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440108': {
     Id: '30440108',
+    Name: {
+      en: 'Brutality Crux',
+      ja: '惨忍の戦斧',
+      zh: '残忍战斧',
+    },
+    abbr: 'bc',
     element: 'Flame',
     icon: [
       {
@@ -7440,16 +7775,17 @@ const weapon = {
     max: [73, 292],
     might: 80,
     min: [21, 87],
-    name: {
-      en: 'Brutality Crux',
-      ja: '惨忍の戦斧',
-      zh: '残忍战斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440109': {
     Id: '30440109',
+    Name: {
+      en: 'Sun Ray Destroyer',
+      ja: 'サンフレアデストロイヤー',
+      zh: '日炎破坏者',
+    },
+    abbr: 'srd',
     element: 'Flame',
     icon: [
       {
@@ -7466,25 +7802,21 @@ const weapon = {
     max: [73, 292],
     might: 90,
     min: [21, 87],
-    name: {
-      en: 'Sun Ray Destroyer',
-      ja: 'サンフレアデストロイヤー',
-      zh: '日炎破坏者',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440201': {
     Id: '30440201',
-    element: 'Water',
-    image: '304011_01_40201',
-    max: [105, 357],
-    min: [31, 107],
-    name: {
+    Name: {
       en: 'Aqua Labrys',
       ja: 'ディープラブリュス',
       zh: '深海双刃斧',
     },
+    abbr: 'al',
+    element: 'Water',
+    image: '304011_01_40201',
+    max: [105, 357],
+    min: [31, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -7494,6 +7826,12 @@ const weapon = {
   },
   '30440202': {
     Id: '30440202',
+    Name: {
+      en: 'Wave Crux',
+      ja: '怒涛の戦斧',
+      zh: '怒涛战斧',
+    },
+    abbr: 'wc',
     element: 'Water',
     icon: [
       {
@@ -7510,16 +7848,17 @@ const weapon = {
     max: [81, 275],
     might: 80,
     min: [24, 82],
-    name: {
-      en: 'Wave Crux',
-      ja: '怒涛の戦斧',
-      zh: '怒涛战斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440203': {
     Id: '30440203',
+    Name: {
+      en: 'Blizzard Relic',
+      ja: 'ブリザードレリック',
+      zh: '暴雪遗物之斧',
+    },
+    abbr: 'br',
     element: 'Water',
     icon: [
       {
@@ -7535,16 +7874,17 @@ const weapon = {
     max: [65, 220],
     might: 90,
     min: [19, 66],
-    name: {
-      en: 'Blizzard Relic',
-      ja: 'ブリザードレリック',
-      zh: '暴雪遗物之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440205': {
     Id: '30440205',
+    Name: {
+      en: 'Ice Crash',
+      ja: 'フロストクラッシュ',
+      zh: '冰霜破坏斧',
+    },
+    abbr: 'ic',
     element: 'Water',
     icon: [
       {
@@ -7561,16 +7901,17 @@ const weapon = {
     max: [81, 275],
     might: 140,
     min: [24, 82],
-    name: {
-      en: 'Ice Crash',
-      ja: 'フロストクラッシュ',
-      zh: '冰霜破坏斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440206': {
     Id: '30440206',
+    Name: {
+      en: 'Jagged Cloudburst',
+      ja: 'ヘビーレインジャギィ',
+      zh: '暴雨锯齿斧',
+    },
+    abbr: 'jc',
     element: 'Water',
     icon: [
       {
@@ -7586,16 +7927,17 @@ const weapon = {
     max: [81, 275],
     might: 80,
     min: [24, 82],
-    name: {
-      en: 'Jagged Cloudburst',
-      ja: 'ヘビーレインジャギィ',
-      zh: '暴雨锯齿斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440207': {
     Id: '30440207',
+    Name: {
+      en: 'Frozen Arms',
+      ja: 'ダイヤフロストアームズ',
+      zh: '霜钻钢臂',
+    },
+    abbr: 'fa',
     element: 'Water',
     icon: [
       {
@@ -7611,16 +7953,17 @@ const weapon = {
     max: [67, 215],
     might: 90,
     min: [20, 64],
-    name: {
-      en: 'Frozen Arms',
-      ja: 'ダイヤフロストアームズ',
-      zh: '霜钻钢臂',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440208': {
     Id: '30440208',
+    Name: {
+      en: 'Crusher of the Shallows',
+      ja: 'スラッジクラッシュ',
+      zh: '污秽破坏斧',
+    },
+    abbr: 'cots',
     element: 'Water',
     icon: [
       {
@@ -7636,25 +7979,21 @@ const weapon = {
     max: [81, 275],
     might: 90,
     min: [24, 82],
-    name: {
-      en: 'Crusher of the Shallows',
-      ja: 'スラッジクラッシュ',
-      zh: '污秽破坏斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440301': {
     Id: '30440301',
-    element: 'Wind',
-    image: '304016_01_40301',
-    max: [105, 357],
-    min: [31, 107],
-    name: {
+    Name: {
       en: 'Winged Destruction',
       ja: '双色翼の砕斧',
       zh: '双色翼碎斧',
     },
+    abbr: 'wd',
+    element: 'Wind',
+    image: '304016_01_40301',
+    max: [105, 357],
+    min: [31, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -7664,6 +8003,12 @@ const weapon = {
   },
   '30440302': {
     Id: '30440302',
+    Name: {
+      en: "Tempest's Relic",
+      ja: 'テンペストレリック',
+      zh: '风暴遗物之斧',
+    },
+    abbr: 'tr',
     element: 'Wind',
     icon: [
       {
@@ -7679,16 +8024,17 @@ const weapon = {
     max: [59, 234],
     might: 90,
     min: [17, 70],
-    name: {
-      en: "Tempest's Relic",
-      ja: 'テンペストレリック',
-      zh: '风暴遗物之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440303': {
     Id: '30440303',
+    Name: {
+      en: 'Stormwind Gaze',
+      ja: '翠嵐グランサイト',
+      zh: '翠岚奇观之斧',
+    },
+    abbr: 'sg',
     element: 'Wind',
     icon: [
       {
@@ -7704,16 +8050,17 @@ const weapon = {
     max: [81, 275],
     might: 60,
     min: [24, 82],
-    name: {
-      en: 'Stormwind Gaze',
-      ja: '翠嵐グランサイト',
-      zh: '翠岚奇观之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440304': {
     Id: '30440304',
+    Name: {
+      en: 'Jagged Shear',
+      ja: 'ウィンドシアージャギィ',
+      zh: '风颤锯齿斧',
+    },
+    abbr: 'js',
     element: 'Wind',
     icon: [
       {
@@ -7729,16 +8076,17 @@ const weapon = {
     max: [81, 275],
     might: 140,
     min: [24, 82],
-    name: {
-      en: 'Jagged Shear',
-      ja: 'ウィンドシアージャギィ',
-      zh: '风颤锯齿斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440305': {
     Id: '30440305',
+    Name: {
+      en: 'Gale Crux',
+      ja: '猜疾の戦斧',
+      zh: '猜忌战斧',
+    },
+    abbr: 'gc',
     element: 'Wind',
     icon: [
       {
@@ -7754,16 +8102,17 @@ const weapon = {
     max: [81, 275],
     might: 80,
     min: [24, 82],
-    name: {
-      en: 'Gale Crux',
-      ja: '猜疾の戦斧',
-      zh: '猜忌战斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440306': {
     Id: '30440306',
+    Name: {
+      en: 'Pulsing Arms',
+      ja: 'ショックウェーブアームズ',
+      zh: '冲击波钢臂',
+    },
+    abbr: 'pa',
     element: 'Wind',
     icon: [
       {
@@ -7779,25 +8128,21 @@ const weapon = {
     max: [62, 227],
     might: 90,
     min: [18, 68],
-    name: {
-      en: 'Pulsing Arms',
-      ja: 'ショックウェーブアームズ',
-      zh: '冲击波钢臂',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440401': {
     Id: '30440401',
-    element: 'Light',
-    image: '304015_01_40401',
-    max: [105, 357],
-    min: [31, 107],
-    name: {
+    Name: {
       en: 'Shining Axe',
       ja: 'シャイニングアックス',
       zh: '闪耀之斧',
     },
+    abbr: 'sa',
+    element: 'Light',
+    image: '304015_01_40401',
+    max: [105, 357],
+    min: [31, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -7807,6 +8152,12 @@ const weapon = {
   },
   '30440402': {
     Id: '30440402',
+    Name: {
+      en: 'Starlight Gaze',
+      ja: '星煌グランサイト',
+      zh: '星煌奇观之斧',
+    },
+    abbr: 'sg',
     element: 'Light',
     icon: [
       {
@@ -7822,16 +8173,17 @@ const weapon = {
     max: [73, 292],
     might: 80,
     min: [21, 87],
-    name: {
-      en: 'Starlight Gaze',
-      ja: '星煌グランサイト',
-      zh: '星煌奇观之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440403': {
     Id: '30440403',
+    Name: {
+      en: 'Banished Relic',
+      ja: 'バニシングレリック',
+      zh: '绝灭遗物之斧',
+    },
+    abbr: 'br',
     element: 'Light',
     icon: [
       {
@@ -7847,16 +8199,17 @@ const weapon = {
     max: [65, 220],
     might: 90,
     min: [19, 66],
-    name: {
-      en: 'Banished Relic',
-      ja: 'バニシングレリック',
-      zh: '绝灭遗物之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440404': {
     Id: '30440404',
+    Name: {
+      en: 'Crackling Arms',
+      ja: 'クラックボルトアームズ',
+      zh: '电光钢臂',
+    },
+    abbr: 'ca',
     element: 'Light',
     icon: [
       {
@@ -7872,16 +8225,17 @@ const weapon = {
     max: [65, 220],
     might: 90,
     min: [19, 66],
-    name: {
-      en: 'Crackling Arms',
-      ja: 'クラックボルトアームズ',
-      zh: '电光钢臂',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440405': {
     Id: '30440405',
+    Name: {
+      en: 'Cleaver of Desire',
+      ja: 'デザイアクリーヴァ',
+      zh: '欲望巨斧',
+    },
+    abbr: 'cod',
     element: 'Light',
     icon: [
       {
@@ -7899,16 +8253,17 @@ const weapon = {
     max: [81, 275],
     might: 80,
     min: [24, 82],
-    name: {
-      en: 'Cleaver of Desire',
-      ja: 'デザイアクリーヴァ',
-      zh: '欲望巨斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440406': {
     Id: '30440406',
+    Name: {
+      en: 'Flashreaver',
+      ja: 'フラッシュデストロイヤー',
+      zh: '闪光破坏者',
+    },
+    abbr: 'f',
     element: 'Light',
     icon: [
       {
@@ -7925,16 +8280,17 @@ const weapon = {
     max: [81, 275],
     might: 90,
     min: [24, 82],
-    name: {
-      en: 'Flashreaver',
-      ja: 'フラッシュデストロイヤー',
-      zh: '闪光破坏者',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440407': {
     Id: '30440407',
+    Name: {
+      en: 'Glanzfang',
+      ja: '雷斧グランツファング',
+      zh: '雷斧光牙',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -7951,25 +8307,21 @@ const weapon = {
     max: [81, 275],
     might: 140,
     min: [24, 82],
-    name: {
-      en: 'Glanzfang',
-      ja: '雷斧グランツファング',
-      zh: '雷斧光牙',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440501': {
     Id: '30440501',
-    element: 'Shadow',
-    image: '304030_01_40501',
-    max: [95, 380],
-    min: [28, 114],
-    name: {
+    Name: {
       en: "Traitor's Despair",
       ja: 'ディスペアーアックス',
       zh: '绝望之斧',
     },
+    abbr: 'td',
+    element: 'Shadow',
+    image: '304030_01_40501',
+    max: [95, 380],
+    min: [28, 114],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_002',
@@ -7979,6 +8331,12 @@ const weapon = {
   },
   '30440502': {
     Id: '30440502',
+    Name: {
+      en: 'Regretful Relic',
+      ja: 'リグレットレリック',
+      zh: '悔恨遗物之斧',
+    },
+    abbr: 'rr',
     element: 'Shadow',
     icon: [
       {
@@ -7994,16 +8352,17 @@ const weapon = {
     max: [62, 227],
     might: 90,
     min: [18, 68],
-    name: {
-      en: 'Regretful Relic',
-      ja: 'リグレットレリック',
-      zh: '悔恨遗物之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440504': {
     Id: '30440504',
+    Name: {
+      en: 'Vorpal Cleaver',
+      ja: 'ヴォーパルクリーヴァ',
+      zh: '夺命巨斧',
+    },
+    abbr: 'vc',
     element: 'Shadow',
     icon: [
       {
@@ -8020,16 +8379,17 @@ const weapon = {
     max: [73, 292],
     might: 140,
     min: [21, 87],
-    name: {
-      en: 'Vorpal Cleaver',
-      ja: 'ヴォーパルクリーヴァ',
-      zh: '夺命巨斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440505': {
     Id: '30440505',
+    Name: {
+      en: 'Punishing Arms',
+      ja: 'ギロチンマーダアームズ',
+      zh: '断头台钢臂',
+    },
+    abbr: 'pa',
     element: 'Shadow',
     icon: [
       {
@@ -8045,16 +8405,17 @@ const weapon = {
     max: [65, 220],
     might: 90,
     min: [19, 66],
-    name: {
-      en: 'Punishing Arms',
-      ja: 'ギロチンマーダアームズ',
-      zh: '断头台钢臂',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30440506': {
     Id: '30440506',
+    Name: {
+      en: 'Blackfang',
+      ja: '影斧ブラックファング',
+      zh: '影斧黑牙',
+    },
+    abbr: 'b',
     element: 'Shadow',
     icon: [
       {
@@ -8071,39 +8432,36 @@ const weapon = {
     max: [83, 270],
     might: 80,
     min: [24, 81],
-    name: {
-      en: 'Blackfang',
-      ja: '影斧ブラックファング',
-      zh: '影斧黑牙',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449901': {
     Id: '30449901',
-    element: '0',
-    image: '304026_01_49901',
-    max: [62, 212],
-    min: [18, 63],
-    name: {
+    Name: {
       en: 'Plain Axe',
       ja: 'コモンアックス',
       zh: '平凡之斧',
     },
+    abbr: 'pa',
+    element: '0',
+    image: '304026_01_49901',
+    max: [62, 212],
+    min: [18, 63],
     rarity: '4',
     weapon: 'Axe',
   },
   '30449902': {
     Id: '30449902',
-    element: '0',
-    image: '304033_01_49901',
-    max: [73, 292],
-    min: [21, 87],
-    name: {
+    Name: {
       en: 'The Tyrant',
       ja: 'タイラントアックス',
       zh: '暴君之斧',
     },
+    abbr: 'tt',
+    element: '0',
+    image: '304033_01_49901',
+    max: [73, 292],
+    min: [21, 87],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_002',
@@ -8113,15 +8471,16 @@ const weapon = {
   },
   '30449903': {
     Id: '30449903',
-    element: '0',
-    image: '304034_01_49901',
-    max: [81, 275],
-    min: [24, 82],
-    name: {
+    Name: {
       en: 'Souvenir Axe',
       ja: 'スーベニアアックス',
       zh: '纪念战斧',
     },
+    abbr: 'sa',
+    element: '0',
+    image: '304034_01_49901',
+    max: [81, 275],
+    min: [24, 82],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -8131,6 +8490,12 @@ const weapon = {
   },
   '30449904': {
     Id: '30449904',
+    Name: {
+      en: 'Unerring Gaze',
+      ja: 'グランサイト',
+      zh: '奇观之斧',
+    },
+    abbr: 'ug',
     element: '0',
     icon: [
       {
@@ -8142,16 +8507,17 @@ const weapon = {
     max: [56, 225],
     might: 40,
     min: [16, 67],
-    name: {
-      en: 'Unerring Gaze',
-      ja: 'グランサイト',
-      zh: '奇观之斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449905': {
     Id: '30449905',
+    Name: {
+      en: 'Fury Crux',
+      ja: '怒号の戦斧',
+      zh: '怒号战斧',
+    },
+    abbr: 'fc',
     element: '0',
     icon: [
       {
@@ -8163,16 +8529,17 @@ const weapon = {
     max: [56, 225],
     might: 40,
     min: [16, 67],
-    name: {
-      en: 'Fury Crux',
-      ja: '怒号の戦斧',
-      zh: '怒号战斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449906': {
     Id: '30449906',
+    Name: {
+      en: 'Unspeakable Crash',
+      ja: 'マイティクラッシュ',
+      zh: '强力破坏斧',
+    },
+    abbr: 'uc',
     element: '0',
     icon: [
       {
@@ -8185,16 +8552,17 @@ const weapon = {
     max: [64, 208],
     might: 40,
     min: [19, 62],
-    name: {
-      en: 'Unspeakable Crash',
-      ja: 'マイティクラッシュ',
-      zh: '强力破坏斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449907': {
     Id: '30449907',
+    Name: {
+      en: 'Jagged Rage',
+      ja: 'レイジングジャギィ',
+      zh: '怒涛锯齿斧',
+    },
+    abbr: 'jr',
     element: '0',
     icon: [
       {
@@ -8206,16 +8574,17 @@ const weapon = {
     max: [56, 225],
     might: 40,
     min: [16, 67],
-    name: {
-      en: 'Jagged Rage',
-      ja: 'レイジングジャギィ',
-      zh: '怒涛锯齿斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449908': {
     Id: '30449908',
+    Name: {
+      en: 'Great Cleaver',
+      ja: 'グランクリーヴァ',
+      zh: '破坏巨斧',
+    },
+    abbr: 'gc',
     element: '0',
     icon: [
       {
@@ -8228,16 +8597,17 @@ const weapon = {
     max: [56, 225],
     might: 40,
     min: [16, 67],
-    name: {
-      en: 'Great Cleaver',
-      ja: 'グランクリーヴァ',
-      zh: '破坏巨斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449909': {
     Id: '30449909',
+    Name: {
+      en: 'The Great Destroyer',
+      ja: 'グレイトデストロイヤー',
+      zh: '巨型破坏者',
+    },
+    abbr: 'tgd',
     element: '0',
     icon: [
       {
@@ -8250,16 +8620,17 @@ const weapon = {
     max: [62, 212],
     might: 40,
     min: [18, 63],
-    name: {
-      en: 'The Great Destroyer',
-      ja: 'グレイトデストロイヤー',
-      zh: '巨型破坏者',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449910': {
     Id: '30449910',
+    Name: {
+      en: 'Steelfang',
+      ja: '魁斧ソリッドファング',
+      zh: '魁斧坚牙',
+    },
+    abbr: 's',
     element: '0',
     icon: [
       {
@@ -8272,16 +8643,17 @@ const weapon = {
     max: [62, 212],
     might: 40,
     min: [18, 63],
-    name: {
-      en: 'Steelfang',
-      ja: '魁斧ソリッドファング',
-      zh: '魁斧坚牙',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30449911': {
     Id: '30449911',
+    Name: {
+      en: 'Soul Crusher',
+      ja: 'ソウルクラッシュ',
+      zh: '灵魂破坏斧',
+    },
+    abbr: 'sc',
     element: '0',
     icon: [
       {
@@ -8293,25 +8665,21 @@ const weapon = {
     max: [62, 212],
     might: 40,
     min: [18, 63],
-    name: {
-      en: 'Soul Crusher',
-      ja: 'ソウルクラッシュ',
-      zh: '灵魂破坏斧',
-    },
     rarity: '4',
     weapon: 'Axe',
   },
   '30450101': {
     Id: '30450101',
-    element: 'Flame',
-    image: '304027_01_50101',
-    max: [155, 567],
-    min: [46, 170],
-    name: {
+    Name: {
       en: 'Axe of the Blazing King',
       ja: 'ヴォルカニックアックス',
       zh: '火山战斧',
     },
+    abbr: 'aotbk',
+    element: 'Flame',
+    image: '304027_01_50101',
+    max: [155, 567],
+    min: [46, 170],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -8321,6 +8689,12 @@ const weapon = {
   },
   '30450102': {
     Id: '30450102',
+    Name: {
+      en: 'Heavenwrath Gaze',
+      ja: '天炎グランサイト・レイジ',
+      zh: '天火奇观·震怒',
+    },
+    abbr: 'hg',
     element: 'Flame',
     icon: [
       {
@@ -8336,16 +8710,17 @@ const weapon = {
     max: [95, 380],
     might: 150,
     min: [28, 114],
-    name: {
-      en: 'Heavenwrath Gaze',
-      ja: '天炎グランサイト・レイジ',
-      zh: '天火奇观·震怒',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450103': {
     Id: '30450103',
+    Name: {
+      en: 'Blaze Crash',
+      ja: 'レッドブレイズクラッシュ',
+      zh: '赤炎破坏斧',
+    },
+    abbr: 'bc',
     element: 'Flame',
     icon: [
       {
@@ -8362,16 +8737,17 @@ const weapon = {
     max: [100, 369],
     might: 100,
     min: [30, 110],
-    name: {
-      en: 'Blaze Crash',
-      ja: 'レッドブレイズクラッシュ',
-      zh: '赤炎破坏斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450104': {
     Id: '30450104',
+    Name: {
+      en: 'Crimson Heat',
+      ja: '紅灼斧',
+      zh: '红灼斧',
+    },
+    abbr: 'ch',
     element: 'Flame',
     icon: [
       {
@@ -8383,11 +8759,6 @@ const weapon = {
     max: [212, 780],
     might: 100,
     min: [63, 234],
-    name: {
-      en: 'Crimson Heat',
-      ja: '紅灼斧',
-      zh: '红灼斧',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8397,15 +8768,16 @@ const weapon = {
   },
   '30450105': {
     Id: '30450105',
-    element: 'Flame',
-    image: '304111_01_50102',
-    max: [255, 1559],
-    min: [76, 467],
-    name: {
+    Name: {
       en: 'Royal Crimson Heat',
       ja: '紅灼斧《クイーン》',
       zh: '红灼斧·女王',
     },
+    abbr: 'rch',
+    element: 'Flame',
+    image: '304111_01_50102',
+    max: [255, 1559],
+    min: [76, 467],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8415,6 +8787,12 @@ const weapon = {
   },
   '30450106': {
     Id: '30450106',
+    Name: {
+      en: 'Atrocity Crux',
+      ja: '残虐無慚の戦斧',
+      zh: '残虐无情战斧',
+    },
+    abbr: 'ac',
     element: 'Flame',
     icon: [
       {
@@ -8430,16 +8808,17 @@ const weapon = {
     max: [95, 380],
     might: 100,
     min: [28, 114],
-    name: {
-      en: 'Atrocity Crux',
-      ja: '残虐無慚の戦斧',
-      zh: '残虐无情战斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450107': {
     Id: '30450107',
+    Name: {
+      en: 'Sun Flare Destroyer',
+      ja: 'コンバストデストロイヤー',
+      zh: '焦灼破坏者',
+    },
+    abbr: 'sfd',
     element: 'Flame',
     icon: [
       {
@@ -8456,25 +8835,21 @@ const weapon = {
     max: [95, 380],
     might: 110,
     min: [28, 114],
-    name: {
-      en: 'Sun Flare Destroyer',
-      ja: 'コンバストデストロイヤー',
-      zh: '焦灼破坏者',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450201': {
     Id: '30450201',
-    element: 'Water',
-    image: '304028_01_50201',
-    max: [147, 584],
-    min: [44, 175],
-    name: {
+    Name: {
       en: 'Grand Seadragon',
       ja: 'グランドシードラゴン',
       zh: '海龙战斧',
     },
+    abbr: 'gs',
+    element: 'Water',
+    image: '304028_01_50201',
+    max: [147, 584],
+    min: [44, 175],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8484,6 +8859,12 @@ const weapon = {
   },
   '30450202': {
     Id: '30450202',
+    Name: {
+      en: 'Maelstrom Crux',
+      ja: '狂瀾怒涛の戦斧',
+      zh: '狂澜怒涛战斧',
+    },
+    abbr: 'mc',
     element: 'Water',
     icon: [
       {
@@ -8500,16 +8881,17 @@ const weapon = {
     max: [95, 380],
     might: 100,
     min: [28, 114],
-    name: {
-      en: 'Maelstrom Crux',
-      ja: '狂瀾怒涛の戦斧',
-      zh: '狂澜怒涛战斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450203': {
     Id: '30450203',
+    Name: {
+      en: 'Permafrost Crash',
+      ja: 'パーマフロストクラッシュ',
+      zh: '永冻破坏斧',
+    },
+    abbr: 'pc',
     element: 'Water',
     icon: [
       {
@@ -8526,16 +8908,17 @@ const weapon = {
     max: [105, 357],
     might: 160,
     min: [31, 107],
-    name: {
-      en: 'Permafrost Crash',
-      ja: 'パーマフロストクラッシュ',
-      zh: '永冻破坏斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450204': {
     Id: '30450204',
+    Name: {
+      en: 'Jagged Rainstorm',
+      ja: 'レインストームジャギィ',
+      zh: '暴风雨锯齿斧',
+    },
+    abbr: 'jr',
     element: 'Water',
     icon: [
       {
@@ -8551,16 +8934,17 @@ const weapon = {
     max: [105, 357],
     might: 100,
     min: [31, 107],
-    name: {
-      en: 'Jagged Rainstorm',
-      ja: 'レインストームジャギィ',
-      zh: '暴风雨锯齿斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450205': {
     Id: '30450205',
+    Name: {
+      en: "Mercy's Tide",
+      ja: '慈海斧',
+      zh: '慈海斧',
+    },
+    abbr: 'mt',
     element: 'Water',
     icon: [
       {
@@ -8572,11 +8956,6 @@ const weapon = {
     max: [223, 756],
     might: 100,
     min: [66, 226],
-    name: {
-      en: "Mercy's Tide",
-      ja: '慈海斧',
-      zh: '慈海斧',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -8586,15 +8965,16 @@ const weapon = {
   },
   '30450206': {
     Id: '30450206',
-    element: 'Water',
-    image: '304109_01_50202',
-    max: [267, 1512],
-    min: [80, 453],
-    name: {
+    Name: {
       en: "Mercy's Azure Tide",
       ja: '慈海斧《蒼海》',
       zh: '慈海斧·沧海',
     },
+    abbr: 'mat',
+    element: 'Water',
+    image: '304109_01_50202',
+    max: [267, 1512],
+    min: [80, 453],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -8604,6 +8984,12 @@ const weapon = {
   },
   '30450207': {
     Id: '30450207',
+    Name: {
+      en: 'Crusher of the Depths',
+      ja: 'ディープボトムクラッシュ',
+      zh: '深渊破坏斧',
+    },
+    abbr: 'cotd',
     element: 'Water',
     icon: [
       {
@@ -8619,25 +9005,21 @@ const weapon = {
     max: [105, 357],
     might: 110,
     min: [31, 107],
-    name: {
-      en: 'Crusher of the Depths',
-      ja: 'ディープボトムクラッシュ',
-      zh: '深渊破坏斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450301': {
     Id: '30450301',
-    element: 'Wind',
-    image: '304029_01_50301',
-    max: [147, 584],
-    min: [44, 175],
-    name: {
+    Name: {
       en: 'Axe of the Southern Cross',
       ja: 'サザンクロスアックス',
       zh: '南十字之斧',
     },
+    abbr: 'aotsc',
+    element: 'Wind',
+    image: '304029_01_50301',
+    max: [147, 584],
+    min: [44, 175],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8647,6 +9029,12 @@ const weapon = {
   },
   '30450302': {
     Id: '30450302',
+    Name: {
+      en: 'Stormwrath Gaze',
+      ja: '翠嵐グランサイト・マリス',
+      zh: '翠岚奇观之斧·恶意',
+    },
+    abbr: 'sg',
     element: 'Wind',
     icon: [
       {
@@ -8662,16 +9050,17 @@ const weapon = {
     max: [105, 357],
     might: 80,
     min: [31, 107],
-    name: {
-      en: 'Stormwrath Gaze',
-      ja: '翠嵐グランサイト・マリス',
-      zh: '翠岚奇观之斧·恶意',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450303': {
     Id: '30450303',
+    Name: {
+      en: 'Jagged Bolt',
+      ja: 'ダウンバーストジャギィ',
+      zh: '暴流锯齿斧',
+    },
+    abbr: 'jb',
     element: 'Wind',
     icon: [
       {
@@ -8687,16 +9076,17 @@ const weapon = {
     max: [105, 357],
     might: 160,
     min: [31, 107],
-    name: {
-      en: 'Jagged Bolt',
-      ja: 'ダウンバーストジャギィ',
-      zh: '暴流锯齿斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450304': {
     Id: '30450304',
+    Name: {
+      en: 'Squall Crux',
+      ja: '堕忌暴嵐の戦斧',
+      zh: '堕忌暴岚战斧',
+    },
+    abbr: 'sc',
     element: 'Wind',
     icon: [
       {
@@ -8712,16 +9102,17 @@ const weapon = {
     max: [105, 357],
     might: 100,
     min: [31, 107],
-    name: {
-      en: 'Squall Crux',
-      ja: '堕忌暴嵐の戦斧',
-      zh: '堕忌暴岚战斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450305': {
     Id: '30450305',
+    Name: {
+      en: "Storm's Guide",
+      ja: '導嵐斧',
+      zh: '导岚斧',
+    },
+    abbr: 'sg',
     element: 'Wind',
     icon: [
       {
@@ -8733,11 +9124,6 @@ const weapon = {
     max: [223, 756],
     might: 100,
     min: [66, 226],
-    name: {
-      en: "Storm's Guide",
-      ja: '導嵐斧',
-      zh: '导岚斧',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8747,15 +9133,16 @@ const weapon = {
   },
   '30450306': {
     Id: '30450306',
-    element: 'Wind',
-    image: '304108_01_50302',
-    max: [267, 1512],
-    min: [80, 453],
-    name: {
+    Name: {
       en: "Glorystorm's Guide",
       ja: '導嵐斧《グローリー》',
       zh: '导岚斧·荣耀',
     },
+    abbr: 'gg',
+    element: 'Wind',
+    image: '304108_01_50302',
+    max: [267, 1512],
+    min: [80, 453],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8765,15 +9152,16 @@ const weapon = {
   },
   '30450401': {
     Id: '30450401',
-    element: 'Light',
-    image: '304013_01_50401',
-    max: [147, 584],
-    min: [44, 175],
-    name: {
+    Name: {
       en: 'Radiant Swath',
       ja: 'オプティカルアックス',
       zh: '圣光战斧',
     },
+    abbr: 'rs',
+    element: 'Light',
+    image: '304013_01_50401',
+    max: [147, 584],
+    min: [44, 175],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -8783,6 +9171,12 @@ const weapon = {
   },
   '30450402': {
     Id: '30450402',
+    Name: {
+      en: 'Starwrath Gaze',
+      ja: '星煌グランサイト・ラース',
+      zh: '星煌奇观·愤怒',
+    },
+    abbr: 'sg',
     element: 'Light',
     icon: [
       {
@@ -8798,16 +9192,17 @@ const weapon = {
     max: [95, 380],
     might: 100,
     min: [28, 114],
-    name: {
-      en: 'Starwrath Gaze',
-      ja: '星煌グランサイト・ラース',
-      zh: '星煌奇观·愤怒',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450403': {
     Id: '30450403',
+    Name: {
+      en: 'Cleaver of Despair',
+      ja: 'ディスペアークリーヴァ',
+      zh: '绝望巨斧',
+    },
+    abbr: 'cod',
     element: 'Light',
     icon: [
       {
@@ -8825,16 +9220,17 @@ const weapon = {
     max: [105, 357],
     might: 100,
     min: [31, 107],
-    name: {
-      en: 'Cleaver of Despair',
-      ja: 'ディスペアークリーヴァ',
-      zh: '绝望巨斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450404': {
     Id: '30450404',
+    Name: {
+      en: 'Thundercrash',
+      ja: '天雷斧',
+      zh: '天雷斧',
+    },
+    abbr: 't',
     element: 'Light',
     icon: [
       {
@@ -8846,11 +9242,6 @@ const weapon = {
     max: [202, 803],
     might: 100,
     min: [60, 240],
-    name: {
-      en: 'Thundercrash',
-      ja: '天雷斧',
-      zh: '天雷斧',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -8860,15 +9251,16 @@ const weapon = {
   },
   '30450405': {
     Id: '30450405',
-    element: 'Light',
-    image: '304110_01_50402',
-    max: [242, 1606],
-    min: [72, 481],
-    name: {
+    Name: {
       en: 'Mighty Thundercrash',
       ja: '天雷斧《万雷》',
       zh: '天雷斧·万雷',
     },
+    abbr: 'mt',
+    element: 'Light',
+    image: '304110_01_50402',
+    max: [242, 1606],
+    min: [72, 481],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_003',
@@ -8878,6 +9270,12 @@ const weapon = {
   },
   '30450406': {
     Id: '30450406',
+    Name: {
+      en: 'Plasmareaver',
+      ja: 'プラズマデストロイヤー',
+      zh: '电浆破坏者',
+    },
+    abbr: 'p',
     element: 'Light',
     icon: [
       {
@@ -8894,16 +9292,17 @@ const weapon = {
     max: [105, 357],
     might: 110,
     min: [31, 107],
-    name: {
-      en: 'Plasmareaver',
-      ja: 'プラズマデストロイヤー',
-      zh: '电浆破坏者',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450407': {
     Id: '30450407',
+    Name: {
+      en: 'Blitzfang',
+      ja: '轟雷斧ブリッツファング',
+      zh: '轰雷斧雷牙',
+    },
+    abbr: 'b',
     element: 'Light',
     icon: [
       {
@@ -8920,25 +9319,21 @@ const weapon = {
     max: [105, 357],
     might: 160,
     min: [31, 107],
-    name: {
-      en: 'Blitzfang',
-      ja: '轟雷斧ブリッツファング',
-      zh: '轰雷斧雷牙',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450501': {
     Id: '30450501',
-    element: 'Shadow',
-    image: '304014_01_50501',
-    max: [155, 567],
-    min: [46, 170],
-    name: {
+    Name: {
       en: 'Primordial Titan',
       ja: 'ギガスセクリス',
       zh: '巨灵霹雳',
     },
+    abbr: 'pt',
+    element: 'Shadow',
+    image: '304014_01_50501',
+    max: [155, 567],
+    min: [46, 170],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -8948,6 +9343,12 @@ const weapon = {
   },
   '30450503': {
     Id: '30450503',
+    Name: {
+      en: 'Genocide Cleaver',
+      ja: 'ジェノサイドクリーヴァ',
+      zh: '杀戮巨斧',
+    },
+    abbr: 'gc',
     element: 'Shadow',
     icon: [
       {
@@ -8964,16 +9365,17 @@ const weapon = {
     max: [95, 380],
     might: 160,
     min: [28, 114],
-    name: {
-      en: 'Genocide Cleaver',
-      ja: 'ジェノサイドクリーヴァ',
-      zh: '杀戮巨斧',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30450504': {
     Id: '30450504',
+    Name: {
+      en: 'Darkbite Axe',
+      ja: '闇呪斧',
+      zh: '暗咒斧',
+    },
+    abbr: 'da',
     element: 'Shadow',
     icon: [
       {
@@ -8985,11 +9387,6 @@ const weapon = {
     max: [202, 803],
     might: 100,
     min: [60, 240],
-    name: {
-      en: 'Darkbite Axe',
-      ja: '闇呪斧',
-      zh: '暗咒斧',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -8999,15 +9396,16 @@ const weapon = {
   },
   '30450505': {
     Id: '30450505',
-    element: 'Shadow',
-    image: '304112_01_50502',
-    max: [242, 1606],
-    min: [72, 481],
-    name: {
+    Name: {
       en: 'Shadowy Darkbite Axe',
       ja: '闇呪斧《ルーラー》',
       zh: '暗咒斧·支配',
     },
+    abbr: 'sda',
+    element: 'Shadow',
+    image: '304112_01_50502',
+    max: [242, 1606],
+    min: [72, 481],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -9017,6 +9415,12 @@ const weapon = {
   },
   '30450506': {
     Id: '30450506',
+    Name: {
+      en: 'Shadowfang',
+      ja: '閃影斧シャドウファング',
+      zh: '闪影斧暗牙',
+    },
+    abbr: 's',
     element: 'Shadow',
     icon: [
       {
@@ -9033,39 +9437,36 @@ const weapon = {
     max: [108, 350],
     might: 100,
     min: [32, 105],
-    name: {
-      en: 'Shadowfang',
-      ja: '閃影斧シャドウファング',
-      zh: '闪影斧暗牙',
-    },
     rarity: '5',
     weapon: 'Axe',
   },
   '30459901': {
     Id: '30459901',
-    element: '0',
-    image: '304012_01_59901',
-    max: [109, 368],
-    min: [32, 110],
-    name: {
+    Name: {
       en: 'Victory Axe',
       ja: 'ヴィクトリーアックス',
       zh: '胜利之斧',
     },
+    abbr: 'va',
+    element: '0',
+    image: '304012_01_59901',
+    max: [109, 368],
+    min: [32, 110],
     rarity: '5',
     weapon: 'Axe',
   },
   '30459902': {
     Id: '30459902',
-    element: '0',
-    image: '304035_01_59901',
-    max: [120, 479],
-    min: [36, 143],
-    name: {
+    Name: {
       en: 'Executioner Axe Strafe',
       ja: '処刑斧シュトラーフェ',
       zh: '处刑斧制裁',
     },
+    abbr: 'eas',
+    element: '0',
+    image: '304035_01_59901',
+    max: [120, 479],
+    min: [36, 143],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_011',
@@ -9075,15 +9476,16 @@ const weapon = {
   },
   '30459903': {
     Id: '30459903',
-    element: '0',
-    image: '304036_01_59901',
-    max: [127, 465],
-    min: [38, 139],
-    name: {
+    Name: {
       en: "Halfling's Broadaxe",
       ja: '怪童の鉞',
       zh: '怪童之钺',
     },
+    abbr: 'hb',
+    element: '0',
+    image: '304036_01_59901',
+    max: [127, 465],
+    min: [38, 139],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -9093,15 +9495,16 @@ const weapon = {
   },
   '30459904': {
     Id: '30459904',
-    element: '0',
-    image: '304119_01_59901',
-    max: [104, 380],
-    min: [31, 114],
-    name: {
+    Name: {
       en: 'Mega Axe',
       ja: 'ロックアックス',
       zh: '洛克斧',
     },
+    abbr: 'ma',
+    element: '0',
+    image: '304119_01_59901',
+    max: [104, 380],
+    min: [31, 114],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -9111,15 +9514,16 @@ const weapon = {
   },
   '30530101': {
     Id: '30530101',
-    element: 'Flame',
-    image: '305006_01_30101',
-    max: [58, 227],
-    min: [17, 68],
-    name: {
+    Name: {
       en: "Unsung Hero's Lance",
       ja: '名もなき勇者たちの槍',
       zh: '无名勇者之枪',
     },
+    abbr: 'uhl',
+    element: 'Flame',
+    image: '305006_01_30101',
+    max: [58, 227],
+    min: [17, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_019',
@@ -9129,6 +9533,12 @@ const weapon = {
   },
   '30530102': {
     Id: '30530102',
+    Name: {
+      en: 'Lumenspore Lance',
+      ja: 'パラソルバーナー',
+      zh: '喷火阳伞',
+    },
+    abbr: 'll',
     element: 'Flame',
     icon: [
       {
@@ -9144,16 +9554,17 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Lumenspore Lance',
-      ja: 'パラソルバーナー',
-      zh: '喷火阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530104': {
     Id: '30530104',
+    Name: {
+      en: 'Soulfire Spear',
+      ja: 'ソウルファイアスピア',
+      zh: '魂火之枪',
+    },
+    abbr: 'ss',
     element: 'Flame',
     icon: [
       {
@@ -9170,16 +9581,17 @@ const weapon = {
     max: [39, 139],
     might: 60,
     min: [11, 41],
-    name: {
-      en: 'Soulfire Spear',
-      ja: 'ソウルファイアスピア',
-      zh: '魂火之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530105': {
     Id: '30530105',
+    Name: {
+      en: 'Fury Lance',
+      ja: '激昂の槍',
+      zh: '激昂之枪',
+    },
+    abbr: 'fl',
     element: 'Flame',
     icon: [
       {
@@ -9195,25 +9607,21 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Fury Lance',
-      ja: '激昂の槍',
-      zh: '激昂之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530201': {
     Id: '30530201',
-    element: 'Water',
-    image: '305007_01_30201',
-    max: [61, 220],
-    min: [18, 66],
-    name: {
+    Name: {
       en: 'Azure Jewel',
       ja: 'ブルージュエリー',
       zh: '蓝宝石钢枪',
     },
+    abbr: 'aj',
+    element: 'Water',
+    image: '305007_01_30201',
+    max: [61, 220],
+    min: [18, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -9223,6 +9631,12 @@ const weapon = {
   },
   '30530202': {
     Id: '30530202',
+    Name: {
+      en: 'Bubblespore Lance',
+      ja: 'パラソルバブル',
+      zh: '泡沫阳伞',
+    },
+    abbr: 'bl',
     element: 'Water',
     icon: [
       {
@@ -9238,16 +9652,17 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Bubblespore Lance',
-      ja: 'パラソルバブル',
-      zh: '泡沫阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530203': {
     Id: '30530203',
+    Name: {
+      en: 'Shiverlance',
+      ja: '戦慄の槍',
+      zh: '战栗之枪',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -9263,16 +9678,17 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Shiverlance',
-      ja: '戦慄の槍',
-      zh: '战栗之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530204': {
     Id: '30530204',
+    Name: {
+      en: 'Frigid Grace',
+      ja: 'コールドグレイススピア',
+      zh: '寒雅之枪',
+    },
+    abbr: 'fg',
     element: 'Water',
     icon: [
       {
@@ -9288,25 +9704,21 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Frigid Grace',
-      ja: 'コールドグレイススピア',
-      zh: '寒雅之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530301': {
     Id: '30530301',
-    element: 'Wind',
-    image: '305017_01_30301',
-    max: [58, 227],
-    min: [17, 68],
-    name: {
+    Name: {
       en: 'Gale Spear',
       ja: 'ゲイルスピア',
       zh: '疾风之枪',
     },
+    abbr: 'gs',
+    element: 'Wind',
+    image: '305017_01_30301',
+    max: [58, 227],
+    min: [17, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_019',
@@ -9316,6 +9728,12 @@ const weapon = {
   },
   '30530302': {
     Id: '30530302',
+    Name: {
+      en: 'Lance of Memory',
+      ja: '追想の槍',
+      zh: '追忆之枪',
+    },
+    abbr: 'lom',
     element: 'Wind',
     icon: [
       {
@@ -9331,16 +9749,17 @@ const weapon = {
     max: [42, 132],
     might: 70,
     min: [12, 39],
-    name: {
-      en: 'Lance of Memory',
-      ja: '追想の槍',
-      zh: '追忆之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530303': {
     Id: '30530303',
+    Name: {
+      en: 'Gustspore Lance',
+      ja: 'パラソルストリーム',
+      zh: '激流阳伞',
+    },
+    abbr: 'gl',
     element: 'Wind',
     icon: [
       {
@@ -9356,16 +9775,17 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Gustspore Lance',
-      ja: 'パラソルストリーム',
-      zh: '激流阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530304': {
     Id: '30530304',
+    Name: {
+      en: 'Fell Wind',
+      ja: 'イビルウインドスピア',
+      zh: '恶魔风枪',
+    },
+    abbr: 'fw',
     element: 'Wind',
     icon: [
       {
@@ -9381,25 +9801,21 @@ const weapon = {
     max: [40, 135],
     might: 70,
     min: [12, 40],
-    name: {
-      en: 'Fell Wind',
-      ja: 'イビルウインドスピア',
-      zh: '恶魔风枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530401': {
     Id: '30530401',
-    element: 'Light',
-    image: '305008_01_30401',
-    max: [61, 220],
-    min: [18, 66],
-    name: {
+    Name: {
       en: 'Moonpiercer',
       ja: 'ムーンピック',
       zh: '月之枪',
     },
+    abbr: 'm',
+    element: 'Light',
+    image: '305008_01_30401',
+    max: [61, 220],
+    min: [18, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -9409,15 +9825,16 @@ const weapon = {
   },
   '30530402': {
     Id: '30530402',
-    element: 'Light',
-    image: '305028_01_30401',
-    max: [55, 198],
-    min: [16, 59],
-    name: {
+    Name: {
       en: "Jack-o'-Lance",
       ja: 'ジャック・オ・スピア',
       zh: '杰克南瓜枪',
     },
+    abbr: 'j',
+    element: 'Light',
+    image: '305028_01_30401',
+    max: [55, 198],
+    min: [16, 59],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_012',
@@ -9427,6 +9844,12 @@ const weapon = {
   },
   '30530403': {
     Id: '30530403',
+    Name: {
+      en: "Outcast's Wish",
+      ja: '願望の槍',
+      zh: '祈愿之枪',
+    },
+    abbr: 'ow',
     element: 'Light',
     icon: [
       {
@@ -9442,16 +9865,17 @@ const weapon = {
     max: [35, 125],
     might: 70,
     min: [10, 37],
-    name: {
-      en: "Outcast's Wish",
-      ja: '願望の槍',
-      zh: '祈愿之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530404': {
     Id: '30530404',
+    Name: {
+      en: 'Lightspore Lance',
+      ja: 'パラソルライト',
+      zh: '闪光阳伞',
+    },
+    abbr: 'll',
     element: 'Light',
     icon: [
       {
@@ -9467,25 +9891,21 @@ const weapon = {
     max: [35, 125],
     might: 70,
     min: [10, 37],
-    name: {
-      en: 'Lightspore Lance',
-      ja: 'パラソルライト',
-      zh: '闪光阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530501': {
     Id: '30530501',
-    element: 'Shadow',
-    image: '305034_01_30501',
-    max: [61, 220],
-    min: [18, 66],
-    name: {
+    Name: {
       en: 'Lance of the Dark',
       ja: 'ダークスピア',
       zh: '暗之枪',
     },
+    abbr: 'lotd',
+    element: 'Shadow',
+    image: '305034_01_30501',
+    max: [61, 220],
+    min: [18, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -9495,6 +9915,12 @@ const weapon = {
   },
   '30530502': {
     Id: '30530502',
+    Name: {
+      en: 'Lance of Delusions',
+      ja: '妄念の槍',
+      zh: '妄念之枪',
+    },
+    abbr: 'lod',
     element: 'Shadow',
     icon: [
       {
@@ -9510,16 +9936,17 @@ const weapon = {
     max: [42, 132],
     might: 70,
     min: [12, 39],
-    name: {
-      en: 'Lance of Delusions',
-      ja: '妄念の槍',
-      zh: '妄念之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530503': {
     Id: '30530503',
+    Name: {
+      en: 'Quavering Bloodlust',
+      ja: 'ブラッディスピア',
+      zh: '鲜血之枪',
+    },
+    abbr: 'qb',
     element: 'Shadow',
     icon: [
       {
@@ -9535,16 +9962,17 @@ const weapon = {
     max: [39, 139],
     might: 70,
     min: [11, 41],
-    name: {
-      en: 'Quavering Bloodlust',
-      ja: 'ブラッディスピア',
-      zh: '鲜血之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30530504': {
     Id: '30530504',
+    Name: {
+      en: 'Shadespore Lance',
+      ja: 'パラソルインフェクション',
+      zh: '感染阳伞',
+    },
+    abbr: 'sl',
     element: 'Shadow',
     icon: [
       {
@@ -9560,39 +9988,36 @@ const weapon = {
     max: [42, 132],
     might: 70,
     min: [12, 39],
-    name: {
-      en: 'Shadespore Lance',
-      ja: 'パラソルインフェクション',
-      zh: '感染阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30539901': {
     Id: '30539901',
-    element: '0',
-    image: '305039_01_39901',
-    max: [24, 87],
-    min: [7, 26],
-    name: {
+    Name: {
       en: 'Trident',
       ja: 'トライデント',
       zh: '三叉戟',
     },
+    abbr: 't',
+    element: '0',
+    image: '305039_01_39901',
+    max: [24, 87],
+    min: [7, 26],
     rarity: '3',
     weapon: 'Lance',
   },
   '30539902': {
     Id: '30539902',
-    element: '0',
-    image: '305013_01_39901',
-    max: [39, 139],
-    min: [11, 41],
-    name: {
+    Name: {
       en: 'Mailbreaker',
       ja: 'ブレイクスピア',
       zh: '破坏之枪',
     },
+    abbr: 'm',
+    element: '0',
+    image: '305013_01_39901',
+    max: [39, 139],
+    min: [11, 41],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_004',
@@ -9602,15 +10027,16 @@ const weapon = {
   },
   '30539903': {
     Id: '30539903',
-    element: '0',
-    image: '305010_01_39901',
-    max: [37, 143],
-    min: [11, 42],
-    name: {
+    Name: {
       en: 'Drill Lance',
       ja: 'ドリルランス',
       zh: '钻头枪',
     },
+    abbr: 'dl',
+    element: '0',
+    image: '305010_01_39901',
+    max: [37, 143],
+    min: [11, 42],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_019',
@@ -9620,6 +10046,12 @@ const weapon = {
   },
   '30539904': {
     Id: '30539904',
+    Name: {
+      en: 'Leechspore Lance',
+      ja: 'パラソルランス',
+      zh: '尖枪阳伞',
+    },
+    abbr: 'll',
     element: '0',
     icon: [
       {
@@ -9631,16 +10063,17 @@ const weapon = {
     max: [24, 87],
     might: 20,
     min: [7, 26],
-    name: {
-      en: 'Leechspore Lance',
-      ja: 'パラソルランス',
-      zh: '尖枪阳伞',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30539905': {
     Id: '30539905',
+    Name: {
+      en: 'Solitary Desire',
+      ja: '未練の槍',
+      zh: '怨念之枪',
+    },
+    abbr: 'sd',
     element: '0',
     icon: [
       {
@@ -9652,16 +10085,17 @@ const weapon = {
     max: [24, 87],
     might: 20,
     min: [7, 26],
-    name: {
-      en: 'Solitary Desire',
-      ja: '未練の槍',
-      zh: '怨念之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30539906': {
     Id: '30539906',
+    Name: {
+      en: 'Heartseeker',
+      ja: 'テリブルスピア',
+      zh: '恐怖之枪',
+    },
+    abbr: 'h',
     element: '0',
     icon: [
       {
@@ -9673,25 +10107,21 @@ const weapon = {
     max: [24, 87],
     might: 20,
     min: [7, 26],
-    name: {
-      en: 'Heartseeker',
-      ja: 'テリブルスピア',
-      zh: '恐怖之枪',
-    },
     rarity: '3',
     weapon: 'Lance',
   },
   '30540101': {
     Id: '30540101',
-    element: 'Flame',
-    image: '305031_01_40101',
-    max: [99, 358],
-    min: [29, 107],
-    name: {
+    Name: {
       en: 'Flameserpent',
       ja: '焔大蛇',
       zh: '焰蟒',
     },
+    abbr: 'f',
+    element: 'Flame',
+    image: '305031_01_40101',
+    max: [99, 358],
+    min: [29, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -9701,6 +10131,12 @@ const weapon = {
   },
   '30540102': {
     Id: '30540102',
+    Name: {
+      en: 'Triggerspore Lance',
+      ja: 'パラソルイグニション',
+      zh: '焚身阳伞',
+    },
+    abbr: 'tl',
     element: 'Flame',
     icon: [
       {
@@ -9716,16 +10152,17 @@ const weapon = {
     max: [58, 227],
     might: 90,
     min: [17, 68],
-    name: {
-      en: 'Triggerspore Lance',
-      ja: 'パラソルイグニション',
-      zh: '焚身阳伞',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540104': {
     Id: '30540104',
+    Name: {
+      en: 'Ragefire Lance',
+      ja: '猛炎の槍',
+      zh: '烈焰之枪',
+    },
+    abbr: 'rl',
     element: 'Flame',
     icon: [
       {
@@ -9741,16 +10178,17 @@ const weapon = {
     max: [76, 276],
     might: 140,
     min: [22, 82],
-    name: {
-      en: 'Ragefire Lance',
-      ja: '猛炎の槍',
-      zh: '烈焰之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540105': {
     Id: '30540105',
+    Name: {
+      en: 'Reisel, the Solar Flare',
+      ja: '紅炎槍ライゼル',
+      zh: '红炎枪莱泽尔',
+    },
+    abbr: 'rtsf',
     element: 'Flame',
     icon: [
       {
@@ -9767,16 +10205,17 @@ const weapon = {
     max: [72, 284],
     might: 80,
     min: [21, 85],
-    name: {
-      en: 'Reisel, the Solar Flare',
-      ja: '紅炎槍ライゼル',
-      zh: '红炎枪莱泽尔',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540106': {
     Id: '30540106',
+    Name: {
+      en: 'Spiritflame Spear',
+      ja: 'スピリットフレイムスピア',
+      zh: '灵焰之枪',
+    },
+    abbr: 'ss',
     element: 'Flame',
     icon: [
       {
@@ -9793,16 +10232,17 @@ const weapon = {
     max: [61, 220],
     might: 80,
     min: [18, 66],
-    name: {
-      en: 'Spiritflame Spear',
-      ja: 'スピリットフレイムスピア',
-      zh: '灵焰之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540107': {
     Id: '30540107',
+    Name: {
+      en: 'Burning Fury Lance',
+      ja: '激昂と業火の槍',
+      zh: '激昂与业火之枪',
+    },
+    abbr: 'bfl',
     element: 'Flame',
     icon: [
       {
@@ -9818,16 +10258,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Burning Fury Lance',
-      ja: '激昂と業火の槍',
-      zh: '激昂与业火之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540108': {
     Id: '30540108',
+    Name: {
+      en: 'Cinder Beast',
+      ja: 'アッシュビースト',
+      zh: '灰烬凶兽之枪',
+    },
+    abbr: 'cb',
     element: 'Flame',
     icon: [
       {
@@ -9843,16 +10284,17 @@ const weapon = {
     max: [76, 276],
     might: 80,
     min: [22, 82],
-    name: {
-      en: 'Cinder Beast',
-      ja: 'アッシュビースト',
-      zh: '灰烬凶兽之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540109': {
     Id: '30540109',
+    Name: {
+      en: 'Ignition Flamelance',
+      ja: '火槍・イグニシオ',
+      zh: '火枪·伊格尼希欧',
+    },
+    abbr: 'if',
     element: 'Flame',
     icon: [
       {
@@ -9869,25 +10311,21 @@ const weapon = {
     max: [80, 267],
     might: 90,
     min: [24, 80],
-    name: {
-      en: 'Ignition Flamelance',
-      ja: '火槍・イグニシオ',
-      zh: '火枪·伊格尼希欧',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540201': {
     Id: '30540201',
-    element: 'Water',
-    image: '305016_01_40201',
-    max: [94, 369],
-    min: [28, 110],
-    name: {
+    Name: {
       en: 'Abyssal Prize',
       ja: '大海の宝槍',
       zh: '大海宝枪',
     },
+    abbr: 'ap',
+    element: 'Water',
+    image: '305016_01_40201',
+    max: [94, 369],
+    min: [28, 110],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_012',
@@ -9897,6 +10335,12 @@ const weapon = {
   },
   '30540202': {
     Id: '30540202',
+    Name: {
+      en: 'Shatterspore Lance',
+      ja: 'パラソルスプラッシュ',
+      zh: '喷溅阳伞',
+    },
+    abbr: 'sl',
     element: 'Water',
     icon: [
       {
@@ -9912,16 +10356,17 @@ const weapon = {
     max: [58, 227],
     might: 90,
     min: [17, 68],
-    name: {
-      en: 'Shatterspore Lance',
-      ja: 'パラソルスプラッシュ',
-      zh: '喷溅阳伞',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540203': {
     Id: '30540203',
+    Name: {
+      en: 'Tidal Beast',
+      ja: 'ウェーブビースト',
+      zh: '波澜凶兽之枪',
+    },
+    abbr: 'tb',
     element: 'Water',
     icon: [
       {
@@ -9938,16 +10383,17 @@ const weapon = {
     max: [72, 284],
     might: 80,
     min: [21, 85],
-    name: {
-      en: 'Tidal Beast',
-      ja: 'ウェーブビースト',
-      zh: '波澜凶兽之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540204': {
     Id: '30540204',
+    Name: {
+      en: 'Callous Lance',
+      ja: '戦慄と酷薄の槍',
+      zh: '战栗与冷酷之枪',
+    },
+    abbr: 'cl',
     element: 'Water',
     icon: [
       {
@@ -9963,16 +10409,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Callous Lance',
-      ja: '戦慄と酷薄の槍',
-      zh: '战栗与冷酷之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540205': {
     Id: '30540205',
+    Name: {
+      en: 'Strohm',
+      ja: '海渦槍シュトロム',
+      zh: '海涡枪斯托罗姆',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -9989,16 +10436,17 @@ const weapon = {
     max: [80, 267],
     might: 140,
     min: [24, 80],
-    name: {
-      en: 'Strohm',
-      ja: '海渦槍シュトロム',
-      zh: '海涡枪斯托罗姆',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540206': {
     Id: '30540206',
+    Name: {
+      en: 'Iceguide Trident',
+      ja: '氷を律する三叉槍',
+      zh: '律冰三叉戟',
+    },
+    abbr: 'it',
     element: 'Water',
     icon: [
       {
@@ -10014,16 +10462,17 @@ const weapon = {
     max: [72, 284],
     might: 80,
     min: [21, 85],
-    name: {
-      en: 'Iceguide Trident',
-      ja: '氷を律する三叉槍',
-      zh: '律冰三叉戟',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540207': {
     Id: '30540207',
+    Name: {
+      en: 'Gelid Grace',
+      ja: 'ブリザードグレイススピア',
+      zh: '冰雅之枪',
+    },
+    abbr: 'gg',
     element: 'Water',
     icon: [
       {
@@ -10039,16 +10488,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Gelid Grace',
-      ja: 'ブリザードグレイススピア',
-      zh: '冰雅之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540208': {
     Id: '30540208',
+    Name: {
+      en: 'Lance of Dark Depths',
+      ja: '冥河の幽槍',
+      zh: '冥河幽枪',
+    },
+    abbr: 'lodd',
     element: 'Water',
     icon: [
       {
@@ -10064,25 +10514,21 @@ const weapon = {
     max: [76, 276],
     might: 90,
     min: [22, 82],
-    name: {
-      en: 'Lance of Dark Depths',
-      ja: '冥河の幽槍',
-      zh: '冥河幽枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540302': {
     Id: '30540302',
-    element: 'Wind',
-    image: '305011_01_40301',
-    max: [94, 369],
-    min: [28, 110],
-    name: {
+    Name: {
       en: 'Tempest Lance',
       ja: 'テンペストスピア',
       zh: '风暴之枪',
     },
+    abbr: 'tl',
+    element: 'Wind',
+    image: '305011_01_40301',
+    max: [94, 369],
+    min: [28, 110],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_012',
@@ -10092,6 +10538,12 @@ const weapon = {
   },
   '30540303': {
     Id: '30540303',
+    Name: {
+      en: 'Melancholy Lance',
+      ja: '追想と晴嵐の槍',
+      zh: '追忆与晴岚之枪',
+    },
+    abbr: 'ml',
     element: 'Wind',
     icon: [
       {
@@ -10107,16 +10559,17 @@ const weapon = {
     max: [66, 209],
     might: 90,
     min: [19, 62],
-    name: {
-      en: 'Melancholy Lance',
-      ja: '追想と晴嵐の槍',
-      zh: '追忆与晴岚之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540304': {
     Id: '30540304',
+    Name: {
+      en: 'Tornadospore Lance',
+      ja: 'パラソルトルネード',
+      zh: '龙卷阳伞',
+    },
+    abbr: 'tl',
     element: 'Wind',
     icon: [
       {
@@ -10132,16 +10585,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Tornadospore Lance',
-      ja: 'パラソルトルネード',
-      zh: '龙卷阳伞',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540305': {
     Id: '30540305',
+    Name: {
+      en: 'Stormsiege Lance',
+      ja: '震嵐の槍',
+      zh: '震岚之枪',
+    },
+    abbr: 'sl',
     element: 'Wind',
     icon: [
       {
@@ -10157,16 +10611,17 @@ const weapon = {
     max: [80, 267],
     might: 60,
     min: [24, 80],
-    name: {
-      en: 'Stormsiege Lance',
-      ja: '震嵐の槍',
-      zh: '震岚之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540306': {
     Id: '30540306',
+    Name: {
+      en: 'Immortal Wind',
+      ja: 'イモータルウインドスピア',
+      zh: '不灭风枪',
+    },
+    abbr: 'iw',
     element: 'Wind',
     icon: [
       {
@@ -10182,16 +10637,17 @@ const weapon = {
     max: [64, 214],
     might: 90,
     min: [19, 64],
-    name: {
-      en: 'Immortal Wind',
-      ja: 'イモータルウインドスピア',
-      zh: '不灭风枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540307': {
     Id: '30540307',
+    Name: {
+      en: 'Windguide Trident',
+      ja: '風を統べし三叉槍',
+      zh: '御风三叉戟',
+    },
+    abbr: 'wt',
     element: 'Wind',
     icon: [
       {
@@ -10207,16 +10663,17 @@ const weapon = {
     max: [80, 267],
     might: 140,
     min: [24, 80],
-    name: {
-      en: 'Windguide Trident',
-      ja: '風を統べし三叉槍',
-      zh: '御风三叉戟',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540308': {
     Id: '30540308',
+    Name: {
+      en: 'Floating Beast',
+      ja: 'フロータービースト',
+      zh: '悬浮凶兽之枪',
+    },
+    abbr: 'fb',
     element: 'Wind',
     icon: [
       {
@@ -10232,25 +10689,21 @@ const weapon = {
     max: [76, 276],
     might: 80,
     min: [22, 82],
-    name: {
-      en: 'Floating Beast',
-      ja: 'フロータービースト',
-      zh: '悬浮凶兽之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540402': {
     Id: '30540402',
-    element: 'Light',
-    image: '305012_01_40401',
-    max: [99, 358],
-    min: [29, 107],
-    name: {
+    Name: {
       en: 'Thunderbolt',
       ja: 'ライトニングランス',
       zh: '电击长枪',
     },
+    abbr: 't',
+    element: 'Light',
+    image: '305012_01_40401',
+    max: [99, 358],
+    min: [29, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -10260,6 +10713,12 @@ const weapon = {
   },
   '30540403': {
     Id: '30540403',
+    Name: {
+      en: 'Lonesome Wish',
+      ja: '願望と奇跡の槍',
+      zh: '祈愿与奇迹之枪',
+    },
+    abbr: 'lw',
     element: 'Light',
     icon: [
       {
@@ -10275,16 +10734,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Lonesome Wish',
-      ja: '願望と奇跡の槍',
-      zh: '祈愿与奇迹之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540405': {
     Id: '30540405',
+    Name: {
+      en: 'Shinespore Lance',
+      ja: 'パラソルシャイン',
+      zh: '闪耀阳伞',
+    },
+    abbr: 'sl',
     element: 'Light',
     icon: [
       {
@@ -10300,16 +10760,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Shinespore Lance',
-      ja: 'パラソルシャイン',
-      zh: '闪耀阳伞',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540406': {
     Id: '30540406',
+    Name: {
+      en: 'Twilight',
+      ja: '聖槍トワイライト',
+      zh: '圣枪暮光',
+    },
+    abbr: 't',
     element: 'Light',
     icon: [
       {
@@ -10327,16 +10788,17 @@ const weapon = {
     max: [82, 262],
     might: 80,
     min: [24, 78],
-    name: {
-      en: 'Twilight',
-      ja: '聖槍トワイライト',
-      zh: '圣枪暮光',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540407': {
     Id: '30540407',
+    Name: {
+      en: 'Deadly Brightlance',
+      ja: '光槍・スラスト',
+      zh: '光枪·突刺',
+    },
+    abbr: 'db',
     element: 'Light',
     icon: [
       {
@@ -10353,16 +10815,17 @@ const weapon = {
     max: [82, 262],
     might: 90,
     min: [24, 78],
-    name: {
-      en: 'Deadly Brightlance',
-      ja: '光槍・スラスト',
-      zh: '光枪·突刺',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540408': {
     Id: '30540408',
+    Name: {
+      en: 'Lightpiercer',
+      ja: '裂光鋭鋒',
+      zh: '裂光锐锋',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -10379,25 +10842,21 @@ const weapon = {
     max: [76, 276],
     might: 140,
     min: [22, 82],
-    name: {
-      en: 'Lightpiercer',
-      ja: '裂光鋭鋒',
-      zh: '裂光锐锋',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540501': {
     Id: '30540501',
-    element: 'Shadow',
-    image: '305035_01_40501',
-    max: [99, 358],
-    min: [29, 107],
-    name: {
+    Name: {
       en: 'Hellish Lance',
       ja: 'ランスオブへル',
       zh: '地狱之枪',
     },
+    abbr: 'hl',
+    element: 'Shadow',
+    image: '305035_01_40501',
+    max: [99, 358],
+    min: [29, 107],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -10407,6 +10866,12 @@ const weapon = {
   },
   '30540502': {
     Id: '30540502',
+    Name: {
+      en: 'Lance of Nightmares',
+      ja: '悪夢と妄執の槍',
+      zh: '噩梦与妄念之枪',
+    },
+    abbr: 'lon',
     element: 'Shadow',
     icon: [
       {
@@ -10422,16 +10887,17 @@ const weapon = {
     max: [66, 209],
     might: 90,
     min: [19, 62],
-    name: {
-      en: 'Lance of Nightmares',
-      ja: '悪夢と妄執の槍',
-      zh: '噩梦与妄念之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540504': {
     Id: '30540504',
+    Name: {
+      en: 'Spear of Tragedy',
+      ja: 'バッドエンドスピア',
+      zh: '末路之枪',
+    },
+    abbr: 'sot',
     element: 'Shadow',
     icon: [
       {
@@ -10447,16 +10913,17 @@ const weapon = {
     max: [61, 220],
     might: 90,
     min: [18, 66],
-    name: {
-      en: 'Spear of Tragedy',
-      ja: 'バッドエンドスピア',
-      zh: '末路之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540505': {
     Id: '30540505',
+    Name: {
+      en: 'Looming Eclipse',
+      ja: '邪槍エクリプス',
+      zh: '邪枪日食',
+    },
+    abbr: 'le',
     element: 'Shadow',
     icon: [
       {
@@ -10473,16 +10940,17 @@ const weapon = {
     max: [82, 262],
     might: 140,
     min: [24, 78],
-    name: {
-      en: 'Looming Eclipse',
-      ja: '邪槍エクリプス',
-      zh: '邪枪日食',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540506': {
     Id: '30540506',
+    Name: {
+      en: 'Sablespore Lance',
+      ja: 'パラソルパンデミック',
+      zh: '瘟疫阳伞',
+    },
+    abbr: 'sl',
     element: 'Shadow',
     icon: [
       {
@@ -10498,16 +10966,17 @@ const weapon = {
     max: [66, 209],
     might: 90,
     min: [19, 62],
-    name: {
-      en: 'Sablespore Lance',
-      ja: 'パラソルパンデミック',
-      zh: '瘟疫阳伞',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30540507': {
     Id: '30540507',
+    Name: {
+      en: 'Cursepiercer',
+      ja: '忌呪鋭鋒',
+      zh: '忌咒锐锋',
+    },
+    abbr: 'c',
     element: 'Shadow',
     icon: [
       {
@@ -10524,39 +10993,36 @@ const weapon = {
     max: [80, 267],
     might: 80,
     min: [24, 80],
-    name: {
-      en: 'Cursepiercer',
-      ja: '忌呪鋭鋒',
-      zh: '忌咒锐锋',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549901': {
     Id: '30549901',
-    element: '0',
-    image: '305029_01_49901',
-    max: [59, 212],
-    min: [17, 63],
-    name: {
+    Name: {
       en: 'Strong Halberd',
       ja: 'ストロングハルバード',
       zh: '强者之戟',
     },
+    abbr: 'sh',
+    element: '0',
+    image: '305029_01_49901',
+    max: [59, 212],
+    min: [17, 63],
     rarity: '4',
     weapon: 'Lance',
   },
   '30549902': {
     Id: '30549902',
-    element: '0',
-    image: '305040_01_49901',
-    max: [76, 276],
-    min: [22, 82],
-    name: {
+    Name: {
       en: 'Lance of the Innocent',
       ja: 'イノセントスピア',
       zh: '圣洁之枪',
     },
+    abbr: 'loti',
+    element: '0',
+    image: '305040_01_49901',
+    max: [76, 276],
+    min: [22, 82],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -10566,15 +11032,16 @@ const weapon = {
   },
   '30549903': {
     Id: '30549903',
-    element: '0',
-    image: '305041_01_49901',
-    max: [72, 284],
-    min: [21, 85],
-    name: {
+    Name: {
       en: 'Ironside Lance',
       ja: '鉄騎兵の槍',
       zh: '铁骑兵之枪',
     },
+    abbr: 'il',
+    element: '0',
+    image: '305041_01_49901',
+    max: [72, 284],
+    min: [21, 85],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_012',
@@ -10584,6 +11051,12 @@ const weapon = {
   },
   '30549904': {
     Id: '30549904',
+    Name: {
+      en: 'Piercing Beast',
+      ja: 'ワイルドビースト',
+      zh: '狂野凶兽之枪',
+    },
+    abbr: 'pb',
     element: '0',
     icon: [
       {
@@ -10595,16 +11068,17 @@ const weapon = {
     max: [56, 219],
     might: 40,
     min: [16, 65],
-    name: {
-      en: 'Piercing Beast',
-      ja: 'ワイルドビースト',
-      zh: '狂野凶兽之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549905': {
     Id: '30549905',
+    Name: {
+      en: 'Attacker Lance',
+      ja: '撃槍アングリフ',
+      zh: '击枪安格里夫',
+    },
+    abbr: 'al',
     element: '0',
     icon: [
       {
@@ -10617,16 +11091,17 @@ const weapon = {
     max: [62, 206],
     might: 40,
     min: [18, 61],
-    name: {
-      en: 'Attacker Lance',
-      ja: '撃槍アングリフ',
-      zh: '击枪安格里夫',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549906': {
     Id: '30549906',
+    Name: {
+      en: 'Great Aquila Lance',
+      ja: '巨鷲の槍',
+      zh: '巨鹫之枪',
+    },
+    abbr: 'gal',
     element: '0',
     icon: [
       {
@@ -10638,16 +11113,17 @@ const weapon = {
     max: [59, 212],
     might: 40,
     min: [17, 63],
-    name: {
-      en: 'Great Aquila Lance',
-      ja: '巨鷲の槍',
-      zh: '巨鹫之枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549907': {
     Id: '30549907',
+    Name: {
+      en: 'Sovereign Trident',
+      ja: '統治者の三叉槍',
+      zh: '统治者三叉戟',
+    },
+    abbr: 'st',
     element: '0',
     icon: [
       {
@@ -10659,16 +11135,17 @@ const weapon = {
     max: [62, 206],
     might: 40,
     min: [18, 61],
-    name: {
-      en: 'Sovereign Trident',
-      ja: '統治者の三叉槍',
-      zh: '统治者三叉戟',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549908': {
     Id: '30549908',
+    Name: {
+      en: 'Clematis',
+      ja: '彩槍クレマティス',
+      zh: '彩枪铁线莲',
+    },
+    abbr: 'c',
     element: '0',
     icon: [
       {
@@ -10681,16 +11158,17 @@ const weapon = {
     max: [63, 202],
     might: 40,
     min: [18, 60],
-    name: {
-      en: 'Clematis',
-      ja: '彩槍クレマティス',
-      zh: '彩枪铁线莲',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549909': {
     Id: '30549909',
+    Name: {
+      en: 'Phantom Truelance',
+      ja: '真槍・ファントム',
+      zh: '真枪·幻影',
+    },
+    abbr: 'pt',
     element: '0',
     icon: [
       {
@@ -10703,16 +11181,17 @@ const weapon = {
     max: [63, 202],
     might: 40,
     min: [18, 60],
-    name: {
-      en: 'Phantom Truelance',
-      ja: '真槍・ファントム',
-      zh: '真枪·幻影',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549910': {
     Id: '30549910',
+    Name: {
+      en: 'Omnipiercer',
+      ja: '無門鋭鋒',
+      zh: '无门锐锋',
+    },
+    abbr: 'o',
     element: '0',
     icon: [
       {
@@ -10725,16 +11204,17 @@ const weapon = {
     max: [59, 212],
     might: 40,
     min: [17, 63],
-    name: {
-      en: 'Omnipiercer',
-      ja: '無門鋭鋒',
-      zh: '无门锐锋',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30549911': {
     Id: '30549911',
+    Name: {
+      en: 'Lance of Lamentation',
+      ja: '悲嘆の幽槍',
+      zh: '悲叹幽枪',
+    },
+    abbr: 'lol',
     element: '0',
     icon: [
       {
@@ -10746,25 +11226,21 @@ const weapon = {
     max: [59, 212],
     might: 40,
     min: [17, 63],
-    name: {
-      en: 'Lance of Lamentation',
-      ja: '悲嘆の幽槍',
-      zh: '悲叹幽枪',
-    },
     rarity: '4',
     weapon: 'Lance',
   },
   '30550101': {
     Id: '30550101',
-    element: 'Flame',
-    image: '305030_01_50101',
-    max: [145, 567],
-    min: [43, 170],
-    name: {
+    Name: {
       en: 'Calamity Trigger',
       ja: 'カラミティトリガー',
       zh: '灾祸之匙',
     },
+    abbr: 'ct',
+    element: 'Flame',
+    image: '305030_01_50101',
+    max: [145, 567],
+    min: [43, 170],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -10774,6 +11250,12 @@ const weapon = {
   },
   '30550102': {
     Id: '30550102',
+    Name: {
+      en: 'Flamedance Lance',
+      ja: '炎轟乱舞の槍',
+      zh: '炎轰乱舞之枪',
+    },
+    abbr: 'fl',
     element: 'Flame',
     icon: [
       {
@@ -10789,16 +11271,17 @@ const weapon = {
     max: [99, 358],
     might: 150,
     min: [29, 107],
-    name: {
-      en: 'Flamedance Lance',
-      ja: '炎轟乱舞の槍',
-      zh: '炎轰乱舞之枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550103': {
     Id: '30550103',
+    Name: {
+      en: 'Reiselfeld, the Solar Spray',
+      ja: '紅炎槍ライゼルフェルド',
+      zh: '红炎枪莱泽菲尔德',
+    },
+    abbr: 'rtss',
     element: 'Flame',
     icon: [
       {
@@ -10815,16 +11298,17 @@ const weapon = {
     max: [94, 369],
     might: 100,
     min: [28, 110],
-    name: {
-      en: 'Reiselfeld, the Solar Spray',
-      ja: '紅炎槍ライゼルフェルド',
-      zh: '红炎枪莱泽菲尔德',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550104': {
     Id: '30550104',
+    Name: {
+      en: 'Crimsonflame Lance',
+      ja: '紅き炎戟',
+      zh: '赤红之炎戟',
+    },
+    abbr: 'cl',
     element: 'Flame',
     icon: [
       {
@@ -10836,11 +11320,6 @@ const weapon = {
     max: [200, 780],
     might: 100,
     min: [60, 234],
-    name: {
-      en: 'Crimsonflame Lance',
-      ja: '紅き炎戟',
-      zh: '赤红之炎戟',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -10850,15 +11329,16 @@ const weapon = {
   },
   '30550105': {
     Id: '30550105',
-    element: 'Flame',
-    image: '305118_01_50102',
-    max: [240, 1560],
-    min: [72, 468],
-    name: {
+    Name: {
       en: 'Pureflame Lance',
       ja: '真紅の灼熱戟',
       zh: '真红之灼热戟',
     },
+    abbr: 'pl',
+    element: 'Flame',
+    image: '305118_01_50102',
+    max: [240, 1560],
+    min: [72, 468],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -10868,6 +11348,12 @@ const weapon = {
   },
   '30550106': {
     Id: '30550106',
+    Name: {
+      en: 'Ashen Beast',
+      ja: 'バーンナウトビースト',
+      zh: '焦土凶兽之枪',
+    },
+    abbr: 'ab',
     element: 'Flame',
     icon: [
       {
@@ -10883,16 +11369,17 @@ const weapon = {
     max: [99, 358],
     might: 100,
     min: [29, 107],
-    name: {
-      en: 'Ashen Beast',
-      ja: 'バーンナウトビースト',
-      zh: '焦土凶兽之枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550107': {
     Id: '30550107',
+    Name: {
+      en: 'Combustion Flamelance',
+      ja: '炎槍・フレイムアウト',
+      zh: '炎枪·弗雷姆奥托',
+    },
+    abbr: 'cf',
     element: 'Flame',
     icon: [
       {
@@ -10909,25 +11396,21 @@ const weapon = {
     max: [104, 347],
     might: 110,
     min: [31, 104],
-    name: {
-      en: 'Combustion Flamelance',
-      ja: '炎槍・フレイムアウト',
-      zh: '炎枪·弗雷姆奥托',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550201': {
     Id: '30550201',
-    element: 'Water',
-    image: '305014_01_50201',
-    max: [165, 523],
-    min: [49, 156],
-    name: {
+    Name: {
       en: 'Ocean Lord',
       ja: 'オーシャンロード',
       zh: '破浪之枪',
     },
+    abbr: 'ol',
+    element: 'Water',
+    image: '305014_01_50201',
+    max: [165, 523],
+    min: [49, 156],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -10937,6 +11420,12 @@ const weapon = {
   },
   '30550202': {
     Id: '30550202',
+    Name: {
+      en: 'Vortex Beast',
+      ja: 'ヴォルテックスビースト',
+      zh: '旋涡之枪',
+    },
+    abbr: 'vb',
     element: 'Water',
     icon: [
       {
@@ -10953,16 +11442,17 @@ const weapon = {
     max: [107, 340],
     might: 100,
     min: [32, 102],
-    name: {
-      en: 'Vortex Beast',
-      ja: 'ヴォルテックスビースト',
-      zh: '旋涡之枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550203': {
     Id: '30550203',
+    Name: {
+      en: 'Strohm Mare',
+      ja: '海渦槍シュトロムマーレ',
+      zh: '海涡枪斯托罗姆玛雷',
+    },
+    abbr: 'sm',
     element: 'Water',
     icon: [
       {
@@ -10979,16 +11469,17 @@ const weapon = {
     max: [104, 347],
     might: 160,
     min: [31, 104],
-    name: {
-      en: 'Strohm Mare',
-      ja: '海渦槍シュトロムマーレ',
-      zh: '海涡枪斯托罗姆玛雷',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550204': {
     Id: '30550204',
+    Name: {
+      en: 'Icesovereign Trident',
+      ja: '氷華を隷属する三叉槍',
+      zh: '御冰三叉戟',
+    },
+    abbr: 'it',
     element: 'Water',
     icon: [
       {
@@ -11004,16 +11495,17 @@ const weapon = {
     max: [94, 369],
     might: 100,
     min: [28, 110],
-    name: {
-      en: 'Icesovereign Trident',
-      ja: '氷華を隷属する三叉槍',
-      zh: '御冰三叉戟',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550205': {
     Id: '30550205',
+    Name: {
+      en: 'Limpid Lance',
+      ja: '清流の水戟',
+      zh: '清流之水戟',
+    },
+    abbr: 'll',
     element: 'Water',
     icon: [
       {
@@ -11025,11 +11517,6 @@ const weapon = {
     max: [200, 780],
     might: 100,
     min: [60, 234],
-    name: {
-      en: 'Limpid Lance',
-      ja: '清流の水戟',
-      zh: '清流之水戟',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_022',
@@ -11039,15 +11526,16 @@ const weapon = {
   },
   '30550206': {
     Id: '30550206',
-    element: 'Water',
-    image: '305116_01_50202',
-    max: [240, 1560],
-    min: [72, 468],
-    name: {
+    Name: {
       en: 'Limpid Rush',
       ja: '清澄なる奔流戟',
       zh: '清澄之奔流戟',
     },
+    abbr: 'lr',
+    element: 'Water',
+    image: '305116_01_50202',
+    max: [240, 1560],
+    min: [72, 468],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_022',
@@ -11057,6 +11545,12 @@ const weapon = {
   },
   '30550207': {
     Id: '30550207',
+    Name: {
+      en: 'Lance of Frozen Depths',
+      ja: '氷獄凍者の幽冥槍',
+      zh: '冰狱冻者幽冥枪',
+    },
+    abbr: 'lofd',
     element: 'Water',
     icon: [
       {
@@ -11072,25 +11566,21 @@ const weapon = {
     max: [99, 358],
     might: 110,
     min: [29, 107],
-    name: {
-      en: 'Lance of Frozen Depths',
-      ja: '氷獄凍者の幽冥槍',
-      zh: '冰狱冻者幽冥枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550301': {
     Id: '30550301',
-    element: 'Wind',
-    image: '305032_01_50301',
-    max: [165, 523],
-    min: [49, 156],
-    name: {
+    Name: {
       en: 'Spear of the Northern Cross',
       ja: 'ノーザンクロススピア',
       zh: '北十字之枪',
     },
+    abbr: 'sotnc',
+    element: 'Wind',
+    image: '305032_01_50301',
+    max: [165, 523],
+    min: [49, 156],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -11100,6 +11590,12 @@ const weapon = {
   },
   '30550302': {
     Id: '30550302',
+    Name: {
+      en: 'Stormpiercer Lance',
+      ja: '狂風大嵐の槍',
+      zh: '狂风巨岚之枪',
+    },
+    abbr: 'sl',
     element: 'Wind',
     icon: [
       {
@@ -11115,16 +11611,17 @@ const weapon = {
     max: [104, 347],
     might: 80,
     min: [31, 104],
-    name: {
-      en: 'Stormpiercer Lance',
-      ja: '狂風大嵐の槍',
-      zh: '狂风巨岚之枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550303': {
     Id: '30550303',
+    Name: {
+      en: 'Windsovereign Trident',
+      ja: '大嵐を従えし三叉槍',
+      zh: '御岚三叉戟',
+    },
+    abbr: 'wt',
     element: 'Wind',
     icon: [
       {
@@ -11140,16 +11637,17 @@ const weapon = {
     max: [104, 347],
     might: 160,
     min: [31, 104],
-    name: {
-      en: 'Windsovereign Trident',
-      ja: '大嵐を従えし三叉槍',
-      zh: '御岚三叉戟',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550304': {
     Id: '30550304',
+    Name: {
+      en: 'Flying Beast',
+      ja: 'フライングビースト',
+      zh: '飞空凶兽之枪',
+    },
+    abbr: 'fb',
     element: 'Wind',
     icon: [
       {
@@ -11165,16 +11663,17 @@ const weapon = {
     max: [99, 358],
     might: 100,
     min: [29, 107],
-    name: {
-      en: 'Flying Beast',
-      ja: 'フライングビースト',
-      zh: '飞空凶兽之枪',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550305': {
     Id: '30550305',
+    Name: {
+      en: 'Promising Breeze',
+      ja: '契約の風戟',
+      zh: '契约之风戟',
+    },
+    abbr: 'pb',
     element: 'Wind',
     icon: [
       {
@@ -11186,11 +11685,6 @@ const weapon = {
     max: [210, 757],
     might: 100,
     min: [63, 227],
-    name: {
-      en: 'Promising Breeze',
-      ja: '契約の風戟',
-      zh: '契约之风戟',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_012',
@@ -11200,15 +11694,16 @@ const weapon = {
   },
   '30550306': {
     Id: '30550306',
-    element: 'Wind',
-    image: '305115_01_50302',
-    max: [252, 1515],
-    min: [75, 454],
-    name: {
+    Name: {
       en: 'Guiding Gale',
       ja: '導きの烈風戟',
       zh: '指引之烈风戟',
     },
+    abbr: 'gg',
+    element: 'Wind',
+    image: '305115_01_50302',
+    max: [252, 1515],
+    min: [75, 454],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_012',
@@ -11218,15 +11713,16 @@ const weapon = {
   },
   '30550402': {
     Id: '30550402',
-    element: 'Light',
-    image: '305033_01_50401',
-    max: [145, 567],
-    min: [43, 170],
-    name: {
+    Name: {
       en: "Thunder King's Greatspear",
       ja: '爆雷の豪槍',
       zh: '雷霆豪枪',
     },
+    abbr: 'tkg',
+    element: 'Light',
+    image: '305033_01_50401',
+    max: [145, 567],
+    min: [43, 170],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -11236,6 +11732,12 @@ const weapon = {
   },
   '30550404': {
     Id: '30550404',
+    Name: {
+      en: 'Twilight Lost',
+      ja: '聖槍トワイライトロスト',
+      zh: '圣枪失落暮光',
+    },
+    abbr: 'tl',
     element: 'Light',
     icon: [
       {
@@ -11253,16 +11755,17 @@ const weapon = {
     max: [107, 340],
     might: 100,
     min: [32, 102],
-    name: {
-      en: 'Twilight Lost',
-      ja: '聖槍トワイライトロスト',
-      zh: '圣枪失落暮光',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550405': {
     Id: '30550405',
+    Name: {
+      en: 'Lightflash',
+      ja: '輝ける雷戟',
+      zh: '光辉之雷戟',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -11274,11 +11777,6 @@ const weapon = {
     max: [200, 780],
     might: 100,
     min: [60, 234],
-    name: {
-      en: 'Lightflash',
-      ja: '輝ける雷戟',
-      zh: '光辉之雷戟',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_022',
@@ -11288,15 +11786,16 @@ const weapon = {
   },
   '30550406': {
     Id: '30550406',
-    element: 'Light',
-    image: '305117_01_50402',
-    max: [240, 1560],
-    min: [72, 468],
-    name: {
+    Name: {
       en: 'Brilliant Lightflash',
       ja: '燦然たる迅雷戟',
       zh: '灿烂之迅雷戟',
     },
+    abbr: 'bl',
+    element: 'Light',
+    image: '305117_01_50402',
+    max: [240, 1560],
+    min: [72, 468],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_022',
@@ -11306,6 +11805,12 @@ const weapon = {
   },
   '30550407': {
     Id: '30550407',
+    Name: {
+      en: 'Biting Brightlance',
+      ja: '光槍・ペネトレイト',
+      zh: '光枪·洞穿',
+    },
+    abbr: 'bb',
     element: 'Light',
     icon: [
       {
@@ -11322,16 +11827,17 @@ const weapon = {
     max: [107, 340],
     might: 110,
     min: [32, 102],
-    name: {
-      en: 'Biting Brightlance',
-      ja: '光槍・ペネトレイト',
-      zh: '光枪·洞穿',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550408': {
     Id: '30550408',
+    Name: {
+      en: 'Starpiercer',
+      ja: '極煌鋭鋒',
+      zh: '极煌锐锋',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -11348,25 +11854,21 @@ const weapon = {
     max: [99, 358],
     might: 160,
     min: [29, 107],
-    name: {
-      en: 'Starpiercer',
-      ja: '極煌鋭鋒',
-      zh: '极煌锐锋',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550501': {
     Id: '30550501',
-    element: 'Shadow',
-    image: '305036_01_50501',
-    max: [145, 567],
-    min: [43, 170],
-    name: {
+    Name: {
       en: 'Mistilteinn',
       ja: 'ミストルティン',
       zh: '米斯特汀',
     },
+    abbr: 'm',
+    element: 'Shadow',
+    image: '305036_01_50501',
+    max: [145, 567],
+    min: [43, 170],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -11376,6 +11878,12 @@ const weapon = {
   },
   '30550503': {
     Id: '30550503',
+    Name: {
+      en: 'Final Eclipse',
+      ja: '邪槍イビルエクリプス',
+      zh: '邪枪恶魔日食',
+    },
+    abbr: 'fe',
     element: 'Shadow',
     icon: [
       {
@@ -11392,16 +11900,17 @@ const weapon = {
     max: [107, 340],
     might: 160,
     min: [32, 102],
-    name: {
-      en: 'Final Eclipse',
-      ja: '邪槍イビルエクリプス',
-      zh: '邪枪恶魔日食',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30550504': {
     Id: '30550504',
+    Name: {
+      en: 'Scourge Lance',
+      ja: '呪わしき闇戟',
+      zh: '诅咒之暗戟',
+    },
+    abbr: 'sl',
     element: 'Shadow',
     icon: [
       {
@@ -11413,11 +11922,6 @@ const weapon = {
     max: [227, 719],
     might: 100,
     min: [68, 215],
-    name: {
-      en: 'Scourge Lance',
-      ja: '呪わしき闇戟',
-      zh: '诅咒之暗戟',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -11427,15 +11931,16 @@ const weapon = {
   },
   '30550505': {
     Id: '30550505',
-    element: 'Shadow',
-    image: '305119_01_50502',
-    max: [272, 1439],
-    min: [81, 431],
-    name: {
+    Name: {
       en: 'Ebon Scourge Lance',
       ja: '呪影の漆黒戟',
       zh: '咒影之暗黑戟',
     },
+    abbr: 'esl',
+    element: 'Shadow',
+    image: '305119_01_50502',
+    max: [272, 1439],
+    min: [81, 431],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -11445,6 +11950,12 @@ const weapon = {
   },
   '30550506': {
     Id: '30550506',
+    Name: {
+      en: 'Plaguepiercer',
+      ja: '災禍鋭鋒',
+      zh: '灾祸锐锋',
+    },
+    abbr: 'p',
     element: 'Shadow',
     icon: [
       {
@@ -11461,39 +11972,36 @@ const weapon = {
     max: [104, 347],
     might: 100,
     min: [31, 104],
-    name: {
-      en: 'Plaguepiercer',
-      ja: '災禍鋭鋒',
-      zh: '灾祸锐锋',
-    },
     rarity: '5',
     weapon: 'Lance',
   },
   '30559901': {
     Id: '30559901',
-    element: '0',
-    image: '305015_01_59901',
-    max: [103, 369],
-    min: [30, 110],
-    name: {
+    Name: {
       en: 'Pactspear',
       ja: 'ロウフルスピア',
       zh: '护法之枪',
     },
+    abbr: 'p',
+    element: '0',
+    image: '305015_01_59901',
+    max: [103, 369],
+    min: [30, 110],
     rarity: '5',
     weapon: 'Lance',
   },
   '30559902': {
     Id: '30559902',
-    element: '0',
-    image: '305042_01_59901',
-    max: [119, 465],
-    min: [35, 139],
-    name: {
+    Name: {
       en: 'Compass Needle',
       ja: '羅針槍',
       zh: '罗盘枪',
     },
+    abbr: 'cn',
+    element: '0',
+    image: '305042_01_59901',
+    max: [119, 465],
+    min: [35, 139],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_019',
@@ -11503,15 +12011,16 @@ const weapon = {
   },
   '30559903': {
     Id: '30559903',
-    element: '0',
-    image: '305043_01_59901',
-    max: [135, 429],
-    min: [40, 128],
-    name: {
+    Name: {
       en: 'Gae Bolg',
       ja: 'ゲイボルグ',
       zh: '千棘刺之枪',
     },
+    abbr: 'gb',
+    element: '0',
+    image: '305043_01_59901',
+    max: [135, 429],
+    min: [40, 128],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -11521,15 +12030,16 @@ const weapon = {
   },
   '30559904': {
     Id: '30559904',
-    element: '0',
-    image: '305126_01_59901',
-    max: [103, 369],
-    min: [30, 110],
-    name: {
+    Name: {
       en: 'Mega Lance',
       ja: 'ロックスピア',
       zh: '洛克枪',
     },
+    abbr: 'ml',
+    element: '0',
+    image: '305126_01_59901',
+    max: [103, 369],
+    min: [30, 110],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -11539,15 +12049,16 @@ const weapon = {
   },
   '30630101': {
     Id: '30630101',
-    element: 'Flame',
-    image: '306006_01_30101',
-    max: [56, 214],
-    min: [16, 64],
-    name: {
+    Name: {
       en: 'Flightfyre',
       ja: 'フライトファイア',
       zh: '飞火弓',
     },
+    abbr: 'f',
+    element: 'Flame',
+    image: '306006_01_30101',
+    max: [56, 214],
+    min: [16, 64],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_017',
@@ -11557,6 +12068,12 @@ const weapon = {
   },
   '30630102': {
     Id: '30630102',
+    Name: {
+      en: 'Firefungus',
+      ja: 'ファイアファンガス',
+      zh: '火蘑弓',
+    },
+    abbr: 'f',
     element: 'Flame',
     icon: [
       {
@@ -11572,16 +12089,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Firefungus',
-      ja: 'ファイアファンガス',
-      zh: '火蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630104': {
     Id: '30630104',
+    Name: {
+      en: 'Flickertorch Bow',
+      ja: 'ゆらめく燈火の弓',
+      zh: '摇曳灯火之弓',
+    },
+    abbr: 'fb',
     element: 'Flame',
     icon: [
       {
@@ -11598,16 +12116,17 @@ const weapon = {
     max: [39, 127],
     might: 60,
     min: [11, 38],
-    name: {
-      en: 'Flickertorch Bow',
-      ja: 'ゆらめく燈火の弓',
-      zh: '摇曳灯火之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630105': {
     Id: '30630105',
+    Name: {
+      en: 'Shimmerflame Bow',
+      ja: '陽炎の弓',
+      zh: '阳炎之弓',
+    },
+    abbr: 'sb',
     element: 'Flame',
     icon: [
       {
@@ -11623,25 +12142,21 @@ const weapon = {
     max: [35, 135],
     might: 70,
     min: [10, 40],
-    name: {
-      en: 'Shimmerflame Bow',
-      ja: '陽炎の弓',
-      zh: '阳炎之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630201': {
     Id: '30630201',
-    element: 'Water',
-    image: '306007_01_30201',
-    max: [59, 207],
-    min: [17, 62],
-    name: {
+    Name: {
       en: 'Tidal Bow',
       ja: 'オーシャンボウ',
       zh: '深海之弓',
     },
+    abbr: 'tb',
+    element: 'Water',
+    image: '306007_01_30201',
+    max: [59, 207],
+    min: [17, 62],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_030',
@@ -11651,6 +12166,12 @@ const weapon = {
   },
   '30630202': {
     Id: '30630202',
+    Name: {
+      en: 'Frostfungus',
+      ja: 'アイスファンガス',
+      zh: '冰蘑弓',
+    },
+    abbr: 'f',
     element: 'Water',
     icon: [
       {
@@ -11666,16 +12187,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Frostfungus',
-      ja: 'アイスファンガス',
-      zh: '冰蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630203': {
     Id: '30630203',
+    Name: {
+      en: 'Snowsquall Bow',
+      ja: '霜雪の弓',
+      zh: '霜雪之弓',
+    },
+    abbr: 'sb',
     element: 'Water',
     icon: [
       {
@@ -11691,16 +12213,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Snowsquall Bow',
-      ja: '霜雪の弓',
-      zh: '霜雪之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630204': {
     Id: '30630204',
+    Name: {
+      en: 'Waverouser Bow',
+      ja: 'ざわめく海鳴りの弓',
+      zh: '喧嚣海鸣之弓',
+    },
+    abbr: 'wb',
     element: 'Water',
     icon: [
       {
@@ -11716,25 +12239,21 @@ const weapon = {
     max: [35, 135],
     might: 70,
     min: [10, 40],
-    name: {
-      en: 'Waverouser Bow',
-      ja: 'ざわめく海鳴りの弓',
-      zh: '喧嚣海鸣之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630302': {
     Id: '30630302',
-    element: 'Wind',
-    image: '306003_01_30301',
-    max: [56, 214],
-    min: [16, 64],
-    name: {
+    Name: {
       en: 'Proof of the Wind',
       ja: 'エアリアルプルーフ',
       zh: '狂风试炼',
     },
+    abbr: 'potw',
+    element: 'Wind',
+    image: '306003_01_30301',
+    max: [56, 214],
+    min: [16, 64],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_017',
@@ -11744,6 +12263,12 @@ const weapon = {
   },
   '30630303': {
     Id: '30630303',
+    Name: {
+      en: 'Windsong Bow',
+      ja: '風歌の弓',
+      zh: '风歌之弓',
+    },
+    abbr: 'wb',
     element: 'Wind',
     icon: [
       {
@@ -11759,16 +12284,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Windsong Bow',
-      ja: '風歌の弓',
-      zh: '风歌之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630304': {
     Id: '30630304',
+    Name: {
+      en: 'Windfungus',
+      ja: 'ウインドファンガス',
+      zh: '风蘑弓',
+    },
+    abbr: 'w',
     element: 'Wind',
     icon: [
       {
@@ -11784,16 +12310,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Windfungus',
-      ja: 'ウインドファンガス',
-      zh: '风蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630305': {
     Id: '30630305',
+    Name: {
+      en: 'Unknown Summon',
+      ja: '怪音を響かせる弓',
+      zh: '低吟之弓',
+    },
+    abbr: 'us',
     element: 'Wind',
     icon: [
       {
@@ -11809,25 +12336,21 @@ const weapon = {
     max: [35, 135],
     might: 70,
     min: [10, 40],
-    name: {
-      en: 'Unknown Summon',
-      ja: '怪音を響かせる弓',
-      zh: '低吟之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630401': {
     Id: '30630401',
-    element: 'Light',
-    image: '306009_01_30401',
-    max: [56, 214],
-    min: [16, 64],
-    name: {
+    Name: {
       en: 'Galvanic Bow',
       ja: 'エレクトロボウ',
       zh: '雷电战弓',
     },
+    abbr: 'gb',
+    element: 'Light',
+    image: '306009_01_30401',
+    max: [56, 214],
+    min: [16, 64],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_017',
@@ -11837,6 +12360,12 @@ const weapon = {
   },
   '30630402': {
     Id: '30630402',
+    Name: {
+      en: 'Cracklescent Bow',
+      ja: '清香の弓',
+      zh: '清香之弓',
+    },
+    abbr: 'cb',
     element: 'Light',
     icon: [
       {
@@ -11852,16 +12381,17 @@ const weapon = {
     max: [35, 135],
     might: 70,
     min: [10, 40],
-    name: {
-      en: 'Cracklescent Bow',
-      ja: '清香の弓',
-      zh: '清香之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630403': {
     Id: '30630403',
+    Name: {
+      en: 'Flashfungus',
+      ja: 'フラッシュファンガス',
+      zh: '雷光蘑弓',
+    },
+    abbr: 'f',
     element: 'Light',
     icon: [
       {
@@ -11877,25 +12407,21 @@ const weapon = {
     max: [35, 135],
     might: 70,
     min: [10, 40],
-    name: {
-      en: 'Flashfungus',
-      ja: 'フラッシュファンガス',
-      zh: '雷光蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630501': {
     Id: '30630501',
-    element: 'Shadow',
-    image: '306018_01_30501',
-    max: [59, 207],
-    min: [17, 62],
-    name: {
+    Name: {
       en: 'Cimmerian Bow',
       ja: 'ダークボウ',
       zh: '暗之魔弓',
     },
+    abbr: 'cb',
+    element: 'Shadow',
+    image: '306018_01_30501',
+    max: [59, 207],
+    min: [17, 62],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_030',
@@ -11905,6 +12431,12 @@ const weapon = {
   },
   '30630502': {
     Id: '30630502',
+    Name: {
+      en: 'Aromatic Bow',
+      ja: '幽香の弓',
+      zh: '幽香之弓',
+    },
+    abbr: 'ab',
     element: 'Shadow',
     icon: [
       {
@@ -11920,16 +12452,17 @@ const weapon = {
     max: [39, 127],
     might: 70,
     min: [11, 38],
-    name: {
-      en: 'Aromatic Bow',
-      ja: '幽香の弓',
-      zh: '幽香之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630503': {
     Id: '30630503',
+    Name: {
+      en: 'Cacklemurk',
+      ja: '闇に哄笑する弓',
+      zh: '暗黑疯笑弓',
+    },
+    abbr: 'c',
     element: 'Shadow',
     icon: [
       {
@@ -11945,16 +12478,17 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Cacklemurk',
-      ja: '闇に哄笑する弓',
-      zh: '暗黑疯笑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30630504': {
     Id: '30630504',
+    Name: {
+      en: 'Shadefungus',
+      ja: 'デスファンガス',
+      zh: '死亡蘑弓',
+    },
+    abbr: 's',
     element: 'Shadow',
     icon: [
       {
@@ -11970,39 +12504,36 @@ const weapon = {
     max: [37, 131],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Shadefungus',
-      ja: 'デスファンガス',
-      zh: '死亡蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30639901': {
     Id: '30639901',
-    element: '0',
-    image: '306026_01_39901',
-    max: [23, 82],
-    min: [6, 24],
-    name: {
+    Name: {
       en: 'Composite Bow',
       ja: 'コンポジットボウ',
       zh: '复合弓',
     },
+    abbr: 'cb',
+    element: '0',
+    image: '306026_01_39901',
+    max: [23, 82],
+    min: [6, 24],
     rarity: '3',
     weapon: 'Bow',
   },
   '30639902': {
     Id: '30639902',
-    element: '0',
-    image: '306012_01_39901',
-    max: [35, 135],
-    min: [10, 40],
-    name: {
+    Name: {
       en: 'Machine Bow',
       ja: 'マシンナリーボウ',
       zh: '机械弓',
     },
+    abbr: 'mb',
+    element: '0',
+    image: '306012_01_39901',
+    max: [35, 135],
+    min: [10, 40],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_017',
@@ -12012,15 +12543,16 @@ const weapon = {
   },
   '30639903': {
     Id: '30639903',
-    element: '0',
-    image: '306032_01_39901',
-    max: [37, 131],
-    min: [11, 39],
-    name: {
+    Name: {
       en: "Hunter's Bow",
       ja: 'ハンターボウ',
       zh: '猎手弓',
     },
+    abbr: 'hb',
+    element: '0',
+    image: '306032_01_39901',
+    max: [37, 131],
+    min: [11, 39],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_030',
@@ -12030,6 +12562,12 @@ const weapon = {
   },
   '30639904': {
     Id: '30639904',
+    Name: {
+      en: 'Fungus Bow',
+      ja: 'ファンガスボウ',
+      zh: '蘑弓',
+    },
+    abbr: 'fb',
     element: '0',
     icon: [
       {
@@ -12041,16 +12579,17 @@ const weapon = {
     max: [23, 82],
     might: 20,
     min: [6, 24],
-    name: {
-      en: 'Fungus Bow',
-      ja: 'ファンガスボウ',
-      zh: '蘑弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30639905': {
     Id: '30639905',
+    Name: {
+      en: 'Fragrant Bow',
+      ja: '香の弓',
+      zh: '芳香之弓',
+    },
+    abbr: 'fb',
     element: '0',
     icon: [
       {
@@ -12062,16 +12601,17 @@ const weapon = {
     max: [22, 85],
     might: 20,
     min: [6, 25],
-    name: {
-      en: 'Fragrant Bow',
-      ja: '香の弓',
-      zh: '芳香之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30639906': {
     Id: '30639906',
+    Name: {
+      en: 'Mockery',
+      ja: '嘲弄の弓',
+      zh: '嘲弄之弓',
+    },
+    abbr: 'm',
     element: '0',
     icon: [
       {
@@ -12083,25 +12623,21 @@ const weapon = {
     max: [23, 82],
     might: 20,
     min: [6, 24],
-    name: {
-      en: 'Mockery',
-      ja: '嘲弄の弓',
-      zh: '嘲弄之弓',
-    },
     rarity: '3',
     weapon: 'Bow',
   },
   '30640102': {
     Id: '30640102',
-    element: 'Flame',
-    image: '306028_01_40101',
-    max: [90, 347],
-    min: [27, 104],
-    name: {
+    Name: {
       en: 'Armored Inferno',
       ja: 'アーマードフレアボウ',
       zh: '装甲弓',
     },
+    abbr: 'ai',
+    element: 'Flame',
+    image: '306028_01_40101',
+    max: [90, 347],
+    min: [27, 104],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_028',
@@ -12111,6 +12647,12 @@ const weapon = {
   },
   '30640103': {
     Id: '30640103',
+    Name: {
+      en: 'Blazefungus',
+      ja: 'プロミネンスファンガス',
+      zh: '日珥蘑弓',
+    },
+    abbr: 'b',
     element: 'Flame',
     icon: [
       {
@@ -12126,16 +12668,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Blazefungus',
-      ja: 'プロミネンスファンガス',
-      zh: '日珥蘑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640105': {
     Id: '30640105',
+    Name: {
+      en: 'Vulcan',
+      ja: '紅蓮弓・ヴァルカン',
+      zh: '红莲弓·火山',
+    },
+    abbr: 'v',
     element: 'Flame',
     icon: [
       {
@@ -12151,16 +12694,17 @@ const weapon = {
     max: [77, 252],
     might: 140,
     min: [23, 75],
-    name: {
-      en: 'Vulcan',
-      ja: '紅蓮弓・ヴァルカン',
-      zh: '红莲弓·火山',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640106': {
     Id: '30640106',
+    Name: {
+      en: 'Wispfire Bow',
+      ja: '燃え上がる鬼火の弓',
+      zh: '燃灼鬼火之弓',
+    },
+    abbr: 'wb',
     element: 'Flame',
     icon: [
       {
@@ -12177,16 +12721,17 @@ const weapon = {
     max: [62, 201],
     might: 80,
     min: [18, 60],
-    name: {
-      en: 'Wispfire Bow',
-      ja: '燃え上がる鬼火の弓',
-      zh: '燃灼鬼火之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640107': {
     Id: '30640107',
+    Name: {
+      en: 'Infernal Bow',
+      ja: '炎獄の弓',
+      zh: '炎狱之弓',
+    },
+    abbr: 'ib',
     element: 'Flame',
     icon: [
       {
@@ -12203,16 +12748,17 @@ const weapon = {
     max: [70, 267],
     might: 80,
     min: [21, 80],
-    name: {
-      en: 'Infernal Bow',
-      ja: '炎獄の弓',
-      zh: '炎狱之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640108': {
     Id: '30640108',
+    Name: {
+      en: 'Scorchflame Bow',
+      ja: '紅焔の弓',
+      zh: '红焰之弓',
+    },
+    abbr: 'sb',
     element: 'Flame',
     icon: [
       {
@@ -12228,16 +12774,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Scorchflame Bow',
-      ja: '紅焔の弓',
-      zh: '红焰之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640109': {
     Id: '30640109',
+    Name: {
+      en: 'Flameburst Dreadbow',
+      ja: '猛火を呑む破弓',
+      zh: '猛火破甲弓',
+    },
+    abbr: 'fd',
     element: 'Flame',
     icon: [
       {
@@ -12253,25 +12800,21 @@ const weapon = {
     max: [70, 267],
     might: 80,
     min: [21, 80],
-    name: {
-      en: 'Flameburst Dreadbow',
-      ja: '猛火を呑む破弓',
-      zh: '猛火破甲弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640201': {
     Id: '30640201',
-    element: 'Water',
-    image: '306010_01_40201',
-    max: [90, 347],
-    min: [27, 104],
-    name: {
+    Name: {
       en: 'Frostslinger Bow',
       ja: '氷結弓',
       zh: '冰结弓',
     },
+    abbr: 'fb',
+    element: 'Water',
+    image: '306010_01_40201',
+    max: [90, 347],
+    min: [27, 104],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_028',
@@ -12281,6 +12824,12 @@ const weapon = {
   },
   '30640202': {
     Id: '30640202',
+    Name: {
+      en: 'Freezefungus',
+      ja: 'グレイシャルファンガス',
+      zh: '冰川蘑弓',
+    },
+    abbr: 'f',
     element: 'Water',
     icon: [
       {
@@ -12296,16 +12845,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Freezefungus',
-      ja: 'グレイシャルファンガス',
-      zh: '冰川蘑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640203': {
     Id: '30640203',
+    Name: {
+      en: 'Frostbillow',
+      ja: '霜涛の弓',
+      zh: '霜涛之弓',
+    },
+    abbr: 'f',
     element: 'Water',
     icon: [
       {
@@ -12321,16 +12871,17 @@ const weapon = {
     max: [59, 207],
     might: 90,
     min: [17, 62],
-    name: {
-      en: 'Frostbillow',
-      ja: '霜涛の弓',
-      zh: '霜涛之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640204': {
     Id: '30640204',
+    Name: {
+      en: 'Frost Gaoler',
+      ja: '氷獄の弓',
+      zh: '冰狱之弓',
+    },
+    abbr: 'fg',
     element: 'Water',
     icon: [
       {
@@ -12347,16 +12898,17 @@ const weapon = {
     max: [73, 259],
     might: 140,
     min: [21, 77],
-    name: {
-      en: 'Frost Gaoler',
-      ja: '氷獄の弓',
-      zh: '冰狱之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640205': {
     Id: '30640205',
+    Name: {
+      en: 'Icebreaker Bow',
+      ja: '氷壁を貫通する弓',
+      zh: '贯穿冰壁之弓',
+    },
+    abbr: 'ib',
     element: 'Water',
     icon: [
       {
@@ -12372,16 +12924,17 @@ const weapon = {
     max: [73, 259],
     might: 80,
     min: [21, 77],
-    name: {
-      en: 'Icebreaker Bow',
-      ja: '氷壁を貫通する弓',
-      zh: '贯穿冰壁之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640206': {
     Id: '30640206',
+    Name: {
+      en: 'Wavefury Bow',
+      ja: '怒り猛る濤声の弓',
+      zh: '狂怒涛声之弓',
+    },
+    abbr: 'wb',
     element: 'Water',
     icon: [
       {
@@ -12397,16 +12950,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Wavefury Bow',
-      ja: '怒り猛る濤声の弓',
-      zh: '狂怒涛声之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640207': {
     Id: '30640207',
+    Name: {
+      en: 'Wavedrinker Bow',
+      ja: '逆浪を食む怒弓',
+      zh: '逆浪怒火弓',
+    },
+    abbr: 'wb',
     element: 'Water',
     icon: [
       {
@@ -12423,16 +12977,17 @@ const weapon = {
     max: [70, 267],
     might: 80,
     min: [21, 80],
-    name: {
-      en: 'Wavedrinker Bow',
-      ja: '逆浪を食む怒弓',
-      zh: '逆浪怒火弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640208': {
     Id: '30640208',
+    Name: {
+      en: 'Despair Bringer',
+      ja: '霊水弓ディスペアシンカー',
+      zh: '灵水弓湮冀者',
+    },
+    abbr: 'db',
     element: 'Water',
     icon: [
       {
@@ -12448,25 +13003,21 @@ const weapon = {
     max: [70, 267],
     might: 90,
     min: [21, 80],
-    name: {
-      en: 'Despair Bringer',
-      ja: '霊水弓ディスペアシンカー',
-      zh: '灵水弓湮冀者',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640302': {
     Id: '30640302',
-    element: 'Wind',
-    image: '306008_01_40301',
-    max: [90, 347],
-    min: [27, 104],
-    name: {
+    Name: {
       en: 'Epidemic',
       ja: 'エピデミックボウ',
       zh: '疫病之弓',
     },
+    abbr: 'e',
+    element: 'Wind',
+    image: '306008_01_40301',
+    max: [90, 347],
+    min: [27, 104],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_028',
@@ -12476,6 +13027,12 @@ const weapon = {
   },
   '30640303': {
     Id: '30640303',
+    Name: {
+      en: 'Windpiercer',
+      ja: '嵐震の弓',
+      zh: '岚震之弓',
+    },
+    abbr: 'w',
     element: 'Wind',
     icon: [
       {
@@ -12491,16 +13048,17 @@ const weapon = {
     max: [59, 207],
     might: 90,
     min: [17, 62],
-    name: {
-      en: 'Windpiercer',
-      ja: '嵐震の弓',
-      zh: '岚震之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640304': {
     Id: '30640304',
+    Name: {
+      en: 'Stormfungus',
+      ja: 'ストームファンガス',
+      zh: '风暴蘑弓',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -12516,16 +13074,17 @@ const weapon = {
     max: [59, 207],
     might: 90,
     min: [17, 62],
-    name: {
-      en: 'Stormfungus',
-      ja: 'ストームファンガス',
-      zh: '风暴蘑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640305': {
     Id: '30640305',
+    Name: {
+      en: 'Wind, the Dustwhirler',
+      ja: '風塵弓・ヴィント',
+      zh: '风尘弓·温特',
+    },
+    abbr: 'wtd',
     element: 'Wind',
     icon: [
       {
@@ -12541,16 +13100,17 @@ const weapon = {
     max: [73, 259],
     might: 60,
     min: [21, 77],
-    name: {
-      en: 'Wind, the Dustwhirler',
-      ja: '風塵弓・ヴィント',
-      zh: '风尘弓·温特',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640306': {
     Id: '30640306',
+    Name: {
+      en: 'Ill Wind',
+      ja: '凶音を轟かせる弓',
+      zh: '尖笑之弓',
+    },
+    abbr: 'iw',
     element: 'Wind',
     icon: [
       {
@@ -12566,16 +13126,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Ill Wind',
-      ja: '凶音を轟かせる弓',
-      zh: '尖笑之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640307': {
     Id: '30640307',
+    Name: {
+      en: 'Windsail Bow',
+      ja: '逆風を貫く弓',
+      zh: '破风之弓',
+    },
+    abbr: 'wb',
     element: 'Wind',
     icon: [
       {
@@ -12591,16 +13152,17 @@ const weapon = {
     max: [73, 259],
     might: 140,
     min: [21, 77],
-    name: {
-      en: 'Windsail Bow',
-      ja: '逆風を貫く弓',
-      zh: '破风之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640308': {
     Id: '30640308',
+    Name: {
+      en: 'Ill-Wind Whipper',
+      ja: '颯を呼ぶ剛弓',
+      zh: '唤风刚弓',
+    },
+    abbr: 'iw',
     element: 'Wind',
     icon: [
       {
@@ -12616,25 +13178,21 @@ const weapon = {
     max: [77, 252],
     might: 80,
     min: [23, 75],
-    name: {
-      en: 'Ill-Wind Whipper',
-      ja: '颯を呼ぶ剛弓',
-      zh: '唤风刚弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640403': {
     Id: '30640403',
-    element: 'Light',
-    image: '306037_01_40401',
-    max: [103, 320],
-    min: [30, 96],
-    name: {
+    Name: {
       en: 'Holy Bow',
       ja: 'ホーリーボウ',
       zh: '神圣之弓',
     },
+    abbr: 'hb',
+    element: 'Light',
+    image: '306037_01_40401',
+    max: [103, 320],
+    min: [30, 96],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -12644,6 +13202,12 @@ const weapon = {
   },
   '30640404': {
     Id: '30640404',
+    Name: {
+      en: "Heaven's Bouquet",
+      ja: '天薫の弓',
+      zh: '天薰之弓',
+    },
+    abbr: 'hb',
     element: 'Light',
     icon: [
       {
@@ -12659,16 +13223,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: "Heaven's Bouquet",
-      ja: '天薫の弓',
-      zh: '天薰之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640406': {
     Id: '30640406',
+    Name: {
+      en: 'Glowfungus',
+      ja: 'ライトニングファンガス',
+      zh: '雷霆蘑弓',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -12684,16 +13249,17 @@ const weapon = {
     max: [56, 214],
     might: 90,
     min: [16, 64],
-    name: {
-      en: 'Glowfungus',
-      ja: 'ライトニングファンガス',
-      zh: '雷霆蘑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640407': {
     Id: '30640407',
+    Name: {
+      en: 'Morning Glory Bow',
+      ja: '絢爛弓ヒメユリ',
+      zh: '绚烂弓姬百合',
+    },
+    abbr: 'mgb',
     element: 'Light',
     icon: [
       {
@@ -12711,16 +13277,17 @@ const weapon = {
     max: [77, 252],
     might: 80,
     min: [23, 75],
-    name: {
-      en: 'Morning Glory Bow',
-      ja: '絢爛弓ヒメユリ',
-      zh: '绚烂弓姬百合',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640408': {
     Id: '30640408',
+    Name: {
+      en: 'Astral Twinkle',
+      ja: '瞬のアストラ',
+      zh: '闪烁之新星',
+    },
+    abbr: 'at',
     element: 'Light',
     icon: [
       {
@@ -12737,25 +13304,21 @@ const weapon = {
     max: [73, 259],
     might: 140,
     min: [21, 77],
-    name: {
-      en: 'Astral Twinkle',
-      ja: '瞬のアストラ',
-      zh: '闪烁之新星',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640501': {
     Id: '30640501',
-    element: 'Shadow',
-    image: '306016_01_40501',
-    max: [103, 320],
-    min: [30, 96],
-    name: {
+    Name: {
       en: 'Macabre Malediction',
       ja: '呪骸の魔弓',
       zh: '呪骸魔弓',
     },
+    abbr: 'mm',
+    element: 'Shadow',
+    image: '306016_01_40501',
+    max: [103, 320],
+    min: [30, 96],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -12765,6 +13328,12 @@ const weapon = {
   },
   '30640502': {
     Id: '30640502',
+    Name: {
+      en: 'Seductive Bow',
+      ja: '冥薫の弓',
+      zh: '冥薰之弓',
+    },
+    abbr: 'sb',
     element: 'Shadow',
     icon: [
       {
@@ -12780,16 +13349,17 @@ const weapon = {
     max: [62, 201],
     might: 90,
     min: [18, 60],
-    name: {
-      en: 'Seductive Bow',
-      ja: '冥薫の弓',
-      zh: '冥薰之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640503': {
     Id: '30640503',
+    Name: {
+      en: 'Howlshadow',
+      ja: '暗夜に狂笑する弓',
+      zh: '暗夜狂笑弓',
+    },
+    abbr: 'h',
     element: 'Shadow',
     icon: [
       {
@@ -12805,16 +13375,17 @@ const weapon = {
     max: [59, 207],
     might: 90,
     min: [17, 62],
-    name: {
-      en: 'Howlshadow',
-      ja: '暗夜に狂笑する弓',
-      zh: '暗夜狂笑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640504': {
     Id: '30640504',
+    Name: {
+      en: 'Dahlia Bow',
+      ja: '妖華弓ダリア',
+      zh: '妖华弓大丽花',
+    },
+    abbr: 'db',
     element: 'Shadow',
     icon: [
       {
@@ -12831,16 +13402,17 @@ const weapon = {
     max: [73, 259],
     might: 140,
     min: [21, 77],
-    name: {
-      en: 'Dahlia Bow',
-      ja: '妖華弓ダリア',
-      zh: '妖华弓大丽花',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640505': {
     Id: '30640505',
+    Name: {
+      en: 'Duskfungus',
+      ja: 'グレイヴファンガス',
+      zh: '墓穴蘑弓',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -12856,16 +13428,17 @@ const weapon = {
     max: [59, 207],
     might: 90,
     min: [17, 62],
-    name: {
-      en: 'Duskfungus',
-      ja: 'グレイヴファンガス',
-      zh: '墓穴蘑弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30640506': {
     Id: '30640506',
+    Name: {
+      en: 'Astral Misfortune',
+      ja: '厄のアストラ',
+      zh: '灾厄之新星',
+    },
+    abbr: 'am',
     element: 'Shadow',
     icon: [
       {
@@ -12882,39 +13455,36 @@ const weapon = {
     max: [73, 259],
     might: 80,
     min: [21, 77],
-    name: {
-      en: 'Astral Misfortune',
-      ja: '厄のアストラ',
-      zh: '灾厄之新星',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649901': {
     Id: '30649901',
-    element: '0',
-    image: '306013_01_49901',
-    max: [56, 200],
-    min: [16, 60],
-    name: {
+    Name: {
       en: 'Executor',
       ja: 'エグゼキューター',
       zh: '执行者之弓',
     },
+    abbr: 'e',
+    element: '0',
+    image: '306013_01_49901',
+    max: [56, 200],
+    min: [16, 60],
     rarity: '4',
     weapon: 'Bow',
   },
   '30649902': {
     Id: '30649902',
-    element: '0',
-    image: '306033_01_49901',
-    max: [70, 267],
-    min: [21, 80],
-    name: {
+    Name: {
       en: 'Faerie Bow',
       ja: '妖精の弓',
       zh: '精灵弓',
     },
+    abbr: 'fb',
+    element: '0',
+    image: '306033_01_49901',
+    max: [70, 267],
+    min: [21, 80],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_028',
@@ -12924,15 +13494,16 @@ const weapon = {
   },
   '30649903': {
     Id: '30649903',
-    element: '0',
-    image: '306011_01_49901',
-    max: [79, 246],
-    min: [23, 73],
-    name: {
+    Name: {
       en: 'Duskhawk',
       ja: 'フローリデル',
       zh: '弗洛里德尔',
     },
+    abbr: 'd',
+    element: '0',
+    image: '306011_01_49901',
+    max: [79, 246],
+    min: [23, 73],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_032',
@@ -12942,6 +13513,12 @@ const weapon = {
   },
   '30649904': {
     Id: '30649904',
+    Name: {
+      en: 'Falkyn',
+      ja: '剛弓・ファルケン',
+      zh: '刚弓·飞鹰',
+    },
+    abbr: 'f',
     element: '0',
     icon: [
       {
@@ -12953,16 +13530,17 @@ const weapon = {
     max: [61, 190],
     might: 40,
     min: [18, 57],
-    name: {
-      en: 'Falkyn',
-      ja: '剛弓・ファルケン',
-      zh: '刚弓·飞鹰',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649905': {
     Id: '30649905',
+    Name: {
+      en: 'The Perforator',
+      ja: '貫穿の弓',
+      zh: '贯穿之弓',
+    },
+    abbr: 'tp',
     element: '0',
     icon: [
       {
@@ -12975,16 +13553,17 @@ const weapon = {
     max: [54, 206],
     might: 40,
     min: [16, 61],
-    name: {
-      en: 'The Perforator',
-      ja: '貫穿の弓',
-      zh: '贯穿之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649906': {
     Id: '30649906',
+    Name: {
+      en: 'Edgepiercer Bow',
+      ja: '果てを射る弓',
+      zh: '不倚之弓',
+    },
+    abbr: 'eb',
     element: '0',
     icon: [
       {
@@ -12996,16 +13575,17 @@ const weapon = {
     max: [56, 200],
     might: 40,
     min: [16, 60],
-    name: {
-      en: 'Edgepiercer Bow',
-      ja: '果てを射る弓',
-      zh: '不倚之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649907': {
     Id: '30649907',
+    Name: {
+      en: 'Freesia Bow',
+      ja: '硬弓フリージア',
+      zh: '硬弓小苍兰',
+    },
+    abbr: 'fb',
     element: '0',
     icon: [
       {
@@ -13018,16 +13598,17 @@ const weapon = {
     max: [56, 200],
     might: 40,
     min: [16, 60],
-    name: {
-      en: 'Freesia Bow',
-      ja: '硬弓フリージア',
-      zh: '硬弓小苍兰',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649908': {
     Id: '30649908',
+    Name: {
+      en: 'Astral Abyss',
+      ja: '虚のアストラ',
+      zh: '虚无之新星',
+    },
+    abbr: 'aa',
     element: '0',
     icon: [
       {
@@ -13040,16 +13621,17 @@ const weapon = {
     max: [56, 200],
     might: 40,
     min: [16, 60],
-    name: {
-      en: 'Astral Abyss',
-      ja: '虚のアストラ',
-      zh: '虚无之新星',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649909': {
     Id: '30649909',
+    Name: {
+      en: 'Ragebow',
+      ja: '激昂の弓',
+      zh: '暴怒之弓',
+    },
+    abbr: 'r',
     element: '0',
     icon: [
       {
@@ -13061,16 +13643,17 @@ const weapon = {
     max: [56, 200],
     might: 40,
     min: [16, 60],
-    name: {
-      en: 'Ragebow',
-      ja: '激昂の弓',
-      zh: '暴怒之弓',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30649910': {
     Id: '30649910',
+    Name: {
+      en: 'Hollow Scream',
+      ja: '霊弓ホロウスクリーム',
+      zh: '灵弓虚嚎者',
+    },
+    abbr: 'hs',
     element: '0',
     icon: [
       {
@@ -13082,25 +13665,21 @@ const weapon = {
     max: [54, 206],
     might: 40,
     min: [16, 61],
-    name: {
-      en: 'Hollow Scream',
-      ja: '霊弓ホロウスクリーム',
-      zh: '灵弓虚嚎者',
-    },
     rarity: '4',
     weapon: 'Bow',
   },
   '30650101': {
     Id: '30650101',
-    element: 'Flame',
-    image: '306027_01_50101',
-    max: [147, 518],
-    min: [44, 155],
-    name: {
+    Name: {
       en: 'Lupis Solis',
       ja: 'イグニートウルフ',
       zh: '炎狼弓',
     },
+    abbr: 'ls',
+    element: 'Flame',
+    image: '306027_01_50101',
+    max: [147, 518],
+    min: [44, 155],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -13110,6 +13689,12 @@ const weapon = {
   },
   '30650102': {
     Id: '30650102',
+    Name: {
+      en: 'Vulcanrage',
+      ja: '紅蓮弓・ヴァルカンレイジ',
+      zh: '红莲弓·火山之怒',
+    },
+    abbr: 'v',
     element: 'Flame',
     icon: [
       {
@@ -13125,16 +13710,17 @@ const weapon = {
     max: [100, 327],
     might: 150,
     min: [30, 98],
-    name: {
-      en: 'Vulcanrage',
-      ja: '紅蓮弓・ヴァルカンレイジ',
-      zh: '红莲弓·火山之怒',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650103': {
     Id: '30650103',
+    Name: {
+      en: 'Hellfire Bow',
+      ja: '焦熱炎極の弓',
+      zh: '焦热炎极之弓',
+    },
+    abbr: 'hb',
     element: 'Flame',
     icon: [
       {
@@ -13151,16 +13737,17 @@ const weapon = {
     max: [90, 347],
     might: 100,
     min: [27, 104],
-    name: {
-      en: 'Hellfire Bow',
-      ja: '焦熱炎極の弓',
-      zh: '焦热炎极之弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650104': {
     Id: '30650104',
+    Name: {
+      en: "Valkyrie's Blaze",
+      ja: 'ワルキューレの火炎',
+      zh: '女武神之火焰',
+    },
+    abbr: 'vb',
     element: 'Flame',
     icon: [
       {
@@ -13172,11 +13759,6 @@ const weapon = {
     max: [192, 734],
     might: 100,
     min: [57, 220],
-    name: {
-      en: "Valkyrie's Blaze",
-      ja: 'ワルキューレの火炎',
-      zh: '女武神之火焰',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13186,15 +13768,16 @@ const weapon = {
   },
   '30650105': {
     Id: '30650105',
-    element: 'Flame',
-    image: '306111_01_50102',
-    max: [230, 1468],
-    min: [69, 440],
-    name: {
+    Name: {
       en: "Valkyrie's Fire",
       ja: 'ワルキューレの紅蓮',
       zh: '女武神之红莲',
     },
+    abbr: 'vf',
+    element: 'Flame',
+    image: '306111_01_50102',
+    max: [230, 1468],
+    min: [69, 440],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13204,6 +13787,12 @@ const weapon = {
   },
   '30650106': {
     Id: '30650106',
+    Name: {
+      en: 'Detonation Dreadbow',
+      ja: '爆燃を統べる破弓',
+      zh: '爆炎破甲弓',
+    },
+    abbr: 'dd',
     element: 'Flame',
     icon: [
       {
@@ -13219,25 +13808,21 @@ const weapon = {
     max: [90, 347],
     might: 100,
     min: [27, 104],
-    name: {
-      en: 'Detonation Dreadbow',
-      ja: '爆燃を統べる破弓',
-      zh: '爆炎破甲弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650201': {
     Id: '30650201',
-    element: 'Water',
-    image: '306029_01_50201',
-    max: [147, 518],
-    min: [44, 155],
-    name: {
+    Name: {
       en: "Peacock's Whorl",
       ja: '創海弓アオクジャク',
       zh: '蓝孔雀创海弓',
     },
+    abbr: 'pw',
+    element: 'Water',
+    image: '306029_01_50201',
+    max: [147, 518],
+    min: [44, 155],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -13247,6 +13832,12 @@ const weapon = {
   },
   '30650202': {
     Id: '30650202',
+    Name: {
+      en: 'Everfrost Bow',
+      ja: '久遠氷絶の弓',
+      zh: '久远冰绝之弓',
+    },
+    abbr: 'eb',
     element: 'Water',
     icon: [
       {
@@ -13263,16 +13854,17 @@ const weapon = {
     max: [95, 337],
     might: 160,
     min: [28, 101],
-    name: {
-      en: 'Everfrost Bow',
-      ja: '久遠氷絶の弓',
-      zh: '久远冰绝之弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650203': {
     Id: '30650203',
+    Name: {
+      en: 'Peakbreaker Bow',
+      ja: '氷嶽を穿孔する弓',
+      zh: '穿凿冰狱之弓',
+    },
+    abbr: 'pb',
     element: 'Water',
     icon: [
       {
@@ -13288,16 +13880,17 @@ const weapon = {
     max: [95, 337],
     might: 100,
     min: [28, 101],
-    name: {
-      en: 'Peakbreaker Bow',
-      ja: '氷嶽を穿孔する弓',
-      zh: '穿凿冰狱之弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650204': {
     Id: '30650204',
+    Name: {
+      en: 'Blue Mercurius',
+      ja: 'メルクリウスの水流',
+      zh: '商神之水流',
+    },
+    abbr: 'bm',
     element: 'Water',
     icon: [
       {
@@ -13309,11 +13902,6 @@ const weapon = {
     max: [202, 713],
     might: 100,
     min: [60, 213],
-    name: {
-      en: 'Blue Mercurius',
-      ja: 'メルクリウスの水流',
-      zh: '商神之水流',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_015',
@@ -13323,15 +13911,16 @@ const weapon = {
   },
   '30650205': {
     Id: '30650205',
-    element: 'Water',
-    image: '306109_01_50202',
-    max: [242, 1426],
-    min: [72, 427],
-    name: {
+    Name: {
       en: 'Azure Mercurius',
       ja: 'メルクリウスの蒼海',
       zh: '商神之沧海',
     },
+    abbr: 'am',
+    element: 'Water',
+    image: '306109_01_50202',
+    max: [242, 1426],
+    min: [72, 427],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_015',
@@ -13341,6 +13930,12 @@ const weapon = {
   },
   '30650206': {
     Id: '30650206',
+    Name: {
+      en: 'Streamgorger Bow',
+      ja: '激流を貪る怒弓',
+      zh: '激流怒火弓',
+    },
+    abbr: 'sb',
     element: 'Water',
     icon: [
       {
@@ -13357,16 +13952,17 @@ const weapon = {
     max: [90, 347],
     might: 100,
     min: [27, 104],
-    name: {
-      en: 'Streamgorger Bow',
-      ja: '激流を貪る怒弓',
-      zh: '激流怒火弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650207': {
     Id: '30650207',
+    Name: {
+      en: 'Despair Spiral',
+      ja: '霊流弩ディスペアジャイロ',
+      zh: '灵流驽覆冀者',
+    },
+    abbr: 'ds',
     element: 'Water',
     icon: [
       {
@@ -13382,25 +13978,21 @@ const weapon = {
     max: [90, 347],
     might: 110,
     min: [27, 104],
-    name: {
-      en: 'Despair Spiral',
-      ja: '霊流弩ディスペアジャイロ',
-      zh: '灵流驽覆冀者',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650302': {
     Id: '30650302',
-    element: 'Wind',
-    image: '306030_01_50301',
-    max: [147, 518],
-    min: [44, 155],
-    name: {
+    Name: {
       en: 'Stellar Pegasus',
       ja: '天馬弓アステル',
       zh: '天马弓阿斯特尔',
     },
+    abbr: 'sp',
+    element: 'Wind',
+    image: '306030_01_50301',
+    max: [147, 518],
+    min: [44, 155],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -13410,6 +14002,12 @@ const weapon = {
   },
   '30650303': {
     Id: '30650303',
+    Name: {
+      en: 'Windhoze, the Dustblaster',
+      ja: '風塵弓・ヴィントホーゼ',
+      zh: '风尘弓·温特霍泽',
+    },
+    abbr: 'wtd',
     element: 'Wind',
     icon: [
       {
@@ -13425,16 +14023,17 @@ const weapon = {
     max: [95, 337],
     might: 80,
     min: [28, 101],
-    name: {
-      en: 'Windhoze, the Dustblaster',
-      ja: '風塵弓・ヴィントホーゼ',
-      zh: '风尘弓·温特霍泽',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650304': {
     Id: '30650304',
+    Name: {
+      en: 'Firmament Auger',
+      ja: '天空を穿つ弓',
+      zh: '破空之弓',
+    },
+    abbr: 'fa',
     element: 'Wind',
     icon: [
       {
@@ -13450,16 +14049,17 @@ const weapon = {
     max: [95, 337],
     might: 160,
     min: [28, 101],
-    name: {
-      en: 'Firmament Auger',
-      ja: '天空を穿つ弓',
-      zh: '破空之弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650305': {
     Id: '30650305',
+    Name: {
+      en: "Jormungand's Squall",
+      ja: 'ヨルムンガンドの疾風',
+      zh: '尘世巨蟒之疾风',
+    },
+    abbr: 'js',
     element: 'Wind',
     icon: [
       {
@@ -13471,11 +14071,6 @@ const weapon = {
     max: [202, 713],
     might: 100,
     min: [60, 213],
-    name: {
-      en: "Jormungand's Squall",
-      ja: 'ヨルムンガンドの疾風',
-      zh: '尘世巨蟒之疾风',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13485,15 +14080,16 @@ const weapon = {
   },
   '30650306': {
     Id: '30650306',
-    element: 'Wind',
-    image: '306108_01_50302',
-    max: [242, 1426],
-    min: [72, 427],
-    name: {
+    Name: {
       en: "Jormungand's Fury",
       ja: 'ヨルムンガンドの裂空',
       zh: '尘世巨蟒之裂空',
     },
+    abbr: 'jf',
+    element: 'Wind',
+    image: '306108_01_50302',
+    max: [242, 1426],
+    min: [72, 427],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13503,6 +14099,12 @@ const weapon = {
   },
   '30650307': {
     Id: '30650307',
+    Name: {
+      en: 'Deathwind Caller',
+      ja: '魔風をいざなう剛弓',
+      zh: '唤魔风刚弓',
+    },
+    abbr: 'dc',
     element: 'Wind',
     icon: [
       {
@@ -13518,25 +14120,21 @@ const weapon = {
     max: [100, 327],
     might: 100,
     min: [30, 98],
-    name: {
-      en: 'Deathwind Caller',
-      ja: '魔風をいざなう剛弓',
-      zh: '唤魔风刚弓',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650402': {
     Id: '30650402',
-    element: 'Light',
-    image: '306031_01_50401',
-    max: [140, 534],
-    min: [42, 160],
-    name: {
+    Name: {
       en: 'Thunderbow',
       ja: '天雷の弓',
       zh: '天雷弓',
     },
+    abbr: 't',
+    element: 'Light',
+    image: '306031_01_50401',
+    max: [140, 534],
+    min: [42, 160],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_028',
@@ -13546,6 +14144,12 @@ const weapon = {
   },
   '30650404': {
     Id: '30650404',
+    Name: {
+      en: 'Tiger Lily Bow',
+      ja: '絢爛弓オニユリ',
+      zh: '绚烂弓鬼百合',
+    },
+    abbr: 'tlb',
     element: 'Light',
     icon: [
       {
@@ -13563,16 +14167,17 @@ const weapon = {
     max: [100, 327],
     might: 100,
     min: [30, 98],
-    name: {
-      en: 'Tiger Lily Bow',
-      ja: '絢爛弓オニユリ',
-      zh: '绚烂弓鬼百合',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650405': {
     Id: '30650405',
+    Name: {
+      en: "Jupiter's Light",
+      ja: 'ジュピターの閃光',
+      zh: '天空神之闪光',
+    },
+    abbr: 'jl',
     element: 'Light',
     icon: [
       {
@@ -13584,11 +14189,6 @@ const weapon = {
     max: [218, 677],
     might: 100,
     min: [65, 203],
-    name: {
-      en: "Jupiter's Light",
-      ja: 'ジュピターの閃光',
-      zh: '天空神之闪光',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_015',
@@ -13598,15 +14198,16 @@ const weapon = {
   },
   '30650406': {
     Id: '30650406',
-    element: 'Light',
-    image: '306110_01_50402',
-    max: [262, 1354],
-    min: [78, 406],
-    name: {
+    Name: {
       en: "Jupiter's Sky",
       ja: 'ジュピターの聖天',
       zh: '天空神之圣天',
     },
+    abbr: 'js',
+    element: 'Light',
+    image: '306110_01_50402',
+    max: [262, 1354],
+    min: [78, 406],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_015',
@@ -13616,6 +14217,12 @@ const weapon = {
   },
   '30650407': {
     Id: '30650407',
+    Name: {
+      en: 'Astral Echo',
+      ja: '天響のアストラ',
+      zh: '天响之新星',
+    },
+    abbr: 'ae',
     element: 'Light',
     icon: [
       {
@@ -13632,25 +14239,21 @@ const weapon = {
     max: [95, 337],
     might: 160,
     min: [28, 101],
-    name: {
-      en: 'Astral Echo',
-      ja: '天響のアストラ',
-      zh: '天响之新星',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650501': {
     Id: '30650501',
-    element: 'Shadow',
-    image: '306014_01_50501',
-    max: [140, 534],
-    min: [42, 160],
-    name: {
+    Name: {
       en: 'Necro Arcus',
       ja: 'ネクロアルクス',
       zh: '亡骸之弓',
     },
+    abbr: 'na',
+    element: 'Shadow',
+    image: '306014_01_50501',
+    max: [140, 534],
+    min: [42, 160],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13660,6 +14263,12 @@ const weapon = {
   },
   '30650502': {
     Id: '30650502',
+    Name: {
+      en: 'Black Dahlia Bow',
+      ja: '妖華弓ダリアローズ',
+      zh: '妖华弓玫瑰大丽花',
+    },
+    abbr: 'bdb',
     element: 'Shadow',
     icon: [
       {
@@ -13676,16 +14285,17 @@ const weapon = {
     max: [95, 337],
     might: 160,
     min: [28, 101],
-    name: {
-      en: 'Black Dahlia Bow',
-      ja: '妖華弓ダリアローズ',
-      zh: '妖华弓玫瑰大丽花',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30650503': {
     Id: '30650503',
+    Name: {
+      en: 'Dark Prophecy',
+      ja: 'ホロスコープの常闇',
+      zh: '天象之永暗',
+    },
+    abbr: 'dp',
     element: 'Shadow',
     icon: [
       {
@@ -13697,11 +14307,6 @@ const weapon = {
     max: [202, 713],
     might: 100,
     min: [60, 213],
-    name: {
-      en: 'Dark Prophecy',
-      ja: 'ホロスコープの常闇',
-      zh: '天象之永暗',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_028',
@@ -13711,15 +14316,16 @@ const weapon = {
   },
   '30650504': {
     Id: '30650504',
-    element: 'Shadow',
-    image: '306112_01_50502',
-    max: [242, 1426],
-    min: [72, 427],
-    name: {
+    Name: {
       en: 'Hellish Prophecy',
       ja: 'ホロスコープの奈落',
       zh: '天象之地狱',
     },
+    abbr: 'hp',
+    element: 'Shadow',
+    image: '306112_01_50502',
+    max: [242, 1426],
+    min: [72, 427],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_028',
@@ -13729,6 +14335,12 @@ const weapon = {
   },
   '30650505': {
     Id: '30650505',
+    Name: {
+      en: 'Astral Cruelty',
+      ja: '無残のアストラ',
+      zh: '无情之新星',
+    },
+    abbr: 'ac',
     element: 'Shadow',
     icon: [
       {
@@ -13745,39 +14357,36 @@ const weapon = {
     max: [95, 337],
     might: 100,
     min: [28, 101],
-    name: {
-      en: 'Astral Cruelty',
-      ja: '無残のアストラ',
-      zh: '无情之新星',
-    },
     rarity: '5',
     weapon: 'Bow',
   },
   '30659901': {
     Id: '30659901',
-    element: '0',
-    image: '306015_01_59901',
-    max: [98, 347],
-    min: [29, 104],
-    name: {
+    Name: {
       en: "Nitralica's Koto",
       ja: '琴弓ニトラリカ',
       zh: '琴弓尼托拉里卡',
     },
+    abbr: 'nk',
+    element: '0',
+    image: '306015_01_59901',
+    max: [98, 347],
+    min: [29, 104],
     rarity: '5',
     weapon: 'Bow',
   },
   '30659902': {
     Id: '30659902',
-    element: '0',
-    image: '306034_01_59901',
-    max: [115, 438],
-    min: [34, 131],
-    name: {
+    Name: {
       en: 'Accelerator',
       ja: 'アクセラレートギア',
       zh: '加速齿轮弓',
     },
+    abbr: 'a',
+    element: '0',
+    image: '306034_01_59901',
+    max: [115, 438],
+    min: [34, 131],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_028',
@@ -13787,15 +14396,16 @@ const weapon = {
   },
   '30659903': {
     Id: '30659903',
-    element: '0',
-    image: '306035_01_59901',
-    max: [115, 438],
-    min: [34, 131],
-    name: {
+    Name: {
       en: 'Starchaser',
       ja: 'スターチェイサー',
       zh: '坠星弓',
     },
+    abbr: 's',
+    element: '0',
+    image: '306035_01_59901',
+    max: [115, 438],
+    min: [34, 131],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_017',
@@ -13805,15 +14415,16 @@ const weapon = {
   },
   '30659904': {
     Id: '30659904',
-    element: '0',
-    image: '306036_01_59901',
-    max: [121, 425],
-    min: [36, 127],
-    name: {
+    Name: {
       en: "Chimera's Guilt",
       ja: '鵺穿',
       zh: '鵺穿弓',
     },
+    abbr: 'cg',
+    element: '0',
+    image: '306036_01_59901',
+    max: [121, 425],
+    min: [36, 127],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -13823,15 +14434,16 @@ const weapon = {
   },
   '30659905': {
     Id: '30659905',
-    element: '0',
-    image: '306119_01_59901',
-    max: [98, 347],
-    min: [29, 104],
-    name: {
+    Name: {
       en: 'Mega Bow',
       ja: 'ロックボウ',
       zh: '洛克弓',
     },
+    abbr: 'mb',
+    element: '0',
+    image: '306119_01_59901',
+    max: [98, 347],
+    min: [29, 104],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -13841,15 +14453,16 @@ const weapon = {
   },
   '30730101': {
     Id: '30730101',
-    element: 'Flame',
-    image: '307006_01_30101',
-    max: [56, 222],
-    min: [16, 66],
-    name: {
+    Name: {
       en: 'Sunrise Scepter',
       ja: 'サンライズロッド',
       zh: '旭日魔杖',
     },
+    abbr: 'ss',
+    element: 'Flame',
+    image: '307006_01_30101',
+    max: [56, 222],
+    min: [16, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_020',
@@ -13859,6 +14472,12 @@ const weapon = {
   },
   '30730102': {
     Id: '30730102',
+    Name: {
+      en: 'The Wail',
+      ja: 'ヒートヘッド',
+      zh: '灼热之首',
+    },
+    abbr: 'tw',
     element: 'Flame',
     icon: [
       {
@@ -13874,16 +14493,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'The Wail',
-      ja: 'ヒートヘッド',
-      zh: '灼热之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730103': {
     Id: '30730103',
+    Name: {
+      en: 'Lava Cane',
+      ja: 'ラーヴァケイン',
+      zh: '熔岩之杖',
+    },
+    abbr: 'lc',
     element: 'Flame',
     icon: [
       {
@@ -13899,16 +14519,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Lava Cane',
-      ja: 'ラーヴァケイン',
-      zh: '熔岩之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730104': {
     Id: '30730104',
+    Name: {
+      en: 'Heatshimmer Wand',
+      ja: '陽炎のロッド',
+      zh: '阳炎魔杖',
+    },
+    abbr: 'hw',
     element: 'Flame',
     icon: [
       {
@@ -13925,25 +14546,21 @@ const weapon = {
     max: [38, 133],
     might: 60,
     min: [11, 39],
-    name: {
-      en: 'Heatshimmer Wand',
-      ja: '陽炎のロッド',
-      zh: '阳炎魔杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730201': {
     Id: '30730201',
-    element: 'Water',
-    image: '307033_01_30201',
-    max: [56, 222],
-    min: [16, 66],
-    name: {
+    Name: {
       en: 'Oceandweller',
       ja: '激流のロッド',
       zh: '激流魔杖',
     },
+    abbr: 'o',
+    element: 'Water',
+    image: '307033_01_30201',
+    max: [56, 222],
+    min: [16, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_020',
@@ -13953,6 +14570,12 @@ const weapon = {
   },
   '30730202': {
     Id: '30730202',
+    Name: {
+      en: 'The Scream',
+      ja: 'シャウトヘッド',
+      zh: '哀嚎之首',
+    },
+    abbr: 'ts',
     element: 'Water',
     icon: [
       {
@@ -13968,16 +14591,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'The Scream',
-      ja: 'シャウトヘッド',
-      zh: '哀嚎之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730203': {
     Id: '30730203',
+    Name: {
+      en: 'Chilling Cane',
+      ja: 'コールドケイン',
+      zh: '冰冷之杖',
+    },
+    abbr: 'cc',
     element: 'Water',
     icon: [
       {
@@ -13993,16 +14617,17 @@ const weapon = {
     max: [37, 136],
     might: 70,
     min: [11, 40],
-    name: {
-      en: 'Chilling Cane',
-      ja: 'コールドケイン',
-      zh: '冰冷之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730204': {
     Id: '30730204',
+    Name: {
+      en: 'Echodrip',
+      ja: '水鏡のロッド',
+      zh: '水镜魔杖',
+    },
+    abbr: 'e',
     element: 'Water',
     icon: [
       {
@@ -14018,25 +14643,21 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Echodrip',
-      ja: '水鏡のロッド',
-      zh: '水镜魔杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730301': {
     Id: '30730301',
-    element: 'Wind',
-    image: '307007_01_30301',
-    max: [54, 229],
-    min: [16, 68],
-    name: {
+    Name: {
       en: 'Menace of the Storm',
       ja: 'ストームメナス',
       zh: '威胁风暴',
     },
+    abbr: 'mots',
+    element: 'Wind',
+    image: '307007_01_30301',
+    max: [54, 229],
+    min: [16, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -14046,6 +14667,12 @@ const weapon = {
   },
   '30730302': {
     Id: '30730302',
+    Name: {
+      en: 'The Bellow',
+      ja: 'ノイズヘッド',
+      zh: '噪声之首',
+    },
+    abbr: 'tb',
     element: 'Wind',
     icon: [
       {
@@ -14061,16 +14688,17 @@ const weapon = {
     max: [37, 136],
     might: 70,
     min: [11, 40],
-    name: {
-      en: 'The Bellow',
-      ja: 'ノイズヘッド',
-      zh: '噪声之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730303': {
     Id: '30730303',
+    Name: {
+      en: 'Galewand',
+      ja: '陣風のロッド',
+      zh: '阵风魔杖',
+    },
+    abbr: 'g',
     element: 'Wind',
     icon: [
       {
@@ -14086,16 +14714,17 @@ const weapon = {
     max: [34, 144],
     might: 70,
     min: [10, 43],
-    name: {
-      en: 'Galewand',
-      ja: '陣風のロッド',
-      zh: '阵风魔杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730304': {
     Id: '30730304',
+    Name: {
+      en: 'Breeze Cane',
+      ja: 'ブリーズケイン',
+      zh: '冻结之杖',
+    },
+    abbr: 'bc',
     element: 'Wind',
     icon: [
       {
@@ -14111,25 +14740,21 @@ const weapon = {
     max: [38, 133],
     might: 70,
     min: [11, 39],
-    name: {
-      en: 'Breeze Cane',
-      ja: 'ブリーズケイン',
-      zh: '冻结之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730401': {
     Id: '30730401',
-    element: 'Light',
-    image: '307021_01_30401',
-    max: [54, 229],
-    min: [16, 68],
-    name: {
+    Name: {
       en: 'Thunder Wand',
       ja: 'サンダーロッド',
       zh: '雷霆魔杖',
     },
+    abbr: 'tw',
+    element: 'Light',
+    image: '307021_01_30401',
+    max: [54, 229],
+    min: [16, 68],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -14139,6 +14764,12 @@ const weapon = {
   },
   '30730402': {
     Id: '30730402',
+    Name: {
+      en: 'The Panic',
+      ja: 'パニックヘッド',
+      zh: '惊恐之首',
+    },
+    abbr: 'tp',
     element: 'Light',
     icon: [
       {
@@ -14154,16 +14785,17 @@ const weapon = {
     max: [37, 136],
     might: 70,
     min: [11, 40],
-    name: {
-      en: 'The Panic',
-      ja: 'パニックヘッド',
-      zh: '惊恐之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730403': {
     Id: '30730403',
+    Name: {
+      en: 'Prismatic Cane',
+      ja: 'プリズムケイン',
+      zh: '棱镜之杖',
+    },
+    abbr: 'pc',
     element: 'Light',
     icon: [
       {
@@ -14179,25 +14811,21 @@ const weapon = {
     max: [34, 144],
     might: 70,
     min: [10, 43],
-    name: {
-      en: 'Prismatic Cane',
-      ja: 'プリズムケイン',
-      zh: '棱镜之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730501': {
     Id: '30730501',
-    element: 'Shadow',
-    image: '307008_01_30501',
-    max: [56, 222],
-    min: [16, 66],
-    name: {
+    Name: {
       en: 'Meggidoth Ruiner',
       ja: 'メギトスブレイカー',
       zh: '梅奇特斯破坏者',
     },
+    abbr: 'mr',
+    element: 'Shadow',
+    image: '307008_01_30501',
+    max: [56, 222],
+    min: [16, 66],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_020',
@@ -14207,6 +14835,12 @@ const weapon = {
   },
   '30730502': {
     Id: '30730502',
+    Name: {
+      en: 'Wickedheart',
+      ja: '邪心のロッド',
+      zh: '邪念魔杖',
+    },
+    abbr: 'w',
     element: 'Shadow',
     icon: [
       {
@@ -14222,16 +14856,17 @@ const weapon = {
     max: [34, 144],
     might: 70,
     min: [10, 43],
-    name: {
-      en: 'Wickedheart',
-      ja: '邪心のロッド',
-      zh: '邪念魔杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730503': {
     Id: '30730503',
+    Name: {
+      en: 'Profound Cane',
+      ja: 'ディープケイン',
+      zh: '深邃之杖',
+    },
+    abbr: 'pc',
     element: 'Shadow',
     icon: [
       {
@@ -14247,16 +14882,17 @@ const weapon = {
     max: [36, 140],
     might: 70,
     min: [10, 42],
-    name: {
-      en: 'Profound Cane',
-      ja: 'ディープケイン',
-      zh: '深邃之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30730504': {
     Id: '30730504',
+    Name: {
+      en: 'The Dirge',
+      ja: 'クライヘッド',
+      zh: '呜咽之首',
+    },
+    abbr: 'td',
     element: 'Shadow',
     icon: [
       {
@@ -14272,39 +14908,36 @@ const weapon = {
     max: [34, 144],
     might: 70,
     min: [10, 43],
-    name: {
-      en: 'The Dirge',
-      ja: 'クライヘッド',
-      zh: '呜咽之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30739901': {
     Id: '30739901',
-    element: '0',
-    image: '307042_01_39901',
-    max: [21, 91],
-    min: [6, 27],
-    name: {
+    Name: {
       en: "Wizard's Rod",
       ja: 'ウィザードロッド',
       zh: '魔法师之杖',
     },
+    abbr: 'wr',
+    element: '0',
+    image: '307042_01_39901',
+    max: [21, 91],
+    min: [6, 27],
     rarity: '3',
     weapon: 'Wand',
   },
   '30739902': {
     Id: '30739902',
-    element: '0',
-    image: '307004_01_39901',
-    max: [34, 144],
-    min: [10, 43],
-    name: {
+    Name: {
       en: "Sorcerer's Cudgel",
       ja: 'ソーサリーロッド',
       zh: '巫术之杖',
     },
+    abbr: 'sc',
+    element: '0',
+    image: '307004_01_39901',
+    max: [34, 144],
+    min: [10, 43],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -14314,15 +14947,16 @@ const weapon = {
   },
   '30739903': {
     Id: '30739903',
-    element: '0',
-    image: '307037_01_39901',
-    max: [36, 140],
-    min: [10, 42],
-    name: {
+    Name: {
       en: 'Conchoidal Rod',
       ja: 'シェルロッド',
       zh: '海螺魔杖',
     },
+    abbr: 'cr',
+    element: '0',
+    image: '307037_01_39901',
+    max: [36, 140],
+    min: [10, 42],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_020',
@@ -14332,6 +14966,12 @@ const weapon = {
   },
   '30739904': {
     Id: '30739904',
+    Name: {
+      en: 'The Scent',
+      ja: 'アロマヘッド',
+      zh: '芳香之首',
+    },
+    abbr: 'ts',
     element: '0',
     icon: [
       {
@@ -14343,16 +14983,17 @@ const weapon = {
     max: [22, 88],
     might: 20,
     min: [6, 26],
-    name: {
-      en: 'The Scent',
-      ja: 'アロマヘッド',
-      zh: '芳香之首',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30739905': {
     Id: '30739905',
+    Name: {
+      en: 'Clamor Wand',
+      ja: 'ざわめきのロッド',
+      zh: '烦扰魔杖',
+    },
+    abbr: 'cw',
     element: '0',
     icon: [
       {
@@ -14364,16 +15005,17 @@ const weapon = {
     max: [21, 91],
     might: 20,
     min: [6, 27],
-    name: {
-      en: 'Clamor Wand',
-      ja: 'ざわめきのロッド',
-      zh: '烦扰魔杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30739906': {
     Id: '30739906',
+    Name: {
+      en: 'Heavy Cane',
+      ja: 'ヘヴィケイン',
+      zh: '沉重之杖',
+    },
+    abbr: 'hc',
     element: '0',
     icon: [
       {
@@ -14385,25 +15027,21 @@ const weapon = {
     max: [22, 88],
     might: 20,
     min: [6, 26],
-    name: {
-      en: 'Heavy Cane',
-      ja: 'ヘヴィケイン',
-      zh: '沉重之杖',
-    },
     rarity: '3',
     weapon: 'Wand',
   },
   '30740101': {
     Id: '30740101',
-    element: 'Flame',
-    image: '307016_01_40101',
-    max: [87, 372],
-    min: [26, 111],
-    name: {
+    Name: {
       en: "Firefiend's Howl",
       ja: 'フレイムブルートハウル',
       zh: '炎兽咆哮杖',
     },
+    abbr: 'fh',
+    element: 'Flame',
+    image: '307016_01_40101',
+    max: [87, 372],
+    min: [26, 111],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_018',
@@ -14413,6 +15051,12 @@ const weapon = {
   },
   '30740102': {
     Id: '30740102',
+    Name: {
+      en: 'The Second Wail',
+      ja: 'メルティングヘッド',
+      zh: '焚化之首',
+    },
+    abbr: 'tsw',
     element: 'Flame',
     icon: [
       {
@@ -14428,16 +15072,17 @@ const weapon = {
     max: [54, 229],
     might: 90,
     min: [16, 68],
-    name: {
-      en: 'The Second Wail',
-      ja: 'メルティングヘッド',
-      zh: '焚化之首',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740103': {
     Id: '30740103',
+    Name: {
+      en: 'Volcano Cane',
+      ja: 'ヴォルケーノケイン',
+      zh: '火山之杖',
+    },
+    abbr: 'vc',
     element: 'Flame',
     icon: [
       {
@@ -14453,16 +15098,17 @@ const weapon = {
     max: [56, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Volcano Cane',
-      ja: 'ヴォルケーノケイン',
-      zh: '火山之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740104': {
     Id: '30740104',
+    Name: {
+      en: 'Bewitching Scepter',
+      ja: '妖火の宝笏',
+      zh: '妖火宝笏',
+    },
+    abbr: 'bs',
     element: 'Flame',
     icon: [
       {
@@ -14478,16 +15124,17 @@ const weapon = {
     max: [74, 270],
     might: 140,
     min: [22, 81],
-    name: {
-      en: 'Bewitching Scepter',
-      ja: '妖火の宝笏',
-      zh: '妖火宝笏',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740105': {
     Id: '30740105',
+    Name: {
+      en: 'Brightshimmer Wand',
+      ja: '煌々たる陽炎のロッド',
+      zh: '迷幻阳炎魔杖',
+    },
+    abbr: 'bw',
     element: 'Flame',
     icon: [
       {
@@ -14504,16 +15151,17 @@ const weapon = {
     max: [61, 211],
     might: 80,
     min: [18, 63],
-    name: {
-      en: 'Brightshimmer Wand',
-      ja: '煌々たる陽炎のロッド',
-      zh: '迷幻阳炎魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740106': {
     Id: '30740106',
+    Name: {
+      en: 'Blaze Shepherd',
+      ja: 'バーニングコントロール',
+      zh: '灼热魔杖',
+    },
+    abbr: 'bs',
     element: 'Flame',
     icon: [
       {
@@ -14530,16 +15178,17 @@ const weapon = {
     max: [76, 264],
     might: 80,
     min: [22, 79],
-    name: {
-      en: 'Blaze Shepherd',
-      ja: 'バーニングコントロール',
-      zh: '灼热魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740107': {
     Id: '30740107',
+    Name: {
+      en: 'Blazewing',
+      ja: '焔獣の翼',
+      zh: '焰兽之翼',
+    },
+    abbr: 'b',
     element: 'Flame',
     icon: [
       {
@@ -14555,25 +15204,21 @@ const weapon = {
     max: [70, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: 'Blazewing',
-      ja: '焔獣の翼',
-      zh: '焰兽之翼',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740201': {
     Id: '30740201',
-    element: 'Water',
-    image: '307036_01_40201',
-    max: [96, 351],
-    min: [28, 105],
-    name: {
+    Name: {
       en: 'Rod of Tears',
       ja: 'ティアーズロッド',
       zh: '泪之杖',
     },
+    abbr: 'rot',
+    element: 'Water',
+    image: '307036_01_40201',
+    max: [96, 351],
+    min: [28, 105],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -14583,6 +15228,12 @@ const weapon = {
   },
   '30740202': {
     Id: '30740202',
+    Name: {
+      en: 'The Second Scream',
+      ja: 'スクリームヘッド',
+      zh: '悲鸣之首',
+    },
+    abbr: 'tss',
     element: 'Water',
     icon: [
       {
@@ -14598,16 +15249,17 @@ const weapon = {
     max: [59, 216],
     might: 90,
     min: [17, 64],
-    name: {
-      en: 'The Second Scream',
-      ja: 'スクリームヘッド',
-      zh: '悲鸣之首',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740203': {
     Id: '30740203',
+    Name: {
+      en: 'Wavewing',
+      ja: '波獣の翼',
+      zh: '波兽之翼',
+    },
+    abbr: 'w',
     element: 'Water',
     icon: [
       {
@@ -14624,16 +15276,17 @@ const weapon = {
     max: [74, 270],
     might: 80,
     min: [22, 81],
-    name: {
-      en: 'Wavewing',
-      ja: '波獣の翼',
-      zh: '波兽之翼',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740204': {
     Id: '30740204',
+    Name: {
+      en: 'Shade Mirage',
+      ja: 'ミラージュコントロール',
+      zh: '驭影魔杖',
+    },
+    abbr: 'sm',
     element: 'Water',
     icon: [
       {
@@ -14650,16 +15303,17 @@ const weapon = {
     max: [76, 264],
     might: 140,
     min: [22, 79],
-    name: {
-      en: 'Shade Mirage',
-      ja: 'ミラージュコントロール',
-      zh: '驭影魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740205': {
     Id: '30740205',
+    Name: {
+      en: 'Frost Cane',
+      ja: 'フロストケイン',
+      zh: '冰霜之杖',
+    },
+    abbr: 'fc',
     element: 'Water',
     icon: [
       {
@@ -14675,16 +15329,17 @@ const weapon = {
     max: [59, 216],
     might: 90,
     min: [17, 64],
-    name: {
-      en: 'Frost Cane',
-      ja: 'フロストケイン',
-      zh: '冰霜之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740206': {
     Id: '30740206',
+    Name: {
+      en: "Seaguide's Rule",
+      ja: 'マリーンルーラー',
+      zh: '海流支配者',
+    },
+    abbr: 'sr',
     element: 'Water',
     icon: [
       {
@@ -14700,16 +15355,17 @@ const weapon = {
     max: [76, 264],
     might: 80,
     min: [22, 79],
-    name: {
-      en: "Seaguide's Rule",
-      ja: 'マリーンルーラー',
-      zh: '海流支配者',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740207': {
     Id: '30740207',
+    Name: {
+      en: 'Lonesome Echodrip',
+      ja: '幽境に誘う水鏡のロッド',
+      zh: '幽境魔杖',
+    },
+    abbr: 'le',
     element: 'Water',
     icon: [
       {
@@ -14725,25 +15381,21 @@ const weapon = {
     max: [61, 211],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Lonesome Echodrip',
-      ja: '幽境に誘う水鏡のロッド',
-      zh: '幽境魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740301': {
     Id: '30740301',
-    element: 'Wind',
-    image: '307018_01_40301',
-    max: [87, 372],
-    min: [26, 111],
-    name: {
+    Name: {
       en: 'Tempest Wand',
       ja: 'テンペストロッド',
       zh: '暴风魔杖',
     },
+    abbr: 'tw',
+    element: 'Wind',
+    image: '307018_01_40301',
+    max: [87, 372],
+    min: [26, 111],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_018',
@@ -14753,6 +15405,12 @@ const weapon = {
   },
   '30740302': {
     Id: '30740302',
+    Name: {
+      en: 'The Fury',
+      ja: 'レイジングヘッド',
+      zh: '狂怒之首',
+    },
+    abbr: 'tf',
     element: 'Wind',
     icon: [
       {
@@ -14768,16 +15426,17 @@ const weapon = {
     max: [59, 216],
     might: 90,
     min: [17, 64],
-    name: {
-      en: 'The Fury',
-      ja: 'レイジングヘッド',
-      zh: '狂怒之首',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740303': {
     Id: '30740303',
+    Name: {
+      en: 'Scepter of the Gale',
+      ja: '烈風の宝笏',
+      zh: '烈风宝笏',
+    },
+    abbr: 'sotg',
     element: 'Wind',
     icon: [
       {
@@ -14793,16 +15452,17 @@ const weapon = {
     max: [67, 287],
     might: 60,
     min: [20, 86],
-    name: {
-      en: 'Scepter of the Gale',
-      ja: '烈風の宝笏',
-      zh: '烈风宝笏',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740304': {
     Id: '30740304',
+    Name: {
+      en: 'Stormsurge Wand',
+      ja: '逆巻く陣風のロッド',
+      zh: '妖风魔杖',
+    },
+    abbr: 'sw',
     element: 'Wind',
     icon: [
       {
@@ -14818,16 +15478,17 @@ const weapon = {
     max: [54, 229],
     might: 90,
     min: [16, 68],
-    name: {
-      en: 'Stormsurge Wand',
-      ja: '逆巻く陣風のロッド',
-      zh: '妖风魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740305': {
     Id: '30740305',
+    Name: {
+      en: "Storm's Rule",
+      ja: 'ストームルーラー',
+      zh: '风暴支配者',
+    },
+    abbr: 'sr',
     element: 'Wind',
     icon: [
       {
@@ -14843,16 +15504,17 @@ const weapon = {
     max: [67, 287],
     might: 140,
     min: [20, 86],
-    name: {
-      en: "Storm's Rule",
-      ja: 'ストームルーラー',
-      zh: '风暴支配者',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740306': {
     Id: '30740306',
+    Name: {
+      en: 'Storm Cane',
+      ja: 'ストームケイン',
+      zh: '暴风之杖',
+    },
+    abbr: 'sc',
     element: 'Wind',
     icon: [
       {
@@ -14868,16 +15530,17 @@ const weapon = {
     max: [61, 211],
     might: 90,
     min: [18, 63],
-    name: {
-      en: 'Storm Cane',
-      ja: 'ストームケイン',
-      zh: '暴风之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740307': {
     Id: '30740307',
+    Name: {
+      en: 'Gustwing',
+      ja: '風獣の翼',
+      zh: '风兽之翼',
+    },
+    abbr: 'g',
     element: 'Wind',
     icon: [
       {
@@ -14893,25 +15556,21 @@ const weapon = {
     max: [67, 287],
     might: 80,
     min: [20, 86],
-    name: {
-      en: 'Gustwing',
-      ja: '風獣の翼',
-      zh: '风兽之翼',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740402': {
     Id: '30740402',
-    element: 'Light',
-    image: '307010_01_40401',
-    max: [96, 351],
-    min: [28, 105],
-    name: {
+    Name: {
       en: 'Conductor Rod',
       ja: 'ライトニングロッド',
       zh: '闪光魔杖',
     },
+    abbr: 'cr',
+    element: 'Light',
+    image: '307010_01_40401',
+    max: [96, 351],
+    min: [28, 105],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -14921,6 +15580,12 @@ const weapon = {
   },
   '30740404': {
     Id: '30740404',
+    Name: {
+      en: 'The Madness',
+      ja: 'クレイジーヘッド',
+      zh: '疯狂之首',
+    },
+    abbr: 'tm',
     element: 'Light',
     icon: [
       {
@@ -14936,16 +15601,17 @@ const weapon = {
     max: [59, 216],
     might: 90,
     min: [17, 64],
-    name: {
-      en: 'The Madness',
-      ja: 'クレイジーヘッド',
-      zh: '疯狂之首',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740405': {
     Id: '30740405',
+    Name: {
+      en: 'Rainbow Cane',
+      ja: 'レインボーケイン',
+      zh: '彩虹之杖',
+    },
+    abbr: 'rc',
     element: 'Light',
     icon: [
       {
@@ -14961,16 +15627,17 @@ const weapon = {
     max: [54, 229],
     might: 90,
     min: [16, 68],
-    name: {
-      en: 'Rainbow Cane',
-      ja: 'レインボーケイン',
-      zh: '彩虹之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740406': {
     Id: '30740406',
+    Name: {
+      en: "Saint's Requiem",
+      ja: 'セイントレクイエム',
+      zh: '圣徒安魂曲',
+    },
+    abbr: 'sr',
     element: 'Light',
     icon: [
       {
@@ -14988,16 +15655,17 @@ const weapon = {
     max: [70, 278],
     might: 80,
     min: [21, 83],
-    name: {
-      en: "Saint's Requiem",
-      ja: 'セイントレクイエム',
-      zh: '圣徒安魂曲',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740407': {
     Id: '30740407',
+    Name: {
+      en: 'Skyshaker',
+      ja: 'スカイシェイカー',
+      zh: '撼天之杖',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -15014,25 +15682,21 @@ const weapon = {
     max: [74, 270],
     might: 140,
     min: [22, 81],
-    name: {
-      en: 'Skyshaker',
-      ja: 'スカイシェイカー',
-      zh: '撼天之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740501': {
     Id: '30740501',
-    element: 'Shadow',
-    image: '307011_01_40501',
-    max: [87, 372],
-    min: [26, 111],
-    name: {
+    Name: {
       en: 'Accursed Vare',
       ja: 'カースロッド',
       zh: '诅咒魔杖',
     },
+    abbr: 'av',
+    element: 'Shadow',
+    image: '307011_01_40501',
+    max: [87, 372],
+    min: [26, 111],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_018',
@@ -15042,6 +15706,12 @@ const weapon = {
   },
   '30740503': {
     Id: '30740503',
+    Name: {
+      en: 'Darkheart',
+      ja: '禍々しき邪心のロッド',
+      zh: '不祥邪念魔杖',
+    },
+    abbr: 'd',
     element: 'Shadow',
     icon: [
       {
@@ -15057,16 +15727,17 @@ const weapon = {
     max: [54, 229],
     might: 90,
     min: [16, 68],
-    name: {
-      en: 'Darkheart',
-      ja: '禍々しき邪心のロッド',
-      zh: '不祥邪念魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740504': {
     Id: '30740504',
+    Name: {
+      en: 'Abyssal Cane',
+      ja: 'アビスケイン',
+      zh: '深渊之杖',
+    },
+    abbr: 'ac',
     element: 'Shadow',
     icon: [
       {
@@ -15082,16 +15753,17 @@ const weapon = {
     max: [56, 222],
     might: 90,
     min: [16, 66],
-    name: {
-      en: 'Abyssal Cane',
-      ja: 'アビスケイン',
-      zh: '深渊之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740505': {
     Id: '30740505',
+    Name: {
+      en: 'Dirge of Grief',
+      ja: 'グリーフレクイエム',
+      zh: '哀怨安魂曲',
+    },
+    abbr: 'dog',
     element: 'Shadow',
     icon: [
       {
@@ -15108,16 +15780,17 @@ const weapon = {
     max: [74, 270],
     might: 140,
     min: [22, 81],
-    name: {
-      en: 'Dirge of Grief',
-      ja: 'グリーフレクイエム',
-      zh: '哀怨安魂曲',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740506': {
     Id: '30740506',
+    Name: {
+      en: 'The Lamentation',
+      ja: 'ラメントヘッド',
+      zh: '哀怨之首',
+    },
+    abbr: 'tl',
     element: 'Shadow',
     icon: [
       {
@@ -15133,16 +15806,17 @@ const weapon = {
     max: [54, 229],
     might: 90,
     min: [16, 68],
-    name: {
-      en: 'The Lamentation',
-      ja: 'ラメントヘッド',
-      zh: '哀怨之首',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30740507': {
     Id: '30740507',
+    Name: {
+      en: 'Chaoshaker',
+      ja: 'カオスシェイカー',
+      zh: '撼沌之杖',
+    },
+    abbr: 'c',
     element: 'Shadow',
     icon: [
       {
@@ -15159,39 +15833,36 @@ const weapon = {
     max: [67, 287],
     might: 80,
     min: [20, 86],
-    name: {
-      en: 'Chaoshaker',
-      ja: 'カオスシェイカー',
-      zh: '撼沌之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749901': {
     Id: '30749901',
-    element: '0',
-    image: '307012_01_49901',
-    max: [51, 221],
-    min: [15, 66],
-    name: {
+    Name: {
       en: 'Latchkey',
       ja: 'キーロッド',
       zh: '匙之杖',
     },
+    abbr: 'l',
+    element: '0',
+    image: '307012_01_49901',
+    max: [51, 221],
+    min: [15, 66],
     rarity: '4',
     weapon: 'Wand',
   },
   '30749902': {
     Id: '30749902',
-    element: '0',
-    image: '307038_01_49901',
-    max: [67, 287],
-    min: [20, 86],
-    name: {
+    Name: {
       en: 'Rod of Alchemy',
       ja: 'アルケミーロッド',
       zh: '炼金魔杖',
     },
+    abbr: 'roa',
+    element: '0',
+    image: '307038_01_49901',
+    max: [67, 287],
+    min: [20, 86],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_018',
@@ -15201,15 +15872,16 @@ const weapon = {
   },
   '30749903': {
     Id: '30749903',
-    element: '0',
-    image: '307039_01_49901',
-    max: [74, 270],
-    min: [22, 81],
-    name: {
+    Name: {
       en: 'Moonlight Rod',
       ja: 'ムーンライトロッド',
       zh: '月光魔杖',
     },
+    abbr: 'mr',
+    element: '0',
+    image: '307039_01_49901',
+    max: [74, 270],
+    min: [22, 81],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_031',
@@ -15219,6 +15891,12 @@ const weapon = {
   },
   '30749904': {
     Id: '30749904',
+    Name: {
+      en: 'Beastwing',
+      ja: '獣の翼',
+      zh: '兽之翼',
+    },
+    abbr: 'b',
     element: '0',
     icon: [
       {
@@ -15230,16 +15908,17 @@ const weapon = {
     max: [57, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Beastwing',
-      ja: '獣の翼',
-      zh: '兽之翼',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749905': {
     Id: '30749905',
+    Name: {
+      en: 'Scepter of Spirit',
+      ja: '魂の宝笏',
+      zh: '灵魂宝笏',
+    },
+    abbr: 'sos',
     element: '0',
     icon: [
       {
@@ -15251,16 +15930,17 @@ const weapon = {
     max: [57, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Scepter of Spirit',
-      ja: '魂の宝笏',
-      zh: '灵魂宝笏',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749906': {
     Id: '30749906',
+    Name: {
+      en: 'Couragebane',
+      ja: 'フィアーコントロール',
+      zh: '驭火魔杖',
+    },
+    abbr: 'c',
     element: '0',
     icon: [
       {
@@ -15273,16 +15953,17 @@ const weapon = {
     max: [54, 214],
     might: 40,
     min: [16, 64],
-    name: {
-      en: 'Couragebane',
-      ja: 'フィアーコントロール',
-      zh: '驭火魔杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749907': {
     Id: '30749907',
+    Name: {
+      en: "Elder's Rule",
+      ja: 'エルダールーラー',
+      zh: '远古支配者',
+    },
+    abbr: 'er',
     element: '0',
     icon: [
       {
@@ -15294,16 +15975,17 @@ const weapon = {
     max: [51, 221],
     might: 40,
     min: [15, 66],
-    name: {
-      en: "Elder's Rule",
-      ja: 'エルダールーラー',
-      zh: '远古支配者',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749908': {
     Id: '30749908',
+    Name: {
+      en: "Soul's Requiem",
+      ja: 'アニマレクイエム',
+      zh: '慰藉安魂曲',
+    },
+    abbr: 'sr',
     element: '0',
     icon: [
       {
@@ -15316,16 +15998,17 @@ const weapon = {
     max: [57, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: "Soul's Requiem",
-      ja: 'アニマレクイエム',
-      zh: '慰藉安魂曲',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30749909': {
     Id: '30749909',
+    Name: {
+      en: 'Groundshaker',
+      ja: 'グランドシェイカー',
+      zh: '撼地之杖',
+    },
+    abbr: 'g',
     element: '0',
     icon: [
       {
@@ -15338,25 +16021,21 @@ const weapon = {
     max: [57, 208],
     might: 40,
     min: [17, 62],
-    name: {
-      en: 'Groundshaker',
-      ja: 'グランドシェイカー',
-      zh: '撼地之杖',
-    },
     rarity: '4',
     weapon: 'Wand',
   },
   '30750101': {
     Id: '30750101',
-    element: 'Flame',
-    image: '307015_01_50101',
-    max: [152, 528],
-    min: [45, 158],
-    name: {
+    Name: {
       en: 'Terranigmus',
       ja: 'ランドメイカー',
       zh: '大地之母',
     },
+    abbr: 't',
+    element: 'Flame',
+    image: '307015_01_50101',
+    max: [152, 528],
+    min: [45, 158],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -15366,6 +16045,12 @@ const weapon = {
   },
   '30750102': {
     Id: '30750102',
+    Name: {
+      en: 'Scepter of Infinite Fire',
+      ja: '無尽焔の宝笏',
+      zh: '无尽焰宝笏',
+    },
+    abbr: 'soif',
     element: 'Flame',
     icon: [
       {
@@ -15381,16 +16066,17 @@ const weapon = {
     max: [96, 351],
     might: 150,
     min: [28, 105],
-    name: {
-      en: 'Scepter of Infinite Fire',
-      ja: '無尽焔の宝笏',
-      zh: '无尽焰宝笏',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750103': {
     Id: '30750103',
+    Name: {
+      en: 'Infernal Conduit',
+      ja: 'ブレイジングコントロール',
+      zh: '炽热魔杖',
+    },
+    abbr: 'ic',
     element: 'Flame',
     icon: [
       {
@@ -15407,16 +16093,17 @@ const weapon = {
     max: [98, 343],
     might: 100,
     min: [29, 102],
-    name: {
-      en: 'Infernal Conduit',
-      ja: 'ブレイジングコントロール',
-      zh: '炽热魔杖',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750104': {
     Id: '30750104',
+    Name: {
+      en: 'Muspelheim',
+      ja: '竜笏ムスペルヘイム',
+      zh: '龙笏炎境',
+    },
+    abbr: 'm',
     element: 'Flame',
     icon: [
       {
@@ -15428,11 +16115,6 @@ const weapon = {
     max: [209, 727],
     might: 100,
     min: [62, 218],
-    name: {
-      en: 'Muspelheim',
-      ja: '竜笏ムスペルヘイム',
-      zh: '龙笏炎境',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15442,15 +16124,16 @@ const weapon = {
   },
   '30750105': {
     Id: '30750105',
-    element: 'Flame',
-    image: '307119_01_50102',
-    max: [251, 1453],
-    min: [75, 435],
-    name: {
+    Name: {
       en: 'Infernoblaze',
       ja: '竜笏インフェルノ',
       zh: '龙笏炼狱',
     },
+    abbr: 'i',
+    element: 'Flame',
+    image: '307119_01_50102',
+    max: [251, 1453],
+    min: [75, 435],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15460,6 +16143,12 @@ const weapon = {
   },
   '30750106': {
     Id: '30750106',
+    Name: {
+      en: 'Hellwing',
+      ja: '紅炎獣の翼',
+      zh: '红炎兽之翼',
+    },
+    abbr: 'h',
     element: 'Flame',
     icon: [
       {
@@ -15475,25 +16164,21 @@ const weapon = {
     max: [91, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Hellwing',
-      ja: '紅炎獣の翼',
-      zh: '红炎兽之翼',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750202': {
     Id: '30750202',
-    element: 'Water',
-    image: '307032_01_50201',
-    max: [134, 573],
-    min: [40, 171],
-    name: {
+    Name: {
       en: 'Ocean Monarch',
       ja: 'パシフィックモナーク',
       zh: '大洋君主',
     },
+    abbr: 'om',
+    element: 'Water',
+    image: '307032_01_50201',
+    max: [134, 573],
+    min: [40, 171],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_020',
@@ -15503,6 +16188,12 @@ const weapon = {
   },
   '30750203': {
     Id: '30750203',
+    Name: {
+      en: 'Tsunamiwing',
+      ja: '海嘯獣の翼',
+      zh: '海啸兽之翼',
+    },
+    abbr: 't',
     element: 'Water',
     icon: [
       {
@@ -15519,16 +16210,17 @@ const weapon = {
     max: [87, 372],
     might: 100,
     min: [26, 111],
-    name: {
-      en: 'Tsunamiwing',
-      ja: '海嘯獣の翼',
-      zh: '海啸兽之翼',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750204': {
     Id: '30750204',
+    Name: {
+      en: 'Spirit Breaker',
+      ja: 'スピリットコントロール',
+      zh: '驭魂魔杖',
+    },
+    abbr: 'sb',
     element: 'Water',
     icon: [
       {
@@ -15545,16 +16237,17 @@ const weapon = {
     max: [98, 343],
     might: 160,
     min: [29, 102],
-    name: {
-      en: 'Spirit Breaker',
-      ja: 'スピリットコントロール',
-      zh: '驭魂魔杖',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750205': {
     Id: '30750205',
+    Name: {
+      en: "Seasovereign's Rule",
+      ja: 'オーシャンルーラー',
+      zh: '大洋支配者',
+    },
+    abbr: 'sr',
     element: 'Water',
     icon: [
       {
@@ -15570,16 +16263,17 @@ const weapon = {
     max: [98, 343],
     might: 100,
     min: [29, 102],
-    name: {
-      en: "Seasovereign's Rule",
-      ja: 'オーシャンルーラー',
-      zh: '大洋支配者',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750206': {
     Id: '30750206',
+    Name: {
+      en: 'Hydroballista',
+      ja: '竜笏ハイドロバリスタ',
+      zh: '龙笏清流',
+    },
+    abbr: 'h',
     element: 'Water',
     icon: [
       {
@@ -15591,11 +16285,6 @@ const weapon = {
     max: [209, 727],
     might: 100,
     min: [62, 218],
-    name: {
-      en: 'Hydroballista',
-      ja: '竜笏ハイドロバリスタ',
-      zh: '龙笏清流',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15605,15 +16294,16 @@ const weapon = {
   },
   '30750207': {
     Id: '30750207',
-    element: 'Water',
-    image: '307117_01_50202',
-    max: [251, 1453],
-    min: [75, 435],
-    name: {
+    Name: {
       en: 'Aquatic Spiral',
       ja: '竜笏アクアスパイラル',
       zh: '龙笏海涡',
     },
+    abbr: 'as',
+    element: 'Water',
+    image: '307117_01_50202',
+    max: [251, 1453],
+    min: [75, 435],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15623,15 +16313,16 @@ const weapon = {
   },
   '30750301': {
     Id: '30750301',
-    element: 'Wind',
-    image: '307014_01_50301',
-    max: [152, 528],
-    min: [45, 158],
-    name: {
+    Name: {
       en: 'Phytalmios',
       ja: 'クラウドカローラ',
       zh: '云之花冠',
     },
+    abbr: 'p',
+    element: 'Wind',
+    image: '307014_01_50301',
+    max: [152, 528],
+    min: [45, 158],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -15641,6 +16332,12 @@ const weapon = {
   },
   '30750302': {
     Id: '30750302',
+    Name: {
+      en: 'Scepter of the Maelstrom',
+      ja: '碧嵐迅の宝笏',
+      zh: '碧岚迅宝笏',
+    },
+    abbr: 'sotm',
     element: 'Wind',
     icon: [
       {
@@ -15656,16 +16353,17 @@ const weapon = {
     max: [87, 372],
     might: 80,
     min: [26, 111],
-    name: {
-      en: 'Scepter of the Maelstrom',
-      ja: '碧嵐迅の宝笏',
-      zh: '碧岚迅宝笏',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750303': {
     Id: '30750303',
+    Name: {
+      en: "Typhoon's Rule",
+      ja: 'タイフーンルーラー',
+      zh: '台风支配者',
+    },
+    abbr: 'tr',
     element: 'Wind',
     icon: [
       {
@@ -15681,16 +16379,17 @@ const weapon = {
     max: [87, 372],
     might: 160,
     min: [26, 111],
-    name: {
-      en: "Typhoon's Rule",
-      ja: 'タイフーンルーラー',
-      zh: '台风支配者',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750304': {
     Id: '30750304',
+    Name: {
+      en: 'Tempestwing',
+      ja: '豪嵐獣の翼',
+      zh: '暴风兽之翼',
+    },
+    abbr: 't',
     element: 'Wind',
     icon: [
       {
@@ -15706,16 +16405,17 @@ const weapon = {
     max: [87, 372],
     might: 100,
     min: [26, 111],
-    name: {
-      en: 'Tempestwing',
-      ja: '豪嵐獣の翼',
-      zh: '暴风兽之翼',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750305': {
     Id: '30750305',
+    Name: {
+      en: 'Tornado Tail',
+      ja: '竜笏トルネードテイル',
+      zh: '龙笏飓风',
+    },
+    abbr: 'tt',
     element: 'Wind',
     icon: [
       {
@@ -15727,11 +16427,6 @@ const weapon = {
     max: [184, 788],
     might: 100,
     min: [55, 236],
-    name: {
-      en: 'Tornado Tail',
-      ja: '竜笏トルネードテイル',
-      zh: '龙笏飓风',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15741,15 +16436,16 @@ const weapon = {
   },
   '30750306': {
     Id: '30750306',
-    element: 'Wind',
-    image: '307116_01_50302',
-    max: [221, 1575],
-    min: [66, 472],
-    name: {
+    Name: {
       en: 'Grand Tempest',
       ja: '竜笏グランドテンペスト',
       zh: '龙笏风暴',
     },
+    abbr: 'gt',
+    element: 'Wind',
+    image: '307116_01_50302',
+    max: [221, 1575],
+    min: [66, 472],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -15759,15 +16455,16 @@ const weapon = {
   },
   '30750401': {
     Id: '30750401',
-    element: 'Light',
-    image: '307034_01_50401',
-    max: [134, 573],
-    min: [40, 171],
-    name: {
+    Name: {
       en: 'Twilight Shimmer',
       ja: 'スパークルナイト',
       zh: '白昼之夜',
     },
+    abbr: 'ts',
+    element: 'Light',
+    image: '307034_01_50401',
+    max: [134, 573],
+    min: [40, 171],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_020',
@@ -15777,6 +16474,12 @@ const weapon = {
   },
   '30750403': {
     Id: '30750403',
+    Name: {
+      en: 'Sacred Requiem',
+      ja: 'セイクリッドレクイエム',
+      zh: '神圣安魂曲',
+    },
+    abbr: 'sr',
     element: 'Light',
     icon: [
       {
@@ -15794,16 +16497,17 @@ const weapon = {
     max: [91, 362],
     might: 100,
     min: [27, 108],
-    name: {
-      en: 'Sacred Requiem',
-      ja: 'セイクリッドレクイエム',
-      zh: '神圣安魂曲',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750404': {
     Id: '30750404',
+    Name: {
+      en: 'Crossed Lightning',
+      ja: '竜笏ライトニングクロス',
+      zh: '龙笏织电',
+    },
+    abbr: 'cl',
     element: 'Light',
     icon: [
       {
@@ -15815,11 +16519,6 @@ const weapon = {
     max: [194, 765],
     might: 100,
     min: [58, 229],
-    name: {
-      en: 'Crossed Lightning',
-      ja: '竜笏ライトニングクロス',
-      zh: '龙笏织电',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_020',
@@ -15829,15 +16528,16 @@ const weapon = {
   },
   '30750405': {
     Id: '30750405',
-    element: 'Light',
-    image: '307118_01_50402',
-    max: [232, 1530],
-    min: [69, 459],
-    name: {
+    Name: {
       en: 'Primeval Thunder',
       ja: '竜笏プライマルサンダー',
       zh: '龙笏初雷',
     },
+    abbr: 'pt',
+    element: 'Light',
+    image: '307118_01_50402',
+    max: [232, 1530],
+    min: [69, 459],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_020',
@@ -15847,6 +16547,12 @@ const weapon = {
   },
   '30750406': {
     Id: '30750406',
+    Name: {
+      en: 'Worldshaker',
+      ja: 'ワールドシェイカー',
+      zh: '撼世之杖',
+    },
+    abbr: 'w',
     element: 'Light',
     icon: [
       {
@@ -15863,25 +16569,21 @@ const weapon = {
     max: [96, 351],
     might: 160,
     min: [28, 105],
-    name: {
-      en: 'Worldshaker',
-      ja: 'ワールドシェイカー',
-      zh: '撼世之杖',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750501': {
     Id: '30750501',
-    element: 'Shadow',
-    image: '307035_01_50501',
-    max: [152, 528],
-    min: [45, 158],
-    name: {
+    Name: {
       en: 'Underworld Despair',
       ja: 'ディスペルハデス',
       zh: '驱冥杖',
     },
+    abbr: 'ud',
+    element: 'Shadow',
+    image: '307035_01_50501',
+    max: [152, 528],
+    min: [45, 158],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -15891,6 +16593,12 @@ const weapon = {
   },
   '30750503': {
     Id: '30750503',
+    Name: {
+      en: 'Dirge of Desperation',
+      ja: 'ディスパレイトレクイエム',
+      zh: '绝望安魂曲',
+    },
+    abbr: 'dod',
     element: 'Shadow',
     icon: [
       {
@@ -15907,16 +16615,17 @@ const weapon = {
     max: [96, 351],
     might: 160,
     min: [28, 105],
-    name: {
-      en: 'Dirge of Desperation',
-      ja: 'ディスパレイトレクイエム',
-      zh: '绝望安魂曲',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30750504': {
     Id: '30750504',
+    Name: {
+      en: 'Venomous Curse',
+      ja: '竜笏カースヴェノム',
+      zh: '龙笏怨沌',
+    },
+    abbr: 'vc',
     element: 'Shadow',
     icon: [
       {
@@ -15928,11 +16637,6 @@ const weapon = {
     max: [203, 742],
     might: 100,
     min: [60, 222],
-    name: {
-      en: 'Venomous Curse',
-      ja: '竜笏カースヴェノム',
-      zh: '龙笏怨沌',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -15942,15 +16646,16 @@ const weapon = {
   },
   '30750505': {
     Id: '30750505',
-    element: 'Shadow',
-    image: '307120_01_50502',
-    max: [244, 1484],
-    min: [73, 445],
-    name: {
+    Name: {
       en: 'Darkbinder',
       ja: '竜笏ダークバインド',
       zh: '龙笏暗缚',
     },
+    abbr: 'd',
+    element: 'Shadow',
+    image: '307120_01_50502',
+    max: [244, 1484],
+    min: [73, 445],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -15960,6 +16665,12 @@ const weapon = {
   },
   '30750506': {
     Id: '30750506',
+    Name: {
+      en: 'Fateshaker',
+      ja: 'フェイトシェイカー',
+      zh: '撼运之杖',
+    },
+    abbr: 'f',
     element: 'Shadow',
     icon: [
       {
@@ -15976,39 +16687,36 @@ const weapon = {
     max: [87, 372],
     might: 100,
     min: [26, 111],
-    name: {
-      en: 'Fateshaker',
-      ja: 'フェイトシェイカー',
-      zh: '撼运之杖',
-    },
     rarity: '5',
     weapon: 'Wand',
   },
   '30759901': {
     Id: '30759901',
-    element: '0',
-    image: '307031_01_59901',
-    max: [90, 384],
-    min: [27, 115],
-    name: {
+    Name: {
       en: 'Wand of the Torrent',
       ja: 'タービュランスロッド',
       zh: '乱流魔杖',
     },
+    abbr: 'wott',
+    element: '0',
+    image: '307031_01_59901',
+    max: [90, 384],
+    min: [27, 115],
     rarity: '5',
     weapon: 'Wand',
   },
   '30759902': {
     Id: '30759902',
-    element: '0',
-    image: '307040_01_59901',
-    max: [110, 470],
-    min: [33, 141],
-    name: {
+    Name: {
       en: 'Welkin Wand',
       ja: '天空のロッド',
       zh: '苍穹魔杖',
     },
+    abbr: 'ww',
+    element: '0',
+    image: '307040_01_59901',
+    max: [110, 470],
+    min: [33, 141],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_020',
@@ -16018,15 +16726,16 @@ const weapon = {
   },
   '30759903': {
     Id: '30759903',
-    element: '0',
-    image: '307041_01_59901',
-    max: [125, 433],
-    min: [37, 129],
-    name: {
+    Name: {
       en: 'Chaotic Horizon',
       ja: 'カオスホライゾン',
       zh: '混沌之源',
     },
+    abbr: 'ch',
+    element: '0',
+    image: '307041_01_59901',
+    max: [125, 433],
+    min: [37, 129],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_029',
@@ -16036,15 +16745,16 @@ const weapon = {
   },
   '30759904': {
     Id: '30759904',
-    element: '0',
-    image: '307127_01_59901',
-    max: [94, 373],
-    min: [28, 111],
-    name: {
+    Name: {
       en: 'Mega Wand',
       ja: 'ロックロッド',
       zh: '洛克魔杖',
     },
+    abbr: 'mw',
+    element: '0',
+    image: '307127_01_59901',
+    max: [94, 373],
+    min: [28, 111],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',
@@ -16054,15 +16764,16 @@ const weapon = {
   },
   '30830101': {
     Id: '30830101',
-    element: 'Flame',
-    image: '308006_01_30101',
-    max: [66, 205],
-    min: [19, 61],
-    name: {
+    Name: {
       en: 'Staff of Punishing Flame',
       ja: '猛き炎の杖',
       zh: '烈焰之杖',
     },
+    abbr: 'sopf',
+    element: 'Flame',
+    image: '308006_01_30101',
+    max: [66, 205],
+    min: [19, 61],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -16072,6 +16783,12 @@ const weapon = {
   },
   '30830102': {
     Id: '30830102',
+    Name: {
+      en: 'Flamechant',
+      ja: 'フリーファイアオーダー',
+      zh: '火焰唤魔法杖',
+    },
+    abbr: 'f',
     element: 'Flame',
     icon: [
       {
@@ -16088,25 +16805,21 @@ const weapon = {
     max: [42, 129],
     might: 70,
     min: [12, 38],
-    name: {
-      en: 'Flamechant',
-      ja: 'フリーファイアオーダー',
-      zh: '火焰唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30830201': {
     Id: '30830201',
-    element: 'Water',
-    image: '308007_01_30201',
-    max: [66, 205],
-    min: [19, 61],
-    name: {
+    Name: {
       en: 'Scendecipher',
       ja: 'ウェーブリポート',
       zh: '观浪法杖',
     },
+    abbr: 's',
+    element: 'Water',
+    image: '308007_01_30201',
+    max: [66, 205],
+    min: [19, 61],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -16116,6 +16829,12 @@ const weapon = {
   },
   '30830202': {
     Id: '30830202',
+    Name: {
+      en: 'Brinechant',
+      ja: 'ウォータリィオーダー',
+      zh: '融水唤魔法杖',
+    },
+    abbr: 'b',
     element: 'Water',
     icon: [
       {
@@ -16132,25 +16851,21 @@ const weapon = {
     max: [45, 123],
     might: 70,
     min: [13, 36],
-    name: {
-      en: 'Brinechant',
-      ja: 'ウォータリィオーダー',
-      zh: '融水唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30830301': {
     Id: '30830301',
-    element: 'Wind',
-    image: '308008_01_30301',
-    max: [69, 199],
-    min: [20, 59],
-    name: {
+    Name: {
       en: 'Windreader',
       ja: 'ウェザーリポート',
       zh: '气象法杖',
     },
+    abbr: 'w',
+    element: 'Wind',
+    image: '308008_01_30301',
+    max: [69, 199],
+    min: [20, 59],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_031',
@@ -16160,6 +16875,12 @@ const weapon = {
   },
   '30830302': {
     Id: '30830302',
+    Name: {
+      en: 'Squallchant',
+      ja: 'ツイストオーダー',
+      zh: '风卷唤魔法杖',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -16176,25 +16897,21 @@ const weapon = {
     max: [45, 123],
     might: 60,
     min: [13, 36],
-    name: {
-      en: 'Squallchant',
-      ja: 'ツイストオーダー',
-      zh: '风卷唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30830401': {
     Id: '30830401',
-    element: 'Light',
-    image: '308009_01_30401',
-    max: [69, 199],
-    min: [20, 59],
-    name: {
+    Name: {
       en: 'Astrolabe',
       ja: 'アストロラーベ',
       zh: '星盘之杖',
     },
+    abbr: 'a',
+    element: 'Light',
+    image: '308009_01_30401',
+    max: [69, 199],
+    min: [20, 59],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_031',
@@ -16204,15 +16921,16 @@ const weapon = {
   },
   '30830402': {
     Id: '30830402',
-    element: 'Light',
-    image: '308026_01_30401',
-    max: [59, 185],
-    min: [17, 55],
-    name: {
+    Name: {
       en: "Vampire's Lantern",
       ja: 'ヴァンパイア・ランタン',
       zh: '吸血鬼灯笼',
     },
+    abbr: 'vl',
+    element: 'Light',
+    image: '308026_01_30401',
+    max: [59, 185],
+    min: [17, 55],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_029',
@@ -16222,6 +16940,12 @@ const weapon = {
   },
   '30830403': {
     Id: '30830403',
+    Name: {
+      en: 'Gleamchant',
+      ja: 'ホワイトオーダー',
+      zh: '白光唤魔法杖',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -16238,25 +16962,21 @@ const weapon = {
     max: [45, 123],
     might: 70,
     min: [13, 36],
-    name: {
-      en: 'Gleamchant',
-      ja: 'ホワイトオーダー',
-      zh: '白光唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30830501': {
     Id: '30830501',
-    element: 'Shadow',
-    image: '308020_01_30501',
-    max: [69, 199],
-    min: [20, 59],
-    name: {
+    Name: {
       en: 'Meggidoth Wisp',
       ja: 'メギトスウィスプ',
       zh: '梅奇特斯的低语',
     },
+    abbr: 'mw',
+    element: 'Shadow',
+    image: '308020_01_30501',
+    max: [69, 199],
+    min: [20, 59],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_031',
@@ -16266,6 +16986,12 @@ const weapon = {
   },
   '30830502': {
     Id: '30830502',
+    Name: {
+      en: 'Gloomchant',
+      ja: 'トワイライトオーダー',
+      zh: '暮光唤魔法杖',
+    },
+    abbr: 'g',
     element: 'Shadow',
     icon: [
       {
@@ -16282,39 +17008,36 @@ const weapon = {
     max: [44, 125],
     might: 70,
     min: [13, 37],
-    name: {
-      en: 'Gloomchant',
-      ja: 'トワイライトオーダー',
-      zh: '暮光唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30839901': {
     Id: '30839901',
-    element: '0',
-    image: '308002_01_39901',
-    max: [28, 77],
-    min: [8, 23],
-    name: {
+    Name: {
       en: 'Staff of Grace',
       ja: '恩恵の杖',
       zh: '恩惠之杖',
     },
+    abbr: 'sog',
+    element: '0',
+    image: '308002_01_39901',
+    max: [28, 77],
+    min: [8, 23],
     rarity: '3',
     weapon: 'Staff',
   },
   '30839902': {
     Id: '30839902',
-    element: '0',
-    image: '307003_01_39901',
-    max: [44, 125],
-    min: [13, 37],
-    name: {
+    Name: {
       en: 'Long Ankh',
       ja: 'ロングアンク',
       zh: '长生符',
     },
+    abbr: 'la',
+    element: '0',
+    image: '307003_01_39901',
+    max: [44, 125],
+    min: [13, 37],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_031',
@@ -16324,15 +17047,16 @@ const weapon = {
   },
   '30839903': {
     Id: '30839903',
-    element: '0',
-    image: '308036_01_39901',
-    max: [42, 129],
-    min: [12, 38],
-    name: {
+    Name: {
       en: 'Staff of the Horned Snake',
       ja: '角蛇の杖',
       zh: '角蛇之杖',
     },
+    abbr: 'soths',
+    element: '0',
+    image: '308036_01_39901',
+    max: [42, 129],
+    min: [12, 38],
     rarity: '3',
     skill: {
       image: 'Icon_Skill_018',
@@ -16342,6 +17066,12 @@ const weapon = {
   },
   '30839904': {
     Id: '30839904',
+    Name: {
+      en: 'Aurachant',
+      ja: 'シンプルオーダー',
+      zh: '简易唤魔法杖',
+    },
+    abbr: 'a',
     element: '0',
     icon: [
       {
@@ -16354,25 +17084,21 @@ const weapon = {
     max: [26, 81],
     might: 20,
     min: [7, 24],
-    name: {
-      en: 'Aurachant',
-      ja: 'シンプルオーダー',
-      zh: '简易唤魔法杖',
-    },
     rarity: '3',
     weapon: 'Staff',
   },
   '30840101': {
     Id: '30840101',
-    element: 'Flame',
-    image: '308021_01_40101',
-    max: [115, 317],
-    min: [34, 95],
-    name: {
+    Name: {
       en: 'Ark Voyager',
       ja: 'アークフレアスタッフ',
       zh: '天火法杖',
     },
+    abbr: 'av',
+    element: 'Flame',
+    image: '308021_01_40101',
+    max: [115, 317],
+    min: [34, 95],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -16382,6 +17108,12 @@ const weapon = {
   },
   '30840102': {
     Id: '30840102',
+    Name: {
+      en: 'Ashchant',
+      ja: 'フルフレイムオーダー',
+      zh: '烈焰唤魔法杖',
+    },
+    abbr: 'a',
     element: 'Flame',
     icon: [
       {
@@ -16398,16 +17130,17 @@ const weapon = {
     max: [71, 195],
     might: 90,
     min: [21, 58],
-    name: {
-      en: 'Ashchant',
-      ja: 'フルフレイムオーダー',
-      zh: '烈焰唤魔法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840103': {
     Id: '30840103',
+    Name: {
+      en: 'Twilight Harbinger',
+      ja: '黄昏を告げるもの',
+      zh: '黄昏宣告',
+    },
+    abbr: 'th',
     element: 'Flame',
     icon: [
       {
@@ -16423,16 +17156,17 @@ const weapon = {
     max: [89, 244],
     might: 90,
     min: [26, 73],
-    name: {
-      en: 'Twilight Harbinger',
-      ja: '黄昏を告げるもの',
-      zh: '黄昏宣告',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840105': {
     Id: '30840105',
+    Name: {
+      en: 'Ignis Core',
+      ja: 'コア・オブ・イグニス',
+      zh: '火焰之核',
+    },
+    abbr: 'ic',
     element: 'Flame',
     icon: [
       {
@@ -16449,16 +17183,17 @@ const weapon = {
     max: [86, 249],
     might: 80,
     min: [25, 74],
-    name: {
-      en: 'Ignis Core',
-      ja: 'コア・オブ・イグニス',
-      zh: '火焰之核',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840106': {
     Id: '30840106',
+    Name: {
+      en: 'Combustion Staff',
+      ja: 'コンバスションスタッフ',
+      zh: '御火法杖',
+    },
+    abbr: 'cs',
     element: 'Flame',
     icon: [
       {
@@ -16474,25 +17209,21 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Combustion Staff',
-      ja: 'コンバスションスタッフ',
-      zh: '御火法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840201': {
     Id: '30840201',
-    element: 'Water',
-    image: '308022_01_40201',
-    max: [115, 317],
-    min: [34, 95],
-    name: {
+    Name: {
       en: 'Marine Staff',
       ja: 'マリーンスタッフ',
       zh: '海洋之杖',
     },
+    abbr: 'ms',
+    element: 'Water',
+    image: '308022_01_40201',
+    max: [115, 317],
+    min: [34, 95],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -16502,6 +17233,12 @@ const weapon = {
   },
   '30840203': {
     Id: '30840203',
+    Name: {
+      en: 'Seachant',
+      ja: 'アクアフィルオーダー',
+      zh: '驭水唤魔法杖',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -16518,16 +17255,17 @@ const weapon = {
     max: [71, 195],
     might: 90,
     min: [21, 58],
-    name: {
-      en: 'Seachant',
-      ja: 'アクアフィルオーダー',
-      zh: '驭水唤魔法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840204': {
     Id: '30840204',
+    Name: {
+      en: 'Ocean Core',
+      ja: 'コア・オブ・オーシャン',
+      zh: '大洋之核',
+    },
+    abbr: 'oc',
     element: 'Water',
     icon: [
       {
@@ -16544,16 +17282,17 @@ const weapon = {
     max: [89, 244],
     might: 90,
     min: [26, 73],
-    name: {
-      en: 'Ocean Core',
-      ja: 'コア・オブ・オーシャン',
-      zh: '大洋之核',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840206': {
     Id: '30840206',
+    Name: {
+      en: 'Dowsing Staff',
+      ja: '水脈を生む杖',
+      zh: '塑水之杖',
+    },
+    abbr: 'ds',
     element: 'Water',
     icon: [
       {
@@ -16569,16 +17308,17 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Dowsing Staff',
-      ja: '水脈を生む杖',
-      zh: '塑水之杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840207': {
     Id: '30840207',
+    Name: {
+      en: 'Tideway Staff',
+      ja: 'リップカレントスタッフ',
+      zh: '裂流法杖',
+    },
+    abbr: 'ts',
     element: 'Water',
     icon: [
       {
@@ -16595,16 +17335,17 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Tideway Staff',
-      ja: 'リップカレントスタッフ',
-      zh: '裂流法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840208': {
     Id: '30840208',
+    Name: {
+      en: 'Air Fouler',
+      ja: 'マッドサージグラッジ',
+      zh: '怨念狂浪',
+    },
+    abbr: 'af',
     element: 'Water',
     icon: [
       {
@@ -16620,25 +17361,21 @@ const weapon = {
     max: [89, 244],
     might: 90,
     min: [26, 73],
-    name: {
-      en: 'Air Fouler',
-      ja: 'マッドサージグラッジ',
-      zh: '怨念狂浪',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840301': {
     Id: '30840301',
-    element: 'Wind',
-    image: '308033_01_40301',
-    max: [107, 333],
-    min: [32, 99],
-    name: {
+    Name: {
       en: 'Windeater Staff',
       ja: '風喰いの杖',
       zh: '食风之杖',
     },
+    abbr: 'ws',
+    element: 'Wind',
+    image: '308033_01_40301',
+    max: [107, 333],
+    min: [32, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_030',
@@ -16648,6 +17385,12 @@ const weapon = {
   },
   '30840302': {
     Id: '30840302',
+    Name: {
+      en: 'Wind and Cloud',
+      ja: '風雲を呼ぶもの',
+      zh: '呼风唤雨',
+    },
+    abbr: 'wac',
     element: 'Wind',
     icon: [
       {
@@ -16663,16 +17406,17 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Wind and Cloud',
-      ja: '風雲を呼ぶもの',
-      zh: '呼风唤雨',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840303': {
     Id: '30840303',
+    Name: {
+      en: 'Stormchant',
+      ja: 'ゲイルスパイラルオーダー',
+      zh: '飓涡唤魔法杖',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -16689,16 +17433,17 @@ const weapon = {
     max: [71, 195],
     might: 80,
     min: [21, 58],
-    name: {
-      en: 'Stormchant',
-      ja: 'ゲイルスパイラルオーダー',
-      zh: '飓涡唤魔法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840304': {
     Id: '30840304',
+    Name: {
+      en: 'Heavenshaker',
+      ja: '空を震わす杖',
+      zh: '慑空之杖',
+    },
+    abbr: 'h',
     element: 'Wind',
     icon: [
       {
@@ -16714,16 +17459,17 @@ const weapon = {
     max: [89, 244],
     might: 140,
     min: [26, 73],
-    name: {
-      en: 'Heavenshaker',
-      ja: '空を震わす杖',
-      zh: '慑空之杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840305': {
     Id: '30840305',
+    Name: {
+      en: 'Gust Staff',
+      ja: 'ガストスタッフ',
+      zh: '狂风法杖',
+    },
+    abbr: 'gs',
     element: 'Wind',
     icon: [
       {
@@ -16739,25 +17485,21 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Gust Staff',
-      ja: 'ガストスタッフ',
-      zh: '狂风法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840401': {
     Id: '30840401',
-    element: 'Light',
-    image: '308018_01_40401',
-    max: [107, 333],
-    min: [32, 99],
-    name: {
+    Name: {
       en: 'Tonitrus',
       ja: '雷電杖トニトルス',
       zh: '雷电杖托尼托鲁斯',
     },
+    abbr: 't',
+    element: 'Light',
+    image: '308018_01_40401',
+    max: [107, 333],
+    min: [32, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_030',
@@ -16767,6 +17509,12 @@ const weapon = {
   },
   '30840402': {
     Id: '30840402',
+    Name: {
+      en: 'Daybreak Harbinger',
+      ja: '暁を報せるもの',
+      zh: '拂晓将至',
+    },
+    abbr: 'dh',
     element: 'Light',
     icon: [
       {
@@ -16782,16 +17530,17 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Daybreak Harbinger',
-      ja: '暁を報せるもの',
-      zh: '拂晓将至',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840403': {
     Id: '30840403',
+    Name: {
+      en: 'Luminchant',
+      ja: 'ブリリアントオーダー',
+      zh: '闪耀唤魔法杖',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -16808,16 +17557,17 @@ const weapon = {
     max: [71, 195],
     might: 90,
     min: [21, 58],
-    name: {
-      en: 'Luminchant',
-      ja: 'ブリリアントオーダー',
-      zh: '闪耀唤魔法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840404': {
     Id: '30840404',
+    Name: {
+      en: 'Aria of Heroism',
+      ja: 'ヒロイックアリア',
+      zh: '英雄之咏叹',
+    },
+    abbr: 'aoh',
     element: 'Light',
     icon: [
       {
@@ -16834,16 +17584,17 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Aria of Heroism',
-      ja: 'ヒロイックアリア',
-      zh: '英雄之咏叹',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840405': {
     Id: '30840405',
+    Name: {
+      en: 'Dominus of the Void',
+      ja: '虚空の支配者',
+      zh: '虚空支配者',
+    },
+    abbr: 'dotv',
     element: 'Light',
     icon: [
       {
@@ -16859,25 +17610,21 @@ const weapon = {
     max: [89, 244],
     might: 140,
     min: [26, 73],
-    name: {
-      en: 'Dominus of the Void',
-      ja: '虚空の支配者',
-      zh: '虚空支配者',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840501': {
     Id: '30840501',
-    element: 'Shadow',
-    image: '308019_01_40501',
-    max: [107, 333],
-    min: [32, 99],
-    name: {
+    Name: {
       en: "Sanity's Bane",
       ja: 'カースドスペリア',
       zh: '诅咒之苏必利尔',
     },
+    abbr: 'sb',
+    element: 'Shadow',
+    image: '308019_01_40501',
+    max: [107, 333],
+    min: [32, 99],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_030',
@@ -16887,6 +17634,12 @@ const weapon = {
   },
   '30840502': {
     Id: '30840502',
+    Name: {
+      en: 'Ebonchant',
+      ja: 'ミッドナイトオーダー',
+      zh: '午夜唤魔法杖',
+    },
+    abbr: 'e',
     element: 'Shadow',
     icon: [
       {
@@ -16903,16 +17656,17 @@ const weapon = {
     max: [69, 199],
     might: 90,
     min: [20, 59],
-    name: {
-      en: 'Ebonchant',
-      ja: 'ミッドナイトオーダー',
-      zh: '午夜唤魔法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840503': {
     Id: '30840503',
+    Name: {
+      en: 'Aria of Regret',
+      ja: 'リグレットアリア',
+      zh: '懊悔之咏叹',
+    },
+    abbr: 'aor',
     element: 'Shadow',
     icon: [
       {
@@ -16928,16 +17682,17 @@ const weapon = {
     max: [89, 244],
     might: 140,
     min: [26, 73],
-    name: {
-      en: 'Aria of Regret',
-      ja: 'リグレットアリア',
-      zh: '懊悔之咏叹',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30840504': {
     Id: '30840504',
+    Name: {
+      en: 'Dominus of the Shadows',
+      ja: '常闇の支配者',
+      zh: '黑暗支配者',
+    },
+    abbr: 'dots',
     element: 'Shadow',
     icon: [
       {
@@ -16953,39 +17708,36 @@ const weapon = {
     max: [89, 244],
     might: 80,
     min: [26, 73],
-    name: {
-      en: 'Dominus of the Shadows',
-      ja: '常闇の支配者',
-      zh: '黑暗支配者',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849901': {
     Id: '30849901',
-    element: '0',
-    image: '308005_01_49901',
-    max: [68, 188],
-    min: [20, 56],
-    name: {
+    Name: {
       en: 'Staff of Life',
       ja: 'ライフスタッフ',
       zh: '养生杖',
     },
+    abbr: 'sol',
+    element: '0',
+    image: '308005_01_49901',
+    max: [68, 188],
+    min: [20, 56],
     rarity: '4',
     weapon: 'Staff',
   },
   '30849902': {
     Id: '30849902',
-    element: '0',
-    image: '308013_01_49901',
-    max: [82, 257],
-    min: [24, 77],
-    name: {
+    Name: {
       en: 'Staff of Fortune',
       ja: 'フォーチュンスタッフ',
       zh: '幸运权杖',
     },
+    abbr: 'sof',
+    element: '0',
+    image: '308013_01_49901',
+    max: [82, 257],
+    min: [24, 77],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_030',
@@ -16995,15 +17747,16 @@ const weapon = {
   },
   '30849903': {
     Id: '30849903',
-    element: '0',
-    image: '308010_01_49901',
-    max: [89, 244],
-    min: [26, 73],
-    name: {
+    Name: {
       en: "Beauty's Balm",
       ja: 'ビューティフルメイク',
       zh: '美貌之杖',
     },
+    abbr: 'bb',
+    element: '0',
+    image: '308010_01_49901',
+    max: [89, 244],
+    min: [26, 73],
     rarity: '4',
     skill: {
       image: 'Icon_Skill_029',
@@ -17013,6 +17766,12 @@ const weapon = {
   },
   '30849904': {
     Id: '30849904',
+    Name: {
+      en: 'Forever Sky',
+      ja: '空を望むもの',
+      zh: '祈愿苍穹',
+    },
+    abbr: 'fs',
     element: '0',
     icon: [
       {
@@ -17024,16 +17783,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Forever Sky',
-      ja: '空を望むもの',
-      zh: '祈愿苍穹',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849905': {
     Id: '30849905',
+    Name: {
+      en: 'Soul Core',
+      ja: 'コア・オブ・ソウル',
+      zh: '灵魂之核',
+    },
+    abbr: 'sc',
     element: '0',
     icon: [
       {
@@ -17046,16 +17806,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Soul Core',
-      ja: 'コア・オブ・ソウル',
-      zh: '灵魂之核',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849906': {
     Id: '30849906',
+    Name: {
+      en: "World's Fulcrum",
+      ja: '世界を支える杖',
+      zh: '擎世之杖',
+    },
+    abbr: 'wf',
     element: '0',
     icon: [
       {
@@ -17067,16 +17828,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: "World's Fulcrum",
-      ja: '世界を支える杖',
-      zh: '擎世之杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849907': {
     Id: '30849907',
+    Name: {
+      en: 'Aria of Truth',
+      ja: 'トゥルーアリア',
+      zh: '真实之咏叹',
+    },
+    abbr: 'aot',
     element: '0',
     icon: [
       {
@@ -17088,16 +17850,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Aria of Truth',
-      ja: 'トゥルーアリア',
-      zh: '真实之咏叹',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849908': {
     Id: '30849908',
+    Name: {
+      en: 'Abyssal Dominator',
+      ja: '奈落の支配者',
+      zh: '地狱支配者',
+    },
+    abbr: 'ad',
     element: '0',
     icon: [
       {
@@ -17109,16 +17872,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Abyssal Dominator',
-      ja: '奈落の支配者',
-      zh: '地狱支配者',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849909': {
     Id: '30849909',
+    Name: {
+      en: 'Iratus Staff',
+      ja: 'アイレイトスタッフ',
+      zh: '暴怒法杖',
+    },
+    abbr: 'is',
     element: '0',
     icon: [
       {
@@ -17130,16 +17894,17 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Iratus Staff',
-      ja: 'アイレイトスタッフ',
-      zh: '暴怒法杖',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30849910': {
     Id: '30849910',
+    Name: {
+      en: 'Rancor Staff',
+      ja: 'スピリットグラッジ',
+      zh: '幽魂怨念',
+    },
+    abbr: 'rs',
     element: '0',
     icon: [
       {
@@ -17151,25 +17916,21 @@ const weapon = {
     max: [68, 188],
     might: 40,
     min: [20, 56],
-    name: {
-      en: 'Rancor Staff',
-      ja: 'スピリットグラッジ',
-      zh: '幽魂怨念',
-    },
     rarity: '4',
     weapon: 'Staff',
   },
   '30850101': {
     Id: '30850101',
-    element: 'Flame',
-    image: '308031_01_50101',
-    max: [178, 487],
-    min: [53, 146],
-    name: {
+    Name: {
       en: 'Staff of the Red Emperor',
       ja: '赤帝の炎杖',
       zh: '赤帝炎杖',
     },
+    abbr: 'sotre',
+    element: 'Flame',
+    image: '308031_01_50101',
+    max: [178, 487],
+    min: [53, 146],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -17179,6 +17940,12 @@ const weapon = {
   },
   '30850102': {
     Id: '30850102',
+    Name: {
+      en: 'Endless Demise',
+      ja: '終焉を導くもの',
+      zh: '末日终焉',
+    },
+    abbr: 'ed',
     element: 'Flame',
     icon: [
       {
@@ -17194,16 +17961,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Endless Demise',
-      ja: '終焉を導くもの',
-      zh: '末日终焉',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850103': {
     Id: '30850103',
+    Name: {
+      en: 'Igniflare Core',
+      ja: 'コア・オブ・イグニフレア',
+      zh: '烈焰之核',
+    },
+    abbr: 'ic',
     element: 'Flame',
     icon: [
       {
@@ -17220,16 +17988,17 @@ const weapon = {
     max: [112, 323],
     might: 100,
     min: [33, 96],
-    name: {
-      en: 'Igniflare Core',
-      ja: 'コア・オブ・イグニフレア',
-      zh: '烈焰之核',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850104': {
     Id: '30850104',
+    Name: {
+      en: 'Brightblaze',
+      ja: '燃え盛るもの',
+      zh: '烈焰不息',
+    },
+    abbr: 'b',
     element: 'Flame',
     icon: [
       {
@@ -17241,11 +18010,6 @@ const weapon = {
     max: [238, 684],
     might: 100,
     min: [71, 205],
-    name: {
-      en: 'Brightblaze',
-      ja: '燃え盛るもの',
-      zh: '烈焰不息',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17255,15 +18019,16 @@ const weapon = {
   },
   '30850105': {
     Id: '30850105',
-    element: 'Flame',
-    image: '308112_01_50102',
-    max: [286, 1368],
-    min: [85, 410],
-    name: {
+    Name: {
       en: 'Blazegambol',
       ja: '劫火と戯れるもの',
       zh: '红莲共舞',
     },
+    abbr: 'b',
+    element: 'Flame',
+    image: '308112_01_50102',
+    max: [286, 1368],
+    min: [85, 410],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17273,6 +18038,12 @@ const weapon = {
   },
   '30850106': {
     Id: '30850106',
+    Name: {
+      en: 'Fangflame Staff',
+      ja: 'ブレイズフレアスタッフ',
+      zh: '爆炎法杖',
+    },
+    abbr: 'fs',
     element: 'Flame',
     icon: [
       {
@@ -17288,25 +18059,21 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Fangflame Staff',
-      ja: 'ブレイズフレアスタッフ',
-      zh: '爆炎法杖',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850201': {
     Id: '30850201',
-    element: 'Water',
-    image: '308011_01_50201',
-    max: [178, 487],
-    min: [53, 146],
-    name: {
+    Name: {
       en: 'Bracing Waters',
       ja: 'アクアブレス',
       zh: '水之祝福',
     },
+    abbr: 'bw',
+    element: 'Water',
+    image: '308011_01_50201',
+    max: [178, 487],
+    min: [53, 146],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -17316,6 +18083,12 @@ const weapon = {
   },
   '30850202': {
     Id: '30850202',
+    Name: {
+      en: 'Endless Azure Core',
+      ja: 'コア・オブ・ブルーアビス',
+      zh: '蓝渊之核',
+    },
+    abbr: 'eac',
     element: 'Water',
     icon: [
       {
@@ -17332,16 +18105,17 @@ const weapon = {
     max: [115, 317],
     might: 110,
     min: [34, 95],
-    name: {
-      en: 'Endless Azure Core',
-      ja: 'コア・オブ・ブルーアビス',
-      zh: '蓝渊之核',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850203': {
     Id: '30850203',
+    Name: {
+      en: 'Drenching Staff',
+      ja: '大海を創る杖',
+      zh: '创海之杖',
+    },
+    abbr: 'ds',
     element: 'Water',
     icon: [
       {
@@ -17357,16 +18131,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Drenching Staff',
-      ja: '大海を創る杖',
-      zh: '创海之杖',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850204': {
     Id: '30850204',
+    Name: {
+      en: 'Unceasing Tide',
+      ja: '止め処なきもの',
+      zh: '波涛不止',
+    },
+    abbr: 'ut',
     element: 'Water',
     icon: [
       {
@@ -17378,11 +18153,6 @@ const weapon = {
     max: [245, 670],
     might: 100,
     min: [73, 201],
-    name: {
-      en: 'Unceasing Tide',
-      ja: '止め処なきもの',
-      zh: '波涛不止',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17392,15 +18162,16 @@ const weapon = {
   },
   '30850205': {
     Id: '30850205',
-    element: 'Water',
-    image: '308110_01_50202',
-    max: [294, 1340],
-    min: [88, 402],
-    name: {
+    Name: {
       en: "Ocean's Embrace",
       ja: '蒼海を抱くもの',
       zh: '沧海环拥',
     },
+    abbr: 'oe',
+    element: 'Water',
+    image: '308110_01_50202',
+    max: [294, 1340],
+    min: [88, 402],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17410,6 +18181,12 @@ const weapon = {
   },
   '30850206': {
     Id: '30850206',
+    Name: {
+      en: 'Riptide Staff',
+      ja: 'リップタイドスタッフ',
+      zh: '裂潮法杖',
+    },
+    abbr: 'rs',
     element: 'Water',
     icon: [
       {
@@ -17426,16 +18203,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Riptide Staff',
-      ja: 'リップタイドスタッフ',
-      zh: '裂潮法杖',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850207': {
     Id: '30850207',
+    Name: {
+      en: 'Breath Snuffer',
+      ja: 'マッドミアズマグラッジ',
+      zh: '怨念狂瘴',
+    },
+    abbr: 'bs',
     element: 'Water',
     icon: [
       {
@@ -17451,25 +18229,21 @@ const weapon = {
     max: [115, 317],
     might: 110,
     min: [34, 95],
-    name: {
-      en: 'Breath Snuffer',
-      ja: 'マッドミアズマグラッジ',
-      zh: '怨念狂瘴',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850301': {
     Id: '30850301',
-    element: 'Wind',
-    image: '308032_01_50301',
-    max: [178, 487],
-    min: [53, 146],
-    name: {
+    Name: {
       en: "Ancient Mage's Windcane",
       ja: '古代魔術の旋杖',
       zh: '古代魔法旋杖',
     },
+    abbr: 'amw',
+    element: 'Wind',
+    image: '308032_01_50301',
+    max: [178, 487],
+    min: [53, 146],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -17479,6 +18253,12 @@ const weapon = {
   },
   '30850302': {
     Id: '30850302',
+    Name: {
+      en: 'Rise and Fall',
+      ja: '興亡をもたらすもの',
+      zh: '亦兴亦亡',
+    },
+    abbr: 'raf',
     element: 'Wind',
     icon: [
       {
@@ -17494,16 +18274,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Rise and Fall',
-      ja: '興亡をもたらすもの',
-      zh: '亦兴亦亡',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850303': {
     Id: '30850303',
+    Name: {
+      en: 'Skypainter Staff',
+      ja: '蒼穹を彩る杖',
+      zh: '虹穹之杖',
+    },
+    abbr: 'ss',
     element: 'Wind',
     icon: [
       {
@@ -17519,16 +18300,17 @@ const weapon = {
     max: [115, 317],
     might: 160,
     min: [34, 95],
-    name: {
-      en: 'Skypainter Staff',
-      ja: '蒼穹を彩る杖',
-      zh: '虹穹之杖',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850304': {
     Id: '30850304',
+    Name: {
+      en: 'Zephyrage',
+      ja: '吹き荒ぶもの',
+      zh: '狂风骤起',
+    },
+    abbr: 'z',
     element: 'Wind',
     icon: [
       {
@@ -17540,11 +18322,6 @@ const weapon = {
     max: [245, 670],
     might: 100,
     min: [73, 201],
-    name: {
-      en: 'Zephyrage',
-      ja: '吹き荒ぶもの',
-      zh: '狂风骤起',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17554,15 +18331,16 @@ const weapon = {
   },
   '30850305': {
     Id: '30850305',
-    element: 'Wind',
-    image: '308109_01_50302',
-    max: [294, 1340],
-    min: [88, 402],
-    name: {
+    Name: {
       en: 'Stormruler',
       ja: '嵐を導くもの',
       zh: '号令风暴',
     },
+    abbr: 's',
+    element: 'Wind',
+    image: '308109_01_50302',
+    max: [294, 1340],
+    min: [88, 402],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_025',
@@ -17572,6 +18350,12 @@ const weapon = {
   },
   '30850306': {
     Id: '30850306',
+    Name: {
+      en: 'Whirlwind Staff',
+      ja: 'ワールウインドスタッフ',
+      zh: '旋风法杖',
+    },
+    abbr: 'ws',
     element: 'Wind',
     icon: [
       {
@@ -17587,25 +18371,21 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Whirlwind Staff',
-      ja: 'ワールウインドスタッフ',
-      zh: '旋风法杖',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850401': {
     Id: '30850401',
-    element: 'Light',
-    image: '308014_01_50401',
-    max: [165, 513],
-    min: [49, 153],
-    name: {
+    Name: {
       en: 'Light of Judgment',
       ja: '裁きの光杖',
       zh: '制裁光杖',
     },
+    abbr: 'loj',
+    element: 'Light',
+    image: '308014_01_50401',
+    max: [165, 513],
+    min: [49, 153],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17615,6 +18395,12 @@ const weapon = {
   },
   '30850402': {
     Id: '30850402',
+    Name: {
+      en: 'Genesis Bringer',
+      ja: '開闢を運ぶもの',
+      zh: '天地伊始',
+    },
+    abbr: 'gb',
     element: 'Light',
     icon: [
       {
@@ -17630,16 +18416,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Genesis Bringer',
-      ja: '開闢を運ぶもの',
-      zh: '天地伊始',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850403': {
     Id: '30850403',
+    Name: {
+      en: 'Aria of Valor',
+      ja: 'マジェスティックアリア',
+      zh: '庄严之咏叹',
+    },
+    abbr: 'aov',
     element: 'Light',
     icon: [
       {
@@ -17656,16 +18443,17 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Aria of Valor',
-      ja: 'マジェスティックアリア',
-      zh: '庄严之咏叹',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850404': {
     Id: '30850404',
+    Name: {
+      en: 'Shadowblot',
+      ja: '照らし出すもの',
+      zh: '光芒四射',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -17677,11 +18465,6 @@ const weapon = {
     max: [245, 670],
     might: 100,
     min: [73, 201],
-    name: {
-      en: 'Shadowblot',
-      ja: '照らし出すもの',
-      zh: '光芒四射',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17691,15 +18474,16 @@ const weapon = {
   },
   '30850405': {
     Id: '30850405',
-    element: 'Light',
-    image: '308111_01_50402',
-    max: [294, 1340],
-    min: [88, 402],
-    name: {
+    Name: {
       en: 'Heavensneer',
       ja: '天に嗤うもの',
       zh: '蔑笑晴空',
     },
+    abbr: 'h',
+    element: 'Light',
+    image: '308111_01_50402',
+    max: [294, 1340],
+    min: [88, 402],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17709,6 +18493,12 @@ const weapon = {
   },
   '30850406': {
     Id: '30850406',
+    Name: {
+      en: 'Dominus of Ever',
+      ja: '無窮の支配者',
+      zh: '无穷支配者',
+    },
+    abbr: 'doe',
     element: 'Light',
     icon: [
       {
@@ -17724,25 +18514,21 @@ const weapon = {
     max: [115, 317],
     might: 160,
     min: [34, 95],
-    name: {
-      en: 'Dominus of Ever',
-      ja: '無窮の支配者',
-      zh: '无穷支配者',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850501': {
     Id: '30850501',
-    element: 'Shadow',
-    image: '308015_01_50501',
-    max: [165, 513],
-    min: [49, 153],
-    name: {
+    Name: {
       en: 'Caduceus',
       ja: 'ケリュケイオン',
       zh: '商神杖',
     },
+    abbr: 'c',
+    element: 'Shadow',
+    image: '308015_01_50501',
+    max: [165, 513],
+    min: [49, 153],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17752,6 +18538,12 @@ const weapon = {
   },
   '30850502': {
     Id: '30850502',
+    Name: {
+      en: 'Aria of Lamentation',
+      ja: 'ラメンテイションアリア',
+      zh: '哀伤之咏叹',
+    },
+    abbr: 'aol',
     element: 'Shadow',
     icon: [
       {
@@ -17767,16 +18559,17 @@ const weapon = {
     max: [115, 317],
     might: 160,
     min: [34, 95],
-    name: {
-      en: 'Aria of Lamentation',
-      ja: 'ラメンテイションアリア',
-      zh: '哀伤之咏叹',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30850503': {
     Id: '30850503',
+    Name: {
+      en: 'Creeping Death',
+      ja: '覆い尽くすもの',
+      zh: '遮天蔽日',
+    },
+    abbr: 'cd',
     element: 'Shadow',
     icon: [
       {
@@ -17788,11 +18581,6 @@ const weapon = {
     max: [245, 670],
     might: 100,
     min: [73, 201],
-    name: {
-      en: 'Creeping Death',
-      ja: '覆い尽くすもの',
-      zh: '遮天蔽日',
-    },
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17802,15 +18590,16 @@ const weapon = {
   },
   '30850504': {
     Id: '30850504',
-    element: 'Shadow',
-    image: '308113_01_50502',
-    max: [294, 1340],
-    min: [88, 402],
-    name: {
+    Name: {
       en: 'Dark Hunger',
       ja: '漆黒を喰らうもの',
       zh: '漆黑为噬',
     },
+    abbr: 'dh',
+    element: 'Shadow',
+    image: '308113_01_50502',
+    max: [294, 1340],
+    min: [88, 402],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17820,6 +18609,12 @@ const weapon = {
   },
   '30850505': {
     Id: '30850505',
+    Name: {
+      en: 'Dominus of the Truedark',
+      ja: '無明の支配者',
+      zh: '无明支配者',
+    },
+    abbr: 'dott',
     element: 'Shadow',
     icon: [
       {
@@ -17835,39 +18630,36 @@ const weapon = {
     max: [115, 317],
     might: 100,
     min: [34, 95],
-    name: {
-      en: 'Dominus of the Truedark',
-      ja: '無明の支配者',
-      zh: '无明支配者',
-    },
     rarity: '5',
     weapon: 'Staff',
   },
   '30859901': {
     Id: '30859901',
-    element: '0',
-    image: '308030_01_59901',
-    max: [119, 327],
-    min: [35, 98],
-    name: {
+    Name: {
       en: "Cane of Soul's Repose",
       ja: '鎮魂の杖',
       zh: '镇魂之杖',
     },
+    abbr: 'cosr',
+    element: '0',
+    image: '308030_01_59901',
+    max: [119, 327],
+    min: [35, 98],
     rarity: '5',
     weapon: 'Staff',
   },
   '30859902': {
     Id: '30859902',
-    element: '0',
-    image: '308038_01_59901',
-    max: [146, 400],
-    min: [43, 120],
-    name: {
+    Name: {
       en: 'Rainbow Cane',
       ja: '虹の杖',
       zh: '虹之杖',
     },
+    abbr: 'rc',
+    element: '0',
+    image: '308038_01_59901',
+    max: [146, 400],
+    min: [43, 120],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_032',
@@ -17877,15 +18669,16 @@ const weapon = {
   },
   '30859903': {
     Id: '30859903',
-    element: '0',
-    image: '308039_01_59901',
-    max: [135, 421],
-    min: [40, 126],
-    name: {
+    Name: {
       en: 'Otherworldly Bough',
       ja: '異形樹の枝',
       zh: '异形树枝杖',
     },
+    abbr: 'ob',
+    element: '0',
+    image: '308039_01_59901',
+    max: [135, 421],
+    min: [40, 126],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_018',
@@ -17895,15 +18688,16 @@ const weapon = {
   },
   '30859904': {
     Id: '30859904',
-    element: '0',
-    image: '308120_01_59901',
-    max: [111, 344],
-    min: [33, 103],
-    name: {
+    Name: {
       en: 'Mega Staff',
       ja: 'ロックスタッフ',
       zh: '洛克法杖',
     },
+    abbr: 'ms',
+    element: '0',
+    image: '308120_01_59901',
+    max: [111, 344],
+    min: [33, 103],
     rarity: '5',
     skill: {
       image: 'Icon_Skill_014',

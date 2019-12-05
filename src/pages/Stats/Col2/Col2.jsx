@@ -42,7 +42,7 @@ function Col2({ focused, items, lang, maxItem, resetItems, selectFocus }) {
           const title =
             item === null
               ? locales(key, lang)
-              : item.name[lang] || item.name.en;
+              : item.Name[lang] || item.Name.en;
           const image = getImage(item, key);
           const { augHp = '', augStr = '' } = item || {};
           const augments = Number(augHp) + Number(augStr);

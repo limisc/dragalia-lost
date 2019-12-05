@@ -56,10 +56,9 @@ export const getItemList = createCachedSelector(
           return ret || noChecked;
         });
 
-        const searchResult = item.name[lang]
-          .toUpperCase()
-          .includes(search.toUpperCase());
+        const searchLower = search.toLowerCase();
 
+        const searchResult = item.abbr.includes(searchLower) || item.Name[lang].toLowerCase().includes(searchLower);
         return filterResult && searchResult;
       })
       .sort((item1, item2) => {

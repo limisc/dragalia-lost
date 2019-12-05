@@ -1,6 +1,12 @@
 const dragon = {
   '20030101': {
     Id: '20030101',
+    Name: {
+      en: 'Homura',
+      ja: 'ホムラリュウ',
+      zh: '火龙',
+    },
+    abbr: 'h',
     element: 'Flame',
     icon: [
       {
@@ -13,15 +19,16 @@ const dragon = {
     max: [184, 63],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Homura',
-      ja: 'ホムラリュウ',
-      zh: '火龙',
-    },
     rarity: '3',
   },
   '20030102': {
     Id: '20030102',
+    Name: {
+      en: 'Cinder Drake',
+      ja: 'バーンドラコ',
+      zh: '焰龙',
+    },
+    abbr: 'cd',
     element: 'Flame',
     icon: [
       {
@@ -34,15 +41,16 @@ const dragon = {
     max: [190, 57],
     might: [30, 20],
     min: [19, 5],
-    name: {
-      en: 'Cinder Drake',
-      ja: 'バーンドラコ',
-      zh: '焰龙',
-    },
     rarity: '3',
   },
   '20030103': {
     Id: '20030103',
+    Name: {
+      en: 'Kindling Imp',
+      ja: 'キャンドルインプ',
+      zh: '烛魔',
+    },
+    abbr: 'ki',
     element: 'Flame',
     icon: [
       {
@@ -56,15 +64,16 @@ const dragon = {
     max: [187, 60],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Kindling Imp',
-      ja: 'キャンドルインプ',
-      zh: '烛魔',
-    },
     rarity: '3',
   },
   '20030201': {
     Id: '20030201',
+    Name: {
+      en: 'Fubuki',
+      ja: 'フブキリュウ',
+      zh: '雪龙',
+    },
+    abbr: 'f',
     element: 'Water',
     icon: [
       {
@@ -77,15 +86,16 @@ const dragon = {
     max: [185, 63],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Fubuki',
-      ja: 'フブキリュウ',
-      zh: '雪龙',
-    },
     rarity: '3',
   },
   '20030202': {
     Id: '20030202',
+    Name: {
+      en: 'Snow Drake',
+      ja: 'アイスドラコ',
+      zh: '冰龙',
+    },
+    abbr: 'sd',
     element: 'Water',
     icon: [
       {
@@ -98,15 +108,16 @@ const dragon = {
     max: [191, 57],
     might: [30, 20],
     min: [19, 5],
-    name: {
-      en: 'Snow Drake',
-      ja: 'アイスドラコ',
-      zh: '冰龙',
-    },
     rarity: '3',
   },
   '20030203': {
     Id: '20030203',
+    Name: {
+      en: 'Wellspring Imp',
+      ja: 'ウェルインプ',
+      zh: '井魔',
+    },
+    abbr: 'wi',
     element: 'Water',
     icon: [
       {
@@ -120,15 +131,16 @@ const dragon = {
     max: [187, 60],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Wellspring Imp',
-      ja: 'ウェルインプ',
-      zh: '井魔',
-    },
     rarity: '3',
   },
   '20030301': {
     Id: '20030301',
+    Name: {
+      en: 'Tsumuji',
+      ja: 'ツムジリュウ',
+      zh: '旋龙',
+    },
+    abbr: 't',
     element: 'Wind',
     icon: [
       {
@@ -141,15 +153,16 @@ const dragon = {
     max: [184, 63],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Tsumuji',
-      ja: 'ツムジリュウ',
-      zh: '旋龙',
-    },
     rarity: '3',
   },
   '20030302': {
     Id: '20030302',
+    Name: {
+      en: 'Gust Drake',
+      ja: 'ウインドラコ',
+      zh: '风龙',
+    },
+    abbr: 'gd',
     element: 'Wind',
     icon: [
       {
@@ -162,15 +175,16 @@ const dragon = {
     max: [191, 57],
     might: [30, 20],
     min: [19, 5],
-    name: {
-      en: 'Gust Drake',
-      ja: 'ウインドラコ',
-      zh: '风龙',
-    },
     rarity: '3',
   },
   '20030303': {
     Id: '20030303',
+    Name: {
+      en: 'Zephyr Imp',
+      ja: 'エアリアルインプ',
+      zh: '气魔',
+    },
+    abbr: 'zi',
     element: 'Wind',
     icon: [
       {
@@ -184,15 +198,16 @@ const dragon = {
     max: [187, 60],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Zephyr Imp',
-      ja: 'エアリアルインプ',
-      zh: '气魔',
-    },
     rarity: '3',
   },
   '20030401': {
     Id: '20030401',
+    Name: {
+      en: 'Hinata',
+      ja: 'ヒナタリュウ',
+      zh: '阳龙',
+    },
+    abbr: 'h',
     element: 'Light',
     icon: [
       {
@@ -205,15 +220,16 @@ const dragon = {
     max: [185, 62],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Hinata',
-      ja: 'ヒナタリュウ',
-      zh: '阳龙',
-    },
     rarity: '3',
   },
   '20030402': {
     Id: '20030402',
+    Name: {
+      en: 'Moon Drake',
+      ja: 'ムーンドラコ',
+      zh: '月龙',
+    },
+    abbr: 'md',
     element: 'Light',
     icon: [
       {
@@ -226,15 +242,16 @@ const dragon = {
     max: [192, 56],
     might: [30, 20],
     min: [19, 5],
-    name: {
-      en: 'Moon Drake',
-      ja: 'ムーンドラコ',
-      zh: '月龙',
-    },
     rarity: '3',
   },
   '20030403': {
     Id: '20030403',
+    Name: {
+      en: 'Astral Imp',
+      ja: 'スターインプ',
+      zh: '星魔',
+    },
+    abbr: 'ai',
     element: 'Light',
     icon: [
       {
@@ -248,15 +265,16 @@ const dragon = {
     max: [188, 59],
     might: [30, 20],
     min: [18, 5],
-    name: {
-      en: 'Astral Imp',
-      ja: 'スターインプ',
-      zh: '星魔',
-    },
     rarity: '3',
   },
   '20030501': {
     Id: '20030501',
+    Name: {
+      en: 'Hikage',
+      ja: 'ヒカゲリュウ',
+      zh: '影龙',
+    },
+    abbr: 'h',
     element: 'Shadow',
     icon: [
       {
@@ -269,15 +287,16 @@ const dragon = {
     max: [183, 64],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Hikage',
-      ja: 'ヒカゲリュウ',
-      zh: '影龙',
-    },
     rarity: '3',
   },
   '20030502': {
     Id: '20030502',
+    Name: {
+      en: 'Gloom Drake',
+      ja: 'ダークドラコ',
+      zh: '暗龙',
+    },
+    abbr: 'gd',
     element: 'Shadow',
     icon: [
       {
@@ -290,15 +309,16 @@ const dragon = {
     max: [190, 58],
     might: [30, 20],
     min: [19, 5],
-    name: {
-      en: 'Gloom Drake',
-      ja: 'ダークドラコ',
-      zh: '暗龙',
-    },
     rarity: '3',
   },
   '20030503': {
     Id: '20030503',
+    Name: {
+      en: 'Pallid Imp',
+      ja: 'グレイヴインプ',
+      zh: '墓魔',
+    },
+    abbr: 'pi',
     element: 'Shadow',
     icon: [
       {
@@ -312,15 +332,16 @@ const dragon = {
     max: [186, 61],
     might: [30, 20],
     min: [18, 6],
-    name: {
-      en: 'Pallid Imp',
-      ja: 'グレイヴインプ',
-      zh: '墓魔',
-    },
     rarity: '3',
   },
   '20040101': {
     Id: '20040101',
+    Name: {
+      en: 'Brunhilda',
+      ja: 'ブリュンヒルデ',
+      zh: '布伦希尔德',
+    },
+    abbr: 'b',
     element: 'Flame',
     icon: [
       {
@@ -333,15 +354,16 @@ const dragon = {
     max: [203, 70],
     might: [40, 30],
     min: [20, 7],
-    name: {
-      en: 'Brunhilda',
-      ja: 'ブリュンヒルデ',
-      zh: '布伦希尔德',
-    },
     rarity: '4',
   },
   '20040102': {
     Id: '20040102',
+    Name: {
+      en: 'Phoenix',
+      ja: 'フェニックス',
+      zh: '菲尼克斯',
+    },
+    abbr: 'p',
     element: 'Flame',
     icon: [
       {
@@ -354,15 +376,16 @@ const dragon = {
     max: [299, 97],
     might: [80, 60],
     min: [29, 9],
-    name: {
-      en: 'Phoenix',
-      ja: 'フェニックス',
-      zh: '菲尼克斯',
-    },
     rarity: '4',
   },
   '20040103': {
     Id: '20040103',
+    Name: {
+      en: 'Ifrit',
+      ja: 'イフリート',
+      zh: '伊夫利特',
+    },
+    abbr: 'i',
     element: 'Flame',
     icon: [
       {
@@ -375,15 +398,16 @@ const dragon = {
     max: [295, 101],
     might: [80, 60],
     min: [29, 10],
-    name: {
-      en: 'Ifrit',
-      ja: 'イフリート',
-      zh: '伊夫利特',
-    },
     rarity: '4',
   },
   '20040201': {
     Id: '20040201',
+    Name: {
+      en: 'Mercury',
+      ja: 'マーキュリー',
+      zh: '墨丘利',
+    },
+    abbr: 'm',
     element: 'Water',
     icon: [
       {
@@ -396,15 +420,16 @@ const dragon = {
     max: [211, 62],
     might: [40, 30],
     min: [21, 6],
-    name: {
-      en: 'Mercury',
-      ja: 'マーキュリー',
-      zh: '墨丘利',
-    },
     rarity: '4',
   },
   '20040202': {
     Id: '20040202',
+    Name: {
+      en: 'Poliʻahu',
+      ja: 'ポリアフ',
+      zh: '波丽亚芙',
+    },
+    abbr: 'p',
     element: 'Water',
     icon: [
       {
@@ -418,15 +443,16 @@ const dragon = {
     max: [301, 95],
     might: [70, 60],
     min: [30, 9],
-    name: {
-      en: 'Poliʻahu',
-      ja: 'ポリアフ',
-      zh: '波丽亚芙',
-    },
     rarity: '4',
   },
   '20040203': {
     Id: '20040203',
+    Name: {
+      en: 'Vodyanoy',
+      ja: 'ヴォジャノーイ',
+      zh: '沃加诺伊',
+    },
+    abbr: 'v',
     element: 'Water',
     icon: [
       {
@@ -439,15 +465,16 @@ const dragon = {
     max: [296, 100],
     might: [80, 60],
     min: [29, 10],
-    name: {
-      en: 'Vodyanoy',
-      ja: 'ヴォジャノーイ',
-      zh: '沃加诺伊',
-    },
     rarity: '4',
   },
   '20040301': {
     Id: '20040301',
+    Name: {
+      en: 'Midgardsormr',
+      ja: 'ミドガルズオルム',
+      zh: '耶梦加得',
+    },
+    abbr: 'm',
     element: 'Wind',
     icon: [
       {
@@ -461,15 +488,16 @@ const dragon = {
     max: [206, 66],
     might: [50, 30],
     min: [20, 6],
-    name: {
-      en: 'Midgardsormr',
-      ja: 'ミドガルズオルム',
-      zh: '耶梦加得',
-    },
     rarity: '4',
   },
   '20040302': {
     Id: '20040302',
+    Name: {
+      en: 'Roc',
+      ja: 'フォーゲル',
+      zh: '沃格尔',
+    },
+    abbr: 'r',
     element: 'Wind',
     icon: [
       {
@@ -482,15 +510,16 @@ const dragon = {
     max: [296, 101],
     might: [80, 60],
     min: [29, 10],
-    name: {
-      en: 'Roc',
-      ja: 'フォーゲル',
-      zh: '沃格尔',
-    },
     rarity: '4',
   },
   '20040303': {
     Id: '20040303',
+    Name: {
+      en: 'Stribog',
+      ja: 'ストリボーグ',
+      zh: '斯特利伯格',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -503,15 +532,16 @@ const dragon = {
     max: [306, 91],
     might: [80, 60],
     min: [30, 9],
-    name: {
-      en: 'Stribog',
-      ja: 'ストリボーグ',
-      zh: '斯特利伯格',
-    },
     rarity: '4',
   },
   '20040401': {
     Id: '20040401',
+    Name: {
+      en: 'Jupiter',
+      ja: 'ユピテル',
+      zh: '朱庇特',
+    },
+    abbr: 'j',
     element: 'Light',
     icon: [
       {
@@ -525,15 +555,16 @@ const dragon = {
     max: [207, 65],
     might: [50, 30],
     min: [20, 6],
-    name: {
-      en: 'Jupiter',
-      ja: 'ユピテル',
-      zh: '朱庇特',
-    },
     rarity: '4',
   },
   '20040402': {
     Id: '20040402',
+    Name: {
+      en: 'Unicorn',
+      ja: 'ユニコーン',
+      zh: '独角兽',
+    },
+    abbr: 'u',
     element: 'Light',
     icon: [
       {
@@ -546,15 +577,16 @@ const dragon = {
     max: [301, 95],
     might: [80, 60],
     min: [30, 9],
-    name: {
-      en: 'Unicorn',
-      ja: 'ユニコーン',
-      zh: '独角兽',
-    },
     rarity: '4',
   },
   '20040403': {
     Id: '20040403',
+    Name: {
+      en: 'Lindworm',
+      ja: 'リンドヴルム',
+      zh: '林德巴鲁姆',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -567,15 +599,16 @@ const dragon = {
     max: [297, 100],
     might: [80, 60],
     min: [29, 10],
-    name: {
-      en: 'Lindworm',
-      ja: 'リンドヴルム',
-      zh: '林德巴鲁姆',
-    },
     rarity: '4',
   },
   '20040405': {
     Id: '20040405',
+    Name: {
+      en: 'Silke',
+      ja: 'シルキー',
+      zh: '希露姬',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -589,15 +622,16 @@ const dragon = {
     max: [301, 95],
     might: [70, 60],
     min: [30, 9],
-    name: {
-      en: 'Silke',
-      ja: 'シルキー',
-      zh: '希露姬',
-    },
     rarity: '4',
   },
   '20040501': {
     Id: '20040501',
+    Name: {
+      en: 'Zodiark',
+      ja: 'ゾディアーク',
+      zh: '佐迪亚克',
+    },
+    abbr: 'z',
     element: 'Shadow',
     icon: [
       {
@@ -610,15 +644,16 @@ const dragon = {
     max: [202, 70],
     might: [40, 30],
     min: [20, 7],
-    name: {
-      en: 'Zodiark',
-      ja: 'ゾディアーク',
-      zh: '佐迪亚克',
-    },
     rarity: '4',
   },
   '20040502': {
     Id: '20040502',
+    Name: {
+      en: 'Juggernaut',
+      ja: 'ジャガーノート',
+      zh: '札格纳特',
+    },
+    abbr: 'j',
     element: 'Shadow',
     icon: [
       {
@@ -631,15 +666,16 @@ const dragon = {
     max: [294, 102],
     might: [80, 60],
     min: [29, 10],
-    name: {
-      en: 'Juggernaut',
-      ja: 'ジャガーノート',
-      zh: '札格纳特',
-    },
     rarity: '4',
   },
   '20040503': {
     Id: '20040503',
+    Name: {
+      en: 'Silke',
+      ja: 'シルキー',
+      zh: '希露姬',
+    },
+    abbr: 's',
     element: 'Shadow',
     icon: [
       {
@@ -653,15 +689,16 @@ const dragon = {
     max: [299, 97],
     might: [70, 60],
     min: [29, 9],
-    name: {
-      en: 'Silke',
-      ja: 'シルキー',
-      zh: '希露姬',
-    },
     rarity: '4',
   },
   '20040504': {
     Id: '20040504',
+    Name: {
+      en: 'Bronze Fafnir',
+      ja: 'ブロンズファフニール',
+      zh: '铜法夫纳',
+    },
+    abbr: 'bf',
     element: 'Shadow',
     icon: [
       {
@@ -673,15 +710,16 @@ const dragon = {
     max: [209, 63],
     might: [0, 0],
     min: [20, 6],
-    name: {
-      en: 'Bronze Fafnir',
-      ja: 'ブロンズファフニール',
-      zh: '铜法夫纳',
-    },
     rarity: '4',
   },
   '20040505': {
     Id: '20040505',
+    Name: {
+      en: 'Silver Fafnir',
+      ja: 'シルバーファフニール',
+      zh: '银法夫纳',
+    },
+    abbr: 'sf',
     element: 'Shadow',
     icon: [
       {
@@ -693,15 +731,16 @@ const dragon = {
     max: [209, 63],
     might: [0, 0],
     min: [20, 6],
-    name: {
-      en: 'Silver Fafnir',
-      ja: 'シルバーファフニール',
-      zh: '银法夫纳',
-    },
     rarity: '4',
   },
   '20050101': {
     Id: '20050101',
+    Name: {
+      en: 'Agni',
+      ja: 'アグニ',
+      zh: '阿格尼',
+    },
+    abbr: 'a',
     element: 'Flame',
     icon: [
       {
@@ -714,15 +753,16 @@ const dragon = {
     max: [369, 127],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Agni',
-      ja: 'アグニ',
-      zh: '阿格尼',
-    },
     rarity: '5',
   },
   '20050102': {
     Id: '20050102',
+    Name: {
+      en: 'High Brunhilda',
+      ja: '真ブリュンヒルデ',
+      zh: '真布伦希尔德',
+    },
+    abbr: 'hb',
     element: 'Flame',
     icon: [
       {
@@ -740,15 +780,16 @@ const dragon = {
     max: [350, 120],
     might: [200, 150],
     min: [35, 12],
-    name: {
-      en: 'High Brunhilda',
-      ja: '真ブリュンヒルデ',
-      zh: '真布伦希尔德',
-    },
     rarity: '5',
   },
   '20050103': {
     Id: '20050103',
+    Name: {
+      en: 'Pele',
+      ja: 'ペレ',
+      zh: '佩雷',
+    },
+    abbr: 'p',
     element: 'Flame',
     icon: [
       {
@@ -761,15 +802,16 @@ const dragon = {
     max: [221, 76],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Pele',
-      ja: 'ペレ',
-      zh: '佩雷',
-    },
     rarity: '5',
   },
   '20050104': {
     Id: '20050104',
+    Name: {
+      en: 'Cerberus',
+      ja: 'ケルベロス',
+      zh: '坎贝萝丝',
+    },
+    abbr: 'c',
     element: 'Flame',
     icon: [
       {
@@ -782,15 +824,16 @@ const dragon = {
     max: [369, 127],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Cerberus',
-      ja: 'ケルベロス',
-      zh: '坎贝萝丝',
-    },
     rarity: '5',
   },
   '20050105': {
     Id: '20050105',
+    Name: {
+      en: 'Erasmus',
+      ja: 'エルモ',
+      zh: '埃尔默',
+    },
+    abbr: 'e',
     element: 'Flame',
     icon: [
       {
@@ -803,15 +846,16 @@ const dragon = {
     max: [221, 76],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Erasmus',
-      ja: 'エルモ',
-      zh: '埃尔默',
-    },
     rarity: '5',
   },
   '20050106': {
     Id: '20050106',
+    Name: {
+      en: 'Prometheus',
+      ja: 'プロメテウス',
+      zh: '普罗米修斯',
+    },
+    abbr: 'p',
     element: 'Flame',
     icon: [
       {
@@ -825,16 +869,17 @@ const dragon = {
     max: [374, 121],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Prometheus',
-      ja: 'プロメテウス',
-      zh: '普罗米修斯',
-    },
     rarity: '5',
     resEle: 'Wind',
   },
   '20050107': {
     Id: '20050107',
+    Name: {
+      en: 'Konohana Sakuya',
+      ja: 'コノハナサクヤ',
+      zh: '木花开耶',
+    },
+    abbr: 'ks',
     element: 'Flame',
     icon: [
       {
@@ -851,15 +896,16 @@ const dragon = {
     max: [374, 121],
     might: [110, 80],
     min: [37, 12],
-    name: {
-      en: 'Konohana Sakuya',
-      ja: 'コノハナサクヤ',
-      zh: '木花开耶',
-    },
     rarity: '5',
   },
   '20050108': {
     Id: '20050108',
+    Name: {
+      en: 'Arctos',
+      ja: 'アルクトス',
+      zh: '阿尔库特斯',
+    },
+    abbr: 'a',
     element: 'Flame',
     icon: [
       {
@@ -872,15 +918,16 @@ const dragon = {
     max: [374, 121],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Arctos',
-      ja: 'アルクトス',
-      zh: '阿尔库特斯',
-    },
     rarity: '5',
   },
   '20050109': {
     Id: '20050109',
+    Name: {
+      en: 'Apollo',
+      ja: 'アポロン',
+      zh: '阿波罗',
+    },
+    abbr: 'a',
     element: 'Flame',
     icon: [
       {
@@ -897,15 +944,16 @@ const dragon = {
     max: [369, 127],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Apollo',
-      ja: 'アポロン',
-      zh: '阿波罗',
-    },
     rarity: '5',
   },
   '20050110': {
     Id: '20050110',
+    Name: {
+      en: 'Kagutsuchi',
+      ja: 'カグツチ',
+      zh: '迦具土',
+    },
+    abbr: 'k',
     element: 'Flame',
     icon: [
       {
@@ -922,15 +970,16 @@ const dragon = {
     max: [369, 127],
     might: [95, 75],
     min: [36, 12],
-    name: {
-      en: 'Kagutsuchi',
-      ja: 'カグツチ',
-      zh: '迦具土',
-    },
     rarity: '5',
   },
   '20050201': {
     Id: '20050201',
+    Name: {
+      en: 'Poseidon',
+      ja: 'ポセイドン',
+      zh: '波塞冬',
+    },
+    abbr: 'p',
     element: 'Water',
     icon: [
       {
@@ -944,15 +993,16 @@ const dragon = {
     max: [376, 119],
     might: [100, 70],
     min: [37, 11],
-    name: {
-      en: 'Poseidon',
-      ja: 'ポセイドン',
-      zh: '波塞冬',
-    },
     rarity: '5',
   },
   '20050202': {
     Id: '20050202',
+    Name: {
+      en: 'High Mercury',
+      ja: '真マーキュリー',
+      zh: '真墨丘利',
+    },
+    abbr: 'hm',
     element: 'Water',
     icon: [
       {
@@ -970,15 +1020,16 @@ const dragon = {
     max: [357, 113],
     might: [200, 150],
     min: [35, 11],
-    name: {
-      en: 'High Mercury',
-      ja: '真マーキュリー',
-      zh: '真墨丘利',
-    },
     rarity: '5',
   },
   '20050203': {
     Id: '20050203',
+    Name: {
+      en: 'Leviathan',
+      ja: 'リヴァイアサン',
+      zh: '利维坦',
+    },
+    abbr: 'l',
     element: 'Water',
     icon: [
       {
@@ -991,15 +1042,16 @@ const dragon = {
     max: [370, 125],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Leviathan',
-      ja: 'リヴァイアサン',
-      zh: '利维坦',
-    },
     rarity: '5',
   },
   '20050204': {
     Id: '20050204',
+    Name: {
+      en: 'Siren',
+      ja: 'セイレーン',
+      zh: '塞壬',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -1016,15 +1068,16 @@ const dragon = {
     max: [370, 125],
     might: [110, 80],
     min: [37, 12],
-    name: {
-      en: 'Siren',
-      ja: 'セイレーン',
-      zh: '塞壬',
-    },
     rarity: '5',
   },
   '20050205': {
     Id: '20050205',
+    Name: {
+      en: "Jeanne d'Arc",
+      ja: 'ジャンヌダルク',
+      zh: '贞德',
+    },
+    abbr: 'jd',
     element: 'Water',
     icon: [
       {
@@ -1037,15 +1090,16 @@ const dragon = {
     max: [370, 125],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: "Jeanne d'Arc",
-      ja: 'ジャンヌダルク',
-      zh: '贞德',
-    },
     rarity: '5',
   },
   '20050206': {
     Id: '20050206',
+    Name: {
+      en: 'Peng Lai',
+      ja: 'ホウライ',
+      zh: '蓬莱',
+    },
+    abbr: 'pl',
     element: 'Water',
     icon: [
       {
@@ -1058,15 +1112,16 @@ const dragon = {
     max: [222, 75],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Peng Lai',
-      ja: 'ホウライ',
-      zh: '蓬莱',
-    },
     rarity: '5',
   },
   '20050207': {
     Id: '20050207',
+    Name: {
+      en: 'Simurgh',
+      ja: 'シームルグ',
+      zh: '思摩夫',
+    },
+    abbr: 's',
     element: 'Water',
     icon: [
       {
@@ -1083,15 +1138,16 @@ const dragon = {
     max: [383, 113],
     might: [85, 65],
     min: [38, 11],
-    name: {
-      en: 'Simurgh',
-      ja: 'シームルグ',
-      zh: '思摩夫',
-    },
     rarity: '5',
   },
   '20050208': {
     Id: '20050208',
+    Name: {
+      en: 'Maritimus',
+      ja: 'マリティムス',
+      zh: '玛利蒂姆斯',
+    },
+    abbr: 'm',
     element: 'Water',
     icon: [
       {
@@ -1108,15 +1164,16 @@ const dragon = {
     max: [376, 119],
     might: [130, 90],
     min: [37, 11],
-    name: {
-      en: 'Maritimus',
-      ja: 'マリティムス',
-      zh: '玛利蒂姆斯',
-    },
     rarity: '5',
   },
   '20050209': {
     Id: '20050209',
+    Name: {
+      en: 'Kamuy',
+      ja: 'カムイ',
+      zh: '神威',
+    },
+    abbr: 'k',
     element: 'Water',
     icon: [
       {
@@ -1133,15 +1190,16 @@ const dragon = {
     max: [370, 125],
     might: [95, 75],
     min: [37, 12],
-    name: {
-      en: 'Kamuy',
-      ja: 'カムイ',
-      zh: '神威',
-    },
     rarity: '5',
   },
   '20050301': {
     Id: '20050301',
+    Name: {
+      en: 'Zephyr',
+      ja: 'ワキヤン',
+      zh: '瓦基扬',
+    },
+    abbr: 'z',
     element: 'Wind',
     icon: [
       {
@@ -1154,15 +1212,16 @@ const dragon = {
     max: [369, 126],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Zephyr',
-      ja: 'ワキヤン',
-      zh: '瓦基扬',
-    },
     rarity: '5',
   },
   '20050302': {
     Id: '20050302',
+    Name: {
+      en: 'High Midgardsormr',
+      ja: '真ミドガルズオルム',
+      zh: '真耶梦加得',
+    },
+    abbr: 'hm',
     element: 'Wind',
     icon: [
       {
@@ -1180,15 +1239,16 @@ const dragon = {
     max: [356, 114],
     might: [200, 150],
     min: [35, 11],
-    name: {
-      en: 'High Midgardsormr',
-      ja: '真ミドガルズオルム',
-      zh: '真耶梦加得',
-    },
     rarity: '5',
   },
   '20050303': {
     Id: '20050303',
+    Name: {
+      en: 'Sylvia',
+      ja: 'シルヴィア',
+      zh: '希尔维亚',
+    },
+    abbr: 's',
     element: 'Wind',
     icon: [
       {
@@ -1201,15 +1261,16 @@ const dragon = {
     max: [225, 72],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Sylvia',
-      ja: 'シルヴィア',
-      zh: '希尔维亚',
-    },
     rarity: '5',
   },
   '20050304': {
     Id: '20050304',
+    Name: {
+      en: 'Garuda',
+      ja: 'ガルーダ',
+      zh: '迦楼罗',
+    },
+    abbr: 'g',
     element: 'Wind',
     icon: [
       {
@@ -1222,15 +1283,16 @@ const dragon = {
     max: [383, 114],
     might: [100, 70],
     min: [38, 11],
-    name: {
-      en: 'Garuda',
-      ja: 'ガルーダ',
-      zh: '迦楼罗',
-    },
     rarity: '5',
   },
   '20050305': {
     Id: '20050305',
+    Name: {
+      en: 'Long Long',
+      ja: 'ロンロン',
+      zh: '龙龙',
+    },
+    abbr: 'll',
     element: 'Wind',
     icon: [
       {
@@ -1243,15 +1305,16 @@ const dragon = {
     max: [369, 126],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Long Long',
-      ja: 'ロンロン',
-      zh: '龙龙',
-    },
     rarity: '5',
   },
   '20050306': {
     Id: '20050306',
+    Name: {
+      en: 'Pazuzu',
+      ja: 'パズズ',
+      zh: '帕祖祖',
+    },
+    abbr: 'p',
     element: 'Wind',
     icon: [
       {
@@ -1268,15 +1331,16 @@ const dragon = {
     max: [369, 126],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Pazuzu',
-      ja: 'パズズ',
-      zh: '帕祖祖',
-    },
     rarity: '5',
   },
   '20050307': {
     Id: '20050307',
+    Name: {
+      en: 'Yulong',
+      ja: 'ギョクリュウ',
+      zh: '玉龙',
+    },
+    abbr: 'y',
     element: 'Wind',
     icon: [
       {
@@ -1289,15 +1353,16 @@ const dragon = {
     max: [225, 72],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Yulong',
-      ja: 'ギョクリュウ',
-      zh: '玉龙',
-    },
     rarity: '5',
   },
   '20050308': {
     Id: '20050308',
+    Name: {
+      en: 'Freyja',
+      ja: 'フレイヤ',
+      zh: '芙蕾雅',
+    },
+    abbr: 'f',
     element: 'Wind',
     icon: [
       {
@@ -1314,15 +1379,16 @@ const dragon = {
     max: [375, 120],
     might: [130, 90],
     min: [37, 12],
-    name: {
-      en: 'Freyja',
-      ja: 'フレイヤ',
-      zh: '芙蕾雅',
-    },
     rarity: '5',
   },
   '20050309': {
     Id: '20050309',
+    Name: {
+      en: 'Vayu',
+      ja: 'ヴァーユ',
+      zh: '伐由',
+    },
+    abbr: 'v',
     element: 'Wind',
     icon: [
       {
@@ -1339,15 +1405,16 @@ const dragon = {
     max: [369, 126],
     might: [110, 80],
     min: [36, 12],
-    name: {
-      en: 'Vayu',
-      ja: 'ヴァーユ',
-      zh: '伐由',
-    },
     rarity: '5',
   },
   '20050310': {
     Id: '20050310',
+    Name: {
+      en: 'Mini Mids',
+      ja: 'ミドガルズオルム',
+      zh: '耶梦加得',
+    },
+    abbr: 'mm',
     element: 'Wind',
     icon: [
       {
@@ -1361,15 +1428,16 @@ const dragon = {
     max: [225, 72],
     might: [60, 50],
     min: [22, 7],
-    name: {
-      en: 'Mini Mids',
-      ja: 'ミドガルズオルム',
-      zh: '耶梦加得',
-    },
     rarity: '5',
   },
   '20050311': {
     Id: '20050311',
+    Name: {
+      en: 'Hastur',
+      ja: 'ハスター',
+      zh: '哈斯塔',
+    },
+    abbr: 'h',
     element: 'Wind',
     icon: [
       {
@@ -1386,15 +1454,16 @@ const dragon = {
     max: [369, 126],
     might: [95, 75],
     min: [36, 12],
-    name: {
-      en: 'Hastur',
-      ja: 'ハスター',
-      zh: '哈斯塔',
-    },
     rarity: '5',
   },
   '20050401': {
     Id: '20050401',
+    Name: {
+      en: "Jeanne d'Arc",
+      ja: 'ジャンヌダルク',
+      zh: '贞德',
+    },
+    abbr: 'jd',
     element: 'Light',
     icon: [
       {
@@ -1407,15 +1476,16 @@ const dragon = {
     max: [384, 113],
     might: [100, 70],
     min: [38, 11],
-    name: {
-      en: "Jeanne d'Arc",
-      ja: 'ジャンヌダルク',
-      zh: '贞德',
-    },
     rarity: '5',
   },
   '20050402': {
     Id: '20050402',
+    Name: {
+      en: 'High Jupiter',
+      ja: '真ユピテル',
+      zh: '真朱庇特',
+    },
+    abbr: 'hj',
     element: 'Light',
     icon: [
       {
@@ -1433,15 +1503,16 @@ const dragon = {
     max: [352, 118],
     might: [200, 150],
     min: [35, 11],
-    name: {
-      en: 'High Jupiter',
-      ja: '真ユピテル',
-      zh: '真朱庇特',
-    },
     rarity: '5',
   },
   '20050404': {
     Id: '20050404',
+    Name: {
+      en: 'Gilgamesh',
+      ja: 'ギルガメッシュ',
+      zh: '吉尔伽美什',
+    },
+    abbr: 'g',
     element: 'Light',
     icon: [
       {
@@ -1455,16 +1526,17 @@ const dragon = {
     max: [371, 124],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Gilgamesh',
-      ja: 'ギルガメッシュ',
-      zh: '吉尔伽美什',
-    },
     rarity: '5',
     resEle: 'Shadow',
   },
   '20050405': {
     Id: '20050405',
+    Name: {
+      en: 'Cupid',
+      ja: 'キューピッド',
+      zh: '丘比特',
+    },
+    abbr: 'c',
     element: 'Light',
     icon: [
       {
@@ -1477,15 +1549,16 @@ const dragon = {
     max: [377, 119],
     might: [100, 70],
     min: [37, 11],
-    name: {
-      en: 'Cupid',
-      ja: 'キューピッド',
-      zh: '丘比特',
-    },
     rarity: '5',
   },
   '20050406': {
     Id: '20050406',
+    Name: {
+      en: 'Shishimai',
+      ja: 'シシマイ',
+      zh: '狮子舞',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -1497,15 +1570,16 @@ const dragon = {
     max: [223, 75],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Shishimai',
-      ja: 'シシマイ',
-      zh: '狮子舞',
-    },
     rarity: '5',
   },
   '20050407': {
     Id: '20050407',
+    Name: {
+      en: 'Liger',
+      ja: 'ライガ',
+      zh: '雷牙',
+    },
+    abbr: 'l',
     element: 'Light',
     icon: [
       {
@@ -1519,15 +1593,16 @@ const dragon = {
     max: [377, 119],
     might: [100, 70],
     min: [37, 11],
-    name: {
-      en: 'Liger',
-      ja: 'ライガ',
-      zh: '雷牙',
-    },
     rarity: '5',
   },
   '20050408': {
     Id: '20050408',
+    Name: {
+      en: 'Takemikazuchi',
+      ja: 'タケミカヅチ',
+      zh: '建御雷',
+    },
+    abbr: 't',
     element: 'Light',
     icon: [
       {
@@ -1544,15 +1619,16 @@ const dragon = {
     max: [371, 124],
     might: [85, 65],
     min: [37, 12],
-    name: {
-      en: 'Takemikazuchi',
-      ja: 'タケミカヅチ',
-      zh: '建御雷',
-    },
     rarity: '5',
   },
   '20050409': {
     Id: '20050409',
+    Name: {
+      en: 'Siren',
+      ja: 'セイレーン',
+      zh: '塞壬',
+    },
+    abbr: 's',
     element: 'Light',
     icon: [
       {
@@ -1569,15 +1645,16 @@ const dragon = {
     max: [371, 124],
     might: [100, 90],
     min: [37, 12],
-    name: {
-      en: 'Siren',
-      ja: 'セイレーン',
-      zh: '塞壬',
-    },
     rarity: '5',
   },
   '20050501': {
     Id: '20050501',
+    Name: {
+      en: 'Nidhogg',
+      ja: 'ニーズヘッグ',
+      zh: '尼德霍格',
+    },
+    abbr: 'n',
     element: 'Shadow',
     icon: [
       {
@@ -1591,15 +1668,16 @@ const dragon = {
     max: [374, 121],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Nidhogg',
-      ja: 'ニーズヘッグ',
-      zh: '尼德霍格',
-    },
     rarity: '5',
   },
   '20050502': {
     Id: '20050502',
+    Name: {
+      en: 'High Zodiark',
+      ja: '真ゾディアーク',
+      zh: '真佐迪亚克',
+    },
+    abbr: 'hz',
     element: 'Shadow',
     icon: [
       {
@@ -1617,15 +1695,16 @@ const dragon = {
     max: [350, 120],
     might: [200, 150],
     min: [35, 12],
-    name: {
-      en: 'High Zodiark',
-      ja: '真ゾディアーク',
-      zh: '真佐迪亚克',
-    },
     rarity: '5',
   },
   '20050504': {
     Id: '20050504',
+    Name: {
+      en: 'Phantom',
+      ja: 'ファントム',
+      zh: '幽影',
+    },
+    abbr: 'p',
     element: 'Shadow',
     icon: [
       {
@@ -1638,15 +1717,16 @@ const dragon = {
     max: [224, 73],
     might: [60, 40],
     min: [22, 7],
-    name: {
-      en: 'Phantom',
-      ja: 'ファントム',
-      zh: '幽影',
-    },
     rarity: '5',
   },
   '20050505': {
     Id: '20050505',
+    Name: {
+      en: 'Maritimus',
+      ja: 'マリティムス',
+      zh: '玛利蒂姆斯',
+    },
+    abbr: 'm',
     element: 'Shadow',
     icon: [
       {
@@ -1660,15 +1740,16 @@ const dragon = {
     max: [224, 73],
     might: [60, 50],
     min: [22, 7],
-    name: {
-      en: 'Maritimus',
-      ja: 'マリティムス',
-      zh: '玛利蒂姆斯',
-    },
     rarity: '5',
   },
   '20050506': {
     Id: '20050506',
+    Name: {
+      en: 'Marishiten',
+      ja: 'マリシテン',
+      zh: '摩利支天',
+    },
+    abbr: 'm',
     element: 'Shadow',
     icon: [
       {
@@ -1681,15 +1762,16 @@ const dragon = {
     max: [374, 121],
     might: [100, 70],
     min: [37, 12],
-    name: {
-      en: 'Marishiten',
-      ja: 'マリシテン',
-      zh: '摩利支天',
-    },
     rarity: '5',
   },
   '20050508': {
     Id: '20050508',
+    Name: {
+      en: 'Nyarlathotep',
+      ja: 'ニャルラトホテプ',
+      zh: '奈亚拉托提普',
+    },
+    abbr: 'n',
     element: 'Shadow',
     icon: [
       {
@@ -1706,15 +1788,16 @@ const dragon = {
     max: [368, 128],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Nyarlathotep',
-      ja: 'ニャルラトホテプ',
-      zh: '奈亚拉托提普',
-    },
     rarity: '5',
   },
   '20050509': {
     Id: '20050509',
+    Name: {
+      en: 'Shinobi',
+      ja: 'シノビ',
+      zh: '忍',
+    },
+    abbr: 's',
     element: 'Shadow',
     icon: [
       {
@@ -1731,15 +1814,16 @@ const dragon = {
     max: [368, 128],
     might: [110, 80],
     min: [36, 12],
-    name: {
-      en: 'Shinobi',
-      ja: 'シノビ',
-      zh: '忍',
-    },
     rarity: '5',
   },
   '20050510': {
     Id: '20050510',
+    Name: {
+      en: 'Chthonius',
+      ja: 'プルートー',
+      zh: '普鲁托',
+    },
+    abbr: 'c',
     element: 'Shadow',
     icon: [
       {
@@ -1752,15 +1836,16 @@ const dragon = {
     max: [368, 128],
     might: [100, 70],
     min: [36, 12],
-    name: {
-      en: 'Chthonius',
-      ja: 'プルートー',
-      zh: '普鲁托',
-    },
     rarity: '5',
   },
   '20050511': {
     Id: '20050511',
+    Name: {
+      en: 'Parallel Zodiark',
+      ja: '異天ゾディアーク',
+      zh: '异天佐迪亚克',
+    },
+    abbr: 'pz',
     element: 'Shadow',
     icon: [
       {
@@ -1777,11 +1862,6 @@ const dragon = {
     max: [221, 77],
     might: [70, 40],
     min: [22, 7],
-    name: {
-      en: 'Parallel Zodiark',
-      ja: '異天ゾディアーク',
-      zh: '异天佐迪亚克',
-    },
     rarity: '5',
   },
 };
