@@ -48,7 +48,7 @@ const Checkbox = memo(function Checkbox(props) {
       />
       {icon ? (
         <label htmlFor={id} className="icon" title={title}>
-          <Image image={image} />
+          <Image image={image} title={title} />
         </label>
       ) : (
         <label htmlFor={id}>{title}</label>

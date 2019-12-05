@@ -3,12 +3,13 @@ import React, { memo } from 'react';
 const Image = memo(function Image(props) {
   const { image, name, size, title, tabIndex, onClick } = props;
 
+  const alt = title || image;
   const src = `${process.env.PUBLIC_URL}/images/${image}.png`;
 
   if (onClick) {
     return (
       <input
-        alt={image}
+        alt={alt}
         className={size}
         name={name}
         src={src}
@@ -20,7 +21,7 @@ const Image = memo(function Image(props) {
     );
   }
 
-  return <img className={size} alt={image} src={src} title={title} />;
+  return <img alt={alt} className={size} src={src} title={title} />;
 });
 
 export default Image;
