@@ -62,10 +62,10 @@ function Dungeon({ adventurer, lang }) {
       eleRef.current = element;
     }
 
-    if (weapon === 'Axe' || weapon === 'Lance') {
-      let exHp = '';
-      let exDef = '';
+    let exHp = '';
+    let exDef = '';
 
+    if (weapon === 'Axe' || weapon === 'Lance') {
       const value = COABILITY_VALUE[weapon][rarity][ex];
 
       if (weapon === 'Axe') {
@@ -77,14 +77,15 @@ function Dungeon({ adventurer, lang }) {
       } else if (weapon === 'Lance') {
         exHp = value;
       }
-
-      setSettings(prevSettings => ({
-        ...prevSettings,
-        exHp,
-        exDef,
-      }));
     }
-  }, [adventurer]);
+
+    setSettings(prevSettings => ({
+      ...prevSettings,
+      exHp,
+      exDef,
+    }));
+    // eslint-disable-next-line
+  }, [adventurer.Id, adventurer.ex]);
 
   return (
     <>
