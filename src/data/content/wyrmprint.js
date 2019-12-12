@@ -2320,6 +2320,36 @@ const wyrmprint = {
     min: [22, 6],
     rarity: '4',
   },
+  '40040065': {
+    Id: '40040065',
+    Name: {
+      en: 'Glittering Dragonyule',
+      ja: 'キラメキ☆スパークルナイト',
+      zh: '亮晶晶☆闪亮之夜',
+    },
+    abbr: 'gd',
+    icon: [
+      {
+        image: '1080001',
+        title: 'Flame Res +10%',
+      },
+      {
+        image: '1020011',
+        title: 'Critical Damage +13%',
+      },
+      {
+        image: '1110001',
+        title: 'Astral Ornament +75%',
+      },
+    ],
+    image: '400394',
+    incRES: [10, 8, 5],
+    max: [150, 42],
+    might: [140, 100, 60],
+    min: [22, 6],
+    rarity: '4',
+    resEle: 'Flame',
+  },
   '40050001': {
     Id: '40050001',
     Name: {
@@ -4397,6 +4427,35 @@ const wyrmprint = {
     image: '400395',
     max: [176, 65],
     might: [170, 140, 100],
+    min: [26, 9],
+    rarity: '5',
+  },
+  '40050084': {
+    Id: '40050084',
+    Name: {
+      en: 'Spirit of the Season',
+      ja: 'プレゼント・フォーユー',
+      zh: '为你准备的礼物',
+    },
+    abbr: 'sots',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Full HP = Strength +15%',
+      },
+      {
+        image: '1070004',
+        title: 'Paralyzed Punisher +20%',
+      },
+      {
+        image: '1120003',
+        title: 'Holiday Cheer +150%',
+      },
+    ],
+    image: '400393',
+    incSTR: [15, 13, 10],
+    max: [176, 65],
+    might: [160, 120, 80],
     min: [26, 9],
     rarity: '5',
   },

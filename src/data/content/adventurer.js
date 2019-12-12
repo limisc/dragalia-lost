@@ -3432,6 +3432,49 @@ const adventurer = {
     rarity: '5',
     weapon: 'Axe',
   },
+  '10450402': {
+    Id: '10450402',
+    Name: {
+      en: 'Malora',
+      ja: 'マローラ',
+      zh: '马萝拉',
+    },
+    abbr: 'm',
+    defCoef: 10,
+    element: 'Light',
+    icon: [
+      {
+        image: '1010010',
+        title: 'Overdrive Punisher +13%',
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +100%',
+      },
+      {
+        image: '1020022',
+        title: 'Defense Reduced = User Shield II',
+      },
+    ],
+    image: '110036_03',
+    max: [447, 308],
+    mcBonus: [
+      [52, 36],
+      [112, 77],
+      [183, 126],
+      [243, 167],
+      [273, 187],
+      [300, 207],
+    ],
+    might: [140, 220, 240, 280, 300, 300],
+    min: [
+      [44, 30],
+      [54, 37],
+      [63, 43],
+    ],
+    rarity: '5',
+    weapon: 'Axe',
+  },
   '10450501': {
     Id: '10450501',
     Name: {
@@ -5495,6 +5538,49 @@ const adventurer = {
       },
     ],
     image: '110340_01',
+    max: [457, 283],
+    mcBonus: [
+      [53, 33],
+      [115, 71],
+      [188, 116],
+      [250, 154],
+      [281, 173],
+      [307, 189],
+    ],
+    might: [120, 120, 140, 180, 240, 240],
+    min: [
+      [45, 27],
+      [55, 34],
+      [64, 40],
+    ],
+    rarity: '4',
+    weapon: 'Wand',
+  },
+  '10740302': {
+    Id: '10740302',
+    Name: {
+      en: 'Xainfried',
+      ja: 'ザインフラッド',
+      zh: '扎因弗拉德',
+    },
+    abbr: 'x',
+    defCoef: 8,
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Primed Strength +8%',
+      },
+      {
+        image: '1030009',
+        title: 'Bog Res +100%',
+      },
+      {
+        image: '1020002',
+        title: "Dragon's Claws ",
+      },
+    ],
+    image: '110021_03',
     max: [457, 283],
     mcBonus: [
       [53, 33],

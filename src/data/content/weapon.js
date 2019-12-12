@@ -5772,6 +5772,21 @@ const weapon = {
     rarity: '4',
     weapon: 'Dagger',
   },
+  '30340208': {
+    Id: '30340208',
+    Name: {
+      en: 'Wishing Knife',
+      ja: 'ウィッシングナイフ',
+      zh: '圣愿之刃',
+    },
+    abbr: 'wk',
+    element: 'Water',
+    image: '303038_01_40201',
+    max: [98, 344],
+    min: [29, 103],
+    rarity: '4',
+    weapon: 'Dagger',
+  },
   '30340301': {
     Id: '30340301',
     Name: {
@@ -15381,6 +15396,21 @@ const weapon = {
     max: [61, 211],
     might: 90,
     min: [18, 63],
+    rarity: '4',
+    weapon: 'Wand',
+  },
+  '30740208': {
+    Id: '30740208',
+    Name: {
+      en: 'Ringing Wand',
+      ja: 'リンギングロッド',
+      zh: '圣铃魔杖',
+    },
+    abbr: 'rw',
+    element: 'Water',
+    image: '307044_01_40201',
+    max: [91, 362],
+    min: [27, 108],
     rarity: '4',
     weapon: 'Wand',
   },

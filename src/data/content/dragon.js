@@ -1505,6 +1505,32 @@ const dragon = {
     min: [35, 11],
     rarity: '5',
   },
+  '20050403': {
+    Id: '20050403',
+    Name: {
+      en: 'Corsaint Phoenix',
+      ja: 'ホーリーフェニックス',
+      zh: '神圣菲尼克斯',
+    },
+    abbr: 'cp',
+    element: 'Light',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Light) Strength +50%',
+      },
+      {
+        image: '1070004',
+        title: '(Light) Paralyzed Punisher +20%',
+      },
+    ],
+    image: '210056_01',
+    incSTR: [50, 35],
+    max: [371, 124],
+    might: [100, 70],
+    min: [37, 12],
+    rarity: '5',
+  },
   '20050404': {
     Id: '20050404',
     Name: {
