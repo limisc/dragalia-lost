@@ -12,7 +12,12 @@ function HalidomItem({ halidomKey, item, style, updateHalidom }) {
   const image = `facility/${id}`;
   const title = locales(id, lang, 'halidom');
 
-  const max = id === '101501' ? 35 : getLimit(type);
+  let max;
+  if (id === '101501' || id === '101601') {
+    max = 35;
+  } else {
+    max = getLimit(type);
+  }
 
   const handleChange = useCallback(
     ({ name, value }) => {
