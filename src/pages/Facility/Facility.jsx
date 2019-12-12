@@ -30,7 +30,7 @@ const calcItem = createCachedSelector(
       field,
       value: [start, end],
     } = item;
-    if (start === end) return null;
+    if (start === end) return {};
     const ret = {};
     for (let i = start; i < end; i += 1) {
       Object.entries(MATERIAL[type][i]).forEach(([key, value]) => {
