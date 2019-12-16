@@ -1292,6 +1292,49 @@ const adventurer = {
     rarity: '3',
     weapon: 'Blade',
   },
+  '10240101': {
+    Id: '10240101',
+    Name: {
+      en: 'Laxi',
+      ja: 'ラキシ',
+      zh: '莱姬希',
+    },
+    abbr: 'l',
+    defCoef: 10,
+    element: 'Flame',
+    icon: [
+      {
+        image: '1010011',
+        title: 'Emergency Repairs II',
+      },
+      {
+        image: '1030010',
+        title: 'Sleep Res +100%',
+      },
+      {
+        image: '1010024',
+        title: 'System Overload',
+      },
+    ],
+    image: '100032_01',
+    max: [421, 295],
+    mcBonus: [
+      [49, 34],
+      [106, 74],
+      [173, 121],
+      [230, 161],
+      [258, 181],
+      [282, 199],
+    ],
+    might: [120, 120, 140, 180, 240, 240],
+    min: [
+      [41, 29],
+      [51, 36],
+      [59, 41],
+    ],
+    rarity: '4',
+    weapon: 'Blade',
+  },
   '10240201': {
     Id: '10240201',
     Name: {
