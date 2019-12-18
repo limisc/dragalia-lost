@@ -1,10 +1,12 @@
 import { MIGHT_DICT } from 'data';
 
+// TODO: special calc for mega man, different skill & co-ability might
+// change data struct to calc automatically, not if, same as Euden
 const calcAdventurerMight = adventurer => {
-  const { might, rarity, ex = '4', mana = '50' } = adventurer;
+  const { Id, might, rarity, ex = '4', mana = '50' } = adventurer;
   const { adventurerSkill, coAbility, fs } = MIGHT_DICT;
 
-  const skillMight = adventurerSkill[mana];
+  let skillMight = adventurerSkill[mana];
 
   let abilityMight;
   if (mana === '0') {
@@ -23,7 +25,12 @@ const calcAdventurerMight = adventurer => {
 
   const fsMight = fs[fsKey] || 0;
 
-  const exMight = coAbility[rarity][ex];
+  let exMight = coAbility[rarity][ex];
+
+  if (Id === '10750102') {
+    if (skillMight > 200) skillMight = 200;
+    exMight = [160, 200, 240, 280, 320][ex];
+  }
 
   return skillMight + abilityMight + fsMight + exMight;
 };
