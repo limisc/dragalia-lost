@@ -9,7 +9,7 @@ function Header() {
   const { pathname } = useLocation();
   const history = useHistory();
 
-  const [isMobile, setDevice] = useState(false);
+  const [isDesktop, setDevice] = useState(false);
 
   const scrollTop = () => {
     scrollTo();
@@ -38,7 +38,7 @@ function Header() {
 
   useEffect(() => {
     const handleDevice = () => {
-      setDevice(window.innerWidth <= 524);
+      setDevice(window.innerWidth >= 1024);
     };
 
     handleDevice();
@@ -66,7 +66,7 @@ function Header() {
         </Link>
       </div>
 
-      {isMobile && (
+      {!isDesktop && (
         <>
           <div role="button" tabIndex="0" onKeyDown={null} onClick={scrollTop}>
             <span className="arrow up" />

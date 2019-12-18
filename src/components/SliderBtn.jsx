@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { connect } from 'react-redux';
 import clsx from 'clsx';
+import { getPaperBGC } from 'utils';
 
-const SliderBtn = React.memo(({ name, onClick = () => {} }) => {
+function SliderBtn({ name, theme, onClick = () => {} }) {
   const cn = clsx('slider-btn', name);
 
   const timeRef = useRef();
@@ -35,6 +37,7 @@ const SliderBtn = React.memo(({ name, onClick = () => {} }) => {
   return (
     <button
       type="button"
+      style={getPaperBGC(theme)}
       aria-label={name}
       className={cn}
       name={name}
@@ -46,6 +49,10 @@ const SliderBtn = React.memo(({ name, onClick = () => {} }) => {
       onTouchEnd={stop}
     />
   );
-});
+}
 
-export default SliderBtn;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
+
+export default connect(mapStateToProps)(SliderBtn);

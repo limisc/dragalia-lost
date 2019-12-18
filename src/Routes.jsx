@@ -1,5 +1,7 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
+import { connect } from 'react-redux';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import { getBodyBGC } from 'utils';
 import Header from './Header';
 
 const pages = {
@@ -18,7 +20,13 @@ const getRoute = page => {
   );
 };
 
-function Routes() {
+function Routes({ theme }) {
+  useEffect(() => {
+    if (theme) {
+      document.body.style.backgroundColor = getBodyBGC(theme);
+    }
+  }, [theme]);
+
   return (
     <Suspense fallback={<div>Loading</div>}>
       <Switch>
@@ -30,4 +38,10 @@ function Routes() {
   );
 }
 
-export default Routes;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);

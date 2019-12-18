@@ -8,7 +8,7 @@ export const getFilterFields = key => {
     case 'weapon':
       return ['rarity', 'element', 'weapon'];
     case 'dragon':
-      return ['rarity', 'element', 'type'];
+      return ['rarity', 'element'];
     default:
       return ['rarity', 'type'];
   }
@@ -58,7 +58,9 @@ export const getItemList = createCachedSelector(
 
         const searchLower = search.toLowerCase();
 
-        const searchResult = item.abbr.includes(searchLower) || item.Name[lang].toLowerCase().includes(searchLower);
+        const searchResult =
+          item.abbr.includes(searchLower) ||
+          item.Name[lang].toLowerCase().includes(searchLower);
         return filterResult && searchResult;
       })
       .sort((item1, item2) => {

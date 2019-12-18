@@ -1,38 +1,25 @@
 .checkbox {
-  display: none;
+  @include user-select-none;
 
-  &:checked + label {
-    background-color: $blue0;
+  width: 100%;
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked + label {
+      background-color: $blue0;
+    }
   }
 
-  &:disabled + label {
-    background-color: $disabled;
-  }
-
-  & + label {
-    @include user-select-none;
-    @include border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid $black1;
+  label {
+    @include flex-c;
+    width: 100%;
     height: $text-field-height;
-    padding: 3px;
+    box-shadow: 0 0 5px -3px $black0;
+  }
 
-    cursor: pointer;
-
-    &.icon {
-      width: $text-field-height;
-
-      > img {
-        width: 28px;
-        height: 28px;
-      }
-    }
-
-    & ~ label {
-      border-left: 0;
-    }
+  img {
+    width: 28px;
+    height: 28px;
   }
 }

@@ -12,6 +12,7 @@ const actionTypes = {
   SAVE_BUILD: 'SAVE_BUILD',
   DEL_BUILD: 'DEL_BUILD',
   LOAD_BUILDS: 'LOAD_BUILDS',
+  SET_THEME: 'SET_THEME',
 };
 
 export default actionTypes;

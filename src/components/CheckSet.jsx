@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEvent } from 'utils';
+import clsx from 'clsx';
 import Checkbox from './Checkbox';
 
 function CheckSet({
@@ -16,8 +17,9 @@ function CheckSet({
 
   if (options == null) return null;
 
+  const className = clsx('check-box-list', group);
   return (
-    <div>
+    <div className={className}>
       {options.map(({ checked, value }) => {
         return (
           <Checkbox

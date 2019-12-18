@@ -16,15 +16,29 @@
 @import './pages/stats';
 @import './pages/facility';
 
-@media screen and (max-width: 425px) {
+// mobile
+@media screen and (max-width: $mobile) {
   main {
     > div + div {
       margin-top: $unit1;
     }
   }
+
+  #filters {
+    padding: $unit0;
+
+    > div + div {
+      margin-top: $unit0;
+    }
+  }
+
+  .check-box-list {
+    gap: $unit0;
+  }
 }
 
-@media screen and (min-width: 426px) and (max-width: $laptop - 1px) {
+// tablet
+@media screen and (min-width: $mobile + 1px) and (max-width: $laptop - 1px) {
   main {
     display: -ms-grid;
     display: grid;
@@ -64,6 +78,7 @@
   }
 }
 
+// laptop
 @media screen and (min-width: $laptop) {
   @include facility--laptop;
   main {

@@ -1,19 +1,23 @@
-import React, { memo, useRef } from 'react';
+import React, { useRef } from 'react';
+import { connect } from 'react-redux';
 import uuid from 'uuid/v1';
+import { getOutBGC } from 'utils';
 import locales from 'locales';
 import Image from './Image';
 
-const Checkbox = memo(function Checkbox(props) {
+function Checkbox(props) {
   const {
     checked,
     disabled,
     group,
     icon,
     lang,
-    onChange,
-    setChecked,
     title: titleProp,
     value,
+    // style: styleProp,
+    theme,
+    onChange,
+    setChecked,
   } = props;
 
   const title = locales(titleProp || value, lang);
@@ -34,10 +38,11 @@ const Checkbox = memo(function Checkbox(props) {
     }
   };
 
+  // const style = { ...getOutBGC(theme), ...styleProp };
+
   return (
-    <>
+    <div className="checkbox" style={getOutBGC(theme)}>
       <input
-        className="checkbox"
         type="checkbox"
         checked={checked}
         disabled={disabled}
@@ -53,8 +58,14 @@ const Checkbox = memo(function Checkbox(props) {
       ) : (
         <label htmlFor={id}>{title}</label>
       )}
-    </>
+    </div>
   );
-});
+}
 
-export default Checkbox;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkbox);

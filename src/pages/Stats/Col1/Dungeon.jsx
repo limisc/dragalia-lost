@@ -1,15 +1,21 @@
-import React, { useEffect, useMemo, useState, useRef } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { connect } from 'react-redux';
 import { COABILITY_VALUE, ELEMENT_ADV_TO_ENEMY, ENEMY_INFO } from 'data';
-import { Select } from 'components';
-import { useEvent } from 'utils';
+import { Input, Select } from 'components';
+import { getPaperBGC } from 'utils';
 import locales from 'locales';
 import SelectEnemy from './SelectEnemy';
 import DamageBar from './DamageBar';
 
 const fields = ['multiplier', 'exHp', 'hp', 'exDef', 'def', 'res', 'dcrStr'];
 
-function Dungeon({ adventurer, lang }) {
+function Dungeon({ adventurer, lang, theme }) {
   const [settings, setSettings] = useState({
     dcrStr: '',
     def: '',
@@ -31,14 +37,14 @@ function Dungeon({ adventurer, lang }) {
     }));
   }, [lang]);
 
-  const handleSelect = useEvent(({ name, value }) => {
+  const handleSelect = useCallback(({ name, value }) => {
     setSettings(prevSettings => ({ ...prevSettings, [name]: value }));
-  });
+  }, []);
 
-  const handleInput = e => {
+  const handleInput = useCallback(e => {
     const { name, value } = e.target;
     setSettings(prevSettings => ({ ...prevSettings, [name]: value }));
-  };
+  }, []);
 
   useEffect(() => {
     if (settings.enemy !== '') {
@@ -95,7 +101,7 @@ function Dungeon({ adventurer, lang }) {
         onChange={handleSelect}
       />
 
-      <div className="grid-2">
+      <div className="grid-2 paper" style={getPaperBGC(theme)}>
         <div>
           {locales('difficulty', lang)}
           <Select
@@ -111,8 +117,7 @@ function Dungeon({ adventurer, lang }) {
           return (
             <div key={key}>
               {locales(key, lang)}
-              <input
-                type="number"
+              <Input
                 name={key}
                 step={step}
                 value={settings[key]}
@@ -130,6 +135,7 @@ function Dungeon({ adventurer, lang }) {
 
 const mapStateToProps = state => {
   return {
+    theme: state.theme,
     adventurer: state.items.adventurer,
   };
 };

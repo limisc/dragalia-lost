@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
 import { updateItem } from 'actions';
-import { getLimit, useEvent } from 'utils';
+import { Input } from 'components';
+import { getLimit, getPaperBGC, useEvent } from 'utils';
 import SelectItem from './SelectItem';
 
 const getItemFields = key => {
@@ -18,7 +19,7 @@ const getItemFields = key => {
   return ['level', 'unbind', 'augHp', 'augStr'];
 };
 
-function Item({ focused, item, lang, updateItem }) {
+function Item({ focused, item, lang, theme, updateItem }) {
   const { level, bond, curRarity, rarity, unbind } = item || {};
 
   const timeRef = useRef();
@@ -103,7 +104,7 @@ function Item({ focused, item, lang, updateItem }) {
   if (item === null) return null;
 
   return (
-    <div className="grid-2">
+    <div className="grid-2 paper" style={getPaperBGC(theme)}>
       {fields.map(key => {
         const { [key]: value = '' } = item;
 
@@ -144,12 +145,7 @@ function Item({ focused, item, lang, updateItem }) {
             <div key={key}>
               {locales(key, lang)}
               <div className="input-btn">
-                <input
-                  type="number"
-                  value={value}
-                  name={key}
-                  onChange={changeInput}
-                />
+                <Input name={key} value={value} onChange={changeInput} />
 
                 <button
                   type="button"
@@ -167,12 +163,7 @@ function Item({ focused, item, lang, updateItem }) {
         return (
           <div key={key}>
             {locales(key, lang)}
-            <input
-              type="number"
-              value={value}
-              name={key}
-              onChange={changeInput}
-            />
+            <Input name={key} value={value} onChange={changeInput} />
           </div>
         );
       })}
@@ -181,9 +172,10 @@ function Item({ focused, item, lang, updateItem }) {
 }
 
 const mapStateToProps = state => {
-  const { focused, items } = state;
+  const { focused, items, theme } = state;
   return {
     focused,
+    theme,
     item: items[focused],
   };
 };

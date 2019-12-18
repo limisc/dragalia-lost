@@ -1,13 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { loadHalidom } from 'actions';
-import { getFilteredHalidomKey, removeState, saveState, useEvent } from 'utils';
+import {
+  getFilteredHalidomKey,
+  getPaperBGC,
+  removeState,
+  saveState,
+  useEvent,
+} from 'utils';
 import { BtnPanel } from 'components';
 import HalidomItem from './HalidomItem';
 
 const btns = ['del', 'refresh', 'save'];
 
-function Halidom({ halidom, keyList, loadHalidom }) {
+function Halidom({ halidom, keyList, theme, loadHalidom }) {
   const onClick = useEvent(e => {
     switch (e.currentTarget.name) {
       case 'del':
@@ -29,7 +35,7 @@ function Halidom({ halidom, keyList, loadHalidom }) {
   return (
     <>
       <BtnPanel btns={btns} onClick={onClick} />
-      <div className="list">
+      <div className="list paper" style={getPaperBGC(theme)}>
         {keyList.map(key => (
           <HalidomItem key={key} halidomKey={key} />
         ))}
@@ -41,6 +47,7 @@ function Halidom({ halidom, keyList, loadHalidom }) {
 const mapStateToProps = state => {
   return {
     halidom: state.halidom,
+    theme: state.theme,
     keyList: getFilteredHalidomKey(state),
   };
 };

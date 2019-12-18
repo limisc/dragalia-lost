@@ -65,13 +65,8 @@
   font-weight: bold;
 }
 
-#stats-col2 {
-  line-height: 24px;
-}
-
 .avatar-list {
   @include grid(5);
-  gap: $unit1;
   justify-items: center;
 
   > div {
@@ -118,27 +113,53 @@
   }
 }
 
+.input-btn {
+  @include grid-columns(3fr 1fr);
+  gap: $unit0;
+}
+
 #stats-col3 {
   @include flex;
   @include flex-column;
   height: $page-height;
 }
 
-.options {
+#item-filter {
+  > div {
+    @include next-div-margin-top;
+  }
+}
+
+#item-options {
+  @include border-box;
   height: 124px;
-  > div + div {
-    margin-top: $unit1;
+}
+
+.check-box-list {
+  @include grid('auto-fit');
+  @include next-div-margin-top;
+  justify-items: center;
+
+  &.type {
+    @include grid(9);
   }
 }
 
 .item {
+  @include border-box;
+  padding: $unit1;
+  padding-bottom: 0;
+}
+
+.item-content {
   @include grid;
   @include align-items;
   gap: $unit1;
-  -ms-grid-columns: minmax(64px, 20%) $unit1 1fr $unit1 40px $unit1 40px $unit1
-    40px;
-  grid-template-columns: minmax(64px, 20%) 1fr repeat(3, 40px);
+  grid-template-columns: 70px 1fr repeat(3, 40px);
   justify-items: center;
+
+  height: 60px;
+  box-shadow: 0 0 5px -3px $black0;
 }
 
 .halidom-item,

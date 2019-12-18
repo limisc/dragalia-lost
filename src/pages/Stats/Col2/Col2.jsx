@@ -1,15 +1,26 @@
+/* eslint-disable no-unused-vars */
 import React, { useCallback } from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
 import { maxItem, resetItems, saveBuild, selectFocus } from 'actions';
-import { getImage, refs } from 'utils';
+import { getImage, getPaperBGC, refs } from 'utils';
 import { ITEM_KEYS } from 'data';
 import { Image } from 'components';
 import SplitBtn from './SplitBtn';
 import Item from './Item';
 
-function Col2({ focused, items, lang, maxItem, resetItems, selectFocus }) {
+function Col2(props) {
+  const {
+    focused,
+    items,
+    lang,
+    maxItem,
+    theme,
+    resetItems,
+    selectFocus,
+  } = props;
+
   const handleFocus = useCallback(
     e => {
       selectFocus(e.target.name);
@@ -34,10 +45,9 @@ function Col2({ focused, items, lang, maxItem, resetItems, selectFocus }) {
           reset
         </button>
       </div>
-      <div className="avatar-list">
+      <div className="avatar-list paper" style={getPaperBGC(theme)}>
         {ITEM_KEYS.map(key => {
           const className = clsx('avatar', { scale: key === focused });
-
           const { [key]: item } = items;
           const title =
             item === null
@@ -74,8 +84,8 @@ function Col2({ focused, items, lang, maxItem, resetItems, selectFocus }) {
   );
 }
 
-const mapStateToProps = ({ focused, items }) => {
-  return { focused, items };
+const mapStateToProps = ({ focused, items, theme }) => {
+  return { focused, items, theme };
 };
 
 const mapDispatchToProps = {

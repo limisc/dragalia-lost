@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { connect } from 'react-redux';
 import { selectOption, resetOptions } from 'actions';
-import { getFilterFields } from 'utils';
-import { CheckSet } from 'components';
+import { getFilterFields, getPaperBGC } from 'utils';
+import { CheckSet, Input } from 'components';
 
 function Filter(props) {
   const {
@@ -10,6 +10,7 @@ function Filter(props) {
     lang,
     options,
     search,
+    theme,
     resetOptions,
     selectOption,
     setSearch,
@@ -33,8 +34,8 @@ function Filter(props) {
   };
 
   return (
-    <>
-      <div className="options">
+    <div id="item-filter" className="paper" style={getPaperBGC(theme)}>
+      <div id="item-options">
         {fields.map(key => (
           <CheckSet
             icon
@@ -48,11 +49,10 @@ function Filter(props) {
       </div>
 
       <div className="input-btn">
-        <input
+        <Input
           type="text"
-          value={search}
           placeholder="Search"
-          spellCheck={false}
+          value={search}
           onChange={handleSearch}
         />
 
@@ -60,15 +60,16 @@ function Filter(props) {
           Clear
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
-const mapStateToProps = ({ focused, options }) => {
+const mapStateToProps = ({ focused, options, theme }) => {
   const fields = getFilterFields(focused);
   return {
     fields,
     options,
+    theme,
   };
 };
 

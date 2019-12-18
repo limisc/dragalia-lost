@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { FixedSizeList } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { getItemList } from 'utils';
+import { getItemList, getPaperBGC } from 'utils';
 import Item from './Item';
 
-function ItemList({ options, focused, list }) {
+function ItemList({ options, focused, list, theme }) {
   const listRef = useRef();
 
   useEffect(() => {
@@ -15,14 +15,14 @@ function ItemList({ options, focused, list }) {
   }, [focused, options]);
 
   return (
-    <div className="list">
+    <div className="list" style={getPaperBGC(theme)}>
       <AutoSizer>
         {({ height, width }) => (
           <FixedSizeList
             ref={listRef}
             height={height}
             width={width}
-            itemSize={65}
+            itemSize={68}
             itemCount={list.length}
             itemData={list}
           >
@@ -35,10 +35,11 @@ function ItemList({ options, focused, list }) {
 }
 
 const mapStateToProps = (state, props) => {
-  const { focused, options } = state;
+  const { focused, options, theme } = state;
   return {
     focused,
     options,
+    theme,
     list: getItemList(state, props),
   };
 };

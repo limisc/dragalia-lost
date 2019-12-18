@@ -9,6 +9,7 @@ import { refs, scrollTo } from './scrollTo';
 import useEvent from './useEvent';
 
 export * from './selectors';
+export * from './setColor';
 export * from './storage';
 export {
   calcVal,

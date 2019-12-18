@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import clsx from 'clsx';
 import locales from 'locales';
 import { Checkbox } from 'components';
-import { calcVal, getDetails } from 'utils';
+import { calcVal, getDetails, getPaperBGC } from 'utils';
 
 const ROWS = [
   'adventurer',
@@ -16,11 +16,11 @@ const ROWS = [
   'halidom',
 ];
 
-function StatsTable({ disabled, details, expend, lang, setExpend }) {
+function StatsTable({ disabled, details, expend, lang, theme, setExpend }) {
   const className = clsx({ expend });
 
   return (
-    <div id="stats-table">
+    <div id="stats-table" className="paper" style={getPaperBGC(theme)}>
       <div id="header">
         <Checkbox
           lang={lang}
@@ -60,6 +60,7 @@ function StatsTable({ disabled, details, expend, lang, setExpend }) {
 
 const mapStateToProps = state => {
   return {
+    theme: state.theme,
     details: getDetails(state),
   };
 };

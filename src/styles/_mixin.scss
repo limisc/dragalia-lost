@@ -36,9 +36,9 @@
   display: grid;
 
   @if ($n) {
-    gap: $unit1;
+    grid-gap: $unit1;
     -ms-grid-columns: (minmax(0, 1fr)) [#{$n}];
-    grid-template-columns: repeat($n, minmax(0, 1fr));
+    grid-template-columns: repeat(#{$n}, minmax(0, 1fr));
   }
 }
 
@@ -84,4 +84,10 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+@mixin next-div-margin-top {
+  + div {
+    margin-top: $unit1;
+  }
 }

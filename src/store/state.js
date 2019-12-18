@@ -5,6 +5,7 @@ import {
   WEAPON_TYPES,
   initHalidom,
 } from 'data';
+import { setColor } from 'utils';
 
 const createOption = types => {
   return types.map(value => ({ value, checked: false }));
@@ -28,6 +29,7 @@ const state = {
     weapon: createOption(WEAPON_TYPES),
   },
   panel: false,
+  theme: setColor('#eed6ad'),
 };
 
 export default state;

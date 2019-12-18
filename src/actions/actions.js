@@ -26,6 +26,8 @@ export const selectOption = createAction(actionTypes.SELECT_OPTION);
 
 export const setPanel = createAction(actionTypes.SET_PANEL);
 
+export const setTheme = createAction(actionTypes.SET_THEME);
+
 export const updateItem = createAction(actionTypes.UPDATE_ITEM);
 
 export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);

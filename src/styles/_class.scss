@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  padding: 0 $unit2;
-
-  background: $base0;
+  padding: 0 $unit1;
+  line-height: 24px;
 
   font-family: 'Roboto', sans-serif;
   color: $black0;
@@ -15,10 +14,8 @@ header {
   z-index: 100;
   top: 0;
 
-  width: calc(100% - #{$unit2 * 2});
+  width: calc(100% - #{$unit2});
   height: $header-height;
-
-  background: $base0;
 
   > div {
     @include flex-c;
@@ -63,10 +60,6 @@ main {
   }
 }
 
-input {
-  min-width: 0;
-}
-
 @for $i from 2 to 5 {
   .grid-#{$i} {
     @include grid($i);
@@ -94,11 +87,6 @@ input {
   @include scale(1.1);
 }
 
-.input-btn {
-  @include grid-columns(3fr 1fr);
-  gap: $unit0;
-}
-
 .name {
   min-width: 0;
   max-width: 100%;
@@ -106,4 +94,10 @@ input {
   overflow: hidden;
   -ms-grid-column-align: start;
   justify-self: start;
+}
+
+.paper {
+  @include border-box;
+  padding: $unit1;
+  box-shadow: 0 0 5px -3px $black0;
 }

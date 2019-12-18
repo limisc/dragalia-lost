@@ -4,13 +4,12 @@
 }
 
 .select-control {
+  @include flex-v;
+  @include border-box;
+
   position: relative;
 
-  display: flex;
-  align-items: center;
-
-  box-sizing: border-box;
-  border: 1px solid $black1;
+  border: 1px solid transparent;
   border-radius: $unit0;
 
   width: 100%;
@@ -63,14 +62,16 @@ ul {
 }
 
 .select-option {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
+  @include flex-v;
+  @include border-box;
+
   padding: $unit1;
 
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  color: $black0;
 
   &:hover,
   &.hover {

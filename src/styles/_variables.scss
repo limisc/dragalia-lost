@@ -18,7 +18,7 @@ $disabled: #ccc;
 $img-size: (
   xs: 24px,
   sm: 32px,
-  md: 64px,
+  md: 60px,
   lg: 80px,
 );
 
@@ -32,6 +32,5 @@ $text-field-height: 36px;
 $main-margin-top: $header-height + $unit1;
 $page-height: calc(100vh - #{$main-margin-top});
 
-$mobile: 320px;
-$tablet: 768px;
+$mobile: 425px;
 $laptop: 1024px;

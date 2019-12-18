@@ -1,8 +1,19 @@
-import React, { memo, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { connect } from 'react-redux';
 import clsx from 'clsx';
+import { getInputBGC } from 'utils';
 
-const Select = memo(function Select(props) {
-  const { disabled, name, options, label, value, onChange = () => {} } = props;
+function Select(props) {
+  const {
+    disabled,
+    name,
+    options,
+    label,
+    theme,
+    value,
+    onChange = () => {},
+  } = props;
+
   const ref = useRef();
   const [expand, setExpand] = useState(false);
   const [cursor, setCursor] = useState(undefined);
@@ -82,6 +93,7 @@ const Select = memo(function Select(props) {
       <div
         ref={ref}
         className={clsx('select-control', { disabled })}
+        style={getInputBGC(theme)}
         role="button"
         tabIndex={disabled ? '-1' : '0'}
         onClick={toggleSelect}
@@ -118,6 +130,10 @@ const Select = memo(function Select(props) {
       )}
     </div>
   );
-});
+}
 
-export default Select;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
+
+export default connect(mapStateToProps)(Select);
