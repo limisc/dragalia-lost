@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 export const MATERIAL = {
-  alter: [
+  altar: [
     { rupies: 200, orb1: 0, orb2: 0, orb3: 0 },
     { rupies: 400, orb1: 0, orb2: 0, orb3: 0 },
     { rupies: 600, orb1: 0, orb2: 0, orb3: 0 },
