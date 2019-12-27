@@ -50,7 +50,15 @@ export default initHalidom;
 
 export const HALIDOM_LIST = Object.keys(initHalidom);
 
-export const HALIDOM_TYPES = ['altar', 'slime', 'event', 'fafnir', 'dojo'];
+export const HALIDOM_TYPES = [
+  'altar',
+  'dojo',
+  'slime',
+  'tree',
+  'event',
+  'fafnir',
+  'dracolith',
+];
 
 export const HALIDOM_VALUES = {
   // [HP, STR]

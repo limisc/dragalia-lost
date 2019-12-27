@@ -46,6 +46,7 @@ const ui = {
   fafnir: { en: 'Fafnir', ja: 'ファフ二ール像', zh: '法夫纳像' },
   rupies: { en: 'Rupies', ja: 'ルピ鉱山', zh: '金币矿山' },
   slime: { en: 'Slime', ja: 'スライム像', zh: '史莱姆像' },
+  tree: { en: 'Tree', ja: '覚醒の樹', zh: '觉醒之树' },
   smithy: { en: 'Smithy', ja: '鍛冶屋', zh: '铁匠铺' },
   type: { en: 'Type', ja: '種類', zh: '类型' },
   // element
@@ -63,7 +64,7 @@ const ui = {
   Bow: { en: 'Bow', ja: '弓', zh: '弓' },
   Wand: { en: 'Wand', ja: 'ロッド', zh: '魔杖' },
   Staff: { en: 'Staff', ja: '杖', zh: '法杖' },
-  // target
+  // enemy
   dungeon: { en: 'Dungeon', ja: 'ダンジョン', zh: '副本' },
   hms: { en: 'High Midgardsormr', ja: '真ミドガルズオルム', zh: '真耶梦加得' },
   hbh: { en: 'High Brunhilda', ja: '真ブリュンヒルデ', zh: '真布伦希尔德' },
