@@ -33,11 +33,22 @@ export const updateItem = createAction(actionTypes.UPDATE_ITEM);
 export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
 
 export const selectFocus = itemKey => (dispatch, getState) => {
+  const {
+    focused,
+    items: { adventurer },
+  } = getState();
+
   dispatch(setPanel(false));
 
-  dispatch({ itemKey, type: actionTypes.SELECT_FOCUS });
+  if (focused === itemKey) {
+    dispatch({
+      itemKey,
+      item: null,
+      type: actionTypes.SELECT_ITEM,
+    });
+  }
 
-  const { adventurer } = getState().items;
+  dispatch({ itemKey, type: actionTypes.SELECT_FOCUS });
 
   if (itemKey === 'adventurer') {
     dispatch(resetOptions());
