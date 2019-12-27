@@ -3,21 +3,16 @@ import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import locales from 'locales';
 import { updateHalidom } from 'actions';
-import { getLimit } from 'utils';
+import { getFacilityMaxLevel } from 'utils';
 import { Image, Slider } from 'components';
 
 function HalidomItem({ halidomKey, item, style, updateHalidom }) {
   const { lang } = useParams();
-  const { id, type, level } = item;
+  const { id, level } = item;
   const image = `facility/${id}`;
   const title = locales(id, lang, 'halidom');
 
-  let max;
-  if (id === '101501' || id === '101601') {
-    max = 35;
-  } else {
-    max = getLimit(type);
-  }
+  const max = getFacilityMaxLevel(item);
 
   const handleChange = useCallback(
     ({ name, value }) => {

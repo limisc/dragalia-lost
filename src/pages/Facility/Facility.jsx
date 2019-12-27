@@ -14,7 +14,13 @@ import {
   MATERIAL,
   WEAPON_TYPES,
 } from 'data';
-import { getLimit, loadState, removeState, saveState, useEvent } from 'utils';
+import {
+  getFacilityMaxLevel,
+  loadState,
+  removeState,
+  saveState,
+  useEvent,
+} from 'utils';
 import { BtnPanel, Select } from 'components';
 import locales from 'locales';
 import FacilityItem from './FacilityItem';
@@ -59,14 +65,26 @@ function Facility() {
   const [state, setState] = useState({ type: 'dojo', field: '' });
 
   const typeOptions = useMemo(() => {
-    return [...HALIDOM_TYPES, 'dracolith'].map(value => ({
+    return HALIDOM_TYPES.map(value => ({
       value,
       label: locales(value, lang),
     }));
   }, [lang]);
 
   const fieldOptions = useMemo(() => {
-    const array = state.type === 'dojo' ? WEAPON_TYPES : ELEMENT_TYPES;
+    let array;
+    switch (state.type) {
+      case 'dojo':
+        array = WEAPON_TYPES;
+        break;
+      case 'tree':
+        array = ['Flame'];
+        break;
+      default:
+        array = ELEMENT_TYPES;
+        break;
+    }
+
     return array.map(value => ({ value, label: locales(value, lang) }));
   }, [state.type, lang]);
 
@@ -79,7 +97,7 @@ function Facility() {
         if (type !== 'event') {
           if (field === '') return;
           key = getMaterialKey(type, field);
-          max = getLimit(type);
+          max = getFacilityMaxLevel({ type });
         } else {
           key = 'event';
           max = 35;
@@ -128,21 +146,24 @@ function Facility() {
     const tempArray = [];
     HALIDOM_LIST.forEach(key => {
       const item = localHalidom[key];
-      const { id, type, level } = item;
-      const max = id === '101501' ? 35 : getLimit(type);
+      const { id, level } = item;
+      const max = getFacilityMaxLevel(item);
       if (level !== max) {
         const keySet = key.split('_');
         let keyType = keySet[keySet.length - 2];
         let field = keySet[keySet.length - 3];
+
+        let image = id;
         if (keyType === 'eventE' || keyType === 'eventW') {
           keyType = 'event';
           field = 'event';
+          image = 'event';
         }
 
         tempArray.push({
           id: uuid(),
-          image: id,
-          type,
+          image,
+          type: keyType,
           field,
           value: [level, max],
         });
@@ -151,12 +172,16 @@ function Facility() {
 
     if (tempArray.length !== 0) {
       setFacility(tempArray);
-      saveState('dragalialost-facility', tempArray);
     }
   }, []);
 
   useEffect(() => {
     const { type, field } = state;
+    if (type === 'tree' && field !== 'Flame') {
+      setState(prev => ({ ...prev, field: 'Flame' }));
+      return;
+    }
+
     if (field === '') return;
 
     if (type === 'dojo') {
