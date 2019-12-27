@@ -16,13 +16,20 @@ const SELECT_OPTIONS = {
 };
 
 const SelectItem = memo(function SelectItem(props) {
-  const { name, value, rarity, onChange } = props;
+  const { name, value, rarity, spiral, onChange } = props;
 
   const options = useMemo(() => {
     let options = [];
     switch (name) {
+      case 'mana': {
+        if (spiral && rarity === '5') {
+          options = ['70', ...SELECT_OPTIONS.mana['5']];
+        } else {
+          options = SELECT_OPTIONS[name][rarity];
+        }
+        break;
+      }
       case 'curRarity':
-      case 'mana':
         options = SELECT_OPTIONS[name][rarity];
         break;
       case 'ex':
@@ -34,7 +41,7 @@ const SelectItem = memo(function SelectItem(props) {
     }
 
     return options.map(val => ({ value: val, label: val }));
-  }, [name, rarity]);
+  }, [name, rarity, spiral]);
 
   const disabled = options.length < 2;
 

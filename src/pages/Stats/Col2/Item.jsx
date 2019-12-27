@@ -27,10 +27,16 @@ function Item({ focused, item, lang, theme, updateItem }) {
 
   const changeInput = e => {
     const { name, value } = e.target;
-    const key1 = name === 'level' ? focused : name;
-    const r = focused === 'adventurer' ? curRarity : rarity;
 
-    const max = getLimit(key1, r, unbind);
+    let max;
+    if (focused === 'adventurer' && item.breakLimit === 5) {
+      max = 100;
+    } else {
+      const key1 = name === 'level' ? focused : name;
+      const r = focused === 'adventurer' ? curRarity : rarity;
+      max = getLimit(key1, r, unbind);
+    }
+
     const val = value > max ? max : value;
     if (item[name] === val) return;
     updateItem({ itemKey: focused, updates: { [name]: val } });
@@ -51,7 +57,12 @@ function Item({ focused, item, lang, theme, updateItem }) {
         break;
       }
       case 'mana':
-        updates.ex = value === '50' ? '4' : '0';
+        updates.ex = value >= '50' ? '4' : '0';
+
+        if (value === '70') {
+          updates.level = 100;
+        }
+
         break;
       case 'ex':
         updates = {
@@ -129,6 +140,7 @@ function Item({ focused, item, lang, theme, updateItem }) {
                 name={key}
                 value={value}
                 rarity={r}
+                spiral={item.breakLimit === 5}
                 onChange={handleChange}
               />
             </div>

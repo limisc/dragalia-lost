@@ -12,7 +12,7 @@ const calcAdventurerMight = adventurer => {
   if (mana === '0') {
     abilityMight = 0;
   } else {
-    const index = ['10', '20', '30', '40', '45', '50'].indexOf(mana);
+    const index = ['10', '20', '30', '40', '45', '50', '70'].indexOf(mana);
     abilityMight = might[index];
   }
 

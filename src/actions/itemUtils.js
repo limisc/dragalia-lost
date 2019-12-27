@@ -14,10 +14,12 @@ export const modifyNewItem = (itemKey, item) => {
 
   switch (itemKey) {
     case 'adventurer': {
+      const { breakLimit } = item;
       updates = {
         ...updates,
         curRarity: rarity,
-        mana: '50',
+        level: breakLimit === 5 ? 100 : level,
+        mana: breakLimit === 5 ? '70' : '50',
         ex: '4',
       };
       break;
