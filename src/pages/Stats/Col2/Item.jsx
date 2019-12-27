@@ -56,14 +56,18 @@ function Item({ focused, item, lang, theme, updateItem }) {
         };
         break;
       }
-      case 'mana':
+      case 'mana': {
+        const limit = getLimit(focused, curRarity);
         updates.ex = value >= '50' ? '4' : '0';
 
         if (value === '70') {
           updates.level = 100;
+        } else if (level > limit) {
+          updates.level = limit;
         }
 
         break;
+      }
       case 'ex':
         updates = {
           ...updates,
