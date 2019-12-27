@@ -7,6 +7,7 @@ const adventurer = {
       zh: '马蒂',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -50,6 +51,7 @@ const adventurer = {
       zh: '俄里翁',
     },
     abbr: 'o',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -93,6 +95,7 @@ const adventurer = {
       zh: '夏迪',
     },
     abbr: 'z',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -146,6 +149,7 @@ const adventurer = {
       zh: '莱蒙德',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -189,6 +193,7 @@ const adventurer = {
       zh: '罗德里戈',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -242,24 +247,26 @@ const adventurer = {
       zh: '尤蒂尔',
     },
     abbr: 'e',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1020002',
-        title: "Dragon's Claws ",
+        title: "Dragon's Claws IV",
       },
       {
-        image: '1030006',
-        title: 'Stun Res +100%',
+        image: '1030026',
+        title: 'Potent Stun Res +100%',
       },
       {
         image: '1010003',
-        title: 'Player EXP +15%',
+        title: "Dragon's Dominance",
       },
     ],
     image: '100001_01',
     max: [429, 288],
+    maxAdd: [514, 345],
     mcBonus: [
       [50, 33],
       [108, 72],
@@ -267,8 +274,9 @@ const adventurer = {
       [234, 157],
       [263, 176],
       [287, 192],
+      [344, 230],
     ],
-    might: [120, 180, 200, 240, 260, 260],
+    might: [120, 180, 200, 240, 260, 260, 360],
     min: [
       [42, 28],
       [60, 40],
@@ -285,30 +293,36 @@ const adventurer = {
       zh: '卡尔',
     },
     abbr: 'k',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1020002',
-        title: "Slayer's Strength +5%",
+        title: "Slayer's Flurry Strength I",
       },
       {
-        image: '1030010',
-        title: 'Sleep Res +100%',
+        image: '1030027',
+        title: 'Potent Sleep Res +100%',
       },
       {
         image: '1020002',
-        title: 'HP 70% = Strength +8%',
+        title: 'HP 70% = Strength +15%',
       },
     ],
     image: '110008_01',
     incSTR: [
+      {
+        mc: 52,
+        value: 15,
+      },
       {
         mc: 45,
         value: 8,
       },
     ],
     max: [461, 278],
+    maxAdd: [553, 333],
     mcBonus: [
       [54, 32],
       [116, 69],
@@ -316,8 +330,9 @@ const adventurer = {
       [251, 150],
       [282, 168],
       [308, 188],
+      [369, 225],
     ],
-    might: [120, 120, 140, 180, 240, 240],
+    might: [120, 120, 140, 180, 240, 240, 360],
     min: [
       [45, 27],
       [56, 34],
@@ -334,6 +349,7 @@ const adventurer = {
       zh: '塞蕾娜',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -377,6 +393,7 @@ const adventurer = {
       zh: '欧蒂塔',
     },
     abbr: 'o',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -420,6 +437,7 @@ const adventurer = {
       zh: '苦海',
     },
     abbr: 'kh',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -463,6 +481,7 @@ const adventurer = {
       zh: '欧蒂塔',
     },
     abbr: 'o',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -516,6 +535,7 @@ const adventurer = {
       zh: '贝尔扎克',
     },
     abbr: 'b',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -559,6 +579,7 @@ const adventurer = {
       zh: '亚斯拉姆',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -602,24 +623,26 @@ const adventurer = {
       zh: '纳杰夫',
     },
     abbr: 'n',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1020002',
-        title: "Slayer's Strength +6%",
+        title: "Slayer's Flurry Strength I",
       },
       {
-        image: '1030010',
-        title: 'Sleep Res +100%',
+        image: '1030027',
+        title: 'Potent Sleep Res +100%',
       },
       {
-        image: '1010007',
-        title: 'Skill Prep +100%',
+        image: '1010029',
+        title: "Flame Blades' Protection",
       },
     ],
     image: '110266_01',
     max: [452, 302],
+    maxAdd: [542, 362],
     mcBonus: [
       [53, 35],
       [114, 76],
@@ -627,8 +650,9 @@ const adventurer = {
       [247, 165],
       [277, 185],
       [302, 203],
+      [362, 243],
     ],
-    might: [140, 220, 240, 280, 300, 300],
+    might: [140, 220, 240, 280, 300, 300, 360],
     min: [
       [44, 29],
       [55, 36],
@@ -645,6 +669,7 @@ const adventurer = {
       zh: '马尔斯',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -688,6 +713,7 @@ const adventurer = {
       zh: '丽雅',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -731,6 +757,7 @@ const adventurer = {
       zh: '阿莱克西斯',
     },
     abbr: 'x',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -774,6 +801,7 @@ const adventurer = {
       zh: '赛丽艾拉',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -817,6 +845,7 @@ const adventurer = {
       zh: '兰扎卜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -860,6 +889,7 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -903,6 +933,7 @@ const adventurer = {
       zh: '阿尔贝尔',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -946,6 +977,7 @@ const adventurer = {
       zh: '阿尔冯斯',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -989,6 +1021,7 @@ const adventurer = {
       zh: '尤蒂尔',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1032,6 +1065,7 @@ const adventurer = {
       zh: '夜天',
     },
     abbr: 'y',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1075,24 +1109,26 @@ const adventurer = {
       zh: '葵',
     },
     abbr: 'a',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1010010',
-        title: 'Overdrive Punisher +8%',
+        title: 'Overdrive Punisher +15%',
+      },
+      {
+        image: '1030027',
+        title: 'Potent Sleep Res +50%',
       },
       {
         image: '1030010',
         title: 'Sleep Res +50%',
       },
-      {
-        image: '1030010',
-        title: 'Sleep Res +25%',
-      },
     ],
     image: '110002_01',
     max: [421, 295],
+    maxAdd: [505, 354],
     mcBonus: [
       [49, 34],
       [106, 74],
@@ -1100,8 +1136,9 @@ const adventurer = {
       [230, 161],
       [258, 181],
       [282, 199],
+      [338, 238],
     ],
-    might: [80, 80, 100, 120, 160, 160],
+    might: [80, 80, 100, 120, 160, 160, 280],
     min: [
       [41, 29],
       [51, 36],
@@ -1118,6 +1155,7 @@ const adventurer = {
       zh: '十郎太',
     },
     abbr: 'j',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1161,6 +1199,7 @@ const adventurer = {
       zh: '米罗蒂',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1204,6 +1243,7 @@ const adventurer = {
       zh: '爱德华',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1257,6 +1297,7 @@ const adventurer = {
       zh: '太郎',
     },
     abbr: 't',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1300,6 +1341,7 @@ const adventurer = {
       zh: '莱姬希',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1343,6 +1385,7 @@ const adventurer = {
       zh: '赛丽艾拉',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1392,6 +1435,7 @@ const adventurer = {
       zh: '兰扎卜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -1435,6 +1479,7 @@ const adventurer = {
       zh: '武藏',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1478,6 +1523,7 @@ const adventurer = {
       zh: '阿迪斯',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1521,6 +1567,7 @@ const adventurer = {
       zh: '八千代',
     },
     abbr: 'y',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1564,6 +1611,7 @@ const adventurer = {
       zh: '杜拉尔德',
     },
     abbr: 'd',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1617,6 +1665,7 @@ const adventurer = {
       zh: '米科特',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1660,6 +1709,7 @@ const adventurer = {
       zh: '雷吉娜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -1703,6 +1753,7 @@ const adventurer = {
       zh: '维克托',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1756,6 +1807,7 @@ const adventurer = {
       zh: '夏迪',
     },
     abbr: 'z',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -1799,6 +1851,7 @@ const adventurer = {
       zh: '家康',
     },
     abbr: 'i',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1842,6 +1895,7 @@ const adventurer = {
       zh: '娜茨',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -1885,24 +1939,26 @@ const adventurer = {
       zh: '拉辛',
     },
     abbr: 'r',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1020010',
-        title: 'Flurry Devastation +8%',
+        title: 'Flurry Devastation +15%',
       },
       {
-        image: '1030007',
-        title: 'Curse Res +50%',
+        image: '1030026',
+        title: 'Potent Stun Res +50%',
       },
       {
-        image: '1030007',
-        title: 'Curse Res +25%',
+        image: '1030006',
+        title: 'Stun Res +50%',
       },
     ],
     image: '110005_01',
     max: [454, 270],
+    maxAdd: [544, 324],
     mcBonus: [
       [53, 31],
       [114, 67],
@@ -1910,8 +1966,9 @@ const adventurer = {
       [247, 146],
       [277, 164],
       [304, 182],
+      [364, 218],
     ],
-    might: [80, 80, 100, 120, 160, 160],
+    might: [80, 80, 100, 120, 160, 160, 280],
     min: [
       [44, 26],
       [55, 32],
@@ -1928,6 +1985,7 @@ const adventurer = {
       zh: '弗兰切斯卡',
     },
     abbr: 'f',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -1971,6 +2029,7 @@ const adventurer = {
       zh: '伊尔凡',
     },
     abbr: 'i',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2014,6 +2073,7 @@ const adventurer = {
       zh: '华兹',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2057,6 +2117,7 @@ const adventurer = {
       zh: '维特',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2100,6 +2161,7 @@ const adventurer = {
       zh: '梅露莎',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -2143,6 +2205,7 @@ const adventurer = {
       zh: '勇也',
     },
     abbr: 'y',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -2196,6 +2259,7 @@ const adventurer = {
       zh: '卢塔',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2239,6 +2303,7 @@ const adventurer = {
       zh: '奥尔森',
     },
     abbr: 'o',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2282,6 +2347,7 @@ const adventurer = {
       zh: '卢吉娜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2325,6 +2391,7 @@ const adventurer = {
       zh: '苏方',
     },
     abbr: 'sf',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2368,6 +2435,7 @@ const adventurer = {
       zh: '弗里茨',
     },
     abbr: 'f',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2411,6 +2479,7 @@ const adventurer = {
       zh: '芙露露',
     },
     abbr: 'f',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2454,6 +2523,7 @@ const adventurer = {
       zh: '俄里翁',
     },
     abbr: 'o',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2497,6 +2567,7 @@ const adventurer = {
       zh: '沙音',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2540,24 +2611,26 @@ const adventurer = {
       zh: '艾赛莉特',
     },
     abbr: 'e',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
-        image: '1020002',
-        title: 'Flurry Debilitator +20%',
+        image: '1010028',
+        title: 'Flash of Genius',
       },
       {
-        image: '1030010',
-        title: 'Sleep Res +100%',
+        image: '1030027',
+        title: 'Potent Sleep Res +100%',
       },
       {
         image: '1010009',
-        title: 'Broken Punisher +30%',
+        title: 'Broken Punisher +35%',
       },
     ],
     image: '110011_01',
     max: [477, 285],
+    maxAdd: [572, 342],
     mcBonus: [
       [56, 33],
       [120, 71],
@@ -2565,8 +2638,9 @@ const adventurer = {
       [260, 154],
       [292, 173],
       [321, 191],
+      [385, 229],
     ],
-    might: [140, 220, 240, 280, 300, 300],
+    might: [140, 220, 240, 280, 300, 300, 360],
     min: [
       [47, 28],
       [58, 34],
@@ -2583,6 +2657,7 @@ const adventurer = {
       zh: '库菈乌',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2636,6 +2711,7 @@ const adventurer = {
       zh: '葵',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2679,6 +2755,7 @@ const adventurer = {
       zh: '德尔菲',
     },
     abbr: 'd',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2732,6 +2809,7 @@ const adventurer = {
       zh: '雷克斯',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2775,6 +2853,7 @@ const adventurer = {
       zh: '皮多特',
     },
     abbr: 'p',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -2818,6 +2897,7 @@ const adventurer = {
       zh: '伊汉娜',
     },
     abbr: 'j',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -2861,6 +2941,7 @@ const adventurer = {
       zh: '莱纳斯',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -2914,6 +2995,7 @@ const adventurer = {
       zh: '埃里克',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -2957,6 +3039,7 @@ const adventurer = {
       zh: '凡妮莎',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3000,6 +3083,7 @@ const adventurer = {
       zh: '悦',
     },
     abbr: 'y',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3043,6 +3127,7 @@ const adventurer = {
       zh: '卡丽娜',
     },
     abbr: 'k',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3086,6 +3171,7 @@ const adventurer = {
       zh: '兰扎卜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3129,6 +3215,7 @@ const adventurer = {
       zh: '卢卡',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3182,6 +3269,7 @@ const adventurer = {
       zh: '山茶花',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3225,6 +3313,7 @@ const adventurer = {
       zh: '罗吉娜',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3268,6 +3357,7 @@ const adventurer = {
       zh: '穆穆',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3311,6 +3401,7 @@ const adventurer = {
       zh: '朱丽叶',
     },
     abbr: 'j',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3354,6 +3445,7 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3397,6 +3489,7 @@ const adventurer = {
       zh: '林佑',
     },
     abbr: 'ly',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3440,6 +3533,7 @@ const adventurer = {
       zh: '朱丽叶',
     },
     abbr: 'j',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3483,6 +3577,7 @@ const adventurer = {
       zh: '马萝拉',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3526,6 +3621,7 @@ const adventurer = {
       zh: '库格尔',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3569,24 +3665,26 @@ const adventurer = {
       zh: '阿兰',
     },
     abbr: 'a',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Flame',
     icon: [
       {
         image: '1020003',
-        title: 'Last Defense +50%',
+        title: 'Last Defense +0%',
+      },
+      {
+        image: '1030026',
+        title: 'Potent Stun Res +50%',
       },
       {
         image: '1030006',
         title: 'Stun Res +50%',
       },
-      {
-        image: '1030006',
-        title: 'Stun Res +25%',
-      },
     ],
     image: '110001_01',
     max: [470, 262],
+    maxAdd: [564, 314],
     mcBonus: [
       [55, 30],
       [118, 65],
@@ -3594,8 +3692,9 @@ const adventurer = {
       [256, 142],
       [287, 159],
       [316, 176],
+      [379, 211],
     ],
-    might: [80, 80, 100, 120, 160, 160],
+    might: [80, 80, 100, 120, 160, 160, 280],
     min: [
       [46, 25],
       [57, 31],
@@ -3612,6 +3711,7 @@ const adventurer = {
       zh: '休贝尔',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3655,6 +3755,7 @@ const adventurer = {
       zh: '让',
     },
     abbr: 'j',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3698,6 +3799,7 @@ const adventurer = {
       zh: '马尔卡',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -3751,6 +3853,7 @@ const adventurer = {
       zh: '吉斯',
     },
     abbr: 'z',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -3794,6 +3897,7 @@ const adventurer = {
       zh: '三藏',
     },
     abbr: 'xz',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3837,6 +3941,7 @@ const adventurer = {
       zh: '艾玛',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -3880,6 +3985,7 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -3923,6 +4029,7 @@ const adventurer = {
       zh: '艾露',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -3966,6 +4073,7 @@ const adventurer = {
       zh: '皮雅茜',
     },
     abbr: 'p',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -4019,6 +4127,7 @@ const adventurer = {
       zh: '梁泉',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -4062,24 +4171,26 @@ const adventurer = {
       zh: '牡丹',
     },
     abbr: 'b',
+    breakLimit: 5,
     defCoef: 10,
     element: 'Shadow',
     icon: [
       {
         image: '1060001',
-        title: "Thaumian's Bane +25%",
+        title: "Thaumian's Bane +35%",
       },
       {
-        image: '1030004',
-        title: 'Paralysis Res +50%',
+        image: '1030028',
+        title: 'Potent Paralysis Res +100%',
       },
       {
         image: '1010007',
-        title: 'Skill Prep +50%',
+        title: 'Skill Prep +100% & Skill Charge',
       },
     ],
     image: '110312_01',
     max: [470, 263],
+    maxAdd: [564, 315],
     mcBonus: [
       [55, 30],
       [118, 65],
@@ -4087,8 +4198,9 @@ const adventurer = {
       [256, 142],
       [287, 159],
       [315, 176],
+      [378, 211],
     ],
-    might: [100, 100, 120, 140, 200, 200],
+    might: [100, 100, 120, 140, 200, 200, 360],
     min: [
       [46, 25],
       [46, 25],
@@ -4105,6 +4217,7 @@ const adventurer = {
       zh: '帕蒂亚',
     },
     abbr: 'p',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -4148,6 +4261,7 @@ const adventurer = {
       zh: '穆穆',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Flame',
     icon: [
@@ -4191,6 +4305,7 @@ const adventurer = {
       zh: '扎因弗拉德',
     },
     abbr: 'x',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -4234,6 +4349,7 @@ const adventurer = {
       zh: '菲约尔姆',
     },
     abbr: 'f',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Water',
     icon: [
@@ -4277,6 +4393,7 @@ const adventurer = {
       zh: '加斯特',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Wind',
     icon: [
@@ -4330,6 +4447,7 @@ const adventurer = {
       zh: '安妮利艾',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -4373,6 +4491,7 @@ const adventurer = {
       zh: '埃尔菲莉丝',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Light',
     icon: [
@@ -4416,6 +4535,7 @@ const adventurer = {
       zh: '拉托妮',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 10,
     element: 'Shadow',
     icon: [
@@ -4459,24 +4579,26 @@ const adventurer = {
       zh: '乔',
     },
     abbr: 'j',
+    breakLimit: 5,
     defCoef: 8,
     element: 'Flame',
     icon: [
       {
         image: '1040002',
-        title: 'Full HP = Burn +40%',
+        title: 'Full HP = Burn +70%',
+      },
+      {
+        image: '1030026',
+        title: 'Potent Stun Res +50%',
       },
       {
         image: '1030006',
         title: 'Stun Res +50%',
       },
-      {
-        image: '1030006',
-        title: 'Stun Res +25%',
-      },
     ],
     image: '110003_01',
     max: [433, 281],
+    maxAdd: [519, 337],
     mcBonus: [
       [50, 33],
       [108, 71],
@@ -4484,8 +4606,9 @@ const adventurer = {
       [235, 154],
       [264, 173],
       [291, 189],
+      [349, 226],
     ],
-    might: [90, 90, 100, 120, 160, 160],
+    might: [90, 90, 100, 120, 160, 160, 280],
     min: [
       [42, 27],
       [52, 34],
@@ -4502,6 +4625,7 @@ const adventurer = {
       zh: '威克',
     },
     abbr: 'w',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -4545,6 +4669,7 @@ const adventurer = {
       zh: '菲丽雅',
     },
     abbr: 'p',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4598,6 +4723,7 @@ const adventurer = {
       zh: '马萝拉',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4641,6 +4767,7 @@ const adventurer = {
       zh: '艾赛莉特',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4684,6 +4811,7 @@ const adventurer = {
       zh: '奈法利耶',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -4727,6 +4855,7 @@ const adventurer = {
       zh: '艾蕾欧诺拉',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -4770,6 +4899,7 @@ const adventurer = {
       zh: '卢卡',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4823,6 +4953,7 @@ const adventurer = {
       zh: '乌尔嘉',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4866,6 +4997,7 @@ const adventurer = {
       zh: '埃利亚斯',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -4909,6 +5041,7 @@ const adventurer = {
       zh: '诺斯通',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -4952,6 +5085,7 @@ const adventurer = {
       zh: '希里丝',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -4995,6 +5129,7 @@ const adventurer = {
       zh: '切尔茜',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5038,6 +5173,7 @@ const adventurer = {
       zh: '拉拉诺亚',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5081,6 +5217,7 @@ const adventurer = {
       zh: '洛依泽',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5124,6 +5261,7 @@ const adventurer = {
       zh: '霍克',
     },
     abbr: 'h',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5167,6 +5305,7 @@ const adventurer = {
       zh: '库菈乌',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5210,6 +5349,7 @@ const adventurer = {
       zh: '奈法利耶',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5253,24 +5393,26 @@ const adventurer = {
       zh: '桑妮雅',
     },
     abbr: 'x',
+    breakLimit: 5,
     defCoef: 8,
     element: 'Flame',
     icon: [
       {
         image: '1010002',
-        title: 'Skill Damage +20%',
+        title: 'Skill Damage +35%',
+      },
+      {
+        image: '1030026',
+        title: 'Potent Stun Res +50%',
       },
       {
         image: '1030006',
         title: 'Stun Res +50%',
       },
-      {
-        image: '1030006',
-        title: 'Stun Res +25%',
-      },
     ],
     image: '110004_01',
     max: [425, 291],
+    maxAdd: [510, 349],
     mcBonus: [
       [49, 34],
       [106, 73],
@@ -5278,8 +5420,9 @@ const adventurer = {
       [231, 158],
       [259, 177],
       [284, 196],
+      [340, 235],
     ],
-    might: [80, 80, 100, 120, 160, 160],
+    might: [80, 80, 100, 120, 160, 160, 280],
     min: [
       [41, 28],
       [51, 35],
@@ -5296,6 +5439,7 @@ const adventurer = {
       zh: '尼古拉',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5339,6 +5483,7 @@ const adventurer = {
       zh: '小蕾',
     },
     abbr: 'xl',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5382,6 +5527,7 @@ const adventurer = {
       zh: '伊露缇米娅',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5425,6 +5571,7 @@ const adventurer = {
       zh: '希诺亚',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5478,6 +5625,7 @@ const adventurer = {
       zh: '阿莱克西斯',
     },
     abbr: 'x',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5521,6 +5669,7 @@ const adventurer = {
       zh: '艾丝蒂尔',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5564,6 +5713,7 @@ const adventurer = {
       zh: '诺艾尔',
     },
     abbr: 'n',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5607,6 +5757,7 @@ const adventurer = {
       zh: '扎因弗拉德',
     },
     abbr: 'x',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5650,6 +5801,7 @@ const adventurer = {
       zh: '天音',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5693,6 +5845,7 @@ const adventurer = {
       zh: '克雷伊曼',
     },
     abbr: 'k',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -5736,6 +5889,7 @@ const adventurer = {
       zh: '梅莉贝尔',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5779,6 +5933,7 @@ const adventurer = {
       zh: '洛克人',
     },
     abbr: 'mm',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -5822,6 +5977,7 @@ const adventurer = {
       zh: '莉莉',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -5875,6 +6031,7 @@ const adventurer = {
       zh: '梅莉贝尔',
     },
     abbr: 'm',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -5918,6 +6075,7 @@ const adventurer = {
       zh: '卢克雷齐娅',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -5961,6 +6119,7 @@ const adventurer = {
       zh: '维洛妮卡',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6004,6 +6163,7 @@ const adventurer = {
       zh: '库菈乌',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6047,24 +6207,26 @@ const adventurer = {
       zh: '卡珊德拉',
     },
     abbr: 'c',
+    breakLimit: 5,
     defCoef: 8,
     element: 'Shadow',
     icon: [
       {
         image: '1010007',
-        title: 'Skill Prep +100%',
+        title: 'Skill Prep +100% & Skill Charge',
       },
       {
-        image: '1030004',
-        title: 'Paralysis Res +100%',
+        image: '1030028',
+        title: 'Potent Paralysis Res +100%',
       },
       {
         image: '1020002',
-        title: 'Resilient Offense +10%',
+        title: 'Resilient Offense +15%',
       },
     ],
     image: '110337_01',
     max: [446, 307],
+    maxAdd: [535, 368],
     mcBonus: [
       [52, 36],
       [112, 77],
@@ -6072,8 +6234,9 @@ const adventurer = {
       [243, 167],
       [273, 187],
       [299, 207],
+      [358, 248],
     ],
-    might: [140, 220, 240, 280, 300, 300],
+    might: [140, 220, 240, 280, 300, 300, 360],
     min: [
       [43, 30],
       [54, 37],
@@ -6090,24 +6253,26 @@ const adventurer = {
       zh: '欧雷因',
     },
     abbr: 'a',
+    breakLimit: 5,
     defCoef: 8,
     element: 'Flame',
     icon: [
       {
         image: '1010002',
-        title: 'HP 70% = Skill Damage +25%',
+        title: 'HP 70% = Skill Damage +40%',
+      },
+      {
+        image: '1030027',
+        title: 'Potent Sleep Res +50%',
       },
       {
         image: '1030010',
         title: 'Sleep Res +50%',
       },
-      {
-        image: '1030010',
-        title: 'Sleep Res +25%',
-      },
     ],
     image: '110006_01',
     max: [458, 266],
+    maxAdd: [549, 319],
     mcBonus: [
       [53, 31],
       [115, 67],
@@ -6115,8 +6280,9 @@ const adventurer = {
       [250, 145],
       [281, 163],
       [307, 179],
+      [368, 214],
     ],
-    might: [80, 80, 100, 120, 160, 160],
+    might: [80, 80, 100, 120, 160, 160, 280],
     min: [
       [45, 26],
       [55, 32],
@@ -6133,6 +6299,7 @@ const adventurer = {
       zh: '里卡多',
     },
     abbr: 'r',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6186,6 +6353,7 @@ const adventurer = {
       zh: '索菲',
     },
     abbr: 's',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6229,6 +6397,7 @@ const adventurer = {
       zh: '霍普',
     },
     abbr: 'h',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6272,6 +6441,7 @@ const adventurer = {
       zh: '艾丝蒂尔',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6315,6 +6485,7 @@ const adventurer = {
       zh: '爱德华',
     },
     abbr: 'e',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6358,6 +6529,7 @@ const adventurer = {
       zh: '维尔莎拉',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6401,6 +6573,7 @@ const adventurer = {
       zh: '卢恩',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6444,6 +6617,7 @@ const adventurer = {
       zh: '塞纳',
     },
     abbr: 't',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6487,6 +6661,7 @@ const adventurer = {
       zh: '艾露',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6530,6 +6705,7 @@ const adventurer = {
       zh: '卢恩',
     },
     abbr: 'l',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6573,6 +6749,7 @@ const adventurer = {
       zh: '桑妮雅',
     },
     abbr: 'x',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6616,6 +6793,7 @@ const adventurer = {
       zh: '伊露缇米娅',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6665,6 +6843,7 @@ const adventurer = {
       zh: '维克塞尔',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6708,6 +6887,7 @@ const adventurer = {
       zh: '菲丽嘉',
     },
     abbr: 'f',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6751,6 +6931,7 @@ const adventurer = {
       zh: '库菈乌',
     },
     abbr: 'c',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -6800,6 +6981,7 @@ const adventurer = {
       zh: '希尔德加德',
     },
     abbr: 'h',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Flame',
     icon: [
@@ -6843,6 +7025,7 @@ const adventurer = {
       zh: '太公望',
     },
     abbr: 'jz',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Water',
     icon: [
@@ -6886,6 +7069,7 @@ const adventurer = {
       zh: '阿加莎',
     },
     abbr: 'a',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Wind',
     icon: [
@@ -6929,6 +7113,7 @@ const adventurer = {
       zh: '希尔德加德',
     },
     abbr: 'h',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Light',
     icon: [
@@ -6972,6 +7157,7 @@ const adventurer = {
       zh: '海因瓦尔德',
     },
     abbr: 'h',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [
@@ -7015,6 +7201,7 @@ const adventurer = {
       zh: '维尔莎拉',
     },
     abbr: 'v',
+    breakLimit: 4,
     defCoef: 8,
     element: 'Shadow',
     icon: [

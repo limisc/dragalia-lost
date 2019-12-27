@@ -1612,6 +1612,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Sword',
   },
+  '30150111': {
+    Id: '30150111',
+    Name: {
+      en: 'Chimeratech Officer',
+      ja: 'キメラテックオフィサー',
+      zh: '奇美拉将校之剑',
+    },
+    abbr: 'co',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '301132_01_50101',
+    max: [189, 680],
+    might: 60,
+    min: [56, 204],
+    rarity: '5',
+    weapon: 'Sword',
+  },
+  '30150112': {
+    Id: '30150112',
+    Name: {
+      en: 'Chimeratech Commander',
+      ja: 'キメラテックジェネラル',
+      zh: '奇美拉统帅之剑',
+    },
+    abbr: 'cc',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '301132_01_50102',
+    max: [270, 972],
+    might: 80,
+    min: [81, 291],
+    rarity: '5',
+    weapon: 'Sword',
+  },
   '30150202': {
     Id: '30150202',
     Name: {
@@ -2297,6 +2341,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Sword',
+  },
+  '30160101': {
+    Id: '30160101',
+    Name: {
+      en: 'Nothung',
+      ja: 'ノートゥング',
+      zh: '诺顿克',
+    },
+    abbr: 'n',
+    element: 'Flame',
+    image: '301138_01_60101',
+    max: [237, 1544],
+    min: [71, 463],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Sword',
   },
@@ -4145,6 +4208,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Blade',
   },
+  '30250108': {
+    Id: '30250108',
+    Name: {
+      en: 'Chimeratech Knight',
+      ja: 'キメラテックナイト',
+      zh: '奇美拉骑士之刀',
+    },
+    abbr: 'ck',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '302123_01_50101',
+    max: [95, 743],
+    might: 60,
+    min: [28, 222],
+    rarity: '5',
+    weapon: 'Blade',
+  },
+  '30250109': {
+    Id: '30250109',
+    Name: {
+      en: 'Chimeratech Lord',
+      ja: 'キメラテックロード',
+      zh: '奇美拉领主之刀',
+    },
+    abbr: 'cl',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '302123_01_50102',
+    max: [158, 1061],
+    might: 80,
+    min: [47, 318],
+    rarity: '5',
+    weapon: 'Blade',
+  },
   '30250201': {
     Id: '30250201',
     Name: {
@@ -4808,6 +4915,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Blade',
+  },
+  '30260101': {
+    Id: '30260101',
+    Name: {
+      en: 'Tyrfing',
+      ja: 'ティルヴィング',
+      zh: '提尔锋',
+    },
+    abbr: 't',
+    element: 'Flame',
+    image: '302129_01_60101',
+    max: [209, 1636],
+    min: [62, 490],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Blade',
   },
@@ -6591,6 +6717,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Dagger',
   },
+  '30350108': {
+    Id: '30350108',
+    Name: {
+      en: 'Chimeratech Fighter',
+      ja: 'キメラテックファイター',
+      zh: '奇美拉战士短剑',
+    },
+    abbr: 'cf',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '303122_01_50101',
+    max: [109, 687],
+    might: 60,
+    min: [32, 206],
+    rarity: '5',
+    weapon: 'Dagger',
+  },
+  '30350109': {
+    Id: '30350109',
+    Name: {
+      en: 'Chimeratech Elite',
+      ja: 'キメラテックストライカー',
+      zh: '奇美拉先锋短剑',
+    },
+    abbr: 'ce',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '303122_01_50102',
+    max: [181, 981],
+    might: 80,
+    min: [54, 294],
+    rarity: '5',
+    weapon: 'Dagger',
+  },
   '30350201': {
     Id: '30350201',
     Name: {
@@ -7182,6 +7352,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Dagger',
+  },
+  '30360101': {
+    Id: '30360101',
+    Name: {
+      en: 'Hrotti',
+      ja: 'フロッティ',
+      zh: '赫若提',
+    },
+    abbr: 'h',
+    element: 'Flame',
+    image: '303128_01_60101',
+    max: [239, 1513],
+    min: [71, 453],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Dagger',
   },
@@ -8846,6 +9035,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Axe',
   },
+  '30450108': {
+    Id: '30450108',
+    Name: {
+      en: 'Chimeratech Warrior',
+      ja: 'キメラテックウォリアー',
+      zh: '奇美拉勇士之斧',
+    },
+    abbr: 'cw',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '304121_01_50101',
+    max: [111, 736],
+    might: 60,
+    min: [33, 220],
+    rarity: '5',
+    weapon: 'Axe',
+  },
+  '30450109': {
+    Id: '30450109',
+    Name: {
+      en: 'Chimeratech Warlord',
+      ja: 'キメラテックバーサーカー',
+      zh: '奇美拉狂战之斧',
+    },
+    abbr: 'cw',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '304121_01_50102',
+    max: [185, 1051],
+    might: 80,
+    min: [55, 315],
+    rarity: '5',
+    weapon: 'Axe',
+  },
   '30450201': {
     Id: '30450201',
     Name: {
@@ -9516,6 +9749,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Axe',
+  },
+  '30460101': {
+    Id: '30460101',
+    Name: {
+      en: 'Mjölnir',
+      ja: 'ミョルニル',
+      zh: '姆乔尔尼尔',
+    },
+    abbr: 'm',
+    element: 'Flame',
+    image: '304127_01_60101',
+    max: [244, 1621],
+    min: [73, 486],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Axe',
   },
@@ -11405,6 +11657,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Lance',
   },
+  '30550108': {
+    Id: '30550108',
+    Name: {
+      en: 'Chimeratech Lancer',
+      ja: 'キメラテックランサー',
+      zh: '奇美拉骑兵之枪',
+    },
+    abbr: 'cl',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '305128_01_50101',
+    max: [121, 673],
+    might: 60,
+    min: [36, 201],
+    rarity: '5',
+    weapon: 'Lance',
+  },
+  '30550109': {
+    Id: '30550109',
+    Name: {
+      en: 'Chimeratech Lancemaster',
+      ja: 'キメラテックトルーパー',
+      zh: '奇美拉骑将之枪',
+    },
+    abbr: 'cl',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '305128_01_50102',
+    max: [202, 962],
+    might: 80,
+    min: [60, 288],
+    rarity: '5',
+    weapon: 'Lance',
+  },
   '30550201': {
     Id: '30550201',
     Name: {
@@ -12049,6 +12345,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Lance',
+  },
+  '30560101': {
+    Id: '30560101',
+    Name: {
+      en: 'Gungnir',
+      ja: 'グングニル',
+      zh: '冈格尼尔',
+    },
+    abbr: 'g',
+    element: 'Flame',
+    image: '305135_01_60101',
+    max: [242, 1575],
+    min: [72, 472],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Lance',
   },
@@ -13815,6 +14130,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Bow',
   },
+  '30650107': {
+    Id: '30650107',
+    Name: {
+      en: 'Chimeratech Archer',
+      ja: 'キメラテックアーチャー',
+      zh: '奇美拉射手之弓',
+    },
+    abbr: 'ca',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '306121_01_50101',
+    max: [106, 673],
+    might: 60,
+    min: [31, 201],
+    rarity: '5',
+    weapon: 'Bow',
+  },
+  '30650108': {
+    Id: '30650108',
+    Name: {
+      en: 'Chimeratech Sniper',
+      ja: 'キメラテックスナイパー',
+      zh: '奇美拉神射之弓',
+    },
+    abbr: 'cs',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '306121_01_50102',
+    max: [176, 961],
+    might: 80,
+    min: [52, 288],
+    rarity: '5',
+    weapon: 'Bow',
+  },
   '30650201': {
     Id: '30650201',
     Name: {
@@ -14451,6 +14810,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Bow',
+  },
+  '30660101': {
+    Id: '30660101',
+    Name: {
+      en: 'Ýdalir',
+      ja: 'イチイバル',
+      zh: '伊奇巴尔',
+    },
+    abbr: 'ý',
+    element: 'Flame',
+    image: '306127_01_60101',
+    max: [232, 1482],
+    min: [69, 444],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Bow',
   },
@@ -16184,6 +16562,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Wand',
   },
+  '30750107': {
+    Id: '30750107',
+    Name: {
+      en: 'Chimeratech Sorcerer',
+      ja: 'キメラテックソーサラー',
+      zh: '奇美拉术士魔杖',
+    },
+    abbr: 'cs',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '307129_01_50101',
+    max: [107, 701],
+    might: 60,
+    min: [32, 210],
+    rarity: '5',
+    weapon: 'Wand',
+  },
+  '30750108': {
+    Id: '30750108',
+    Name: {
+      en: 'Chimeratech Archmage',
+      ja: 'キメラテックウィザード',
+      zh: '奇美拉巫师魔杖',
+    },
+    abbr: 'ca',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '307129_01_50102',
+    max: [178, 1001],
+    might: 80,
+    min: [53, 300],
+    rarity: '5',
+    weapon: 'Wand',
+  },
   '30750202': {
     Id: '30750202',
     Name: {
@@ -16775,6 +17197,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Wand',
+  },
+  '30760101': {
+    Id: '30760101',
+    Name: {
+      en: 'Brísingr',
+      ja: 'ブリーシング',
+      zh: '布里希加曼',
+    },
+    abbr: 'b',
+    element: 'Flame',
+    image: '307135_01_60101',
+    max: [223, 1590],
+    min: [66, 477],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Wand',
   },
@@ -18077,6 +18518,50 @@ const weapon = {
     rarity: '5',
     weapon: 'Staff',
   },
+  '30850107': {
+    Id: '30850107',
+    Name: {
+      en: 'Chimeratech Bishop',
+      ja: 'キメラテックビショップ',
+      zh: '奇美拉主教法杖',
+    },
+    abbr: 'cb',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +2%',
+      },
+    ],
+    image: '308122_01_50101',
+    max: [135, 614],
+    might: 60,
+    min: [40, 184],
+    rarity: '5',
+    weapon: 'Staff',
+  },
+  '30850108': {
+    Id: '30850108',
+    Name: {
+      en: 'Chimeratech Cardinal',
+      ja: 'キメラテックカーディナル',
+      zh: '奇美拉枢机法杖',
+    },
+    abbr: 'cc',
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Flame) Unyielding Offense +4%',
+      },
+    ],
+    image: '308122_01_50102',
+    max: [225, 877],
+    might: 80,
+    min: [67, 263],
+    rarity: '5',
+    weapon: 'Staff',
+  },
   '30850201': {
     Id: '30850201',
     Name: {
@@ -18716,6 +19201,25 @@ const weapon = {
     skill: {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
+    },
+    weapon: 'Staff',
+  },
+  '30860101': {
+    Id: '30860101',
+    Name: {
+      en: 'Gjallarhorn',
+      ja: 'ギャラルホルン',
+      zh: '加拉尔号角',
+    },
+    abbr: 'g',
+    element: 'Flame',
+    image: '308128_01_60101',
+    max: [261, 1467],
+    min: [78, 440],
+    rarity: '6',
+    skill: {
+      image: 'Icon_Skill_030',
+      title: 'Megingjörð',
     },
     weapon: 'Staff',
   },
