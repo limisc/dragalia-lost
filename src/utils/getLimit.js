@@ -53,4 +53,13 @@ const getLimit = (key, rarity, unbind = 4) => {
   }
 };
 
+export const getFacilityMaxLevel = facility => {
+  const { id, type } = facility;
+  if (id === '101501' || id === '101601') {
+    return 35;
+  }
+
+  return LIMIT[type] || 30;
+};
+
 export default getLimit;
