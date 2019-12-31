@@ -2344,6 +2344,21 @@ const weapon = {
     },
     weapon: 'Sword',
   },
+  '30159906': {
+    Id: '30159906',
+    Name: {
+      en: 'Triumphal Breamblade',
+      ja: '必勝祈願の目出鯛剣',
+      zh: '必胜祈愿喜庆鲷剑',
+    },
+    abbr: 'tb',
+    element: '0',
+    image: '301145_01_59901',
+    max: [95, 373],
+    min: [28, 111],
+    rarity: '5',
+    weapon: 'Sword',
+  },
   '30160101': {
     Id: '30160101',
     Name: {
@@ -4918,6 +4933,21 @@ const weapon = {
     },
     weapon: 'Blade',
   },
+  '30259906': {
+    Id: '30259906',
+    Name: {
+      en: 'Evilsbane Kadomatsu',
+      ja: '厄除消除の門松刀',
+      zh: '消灾除厄门松之刀',
+    },
+    abbr: 'ek',
+    element: '0',
+    image: '302136_01_59901',
+    max: [88, 384],
+    min: [26, 115],
+    rarity: '5',
+    weapon: 'Blade',
+  },
   '30260101': {
     Id: '30260101',
     Name: {
@@ -7353,6 +7383,21 @@ const weapon = {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
     },
+    weapon: 'Dagger',
+  },
+  '30359905': {
+    Id: '30359905',
+    Name: {
+      en: 'The Big Cheese',
+      ja: '立身出世の鼠小太刀',
+      zh: '出人头地鼠小太刀',
+    },
+    abbr: 'tbc',
+    element: '0',
+    image: '303135_01_59901',
+    max: [102, 355],
+    min: [30, 106],
+    rarity: '5',
     weapon: 'Dagger',
   },
   '30360101': {
@@ -17198,6 +17243,21 @@ const weapon = {
       image: 'Icon_Skill_014',
       title: 'Mega Buster',
     },
+    weapon: 'Wand',
+  },
+  '30759905': {
+    Id: '30759905',
+    Name: {
+      en: 'Catspaw Rod',
+      ja: '開運招福の猫之手錫',
+      zh: '开运招福猫爪之杖',
+    },
+    abbr: 'cr',
+    element: '0',
+    image: '307142_01_59901',
+    max: [94, 373],
+    min: [28, 111],
+    rarity: '5',
     weapon: 'Wand',
   },
   '30760101': {

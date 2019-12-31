@@ -2350,6 +2350,57 @@ const wyrmprint = {
     rarity: '4',
     resEle: 'Flame',
   },
+  '40040066': {
+    Id: '40040066',
+    Name: {
+      en: "A New Year's Battle",
+      ja: '新しい年のはじまり',
+      zh: '新年伊始',
+    },
+    abbr: 'anyb',
+    icon: [
+      {
+        image: '1020010',
+        title: 'Flurry Devastation +10%',
+      },
+      {
+        image: '1020002',
+        title: 'HP 70% = Strength +8%',
+      },
+    ],
+    image: '400408',
+    incSTR: [8, 5, 3],
+    max: [140, 52],
+    might: [140, 100, 60],
+    min: [21, 7],
+    rarity: '4',
+  },
+  '40040067': {
+    Id: '40040067',
+    Name: {
+      en: 'A Game of Cat and Boar',
+      ja: '猫猪戯画',
+      zh: '猫猪趣画',
+    },
+    abbr: 'agocab',
+    icon: [
+      {
+        image: '1080005',
+        title: 'Shadow Res +10%',
+      },
+      {
+        image: '1010006',
+        title: '(Light) Buff Time +25%',
+      },
+    ],
+    image: '400406',
+    incRES: [10, 8, 5],
+    max: [122, 33],
+    might: [130, 100, 60],
+    min: [18, 4],
+    rarity: '4',
+    resEle: 'Shadow',
+  },
   '40050001': {
     Id: '40050001',
     Name: {
@@ -4456,6 +4507,30 @@ const wyrmprint = {
     incSTR: [15, 13, 10],
     max: [176, 65],
     might: [160, 120, 80],
+    min: [26, 9],
+    rarity: '5',
+  },
+  '40050085': {
+    Id: '40050085',
+    Name: {
+      en: 'The Wyrmclan Duo',
+      ja: '十二竜氏がふたり、参る！',
+      zh: '两位十二龙氏，前来！',
+    },
+    abbr: 'twd',
+    icon: [
+      {
+        image: '1010002',
+        title: 'Skill Damage +30%',
+      },
+      {
+        image: '1020011',
+        title: 'HP 70% = Critical Damage +17%',
+      },
+    ],
+    image: '400407',
+    max: [176, 65],
+    might: [170, 140, 120],
     min: [26, 9],
     rarity: '5',
   },

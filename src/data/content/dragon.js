@@ -1673,6 +1673,32 @@ const dragon = {
     min: [37, 12],
     rarity: '5',
   },
+  '20050410': {
+    Id: '20050410',
+    Name: {
+      en: 'Daikokuten',
+      ja: 'ダイコクテン',
+      zh: '大黑天',
+    },
+    abbr: 'd',
+    element: 'Light',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Light) Strength +55%',
+      },
+      {
+        image: '1020002',
+        title: '(Light) Whirlwind Strength +25%',
+      },
+    ],
+    image: '210110_01',
+    incSTR: [55, 45],
+    max: [371, 124],
+    might: [100, 85],
+    min: [37, 12],
+    rarity: '5',
+  },
   '20050501': {
     Id: '20050501',
     Name: {
@@ -1887,6 +1913,28 @@ const dragon = {
     incSTR: [20, 10],
     max: [221, 77],
     might: [70, 40],
+    min: [22, 7],
+    rarity: '5',
+  },
+  '20050512': {
+    Id: '20050512',
+    Name: {
+      en: 'Ebisu',
+      ja: 'エビス',
+      zh: '惠比寿',
+    },
+    abbr: 'e',
+    element: 'Shadow',
+    icon: [
+      {
+        image: '1020001',
+        title: '(Shadow) HP +40%',
+      },
+    ],
+    image: '210114_01',
+    incHP: [40, 30],
+    max: [221, 77],
+    might: [70, 60],
     min: [22, 7],
     rarity: '5',
   },

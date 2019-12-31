@@ -43,50 +43,6 @@ const adventurer = {
     rarity: '3',
     weapon: 'Sword',
   },
-  '10130103': {
-    Id: '10130103',
-    Name: {
-      en: 'Orion',
-      ja: 'オリオン',
-      zh: '俄里翁',
-    },
-    abbr: 'o',
-    breakLimit: 4,
-    defCoef: 10,
-    element: 'Flame',
-    icon: [
-      {
-        image: '1020002',
-        title: 'Strength Doublebuff +8%',
-      },
-      {
-        image: '1030007',
-        title: 'Curse Res +50%',
-      },
-      {
-        image: '1030007',
-        title: 'Curse Res +25%',
-      },
-    ],
-    image: '110052_03',
-    max: [466, 282],
-    mcBonus: [
-      [54, 33],
-      [117, 71],
-      [191, 116],
-      [254, 154],
-      [285, 173],
-      [312, 189],
-    ],
-    might: [80, 80, 100, 120, 160, 160],
-    min: [
-      [45, 27],
-      [56, 34],
-      [66, 40],
-    ],
-    rarity: '3',
-    weapon: 'Sword',
-  },
   '10130201': {
     Id: '10130201',
     Name: {
@@ -463,60 +419,6 @@ const adventurer = {
       [239, 158],
       [268, 177],
       [294, 196],
-    ],
-    might: [120, 120, 140, 180, 240, 240],
-    min: [
-      [43, 28],
-      [53, 35],
-      [62, 41],
-    ],
-    rarity: '4',
-    weapon: 'Sword',
-  },
-  '10140401': {
-    Id: '10140401',
-    Name: {
-      en: 'Odetta',
-      ja: 'オデッタ',
-      zh: '欧蒂塔',
-    },
-    abbr: 'o',
-    breakLimit: 4,
-    defCoef: 10,
-    element: 'Light',
-    icon: [
-      {
-        image: '1020002',
-        title: 'HP 70% = Strength +10%',
-      },
-      {
-        image: '1030001',
-        title: 'Poison Res +100%',
-      },
-      {
-        image: '1010006',
-        title: 'Buff Time +20%',
-      },
-    ],
-    image: '110301_01',
-    incSTR: [
-      {
-        mc: 30,
-        value: 10,
-      },
-      {
-        mc: 10,
-        value: 8,
-      },
-    ],
-    max: [440, 291],
-    mcBonus: [
-      [51, 34],
-      [110, 73],
-      [180, 119],
-      [239, 158],
-      [268, 177],
-      [295, 195],
     ],
     might: [120, 120, 140, 180, 240, 240],
     min: [
@@ -1603,6 +1505,50 @@ const adventurer = {
     rarity: '4',
     weapon: 'Blade',
   },
+  '10240402': {
+    Id: '10240402',
+    Name: {
+      en: 'Hanabusa',
+      ja: 'ハナブサ',
+      zh: '花房',
+    },
+    abbr: 'h',
+    breakLimit: 4,
+    defCoef: 10,
+    element: 'Light',
+    icon: [
+      {
+        image: '1060004',
+        title: "Therion's Bane +25%",
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +50%',
+      },
+      {
+        image: '1010006',
+        title: 'Frenzied Dance',
+      },
+    ],
+    image: '110348_01',
+    max: [446, 280],
+    mcBonus: [
+      [52, 32],
+      [112, 70],
+      [183, 115],
+      [243, 153],
+      [273, 172],
+      [298, 188],
+    ],
+    might: [100, 100, 120, 140, 200, 200],
+    min: [
+      [43, 27],
+      [43, 27],
+      [63, 39],
+    ],
+    rarity: '4',
+    weapon: 'Blade',
+  },
   '10240502': {
     Id: '10240502',
     Name: {
@@ -1745,6 +1691,50 @@ const adventurer = {
     rarity: '5',
     weapon: 'Blade',
   },
+  '10250103': {
+    Id: '10250103',
+    Name: {
+      en: 'Nobunaga',
+      ja: 'ノブナガ',
+      zh: '信长',
+    },
+    abbr: 'n',
+    breakLimit: 4,
+    defCoef: 10,
+    element: 'Flame',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Flurry Strength +20%',
+      },
+      {
+        image: '1030010',
+        title: 'Sleep Res +100%',
+      },
+      {
+        image: '1010031',
+        title: "World's Dream II",
+      },
+    ],
+    image: '110346_01',
+    max: [443, 311],
+    mcBonus: [
+      [52, 36],
+      [112, 78],
+      [183, 128],
+      [243, 170],
+      [273, 191],
+      [297, 209],
+    ],
+    might: [140, 220, 240, 280, 300, 300],
+    min: [
+      [43, 30],
+      [54, 37],
+      [62, 44],
+    ],
+    rarity: '5',
+    weapon: 'Blade',
+  },
   '10250301': {
     Id: '10250301',
     Name: {
@@ -1851,25 +1841,26 @@ const adventurer = {
       zh: '家康',
     },
     abbr: 'i',
-    breakLimit: 4,
+    breakLimit: 5,
     defCoef: 10,
     element: 'Shadow',
     icon: [
       {
         image: '1020010',
-        title: 'HP 70% = Critical Rate +10%',
+        title: 'HP 70% = Critical Rate +13%',
       },
       {
-        image: '1030004',
-        title: 'Paralysis Res +100%',
+        image: '1030028',
+        title: 'Potent Paralysis Res +100%',
       },
       {
         image: '1020011',
-        title: 'Critical Damage +20%',
+        title: 'Critical Damage +30%',
       },
     ],
     image: '110313_01',
     max: [442, 312],
+    maxAdd: [530, 374],
     mcBonus: [
       [51, 36],
       [111, 78],
@@ -1877,8 +1868,9 @@ const adventurer = {
       [242, 170],
       [272, 191],
       [297, 209],
+      [356, 250],
     ],
-    might: [140, 220, 240, 280, 300, 300],
+    might: [140, 220, 240, 280, 300, 300, 360],
     min: [
       [43, 30],
       [53, 38],
@@ -2743,6 +2735,50 @@ const adventurer = {
       [47, 28],
       [58, 34],
       [68, 40],
+    ],
+    rarity: '5',
+    weapon: 'Dagger',
+  },
+  '10350402': {
+    Id: '10350402',
+    Name: {
+      en: 'Mitsuhide',
+      ja: 'ミツヒデ',
+      zh: '光秀',
+    },
+    abbr: 'm',
+    breakLimit: 4,
+    defCoef: 10,
+    element: 'Light',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Flurry Strength +20%',
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +100%',
+      },
+      {
+        image: '1070004',
+        title: 'Paralyzed Punisher +30%',
+      },
+    ],
+    image: '110345_01',
+    max: [456, 297],
+    mcBonus: [
+      [53, 34],
+      [115, 74],
+      [188, 121],
+      [250, 161],
+      [281, 181],
+      [307, 200],
+    ],
+    might: [140, 220, 240, 280, 300, 300],
+    min: [
+      [45, 29],
+      [55, 36],
+      [64, 42],
     ],
     rarity: '5',
     weapon: 'Dagger',
@@ -5833,6 +5869,62 @@ const adventurer = {
       [43, 29],
       [53, 36],
       [61, 41],
+    ],
+    rarity: '4',
+    weapon: 'Wand',
+  },
+  '10740402': {
+    Id: '10740402',
+    Name: {
+      en: 'Chitose',
+      ja: 'チトセ',
+      zh: '千岁',
+    },
+    abbr: 'c',
+    breakLimit: 4,
+    defCoef: 8,
+    element: 'Light',
+    icon: [
+      {
+        image: '1020022',
+        title: "Love's Shield III",
+      },
+      {
+        image: '1030007',
+        title: 'Curse Res +100%',
+      },
+      {
+        image: '1010030',
+        title: 'Defensive Stance II',
+      },
+    ],
+    image: '110347_01',
+    incDEF: [
+      {
+        mc: 45,
+        value: 20,
+      },
+    ],
+    incSTR: [
+      {
+        mc: 45,
+        value: -10,
+      },
+    ],
+    max: [482, 267],
+    mcBonus: [
+      [56, 31],
+      [121, 67],
+      [198, 110],
+      [263, 146],
+      [295, 164],
+      [323, 180],
+    ],
+    might: [120, 120, 140, 180, 240, 240],
+    min: [
+      [47, 26],
+      [58, 32],
+      [68, 37],
     ],
     rarity: '4',
     weapon: 'Wand',
