@@ -1,9 +1,9 @@
 const initHalidom = {
   adventurer_Flame_altar_0: { id: '100401', type: 'altar', level: 35 },
   adventurer_Flame_altar_1: { id: '100401', type: 'altar', level: 35 },
-  adventurer_Flame_eventE_0: { id: '102001', type: 'eventE', level: 30 },
+  adventurer_Flame_eventE_0: { id: '102001', type: 'eventE', level: 35 },
   adventurer_Flame_slime_0: { id: '101901', type: 'slime', level: 15 },
-  adventurer_Flame_tree_0: { id: '102301', type: 'tree', level: 0 },
+  adventurer_Flame_tree_0: { id: '102301', type: 'tree', level: 15 },
   adventurer_Water_altar_0: { id: '100402', type: 'altar', level: 35 },
   adventurer_Water_altar_1: { id: '100402', type: 'altar', level: 35 },
   adventurer_Water_eventE_0: { id: '101601', type: 'eventE', level: 35 },
