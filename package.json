@@ -6,7 +6,7 @@
     "clsx": "^1.0.4",
     "deepmerge": "^4.2.2",
     "lz-string": "^1.4.4",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "re-reselect": "^3.4.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -19,7 +19,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "smoothscroll-polyfill": "^0.4.4",
-    "uuid": "^3.3.3"
+    "uuid": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,11 +44,11 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-import": "^2.19.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.18.0",
     "prettier": "^1.19.1"
   }
 }
