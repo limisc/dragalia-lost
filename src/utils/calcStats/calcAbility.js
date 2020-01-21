@@ -9,8 +9,12 @@ const calcAdventurer = adventurer => {
   // ];
   ['incSTR', 'incDEF'].forEach(key => {
     if (includes(adventurer, key)) {
-      const { value } = adventurer[key].find(el => mana >= el.mc);
-      detail[key] = value;
+      const ability = adventurer[key].find(el => mana >= el.mc);
+
+      if (ability) {
+        const { value } = ability;
+        detail[key] = value;
+      }
     }
   });
 
