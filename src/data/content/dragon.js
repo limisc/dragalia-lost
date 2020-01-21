@@ -1456,6 +1456,32 @@ const dragon = {
     min: [36, 12],
     rarity: '5',
   },
+  '20050312': {
+    Id: '20050312',
+    Name: {
+      en: 'AC-011 Garland',
+      ja: 'AC-011 ガーランド',
+      zh: 'AC-011 加兰德',
+    },
+    abbr: 'ag',
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: '(Wind) Strength +50%',
+      },
+      {
+        image: '1020022',
+        title: '(Wind) Dauntless Rampart II',
+      },
+    ],
+    image: '210117_01',
+    incSTR: [50, 35],
+    max: [369, 126],
+    might: [100, 70],
+    min: [36, 12],
+    rarity: '5',
+  },
   '20050401': {
     Id: '20050401',
     Name: {

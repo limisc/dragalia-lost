@@ -2401,6 +2401,26 @@ const wyrmprint = {
     rarity: '4',
     resEle: 'Shadow',
   },
+  '40040068': {
+    Id: '40040068',
+    Name: {
+      en: 'The Plaguebringer',
+      ja: '病ヲもたらスもの',
+      zh: '疫病之源',
+    },
+    abbr: 'tp',
+    icon: [
+      {
+        image: '1070001',
+        title: 'Poisoned Punisher +25%',
+      },
+    ],
+    image: '400410',
+    max: [142, 50],
+    might: [80, 60, 40],
+    min: [21, 7],
+    rarity: '4',
+  },
   '40050001': {
     Id: '40050001',
     Name: {
@@ -4531,6 +4551,30 @@ const wyrmprint = {
     image: '400407',
     max: [176, 65],
     might: [170, 140, 120],
+    min: [26, 9],
+    rarity: '5',
+  },
+  '40050086': {
+    Id: '40050086',
+    Name: {
+      en: "A Dog's Day",
+      ja: '過日のメモリア',
+      zh: '往昔回忆',
+    },
+    abbr: 'add',
+    icon: [
+      {
+        image: '1020004',
+        title: '(Wind) Skill Haste +10%',
+      },
+      {
+        image: '1010006',
+        title: '(Wind) Buff Time +25%',
+      },
+    ],
+    image: '400409',
+    max: [178, 62],
+    might: [150, 120, 80],
     min: [26, 9],
     rarity: '5',
   },

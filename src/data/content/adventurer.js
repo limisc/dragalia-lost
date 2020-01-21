@@ -3707,7 +3707,7 @@ const adventurer = {
     icon: [
       {
         image: '1020003',
-        title: 'Last Defense +0%',
+        title: 'Last Defense +100%',
       },
       {
         image: '1030026',
@@ -4475,6 +4475,50 @@ const adventurer = {
     rarity: '5',
     weapon: 'Lance',
   },
+  '10550302': {
+    Id: '10550302',
+    Name: {
+      en: 'Kirsty',
+      ja: 'キルスティ',
+      zh: '科丝蒂',
+    },
+    abbr: 'k',
+    breakLimit: 4,
+    defCoef: 10,
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: 'Dauntless Strength +20%',
+      },
+      {
+        image: '1030009',
+        title: 'Bog Res +100%',
+      },
+      {
+        image: '1070001',
+        title: 'Poisoned Punisher +30%',
+      },
+    ],
+    image: '110353_01',
+    max: [449, 305],
+    mcBonus: [
+      [52, 35],
+      [113, 76],
+      [185, 124],
+      [246, 165],
+      [276, 185],
+      [302, 204],
+    ],
+    might: [140, 220, 240, 280, 300, 300],
+    min: [
+      [44, 30],
+      [54, 37],
+      [63, 43],
+    ],
+    rarity: '5',
+    weapon: 'Lance',
+  },
   '10550401': {
     Id: '10550401',
     Name: {
@@ -4909,6 +4953,60 @@ const adventurer = {
       },
     ],
     image: '110031_01',
+    max: [443, 286],
+    mcBonus: [
+      [52, 33],
+      [112, 71],
+      [183, 116],
+      [243, 154],
+      [273, 173],
+      [298, 192],
+    ],
+    might: [120, 120, 140, 180, 240, 240],
+    min: [
+      [43, 28],
+      [54, 34],
+      [62, 40],
+    ],
+    rarity: '4',
+    weapon: 'Bow',
+  },
+  '10640302': {
+    Id: '10640302',
+    Name: {
+      en: 'Joachim',
+      ja: 'ヨアキム',
+      zh: '约亚希姆',
+    },
+    abbr: 'j',
+    breakLimit: 4,
+    defCoef: 8,
+    element: 'Wind',
+    icon: [
+      {
+        image: '1020002',
+        title: 'HP 70% = Strength +10%',
+      },
+      {
+        image: '1030009',
+        title: 'Bog Res +100%',
+      },
+      {
+        image: '1070001',
+        title: 'Poisoned Punisher +20%',
+      },
+    ],
+    image: '110350_01',
+    incSTR: [
+      {
+        mc: 30,
+        value: 10,
+      },
+      {
+        mc: 10,
+        value: 8,
+      },
+    ],
     max: [443, 286],
     mcBonus: [
       [52, 33],
