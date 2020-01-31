@@ -23,7 +23,7 @@ const getDamage = createSelector(
   [getDetails, getSettings],
   (details, settings) => {
     if (details === null) return null;
-    const { defCoef, element } = details.adventurer;
+    const { DefCoef, Element } = details.adventurer;
     const {
       dcrStr,
       def,
@@ -43,7 +43,7 @@ const getDamage = createSelector(
       str = info[difficulty].str;
     }
 
-    const modifier = getModifier(enemyEle, element);
+    const modifier = getModifier(enemyEle, Element);
 
     let printDef = 0;
     let printRes = 0;
@@ -56,21 +56,21 @@ const getDamage = createSelector(
     ITEM_KEYS.forEach(key => {
       const item = details[key];
       if (item !== undefined) {
-        const { incDEF = 0, incRES = 0, resEle } = item;
-        totalDef += incDEF;
-        if (resEle === enemyEle) {
-          totalRes += incRES;
+        const { IncDEF = 0, IncRES = 0, ResEle } = item;
+        totalDef += IncDEF;
+        if (ResEle === enemyEle) {
+          totalRes += IncRES;
         }
 
         if (key === 'wyrmprint1' || key === 'wyrmprint2') {
-          printDef += incDEF;
+          printDef += IncDEF;
           if (item.enemy === enemy) {
             totalReduce += item.incDIS;
             printReduce += item.incDIS;
           }
 
-          if (resEle === enemyEle) {
-            printRes += incRES;
+          if (ResEle === enemyEle) {
+            printRes += IncRES;
           }
         }
       }
@@ -96,7 +96,7 @@ const getDamage = createSelector(
         modifier *
         (1 - totalReduce * 0.01) *
         (1 - totalRes * 0.01)) /
-      (defCoef * (1 + totalDef * 0.01));
+      (DefCoef * (1 + totalDef * 0.01));
 
     const totalHp = calcVal(
       details.total.hp * (1 + hp * 0.01) * (1 + exHp * 0.01)

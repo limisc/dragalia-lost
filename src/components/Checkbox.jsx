@@ -14,7 +14,6 @@ function Checkbox(props) {
     lang,
     title: titleProp,
     value,
-    // style: styleProp,
     theme,
     onChange,
     setChecked,
@@ -37,8 +36,6 @@ function Checkbox(props) {
       setChecked(e.target.checked);
     }
   };
-
-  // const style = { ...getOutBGC(theme), ...styleProp };
 
   return (
     <div className="checkbox" style={getOutBGC(theme)}>
@@ -66,6 +63,4 @@ const mapStateToProps = ({ theme }) => {
   return { theme };
 };
 
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Checkbox);
+export default connect(mapStateToProps)(Checkbox);

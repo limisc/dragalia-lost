@@ -3,7 +3,7 @@ import { MIGHT_DICT } from 'data';
 // TODO: special calc for mega man, different skill & co-ability might
 // change data struct to calc automatically, not if, same as Euden
 const calcAdventurerMight = adventurer => {
-  const { Id, might, rarity, ex = '4', mana = '50' } = adventurer;
+  const { Id, Might, Rarity, ex = '4', mana = '50' } = adventurer;
   const { adventurerSkill, coAbility, fs } = MIGHT_DICT;
 
   let skillMight = adventurerSkill[mana];
@@ -13,7 +13,7 @@ const calcAdventurerMight = adventurer => {
     abilityMight = 0;
   } else {
     const index = ['10', '20', '30', '40', '45', '50', '70'].indexOf(mana);
-    abilityMight = might[index];
+    abilityMight = Might[index];
   }
 
   let fsKey;
@@ -25,9 +25,10 @@ const calcAdventurerMight = adventurer => {
 
   const fsMight = fs[fsKey] || 0;
 
-  let exMight = coAbility[rarity][ex];
+  let exMight = coAbility[Rarity][ex];
 
   if (Id === '10750102') {
+    // Mega man
     if (skillMight > 200) skillMight = 200;
     exMight = [160, 200, 240, 280, 320][ex];
   }
@@ -36,29 +37,29 @@ const calcAdventurerMight = adventurer => {
 };
 
 const calcWeaponMight = weapon => {
-  const { skill, might = 0, unbind = '4' } = weapon;
-  const stage = unbind === '4' ? 0 : 1;
-  const skillMight = skill ? MIGHT_DICT.itemSkill[stage] : 0;
-  return skillMight + might;
+  const { Skill, Might = 0, unbind = '4' } = weapon;
+  const stage = unbind === '4' ? 1 : 0;
+  const skillMight = Skill ? MIGHT_DICT.itemSkill[stage] : 0;
+  return skillMight + Might;
 };
 
 const calcDragonMight = dragon => {
-  const { bond = '30', might, unbind = '4' } = dragon;
-  const stage = unbind === '4' ? 0 : 1;
-  return MIGHT_DICT.itemSkill[stage] + might[stage] + bond * 10;
+  const { Might, bond = '30', unbind = '4' } = dragon;
+  const stage = unbind === '4' ? 1 : 0;
+  return MIGHT_DICT.itemSkill[stage] + Might[stage] + bond * 10;
 };
 
 const calcWyrmprintMight = wyrmprint => {
-  const { might, unbind = '4' } = wyrmprint;
+  const { Might, unbind = '4' } = wyrmprint;
 
-  let stage = 2;
+  let stage = 0;
   if (unbind === '4') {
-    stage = 0;
+    stage = 2;
   } else if (unbind >= 2) {
     stage = 1;
   }
 
-  return might[stage];
+  return Might[stage];
 };
 
 const calcMight = (itemKey, item) => {

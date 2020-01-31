@@ -3,7 +3,7 @@ import { getField, getLimit, includes } from '../utils';
 
 export const modifyNewItem = (itemKey, item) => {
   if (item == null) return null;
-  const rarity = itemKey === 'adventurer' ? '5' : item.rarity;
+  const rarity = itemKey === 'adventurer' ? '5' : item.Rarity;
   const level = getLimit(itemKey, rarity, 4);
 
   let updates = {
@@ -14,12 +14,12 @@ export const modifyNewItem = (itemKey, item) => {
 
   switch (itemKey) {
     case 'adventurer': {
-      const { breakLimit } = item;
+      const { LimitBreak } = item;
       updates = {
         ...updates,
         curRarity: rarity,
-        level: breakLimit === 5 ? 100 : level,
-        mana: breakLimit === 5 ? '70' : '50',
+        level: LimitBreak === '5' ? 100 : level,
+        mana: LimitBreak === '5' ? '70' : '50',
         ex: '4',
       };
       break;
@@ -40,16 +40,14 @@ export const modifyNewItem = (itemKey, item) => {
 const equip = (itemKey, adventurer) => {
   if (adventurer == null) return null;
   let field = itemKey;
-  const { weapon, element } = adventurer;
-
-  let key1 = weapon;
-  let key2 = element;
+  let key1 = adventurer.Weapon;
+  let key2 = adventurer.Element;
 
   if (itemKey === 'dragon') {
     key1 = 'dragon';
   } else if (itemKey === 'wyrmprint1' || itemKey === 'wyrmprint2') {
-    key2 = itemKey;
     field = 'wyrmprint';
+    key2 = itemKey;
   }
 
   const id = defaultEquipments[key1][key2];
@@ -63,14 +61,13 @@ const equip = (itemKey, adventurer) => {
 };
 
 export const buildItems = (items, adventurer) => {
-  const { element } = adventurer;
   const { weapon, dragon } = items;
   const ret = { adventurer };
 
   if (
     !weapon ||
-    weapon.element !== element ||
-    weapon.weapon !== adventurer.weapon
+    weapon.Element !== adventurer.Element ||
+    weapon.Weapon !== adventurer.Weapon
   ) {
     ret.weapon = equip('weapon', adventurer);
   }
@@ -87,7 +84,7 @@ export const buildItems = (items, adventurer) => {
   }
 
   // dragon
-  if (!dragon || dragon.element !== element) {
+  if (!dragon || dragon.Element !== adventurer.Element) {
     ret.dragon = equip('dragon', adventurer);
   }
 

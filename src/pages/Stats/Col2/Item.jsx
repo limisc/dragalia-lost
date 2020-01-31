@@ -20,7 +20,7 @@ const getItemFields = key => {
 };
 
 function Item({ focused, item, lang, theme, updateItem }) {
-  const { level, bond, curRarity, rarity, unbind } = item || {};
+  const { level, bond, curRarity, Rarity, unbind } = item || {};
 
   const timeRef = useRef();
   const fields = getItemFields(focused);
@@ -29,11 +29,11 @@ function Item({ focused, item, lang, theme, updateItem }) {
     const { name, value } = e.target;
 
     let max;
-    if (focused === 'adventurer' && item.breakLimit === 5) {
+    if (focused === 'adventurer' && item.LimitBreak === '5') {
       max = 100;
     } else {
       const key1 = name === 'level' ? focused : name;
-      const r = focused === 'adventurer' ? curRarity : rarity;
+      const r = focused === 'adventurer' ? curRarity : Rarity;
       max = getLimit(key1, r, unbind);
     }
 
@@ -76,7 +76,7 @@ function Item({ focused, item, lang, theme, updateItem }) {
         };
         break;
       case 'unbind': {
-        const level = getLimit(focused, rarity, value);
+        const level = getLimit(focused, Rarity, value);
         updates.level = level;
         break;
       }
@@ -131,7 +131,7 @@ function Item({ focused, item, lang, theme, updateItem }) {
         ) {
           let r;
           if (key === 'curRarity') {
-            r = rarity;
+            r = Rarity;
           } else if (key === 'mana') {
             r = curRarity;
           }

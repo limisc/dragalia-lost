@@ -36,7 +36,7 @@ export const MIGHT_DICT = {
     '10': 60,
     '40': 120,
   },
-  itemSkill: [100, 50],
+  itemSkill: [50, 100],
 };
 
 export const ITEM_KEYS = [

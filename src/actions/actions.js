@@ -32,50 +32,32 @@ export const updateItem = createAction(actionTypes.UPDATE_ITEM);
 
 export const updateHalidom = createAction(actionTypes.UPDATE_HALIDOM);
 
+const lightOption = createAction(actionTypes.LIGHT_OPTION);
+
 export const selectFocus = itemKey => (dispatch, getState) => {
-  const {
-    focused,
-    items: { adventurer },
-  } = getState();
-
-  dispatch(setPanel(false));
-
-  if (focused === itemKey) {
+  const { adventurer } = getState().items;
+  // clear if click focused field
+  if (itemKey === getState().focused) {
     dispatch({
+      type: actionTypes.SELECT_ITEM,
       itemKey,
       item: null,
-      type: actionTypes.SELECT_ITEM,
     });
   }
 
-  dispatch({ itemKey, type: actionTypes.SELECT_FOCUS });
-
+  // auto detect filter options
   if (itemKey === 'adventurer') {
     dispatch(resetOptions());
-  } else if (
-    itemKey === 'dragon' ||
-    itemKey === 'wyrmprint1' ||
-    itemKey === 'wyrmprint2'
-  ) {
-    dispatch(resetOptions('type'));
+  } else if (itemKey === 'wyrmprint1' || itemKey === 'wyrmprint2') {
+    dispatch(resetOptions('Type'));
+  } else if (adventurer) {
+    dispatch(lightOption({ name: 'Element', value: adventurer.Element }));
+    dispatch(lightOption({ name: 'Weapon', value: adventurer.Weapon }));
   }
 
-  if (adventurer) {
-    let groups = [];
-    if (itemKey === 'weapon') {
-      groups = ['element', 'weapon'];
-    } else if (itemKey === 'dragon') {
-      groups = ['element'];
-    }
-
-    groups.forEach(name => {
-      dispatch({
-        name,
-        value: adventurer[name],
-        type: actionTypes.LIGHT_OPTION,
-      });
-    });
-  }
+  dispatch(resetOptions('Rarity'));
+  dispatch({ itemKey, type: actionTypes.SELECT_FOCUS });
+  dispatch(setPanel(false));
 };
 
 export const resetItems = () => dispatch => {

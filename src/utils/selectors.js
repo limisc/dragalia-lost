@@ -6,11 +6,11 @@ export const getFilterFields = key => {
   switch (key) {
     case 'adventurer':
     case 'weapon':
-      return ['rarity', 'element', 'weapon'];
+      return ['Rarity', 'Element', 'Weapon'];
     case 'dragon':
-      return ['rarity', 'element'];
+      return ['Rarity', 'Element'];
     default:
-      return ['rarity', 'type'];
+      return ['Rarity', 'Type'];
   }
 };
 
@@ -43,8 +43,8 @@ export const getItemList = createCachedSelector(
             if (opt.checked) {
               noChecked = false;
 
-              if (key === 'type') {
-                return item.icon.some(({ image }) => image === opt.value);
+              if (key === 'Type') {
+                return item.Icon.some(({ Image }) => Image === opt.value);
               }
 
               return opt.value === item[key];
@@ -56,44 +56,44 @@ export const getItemList = createCachedSelector(
           return ret || noChecked;
         });
 
-        const searchLower = search.toLowerCase();
+        const searchLower = search.toUpperCase();
 
         const searchResult =
-          item.abbr.includes(searchLower) ||
-          item.Name[lang].toLowerCase().includes(searchLower);
+          item.Abbr.toUpperCase().includes(searchLower) ||
+          item.Name[lang].toUpperCase().includes(searchLower);
         return filterResult && searchResult;
       })
       .sort((item1, item2) => {
-        if (item1.rarity > item2.rarity) return -1;
-        if (item1.rarity < item2.rarity) return 1;
+        if (item1.Rarity > item2.Rarity) return -1;
+        if (item1.Rarity < item2.Rarity) return 1;
 
-        if (item1.element) {
-          const element1 = ELEMENT_TYPES.indexOf(item1.element);
-          const element2 = ELEMENT_TYPES.indexOf(item2.element);
+        if (item1.Element) {
+          const element1 = ELEMENT_TYPES.indexOf(item1.Element);
+          const element2 = ELEMENT_TYPES.indexOf(item2.Element);
           if (element1 < element2) return -1;
           if (element1 > element2) return 1;
         }
 
-        if (item1.weapon) {
-          const weapon1 = WEAPON_TYPES.indexOf(item1.weapon);
-          const weapon2 = WEAPON_TYPES.indexOf(item2.weapon);
+        if (item1.Weapon) {
+          const weapon1 = WEAPON_TYPES.indexOf(item1.Weapon);
+          const weapon2 = WEAPON_TYPES.indexOf(item2.Weapon);
           if (weapon1 < weapon2) return -1;
           if (weapon1 > weapon2) return 1;
         }
 
         if (field === 'wyrmprint') {
-          if (item1.enemy && !item2.enemy) return -1;
-          if (!item1.enemey && item2.enemy) return 1;
+          if (item1.Enemey && !item2.Enemey) return -1;
+          if (!item1.Enemey && item2.Enemey) return 1;
         }
 
         if (
-          sumProps(item1.max, item1.might) > sumProps(item2.max, item2.might)
+          sumProps(item1.Max, item1.Might) > sumProps(item2.Max, item2.Might)
         ) {
           return -1;
         }
 
         if (
-          sumProps(item1.max, item1.might) < sumProps(item2.max, item2.might)
+          sumProps(item1.Max, item1.Might) < sumProps(item2.Max, item2.Might)
         ) {
           return 1;
         }
@@ -122,17 +122,17 @@ export const getFilteredHalidomKey = createCachedSelector(
   items => {
     const { adventurer, dragon } = items;
     if (adventurer === null) return null;
-    const { element, weapon } = adventurer;
-    const { element: dragonEle } = dragon || {};
+    const { Element, Weapon } = adventurer;
+    const { Element: dragonEle } = dragon || {};
 
     let filters;
 
-    if (element === dragonEle) {
-      filters = [element, weapon];
+    if (Element === dragonEle) {
+      filters = [Element, Weapon];
     } else if (!dragonEle) {
-      filters = [`adventurer_${element}`, weapon];
+      filters = [`adventurer_${Element}`, Weapon];
     } else {
-      filters = [`adventurer_${element}`, weapon, `dragon_${dragonEle}`];
+      filters = [`adventurer_${Element}`, Weapon, `dragon_${dragonEle}`];
     }
 
     return HALIDOM_LIST.filter(key => filters.some(f => key.includes(f)));
@@ -140,7 +140,7 @@ export const getFilteredHalidomKey = createCachedSelector(
 )(state => {
   const { adventurer, dragon } = state.items;
   if (adventurer === null) return 'NONE';
-  const { element, weapon } = adventurer;
-  const { element: dragonEle } = dragon || {};
-  return `${element}_${weapon}_${dragonEle}`;
+  const { Element, Weapon } = adventurer;
+  const { Element: dragonEle } = dragon || {};
+  return `${Element}_${Weapon}_${dragonEle}`;
 });

@@ -24,13 +24,13 @@ const calcItemCareHalidom = (itemKey, item, halidom) => {
   if (item === null) return null;
 
   let keys = null;
-  const { element, hp, str, augHp, augStr } = item;
+  const { Element, hp, str, augHp, augStr } = item;
 
   if (itemKey === 'adventurer') {
-    const filters = [`adventurer_${element}`, item.weapon];
+    const filters = [`adventurer_${Element}`, item.Weapon];
     keys = HALIDOM_LIST.filter(key => filters.some(f => key.includes(f)));
   } else if (itemKey === 'dragon') {
-    const id = `dragon_${element}`;
+    const id = `dragon_${Element}`;
     keys = HALIDOM_LIST.filter(key => key.includes(id));
   }
 

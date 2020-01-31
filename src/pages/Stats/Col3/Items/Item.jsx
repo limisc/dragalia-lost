@@ -10,8 +10,8 @@ function Item(props) {
   const { lang = 'en' } = useParams();
   const item = data[index];
   const {
-    skill,
-    icon,
+    Skill,
+    Icon,
     Name: { [lang]: name, en },
   } = item;
   const image = getImage(item, focused);
@@ -28,24 +28,25 @@ function Item(props) {
         <span className="name">{name || en}</span>
 
         {focused === 'weapon' &&
-          (skill ? (
+          (Skill ? (
             <Image
               size="sm"
-              image={`ability/${skill.image}`}
-              title={skill.title}
+              image={`skills/${Skill.Image}`}
+              title={Skill.Name}
             />
           ) : (
             <span />
           ))}
 
-        {icon &&
-          icon.map(iconItem => {
-            const iconImage = `ability/Icon_Ability_${iconItem.image}`;
-            const { title } = iconItem;
-            return (
-              <Image key={title} image={iconImage} size="sm" title={title} />
-            );
-          })}
+        {Icon &&
+          Icon.map(icon => (
+            <Image
+              key={icon.Name}
+              size="sm"
+              image={`abilities/Icon_Ability_${icon.Image}`}
+              title={icon.Name}
+            />
+          ))}
       </div>
     </div>
   );

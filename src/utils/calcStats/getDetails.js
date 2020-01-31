@@ -11,7 +11,7 @@ const selectAdventurer = state => state.items.adventurer;
 const selectHalidom = state => state.halidom;
 
 const calcItemCareElement = (itemKey, item, adventurer) => {
-  const sameEle = item && adventurer && item.element === adventurer.element;
+  const sameEle = item && adventurer && item.Element === adventurer.Element;
   return calcItem(itemKey, item, sameEle);
 };
 
@@ -83,7 +83,7 @@ const getDetails = createSelector(
 
     items.forEach((item, i) => {
       if (item !== null) {
-        const { hp, str, might, augHp, augStr, incHP = 0, incSTR = 0 } = item;
+        const { hp, str, might, augHp, augStr, IncHP = 0, IncSTR = 0 } = item;
         totalHp += hp;
         totalStr += str;
         totalMight += might;
@@ -91,8 +91,8 @@ const getDetails = createSelector(
         totalAugHp += augHp;
         totalAugStr += augStr;
 
-        totalIncHp += incHP;
-        totalIncStr += incSTR;
+        totalIncHp += IncHP;
+        totalIncStr += IncSTR;
 
         const key = ITEM_KEYS[i];
         switch (key) {
@@ -105,8 +105,8 @@ const getDetails = createSelector(
           case 'wyrmprint1':
           case 'wyrmprint2': {
             bothMUB = bothMUB && item.isMUB;
-            printIncHp += incHP;
-            printIncStr += incSTR;
+            printIncHp += IncHP;
+            printIncStr += IncSTR;
             break;
           }
           default:

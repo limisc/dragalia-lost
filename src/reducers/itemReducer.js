@@ -23,8 +23,8 @@ const select = (items, { itemKey, item }) => {
 
   const { adventurer } = items;
   const updates = {};
-  if (itemKey === 'weapon' && adventurer && adventurer.weapon !== item.weapon) {
-    // if weapon.weapon !== advanturer.weapon, remove adventurer
+  if (itemKey === 'weapon' && adventurer && adventurer.Weapon !== item.Weapon) {
+    // if adventurer.Weapon !== item.Weapon, remove adventurer
     updates.adventurer = null;
   } else if (itemKey === 'wyrmprint1' || itemKey === 'wyrmprint2') {
     // can't equip two same wyrmprints.

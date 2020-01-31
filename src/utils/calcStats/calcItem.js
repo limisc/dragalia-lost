@@ -4,21 +4,21 @@ import calcMight from './calcMight';
 import calcVal from '../calcVal';
 
 const calcMCBonus = adventurer => {
-  const { mana = '50', mcBonus } = adventurer;
+  const { mana = '50', McBonus } = adventurer;
 
   if (mana === '0') return [0, 0];
 
   const index = ['10', '20', '30', '40', '45', '50', '70'].indexOf(mana);
-  return mcBonus[index];
+  return McBonus[index];
 };
 
 const calcNormalStat = (itemKey, item) => {
-  const rarity = itemKey === 'adventurer' ? '5' : item.rarity;
+  const rarity = itemKey === 'adventurer' ? '5' : item.Rarity;
   const level = Number(item.level);
   const MAX_LEVEL = getLimit(itemKey, rarity);
 
   if (level === MAX_LEVEL) {
-    return item.max;
+    return item.Max;
   }
 
   let minHp;
@@ -28,18 +28,18 @@ const calcNormalStat = (itemKey, item) => {
 
   if (itemKey === 'adventurer') {
     const { curRarity = '5' } = item;
-    // adventurer.min: [[45, 26], [55, 32], [64, 37]]
+    // adventurer.Min: [[45, 26], [55, 32], [64, 37]]
     const r = Number(curRarity);
-    [minHp, minStr] = item.min[r - 3];
-    [, , [stepHp, stepStr]] = item.min;
+    [minHp, minStr] = item.Min[r - 3];
+    [, , [stepHp, stepStr]] = item.Min;
   } else {
-    // item.min: [36, 12]
-    [minHp, minStr] = item.min;
+    // item.Min: [36, 12]
+    [minHp, minStr] = item.Min;
     stepHp = minHp;
     stepStr = minStr;
   }
 
-  const [maxHp, maxStr] = item.max;
+  const [maxHp, maxStr] = item.Max;
 
   const diff = (level - 1) / (MAX_LEVEL - 1);
 
@@ -51,12 +51,12 @@ const calcNormalStat = (itemKey, item) => {
 
 const calcAdventurer = item => {
   const level = Number(item.level);
-  const { max, maxAdd } = item;
-  if (level === 100) return item.maxAdd;
+  const { Max, AddMax1 } = item;
+  if (level === 100) return AddMax1;
 
   if (level > 80) {
-    const [baseHp, baseStr] = max;
-    const [maxHp, maxStr] = maxAdd;
+    const [baseHp, baseStr] = Max;
+    const [maxHp, maxStr] = AddMax1;
 
     const diff = (level - 80) / 20;
     const hp = calcVal(baseHp + diff * (maxHp - baseHp));

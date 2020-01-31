@@ -1,19 +1,19 @@
 import includes from '../includes';
 
 const calcAdventurer = adventurer => {
-  const { mana = '50', element, weapon, defCoef } = adventurer;
-  const detail = { element, weapon, defCoef };
-  // adventurer.incSTR = [
-  //   { mc: 30, value: 10 },
-  //   { mc: 10, value: 8 },
+  const { mana = '50', Element, Weapon, DefCoef } = adventurer;
+  const detail = { Element, Weapon, DefCoef };
+  // adventurer.IncSTR = [
+  //   { MC: 10, Value: 8 },
+  //   { MC: 30, Value: 10 },
   // ];
-  ['incSTR', 'incDEF'].forEach(key => {
+  ['IncSTR', 'IncDEF'].forEach(key => {
     if (includes(adventurer, key)) {
-      const ability = adventurer[key].find(el => mana >= el.mc);
+      const ability = adventurer[key];
+      for (let i = 0; i < ability.length; i += 1) {
+        if (Number(mana) < ability[i].MC) break;
 
-      if (ability) {
-        const { value } = ability;
-        detail[key] = value;
+        detail[key] = ability[i].Value;
       }
     }
   });
@@ -23,8 +23,8 @@ const calcAdventurer = adventurer => {
 
 const calcWeapon = (weapon, sameEle) => {
   const detail = {};
-  if (sameEle || weapon.element === '0') {
-    ['incSTR', 'incDEF'].forEach(key => {
+  if (sameEle || weapon.element === null) {
+    ['IncSTR', 'IncDEF'].forEach(key => {
       if (includes(weapon, key)) {
         detail[key] = weapon[key];
       }
@@ -34,21 +34,25 @@ const calcWeapon = (weapon, sameEle) => {
 };
 
 const calcDragon = (dragon, sameEle) => {
-  const { element, unbind = '4' } = dragon;
-  const detail = { element };
+  const { Element, unbind = '4' } = dragon;
+  const detail = { Element };
 
-  const stage = unbind === '4' ? 0 : 1;
-  if (sameEle || dragon.Id === '20050310') {
-    ['incHP', 'incSTR'].forEach(key => {
-      if (includes(dragon, key)) {
-        detail[key] = dragon[key][stage];
+  const stage = unbind === '4' ? 1 : 0;
+
+  ['IncSTR', 'IncDEF'].forEach(key => {
+    if (includes(dragon, key)) {
+      const ability = dragon[key];
+      for (let i = stage; i < ability.length; i += 2) {
+        if (sameEle || ability[i].Element === null) {
+          detail[key] = ability[i].Value;
+        }
       }
-    });
-  }
+    }
+  });
 
-  if (includes(dragon, 'incRES')) {
-    detail.resEle = dragon.resEle;
-    detail.incRES = dragon.incRES[stage];
+  if (includes(dragon, 'IncRES')) {
+    detail.ResEle = dragon.IncRES[stage].ResEle;
+    detail.incRES = dragon.IncRES[stage].Value;
   }
 
   return detail;
@@ -59,9 +63,9 @@ const calcWyrmprint = wyrmprint => {
 
   const { unbind = '4' } = wyrmprint;
   let isMUB = false;
-  let stage = 2;
+  let stage = 0;
   if (unbind === '4') {
-    stage = 0;
+    stage = 2;
     isMUB = true;
   } else if (unbind >= 2) {
     stage = 1;
@@ -69,21 +73,21 @@ const calcWyrmprint = wyrmprint => {
 
   detail.isMUB = isMUB;
 
-  // wyrmprint.incSTR: [10, 8, 5],
-  ['incHP', 'incSTR', 'incDEF'].forEach(key => {
+  // wyrmprint.IncSTR: [5, 8, 10],
+  ['IncHP', 'IncSTR', 'IncDEF'].forEach(key => {
     if (includes(wyrmprint, key)) {
       detail[key] = wyrmprint[key][stage];
     }
   });
 
-  if (includes(wyrmprint, 'incRES')) {
-    detail.resEle = wyrmprint.resEle;
-    detail.incRES = wyrmprint.incRES[stage];
+  if (includes(wyrmprint, 'IncRES')) {
+    detail.ResEle = wyrmprint.ResEle;
+    detail.IncRES = wyrmprint.IncRES[stage];
   }
 
-  if (includes(wyrmprint, 'incDIS')) {
-    detail.enemy = wyrmprint.enemy;
-    detail.incDIS = wyrmprint.incDIS[stage];
+  if (includes(wyrmprint, 'IncDIS')) {
+    detail.Enemy = wyrmprint.Enemy;
+    detail.IncDIS = wyrmprint.IncDIS[stage];
   }
 
   return detail;

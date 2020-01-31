@@ -56,31 +56,27 @@ function Dungeon({ adventurer, lang, theme }) {
   }, [settings.enemy, settings.difficulty]);
 
   useEffect(() => {
-    const { element, weapon, Id, rarity, ex } = adventurer || {};
+    const { Element, Weapon, Id, Rarity, ex } = adventurer || {};
 
-    if (eleRef.current !== element) {
-      const enemy = ELEMENT_ADV_TO_ENEMY[element];
+    if (eleRef.current !== Element) {
+      const enemy = ELEMENT_ADV_TO_ENEMY[Element];
       setSettings(prevSettings => ({
         ...prevSettings,
         enemy,
       }));
 
-      eleRef.current = element;
+      eleRef.current = Element;
     }
 
     let exHp = '';
     let exDef = '';
 
-    if (weapon === 'Axe' || weapon === 'Lance') {
-      const value = COABILITY_VALUE[weapon][rarity][ex];
+    if (Weapon === 'Axe' || Weapon === 'Lance') {
+      const value = COABILITY_VALUE[Weapon][Rarity][ex];
 
-      if (weapon === 'Axe') {
+      if (Rarity === 'Axe' && Id !== '10450102') {
         exDef = value;
-
-        if (Id === '10450102') {
-          exDef = '';
-        }
-      } else if (weapon === 'Lance') {
+      } else if (Weapon === 'Lance') {
         exHp = value;
       }
     }
