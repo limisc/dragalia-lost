@@ -1,11 +1,12 @@
-const halidom = {
+const initHalidom = {
   adventurer_Flame_altar_0: { id: '100401', type: 'altar', level: 35 },
   adventurer_Flame_altar_1: { id: '100401', type: 'altar', level: 35 },
-  adventurer_Flame_eventE_0: { id: '102001', type: 'eventE', level: 30 },
+  adventurer_Flame_eventE_0: { id: '102001', type: 'eventE', level: 35 },
   adventurer_Flame_slime_0: { id: '101901', type: 'slime', level: 15 },
+  adventurer_Flame_tree_0: { id: '102301', type: 'tree', level: 15 },
   adventurer_Water_altar_0: { id: '100402', type: 'altar', level: 35 },
   adventurer_Water_altar_1: { id: '100402', type: 'altar', level: 35 },
-  adventurer_Water_eventE_0: { id: '101601', type: 'eventE', level: 30 },
+  adventurer_Water_eventE_0: { id: '101601', type: 'eventE', level: 35 },
   adventurer_Water_eventE_1: { id: '101801', type: 'eventE', level: 30 },
   adventurer_Water_slime_0: { id: '101902', type: 'slime', level: 15 },
   adventurer_Wind_altar_0: { id: '100403', type: 'altar', level: 35 },
@@ -38,28 +39,29 @@ const halidom = {
   Staff_dojo_0: { id: '100508', type: 'dojo', level: 35 },
   Staff_dojo_1: { id: '100508', type: 'dojo', level: 35 },
   Dagger_Bow_eventW_0: { id: '101301', type: 'eventW', level: 30 },
-  dragon_Flame_fafnir_0: { id: '101001', type: 'fafnir', level: 0 },
-  dragon_Water_fafnir_0: { id: '101002', type: 'fafnir', level: 0 },
-  dragon_Wind_fafnir_0: { id: '101003', type: 'fafnir', level: 0 },
-  dragon_Light_fafnir_0: { id: '101004', type: 'fafnir', level: 0 },
-  dragon_Shadow_fafnir_0: { id: '101005', type: 'fafnir', level: 0 },
-};
-
-export const HALIDOM_LIST = Object.keys(halidom);
-
-const initHalidom = {
-  ...halidom,
-  smithy: 9,
-  dragontree: 27,
-  dracolith: 100,
-  rupie: 120,
+  dragon_Flame_fafnir_0: { id: '101001', type: 'fafnir', level: 30 },
+  dragon_Water_fafnir_0: { id: '101002', type: 'fafnir', level: 30 },
+  dragon_Wind_fafnir_0: { id: '101003', type: 'fafnir', level: 30 },
+  dragon_Light_fafnir_0: { id: '101004', type: 'fafnir', level: 30 },
+  dragon_Shadow_fafnir_0: { id: '101005', type: 'fafnir', level: 30 },
 };
 
 export default initHalidom;
 
-export const HALIDOM_TYPES = ['altar', 'slime', 'event', 'fafnir', 'dojo'];
+export const HALIDOM_LIST = Object.keys(initHalidom);
+
+export const HALIDOM_TYPES = [
+  'altar',
+  'dojo',
+  'slime',
+  'tree',
+  'event',
+  'fafnir',
+  'dracolith',
+];
 
 export const HALIDOM_VALUES = {
+  // [HP, STR]
   altar: [
     [0, 0],
     [0.5, 0.5],
@@ -257,5 +259,23 @@ export const HALIDOM_VALUES = {
     [3.5, 3.5],
     [4, 3.5],
     [4, 4],
+  ],
+  tree: [
+    [0, 0],
+    [3, 3],
+    [4, 3.5],
+    [4.5, 4.5],
+    [5.5, 5],
+    [6, 6],
+    [7, 6.5],
+    [7.5, 7.5],
+    [8.5, 8],
+    [9, 9],
+    [11, 11],
+    [12, 12],
+    [13, 13],
+    [14, 14],
+    [15, 15],
+    [16, 16],
   ],
 };

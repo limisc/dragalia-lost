@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0 $unit1;
+  line-height: 24px;
+
+  font-family: 'Roboto', sans-serif;
+  color: $black0;
+}
+
+header {
+  @include flex;
+  @include border-box;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+
+  width: calc(100% - #{$unit2});
+  height: $header-height;
+
+  > div {
+    @include flex-c;
+    position: relative;
+
+    flex: 0 1 60px;
+    border-radius: $unit0;
+    background: aliceblue;
+    cursor: pointer;
+
+    & + div {
+      margin-left: $unit1;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
+}
+
+main {
+  @include border-box;
+  margin-top: $main-margin-top;
+
+  > div {
+    @include border-box;
+
+    &:not(.list) {
+      > div + div {
+        margin-top: $unit1;
+      }
+    }
+  }
+}
+
+span.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@for $i from 2 to 5 {
+  .grid-#{$i} {
+    @include grid($i);
+  }
+
+  .col-1-#{$i} {
+    width: 100% / $i;
+  }
+}
+
+.flex {
+  @include flex;
+}
+
+.flex-v {
+  @include flex-v;
+}
+
+.list {
+  @include flex-rest;
+  overflow-y: auto;
+}
+
+.scale {
+  @include scale(1.1);
+}
+
+.name {
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-grid-column-align: start;
+  justify-self: start;
+}
+
+.paper {
+  @include border-box;
+  padding: $unit1;
+  box-shadow: 0 0 5px -3px $black0;
+}

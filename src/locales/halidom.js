@@ -141,7 +141,7 @@ const facility = {
   },
   '101904': {
     en: 'Twinkling Slime Statue',
-    ja: '',
+    ja: 'ティンクルスライム像',
     zh: '闪光史莱姆像',
   },
   '101905': {
@@ -153,6 +153,11 @@ const facility = {
     en: 'Arctos Monument',
     ja: 'アルクトスの像',
     zh: '阿尔库斯特之像',
+  },
+  '102301': {
+    en: 'Flame Tree',
+    ja: '覚醒の炎樹',
+    zh: '觉醒之炎树',
   },
 };
 

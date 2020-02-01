@@ -1,0 +1,86 @@
+.select {
+  @include user-select-none;
+  position: relative;
+}
+
+.select-control {
+  @include flex-v;
+  @include border-box;
+
+  position: relative;
+
+  border: 1px solid transparent;
+  border-radius: $unit0;
+
+  width: 100%;
+  height: $text-field-height;
+
+  &.disabled {
+    border: 2px solid $disabled;
+  }
+
+  &:focus {
+    outline: 0;
+
+    &:not(.disabled) {
+      border-color: #8bbafe;
+      box-shadow: 0 0 0 0.1rem $blue1;
+    }
+  }
+
+  > div {
+    margin-left: $unit1;
+  }
+
+  .arrow {
+    right: 10%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.select-list {
+  position: absolute;
+  z-index: 10;
+
+  top: 100%;
+
+  margin: 0;
+  margin-top: $unit1;
+  padding: 0;
+
+  border: 1px solid $blue0;
+  box-sizing: border-box;
+  border-radius: $unit0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+
+  background-color: #fff;
+}
+
+.select-option {
+  @include flex-v;
+  @include border-box;
+
+  padding: $unit1;
+
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: $black0;
+
+  &:hover,
+  &.hover {
+    background-color: $blue0;
+  }
+
+  &.focus {
+    color: #fff;
+    font-weight: 500;
+    background-color: $blue1;
+  }
+}

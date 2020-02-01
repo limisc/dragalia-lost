@@ -1,7 +1,3 @@
-import halidom from './halidom';
-import ui from './ui';
+import locales from './locales';
 
-export default {
-  halidom,
-  ui,
-};
+export default locales;

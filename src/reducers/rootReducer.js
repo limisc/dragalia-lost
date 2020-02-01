@@ -1,33 +1,23 @@
-import { actionTypes } from '../actions';
-import filterReducer from './filterReducer';
-import statsReducer from './statsReducer';
+import buildReducer from './buildReducer';
+import focusReducer from './focusReducer';
 import halidomReducer from './halidomReducer';
+import itemReducer from './itemReducer';
+import optionReducer from './optionReducer';
+import panelReducer from './panelReducer';
+import themeReducer from './themeReducer';
 
-/**
- * @param {Object} action
- * @param {string} action.type
- * @param {string} action.payload focused statsKey
- * @param {string} focused
- * @returns {string}
- */
-const focusReducer = ({ type, payload }, focused) => {
-  switch (type) {
-    case actionTypes.RESET_STATS:
-      return 'adventurer';
-    case actionTypes.SELECT_FOCUS:
-      return payload;
-    default:
-      return focused;
-  }
-};
-
-const rootReducer = ({ focused, filters, stats, halidom }, action) => {
-  const newStats = statsReducer(action, stats);
+const rootReducer = (
+  { builds, focused, halidom, items, options, panel, theme },
+  action
+) => {
   return {
-    filters: filterReducer(filters, action),
-    focused: focusReducer(action, focused),
-    halidom: halidomReducer(action, halidom),
-    stats: newStats,
+    builds: buildReducer(builds, action),
+    focused: focusReducer(focused, action),
+    halidom: halidomReducer(halidom, action),
+    items: itemReducer(items, action),
+    options: optionReducer(options, action),
+    panel: panelReducer(panel, action),
+    theme: themeReducer(theme, action),
   };
 };
 

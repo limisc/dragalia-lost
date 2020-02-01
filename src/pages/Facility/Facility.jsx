@@ -1,127 +1,257 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-array-index-key */
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { FixedSizeGrid } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { IconBtns, Dialog } from 'components';
+import createCachedSelector from 're-reselect';
+import uuid from 'uuid/v1';
 import {
-  refs,
-  getLimit,
+  getMaterialKey,
+  ELEMENT_TYPES,
+  HALIDOM_LIST,
+  HALIDOM_TYPES,
+  MATERIAL,
+  WEAPON_TYPES,
+} from 'data';
+import {
+  getFacilityMaxLevel,
   loadState,
   removeState,
   saveState,
-  useEventCallback,
+  useEvent,
 } from 'utils';
-import { material, keyDict } from 'data';
+import { BtnPanel, Select } from 'components';
+import locales from 'locales';
 import FacilityItem from './FacilityItem';
 import MaterialItem from './MaterialItem';
 
 const btns = ['del', 'refresh', 'save', 'add'];
 
-const getKey = (type, field) => {
-  switch (type) {
-    case 'rupies':
-    case 'event':
-    case 'item':
-    case 'coin1':
-    case 'coin2':
-    case 'coin3':
-    case 'talonstone':
-      return keyDict[type];
-    default:
-      return keyDict[type][field];
-  }
-};
+const calcItem = createCachedSelector(
+  item => item,
+  item => {
+    const {
+      type,
+      field,
+      value: [start, end],
+    } = item;
+    if (start === end) return {};
+    const ret = {};
+    for (let i = start; i < end; i += 1) {
+      Object.entries(MATERIAL[type][i]).forEach(([key, value]) => {
+        const materialKey = getMaterialKey(key, field);
+        ret[materialKey] = (ret[materialKey] || 0) + value;
+      });
+    }
 
-const sumArray = (arr, value) => {
-  let sum = 0;
-  const [start, end] = value;
-  for (let i = start; i < end; i += 1) {
-    sum += arr[i];
+    return ret;
   }
+)(item => {
+  const {
+    type,
+    field,
+    value: [start, end],
+  } = item;
 
-  return sum;
-};
+  if (start === end) return 'NONE';
+
+  return `${type}_${field}_${start}_${end}`;
+});
 
 function Facility() {
-  const [open, setOpen] = useState(false);
-  const [facility, setFacility] = useState(loadState('facility') || []);
+  const { lang = 'en' } = useParams();
+  const [facility, setFacility] = useState([]);
+  const [state, setState] = useState({ type: 'dojo', field: '' });
 
-  const onClick = useEventCallback(e => {
+  const typeOptions = useMemo(() => {
+    return HALIDOM_TYPES.map(value => ({
+      value,
+      label: locales(value, lang),
+    }));
+  }, [lang]);
+
+  const fieldOptions = useMemo(() => {
+    let array;
+    switch (state.type) {
+      case 'dojo':
+        array = WEAPON_TYPES;
+        break;
+      case 'tree':
+        array = ['Flame'];
+        break;
+      default:
+        array = ELEMENT_TYPES;
+        break;
+    }
+
+    return array.map(value => ({ value, label: locales(value, lang) }));
+  }, [state.type, lang]);
+
+  const onClick = useEvent(e => {
     switch (e.currentTarget.name) {
-      case 'add':
-        setOpen(true);
-        break;
-      case 'del': {
-        setFacility([]);
-        removeState('facility');
-        break;
-      }
-      case 'refresh': {
-        const backup = loadState('facility');
-        if (backup) {
-          setFacility(backup);
+      case 'add': {
+        const { type, field } = state;
+        let key;
+        let max;
+        if (type !== 'event') {
+          if (field === '') return;
+          key = getMaterialKey(type, field);
+          max = getFacilityMaxLevel({ type });
+        } else {
+          key = 'event';
+          max = 35;
         }
+
+        setFacility(prevFacility => [
+          ...prevFacility,
+          { id: uuid(), image: key, type, field, value: [0, max] },
+        ]);
         break;
       }
-      case 'save':
-        saveState('facility', facility);
+      case 'del':
+        removeState('dragalialost-facility');
+        setFacility([]);
         break;
+      case 'save':
+        saveState('dragalialost-facility', facility);
+        break;
+      case 'refresh': {
+        const backup = loadState('dragalialost-facility');
+        if (backup === null) return;
+        setFacility(backup);
+        break;
+      }
       default:
         break;
     }
   });
 
-  const onCreate = useEventCallback(({ type, field }) => {
-    const id = type === 'event' ? 'event' : keyDict[type][field];
-    const max = getLimit(type);
-    setFacility(prev => [...prev, { id, type, field, value: [0, max] }]);
-  });
+  const onChange = useCallback(({ name, value }) => {
+    setState(prevState => ({ ...prevState, [name]: value }));
+  }, []);
 
-  const needs = React.useMemo(() => {
-    const dict = {};
-    facility.forEach(f => {
-      if (f.value[0] !== f.value[1]) {
-        Object.entries(material[f.type]).forEach(([item, itemArr]) => {
-          const qty = sumArray(itemArr, f.value);
-          if (qty !== 0) {
-            const key = getKey(item, f.field);
-            dict[key] = (dict[key] || 0) + qty;
-          }
+  useEffect(() => {
+    // auto detect local facility or halidom records
+    const localFacility = loadState('dragalialost-facility');
+
+    if (localFacility !== null) {
+      setFacility(localFacility);
+      return;
+    }
+
+    const localHalidom = loadState('dragalialost-halidom');
+    if (localHalidom === null) return;
+
+    const tempArray = [];
+    HALIDOM_LIST.forEach(key => {
+      const item = localHalidom[key];
+      const { id, level } = item;
+      const max = getFacilityMaxLevel(item);
+      if (level !== max) {
+        const keySet = key.split('_');
+        let keyType = keySet[keySet.length - 2];
+        let field = keySet[keySet.length - 3];
+
+        let image = id;
+        if (keyType === 'eventE' || keyType === 'eventW') {
+          keyType = 'event';
+          field = 'event';
+          image = 'event';
+        }
+
+        tempArray.push({
+          id: uuid(),
+          image,
+          type: keyType,
+          field,
+          value: [level, max],
         });
       }
     });
-    return { dict, arr: Object.keys(dict) };
+
+    if (tempArray.length !== 0) {
+      setFacility(tempArray);
+    }
+  }, []);
+
+  useEffect(() => {
+    const { type, field } = state;
+    if (type === 'tree' && field !== 'Flame') {
+      setState(prev => ({ ...prev, field: 'Flame' }));
+      return;
+    }
+
+    if (field === '') return;
+
+    if (type === 'dojo') {
+      if (WEAPON_TYPES.includes(field)) return;
+    } else if (type !== 'event' && ELEMENT_TYPES.includes(field)) {
+      return;
+    }
+
+    setState(prevState => ({ ...prevState, field: '' }));
+  }, [state]);
+
+  const material = useMemo(() => {
+    const ret = {};
+    facility.forEach(item => {
+      const subRet = calcItem(item);
+      Object.entries(subRet).forEach(([key, value]) => {
+        ret[key] = (ret[key] || 0) + value;
+      });
+    });
+
+    return Object.entries(ret).filter(([_, value]) => value !== 0);
   }, [facility]);
 
   return (
     <main id="facility">
-      <div>
-        <IconBtns btns={btns} onClick={onClick} />
-        <div>
+      <div id="facility-col1">
+        <BtnPanel btns={btns} onClick={onClick} />
+        <div className="grid-2">
+          <Select
+            name="type"
+            label={locales(state.type, lang)}
+            value={state.type}
+            options={typeOptions}
+            onChange={onChange}
+          />
+
+          <Select
+            disabled={state.type === 'event'}
+            name="field"
+            label={locales(state.field, lang)}
+            value={state.field}
+            options={fieldOptions}
+            onChange={onChange}
+          />
+        </div>
+        <div className="list">
           {facility.map((f, i) => {
             return (
               <FacilityItem
-                // eslint-disable-next-line react/no-array-index-key
-                key={i}
+                key={f.id}
                 index={i}
                 item={f}
+                lang={lang}
                 setFacility={setFacility}
               />
             );
           })}
         </div>
-        <Dialog open={open} setOpen={setOpen} onCreate={onCreate} />
       </div>
 
-      <div ref={refs.col3}>
+      <div id="facility-col2" className="list">
         <AutoSizer>
           {({ height, width }) => (
             <FixedSizeGrid
               width={width}
               height={height}
-              itemData={needs}
+              itemData={material}
               columnCount={2}
               columnWidth={width / 2 - 8}
-              rowCount={needs.arr.length}
+              rowCount={material.length}
               rowHeight={64}
             >
               {MaterialItem}
@@ -133,4 +263,4 @@ function Facility() {
   );
 }
 
-export default React.memo(Facility);
+export default Facility;

@@ -1,7 +1,9 @@
-import React, { Fragment, useMemo } from 'react';
+import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
 import clsx from 'clsx';
-import { Context } from 'components';
-import { calcVal, translate } from 'utils';
+import locales from 'locales';
+import { Checkbox } from 'components';
+import { calcVal, getDetails, getPaperBGC } from 'utils';
 
 const ROWS = [
   'adventurer',
@@ -14,34 +16,30 @@ const ROWS = [
   'halidom',
 ];
 
-function StatsTable({ collapse, details }) {
-  const { lang } = React.useContext(Context);
-
-  const { body, footer } = useMemo(
-    () => ({
-      body: clsx('body', { collapse }),
-      footer: clsx('footer', { collapse }),
-    }),
-    [collapse]
-  );
-
-  if (!details) return null;
+function StatsTable({ disabled, details, expend, lang, theme, setExpend }) {
+  const className = clsx({ expend });
 
   return (
-    <div id="stats-table">
-      <div className="header">
-        <span />
+    <div id="stats-table" className="paper" style={getPaperBGC(theme)}>
+      <div id="header">
+        <Checkbox
+          lang={lang}
+          disabled={disabled}
+          title={locales('details', lang)}
+          checked={expend}
+          setChecked={setExpend}
+        />
         <span>HP</span>
-        <span>{translate('str', lang)}</span>
-        <span>{translate('might', lang)}</span>
+        <span>{locales('str', lang)}</span>
+        <span>{locales('might', lang)}</span>
       </div>
 
-      <div className={body}>
-        {ROWS.map(row => {
-          const { hp, str, might } = details[row];
+      <div id="body" className={className}>
+        {ROWS.map(key => {
+          const { hp = '0', str = '0', might = '0' } = details[key] || {};
           return (
-            <Fragment key={row}>
-              <span>{translate(row, lang)}</span>
+            <Fragment key={key}>
+              <span>{locales(key, lang)}</span>
               <span>{hp}</span>
               <span>{str}</span>
               <span>{might}</span>
@@ -50,8 +48,8 @@ function StatsTable({ collapse, details }) {
         })}
       </div>
 
-      <div className={footer}>
-        <span>{translate('total', lang)}</span>
+      <div id="footer" className={className}>
+        <span>{locales('total', lang)}</span>
         <span>{calcVal(details.total.hp)}</span>
         <span>{calcVal(details.total.str)}</span>
         <span>{details.total.might}</span>
@@ -60,4 +58,11 @@ function StatsTable({ collapse, details }) {
   );
 }
 
-export default React.memo(StatsTable);
+const mapStateToProps = state => {
+  return {
+    theme: state.theme,
+    details: getDetails(state),
+  };
+};
+
+export default connect(mapStateToProps)(StatsTable);

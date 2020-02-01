@@ -1,0 +1,24 @@
+img,
+input[type='image'] {
+  @include user-select-none;
+
+  @each $name, $size in $img-size {
+    &.#{$name} {
+      width: $size;
+      height: $size;
+    }
+  }
+}
+
+input[type='image'] {
+  cursor: pointer;
+
+  &.md:hover {
+    @include scale(1.1);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

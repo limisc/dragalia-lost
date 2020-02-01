@@ -1,0 +1,170 @@
+#stats-table {
+  @include border-box;
+  line-height: 24px;
+  > div {
+    display: grid;
+    grid-template-columns: 40% repeat(3, 20%);
+    justify-items: center;
+
+    &#header,
+    &#footer {
+      border-top: medium solid $blue0;
+      border-bottom: medium solid $blue0;
+    }
+
+    &#footer:not(.expend) {
+      border-top: none;
+    }
+
+    &#body {
+      // display: none;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.25s ease-out;
+
+      &.expend {
+        // display: grid;
+        max-height: 300px;
+        transition: 0.25s ease-in;
+      }
+    }
+
+    > span {
+      padding: $unit0 0;
+    }
+  }
+}
+
+.select-enemy {
+  > .select-control {
+    height: 70px;
+    background-size: cover;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  > .select-list {
+    overflow-y: scroll;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#damage-bar {
+  @include flex-v;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  border-radius: $unit0;
+  height: 56px;
+  color: white;
+  font-weight: bold;
+}
+
+.avatar-list {
+  @include grid(5);
+  justify-items: center;
+
+  > div {
+    @include flex-v;
+    @include flex-column;
+  }
+
+  button {
+    width: 75%;
+  }
+}
+
+.avatar-item {
+  @include flex-v;
+  @include flex-column;
+  width: 100%;
+
+  button {
+    margin-top: $unit1;
+  }
+}
+
+.avatar {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+
+  input[type='image'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  span {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    color: #fdd12c;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+}
+
+.input-btn {
+  @include grid-columns(3fr 1fr);
+  gap: $unit0;
+}
+
+#stats-col3 {
+  @include flex;
+  @include flex-column;
+  height: $page-height;
+}
+
+#item-filter {
+  > div {
+    @include next-div-margin-top;
+  }
+}
+
+#item-options {
+  @include border-box;
+  height: 124px;
+}
+
+.check-box-list {
+  @include grid('auto-fit');
+  @include next-div-margin-top;
+  justify-items: center;
+
+  &.Type {
+    @include grid(9);
+  }
+}
+
+.item {
+  @include border-box;
+  padding: $unit1;
+  padding-bottom: 0;
+}
+
+.item-content {
+  @include grid;
+  @include align-items;
+  gap: $unit1;
+  grid-template-columns: 70px 1fr repeat(3, 40px);
+  justify-items: center;
+
+  height: 60px;
+  box-shadow: 0 0 5px -3px $black0;
+}
+
+.halidom-item,
+.facility-item {
+  @include grid-columns(80px 1fr);
+  @include align-items;
+  border-bottom: 2px solid $blue0;
+}

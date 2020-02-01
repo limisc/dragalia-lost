@@ -1,0 +1,10 @@
+@mixin facility--laptop {
+  #facility-col1 {
+    @include flex;
+    @include flex-column;
+  }
+}
+
+#facility-col2 {
+  height: $page-height;
+}

@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Image } from 'components';
 
-function MaterialItem({ columnIndex, rowIndex, style, data: { dict, arr } }) {
-  const key = arr[2 * rowIndex + columnIndex];
-  const qty = dict[key];
-  return (
-    <>
-      {qty && (
-        <div style={style} className="material-item">
-          <Image field="material" image={key} />
-          <div>{qty}</div>
-        </div>
-      )}
-    </>
-  );
-}
+const MaterialItem = memo(function MaterialItem(props) {
+  const { rowIndex, columnIndex, style, data } = props;
+  const index = 2 * rowIndex + columnIndex;
+  const item = data[index];
 
-export default React.memo(MaterialItem);
+  if (item === undefined) return null;
+
+  const [id, value] = item;
+  const image = `material/${id}`;
+  return (
+    <div style={style} className="flex-v">
+      <Image image={image} size="md" />
+      <div style={{ flex: '1', textAlign: 'center' }}>{value}</div>
+    </div>
+  );
+});
+
+export default MaterialItem;

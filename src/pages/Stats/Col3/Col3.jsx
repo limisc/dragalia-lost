@@ -1,19 +1,40 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
+import { connect } from 'react-redux';
+import { setPanel } from 'actions';
 import { refs } from 'utils';
-import { RadioBtns } from 'components';
-import PanelHalidom from './PanelHalidom';
-import PanelStats from './PanelStats';
+import { Checkbox } from 'components';
+import Items from './Items';
+import Halidom from './Halidom';
 
-const btns = ['stats', 'halidom'];
+function Col3({ adventurer, lang, panel, setPanel }) {
+  const disabled = adventurer === null;
 
-function Col3({ panel, setPanel }) {
   return (
-    <div id="col3" ref={refs.col3}>
-      <RadioBtns name="panel" checked={panel} btns={btns} onChange={setPanel} />
-      {panel === 'stats' ? <PanelStats /> : <PanelHalidom />}
+    <div id="stats-col3" ref={refs.col3}>
+      <div>
+        <Checkbox
+          disabled={disabled}
+          checked={panel}
+          lang={lang}
+          value="halidom"
+          setChecked={setPanel}
+        />
+      </div>
+
+      {panel ? <Halidom /> : <Items lang={lang} />}
     </div>
   );
 }
 
-export default React.memo(Col3);
+const mapStateToProps = ({ items, panel }) => {
+  return {
+    panel,
+    adventurer: items.adventurer,
+  };
+};
+
+const mapDispatchToProps = {
+  setPanel,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Col3);

@@ -1,38 +1,47 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
+import { connect } from 'react-redux';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { Header, ContextProvider } from 'components';
+import { getBodyBGC } from 'utils';
+import Header from './Header';
 
-const Stats = lazy(() => import('./pages/Stats'));
-const Halidom = lazy(() => import('./pages/Halidom'));
-const Facility = lazy(() => import('./pages/Facility'));
+const pages = {
+  stats: lazy(() => import('./pages/Stats')),
+  facility: lazy(() => import('./pages/Facility')),
+};
 
-function CustomRoute({ component: Page, path }) {
+const getRoute = page => {
+  const path = `/${page}/:lang?`;
+  const Component = pages[page];
   return (
-    <Route
-      path={path}
-      render={({ history, match }) => {
-        return (
-          <ContextProvider history={history} match={match}>
-            <Header />
-            <Page />
-          </ContextProvider>
-        );
-      }}
-    />
+    <Route path={path}>
+      <Header />
+      <Component />
+    </Route>
   );
-}
+};
 
-function Routes() {
+function Routes({ theme }) {
+  useEffect(() => {
+    if (theme) {
+      document.body.style.backgroundColor = getBodyBGC(theme);
+    }
+  }, [theme]);
+
   return (
     <Suspense fallback={<div>Loading</div>}>
       <Switch>
-        <CustomRoute path="/stats/:lang?" component={Stats} />
-        <CustomRoute path="/halidom/:lang?" component={Halidom} />
-        <CustomRoute path="/facility/:lang?" component={Facility} />
+        {getRoute('stats')}
+        {getRoute('facility')}
         <Redirect to="/stats/:lang?" />
       </Switch>
     </Suspense>
   );
 }
 
-export default Routes;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);

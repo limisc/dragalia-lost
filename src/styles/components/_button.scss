@@ -1,0 +1,25 @@
+button {
+  @include flex-c;
+  @include border-box;
+  @include user-select-none;
+
+  position: relative;
+
+  border: 2px solid transparent;
+  border-radius: $unit0;
+  min-width: 30px;
+  height: $text-field-height;
+  padding: 0;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+
+  outline: 0;
+
+  &:hover {
+    border-color: #90a4ae;
+  }
+}

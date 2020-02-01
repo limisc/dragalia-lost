@@ -1,0 +1,4 @@
+.btn-panel {
+  @include grid('auto-fit');
+  height: $text-field-height;
+}

@@ -1,0 +1,42 @@
+.split-btn {
+  position: relative;
+
+  display: inline-flex;
+
+  > button {
+    @include flex-rest;
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .select-option {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    button:hover {
+      border-color: red;
+    }
+
+    img {
+      pointer-events: none;
+    }
+  }
+}
+
+button.toggle-split {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50px;
+  flex: 0 1 50px;
+
+  &:hover {
+    background-color: $blue0;
+  }
+}

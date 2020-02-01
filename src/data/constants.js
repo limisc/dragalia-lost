@@ -1,134 +1,55 @@
-export const ADVENTURER_ABILITY = {
-  '5_0': [],
-  '5_10': ['abilities11', 'abilities21'],
-  '5_20': ['abilities11', 'abilities21', 'abilities31'],
-  '5_30': ['abilities12', 'abilities21', 'abilities31'],
-  '5_40': ['abilities12', 'abilities22', 'abilities31'],
-  '5_45': ['abilities12', 'abilities22', 'abilities32'],
-  '5_50': ['abilities12', 'abilities22', 'abilities32'],
-  rest_0: [],
-  rest_10: ['abilities11', 'abilities21'],
-  rest_20: ['abilities11', 'abilities21'],
-  rest_30: ['abilities12', 'abilities21'],
-  rest_40: ['abilities12', 'abilities22'],
-  rest_45: ['abilities12', 'abilities22', 'abilities31'],
-  rest_50: ['abilities12', 'abilities22', 'abilities31'],
-};
-
-export const COABILITY_DICT = {
-  Axe_3: [5, 7, 9, 11, 15],
-  Axe_4: [7, 8, 9, 11, 15],
-  Axe_5: [9, 10, 11, 12, 15],
-  Lance_3: [5, 7, 9, 12, 15],
-  Lance_4: [7, 8, 9, 12, 15],
-  Lance_5: [9, 10, 12, 13, 15],
-  Staff_3: [2, 6, 10, 14, 20],
-  Staff_4: [6, 8, 10, 14, 20],
-  Staff_5: [10, 12, 14, 16, 20],
-};
-
-export const ELEMENTS_MODIFIER = {
-  // advantage: ad, disadvantage: da
-  Flame: {
-    ad: 'Wind',
-    da: 'Water',
+export const COABILITY_VALUE = {
+  Axe: {
+    '3': [5, 7, 9, 11, 15],
+    '4': [7, 8, 9, 11, 15],
+    '5': [9, 10, 11, 12, 15],
   },
-  Water: {
-    ad: 'Flame',
-    da: 'Wind',
+  Lance: {
+    '3': [5, 7, 9, 12, 15],
+    '4': [7, 8, 9, 12, 15],
+    '5': [9, 10, 12, 13, 15],
   },
-  Wind: {
-    ad: 'Water',
-    da: 'Flame',
-  },
-  Light: {
-    ad: 'Shadow',
-    da: 'Shadow',
-  },
-  Shadow: {
-    ad: 'Light',
-    da: 'Light',
-  },
-};
-
-export const LIMIT = {
-  adventurer: {
-    '3': 60,
-    '4': 70,
-    '5': 80,
-  },
-  altar: 35,
-  augHp: 100,
-  augStr: 100,
-  dojo: 35,
-  event: 35, // facility page
-  eventE: 35,
-  dracolith: 20,
-  dragon: {
-    '3': [20, 30, 40, 50, 60],
-    '4': [30, 40, 50, 65, 80],
-    '5': [40, 55, 70, 85, 100],
-  },
-  mana: {
-    '3': '30',
-    '4': '40',
-    '5': '50',
-  },
-  slime: 15,
-  weapon: {
-    '3': [20, 25, 30, 35, 40],
-    '4': [50, 55, 60, 65, 70],
-    '5': [80, 85, 90, 95, 100],
-  },
-  wyrmprint: {
-    '3': [20, 30, 40, 50, 60],
-    '4': [30, 40, 50, 65, 80],
-    '5': [40, 55, 70, 85, 100],
+  Staff: {
+    '3': [2, 6, 10, 14, 20],
+    '4': [6, 8, 10, 14, 20],
+    '5': [10, 12, 14, 16, 20],
   },
 };
 
 export const MIGHT_DICT = {
-  adventurerSkill_0: 100,
-  adventurerSkill_10: 100,
-  adventurerSkill_20: 200, // 100+100,
-  adventurerSkill_30: 300, // 200+100,
-  adventurerSkill_40: 400, // 200+200,
-  adventurerSkill_45: 500, // 300+200,
-  adventurerSkill_50: 500, // 300+200,
-  coAbility_3_0: 50,
-  coAbility_3_1: 110,
-  coAbility_3_2: 170,
-  coAbility_3_3: 230,
-  coAbility_3_4: 320,
-  coAbility_4_0: 110,
-  coAbility_4_1: 140,
-  coAbility_4_2: 170,
-  coAbility_4_3: 230,
-  coAbility_4_4: 320,
-  coAbility_5_0: 170,
-  coAbility_5_1: 200,
-  coAbility_5_2: 230,
-  coAbility_5_3: 260,
-  coAbility_5_4: 320,
-  fs_10: 60,
-  fs_40: 120,
-  itemSkill_0: 50,
-  itemSkill_4: 100,
+  adventurerSkill: {
+    '0': 100,
+    '10': 100,
+    '20': 200, // 100 + 100,
+    '30': 300, // 200 + 100,
+    '40': 400, // 200 + 200,
+    '45': 500, // 300 + 200,
+    '50': 500, // 300 + 200,
+    '70': 700, // 400 + 300,
+  },
+  coAbility: {
+    '3': [50, 110, 170, 230, 320],
+    '4': [110, 140, 170, 230, 320],
+    '5': [170, 200, 230, 260, 320],
+  },
+  fs: {
+    '10': 60,
+    '40': 120,
+  },
+  itemSkill: [50, 100],
 };
 
-export const STATS_KEYS = [
+export const ITEM_KEYS = [
   'adventurer',
   'weapon',
+  'dragon',
   'wyrmprint1',
   'wyrmprint2',
-  'dragon',
 ];
 
-export const RARITIES = ['3', '4', '5'];
+export const ELEMENT_TYPES = ['Flame', 'Water', 'Wind', 'Light', 'Shadow'];
 
-export const ELEMENTS = ['Flame', 'Water', 'Wind', 'Light', 'Shadow'];
-
-export const WEAPONS = [
+export const WEAPON_TYPES = [
   'Sword',
   'Blade',
   'Dagger',
@@ -138,3 +59,26 @@ export const WEAPONS = [
   'Wand',
   'Staff',
 ];
+
+export const ABILITY_TYPES = [
+  '1020002',
+  '1020003',
+  '1010002',
+  '1020010',
+  '1020011',
+  '1010001',
+  '1010007',
+  '1020009',
+  '1010009',
+  '1030002',
+  '1030006',
+  '1030009',
+  '1030003',
+  '1030010',
+  '1030004',
+  '1030005',
+  '1030007',
+  '1030001',
+];
+
+export const RARITY_TYPES = ['3', '4', '5'];

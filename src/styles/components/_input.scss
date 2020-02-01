@@ -1,0 +1,36 @@
+input[type='number'] {
+  /* Firefox */
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+input {
+  min-width: 0;
+
+  &[type='number'],
+  &[type='text'] {
+    @include border-box;
+    width: 100%;
+    height: $text-field-height;
+    padding: 0 $unit1;
+    border-radius: $unit0;
+
+    border: 1px solid transparent;
+    font-size: 1rem;
+    color: $black0;
+
+    &:focus {
+      outline: 0;
+      border-color: #8bbafe;
+      box-shadow: 0 0 0 0.1rem $blue1;
+    }
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+}

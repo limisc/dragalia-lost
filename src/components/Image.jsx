@@ -1,31 +1,27 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const defaultProps = {
-  id: null,
-  size: 'md',
-  tabIndex: '0',
-};
+const Image = memo(function Image(props) {
+  const { image, name, size, title, tabIndex, onClick } = props;
 
-function Image({ field, id, image, size, tabIndex, onClick }) {
-  const src = `${process.env.PUBLIC_URL}/images/${field}/${image}.png`;
+  const alt = title || image;
+  const src = `${process.env.PUBLIC_URL}/images/${image}.png`;
 
   if (onClick) {
     return (
       <input
-        id={id}
-        alt={image}
+        alt={alt}
         className={size}
+        name={name}
         src={src}
         type="image"
+        title={title}
         tabIndex={tabIndex}
         onClick={onClick}
       />
     );
   }
 
-  return <img id={id} className={size} alt={image} src={src} />;
-}
+  return <img alt={alt} className={size} src={src} title={title} />;
+});
 
-Image.defaultProps = defaultProps;
-
-export default React.memo(Image);
+export default Image;

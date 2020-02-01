@@ -1,68 +1,66 @@
-/* eslint-disable no-console */
-import React from 'react';
-import uuid from 'uuid/v4';
-import { ClearRounded, SettingsApplicationsRounded } from '@material-ui/icons';
-import { translate } from 'utils';
-import { Context } from './ContextProvider';
+import React, { useRef } from 'react';
+import { connect } from 'react-redux';
+import uuid from 'uuid/v1';
+import { getOutBGC } from 'utils';
+import locales from 'locales';
 import Image from './Image';
 
-const defaultProps = {
-  checked: false,
-  disabled: false,
-  icon: true,
-  title: null,
-};
+function Checkbox(props) {
+  const {
+    checked,
+    disabled,
+    group,
+    icon,
+    lang,
+    title: titleProp,
+    value,
+    theme,
+    onChange,
+    setChecked,
+  } = props;
 
-const ICONS = {
-  disable: <ClearRounded />,
-  setting: <SettingsApplicationsRounded />,
-};
+  const title = locales(titleProp || value, lang);
 
-function Checkbox({
-  checked,
-  disabled,
-  icon,
-  id,
-  name,
-  label,
-  title,
-  onChange,
-  setChecked,
-}) {
-  const { lang } = React.useContext(Context);
-  const newId = React.useMemo(() => id || uuid(), [id]);
+  const { current: id } = useRef(
+    group && value ? `check_${group}_${value}` : uuid()
+  );
+
+  const { current: image } = useRef(
+    group ? `icon/${group}_${value}` : `icon/${value}`
+  );
 
   const handleChange = e => {
-    if (setChecked) {
-      setChecked(e.target.checked);
-    } else if (onChange) {
+    if (onChange) {
       onChange(e);
+    } else if (setChecked) {
+      setChecked(e.target.checked);
     }
   };
 
   return (
-    <>
+    <div className="checkbox" style={getOutBGC(theme)}>
       <input
-        className="check-box"
         type="checkbox"
-        id={newId}
         checked={checked}
         disabled={disabled}
-        name={name}
-        value={label}
+        id={id}
+        name={group}
+        value={value}
         onChange={handleChange}
       />
-      <label htmlFor={newId} title={translate(title || label, lang)}>
-        {icon ? (
-          <Image size="xs" field="icon" image={`${name}_${label}`} />
-        ) : (
-          ICONS[label] || label
-        )}
-      </label>
-    </>
+      {icon ? (
+        <label htmlFor={id} className="icon" title={title}>
+          <Image image={image} title={title} />
+        </label>
+      ) : (
+        <label htmlFor={id}>{title}</label>
+      )}
+    </div>
   );
 }
 
-Checkbox.defaultProps = defaultProps;
+const mapStateToProps = ({ theme }) => {
+  return { theme };
+};
 
-export default React.memo(Checkbox);
+export default connect(mapStateToProps)(Checkbox);

@@ -1,0 +1,99 @@
+$arrow-width: 10px;
+$arrow-height: 3px;
+$transit: $arrow-width - $arrow-height;
+
+.arrow {
+  position: absolute;
+
+  display: inline-block;
+  border: solid $black2;
+  border-width: 0 $arrow-height $arrow-height 0;
+
+  padding: $arrow-width - $arrow-height * 2;
+
+  transition: 0.4s ease;
+
+  pointer-events: none;
+
+  .disabled & {
+    border-color: $disabled;
+  }
+
+  .white & {
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &.down {
+    @include rotate(45deg);
+  }
+
+  &.up {
+    @include rotate(-135deg);
+  }
+
+  &.right {
+    @include rotate(-45deg);
+  }
+
+  &.left {
+    @include rotate(135deg);
+  }
+}
+
+.animated-arrow {
+  position: absolute;
+  width: $arrow-width;
+  height: $arrow-width;
+
+  transition: 0.4s ease;
+
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    background-color: $black2;
+    transition: 0.4s ease;
+
+    .white & {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .disabled & {
+      background-color: $disabled;
+    }
+  }
+
+  &::before {
+    width: $arrow-width;
+    height: $arrow-height;
+  }
+
+  &::after {
+    width: $arrow-height;
+    height: $arrow-width;
+  }
+
+  &.up,
+  &.down {
+    @include rotate(45deg);
+  }
+
+  &.right,
+  &.left {
+    @include rotate(-45deg);
+  }
+
+  &.down,
+  &.right {
+    &::before {
+      @include transform(translate(0, $transit));
+    }
+
+    &::after {
+      @include transform(translate($transit, 0));
+    }
+  }
+}

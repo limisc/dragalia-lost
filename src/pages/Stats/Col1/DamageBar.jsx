@@ -1,12 +1,11 @@
 import React from 'react';
-import { Context } from 'components';
-import { translate } from 'utils';
+import { connect } from 'react-redux';
+import { getDamage } from 'utils';
 
-function DamageBar({ damageState: { arr, hp, max, min } }) {
-  const { lang } = React.useContext(Context);
+function DamageBar(props) {
+  const { hp, min, max } = props;
 
   let pct;
-
   if (hp > max) {
     pct = 100;
   } else if (hp <= min) {
@@ -20,29 +19,17 @@ function DamageBar({ damageState: { arr, hp, max, min } }) {
     `${pct}%, #deb887 ${pct + 5}%, #be3223 , #800000)`;
 
   return (
-    <>
-      <div id="damage-bar" style={{ background }}>
-        <span>{min}</span>
-        <span style={{ fontSize: '20px' }}>{`${hp} (${pct.toFixed(2)}%)`}</span>
-        <span>{max}</span>
-      </div>
-
-      <table>
-        <tbody>
-          {arr.map(t => {
-            const content = t.split(',');
-            return (
-              <tr key={`${content[0]}_${content[1]}`}>
-                <td>{translate(content[0], lang)}</td>
-                <td>{translate(content[1], lang)}</td>
-                <td>{translate(content[2], lang)}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </>
+    <div id="damage-bar" style={{ background }}>
+      <span>{min}</span>
+      <span style={{ fontSize: '20px' }}>{`${hp} (${pct.toFixed(2)}%)`}</span>
+      <span>{max}</span>
+    </div>
   );
 }
 
-export default React.memo(DamageBar);
+const mapStateToProps = (state, props) => {
+  const { hp, min, max } = getDamage(state, props);
+  return { hp, min, max };
+};
+
+export default connect(mapStateToProps)(DamageBar);

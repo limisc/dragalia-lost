@@ -1,0 +1,114 @@
+$slider-height: 40px;
+$border-width: 1px;
+$thumb-width: 30px;
+$thumb-height: $slider-height - 2 * $border-width - 2;
+
+.slider {
+  @include user-select-none;
+  @include flex;
+  width: 100%;
+}
+
+.slider-main {
+  @include flex-v;
+  @include flex-rest;
+  @include border-box;
+  position: relative;
+
+  border: $border-width solid $black2;
+  border-radius: $unit0;
+
+  width: 100%;
+  height: $slider-height;
+
+  background-color: #e7faf3;
+  cursor: pointer;
+
+  touch-action: none;
+}
+
+.slider-rail,
+.slider-track {
+  position: absolute;
+  height: 10px;
+}
+
+.slider-rail {
+  width: 100%;
+  background-color: $base1;
+}
+
+.slider-track {
+  background-color: $blue0;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: 1px;
+
+  border-radius: 4px;
+  width: $thumb-width;
+  height: $thumb-height;
+
+  background-color: $black1;
+
+  line-height: $thumb-height;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+
+  touch-action: manipulation;
+}
+
+.slider-btn {
+  position: relative;
+
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-size: 40px 40px;
+    filter: drop-shadow(1px 1px 1px $black1) invert(0.3);
+  }
+
+  &:active:after {
+    filter: invert(0.3);
+  }
+
+  &.minus:after {
+    background-image: url(/images/icon/minus.svg);
+  }
+
+  &.plus:after {
+    background-image: url(/images/icon/plus.svg);
+  }
+
+  &.min:after {
+    background-image: url(/images/icon/min.svg);
+  }
+
+  &.max:after {
+    background-image: url(/images/icon/max.svg);
+  }
+}
