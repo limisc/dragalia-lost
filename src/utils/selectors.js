@@ -82,8 +82,8 @@ export const getItemList = createCachedSelector(
         }
 
         if (field === 'wyrmprint') {
-          if (item1.Enemey && !item2.Enemey) return -1;
-          if (!item1.Enemey && item2.Enemey) return 1;
+          if (item1.Enemy && !item2.Enemy) return -1;
+          if (!item1.Enemy && item2.Enemy) return 1;
         }
 
         if (

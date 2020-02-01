@@ -39,7 +39,7 @@ const calcDragon = (dragon, sameEle) => {
 
   const stage = unbind === '4' ? 1 : 0;
 
-  ['IncSTR', 'IncDEF'].forEach(key => {
+  ['IncHP', 'IncSTR'].forEach(key => {
     if (includes(dragon, key)) {
       const ability = dragon[key];
       for (let i = stage; i < ability.length; i += 2) {

@@ -64,9 +64,9 @@ const getDamage = createSelector(
 
         if (key === 'wyrmprint1' || key === 'wyrmprint2') {
           printDef += IncDEF;
-          if (item.enemy === enemy) {
-            totalReduce += item.incDIS;
-            printReduce += item.incDIS;
+          if (item.Enemy === enemy) {
+            totalReduce += item.IncDIS;
+            printReduce += item.IncDIS;
           }
 
           if (ResEle === enemyEle) {
