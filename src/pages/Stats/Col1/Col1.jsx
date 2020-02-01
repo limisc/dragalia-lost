@@ -5,7 +5,7 @@ import StatsTable from './StatsTable';
 import Dungeon from './Dungeon';
 
 function Col1({ adventurer, lang }) {
-  const [expend, setExpend] = useState(true);
+  const [expend, setExpend] = useState(false);
 
   return (
     <div id="stats-col1" ref={refs.col1}>
