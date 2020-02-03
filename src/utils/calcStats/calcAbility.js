@@ -44,7 +44,7 @@ const calcDragon = (dragon, sameEle) => {
       const ability = dragon[key];
       for (let i = stage; i < ability.length; i += 2) {
         if (sameEle || ability[i].Element === null) {
-          detail[key] = ability[i].Value;
+          detail[key] = (detail[key] || 0) + ability[i].Value;
         }
       }
     }
