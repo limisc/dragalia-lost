@@ -4647,6 +4647,30 @@ const wyrmprint = {
       },
     ],
   },
+  '40050089': {
+    Id: '40050089',
+    Name: {
+      en: 'Unexpected Requests',
+      ja: '聖城に舞い込む依頼',
+      zh: '请求圣城帮忙的委托',
+    },
+    Rarity: '5',
+    Abbr: 'UR',
+    Image: '400419',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [120, 160, 200],
+    Icon: [
+      {
+        Name: 'Last Offense +50%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Last Devastation +30%',
+        Image: '1020010',
+      },
+    ],
+  },
   '40050090': {
     Id: '40050090',
     Name: {
@@ -4668,6 +4692,54 @@ const wyrmprint = {
       {
         Name: 'Flurry Devastation +10%',
         Image: '1020010',
+      },
+    ],
+  },
+  '40050091': {
+    Id: '40050091',
+    Name: {
+      en: 'The Lurker in the Woods',
+      ja: '森の奥に潜むもの',
+      zh: '森林深处的潜伏者',
+    },
+    Rarity: '5',
+    Abbr: 'TLitW',
+    Image: '400418',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [100, 140, 180],
+    Icon: [
+      {
+        Name: 'Force Strike +50%',
+        Image: '1010001',
+      },
+      {
+        Name: 'Broken Punisher +25%',
+        Image: '1010009',
+      },
+    ],
+  },
+  '40050092': {
+    Id: '40050092',
+    Name: {
+      en: 'A Suit of Midnight',
+      ja: '漆黒、纏いて挑む',
+      zh: '身披漆黑上阵',
+    },
+    Rarity: '5',
+    Abbr: 'ASoM',
+    Image: '400416',
+    Max: [188, 52],
+    Min: [28, 7],
+    Might: [80, 110, 140],
+    Icon: [
+      {
+        Name: '(Shadow) Affliction Guard III',
+        Image: '1030012',
+      },
+      {
+        Name: 'Shapeshift Prep +10%',
+        Image: '1010008',
       },
     ],
   },

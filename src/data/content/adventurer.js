@@ -5801,6 +5801,52 @@ const adventurer = {
       [387, 226],
     ],
   },
+  '10650202': {
+    Id: '10650202',
+    Name: {
+      en: 'Sarisse',
+      ja: 'シーリス',
+      zh: '希里丝',
+    },
+    Rarity: '5',
+    DefCoef: 8,
+    Element: 'Water',
+    Weapon: 'Bow',
+    LimitBreak: '4',
+    Abbr: 'S',
+    Image: '100029_03',
+    Max: [459, 294],
+    AddMax1: [550, 352],
+    Min: [
+      [45, 29],
+      [55, 35],
+      [65, 41],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Bow Expertise +2',
+        Image: '1020035',
+      },
+      {
+        Name: 'Burn Res +100%',
+        Image: '1030002',
+      },
+      {
+        Name: 'Force Strike Damage & Charge Rate II',
+        Image: '1010001',
+      },
+    ],
+    McBonus: [
+      [53, 34],
+      [115, 74],
+      [188, 121],
+      [250, 161],
+      [281, 181],
+      [307, 199],
+      [368, 238],
+    ],
+  },
   '10650301': {
     Id: '10650301',
     Name: {

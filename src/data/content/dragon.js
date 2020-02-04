@@ -1489,6 +1489,41 @@ const dragon = {
       },
     ],
   },
+  '20050112': {
+    Id: '20050112',
+    Name: {
+      en: 'Dreadking Rathalos',
+      ja: '黒炎王リオレウス',
+      zh: '黑炎王雄火龙',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Abbr: 'DR',
+    Image: '210122_01',
+    Max: [369, 127],
+    Min: [36, 12],
+    Might: [80, 100],
+    IncSTR: [
+      {
+        Value: 45,
+        Element: 'Flame',
+      },
+      {
+        Value: 55,
+        Element: 'Flame',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Flame) Strength & Force Strike Damage II',
+        Image: '1020002',
+      },
+      {
+        Name: '(Flame) Striking Haste II & Gauge Decelerator +30%',
+        Image: '1020004',
+      },
+    ],
+  },
   '20050201': {
     Id: '20050201',
     Name: {
