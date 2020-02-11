@@ -1,32 +1,25 @@
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    jest: true,
-    node: true,
-  },
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  root: true,
   parser: 'babel-eslint',
-  rules: {
-    'max-len': [1, { code: 80, tabWidth: 2, ignoreComments: true }],
-    'jsx-a11y/label-has-associated-control': [
-      2,
-      {
-        labelAttributes: ['label'],
-        depth: 3,
-      },
-    ],
-    'react/prop-types': 0,
-    'no-console': 0,
-    'no-shadow': 0,
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: { jsx: true },
+    sourceType: 'module',
   },
+  env: { browser: true, es6: true },
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   settings: {
+    react: { version: 'detect' },
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx'],
-        paths: ['src'],
-      },
+      node: { extensions: ['.js', '.jsx'], paths: ['src'] },
     },
+  },
+  rules: {
+    'react/prop-types': 'off',
+    'no-console': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      { labelAttributes: ['label'] },
+    ],
   },
 };
