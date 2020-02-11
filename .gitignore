@@ -1,5 +1,6 @@
 /node_modules
 /build
+/.command.sh
 .DS_Store
 .env.local
 .env.development.local
