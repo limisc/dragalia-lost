@@ -3008,6 +3008,41 @@ const dragon = {
       },
     ],
   },
+  '20050514': {
+    Id: '20050514',
+    Name: {
+      en: 'Epimetheus',
+      ja: 'エピメテウス',
+      zh: '埃庇米修斯',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Abbr: 'E',
+    Image: '210112_01',
+    Max: [368, 128],
+    Min: [36, 12],
+    Might: [70, 100],
+    IncSTR: [
+      {
+        Value: 35,
+        Element: 'Shadow',
+      },
+      {
+        Value: 50,
+        Element: 'Shadow',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Shadow) Strength +50%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Shadow) Poisoned Punisher +20%',
+        Image: '1070001',
+      },
+    ],
+  },
 };
 
 export default dragon;

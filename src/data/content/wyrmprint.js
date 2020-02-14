@@ -2446,6 +2446,30 @@ const wyrmprint = {
       },
     ],
   },
+  '40040070': {
+    Id: '40040070',
+    Name: {
+      en: 'The Maid Crusade',
+      ja: 'メイド部隊におまかせ！',
+      zh: '交给女仆部队吧！',
+    },
+    Rarity: '4',
+    Abbr: 'TMC',
+    Image: '400414',
+    Max: [145, 47],
+    Min: [21, 7],
+    Might: [80, 120, 160],
+    Icon: [
+      {
+        Name: 'Recovery Potency +10%',
+        Image: '1020009',
+      },
+      {
+        Name: 'Healing Doublebuff ',
+        Image: '1010011',
+      },
+    ],
+  },
   '40050001': {
     Id: '40050001',
     Name: {
@@ -4740,6 +4764,31 @@ const wyrmprint = {
       {
         Name: 'Shapeshift Prep +10%',
         Image: '1010008',
+      },
+    ],
+  },
+  '40050093': {
+    Id: '40050093',
+    Name: {
+      en: 'The Fires of Hate',
+      ja: 'アンビバレント・フレア',
+      zh: '爱恨交融之焰',
+    },
+    Rarity: '5',
+    Abbr: 'TFOH',
+    Image: '400413',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [80, 120, 160],
+    IncSTR: [10, 13, 15],
+    Icon: [
+      {
+        Name: 'Full HP = Strength +15%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Poisoned Punisher +20%',
+        Image: '1070001',
       },
     ],
   },

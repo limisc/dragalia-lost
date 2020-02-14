@@ -3901,6 +3901,52 @@ const adventurer = {
       [357, 249],
     ],
   },
+  '10450302': {
+    Id: '10450302',
+    Name: {
+      en: 'Melody',
+      ja: 'メロディ',
+      zh: '米罗蒂',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Wind',
+    Weapon: 'Axe',
+    LimitBreak: '4',
+    Abbr: 'M',
+    Image: '110027_02',
+    Max: [469, 294],
+    AddMax1: [562, 352],
+    Min: [
+      [46, 29],
+      [57, 35],
+      [66, 41],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Poison = Team Strength +10%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Bog Res +100%',
+        Image: '1030009',
+      },
+      {
+        Name: 'Poisoned Punisher +30%',
+        Image: '1070001',
+      },
+    ],
+    McBonus: [
+      [55, 34],
+      [118, 74],
+      [193, 121],
+      [256, 161],
+      [287, 181],
+      [314, 198],
+      [376, 237],
+    ],
+  },
   '10450401': {
     Id: '10450401',
     Name: {
@@ -6029,6 +6075,52 @@ const adventurer = {
       [295, 173],
       [321, 189],
       [385, 226],
+    ],
+  },
+  '10650502': {
+    Id: '10650502',
+    Name: {
+      en: 'Addis',
+      ja: 'アディス',
+      zh: '阿迪斯',
+    },
+    Rarity: '5',
+    DefCoef: 8,
+    Element: 'Shadow',
+    Weapon: 'Bow',
+    LimitBreak: '4',
+    Abbr: 'A',
+    Image: '110310_02',
+    Max: [455, 297],
+    AddMax1: [546, 356],
+    Min: [
+      [44, 29],
+      [55, 36],
+      [64, 42],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Poisoned Punisher +30%',
+        Image: '1070001',
+      },
+      {
+        Name: 'Paralysis Res +100%',
+        Image: '1030004',
+      },
+      {
+        Name: 'HP Below 30% = Strength & Attack Rate III',
+        Image: '1020030',
+      },
+    ],
+    McBonus: [
+      [53, 34],
+      [114, 74],
+      [187, 121],
+      [248, 161],
+      [278, 181],
+      [306, 199],
+      [367, 238],
     ],
   },
   '10730101': {
