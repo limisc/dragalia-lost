@@ -22,8 +22,8 @@ function Col2(props) {
   } = props;
 
   const handleFocus = useCallback(
-    e => {
-      selectFocus(e.target.name);
+    (_, value) => {
+      selectFocus(value);
     },
     [selectFocus]
   );
@@ -47,7 +47,7 @@ function Col2(props) {
       </div>
       <div className="avatar-list paper" style={getPaperBGC(theme)}>
         {ITEM_KEYS.map(key => {
-          const className = clsx('avatar', { scale: key === focused });
+          const className = clsx('avatar', { active: key === focused });
           const { [key]: item } = items;
           const title =
             item === null
@@ -70,7 +70,12 @@ function Col2(props) {
               </div>
 
               {item !== null && (
-                <button type="button" name={key} onClick={setMax}>
+                <button
+                  type="button"
+                  className="max-button"
+                  name={key}
+                  onClick={setMax}
+                >
                   MAX
                 </button>
               )}

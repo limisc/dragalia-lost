@@ -50,7 +50,7 @@ function Checkbox(props) {
       />
       {icon ? (
         <label htmlFor={id} className="icon" title={title}>
-          <Image image={image} title={title} />
+          <Image size="xs" image={image} title={title} />
         </label>
       ) : (
         <label htmlFor={id}>{title}</label>

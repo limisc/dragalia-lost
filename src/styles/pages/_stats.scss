@@ -74,19 +74,15 @@
     @include flex-column;
   }
 
-  button {
-    width: 75%;
-  }
+  // button {
+  //   width: 75%;
+  // }
 }
 
 .avatar-item {
   @include flex-v;
   @include flex-column;
   width: 100%;
-
-  button {
-    margin-top: $unit1;
-  }
 }
 
 .avatar {
@@ -95,15 +91,14 @@
   height: 0;
   padding-bottom: 100%;
 
-  input[type='image'] {
-    position: absolute;
+  img {
     width: 100%;
     height: 100%;
   }
 
   span {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     right: 10%;
     color: #fdd12c;
     font-weight: 600;
@@ -154,12 +149,19 @@
 .item-content {
   @include grid;
   @include align-items;
+  position: relative;
+  top: 0;
   gap: $unit1;
   grid-template-columns: 70px 1fr repeat(3, 40px);
   justify-items: center;
 
   height: 60px;
   box-shadow: 0 0 5px -3px $black0;
+
+  &:hover {
+    top: -2px;
+    box-shadow: 1px 2px 2px $black0;
+  }
 }
 
 .halidom-item,

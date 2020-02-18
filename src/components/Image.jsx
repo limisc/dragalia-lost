@@ -1,27 +1,34 @@
-import React, { memo } from 'react';
+import React from 'react';
 
-const Image = memo(function Image(props) {
-  const { image, name, size, title, tabIndex, onClick } = props;
+function Image(props) {
+  const { image, name, size, title, onClick } = props;
+  const src = `${process.env.PUBLIC_URL}/images/${image}`;
 
-  const alt = title || image;
-  const src = `${process.env.PUBLIC_URL}/images/${image}.png`;
+  const picture = (
+    <picture className={size}>
+      <source type="image/webp" srcSet={`${src}.webp`} />
+      <img
+        className={size}
+        src={`${src}.png`}
+        alt={title || image}
+        title={title}
+      />
+    </picture>
+  );
 
   if (onClick) {
+    const handleClick = e => {
+      onClick(e, name);
+    };
+
     return (
-      <input
-        alt={alt}
-        className={size}
-        name={name}
-        src={src}
-        type="image"
-        title={title}
-        tabIndex={tabIndex}
-        onClick={onClick}
-      />
+      <button type="button" className="image-button" onClick={handleClick}>
+        {picture}
+      </button>
     );
   }
 
-  return <img alt={alt} className={size} src={src} title={title} />;
-});
+  return picture;
+}
 
 export default Image;

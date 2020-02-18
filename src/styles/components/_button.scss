@@ -1,4 +1,4 @@
-button {
+button:not(.image-button) {
   @include flex-c;
   @include border-box;
   @include user-select-none;
@@ -21,5 +21,10 @@ button {
 
   &:hover {
     border-color: #90a4ae;
+  }
+
+  &.max-button {
+    width: 75%;
+    margin-top: 8px;
   }
 }

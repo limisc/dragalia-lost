@@ -1,6 +1,18 @@
-img,
-input[type='image'] {
+$img-size: (
+  xs: 28px,
+  sm: 32px,
+  md: 60px,
+  lg: 80px,
+);
+
+picture {
+  display: block;
+}
+
+picture,
+img {
   @include user-select-none;
+  outline: none;
 
   @each $name, $size in $img-size {
     &.#{$name} {
@@ -10,15 +22,14 @@ input[type='image'] {
   }
 }
 
-input[type='image'] {
-  cursor: pointer;
+button.image-button {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
 
-  &.md:hover {
-    @include scale(1.1);
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
+  img {
+    cursor: pointer;
   }
 }
