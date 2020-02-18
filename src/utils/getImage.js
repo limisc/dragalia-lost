@@ -3,7 +3,7 @@ import getField from './getField';
 const getImage = (item, itemKey) => {
   const field = getField(itemKey);
 
-  if (item === null) return `${field}/add`;
+  if (item === null) return `${field}/blank`;
 
   let { Image } = item;
   if (field === 'adventurer') {
