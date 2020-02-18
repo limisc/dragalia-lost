@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'no-console': 'off',
+    'no-shadow': 'off',
     'jsx-a11y/label-has-associated-control': [
       'error',
       { labelAttributes: ['label'] },
