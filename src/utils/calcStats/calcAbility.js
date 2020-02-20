@@ -52,7 +52,7 @@ const calcDragon = (dragon, sameEle) => {
 
   if (includes(dragon, 'IncRES')) {
     detail.ResEle = dragon.IncRES[stage].ResEle;
-    detail.incRES = dragon.IncRES[stage].Value;
+    detail.IncRES = dragon.IncRES[stage].Value;
   }
 
   return detail;
