@@ -2379,6 +2379,50 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30150510': {
+    Id: '30150510',
+    Name: {
+      en: 'Chimeratech Tiento',
+      ja: 'キメラテックティエント',
+      zh: '奇美拉幻曲之剑',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Sword',
+    Abbr: 'CT',
+    Image: '301136_01_50501',
+    Max: [189, 680],
+    Min: [56, 204],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30150511': {
+    Id: '30150511',
+    Name: {
+      en: 'Chimeratech Nocturne',
+      ja: 'キメラテックノクターン',
+      zh: '奇美拉夜曲之剑',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Sword',
+    Abbr: 'CN',
+    Image: '301136_01_50502',
+    Max: [270, 972],
+    Min: [81, 291],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
   '30159901': {
     Id: '30159901',
     Name: {
@@ -3485,6 +3529,32 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30240210': {
+    Id: '30240210',
+    Name: {
+      en: 'Shadeflood Grimblade',
+      ja: '水幻の禍太刀',
+      zh: '水幻祸太刀',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Blade',
+    Abbr: 'SG',
+    Image: '302117_01_40201',
+    Max: [69, 278],
+    Min: [20, 83],
+    Icon: [
+      {
+        Name: "(Water) Volcanic Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Water) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30240301': {
     Id: '30240301',
     Name: {
@@ -3864,6 +3934,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30240410': {
+    Id: '30240410',
+    Name: {
+      en: 'Shadelight Grimblade',
+      ja: '光幻の禍太刀',
+      zh: '光幻祸太刀',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Blade',
+    Abbr: 'SG',
+    Image: '302119_01_40401',
+    Max: [62, 295],
+    Min: [18, 88],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
   },
   '30240501': {
     Id: '30240501',
@@ -4253,6 +4349,28 @@ const weapon = {
     ],
     Might: 40,
   },
+  '30249911': {
+    Id: '30249911',
+    Name: {
+      en: 'Shadehaze Blade',
+      ja: '幽幻の太刀',
+      zh: '幽幻太刀',
+    },
+    Rarity: '4',
+    Element: null,
+    Weapon: 'Blade',
+    Abbr: 'SB',
+    Image: '302115_01_49901',
+    Max: [48, 227],
+    Min: [14, 68],
+    Icon: [
+      {
+        Name: "Therion's Bane +15%",
+        Image: '1060004',
+      },
+    ],
+    Might: 40,
+  },
   '30250101': {
     Id: '30250101',
     Name: {
@@ -4632,6 +4750,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30250207': {
+    Id: '30250207',
+    Name: {
+      en: 'Shadeflood Waveblade',
+      ja: '氷幻の濤太刀',
+      zh: '冰幻涛太刀',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Blade',
+    Abbr: 'SW',
+    Image: '302117_01_50201',
+    Max: [90, 361],
+    Min: [27, 108],
+    Icon: [
+      {
+        Name: "(Water) Volcanic Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Water) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30250301': {
     Id: '30250301',
     Name: {
@@ -4972,6 +5116,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30250409': {
+    Id: '30250409',
+    Name: {
+      en: 'Shadegleam Flashblade',
+      ja: '輝幻の閃太刀',
+      zh: '辉幻闪太刀',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Blade',
+    Abbr: 'SF',
+    Image: '302119_01_50401',
+    Max: [81, 383],
+    Min: [24, 114],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30250501': {
     Id: '30250501',
     Name: {
@@ -5115,6 +5285,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30250507': {
+    Id: '30250507',
+    Name: {
+      en: 'Chimeratech Serenade',
+      ja: 'キメラテックセレナーデ',
+      zh: '奇美拉小夜曲之刀',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Blade',
+    Abbr: 'CS',
+    Image: '302127_01_50501',
+    Max: [166, 721],
+    Min: [49, 216],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30250508': {
+    Id: '30250508',
+    Name: {
+      en: 'Chimeratech Requiem',
+      ja: 'キメラテックレクイエム',
+      zh: '奇美拉安魂曲之刀',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Blade',
+    Abbr: 'CR',
+    Image: '302127_01_50502',
+    Max: [238, 1030],
+    Min: [71, 309],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30259901': {
     Id: '30259901',
@@ -6234,6 +6448,32 @@ const weapon = {
     Max: [98, 344],
     Min: [29, 103],
   },
+  '30340209': {
+    Id: '30340209',
+    Name: {
+      en: 'Aquaflow Necrom',
+      ja: 'フロウアクアネクロム',
+      zh: '流水死灵刃',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Dagger',
+    Abbr: 'AN',
+    Image: '303116_01_40201',
+    Max: [75, 265],
+    Min: [22, 79],
+    Icon: [
+      {
+        Name: "(Water) Volcanic Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Water) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30340301': {
     Id: '30340301',
     Name: {
@@ -6586,6 +6826,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30340409': {
+    Id: '30340409',
+    Name: {
+      en: 'Luminolight Necrom',
+      ja: 'ルミノライトネクロム',
+      zh: '冷光死灵刃',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Dagger',
+    Abbr: 'LN',
+    Image: '303118_01_40401',
+    Max: [72, 273],
+    Min: [21, 81],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
   },
   '30340502': {
     Id: '30340502',
@@ -6952,6 +7218,28 @@ const weapon = {
     ],
     Might: 40,
   },
+  '30349910': {
+    Id: '30349910',
+    Name: {
+      en: 'Dread Necrom',
+      ja: 'ドレッドネクロム',
+      zh: '恐怖死灵刃',
+    },
+    Rarity: '4',
+    Element: null,
+    Weapon: 'Dagger',
+    Abbr: 'DN',
+    Image: '303114_01_49901',
+    Max: [63, 194],
+    Min: [18, 58],
+    Icon: [
+      {
+        Name: "Therion's Bane +15%",
+        Image: '1060004',
+      },
+    ],
+    Might: 40,
+  },
   '30350102': {
     Id: '30350102',
     Name: {
@@ -7304,6 +7592,32 @@ const weapon = {
     Max: [250, 1455],
     Min: [75, 436],
   },
+  '30350207': {
+    Id: '30350207',
+    Name: {
+      en: 'Hydroflow Necrom',
+      ja: 'フロウハイドロネクロム',
+      zh: '波涛死灵刃',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Dagger',
+    Abbr: 'HN',
+    Image: '303116_01_50201',
+    Max: [98, 344],
+    Min: [29, 103],
+    Icon: [
+      {
+        Name: "(Water) Volcanic Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Water) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30350301': {
     Id: '30350301',
     Name: {
@@ -7591,6 +7905,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30350408': {
+    Id: '30350408',
+    Name: {
+      en: 'Luminospark Necrom',
+      ja: 'ルミノスパークネクロム',
+      zh: '闪光死灵刃',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Dagger',
+    Abbr: 'LN',
+    Image: '303118_01_50401',
+    Max: [93, 354],
+    Min: [27, 106],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30350501': {
     Id: '30350501',
     Name: {
@@ -7734,6 +8074,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30350508': {
+    Id: '30350508',
+    Name: {
+      en: 'Chimeratech Rondo',
+      ja: 'キメラテックロンド',
+      zh: '奇美拉轮舞曲短剑',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Dagger',
+    Abbr: 'CR',
+    Image: '303126_01_50501',
+    Max: [191, 667],
+    Min: [57, 200],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30350509': {
+    Id: '30350509',
+    Name: {
+      en: 'Chimeratech Rhapsody',
+      ja: 'キメラテックラプソディー',
+      zh: '奇美拉狂想曲短剑',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Dagger',
+    Abbr: 'CR',
+    Image: '303126_01_50502',
+    Max: [273, 953],
+    Min: [81, 285],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30359901': {
     Id: '30359901',
@@ -9022,6 +9406,32 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30440409': {
+    Id: '30440409',
+    Name: {
+      en: 'Crushglare',
+      ja: 'グレアクラッシュ',
+      zh: '炫目破坏斧',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Axe',
+    Abbr: 'C',
+    Image: '304117_01_40401',
+    Max: [73, 292],
+    Min: [21, 87],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30440501': {
     Id: '30440501',
     Name: {
@@ -10151,6 +10561,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30450409': {
+    Id: '30450409',
+    Name: {
+      en: 'Crushdazzle',
+      ja: 'ダズルトーチクラッシュ',
+      zh: '炫炬破坏斧',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Axe',
+    Abbr: 'C',
+    Image: '304117_01_50401',
+    Max: [95, 380],
+    Min: [28, 114],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30450501': {
     Id: '30450501',
     Name: {
@@ -10294,6 +10730,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30450508': {
+    Id: '30450508',
+    Name: {
+      en: 'Chimeratech Sonata',
+      ja: 'キメラテックソナタ',
+      zh: '奇美拉奏鸣曲之斧',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Axe',
+    Abbr: 'CS',
+    Image: '304125_01_50501',
+    Max: [195, 714],
+    Min: [58, 214],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30450509': {
+    Id: '30450509',
+    Name: {
+      en: 'Chimeratech Fugue',
+      ja: 'キメラテックフーガ',
+      zh: '奇美拉遁走曲之斧',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Axe',
+    Abbr: 'CF',
+    Image: '304125_01_50502',
+    Max: [278, 1021],
+    Min: [83, 306],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30459901': {
     Id: '30459901',
@@ -11766,6 +12246,32 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30540410': {
+    Id: '30540410',
+    Name: {
+      en: 'Lance of Starry Skies',
+      ja: '星天の幽槍',
+      zh: '星天幽枪',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Lance',
+    Abbr: 'LOSS',
+    Image: '305124_01_40401',
+    Max: [72, 284],
+    Min: [21, 85],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30540501': {
     Id: '30540501',
     Name: {
@@ -12895,6 +13401,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30550410': {
+    Id: '30550410',
+    Name: {
+      en: 'Lance of Bright Skies',
+      ja: '至高天壌の幽冥槍',
+      zh: '至高天壤幽冥枪',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Lance',
+    Abbr: 'LOBS',
+    Image: '305124_01_50401',
+    Max: [94, 369],
+    Min: [28, 110],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30550501': {
     Id: '30550501',
     Name: {
@@ -13038,6 +13570,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30550508': {
+    Id: '30550508',
+    Name: {
+      en: 'Chimeratech Lament',
+      ja: 'キメラテックラメント',
+      zh: '奇美拉悲歌之枪',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Lance',
+    Abbr: 'CL',
+    Image: '305132_01_50501',
+    Max: [193, 694],
+    Min: [57, 208],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30550509': {
+    Id: '30550509',
+    Name: {
+      en: 'Chimeratech Elegy',
+      ja: 'キメラテックエレジー',
+      zh: '奇美拉挽歌之枪',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Lance',
+    Abbr: 'CE',
+    Image: '305132_01_50502',
+    Max: [275, 991],
+    Min: [82, 297],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30559901': {
     Id: '30559901',
@@ -14437,6 +15013,32 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30640410': {
+    Id: '30640410',
+    Name: {
+      en: 'Soulflash Splitter',
+      ja: '霊光弓シェイプフォーク',
+      zh: '灵光弓双象',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Bow',
+    Abbr: 'SS',
+    Image: '306117_01_40401',
+    Max: [70, 267],
+    Min: [21, 80],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30640501': {
     Id: '30640501',
     Name: {
@@ -15489,6 +16091,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30650409': {
+    Id: '30650409',
+    Name: {
+      en: 'Soulshine Splitter',
+      ja: '霊耀弩シェイプスプリット',
+      zh: '灵耀弓多态',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Bow',
+    Abbr: 'SS',
+    Image: '306117_01_50401',
+    Max: [90, 347],
+    Min: [27, 104],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30650501': {
     Id: '30650501',
     Name: {
@@ -15632,6 +16260,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30650507': {
+    Id: '30650507',
+    Name: {
+      en: 'Chimeratech Canon',
+      ja: 'キメラテックカノン',
+      zh: '奇美拉卡农之弓',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Bow',
+    Abbr: 'CC',
+    Image: '306125_01_50501',
+    Max: [185, 653],
+    Min: [55, 195],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30650508': {
+    Id: '30650508',
+    Name: {
+      en: 'Chimeratech Concerto',
+      ja: 'キメラテックコンチェルト',
+      zh: '奇美拉协奏之弓',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Bow',
+    Abbr: 'CC',
+    Image: '306125_01_50502',
+    Max: [265, 933],
+    Min: [79, 279],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30659901': {
     Id: '30659901',
@@ -18187,6 +18859,50 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30750508': {
+    Id: '30750508',
+    Name: {
+      en: 'Chimeratech Scherzo',
+      ja: 'キメラテックスケルツォ',
+      zh: '奇美拉谐谑魔杖',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Wand',
+    Abbr: 'CS',
+    Image: '307133_01_50501',
+    Max: [178, 701],
+    Min: [53, 210],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30750509': {
+    Id: '30750509',
+    Name: {
+      en: 'Chimeratech Oratorio',
+      ja: 'キメラテックオラトリオ',
+      zh: '奇美拉神剧魔杖',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Wand',
+    Abbr: 'CO',
+    Image: '307133_01_50502',
+    Max: [254, 1001],
+    Min: [76, 300],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
   '30759901': {
     Id: '30759901',
     Name: {
@@ -19190,6 +19906,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30840407': {
+    Id: '30840407',
+    Name: {
+      en: 'Glintray Grudge',
+      ja: 'グリントレイグラッジ',
+      zh: '闪光怨念法杖',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Staff',
+    Abbr: 'GG',
+    Image: '308118_01_40401',
+    Max: [78, 264],
+    Min: [23, 79],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
   },
   '30840501': {
     Id: '30840501',
@@ -20212,6 +20954,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30850408': {
+    Id: '30850408',
+    Name: {
+      en: 'Glintshine Grudge',
+      ja: 'グリントシャイングラッジ',
+      zh: '闪耀怨念法杖',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Staff',
+    Abbr: 'GG',
+    Image: '308118_01_50401',
+    Max: [101, 343],
+    Min: [30, 102],
+    Icon: [
+      {
+        Name: "(Light) Ebon Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Light) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30850501': {
     Id: '30850501',
     Name: {
@@ -20353,6 +21121,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30850507': {
+    Id: '30850507',
+    Name: {
+      en: 'Chimeratech Intro',
+      ja: 'キメラテックイントロ',
+      zh: '奇美拉序曲法杖',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Staff',
+    Abbr: 'CI',
+    Image: '308126_01_50501',
+    Max: [208, 646],
+    Min: [62, 193],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30850508': {
+    Id: '30850508',
+    Name: {
+      en: 'Chimeratech Coda',
+      ja: 'キメラテックコーダ',
+      zh: '奇美拉终曲法杖',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Weapon: 'Staff',
+    Abbr: 'CC',
+    Image: '308126_01_50502',
+    Max: [297, 923],
+    Min: [89, 276],
+    Icon: [
+      {
+        Name: '(Shadow) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
   },
   '30859901': {
     Id: '30859901',
