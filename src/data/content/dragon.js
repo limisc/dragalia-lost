@@ -1843,6 +1843,37 @@ const dragon = {
       },
     ],
   },
+  '20050210': {
+    Id: '20050210',
+    Name: {
+      en: 'Nimis',
+      ja: 'グルマン',
+      zh: '古鲁曼',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Abbr: 'N',
+    Image: '210053_01',
+    Max: [370, 125],
+    Min: [37, 12],
+    Might: [70, 100],
+    IncSTR: [
+      {
+        Value: 30,
+        Element: 'Water',
+      },
+      {
+        Value: 45,
+        Element: 'Water',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Water) Strength & Critical Damage II',
+        Image: '1020002',
+      },
+    ],
+  },
   '20050301': {
     Id: '20050301',
     Name: {

@@ -1951,6 +1951,52 @@ const adventurer = {
       [356, 250],
     ],
   },
+  '10250201': {
+    Id: '10250201',
+    Name: {
+      en: 'Valerio',
+      ja: 'ヴァレリオ',
+      zh: '瓦莱里奥',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Water',
+    Weapon: 'Blade',
+    LimitBreak: '4',
+    Abbr: 'V',
+    Image: '110295_01',
+    Max: [445, 310],
+    AddMax1: [534, 372],
+    Min: [
+      [43, 30],
+      [54, 37],
+      [63, 44],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Critical Hit = Attack Rate II',
+        Image: '1020014',
+      },
+      {
+        Name: 'Burn Res +100%',
+        Image: '1030002',
+      },
+      {
+        Name: 'Combo Time +4',
+        Image: '1020036',
+      },
+    ],
+    McBonus: [
+      [52, 36],
+      [112, 78],
+      [183, 127],
+      [243, 169],
+      [273, 190],
+      [298, 208],
+      [357, 249],
+    ],
+  },
   '10250301': {
     Id: '10250301',
     Name: {
@@ -4760,7 +4806,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Water',
     Weapon: 'Lance',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'X',
     Image: '110021_01',
     Max: [474, 290],
@@ -4770,18 +4816,18 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    Might: [140, 220, 240, 280, 300, 300, 500],
+    Might: [140, 220, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: "Dragon's Claws ",
+        Name: "Dragon's Claws IV",
         Image: '1020002',
       },
       {
-        Name: 'Burn Res +100%',
-        Image: '1030002',
+        Name: 'Potent Burn Res +100%',
+        Image: '1030033',
       },
       {
-        Name: 'Dragon Time +20%',
+        Name: 'Dragon Time +25%',
         Image: '1010003',
       },
     ],
@@ -6042,7 +6088,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Shadow',
     Weapon: 'Bow',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'N',
     Image: '110053_01',
     Max: [480, 283],
@@ -6052,19 +6098,19 @@ const adventurer = {
       [58, 34],
       [68, 40],
     ],
-    Might: [140, 220, 240, 280, 300, 300, 500],
+    Might: [140, 220, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Full HP = Blindness +60%',
-        Image: '1040005',
+        Name: 'Full HP = Poison & Blindness +60%',
+        Image: '1040012',
       },
       {
-        Name: 'Paralysis Res +100%',
-        Image: '1030004',
+        Name: 'Potent Paralysis Res +100%',
+        Image: '1030028',
       },
       {
-        Name: 'Blinded Punisher +30%',
-        Image: '1070005',
+        Name: 'Poisoned & Blinded Punisher I',
+        Image: '1070012',
       },
     ],
     McBonus: [
@@ -6443,6 +6489,52 @@ const adventurer = {
       {
         Name: 'Buff Time +20%',
         Image: '1010006',
+      },
+    ],
+    McBonus: [
+      [53, 33],
+      [115, 71],
+      [188, 116],
+      [250, 154],
+      [281, 173],
+      [307, 189],
+      [368, 226],
+    ],
+  },
+  '10740203': {
+    Id: '10740203',
+    Name: {
+      en: 'Pipple',
+      ja: 'ピップル',
+      zh: '啵噜',
+    },
+    Rarity: '4',
+    DefCoef: 8,
+    Element: 'Water',
+    Weapon: 'Wand',
+    LimitBreak: '4',
+    Abbr: 'P',
+    Image: '110300_01',
+    Max: [459, 282],
+    AddMax1: [550, 338],
+    Min: [
+      [45, 27],
+      [55, 34],
+      [65, 40],
+    ],
+    Might: [160, 160, 160, 200, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Standard Attack Damage',
+        Image: '1020002',
+      },
+      {
+        Name: 'Burn Res +100%',
+        Image: '1030002',
+      },
+      {
+        Name: 'Energy = Strength & Critical Rate VII',
+        Image: '1020029',
       },
     ],
     McBonus: [
@@ -7792,7 +7884,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Shadow',
     Weapon: 'Staff',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'C',
     Image: '100004_01',
     Max: [456, 266],
@@ -7802,24 +7894,28 @@ const adventurer = {
       [55, 32],
       [64, 37],
     ],
-    Might: [120, 120, 140, 180, 240, 240, 440],
+    Might: [120, 120, 140, 180, 240, 240, 560],
     IncDEF: [
       {
         MC: 45,
         Value: 8,
       },
+      {
+        MC: 70,
+        Value: 15,
+      },
     ],
     Icon: [
       {
-        Name: 'Skill Prep +75%',
-        Image: '1010007',
+        Name: 'Magical Reduction',
+        Image: '1010034',
       },
       {
-        Name: 'Paralysis Res +100%',
-        Image: '1030004',
+        Name: 'Potent Paralysis Res +100%',
+        Image: '1030028',
       },
       {
-        Name: 'HP 70% = Defense +8%',
+        Name: 'HP 70% = Defense +15%',
         Image: '1020003',
       },
     ],

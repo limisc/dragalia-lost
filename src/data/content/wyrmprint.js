@@ -2470,6 +2470,34 @@ const wyrmprint = {
       },
     ],
   },
+  '40040071': {
+    Id: '40040071',
+    Name: {
+      en: 'The Queen of the Knife',
+      ja: 'ミツバの手ほどき',
+      zh: '三叶的启蒙教程',
+    },
+    Rarity: '4',
+    Abbr: 'TQOTK',
+    Image: '400286',
+    Max: [140, 52],
+    Min: [21, 7],
+    Might: [60, 100, 140],
+    Icon: [
+      {
+        Name: 'Flurry Devastation +10%',
+        Image: '1020010',
+      },
+      {
+        Name: 'Critical Damage +13%',
+        Image: '1020011',
+      },
+      {
+        Name: 'Zest +100%',
+        Image: '1120010',
+      },
+    ],
+  },
   '40050001': {
     Id: '40050001',
     Name: {
@@ -4789,6 +4817,62 @@ const wyrmprint = {
       {
         Name: 'Poisoned Punisher +20%',
         Image: '1070001',
+      },
+    ],
+  },
+  '40050094': {
+    Id: '40050094',
+    Name: {
+      en: 'Berry Lovable Friends',
+      ja: '愛すべき森の住人',
+      zh: '可爱的森林住民',
+    },
+    Rarity: '5',
+    Abbr: 'BLF',
+    Image: '400288',
+    Max: [151, 54],
+    Min: [22, 8],
+    Might: [60, 80, 100],
+    Icon: [
+      {
+        Name: 'Full HP = Skill Damage +40%',
+        Image: '1010002',
+      },
+      {
+        Name: 'Zest +50%',
+        Image: '1120010',
+      },
+      {
+        Name: "Chef's Special +50%",
+        Image: '1110001',
+      },
+    ],
+  },
+  '40050095': {
+    Id: '40050095',
+    Name: {
+      en: "Breakfast at Valerio's",
+      ja: 'シェフと共に朝食を',
+      zh: '与主厨共进早餐',
+    },
+    Rarity: '5',
+    Abbr: 'BAV',
+    Image: '400285',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [100, 140, 180],
+    Icon: [
+      {
+        Name: 'Flurry Strength +20%',
+        Image: '1020002',
+      },
+      {
+        Name: 'HP 70% = Critical Rate +8%',
+        Image: '1020010',
+      },
+      {
+        Name: 'Zest +150%',
+        Image: '1120010',
       },
     ],
   },

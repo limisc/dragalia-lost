@@ -2570,6 +2570,25 @@ const weapon = {
     Max: [237, 1544],
     Min: [71, 463],
   },
+  '30160501': {
+    Id: '30160501',
+    Name: {
+      en: 'Yitian Jian',
+      ja: '倚天剣',
+      zh: '倚天剑',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Sword',
+    Abbr: 'YJ',
+    Image: '301142_01_60501',
+    Max: [237, 1544],
+    Min: [71, 463],
+  },
   '30230101': {
     Id: '30230101',
     Name: {
@@ -5477,6 +5496,25 @@ const weapon = {
     Max: [209, 1636],
     Min: [62, 490],
   },
+  '30260501': {
+    Id: '30260501',
+    Name: {
+      en: 'Qixing Baodao',
+      ja: '七星宝刀',
+      zh: '七星宝刀',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Blade',
+    Abbr: 'QB',
+    Image: '302133_01_60501',
+    Max: [209, 1636],
+    Min: [62, 490],
+  },
   '30330101': {
     Id: '30330101',
     Name: {
@@ -8247,6 +8285,25 @@ const weapon = {
     Max: [239, 1513],
     Min: [71, 453],
   },
+  '30360501': {
+    Id: '30360501',
+    Name: {
+      en: 'Qinghong Jian',
+      ja: '青紅剣',
+      zh: '青虹剑',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Dagger',
+    Abbr: 'QJ',
+    Image: '303132_01_60501',
+    Max: [239, 1513],
+    Min: [71, 453],
+  },
   '30430101': {
     Id: '30430101',
     Name: {
@@ -10885,6 +10942,25 @@ const weapon = {
     Weapon: 'Axe',
     Abbr: 'M',
     Image: '304127_01_60101',
+    Max: [244, 1621],
+    Min: [73, 486],
+  },
+  '30460501': {
+    Id: '30460501',
+    Name: {
+      en: 'Fangtian Huaji',
+      ja: '方天画戟',
+      zh: '方天画戟',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Axe',
+    Abbr: 'FH',
+    Image: '304131_01_60501',
     Max: [244, 1621],
     Min: [73, 486],
   },
@@ -13728,6 +13804,25 @@ const weapon = {
     Max: [242, 1575],
     Min: [72, 472],
   },
+  '30560501': {
+    Id: '30560501',
+    Name: {
+      en: 'Qinglong Yanyuedao',
+      ja: '青龍偃月刀',
+      zh: '青龙偃月刀',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Lance',
+    Abbr: 'QY',
+    Image: '305139_01_60501',
+    Max: [242, 1575],
+    Min: [72, 472],
+  },
   '30630101': {
     Id: '30630101',
     Name: {
@@ -16437,6 +16532,25 @@ const weapon = {
     Max: [232, 1482],
     Min: [69, 444],
   },
+  '30660501': {
+    Id: '30660501',
+    Name: {
+      en: 'Longshe Gong',
+      ja: '竜舌弓',
+      zh: '龙舌弓',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Bow',
+    Abbr: 'LG',
+    Image: '306131_01_60501',
+    Max: [232, 1482],
+    Min: [69, 444],
+  },
   '30730101': {
     Id: '30730101',
     Name: {
@@ -19031,6 +19145,25 @@ const weapon = {
     Max: [223, 1590],
     Min: [66, 477],
   },
+  '30760501': {
+    Id: '30760501',
+    Name: {
+      en: 'Jiu Ci',
+      ja: '九命の錫',
+      zh: '九命之锡',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Wand',
+    Abbr: 'JC',
+    Image: '307139_01_60501',
+    Max: [223, 1590],
+    Min: [66, 477],
+  },
   '30830101': {
     Id: '30830101',
     Name: {
@@ -21276,6 +21409,25 @@ const weapon = {
     Weapon: 'Staff',
     Abbr: 'G',
     Image: '308128_01_60101',
+    Max: [261, 1467],
+    Min: [78, 440],
+  },
+  '30860501': {
+    Id: '30860501',
+    Name: {
+      en: 'Goosefoot Staff',
+      ja: '藜の杖',
+      zh: '藜杖',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Qimen Dunjia',
+      Image: 'Icon_Skill_032',
+    },
+    Element: 'Shadow',
+    Weapon: 'Staff',
+    Abbr: 'GS',
+    Image: '308132_01_60501',
     Max: [261, 1467],
     Min: [78, 440],
   },

@@ -159,6 +159,16 @@ const facility = {
     ja: '覚醒の炎樹',
     zh: '觉醒之炎树',
   },
+  '102305': {
+    en: 'Shadow Tree',
+    ja: '覚醒の闇樹',
+    zh: '觉醒之暗树',
+  },
+  '102401': {
+    en: 'The Hungerdome',
+    ja: 'キュイジーヌスタジアム',
+    zh: '美食工坊',
+  },
 };
 
 export default facility;
