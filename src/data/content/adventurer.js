@@ -3039,6 +3039,52 @@ const adventurer = {
       [385, 228],
     ],
   },
+  '10350202': {
+    Id: '10350202',
+    Name: {
+      en: 'Mitsuba',
+      ja: 'ミツバ',
+      zh: '三叶',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Water',
+    Weapon: 'Dagger',
+    LimitBreak: '4',
+    Abbr: 'M',
+    Image: '110296_01',
+    Max: [480, 284],
+    AddMax1: [576, 340],
+    Min: [
+      [47, 27],
+      [58, 34],
+      [68, 40],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Flurry Strength +20%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Burn Res +100%',
+        Image: '1030002',
+      },
+      {
+        Name: 'Combo Time +4',
+        Image: '1020036',
+      },
+    ],
+    McBonus: [
+      [56, 33],
+      [121, 71],
+      [198, 116],
+      [263, 154],
+      [295, 173],
+      [321, 190],
+      [385, 228],
+    ],
+  },
   '10350301': {
     Id: '10350301',
     Name: {
