@@ -1524,6 +1524,41 @@ const dragon = {
       },
     ],
   },
+  '20050113': {
+    Id: '20050113',
+    Name: {
+      en: 'Mars',
+      ja: 'マーズ',
+      zh: '玛斯',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Abbr: 'M',
+    Image: '200009_01',
+    Max: [369, 127],
+    Min: [36, 12],
+    Might: [80, 110],
+    IncSTR: [
+      {
+        Value: 40,
+        Element: 'Flame',
+      },
+      {
+        Value: 70,
+        Element: 'Flame',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Flame) Strength II & HP 50% = Strength +20%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Flame) Ending Shapeshift = Skill Gauges +100%',
+        Image: '1010007',
+      },
+    ],
+  },
   '20050201': {
     Id: '20050201',
     Name: {
@@ -1871,6 +1906,41 @@ const dragon = {
       {
         Name: '(Water) Strength & Critical Damage II',
         Image: '1020002',
+      },
+    ],
+  },
+  '20050211': {
+    Id: '20050211',
+    Name: {
+      en: 'Gaibhne & Creidhne',
+      ja: 'ゴヴニュ＆クレーニュ',
+      zh: '格布纽&克雷纽',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Abbr: 'G&C',
+    Image: '210120_01',
+    Max: [370, 125],
+    Min: [37, 12],
+    Might: [80, 100],
+    IncSTR: [
+      {
+        Value: 40,
+        Element: 'Water',
+      },
+      {
+        Value: 45,
+        Element: 'Water',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Water) Strength +45%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Skill Recharge II',
+        Image: '1020004',
       },
     ],
   },
@@ -2287,6 +2357,41 @@ const dragon = {
       {
         Name: '(Wind) Dauntless Rampart II',
         Image: '1020022',
+      },
+    ],
+  },
+  '20050313': {
+    Id: '20050313',
+    Name: {
+      en: 'Ariel',
+      ja: 'アリエル',
+      zh: '亚列',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Abbr: 'A',
+    Image: '210116_01',
+    Max: [369, 126],
+    Min: [36, 12],
+    Might: [80, 100],
+    IncSTR: [
+      {
+        Value: 40,
+        Element: 'Wind',
+      },
+      {
+        Value: 50,
+        Element: 'Wind',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Wind) Strength +50%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Wind) Skill Haste +30%',
+        Image: '1020004',
       },
     ],
   },
@@ -3071,6 +3176,117 @@ const dragon = {
       {
         Name: '(Shadow) Poisoned Punisher +20%',
         Image: '1070001',
+      },
+    ],
+  },
+  '20050515': {
+    Id: '20050515',
+    Name: {
+      en: 'Mini Zodi',
+      ja: 'ゾディアーク',
+      zh: '佐迪亚克',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Abbr: 'MZ',
+    Image: '210127_01',
+    Max: [221, 77],
+    Min: [22, 7],
+    Might: [50, 60],
+    IncHP: [
+      {
+        Value: 20,
+        Element: null,
+      },
+      {
+        Value: 30,
+        Element: null,
+      },
+    ],
+    IncSTR: [
+      {
+        Value: 20,
+        Element: null,
+      },
+      {
+        Value: 30,
+        Element: null,
+      },
+    ],
+    Icon: [
+      {
+        Name: 'HP & Strength +30%',
+        Image: '1020006',
+      },
+    ],
+  },
+  '20050516': {
+    Id: '20050516',
+    Name: {
+      en: 'Andromeda',
+      ja: 'アンドロメダ',
+      zh: '安德洛墨达',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Abbr: 'A',
+    Image: '210115_01',
+    Max: [368, 128],
+    Min: [36, 12],
+    Might: [80, 100],
+    IncSTR: [
+      {
+        Value: 30,
+        Element: 'Shadow',
+      },
+      {
+        Value: 40,
+        Element: 'Shadow',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Shadow) Strength +40%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Shadow) HP Below 30% = Strength & Defense II',
+        Image: '1010039',
+      },
+    ],
+  },
+  '20050517': {
+    Id: '20050517',
+    Name: {
+      en: 'Barbatos',
+      ja: 'バルバトス',
+      zh: '巴巴托斯',
+    },
+    Rarity: '5',
+    Element: 'Shadow',
+    Abbr: 'B',
+    Image: '210083_01',
+    Max: [331, 115],
+    Min: [33, 11],
+    Might: [60, 70],
+    IncSTR: [
+      {
+        Value: 20,
+        Element: 'Shadow',
+      },
+      {
+        Value: 20,
+        Element: 'Shadow',
+      },
+    ],
+    Icon: [
+      {
+        Name: '(Shadow) HP Below 30% = Strength +40%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Shadow) Strength +20%',
+        Image: '1020002',
       },
     ],
   },

@@ -159,6 +159,11 @@ const facility = {
     ja: '覚醒の炎樹',
     zh: '觉醒之炎树',
   },
+  '102303': {
+    en: 'Wind Tree',
+    ja: '覚醒の嵐樹',
+    zh: '觉醒之岚树',
+  },
   '102305': {
     en: 'Shadow Tree',
     ja: '覚醒の闇樹',

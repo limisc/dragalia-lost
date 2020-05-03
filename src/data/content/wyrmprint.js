@@ -1918,6 +1918,30 @@ const wyrmprint = {
       },
     ],
   },
+  '40040048': {
+    Id: '40040048',
+    Name: {
+      en: 'His Clever Brother',
+      ja: '物知りお兄ちゃん',
+      zh: '博学的哥哥',
+    },
+    Rarity: '4',
+    Abbr: 'HCB',
+    Image: '400169',
+    Max: [141, 51],
+    Min: [21, 7],
+    Might: [50, 90, 120],
+    Icon: [
+      {
+        Name: 'Frostbitten Punisher +20%',
+        Image: '1070013',
+      },
+      {
+        Name: 'Skill Haste +5%',
+        Image: '1020004',
+      },
+    ],
+  },
   '40040049': {
     Id: '40040049',
     Name: {
@@ -2495,6 +2519,79 @@ const wyrmprint = {
       {
         Name: 'Zest +100%',
         Image: '1120010',
+      },
+    ],
+  },
+  '40040072': {
+    Id: '40040072',
+    Name: {
+      en: 'A Small Courage',
+      ja: 'ちいさな勇気',
+      zh: '小小的勇气',
+    },
+    Rarity: '4',
+    Abbr: 'ASC',
+    Image: '400421',
+    Max: [140, 52],
+    Min: [21, 7],
+    Might: [60, 100, 140],
+    IncSTR: [8, 10, 13],
+    Icon: [
+      {
+        Name: 'Full HP = Strength +13%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Strength Doublebuff +8%',
+        Image: '1020002',
+      },
+    ],
+  },
+  '40040073': {
+    Id: '40040073',
+    Name: {
+      en: "A Widow's Lament",
+      ja: '未亡の淑女',
+      zh: '寡妇丽人',
+    },
+    Rarity: '4',
+    Abbr: 'AWL',
+    Image: '400386',
+    Max: [151, 41],
+    Min: [22, 6],
+    Might: [60, 100, 140],
+    Icon: [
+      {
+        Name: 'Last Defense +50%',
+        Image: '1020003',
+      },
+      {
+        Name: 'Healing Doublebuff ',
+        Image: '1010011',
+      },
+    ],
+  },
+  '40040074': {
+    Id: '40040074',
+    Name: {
+      en: 'A Pledge of Protection',
+      ja: 'あなたを守りたい',
+      zh: '我愿永远守护你',
+    },
+    Rarity: '4',
+    Abbr: 'APOP',
+    Image: '400422',
+    Max: [122, 34],
+    Min: [18, 5],
+    Might: [60, 100, 140],
+    Icon: [
+      {
+        Name: 'Blindness Res +50%',
+        Image: '1030005',
+      },
+      {
+        Name: 'Last Offense +40%',
+        Image: '1020002',
       },
     ],
   },
@@ -4382,7 +4479,7 @@ const wyrmprint = {
         Image: '1020010',
       },
       {
-        Name: 'Resilient Offense +10%',
+        Name: 'Resilient Offense +0%',
         Image: '1020002',
       },
     ],
@@ -4873,6 +4970,231 @@ const wyrmprint = {
       {
         Name: 'Zest +150%',
         Image: '1120010',
+      },
+    ],
+  },
+  '40050096': {
+    Id: '40050096',
+    Name: {
+      en: 'The Ilian Faithful',
+      ja: 'イリアの信徒たち',
+      zh: '伊莉雅的信徒们',
+    },
+    Rarity: '5',
+    Abbr: 'TIF',
+    Image: '400420',
+    Max: [188, 52],
+    Min: [28, 7],
+    Might: [80, 110, 140],
+    Icon: [
+      {
+        Name: '(Wind) Affliction Guard III',
+        Image: '1030012',
+      },
+      {
+        Name: 'Skill Prep +25%',
+        Image: '1010007',
+      },
+    ],
+  },
+  '40050097': {
+    Id: '40050097',
+    Name: {
+      en: 'Dazzling Duet!',
+      ja: '絢爛たる二重唱',
+      zh: '绚烂二重唱',
+    },
+    Rarity: '5',
+    Abbr: 'DD',
+    Image: '400342',
+    Max: [178, 62],
+    Min: [26, 9],
+    Might: [120, 135, 165],
+    Icon: [
+      {
+        Name: 'Striking Haste +15%',
+        Image: '1020004',
+      },
+      {
+        Name: 'Skill Haste +6%',
+        Image: '1020004',
+      },
+    ],
+  },
+  '40050098': {
+    Id: '40050098',
+    Name: {
+      en: 'Brothers in Arms',
+      ja: 'インビジブル・ブラック',
+      zh: '隐遁之黑',
+    },
+    Rarity: '5',
+    Abbr: 'BIA',
+    Image: '400402',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [100, 140, 180],
+    Icon: [
+      {
+        Name: 'Strength Doublebuff +13%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Broken Punisher +25%',
+        Image: '1010009',
+      },
+    ],
+  },
+  '40050099': {
+    Id: '40050099',
+    Name: {
+      en: 'The Synthetic Dragon',
+      ja: '創造されし人造竜',
+      zh: '人造之龙',
+    },
+    Rarity: '5',
+    Abbr: 'TSD',
+    Image: '400239',
+    Max: [187, 53],
+    Min: [28, 7],
+    Might: [100, 140, 180],
+    Icon: [
+      {
+        Name: 'Last Recovery ',
+        Image: '1010011',
+      },
+      {
+        Name: 'Resilient Offense +0%',
+        Image: '1020002',
+      },
+    ],
+  },
+  '40050100': {
+    Id: '40050100',
+    Name: {
+      en: 'Proper Maintenance',
+      ja: 'シャッフル・リラックスタイム',
+      zh: '放松一刻',
+    },
+    Rarity: '5',
+    Abbr: 'PM',
+    Image: '400423',
+    Max: [177, 64],
+    Min: [26, 9],
+    Might: [80, 120, 160],
+    IncSTR: [10, 13, 15],
+    Icon: [
+      {
+        Name: 'Full HP = Strength +15%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Buff Time +20%',
+        Image: '1010006',
+      },
+    ],
+  },
+  '40050101': {
+    Id: '40050101',
+    Name: {
+      en: 'The Red Impulse',
+      ja: 'レッドインパルス',
+      zh: '红色脉冲',
+    },
+    Rarity: '5',
+    Abbr: 'TRI',
+    Image: '400088',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [100, 140, 180],
+    Icon: [
+      {
+        Name: "Dragon's Skill III",
+        Image: '1010002',
+      },
+      {
+        Name: "Dragon's Claws ",
+        Image: '1020002',
+      },
+    ],
+  },
+  '40050102': {
+    Id: '40050102',
+    Name: {
+      en: 'Memories of Youth',
+      ja: '幼き日の追憶',
+      zh: '儿时回忆',
+    },
+    Rarity: '5',
+    Abbr: 'MOY',
+    Image: '400237',
+    Max: [177, 64],
+    Min: [26, 9],
+    Might: [80, 110, 140],
+    Icon: [
+      {
+        Name: "Striker's Strength +6%",
+        Image: '1020002',
+      },
+      {
+        Name: 'Shapeshift Prep +10%',
+        Image: '1010008',
+      },
+    ],
+  },
+  '40050103': {
+    Id: '40050103',
+    Name: {
+      en: 'Welcome to the Halidom!',
+      ja: '聖城へようこそ！',
+      zh: '欢迎来到圣城！',
+    },
+    Rarity: '5',
+    Abbr: 'WTTH',
+    Image: '400425',
+    Max: [188, 52],
+    Min: [28, 7],
+    Might: [80, 110, 140],
+    Icon: [
+      {
+        Name: 'Last Recovery ',
+        Image: '1010011',
+      },
+      {
+        Name: 'Shapeshift Prep +10%',
+        Image: '1010008',
+      },
+      {
+        Name: 'Resolve +60%',
+        Image: '1120011',
+      },
+    ],
+  },
+  '40050104': {
+    Id: '40050104',
+    Name: {
+      en: 'A New Look',
+      ja: 'クロス・チェンジ',
+      zh: '换装游戏',
+    },
+    Rarity: '5',
+    Abbr: 'ANL',
+    Image: '400441',
+    Max: [176, 65],
+    Min: [26, 9],
+    Might: [120, 140, 170],
+    Icon: [
+      {
+        Name: "Slayer's Devastation +0%",
+        Image: '1020010',
+      },
+      {
+        Name: 'HP 70% = Critical Damage +17%',
+        Image: '1020011',
+      },
+      {
+        Name: 'Resolve +60%',
+        Image: '1120011',
       },
     ],
   },

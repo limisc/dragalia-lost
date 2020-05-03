@@ -204,7 +204,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Shadow',
     Weapon: 'Sword',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'R',
     Image: '110046_01',
     Max: [427, 287],
@@ -214,7 +214,7 @@ const adventurer = {
       [52, 35],
       [60, 40],
     ],
-    Might: [80, 80, 100, 120, 160, 160, 360],
+    Might: [80, 80, 100, 120, 160, 160, 500],
     IncSTR: [
       {
         MC: 10,
@@ -224,18 +224,22 @@ const adventurer = {
         MC: 30,
         Value: 8,
       },
+      {
+        MC: 70,
+        Value: 15,
+      },
     ],
     Icon: [
       {
-        Name: 'HP 70% = Strength +8%',
+        Name: 'HP 70% = Strength +15%',
         Image: '1020002',
       },
       {
-        Name: 'Paralysis Res +50%',
-        Image: '1030004',
+        Name: 'Potent Paralysis Res +50%',
+        Image: '1030028',
       },
       {
-        Name: 'Paralysis Res +25%',
+        Name: 'Paralysis Res +50%',
         Image: '1030004',
       },
     ],
@@ -489,6 +493,52 @@ const adventurer = {
       [352, 235],
     ],
   },
+  '10140302': {
+    Id: '10140302',
+    Name: {
+      en: 'Hope',
+      ja: 'ホープ',
+      zh: '霍普',
+    },
+    Rarity: '4',
+    DefCoef: 10,
+    Element: 'Wind',
+    Weapon: 'Sword',
+    LimitBreak: '4',
+    Abbr: 'H',
+    Image: '110038_02',
+    Max: [485, 264],
+    AddMax1: [582, 316],
+    Min: [
+      [47, 26],
+      [59, 32],
+      [68, 37],
+    ],
+    Might: [120, 120, 160, 200, 260, 260, 460],
+    Icon: [
+      {
+        Name: 'Freeze Res +100%',
+        Image: '1030003',
+      },
+      {
+        Name: 'Bog Res +100%',
+        Image: '1030009',
+      },
+      {
+        Name: 'Healing Doublebuff (Team)',
+        Image: '1010011',
+      },
+    ],
+    McBonus: [
+      [56, 31],
+      [121, 66],
+      [198, 108],
+      [263, 143],
+      [295, 160],
+      [325, 178],
+      [390, 213],
+    ],
+  },
   '10140401': {
     Id: '10140401',
     Name: {
@@ -694,7 +744,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Flame',
     Weapon: 'Sword',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'M',
     Image: '110291_01',
     Max: [452, 302],
@@ -704,18 +754,18 @@ const adventurer = {
       [55, 36],
       [64, 42],
     ],
-    Might: [130, 210, 240, 280, 300, 300, 500],
+    Might: [130, 210, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Last Boost II',
+        Name: 'Last Boost III',
         Image: '1020026',
       },
       {
-        Name: 'Stun Res +100%',
-        Image: '1030006',
+        Name: 'Potent Stun Res +100%',
+        Image: '1030026',
       },
       {
-        Name: 'Flurry Devastation +13%',
+        Name: 'Whirlwind Devastation +13%',
         Image: '1020010',
       },
     ],
@@ -809,6 +859,62 @@ const adventurer = {
       {
         Name: 'Reduced Defense Devastator +20%',
         Image: '1020010',
+      },
+    ],
+    McBonus: [
+      [53, 35],
+      [114, 76],
+      [186, 124],
+      [247, 165],
+      [277, 185],
+      [302, 203],
+      [362, 243],
+    ],
+  },
+  '10150105': {
+    Id: '10150105',
+    Name: {
+      en: 'Chrom',
+      ja: 'クロム',
+      zh: '库洛姆',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Flame',
+    Weapon: 'Sword',
+    LimitBreak: '4',
+    Abbr: 'C',
+    Image: '110359_01',
+    Max: [452, 302],
+    AddMax1: [542, 362],
+    Min: [
+      [44, 29],
+      [55, 36],
+      [64, 42],
+    ],
+    Might: [140, 220, 240, 280, 280, 280, 480],
+    IncSTR: [
+      {
+        MC: 10,
+        Value: 13,
+      },
+      {
+        MC: 30,
+        Value: 15,
+      },
+    ],
+    Icon: [
+      {
+        Name: 'Full HP = Strength +15%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Sleep Res +100%',
+        Image: '1030010',
+      },
+      {
+        Name: 'Rightful King',
+        Image: '1010040',
       },
     ],
     McBonus: [
@@ -1062,7 +1168,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Light',
     Weapon: 'Sword',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'A',
     Image: '110327_01',
     Max: [441, 291],
@@ -1072,18 +1178,18 @@ const adventurer = {
       [43, 28],
       [62, 41],
     ],
-    Might: [130, 210, 240, 280, 300, 300, 500],
+    Might: [130, 210, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Last Burst II',
+        Name: 'Last Burst III',
         Image: '1020025',
       },
       {
-        Name: 'Curse Res +100%',
-        Image: '1030007',
+        Name: 'Potent Curse Res +100%',
+        Image: '1030029',
       },
       {
-        Name: 'Skill Haste +8%',
+        Name: 'Skill Haste +10%',
         Image: '1020004',
       },
     ],
@@ -1177,6 +1283,52 @@ const adventurer = {
       {
         Name: 'Energized: Strength +20%',
         Image: '1020002',
+      },
+    ],
+    McBonus: [
+      [52, 35],
+      [113, 76],
+      [185, 124],
+      [246, 165],
+      [276, 185],
+      [302, 203],
+      [362, 243],
+    ],
+  },
+  '10150502': {
+    Id: '10150502',
+    Name: {
+      en: 'Alex',
+      ja: 'シャノン',
+      zh: '沙音',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Shadow',
+    Weapon: 'Sword',
+    LimitBreak: '4',
+    Abbr: 'A',
+    Image: '100005_02',
+    Max: [450, 303],
+    AddMax1: [540, 363],
+    Min: [
+      [44, 29],
+      [54, 36],
+      [63, 43],
+    ],
+    Might: [160, 240, 260, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Reduced Defense Punisher +30%',
+        Image: '1070015',
+      },
+      {
+        Name: 'Guardian Shadow II',
+        Image: '1030019',
+      },
+      {
+        Name: 'Poisoned Punisher +30%',
+        Image: '1070001',
       },
     ],
     McBonus: [
@@ -1813,6 +1965,52 @@ const adventurer = {
       [345, 243],
     ],
   },
+  '10240503': {
+    Id: '10240503',
+    Name: {
+      en: 'Aldred',
+      ja: 'アデルペイン',
+      zh: '阿德尔潘',
+    },
+    Rarity: '4',
+    DefCoef: 10,
+    Element: 'Shadow',
+    Weapon: 'Blade',
+    LimitBreak: '4',
+    Abbr: 'A',
+    Image: '110262_01',
+    Max: [420, 296],
+    AddMax1: [504, 355],
+    Min: [
+      [41, 29],
+      [41, 29],
+      [59, 42],
+    ],
+    Might: [100, 100, 120, 140, 200, 200, 400],
+    Icon: [
+      {
+        Name: 'Wyrmbound II',
+        Image: '1010037',
+      },
+      {
+        Name: 'Blindness Res +50%',
+        Image: '1030005',
+      },
+      {
+        Name: 'The Beast Within',
+        Image: '1010039',
+      },
+    ],
+    McBonus: [
+      [49, 34],
+      [106, 74],
+      [173, 121],
+      [230, 161],
+      [258, 181],
+      [281, 199],
+      [337, 238],
+    ],
+  },
   '10250101': {
     Id: '10250101',
     Name: {
@@ -2041,6 +2239,52 @@ const adventurer = {
       {
         Name: 'Buff Time +30%',
         Image: '1010006',
+      },
+    ],
+    McBonus: [
+      [54, 34],
+      [117, 74],
+      [192, 121],
+      [255, 161],
+      [286, 181],
+      [313, 199],
+      [375, 238],
+    ],
+  },
+  '10250302': {
+    Id: '10250302',
+    Name: {
+      en: 'Tobias',
+      ja: 'トライツ',
+      zh: '德莱茨',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Wind',
+    Weapon: 'Blade',
+    LimitBreak: '4',
+    Abbr: 'T',
+    Image: '110352_01',
+    Max: [468, 295],
+    AddMax1: [561, 354],
+    Min: [
+      [46, 29],
+      [57, 36],
+      [66, 41],
+    ],
+    Might: [120, 200, 220, 260, 280, 280, 480],
+    Icon: [
+      {
+        Name: 'Buff Time +25%',
+        Image: '1010006',
+      },
+      {
+        Name: 'Bog Res +100%',
+        Image: '1030009',
+      },
+      {
+        Name: 'Poisoned Punisher +30%',
+        Image: '1070001',
       },
     ],
     McBonus: [
@@ -2386,7 +2630,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Shadow',
     Weapon: 'Dagger',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'V',
     Image: '110048_01',
     Max: [453, 271],
@@ -2396,18 +2640,18 @@ const adventurer = {
       [55, 33],
       [64, 38],
     ],
-    Might: [80, 80, 100, 120, 160, 160, 360],
+    Might: [80, 80, 100, 120, 160, 160, 500],
     Icon: [
       {
-        Name: 'Broken Punisher +20%',
+        Name: 'Broken Punisher +35%',
         Image: '1010009',
       },
       {
-        Name: 'Blindness Res +50%',
-        Image: '1030005',
+        Name: 'Potent Blindness Res +50%',
+        Image: '1030035',
       },
       {
-        Name: 'Blindness Res +25%',
+        Name: 'Blindness Res +50%',
         Image: '1030005',
       },
     ],
@@ -2718,7 +2962,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Wind',
     Weapon: 'Dagger',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'SF',
     Image: '110314_01',
     Max: [432, 284],
@@ -2728,18 +2972,18 @@ const adventurer = {
       [42, 27],
       [61, 40],
     ],
-    Might: [100, 100, 120, 140, 200, 200, 400],
+    Might: [100, 100, 120, 140, 200, 200, 560],
     Icon: [
       {
-        Name: "Therion's Bane +25%",
+        Name: "Therion's Bane +35%",
         Image: '1060004',
       },
       {
-        Name: 'Bog Res +50%',
-        Image: '1030009',
+        Name: 'Potent Bog Res +100%',
+        Image: '1030031',
       },
       {
-        Name: 'Skill Damage +20%',
+        Name: 'Skill Damage +35%',
         Image: '1010002',
       },
     ],
@@ -3237,6 +3481,52 @@ const adventurer = {
       [384, 230],
     ],
   },
+  '10350503': {
+    Id: '10350503',
+    Name: {
+      en: 'Bellina',
+      ja: 'ベリーナ',
+      zh: '贝利娜',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Shadow',
+    Weapon: 'Dagger',
+    LimitBreak: '4',
+    Abbr: 'B',
+    Image: '110306_01',
+    Max: [453, 300],
+    AddMax1: [543, 360],
+    Min: [
+      [44, 29],
+      [55, 36],
+      [64, 42],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Renegade Queen II',
+        Image: '1010037',
+      },
+      {
+        Name: 'Blindness Res +100%',
+        Image: '1030005',
+      },
+      {
+        Name: 'HP Below 30% = Strength & Attack Rate III',
+        Image: '1020030',
+      },
+    ],
+    McBonus: [
+      [53, 35],
+      [114, 75],
+      [186, 123],
+      [247, 163],
+      [277, 183],
+      [304, 201],
+      [364, 241],
+    ],
+  },
   '10430201': {
     Id: '10430201',
     Name: {
@@ -3442,7 +3732,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Shadow',
     Weapon: 'Axe',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'E',
     Image: '110045_01',
     Max: [421, 294],
@@ -3452,18 +3742,18 @@ const adventurer = {
       [51, 35],
       [59, 41],
     ],
-    Might: [80, 80, 100, 120, 160, 160, 360],
+    Might: [80, 80, 100, 120, 160, 160, 500],
     Icon: [
       {
-        Name: 'Force Strike +30%',
-        Image: '1010001',
+        Name: 'Wild Noble',
+        Image: '1010048',
+      },
+      {
+        Name: 'Potent Blindness Res +50%',
+        Image: '1030035',
       },
       {
         Name: 'Blindness Res +50%',
-        Image: '1030005',
-      },
-      {
-        Name: 'Blindness Res +25%',
         Image: '1030005',
       },
     ],
@@ -3947,6 +4237,52 @@ const adventurer = {
       [358, 249],
     ],
   },
+  '10450203': {
+    Id: '10450203',
+    Name: {
+      en: 'Lazry',
+      ja: 'ラズリー',
+      zh: '拉兹莉',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Water',
+    Weapon: 'Axe',
+    LimitBreak: '4',
+    Abbr: 'L',
+    Image: '110355_01',
+    Max: [446, 308],
+    AddMax1: [535, 369],
+    Min: [
+      [43, 30],
+      [54, 37],
+      [63, 43],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Frostbitten Punisher +30%',
+        Image: '1070013',
+      },
+      {
+        Name: 'Burn Res +100%',
+        Image: '1030002',
+      },
+      {
+        Name: 'HP 70% = Skill Damage +35%',
+        Image: '1010002',
+      },
+    ],
+    McBonus: [
+      [52, 36],
+      [112, 78],
+      [183, 127],
+      [243, 169],
+      [273, 190],
+      [299, 208],
+      [358, 249],
+    ],
+  },
   '10450301': {
     Id: '10450301',
     Name: {
@@ -3958,7 +4294,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Wind',
     Weapon: 'Axe',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'LY',
     Image: '110268_01',
     Max: [446, 309],
@@ -3968,19 +4304,19 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    Might: [140, 220, 240, 280, 300, 300, 500],
+    Might: [140, 220, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'HP 70% = Critical Rate +10%',
+        Name: 'Kung Fu Mastery',
         Image: '1020010',
       },
       {
-        Name: 'Bog Res +100%',
-        Image: '1030009',
+        Name: 'Potent Bog Res +100%',
+        Image: '1030031',
       },
       {
-        Name: 'Skill Haste +8%',
-        Image: '1020004',
+        Name: 'Skill Haste & Combo Time',
+        Image: '1010036',
       },
     ],
     McBonus: [
@@ -4555,6 +4891,62 @@ const adventurer = {
       [361, 220],
     ],
   },
+  '10540202': {
+    Id: '10540202',
+    Name: {
+      en: 'Gauld',
+      ja: 'ゴルド',
+      zh: '戈尔德',
+    },
+    Rarity: '4',
+    DefCoef: 10,
+    Element: 'Water',
+    Weapon: 'Lance',
+    LimitBreak: '4',
+    Abbr: 'G',
+    Image: '110356_01',
+    Max: [436, 294],
+    AddMax1: [523, 352],
+    Min: [
+      [43, 29],
+      [53, 35],
+      [61, 41],
+    ],
+    Might: [120, 120, 140, 180, 240, 240, 440],
+    IncSTR: [
+      {
+        MC: 10,
+        Value: 8,
+      },
+      {
+        MC: 30,
+        Value: 10,
+      },
+    ],
+    Icon: [
+      {
+        Name: 'HP 70% = Strength +10%',
+        Image: '1020002',
+      },
+      {
+        Name: 'Stun Res +100%',
+        Image: '1030006',
+      },
+      {
+        Name: 'Frostbitten Punisher +20%',
+        Image: '1070013',
+      },
+    ],
+    McBonus: [
+      [51, 34],
+      [110, 74],
+      [180, 121],
+      [239, 161],
+      [268, 181],
+      [293, 198],
+      [351, 237],
+    ],
+  },
   '10540301': {
     Id: '10540301',
     Name: {
@@ -4898,7 +5290,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Water',
     Weapon: 'Lance',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'F',
     Image: '110328_01',
     Max: [450, 304],
@@ -4908,18 +5300,18 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    Might: [130, 210, 240, 280, 300, 300, 500],
+    Might: [130, 210, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Last Bravery II',
+        Name: 'Last Bravery III',
         Image: '1020027',
       },
       {
-        Name: 'Burn Res +100%',
-        Image: '1030002',
+        Name: 'Potent Burn Res +100%',
+        Image: '1030033',
       },
       {
-        Name: 'Skill Prep +100%',
+        Name: 'Skill Prep +100% & Skill Charge',
         Image: '1010007',
       },
     ],
@@ -4944,7 +5336,7 @@ const adventurer = {
     DefCoef: 10,
     Element: 'Wind',
     Weapon: 'Lance',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'S',
     Image: '110318_01',
     Max: [473, 290],
@@ -4954,7 +5346,7 @@ const adventurer = {
       [57, 35],
       [67, 41],
     ],
-    Might: [140, 220, 240, 280, 300, 300, 500],
+    Might: [140, 220, 240, 280, 300, 300, 540],
     IncSTR: [
       {
         MC: 20,
@@ -4964,18 +5356,22 @@ const adventurer = {
         MC: 45,
         Value: 13,
       },
+      {
+        MC: 70,
+        Value: 15,
+      },
     ],
     Icon: [
       {
-        Name: 'Last Recovery ',
+        Name: 'Last Recovery V',
         Image: '1010011',
       },
       {
-        Name: 'Freeze Res +100%',
-        Image: '1030003',
+        Name: 'Potent Freeze Res +100%',
+        Image: '1030032',
       },
       {
-        Name: 'HP 70% = Strength +13%',
+        Name: 'HP 70% = Strength +15%',
         Image: '1020002',
       },
     ],
@@ -5171,6 +5567,52 @@ const adventurer = {
       [277, 185],
       [302, 203],
       [362, 243],
+    ],
+  },
+  '10550404': {
+    Id: '10550404',
+    Name: {
+      en: 'Sharena',
+      ja: 'シャロン',
+      zh: '夏蓉',
+    },
+    Rarity: '5',
+    DefCoef: 10,
+    Element: 'Light',
+    Weapon: 'Lance',
+    LimitBreak: '4',
+    Abbr: 'S',
+    Image: '110358_01',
+    Max: [498, 275],
+    AddMax1: [597, 330],
+    Min: [
+      [49, 27],
+      [60, 33],
+      [70, 39],
+    ],
+    Might: [130, 210, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Supreme Last Devastation II',
+        Image: '1010046',
+      },
+      {
+        Name: 'Curse Res +100%',
+        Image: '1030007',
+      },
+      {
+        Name: 'Paralyzed Punisher +30%',
+        Image: '1070004',
+      },
+    ],
+    McBonus: [
+      [58, 32],
+      [125, 69],
+      [205, 113],
+      [272, 150],
+      [305, 168],
+      [335, 184],
+      [402, 220],
     ],
   },
   '10550502': {
@@ -6042,7 +6484,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Wind',
     Weapon: 'Bow',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'H',
     Image: '110267_01',
     Max: [457, 295],
@@ -6052,19 +6494,19 @@ const adventurer = {
       [55, 36],
       [64, 41],
     ],
-    Might: [130, 210, 240, 280, 300, 300, 500],
+    Might: [130, 210, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Full HP = Stun +60%',
-        Image: '1040006',
+        Name: 'Poison & Stun Edge +50%',
+        Image: '1040013',
       },
       {
-        Name: 'Freeze Res +100%',
-        Image: '1030003',
+        Name: 'Potent Freeze Res +100%',
+        Image: '1030032',
       },
       {
-        Name: 'Stunned Punisher +30%',
-        Image: '1070006',
+        Name: 'Poisoned & Stunned Punisher I',
+        Image: '1070014',
       },
     ],
     McBonus: [
@@ -6364,7 +6806,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Shadow',
     Weapon: 'Wand',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'A',
     Image: '110047_01',
     Max: [446, 278],
@@ -6374,18 +6816,18 @@ const adventurer = {
       [54, 33],
       [63, 39],
     ],
-    Might: [80, 80, 100, 120, 160, 160, 360],
+    Might: [80, 80, 100, 120, 160, 160, 500],
     Icon: [
       {
-        Name: 'Full HP = Skill Damage +30%',
+        Name: 'Full HP = Skill Damage +45%',
         Image: '1010002',
       },
       {
-        Name: 'Paralysis Res +50%',
-        Image: '1030004',
+        Name: 'Potent Paralysis Res +50%',
+        Image: '1030028',
       },
       {
-        Name: 'Paralysis Res +25%',
+        Name: 'Paralysis Res +50%',
         Image: '1030004',
       },
     ],
@@ -6800,7 +7242,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Shadow',
     Weapon: 'Wand',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'K',
     Image: '110051_01',
     Max: [455, 284],
@@ -6810,18 +7252,18 @@ const adventurer = {
       [55, 34],
       [64, 40],
     ],
-    Might: [120, 120, 140, 180, 240, 240, 440],
+    Might: [120, 120, 140, 180, 240, 240, 560],
     Icon: [
       {
-        Name: 'Force Strike +40%',
-        Image: '1010001',
+        Name: 'Madness',
+        Image: '1010047',
       },
       {
-        Name: 'Blindness Res +100%',
-        Image: '1030005',
+        Name: 'Potent Blindness Res +100%',
+        Image: '1030035',
       },
       {
-        Name: 'Skill Damage +20%',
+        Name: 'Skill Damage +35%',
         Image: '1010002',
       },
     ],
@@ -7075,6 +7517,52 @@ const adventurer = {
       [362, 246],
     ],
   },
+  '10750402': {
+    Id: '10750402',
+    Name: {
+      en: 'Peony',
+      ja: 'ピアニー',
+      zh: '皮亚尼',
+    },
+    Rarity: '5',
+    DefCoef: 8,
+    Element: 'Light',
+    Weapon: 'Wand',
+    LimitBreak: '4',
+    Abbr: 'P',
+    Image: '110361_01',
+    Max: [474, 290],
+    AddMax1: [568, 348],
+    Min: [
+      [46, 28],
+      [57, 35],
+      [67, 41],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Aid of the Ljósálfar II',
+        Image: '1010042',
+      },
+      {
+        Name: 'Curse Res +100%',
+        Image: '1030007',
+      },
+      {
+        Name: 'Paralyzed Punisher +30%',
+        Image: '1070004',
+      },
+    ],
+    McBonus: [
+      [55, 34],
+      [119, 73],
+      [195, 119],
+      [259, 158],
+      [291, 177],
+      [317, 195],
+      [380, 234],
+    ],
+  },
   '10750501': {
     Id: '10750501',
     Name: {
@@ -7086,7 +7574,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Shadow',
     Weapon: 'Wand',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'V',
     Image: '110333_01',
     Max: [446, 307],
@@ -7096,18 +7584,18 @@ const adventurer = {
       [54, 37],
       [63, 43],
     ],
-    Might: [130, 210, 240, 280, 300, 300, 500],
+    Might: [130, 210, 240, 280, 300, 300, 560],
     Icon: [
       {
-        Name: 'Last Destruction II',
+        Name: 'Last Destruction III',
         Image: '1020028',
       },
       {
-        Name: 'Paralysis Res +100%',
-        Image: '1030004',
+        Name: 'Potent Paralysis Res +100%',
+        Image: '1030028',
       },
       {
-        Name: 'Skill Prep +100%',
+        Name: 'Skill Prep +100% & Skill Charge',
         Image: '1010007',
       },
     ],
@@ -7199,7 +7687,7 @@ const adventurer = {
         Image: '1030028',
       },
       {
-        Name: 'Resilient Offense +15%',
+        Name: 'Resilient Offense +0%',
         Image: '1020002',
       },
     ],
@@ -7326,7 +7814,7 @@ const adventurer = {
     DefCoef: 8,
     Element: 'Wind',
     Weapon: 'Staff',
-    LimitBreak: '4',
+    LimitBreak: '5',
     Abbr: 'S',
     Image: '110024_01',
     Max: [459, 266],
@@ -7336,18 +7824,18 @@ const adventurer = {
       [55, 32],
       [65, 37],
     ],
-    Might: [80, 80, 100, 120, 160, 160, 360],
+    Might: [80, 80, 100, 120, 160, 160, 480],
     Icon: [
       {
-        Name: 'Recovery Potency +8%',
+        Name: 'Recovery Potency +15%',
         Image: '1020009',
       },
       {
-        Name: 'Freeze Res +50%',
-        Image: '1030003',
+        Name: 'Potent Freeze Res +50%',
+        Image: '1030032',
       },
       {
-        Name: 'Freeze Res +25%',
+        Name: 'Freeze Res +50%',
         Image: '1030003',
       },
     ],
@@ -8239,6 +8727,52 @@ const adventurer = {
       {
         Name: 'Recovery Potency +13%',
         Image: '1020009',
+      },
+    ],
+    McBonus: [
+      [56, 33],
+      [121, 71],
+      [198, 116],
+      [263, 154],
+      [295, 173],
+      [322, 189],
+      [386, 226],
+    ],
+  },
+  '10850503': {
+    Id: '10850503',
+    Name: {
+      en: 'Grace',
+      ja: 'グレース',
+      zh: '格蕾丝',
+    },
+    Rarity: '5',
+    DefCoef: 8,
+    Element: 'Shadow',
+    Weapon: 'Staff',
+    LimitBreak: '4',
+    Abbr: 'G',
+    Image: '110059_01',
+    Max: [482, 281],
+    AddMax1: [578, 337],
+    Min: [
+      [47, 27],
+      [58, 34],
+      [68, 39],
+    ],
+    Might: [140, 220, 240, 280, 300, 300, 500],
+    Icon: [
+      {
+        Name: 'Mournful Heart II',
+        Image: '1010038',
+      },
+      {
+        Name: 'Blindness Res +100%',
+        Image: '1030005',
+      },
+      {
+        Name: 'Healing Doublebuff IV',
+        Image: '1010011',
       },
     ],
     McBonus: [

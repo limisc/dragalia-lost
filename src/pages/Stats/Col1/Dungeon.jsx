@@ -14,7 +14,7 @@ import SelectEnemy from './SelectEnemy';
 import DamageBar from './DamageBar';
 
 const fields = ['multiplier', 'exHp', 'hp', 'exDef', 'def', 'res', 'dcrStr'];
-const AxeEXCritDamage = ['10450102', '10450302'];
+const SPECIAL_EX = ['10450102', '10450302', '10550404'];
 
 function Dungeon({ adventurer, lang, theme }) {
   const [settings, setSettings] = useState({
@@ -72,13 +72,11 @@ function Dungeon({ adventurer, lang, theme }) {
     let exHp = '';
     let exDef = '';
 
-    if (Weapon === 'Axe' || Weapon === 'Lance') {
-      const value = COABILITY_VALUE[Weapon][Rarity][ex];
-
-      if (Weapon === 'Axe' && !AxeEXCritDamage.includes(Id)) {
-        exDef = value;
+    if (!SPECIAL_EX.includes(Id)) {
+      if (Weapon === 'Axe') {
+        exDef = COABILITY_VALUE[Weapon][Rarity][ex];
       } else if (Weapon === 'Lance') {
-        exHp = value;
+        exHp = COABILITY_VALUE[Weapon][Rarity][ex];
       }
     }
 

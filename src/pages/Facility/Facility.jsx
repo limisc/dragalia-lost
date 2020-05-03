@@ -78,7 +78,7 @@ function Facility() {
         array = WEAPON_TYPES;
         break;
       case 'tree':
-        array = ['Flame'];
+        array = ['Flame', 'Wind', 'Shadow'];
         break;
       default:
         array = ELEMENT_TYPES;
@@ -177,7 +177,7 @@ function Facility() {
 
   useEffect(() => {
     const { type, field } = state;
-    if (type === 'tree' && field !== 'Flame') {
+    if (type === 'tree' && !['Flame', 'Wind', 'Shadow'].includes(field)) {
       setState(prev => ({ ...prev, field: 'Flame' }));
       return;
     }

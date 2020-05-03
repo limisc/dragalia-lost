@@ -36,6 +36,11 @@ export const MATERIAL = {
     { rupies: 50000, orb1: 200, orb2: 15, orb3: 5 },
     { rupies: 54000, orb1: 250, orb2: 18, orb3: 7 },
     { rupies: 58000, orb1: 250, orb2: 18, orb3: 7 },
+    { rupies: 100000, orb0: 6, orb1: 300, orb2: 36, orb3: 15, orb4: 2 },
+    { rupies: 140000, orb0: 12, orb1: 350, orb2: 72, orb3: 30, orb4: 4 },
+    { rupies: 190000, orb0: 18, orb1: 400, orb2: 108, orb3: 45, orb4: 6 },
+    { rupies: 250000, orb0: 24, orb1: 450, orb2: 144, orb3: 60, orb4: 8 },
+    { rupies: 320000, orb0: 30, orb1: 500, orb2: 180, orb3: 75, orb4: 10 },
   ],
   dojo: [
     { rupies: 0 },
@@ -258,6 +263,7 @@ const MATERIAL_KEY = {
   coin2: '201009002',
   coin3: '201009003',
   talonstone: '201005001',
+  orb0: '104001001',
   orb1: {
     Flame: '104001011',
     Water: '104001021',
@@ -278,6 +284,13 @@ const MATERIAL_KEY = {
     Wind: '104001033',
     Light: '104001043',
     Shadow: '104001053',
+  },
+  orb4: {
+    Flame: '104001014',
+    Water: '104001024',
+    Wind: '104001034',
+    Light: '104001044',
+    Shadow: '104001054',
   },
   sign1: {
     Sword: '201010011',
@@ -371,9 +384,13 @@ const MATERIAL_KEY = {
   },
   maskFragment1: {
     Flame: '201017031',
+    Wind: '201017021',
+    Shadow: '201017041',
   },
   maskFragment2: {
     Flame: '201017032',
+    Wind: '201017022',
+    Shadow: '201017042',
   },
   altar: {
     Flame: '100401',
@@ -401,6 +418,8 @@ const MATERIAL_KEY = {
   },
   tree: {
     Flame: '102301',
+    Wind: '102303',
+    Shadow: '102305',
   },
   fafnir: {
     Flame: '101001',
@@ -427,6 +446,7 @@ export const getMaterialKey = (key, key1) => {
     case 'coin2':
     case 'coin3':
     case 'talonstone':
+    case 'orb0':
       return MATERIAL_KEY[key];
     default:
       return MATERIAL_KEY[key][key1];

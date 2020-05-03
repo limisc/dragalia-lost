@@ -778,6 +778,33 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30140208': {
+    Id: '30140208',
+    Name: {
+      en: 'Foul Metempsychosis',
+      ja: '流転の邪剣',
+      zh: '轮回邪剑',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Sword',
+    Abbr: 'FM',
+    Image: '301109_01_40201',
+    Max: [71, 278],
+    Min: [21, 83],
+    IncSTR: 5,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +5%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
+      },
+    ],
+    Might: 90,
+  },
   '30140301': {
     Id: '30140301',
     Name: {
@@ -1730,6 +1757,28 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30150114': {
+    Id: '30150114',
+    Name: {
+      en: 'Falchion',
+      ja: 'ファルシオン',
+      zh: '法尔西昂',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Sword',
+    Abbr: 'F',
+    Image: '301148_01_50101',
+    Max: [150, 540],
+    Min: [45, 162],
+    Icon: [
+      {
+        Name: 'Primed Recovery',
+        Image: '1010011',
+      },
+    ],
+    Might: 80,
+  },
   '30150202': {
     Id: '30150202',
     Name: {
@@ -1873,6 +1922,33 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30150211': {
+    Id: '30150211',
+    Name: {
+      en: 'Eternal Metempsychosis',
+      ja: '無窮流転の邪剣',
+      zh: '无尽轮回邪剑',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Sword',
+    Abbr: 'EM',
+    Image: '301109_01_50201',
+    Max: [92, 362],
+    Min: [27, 108],
+    IncSTR: 8,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +8%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
+      },
+    ],
+    Might: 90,
+  },
   '30150301': {
     Id: '30150301',
     Name: {
@@ -2014,6 +2090,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30150310': {
+    Id: '30150310',
+    Name: {
+      en: 'Chimeratech Saffron',
+      ja: 'キメラテックサフラン',
+      zh: '奇美拉藏红之剑',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Sword',
+    Abbr: 'CS',
+    Image: '301134_01_50301',
+    Max: [189, 680],
+    Min: [56, 204],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30150311': {
+    Id: '30150311',
+    Name: {
+      en: 'Chimeratech Cypress',
+      ja: 'キメラテックサイプレス',
+      zh: '奇美拉常青之剑',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Sword',
+    Abbr: 'CC',
+    Image: '301134_01_50302',
+    Max: [270, 972],
+    Min: [81, 291],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30150401': {
     Id: '30150401',
@@ -2421,7 +2541,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30159901': {
     Id: '30159901',
@@ -2567,6 +2687,25 @@ const weapon = {
     Weapon: 'Sword',
     Abbr: 'N',
     Image: '301138_01_60101',
+    Max: [237, 1544],
+    Min: [71, 463],
+  },
+  '30160301': {
+    Id: '30160301',
+    Name: {
+      en: 'Excalibur',
+      ja: 'エクスカリバー',
+      zh: '断钢剑',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Sword',
+    Abbr: 'E',
+    Image: '301140_01_60301',
     Max: [237, 1544],
     Min: [71, 463],
   },
@@ -2778,8 +2917,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 70,
@@ -2951,6 +3090,32 @@ const weapon = {
       },
     ],
     Might: 70,
+  },
+  '30230404': {
+    Id: '30230404',
+    Name: {
+      en: 'Faerielight Ray',
+      ja: '妖輝刀・光閃',
+      zh: '妖辉刀·光闪',
+    },
+    Rarity: '3',
+    Element: 'Light',
+    Weapon: 'Blade',
+    Abbr: 'FR',
+    Image: '302074_01_30401',
+    Max: [33, 144],
+    Min: [9, 43],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +10%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30230501': {
     Id: '30230501',
@@ -3372,6 +3537,32 @@ const weapon = {
     ],
     Might: 90,
   },
+  '30240110': {
+    Id: '30240110',
+    Name: {
+      en: 'Hateblister',
+      ja: '火幻の禍太刀',
+      zh: '火幻祸太刀',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Blade',
+    Abbr: 'H',
+    Image: '302116_01_40101',
+    Max: [62, 295],
+    Min: [18, 88],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30240202': {
     Id: '30240202',
     Name: {
@@ -3516,8 +3707,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 90,
@@ -3570,6 +3761,33 @@ const weapon = {
       {
         Name: '(Water) Frenzy Res',
         Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
+  '30240211': {
+    Id: '30240211',
+    Name: {
+      en: 'Fountain Blade',
+      ja: 'ファウンテンブレード',
+      zh: '泉涌之刃',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Blade',
+    Abbr: 'FB',
+    Image: '302100_01_40201',
+    Max: [69, 278],
+    Min: [20, 83],
+    IncSTR: 5,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +5%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
       },
     ],
     Might: 90,
@@ -3979,6 +4197,32 @@ const weapon = {
       },
     ],
     Might: 90,
+  },
+  '30240411': {
+    Id: '30240411',
+    Name: {
+      en: 'Faerielight Flash',
+      ja: '妖輝刀・光芒一閃',
+      zh: '妖辉刀·光芒一闪',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Blade',
+    Abbr: 'FF',
+    Image: '302074_01_40401',
+    Max: [53, 229],
+    Min: [15, 68],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +15%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30240501': {
     Id: '30240501',
@@ -4626,6 +4870,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30250111': {
+    Id: '30250111',
+    Name: {
+      en: 'Furyblister',
+      ja: '炎幻の灼太刀',
+      zh: '炎幻灼太刀',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Blade',
+    Abbr: 'F',
+    Image: '302116_01_50101',
+    Max: [81, 383],
+    Min: [24, 114],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30250201': {
     Id: '30250201',
     Name: {
@@ -4795,6 +5065,33 @@ const weapon = {
     ],
     Might: 110,
   },
+  '30250208': {
+    Id: '30250208',
+    Name: {
+      en: 'Gush Blade',
+      ja: 'スクワートブレード',
+      zh: '怒涛之刃',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Blade',
+    Abbr: 'GB',
+    Image: '302100_01_50201',
+    Max: [90, 361],
+    Min: [27, 108],
+    IncSTR: 8,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +8%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
+      },
+    ],
+    Might: 90,
+  },
   '30250301': {
     Id: '30250301',
     Name: {
@@ -4936,6 +5233,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30250307': {
+    Id: '30250307',
+    Name: {
+      en: 'Chimeratech Camphor',
+      ja: 'キメラテックカンファー',
+      zh: '奇美拉香樟之刀',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Blade',
+    Abbr: 'CC',
+    Image: '302125_01_50301',
+    Max: [158, 743],
+    Min: [47, 222],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30250308': {
+    Id: '30250308',
+    Name: {
+      en: 'Chimeratech Benzoin',
+      ja: 'キメラテックベンゾイン',
+      zh: '奇美拉安息之刀',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Blade',
+    Abbr: 'CB',
+    Image: '302125_01_50302',
+    Max: [226, 1061],
+    Min: [67, 318],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30250401': {
     Id: '30250401',
@@ -5347,7 +5688,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30259901': {
     Id: '30259901',
@@ -5493,6 +5834,25 @@ const weapon = {
     Weapon: 'Blade',
     Abbr: 'T',
     Image: '302129_01_60101',
+    Max: [209, 1636],
+    Min: [62, 490],
+  },
+  '30260301': {
+    Id: '30260301',
+    Name: {
+      en: 'Arondight',
+      ja: 'アロンダイト',
+      zh: '阿隆戴特',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Blade',
+    Abbr: 'A',
+    Image: '302131_01_60301',
     Max: [209, 1636],
     Min: [62, 490],
   },
@@ -6294,6 +6654,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30340108': {
+    Id: '30340108',
+    Name: {
+      en: 'Flaming Necrom',
+      ja: 'ヒートフレアネクロム',
+      zh: '炽炎死灵刃',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Dagger',
+    Abbr: 'FN',
+    Image: '303115_01_40101',
+    Max: [72, 273],
+    Min: [21, 81],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
   },
   '30340201': {
     Id: '30340201',
@@ -7487,6 +7873,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30350111': {
+    Id: '30350111',
+    Name: {
+      en: 'Blazing Necrom',
+      ja: 'ヒートブレイズネクロム',
+      zh: '炽焰死灵刃',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Dagger',
+    Abbr: 'BN',
+    Image: '303115_01_50101',
+    Max: [93, 354],
+    Min: [27, 106],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30350201': {
     Id: '30350201',
     Name: {
@@ -7797,6 +8209,50 @@ const weapon = {
     Image: '303109_01_50302',
     Max: [270, 1383],
     Min: [81, 414],
+  },
+  '30350307': {
+    Id: '30350307',
+    Name: {
+      en: 'Chimeratech Lotus',
+      ja: 'キメラテックロータス',
+      zh: '奇美拉翠莲刃',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Dagger',
+    Abbr: 'CL',
+    Image: '303124_01_50301',
+    Max: [191, 667],
+    Min: [57, 200],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30350308': {
+    Id: '30350308',
+    Name: {
+      en: 'Chimeratech Tea Tree',
+      ja: 'キメラテックティートリー',
+      zh: '奇美拉千层刃',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Dagger',
+    Abbr: 'CTT',
+    Image: '303124_01_50302',
+    Max: [273, 953],
+    Min: [81, 285],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30350401': {
     Id: '30350401',
@@ -8155,7 +8611,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30359901': {
     Id: '30359901',
@@ -8282,6 +8738,25 @@ const weapon = {
     Weapon: 'Dagger',
     Abbr: 'H',
     Image: '303128_01_60101',
+    Max: [239, 1513],
+    Min: [71, 453],
+  },
+  '30360301': {
+    Id: '30360301',
+    Name: {
+      en: 'Carnwennan',
+      ja: 'カルンウェナン',
+      zh: '卡文南',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Dagger',
+    Abbr: 'C',
+    Image: '303130_01_60301',
     Max: [239, 1513],
     Min: [71, 453],
   },
@@ -8933,6 +9408,32 @@ const weapon = {
     ],
     Might: 90,
   },
+  '30440110': {
+    Id: '30440110',
+    Name: {
+      en: 'Fuel Crash',
+      ja: 'フュエルクラッシュ',
+      zh: '炽焰破坏斧',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Axe',
+    Abbr: 'FC',
+    Image: '304114_01_40101',
+    Max: [73, 292],
+    Min: [21, 87],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30440201': {
     Id: '30440201',
     Name: {
@@ -9105,6 +9606,33 @@ const weapon = {
       {
         Name: '(Water) Frenzy Res',
         Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
+  '30440209': {
+    Id: '30440209',
+    Name: {
+      en: 'Hail Destroyer',
+      ja: 'ヘイルデストロイヤー',
+      zh: '冰霜破坏者',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Axe',
+    Abbr: 'HD',
+    Image: '304098_01_40201',
+    Max: [81, 275],
+    Min: [24, 82],
+    IncSTR: 5,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +5%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
       },
     ],
     Might: 90,
@@ -10109,6 +10637,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30450111': {
+    Id: '30450111',
+    Name: {
+      en: 'Hellfire Crash',
+      ja: 'ヘルファイアクラッシュ',
+      zh: '狱火破坏斧',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Axe',
+    Abbr: 'HC',
+    Image: '304114_01_50101',
+    Max: [95, 380],
+    Min: [28, 114],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30450201': {
     Id: '30450201',
     Name: {
@@ -10278,6 +10832,33 @@ const weapon = {
     ],
     Might: 110,
   },
+  '30450208': {
+    Id: '30450208',
+    Name: {
+      en: 'Icicle Destroyer',
+      ja: 'アイシクルデストロイヤー',
+      zh: '冰柱破坏者',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Axe',
+    Abbr: 'ID',
+    Image: '304098_01_50201',
+    Max: [105, 357],
+    Min: [31, 107],
+    IncSTR: 8,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +8%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
+      },
+    ],
+    Might: 90,
+  },
   '30450301': {
     Id: '30450301',
     Name: {
@@ -10419,6 +11000,50 @@ const weapon = {
     Image: '304108_01_50302',
     Max: [267, 1512],
     Min: [80, 453],
+  },
+  '30450307': {
+    Id: '30450307',
+    Name: {
+      en: 'Chimeratech Spruce',
+      ja: 'キメラテックスプル－ス',
+      zh: '奇美拉云杉战斧',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Axe',
+    Abbr: 'CS',
+    Image: '304123_01_50301',
+    Max: [204, 693],
+    Min: [61, 207],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30450308': {
+    Id: '30450308',
+    Name: {
+      en: 'Chimeratech Palmarosa',
+      ja: 'キメラテックパルマローザ',
+      zh: '奇美拉香茅战斧',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Axe',
+    Abbr: 'CP',
+    Image: '304123_01_50302',
+    Max: [292, 990],
+    Min: [87, 297],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30450401': {
     Id: '30450401',
@@ -10830,7 +11455,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30459901': {
     Id: '30459901',
@@ -10942,6 +11567,25 @@ const weapon = {
     Weapon: 'Axe',
     Abbr: 'M',
     Image: '304127_01_60101',
+    Max: [244, 1621],
+    Min: [73, 486],
+  },
+  '30460301': {
+    Id: '30460301',
+    Name: {
+      en: 'Marmyadose ',
+      ja: 'マルミアドワーズ',
+      zh: '玛米亚多斯',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Axe',
+    Abbr: 'M',
+    Image: '304129_01_60301',
     Max: [244, 1621],
     Min: [73, 486],
   },
@@ -11153,8 +11797,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 70,
@@ -11345,6 +11989,32 @@ const weapon = {
       },
     ],
     Might: 70,
+  },
+  '30530405': {
+    Id: '30530405',
+    Name: {
+      en: 'Dimlight Grimspear',
+      ja: 'ディムライトグリムスピア',
+      zh: '微光绝情枪',
+    },
+    Rarity: '3',
+    Element: 'Light',
+    Weapon: 'Lance',
+    Abbr: 'DG',
+    Image: '305083_01_30401',
+    Max: [37, 143],
+    Min: [11, 42],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +10%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30530501': {
     Id: '30530501',
@@ -11766,6 +12436,32 @@ const weapon = {
     ],
     Might: 90,
   },
+  '30540110': {
+    Id: '30540110',
+    Name: {
+      en: 'Underworld Blazer',
+      ja: '獄炎の幽槍',
+      zh: '狱炎幽枪',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Lance',
+    Abbr: 'UB',
+    Image: '305121_01_40101',
+    Max: [80, 267],
+    Min: [24, 80],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30540201': {
     Id: '30540201',
     Name: {
@@ -11936,8 +12632,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 90,
@@ -11964,6 +12660,33 @@ const weapon = {
       {
         Name: '(Water) Frenzy Res',
         Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
+  '30540209': {
+    Id: '30540209',
+    Name: {
+      en: 'Flowing Tidelance',
+      ja: '水槍・フロウタイド',
+      zh: '水枪·潮涌',
+    },
+    Rarity: '4',
+    Element: 'Water',
+    Weapon: 'Lance',
+    Abbr: 'FT',
+    Image: '305105_01_40201',
+    Max: [76, 276],
+    Min: [22, 82],
+    IncSTR: 5,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +5%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
       },
     ],
     Might: 90,
@@ -12347,6 +13070,32 @@ const weapon = {
       },
     ],
     Might: 90,
+  },
+  '30540411': {
+    Id: '30540411',
+    Name: {
+      en: 'Highbright Grimspear',
+      ja: 'ハイブライトグリムスピア',
+      zh: '耀光绝情枪',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Lance',
+    Abbr: 'HG',
+    Image: '305083_01_40401',
+    Max: [58, 227],
+    Min: [17, 68],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +15%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30540501': {
     Id: '30540501',
@@ -12994,6 +13743,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30550111': {
+    Id: '30550111',
+    Name: {
+      en: 'Underworld Sinner',
+      ja: '罪魂灼滅の幽冥槍',
+      zh: '罪魂灼灭幽冥枪',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Lance',
+    Abbr: 'US',
+    Image: '305121_01_50101',
+    Max: [104, 347],
+    Min: [31, 104],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30550201': {
     Id: '30550201',
     Name: {
@@ -13163,6 +13938,33 @@ const weapon = {
     ],
     Might: 110,
   },
+  '30550208': {
+    Id: '30550208',
+    Name: {
+      en: 'Raging Tidelance',
+      ja: '氷槍・レイジングトレント',
+      zh: '冰枪·怒涛',
+    },
+    Rarity: '5',
+    Element: 'Water',
+    Weapon: 'Lance',
+    Abbr: 'RT',
+    Image: '305105_01_50201',
+    Max: [99, 358],
+    Min: [29, 107],
+    IncSTR: 8,
+    Icon: [
+      {
+        Name: '(Water) HP 70% = Strength +8%',
+        Image: '1020002',
+      },
+      {
+        Name: '(Water) Spectral Shield Penetrator',
+        Image: '1140004',
+      },
+    ],
+    Might: 90,
+  },
   '30550301': {
     Id: '30550301',
     Name: {
@@ -13304,6 +14106,50 @@ const weapon = {
     Image: '305115_01_50302',
     Max: [252, 1515],
     Min: [75, 454],
+  },
+  '30550307': {
+    Id: '30550307',
+    Name: {
+      en: 'Chimeratech Neroli',
+      ja: 'キメラテックネロリ',
+      zh: '奇美拉橙花之枪',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Lance',
+    Abbr: 'CN',
+    Image: '305130_01_50301',
+    Max: [183, 715],
+    Min: [54, 214],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30550308': {
+    Id: '30550308',
+    Name: {
+      en: 'Chimeratech Caraway',
+      ja: 'キメラテックキャラウェイ',
+      zh: '奇美拉葛缕之枪',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Lance',
+    Abbr: 'CC',
+    Image: '305130_01_50302',
+    Max: [262, 1021],
+    Min: [78, 306],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30550402': {
     Id: '30550402',
@@ -13503,6 +14349,28 @@ const weapon = {
     ],
     Might: 110,
   },
+  '30550411': {
+    Id: '30550411',
+    Name: {
+      en: 'Fensalir',
+      ja: 'フェンサリル',
+      zh: '芬萨里尔',
+    },
+    Rarity: '5',
+    Element: 'Light',
+    Weapon: 'Lance',
+    Abbr: 'F',
+    Image: '305143_01_50401',
+    Max: [153, 551],
+    Min: [45, 165],
+    Icon: [
+      {
+        Name: 'Attacking Strength Debilitator',
+        Image: '1040011',
+      },
+    ],
+    Might: 80,
+  },
   '30550501': {
     Id: '30550501',
     Name: {
@@ -13689,7 +14557,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30559901': {
     Id: '30559901',
@@ -13801,6 +14669,25 @@ const weapon = {
     Weapon: 'Lance',
     Abbr: 'G',
     Image: '305135_01_60101',
+    Max: [242, 1575],
+    Min: [72, 472],
+  },
+  '30560301': {
+    Id: '30560301',
+    Name: {
+      en: 'Rhongomyniad',
+      ja: 'ロンゴミニアド',
+      zh: '先锋之枪',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Lance',
+    Abbr: 'R',
+    Image: '305137_01_60301',
     Max: [242, 1575],
     Min: [72, 472],
   },
@@ -14012,8 +14899,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 70,
@@ -14185,6 +15072,32 @@ const weapon = {
       },
     ],
     Might: 70,
+  },
+  '30630404': {
+    Id: '30630404',
+    Name: {
+      en: 'Phantomflash Bow',
+      ja: 'またたく幻光の弓',
+      zh: '闪烁幻光弓',
+    },
+    Rarity: '3',
+    Element: 'Light',
+    Weapon: 'Bow',
+    Abbr: 'PB',
+    Image: '306069_01_30401',
+    Max: [35, 135],
+    Min: [10, 40],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +10%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30630501': {
     Id: '30630501',
@@ -14579,6 +15492,32 @@ const weapon = {
     ],
     Might: 80,
   },
+  '30640110': {
+    Id: '30640110',
+    Name: {
+      en: 'Mind Corrupter',
+      ja: '霊火弓コラプトシュート',
+      zh: '灵火弓堕击',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Bow',
+    Abbr: 'MC',
+    Image: '306114_01_40101',
+    Max: [70, 267],
+    Min: [21, 80],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
+  },
   '30640201': {
     Id: '30640201',
     Name: {
@@ -14723,8 +15662,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 90,
@@ -15133,6 +16072,32 @@ const weapon = {
       },
     ],
     Might: 90,
+  },
+  '30640411': {
+    Id: '30640411',
+    Name: {
+      en: 'Lightshear Bow',
+      ja: '朧げなる幽明の弓',
+      zh: '朦胧幽明弓',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Bow',
+    Abbr: 'LB',
+    Image: '306069_01_40401',
+    Max: [56, 214],
+    Min: [16, 64],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +15%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30640501': {
     Id: '30640501',
@@ -15730,6 +16695,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30650110': {
+    Id: '30650110',
+    Name: {
+      en: 'Soul Corrupter',
+      ja: '霊焔弩コラプトスクリュー',
+      zh: '灵焰弩堕旋',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Bow',
+    Abbr: 'SC',
+    Image: '306114_01_50101',
+    Max: [90, 347],
+    Min: [27, 104],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30650201': {
     Id: '30650201',
     Name: {
@@ -16040,6 +17031,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30650308': {
+    Id: '30650308',
+    Name: {
+      en: 'Chimeratech Inula',
+      ja: 'キメラテックイニュラ',
+      zh: '奇美拉旋覆花弓',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Bow',
+    Abbr: 'CI',
+    Image: '306123_01_50301',
+    Max: [194, 634],
+    Min: [58, 190],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30650309': {
+    Id: '30650309',
+    Name: {
+      en: 'Chimeratech Ajwain',
+      ja: 'キメラテックアジョワン',
+      zh: '奇美拉香旱芹弓',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Bow',
+    Abbr: 'CA',
+    Image: '306123_01_50302',
+    Max: [278, 905],
+    Min: [83, 271],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30650402': {
     Id: '30650402',
@@ -16398,7 +17433,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30659901': {
     Id: '30659901',
@@ -16529,6 +17564,25 @@ const weapon = {
     Weapon: 'Bow',
     Abbr: 'Ý',
     Image: '306127_01_60101',
+    Max: [232, 1482],
+    Min: [69, 444],
+  },
+  '30660301': {
+    Id: '30660301',
+    Name: {
+      en: 'Failnaught',
+      ja: 'フェイルノート',
+      zh: '必中之弓',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Bow',
+    Abbr: 'F',
+    Image: '306129_01_60301',
     Max: [232, 1482],
     Min: [69, 444],
   },
@@ -16740,8 +17794,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 70,
@@ -16913,6 +17967,32 @@ const weapon = {
       },
     ],
     Might: 70,
+  },
+  '30730404': {
+    Id: '30730404',
+    Name: {
+      en: 'Ray of Hope',
+      ja: '光明のロッド',
+      zh: '光明魔杖',
+    },
+    Rarity: '3',
+    Element: 'Light',
+    Weapon: 'Wand',
+    Abbr: 'ROH',
+    Image: '307075_01_30401',
+    Max: [38, 133],
+    Min: [11, 39],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +10%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30730501': {
     Id: '30730501',
@@ -17477,8 +18557,8 @@ const weapon = {
         Image: '1010009',
       },
       {
-        Name: '(Water) Petrify Res',
-        Image: '1030020',
+        Name: '(Water) Petrify & Soul Eater Res',
+        Image: '1030034',
       },
     ],
     Might: 90,
@@ -17824,6 +18904,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30740409': {
+    Id: '30740409',
+    Name: {
+      en: 'Dazzling Ray of Hope',
+      ja: '燦然たる光明のロッド',
+      zh: '璀璨光明魔杖',
+    },
+    Rarity: '4',
+    Element: 'Light',
+    Weapon: 'Wand',
+    Abbr: 'DROH',
+    Image: '307075_01_40401',
+    Max: [61, 211],
+    Min: [18, 63],
+    Icon: [
+      {
+        Name: '(Light) Paralyzed Punisher +15%',
+        Image: '1070004',
+      },
+      {
+        Name: '(Light) Petrify Res',
+        Image: '1030020',
+      },
+    ],
+    Might: 55,
   },
   '30740501': {
     Id: '30740501',
@@ -18684,6 +19790,50 @@ const weapon = {
     Max: [221, 1575],
     Min: [66, 472],
   },
+  '30750307': {
+    Id: '30750307',
+    Name: {
+      en: 'Chimeratech Myrrh',
+      ja: 'キメラテックミルラ',
+      zh: '奇美拉末药魔杖',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Wand',
+    Abbr: 'CM',
+    Image: '307131_01_50301',
+    Max: [169, 722],
+    Min: [50, 216],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30750308': {
+    Id: '30750308',
+    Name: {
+      en: 'Chimeratech Frankin',
+      ja: 'キメラテックフランキン',
+      zh: '奇美拉乳香魔杖',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Wand',
+    Abbr: 'CF',
+    Image: '307131_01_50302',
+    Max: [241, 1031],
+    Min: [72, 309],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
+  },
   '30750401': {
     Id: '30750401',
     Name: {
@@ -19015,7 +20165,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30759901': {
     Id: '30759901',
@@ -19142,6 +20292,25 @@ const weapon = {
     Weapon: 'Wand',
     Abbr: 'B',
     Image: '307135_01_60101',
+    Max: [223, 1590],
+    Min: [66, 477],
+  },
+  '30760301': {
+    Id: '30760301',
+    Name: {
+      en: 'Camelot',
+      ja: 'キャメロット',
+      zh: '卡梅洛特',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Wand',
+    Abbr: 'C',
+    Image: '307137_01_60301',
     Max: [223, 1590],
     Min: [66, 477],
   },
@@ -19613,6 +20782,32 @@ const weapon = {
       },
     ],
     Might: 80,
+  },
+  '30840107': {
+    Id: '30840107',
+    Name: {
+      en: 'Ruinous Flame',
+      ja: 'ルインフレイムグラッジ',
+      zh: '泯命火焰之怨杖',
+    },
+    Rarity: '4',
+    Element: 'Flame',
+    Weapon: 'Staff',
+    Abbr: 'RF',
+    Image: '308115_01_40101',
+    Max: [89, 244],
+    Min: [26, 73],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +20%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 90,
   },
   '30840201': {
     Id: '30840201',
@@ -20607,6 +21802,32 @@ const weapon = {
     ],
     Might: 100,
   },
+  '30850110': {
+    Id: '30850110',
+    Name: {
+      en: 'Ruinous Eruption',
+      ja: 'ルインボルケーノグラッジ',
+      zh: '泯世火山之怨杖',
+    },
+    Rarity: '5',
+    Element: 'Flame',
+    Weapon: 'Staff',
+    Abbr: 'RE',
+    Image: '308115_01_50101',
+    Max: [115, 317],
+    Min: [34, 95],
+    Icon: [
+      {
+        Name: "(Flame) Tempest Chimera's Bane +30%",
+        Image: '1100001',
+      },
+      {
+        Name: '(Flame) Frenzy Res',
+        Image: '1030024',
+      },
+    ],
+    Might: 110,
+  },
   '30850201': {
     Id: '30850201',
     Name: {
@@ -20917,6 +22138,50 @@ const weapon = {
       },
     ],
     Might: 100,
+  },
+  '30850307': {
+    Id: '30850307',
+    Name: {
+      en: 'Chimeratech Sage',
+      ja: 'キメラテックセージ',
+      zh: '奇美拉鼠尾草杖',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Staff',
+    Abbr: 'CS',
+    Image: '308124_01_50301',
+    Max: [225, 614],
+    Min: [67, 184],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +2%',
+        Image: '1020002',
+      },
+    ],
+    Might: 60,
+  },
+  '30850308': {
+    Id: '30850308',
+    Name: {
+      en: 'Chimeratech Marjoram',
+      ja: 'キメラテックマージョラム',
+      zh: '奇美拉马郁兰杖',
+    },
+    Rarity: '5',
+    Element: 'Wind',
+    Weapon: 'Staff',
+    Abbr: 'CM',
+    Image: '308124_01_50302',
+    Max: [321, 877],
+    Min: [96, 263],
+    Icon: [
+      {
+        Name: '(Wind) Unyielding Offense +4%',
+        Image: '1020002',
+      },
+    ],
+    Might: 80,
   },
   '30850401': {
     Id: '30850401',
@@ -21297,7 +22562,7 @@ const weapon = {
         Image: '1020002',
       },
     ],
-    Might: 60,
+    Might: 80,
   },
   '30859901': {
     Id: '30859901',
@@ -21409,6 +22674,25 @@ const weapon = {
     Weapon: 'Staff',
     Abbr: 'G',
     Image: '308128_01_60101',
+    Max: [261, 1467],
+    Min: [78, 440],
+  },
+  '30860301': {
+    Id: '30860301',
+    Name: {
+      en: 'Avalon',
+      ja: 'アヴァロン',
+      zh: '阿瓦隆',
+    },
+    Rarity: '6',
+    Skill: {
+      Name: 'Gwiber',
+      Image: 'Icon_Skill_030',
+    },
+    Element: 'Wind',
+    Weapon: 'Staff',
+    Abbr: 'A',
+    Image: '308130_01_60301',
     Max: [261, 1467],
     Min: [78, 440],
   },
