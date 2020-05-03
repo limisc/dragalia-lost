@@ -2,18 +2,10 @@ import React from 'react';
 
 function Image(props) {
   const { image, name, size, title, onClick } = props;
-  const src = `${process.env.PUBLIC_URL}/images/${image}`;
+  const src = `${process.env.PUBLIC_URL}/images/${image}.png`;
 
   const picture = (
-    <picture className={size}>
-      <source type="image/webp" srcSet={`${src}.webp`} />
-      <img
-        className={size}
-        src={`${src}.png`}
-        alt={title || image}
-        title={title}
-      />
-    </picture>
+    <img alt={title || image} className={size} src={src} title={title} />
   );
 
   if (onClick) {
