@@ -56,7 +56,7 @@ const getLimit = (key, rarity, unbind = 4) => {
 export const getFacilityMaxLevel = facility => {
   const { id, type } = facility;
 
-  const lv35 = ['101501', '101601', '102001', '101101', '101801'];
+  const lv35 = ['100901', '101501', '101601', '102001', '101101', '101801'];
 
   if (lv35.includes(id)) {
     return 35;
