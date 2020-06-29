@@ -7,7 +7,7 @@ const LIMIT = {
   augments: 100,
   altar: 40,
   dojo: 35,
-  dracolith: 20,
+  dracolith: 30,
   event: 35,
   slime: 15,
   tree: 25,
