@@ -10,7 +10,7 @@ const LIMIT = {
   dracolith: 20,
   event: 35,
   slime: 15,
-  tree: 15,
+  tree: 25,
   dragon: {
     '3': [20, 30, 40, 50, 60],
     '4': [30, 40, 50, 65, 80],
