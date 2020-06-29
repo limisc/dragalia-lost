@@ -159,6 +159,11 @@ const facility = {
     ja: '覚醒の炎樹',
     zh: '觉醒之炎树',
   },
+  '102302': {
+    en: 'Water Tree',
+    ja: '覚醒の流樹',
+    zh: '觉醒之流树',
+  },
   '102303': {
     en: 'Wind Tree',
     ja: '覚醒の嵐樹',
@@ -173,6 +178,11 @@ const facility = {
     en: 'The Hungerdome',
     ja: 'キュイジーヌスタジアム',
     zh: '美食工坊',
+  },
+  '102501': {
+    en: 'Festival Stage',
+    ja: 'お祭りやぐら',
+    zh: '孟兰盆祭坛',
   },
 };
 
