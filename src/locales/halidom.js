@@ -179,6 +179,11 @@ const facility = {
     ja: 'キュイジーヌスタジアム',
     zh: '美食工坊',
   },
+  '102501': {
+    en: 'Festival Stage',
+    ja: 'お祭りやぐら',
+    zh: '孟兰盆祭坛',
+  },
 };
 
 export default facility;

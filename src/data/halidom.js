@@ -43,6 +43,7 @@ const initHalidom = {
   Staff_dojo_1: { id: '100508', type: 'dojo', level: 35 },
   Dagger_Bow_eventW_0: { id: '101301', type: 'eventW', level: 30 },
   Blade_Wand_eventW_0: { id: '102401', type: 'eventW', level: 30 },
+  Sword_Lance_eventW_0: { id: '102501', type: 'eventW', level: 30 },
   dragon_Flame_fafnir_0: { id: '101001', type: 'fafnir', level: 30 },
   dragon_Water_fafnir_0: { id: '101002', type: 'fafnir', level: 30 },
   dragon_Wind_fafnir_0: { id: '101003', type: 'fafnir', level: 30 },
