@@ -9,6 +9,7 @@ const initHalidom = {
   adventurer_Water_eventE_0: { id: '101601', type: 'eventE', level: 35 },
   adventurer_Water_eventE_1: { id: '101801', type: 'eventE', level: 35 },
   adventurer_Water_slime_0: { id: '101902', type: 'slime', level: 15 },
+  adventurer_Water_tree_0: { id: '102302', type: 'tree', level: 15 },
   adventurer_Wind_altar_0: { id: '100403', type: 'altar', level: 35 },
   adventurer_Wind_altar_1: { id: '100403', type: 'altar', level: 35 },
   adventurer_Wind_eventE_0: { id: '101101', type: 'eventE', level: 35 },

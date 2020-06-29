@@ -394,11 +394,13 @@ const MATERIAL_KEY = {
   },
   maskFragment1: {
     Flame: '201017031',
+    Water: '201017011',
     Wind: '201017021',
     Shadow: '201017041',
   },
   maskFragment2: {
     Flame: '201017032',
+    Water: '201017012',
     Wind: '201017022',
     Shadow: '201017042',
   },
@@ -428,6 +430,7 @@ const MATERIAL_KEY = {
   },
   tree: {
     Flame: '102301',
+    Water: '102302',
     Wind: '102303',
     Shadow: '102305',
   },
