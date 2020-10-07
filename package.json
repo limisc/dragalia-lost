@@ -1,0 +1,28 @@
+{
+  "name": "dragalia-lost",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "sass": "npx sass ./src/styles/style.scss ./src/styles/style.css"
+  },
+  "keywords": [
+    "dragalia lost"
+  ],
+  "author": "Jun Li",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.1",
+    "prettier": "2.1.2",
+    "sass": "^1.26.12",
+    "vite": "^1.0.0-rc.4"
+  }
+}
