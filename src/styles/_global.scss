@@ -1,4 +1,5 @@
 @use './variables';
+@use 'sass:selector';
 
 $unit: variables.$unit;
 $header-height: 50px;
@@ -41,10 +42,6 @@ label {
   user-select: none;
 }
 
-.hide {
-  display: none;
-}
-
 .flex-v-center {
   display: flex;
   align-items: center;
@@ -67,31 +64,39 @@ label {
   text-align: center;
 }
 
-.image-outer {
+.relative-outer {
   position: relative;
   display: block;
+}
 
-  &::before {
+@mixin prepend($prefix) {
+  @at-root #{$prefix}#{&} {
+    @content;
+  }
+}
+
+::before {
+  @include prepend('.relative-outer') {
     display: block;
     width: 100%;
     content: '';
   }
+
+  @include prepend('.weapon-series-image') {
+    padding-top: (66 / 281) * 100%;
+  }
+
+  @include prepend('.square-box') {
+    padding-top: 100%;
+  }
 }
 
-.image-inner {
+.absolute-inner {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.weapon-series-image::before {
-  padding-top: (66 / 281) * 100%;
-}
-
-.square-image::before {
-  padding-top: 100%;
 }
 
 .icon-l {

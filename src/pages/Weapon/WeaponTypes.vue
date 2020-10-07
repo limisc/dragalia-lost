@@ -12,12 +12,12 @@
 
       <label
         :for="`weapon-type-${id}`"
-        class="radio-label image-outer square-image"
+        class="radio-label relative-outer square-box"
       >
         <img
           :src="`/image/weapon-type/${id}.png`"
           alt=""
-          class="image-inner"
+          class="absolute-inner"
           draggable="false"
         />
       </label>

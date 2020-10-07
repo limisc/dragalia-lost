@@ -9,11 +9,6 @@ $unit: variables.$unit;
   flex-wrap: wrap;
   margin-right: (-$unit);
   margin-left: (-$unit);
-
-  &.dense {
-    margin-top: (-$unit);
-    margin-bottom: (-$unit);
-  }
 }
 
 .col {
@@ -22,6 +17,11 @@ $unit: variables.$unit;
 }
 
 @mixin set-col($media-type: '') {
+  .col#{$media-type}-0 {
+    display: none;
+    flex: none;
+  }
+
   @for $i from 1 through 12 {
     .col#{$media-type}-#{$i} {
       flex: none;

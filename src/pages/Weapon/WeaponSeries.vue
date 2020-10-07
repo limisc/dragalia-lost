@@ -4,14 +4,14 @@
       id="picked-series"
       v-model="isOpen"
       type="checkbox"
-      class="dropdown-ctrl hide"
+      class="dropdown-ctrl col-0"
     />
 
-    <label for="picked-series" class="image-outer weapon-series-image">
+    <label for="picked-series" class="relative-outer weapon-series-image">
       <img
         :src="`/image/weapon-series/${seriesId}.png`"
         alt=""
-        class="image-inner"
+        class="absolute-inner"
         draggable="false"
       />
     </label>
@@ -34,11 +34,11 @@
           :for="`weapon-series-${id}`"
           class="radio-label full-width p-h-1"
         >
-          <div class="image-outer weapon-series-image">
+          <div class="relative-outer weapon-series-image">
             <img
               :src="`/image/weapon-series/${id}.png`"
               alt=""
-              class="image-inner"
+              class="absolute-inner"
               draggable="false"
             />
           </div>

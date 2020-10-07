@@ -1,11 +1,11 @@
 <template>
   <li class="row flex-v-center weapon-options-item">
     <div class="p-1">
-      <div class="image-outer square-image icon-m m-auto">
+      <div class="relative-outer square-box icon-m m-auto">
         <img
           :src="`/image/buildup/${optionId}.png`"
           alt=""
-          class="image-inner"
+          class="absolute-inner"
           draggable="false"
         />
       </div>

@@ -1,10 +1,10 @@
 <template>
   <div v-show="computedCoin" class="flex-v-center">
-    <div class="image-outer square-image icon-m m-1">
+    <div class="relative-outer square-box icon-m m-1">
       <img
         :src="`/image/material/coin.png`"
         alt=""
-        class="image-inner"
+        class="absolute-inner"
         draggable="false"
       />
     </div>
@@ -14,11 +14,11 @@
   <div class="fill-rest overflow-auto p-h-1">
     <ul class="row">
       <li v-for="(quantity, key) in computedRest" :key="key" class="p-1">
-        <div class="image-outer square-image icon-m m-auto">
+        <div class="relative-outer square-box icon-m m-auto">
           <img
             :src="`/image/material/${key}.png`"
             alt=""
-            class="image-inner"
+            class="absolute-inner"
             draggable="false"
           />
         </div>

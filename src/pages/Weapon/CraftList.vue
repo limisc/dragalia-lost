@@ -21,12 +21,12 @@
 
       <label
         :for="`craft-weapon-${item.weaponId}`"
-        class="radio-label image-outer square-image icon-l"
+        class="radio-label relative-outer square-box icon-l"
       >
         <img
           :src="`/image/weapon/${item.skinId}.png`"
           alt=""
-          class="image-inner"
+          class="absolute-inner"
           draggable="false"
         />
       </label>
