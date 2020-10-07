@@ -1,0 +1,7 @@
+.radio-select {
+  display: none;
+
+  &:checked + .radio-label {
+    background-color: #8d822d;
+  }
+}

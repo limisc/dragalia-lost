@@ -1,0 +1,107 @@
+@use './variables';
+@use './mixins';
+
+$unit: variables.$unit;
+
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: (-$unit);
+  margin-left: (-$unit);
+
+  &.dense {
+    margin-top: (-$unit);
+    margin-bottom: (-$unit);
+  }
+}
+
+.col {
+  flex: 1;
+  padding: $unit;
+}
+
+@mixin set-col($media-type: '') {
+  @for $i from 1 through 12 {
+    .col#{$media-type}-#{$i} {
+      flex: none;
+      width: (100% / 12) * $i;
+    }
+  }
+}
+
+@include set-col();
+
+@include mixins.mobile {
+  @include set-col('-mobile');
+}
+
+@include mixins.tablet {
+  @include set-col('-tablet');
+}
+
+@include mixins.laptop {
+  @include set-col('-laptop');
+}
+
+@include mixins.laptop-large {
+  @include set-col('-laptop-l');
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+$fields: (
+  'p': 'padding',
+  'm': 'margin',
+);
+
+$directions: (
+  't': 'top',
+  'b': 'bottom',
+);
+
+@each $key, $value in $fields {
+  @for $i from 0 through 5 {
+    .#{$key}-#{$i} {
+      #{$value}: $unit * $i;
+    }
+  }
+
+  @for $i from 0 through 5 {
+    .#{$key}-h-#{$i} {
+      #{$value}-right: $unit * $i;
+      #{$value}-left: $unit * $i;
+    }
+  }
+
+  @for $i from 0 through 5 {
+    .#{$key}-v-#{$i} {
+      #{$value}-top: $unit * $i;
+      #{$value}-bottom: $unit * $i;
+    }
+  }
+
+  @each $dir, $attr in $directions {
+    @for $i from 0 through 5 {
+      .#{$key}-#{$dir}-#{$i} {
+        #{$value}-#{$attr}: $unit * $i;
+      }
+    }
+  }
+}
+
+.m-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.m-n-1 {
+  margin-right: (-$unit);
+  margin-left: (-$unit);
+}
