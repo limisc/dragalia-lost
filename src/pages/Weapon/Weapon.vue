@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { reactive, toRefs, watch } from 'vue';
+import { reactive, ref, toRefs, watch } from 'vue';
 import WeaponSeries from './WeaponSeries.vue';
 import WeaponTypes from './WeaponTypes.vue';
 import WeaponList from './WeaponList.vue';
@@ -55,6 +55,18 @@ import CraftList from './CraftList.vue';
 import MaterialList from './MaterialList.vue';
 
 import buildup from '/json/buildup.json';
+
+function useSeries() {
+  const SERIES_KEY = 'dragalialost.info/weapon/current-series';
+  const currentSeries = ref(+(localStorage.getItem(SERIES_KEY) || 1));
+
+  // save current series to localStorage
+  watch(currentSeries, (value) => {
+    localStorage.setItem(SERIES_KEY, `${value}`);
+  });
+
+  return { currentSeries };
+}
 
 export default {
   name: 'Weapon',
@@ -68,6 +80,7 @@ export default {
     MaterialList,
   },
   setup() {
+    const { currentSeries } = useSeries();
     const LOCAL_KEY = 'dragalialost.info/weapon';
     const initStore = {
       1: {},
@@ -84,7 +97,7 @@ export default {
     const store = reactive(storeData);
 
     const initWeaponInfo = {
-      seriesId: 3,
+      seriesId: currentSeries,
       typeId: 1,
       weaponId: '',
       groupId: '',
@@ -133,44 +146,48 @@ export default {
 
       const record = store[_WeaponSeriesId][_Id];
 
-      if (record) {
-        state.weaponInfo = record.weaponInfo;
-        state.weaponOptions = record.weaponOptions;
-      } else {
-        const group = buildup[_WeaponBodyBuildupGroupId] || {};
-        const options = {};
-        const keys = Object.keys(group);
-        for (let i = 0; i < keys.length; i += 1) {
-          const key = keys[i];
-          let to;
-          const max = group[key].length;
+      const group = buildup[_WeaponBodyBuildupGroupId] || {};
+      const options = {};
+      const keys = Object.keys(group);
+      for (let i = 0; i < keys.length; i += 1) {
+        const key = keys[i];
+        let to;
+        const max = group[key].length;
 
-          if (key === '1') {
-            to = Math.min(5, max);
-          } else if (key === '2' || key === '5') {
-            to = 1;
-          } else {
-            to = 0;
-          }
-
-          options[key] = {
-            from: 0,
-            to,
-            max: group[key].length,
-          };
+        if (key === '1') {
+          to = Math.min(5, max);
+        } else if (key === '2' || key === '5') {
+          to = 1;
+        } else {
+          to = 0;
         }
 
-        state.weaponInfo = {
-          seriesId: _WeaponSeriesId,
-          typeId: _WeaponType,
-          weaponId: _Id,
-          groupId: _WeaponBodyBuildupGroupId,
-          skinId: _WeaponSkinId,
-          elementId: _ElementalType,
-          isObtained: false,
+        options[key] = {
+          from: 0,
+          to,
+          max: group[key].length,
         };
+      }
 
-        state.weaponOptions = options;
+      state.weaponInfo = {
+        seriesId: _WeaponSeriesId,
+        typeId: _WeaponType,
+        weaponId: _Id,
+        groupId: _WeaponBodyBuildupGroupId,
+        skinId: _WeaponSkinId,
+        elementId: _ElementalType,
+        isObtained: false,
+      };
+
+      state.weaponOptions = options;
+
+      if (record) {
+        state.weaponInfo.isObtained = record.weaponInfo.isObtained;
+
+        for (const id in record.weaponOptions) {
+          state.weaponOptions[id].from = record.weaponOptions[id].from;
+          state.weaponOptions[id].to = record.weaponOptions[id].to;
+        }
       }
     };
 
@@ -208,9 +225,7 @@ export default {
     const addStore = () => {
       const seriesId = state.weaponInfo.seriesId;
       const weaponId = state.weaponInfo.weaponId;
-      if (!store[seriesId][weaponId]) {
-        store[seriesId][weaponId] = { ...state };
-      }
+      store[seriesId][weaponId] = { ...state };
     };
 
     const saveLocal = () => {
@@ -225,12 +240,16 @@ export default {
       ([from, to]) => {
         const options = state.weaponOptions;
         if (options[2]) {
-          if (from > 4) {
+          if (from > 8) {
+            options[2].from = 2;
+          } else if (from > 4) {
             options[2].from = 1;
-            options[2].to = 1;
+          } else if (to > 8) {
+            options[2].to = 2;
           } else if (to > 4) {
-            options[2].to = 1;
+            options[2].to = Math.max(options[2].to, 1);
           }
+          options[2].to = Math.max(options[2].from, options[2].to);
         }
       }
     );

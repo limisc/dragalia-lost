@@ -5,7 +5,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "sass": "npx sass ./src/styles/style.scss ./src/styles/style.css"
+    "sass": "npx sass ./src/styles/style.scss ./src/styles/style.css",
+    "deploy": ""
   },
   "keywords": [
     "dragalia lost"
