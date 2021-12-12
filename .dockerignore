@@ -1,0 +1,10 @@
+.vscode
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.git
+
+
+dist
+node_modules
